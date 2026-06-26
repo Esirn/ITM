@@ -61,6 +61,7 @@ def build_imu_cache(
     *,
     include_orientation: bool = True,
     overwrite: bool = False,
+    skip_invalid: bool = False,
 ) -> list[IMUCacheEntry]:
     """Generate compressed synthetic IMU files for a manifest.
 
@@ -69,6 +70,8 @@ def build_imu_cache(
         output_dir: Directory where ``<split>/<motion_id>.npz`` files are stored.
         include_orientation: Whether to compute default limb orientation vectors.
         overwrite: Recompute existing cache files when true.
+        skip_invalid: Skip records whose joint arrays cannot support the default
+            sparse IMU layout. When false, invalid records raise immediately.
 
     Returns:
         Cache manifest entries for all input records.
@@ -86,6 +89,18 @@ def build_imu_cache(
             joints = np.load(record["joints_path"])
             parent_indices = DEFAULT_PARENT_JOINT_INDICES if include_orientation else None
             child_indices = DEFAULT_CHILD_JOINT_INDICES if include_orientation else None
+            try:
+                _validate_joints(
+                    joints,
+                    DEFAULT_SENSOR_JOINT_INDICES,
+                    parent_indices,
+                    child_indices,
+                )
+            except ValueError as error:
+                if skip_invalid:
+                    print(f"skipping {motion_id}: {error}")
+                    continue
+                raise
             imu = synthesize_sparse_imu(
                 joints.tolist(),
                 DEFAULT_SENSOR_JOINT_INDICES,
@@ -136,6 +151,28 @@ def build_imu_cache(
                 )
             )
     return entries
+
+
+def _validate_joints(
+    joints: np.ndarray,
+    sensor_joint_indices: tuple[int, ...],
+    parent_joint_indices: tuple[int, ...] | None,
+    child_joint_indices: tuple[int, ...] | None,
+) -> None:
+    if joints.ndim != 3:
+        raise ValueError(f"expected joints with shape (T, J, 3), got {joints.shape}")
+    if joints.shape[2] != 3:
+        raise ValueError(f"expected xyz joint coordinates, got {joints.shape}")
+    required_indices = list(sensor_joint_indices)
+    if parent_joint_indices is not None:
+        required_indices.extend(parent_joint_indices)
+    if child_joint_indices is not None:
+        required_indices.extend(child_joint_indices)
+    max_index = max(required_indices)
+    if joints.shape[1] <= max_index:
+        raise ValueError(
+            f"expected at least {max_index + 1} joints, got {joints.shape[1]}"
+        )
 
 
 def write_imu_cache_manifest(

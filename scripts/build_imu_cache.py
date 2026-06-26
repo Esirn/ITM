@@ -28,6 +28,11 @@ def main() -> int:
         action="store_true",
         help="recompute existing cache files",
     )
+    parser.add_argument(
+        "--skip-invalid",
+        action="store_true",
+        help="skip records with invalid joint array shapes instead of failing",
+    )
     args = parser.parse_args()
 
     entries = build_imu_cache(
@@ -35,6 +40,7 @@ def main() -> int:
         args.output_dir,
         include_orientation=not args.no_orientation,
         overwrite=args.overwrite,
+        skip_invalid=args.skip_invalid,
     )
     count = write_imu_cache_manifest(entries, args.cache_manifest)
     print(f"wrote {count} IMU cache entries to {args.cache_manifest}")

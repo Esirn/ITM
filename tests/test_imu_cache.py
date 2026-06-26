@@ -60,6 +60,38 @@ class IMUCacheTest(unittest.TestCase):
             self.assertEqual(records[0]["motion_id"], "000001")
             self.assertEqual(records[0]["acceleration_shape"], [2, 6, 3])
 
+    def test_skip_invalid_joint_shape(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            joints_path = root / "bad.npy"
+            text_path = root / "bad.txt"
+            manifest_path = root / "manifest.jsonl"
+            np.save(joints_path, np.zeros((22, 3), dtype=np.float32))
+            text_path.write_text("bad shape#tok#0.0#0.0\n")
+            write_jsonl(
+                [
+                    ManifestEntry(
+                        motion_id="bad",
+                        split="train",
+                        text_path=str(text_path),
+                        joints_path=str(joints_path),
+                        joint_vec_path=str(root / "bad_vec.npy"),
+                        num_texts=1,
+                    )
+                ],
+                manifest_path,
+            )
+
+            with self.assertRaises(ValueError):
+                build_imu_cache(manifest_path, root / "imu", overwrite=True)
+            entries = build_imu_cache(
+                manifest_path,
+                root / "imu",
+                overwrite=True,
+                skip_invalid=True,
+            )
+            self.assertEqual(entries, [])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -32,6 +32,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--imu-output-dir", type=Path, default=Path("outputs/synthetic_imu"))
     parser.add_argument("--no-orientation", action="store_true")
     parser.add_argument("--overwrite-cache", action="store_true")
+    parser.add_argument(
+        "--strict-invalid",
+        action="store_true",
+        help="fail on invalid joint arrays instead of filtering them out",
+    )
     return parser.parse_args()
 
 
@@ -58,7 +63,14 @@ def main() -> int:
             args.imu_output_dir,
             include_orientation=not args.no_orientation,
             overwrite=args.overwrite_cache,
+            skip_invalid=not args.strict_invalid,
         )
+        if len(cache_entries) != len(manifest_entries):
+            valid_ids = {entry.motion_id for entry in cache_entries}
+            manifest_entries = [
+                entry for entry in manifest_entries if entry.motion_id in valid_ids
+            ]
+            manifest_count = write_jsonl(manifest_entries, manifest_path)
         cache_count = write_imu_cache_manifest(cache_entries, cache_manifest_path)
         print(
             f"{split}: wrote {manifest_count} manifest entries to {manifest_path}; "

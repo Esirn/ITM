@@ -22,6 +22,7 @@ This repository now contains the reproducibility and experiment scaffold for the
 - `src/itm/data/synthetic_imu.py`: minimal joint-to-IMU proxy extraction
 - `src/itm/metrics/imu_consistency.py`: acceleration/orientation consistency metrics
 - `docs/EXPERIMENT_PLAN.md`: implementation and evaluation roadmap
+- `docs/EXPERIMENT_PROGRESS_2026-06-26.md`: latest local experiment status
 - `docs/EGO4O_REPRO_AUDIT.md`: current Ego4o reproducibility assessment
 - `docs/ENVIRONMENT.md`: conda environment notes
 
@@ -54,6 +55,10 @@ conda run -n itm python scripts/build_split_suite.py \
   --val-limit 200 \
   --test-limit 200
 ```
+
+`build_split_suite.py` filters invalid joint arrays by default and keeps each
+manifest aligned with its split-specific IMU cache. Use `--strict-invalid` to
+fail fast instead.
 
 Inspect a padded batch built from manifest and cache records:
 
@@ -108,6 +113,19 @@ Summarize one or more ablation tables:
 ```bash
 conda run -n itm python scripts/summarize_linear_results.py \
   outputs/baselines/linear_ablation/summary.csv
+```
+
+Train the optional PyTorch frame-level neural baseline after installing `torch`:
+
+```bash
+conda run -n itm python scripts/train_torch_frame_baseline.py \
+  --manifest outputs/manifests/train.jsonl \
+  --imu-cache-manifest outputs/manifests/train_imu_cache.jsonl \
+  --eval-manifest outputs/manifests/val.jsonl \
+  --eval-imu-cache-manifest outputs/manifests/val_imu_cache.jsonl \
+  --max-records 100 \
+  --eval-max-records 50 \
+  --device cuda:0
 ```
 
 Run the metric smoke test:

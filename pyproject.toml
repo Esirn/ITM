@@ -14,5 +14,10 @@ dependencies = [
   "tqdm>=4.60",
 ]
 
+[project.optional-dependencies]
+torch = [
+  "torch",
+]
+
 [tool.setuptools.packages.find]
 where = ["src"]
