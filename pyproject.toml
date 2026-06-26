@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "itm"
+version = "0.1.0"
+description = "IMU-guided text-to-motion research scaffold."
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.23",
+  "PyYAML>=6.0",
+  "tomli>=2.0; python_version < '3.11'",
+  "tqdm>=4.60",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

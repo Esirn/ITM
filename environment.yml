@@ -1,0 +1,13 @@
+name: itm
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pytest
+  - tomli
+  - tqdm
+  - pyyaml
+  - pip:
+      - -e .

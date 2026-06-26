@@ -1,0 +1,29 @@
+[project]
+root = "/home/a200/0proj/ITM"
+
+[datasets]
+root = "/home/a200/0proj/datasets"
+remote_root = "/home/a200/mount/a40/home/4T-2/group_motion/datasets"
+amass = "/home/a200/0proj/datasets/AMASS"
+smpl = "/home/a200/0proj/datasets/SMPL"
+humanml3d = "/home/a200/0proj/datasets/mdm-need/HumanML3D"
+humanml3d_texts = "/home/a200/0proj/datasets/all/texts"
+humanml3d_joints = "/home/a200/0proj/datasets/all/new_joints"
+humanml3d_joint_vecs = "/home/a200/0proj/datasets/all/new_joint_vecs"
+motion_splits = "/home/a200/0proj/datasets/all"
+
+[related_papers]
+root = "/home/a200/0relatedpapers"
+spatial_related_sensors_matters = "/home/a200/0relatedpapers/arXiv-2401.05412v1-Spatial-Related Sensors Matters"
+ego4o_latex = "/home/a200/0relatedpapers/arXiv-2504.08449v1-Ego4o"
+
+[related_code]
+root = "/home/a200/0relatedworks"
+ego4o = "/home/a200/0relatedworks/ego4o-code-release"
+ego4o_mocap = "/home/a200/0relatedworks/ego4o-code-release/EgoOmniMocap"
+ego4o_llava = "/home/a200/0relatedworks/ego4o-code-release/llava"
+motionlab = "/home/a200/0relatedworks/MotionLab"
+motiondiffuse = "/home/a200/0relatedworks/MotionDiffuse"
+motiongpt = "/home/a200/0relatedworks/MotionGPT"
+transpose = "/home/a200/0relatedworks/TransPose"
+dip = "/home/a200/0relatedworks/dip18"
