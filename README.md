@@ -46,6 +46,15 @@ Build reusable synthetic IMU cache files from that manifest:
 conda run -n itm python scripts/build_imu_cache.py --manifest outputs/manifests/train.jsonl
 ```
 
+Build manifests and split-specific IMU caches together:
+
+```bash
+conda run -n itm python scripts/build_split_suite.py \
+  --train-limit 1000 \
+  --val-limit 200 \
+  --test-limit 200
+```
+
 Inspect a padded batch built from manifest and cache records:
 
 ```bash
@@ -92,6 +101,13 @@ conda run -n itm python scripts/run_linear_ablation.py \
   --eval-imu-cache-manifest outputs/manifests/val_imu_cache.jsonl \
   --max-records 10 \
   --eval-max-records 10
+```
+
+Summarize one or more ablation tables:
+
+```bash
+conda run -n itm python scripts/summarize_linear_results.py \
+  outputs/baselines/linear_ablation/summary.csv
 ```
 
 Run the metric smoke test:
