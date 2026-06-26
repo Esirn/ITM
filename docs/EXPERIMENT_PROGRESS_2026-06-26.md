@@ -67,17 +67,19 @@ the linear model yet, which makes the next neural fusion model important.
 
 ## Torch Status
 
-PyTorch is not currently installed in the `itm` environment.
+PyTorch is now installed in the `itm` environment and verified:
 
-Attempts to install from the official PyTorch CUDA 12.1 and CPU wheel indexes
-stalled without progress and were interrupted to avoid leaving a hanging
-install process. The optional neural baseline code is present and syntax-checked,
-but cannot be executed until `torch` is installed.
+- `torch 2.5.1`
+- CUDA available: `True`
+- CUDA runtime: `12.1`
+- GPU count: `2`
 
-## Next Recommended Step
+The initial install hit `undefined symbol: iJIT_NotifyEvent`; downgrading
+`mkl` and `intel-openmp` below 2025 fixed it.
 
-Install PyTorch through a reliable local mirror or conda package source, then
-run:
+## Neural Baseline Smoke
+
+A CPU smoke run completed:
 
 ```bash
 conda run -n itm python scripts/train_torch_frame_baseline.py \
@@ -85,10 +87,19 @@ conda run -n itm python scripts/train_torch_frame_baseline.py \
   --imu-cache-manifest outputs/manifests/train_imu_cache.jsonl \
   --eval-manifest outputs/manifests/val.jsonl \
   --eval-imu-cache-manifest outputs/manifests/val_imu_cache.jsonl \
-  --max-records 100 \
-  --eval-max-records 50 \
+  --max-records 20 \
+  --eval-max-records 10 \
+  --epochs 2 \
+  --hidden-dim 64 \
+  --num-layers 1 \
   --device cpu
 ```
 
-Use `--device cuda:0` after confirming GPU 0 has enough free memory. Do not use
-GPU 1 while PID `2017173` is still running there.
+Result:
+
+- train MSE: `0.224086`
+- eval MSE: `0.223038`
+
+This only verifies the training loop. Use `--device cuda:0` after confirming GPU
+0 has enough free memory. Do not use GPU 1 while PID `2017173` is still running
+there.

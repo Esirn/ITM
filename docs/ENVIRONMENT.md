@@ -10,17 +10,33 @@ Installed lightweight base packages:
 - pytest
 - tqdm
 - PyYAML
+- PyTorch 2.5.1 with CUDA 12.1
 
-PyTorch and other large training dependencies are optional. The linear baselines
-do not require PyTorch.
+The linear baselines do not require PyTorch. The neural baseline scripts do.
 
-## Optional PyTorch Dependency
+## PyTorch Dependency
 
-The neural baseline scripts require PyTorch, but the current `itm` environment
-does not have `torch` installed. Attempts to install from official PyTorch CUDA
-12.1 and CPU wheel indexes stalled on 2026-06-26 and were interrupted.
+PyTorch was installed with:
 
-When a reliable mirror is available, install PyTorch in `itm` and verify:
+```bash
+conda install pytorch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 pytorch-cuda=12.1 -c pytorch -c nvidia
+```
+
+If importing torch fails with
+`undefined symbol: iJIT_NotifyEvent`, downgrade MKL/OpenMP in the environment:
+
+```bash
+conda install -n itm -y "mkl<2025" "intel-openmp<2025"
+```
+
+The verified working package combination is:
+
+- `pytorch 2.5.1 py3.10_cuda12.1_cudnn9.1.0_0`
+- `pytorch-cuda 12.1`
+- `mkl 2023.1.0`
+- `intel-openmp 2023.0.0`
+
+Verify with:
 
 ```bash
 conda run -n itm python -c "import torch; print(torch.__version__, torch.cuda.is_available())"
