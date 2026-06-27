@@ -103,3 +103,33 @@ Result:
 This only verifies the training loop. Use `--device cuda:0` after confirming GPU
 0 has enough free memory. Do not use GPU 1 while PID `2017173` is still running
 there.
+
+## Neural Baseline GPU Run - 2026-06-27
+
+The frame-level MLP was trained on all 999 training records and evaluated on
+all 200 validation records. All variants used two 256-wide hidden layers, 30
+epochs, batch size 1024, and `cuda:0`.
+
+| variant | train_mse | eval_mse | eval_mae |
+| --- | ---: | ---: | ---: |
+| imu_only | 0.009864 | 0.014230 | 0.061955 |
+| full | 0.006732 | 0.020078 | 0.078787 |
+| text_only | 0.014815 | 0.081496 | 0.154478 |
+
+The IMU-only MLP improves validation MSE over the linear IMU-only baseline from
+`0.024062` to `0.014230`. Adding hashed text features lowers training error but
+worsens validation error, while text-only generalization is poor. This is
+evidence that the current hash representation memorizes training captions
+rather than providing reusable language semantics; it is not evidence that
+text guidance is intrinsically unhelpful.
+
+Next steps:
+
+1. Replace hash features with a frozen pretrained text encoder and cache the
+   caption embeddings.
+2. Replace independent frame regression with a temporal sequence model and
+   variable-length masking.
+3. Evaluate checkpoints on the held-out test split only after model selection
+   on validation data.
+4. Add sensor-count and sensor-location ablations after the temporal baseline
+   is stable.
