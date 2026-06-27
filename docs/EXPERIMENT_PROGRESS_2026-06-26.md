@@ -174,6 +174,8 @@ IMU-only runs use the same architecture and seed as the six-sensor experiment.
 | --- | --- | ---: | ---: | ---: |
 | pelvis (1) | no | 0.030690 | 0.031836 | 0.099072 |
 | pelvis (1) | yes | 0.030185 | 0.032504 | 0.099689 |
+| head (1) | no | 0.028923 | 0.030411 | 0.097918 |
+| head (1) | yes | 0.028442 | 0.030593 | 0.098537 |
 | wrists (2) | no | 0.029189 | 0.030797 | 0.098079 |
 | wrists (2) | yes | 0.028406 | 0.029610 | 0.096633 |
 | pelvis + wrists (3) | no | 0.023170 | 0.023793 | 0.087235 |
@@ -186,6 +188,11 @@ both MSE and MAE on validation and test. The three-sensor test MSE improves by
 only about 0.6%, while MAE worsens. The pelvis-only validation improvement does
 not reproduce on test, and six sensors favor IMU-only. This suggests sensor
 location and ambiguity matter more than sensor count alone.
+
+Like pelvis-only, head-only shows a small text gain on validation (about 1.7%)
+that does not reproduce on test: test MSE worsens by about 0.6%, and MAE also
+worsens. Under the current single-seed protocol, there is no evidence that the
+head-only setting benefits from text conditioning.
 
 These are single-seed exploratory results. They are not yet paper-grade
 evidence: matched runs need at least three seeds, confidence intervals, and
