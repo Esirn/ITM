@@ -153,6 +153,19 @@ conda run -n itm python scripts/train_torch_temporal_baseline.py \
 Text model loading is offline by default. Pass `--allow-download` to the cache
 script only when the requested Hugging Face model is not already local.
 
+Select cached sensors by zero-based slot for sparse-IMU ablations. The default
+cache order is pelvis, left ankle, right ankle, head, left wrist, right wrist:
+
+```bash
+# Pelvis and both wrists
+conda run -n itm python scripts/train_torch_temporal_baseline.py \
+  ... \
+  --sensor-slots 0,4,5
+```
+
+The sensor slots are stored in the checkpoint and automatically restored by
+`evaluate_torch_temporal_baseline.py`.
+
 Run the metric smoke test:
 
 ```bash

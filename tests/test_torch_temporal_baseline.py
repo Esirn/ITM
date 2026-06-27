@@ -51,6 +51,28 @@ class TorchTemporalBaselineTest(unittest.TestCase):
         self.assertEqual(tuple(prediction.shape), (2, 6, 5))
         self.assertTrue(torch.isfinite(loss))
 
+    def test_sensor_slot_selection_changes_input_width(self):
+        sample = self._sample("a", 5)
+        sample["imu_acceleration"] = np.zeros((3, 3, 3), dtype=np.float32)
+        sample["imu_orientation"] = np.zeros((5, 3, 3), dtype=np.float32)
+        embeddings = {"a": np.ones(8, dtype=np.float32)}
+        all_item = build_sequence_item(sample, embeddings, TemporalBaselineConfig())
+        sparse_item = build_sequence_item(
+            sample,
+            embeddings,
+            TemporalBaselineConfig(sensor_slots=(0, 2)),
+        )
+        self.assertEqual(all_item["sequence"].shape[1], 22)
+        self.assertEqual(sparse_item["sequence"].shape[1], 16)
+
+    def test_rejects_out_of_range_sensor_slot(self):
+        with self.assertRaises(IndexError):
+            build_sequence_item(
+                self._sample("a", 5),
+                {"a": np.ones(8, dtype=np.float32)},
+                TemporalBaselineConfig(sensor_slots=(2,)),
+            )
+
 
 if __name__ == "__main__":
     unittest.main()

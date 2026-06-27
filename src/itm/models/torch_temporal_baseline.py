@@ -19,6 +19,7 @@ class TemporalBaselineConfig:
     include_acceleration: bool = True
     include_orientation: bool = True
     include_text: bool = True
+    sensor_slots: tuple[int, ...] | None = None
     model_dim: int = 256
     num_layers: int = 4
     num_heads: int = 8
@@ -38,7 +39,8 @@ def build_sequence_item(
         include_acceleration=config.include_acceleration,
         include_orientation=config.include_orientation,
     )
-    sequence = build_frame_features(sample, feature_config)
+    selected_sample = _select_sensor_slots(sample, config.sensor_slots)
+    sequence = build_frame_features(selected_sample, feature_config)
     target = np.asarray(sample["motion"], dtype=np.float32)
     if sequence.shape[0] != target.shape[0]:
         raise ValueError(f"Frame mismatch for {sample.get('motion_id')}")
@@ -53,6 +55,35 @@ def build_sequence_item(
     else:
         text = np.zeros(0, dtype=np.float32)
     return {"motion_id": motion_id, "sequence": sequence, "text": text, "target": target}
+
+
+def _select_sensor_slots(
+    sample: dict[str, Any], sensor_slots: tuple[int, ...] | None
+) -> dict[str, Any]:
+    if sensor_slots is None:
+        return sample
+    if not sensor_slots:
+        raise ValueError("sensor_slots must contain at least one sensor")
+    if len(set(sensor_slots)) != len(sensor_slots) or min(sensor_slots) < 0:
+        raise ValueError(f"Invalid sensor_slots: {sensor_slots}")
+    selected = dict(sample)
+    for key in ("imu_acceleration", "imu_orientation"):
+        if key not in sample:
+            continue
+        values = np.asarray(sample[key])
+        if max(sensor_slots) >= values.shape[1]:
+            raise IndexError(
+                f"sensor slot {max(sensor_slots)} exceeds {key} width {values.shape[1]}"
+            )
+        selected[key] = values[:, sensor_slots, :]
+    for key in (
+        "sensor_joint_indices",
+        "parent_joint_indices",
+        "child_joint_indices",
+    ):
+        if key in sample:
+            selected[key] = np.asarray(sample[key])[list(sensor_slots)]
+    return selected
 
 
 def collate_sequence_items(items: list[dict[str, Any]]) -> dict[str, Any]:
@@ -150,4 +181,3 @@ def masked_mse(prediction, target, mask):
 
     valid = mask.unsqueeze(-1).expand_as(target)
     return ((prediction - target) ** 2)[valid].mean()
-

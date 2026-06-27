@@ -162,3 +162,31 @@ The next model should therefore create a deliberately underdetermined setting
 (fewer sensors, masked IMU spans, or noisy sensors) and use a generative motion
 objective. Sensor-count/location ablations should be established before adding
 a diffusion or masked-token motion decoder.
+
+## Sparse Sensor Ablation - 2026-06-27
+
+The temporal pipeline now selects sensor subsets by cache slot and records the
+selection in each checkpoint. Cache slot order is pelvis, left ankle, right
+ankle, head, left wrist, and right wrist. The following matched text+IMU and
+IMU-only runs use the same architecture and seed as the six-sensor experiment.
+
+| sensors | text | val MSE | test MSE | test MAE |
+| --- | --- | ---: | ---: | ---: |
+| pelvis (1) | no | 0.030690 | 0.031836 | 0.099072 |
+| pelvis (1) | yes | 0.030185 | 0.032504 | 0.099689 |
+| wrists (2) | no | 0.029189 | 0.030797 | 0.098079 |
+| wrists (2) | yes | 0.028406 | 0.029610 | 0.096633 |
+| pelvis + wrists (3) | no | 0.023170 | 0.023793 | 0.087235 |
+| pelvis + wrists (3) | yes | 0.022950 | 0.023650 | 0.088568 |
+| all (6) | no | 0.017614 | 0.018271 | 0.075857 |
+| all (6) | yes | 0.017996 | 0.018774 | 0.078116 |
+
+The two-wrist setting is the only current configuration where text improves
+both MSE and MAE on validation and test. The three-sensor test MSE improves by
+only about 0.6%, while MAE worsens. The pelvis-only validation improvement does
+not reproduce on test, and six sensors favor IMU-only. This suggests sensor
+location and ambiguity matter more than sensor count alone.
+
+These are single-seed exploratory results. They are not yet paper-grade
+evidence: matched runs need at least three seeds, confidence intervals, and
+semantic/physical generation metrics beyond joint-vector reconstruction error.

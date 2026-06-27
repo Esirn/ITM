@@ -49,6 +49,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--no-text", action="store_true")
     parser.add_argument("--no-acceleration", action="store_true")
     parser.add_argument("--no-orientation", action="store_true")
+    parser.add_argument(
+        "--sensor-slots",
+        help="Comma-separated zero-based cache sensor slots, e.g. 4,5 for wrists",
+    )
     return parser.parse_args()
 
 
@@ -67,6 +71,7 @@ def main() -> int:
         include_acceleration=not args.no_acceleration,
         include_orientation=not args.no_orientation,
         include_text=not args.no_text,
+        sensor_slots=_parse_sensor_slots(args.sensor_slots),
         model_dim=args.model_dim,
         num_layers=args.num_layers,
         num_heads=args.num_heads,
@@ -174,6 +179,18 @@ def _load_items(manifest, imu_manifest, embeddings, config, limit):
     if not items:
         raise ValueError("The selected dataset is empty")
     return items
+
+
+def _parse_sensor_slots(value):
+    if value is None:
+        return None
+    try:
+        slots = tuple(int(part.strip()) for part in value.split(",") if part.strip())
+    except ValueError as error:
+        raise ValueError(f"Invalid --sensor-slots value: {value}") from error
+    if not slots:
+        raise ValueError("--sensor-slots must contain at least one integer")
+    return slots
 
 
 def _run_epoch(model, items, batch_size, device, *, optimizer, shuffle):
