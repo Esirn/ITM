@@ -133,3 +133,32 @@ Next steps:
    on validation data.
 4. Add sensor-count and sensor-location ablations after the temporal baseline
    is stable.
+
+## Semantic Temporal Baseline - 2026-06-27
+
+Implemented:
+
+- offline frozen DistilBERT caption embedding caches (768 dimensions)
+- a masked Transformer encoder for variable-length IMU sequences
+- broadcast text conditioning, sinusoidal positions, and padded-loss masking
+- validation-best checkpoint selection and independent held-out evaluation
+
+Both models used four Transformer layers, model dimension 256, eight attention
+heads, and 30 epochs on the 999/200 train/validation split.
+
+| variant | best epoch | val MSE | test MSE | test MAE |
+| --- | ---: | ---: | ---: | ---: |
+| temporal IMU-only | 29 | 0.017614 | 0.018271 | 0.075857 |
+| temporal DistilBERT + IMU | 29 | 0.017996 | 0.018774 | 0.078116 |
+
+The pretrained text representation removes most of the large generalization
+failure observed with hashed text, but still does not improve over the matched
+IMU-only temporal model. The validation and held-out test rankings agree. The
+current task is deterministic reconstruction from synthetic IMU, so frame MSE
+rewards copying the strong physical signal and gives text little opportunity to
+resolve ambiguity.
+
+The next model should therefore create a deliberately underdetermined setting
+(fewer sensors, masked IMU spans, or noisy sensors) and use a generative motion
+objective. Sensor-count/location ablations should be established before adding
+a diffusion or masked-token motion decoder.

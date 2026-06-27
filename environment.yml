@@ -11,3 +11,4 @@ dependencies:
   - pyyaml
   - pip:
       - -e .
+      - transformers>=4.44,<4.50

@@ -11,6 +11,7 @@ Installed lightweight base packages:
 - tqdm
 - PyYAML
 - PyTorch 2.5.1 with CUDA 12.1
+- Transformers 4.49.0
 
 The linear baselines do not require PyTorch. The neural baseline scripts do.
 
@@ -35,6 +36,8 @@ The verified working package combination is:
 - `pytorch-cuda 12.1`
 - `mkl 2023.1.0`
 - `intel-openmp 2023.0.0`
+- `sympy 1.13.1`
+- `transformers 4.49.0`
 
 Verify with:
 

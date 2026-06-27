@@ -17,6 +17,7 @@ dependencies = [
 [project.optional-dependencies]
 torch = [
   "torch",
+  "transformers>=4.44,<4.50",
 ]
 
 [tool.setuptools.packages.find]

@@ -17,6 +17,9 @@ This repository now contains the reproducibility and experiment scaffold for the
 - `scripts/audit_assets.py`: non-mutating audit of available assets and hard-coded Ego4o paths
 - `scripts/inspect_batch.py`: sanity check for padded text-motion-IMU batches
 - `scripts/train_linear_baseline.py`: CPU ridge-regression text+IMU baseline
+- `scripts/cache_text_embeddings.py`: frozen Transformer caption embedding cache
+- `scripts/train_torch_temporal_baseline.py`: masked temporal text+IMU baseline
+- `scripts/evaluate_torch_temporal_baseline.py`: held-out checkpoint evaluation
 - `src/itm/baselines/linear_reconstruct.py`: linear reconstruction baseline utilities
 - `src/itm/data/dataset.py`: numpy dataset and collator for manifest/cache records
 - `src/itm/data/synthetic_imu.py`: minimal joint-to-IMU proxy extraction
@@ -127,6 +130,28 @@ conda run -n itm python scripts/train_torch_frame_baseline.py \
   --eval-max-records 50 \
   --device cuda:0
 ```
+
+Cache semantic text features and train the temporal baseline:
+
+```bash
+conda run -n itm python scripts/cache_text_embeddings.py \
+  --manifest outputs/manifests/train.jsonl \
+  --output outputs/text_embeddings/train_distilbert.npz
+conda run -n itm python scripts/cache_text_embeddings.py \
+  --manifest outputs/manifests/val.jsonl \
+  --output outputs/text_embeddings/val_distilbert.npz
+conda run -n itm python scripts/train_torch_temporal_baseline.py \
+  --manifest outputs/manifests/train.jsonl \
+  --imu-cache-manifest outputs/manifests/train_imu_cache.jsonl \
+  --text-cache outputs/text_embeddings/train_distilbert.npz \
+  --eval-manifest outputs/manifests/val.jsonl \
+  --eval-imu-cache-manifest outputs/manifests/val_imu_cache.jsonl \
+  --eval-text-cache outputs/text_embeddings/val_distilbert.npz \
+  --device cuda:0
+```
+
+Text model loading is offline by default. Pass `--allow-download` to the cache
+script only when the requested Hugging Face model is not already local.
 
 Run the metric smoke test:
 
