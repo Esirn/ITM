@@ -197,3 +197,39 @@ head-only setting benefits from text conditioning.
 These are single-seed exploratory results. They are not yet paper-grade
 evidence: matched runs need at least three seeds, confidence intervals, and
 semantic/physical generation metrics beyond joint-vector reconstruction error.
+
+## CLIP Baseline and Qualitative Export - 2026-07-02
+
+Implemented:
+
+- offline CLIP ViT-L/14 text caches using the standard EOS-pooled text feature
+- exact NumPy recovery from raw HumanML3D 263D features to 22 global joints
+- synchronized GT / IMU-only / text+IMU animation export
+- unbiased qualitative selection containing text-helped, text-hurt, and seeded
+  random examples
+
+The recovery implementation was checked against `new_joints` on a real test
+sample (MAE `2.25e-9`, maximum error `5.96e-8`). The matched two-wrist CLIP run
+used the same architecture, seed, and training protocol as DistilBERT.
+
+| text encoder | val MSE | test MSE | test MAE |
+| --- | ---: | ---: | ---: |
+| none | 0.029189 | 0.030797 | 0.098079 |
+| DistilBERT | 0.028406 | 0.029610 | 0.096633 |
+| CLIP ViT-L/14 | 0.031065 | 0.033875 | 0.104977 |
+
+CLIP is the field-standard text encoder and should remain a named baseline, but
+it is weaker under the current broadcast-add fusion. Per-sample results contain
+both large improvements and regressions, so the failure is not evidence that
+CLIP lacks motion semantics. It instead shows that deterministic 263D MSE and a
+single broadcast text vector are a poor final formulation for controllable
+generation.
+
+Qualitative artifacts are in:
+
+- `outputs/visualizations/wrists_distilbert/`
+- `outputs/visualizations/wrists_clip_vitl14/`
+
+The current temporal models are reconstruction sanity checks, not the paper's
+final generative model. The next core baseline should use a pretrained
+text-to-motion diffusion model with a separate temporal IMU control branch.

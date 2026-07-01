@@ -153,6 +153,32 @@ conda run -n itm python scripts/train_torch_temporal_baseline.py \
 Text model loading is offline by default. Pass `--allow-download` to the cache
 script only when the requested Hugging Face model is not already local.
 
+Use the local CLIP ViT-L/14 text encoder for the domain-standard baseline:
+
+```bash
+conda run -n itm python scripts/cache_text_embeddings.py \
+  --manifest outputs/manifests/train.jsonl \
+  --model /home/a200/0proj/MotionLab/checkpoints/clip-vit-large-patch14 \
+  --encoder clip \
+  --output outputs/text_embeddings/train_clip_vitl14.npz \
+  --device cuda:0
+```
+
+Export qualitative GT / IMU-only / text+IMU comparisons from matched temporal
+checkpoints. The script selects examples where text helps most, hurts most, and
+a seeded random subset; it writes both animations and raw prediction arrays:
+
+```bash
+conda run -n itm python scripts/visualize_temporal_comparison.py \
+  --imu-checkpoint outputs/neural/temporal_imu_only_wrists_gpu0.pt \
+  --conditioned-checkpoint outputs/neural/temporal_distilbert_wrists_gpu0.pt \
+  --manifest outputs/manifests/test.jsonl \
+  --imu-cache-manifest outputs/manifests/test_imu_cache.jsonl \
+  --text-cache outputs/text_embeddings/test_distilbert.npz \
+  --output-dir outputs/visualizations/wrists_distilbert \
+  --device cuda:0
+```
+
 Select cached sensors by zero-based slot for sparse-IMU ablations. The default
 cache order is pelvis, left ankle, right ankle, head, left wrist, right wrist:
 

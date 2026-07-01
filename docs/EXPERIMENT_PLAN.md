@@ -52,3 +52,26 @@ ITM should be framed as **IMU-guided text-to-motion generation**, not as another
 - Text+IMU improves over IMU-only in ambiguous/static-posture cases.
 - The method supports at least 1, 3, and 6 IMU configurations.
 - Qualitative demos clearly show physical control: replacing IMU changes motion details under the same text.
+## Evaluation Reframing
+
+ITM is an IMU-controllable **text-to-motion generation** project, not primarily
+an inertial pose-estimation project. The paper-level evaluation therefore uses
+three complementary axes:
+
+1. Text alignment: official HumanML3D Matching Score and R-precision.
+2. Motion generation: official HumanML3D FID, Diversity, and Multimodality.
+3. IMU control: acceleration/orientation consistency between the conditioning
+   signal and IMU re-synthesized from generated motion, reported per sensor and
+   under sensor noise/dropout.
+
+MPJPE and paired 263D reconstruction errors remain supplementary diagnostics.
+They are useful when paired ground truth exists, but must not be the headline
+objective because they reward one deterministic answer and do not measure
+semantic quality or sample diversity. Multimodality is only meaningful after a
+stochastic generator is implemented.
+
+The primary comparisons should include text-only generation, IMU-only control,
+and text+IMU generation with independently adjustable condition guidance. The
+same protocol should cover all six sensors, wrists only, and head only. Report
+the text-quality/control-adherence trade-off rather than collapsing it into one
+custom score.
