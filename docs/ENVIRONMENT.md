@@ -12,8 +12,28 @@ Installed lightweight base packages:
 - PyYAML
 - PyTorch 2.5.1 with CUDA 12.1
 - Transformers 4.49.0
+- SciPy 1.15.3 and scikit-learn 1.7.2
+- OpenAI CLIP, blobfile, spaCy, smplx, h5py, and chumpy for MDM/SMPL baselines
 
 The linear baselines do not require PyTorch. The neural baseline scripts do.
+
+The OpenAI CLIP package used by official MDM was installed from the local
+archive to avoid a Git/network dependency:
+
+```bash
+conda run -n itm pip install --no-build-isolation \
+  /home/a200/0proj/datasets/mdm-need/CLIP-main.zip
+```
+
+Legacy SMPL pickle loading requires `chumpy==0.70`. ITM wrappers provide local
+NumPy 2.x compatibility aliases; do not downgrade the project-wide NumPy.
+
+Install chumpy separately because its legacy build does not support pip build
+isolation:
+
+```bash
+conda run -n itm pip install --no-build-isolation chumpy==0.70
+```
 
 ## PyTorch Dependency
 

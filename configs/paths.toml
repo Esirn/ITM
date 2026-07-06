@@ -10,6 +10,7 @@ humanml3d = "/home/a200/0proj/datasets/mdm-need/HumanML3D"
 humanml3d_texts = "/home/a200/0proj/datasets/all/texts"
 humanml3d_joints = "/home/a200/0proj/datasets/all/new_joints"
 humanml3d_joint_vecs = "/home/a200/0proj/datasets/all/new_joint_vecs"
+humanml3d_index = "/home/a200/0proj/datasets/mdm-need/HumanML3D/index.csv"
 motion_splits = "/home/a200/0proj/datasets/all"
 
 [related_papers]
@@ -25,5 +26,13 @@ ego4o_llava = "/home/a200/0relatedworks/ego4o-code-release/llava"
 motionlab = "/home/a200/0relatedworks/MotionLab"
 motiondiffuse = "/home/a200/0relatedworks/MotionDiffuse"
 motiongpt = "/home/a200/0relatedworks/MotionGPT"
+mdm = "/home/a200/0relatedworks/motion-diffusion-model"
+lgtm = "/home/a200/0relatedworks/LGTM"
+imuposer = "/home/a200/0relatedworks/IMUPoser"
+mobileposer = "/home/a200/0relatedworks/MobilePoser"
 transpose = "/home/a200/0relatedworks/TransPose"
 dip = "/home/a200/0relatedworks/dip18"
+
+[checkpoints]
+mdm_humanml = "/home/a200/mount/a40/relatedworks/mdm/motion-diffusion-model/save/humanml_trans_enc_512/model000475000.pt"
+mdm_humanml_args = "/home/a200/mount/a40/relatedworks/mdm/motion-diffusion-model/save/humanml_trans_enc_512/args.json"

@@ -1,0 +1,181 @@
+const chains = [[0,2,5,8,11],[0,1,4,7,10],[0,3,6,9,12,15],[9,14,17,19,21],[9,13,16,18,20]];
+const colors = { ground_truth: '#247ba0', generated: '#168f79' };
+const state = { result: null, frame: 0, playing: false, lastTime: 0, panels: [], samples: [], split: 'test' };
+const el = id => document.getElementById(id);
+
+async function loadSamples() {
+  state.split = el('split').value;
+  setStatus('Loading samples…');
+  const response = await fetch(`/api/samples?split=${state.split}&limit=2000`);
+  state.samples = await response.json();
+  const chooseRandom = el('sample-a').options.length === 0;
+  for (const id of ['sample-a', 'sample-b']) {
+    const selected = el(id).value;
+    el(id).innerHTML = state.samples.map(sample => `<option value="${sample.motion_id}">${sample.motion_id} · ${escapeHtml(sample.caption)}</option>`).join('');
+    if (state.samples.some(sample => sample.motion_id === selected)) el(id).value = selected;
+  }
+  if (chooseRandom) randomizeSamples();
+  if (el('sample-b').value === el('sample-a').value && state.samples.length > 1) el('sample-b').selectedIndex = 1;
+  updateDetails();
+  setStatus(`${state.samples.length} samples available`);
+}
+
+function randomizeSamples() {
+  if (!state.samples.length) return;
+  el('sample-a').selectedIndex = Math.floor(Math.random() * state.samples.length);
+  do { el('sample-b').selectedIndex = Math.floor(Math.random() * state.samples.length); }
+  while (state.samples.length > 1 && el('sample-b').value === el('sample-a').value);
+  updateDetails();
+}
+
+async function loadRunList() {
+  setStatus('Loading runs…');
+  const response = await fetch('/api/runs?limit=100'), runs = await response.json();
+  el('recent-runs').innerHTML = runs.map(run => {
+    const pair = run.sample_b ? `${run.sample_a} + ${run.sample_b}` : run.sample_a;
+    return `<option value="${run.run_id}">${run.run_id} · ${run.mode} · ${pair}</option>`;
+  }).join('');
+  if (runs.length) el('load-run-id').value = runs[0].run_id;
+  setStatus(`${runs.length} cached runs available`);
+}
+
+function setSidebarMode(mode) {
+  const loading = mode === 'load';
+  el('generate-pane').hidden = loading; el('load-pane').hidden = !loading;
+  el('generate-tab').classList.toggle('active', !loading); el('load-tab').classList.toggle('active', loading);
+  el('generate-tab').setAttribute('aria-selected', String(!loading)); el('load-tab').setAttribute('aria-selected', String(loading));
+  if (loading) loadRunList().catch(error => setStatus(error.message, true));
+}
+
+function updateDetails() {
+  const ids = el('mode').value === 'matrix' ? ['sample-a', 'sample-b'] : ['sample-a'];
+  el('sample-details').innerHTML = ids.map((id, index) => {
+    const sample = state.samples.find(value => value.motion_id === el(id).value);
+    return sample ? `<div class="sample-detail"><strong>${index ? 'B' : 'A'} · ${sample.motion_id}</strong>${escapeHtml(sample.caption)}<br>${sample.frames} IMU frames</div>` : '';
+  }).join('');
+}
+
+el('mode').addEventListener('change', () => { el('sample-b-row').hidden = el('mode').value !== 'matrix'; updateDetails(); });
+el('split').addEventListener('change', loadSamples);
+el('sample-a').addEventListener('change', updateDetails);
+el('sample-b').addEventListener('change', updateDetails);
+el('randomize').addEventListener('click', randomizeSamples);
+el('generate-tab').addEventListener('click', () => setSidebarMode('generate'));
+el('load-tab').addEventListener('click', () => setSidebarMode('load'));
+el('recent-runs').addEventListener('change', () => el('load-run-id').value = el('recent-runs').value);
+el('load-run').addEventListener('click', async () => {
+  const runId = el('load-run-id').value.trim();
+  if (!runId) return;
+  setStatus('Loading cached run…');
+  try {
+    const response = await fetch(`/api/runs/${encodeURIComponent(runId)}`), data = await response.json();
+    if (!response.ok) throw new Error(data.detail || 'Run not found');
+    setResult(data); setStatus(`Run ${data.run_id} loaded`);
+  } catch (error) { setStatus(error.message, true); }
+});
+
+el('generate-form').addEventListener('submit', async event => {
+  event.preventDefault();
+  const button = el('generate');
+  button.disabled = true;
+  setStatus('Generating on GPU…');
+  const payload = {
+    mode: el('mode').value, split: el('split').value, sample_a: el('sample-a').value,
+    sample_b: el('mode').value === 'matrix' ? el('sample-b').value : null,
+    sensor_config: el('sensor').value, seed: Number(el('seed').value),
+    text_scale: Number(el('text-scale').value), imu_scale: Number(el('imu-scale').value), device: el('device').value
+  };
+  try {
+    const response = await fetch('/api/generate', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload) });
+    const data = await response.json();
+    if (!response.ok) throw new Error(data.detail || 'Generation failed');
+    setResult(data);
+    setStatus(`Run ${data.run_id} ready`);
+  } catch (error) { setStatus(error.message, true); }
+  finally { button.disabled = false; }
+});
+
+function setResult(result) {
+  state.result = result; state.frame = 0; state.playing = false; state.panels = [];
+  el('run-id').textContent = result.run_id; el('empty').hidden = true;
+  el('timeline').max = result.frame_count - 1; el('timeline').value = 0; el('play').textContent = '▶';
+  if (result.request.mode === 'matrix') {
+    const groundTruth = result.panels.slice(0, 2).map((panel, index) => panelMarkup(panel, index)).join('');
+    const combinations = result.panels.slice(2).map((panel, offset) => panelMarkup(panel, offset + 2)).join('');
+    const info = `<article class="matrix-empty"><strong>None + None</strong><dl><dt>Run</dt><dd>${escapeHtml(result.run_id)}</dd><dt>Seed</dt><dd>${result.request.seed}</dd><dt>Text scale</dt><dd>${result.request.text_scale}</dd><dt>IMU scale</dt><dd>${result.request.imu_scale}</dd><dt>Sensors</dt><dd>${escapeHtml(result.request.sensor_config)}</dd></dl></article>`;
+    el('panels').innerHTML = `<section class="gt-row">${groundTruth}</section><div class="matrix-scroll"><section class="matrix-grid">${info}${combinations}</section></div>`;
+  } else {
+    el('panels').innerHTML = `${summaryMarkup(result)}<section class="four-way-grid">${result.panels.map((panel, index) => panelMarkup(panel, index)).join('')}</section>`;
+  }
+  result.panels.forEach((panel, index) => setupMotionCanvas(panel, el(`motion-${index}`)));
+  renderIMU(result); renderFrame();
+}
+
+function summaryMarkup(result) {
+  const sample = result.samples.A;
+  return `<section class="run-summary"><span>Sample<strong>${escapeHtml(sample.motion_id)}</strong></span><span>Split<strong>${escapeHtml(result.request.split)}</strong></span><span>Sensors<strong>${escapeHtml(result.request.sensor_config)}</strong></span><span>Guidance<strong>Text ${result.request.text_scale} · IMU ${result.request.imu_scale}</strong></span><span>Seed<strong>${result.request.seed}</strong></span></section>`;
+}
+
+function panelMarkup(panel, index) {
+  return `<article class="motion-panel"><header><h3>${escapeHtml(panel.label)}</h3><div class="tags"><span class="tag ${panel.text_source ? '' : 'none'}">Text ${panel.text_source || 'None'}</span><span class="tag ${panel.imu_source ? '' : 'none'}">IMU ${panel.imu_source || 'None'}</span></div><p title="${escapeHtml(panel.caption || '')}">${escapeHtml(panel.caption || panel.kind.replace('_', ' '))}</p></header><canvas id="motion-${index}" width="480" height="355"></canvas></article>`;
+}
+
+function setupMotionCanvas(panel, canvas) {
+  const view = { panel, canvas, yaw: -0.7, pitch: 0.12, dragging: false, x: 0, y: 0 };
+  canvas.addEventListener('pointerdown', e => { view.dragging = true; view.x = e.clientX; view.y = e.clientY; canvas.setPointerCapture(e.pointerId); });
+  canvas.addEventListener('pointermove', e => { if (!view.dragging) return; view.yaw += (e.clientX - view.x) * .01; view.pitch = Math.max(-.6, Math.min(.6, view.pitch + (e.clientY - view.y) * .006)); view.x = e.clientX; view.y = e.clientY; drawMotion(view); });
+  canvas.addEventListener('pointerup', () => view.dragging = false);
+  state.panels.push(view);
+}
+
+function drawMotion(view) {
+  const { canvas, panel, yaw, pitch } = view, ctx = canvas.getContext('2d');
+  const joints = panel.motion[Math.min(state.frame, panel.motion.length - 1)], root = joints[0];
+  ctx.clearRect(0,0,canvas.width,canvas.height); ctx.strokeStyle = '#e4e9eb'; ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.moveTo(40, canvas.height-42); ctx.lineTo(canvas.width-40, canvas.height-42); ctx.stroke();
+  const projected = joints.map(joint => {
+    const x = joint[0]-root[0], y=joint[1], z=joint[2]-root[2];
+    const rx = x*Math.cos(yaw)-z*Math.sin(yaw), rz=x*Math.sin(yaw)+z*Math.cos(yaw);
+    const ry = y*Math.cos(pitch)-rz*Math.sin(pitch);
+    return [canvas.width/2 + rx*105, canvas.height-40-ry*105];
+  });
+  ctx.strokeStyle = colors[panel.kind] || colors.generated; ctx.lineWidth = 5; ctx.lineCap='round'; ctx.lineJoin='round';
+  for (const chain of chains) { ctx.beginPath(); chain.forEach((joint,index) => index ? ctx.lineTo(...projected[joint]) : ctx.moveTo(...projected[joint])); ctx.stroke(); }
+  ctx.fillStyle='#17202a'; ctx.font='12px system-ui';
+  const travel = Math.hypot(joints[0][0]-panel.motion[0][0][0], joints[0][2]-panel.motion[0][0][2]);
+  ctx.fillText(`root travel ${travel.toFixed(2)} m`, 12, 20);
+}
+
+function renderIMU(result) {
+  el('imu-section').hidden = false;
+  el('imu-panels').innerHTML = Object.keys(result.imu).map(key => `<article class="imu-panel"><h3>IMU ${key} · ${result.request.sensor_config}</h3><canvas id="imu-${key}" width="800" height="170"></canvas></article>`).join('');
+  Object.entries(result.imu).forEach(([key,value]) => drawSignal(el(`imu-${key}`), value.acceleration));
+}
+
+function drawSignal(canvas, signal) {
+  const ctx=canvas.getContext('2d'), w=canvas.width, h=canvas.height, colors=['#d1495b','#2e8b57','#247ba0'];
+  const max=Math.max(1,...signal.flat().map(Math.abs)); ctx.clearRect(0,0,w,h); ctx.strokeStyle='#e2e7e9'; ctx.beginPath(); ctx.moveTo(0,h/2);ctx.lineTo(w,h/2);ctx.stroke();
+  for(let c=0;c<3;c++){ctx.strokeStyle=colors[c];ctx.lineWidth=1.5;ctx.beginPath();signal.forEach((v,i)=>{const x=i/(signal.length-1)*w,y=h/2-v[c]/max*(h*.42);i?ctx.lineTo(x,y):ctx.moveTo(x,y)});ctx.stroke();}
+}
+
+function renderFrame() {
+  if (!state.result) return; state.panels.forEach(drawMotion);
+  el('timeline').value=state.frame; el('time').value=`${(state.frame/state.result.fps).toFixed(2)} s`;
+}
+function tick(time) { if(state.playing&&state.result){const step=(time-state.lastTime)/1000*state.result.fps*Number(el('speed').value);if(step>=1){state.frame=(state.frame+Math.floor(step))%state.result.frame_count;state.lastTime=time;renderFrame();}}requestAnimationFrame(tick); }
+el('play').addEventListener('click',()=>{state.playing=!state.playing;state.lastTime=performance.now();el('play').textContent=state.playing?'❚❚':'▶';});
+el('timeline').addEventListener('input',()=>{state.frame=Number(el('timeline').value);renderFrame();});
+function setPanelSize(value) {
+  const size = Math.max(220, Math.min(620, Number(value)));
+  document.documentElement.style.setProperty('--panel-size', `${size}px`);
+  el('panel-size').value = size;
+}
+el('panel-size').addEventListener('input', () => setPanelSize(el('panel-size').value));
+document.querySelector('main').addEventListener('wheel', event => {
+  if (!event.ctrlKey || !state.result) return;
+  event.preventDefault();
+  setPanelSize(Number(el('panel-size').value) + (event.deltaY < 0 ? 20 : -20));
+}, { passive: false });
+function setStatus(message,error=false){el('status').textContent=message;el('status').style.borderColor=error?'#d1495b':'#1abc9c';}
+function escapeHtml(value){return String(value).replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));}
+loadSamples().catch(error=>setStatus(error.message,true)); requestAnimationFrame(tick);

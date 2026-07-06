@@ -164,20 +164,46 @@ conda run -n itm python scripts/cache_text_embeddings.py \
   --device cuda:0
 ```
 
-Export qualitative GT / IMU-only / text+IMU comparisons from matched temporal
-checkpoints. The script selects examples where text helps most, hurts most, and
-a seeded random subset; it writes both animations and raw prediction arrays:
+Export qualitative GT / text-only / IMU-only / text+IMU comparisons from
+matched temporal checkpoints. The script selects examples where fusion helps
+most, hurts most, and a seeded random subset; it writes animations and raw
+prediction arrays:
 
 ```bash
 conda run -n itm python scripts/visualize_temporal_comparison.py \
+  --text-checkpoint outputs/neural/temporal_clip_vitl14_text_only_gpu0.pt \
   --imu-checkpoint outputs/neural/temporal_imu_only_wrists_gpu0.pt \
-  --conditioned-checkpoint outputs/neural/temporal_distilbert_wrists_gpu0.pt \
+  --conditioned-checkpoint outputs/neural/temporal_clip_vitl14_wrists_gpu0.pt \
   --manifest outputs/manifests/test.jsonl \
   --imu-cache-manifest outputs/manifests/test_imu_cache.jsonl \
-  --text-cache outputs/text_embeddings/test_distilbert.npz \
-  --output-dir outputs/visualizations/wrists_distilbert \
+  --text-cache outputs/text_embeddings/test_clip_vitl14.npz \
+  --output-dir outputs/visualizations/wrists_clip_vitl14_four_way \
   --device cuda:0
 ```
+
+The animation also plots one synchronized IMU trace. It defaults to the first
+sensor used by the conditioned checkpoint (left wrist for the two-wrist model).
+Use `--imu-display-slot 5` to show the right wrist instead. The title records
+all conditioned sensors plus the displayed cache slot and HumanML joint index.
+
+Generate the single-head-IMU comparison with human-readable panel labels:
+
+```bash
+conda run -n itm python scripts/visualize_temporal_comparison.py \
+  --text-checkpoint outputs/neural/temporal_clip_vitl14_text_only_gpu0.pt \
+  --imu-checkpoint outputs/neural/temporal_imu_only_head_gpu0.pt \
+  --conditioned-checkpoint outputs/neural/temporal_clip_vitl14_head_gpu0.pt \
+  --manifest outputs/manifests/test.jsonl \
+  --imu-cache-manifest outputs/manifests/test_imu_cache.jsonl \
+  --text-cache outputs/text_embeddings/test_clip_vitl14.npz \
+  --output-dir outputs/visualizations/head_clip_vitl14_four_way \
+  --imu-display-slot 3 \
+  --device cuda:0
+```
+
+New experiments use frozen CLIP as the primary text encoder. Existing
+DistilBERT runs are retained as an encoder ablation but are not expanded to new
+sensor configurations.
 
 Select cached sensors by zero-based slot for sparse-IMU ablations. The default
 cache order is pelvis, left ankle, right ankle, head, left wrist, right wrist:
@@ -213,3 +239,87 @@ conda run -n itm python -m pytest tests
 ## Data Policy
 
 Use symlinks, hard links, or reflinks for large datasets where possible. Do not copy large datasets into this repository. Do not download multi-GB datasets or checkpoints without confirming storage location and expected size first.
+
+## Generative Baselines
+
+Build an SMPL-based standard IMU cache (`30` FPS for IMUPoser, `20` FPS for
+MDM control):
+
+```bash
+conda run -n itm python scripts/build_standard_imu_cache.py \
+  --manifest outputs/manifests/train.jsonl \
+  --index /home/a200/0proj/datasets/mdm-need/HumanML3D/index.csv \
+  --amass-root /home/a200/0proj/datasets/AMASS \
+  --cache-manifest outputs/manifests/train_standard_imu.jsonl \
+  --device cuda:0
+```
+
+Run and render the official MDM checkpoint without editing its repository:
+
+```bash
+conda run -n itm python scripts/run_mdm.py sample \
+  --model_path outputs/mdm/checkpoints/humanml_trans_enc_512/model000475000.pt \
+  --text_prompt "a person walks forward, turns left, and sits down" \
+  --motion_length 6 --num_repetitions 3 --guidance_param 2.5 --device 0 \
+  --output_dir outputs/mdm/text_only
+conda run -n itm python scripts/render_mdm_results.py \
+  --results outputs/mdm/text_only/results.npy \
+  --output outputs/mdm/text_only/comparison.gif
+```
+
+Train and evaluate the flexible IMUPoser baseline:
+
+```bash
+conda run -n itm python scripts/train_flexible_imu_poser.py \
+  --train-cache-manifest outputs/manifests/train_standard_imu.jsonl \
+  --eval-cache-manifest outputs/manifests/val_standard_imu.jsonl \
+  --sensor-configs head,wrists --device cuda:0
+conda run -n itm python scripts/evaluate_flexible_imu_poser.py \
+  --checkpoint outputs/imu_poser/flexible_imu_poser.pt \
+  --cache-manifest outputs/manifests/val_standard_imu.jsonl \
+  --output outputs/imu_poser/eval.json --device cuda:0
+```
+
+Train the frozen-MDM IMU adapters on GPU 1 (change `--device` after checking
+current utilization):
+
+```bash
+conda run -n itm python scripts/train_mdm_imu_control.py \
+  --mdm-checkpoint /home/a200/mount/a40/relatedworks/mdm/motion-diffusion-model/save/humanml_trans_enc_512/model000475000.pt \
+  --mdm-args /home/a200/mount/a40/relatedworks/mdm/motion-diffusion-model/save/humanml_trans_enc_512/args.json \
+  --manifest outputs/manifests_full/train.jsonl \
+  --standard-imu-manifest outputs/manifests_full/train_standard_imu.jsonl \
+  --sensor-configs head,wrists --epochs 5 --batch-size 16 \
+  --device cuda:1 --output outputs/mdm_control/stage1_full_pilot_v2.pt
+```
+
+Counterfactual sampling uses a JSON case list and shared diffusion noise:
+
+```bash
+conda run -n itm python scripts/sample_mdm_imu_control.py \
+  --control-checkpoint outputs/mdm_control/stage1_full_pilot_v2.pt \
+  --mdm-args /home/a200/mount/a40/relatedworks/mdm/motion-diffusion-model/save/humanml_trans_enc_512/args.json \
+  --standard-imu-manifest outputs/manifests_full/train_standard_imu.jsonl \
+  --spec outputs/mdm_control/qualitative/same_text_different_imu/head_spec.json \
+  --output outputs/mdm_control/qualitative/same_text_different_imu/head_results.npz \
+  --seed 1234 --text-scale 2.5 --imu-scale 1.0 --device cuda:1
+```
+
+Render with `scripts/render_mdm_imu_control.py`; use
+`scripts/render_mdm_imu_four_way.py` for GT / MDM / IMUPoser / ITM. See
+`docs/BASELINE_RESET_PROGRESS_2026-07-02.md` for pilot results and limitations.
+
+## Interactive Demo
+
+Start the local/LAN condition lab:
+
+```bash
+conda run --no-capture-output -n itm uvicorn itm.demo.app:app \
+  --host 0.0.0.0 --port 8001
+```
+
+Open `http://localhost:8001` on this machine or
+`http://<server-lan-ip>:8001` from another machine. The demo supports a
+GT/Text-only/IMU-only/Text+IMU comparison and the eight non-empty combinations
+of Text `{None,A,B}` × IMU `{None,A,B}`. Runs are cached under
+`outputs/demo_runs/<run_id>/` and can be reopened by run ID without inference.

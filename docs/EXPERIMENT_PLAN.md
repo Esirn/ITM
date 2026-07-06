@@ -1,5 +1,10 @@
 # ITM Experiment Plan
 
+> Implementation now follows a gated baseline reset: official MDM must serve as
+> Text-only, and the flexible SMPL IMU-only model must pass its quality gate
+> before formal Text+IMU training. The earlier regression Transformer is a
+> lower-bound sanity check only.
+
 ## Positioning
 
 ITM should be framed as **IMU-guided text-to-motion generation**, not as another text-assisted sparse-IMU reconstruction method. Text controls semantic intent; sparse IMU controls physical and temporal details. This avoids directly colliding with Spatial-Related Sensors Matters and Ego4o.

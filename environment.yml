@@ -7,10 +7,19 @@ dependencies:
   - numpy
   - matplotlib
   - pillow
+  - scipy
+  - scikit-learn
   - pytest
   - tomli
   - tqdm
   - pyyaml
+  - fastapi
+  - uvicorn
   - pip:
       - -e .
       - transformers>=4.44,<4.50
+      - blobfile
+      - click==8.1.8
+      - h5py
+      - smplx
+      - spacy==3.8.7

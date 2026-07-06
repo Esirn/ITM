@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ITM Condition Lab</title>
+  <link rel="stylesheet" href="/static/style.css?v=3">
+</head>
+<body>
+  <header>
+    <div><strong>ITM</strong><span>Condition Lab</span></div>
+    <code id="run-id">No run</code>
+  </header>
+  <div class="workspace">
+    <aside>
+      <div class="mode-tabs" role="tablist">
+        <button id="generate-tab" class="active" type="button" role="tab" aria-selected="true">Generate</button>
+        <button id="load-tab" type="button" role="tab" aria-selected="false">Load</button>
+      </div>
+      <section id="generate-pane">
+       <form id="generate-form">
+        <label>Comparison
+          <select id="mode">
+            <option value="four_way">Four-way</option>
+            <option value="matrix">3 × 3 matrix</option>
+          </select>
+        </label>
+        <div class="two-col">
+          <label>Split
+            <select id="split"><option>test</option><option>val</option><option>train</option></select>
+          </label>
+          <label>Sensors
+            <select id="sensor"><option value="head">Head</option><option value="wrists">Wrists</option></select>
+          </label>
+        </div>
+        <label>Sample A
+          <select id="sample-a"></select>
+        </label>
+        <label id="sample-b-row" hidden>Sample B
+          <select id="sample-b"></select>
+        </label>
+        <button id="randomize" type="button" title="Choose random samples">↻ Randomize samples</button>
+        <div class="two-col">
+          <label>Text scale<input id="text-scale" type="number" min="0" max="10" step="0.1" value="2.5"></label>
+          <label>IMU scale<input id="imu-scale" type="number" min="0" max="10" step="0.1" value="1.0"></label>
+        </div>
+        <div class="two-col">
+          <label>Seed<input id="seed" type="number" value="1234"></label>
+          <label>Device<input id="device" value="cuda:1"></label>
+        </div>
+        <button class="primary" id="generate" type="submit">Generate</button>
+       </form>
+       <section id="sample-details"></section>
+      </section>
+      <section id="load-pane" hidden>
+        <label>Recent runs<select id="recent-runs"></select></label>
+        <div class="run-loader"><input id="load-run-id" placeholder="Run ID"><button id="load-run" type="button">Load</button></div>
+      </section>
+      <div id="status" role="status">Ready</div>
+    </aside>
+    <main>
+      <div class="toolbar">
+        <button id="play" class="icon" title="Play or pause">▶</button>
+        <input id="timeline" type="range" min="0" max="1" value="0">
+        <output id="time">0.00 s</output>
+        <select id="speed" title="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select>
+        <label class="panel-size-control" title="Panel size; Ctrl + mouse wheel over results also works">Size<input id="panel-size" type="range" min="220" max="620" step="20" value="300"></label>
+      </div>
+      <div id="empty">Generate a comparison to begin.</div>
+      <div id="panels"></div>
+      <section id="imu-section" hidden>
+        <h2>IMU signals</h2>
+        <div id="imu-panels"></div>
+      </section>
+    </main>
+  </div>
+  <script src="/static/app.js?v=3"></script>
+</body>
+</html>
