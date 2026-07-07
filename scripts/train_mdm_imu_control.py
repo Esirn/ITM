@@ -67,7 +67,7 @@ def main() -> int:
     from utils.model_util import create_model_and_diffusion, load_model_wo_clip
 
     mdm_options = json.loads(mdm_args_path.read_text())
-    mdm_options.setdefault("unconstrained", False)
+    _set_mdm_compatibility_defaults(mdm_options)
     mdm_args = SimpleNamespace(**mdm_options)
     data_stub = SimpleNamespace(dataset=SimpleNamespace(num_actions=1))
     model, diffusion = create_model_and_diffusion(mdm_args, data_stub)
@@ -343,6 +343,13 @@ def _legacy_compatibility():
             setattr(np, name, value)
     if not hasattr(inspect, "getargspec"):
         inspect.getargspec = inspect.getfullargspec
+
+
+def _set_mdm_compatibility_defaults(options):
+    options.setdefault("unconstrained", False)
+    options.setdefault("text_encoder_type", "clip")
+    options.setdefault("pos_embed_max_len", 5000)
+    options.setdefault("mask_frames", False)
 
 
 if __name__ == "__main__":

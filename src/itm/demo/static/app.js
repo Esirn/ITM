@@ -29,14 +29,17 @@ function randomizeSamples() {
 }
 
 async function loadRunList() {
-  setStatus('Loading runs…');
-  const response = await fetch('/api/runs?limit=100'), runs = await response.json();
+  const source = el('load-source').value;
+  setStatus(`Loading ${source === 'experiments' ? 'experiment results' : 'runs'}…`);
+  const endpoint = source === 'experiments' ? '/api/experiments?limit=200' : '/api/runs?limit=100';
+  const response = await fetch(endpoint), runs = await response.json();
   el('recent-runs').innerHTML = runs.map(run => {
-    const pair = run.sample_b ? `${run.sample_a} + ${run.sample_b}` : run.sample_a;
-    return `<option value="${run.run_id}">${run.run_id} · ${run.mode} · ${pair}</option>`;
+    const pair = run.sample_b ? `${run.sample_a} + ${run.sample_b}` : (run.sample_a || run.sensor_config || '');
+    const metrics = run.active_sensor_error == null ? '' : ` · err ${Number(run.active_sensor_error).toFixed(3)} · jerk ${Number(run.jerk_ratio).toFixed(2)}`;
+    return `<option value="${escapeHtml(run.run_id)}">${escapeHtml(run.run_id)} · ${escapeHtml(run.mode)} · ${escapeHtml(pair)}${metrics}</option>`;
   }).join('');
   if (runs.length) el('load-run-id').value = runs[0].run_id;
-  setStatus(`${runs.length} cached runs available`);
+  setStatus(`${runs.length} cached ${source === 'experiments' ? 'experiment results' : 'runs'} available`);
 }
 
 function setSidebarMode(mode) {
@@ -62,14 +65,17 @@ el('sample-b').addEventListener('change', updateDetails);
 el('randomize').addEventListener('click', randomizeSamples);
 el('generate-tab').addEventListener('click', () => setSidebarMode('generate'));
 el('load-tab').addEventListener('click', () => setSidebarMode('load'));
+el('load-source').addEventListener('change', loadRunList);
 el('recent-runs').addEventListener('change', () => el('load-run-id').value = el('recent-runs').value);
 el('load-run').addEventListener('click', async () => {
   const runId = el('load-run-id').value.trim();
   if (!runId) return;
-  setStatus('Loading cached run…');
+  const source = el('load-source').value;
+  setStatus(`Loading cached ${source === 'experiments' ? 'experiment' : 'run'}…`);
   try {
-    const response = await fetch(`/api/runs/${encodeURIComponent(runId)}`), data = await response.json();
-    if (!response.ok) throw new Error(data.detail || 'Run not found');
+    const encoded = source === 'experiments' ? runId.split('/').map(encodeURIComponent).join('/') : encodeURIComponent(runId);
+    const response = await fetch(`/api/${source}/${encoded}`), data = await response.json();
+    if (!response.ok) throw new Error(data.detail || 'Result not found');
     setResult(data); setStatus(`Run ${data.run_id} loaded`);
   } catch (error) { setStatus(error.message, true); }
 });
@@ -99,21 +105,30 @@ function setResult(result) {
   state.result = result; state.frame = 0; state.playing = false; state.panels = [];
   el('run-id').textContent = result.run_id; el('empty').hidden = true;
   el('timeline').max = result.frame_count - 1; el('timeline').value = 0; el('play').textContent = '▶';
-  if (result.request.mode === 'matrix') {
+  const isMatrix = result.request.mode === 'matrix' || result.request.experiment === 'matrix';
+  if (isMatrix) {
     const groundTruth = result.panels.slice(0, 2).map((panel, index) => panelMarkup(panel, index)).join('');
     const combinations = result.panels.slice(2).map((panel, offset) => panelMarkup(panel, offset + 2)).join('');
-    const info = `<article class="matrix-empty"><strong>None + None</strong><dl><dt>Run</dt><dd>${escapeHtml(result.run_id)}</dd><dt>Seed</dt><dd>${result.request.seed}</dd><dt>Text scale</dt><dd>${result.request.text_scale}</dd><dt>IMU scale</dt><dd>${result.request.imu_scale}</dd><dt>Sensors</dt><dd>${escapeHtml(result.request.sensor_config)}</dd></dl></article>`;
+    const info = `<article class="matrix-empty"><strong>None + None</strong>${runInfoList(result)}</article>`;
     el('panels').innerHTML = `<section class="gt-row">${groundTruth}</section><div class="matrix-scroll"><section class="matrix-grid">${info}${combinations}</section></div>`;
   } else {
-    el('panels').innerHTML = `${summaryMarkup(result)}<section class="four-way-grid">${result.panels.map((panel, index) => panelMarkup(panel, index)).join('')}</section>`;
+    const gridClass = result.panels.length > 4 ? 'experiment-grid' : 'four-way-grid';
+    el('panels').innerHTML = `${summaryMarkup(result)}<section class="${gridClass}">${result.panels.map((panel, index) => panelMarkup(panel, index)).join('')}</section>`;
   }
   result.panels.forEach((panel, index) => setupMotionCanvas(panel, el(`motion-${index}`)));
   renderIMU(result); renderFrame();
 }
 
 function summaryMarkup(result) {
-  const sample = result.samples.A;
-  return `<section class="run-summary"><span>Sample<strong>${escapeHtml(sample.motion_id)}</strong></span><span>Split<strong>${escapeHtml(result.request.split)}</strong></span><span>Sensors<strong>${escapeHtml(result.request.sensor_config)}</strong></span><span>Guidance<strong>Text ${result.request.text_scale} · IMU ${result.request.imu_scale}</strong></span><span>Seed<strong>${result.request.seed}</strong></span></section>`;
+  const sampleKeys = Object.keys(result.samples || {});
+  const sampleText = sampleKeys.length <= 2 ? sampleKeys.map(key => result.samples[key].motion_id || key).join(' + ') : `${sampleKeys.length} samples`;
+  const sensor = result.request.sensor_config || 'mixed';
+  const experiment = result.request.experiment || result.request.mode || 'result';
+  return `<section class="run-summary"><span>Experiment<strong>${escapeHtml(experiment)}</strong></span><span>Sample<strong>${escapeHtml(sampleText || 'n/a')}</strong></span><span>Split<strong>${escapeHtml(result.request.split || 'n/a')}</strong></span><span>Sensors<strong>${escapeHtml(sensor)}</strong></span><span>Guidance<strong>Text ${result.request.text_scale} · IMU ${result.request.imu_scale}</strong></span><span>Seed<strong>${result.request.seed}</strong></span></section>`;
+}
+
+function runInfoList(result) {
+  return `<dl><dt>Run</dt><dd>${escapeHtml(result.run_id)}</dd><dt>Seed</dt><dd>${result.request.seed}</dd><dt>Text scale</dt><dd>${result.request.text_scale}</dd><dt>IMU scale</dt><dd>${result.request.imu_scale}</dd><dt>Sensors</dt><dd>${escapeHtml(result.request.sensor_config || 'mixed')}</dd></dl>`;
 }
 
 function panelMarkup(panel, index) {
@@ -148,8 +163,9 @@ function drawMotion(view) {
 
 function renderIMU(result) {
   el('imu-section').hidden = false;
-  el('imu-panels').innerHTML = Object.keys(result.imu).map(key => `<article class="imu-panel"><h3>IMU ${key} · ${result.request.sensor_config}</h3><canvas id="imu-${key}" width="800" height="170"></canvas></article>`).join('');
-  Object.entries(result.imu).forEach(([key,value]) => drawSignal(el(`imu-${key}`), value.acceleration));
+  const entries = Object.entries(result.imu).slice(0, 12);
+  el('imu-panels').innerHTML = entries.map(([key, value], index) => `<article class="imu-panel"><h3>IMU ${escapeHtml(key)} · ${escapeHtml(result.request.sensor_config || value.sensor_config || '')}</h3><canvas id="imu-${index}" width="800" height="170"></canvas></article>`).join('');
+  entries.forEach(([,value], index) => drawSignal(el(`imu-${index}`), value.acceleration));
 }
 
 function drawSignal(canvas, signal) {

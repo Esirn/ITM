@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ITM Condition Lab</title>
-  <link rel="stylesheet" href="/static/style.css?v=3">
+  <link rel="stylesheet" href="/static/style.css?v=4">
 </head>
 <body>
   <header>
@@ -53,7 +53,13 @@
        <section id="sample-details"></section>
       </section>
       <section id="load-pane" hidden>
-        <label>Recent runs<select id="recent-runs"></select></label>
+        <label>Source
+          <select id="load-source">
+            <option value="runs">Demo runs</option>
+            <option value="experiments">Experiment results</option>
+          </select>
+        </label>
+        <label>Recent results<select id="recent-runs"></select></label>
         <div class="run-loader"><input id="load-run-id" placeholder="Run ID"><button id="load-run" type="button">Load</button></div>
       </section>
       <div id="status" role="status">Ready</div>
@@ -74,6 +80,6 @@
       </section>
     </main>
   </div>
-  <script src="/static/app.js?v=3"></script>
+  <script src="/static/app.js?v=4"></script>
 </body>
 </html>

@@ -24,8 +24,12 @@ from itm.data.manifest import read_jsonl
 ROOT = Path(__file__).resolve().parents[3]
 STATIC = ROOT / "src/itm/demo/static"
 RUN_ROOT = ROOT / "outputs/demo_runs"
+EXPERIMENT_ROOT = ROOT / "outputs/mdm_control/experiments"
 CONTROL_CHECKPOINT = ROOT / "outputs/mdm_control/stage1_full_pilot_v2.pt"
-MDM_ARGS = Path("/home/a200/mount/a40/relatedworks/mdm/motion-diffusion-model/save/humanml_trans_enc_512/args.json")
+MDM_ASSET_DIR = ROOT / "outputs/mdm/checkpoints_extracted/humanml_trans_enc_512"
+MDM_ARGS = MDM_ASSET_DIR / "args.json"
+MDM_CHECKPOINT = MDM_ASSET_DIR / "model000475000.pt"
+MDM_ROOT = ROOT / "outputs/mdm/runtime_root"
 MANIFESTS = {
     split: ROOT / f"outputs/manifests_full/{split}.jsonl"
     for split in ("train", "val", "test")
@@ -63,6 +67,7 @@ def index():
 def config():
     return {
         "checkpoint": str(CONTROL_CHECKPOINT),
+        "mdm_checkpoint": str(MDM_CHECKPOINT),
         "default_device": "cuda:1",
         "splits": ["test", "val", "train"],
         "sensor_configs": ["head", "wrists"],
@@ -119,6 +124,46 @@ def get_run(run_id: str):
     return json.loads(path.read_text())
 
 
+@app.get("/api/experiments")
+def list_experiments(limit: int = Query(100, ge=1, le=500)):
+    rows = []
+    if not EXPERIMENT_ROOT.exists():
+        return rows
+    for result_path in EXPERIMENT_ROOT.glob("**/result.json"):
+        run_dir = result_path.parent
+        request_path = run_dir / "request.json"
+        metrics_path = run_dir / "metrics.json"
+        try:
+            request = json.loads(request_path.read_text()) if request_path.exists() else {}
+            metrics = json.loads(metrics_path.read_text()) if metrics_path.exists() else {}
+            relative = run_dir.relative_to(EXPERIMENT_ROOT).as_posix()
+            aggregate = metrics.get("aggregate", {}).get("all", {})
+            rows.append({
+                "run_id": relative,
+                "mode": request.get("experiment", request.get("mode", "experiment")),
+                "split": request.get("split"),
+                "sample_a": request.get("sample_a"),
+                "sample_b": request.get("sample_b"),
+                "sensor_config": request.get("sensor_config"),
+                "active_sensor_error": aggregate.get("active_sensor_trajectory_error_m"),
+                "jerk_ratio": aggregate.get("jerk_ratio"),
+                "updated_at": run_dir.stat().st_mtime,
+            })
+        except (OSError, ValueError, json.JSONDecodeError):
+            continue
+    rows.sort(key=lambda row: row["updated_at"], reverse=True)
+    return rows[:limit]
+
+
+@app.get("/api/experiments/{run_path:path}")
+def get_experiment(run_path: str):
+    relative = _safe_relative_path(run_path)
+    path = EXPERIMENT_ROOT / relative / "result.json"
+    if not path.exists():
+        raise HTTPException(404, "Experiment result not found")
+    return json.loads(path.read_text())
+
+
 @app.post("/api/generate")
 def generate(request: GenerateRequest):
     if not CONTROL_CHECKPOINT.exists():
@@ -148,6 +193,8 @@ def generate(request: GenerateRequest):
         str(ROOT / "scripts/sample_mdm_imu_control.py"),
         "--control-checkpoint", str(CONTROL_CHECKPOINT),
         "--mdm-args", str(MDM_ARGS),
+        "--mdm-checkpoint", str(MDM_CHECKPOINT),
+        "--mdm-root", str(MDM_ROOT),
         "--standard-imu-manifest", str(IMU_MANIFESTS[request.split]),
         "--spec", str(run_dir / "spec.json"),
         "--output", str(run_dir / "results.npz"),
@@ -248,3 +295,10 @@ def _serialize_result(run_id, request, catalog, result_path):
         "panels": panels,
         "imu": imu,
     }
+
+
+def _safe_relative_path(value: str) -> Path:
+    path = Path(value)
+    if path.is_absolute() or any(part in ("", ".", "..") for part in path.parts):
+        raise HTTPException(400, "Invalid experiment path")
+    return path

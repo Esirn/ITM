@@ -24,6 +24,7 @@ from itm.models.torch_frame_baseline import require_torch
 
 
 SENSOR_CONFIGS = {"head": (4,), "wrists": (0, 1)}
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def parse_args():
@@ -33,9 +34,14 @@ def parse_args():
     parser.add_argument("--standard-imu-manifest", required=True)
     parser.add_argument("--spec", required=True, help="JSON list of case objects")
     parser.add_argument("--output", required=True)
+    parser.add_argument(
+        "--mdm-checkpoint",
+        default=None,
+        help="Optional override for the MDM checkpoint path stored in the control checkpoint.",
+    )
     parser.add_argument("--mean", default="/home/a200/0proj/datasets/all/Mean.npy")
     parser.add_argument("--std", default="/home/a200/0proj/datasets/all/Std.npy")
-    parser.add_argument("--mdm-root", default="/home/a200/mount/a40/relatedworks/mdm/motion-diffusion-model")
+    parser.add_argument("--mdm-root", default=str(ROOT / "outputs/mdm/runtime_root"))
     parser.add_argument("--seed", type=int, default=1234)
     parser.add_argument("--text-scale", type=float, default=2.5)
     parser.add_argument("--imu-scale", type=float, default=1.0)
@@ -61,8 +67,13 @@ def main():
     mean_path = Path(args.mean).resolve()
     std_path = Path(args.std).resolve()
     control_state = torch.load(control_checkpoint_path, map_location="cpu", weights_only=True)
+    mdm_checkpoint_path = (
+        Path(args.mdm_checkpoint).resolve()
+        if args.mdm_checkpoint
+        else Path(control_state["mdm_checkpoint"]).resolve()
+    )
     mdm_options = json.loads(mdm_args_path.read_text())
-    mdm_options.setdefault("unconstrained", False)
+    _set_mdm_compatibility_defaults(mdm_options)
     root = Path(args.mdm_root).resolve()
     os.chdir(root)
     sys.path.insert(0, str(root))
@@ -72,7 +83,7 @@ def main():
     mdm_args = SimpleNamespace(**mdm_options)
     data_stub = SimpleNamespace(dataset=SimpleNamespace(num_actions=1))
     model, diffusion = create_model_and_diffusion(mdm_args, data_stub)
-    mdm_state = torch.load(control_state["mdm_checkpoint"], map_location="cpu", weights_only=True)
+    mdm_state = torch.load(mdm_checkpoint_path, map_location="cpu", weights_only=True)
     load_model_wo_clip(model, mdm_state)
     config = MDMIMUControlConfig(**control_state["control_config"])
     controlled, encoder, hook = install_imu_control(model, config)
@@ -130,6 +141,7 @@ def main():
     output.parent.mkdir(parents=True, exist_ok=True)
     metadata = {
         "control_checkpoint": str(control_checkpoint_path),
+        "mdm_checkpoint": str(mdm_checkpoint_path),
         "seed": args.seed,
         "text_scale": args.text_scale,
         "imu_scale": args.imu_scale,
@@ -233,6 +245,13 @@ def _legacy_compatibility():
             setattr(np, name, value)
     if not hasattr(inspect, "getargspec"):
         inspect.getargspec = inspect.getfullargspec
+
+
+def _set_mdm_compatibility_defaults(options):
+    options.setdefault("unconstrained", False)
+    options.setdefault("text_encoder_type", "clip")
+    options.setdefault("pos_embed_max_len", 5000)
+    options.setdefault("mask_frames", False)
 
 
 if __name__ == "__main__":

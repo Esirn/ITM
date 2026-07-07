@@ -1,5 +1,8 @@
 import importlib.util
+import json
+import tempfile
 import unittest
+from pathlib import Path
 from types import SimpleNamespace
 
 
@@ -44,6 +47,44 @@ class DemoAppTest(unittest.TestCase):
         paths = [route.path for route in app.routes]
         self.assertIn("/api/runs", paths)
         self.assertLess(paths.index("/api/runs"), paths.index("/api/runs/{run_id}"))
+
+    def test_safe_experiment_paths_reject_traversal(self):
+        from fastapi import HTTPException
+        from itm.demo.app import _safe_relative_path
+
+        self.assertEqual(_safe_relative_path("matrix_test_head/pair_001"), Path("matrix_test_head/pair_001"))
+        with self.assertRaises(HTTPException):
+            _safe_relative_path("../secret")
+        with self.assertRaises(HTTPException):
+            _safe_relative_path("/tmp/secret")
+
+    def test_list_experiments_reads_result_directories(self):
+        import itm.demo.app as demo_app
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            run = root / "matrix_test_head/pair_001"
+            run.mkdir(parents=True)
+            (run / "request.json").write_text(json.dumps({
+                "experiment": "matrix",
+                "split": "test",
+                "sample_a": "A",
+                "sample_b": "B",
+                "sensor_config": "head",
+            }))
+            (run / "metrics.json").write_text(json.dumps({
+                "aggregate": {"all": {"active_sensor_trajectory_error_m": 0.1, "jerk_ratio": 1.2}}
+            }))
+            (run / "result.json").write_text(json.dumps({"run_id": "x"}))
+            old_root = demo_app.EXPERIMENT_ROOT
+            try:
+                demo_app.EXPERIMENT_ROOT = root
+                rows = demo_app.list_experiments(limit=100)
+            finally:
+                demo_app.EXPERIMENT_ROOT = old_root
+            self.assertEqual(rows[0]["run_id"], "matrix_test_head/pair_001")
+            self.assertEqual(rows[0]["mode"], "matrix")
+            self.assertEqual(rows[0]["active_sensor_error"], 0.1)
 
 
 if __name__ == "__main__":
