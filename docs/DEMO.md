@@ -28,5 +28,24 @@ The sidebar separates Generate and Load modes. Load lists recent completed runs
 and also accepts an explicit run ID; switching modes does not clear the result
 currently playing.
 
+For experiment results, Load mode has a `Result set` selector. It maps to:
+
+- `stage1`: `outputs/mdm_control/experiments/`
+- `stage2`: `outputs/mdm_control/experiments_stage2/`
+- `stage2b`: `outputs/mdm_control/experiments_stage2b_balanced_b/`
+- `stage3`: `outputs/mdm_control/experiments_stage3_upper_body/`
+
+Enter the path relative to the selected result set, for example:
+
+```text
+same_text_different_imu/test_walk_head_wrists
+matrix_test_wrists/pair_001_004488_004222
+same_head_imu_different_text/test_prompts
+```
+
+Loaded experiment pages display the selected root and relative path in the
+result summary, so Stage-1/Stage-2b examples with identical experiment names
+are not confused.
+
 Only one generation runs at a time. A concurrent request receives HTTP 409;
 the service never terminates or preempts another GPU process.

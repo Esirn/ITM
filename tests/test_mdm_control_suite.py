@@ -7,6 +7,8 @@ import numpy as np
 
 from itm.experiments.mdm_control_suite import (
     SampleRecord,
+    active_sensor_acceleration_error,
+    active_sensor_acceleration_ratio,
     arm_swing_proxy,
     compute_run_metrics,
     pairwise_root_relative_distance,
@@ -29,6 +31,29 @@ class MDMControlSuiteTest(unittest.TestCase):
         self.assertGreater(arm_swing_proxy(joints), 0.0)
         self.assertGreaterEqual(step_frequency_proxy(joints, fps=20.0), 0.0)
         self.assertGreaterEqual(pairwise_root_relative_distance(np.stack([joints, joints + 0.1])), 0.0)
+        acceleration = np.zeros((frames, 6, 3), dtype=np.float32)
+        sensor_mask = np.zeros(6, dtype=np.float32)
+        sensor_mask[4] = 1.0
+        self.assertGreaterEqual(
+            active_sensor_acceleration_error(
+                joints,
+                acceleration,
+                sensor_mask,
+                sensor_config="head",
+                fps=20.0,
+            ),
+            0.0,
+        )
+        self.assertGreaterEqual(
+            active_sensor_acceleration_ratio(
+                joints,
+                acceleration,
+                sensor_mask,
+                sensor_config="head",
+                fps=20.0,
+            ),
+            0.0,
+        )
 
     def test_compute_and_serialize_result(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -78,6 +103,8 @@ class MDMControlSuiteTest(unittest.TestCase):
             metrics = compute_run_metrics(path)
             self.assertEqual(len(metrics["cases"]), 2)
             self.assertIn("pairwise_root_relative_distance_m", metrics)
+            self.assertIn("active_sensor_acceleration_error_mps2", metrics["cases"][0])
+            self.assertIn("active_sensor_acceleration_ratio", metrics["cases"][0])
             result = serialize_browser_result(
                 run_id="run",
                 request={"experiment": "matrix"},

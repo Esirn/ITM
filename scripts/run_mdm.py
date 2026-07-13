@@ -9,6 +9,7 @@ import os
 from pathlib import Path
 import runpy
 import sys
+import types
 
 import numpy as np
 
@@ -33,6 +34,7 @@ def main() -> int:
     if not (root / "model/mdm.py").exists():
         raise FileNotFoundError(f"Invalid MDM root: {root}")
     _enable_legacy_numpy_aliases()
+    _install_optional_dependency_stubs()
     os.chdir(root)
     sys.path.insert(0, str(root))
     sys.argv = [MODULES[args.mode], *forwarded]
@@ -59,6 +61,19 @@ def _enable_legacy_numpy_aliases() -> None:
     for name, value in aliases.items():
         if name not in np.__dict__:
             setattr(np, name, value)
+
+
+def _install_optional_dependency_stubs() -> None:
+    if "wandb" not in sys.modules:
+        wandb = types.ModuleType("wandb")
+        wandb.login = lambda *args, **kwargs: None
+        wandb.init = lambda *args, **kwargs: None
+        wandb.log = lambda *args, **kwargs: None
+        wandb.finish = lambda *args, **kwargs: None
+        wandb.watch = lambda *args, **kwargs: None
+        wandb.Video = lambda *args, **kwargs: None
+        wandb.config = types.SimpleNamespace(update=lambda *args, **kwargs: None)
+        sys.modules["wandb"] = wandb
 
 
 if __name__ == "__main__":

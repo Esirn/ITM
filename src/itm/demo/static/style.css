@@ -37,6 +37,8 @@ main { min-width: 0; padding: 14px 18px 30px; overflow: auto; }
 #panels { margin-top: 12px; }
 .run-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, auto)); gap: 14px; padding: 10px 12px; margin-bottom: 10px; border-left: 3px solid #168f79; background: #fff; font-size: 11px; }
 .run-summary span { color: #69767d; }.run-summary strong { display: block; margin-top: 2px; color: #17202a; }
+.run-summary .source-path { grid-column: 1 / -1; min-width: 0; }
+.run-summary .source-path strong { overflow-wrap: anywhere; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; }
 .four-way-grid { display: grid; grid-template-columns: repeat(auto-fill, var(--panel-size)); gap: 10px; align-items: start; }
 .experiment-grid { display: grid; grid-template-columns: repeat(auto-fill, var(--panel-size)); gap: 10px; align-items: start; }
 .gt-row { display: grid; grid-template-columns: repeat(2, var(--panel-size)); gap: 10px; margin-bottom: 16px; overflow-x: auto; }

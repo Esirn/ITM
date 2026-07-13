@@ -76,13 +76,14 @@ class DemoAppTest(unittest.TestCase):
                 "aggregate": {"all": {"active_sensor_trajectory_error_m": 0.1, "jerk_ratio": 1.2}}
             }))
             (run / "result.json").write_text(json.dumps({"run_id": "x"}))
-            old_root = demo_app.EXPERIMENT_ROOT
+            old_roots = demo_app.EXPERIMENT_ROOTS
             try:
-                demo_app.EXPERIMENT_ROOT = root
-                rows = demo_app.list_experiments(limit=100)
+                demo_app.EXPERIMENT_ROOTS = {"stage1": root}
+                rows = demo_app.list_experiments(root="stage1", limit=100)
             finally:
-                demo_app.EXPERIMENT_ROOT = old_root
+                demo_app.EXPERIMENT_ROOTS = old_roots
             self.assertEqual(rows[0]["run_id"], "matrix_test_head/pair_001")
+            self.assertEqual(rows[0]["root_key"], "stage1")
             self.assertEqual(rows[0]["mode"], "matrix")
             self.assertEqual(rows[0]["active_sensor_error"], 0.1)
 

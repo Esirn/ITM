@@ -24,7 +24,12 @@ from itm.data.manifest import read_jsonl
 ROOT = Path(__file__).resolve().parents[3]
 STATIC = ROOT / "src/itm/demo/static"
 RUN_ROOT = ROOT / "outputs/demo_runs"
-EXPERIMENT_ROOT = ROOT / "outputs/mdm_control/experiments"
+EXPERIMENT_ROOTS = {
+    "stage1": ROOT / "outputs/mdm_control/experiments",
+    "stage2": ROOT / "outputs/mdm_control/experiments_stage2",
+    "stage2b": ROOT / "outputs/mdm_control/experiments_stage2b_balanced_b",
+    "stage3": ROOT / "outputs/mdm_control/experiments_stage3_upper_body",
+}
 CONTROL_CHECKPOINT = ROOT / "outputs/mdm_control/stage1_full_pilot_v2.pt"
 MDM_ASSET_DIR = ROOT / "outputs/mdm/checkpoints_extracted/humanml_trans_enc_512"
 MDM_ARGS = MDM_ASSET_DIR / "args.json"
@@ -71,6 +76,10 @@ def config():
         "default_device": "cuda:1",
         "splits": ["test", "val", "train"],
         "sensor_configs": ["head", "wrists"],
+        "experiment_roots": [
+            {"key": key, "path": _display_path(path)}
+            for key, path in EXPERIMENT_ROOTS.items()
+        ],
     }
 
 
@@ -125,21 +134,27 @@ def get_run(run_id: str):
 
 
 @app.get("/api/experiments")
-def list_experiments(limit: int = Query(100, ge=1, le=500)):
+def list_experiments(
+    root: str = Query("stage1", max_length=40),
+    limit: int = Query(100, ge=1, le=500),
+):
+    root_key, experiment_root = _experiment_root(root)
     rows = []
-    if not EXPERIMENT_ROOT.exists():
+    if not experiment_root.exists():
         return rows
-    for result_path in EXPERIMENT_ROOT.glob("**/result.json"):
+    for result_path in experiment_root.glob("**/result.json"):
         run_dir = result_path.parent
         request_path = run_dir / "request.json"
         metrics_path = run_dir / "metrics.json"
         try:
             request = json.loads(request_path.read_text()) if request_path.exists() else {}
             metrics = json.loads(metrics_path.read_text()) if metrics_path.exists() else {}
-            relative = run_dir.relative_to(EXPERIMENT_ROOT).as_posix()
+            relative = run_dir.relative_to(experiment_root).as_posix()
             aggregate = metrics.get("aggregate", {}).get("all", {})
             rows.append({
                 "run_id": relative,
+                "root_key": root_key,
+                "root_path": _display_path(experiment_root),
                 "mode": request.get("experiment", request.get("mode", "experiment")),
                 "split": request.get("split"),
                 "sample_a": request.get("sample_a"),
@@ -156,12 +171,21 @@ def list_experiments(limit: int = Query(100, ge=1, le=500)):
 
 
 @app.get("/api/experiments/{run_path:path}")
-def get_experiment(run_path: str):
+def get_experiment(run_path: str, root: str = Query("stage1", max_length=40)):
+    root_key, experiment_root = _experiment_root(root)
     relative = _safe_relative_path(run_path)
-    path = EXPERIMENT_ROOT / relative / "result.json"
+    path = experiment_root / relative / "result.json"
     if not path.exists():
         raise HTTPException(404, "Experiment result not found")
-    return json.loads(path.read_text())
+    result = json.loads(path.read_text())
+    result["source"] = {
+        "kind": "experiment",
+        "root_key": root_key,
+        "root_path": _display_path(experiment_root),
+        "relative_path": relative.as_posix(),
+        "result_path": _display_path(path),
+    }
+    return result
 
 
 @app.post("/api/generate")
@@ -302,3 +326,16 @@ def _safe_relative_path(value: str) -> Path:
     if path.is_absolute() or any(part in ("", ".", "..") for part in path.parts):
         raise HTTPException(400, "Invalid experiment path")
     return path
+
+
+def _experiment_root(value: str) -> tuple[str, Path]:
+    if value not in EXPERIMENT_ROOTS:
+        raise HTTPException(400, f"Unknown experiment root: {value}")
+    return value, EXPERIMENT_ROOTS[value]
+
+
+def _display_path(path: Path) -> str:
+    try:
+        return path.resolve().relative_to(ROOT).as_posix()
+    except ValueError:
+        return str(path)

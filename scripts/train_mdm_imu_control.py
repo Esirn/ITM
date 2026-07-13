@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Stage-1 training for frozen MDM with zero-initialized IMU control adapters."""
+"""Train frozen MDM with zero-initialized IMU control adapters."""
 
 from __future__ import annotations
 
@@ -15,6 +15,7 @@ import sys
 import numpy as np
 
 from itm.data.dataset import TextIMUMotionDataset
+from itm.data.humanml_torch import recover_from_ric_torch
 from itm.data.manifest import read_jsonl
 from itm.data.standard_imu import sensor_mask
 from itm.models.mdm_imu_control import MDMIMUControlConfig, install_imu_control
@@ -22,6 +23,8 @@ from itm.models.torch_frame_baseline import require_torch
 
 
 SENSOR_CONFIGS = {"head": (4,), "wrists": (0, 1)}
+SENSOR_SLOT_TO_JOINT = {0: 20, 1: 21, 4: 15}
+UPPER_BODY_JOINTS = (16, 17, 18, 19, 20, 21)
 
 
 def parse_args() -> argparse.Namespace:
@@ -34,12 +37,17 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--mean", default="/home/a200/0proj/datasets/all/Mean.npy")
     parser.add_argument("--std", default="/home/a200/0proj/datasets/all/Std.npy")
     parser.add_argument("--sensor-configs", default="head,wrists")
-    parser.add_argument("--output", default="outputs/mdm_control/stage1.pt")
-    parser.add_argument("--epochs", type=int, default=1)
-    parser.add_argument("--batch-size", type=int, default=4)
-    parser.add_argument("--learning-rate", type=float, default=1e-4)
+    parser.add_argument("--output", default="outputs/mdm_control/stage2_consistency_smooth.pt")
+    parser.add_argument("--epochs", type=int, default=8)
+    parser.add_argument("--batch-size", type=int, default=16)
+    parser.add_argument("--learning-rate", type=float, default=5e-5)
     parser.add_argument("--max-records", type=int)
-    parser.add_argument("--resume")
+    parser.add_argument("--resume", default="outputs/mdm_control/stage1_full_pilot_v2.pt")
+    parser.add_argument("--trajectory-loss-weight", type=float, default=1.0)
+    parser.add_argument("--velocity-loss-weight", type=float, default=0.2)
+    parser.add_argument("--jerk-loss-weight", type=float, default=0.01)
+    parser.add_argument("--upper-body-loss-weight", type=float, default=0.0)
+    parser.add_argument("--upper-body-velocity-loss-weight", type=float, default=0.0)
     parser.add_argument("--min-free-gib", type=float, default=4.0)
     parser.add_argument("--seed", type=int, default=1234)
     parser.add_argument("--device", default="cuda:1")
@@ -58,9 +66,12 @@ def main() -> int:
     imu_manifest_path = Path(args.standard_imu_manifest).resolve()
     mean_path = Path(args.mean).resolve()
     std_path = Path(args.std).resolve()
+    motion_mean = np.load(mean_path).astype(np.float32)
+    motion_std = np.load(std_path).astype(np.float32)
     output_path = Path(args.output).resolve()
     mdm_checkpoint_path = Path(args.mdm_checkpoint).resolve()
     mdm_args_path = Path(args.mdm_args).resolve()
+    resume_path = Path(args.resume).resolve() if args.resume else None
     root = Path(args.mdm_root).resolve()
     os.chdir(root)
     sys.path.insert(0, str(root))
@@ -91,8 +102,8 @@ def main() -> int:
     dataset = _PairedDataset(
         manifest_path,
         imu_manifest_path,
-        np.load(mean_path).astype(np.float32),
-        np.load(std_path).astype(np.float32),
+        motion_mean,
+        motion_std,
         configs,
         args.max_records,
         workspace_root,
@@ -106,39 +117,89 @@ def main() -> int:
     optimizer = torch.optim.AdamW(trainable, lr=args.learning_rate)
     history = []
     start_epoch = 1
-    if args.resume:
-        resume = torch.load(args.resume, map_location="cpu", weights_only=True)
+    if resume_path is not None:
+        resume = torch.load(resume_path, map_location="cpu", weights_only=True)
         imu_encoder.load_state_dict(resume["imu_encoder"])
         controlled.adapters.load_state_dict(resume["adapters"])
-        if "optimizer" in resume:
-            optimizer.load_state_dict(resume["optimizer"])
         history = list(resume.get("history", []))
         start_epoch = int(resume.get("epoch", len(history))) + 1
         normalization = resume["imu_normalization"]
         dataset.set_normalization(normalization)
+        # Stage-2 commonly changes the loss mix and learning rate, so keep the
+        # weights but start with a fresh optimizer unless explicitly extended later.
+    mean_tensor = torch.from_numpy(motion_mean).view(1, -1, 1, 1).to(device)
+    std_tensor = torch.from_numpy(motion_std).view(1, -1, 1, 1).to(device)
     for epoch in range(start_epoch, args.epochs + 1):
-        total_loss = 0.0
+        totals = {
+            "total_loss": 0.0,
+            "diffusion_loss": 0.0,
+            "trajectory_loss": 0.0,
+            "velocity_loss": 0.0,
+            "jerk_loss": 0.0,
+            "upper_body_loss": 0.0,
+            "upper_body_velocity_loss": 0.0,
+        }
         total_items = 0
         for motion, y in loader:
             motion = motion.to(device)
             y = {key: (value.to(device) if torch.is_tensor(value) else value) for key, value in y.items()}
             timesteps = torch.randint(0, diffusion.num_timesteps, (len(motion),), device=device)
+            noise = torch.randn_like(motion)
             losses = diffusion.training_losses(
                 model,
                 motion,
                 timesteps,
                 model_kwargs={"y": y},
+                noise=noise,
             )
-            loss = losses["loss"].mean()
+            diffusion_loss = losses["loss"].mean()
+            auxiliary = _stage2_auxiliary_losses(
+                model,
+                diffusion,
+                motion,
+                timesteps,
+                noise,
+                y,
+                mean_tensor,
+                std_tensor,
+            )
+            trajectory_loss = auxiliary["trajectory_loss"]
+            velocity_loss = auxiliary["velocity_loss"]
+            jerk_loss = auxiliary["jerk_loss"]
+            upper_body_loss = auxiliary["upper_body_loss"]
+            upper_body_velocity_loss = auxiliary["upper_body_velocity_loss"]
+            loss = (
+                diffusion_loss
+                + args.trajectory_loss_weight * trajectory_loss
+                + args.velocity_loss_weight * velocity_loss
+                + args.jerk_loss_weight * jerk_loss
+                + args.upper_body_loss_weight * upper_body_loss
+                + args.upper_body_velocity_loss_weight * upper_body_velocity_loss
+            )
             optimizer.zero_grad(set_to_none=True)
             loss.backward()
             torch.nn.utils.clip_grad_norm_(trainable, 1.0)
             optimizer.step()
-            total_loss += float(loss.item()) * len(motion)
+            batch = len(motion)
+            totals["total_loss"] += float(loss.item()) * batch
+            totals["diffusion_loss"] += float(diffusion_loss.item()) * batch
+            totals["trajectory_loss"] += float(trajectory_loss.item()) * batch
+            totals["velocity_loss"] += float(velocity_loss.item()) * batch
+            totals["jerk_loss"] += float(jerk_loss.item()) * batch
+            totals["upper_body_loss"] += float(upper_body_loss.item()) * batch
+            totals["upper_body_velocity_loss"] += float(upper_body_velocity_loss.item()) * batch
             total_items += len(motion)
-        epoch_loss = total_loss / total_items
-        history.append({"epoch": epoch, "loss": epoch_loss})
-        print(f"epoch={epoch} loss={epoch_loss:.6f}")
+        epoch_values = {key: value / total_items for key, value in totals.items()}
+        history.append({"epoch": epoch, "loss": epoch_values["total_loss"], **epoch_values})
+        print(
+            f"epoch={epoch} loss={epoch_values['total_loss']:.6f} "
+            f"diffusion={epoch_values['diffusion_loss']:.6f} "
+            f"trajectory={epoch_values['trajectory_loss']:.6f} "
+            f"velocity={epoch_values['velocity_loss']:.6f} "
+            f"jerk={epoch_values['jerk_loss']:.6f} "
+            f"upper_body={epoch_values['upper_body_loss']:.6f} "
+            f"upper_body_velocity={epoch_values['upper_body_velocity_loss']:.6f}"
+        )
         _save_checkpoint(
             output_path.with_name(f"{output_path.stem}_epoch{epoch:03d}{output_path.suffix}"),
             torch,
@@ -269,6 +330,138 @@ def _parse_configs(value):
     if unknown or not names:
         raise ValueError(f"Invalid sensor configs {unknown}; choose from {sorted(SENSOR_CONFIGS)}")
     return {name: SENSOR_CONFIGS[name] for name in names}
+
+
+def _stage2_auxiliary_losses(
+    model,
+    diffusion,
+    motion,
+    timesteps,
+    noise,
+    y,
+    mean,
+    std,
+):
+    torch = require_torch()
+    x_t = diffusion.q_sample(motion, timesteps, noise=noise)
+    model_output = model(x_t, diffusion._scale_timesteps(timesteps), y=y)
+    predicted = _recover_joints_from_normalized_motion(model_output, mean, std)
+    target = _recover_joints_from_normalized_motion(motion, mean, std)
+    frame_mask = y["mask"][:, 0, 0].bool()
+    joint_weights = active_sensor_joint_weights(y["sensor_mask"], joint_count=22).to(
+        predicted.device
+    )
+    head_only = head_only_mask(y["sensor_mask"]).to(predicted.device)
+    return stage2_control_losses(predicted, target, frame_mask, joint_weights, head_only)
+
+
+def _recover_joints_from_normalized_motion(motion, mean, std):
+    features = (motion * std + mean).squeeze(2).transpose(1, 2)
+    return recover_from_ric_torch(features, joints_num=22)
+
+
+def active_sensor_joint_weights(sensor_mask, *, joint_count: int = 22):
+    """Map active standard IMU slots to HumanML3D joints."""
+
+    torch = require_torch()
+    weights = torch.zeros(
+        sensor_mask.shape[0],
+        joint_count,
+        dtype=torch.float32,
+        device=sensor_mask.device,
+    )
+    for slot, joint in SENSOR_SLOT_TO_JOINT.items():
+        if slot < sensor_mask.shape[1] and joint < joint_count:
+            weights[:, joint] = torch.maximum(
+                weights[:, joint], sensor_mask[:, slot].to(weights.dtype)
+            )
+    return weights
+
+
+def head_only_mask(sensor_mask):
+    """Return samples whose only trained active slot is head."""
+
+    active = sensor_mask > 0.5
+    has_head = active[:, 4] if active.shape[1] > 4 else active.new_zeros(active.shape[0])
+    has_wrist = active[:, 0] if active.shape[1] > 0 else active.new_zeros(active.shape[0])
+    if active.shape[1] > 1:
+        has_wrist = has_wrist | active[:, 1]
+    return has_head & ~has_wrist
+
+
+def stage2_control_losses(predicted, target, frame_mask, joint_weights, head_only=None):
+    """Compute active sensor, upper-body, and excess-jerk losses."""
+
+    trajectory = _masked_joint_mse(predicted, target, frame_mask, joint_weights)
+    velocity = _masked_joint_mse(
+        predicted[:, 1:] - predicted[:, :-1],
+        target[:, 1:] - target[:, :-1],
+        frame_mask[:, 1:] & frame_mask[:, :-1],
+        joint_weights,
+    )
+    jerk = _excess_jerk_loss(predicted, target, frame_mask)
+    if head_only is None:
+        head_only = frame_mask.new_zeros((frame_mask.shape[0],), dtype=frame_mask.dtype)
+    upper_body_weights = upper_body_joint_weights(
+        head_only.to(predicted.device), joint_count=predicted.shape[2]
+    )
+    pred_rel = predicted - predicted[:, :, :1]
+    target_rel = target - target[:, :, :1]
+    upper_body = _masked_joint_mse(pred_rel, target_rel, frame_mask, upper_body_weights)
+    upper_body_velocity = _masked_joint_mse(
+        pred_rel[:, 1:] - pred_rel[:, :-1],
+        target_rel[:, 1:] - target_rel[:, :-1],
+        frame_mask[:, 1:] & frame_mask[:, :-1],
+        upper_body_weights,
+    )
+    return {
+        "trajectory_loss": trajectory,
+        "velocity_loss": velocity,
+        "jerk_loss": jerk,
+        "upper_body_loss": upper_body,
+        "upper_body_velocity_loss": upper_body_velocity,
+    }
+
+
+def upper_body_joint_weights(head_only, *, joint_count: int = 22):
+    torch = require_torch()
+    weights = torch.zeros(
+        head_only.shape[0],
+        joint_count,
+        dtype=torch.float32,
+        device=head_only.device,
+    )
+    for joint in UPPER_BODY_JOINTS:
+        if joint < joint_count:
+            weights[:, joint] = head_only.to(weights.dtype)
+    return weights
+
+
+def _masked_joint_mse(predicted, target, frame_mask, joint_weights):
+    weight = frame_mask[:, :, None].to(predicted.dtype) * joint_weights[:, None]
+    squared = (predicted - target).pow(2).sum(dim=-1)
+    denominator = weight.sum().clamp_min(1.0)
+    return (squared * weight).sum() / denominator
+
+
+def _excess_jerk_loss(predicted, target, frame_mask):
+    torch = require_torch()
+    if predicted.shape[1] < 4:
+        return predicted.new_zeros(())
+    pred_jerk = predicted[:, 3:] - 3 * predicted[:, 2:-1] + 3 * predicted[:, 1:-2] - predicted[:, :-3]
+    target_jerk = target[:, 3:] - 3 * target[:, 2:-1] + 3 * target[:, 1:-2] - target[:, :-3]
+    pred_norm = torch.linalg.norm(pred_jerk, dim=-1)
+    target_norm = torch.linalg.norm(target_jerk, dim=-1)
+    excess = torch.relu(pred_norm - target_norm)
+    valid = (
+        frame_mask[:, 3:]
+        & frame_mask[:, 2:-1]
+        & frame_mask[:, 1:-2]
+        & frame_mask[:, :-3]
+    )
+    weight = valid[:, :, None].to(predicted.dtype)
+    denominator = (weight.sum() * predicted.shape[2]).clamp_min(1.0)
+    return (excess.pow(2) * weight).sum() / denominator
 
 
 def _resample_imu(acceleration, orientation, source_fps, target_fps):

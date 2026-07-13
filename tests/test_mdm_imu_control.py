@@ -1,6 +1,11 @@
 import importlib.util
+from pathlib import Path
 import unittest
 
+import numpy as np
+
+from itm.data.humanml import recover_from_ric
+from itm.data.humanml_torch import recover_from_ric_torch
 from itm.models.mdm_imu_control import (
     MDMIMUControlConfig,
     attach_zero_control_adapters,
@@ -9,6 +14,16 @@ from itm.models.mdm_imu_control import (
     make_text_imu_guidance_model,
     make_imu_control_encoder,
 )
+
+
+def _load_train_helpers():
+    spec = importlib.util.spec_from_file_location(
+        "train_mdm_imu_control", Path(__file__).resolve().parents[1] / "scripts/train_mdm_imu_control.py"
+    )
+    module = importlib.util.module_from_spec(spec)
+    assert spec.loader is not None
+    spec.loader.exec_module(module)
+    return module
 
 
 @unittest.skipIf(importlib.util.find_spec("torch") is None, "PyTorch is not installed")
@@ -106,6 +121,59 @@ class MDMIMUControlTest(unittest.TestCase):
         )
         self.assertTrue(torch.all(value == 10.0))
         self.assertEqual(base.calls, [(True, True), (False, True), (False, False)])
+
+    def test_torch_recover_from_ric_matches_numpy(self):
+        import torch
+
+        features = np.random.default_rng(1234).normal(size=(2, 8, 263)).astype(np.float32)
+        numpy_joints = recover_from_ric(features)
+        torch_joints = recover_from_ric_torch(torch.from_numpy(features)).numpy()
+        self.assertTrue(np.allclose(torch_joints, numpy_joints, atol=1e-5))
+
+    def test_stage2_auxiliary_losses_are_finite_with_padding(self):
+        import torch
+
+        helpers = _load_train_helpers()
+        predicted = torch.zeros(2, 5, 22, 3)
+        target = torch.zeros_like(predicted)
+        predicted[0, :, 15, 0] = torch.linspace(0.0, 0.4, 5)
+        predicted[1, :, 20, 1] = torch.linspace(0.0, 0.2, 5)
+        frame_mask = torch.tensor(
+            [[True, True, True, True, True], [True, True, True, False, False]]
+        )
+        sensor_mask = torch.zeros(2, 6)
+        sensor_mask[0, 4] = 1.0
+        sensor_mask[1, 0] = 1.0
+        sensor_mask[1, 1] = 1.0
+        weights = helpers.active_sensor_joint_weights(sensor_mask)
+        head_only = helpers.head_only_mask(sensor_mask)
+        upper_body_weights = helpers.upper_body_joint_weights(head_only)
+        self.assertEqual(float(weights[0, 15]), 1.0)
+        self.assertEqual(float(weights[1, 20]), 1.0)
+        self.assertEqual(float(weights[1, 21]), 1.0)
+        self.assertTrue(bool(head_only[0]))
+        self.assertFalse(bool(head_only[1]))
+        self.assertGreater(float(upper_body_weights[0, 20]), 0.0)
+        self.assertEqual(float(upper_body_weights[1, 20]), 0.0)
+        losses = helpers.stage2_control_losses(predicted, target, frame_mask, weights, head_only)
+        for value in losses.values():
+            self.assertTrue(torch.isfinite(value))
+        self.assertGreater(float(losses["trajectory_loss"]), 0.0)
+        self.assertGreaterEqual(float(losses["upper_body_loss"]), 0.0)
+
+    def test_stage2_auxiliary_losses_handle_short_sequences(self):
+        import torch
+
+        helpers = _load_train_helpers()
+        predicted = torch.zeros(1, 3, 22, 3)
+        target = torch.zeros_like(predicted)
+        frame_mask = torch.ones(1, 3, dtype=torch.bool)
+        sensor_mask = torch.zeros(1, 6)
+        sensor_mask[0, 4] = 1.0
+        weights = helpers.active_sensor_joint_weights(sensor_mask)
+        head_only = helpers.head_only_mask(sensor_mask)
+        losses = helpers.stage2_control_losses(predicted, target, frame_mask, weights, head_only)
+        self.assertEqual(float(losses["jerk_loss"]), 0.0)
 
 
 if __name__ == "__main__":

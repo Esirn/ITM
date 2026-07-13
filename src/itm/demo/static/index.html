@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ITM Condition Lab</title>
-  <link rel="stylesheet" href="/static/style.css?v=4">
+  <link rel="stylesheet" href="/static/style.css?v=5">
 </head>
 <body>
   <header>
@@ -59,6 +59,14 @@
             <option value="experiments">Experiment results</option>
           </select>
         </label>
+        <label id="experiment-root-row">Result set
+          <select id="experiment-root">
+            <option value="stage1">Stage-1 · outputs/mdm_control/experiments</option>
+            <option value="stage2">Stage-2 · outputs/mdm_control/experiments_stage2</option>
+            <option value="stage2b">Stage-2b · outputs/mdm_control/experiments_stage2b_balanced_b</option>
+            <option value="stage3">Stage-3 · outputs/mdm_control/experiments_stage3_upper_body</option>
+          </select>
+        </label>
         <label>Recent results<select id="recent-runs"></select></label>
         <div class="run-loader"><input id="load-run-id" placeholder="Run ID"><button id="load-run" type="button">Load</button></div>
       </section>
@@ -80,6 +88,6 @@
       </section>
     </main>
   </div>
-  <script src="/static/app.js?v=4"></script>
+  <script src="/static/app.js?v=5"></script>
 </body>
 </html>

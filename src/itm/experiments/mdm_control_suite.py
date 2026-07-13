@@ -133,6 +133,8 @@ def compute_run_metrics(result_path: str | Path) -> dict[str, Any]:
     with np.load(result_path) as data:
         motion = data["motion"].astype(np.float32)
         gt = data["gt"].astype(np.float32)
+        acceleration = data["acceleration"].astype(np.float32)
+        sensor_mask = data["sensor_mask"].astype(np.float32)
         metadata = json.loads(str(data["metadata"]))
 
     case_metrics = []
@@ -160,6 +162,20 @@ def compute_run_metrics(result_path: str | Path) -> dict[str, Any]:
                 ),
                 "root_relative_motion_error_m": root_relative_motion_error(generated, target),
                 "jerk_ratio": jerk_ratio(generated, target, fps=FPS),
+                "active_sensor_acceleration_error_mps2": active_sensor_acceleration_error(
+                    generated,
+                    acceleration[index],
+                    sensor_mask[index],
+                    sensor_config=sensor_config,
+                    fps=FPS,
+                ),
+                "active_sensor_acceleration_ratio": active_sensor_acceleration_ratio(
+                    generated,
+                    acceleration[index],
+                    sensor_mask[index],
+                    sensor_config=sensor_config,
+                    fps=FPS,
+                ),
                 "arm_swing_proxy_m": arm_swing_proxy(generated),
                 "root_travel_m": root_travel(generated),
                 "step_frequency_hz": step_frequency_proxy(generated, fps=FPS),
@@ -257,6 +273,58 @@ def jerk_ratio(prediction: np.ndarray, target: np.ndarray, *, fps: float) -> flo
     return numerator / denominator
 
 
+def active_sensor_acceleration_error(
+    prediction: np.ndarray,
+    target_acceleration: np.ndarray,
+    sensor_mask: np.ndarray,
+    *,
+    sensor_config: str,
+    fps: float,
+) -> float:
+    """Mean L2 error between generated active-joint and target IMU acceleration.
+
+    This is a joint-derived acceleration proxy. It is useful for paper
+    diagnostics, but it is not a full virtual-IMU orientation consistency
+    metric because the generated HumanML3D motion is not decoded to SMPL sensor
+    frames here.
+    """
+
+    pred_acc, target_acc = _active_sensor_accelerations(
+        prediction,
+        target_acceleration,
+        sensor_mask,
+        sensor_config=sensor_config,
+        fps=fps,
+    )
+    if pred_acc.size == 0:
+        return 0.0
+    return float(np.linalg.norm(pred_acc - target_acc, axis=-1).mean())
+
+
+def active_sensor_acceleration_ratio(
+    prediction: np.ndarray,
+    target_acceleration: np.ndarray,
+    sensor_mask: np.ndarray,
+    *,
+    sensor_config: str,
+    fps: float,
+) -> float:
+    """Generated/target active-sensor acceleration magnitude ratio."""
+
+    pred_acc, target_acc = _active_sensor_accelerations(
+        prediction,
+        target_acceleration,
+        sensor_mask,
+        sensor_config=sensor_config,
+        fps=fps,
+    )
+    if pred_acc.size == 0:
+        return 0.0
+    numerator = float(np.linalg.norm(pred_acc, axis=-1).mean())
+    denominator = max(float(np.linalg.norm(target_acc, axis=-1).mean()), 1e-8)
+    return numerator / denominator
+
+
 def arm_swing_proxy(joints: np.ndarray) -> float:
     values = np.asarray(joints, dtype=np.float32)
     left = values[:, WRIST_JOINTS[0]] - values[:, SHOULDER_JOINTS[0]]
@@ -310,6 +378,35 @@ def _align(prediction: np.ndarray, target: np.ndarray) -> tuple[np.ndarray, np.n
     return pred[:frames, :joints], true[:frames, :joints]
 
 
+def _active_sensor_accelerations(
+    prediction: np.ndarray,
+    target_acceleration: np.ndarray,
+    sensor_mask: np.ndarray,
+    *,
+    sensor_config: str,
+    fps: float,
+) -> tuple[np.ndarray, np.ndarray]:
+    pred = np.asarray(prediction, dtype=np.float32)
+    target_acc = np.asarray(target_acceleration, dtype=np.float32)
+    mask = np.asarray(sensor_mask, dtype=np.float32)
+    if len(pred) < 3:
+        return (
+            np.zeros((0, 0, 3), dtype=np.float32),
+            np.zeros((0, 0, 3), dtype=np.float32),
+        )
+    active_slots = [slot for slot in SENSOR_SLOTS[sensor_config] if slot < len(mask) and mask[slot] > 0.5]
+    if not active_slots:
+        active_slots = list(SENSOR_SLOTS[sensor_config])
+    active_joints = SENSOR_JOINTS[sensor_config][: len(active_slots)]
+    pred_acc = np.diff(pred[:, active_joints], n=2, axis=0) * fps**2
+    target = target_acc[:, active_slots]
+    if len(target) == len(pred_acc) + 2:
+        target = target[1:-1]
+    frames = min(len(pred_acc), len(target))
+    sensors = min(pred_acc.shape[1], target.shape[1])
+    return pred_acc[:frames, :sensors], target[:frames, :sensors]
+
+
 def _mean_numeric(rows: list[dict[str, Any]]) -> dict[str, float]:
     keys = [
         "root_trajectory_error_m",
@@ -318,6 +415,8 @@ def _mean_numeric(rows: list[dict[str, Any]]) -> dict[str, float]:
         "active_sensor_trajectory_error_m",
         "root_relative_motion_error_m",
         "jerk_ratio",
+        "active_sensor_acceleration_error_mps2",
+        "active_sensor_acceleration_ratio",
         "arm_swing_proxy_m",
         "root_travel_m",
         "step_frequency_hz",
@@ -336,6 +435,8 @@ def _metric_table(rows: list[dict[str, Any]], *, include_label: bool = False) ->
         "wrist_trajectory_error_m",
         "active_sensor_trajectory_error_m",
         "jerk_ratio",
+        "active_sensor_acceleration_error_mps2",
+        "active_sensor_acceleration_ratio",
         "arm_swing_proxy_m",
         "root_travel_m",
         "step_frequency_hz",

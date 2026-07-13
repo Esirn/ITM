@@ -17,6 +17,8 @@ NUMERIC_KEYS = (
     "active_sensor_trajectory_error_m",
     "root_relative_motion_error_m",
     "jerk_ratio",
+    "active_sensor_acceleration_error_mps2",
+    "active_sensor_acceleration_ratio",
     "arm_swing_proxy_m",
     "root_travel_m",
     "step_frequency_hz",

@@ -30,13 +30,16 @@ function randomizeSamples() {
 
 async function loadRunList() {
   const source = el('load-source').value;
+  const root = el('experiment-root').value;
+  el('experiment-root-row').hidden = source !== 'experiments';
   setStatus(`Loading ${source === 'experiments' ? 'experiment results' : 'runs'}…`);
-  const endpoint = source === 'experiments' ? '/api/experiments?limit=200' : '/api/runs?limit=100';
+  const endpoint = source === 'experiments' ? `/api/experiments?root=${encodeURIComponent(root)}&limit=200` : '/api/runs?limit=100';
   const response = await fetch(endpoint), runs = await response.json();
   el('recent-runs').innerHTML = runs.map(run => {
     const pair = run.sample_b ? `${run.sample_a} + ${run.sample_b}` : (run.sample_a || run.sensor_config || '');
     const metrics = run.active_sensor_error == null ? '' : ` · err ${Number(run.active_sensor_error).toFixed(3)} · jerk ${Number(run.jerk_ratio).toFixed(2)}`;
-    return `<option value="${escapeHtml(run.run_id)}">${escapeHtml(run.run_id)} · ${escapeHtml(run.mode)} · ${escapeHtml(pair)}${metrics}</option>`;
+    const rootLabel = run.root_key ? `${run.root_key} · ` : '';
+    return `<option value="${escapeHtml(run.run_id)}">${escapeHtml(rootLabel)}${escapeHtml(run.run_id)} · ${escapeHtml(run.mode)} · ${escapeHtml(pair)}${metrics}</option>`;
   }).join('');
   if (runs.length) el('load-run-id').value = runs[0].run_id;
   setStatus(`${runs.length} cached ${source === 'experiments' ? 'experiment results' : 'runs'} available`);
@@ -66,6 +69,7 @@ el('randomize').addEventListener('click', randomizeSamples);
 el('generate-tab').addEventListener('click', () => setSidebarMode('generate'));
 el('load-tab').addEventListener('click', () => setSidebarMode('load'));
 el('load-source').addEventListener('change', loadRunList);
+el('experiment-root').addEventListener('change', loadRunList);
 el('recent-runs').addEventListener('change', () => el('load-run-id').value = el('recent-runs').value);
 el('load-run').addEventListener('click', async () => {
   const runId = el('load-run-id').value.trim();
@@ -74,7 +78,8 @@ el('load-run').addEventListener('click', async () => {
   setStatus(`Loading cached ${source === 'experiments' ? 'experiment' : 'run'}…`);
   try {
     const encoded = source === 'experiments' ? runId.split('/').map(encodeURIComponent).join('/') : encodeURIComponent(runId);
-    const response = await fetch(`/api/${source}/${encoded}`), data = await response.json();
+    const query = source === 'experiments' ? `?root=${encodeURIComponent(el('experiment-root').value)}` : '';
+    const response = await fetch(`/api/${source}/${encoded}${query}`), data = await response.json();
     if (!response.ok) throw new Error(data.detail || 'Result not found');
     setResult(data); setStatus(`Run ${data.run_id} loaded`);
   } catch (error) { setStatus(error.message, true); }
@@ -124,11 +129,15 @@ function summaryMarkup(result) {
   const sampleText = sampleKeys.length <= 2 ? sampleKeys.map(key => result.samples[key].motion_id || key).join(' + ') : `${sampleKeys.length} samples`;
   const sensor = result.request.sensor_config || 'mixed';
   const experiment = result.request.experiment || result.request.mode || 'result';
-  return `<section class="run-summary"><span>Experiment<strong>${escapeHtml(experiment)}</strong></span><span>Sample<strong>${escapeHtml(sampleText || 'n/a')}</strong></span><span>Split<strong>${escapeHtml(result.request.split || 'n/a')}</strong></span><span>Sensors<strong>${escapeHtml(sensor)}</strong></span><span>Guidance<strong>Text ${result.request.text_scale} · IMU ${result.request.imu_scale}</strong></span><span>Seed<strong>${result.request.seed}</strong></span></section>`;
+  const source = result.source || {};
+  const sourcePath = source.root_path ? `${source.root_path}/${source.relative_path || ''}` : '';
+  return `<section class="run-summary"><span>Experiment<strong>${escapeHtml(experiment)}</strong></span><span>Sample<strong>${escapeHtml(sampleText || 'n/a')}</strong></span><span>Split<strong>${escapeHtml(result.request.split || 'n/a')}</strong></span><span>Sensors<strong>${escapeHtml(sensor)}</strong></span><span>Guidance<strong>Text ${result.request.text_scale} · IMU ${result.request.imu_scale}</strong></span><span>Seed<strong>${result.request.seed}</strong></span>${sourcePath ? `<span class="source-path">Source<strong>${escapeHtml(sourcePath)}</strong></span>` : ''}</section>`;
 }
 
 function runInfoList(result) {
-  return `<dl><dt>Run</dt><dd>${escapeHtml(result.run_id)}</dd><dt>Seed</dt><dd>${result.request.seed}</dd><dt>Text scale</dt><dd>${result.request.text_scale}</dd><dt>IMU scale</dt><dd>${result.request.imu_scale}</dd><dt>Sensors</dt><dd>${escapeHtml(result.request.sensor_config || 'mixed')}</dd></dl>`;
+  const source = result.source || {};
+  const sourcePath = source.root_path ? `${source.root_path}/${source.relative_path || ''}` : '';
+  return `<dl><dt>Run</dt><dd>${escapeHtml(result.run_id)}</dd>${sourcePath ? `<dt>Source</dt><dd>${escapeHtml(sourcePath)}</dd>` : ''}<dt>Seed</dt><dd>${result.request.seed}</dd><dt>Text scale</dt><dd>${result.request.text_scale}</dd><dt>IMU scale</dt><dd>${result.request.imu_scale}</dd><dt>Sensors</dt><dd>${escapeHtml(result.request.sensor_config || 'mixed')}</dd></dl>`;
 }
 
 function panelMarkup(panel, index) {
