@@ -77,11 +77,13 @@ def serialize_browser_result(
     for index, case in enumerate(metadata["cases"]):
         first_gt_by_motion.setdefault(str(case["motion_id"]), index)
     for motion_id, index in first_gt_by_motion.items():
+        sample = samples.get(motion_id)
         panels.append(
             {
                 "label": f"Ground truth {motion_id}",
                 "kind": "ground_truth",
                 "motion_id": motion_id,
+                "caption": sample.caption if sample is not None else "",
                 "motion": gt[index].tolist(),
             }
         )

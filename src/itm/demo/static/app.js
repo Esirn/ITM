@@ -8,22 +8,24 @@ async function loadSamples() {
   setStatus('Loading samples…');
   const response = await fetch(`/api/samples?split=${state.split}&limit=2000`);
   state.samples = await response.json();
-  const chooseRandom = el('sample-a').options.length === 0;
+  const chooseRandom = !el('sample-a').value;
   for (const id of ['sample-a', 'sample-b']) {
     const selected = el(id).value;
-    el(id).innerHTML = state.samples.map(sample => `<option value="${sample.motion_id}">${sample.motion_id} · ${escapeHtml(sample.caption)}</option>`).join('');
-    if (state.samples.some(sample => sample.motion_id === selected)) el(id).value = selected;
+    el(`${id}-options`).innerHTML = state.samples.map(sample => `<option value="${sample.motion_id}">${escapeHtml(sample.caption)}</option>`).join('');
+    el(id).value = state.samples.some(sample => sample.motion_id === selected) ? selected : '';
   }
   if (chooseRandom) randomizeSamples();
-  if (el('sample-b').value === el('sample-a').value && state.samples.length > 1) el('sample-b').selectedIndex = 1;
+  if (el('sample-b').value === el('sample-a').value && state.samples.length > 1) {
+    el('sample-b').value = state.samples.find(sample => sample.motion_id !== el('sample-a').value).motion_id;
+  }
   updateDetails();
   setStatus(`${state.samples.length} samples available`);
 }
 
 function randomizeSamples() {
   if (!state.samples.length) return;
-  el('sample-a').selectedIndex = Math.floor(Math.random() * state.samples.length);
-  do { el('sample-b').selectedIndex = Math.floor(Math.random() * state.samples.length); }
+  el('sample-a').value = state.samples[Math.floor(Math.random() * state.samples.length)].motion_id;
+  do { el('sample-b').value = state.samples[Math.floor(Math.random() * state.samples.length)].motion_id; }
   while (state.samples.length > 1 && el('sample-b').value === el('sample-a').value);
   updateDetails();
 }
@@ -63,8 +65,8 @@ function updateDetails() {
 
 el('mode').addEventListener('change', () => { el('sample-b-row').hidden = el('mode').value !== 'matrix'; updateDetails(); });
 el('split').addEventListener('change', loadSamples);
-el('sample-a').addEventListener('change', updateDetails);
-el('sample-b').addEventListener('change', updateDetails);
+el('sample-a').addEventListener('input', updateDetails);
+el('sample-b').addEventListener('input', updateDetails);
 el('randomize').addEventListener('click', randomizeSamples);
 el('generate-tab').addEventListener('click', () => setSidebarMode('generate'));
 el('load-tab').addEventListener('click', () => setSidebarMode('load'));
@@ -112,13 +114,13 @@ function setResult(result) {
   el('timeline').max = result.frame_count - 1; el('timeline').value = 0; el('play').textContent = '▶';
   const isMatrix = result.request.mode === 'matrix' || result.request.experiment === 'matrix';
   if (isMatrix) {
-    const groundTruth = result.panels.slice(0, 2).map((panel, index) => panelMarkup(panel, index)).join('');
-    const combinations = result.panels.slice(2).map((panel, offset) => panelMarkup(panel, offset + 2)).join('');
+    const groundTruth = result.panels.slice(0, 2).map((panel, index) => panelMarkup(panel, index, result)).join('');
+    const combinations = result.panels.slice(2).map((panel, offset) => panelMarkup(panel, offset + 2, result)).join('');
     const info = `<article class="matrix-empty"><strong>None + None</strong>${runInfoList(result)}</article>`;
     el('panels').innerHTML = `<section class="gt-row">${groundTruth}</section><div class="matrix-scroll"><section class="matrix-grid">${info}${combinations}</section></div>`;
   } else {
     const gridClass = result.panels.length > 4 ? 'experiment-grid' : 'four-way-grid';
-    el('panels').innerHTML = `${summaryMarkup(result)}<section class="${gridClass}">${result.panels.map((panel, index) => panelMarkup(panel, index)).join('')}</section>`;
+    el('panels').innerHTML = `${summaryMarkup(result)}<section class="${gridClass}">${result.panels.map((panel, index) => panelMarkup(panel, index, result)).join('')}</section>`;
   }
   result.panels.forEach((panel, index) => setupMotionCanvas(panel, el(`motion-${index}`)));
   renderIMU(result); renderFrame();
@@ -140,8 +142,19 @@ function runInfoList(result) {
   return `<dl><dt>Run</dt><dd>${escapeHtml(result.run_id)}</dd>${sourcePath ? `<dt>Source</dt><dd>${escapeHtml(sourcePath)}</dd>` : ''}<dt>Seed</dt><dd>${result.request.seed}</dd><dt>Text scale</dt><dd>${result.request.text_scale}</dd><dt>IMU scale</dt><dd>${result.request.imu_scale}</dd><dt>Sensors</dt><dd>${escapeHtml(result.request.sensor_config || 'mixed')}</dd></dl>`;
 }
 
-function panelMarkup(panel, index) {
-  return `<article class="motion-panel"><header><h3>${escapeHtml(panel.label)}</h3><div class="tags"><span class="tag ${panel.text_source ? '' : 'none'}">Text ${panel.text_source || 'None'}</span><span class="tag ${panel.imu_source ? '' : 'none'}">IMU ${panel.imu_source || 'None'}</span></div><p title="${escapeHtml(panel.caption || '')}">${escapeHtml(panel.caption || panel.kind.replace('_', ' '))}</p></header><canvas id="motion-${index}" width="480" height="355"></canvas></article>`;
+function panelCaption(panel, result) {
+  if (panel.caption) return panel.caption;
+  const samples = result.samples || {};
+  const sourceSample = panel.text_source && samples[panel.text_source];
+  if (sourceSample && sourceSample.caption) return sourceSample.caption;
+  const motionSample = panel.motion_id && samples[panel.motion_id];
+  if (motionSample && motionSample.caption) return motionSample.caption;
+  return panel.kind.replace('_', ' ');
+}
+
+function panelMarkup(panel, index, result) {
+  const caption = panelCaption(panel, result);
+  return `<article class="motion-panel"><header><h3>${escapeHtml(panel.label)}</h3><div class="tags"><span class="tag ${panel.text_source ? '' : 'none'}">Text ${panel.text_source || 'None'}</span><span class="tag ${panel.imu_source ? '' : 'none'}">IMU ${panel.imu_source || 'None'}</span></div><p title="${escapeHtml(caption)}">${escapeHtml(caption)}</p></header><canvas id="motion-${index}" width="480" height="355"></canvas></article>`;
 }
 
 function setupMotionCanvas(panel, canvas) {

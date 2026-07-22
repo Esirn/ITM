@@ -34,10 +34,12 @@
           </label>
         </div>
         <label>Sample A
-          <select id="sample-a"></select>
+          <input id="sample-a" list="sample-a-options" autocomplete="off" placeholder="Type an ID, e.g. 006504">
+          <datalist id="sample-a-options"></datalist>
         </label>
         <label id="sample-b-row" hidden>Sample B
-          <select id="sample-b"></select>
+          <input id="sample-b" list="sample-b-options" autocomplete="off" placeholder="Type an ID">
+          <datalist id="sample-b-options"></datalist>
         </label>
         <button id="randomize" type="button" title="Choose random samples">↻ Randomize samples</button>
         <div class="two-col">
@@ -89,6 +91,6 @@
       </section>
     </main>
   </div>
-  <script src="/static/app.js?v=5"></script>
+  <script src="/static/app.js?v=7"></script>
 </body>
 </html>

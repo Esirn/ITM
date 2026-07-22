@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 import random
 import subprocess
@@ -35,7 +36,22 @@ CONTROL_CHECKPOINT = ROOT / "outputs/mdm_control/stage1_full_pilot_v2.pt"
 MDM_ASSET_DIR = ROOT / "outputs/mdm/checkpoints_extracted/humanml_trans_enc_512"
 MDM_ARGS = MDM_ASSET_DIR / "args.json"
 MDM_CHECKPOINT = MDM_ASSET_DIR / "model000475000.pt"
-MDM_ROOT = ROOT / "outputs/mdm/runtime_root"
+
+
+def _resolve_mdm_root(candidates=None):
+    configured = os.environ.get("ITM_MDM_ROOT")
+    paths = list(candidates or (
+        Path(configured) if configured else None,
+        Path("/home/a200/0relatedworks/motion-diffusion-model"),
+        Path("/home/a200/mount/a40/relatedworks/mdm/motion-diffusion-model"),
+        ROOT / "outputs/mdm/runtime_root",
+    ))
+    paths = [path for path in paths if path is not None]
+    required = Path("body_models/smpl/SMPL_NEUTRAL.pkl")
+    return next((path for path in paths if (path / required).is_file()), paths[0])
+
+
+MDM_ROOT = _resolve_mdm_root()
 MANIFESTS = {
     split: ROOT / f"outputs/manifests_full/{split}.jsonl"
     for split in ("train", "val", "test")
@@ -193,6 +209,9 @@ def get_experiment(run_path: str, root: str = Query("stage1", max_length=40)):
 def generate(request: GenerateRequest):
     if not CONTROL_CHECKPOINT.exists():
         raise HTTPException(503, f"Missing checkpoint: {CONTROL_CHECKPOINT}")
+    smpl_model = MDM_ROOT / "body_models/smpl/SMPL_NEUTRAL.pkl"
+    if not smpl_model.exists():
+        raise HTTPException(503, f"MDM root is missing SMPL assets: {MDM_ROOT}")
     catalog = _sample_catalog(request.split)
     by_id = {row["motion_id"]: row for row in catalog}
     rng = random.Random(request.seed)
@@ -258,7 +277,7 @@ def _sample_catalog(split):
             "captions": [value.caption for value in captions],
             "frames": int(available[motion_id]["num_frames"]),
         })
-    return result
+    return sorted(result, key=lambda row: row["motion_id"])
 
 
 def _build_spec(request, sample_a, sample_b):
@@ -292,11 +311,11 @@ def _serialize_result(run_id, request, catalog, result_path):
         metadata = json.loads(str(data["metadata"]))
     panels = []
     if request["mode"] == "four_way":
-        panels.append({"label": "Ground truth A", "kind": "ground_truth", "text_source": "A", "imu_source": "A", "motion": gt[0].tolist()})
+        panels.append({"label": "Ground truth A", "kind": "ground_truth", "text_source": "A", "imu_source": "A", "caption": catalog[request["sample_a"]]["caption"], "motion": gt[0].tolist()})
     else:
         panels.extend([
-            {"label": "Ground truth A", "kind": "ground_truth", "text_source": "A", "imu_source": "A", "motion": gt[0].tolist()},
-            {"label": "Ground truth B", "kind": "ground_truth", "text_source": "B", "imu_source": "B", "motion": gt[1].tolist()},
+            {"label": "Ground truth A", "kind": "ground_truth", "text_source": "A", "imu_source": "A", "caption": catalog[request["sample_a"]]["caption"], "motion": gt[0].tolist()},
+            {"label": "Ground truth B", "kind": "ground_truth", "text_source": "B", "imu_source": "B", "caption": catalog[request["sample_b"]]["caption"], "motion": gt[1].tolist()},
         ])
     for index, case in enumerate(metadata["cases"]):
         panels.append({

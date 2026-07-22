@@ -5,6 +5,8 @@ import unittest
 from pathlib import Path
 from types import SimpleNamespace
 
+import numpy as np
+
 
 @unittest.skipIf(importlib.util.find_spec("fastapi") is None, "FastAPI is not installed")
 class DemoAppTest(unittest.TestCase):
@@ -41,12 +43,82 @@ class DemoAppTest(unittest.TestCase):
         self.assertEqual((cross_ab["motion_id"], cross_ab["text"]), ("B", "text a"))
         self.assertEqual((cross_ba["motion_id"], cross_ba["text"]), ("A", "text b"))
 
+    def test_serialized_ground_truth_panels_include_sample_captions(self):
+        from itm.demo.app import _serialize_result
+
+        request = {
+            "mode": "matrix",
+            "sample_a": "A",
+            "sample_b": "B",
+            "sensor_config": "head",
+        }
+        catalog = {
+            "A": {"motion_id": "A", "caption": "text a"},
+            "B": {"motion_id": "B", "caption": "text b"},
+        }
+        cases = [
+            {"label": "None + IMU A", "text": "", "text_source": None, "imu_source": "A"},
+            {"label": "None + IMU B", "text": "", "text_source": None, "imu_source": "B"},
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            result_path = Path(tmp) / "results.npz"
+            np.savez_compressed(
+                result_path,
+                motion=np.zeros((2, 4, 22, 3), dtype=np.float32),
+                gt=np.zeros((2, 4, 22, 3), dtype=np.float32),
+                acceleration=np.zeros((2, 4, 6, 3), dtype=np.float32),
+                orientation=np.zeros((2, 4, 6, 3, 3), dtype=np.float32),
+                metadata=np.array(json.dumps({"cases": cases})),
+            )
+            result = _serialize_result("run", request, catalog, result_path)
+        self.assertEqual(
+            [panel["caption"] for panel in result["panels"][:2]],
+            ["text a", "text b"],
+        )
+
     def test_run_list_route_precedes_dynamic_run_route(self):
         from itm.demo.app import app
 
         paths = [route.path for route in app.routes]
         self.assertIn("/api/runs", paths)
         self.assertLess(paths.index("/api/runs"), paths.index("/api/runs/{run_id}"))
+
+    def test_sample_catalog_is_sorted_by_motion_id(self):
+        from unittest.mock import patch
+
+        import itm.demo.app as demo_app
+
+        manifest = [
+            {"motion_id": "006504", "text_path": "b.txt"},
+            {"motion_id": "000123", "text_path": "a.txt"},
+        ]
+        imu = [
+            {"motion_id": "000123", "num_frames": 80},
+            {"motion_id": "006504", "num_frames": 90},
+        ]
+
+        def fake_jsonl(path):
+            return imu if path == demo_app.IMU_MANIFESTS["test"] else manifest
+
+        with patch.object(demo_app, "read_jsonl", side_effect=fake_jsonl), patch.object(
+            demo_app,
+            "read_caption_records",
+            side_effect=lambda path: [SimpleNamespace(caption=f"caption {path}")],
+        ):
+            rows = demo_app._sample_catalog("test")
+        self.assertEqual([row["motion_id"] for row in rows], ["000123", "006504"])
+
+    def test_mdm_root_prefers_candidate_with_smpl_assets(self):
+        from itm.demo.app import _resolve_mdm_root
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            incomplete = root / "runtime"
+            complete = root / "full"
+            model = complete / "body_models/smpl/SMPL_NEUTRAL.pkl"
+            model.parent.mkdir(parents=True)
+            model.touch()
+            self.assertEqual(_resolve_mdm_root([incomplete, complete]), complete)
 
     def test_safe_experiment_paths_reject_traversal(self):
         from fastapi import HTTPException
