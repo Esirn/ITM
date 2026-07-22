@@ -21,5 +21,6 @@ dependencies:
       - blobfile
       - click==8.1.8
       - h5py
+      - projectaria-tools>=2.1.4
       - smplx
       - spacy==3.8.7
