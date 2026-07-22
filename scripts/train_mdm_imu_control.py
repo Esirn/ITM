@@ -48,6 +48,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--jerk-loss-weight", type=float, default=0.01)
     parser.add_argument("--upper-body-loss-weight", type=float, default=0.0)
     parser.add_argument("--upper-body-velocity-loss-weight", type=float, default=0.0)
+    parser.add_argument("--text-anchor-loss-weight", type=float, default=0.0)
+    parser.add_argument("--upper-body-text-anchor-loss-weight", type=float, default=0.0)
     parser.add_argument("--min-free-gib", type=float, default=4.0)
     parser.add_argument("--seed", type=int, default=1234)
     parser.add_argument("--device", default="cuda:1")
@@ -138,6 +140,8 @@ def main() -> int:
             "jerk_loss": 0.0,
             "upper_body_loss": 0.0,
             "upper_body_velocity_loss": 0.0,
+            "text_anchor_loss": 0.0,
+            "upper_body_text_anchor_loss": 0.0,
         }
         total_items = 0
         for motion, y in loader:
@@ -162,12 +166,18 @@ def main() -> int:
                 y,
                 mean_tensor,
                 std_tensor,
+                use_text_anchor=(
+                    args.text_anchor_loss_weight > 0
+                    or args.upper_body_text_anchor_loss_weight > 0
+                ),
             )
             trajectory_loss = auxiliary["trajectory_loss"]
             velocity_loss = auxiliary["velocity_loss"]
             jerk_loss = auxiliary["jerk_loss"]
             upper_body_loss = auxiliary["upper_body_loss"]
             upper_body_velocity_loss = auxiliary["upper_body_velocity_loss"]
+            text_anchor_loss = auxiliary["text_anchor_loss"]
+            upper_body_text_anchor_loss = auxiliary["upper_body_text_anchor_loss"]
             loss = (
                 diffusion_loss
                 + args.trajectory_loss_weight * trajectory_loss
@@ -175,6 +185,8 @@ def main() -> int:
                 + args.jerk_loss_weight * jerk_loss
                 + args.upper_body_loss_weight * upper_body_loss
                 + args.upper_body_velocity_loss_weight * upper_body_velocity_loss
+                + args.text_anchor_loss_weight * text_anchor_loss
+                + args.upper_body_text_anchor_loss_weight * upper_body_text_anchor_loss
             )
             optimizer.zero_grad(set_to_none=True)
             loss.backward()
@@ -188,6 +200,8 @@ def main() -> int:
             totals["jerk_loss"] += float(jerk_loss.item()) * batch
             totals["upper_body_loss"] += float(upper_body_loss.item()) * batch
             totals["upper_body_velocity_loss"] += float(upper_body_velocity_loss.item()) * batch
+            totals["text_anchor_loss"] += float(text_anchor_loss.item()) * batch
+            totals["upper_body_text_anchor_loss"] += float(upper_body_text_anchor_loss.item()) * batch
             total_items += len(motion)
         epoch_values = {key: value / total_items for key, value in totals.items()}
         history.append({"epoch": epoch, "loss": epoch_values["total_loss"], **epoch_values})
@@ -198,7 +212,9 @@ def main() -> int:
             f"velocity={epoch_values['velocity_loss']:.6f} "
             f"jerk={epoch_values['jerk_loss']:.6f} "
             f"upper_body={epoch_values['upper_body_loss']:.6f} "
-            f"upper_body_velocity={epoch_values['upper_body_velocity_loss']:.6f}"
+            f"upper_body_velocity={epoch_values['upper_body_velocity_loss']:.6f} "
+            f"text_anchor={epoch_values['text_anchor_loss']:.6f} "
+            f"upper_body_text_anchor={epoch_values['upper_body_text_anchor_loss']:.6f}"
         )
         _save_checkpoint(
             output_path.with_name(f"{output_path.stem}_epoch{epoch:03d}{output_path.suffix}"),
@@ -341,6 +357,8 @@ def _stage2_auxiliary_losses(
     y,
     mean,
     std,
+    *,
+    use_text_anchor=False,
 ):
     torch = require_torch()
     x_t = diffusion.q_sample(motion, timesteps, noise=noise)
@@ -352,7 +370,42 @@ def _stage2_auxiliary_losses(
         predicted.device
     )
     head_only = head_only_mask(y["sensor_mask"]).to(predicted.device)
-    return stage2_control_losses(predicted, target, frame_mask, joint_weights, head_only)
+    anchor = None
+    if use_text_anchor and getattr(model, "cond_mode", None) == "text":
+        anchor_y = text_only_anchor_kwargs(y)
+        was_training = model.training
+        model.eval()
+        with torch.no_grad():
+            anchor_output = model(
+                x_t,
+                diffusion._scale_timesteps(timesteps),
+                y=anchor_y,
+            )
+        if was_training:
+            model.train()
+            if hasattr(model, "clip_model"):
+                model.clip_model.eval()
+        anchor = _recover_joints_from_normalized_motion(anchor_output, mean, std)
+    return stage2_control_losses(
+        predicted,
+        target,
+        frame_mask,
+        joint_weights,
+        head_only,
+        text_anchor=anchor,
+    )
+
+
+def text_only_anchor_kwargs(y):
+    """Return MDM text-only kwargs without arming IMU control adapters."""
+
+    anchor = {
+        key: value
+        for key, value in y.items()
+        if key not in {"imu", "sensor_mask", "imu_frame_mask", "imu_uncond"}
+    }
+    anchor["uncond"] = False
+    return anchor
 
 
 def _recover_joints_from_normalized_motion(motion, mean, std):
@@ -389,7 +442,14 @@ def head_only_mask(sensor_mask):
     return has_head & ~has_wrist
 
 
-def stage2_control_losses(predicted, target, frame_mask, joint_weights, head_only=None):
+def stage2_control_losses(
+    predicted,
+    target,
+    frame_mask,
+    joint_weights,
+    head_only=None,
+    text_anchor=None,
+):
     """Compute active sensor, upper-body, and excess-jerk losses."""
 
     trajectory = _masked_joint_mse(predicted, target, frame_mask, joint_weights)
@@ -414,12 +474,31 @@ def stage2_control_losses(predicted, target, frame_mask, joint_weights, head_onl
         frame_mask[:, 1:] & frame_mask[:, :-1],
         upper_body_weights,
     )
+    text_anchor_loss = predicted.new_zeros(())
+    upper_body_text_anchor = predicted.new_zeros(())
+    if text_anchor is not None:
+        anchor_rel = text_anchor - text_anchor[:, :, :1]
+        non_active_weights = non_active_joint_weights(joint_weights)
+        text_anchor_loss = _masked_joint_mse(
+            pred_rel,
+            anchor_rel,
+            frame_mask,
+            non_active_weights,
+        )
+        upper_body_text_anchor = _masked_joint_mse(
+            pred_rel,
+            anchor_rel,
+            frame_mask,
+            upper_body_text_anchor_weights(joint_weights),
+        )
     return {
         "trajectory_loss": trajectory,
         "velocity_loss": velocity,
         "jerk_loss": jerk,
         "upper_body_loss": upper_body,
         "upper_body_velocity_loss": upper_body_velocity,
+        "text_anchor_loss": text_anchor_loss,
+        "upper_body_text_anchor_loss": upper_body_text_anchor,
     }
 
 
@@ -434,6 +513,23 @@ def upper_body_joint_weights(head_only, *, joint_count: int = 22):
     for joint in UPPER_BODY_JOINTS:
         if joint < joint_count:
             weights[:, joint] = head_only.to(weights.dtype)
+    return weights
+
+
+def non_active_joint_weights(active_weights):
+    weights = (active_weights <= 0.5).to(active_weights.dtype)
+    if weights.shape[1] > 0:
+        weights[:, 0] = 0.0
+    return weights
+
+
+def upper_body_text_anchor_weights(active_weights):
+    torch = require_torch()
+    weights = torch.zeros_like(active_weights)
+    for joint in UPPER_BODY_JOINTS:
+        if joint < weights.shape[1]:
+            weights[:, joint] = 1.0
+    weights = weights * (active_weights <= 0.5).to(weights.dtype)
     return weights
 
 

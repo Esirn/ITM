@@ -34,6 +34,7 @@ For experiment results, Load mode has a `Result set` selector. It maps to:
 - `stage2`: `outputs/mdm_control/experiments_stage2/`
 - `stage2b`: `outputs/mdm_control/experiments_stage2b_balanced_b/`
 - `stage3`: `outputs/mdm_control/experiments_stage3_upper_body/`
+- `stage4`: `outputs/mdm_control/experiments_stage4_text_anchor/`
 
 Enter the path relative to the selected result set, for example:
 

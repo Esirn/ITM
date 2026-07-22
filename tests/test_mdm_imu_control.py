@@ -136,6 +136,9 @@ class MDMIMUControlTest(unittest.TestCase):
         helpers = _load_train_helpers()
         predicted = torch.zeros(2, 5, 22, 3)
         target = torch.zeros_like(predicted)
+        anchor = torch.zeros_like(predicted)
+        anchor[:, :, 20, 0] = 0.1
+        anchor[:, :, 21, 0] = 0.1
         predicted[0, :, 15, 0] = torch.linspace(0.0, 0.4, 5)
         predicted[1, :, 20, 1] = torch.linspace(0.0, 0.2, 5)
         frame_mask = torch.tensor(
@@ -155,11 +158,26 @@ class MDMIMUControlTest(unittest.TestCase):
         self.assertFalse(bool(head_only[1]))
         self.assertGreater(float(upper_body_weights[0, 20]), 0.0)
         self.assertEqual(float(upper_body_weights[1, 20]), 0.0)
-        losses = helpers.stage2_control_losses(predicted, target, frame_mask, weights, head_only)
+        non_active = helpers.non_active_joint_weights(weights)
+        upper_anchor = helpers.upper_body_text_anchor_weights(weights)
+        self.assertEqual(float(non_active[0, 15]), 0.0)
+        self.assertGreater(float(non_active[0, 20]), 0.0)
+        self.assertGreater(float(upper_anchor[0, 20]), 0.0)
+        self.assertEqual(float(upper_anchor[1, 20]), 0.0)
+        losses = helpers.stage2_control_losses(
+            predicted,
+            target,
+            frame_mask,
+            weights,
+            head_only,
+            text_anchor=anchor,
+        )
         for value in losses.values():
             self.assertTrue(torch.isfinite(value))
         self.assertGreater(float(losses["trajectory_loss"]), 0.0)
         self.assertGreaterEqual(float(losses["upper_body_loss"]), 0.0)
+        self.assertGreater(float(losses["text_anchor_loss"]), 0.0)
+        self.assertGreater(float(losses["upper_body_text_anchor_loss"]), 0.0)
 
     def test_stage2_auxiliary_losses_handle_short_sequences(self):
         import torch
@@ -174,6 +192,26 @@ class MDMIMUControlTest(unittest.TestCase):
         head_only = helpers.head_only_mask(sensor_mask)
         losses = helpers.stage2_control_losses(predicted, target, frame_mask, weights, head_only)
         self.assertEqual(float(losses["jerk_loss"]), 0.0)
+
+    def test_text_only_anchor_kwargs_disable_imu_control(self):
+        import torch
+
+        helpers = _load_train_helpers()
+        y = {
+            "mask": torch.ones(2, 1, 1, 5, dtype=torch.bool),
+            "lengths": torch.tensor([5, 5]),
+            "text": ["walk", "run"],
+            "imu": torch.randn(2, 5, 6, 12),
+            "sensor_mask": torch.ones(2, 6),
+            "imu_frame_mask": torch.ones(2, 5, dtype=torch.bool),
+            "imu_uncond": False,
+        }
+        anchor = helpers.text_only_anchor_kwargs(y)
+        self.assertNotIn("imu", anchor)
+        self.assertNotIn("sensor_mask", anchor)
+        self.assertNotIn("imu_frame_mask", anchor)
+        self.assertFalse(anchor["uncond"])
+        self.assertEqual(anchor["text"], ["walk", "run"])
 
 
 if __name__ == "__main__":

@@ -495,3 +495,77 @@ Interpretation:
 Paper-facing table draft:
 
 - `docs/PAPER_EXPERIMENT_TABLES_2026-07-09.md`
+
+## Stage-4 Text-Anchor Objective
+
+Stage-4 tested whether an explicit frozen-MDM text-only anchor can recover
+head-only text completion while preserving Stage-2b smoothness.
+
+Training setup:
+
+```text
+output = outputs/mdm_control/stage4_text_anchor.pt
+resume = outputs/mdm_control/stage1_full_pilot_v2.pt
+trajectory = 0.5
+velocity = 0.1
+jerk = 0.003
+text_anchor = 0.2
+upper_body_text_anchor = 0.4
+```
+
+Implementation note:
+
+- The text anchor uses a frozen MDM Text-only predicted-x0 branch.
+- The anchor call removes `imu`, `sensor_mask`, and `imu_frame_mask` from
+  `model_kwargs`, rather than using `imu_uncond=True`, because trained adapter
+  biases would otherwise still affect the forward pass.
+- The anchor losses compare root-relative 22-joint predictions. The general
+  text anchor excludes active sensor joints; the upper-body text anchor focuses
+  on upper-body joints not occupied by active sensors.
+
+Training losses:
+
+| epoch | total | diffusion | trajectory | velocity | jerk | text anchor | upper-body text anchor |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 6 | 0.136448 | 0.074221 | 0.120122 | 0.001167 | 0.003331 | 0.002268 | 0.003965 |
+| 7 | 0.131718 | 0.076507 | 0.106387 | 0.001135 | 0.003301 | 0.002116 | 0.003678 |
+| 8 | 0.136189 | 0.076729 | 0.115053 | 0.001169 | 0.003311 | 0.002032 | 0.003502 |
+
+The full 60-run test suite completed:
+
+- `outputs/mdm_control/experiments_stage4_text_anchor/RESULTS_SUMMARY.md`
+- `outputs/mdm_control/experiments_stage4_text_anchor/RESULTS_SUMMARY.json`
+- `outputs/mdm_control/comparisons/itm_stage1_stage2_stage2b/STAGE1_VS_STAGE4_TEXT_ANCHOR.md`
+
+Key comparison:
+
+| model | same-text jerk | same-head active error | same-head arm swing | matrix jerk |
+| --- | ---: | ---: | ---: | ---: |
+| Stage-1 | 4.2072 | 0.1838 m | 0.2080 m | 2.1978 |
+| Stage-2b | 1.7599 | 0.2152 m | 0.1581 m | 1.4646 |
+| Stage-3 | 1.7724 | 0.2059 m | 0.1619 m | 1.6196 |
+| Stage-4 | 1.8050 | 0.2103 m | 0.1666 m | 1.5497 |
+
+Interpretation:
+
+- Stage-4 keeps the main smoothing gain: same-text jerk is 57.1% below
+  Stage-1 and matrix jerk is 29.5% below Stage-1.
+- Stage-4 partially recovers head-only arm swing relative to Stage-2b
+  (`0.1666 m` vs `0.1581 m`), but it is still 19.9% below Stage-1 and misses
+  the planned 10% gate.
+- Stage-4 active head error is slightly better than Stage-2b (`0.2103 m` vs
+  `0.2152 m`) but still fails the Stage-1 110% gate.
+- Stage-4 does not replace Stage-2b as the main checkpoint. It is useful as a
+  negative/diagnostic ablation: a simple MDM text-anchor helps a little but
+  does not solve the head-only semantic completion weakness.
+- Current role-based selection remains:
+  `stage2b_balanced_b` for the main/IMU-control model,
+  `stage1_full_pilot_v2.pt` for text-completion diagnostics, and
+  `stage4_text_anchor.pt` as a text-anchor ablation.
+
+Future stronger directions:
+
+- Stronger Text-to-Motion backbone or baseline: LGTM, MLD, MoMask, MotionGPT.
+- Stronger IMU-only baseline: MobilePoser.
+- More formal generated-IMU consistency via generated motion -> SMPL/sensor
+  frames, instead of the current HumanML joint acceleration proxy.

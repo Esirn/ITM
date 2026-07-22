@@ -82,6 +82,17 @@ Claim this figure should support:
 - Text can affect unobserved upper-body motion under head-only IMU, but this
   phenomenon is not yet stable enough to make a strong solved claim.
 
+Stage-4 text-anchor comparison:
+
+```text
+outputs/mdm_control/experiments_stage4_text_anchor/same_head_imu_different_text/test_prompts/
+```
+
+Use the same motion IDs above to compare Stage-1, Stage-2b and Stage-4. Stage-4
+slightly recovers arm swing over Stage-2b but still does not match Stage-1, so it
+is best presented as a text-anchor ablation rather than the main qualitative
+result.
+
 ## Figure 3: A/B Matrix
 
 Use Stage-2b matrix examples:
@@ -113,5 +124,8 @@ Claim this figure should support:
   readable. A low metric can still hide an awkward body pose.
 - For same-head text completion, include both one success and one failure in
   the paper. This is a limitation, not something to sweep under the rug.
+- For Stage-4, inspect it as an ablation: it should answer whether Text-only
+  anchoring helps, not replace the Stage-2b main model unless the visual quality
+  is clearly better.
 - Do not describe the acceleration proxy as real IMU orientation consistency.
   That requires decoding generated motion to SMPL/sensor frames.

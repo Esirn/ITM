@@ -29,6 +29,7 @@ EXPERIMENT_ROOTS = {
     "stage2": ROOT / "outputs/mdm_control/experiments_stage2",
     "stage2b": ROOT / "outputs/mdm_control/experiments_stage2b_balanced_b",
     "stage3": ROOT / "outputs/mdm_control/experiments_stage3_upper_body",
+    "stage4": ROOT / "outputs/mdm_control/experiments_stage4_text_anchor",
 }
 CONTROL_CHECKPOINT = ROOT / "outputs/mdm_control/stage1_full_pilot_v2.pt"
 MDM_ASSET_DIR = ROOT / "outputs/mdm/checkpoints_extracted/humanml_trans_enc_512"

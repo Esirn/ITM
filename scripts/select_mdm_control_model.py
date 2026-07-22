@@ -16,6 +16,7 @@ MODEL_SPECS = (
     ("stage2b_balanced_b", "outputs/mdm_control/experiments_stage2b_balanced_b/RESULTS_SUMMARY.json"),
     ("stage2b_balanced_c", "outputs/mdm_control/experiments_stage2b_balanced_c/RESULTS_SUMMARY.json"),
     ("stage3_upper_body", "outputs/mdm_control/experiments_stage3_upper_body/RESULTS_SUMMARY.json"),
+    ("stage4_text_anchor", "outputs/mdm_control/experiments_stage4_text_anchor/RESULTS_SUMMARY.json"),
 )
 
 
@@ -198,9 +199,9 @@ def render_markdown(selection: dict[str, Any]) -> str:
             "## Decision",
             "",
             "- No checkpoint passes all four planned gates.",
-            "- Stage-2/Stage-2b variants consistently improve the IMU-control smoothness side, especially same-text-different-IMU jerk and matrix jerk.",
+            "- Stage-2/Stage-2b/Stage-4 variants consistently improve the IMU-control smoothness side, especially same-text-different-IMU jerk and matrix jerk.",
             "- Stage-1 remains the best diagnostic checkpoint for head-only text completion because it preserves the strongest arm-swing proxy.",
-            "- For the next paper iteration, report this as a real trade-off instead of hiding it: one checkpoint demonstrates IMU control, while the head-only text completion phenomenon still needs a better objective.",
+            "- Report this as a real trade-off instead of hiding it: one checkpoint demonstrates IMU control, while the head-only text completion phenomenon still needs a better objective if no anchor variant passes all gates.",
         ]
     )
     return "\n".join(lines)

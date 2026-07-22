@@ -6,7 +6,29 @@ Current paper default:
 
 - Main model: `outputs/mdm_control/stage2b_balanced_b.pt`.
 - Text-completion diagnostic model: `outputs/mdm_control/stage1_full_pilot_v2.pt`.
-- Stage-3 is not selected because it does not improve over Stage-2b overall.
+- Text-anchor ablation: `outputs/mdm_control/stage4_text_anchor.pt`.
+- Stage-3 and Stage-4 are not selected as main models because they do not
+  improve over Stage-2b overall.
+
+## Comparison Protocol
+
+Use three comparison layers rather than one mixed SOTA leaderboard:
+
+| comparison layer | models | purpose | directly comparable metrics |
+| --- | --- | --- | --- |
+| Generation quality | MDM Text-only vs ITM Stage-2b | Check whether IMU control preserves text-to-motion quality | Matching, R-precision, FID, Diversity |
+| IMU-only boundary | Flexible IMUPoser vs ITM | Clarify reconstruction vs controllable generation | IMU/pose diagnostics only |
+| Internal ablation | Stage-1 vs Stage-2b vs Stage-4 | Explain model choice and trade-offs | Control proxies, jerk, qualitative figures |
+
+Recommended paper wording:
+
+- MDM is the main **text-generation baseline**.
+- Flexible IMUPoser is an **IMU-only reconstruction boundary**, not a direct
+  text-generation competitor.
+- Stage-1/Stage-2b/Stage-4 are **diagnostic ablations**, not external baselines.
+- LGTM, MLD, MoMask, MotionGPT, MobilePoser, Ego4o and Spatial-Related Sensors
+  Matters should stay in related work or future work unless reproduced under the
+  same protocol.
 
 ## Generation Quality on IMU-Mapped Test Subset
 
@@ -45,6 +67,25 @@ Same vague text, different IMU:
 | Stage-1 | 0.2871 m | 4.7340 m/s^2 | 3.5541 | 4.2072 | 0.1909 m | 2.1561 m | 1.5505 Hz |
 | Stage-2b | 0.2833 m | 4.5360 m/s^2 | 2.0936 | 1.7599 | 0.1615 m | 1.4666 m | 1.4815 Hz |
 
+Same vague text, Stage-2b by output label:
+
+| output | active sensor error ↓ | active acceleration error ↓ | jerk ratio ↓ | root travel | step frequency |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| MDM Text-only | 0.1617 m | 3.1858 m/s^2 | 1.6439 | 1.4693 m | 1.4872 Hz |
+| ITM Text + head IMU | 0.1709 m | 3.0871 m/s^2 | 1.8375 | 1.5561 m | 1.4701 Hz |
+| ITM Text + wrist IMUs | 0.5172 m | 7.3352 m/s^2 | 1.7981 | 1.3744 m | 1.4872 Hz |
+
+Important interpretation note:
+
+- Do not claim every joint-proxy error is lower than MDM Text-only. Text-only
+  can have low proxy error by chance because it is not conditioned on target IMU
+  and because head/wrist joint proxies are imperfect.
+- The defensible control claim is protocol-based: with fixed text/noise/length,
+  changing IMU changes generated trajectories and motion details, while Stage-2b
+  keeps jerk far lower than Stage-1.
+- The next stronger metric should decode generated motion to SMPL/sensor frames
+  and evaluate generated virtual IMU acceleration/orientation directly.
+
 Same text, sensor breakdown:
 
 | model | sensor | active sensor error ↓ | active acceleration error ↓ | acceleration ratio | jerk ratio ↓ | root travel | step frequency |
@@ -60,6 +101,15 @@ Same head IMU, different text:
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | Stage-1 | 0.1838 m | 3.7829 m/s^2 | 3.8952 | 4.8521 | 0.2080 m | 2.2811 m | 1.4899 Hz |
 | Stage-2b | 0.2152 m | 3.2269 m/s^2 | 4.9469 | 5.6981 | 0.1581 m | 1.4263 m | 1.4094 Hz |
+| Stage-4 text-anchor | 0.2103 m | 3.3283 m/s^2 | 4.8724 | 5.9120 | 0.1666 m | 1.4565 m | 1.3961 Hz |
+
+Stage-4 text-anchor ablation:
+
+| model | same-text jerk ↓ | same-head arm swing | same-head active error ↓ | matrix jerk ↓ |
+| --- | ---: | ---: | ---: | ---: |
+| Stage-2b | 1.7599 | 0.1581 m | 0.2152 m | 1.4646 |
+| Stage-3 upper-body | 1.7724 | 0.1619 m | 0.2059 m | 1.6196 |
+| Stage-4 text-anchor | 1.8050 | 0.1666 m | 0.2103 m | 1.5497 |
 
 Interpretation:
 
@@ -67,6 +117,8 @@ Interpretation:
 - Stage-2b also lowers the active acceleration proxy in same-text and matrix runs, so the smoother motion is not only a smaller jerk number.
 - Stage-2b head improves or preserves active sensor tracking in same-text experiments.
 - Stage-1 remains better for the head-only text-completion/arm-swing diagnostic.
+- Stage-4 text-anchor partially recovers arm swing relative to Stage-2b but
+  does not pass the planned gate and is not selected as the main model.
 - This is the central trade-off to report honestly: smoothing and IMU control improve, but unobserved upper-body semantic completion weakens.
 
 ## IMU-Only Baseline
@@ -79,6 +131,15 @@ Flexible IMUPoser on the test split:
 | wrists | 1333 | 10.74 cm | 0.233 rad | 0.455 | 0.308 m/s |
 
 Use this as an IMU-only reconstruction baseline, not as a direct text-generation competitor.
+
+Paper framing:
+
+- IMUPoser is useful for answering whether an IMU-only pose estimator can
+  reconstruct motion from the same sparse sensor configurations.
+- It should not be inserted into the generation-quality table because it has no
+  text input, no diffusion sampling and no text-motion retrieval objective.
+- ITM should not be claimed to beat IMUPoser on MPJPE; the contribution is using
+  sparse IMU as a control condition for a text-to-motion generator.
 
 ## Qualitative Figure Shortlist
 
