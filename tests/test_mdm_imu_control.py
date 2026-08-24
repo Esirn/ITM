@@ -193,6 +193,46 @@ class MDMIMUControlTest(unittest.TestCase):
         losses = helpers.stage2_control_losses(predicted, target, frame_mask, weights, head_only)
         self.assertEqual(float(losses["jerk_loss"]), 0.0)
 
+    def test_training_prediction_is_reused_for_diffusion_loss(self):
+        import torch
+
+        helpers = _load_train_helpers()
+
+        class DummyModel(torch.nn.Module):
+            def __init__(self):
+                super().__init__()
+                self.calls = 0
+
+            def forward(self, x, timesteps, y=None):
+                self.calls += 1
+                return x * 0.5
+
+        class DummyDiffusion:
+            @staticmethod
+            def q_sample(motion, timesteps, noise=None):
+                return motion + noise
+
+            @staticmethod
+            def _scale_timesteps(timesteps):
+                return timesteps
+
+            @staticmethod
+            def masked_l2(target, predicted, mask):
+                return ((target - predicted).pow(2) * mask).flatten(1).mean(1)
+
+        model = DummyModel()
+        diffusion = DummyDiffusion()
+        motion = torch.ones(2, 3, 1, 4)
+        noise = torch.zeros_like(motion)
+        timesteps = torch.tensor([1, 2])
+        y = {"mask": torch.ones(2, 1, 1, 4)}
+        output, loss = helpers._predict_xstart_and_diffusion_loss(
+            model, diffusion, motion, timesteps, noise, y
+        )
+        self.assertEqual(model.calls, 1)
+        self.assertTrue(torch.allclose(output, motion * 0.5))
+        self.assertAlmostEqual(float(loss), 0.25)
+
     def test_text_only_anchor_kwargs_disable_imu_control(self):
         import torch
 

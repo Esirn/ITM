@@ -248,7 +248,7 @@ MDM control):
 ```bash
 conda run -n itm python scripts/build_standard_imu_cache.py \
   --manifest outputs/manifests/train.jsonl \
-  --index /home/a200/0proj/datasets/mdm-need/HumanML3D/index.csv \
+  --index /home/a200/mount/a40/relatedworks/mdm/HumanML3D/index.csv \
   --amass-root /home/a200/0proj/datasets/AMASS \
   --cache-manifest outputs/manifests/train_standard_imu.jsonl \
   --device cuda:0

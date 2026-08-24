@@ -81,6 +81,8 @@ def main() -> int:
 
     mdm_options = json.loads(mdm_args_path.read_text())
     _set_mdm_compatibility_defaults(mdm_options)
+    if not mdm_options.get("predict_xstart", False):
+        raise ValueError("ITM auxiliary losses require an MDM checkpoint with predict_xstart=true")
     mdm_args = SimpleNamespace(**mdm_options)
     data_stub = SimpleNamespace(dataset=SimpleNamespace(num_actions=1))
     model, diffusion = create_model_and_diffusion(mdm_args, data_stub)
@@ -149,14 +151,9 @@ def main() -> int:
             y = {key: (value.to(device) if torch.is_tensor(value) else value) for key, value in y.items()}
             timesteps = torch.randint(0, diffusion.num_timesteps, (len(motion),), device=device)
             noise = torch.randn_like(motion)
-            losses = diffusion.training_losses(
-                model,
-                motion,
-                timesteps,
-                model_kwargs={"y": y},
-                noise=noise,
+            model_output, diffusion_loss = _predict_xstart_and_diffusion_loss(
+                model, diffusion, motion, timesteps, noise, y
             )
-            diffusion_loss = losses["loss"].mean()
             auxiliary = _stage2_auxiliary_losses(
                 model,
                 diffusion,
@@ -166,6 +163,7 @@ def main() -> int:
                 y,
                 mean_tensor,
                 std_tensor,
+                model_output=model_output,
                 use_text_anchor=(
                     args.text_anchor_loss_weight > 0
                     or args.upper_body_text_anchor_loss_weight > 0
@@ -358,11 +356,13 @@ def _stage2_auxiliary_losses(
     mean,
     std,
     *,
+    model_output=None,
     use_text_anchor=False,
 ):
     torch = require_torch()
     x_t = diffusion.q_sample(motion, timesteps, noise=noise)
-    model_output = model(x_t, diffusion._scale_timesteps(timesteps), y=y)
+    if model_output is None:
+        model_output = model(x_t, diffusion._scale_timesteps(timesteps), y=y)
     predicted = _recover_joints_from_normalized_motion(model_output, mean, std)
     target = _recover_joints_from_normalized_motion(motion, mean, std)
     frame_mask = y["mask"][:, 0, 0].bool()
@@ -394,6 +394,15 @@ def _stage2_auxiliary_losses(
         head_only,
         text_anchor=anchor,
     )
+
+
+def _predict_xstart_and_diffusion_loss(model, diffusion, motion, timesteps, noise, y):
+    """Run one conditioned forward pass and reuse it for every training loss."""
+
+    x_t = diffusion.q_sample(motion, timesteps, noise=noise)
+    model_output = model(x_t, diffusion._scale_timesteps(timesteps), y=y)
+    diffusion_loss = diffusion.masked_l2(motion, model_output, y["mask"]).mean()
+    return model_output, diffusion_loss
 
 
 def text_only_anchor_kwargs(y):

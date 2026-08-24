@@ -3,15 +3,17 @@ root = "/home/a200/0proj/ITM"
 
 [datasets]
 root = "/home/a200/0proj/datasets"
-remote_root = "/home/a200/mount/a40/home/4T-2/group_motion/datasets"
-amass = "/home/a200/0proj/datasets/AMASS"
-smpl = "/home/a200/0proj/datasets/SMPL"
-humanml3d = "/home/a200/0proj/datasets/mdm-need/HumanML3D"
+remote_root = "/home/a200/mount/a40/datasets"
+amass = "/home/a200/mount/a40/datasets/AMASS"
+smpl = "/home/a200/mount/a40/datasets/SMPL"
+humanml3d = "/home/a200/mount/a40/relatedworks/mdm/HumanML3D"
 humanml3d_texts = "/home/a200/0proj/datasets/all/texts"
 humanml3d_joints = "/home/a200/0proj/datasets/all/new_joints"
 humanml3d_joint_vecs = "/home/a200/0proj/datasets/all/new_joint_vecs"
-humanml3d_index = "/home/a200/0proj/datasets/mdm-need/HumanML3D/index.csv"
+humanml3d_index = "/home/a200/mount/a40/relatedworks/mdm/HumanML3D/index.csv"
 motion_splits = "/home/a200/0proj/datasets/all"
+nymeria = "/home/a200/mount/a40/datasets-HDD/Nymeria"
+nymeria_plus = "/home/a200/mount/a40/datasets-HDD/NymeriaPlus"
 
 [related_papers]
 root = "/home/a200/0relatedpapers"
@@ -34,5 +36,5 @@ transpose = "/home/a200/0relatedworks/TransPose"
 dip = "/home/a200/0relatedworks/dip18"
 
 [checkpoints]
-mdm_humanml = "/home/a200/mount/a40/relatedworks/mdm/motion-diffusion-model/save/humanml_trans_enc_512/model000475000.pt"
-mdm_humanml_args = "/home/a200/mount/a40/relatedworks/mdm/motion-diffusion-model/save/humanml_trans_enc_512/args.json"
+mdm_humanml = "/home/a200/0proj/ITM/outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/model000475000.pt"
+mdm_humanml_args = "/home/a200/0proj/ITM/outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/args.json"
