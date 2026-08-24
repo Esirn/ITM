@@ -56,6 +56,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--seed", type=int, default=1234)
     parser.add_argument("--text-scale", type=float, default=2.5)
     parser.add_argument("--imu-scale", type=float, default=1.0)
+    parser.add_argument("--joint-scale", type=float, default=1.0)
+    parser.add_argument(
+        "--guidance-mode", choices=("legacy", "factorized"), default="legacy"
+    )
+    parser.add_argument(
+        "--branch-execution", choices=("sequential", "batched"), default="sequential"
+    )
     parser.add_argument("--matrix-count", type=int, default=20)
     parser.add_argument("--same-text-count", type=int, default=30)
     parser.add_argument("--same-imu-count", type=int, default=30)
@@ -108,6 +115,9 @@ def main() -> int:
         "mdm_args": str(Path(args.mdm_args).resolve()),
         "mdm_root": str(Path(args.mdm_root).resolve()),
         "execute": args.execute,
+        "guidance_mode": args.guidance_mode,
+        "branch_execution": args.branch_execution,
+        "joint_scale": args.joint_scale,
         "runs": completed,
     }
     (output_root / "suite_index.json").write_text(json.dumps(suite_summary, indent=2), encoding="utf-8")
@@ -193,6 +203,9 @@ def write_run(
         "seed": run["seed"],
         "text_scale": run["text_scale"],
         "imu_scale": run["imu_scale"],
+        "joint_scale": args.joint_scale,
+        "guidance_mode": args.guidance_mode,
+        "branch_execution": args.branch_execution,
         "device": args.device,
         "checkpoint": str(Path(args.control_checkpoint).resolve()),
         "mdm_checkpoint": str(Path(args.mdm_checkpoint).resolve()),
@@ -228,6 +241,12 @@ def write_run(
             str(run["text_scale"]),
             "--imu-scale",
             str(run["imu_scale"]),
+            "--joint-scale",
+            str(args.joint_scale),
+            "--guidance-mode",
+            args.guidance_mode,
+            "--branch-execution",
+            args.branch_execution,
             "--device",
             args.device,
         ]
@@ -299,12 +318,12 @@ def matrix_run(
 ) -> dict[str, Any]:
     common = {"sensor_config": sensor_config, "split": split}
     spec = [
-        {**common, "motion_id": sample_a.motion_id, "text": "", "label": "None + IMU A", "text_scale": 0.0, "text_source": None, "imu_source": "A"},
-        {**common, "motion_id": sample_b.motion_id, "text": "", "label": "None + IMU B", "text_scale": 0.0, "text_source": None, "imu_source": "B"},
-        {**common, "motion_id": sample_a.motion_id, "text": sample_a.caption, "label": "Text A + None", "imu_scale": 0.0, "text_source": "A", "imu_source": None},
+        {**common, "motion_id": sample_a.motion_id, "text": "", "label": "None + IMU A", "text_scale": 0.0, "joint_scale": 0.0, "text_source": None, "imu_source": "A"},
+        {**common, "motion_id": sample_b.motion_id, "text": "", "label": "None + IMU B", "text_scale": 0.0, "joint_scale": 0.0, "text_source": None, "imu_source": "B"},
+        {**common, "motion_id": sample_a.motion_id, "text": sample_a.caption, "label": "Text A + None", "imu_scale": 0.0, "joint_scale": 0.0, "text_source": "A", "imu_source": None},
         {**common, "motion_id": sample_a.motion_id, "text": sample_a.caption, "label": "Text A + IMU A", "text_source": "A", "imu_source": "A"},
         {**common, "motion_id": sample_b.motion_id, "text": sample_a.caption, "label": "Text A + IMU B", "text_source": "A", "imu_source": "B"},
-        {**common, "motion_id": sample_a.motion_id, "text": sample_b.caption, "label": "Text B + None", "imu_scale": 0.0, "text_source": "B", "imu_source": None},
+        {**common, "motion_id": sample_a.motion_id, "text": sample_b.caption, "label": "Text B + None", "imu_scale": 0.0, "joint_scale": 0.0, "text_source": "B", "imu_source": None},
         {**common, "motion_id": sample_a.motion_id, "text": sample_b.caption, "label": "Text B + IMU A", "text_source": "B", "imu_source": "A"},
         {**common, "motion_id": sample_b.motion_id, "text": sample_b.caption, "label": "Text B + IMU B", "text_source": "B", "imu_source": "B"},
     ]
@@ -349,6 +368,7 @@ def same_text_run(
                     "split": split,
                     "text_scale": case_text_scale,
                     "imu_scale": case_imu_scale,
+                    "joint_scale": 0.0 if case_imu_scale == 0.0 else 1.0,
                     "text_source": "fixed_walk",
                     "imu_source": sample.motion_id if case_imu_scale else None,
                 }

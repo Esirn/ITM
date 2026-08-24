@@ -4,10 +4,12 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import inspect
 import json
 import os
 from pathlib import Path
+import time
 from types import SimpleNamespace
 import sys
 
@@ -15,6 +17,7 @@ import numpy as np
 
 from itm.data.manifest import read_jsonl
 from itm.data.standard_imu import sensor_mask
+from itm.backbones import MDMBackbone, MotionConditions
 from itm.models.mdm_imu_control import (
     MDMIMUControlConfig,
     install_imu_control,
@@ -45,6 +48,18 @@ def parse_args():
     parser.add_argument("--seed", type=int, default=1234)
     parser.add_argument("--text-scale", type=float, default=2.5)
     parser.add_argument("--imu-scale", type=float, default=1.0)
+    parser.add_argument("--joint-scale", type=float, default=1.0)
+    parser.add_argument(
+        "--guidance-mode", choices=("legacy", "factorized"), default="legacy"
+    )
+    parser.add_argument(
+        "--branch-execution", choices=("sequential", "batched"), default="sequential"
+    )
+    parser.add_argument(
+        "--no-condition-cache",
+        action="store_true",
+        help="Disable text/IMU caching for numerical compatibility diagnostics.",
+    )
     parser.add_argument("--device", default="cuda:1")
     parser.add_argument("--min-free-gib", type=float, default=4.0)
     return parser.parse_args()
@@ -91,7 +106,9 @@ def main():
     controlled.adapters.load_state_dict(control_state["adapters"])
     model.to(device)
     model.eval()
-    guided_model = make_text_imu_guidance_model(model)
+    guided_model = make_text_imu_guidance_model(
+        model, mode=args.guidance_mode, branch_execution=args.branch_execution
+    )
     guided_model.to(device)
     guided_model.eval()
 
@@ -100,43 +117,57 @@ def main():
         raise ValueError("spec must contain a non-empty JSON list")
     records = {str(row["motion_id"]): row for row in read_jsonl(manifest_path)}
     loaded = [_load_case(case, records, control_state["imu_normalization"]) for case in cases]
-    frame_count = min(min(len(case["imu"]) for case in loaded), 196)
+    original_lengths = [len(case["imu"]) for case in loaded]
+    effective_lengths = [min(length, 196) for length in original_lengths]
+    frame_count = max(effective_lengths)
     batch = len(loaded)
-    imu = torch.from_numpy(np.stack([case["imu"][:frame_count] for case in loaded])).to(device)
+    imu = torch.from_numpy(
+        np.stack([_pad_frames(case["imu"], frame_count) for case in loaded])
+    ).to(device)
     masks = torch.from_numpy(np.stack([case["sensor_mask"] for case in loaded])).to(device)
+    lengths = torch.tensor(effective_lengths, dtype=torch.long, device=device)
+    frame_mask = MDMBackbone.frame_mask(lengths, frame_count)
     y = {
-        "text": [case["text"] for case in loaded],
-        "lengths": torch.full((batch,), frame_count, dtype=torch.long, device=device),
-        "mask": torch.ones(batch, 1, 1, frame_count, dtype=torch.bool, device=device),
         "imu": imu,
         "sensor_mask": masks,
-        "imu_frame_mask": torch.ones(batch, frame_count, dtype=torch.bool, device=device),
+        "imu_frame_mask": frame_mask,
         "text_scale": torch.tensor(
             [case.get("text_scale", args.text_scale) for case in loaded], device=device
         ),
         "imu_scale": torch.tensor(
             [case.get("imu_scale", args.imu_scale) for case in loaded], device=device
         ),
+        "joint_scale": torch.tensor(
+            [case.get("joint_scale", args.joint_scale) for case in loaded], device=device
+        ),
     }
-    generator = torch.Generator(device=device).manual_seed(args.seed)
-    base_noise = torch.randn(
-        1, model.njoints, model.nfeats, frame_count, generator=generator, device=device
+    mean = torch.from_numpy(np.load(mean_path)).to(device)
+    std = torch.from_numpy(np.load(std_path)).to(device)
+    backbone = MDMBackbone(
+        model=model,
+        diffusion=diffusion,
+        mean=mean,
+        std=std,
+        recover_from_ric=recover_from_ric,
+        guidance_model=guided_model,
     )
+    conditions = MotionConditions(
+        text=[case["text"] for case in loaded], lengths=lengths, extra=y
+    )
+    if not args.no_condition_cache:
+        backbone.cache_conditions(conditions, encoder)
+    elif args.branch_execution == "batched":
+        raise ValueError("Batched branch execution requires condition caching")
+    if device.type == "cuda":
+        torch.cuda.reset_peak_memory_stats(device)
+    started = time.perf_counter()
     with torch.inference_mode():
-        sample = diffusion.p_sample_loop(
-            guided_model,
-            (batch, model.njoints, model.nfeats, frame_count),
-            clip_denoised=False,
-            model_kwargs={"y": y},
-            progress=True,
-            noise=base_noise.repeat(batch, 1, 1, 1),
-            const_noise=False,
-        )
-        mean = torch.from_numpy(np.load(mean_path)).to(sample)
-        std = torch.from_numpy(np.load(std_path)).to(sample)
-        vectors = sample.cpu().permute(0, 2, 3, 1)
-        vectors = vectors * std.cpu() + mean.cpu()
-        joints = recover_from_ric(vectors.float(), 22).view(batch, frame_count, 22, 3)
+        sample = backbone.sample(conditions, seed=args.seed)
+        joints = backbone.decode_motion(sample).cpu()
+    elapsed = time.perf_counter() - started
+    peak_memory = (
+        int(torch.cuda.max_memory_allocated(device)) if device.type == "cuda" else None
+    )
 
     output.parent.mkdir(parents=True, exist_ok=True)
     metadata = {
@@ -145,16 +176,26 @@ def main():
         "seed": args.seed,
         "text_scale": args.text_scale,
         "imu_scale": args.imu_scale,
+        "joint_scale": args.joint_scale,
+        "guidance_mode": args.guidance_mode,
+        "branch_execution": args.branch_execution,
+        "condition_cache": not args.no_condition_cache,
         "device": str(device),
         "frame_count": frame_count,
+        "original_lengths": original_lengths,
+        "effective_lengths": effective_lengths,
+        "sampling_seconds": elapsed,
+        "peak_cuda_memory_bytes": peak_memory,
+        "control_checkpoint_sha256": _sha256(control_checkpoint_path),
+        "mdm_checkpoint_sha256": _sha256(mdm_checkpoint_path),
         "cases": [{k: v for k, v in case.items() if k not in {"imu", "gt", "raw_acceleration", "raw_orientation", "sensor_mask"}} for case in loaded],
     }
     np.savez_compressed(
         output,
         motion=joints.numpy(),
-        gt=np.stack([case["gt"][:frame_count, :22] for case in loaded]),
-        acceleration=np.stack([case["raw_acceleration"][:frame_count] for case in loaded]),
-        orientation=np.stack([case["raw_orientation"][:frame_count] for case in loaded]),
+        gt=np.stack([_pad_frames(case["gt"][:, :22], frame_count) for case in loaded]),
+        acceleration=np.stack([_pad_frames(case["raw_acceleration"], frame_count) for case in loaded]),
+        orientation=np.stack([_pad_frames(case["raw_orientation"], frame_count) for case in loaded]),
         sensor_mask=np.stack([case["sensor_mask"] for case in loaded]),
         metadata=np.array(json.dumps(metadata)),
     )
@@ -222,6 +263,22 @@ def _resample_orientation(values, source_fps, target_fps):
     for sensor in range(values.shape[1]):
         result[:, sensor] = Slerp(source_time, Rotation.from_matrix(values[:, sensor]))(target_time).as_matrix()
     return result
+
+
+def _pad_frames(values, frame_count):
+    values = np.asarray(values)[:frame_count]
+    if len(values) == frame_count:
+        return values
+    padding = np.zeros((frame_count - len(values),) + values.shape[1:], dtype=values.dtype)
+    return np.concatenate((values, padding), axis=0)
+
+
+def _sha256(path, chunk_size=8 * 1024 * 1024):
+    digest = hashlib.sha256()
+    with Path(path).open("rb") as handle:
+        while chunk := handle.read(chunk_size):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def _check_device(torch, device, min_free_gib):

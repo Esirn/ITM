@@ -72,6 +72,7 @@ class MDMControlSuiteTest(unittest.TestCase):
                 "imu_scale": 1.0,
                 "device": "cpu",
                 "frame_count": 12,
+                "effective_lengths": [8, 10],
                 "cases": [
                     {
                         "motion_id": "A",
@@ -117,6 +118,9 @@ class MDMControlSuiteTest(unittest.TestCase):
             self.assertEqual(result["run_id"], "run")
             self.assertGreaterEqual(len(result["panels"]), 4)
             self.assertIn("A", result["imu"])
+            generated = [panel for panel in result["panels"] if panel["kind"] == "generated"]
+            self.assertEqual([len(panel["motion"]) for panel in generated], [8, 10])
+            self.assertEqual(len(result["imu"]["A"]["acceleration"]), 8)
 
 
 if __name__ == "__main__":

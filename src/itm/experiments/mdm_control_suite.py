@@ -73,21 +73,25 @@ def serialize_browser_result(
         metadata = json.loads(str(data["metadata"]))
 
     panels: list[dict[str, Any]] = []
+    lengths = metadata.get("effective_lengths", [motion.shape[1]] * len(motion))
     first_gt_by_motion: dict[str, int] = {}
     for index, case in enumerate(metadata["cases"]):
         first_gt_by_motion.setdefault(str(case["motion_id"]), index)
     for motion_id, index in first_gt_by_motion.items():
         sample = samples.get(motion_id)
+        frames = int(lengths[index])
         panels.append(
             {
                 "label": f"Ground truth {motion_id}",
                 "kind": "ground_truth",
                 "motion_id": motion_id,
                 "caption": sample.caption if sample is not None else "",
-                "motion": gt[index].tolist(),
+                "length": frames,
+                "motion": gt[index, :frames].tolist(),
             }
         )
     for index, case in enumerate(metadata["cases"]):
+        frames = int(lengths[index])
         panels.append(
             {
                 "label": case["label"],
@@ -99,7 +103,9 @@ def serialize_browser_result(
                 "sensor_config": case["sensor_config"],
                 "text_scale": case.get("text_scale", metadata["text_scale"]),
                 "imu_scale": case.get("imu_scale", metadata["imu_scale"]),
-                "motion": motion[index].tolist(),
+                "joint_scale": case.get("joint_scale", metadata.get("joint_scale", 1.0)),
+                "length": frames,
+                "motion": motion[index, :frames].tolist(),
             }
         )
 
@@ -110,12 +116,14 @@ def serialize_browser_result(
             continue
         slots = np.flatnonzero(sensor_mask[index] > 0.5)
         slot = int(slots[0]) if len(slots) else 0
+        frames = int(lengths[index])
         imu[key] = {
             "motion_id": case["motion_id"],
             "sensor_config": case["sensor_config"],
             "slot": slot,
-            "acceleration": acceleration[index, :, slot].tolist(),
-            "orientation": orientation[index, :, slot, :, 0].tolist(),
+            "length": frames,
+            "acceleration": acceleration[index, :frames, slot].tolist(),
+            "orientation": orientation[index, :frames, slot, :, 0].tolist(),
         }
 
     return {
@@ -139,10 +147,12 @@ def compute_run_metrics(result_path: str | Path) -> dict[str, Any]:
         sensor_mask = data["sensor_mask"].astype(np.float32)
         metadata = json.loads(str(data["metadata"]))
 
+    lengths = metadata.get("effective_lengths", [motion.shape[1]] * len(motion))
     case_metrics = []
     for index, case in enumerate(metadata["cases"]):
-        generated = motion[index]
-        target = gt[index, :, : generated.shape[1]]
+        frames = int(lengths[index])
+        generated = motion[index, :frames]
+        target = gt[index, :frames, : generated.shape[1]]
         sensor_config = case["sensor_config"]
         case_metrics.append(
             {
@@ -154,6 +164,7 @@ def compute_run_metrics(result_path: str | Path) -> dict[str, Any]:
                 "sensor_config": sensor_config,
                 "text_scale": float(case.get("text_scale", metadata["text_scale"])),
                 "imu_scale": float(case.get("imu_scale", metadata["imu_scale"])),
+                "joint_scale": float(case.get("joint_scale", metadata.get("joint_scale", 1.0))),
                 "root_trajectory_error_m": root_trajectory_error(generated, target),
                 "head_trajectory_error_m": joint_trajectory_error(generated, target, (HEAD_JOINT,)),
                 "wrist_trajectory_error_m": joint_trajectory_error(generated, target, WRIST_JOINTS),
@@ -166,14 +177,14 @@ def compute_run_metrics(result_path: str | Path) -> dict[str, Any]:
                 "jerk_ratio": jerk_ratio(generated, target, fps=FPS),
                 "active_sensor_acceleration_error_mps2": active_sensor_acceleration_error(
                     generated,
-                    acceleration[index],
+                    acceleration[index, :frames],
                     sensor_mask[index],
                     sensor_config=sensor_config,
                     fps=FPS,
                 ),
                 "active_sensor_acceleration_ratio": active_sensor_acceleration_ratio(
                     generated,
-                    acceleration[index],
+                    acceleration[index, :frames],
                     sensor_mask[index],
                     sensor_config=sensor_config,
                     fps=FPS,
@@ -188,7 +199,9 @@ def compute_run_metrics(result_path: str | Path) -> dict[str, Any]:
         "metadata": metadata,
         "cases": case_metrics,
         "aggregate": aggregate_metrics(case_metrics),
-        "pairwise_root_relative_distance_m": pairwise_root_relative_distance(motion),
+        "pairwise_root_relative_distance_m": pairwise_root_relative_distance(
+            motion, lengths=lengths
+        ),
     }
 
 
@@ -360,15 +373,23 @@ def step_frequency_proxy(joints: np.ndarray, *, fps: float) -> float:
     return float(freqs[valid_indices[int(np.argmax(spectrum[valid]))]])
 
 
-def pairwise_root_relative_distance(motions: np.ndarray) -> float:
+def pairwise_root_relative_distance(motions: np.ndarray, lengths=None) -> float:
     values = np.asarray(motions, dtype=np.float32)
     if len(values) < 2:
         return 0.0
     distances = []
-    rel = values - values[:, :, :1]
-    for left in range(len(rel)):
-        for right in range(left + 1, len(rel)):
-            distances.append(np.linalg.norm(rel[left] - rel[right], axis=-1).mean())
+    for left in range(len(values)):
+        for right in range(left + 1, len(values)):
+            frames = (
+                min(int(lengths[left]), int(lengths[right]))
+                if lengths is not None
+                else values.shape[1]
+            )
+            left_motion = values[left, :frames] - values[left, :frames, :1]
+            right_motion = values[right, :frames] - values[right, :frames, :1]
+            distances.append(
+                np.linalg.norm(left_motion - right_motion, axis=-1).mean()
+            )
     return float(np.mean(distances))
 
 

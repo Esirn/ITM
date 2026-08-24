@@ -98,6 +98,60 @@ conda run --no-capture-output -n itm python scripts/run_mdm_control_experiment_s
   --suite sweep --execute --skip-existing --device cuda:1
 ```
 
+## Guidance兼容模式
+
+历史Stage-1/2/2b/3/4实验默认使用：
+
+```bash
+--guidance-mode legacy --branch-execution sequential
+```
+
+新四分支消融使用：
+
+```bash
+--guidance-mode factorized --branch-execution batched --joint-scale 1.0
+```
+
+`factorized`显式计算unconditional、Text-only、IMU-only和Text+IMU。它会改变推理定义，因此不能静默替换历史结果。`batched`需要缓存条件，显存不足时改用`sequential`。可通过`--no-condition-cache`做数值兼容诊断，但不能与`batched`同时使用。
+
+## 严格Loss消融
+
+只生成执行计划：
+
+```bash
+conda run -n itm python scripts/run_mdm_loss_ablation.py
+```
+
+正式训练后复测：
+
+```bash
+conda run --no-capture-output -n itm python scripts/run_mdm_loss_ablation.py \
+  --execute-train --execute-suite --skip-existing --device cuda:1
+```
+
+四个变体都从`stage1_full_pilot_v2.pt`开始，避免用不同训练阶段的checkpoint代替严格loss ablation。
+
+## SMPL与虚拟IMU验证
+
+先对GT执行round-trip：
+
+```bash
+conda run --no-capture-output -n itm python scripts/evaluate_generated_virtual_imu.py \
+  --results path/to/results.npz --motion-key gt \
+  --output path/to/gt_roundtrip.json --device cuda:1
+```
+
+只有`gt_roundtrip.json`中`validation.passed=true`，才允许把它传给生成动作评价：
+
+```bash
+conda run --no-capture-output -n itm python scripts/evaluate_generated_virtual_imu.py \
+  --results path/to/results.npz --motion-key motion \
+  --validation-summary path/to/gt_roundtrip.json \
+  --output path/to/generated_virtual_imu.json --device cuda:1
+```
+
+当前HumanML关节位置无法可靠恢复骨轴twist，初步GT round-trip没有通过orientation门槛。因此正式论文仍应把现有加速度指标称为joint-derived proxy。
+
 ## 输出结构
 
 每个 run 目录包含：

@@ -10,6 +10,7 @@ from itm.models.mdm_imu_control import (
     MDMIMUControlConfig,
     attach_zero_control_adapters,
     compose_text_imu_guidance,
+    compose_factorized_text_imu_guidance,
     install_imu_control,
     make_text_imu_guidance_model,
     make_imu_control_encoder,
@@ -66,6 +67,20 @@ class MDMIMUControlTest(unittest.TestCase):
         )
         self.assertEqual(float(result), 8.0)
 
+    def test_factorized_guidance(self):
+        import torch
+
+        result = compose_factorized_text_imu_guidance(
+            torch.tensor(1.0),
+            torch.tensor(3.0),
+            torch.tensor(4.0),
+            torch.tensor(8.0),
+            text_scale=2.0,
+            imu_scale=3.0,
+            joint_scale=0.5,
+        )
+        self.assertEqual(float(result), 15.0)
+
     def test_install_hook_preserves_mdm_call_signature(self):
         import torch
 
@@ -121,6 +136,75 @@ class MDMIMUControlTest(unittest.TestCase):
         )
         self.assertTrue(torch.all(value == 10.0))
         self.assertEqual(base.calls, [(True, True), (False, True), (False, False)])
+
+    def test_factorized_wrapper_uses_four_condition_branches(self):
+        import torch
+
+        class Dummy(torch.nn.Module):
+            def __init__(self):
+                super().__init__()
+                self.rot2xyz = None
+                self.translation = True
+                self.njoints = self.nfeats = 1
+                self.data_rep = "hml_vec"
+                self.cond_mode = "text"
+                self.encode_text = None
+                self.calls = []
+
+            def forward(self, x, timesteps, y=None):
+                key = (y["uncond"], y["imu_uncond"])
+                self.calls.append(key)
+                values = {(True, True): 1.0, (False, True): 3.0, (True, False): 4.0, (False, False): 8.0}
+                return torch.full_like(x, values[key])
+
+        base = Dummy()
+        guided = make_text_imu_guidance_model(base, mode="factorized")
+        result = guided(
+            torch.zeros(1, 1, 1, 1),
+            torch.zeros(1),
+            {"text_scale": 2.0, "imu_scale": 3.0, "joint_scale": 0.5},
+        )
+        self.assertEqual(float(result), 15.0)
+        self.assertEqual(
+            base.calls,
+            [(True, True), (False, True), (True, False), (False, False)],
+        )
+
+    def test_batched_guidance_matches_sequential_factorization(self):
+        import torch
+
+        class Dummy(torch.nn.Module):
+            def __init__(self):
+                super().__init__()
+                self.rot2xyz = None
+                self.translation = True
+                self.njoints = self.nfeats = 1
+                self.data_rep = "hml_vec"
+                self.cond_mode = "text"
+                self.encode_text = None
+
+            def forward(self, x, timesteps, y=None):
+                text = y["text_embed"].transpose(0, 1).reshape(len(x), 1, 1, 1)
+                imu = y["imu_control"].mean((1, 2)).reshape(len(x), 1, 1, 1)
+                return text + imu
+
+        y = {
+            "text": ["walk", "turn"],
+            "lengths": torch.tensor([3, 3]),
+            "mask": torch.ones(2, 1, 1, 3, dtype=torch.bool),
+            "text_embed": torch.tensor([[[2.0], [3.0]]]),
+            "imu_control": torch.tensor([[[4.0]], [[5.0]]]),
+            "text_scale": 2.0,
+            "imu_scale": 3.0,
+            "joint_scale": 0.5,
+        }
+        guided = make_text_imu_guidance_model(
+            Dummy(), mode="factorized", branch_execution="batched"
+        )
+        result = guided(torch.zeros(2, 1, 1, 3), torch.zeros(2), y)
+        expected = 2.0 * y["text_embed"].transpose(0, 1).reshape(2, 1, 1, 1)
+        expected = expected + 3.0 * y["imu_control"].mean((1, 2)).reshape(2, 1, 1, 1)
+        self.assertTrue(torch.allclose(result, expected))
 
     def test_torch_recover_from_ric_matches_numpy(self):
         import torch
