@@ -267,6 +267,27 @@ conda run -n itm python scripts/render_mdm_results.py \
   --output outputs/mdm/text_only/comparison.gif
 ```
 
+Reproduce MotionLab MotionFlow Text-to-Motion in its isolated `rfmotion`
+environment without loading its renderer or unrelated task encoders:
+
+```bash
+conda run --no-capture-output -n rfmotion python scripts/sample_motionlab_text.py \
+  --motionlab-root /home/a200/mount/a40/relatedworks/MotionLab \
+  --checkpoint /home/a200/mount/a40/relatedworks/MotionLab/checkpoints/motionflow/motionflow.ckpt \
+  --request /tmp/motionlab_request.json \
+  --output outputs/motionlab/text_only/results.npz \
+  --metadata outputs/motionlab/text_only/metadata.json \
+  --device cuda:1
+conda run --no-capture-output -n itm python scripts/render_motionlab_results.py \
+  --results outputs/motionlab/text_only/results.npz \
+  --metadata outputs/motionlab/text_only/metadata.json \
+  --output outputs/motionlab/text_only/motion.gif
+```
+
+The request JSON contains `text`, `lengths`, and `seed`. See
+`docs/MOTIONLAB_MIGRATION.md` for the reproduced path and the distinction
+between MotionLab trajectory hints and raw IMU control.
+
 Train and evaluate the flexible IMUPoser baseline:
 
 ```bash
