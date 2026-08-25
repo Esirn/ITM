@@ -80,6 +80,16 @@ class MotionLabIMUAdapterTest(unittest.TestCase):
         result = factorized_guidance(f00, f10, f01, f11, 2.0, 0.5, 1.5)
         self.assertAlmostEqual(float(result), 9.5)
 
+    def test_factorized_text_only_disables_imu_and_interaction(self):
+        torch = self.torch
+        f00 = torch.tensor(1.0)
+        f10 = torch.tensor(3.0)
+        result = factorized_guidance(
+            f00, f10, torch.tensor(100.0), torch.tensor(200.0),
+            text_scale=2.5, imu_scale=0.0, joint_scale=0.0,
+        )
+        self.assertAlmostEqual(float(result), 6.0)
+
     def test_ranking_loss_rewards_paired_control(self):
         torch = self.torch
         self.assertEqual(float(paired_control_ranking_loss(torch.tensor(0.1), torch.tensor(0.2))), 0.0)

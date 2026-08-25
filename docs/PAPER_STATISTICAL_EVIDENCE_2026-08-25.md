@@ -1,5 +1,27 @@
 # ITM 论文统计证据补充
 
+## MDM Stage-2b：统一 100-motion 控制实验
+
+MDM Stage-2b 使用与 MotionLab 完全相同的 100 条 test motions。Factorized guidance 下，严格 Text-only 同时设置 `imu_scale=0` 和 `joint_scale=0`；仅将 `imu_scale` 置零仍会保留 Text-IMU interaction，不属于严格 Text-only。head 与 wrists 两次 Text-only 输出的最大绝对差为 `0.0`。
+
+| Sensor | Reference | Error change (m), 95% CI | Improved, 95% CI | p |
+| --- | --- | ---: | ---: | ---: |
+| head | Text-only | -0.0110 [-0.0204, -0.0010] | 60/100 (60%) [50%, 69%] | 0.0261 |
+| head | zero control | -0.0045 [-0.0132, +0.0041] | 54/100 (54%) [44%, 64%] | 0.3052 |
+| head | shuffled IMU | -0.0017 [-0.0086, +0.0055] | 51/100 (51%) [41%, 61%] | 0.6446 |
+| wrists | Text-only | -0.0196 [-0.0284, -0.0103] | 70/100 (70%) [61%, 79%] | <0.0001 |
+| wrists | zero control | -0.0101 [-0.0182, -0.0019] | 65/100 (65%) [55%, 74%] | 0.0155 |
+| wrists | shuffled IMU | -0.0203 [-0.0269, -0.0136] | 74/100 (74%) [65%, 82%] | <0.0001 |
+
+MDM wrists 在 paired-vs-shuffled 上首次超过预设 70% 稳定门槛；head paired-vs-shuffled 与 paired-vs-zero 均不显著，因此 head-only 的实例控制主张仍应保持收窄。100-motion 通用动作子集上的 head/wrists jerk 差值 95% CI 均跨零，不能把早期 30 条 walking suite 的 jerk 改善泛化为所有动作。
+
+原始结果：
+
+```text
+outputs/mdm_control/control_test100/summary.json
+outputs/mdm_control/control_test100/statistics.json
+```
+
 ## 协议
 
 MotionLab V2 控制实验使用固定的 100 条 test motions。每条动作在共享文本、长度、随机种子和初始生成噪声的前提下，比较 Text-only、paired IMU、zero control 与 shuffled IMU。以下区间由 20,000 次确定性配对 bootstrap 得到；p 值来自 20,000 次双侧 paired sign-flip randomization test。误差差值定义为 `paired - reference`，负值表示 paired IMU 更好。

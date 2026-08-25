@@ -109,7 +109,7 @@ def render_markdown(payload: dict) -> str:
         return "<0.0001" if value < 0.0001 else f"{value:.4f}"
 
     lines = [
-        "# MotionLab Control Statistical Analysis",
+        f"# {payload.get('title', 'MotionLab Control')} Statistical Analysis",
         "",
         (
             f"Paired analysis over the same {payload['sample_count']} test motions. "
@@ -160,6 +160,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--title", default="MotionLab Control")
     parser.add_argument("--seed", type=int, default=20260825)
     parser.add_argument("--bootstrap-samples", type=int, default=20_000)
     parser.add_argument("--permutations", type=int, default=20_000)
@@ -170,6 +171,7 @@ def main() -> int:
     rng = np.random.default_rng(args.seed)
     payload = {
         "source": str(args.input.resolve()),
+        "title": args.title,
         "sample_count": len(records),
         "seed": args.seed,
         "bootstrap_samples": args.bootstrap_samples,

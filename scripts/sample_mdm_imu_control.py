@@ -206,29 +206,45 @@ def main():
 
 
 def _load_case(case, records, normalization):
-    motion_id = str(case["motion_id"])
-    if motion_id not in records:
-        raise KeyError(f"Motion {motion_id} is absent from the IMU manifest")
+    motion_id = str(case.get("target_motion_id", case["motion_id"]))
+    imu_motion_id = str(case.get("imu_motion_id", case["motion_id"]))
+    for role, value in (("target", motion_id), ("IMU", imu_motion_id)):
+        if value not in records:
+            raise KeyError(f"{role} motion {value} is absent from the IMU manifest")
     config_name = case.get("sensor_config", "head")
     if config_name not in SENSOR_CONFIGS:
         raise ValueError(f"Unknown sensor config: {config_name}")
-    with np.load(records[motion_id]["imu_path"]) as data:
+    with np.load(records[imu_motion_id]["imu_path"]) as data:
         acceleration = data["acceleration"].astype(np.float32)
         orientation = data["orientation"].astype(np.float32)
-        gt = data["joints"].astype(np.float32)
         fps = float(data["fps"])
+    with np.load(records[motion_id]["imu_path"]) as data:
+        gt = data["joints"].astype(np.float32)
+        gt_fps = float(data["fps"])
     acceleration = _resample_linear(acceleration, fps, 20.0)
     orientation = _resample_orientation(orientation, fps, 20.0)
-    gt = _resample_linear(gt, fps, 20.0)
+    gt = _resample_linear(gt, gt_fps, 20.0)
+    target_length = min(int(case.get("length", len(gt))), len(gt), 196)
+    acceleration = _fit_length_linear(acceleration, target_length)
+    orientation = _fit_length_orientation(orientation, target_length)
+    gt = gt[:target_length]
     mean = np.asarray(normalization["acceleration_mean"], dtype=np.float32)
     std = np.asarray(normalization["acceleration_std"], dtype=np.float32)
     normalized_acceleration = (acceleration - mean[None]) / std[None]
     imu = np.concatenate(
         (normalized_acceleration, orientation.reshape(len(orientation), 6, 9)), axis=-1
     ).astype(np.float32)
+    imu_mode = str(case.get("imu_mode", "paired"))
+    if imu_mode == "zero":
+        imu = np.zeros_like(imu)
+    elif imu_mode not in {"paired", "shuffled"}:
+        raise ValueError(f"Unknown IMU mode: {imu_mode}")
     return {
         **case,
         "motion_id": motion_id,
+        "target_motion_id": motion_id,
+        "imu_motion_id": imu_motion_id,
+        "imu_mode": imu_mode,
         "text": str(case.get("text", "")),
         "label": str(case.get("label", motion_id)),
         "sensor_config": config_name,
@@ -238,6 +254,34 @@ def _load_case(case, records, normalization):
         "raw_orientation": orientation,
         "gt": gt,
     }
+
+
+def _fit_length_linear(values, target_length):
+    if len(values) == target_length:
+        return values
+    source = np.linspace(0.0, 1.0, len(values), dtype=np.float64)
+    target = np.linspace(0.0, 1.0, target_length, dtype=np.float64)
+    flat = values.reshape(len(values), -1)
+    result = np.stack(
+        [np.interp(target, source, flat[:, index]) for index in range(flat.shape[1])],
+        axis=-1,
+    )
+    return result.reshape((target_length,) + values.shape[1:]).astype(np.float32)
+
+
+def _fit_length_orientation(values, target_length):
+    if len(values) == target_length:
+        return values
+    from scipy.spatial.transform import Rotation, Slerp
+
+    source = np.linspace(0.0, 1.0, len(values), dtype=np.float64)
+    target = np.linspace(0.0, 1.0, target_length, dtype=np.float64)
+    result = np.empty((target_length, values.shape[1], 3, 3), dtype=np.float32)
+    for sensor in range(values.shape[1]):
+        result[:, sensor] = Slerp(source, Rotation.from_matrix(values[:, sensor]))(
+            target
+        ).as_matrix()
+    return result
 
 
 def _resample_linear(values, source_fps, target_fps):
