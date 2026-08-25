@@ -7,6 +7,7 @@ from itm.models.motionlab_imu_adapter import (
     masked_trajectory_losses,
     factorized_guidance,
     paired_control_ranking_loss,
+    same_group_derangement,
 )
 from itm.models.torch_frame_baseline import require_torch
 
@@ -82,6 +83,27 @@ class MotionLabIMUAdapterTest(unittest.TestCase):
         torch = self.torch
         self.assertEqual(float(paired_control_ranking_loss(torch.tensor(0.1), torch.tensor(0.2))), 0.0)
         self.assertGreater(float(paired_control_ranking_loss(torch.tensor(0.2), torch.tensor(0.1))), 0.0)
+
+    def test_attention_fusion_preserves_shape_and_padding(self):
+        torch = self.torch
+        config = MotionLabIMUAdapterConfig(
+            hidden_dim=32, encoder_heads=4, encoder_layers=1,
+            output_dim=512, sensor_fusion="attention",
+        )
+        model = make_motionlab_imu_adapter(config).eval()
+        frames = torch.tensor([[True] * 4 + [False] * 2])
+        output = model(
+            torch.randn(1, 6, 6, 12),
+            torch.tensor([[True, True, False, False, False, False]]),
+            frames,
+        )
+        self.assertEqual(tuple(output.shape), (1, 6, 512))
+        self.assertTrue(torch.equal(output[:, 4:], torch.zeros_like(output[:, 4:])))
+
+    def test_same_group_derangement_never_crosses_sensor_config(self):
+        permutation, valid = same_group_derangement(["head", "wrists", "head", "single"])
+        self.assertEqual(permutation.tolist(), [2, 1, 0, 3])
+        self.assertEqual(valid.tolist(), [True, False, True, False])
 
 
 if __name__ == "__main__":

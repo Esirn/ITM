@@ -19,6 +19,7 @@ class MotionLabIMUAdapterConfig:
     output_dim: int = 66
     max_frames: int = 196
     sensor_fusion: str = "mean"
+    sensor_encoder_layers: int = 1
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -30,7 +31,7 @@ def make_motionlab_imu_adapter(config: MotionLabIMUAdapterConfig):
     class MotionLabIMUAdapter(torch.nn.Module):
         def __init__(self):
             super().__init__()
-            if config.sensor_fusion not in {"mean", "concat"}:
+            if config.sensor_fusion not in {"mean", "concat", "attention"}:
                 raise ValueError(f"unknown sensor_fusion: {config.sensor_fusion}")
             self.feature_projection = torch.nn.Linear(
                 config.sensor_feature_dim, config.hidden_dim
@@ -43,6 +44,21 @@ def make_motionlab_imu_adapter(config: MotionLabIMUAdapterConfig):
                 if config.sensor_fusion == "concat"
                 else None
             )
+            if config.sensor_fusion == "attention":
+                sensor_layer = torch.nn.TransformerEncoderLayer(
+                    d_model=config.hidden_dim,
+                    nhead=config.encoder_heads,
+                    dim_feedforward=config.hidden_dim * 2,
+                    dropout=config.dropout,
+                    activation="gelu",
+                    batch_first=True,
+                    norm_first=True,
+                )
+                self.sensor_encoder = torch.nn.TransformerEncoder(
+                    sensor_layer, config.sensor_encoder_layers
+                )
+            else:
+                self.sensor_encoder = None
             layer = torch.nn.TransformerEncoderLayer(
                 d_model=config.hidden_dim,
                 nhead=config.encoder_heads,
@@ -81,7 +97,16 @@ def make_motionlab_imu_adapter(config: MotionLabIMUAdapterConfig):
             hidden = hidden + self.sensor_embedding(sensor_ids)[None, None]
             active = sensor_mask[:, None, :, None].to(hidden.dtype)
             hidden = hidden * active
-            if self.sensor_fusion is None:
+            if self.sensor_encoder is not None:
+                flat = hidden.reshape(batch * frames, sensors, config.hidden_dim)
+                padding = (~sensor_mask[:, None].expand(-1, frames, -1)).reshape(
+                    batch * frames, sensors
+                )
+                flat = self.sensor_encoder(flat, src_key_padding_mask=padding)
+                flat_active = (~padding)[:, :, None].to(flat.dtype)
+                hidden = (flat * flat_active).sum(1) / flat_active.sum(1).clamp_min(1.0)
+                hidden = hidden.reshape(batch, frames, config.hidden_dim)
+            elif self.sensor_fusion is None:
                 hidden = hidden.sum(2) / active.sum(2).clamp_min(1.0)
             else:
                 hidden = self.sensor_fusion(hidden.flatten(2))
@@ -148,6 +173,21 @@ def paired_control_ranking_loss(paired_error, negative_error, margin=0.01):
     """Require paired IMU to explain its motion better than a negative IMU."""
     torch = require_torch()
     return torch.relu(paired_error - negative_error + margin)
+
+
+def same_group_derangement(groups, device=None):
+    """Return a within-group cyclic permutation and a mask for valid negatives."""
+    torch = require_torch()
+    permutation = torch.arange(len(groups), device=device)
+    valid = torch.zeros(len(groups), dtype=torch.bool, device=device)
+    for group in sorted(set(groups)):
+        indices = [index for index, value in enumerate(groups) if value == group]
+        if len(indices) < 2:
+            continue
+        source = torch.as_tensor(indices, device=device)
+        permutation[source] = torch.roll(source, 1)
+        valid[source] = True
+    return permutation, valid
 
 
 def _sinusoidal_encoding(torch, frames: int, dimension: int):

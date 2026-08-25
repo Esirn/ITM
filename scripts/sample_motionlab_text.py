@@ -33,6 +33,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--device", default="cuda:0")
     parser.add_argument("--num-steps", type=int)
+    parser.add_argument("--batch-size", type=int)
     parser.add_argument("--guidance-mode", choices=("legacy", "factorized"), default="legacy")
     parser.add_argument("--text-scale", type=float, default=1.75)
     parser.add_argument("--imu-scale", type=float, default=1.0)
@@ -344,49 +345,62 @@ def main() -> None:
     loaded = time.perf_counter()
     mode = "text"
     active_joints = None
-    if trajectory_path is None and control_path is None:
-        features, joints = sample_batch(model, datamodule, texts, lengths, args.device)
-    elif trajectory_path is not None:
-        trajectory = np.load(trajectory_path)
-        hint_joints = np.asarray(trajectory["joints"], dtype=np.float32)
-        if "mask" in trajectory:
-            hint_mask = np.asarray(trajectory["mask"], dtype=bool)
+    trajectory = np.load(trajectory_path) if trajectory_path is not None else None
+    control = np.load(control_path) if control_path is not None else None
+    batch_size = args.batch_size or len(texts)
+    if batch_size < 1:
+        raise ValueError("batch size must be positive")
+    feature_batches = []
+    joint_batches = []
+    for start in range(0, len(texts), batch_size):
+        stop = min(start + batch_size, len(texts))
+        batch_texts = texts[start:stop]
+        batch_lengths = lengths[start:stop]
+        if trajectory is None and control is None:
+            batch_features, batch_joints = sample_batch(
+                model, datamodule, batch_texts, batch_lengths, args.device
+            )
+        elif trajectory is not None:
+            hint_joints = np.asarray(trajectory["joints"][start:stop], dtype=np.float32)
+            if "mask" in trajectory:
+                hint_mask = np.asarray(trajectory["mask"][start:stop], dtype=bool)
+            else:
+                active_joints = [int(value) for value in request.get("active_joints", [])]
+                if not active_joints:
+                    raise ValueError("request.active_joints is required when hint NPZ has no mask")
+                hint_mask = np.zeros_like(hint_joints, dtype=bool)
+                hint_mask[:, :, active_joints, :] = True
+            batch_features, batch_joints = sample_text_hint_batch(
+                model, datamodule, batch_texts, batch_lengths, args.device,
+                hint_joints, hint_mask,
+            )
         else:
-            active_joints = [int(value) for value in request.get("active_joints", [])]
-            if not active_joints:
-                raise ValueError("request.active_joints is required when hint NPZ has no mask")
-            hint_mask = np.zeros_like(hint_joints, dtype=bool)
-            hint_mask[:, :, active_joints, :] = True
-        features, joints = sample_text_hint_batch(
-            model,
-            datamodule,
-            texts,
-            lengths,
-            args.device,
-            hint_joints,
-            hint_mask,
-        )
+            batch_features, batch_joints = sample_text_control_tokens(
+                model, datamodule, batch_texts, batch_lengths, args.device,
+                np.asarray(control["tokens"][start:stop], dtype=np.float32),
+                np.asarray(control["mask"][start:stop], dtype=bool),
+                guidance_mode=args.guidance_mode,
+                text_scale=args.text_scale,
+                imu_scale=args.imu_scale,
+                joint_scale=args.joint_scale,
+            )
+        padded_features = np.zeros((stop - start, max(lengths), 263), dtype=np.float32)
+        padded_joints = np.zeros((stop - start, max(lengths), 22, 3), dtype=np.float32)
+        padded_features[:, :batch_features.shape[1]] = batch_features
+        padded_joints[:, :batch_joints.shape[1]] = batch_joints
+        feature_batches.append(padded_features)
+        joint_batches.append(padded_joints)
+    features = np.concatenate(feature_batches)
+    joints = np.concatenate(joint_batches)
+
+    if trajectory_path is not None:
         hint_source = str(request.get("hint_source", "oracle_trajectory"))
         mode = (
             "text_imu_adapter"
             if hint_source == "imu_adapter"
             else "text_trajectory_hint_oracle"
         )
-    else:
-        control = np.load(control_path)
-        features, joints = sample_text_control_tokens(
-            model,
-            datamodule,
-            texts,
-            lengths,
-            args.device,
-            np.asarray(control["tokens"], dtype=np.float32),
-            np.asarray(control["mask"], dtype=bool),
-            guidance_mode=args.guidance_mode,
-            text_scale=args.text_scale,
-            imu_scale=args.imu_scale,
-            joint_scale=args.joint_scale,
-        )
+    elif control_path is not None:
         mode = "text_imu_direct_control"
     finished = time.perf_counter()
 
@@ -409,6 +423,7 @@ def main() -> None:
         "texts": texts,
         "lengths": lengths,
         "num_steps": int(cfg.model.scheduler.num_demo_steps),
+        "batch_size": batch_size,
         "guidance_mode": args.guidance_mode,
         "text_scale": args.text_scale,
         "imu_scale": args.imu_scale,

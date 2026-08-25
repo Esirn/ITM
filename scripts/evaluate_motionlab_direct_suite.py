@@ -38,6 +38,23 @@ def jerk_ratio(generated, target):
     return jerk(generated) / max(jerk(target), 1e-8)
 
 
+def root_travel(motion):
+    if len(motion) < 2:
+        return 0.0
+    return float(np.linalg.norm(np.diff(motion[:, 0], axis=0), axis=-1).sum())
+
+
+def step_frequency(motion, fps=20.0):
+    """Estimate cadence from alternating ankle-height minima."""
+    if len(motion) < 5:
+        return 0.0
+    signal = motion[:, 10, 1] - motion[:, 11, 1]
+    centered = signal - signal.mean()
+    crossings = np.count_nonzero(centered[1:] * centered[:-1] < 0)
+    duration = (len(motion) - 1) / fps
+    return float(crossings / max(2.0 * duration, 1e-8))
+
+
 def summarize(values):
     array = np.asarray(values, dtype=np.float64)
     return {
@@ -84,6 +101,10 @@ def main():
                 "motion_difference_rms_m": motion_difference(text, controlled),
                 "text_only_jerk_ratio": jerk_ratio(text, target),
                 "text_imu_jerk_ratio": jerk_ratio(controlled, target),
+                "text_only_root_travel_m": root_travel(text),
+                "text_imu_root_travel_m": root_travel(controlled),
+                "text_only_step_frequency_hz": step_frequency(text),
+                "text_imu_step_frequency_hz": step_frequency(controlled),
             }
         records.append(record)
     summary = {}
@@ -110,6 +131,18 @@ def main():
             ),
             "text_imu_jerk_ratio": summarize(
                 [item["text_imu_jerk_ratio"] for item in items]
+            ),
+            "text_only_root_travel_m": summarize(
+                [item["text_only_root_travel_m"] for item in items]
+            ),
+            "text_imu_root_travel_m": summarize(
+                [item["text_imu_root_travel_m"] for item in items]
+            ),
+            "text_only_step_frequency_hz": summarize(
+                [item["text_only_step_frequency_hz"] for item in items]
+            ),
+            "text_imu_step_frequency_hz": summarize(
+                [item["text_imu_step_frequency_hz"] for item in items]
             ),
         }
     result = {

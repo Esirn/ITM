@@ -32,7 +32,9 @@ def parse_args():
     parser.add_argument("--val-manifest", type=Path)
     parser.add_argument("--val-imu-manifest", type=Path)
     parser.add_argument("--sensor-configs", default="head,wrists")
-    parser.add_argument("--sensor-fusion", choices=("mean", "concat"), default="mean")
+    parser.add_argument(
+        "--sensor-fusion", choices=("mean", "concat", "attention"), default="mean"
+    )
     parser.add_argument("--control-dim", type=int, choices=(66, 256, 512), default=66)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--resume", type=Path)
@@ -45,8 +47,11 @@ def parse_args():
     parser.add_argument("--active-velocity-loss-weight", type=float, default=0.0)
     parser.add_argument("--ranking-loss-weight", type=float, default=0.0)
     parser.add_argument("--ranking-margin", type=float, default=0.01)
+    parser.add_argument("--ranking-mode", choices=("aggregate", "per_sample"), default="aggregate")
+    parser.add_argument("--zero-ranking-loss-weight", type=float, default=0.0)
     parser.add_argument("--zero-init-output", action="store_true")
     parser.add_argument("--max-records", type=int)
+    parser.add_argument("--max-val-records", type=int)
     parser.add_argument("--num-workers", type=int, default=2)
     parser.add_argument("--seed", type=int, default=1234)
     parser.add_argument("--device", default="cuda:1")
@@ -64,6 +69,19 @@ def make_adapter(torch, hidden_dim=256, layers=2, heads=8, max_frames=196, senso
                 if sensor_fusion == "concat"
                 else None
             )
+            if sensor_fusion == "attention":
+                sensor_layer = torch.nn.TransformerEncoderLayer(
+                    d_model=hidden_dim,
+                    nhead=heads,
+                    dim_feedforward=hidden_dim * 2,
+                    dropout=0.1,
+                    activation="gelu",
+                    batch_first=True,
+                    norm_first=True,
+                )
+                self.sensor_encoder = torch.nn.TransformerEncoder(sensor_layer, 1)
+            else:
+                self.sensor_encoder = None
             layer = torch.nn.TransformerEncoderLayer(
                 d_model=hidden_dim,
                 nhead=heads,
@@ -91,7 +109,17 @@ def make_adapter(torch, hidden_dim=256, layers=2, heads=8, max_frames=196, senso
             hidden = self.feature_projection(imu) + self.sensor_embedding(ids)[None, None]
             active = sensor_mask[:, None, :, None].to(hidden.dtype)
             hidden = hidden * active
-            if self.sensor_fusion is None:
+            if self.sensor_encoder is not None:
+                batch, frames, sensor_count, dimension = hidden.shape
+                flat = hidden.reshape(batch * frames, sensor_count, dimension)
+                padding = (~sensor_mask[:, None].expand(-1, frames, -1)).reshape(
+                    batch * frames, sensor_count
+                )
+                flat = self.sensor_encoder(flat, src_key_padding_mask=padding)
+                flat_active = (~padding)[:, :, None].to(flat.dtype)
+                hidden = (flat * flat_active).sum(1) / flat_active.sum(1).clamp_min(1.0)
+                hidden = hidden.reshape(batch, frames, dimension)
+            elif self.sensor_fusion is None:
                 hidden = hidden.sum(2) / active.sum(2).clamp_min(1.0)
             else:
                 hidden = self.sensor_fusion(hidden.flatten(2))
@@ -193,7 +221,21 @@ def collate(torch, items):
         "frame_mask": mask,
         "lengths": lengths,
         "text": [item[3] for item in items],
+        "sensor_config": [item[4] for item in items],
     }
+
+
+def same_group_derangement(torch, groups, device):
+    permutation = torch.arange(len(groups), device=device)
+    valid = torch.zeros(len(groups), dtype=torch.bool, device=device)
+    for group in sorted(set(groups)):
+        indices = [index for index, value in enumerate(groups) if value == group]
+        if len(indices) < 2:
+            continue
+        source = torch.as_tensor(indices, device=device)
+        permutation[source] = torch.roll(source, 1)
+        valid[source] = True
+    return permutation, valid
 
 
 def resample_imu(acceleration, orientation, source_fps, target_fps):
@@ -289,7 +331,7 @@ def main():
             val_imu_manifest,
             configs,
             normalization=normalization,
-            limit=args.max_records,
+            limit=args.max_val_records if args.max_val_records is not None else args.max_records,
         )
         val_loader = torch.utils.data.DataLoader(
             val_dataset,
@@ -318,6 +360,9 @@ def main():
         active_total = 0.0
         velocity_total = 0.0
         ranking_total = 0.0
+        zero_ranking_total = 0.0
+        ranking_satisfied = 0
+        ranking_compared = 0
         items = 0
         for batch in loader:
             motion = batch["motion"].to(device)
@@ -351,8 +396,15 @@ def main():
                 sensors,
             )
             ranking_loss = motion.new_zeros(())
+            zero_ranking_loss = motion.new_zeros(())
             if args.ranking_loss_weight > 0 and len(text) > 1:
-                permutation = torch.roll(torch.arange(len(text), device=device), 1)
+                if args.ranking_mode == "per_sample":
+                    permutation, negative_valid = same_group_derangement(
+                        torch, batch["sensor_config"], device
+                    )
+                else:
+                    permutation = torch.roll(torch.arange(len(text), device=device), 1)
+                    negative_valid = torch.ones(len(text), dtype=torch.bool, device=device)
                 negative_losses = direct_control_losses(
                     torch,
                     model,
@@ -368,16 +420,38 @@ def main():
                     timesteps=losses["timesteps"],
                     noise=losses["noise"],
                 )
-                ranking_loss = torch.relu(
-                    losses["active_joint_loss"]
-                    - negative_losses["active_joint_loss"]
-                    + args.ranking_margin
+                paired_error = losses["active_joint_loss_per_sample"]
+                negative_error = negative_losses["active_joint_loss_per_sample"]
+                if args.ranking_mode == "per_sample":
+                    values = torch.relu(paired_error - negative_error + args.ranking_margin)
+                    ranking_loss = values[negative_valid].mean() if negative_valid.any() else motion.new_zeros(())
+                    ranking_satisfied += int(
+                        ((paired_error + args.ranking_margin) < negative_error)[negative_valid].sum()
+                    )
+                    ranking_compared += int(negative_valid.sum())
+                else:
+                    ranking_loss = torch.relu(
+                        losses["active_joint_loss"]
+                        - negative_losses["active_joint_loss"]
+                        + args.ranking_margin
+                    )
+            if args.zero_ranking_loss_weight > 0:
+                zero_losses = direct_control_losses(
+                    torch, model, datamodule, instructions, motion, batch["lengths"],
+                    encoded_text, [0 if value == "" else 77 for value in text],
+                    torch.zeros_like(control), frame_mask, sensors,
+                    timesteps=losses["timesteps"], noise=losses["noise"],
                 )
+                paired_error = losses["active_joint_loss_per_sample"]
+                zero_error = zero_losses["active_joint_loss_per_sample"]
+                zero_values = torch.relu(paired_error - zero_error + args.ranking_margin)
+                zero_ranking_loss = zero_values.mean()
             loss = (
                 losses["flow_matching_loss"]
                 + args.active_joint_loss_weight * losses["active_joint_loss"]
                 + args.active_velocity_loss_weight * losses["active_velocity_loss"]
                 + args.ranking_loss_weight * ranking_loss
+                + args.zero_ranking_loss_weight * zero_ranking_loss
             )
             optimizer.zero_grad(set_to_none=True)
             loss.backward()
@@ -387,6 +461,7 @@ def main():
             active_total += float(losses["active_joint_loss"]) * len(text)
             velocity_total += float(losses["active_velocity_loss"]) * len(text)
             ranking_total += float(ranking_loss) * len(text)
+            zero_ranking_total += float(zero_ranking_loss) * len(text)
             items += len(text)
         record = {
             "epoch": epoch,
@@ -394,6 +469,10 @@ def main():
             "active_joint_loss": active_total / items,
             "active_velocity_loss": velocity_total / items,
             "ranking_loss": ranking_total / items,
+            "zero_ranking_loss": zero_ranking_total / items,
+            "ranking_satisfied_rate": (
+                ranking_satisfied / ranking_compared if ranking_compared else None
+            ),
         }
         if val_loader is not None:
             record["val_flow_matching_loss"] = evaluate_flow_loss(
@@ -473,22 +552,31 @@ def direct_control_losses(
     joint_mask[:, 21] = sensor_mask[:, 1]
     active = frame_mask[:, :, None, None] & joint_mask[:, None, :, None]
     active = active.expand(-1, -1, -1, 3)
-    active_denominator = active.sum().clamp_min(1).to(target_motion.dtype)
+    active_per_sample_denominator = active.flatten(1).sum(1).clamp_min(1).to(target_motion.dtype)
     position_error = predicted_joints - target_joints
-    active_joint_loss = ((position_error**2) * active).sum() / active_denominator
+    active_joint_loss_per_sample = (
+        ((position_error**2) * active).flatten(1).sum(1)
+        / active_per_sample_denominator
+    )
+    active_joint_loss = active_joint_loss_per_sample.mean()
     if target_motion.shape[1] < 2:
         active_velocity_loss = target_motion.new_zeros(())
+        active_velocity_loss_per_sample = target_motion.new_zeros(batch)
     else:
         velocity_active = active[:, 1:] & active[:, :-1]
-        velocity_denominator = velocity_active.sum().clamp_min(1).to(target_motion.dtype)
+        velocity_denominator = velocity_active.flatten(1).sum(1).clamp_min(1).to(target_motion.dtype)
         velocity_error = position_error[:, 1:] - position_error[:, :-1]
-        active_velocity_loss = (
-            (velocity_error**2) * velocity_active
-        ).sum() / velocity_denominator
+        active_velocity_loss_per_sample = (
+            ((velocity_error**2) * velocity_active).flatten(1).sum(1)
+            / velocity_denominator
+        )
+        active_velocity_loss = active_velocity_loss_per_sample.mean()
     return {
         "flow_matching_loss": flow_loss,
         "active_joint_loss": active_joint_loss,
         "active_velocity_loss": active_velocity_loss,
+        "active_joint_loss_per_sample": active_joint_loss_per_sample,
+        "active_velocity_loss_per_sample": active_velocity_loss_per_sample,
         "timesteps": timesteps,
         "noise": noise,
     }

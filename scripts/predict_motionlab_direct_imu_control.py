@@ -28,6 +28,7 @@ def main():
     parser.add_argument("--motion-ids")
     parser.add_argument("--spec", type=Path, help="suite spec.json containing motion_ids")
     parser.add_argument("--sensor-config", choices=sorted(SENSOR_CONFIGS), required=True)
+    parser.add_argument("--control-mode", choices=("paired", "zero", "shuffled"), default="paired")
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--device", default="cuda:1")
     args = parser.parse_args()
@@ -80,12 +81,19 @@ def main():
             torch.from_numpy(sensors).to(device),
             torch.from_numpy(mask).to(device),
         ).cpu().numpy()
+    if args.control_mode == "zero":
+        tokens = np.zeros_like(tokens)
+    elif args.control_mode == "shuffled":
+        permutation = np.roll(np.arange(len(ids)), 1)
+        tokens = tokens[permutation]
+        mask = mask[permutation]
     args.output.parent.mkdir(parents=True, exist_ok=True)
     np.savez_compressed(args.output, tokens=tokens, mask=mask, lengths=lengths, motion_ids=np.asarray(ids))
     metadata = {
         "checkpoint": str(args.checkpoint.resolve()), "motion_ids": ids,
         "sensor_config": args.sensor_config, "sensor_slots": list(slots),
         "lengths": lengths.tolist(), "control_space": checkpoint["control_space"],
+        "control_mode": args.control_mode,
     }
     args.output.with_suffix(".json").write_text(json.dumps(metadata, indent=2), encoding="utf-8")
     print(json.dumps(metadata, indent=2))
