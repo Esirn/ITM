@@ -34,6 +34,9 @@ def test_turning_amount_detects_body_yaw():
     joints[:, 2, 0] = 0.1 * np.cos(angles)
     joints[:, 2, 2] = 0.1 * np.sin(angles)
     np.testing.assert_allclose(MODULE.turning_amount(joints), np.pi / 2, rtol=1e-5)
+    net, efficiency = MODULE.turning_net_and_efficiency(joints)
+    np.testing.assert_allclose(net, np.pi / 2, rtol=1e-5)
+    np.testing.assert_allclose(efficiency, 1.0, rtol=1e-5)
 
 
 def test_stride_span_increases_with_foot_excursion():
@@ -45,3 +48,4 @@ def test_stride_span_increases_with_foot_excursion():
     large[:, 10, 2] = 0.4 * phase
     large[:, 11, 2] = -0.4 * phase
     assert MODULE.stride_span(large) > MODULE.stride_span(small)
+    assert MODULE.foot_separation(large) > MODULE.foot_separation(small)

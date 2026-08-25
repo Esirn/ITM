@@ -10,7 +10,7 @@ from pathlib import Path
 
 import numpy as np
 
-from itm.experiments.mdm_control_suite import arm_swing_proxy
+from itm.experiments.mdm_control_suite import arm_swing_proxy, step_frequency_proxy
 
 
 BASE = "a person walks"
@@ -33,6 +33,14 @@ def turning_amount(joints: np.ndarray) -> float:
     return float(np.abs(np.diff(yaw)).sum())
 
 
+def turning_net_and_efficiency(joints: np.ndarray) -> tuple[float, float]:
+    right = joints[:, 2, (0, 2)] - joints[:, 1, (0, 2)]
+    yaw = np.unwrap(np.arctan2(right[:, 1], right[:, 0]))
+    total = float(np.abs(np.diff(yaw)).sum())
+    net = float(abs(yaw[-1] - yaw[0]))
+    return net, net / max(total, 1e-8)
+
+
 def stride_span(joints: np.ndarray) -> float:
     root = joints[:, 0, (0, 2)]
     right = joints[:, 2, (0, 2)] - joints[:, 1, (0, 2)]
@@ -44,6 +52,13 @@ def stride_span(joints: np.ndarray) -> float:
         projection = np.sum(relative * forward, axis=-1)
         spans.append(np.quantile(projection, 0.95) - np.quantile(projection, 0.05))
     return float(np.mean(spans))
+
+
+def foot_separation(joints: np.ndarray) -> float:
+    separation = np.linalg.norm(
+        joints[:, 10, (0, 2)] - joints[:, 11, (0, 2)], axis=-1
+    )
+    return float(np.quantile(separation, 0.9))
 
 
 def head_error(joints: np.ndarray, target: np.ndarray) -> float:
@@ -97,16 +112,20 @@ def evaluate(paths: list[Path], seed: int):
         missing = {BASE, SWING, SLOW, QUICK, TURN, LARGE} - set(prompts)
         if missing:
             raise ValueError(f"{motion_id} lacks prompts: {sorted(missing)}")
-        values = {
-            prompt: {
+        values = {}
+        for prompt, index in prompts.items():
+            net_yaw, turn_efficiency = turning_net_and_efficiency(motions[index])
+            values[prompt] = {
                 "speed_mps": path_speed(motions[index]),
                 "turning_rad": turning_amount(motions[index]),
+                "net_turning_rad": net_yaw,
+                "turning_efficiency": turn_efficiency,
                 "arm_swing_m": arm_swing_proxy(motions[index]),
                 "stride_span_m": stride_span(motions[index]),
+                "cadence_hz": step_frequency_proxy(motions[index], fps=20.0),
+                "foot_separation_m": foot_separation(motions[index]),
                 "head_error_m": head_error(motions[index], targets[index]),
             }
-            for prompt, index in prompts.items()
-        }
         records.append({
             "motion_id": motion_id,
             "values": values,
@@ -115,6 +134,10 @@ def evaluate(paths: list[Path], seed: int):
                 "turn_minus_base_turning_rad": values[TURN]["turning_rad"] - values[BASE]["turning_rad"],
                 "swing_minus_base_arm_swing_m": values[SWING]["arm_swing_m"] - values[BASE]["arm_swing_m"],
                 "large_minus_base_stride_span_m": values[LARGE]["stride_span_m"] - values[BASE]["stride_span_m"],
+                "quick_minus_slow_cadence_hz": values[QUICK]["cadence_hz"] - values[SLOW]["cadence_hz"],
+                "turn_minus_base_net_yaw_rad": values[TURN]["net_turning_rad"] - values[BASE]["net_turning_rad"],
+                "turn_minus_base_efficiency": values[TURN]["turning_efficiency"] - values[BASE]["turning_efficiency"],
+                "large_minus_base_foot_separation_m": values[LARGE]["foot_separation_m"] - values[BASE]["foot_separation_m"],
             },
         })
     summary = {
@@ -167,6 +190,22 @@ def render(payloads):
         "The historical suites were generated before variable-length batching was fixed; all cases were truncated to the shortest sequence in their batch. These results are short-clip diagnostics, not final long-horizon attribute measurements."
     )
     lines.extend(["", note, ""])
+    lines.extend([
+        "Secondary checks:", "",
+        "| Model | Quick-Slow cadence | Turn-Base net yaw | Turn efficiency | Large-Base foot separation |",
+        "| --- | ---: | ---: | ---: | ---: |",
+    ])
+    secondary = (
+        "quick_minus_slow_cadence_hz", "turn_minus_base_net_yaw_rad",
+        "turn_minus_base_efficiency", "large_minus_base_foot_separation_m",
+    )
+    for name, payload in payloads.items():
+        cells = []
+        for key in secondary:
+            item = payload["summary"][key]
+            cells.append(f"{item['mean']:+.4f} ({item['desired_count']}/{item['samples']})")
+        lines.append(f"| {name} | " + " | ".join(cells) + " |")
+    lines.append("")
     return "\n".join(lines)
 
 
