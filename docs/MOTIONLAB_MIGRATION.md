@@ -204,6 +204,47 @@ factorized guidance 在平均误差上略优于 legacy，且未增加 jerk，但
 `test20_factorized/manual_review/`。一次误启动的两个并发训练曾混写同一目录，已终止并隔离为
 `outputs/motionlab/direct_v2_mixed_invalid/`，该目录不得用于任何实验结论。
 
+### Direct-V3 预筛（停止全量训练）
+
+Direct-V3尝试在每帧先对保留sensor embedding的槽位执行sensor attention，并将原先batch
+标量ranking改为同配置负样本的逐样本paired/shuffled/zero ranking。三个512-train、
+128-val、2-epoch受控变体为：A仅sensor attention，B仅per-sample ranking，C两者同时使用。
+
+固定validation复评选择C；其head paired/zero/shuffled分别为
+`0.11822/0.12401/0.12071`，wrists为`0.11895/0.12401/0.12037`。但是训练中的
+margin-satisfied rate只有约`3.1%`。更关键的是，C在test-20 factorized采样中仅有head
+`11/20`、wrists `8/20`改善；head平均误差下降`0.0061 m`，wrists反而增加`0.0056 m`。
+该结果未达到预设的双配置70%改善门槛，因此不启动7009条全量V3训练。V3作为负消融说明：
+保留传感器身份和简单单步ranking仍不足以保证实例级生成控制。
+
+### 竞争主模型评价
+
+新增backbone-neutral的批量生成与官方HumanML evaluator桥。MotionLab Text-only在相同
+672条IMU-mapped subset、5次重复上的结果为：Matching Score `2.7223 +/- 0.0230`、
+R@1/2/3 `0.5292/0.7438/0.8321`、FID `0.2683 +/- 0.0217`、Diversity
+`9.8051 +/- 0.5640`。这些结果优于当前MDM subset baseline，说明MotionLab有资格作为
+竞争主模型。加入V2控制后的5-rep结果为：
+
+| Model | Matching | R@1 | R@2 | R@3 | FID | Diversity |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| MotionLab Text-only | 2.7223 | 0.5292 | 0.7438 | 0.8321 | 0.2683 | 9.8051 |
+| MotionLab V2 head | 2.8010 | 0.5170 | 0.7280 | 0.8193 | 0.3173 | 10.4175 |
+| MotionLab V2 wrists | 2.8025 | 0.5196 | 0.7185 | 0.8205 | 0.3879 | 10.1779 |
+
+Head的Matching、R@3和FID相对退化约`2.9%/1.5%/18.3%`，通过预设生成质量门槛；
+wrists的FID增幅约`44.6%`，未通过30%门槛。
+
+固定100条test control suite进一步比较Text-only、paired、zero和shuffled control：
+
+| Config | Text error | Paired error | Zero error | Shuffled error | Paired<Text | Paired<Zero | Paired<Shuffled | Text jerk | Paired jerk |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| head | 0.1733 | 0.1548 | 0.1534 | 0.1618 | 60/100 | 42/100 | 63/100 | 2.319 | 2.005 |
+| wrists | 0.3924 | 0.3615 | 0.3679 | 0.3774 | 63/100 | 54/100 | 67/100 | 2.319 | 1.971 |
+
+两种配置都未达到70%实例改善门槛，且head paired平均误差略高于zero。因此MotionLab不替换
+MDM Stage-2b作为主模型，而作为跨backbone迁移实验：更强Text-to-Motion先验可显著改善
+生成质量，但当前IMU适配器仍不足以稳定地进行实例级控制。
+
 ## 后续验收
 
 - 固定提示词和种子生成 Text-only 样例，并确认无 NaN、长度和关节维度正确。
