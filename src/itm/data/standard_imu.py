@@ -119,6 +119,48 @@ def imuposer_features(
     return np.concatenate((acc.reshape(len(acc), -1) / acceleration_scale, ori.reshape(len(ori), -1)), axis=1)
 
 
+def resample_standard_imu(
+    acceleration: np.ndarray,
+    orientation: np.ndarray,
+    *,
+    source_fps: float,
+    target_fps: float,
+) -> tuple[np.ndarray, np.ndarray]:
+    """Resample acceleration linearly and rotation matrices with spherical interpolation."""
+    acceleration = np.asarray(acceleration, dtype=np.float32)
+    orientation = np.asarray(orientation, dtype=np.float32)
+    if np.isclose(source_fps, target_fps):
+        return acceleration.copy(), orientation.copy()
+    if source_fps <= 0 or target_fps <= 0 or len(acceleration) != len(orientation):
+        raise ValueError("FPS must be positive and IMU arrays must have equal lengths")
+    if len(acceleration) < 2:
+        return acceleration.copy(), orientation.copy()
+    from scipy.spatial.transform import Rotation, Slerp
+
+    source_time = np.arange(len(acceleration), dtype=np.float64) / source_fps
+    target_count = max(1, int(round(len(acceleration) * target_fps / source_fps)))
+    target_time = np.minimum(
+        np.arange(target_count, dtype=np.float64) / target_fps, source_time[-1]
+    )
+    resampled_acceleration = np.stack(
+        [
+            np.interp(target_time, source_time, acceleration[:, sensor, axis])
+            for sensor in range(acceleration.shape[1])
+            for axis in range(3)
+        ],
+        axis=-1,
+    ).reshape(target_count, acceleration.shape[1], 3)
+    resampled_orientation = np.empty(
+        (target_count, orientation.shape[1], 3, 3), dtype=np.float32
+    )
+    for sensor in range(orientation.shape[1]):
+        rotations = Rotation.from_matrix(orientation[:, sensor])
+        resampled_orientation[:, sensor] = Slerp(source_time, rotations)(
+            target_time
+        ).as_matrix()
+    return resampled_acceleration.astype(np.float32), resampled_orientation
+
+
 def humanml22_from_smpl24(joints: np.ndarray) -> np.ndarray:
     values = np.asarray(joints)
     if values.shape[-2:] != (24, 3):
@@ -137,4 +179,3 @@ def smpl24_from_humanml22(joints: np.ndarray) -> np.ndarray:
     output[..., 22, :] = values[..., 20, :]
     output[..., 23, :] = values[..., 21, :]
     return output
-

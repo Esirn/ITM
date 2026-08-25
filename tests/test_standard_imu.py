@@ -11,6 +11,7 @@ from itm.data.standard_imu import (
     SENSOR_VERTEX_INDICES,
     humanml22_from_smpl24,
     imuposer_features,
+    resample_standard_imu,
     smpl24_from_humanml22,
     synthesize_standard_imu,
 )
@@ -39,6 +40,17 @@ class StandardIMUTest(unittest.TestCase):
     def test_joint_conversion_preserves_humanml_joints(self):
         joints = np.arange(2 * 22 * 3).reshape(2, 22, 3)
         np.testing.assert_array_equal(humanml22_from_smpl24(smpl24_from_humanml22(joints)), joints)
+
+    def test_resample_identity_returns_independent_arrays(self):
+        acceleration = np.zeros((3, 6, 3), dtype=np.float32)
+        orientation = np.broadcast_to(np.eye(3), (3, 6, 3, 3)).astype(np.float32)
+        output_acceleration, output_orientation = resample_standard_imu(
+            acceleration, orientation, source_fps=20, target_fps=20
+        )
+        np.testing.assert_array_equal(output_acceleration, acceleration)
+        np.testing.assert_array_equal(output_orientation, orientation)
+        self.assertIsNot(output_acceleration, acceleration)
+        self.assertIsNot(output_orientation, orientation)
 
     def test_humanml_amass_mapping_and_crop(self):
         with tempfile.TemporaryDirectory() as directory:

@@ -26,6 +26,11 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         help="NPZ with joints [B,T,22,3] and optional mask; enables oracle Text+Hint",
     )
+    parser.add_argument(
+        "--control-tokens",
+        type=Path,
+        help="NPZ with learned tokens [B,T,66]; enables direct Text+IMU control",
+    )
     parser.add_argument("--device", default="cuda:0")
     parser.add_argument("--num-steps", type=int)
     return parser.parse_args()
@@ -168,6 +173,50 @@ def sample_text_hint_batch(
     return generated.cpu().numpy(), generated_joints.cpu().numpy()
 
 
+def sample_text_control_tokens(
+    model, datamodule, texts, lengths, device, control_tokens, control_mask
+):
+    """Run native Text+Hint attention with learned, non-geometric 66D tokens."""
+    import torch
+
+    batch_size = len(texts)
+    frames = max(lengths)
+    target_motion = torch.zeros(batch_size, frames, 263, device=device)
+    tokens = torch.as_tensor(control_tokens[:, :frames], dtype=torch.float32, device=device)
+    mask = torch.as_tensor(control_mask[:, :frames], dtype=torch.bool, device=device)
+    if tokens.shape != (batch_size, frames, 66) or mask.shape != (batch_size, frames):
+        raise ValueError("control tokens/mask must have shapes [B,T,66] and [B,T]")
+    valid = torch.arange(frames, device=device)[None] < torch.as_tensor(
+        lengths, device=device
+    )[:, None]
+    mask = mask & valid
+    hint = torch.cat([torch.zeros_like(tokens), tokens], dim=0)
+    hint_lengths = torch.cat([torch.zeros_like(mask), mask], dim=0)
+    instructions = torch.cat(
+        [
+            model.instructions["uncond"].repeat(batch_size, 1),
+            model.instructions["text_hint"].repeat(batch_size, 1),
+        ],
+        dim=0,
+    )
+    encoded_text = model.text_encoder([""] * batch_size + texts)
+    with torch.inference_mode():
+        generated = model.diffusion_reverse(
+            stage="demo",
+            condition_type="text_hint",
+            instructions=instructions,
+            text=encoded_text,
+            text_lengths=[0] * batch_size + [77] * batch_size,
+            hint=hint,
+            hint_lengths=hint_lengths,
+            target_motion=target_motion,
+            target_lengths=lengths,
+            target_lengths_z=lengths,
+        )
+        generated_joints = datamodule.feats2joints(generated)
+    return generated.cpu().numpy(), generated_joints.cpu().numpy()
+
+
 def main() -> None:
     args = parse_args()
     root = args.motionlab_root.expanduser().resolve()
@@ -178,6 +227,9 @@ def main() -> None:
     trajectory_path = (
         args.trajectory_hints.expanduser().resolve() if args.trajectory_hints else None
     )
+    control_path = args.control_tokens.expanduser().resolve() if args.control_tokens else None
+    if trajectory_path is not None and control_path is not None:
+        raise ValueError("trajectory hints and learned control tokens are mutually exclusive")
     if not root.is_dir() or not checkpoint.is_file():
         raise FileNotFoundError("MotionLab root or checkpoint is unavailable")
 
@@ -215,9 +267,9 @@ def main() -> None:
     loaded = time.perf_counter()
     mode = "text"
     active_joints = None
-    if trajectory_path is None:
+    if trajectory_path is None and control_path is None:
         features, joints = sample_batch(model, datamodule, texts, lengths, args.device)
-    else:
+    elif trajectory_path is not None:
         trajectory = np.load(trajectory_path)
         hint_joints = np.asarray(trajectory["joints"], dtype=np.float32)
         if "mask" in trajectory:
@@ -237,7 +289,24 @@ def main() -> None:
             hint_joints,
             hint_mask,
         )
-        mode = "text_trajectory_hint_oracle"
+        hint_source = str(request.get("hint_source", "oracle_trajectory"))
+        mode = (
+            "text_imu_adapter"
+            if hint_source == "imu_adapter"
+            else "text_trajectory_hint_oracle"
+        )
+    else:
+        control = np.load(control_path)
+        features, joints = sample_text_control_tokens(
+            model,
+            datamodule,
+            texts,
+            lengths,
+            args.device,
+            np.asarray(control["tokens"], dtype=np.float32),
+            np.asarray(control["mask"], dtype=bool),
+        )
+        mode = "text_imu_direct_control"
     finished = time.perf_counter()
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -262,6 +331,8 @@ def main() -> None:
         "text_guidance_scale": float(model.text_guidance_scale),
         "text_hint_guidance_scale": float(model.text_hint_guidance_scale),
         "trajectory_hints": str(trajectory_path) if trajectory_path else None,
+        "control_tokens": str(control_path) if control_path else None,
+        "hint_source": request.get("hint_source") if trajectory_path else None,
         "active_joints": active_joints,
         "load_seconds": loaded - started,
         "sample_seconds": finished - loaded,
