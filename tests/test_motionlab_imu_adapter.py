@@ -5,6 +5,8 @@ from itm.models.motionlab_imu_adapter import (
     active_joint_mask,
     make_motionlab_imu_adapter,
     masked_trajectory_losses,
+    factorized_guidance,
+    paired_control_ranking_loss,
 )
 from itm.models.torch_frame_baseline import require_torch
 
@@ -42,6 +44,44 @@ class MotionLabIMUAdapterTest(unittest.TestCase):
         )
         self.assertEqual(float(trajectory), 0.0)
         self.assertEqual(float(velocity), 0.0)
+
+    def test_concat_fusion_preserves_output_contract(self):
+        torch = self.torch
+        config = MotionLabIMUAdapterConfig(
+            hidden_dim=32, encoder_heads=4, encoder_layers=1, sensor_fusion="concat"
+        )
+        model = make_motionlab_imu_adapter(config).eval()
+        imu = torch.randn(1, 5, 6, 12)
+        sensors = torch.tensor([[True, True, False, False, False, False]])
+        frames = torch.ones(1, 5, dtype=torch.bool)
+        self.assertEqual(tuple(model(imu, sensors, frames).shape), (1, 5, 66))
+
+    def test_preembedded_control_dimension(self):
+        torch = self.torch
+        config = MotionLabIMUAdapterConfig(
+            hidden_dim=32, encoder_heads=4, encoder_layers=1, output_dim=512
+        )
+        model = make_motionlab_imu_adapter(config).eval()
+        output = model(
+            torch.randn(1, 5, 6, 12),
+            torch.tensor([[False, False, False, False, True, False]]),
+            torch.ones(1, 5, dtype=torch.bool),
+        )
+        self.assertEqual(tuple(output.shape), (1, 5, 512))
+
+    def test_factorized_guidance_separates_main_and_interaction_effects(self):
+        torch = self.torch
+        f00 = torch.tensor(1.0)
+        f10 = torch.tensor(3.0)
+        f01 = torch.tensor(4.0)
+        f11 = torch.tensor(8.0)
+        result = factorized_guidance(f00, f10, f01, f11, 2.0, 0.5, 1.5)
+        self.assertAlmostEqual(float(result), 9.5)
+
+    def test_ranking_loss_rewards_paired_control(self):
+        torch = self.torch
+        self.assertEqual(float(paired_control_ranking_loss(torch.tensor(0.1), torch.tensor(0.2))), 0.0)
+        self.assertGreater(float(paired_control_ranking_loss(torch.tensor(0.2), torch.tensor(0.1))), 0.0)
 
 
 if __name__ == "__main__":

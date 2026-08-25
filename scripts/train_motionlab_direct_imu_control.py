@@ -32,6 +32,8 @@ def parse_args():
     parser.add_argument("--val-manifest", type=Path)
     parser.add_argument("--val-imu-manifest", type=Path)
     parser.add_argument("--sensor-configs", default="head,wrists")
+    parser.add_argument("--sensor-fusion", choices=("mean", "concat"), default="mean")
+    parser.add_argument("--control-dim", type=int, choices=(66, 256, 512), default=66)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--resume", type=Path)
     parser.add_argument("--epochs", type=int, default=5)
@@ -39,6 +41,11 @@ def parse_args():
     parser.add_argument("--learning-rate", type=float, default=1e-4)
     parser.add_argument("--text-drop-probability", type=float, default=0.1)
     parser.add_argument("--imu-drop-probability", type=float, default=0.1)
+    parser.add_argument("--active-joint-loss-weight", type=float, default=0.0)
+    parser.add_argument("--active-velocity-loss-weight", type=float, default=0.0)
+    parser.add_argument("--ranking-loss-weight", type=float, default=0.0)
+    parser.add_argument("--ranking-margin", type=float, default=0.01)
+    parser.add_argument("--zero-init-output", action="store_true")
     parser.add_argument("--max-records", type=int)
     parser.add_argument("--num-workers", type=int, default=2)
     parser.add_argument("--seed", type=int, default=1234)
@@ -46,12 +53,17 @@ def parse_args():
     return parser.parse_args()
 
 
-def make_adapter(torch, hidden_dim=256, layers=2, heads=8, max_frames=196):
+def make_adapter(torch, hidden_dim=256, layers=2, heads=8, max_frames=196, sensor_fusion="mean", output_dim=66):
     class DirectIMUControl(torch.nn.Module):
         def __init__(self):
             super().__init__()
             self.feature_projection = torch.nn.Linear(12, hidden_dim)
             self.sensor_embedding = torch.nn.Embedding(6, hidden_dim)
+            self.sensor_fusion = (
+                torch.nn.Linear(6 * hidden_dim, hidden_dim)
+                if sensor_fusion == "concat"
+                else None
+            )
             layer = torch.nn.TransformerEncoderLayer(
                 d_model=hidden_dim,
                 nhead=heads,
@@ -62,7 +74,7 @@ def make_adapter(torch, hidden_dim=256, layers=2, heads=8, max_frames=196):
                 norm_first=True,
             )
             self.temporal_encoder = torch.nn.TransformerEncoder(layer, layers)
-            self.output_projection = torch.nn.Linear(hidden_dim, 66)
+            self.output_projection = torch.nn.Linear(hidden_dim, output_dim)
             position = torch.arange(max_frames, dtype=torch.float32)[:, None]
             divisor = torch.exp(
                 torch.arange(0, hidden_dim, 2, dtype=torch.float32)
@@ -78,7 +90,11 @@ def make_adapter(torch, hidden_dim=256, layers=2, heads=8, max_frames=196):
             ids = torch.arange(imu.shape[2], device=imu.device)
             hidden = self.feature_projection(imu) + self.sensor_embedding(ids)[None, None]
             active = sensor_mask[:, None, :, None].to(hidden.dtype)
-            hidden = (hidden * active).sum(2) / active.sum(2).clamp_min(1.0)
+            hidden = hidden * active
+            if self.sensor_fusion is None:
+                hidden = hidden.sum(2) / active.sum(2).clamp_min(1.0)
+            else:
+                hidden = self.sensor_fusion(hidden.flatten(2))
             hidden = hidden + self.position_encoding[:frames].to(hidden)[None]
             hidden = self.temporal_encoder(hidden, src_key_padding_mask=~frame_mask)
             return self.output_projection(hidden) * frame_mask[:, :, None].to(hidden.dtype)
@@ -206,6 +222,7 @@ def resample_imu(acceleration, orientation, source_fps, target_fps):
 
 def main():
     args = parse_args()
+    os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
     root = args.motionlab_root.resolve()
     motionlab_checkpoint = args.motionlab_checkpoint.resolve()
     manifest = args.manifest.resolve()
@@ -232,9 +249,21 @@ def main():
     model.load_state_dict(state)
     for parameter in model.parameters():
         parameter.requires_grad = False
-    adapter = make_adapter(torch)
+    adapter = make_adapter(
+        torch, sensor_fusion=args.sensor_fusion, output_dim=args.control_dim
+    )
+    if args.zero_init_output and args.resume is None:
+        torch.nn.init.zeros_(adapter.output_projection.weight)
+        torch.nn.init.zeros_(adapter.output_projection.bias)
     device = torch.device(args.device)
     model.to(device).eval()
+    if args.control_dim not in (66, model.denoiser.token_dim):
+        raise ValueError(
+            f"control dim must be 66 or checkpoint token_dim={model.denoiser.token_dim}; "
+            f"got {args.control_dim}"
+        )
+    if args.control_dim == model.denoiser.token_dim:
+        model.denoiser.hint_embed1 = torch.nn.Identity()
     adapter.to(device).train()
 
     configs = {
@@ -286,6 +315,9 @@ def main():
     output.parent.mkdir(parents=True, exist_ok=True)
     for epoch in range(start_epoch, args.epochs + 1):
         total = 0.0
+        active_total = 0.0
+        velocity_total = 0.0
+        ranking_total = 0.0
         items = 0
         for batch in loader:
             motion = batch["motion"].to(device)
@@ -305,25 +337,64 @@ def main():
             control = control * imu_keep
             encoded_text = model.text_encoder(text)
             instructions = model.instructions["text_hint"].repeat(len(text), 1)
-            result = model.diffusion_process(
-                instructions=instructions,
-                target_motion=motion,
-                target_lengths=batch["lengths"],
-                target_lengths_z=batch["lengths"],
-                text=encoded_text,
-                text_lengths=[0 if value == "" else 77 for value in text],
-                hint=control,
-                hint_lengths=frame_mask,
+            losses = direct_control_losses(
+                torch,
+                model,
+                datamodule,
+                instructions,
+                motion,
+                batch["lengths"],
+                encoded_text,
+                [0 if value == "" else 77 for value in text],
+                control,
+                frame_mask,
+                sensors,
             )
-            denominator = (frame_mask.sum() * 263).clamp_min(1).to(motion.dtype)
-            loss = ((result["v_pred"] - result["v_gt"]) ** 2).sum() / denominator
+            ranking_loss = motion.new_zeros(())
+            if args.ranking_loss_weight > 0 and len(text) > 1:
+                permutation = torch.roll(torch.arange(len(text), device=device), 1)
+                negative_losses = direct_control_losses(
+                    torch,
+                    model,
+                    datamodule,
+                    instructions,
+                    motion,
+                    batch["lengths"],
+                    encoded_text,
+                    [0 if value == "" else 77 for value in text],
+                    control[permutation],
+                    frame_mask,
+                    sensors,
+                    timesteps=losses["timesteps"],
+                    noise=losses["noise"],
+                )
+                ranking_loss = torch.relu(
+                    losses["active_joint_loss"]
+                    - negative_losses["active_joint_loss"]
+                    + args.ranking_margin
+                )
+            loss = (
+                losses["flow_matching_loss"]
+                + args.active_joint_loss_weight * losses["active_joint_loss"]
+                + args.active_velocity_loss_weight * losses["active_velocity_loss"]
+                + args.ranking_loss_weight * ranking_loss
+            )
             optimizer.zero_grad(set_to_none=True)
             loss.backward()
             torch.nn.utils.clip_grad_norm_(adapter.parameters(), 1.0)
             optimizer.step()
-            total += float(loss) * len(text)
+            total += float(losses["flow_matching_loss"]) * len(text)
+            active_total += float(losses["active_joint_loss"]) * len(text)
+            velocity_total += float(losses["active_velocity_loss"]) * len(text)
+            ranking_total += float(ranking_loss) * len(text)
             items += len(text)
-        record = {"epoch": epoch, "flow_matching_loss": total / items}
+        record = {
+            "epoch": epoch,
+            "flow_matching_loss": total / items,
+            "active_joint_loss": active_total / items,
+            "active_velocity_loss": velocity_total / items,
+            "ranking_loss": ranking_total / items,
+        }
         if val_loader is not None:
             record["val_flow_matching_loss"] = evaluate_flow_loss(
                 torch, model, adapter, val_loader, datamodule, device
@@ -338,6 +409,89 @@ def main():
     save_checkpoint(torch, output, adapter, optimizer, normalization, configs, history, args.epochs, args)
     print(f"checkpoint: {output}")
     return 0
+
+
+def direct_control_losses(
+    torch,
+    model,
+    datamodule,
+    instructions,
+    target_motion,
+    lengths,
+    text,
+    text_lengths,
+    hint,
+    frame_mask,
+    sensor_mask,
+    timesteps=None,
+    noise=None,
+):
+    batch = len(target_motion)
+    if timesteps is None:
+        timesteps = torch.randint(
+            0,
+            model.noise_scheduler.config.num_train_timesteps + 1,
+            (batch,),
+            device=target_motion.device,
+            dtype=torch.long,
+        )
+    if noise is None:
+        noise = torch.randn_like(target_motion)
+    noisy = model.noise_scheduler.scale_noise(
+        sample=target_motion.clone(), noise=noise, timestep=timesteps
+    )
+    predicted_velocity = model.denoiser(
+        instructions=instructions,
+        hidden_states=noisy,
+        timestep=timesteps,
+        text=text,
+        text_lengths=text_lengths,
+        hint=hint,
+        hint_lengths=frame_mask,
+        target_lengths=lengths,
+        target_lengths_z=lengths,
+        return_dict=False,
+    )[0]
+    target_velocity = noise - target_motion
+    feature_mask = frame_mask[:, :, None].expand_as(target_motion)
+    denominator = feature_mask.sum().clamp_min(1).to(target_motion.dtype)
+    flow_loss = (
+        ((predicted_velocity - target_velocity) ** 2) * feature_mask
+    ).sum() / denominator
+
+    sigma = timesteps.to(target_motion.dtype) / float(
+        model.noise_scheduler.config.num_train_timesteps
+    )
+    predicted_x0 = noisy - sigma[:, None, None] * predicted_velocity
+    predicted_joints = datamodule.feats2joints(predicted_x0)
+    target_joints = datamodule.feats2joints(target_motion)
+    predicted_joints = predicted_joints - predicted_joints[:, :, :1]
+    target_joints = target_joints - target_joints[:, :, :1]
+    joint_mask = torch.zeros(batch, 22, dtype=torch.bool, device=target_motion.device)
+    joint_mask[:, 15] = sensor_mask[:, 4]
+    joint_mask[:, 20] = sensor_mask[:, 0]
+    joint_mask[:, 21] = sensor_mask[:, 1]
+    active = frame_mask[:, :, None, None] & joint_mask[:, None, :, None]
+    active = active.expand(-1, -1, -1, 3)
+    active_denominator = active.sum().clamp_min(1).to(target_motion.dtype)
+    position_error = predicted_joints - target_joints
+    active_joint_loss = ((position_error**2) * active).sum() / active_denominator
+    if target_motion.shape[1] < 2:
+        active_velocity_loss = target_motion.new_zeros(())
+    else:
+        velocity_active = active[:, 1:] & active[:, :-1]
+        velocity_denominator = velocity_active.sum().clamp_min(1).to(target_motion.dtype)
+        velocity_error = position_error[:, 1:] - position_error[:, :-1]
+        active_velocity_loss = (
+            (velocity_error**2) * velocity_active
+        ).sum() / velocity_denominator
+    return {
+        "flow_matching_loss": flow_loss,
+        "active_joint_loss": active_joint_loss,
+        "active_velocity_loss": active_velocity_loss,
+        "timesteps": timesteps,
+        "noise": noise,
+    }
 
 
 def evaluate_flow_loss(torch, model, adapter, loader, datamodule, device):
@@ -390,7 +544,15 @@ def save_checkpoint(torch, path, adapter, optimizer, normalization, configs, his
                 key: str(value) if isinstance(value, Path) else value
                 for key, value in vars(args).items()
             },
-            "control_space": "learned MotionLab 66D hint tokens",
+            "control_space": (
+                f"preembedded MotionLab {args.control_dim}D hint tokens"
+                if args.control_dim != 66
+                else "learned MotionLab 66D hint tokens"
+            ),
+            "adapter_config": {
+                "sensor_fusion": args.sensor_fusion,
+                "output_dim": args.control_dim,
+            },
         },
         path,
     )

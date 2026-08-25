@@ -103,6 +103,45 @@ conda run --no-capture-output -n itm python scripts/train_motionlab_imu_adapter.
 
 首个 test 诊断样例 `004822` 中，相同文本、seed 和长度下，head active-joint GT error 从 Text-only 的 `1.102 m` 降至 `0.870 m`，wrists 从 `1.134 m` 降至 `0.839 m`。该结果未做轨迹对齐且只有单样本，只说明 direct control 通道产生了与目标一致的初步信号，不作为正式结论。四路 GIF 位于 `outputs/motionlab/direct_imu_control/qualitative/004822_four_way.gif`。
 
+### 固定协议复评
+
+五个 epoch checkpoint 使用相同 validation 样本、timestep、noise 和 seed 复评，并增加 zero control 与 batch-shuffled control：
+
+- epoch 5 head：paired `0.13882`，zero `0.15240`，shuffled `0.14266`。
+- epoch 5 wrists：paired `0.13942`，zero `0.15240`，shuffled `0.14239`。
+- paired 在两种配置上都优于 zero/shuffled，说明 control token 包含实例级 IMU 信息，而不只是固定条件偏置。
+- 综合 paired loss 选择 epoch 5，固定为 `outputs/motionlab/direct_imu_control/adapter_selected.pt`。
+
+完整结果：`outputs/motionlab/direct_imu_control/checkpoint_selection.json`。
+
+### Test-20 固定种子诊断
+
+20 条随机选择的 aligned test motion 使用相同 text、length、seed 和初始 diffusion noise：
+
+| Config | Text-only active error | Text+IMU active error | Change | Improved | Motion difference | Jerk Text | Jerk Text+IMU |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| head | 0.1158 m | 0.1044 m | -0.0114 m | 11/20 | 0.0708 m | 2.333 | 1.858 |
+| wrists | 0.3954 m | 0.4088 m | +0.0135 m | 11/20 | 0.0727 m | 2.333 | 1.881 |
+
+误差采用逐帧 root-relative HumanML joints，只是控制 proxy，不是真实 generated-IMU orientation error。head 显示小幅平均收益；wrists 的中位数略有改善，但少数严重失败导致均值恶化。当前多传感器在时序编码前做 mask average，可能丢失左右腕独立结构，是下一版 sensor-token adapter 的直接动机。
+
+- 汇总：`outputs/motionlab/direct_imu_control/test20/summary.md/json`
+- 人工筛选：`outputs/motionlab/direct_imu_control/test20/manual_review/`
+
+### Sensor fusion 与 consistency follow-up
+
+固定槽位 concat fusion 保留左右腕独立特征，但在同一 test-20 上没有改善：head active error change 为 `-0.0010 m`，wrists 为 `+0.0135 m`。因此 concat 是负消融，主线保留 mean pooling。
+
+Direct-2 在 flow-matching loss 外，从训练时 velocity prediction 恢复 predicted x0，经可微 HumanML `feats2joints` 加入 active-joint root-relative position/velocity loss。MotionFlow 和 CLIP 仍完全冻结。使用 position weight `10`、velocity weight `2` 训练 5 epochs 后：
+
+| Model | Head change | Head improved | Wrists change | Wrists improved | Head jerk | Wrists jerk |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Direct-1 mean | -0.0114 m | 11/20 | +0.0135 m | 11/20 | 1.858 | 1.881 |
+| Direct-1 concat | -0.0010 m | 10/20 | +0.0135 m | 10/20 | 2.085 | 1.952 |
+| Direct-2 consistency | -0.0078 m | 11/20 | -0.0039 m | 13/20 | 1.920 | 1.834 |
+
+Direct-2 牺牲了一部分 head 平均收益，但修正了 wrists 平均退化并提高 wrists 改善率，是当前更平衡的 MotionLab 候选。收益仍然较小且存在明显失败样例，不能据此声称已解决 IMU control。候选 checkpoint 为 `outputs/motionlab/direct_imu_consistency/adapter_selected.pt`，test-20 汇总和人工样例位于同目录下的 `test20/`。
+
 ```bash
 conda run --no-capture-output -n rfmotion python scripts/train_motionlab_direct_imu_control.py \
   --motionlab-root /home/a200/mount/a40/relatedworks/MotionLab \
@@ -114,6 +153,56 @@ conda run --no-capture-output -n rfmotion python scripts/train_motionlab_direct_
 ```
 
 这条路径只使用 Text、IMU 和 motion generation，不包含 MotionLab 的其他输入模态或任务。
+
+### Direct-V2：预嵌入控制与可分解 guidance
+
+Direct-1/2 都让 IMU encoder 输出 66D token，再经过 MotionFlow 为几何轨迹提示训练的
+`hint_embed1`。这条接口能产生控制信号，但 test-20 上平均收益较小，paired control 与
+shuffled control 的间隔也不稳定。Direct-V2 保留外部 MotionLab 仓库只读，并作以下兼容扩展：
+
+- IMU encoder 直接输出当前官方 checkpoint 的 512D `token_dim`，绕过 66D 几何提示投影；
+- 512D token 继续走 MotionFlow 原生 hint stream，在全部 6 个联合 Transformer block 中与文本和动作交互；
+- 输出投影可零初始化，使训练起点不改变冻结 MotionFlow；
+- 增加 paired-vs-shuffled active-joint ranking loss，显式要求配对 IMU 优于错误 IMU；
+- 推理可选四分支 `uncond/text/imu/text+imu`，独立调节 text、IMU 和交互项。
+
+四分支公式为：
+
+```text
+v = f00
+  + text_scale  * (f10 - f00)
+  + imu_scale   * (f01 - f00)
+  + joint_scale * (f11 - f10 - f01 + f00)
+```
+
+16 条数据的 512D smoke 训练和 1 条样本的两步 factorized sampling 已通过，产物位于
+`outputs/motionlab/direct_v2_smoke/`。128 条零初始化预筛中，epoch 2 的 paired flow loss
+在 head/wrists 上均优于 zero 和 shuffled，因此启动了正式训练。
+
+正式 Direct-V2 使用 7009 条 train、434 条 val、head/wrists、batch 8、5 epochs、学习率
+`5e-5` 和 GPU 1。checkpoint 位于 `outputs/motionlab/direct_v2_full/`，固定 434 条 validation
+复评选择 epoch 5：
+
+| Config | Paired | Zero | Shuffled | Gain vs zero | Gain vs shuffled |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| head | 0.13605 | 0.14603 | 0.14146 | 0.00997 | 0.00541 |
+| wrists | 0.13650 | 0.14603 | 0.14039 | 0.00952 | 0.00389 |
+
+同一 test-20 上的生成结果如下。误差是 root-relative active-joint proxy，不是真实 IMU error：
+
+| Guidance | Config | Error change | Improved | Text jerk | Text+IMU jerk |
+| --- | --- | ---: | ---: | ---: | ---: |
+| legacy | head | -0.0073 m | 13/20 | 2.333 | 2.166 |
+| legacy | wrists | -0.0140 m | 11/20 | 2.333 | 2.072 |
+| factorized | head | -0.0090 m | 12/20 | 2.333 | 2.110 |
+| factorized | wrists | -0.0147 m | 11/20 | 2.333 | 2.071 |
+
+factorized guidance 在平均误差上略优于 legacy，且未增加 jerk，但改善率仍只有 55%-60%。
+这表明 512D 预嵌入控制和 ranking loss 提高了 paired/shuffled 可辨识性，并改善了 wrists
+平均控制误差，但实例级控制仍不稳定。完整 summary 位于
+`outputs/motionlab/direct_v2_full/test20_legacy/` 和 `test20_factorized/`；最佳/最差 GIF 位于
+`test20_factorized/manual_review/`。一次误启动的两个并发训练曾混写同一目录，已终止并隔离为
+`outputs/motionlab/direct_v2_mixed_invalid/`，该目录不得用于任何实验结论。
 
 ## 后续验收
 

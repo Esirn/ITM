@@ -25,21 +25,33 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--checkpoint", type=Path, required=True)
     parser.add_argument("--imu-manifest", type=Path, required=True)
-    parser.add_argument("--motion-ids", required=True)
+    parser.add_argument("--motion-ids")
+    parser.add_argument("--spec", type=Path, help="suite spec.json containing motion_ids")
     parser.add_argument("--sensor-config", choices=sorted(SENSOR_CONFIGS), required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--device", default="cuda:1")
     args = parser.parse_args()
     torch = require_torch()
     checkpoint = torch.load(args.checkpoint, map_location="cpu", weights_only=False)
-    if checkpoint.get("control_space") != "learned MotionLab 66D hint tokens":
+    supported_spaces = {
+        "learned MotionLab 66D hint tokens",
+        "preembedded MotionLab 256D hint tokens",
+        "preembedded MotionLab 512D hint tokens",
+    }
+    if checkpoint.get("control_space") not in supported_spaces:
         raise ValueError("checkpoint is not a direct MotionLab control adapter")
-    model = make_motionlab_imu_adapter(MotionLabIMUAdapterConfig())
+    adapter_config = checkpoint.get("adapter_config", {"sensor_fusion": "mean"})
+    model = make_motionlab_imu_adapter(MotionLabIMUAdapterConfig(**adapter_config))
     model.load_state_dict(checkpoint["adapter"])
     device = torch.device(args.device)
     model.to(device).eval()
     records = {str(item["motion_id"]): item for item in read_jsonl(args.imu_manifest)}
-    ids = [value.strip() for value in args.motion_ids.split(",") if value.strip()]
+    if bool(args.motion_ids) == bool(args.spec):
+        raise ValueError("provide exactly one of --motion-ids or --spec")
+    if args.spec:
+        ids = [str(value) for value in json.loads(args.spec.read_text())["motion_ids"]]
+    else:
+        ids = [value.strip() for value in args.motion_ids.split(",") if value.strip()]
     normalization = checkpoint["imu_normalization"]
     mean = np.asarray(normalization["acceleration_mean"], dtype=np.float32)
     std = np.asarray(normalization["acceleration_std"], dtype=np.float32)

@@ -33,6 +33,10 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--device", default="cuda:0")
     parser.add_argument("--num-steps", type=int)
+    parser.add_argument("--guidance-mode", choices=("legacy", "factorized"), default="legacy")
+    parser.add_argument("--text-scale", type=float, default=1.75)
+    parser.add_argument("--imu-scale", type=float, default=1.0)
+    parser.add_argument("--joint-scale", type=float, default=1.0)
     return parser.parse_args()
 
 
@@ -174,9 +178,10 @@ def sample_text_hint_batch(
 
 
 def sample_text_control_tokens(
-    model, datamodule, texts, lengths, device, control_tokens, control_mask
+    model, datamodule, texts, lengths, device, control_tokens, control_mask,
+    guidance_mode="legacy", text_scale=1.75, imu_scale=1.0, joint_scale=1.0,
 ):
-    """Run native Text+Hint attention with learned, non-geometric 66D tokens."""
+    """Run native hint attention with learned IMU control tokens."""
     import torch
 
     batch_size = len(texts)
@@ -184,12 +189,25 @@ def sample_text_control_tokens(
     target_motion = torch.zeros(batch_size, frames, 263, device=device)
     tokens = torch.as_tensor(control_tokens[:, :frames], dtype=torch.float32, device=device)
     mask = torch.as_tensor(control_mask[:, :frames], dtype=torch.bool, device=device)
-    if tokens.shape != (batch_size, frames, 66) or mask.shape != (batch_size, frames):
-        raise ValueError("control tokens/mask must have shapes [B,T,66] and [B,T]")
+    if tokens.shape[:2] != (batch_size, frames) or tokens.shape[-1] not in (
+        66, model.denoiser.token_dim
+    ):
+        raise ValueError(
+            f"control tokens must have shape [B,T,66|{model.denoiser.token_dim}]"
+        )
+    if mask.shape != (batch_size, frames):
+        raise ValueError("control mask must have shape [B,T]")
     valid = torch.arange(frames, device=device)[None] < torch.as_tensor(
         lengths, device=device
     )[:, None]
     mask = mask & valid
+    if tokens.shape[-1] == model.denoiser.token_dim:
+        model.denoiser.hint_embed1 = torch.nn.Identity()
+    if guidance_mode == "factorized":
+        return sample_factorized_control(
+            model, datamodule, texts, lengths, target_motion, tokens, mask,
+            text_scale, imu_scale, joint_scale,
+        )
     hint = torch.cat([torch.zeros_like(tokens), tokens], dim=0)
     hint_lengths = torch.cat([torch.zeros_like(mask), mask], dim=0)
     instructions = torch.cat(
@@ -215,6 +233,65 @@ def sample_text_control_tokens(
         )
         generated_joints = datamodule.feats2joints(generated)
     return generated.cpu().numpy(), generated_joints.cpu().numpy()
+
+
+def sample_factorized_control(
+    model, datamodule, texts, lengths, target_motion, tokens, mask,
+    text_scale, imu_scale, joint_scale,
+):
+    """Sample explicit unconditional, text, IMU, and joint branches."""
+    import torch
+
+    batch_size = len(texts)
+    instructions = torch.cat(
+        [model.instructions[name].repeat(batch_size, 1)
+         for name in ("uncond", "text", "hint", "text_hint")],
+        dim=0,
+    )
+    encoded_text = model.text_encoder(
+        [""] * batch_size + texts + [""] * batch_size + texts
+    )
+    text_lengths = (
+        [0] * batch_size + [77] * batch_size
+        + [0] * batch_size + [77] * batch_size
+    )
+    zeros = torch.zeros_like(tokens)
+    zero_mask = torch.zeros_like(mask)
+    hints = torch.cat([zeros, zeros, tokens, tokens], dim=0)
+    hint_lengths = torch.cat([zero_mask, zero_mask, mask, mask], dim=0)
+    noisy = torch.randn_like(target_motion)
+    model.scheduler.set_timesteps(
+        num_inference_steps=model.cfg.model.scheduler.num_demo_steps,
+        device=target_motion.device,
+    )
+    with torch.inference_mode():
+        for timestep in model.scheduler.timesteps.to(torch.int32):
+            if timestep == 0:
+                continue
+            velocity = model.denoiser(
+                instructions=instructions,
+                hidden_states=torch.cat([noisy] * 4),
+                timestep=timestep,
+                text=encoded_text,
+                text_lengths=text_lengths,
+                hint=hints,
+                hint_lengths=hint_lengths,
+                target_lengths=lengths * 4,
+                target_lengths_z=lengths * 4,
+                return_dict=False,
+            )[0]
+            f00, f10, f01, f11 = velocity.chunk(4)
+            velocity = (
+                f00
+                + text_scale * (f10 - f00)
+                + imu_scale * (f01 - f00)
+                + joint_scale * (f11 - f10 - f01 + f00)
+            )
+            noisy = model.scheduler.step(
+                velocity, timestep, noisy, return_dict=False
+            )[0]
+        joints = datamodule.feats2joints(noisy)
+    return noisy.cpu().numpy(), joints.cpu().numpy()
 
 
 def main() -> None:
@@ -305,6 +382,10 @@ def main() -> None:
             args.device,
             np.asarray(control["tokens"], dtype=np.float32),
             np.asarray(control["mask"], dtype=bool),
+            guidance_mode=args.guidance_mode,
+            text_scale=args.text_scale,
+            imu_scale=args.imu_scale,
+            joint_scale=args.joint_scale,
         )
         mode = "text_imu_direct_control"
     finished = time.perf_counter()
@@ -328,6 +409,10 @@ def main() -> None:
         "texts": texts,
         "lengths": lengths,
         "num_steps": int(cfg.model.scheduler.num_demo_steps),
+        "guidance_mode": args.guidance_mode,
+        "text_scale": args.text_scale,
+        "imu_scale": args.imu_scale,
+        "joint_scale": args.joint_scale,
         "text_guidance_scale": float(model.text_guidance_scale),
         "text_hint_guidance_scale": float(model.text_hint_guidance_scale),
         "trajectory_hints": str(trajectory_path) if trajectory_path else None,

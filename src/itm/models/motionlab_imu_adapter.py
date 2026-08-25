@@ -18,6 +18,7 @@ class MotionLabIMUAdapterConfig:
     dropout: float = 0.1
     output_dim: int = 66
     max_frames: int = 196
+    sensor_fusion: str = "mean"
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -29,11 +30,18 @@ def make_motionlab_imu_adapter(config: MotionLabIMUAdapterConfig):
     class MotionLabIMUAdapter(torch.nn.Module):
         def __init__(self):
             super().__init__()
+            if config.sensor_fusion not in {"mean", "concat"}:
+                raise ValueError(f"unknown sensor_fusion: {config.sensor_fusion}")
             self.feature_projection = torch.nn.Linear(
                 config.sensor_feature_dim, config.hidden_dim
             )
             self.sensor_embedding = torch.nn.Embedding(
                 config.sensor_count, config.hidden_dim
+            )
+            self.sensor_fusion = (
+                torch.nn.Linear(config.sensor_count * config.hidden_dim, config.hidden_dim)
+                if config.sensor_fusion == "concat"
+                else None
             )
             layer = torch.nn.TransformerEncoderLayer(
                 d_model=config.hidden_dim,
@@ -72,7 +80,11 @@ def make_motionlab_imu_adapter(config: MotionLabIMUAdapterConfig):
             hidden = self.feature_projection(imu)
             hidden = hidden + self.sensor_embedding(sensor_ids)[None, None]
             active = sensor_mask[:, None, :, None].to(hidden.dtype)
-            hidden = (hidden * active).sum(2) / active.sum(2).clamp_min(1.0)
+            hidden = hidden * active
+            if self.sensor_fusion is None:
+                hidden = hidden.sum(2) / active.sum(2).clamp_min(1.0)
+            else:
+                hidden = self.sensor_fusion(hidden.flatten(2))
             hidden = hidden + self.position_encoding[:frames].to(hidden)[None]
             hidden = self.temporal_encoder(
                 hidden,
@@ -120,6 +132,22 @@ def masked_trajectory_losses(predicted, target, frame_mask, joint_mask):
         * velocity_weight
     ).sum() / velocity_denominator
     return trajectory, velocity
+
+
+def factorized_guidance(f00, f10, f01, f11, text_scale, imu_scale, joint_scale=1.0):
+    """Combine independent text, IMU, and text-IMU interaction effects."""
+    return (
+        f00
+        + text_scale * (f10 - f00)
+        + imu_scale * (f01 - f00)
+        + joint_scale * (f11 - f10 - f01 + f00)
+    )
+
+
+def paired_control_ranking_loss(paired_error, negative_error, margin=0.01):
+    """Require paired IMU to explain its motion better than a negative IMU."""
+    torch = require_torch()
+    return torch.relu(paired_error - negative_error + margin)
 
 
 def _sinusoidal_encoding(torch, frames: int, dimension: int):
