@@ -217,6 +217,19 @@ margin-satisfied rate只有约`3.1%`。更关键的是，C在test-20 factorized�
 该结果未达到预设的双配置70%改善门槛，因此不启动7009条全量V3训练。V3作为负消融说明：
 保留传感器身份和简单单步ranking仍不足以保证实例级生成控制。
 
+### Direct-V4 对比条件辨识预筛（停止全量训练）
+
+Direct-V4不再通过单个扩散时刻的重建误差间接排序，而增加仅训练期使用的condition
+matcher。matcher从512D control token和normalized 263D motion的时序统计中提取128D
+embedding，并在相同sensor config内执行双向InfoNCE，同时加入paired-vs-zero cosine
+margin。该模块不参与采样，因此不增加推理成本。
+
+在512条train、128条val、2 epochs的干净预筛中，validation retrieval top-1从
+`56.4%`升至`61.9%`，明显高于同配置batch内约`25%`的随机水平；paired-beats-zero为
+`96.9%`。这说明直接条件辨识比V3 ranking更可学习，但仍未达到预设`70%`门槛。
+因此不启动7009条全量训练。完整协议和结果见
+`docs/MOTIONLAB_V4_CONTRASTIVE_PRESCREEN_2026-08-25.md`。
+
 ### 竞争主模型评价
 
 新增backbone-neutral的批量生成与官方HumanML evaluator桥。MotionLab Text-only在相同

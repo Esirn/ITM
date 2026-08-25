@@ -175,6 +175,42 @@ def paired_control_ranking_loss(paired_error, negative_error, margin=0.01):
     return torch.relu(paired_error - negative_error + margin)
 
 
+def grouped_contrastive_matching_loss(
+    control_embeddings,
+    motion_embeddings,
+    groups,
+    *,
+    temperature=0.07,
+):
+    """Symmetric InfoNCE using negatives from the same sensor configuration."""
+    torch = require_torch()
+    if control_embeddings.shape != motion_embeddings.shape:
+        raise ValueError("control and motion embeddings must have equal shape")
+    if len(groups) != len(control_embeddings):
+        raise ValueError("groups must contain one value per embedding")
+    control = torch.nn.functional.normalize(control_embeddings, dim=-1)
+    motion = torch.nn.functional.normalize(motion_embeddings, dim=-1)
+    losses = []
+    correct = 0
+    compared = 0
+    for group in sorted(set(groups)):
+        indices = [index for index, value in enumerate(groups) if value == group]
+        if len(indices) < 2:
+            continue
+        index = torch.as_tensor(indices, device=control.device)
+        logits = control[index] @ motion[index].T / temperature
+        labels = torch.arange(len(indices), device=control.device)
+        losses.extend((
+            torch.nn.functional.cross_entropy(logits, labels),
+            torch.nn.functional.cross_entropy(logits.T, labels),
+        ))
+        correct += int((logits.argmax(1) == labels).sum())
+        correct += int((logits.argmax(0) == labels).sum())
+        compared += 2 * len(indices)
+    loss = torch.stack(losses).mean() if losses else control.sum() * 0.0
+    return loss, correct, compared
+
+
 def same_group_derangement(groups, device=None):
     """Return a within-group cyclic permutation and a mask for valid negatives."""
     torch = require_torch()

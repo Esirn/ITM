@@ -13,6 +13,11 @@ from pathlib import Path
 
 import numpy as np
 
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(PROJECT_ROOT / "src"))
+
+from itm.models.motionlab_imu_adapter import grouped_contrastive_matching_loss
+
 from sample_motionlab_text import (
     MinimalHumanMLDataModule,
     disable_unrelated_initializers,
@@ -49,6 +54,11 @@ def parse_args():
     parser.add_argument("--ranking-margin", type=float, default=0.01)
     parser.add_argument("--ranking-mode", choices=("aggregate", "per_sample"), default="aggregate")
     parser.add_argument("--zero-ranking-loss-weight", type=float, default=0.0)
+    parser.add_argument("--contrastive-loss-weight", type=float, default=0.0)
+    parser.add_argument("--contrastive-zero-loss-weight", type=float, default=0.0)
+    parser.add_argument("--contrastive-temperature", type=float, default=0.07)
+    parser.add_argument("--contrastive-margin", type=float, default=0.1)
+    parser.add_argument("--contrastive-dim", type=int, default=128)
     parser.add_argument("--zero-init-output", action="store_true")
     parser.add_argument("--max-records", type=int)
     parser.add_argument("--max-val-records", type=int)
@@ -128,6 +138,52 @@ def make_adapter(torch, hidden_dim=256, layers=2, heads=8, max_frames=196, senso
             return self.output_projection(hidden) * frame_mask[:, :, None].to(hidden.dtype)
 
     return DirectIMUControl()
+
+
+def make_condition_matcher(torch, control_dim, embedding_dim=128):
+    """Training-only matcher between control tokens and normalized motion."""
+    class ConditionMatcher(torch.nn.Module):
+        def __init__(self):
+            super().__init__()
+            self.control_projection = torch.nn.Sequential(
+                torch.nn.Linear(control_dim * 3, embedding_dim * 2),
+                torch.nn.GELU(),
+                torch.nn.Linear(embedding_dim * 2, embedding_dim),
+            )
+            self.motion_projection = torch.nn.Sequential(
+                torch.nn.Linear(263 * 3, embedding_dim * 2),
+                torch.nn.GELU(),
+                torch.nn.Linear(embedding_dim * 2, embedding_dim),
+            )
+
+        @staticmethod
+        def statistics(values, frame_mask):
+            weight = frame_mask[:, :, None].to(values.dtype)
+            count = weight.sum(1).clamp_min(1.0)
+            mean = (values * weight).sum(1) / count
+            variance = (((values - mean[:, None]) ** 2) * weight).sum(1) / count
+            if values.shape[1] < 2:
+                velocity_rms = torch.zeros_like(mean)
+            else:
+                velocity_weight = (frame_mask[:, 1:] & frame_mask[:, :-1])[:, :, None]
+                velocity_weight = velocity_weight.to(values.dtype)
+                velocity_count = velocity_weight.sum(1).clamp_min(1.0)
+                velocity = values[:, 1:] - values[:, :-1]
+                velocity_rms = torch.sqrt(
+                    (velocity.square() * velocity_weight).sum(1) / velocity_count + 1e-8
+                )
+            return torch.cat((mean, torch.sqrt(variance + 1e-8), velocity_rms), dim=-1)
+
+        def forward(self, control, motion, frame_mask):
+            return (
+                self.control_projection(self.statistics(control, frame_mask)),
+                self.motion_projection(self.statistics(motion, frame_mask)),
+            )
+
+        def encode_control(self, control, frame_mask):
+            return self.control_projection(self.statistics(control, frame_mask))
+
+    return ConditionMatcher()
 
 
 class PairedDataset:
@@ -294,6 +350,11 @@ def main():
     adapter = make_adapter(
         torch, sensor_fusion=args.sensor_fusion, output_dim=args.control_dim
     )
+    matcher = (
+        make_condition_matcher(torch, args.control_dim, args.contrastive_dim)
+        if args.contrastive_loss_weight > 0 or args.contrastive_zero_loss_weight > 0
+        else None
+    )
     if args.zero_init_output and args.resume is None:
         torch.nn.init.zeros_(adapter.output_projection.weight)
         torch.nn.init.zeros_(adapter.output_projection.bias)
@@ -307,6 +368,8 @@ def main():
     if args.control_dim == model.denoiser.token_dim:
         model.denoiser.hint_embed1 = torch.nn.Identity()
     adapter.to(device).train()
+    if matcher is not None:
+        matcher.to(device).train()
 
     configs = {
         name: SENSOR_CONFIGS[name]
@@ -340,18 +403,29 @@ def main():
             num_workers=args.num_workers,
             collate_fn=lambda items: collate(torch, items),
         )
-    optimizer = torch.optim.AdamW(adapter.parameters(), lr=args.learning_rate)
+    trainable = list(adapter.parameters())
+    if matcher is not None:
+        trainable.extend(matcher.parameters())
+    optimizer = torch.optim.AdamW(trainable, lr=args.learning_rate)
     history = []
     start_epoch = 1
     best_val = float("inf")
     if resume_path:
         resume = torch.load(resume_path, map_location="cpu")
         adapter.load_state_dict(resume["adapter"])
+        if matcher is not None and resume.get("condition_matcher") is not None:
+            matcher.load_state_dict(resume["condition_matcher"])
+        if resume.get("optimizer") is not None:
+            optimizer.load_state_dict(resume["optimizer"])
         normalization = resume["imu_normalization"]
         dataset.normalization = normalization
         history = list(resume.get("history", []))
         start_epoch = int(resume.get("epoch", 0)) + 1
-        previous = [item.get("val_flow_matching_loss") for item in history]
+        previous = (
+            [-item["val_contrastive_top1"] for item in history if item.get("val_contrastive_top1") is not None]
+            if matcher is not None
+            else [item.get("val_flow_matching_loss") for item in history]
+        )
         previous = [value for value in previous if value is not None]
         best_val = min(previous, default=float("inf"))
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -363,6 +437,10 @@ def main():
         zero_ranking_total = 0.0
         ranking_satisfied = 0
         ranking_compared = 0
+        contrastive_total = 0.0
+        contrastive_zero_total = 0.0
+        contrastive_correct = 0
+        contrastive_compared = 0
         items = 0
         for batch in loader:
             motion = batch["motion"].to(device)
@@ -376,6 +454,28 @@ def main():
             text_drop = torch.rand(len(text), device=device) < args.text_drop_probability
             text = ["" if bool(text_drop[i]) else value for i, value in enumerate(text)]
             control = adapter(imu, sensors, frame_mask)
+            contrastive_loss = motion.new_zeros(())
+            contrastive_zero_loss = motion.new_zeros(())
+            if matcher is not None:
+                control_embedding, motion_embedding = matcher(control, motion, frame_mask)
+                contrastive_loss, correct, compared = grouped_contrastive_matching_loss(
+                    control_embedding,
+                    motion_embedding,
+                    batch["sensor_config"],
+                    temperature=args.contrastive_temperature,
+                )
+                contrastive_correct += correct
+                contrastive_compared += compared
+                zero_embedding = matcher.encode_control(torch.zeros_like(control), frame_mask)
+                paired_similarity = torch.nn.functional.cosine_similarity(
+                    control_embedding, motion_embedding, dim=-1
+                )
+                zero_similarity = torch.nn.functional.cosine_similarity(
+                    zero_embedding, motion_embedding, dim=-1
+                )
+                contrastive_zero_loss = torch.relu(
+                    zero_similarity - paired_similarity + args.contrastive_margin
+                ).mean()
             imu_keep = (
                 torch.rand(len(text), 1, 1, device=device) >= args.imu_drop_probability
             ).to(control.dtype)
@@ -452,16 +552,20 @@ def main():
                 + args.active_velocity_loss_weight * losses["active_velocity_loss"]
                 + args.ranking_loss_weight * ranking_loss
                 + args.zero_ranking_loss_weight * zero_ranking_loss
+                + args.contrastive_loss_weight * contrastive_loss
+                + args.contrastive_zero_loss_weight * contrastive_zero_loss
             )
             optimizer.zero_grad(set_to_none=True)
             loss.backward()
-            torch.nn.utils.clip_grad_norm_(adapter.parameters(), 1.0)
+            torch.nn.utils.clip_grad_norm_(trainable, 1.0)
             optimizer.step()
             total += float(losses["flow_matching_loss"]) * len(text)
             active_total += float(losses["active_joint_loss"]) * len(text)
             velocity_total += float(losses["active_velocity_loss"]) * len(text)
             ranking_total += float(ranking_loss) * len(text)
             zero_ranking_total += float(zero_ranking_loss) * len(text)
+            contrastive_total += float(contrastive_loss) * len(text)
+            contrastive_zero_total += float(contrastive_zero_loss) * len(text)
             items += len(text)
         record = {
             "epoch": epoch,
@@ -470,6 +574,12 @@ def main():
             "active_velocity_loss": velocity_total / items,
             "ranking_loss": ranking_total / items,
             "zero_ranking_loss": zero_ranking_total / items,
+            "contrastive_loss": contrastive_total / items,
+            "contrastive_zero_loss": contrastive_zero_total / items,
+            "contrastive_top1": (
+                contrastive_correct / contrastive_compared
+                if contrastive_compared else None
+            ),
             "ranking_satisfied_rate": (
                 ranking_satisfied / ranking_compared if ranking_compared else None
             ),
@@ -478,14 +588,25 @@ def main():
             record["val_flow_matching_loss"] = evaluate_flow_loss(
                 torch, model, adapter, val_loader, datamodule, device
             )
+            if matcher is not None:
+                record.update(
+                    evaluate_contrastive_matching(
+                        torch, adapter, matcher, val_loader, datamodule, device,
+                        args.contrastive_temperature, args.contrastive_margin,
+                    )
+                )
         history.append(record)
         print(json.dumps(record))
-        save_checkpoint(torch, output.with_name(f"{output.stem}_epoch{epoch:03d}{output.suffix}"), adapter, optimizer, normalization, configs, history, epoch, args)
-        selection_value = record.get("val_flow_matching_loss", record["flow_matching_loss"])
+        save_checkpoint(torch, output.with_name(f"{output.stem}_epoch{epoch:03d}{output.suffix}"), adapter, matcher, optimizer, normalization, configs, history, epoch, args)
+        selection_value = (
+            -record["val_contrastive_top1"]
+            if matcher is not None and "val_contrastive_top1" in record
+            else record.get("val_flow_matching_loss", record["flow_matching_loss"])
+        )
         if selection_value < best_val:
             best_val = selection_value
-            save_checkpoint(torch, output.with_name(f"{output.stem}_best{output.suffix}"), adapter, optimizer, normalization, configs, history, epoch, args)
-    save_checkpoint(torch, output, adapter, optimizer, normalization, configs, history, args.epochs, args)
+            save_checkpoint(torch, output.with_name(f"{output.stem}_best{output.suffix}"), adapter, matcher, optimizer, normalization, configs, history, epoch, args)
+    save_checkpoint(torch, output, adapter, matcher, optimizer, normalization, configs, history, args.epochs, args)
     print(f"checkpoint: {output}")
     return 0
 
@@ -619,10 +740,59 @@ def evaluate_flow_loss(torch, model, adapter, loader, datamodule, device):
     return total / items
 
 
-def save_checkpoint(torch, path, adapter, optimizer, normalization, configs, history, epoch, args):
+def evaluate_contrastive_matching(
+    torch, adapter, matcher, loader, datamodule, device, temperature, margin
+):
+    adapter.eval()
+    matcher.eval()
+    loss_total = 0.0
+    correct = 0
+    compared = 0
+    zero_satisfied = 0
+    zero_compared = 0
+    with torch.no_grad():
+        for batch in loader:
+            motion = batch["motion"].to(device)
+            motion = (
+                motion - datamodule.mean.to(device)[None, None]
+            ) / datamodule.std.to(device)[None, None]
+            imu = batch["imu"].to(device)
+            sensors = batch["sensor_mask"].to(device)
+            frame_mask = batch["frame_mask"].to(device)
+            control = adapter(imu, sensors, frame_mask)
+            control_embedding, motion_embedding = matcher(control, motion, frame_mask)
+            loss, batch_correct, batch_compared = grouped_contrastive_matching_loss(
+                control_embedding,
+                motion_embedding,
+                batch["sensor_config"],
+                temperature=temperature,
+            )
+            zero_embedding = matcher.encode_control(torch.zeros_like(control), frame_mask)
+            paired_similarity = torch.nn.functional.cosine_similarity(
+                control_embedding, motion_embedding, dim=-1
+            )
+            zero_similarity = torch.nn.functional.cosine_similarity(
+                zero_embedding, motion_embedding, dim=-1
+            )
+            loss_total += float(loss) * max(batch_compared, 1)
+            correct += batch_correct
+            compared += batch_compared
+            zero_satisfied += int((paired_similarity > zero_similarity + margin).sum())
+            zero_compared += len(motion)
+    adapter.train()
+    matcher.train()
+    return {
+        "val_contrastive_loss": loss_total / max(compared, 1),
+        "val_contrastive_top1": correct / compared if compared else None,
+        "val_paired_beats_zero_rate": zero_satisfied / zero_compared if zero_compared else None,
+    }
+
+
+def save_checkpoint(torch, path, adapter, matcher, optimizer, normalization, configs, history, epoch, args):
     torch.save(
         {
             "adapter": adapter.state_dict(),
+            "condition_matcher": matcher.state_dict() if matcher is not None else None,
             "optimizer": optimizer.state_dict(),
             "imu_normalization": normalization,
             "sensor_configs": {key: list(value) for key, value in configs.items()},

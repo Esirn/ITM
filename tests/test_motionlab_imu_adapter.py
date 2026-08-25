@@ -6,6 +6,7 @@ from itm.models.motionlab_imu_adapter import (
     make_motionlab_imu_adapter,
     masked_trajectory_losses,
     factorized_guidance,
+    grouped_contrastive_matching_loss,
     paired_control_ranking_loss,
     same_group_derangement,
 )
@@ -104,6 +105,31 @@ class MotionLabIMUAdapterTest(unittest.TestCase):
         permutation, valid = same_group_derangement(["head", "wrists", "head", "single"])
         self.assertEqual(permutation.tolist(), [2, 1, 0, 3])
         self.assertEqual(valid.tolist(), [True, False, True, False])
+
+    def test_grouped_contrastive_loss_uses_only_same_config_negatives(self):
+        torch = self.torch
+        embeddings = torch.eye(4)
+        loss, correct, compared = grouped_contrastive_matching_loss(
+            embeddings,
+            embeddings,
+            ["head", "head", "wrists", "wrists"],
+            temperature=0.1,
+        )
+        self.assertLess(float(loss), 0.001)
+        self.assertEqual(correct, 8)
+        self.assertEqual(compared, 8)
+
+    def test_grouped_contrastive_loss_skips_singletons(self):
+        torch = self.torch
+        control = torch.randn(2, 8, requires_grad=True)
+        motion = torch.randn(2, 8)
+        loss, correct, compared = grouped_contrastive_matching_loss(
+            control, motion, ["head", "wrists"]
+        )
+        loss.backward()
+        self.assertEqual(correct, 0)
+        self.assertEqual(compared, 0)
+        self.assertTrue(torch.equal(control.grad, torch.zeros_like(control)))
 
 
 if __name__ == "__main__":
