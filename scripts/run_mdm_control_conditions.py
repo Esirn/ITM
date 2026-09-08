@@ -42,6 +42,7 @@ def main() -> int:
     completed = 0
     skipped = 0
     for group, specs in groups.items():
+        group_seed = int(manifest.get("group_seeds", {}).get(group, args.seed))
         for spec_value in specs:
             spec = Path(spec_value)
             output = args.output_dir / f"{spec.stem}.npz"
@@ -56,7 +57,7 @@ def main() -> int:
                 "--standard-imu-manifest", str(args.standard_imu_manifest.resolve()),
                 "--spec", str(spec.resolve()),
                 "--output", str(output.resolve()),
-                "--seed", str(args.seed),
+                "--seed", str(group_seed),
                 "--text-scale", str(args.text_scale),
                 "--imu-scale", str(args.imu_scale),
                 "--joint-scale", str(args.joint_scale),
@@ -75,6 +76,7 @@ def main() -> int:
         "completed_chunks": completed,
         "skipped_chunks": skipped,
         "seed": args.seed,
+        "group_seeds": {group: int(manifest.get("group_seeds", {}).get(group, args.seed)) for group in groups},
         "guidance_mode": "factorized",
         "device": args.device,
     }
