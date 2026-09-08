@@ -288,6 +288,11 @@ The request JSON contains `text`, `lengths`, and `seed`. See
 `docs/MOTIONLAB_MIGRATION.md` for the reproduced path and the distinction
 between MotionLab trajectory hints and raw IMU control.
 
+HY-Motion Lite is reproduced in a separate `hymotion` environment because its
+Qwen3 dependency conflicts with the MDM environment. The mounted worktree is
+not imported directly; see `docs/HYMOTION_MIGRATION.md` for the clean-source
+extraction, official sampler, renderer, output representation, and memory use.
+
 Train and evaluate the flexible IMUPoser baseline:
 
 ```bash

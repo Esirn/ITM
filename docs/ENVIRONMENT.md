@@ -65,8 +65,9 @@ Verify with:
 conda run -n itm python -c "import torch; print(torch.__version__, torch.cuda.is_available())"
 ```
 
-Use GPU 0 for local neural smoke tests unless GPU availability changes. GPU 1
-currently has another long-running process and should be avoided.
+Always inspect GPU utilization before launching a job. Device selection is a
+runtime decision; experiment entry points must keep an explicit `--device`
+argument and must not terminate unrelated processes.
 
 ## Setup
 
@@ -89,3 +90,19 @@ conda env update -n itm -f environment.yml
 conda run -n itm python -m pytest tests
 conda run -n itm python scripts/audit_assets.py --config configs/paths.toml --max-ego4o-files 2
 ```
+
+## HY-Motion Environment
+
+HY-Motion requires Qwen3 support and NumPy below 2, which conflicts with the
+verified MDM environment. It therefore runs in the separate `hymotion`
+environment defined by `environment-hymotion.yml`:
+
+```bash
+conda env create -f environment-hymotion.yml
+conda run -n hymotion python -c \
+  "import torch, transformers, numpy; print(torch.__version__, transformers.__version__, numpy.__version__)"
+```
+
+Expected core versions are PyTorch 2.5.1/CUDA 12.1, Transformers 4.53.3 and
+NumPy 1.26.4. See `docs/HOST_HYMOTION_HANDOFF_2026-08-26.md` for host paths,
+non-Git assets, clean-source extraction and the large-memory training handoff.
