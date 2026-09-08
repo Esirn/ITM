@@ -1,5 +1,32 @@
 # ITM / HY-Motion 大显存宿主机交接
 
+> 更新日期：2026-09-08
+>
+> 分支：`master`；远端：`https://github.com/Esirn/ITM.git`
+
+## 使用前由用户手动填写
+
+下面信息无法从当前机器可靠推断。将本文交给宿主机Codex前，请只修改本节表格的
+“宿主机实际值”列；也可以不改文件，直接把实际值附在提示词后面。宿主机Codex必须先
+验证路径，不能根据示例路径盲目修改全项目。
+
+| 项目 | 当前机器参考值 | 宿主机实际值（手填） |
+|---|---|---|
+| ITM仓库目录 | `/home/a200/0proj/ITM` | `/home/4T-2/syx0011/0proj/ITM` |
+| HY-Motion源码/资产目录 | `/home/a200/mount/a40/relatedworks/HY-Motion-1.0` | `/home/4T-2/group_motion/relatedworks/HY-Motion-1.0/` |
+| HumanML3D处理后数据根目录 | `/home/a200/0proj/datasets/all` | `/home/4T-2/group_motion/relatedworks/HumanML3D/HumanML3D/` |
+| MDM兼容Mean/Std目录 | `/home/a200/mount/a40/relatedworks/mdm/HumanML3D/HumanML3D` | `/home/4T-2/group_motion/relatedworks/mdm/HumanML3D/HumanML3D/` |
+| AMASS根目录 | `/home/a200/mount/a40/datasets/AMASS` | `/home/4T-2/group_motion/datasets/AMASS` |
+| SMPL资产目录 | `/home/a200/mount/a40/datasets/SMPL` | `/home/4T-2/group_motion/datasets/SMPL` |
+| OpenAI CLIP源码包 | `/home/a200/0proj/datasets/mdm-need/CLIP-main.zip` | `/home/4T-2/group_motion/datasets/mdm-need/CLIP-main.zip` |
+| 首选训练GPU | 本机曾用`cuda:1` | `根据实时情况使用` |
+| 非Git资产传输方式 | 本机直接复制/重新生成 | `大文件尽量用软链接/挂载` |
+| Conda安装位置 | `/home/a200/miniconda3` | `/home/syx0011/miniconda3/` |
+
+以下内容通常**不需要手动改**：模型结构、joint IDs、checkpoint SHA-256、
+环境版本、训练门槛和测试协议。若宿主机HY-Motion版本或checkpoint不同，应停止并报告，
+不要直接改这些核验值来“让检查通过”。
+
 ## 目标与当前边界
 
 宿主机下一阶段目标是实现 HY-Motion 1.0 Lite 的 Text+IMU 控制预筛。当前仅完成官方
@@ -11,22 +38,22 @@ MDM Stage-2b仍是论文主模型。HY-Motion只有在paired IMU稳定优于shuf
 
 ## Git同步前置条件
 
-当前工作树包含尚未提交的MDM统计实验和HY-Motion迁移代码。宿主机开始前必须在本机完成
-一次commit并push，然后在宿主机确认HEAD一致：
+宿主机clone/pull后先确认分支、同步状态和工作树：
 
 ```bash
 git status --short
-git rev-parse HEAD
 git pull --ff-only
-git rev-parse HEAD
 ```
+
+工作树应为空；若宿主机已有修改，不要覆盖或reset，先检查来源。
 
 Git只同步代码和文档。`.gitignore`排除了整个`outputs/`，因此checkpoint、manifest、IMU
 cache、采样NPZ/GIF和干净runtime快照不会随Git出现。
 
 ## 宿主机目录约定
 
-推荐保持以下路径，若宿主机不同，先修改`configs/paths.toml`，再重建含绝对路径的manifest：
+以下是当前机器路径，不是对宿主机的强制要求。优先使用上方手填的实际路径；宿主机不同
+时先验证，再修改`configs/paths.toml`，然后重建含绝对路径的manifest：
 
 ```text
 /home/a200/0proj/ITM                         项目仓库
@@ -36,16 +63,47 @@ cache、采样NPZ/GIF和干净runtime快照不会随Git出现。
                                                HY-Motion源码、权重和资产
 ```
 
-不要盲目替换路径。先执行：
+不要原样照抄下列路径。将shell变量改成上方手填值后执行：
 
 ```bash
-test -d /home/a200/mount/a40/relatedworks/HY-Motion-1.0
-test -f /home/a200/mount/a40/relatedworks/HY-Motion-1.0/ckpts/tencent/HY-Motion-1.0-Lite/latest.ckpt
-test -d /home/a200/0proj/datasets/all/new_joint_vecs
-test -d /home/a200/0proj/datasets/AMASS
+ITM_ROOT=/宿主机/ITM路径
+HYMOTION_ROOT=/宿主机/HY-Motion-1.0路径
+HUMANML_ROOT=/宿主机/HumanML3D处理后数据路径
+MDM_STATS_ROOT=/宿主机/MDM兼容MeanStd路径
+AMASS_ROOT=/宿主机/AMASS路径
+
+test -d "$ITM_ROOT/.git"
+test -d "$HYMOTION_ROOT/.git"
+test -f "$HYMOTION_ROOT/ckpts/tencent/HY-Motion-1.0-Lite/latest.ckpt"
+test -d "$HUMANML_ROOT/new_joint_vecs"
+test -f "$MDM_STATS_ROOT/Mean.npy"
+test -f "$MDM_STATS_ROOT/Std.npy"
+test -d "$AMASS_ROOT"
 ```
 
 任一检查失败时先定位宿主机真实目录，再改`configs/paths.toml`；不要修改sshfs源目录。
+
+### HumanML3D目录实测差异（2026-09-08）
+
+已通过sshfs挂载视图实测两个宿主机候选目录：
+
+| 宿主机路径 | motion/text完整性 | 统计量 | 用途结论 |
+|---|---|---|---|
+| `/home/4T-2/group_motion/relatedworks/HumanML3D/HumanML3D/` | 29,228条标准split样本完整 | `Mean/Std`与当前ITM略有差异；无`mean_motion/std_motion` | 推荐作为HumanML数据根目录 |
+| `/home/4T-2/group_motion/relatedworks/mdm/HumanML3D/HumanML3D/` | 当前视图中`new_joint_vecs/new_joints`各只有`012314.npy` | `Mean/Std`与当前ITM逐字节一致 | 只作为MDM统计量来源，不作为完整数据根目录 |
+
+本机`/home/a200/0proj/datasets/all/`有35,958个motion文件，其中额外6,730个文件名以`04`
+开头；它们均不在`train.txt`、`val.txt`或`test.txt`中。三个split文件在完整宿主机目录与
+本机逐字节一致，总计29,228条，所以缺少`04****`不影响标准split训练、采样或评价。
+
+完整宿主机目录的`Mean.npy/Std.npy`与当前ITM版本shape均为`(263,)`，但Mean最大绝对差约
+`9.71e-4`，Std最大绝对差约`1.03e-4`。为严格复现现有MDM Stage-2b，MDM训练和采样的
+`--mean/--std`应显式指向第二个目录中的兼容文件。HY-Motion使用自身
+`HY-Motion-1.0/stats/`，不依赖这两份HumanML统计量。
+
+`mean_motion.npy/std_motion.npy`是66维关节位置统计量，当前主要由MotionLab脚本使用。
+缺失它们不阻塞HY-Motion Text-only或HY-Motion adapter预筛；若还要复跑MotionLab，应从
+本机同步这两个小文件，或按原MotionLab协议重新计算并核验。
 
 ## 必需HY-Motion资产
 
@@ -68,9 +126,8 @@ Lite checkpoint SHA-256应为：
 d83f118f8d74db76249db86dcf9982a8229f43ef4e9fa11f683019d6230dd486
 ```
 
-当前官方代码commit为`9993ccd8aeba1f2d34c1061cc2282d14d5193055`。挂载工作树的
-`hymotion/network/text_encoders/text_encoder.py`被修改为跳过Qwen并返回零context，不能
-直接用于正式实验。必须在宿主机运行clean workspace提取命令。
+挂载工作树的`hymotion/network/text_encoders/text_encoder.py`被修改为跳过Qwen并返回
+零context，不能直接用于正式实验。必须在宿主机运行clean workspace提取命令。
 
 关闭prompt rewrite和duration estimation时不需要约57 GB的`Text2MotionPrompter/`；本轮
 不需要HY-Motion Full的4.17 GB checkpoint。
@@ -87,7 +144,7 @@ d83f118f8d74db76249db86dcf9982a8229f43ef4e9fa11f683019d6230dd486
 ### 创建itm
 
 ```bash
-cd /home/a200/0proj/ITM
+cd "$ITM_ROOT"
 conda env create -f environment.yml
 conda install -n itm pytorch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 \
   pytorch-cuda=12.1 -c pytorch -c nvidia
@@ -99,14 +156,14 @@ conda run -n itm pip install -e .
 ```
 
 本机的CLIP本地包原路径为`/home/a200/0proj/datasets/mdm-need/CLIP-main.zip`。宿主机没有
-该文件时，可使用官方OpenAI CLIP仓库构建的同一源码包，但应先记录来源与commit。
+该文件时，可使用官方OpenAI CLIP仓库构建的同一源码包，但应记录来源和版本。
 
 ### 创建hymotion
 
 推荐直接使用本仓库新增的环境文件：
 
 ```bash
-cd /home/a200/0proj/ITM
+cd "$ITM_ROOT"
 conda env create -f environment-hymotion.yml
 ```
 
@@ -136,8 +193,13 @@ head -1 outputs/manifests_full/train_standard_imu.jsonl
 
 ## 首次启动验证
 
+先设置实际路径和空闲GPU；后续命令均使用这些变量：
+
 ```bash
-cd /home/a200/0proj/ITM
+export ITM_ROOT=/宿主机/ITM路径
+export HYMOTION_ROOT=/宿主机/HY-Motion-1.0路径
+export DEVICE=cuda:0
+cd "$ITM_ROOT"
 
 conda run -n itm python -c \
   "import torch; print(torch.__version__, torch.cuda.is_available(), torch.cuda.device_count())"
@@ -147,14 +209,14 @@ conda run -n hymotion python -c \
 conda run -n itm pytest -q
 
 conda run -n itm python scripts/prepare_hymotion_workspace.py \
-  --source /home/a200/mount/a40/relatedworks/HY-Motion-1.0 \
+  --source "$HYMOTION_ROOT" \
   --output outputs/hymotion/runtime_root
 
 conda run --no-capture-output -n hymotion python scripts/sample_hymotion_text.py \
-  --hymotion-root /home/a200/mount/a40/relatedworks/HY-Motion-1.0 \
+  --hymotion-root "$HYMOTION_ROOT" \
   --runtime-root outputs/hymotion/runtime_root --model lite \
   --text "a person walks forward while swinging both arms" \
-  --frames 60 --seed 1234 --device cuda:0 \
+  --frames 60 --seed 1234 --device "$DEVICE" \
   --output outputs/hymotion/text_only_smoke/walk_swing_60.npz
 
 conda run -n itm python scripts/export_hymotion_virtual_imu.py \
