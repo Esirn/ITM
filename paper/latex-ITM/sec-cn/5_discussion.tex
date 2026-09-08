@@ -1,0 +1,29 @@
+% !TeX root = ../main-cn.tex
+% Converted from paper/论文草稿.md; UTF-8.
+\section{讨论与限制}
+\label{sec:5_discussion}
+
+
+实验支持将文本和IMU视为两类互补但相互竞争的条件。
+固定文本和扩散噪声时，更换IMU能够改变生成动作的轨迹、节奏和摆动，说明控制器并非仅依赖文本先验采样。
+Stage-2b进一步表明，无需解冻MDM即可通过轻量trajectory、velocity和jerk目标改善时间稳定性。
+与此同时，5-rep子集评估显示head-only ITM基本保持文本检索能力，但FID有所上升，表明控制收益伴随生成分布偏移。
+MotionLab迁移实验进一步显示，更强生成骨干能显著改善文本生成指标，但不会自动解决IMU实例级控制；平均误差改善与逐样本稳定可控是两个不同要求。
+
+更值得关注的是IMU控制与文本补全之间的trade-off。
+Stage-1在head-only条件下呈现较强摆臂响应，却具有较高jerk；Stage-2b显著平滑同文本换IMU结果，但其same-head arm-swing proxy下降；Stage-4利用frozen MDM Text-only prediction进行anchor，仅恢复部分上肢变化。
+这说明简单joint-space约束难以同时保证局部传感器一致性、全身自然度和未观测部位语义。
+后续方法可能需要保留传感器身份的跨部位交互、分层语义控制或更强生成骨干，而不只是继续调整三个辅助损失权重。
+
+本文存在四项主要限制。
+第一，active-joint trajectory与acceleration仍是joint-space proxy。
+我们在5条GT动作上以200次优化拟合neutral SMPL：head/wrists trajectory误差仅为0.00765/0.00781 m，但virtual acceleration误差仍为0.885/2.564 m/s2，orientation geodesic error为0.320/1.032 rad，均未通过预设门槛。
+该结果说明HumanML 22 joints无法可靠恢复骨轴twist，尤其是腕部方向，因此本文不把拟合后的generated IMU用于正式主张。
+第二，generation-quality结果来自682条可用动作中的前672条和5次重复，不能替代full-set 20-rep HumanML3D协议。
+第三，定性实验中摆臂和转向比快慢、大步等细粒度语义稳定，模型尚不能精确解耦所有文本属性。
+第四，Nymeria仅包含3条零样本片段，wrists存在明显域偏移。
+正式真实IMU实验需要subject-disjoint划分、每传感器静态安装校准、真实/虚拟IMU统计匹配，以及仅微调IMU encoder/adapters的对照。
+
+外部比较也受任务协议限制。
+MDM是同一生成骨干下的直接Text-only baseline，Flexible IMUPoser提供IMU-only reconstruction边界；Ego4o与Spatial-Related Sensors Matters需要在统一Nymeria划分和相同输入配置下重新训练，才能使用本文的生成与控制指标公平比较。
+本文因此将结论限定于任务可行性、轻量融合方法和可观测trade-off，而不声称超过所有Text-to-Motion或IMU姿态估计方法。

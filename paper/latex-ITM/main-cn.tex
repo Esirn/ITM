@@ -1,0 +1,44 @@
+% !TeX program = xelatex
+% !TeX encoding = UTF-8
+% !BIB program = bibtex
+\documentclass[lettersize,journal]{IEEEtran}
+\usepackage{iftex}
+\ifXeTeX\else
+  \PackageError{ITM}{Please compile main-cn.tex with XeLaTeX}{Select XeLaTeX in TeXstudio or Overleaf.}
+\fi
+% Fandol ships with TeX Live; no Windows-only fonts are required.
+\usepackage[UTF8,fontset=fandol,scheme=plain]{ctex}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs,tabularx,array}
+\usepackage{seqsplit}
+\usepackage{cite}
+\usepackage[hidelinks]{hyperref}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\setlength{\emergencystretch}{1em}
+% \renewcommand{\abstractname}{摘要}
+% \renewcommand{\IEEEkeywordsname}{关键词}
+% \renewcommand{\refname}{参考文献}
+% \renewcommand{\figurename}{图}
+% \renewcommand{\tablename}{表}
+
+\begin{document}
+\title{ITM：面向文本到动作生成的稀疏 IMU 控制}
+\author{作者信息待填写}
+\maketitle
+\begin{abstract}
+\input{sec-cn/0_abstract}
+\end{abstract}
+\begin{IEEEkeywords}
+人体动作生成，文本到动作，稀疏 IMU，可控生成，扩散模型。
+\end{IEEEkeywords}
+
+\input{sec-cn/1_introduction}
+\input{sec-cn/2_relatedworks}
+\input{sec-cn/3_method}
+\input{sec-cn/4_experiments}
+\input{sec-cn/5_discussion}
+\input{sec-cn/6_conclusion}
+\bibliographystyle{IEEEtran}
+\bibliography{sec-cn/references}
+\end{document}

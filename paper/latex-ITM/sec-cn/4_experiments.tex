@@ -1,0 +1,531 @@
+% !TeX root = ../main-cn.tex
+% Converted from paper/论文草稿.md; UTF-8.
+\section{实验}
+\label{sec:4_experiments}
+
+
+\subsection{Datasets}
+
+主实验使用 HumanML3D/AMASS 对齐数据。
+HumanML3D 提供文本和 263D motion；AMASS/SMPL 提供生成标准虚拟 IMU 所需的身体运动。
+标准 IMU cache 包含：
+
+\begin{table}[t]
+\centering
+\caption{对齐数据集划分}
+\label{tab:result-4}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{LL}
+\toprule
+Split & Records \\
+\midrule
+Train & 7009 \\
+Val & 434 \\
+Test & 1333 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+早期 sanity baseline 使用 999/200/200 的 train/val/test 子集，用于验证数据流、回归 baseline 和 sparse sensor ablation。
+
+我们还在Nymeria上进行小规模真实IMU预备实验。
+Nymeria的\texttt{\seqsplit{body/xdata.npz}}包含Xsens全身动作与17个真实IMU，\texttt{\seqsplit{motion\_narration.csv}}提供分段动作描述。
+该实验仅使用3条来自不同录制序列、时长约5秒且head/wrists四元数有效的片段，不参与HumanML3D主表，也不用于训练或选择主模型。
+
+\subsection{Metrics}
+
+本文使用三类指标。
+
+第一类是Text-to-Motion标准指标。
+IMU-mapped subset表报告Matching Score、R-precision、FID和Diversity；Multimodality列入定义，但未在该子集协议中报告。
+
+\begin{table}[t]
+\centering
+\caption{评价指标及其含义}
+\label{tab:result-5}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{LL}
+\toprule
+Metric & Meaning \\
+\midrule
+Matching Score & 文本与动作 embedding 距离，越低越好 \\
+R-precision & 文本-动作检索 top-k 准确率，越高越好 \\
+FID & 生成动作分布与真实分布距离，越低越好 \\
+Diversity & 生成动作整体多样性 \\
+Multimodality & 同一文本下多样本差异 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+第二类是受控条件交换实验使用的控制与动作质量指标：
+
+\begin{table}[t]
+\centering
+\caption{评价指标及其含义}
+\label{tab:result-6}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{LL}
+\toprule
+Metric & Meaning \\
+\midrule
+active\_sensor\_trajectory\_error\_m & 有效传感器对应joint的root-relative trajectory error \\
+active\_sensor\_acceleration\_error\_mps2 & 由生成active joints二阶差分得到的加速度与目标IMU加速度之间的proxy误差 \\
+head\_trajectory\_error\_m & head joint 轨迹误差 \\
+wrist\_trajectory\_error\_m & wrists 轨迹误差 \\
+root\_relative\_motion\_error\_m & 全身 root-relative joint error \\
+jerk\_ratio & 生成 jerk / GT jerk \\
+arm\_swing\_proxy\_m & wrist-relative-to-shoulder motion amplitude \\
+root\_travel\_m & root 水平位移 \\
+step\_frequency\_hz & foot speed frequency proxy \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+第三类是 IMU-only baseline 指标，包括 root-relative MPJPE、rotation geodesic error、jerk ratio 和 foot skating。
+这类指标适合 IMU pose estimation，不应作为 ITM 的唯一主指标。
+
+Active-sensor trajectory error首先将预测与GT转换为root-relative joint trajectories，再计算有效传感器对应关节的平均欧氏距离。
+Acceleration error由HumanML 22-joint轨迹二阶差分得到；由于当前尚未将生成结果拟合为SMPL并恢复传感器安装坐标，该值不是严格的generated-IMU acceleration误差，更不包含orientation geodesic error。
+正式传感器一致性评价应使用数据桥中已有的虚拟传感器定义，将生成动作恢复到SMPL后重新导出传感器加速度和方向；本文现阶段只把关节空间量用于同协议模型诊断。
+
+对比实验采用分层协议。
+第一层与官方MDM Text-only比较生成质量，回答加入IMU后文本生成能力是否退化。
+第二层以Flexible IMUPoser描述IMU-only reconstruction boundary；它没有文本输入和随机生成目标，因此不进入FID/R-precision表。
+第三层比较Stage-1、Stage-2b和Stage-4，分析平滑性、IMU控制与head-only文本补全的trade-off。
+Ego4o和Spatial-Related Sensors Matters与本文最接近，但缺少可直接核验的官方checkpoint或实现，本文不填入无法复现的数字。
+
+\subsection{Diagnostic Reconstruction Baselines}
+
+早期线性 baseline 表明，synthetic IMU-heavy 输入在 deterministic reconstruction 中很强，而文本特征帮助有限。
+999 train / 200 test 上，IMU-only linear baseline 的 test MSE 为 0.024277，text-only 为 0.062518。
+
+Frame-level MLP 在 999 train / 200 val 上进一步降低 IMU-only eval MSE 到 0.014230，但加入 hashed text 后 eval MSE 反而恶化到 0.020078。
+这说明简单文本表示容易记忆训练集，不等于文本语义真正有用。
+
+Temporal Transformer + DistilBERT 将文本换成预训练 embedding，并加入序列建模，但在 6 sensors 条件下，IMU-only test MSE 为 0.018271，DistilBERT+IMU 为 0.018774，文本仍未改善。
+这提示：在强 IMU 和 deterministic MSE 目标下，文本难以发挥作用。
+
+\subsection{Sparse Sensor Ablation of the Diagnostic Model}
+
+稀疏传感器实验显示，文本价值依赖传感器位置和欠定程度。
+在 wrists 配置下，DistilBERT+IMU 相比 IMU-only 同时改善 test MSE 和 MAE：
+
+\begin{table}[t]
+\centering
+\caption{Sparse Sensor Ablation of the Diagnostic Model：实验结果}
+\label{tab:result-7}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{LLLL}
+\toprule
+Sensors & Text & Test MSE & Test MAE \\
+\midrule
+wrists & no & 0.030797 & 0.098079 \\
+wrists & yes & 0.029610 & 0.096633 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+但 head-only 的验证集改善没有在 test 上复现；6 sensors 仍 favor IMU-only。
+这说明旧回归任务并不适合作为最终 formulation，也促使我们转向生成式 MDM backbone。
+
+\subsection{Text-only MDM Baseline}
+
+我们接入官方 MDM checkpoint 作为合格 Text-only baseline。
+官方 20-rep reference log 报告：
+
+\begin{table}[t]
+\centering
+\caption{评价指标及其含义}
+\label{tab:result-8}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{LL}
+\toprule
+Metric & Value \\
+\midrule
+FID & 0.5443 \\
+R-precision top-1 & 0.3195 \\
+R-precision top-2 & 0.4978 \\
+R-precision top-3 & 0.6110 \\
+Diversity & 9.5595 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+ITM evaluator bridge复用官方HumanML3D text-motion evaluator wrapper，对生成结果计算Matching Score、R-precision、FID和Diversity。
+IMU-mapped test subset共有682条可用动作；为保持batch size 32，实际评价前672条，并独立重复5次。
+该表用于同一子集上的直接比较，不与full-set 20-rep文献数字混排。
+
+结果如下：
+
+\begin{table*}[t]
+\centering
+\caption{Text-only MDM Baseline：实验结果}
+\label{tab:result-9}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{LLLLLLLL}
+\toprule
+Model & Sensor & Matching \ensuremath{\downarrow} & R@1 \ensuremath{\uparrow} & R@2 \ensuremath{\uparrow} & R@3 \ensuremath{\uparrow} & FID \ensuremath{\downarrow} & Diversity \\
+\midrule
+MDM Text-only subset & none & 3.4152 \ensuremath{\pm} 0.0196 & 0.4530 \ensuremath{\pm} 0.0178 & 0.6506 \ensuremath{\pm} 0.0157 & 0.7586 \ensuremath{\pm} 0.0116 & 0.5089 \ensuremath{\pm} 0.0441 & 10.0517 \ensuremath{\pm} 0.1657 \\
+ITM Stage-2b & head & 3.2680 \ensuremath{\pm} 0.0519 & 0.4580 \ensuremath{\pm} 0.0131 & 0.6682 \ensuremath{\pm} 0.0187 & 0.7780 \ensuremath{\pm} 0.0139 & 0.6526 \ensuremath{\pm} 0.0521 & 10.1686 \ensuremath{\pm} 0.1396 \\
+ITM Stage-2b & wrists & 3.3546 \ensuremath{\pm} 0.0378 & 0.4551 \ensuremath{\pm} 0.0150 & 0.6598 \ensuremath{\pm} 0.0218 & 0.7673 \ensuremath{\pm} 0.0103 & 0.8167 \ensuremath{\pm} 0.0357 & 10.0319 \ensuremath{\pm} 0.1746 \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+
+Stage-2b head的Matching Score和R-precision与Text-only接近，但FID从0.5089增加到0.6526；wrists的检索指标同样接近Text-only，FID则增加到0.8167。
+这表明新增条件没有造成文本语义崩溃，但会扰动MDM原有生成分布，且双腕控制的分布代价更明显。
+Stage-4未在该协议下评价，因此仅进入控制消融表。
+
+为检验方法能否迁移到更强的Text-to-Motion骨干，我们进一步复现MotionLab MotionFlow，并冻结其MotionFlow与CLIP，只训练IMU时序编码器。
+该迁移使用MotionFlow原生512维hint token流，而不是把IMU伪装成66维关节轨迹。
+相同672条子集和5次重复的结果如下：
+
+\begin{table*}[t]
+\centering
+\caption{Text-only MDM Baseline：实验结果}
+\label{tab:result-10}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{LLLLLLL}
+\toprule
+模型 & Matching Score\ensuremath{\downarrow} & R@1\ensuremath{\uparrow} & R@2\ensuremath{\uparrow} & R@3\ensuremath{\uparrow} & FID\ensuremath{\downarrow} & Diversity\ensuremath{\rightarrow} \\
+\midrule
+MotionLab Text-only & 2.7223\ensuremath{\pm}0.0230 & 0.5292 & 0.7438 & 0.8321 & 0.2683\ensuremath{\pm}0.0217 & 9.8051 \\
+MotionLab + head IMU & 2.8010\ensuremath{\pm}0.0348 & 0.5170 & 0.7280 & 0.8193 & 0.3173\ensuremath{\pm}0.0239 & 10.4175 \\
+MotionLab + wrists IMU & 2.8025\ensuremath{\pm}0.0364 & 0.5196 & 0.7185 & 0.8205 & 0.3879\ensuremath{\pm}0.0472 & 10.1779 \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+
+MotionLab Text-only明显强于本文使用的MDM底座。
+head IMU条件下Matching、R@3和FID相对退化约2.9\%、1.5\%和18.3\%，说明文本生成质量基本保留；wrists的FID增幅约44.6\%，显示更强局部控制会显著扰动生成分布。
+由于后述实例级控制改善率仍未达到预设门槛，本文不将MotionLab迁移模型替换为主模型，而将其作为跨backbone可迁移性与任务难度的诊断。
+
+\subsection{IMU-only Baseline}
+
+Flexible IMUPoser baseline 使用 2-layer 512-wide bidirectional LSTM，输出 24 SMPL joint rotations in 6D，并支持 flexible sensor mask。
+test split 上：
+
+\begin{table*}[t]
+\centering
+\caption{IMU-only Baseline：实验结果}
+\label{tab:result-11}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{LLLLL}
+\toprule
+Configuration & MPJPE & Rotation error & Jerk ratio & Foot skating \\
+\midrule
+head & 14.91 cm & 0.278 rad & 0.294 & 0.123 m/s \\
+wrists & 10.74 cm & 0.233 rad & 0.455 & 0.308 m/s \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+
+Wrists 已通过初步 12 cm 门槛；head-only 尚未通过。
+该 baseline 用于说明 IMU-only reconstruction 的能力边界，不直接进入 ITM 的文本匹配、FID 或多样性排名。
+我们报告其重建指标，但不把这些数字包装成与ITM的胜负关系：IMUPoser估计唯一真实姿态，ITM则在文本语义和随机扩散采样下生成受IMU控制的合理动作。
+只有在统一输出表示、关闭生成随机性并明确采用重建目标时，MPJPE才适合作为二者的直接比较。
+
+\subsection{Condition Ablation}
+
+独立条件dropout和guidance使同一个ITM模型支持Text-only、IMU-only diagnostic与Text+IMU。
+历史实验默认采用三分支legacy guidance，此时Text-only通过令\texttt{\seqsplit{imu\_scale=0}}得到。
+为严格分离IMU主效应与Text-IMU交互，我们另实现四分支factorized guidance；在该模式下，严格Text-only必须同时令\texttt{\seqsplit{imu\_scale=0, joint\_scale=0}}，IMU-only则关闭文本主效应并保留IMU分支。
+Text+IMU同时启用两种条件。
+所有受控条件交换比较共享动作长度、seed与初始扩散噪声，因而条件间差异不来自随机采样变化。
+
+Text-only负责检验融合模型是否保留MDM语义先验；IMU-only diagnostic观察传感器可提供的轨迹与节奏，但不期待其在稀疏配置下恢复完整动作类型；Text+IMU则用于检验两者是否产生增量互补。
+早期Stage-1 pilot已观察到条件交换信号，但也暴露出高jerk，因此主实验进一步比较Stage-1、Stage-2b和Stage-4。
+
+为排除不同阶段训练设置造成的混杂，我们还从同一Stage-1 checkpoint出发，以相同数据顺序、seed、训练轮数和legacy guidance训练四个严格受控变体。
+表中每个变体均覆盖60个run和770个generated cases：
+
+\begin{table*}[t]
+\centering
+\caption{严格受控的辅助损失消融}
+\label{tab:result-12}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{LLLLLLL}
+\toprule
+Loss & Same-text trajectory & Same-text jerk & Same-head trajectory & Same-head jerk & Same-head arm swing & Matrix trajectory \\
+\midrule
+diffusion only & \textbf{0.2725 m} & 1.1782 & 0.1975 m & 2.3268 & \textbf{0.1108 m} & \textbf{0.3597 m} \\
++ trajectory & 0.2764 m & \textbf{0.9989} & \textbf{0.1910 m} & \textbf{1.9784} & 0.0940 m & 0.3657 m \\
++ trajectory + velocity & 0.2782 m & 1.0240 & 0.1932 m & 2.0913 & 0.0992 m & 0.3734 m \\
++ trajectory + velocity + jerk & 0.2766 m & 1.0237 & 0.1922 m & 2.0219 & 0.1026 m & 0.3693 m \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+
+Trajectory loss明显降低了same-text与same-head的jerk，并改善same-head tracking，但同时降低arm swing；在same-text和matrix协议中，辅助损失没有改善active trajectory error。
+Velocity与jerk项也没有稳定超过trajectory-only。
+因此该严格消融支持“平滑性与文本补全存在trade-off”，但不支持“叠加更多辅助损失会单调改善IMU控制”的结论。
+
+\subsection{Controlled Condition-Swapping Suite on Test Split}
+
+我们在test split上完成60个run、770个generated cases，包括同文本换IMU、同head IMU换文本、guidance sweep以及20组Text/IMU A-B矩阵。
+
+\subsubsection{Same Text, Different IMU}
+
+固定文本：
+
+\begin{quote}a person walks\end{quote}
+
+对30个test samples生成MDM Text-only、ITM Text+head IMU、ITM Text+wrist IMUs。
+Stage-1、Stage-2b主模型与Stage-4 text-anchor ablation对比如下：
+
+\begin{table*}[t]
+\centering
+\caption{Controlled Condition-Swapping Suite on Test Split：实验结果}
+\label{tab:result-13}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{LLLLLLL}
+\toprule
+Model & Active sensor error & Active acceleration error & Jerk ratio & Arm swing & Root travel & Step frequency \\
+\midrule
+Stage-1 & 0.2871 m & 4.7340 m/s\textasciicircum{}2 & 4.2072 & 0.1909 m & 2.1561 m & 1.5505 Hz \\
+Stage-2b & 0.2833 m & 4.5360 m/s\textasciicircum{}2 & 1.7599 & 0.1615 m & 1.4666 m & 1.4815 Hz \\
+Stage-4 text-anchor & 0.2812 m & 4.6077 m/s\textasciicircum{}2 & 1.8050 & 0.1675 m & 1.4415 m & 1.4695 Hz \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+
+结果表明，同一句模糊文本下更换IMU会改变root travel、step frequency和full-body motion proxies。
+这支持IMU提供具体运动约束的假设。
+Stage-2b在基本保持active sensor error的同时将jerk ratio从4.2072降至1.7599，并将active acceleration proxy从4.7340 m/s\textasciicircum{}2降至4.5360 m/s\textasciicircum{}2，因此被选为IMU-control主模型。
+该acceleration proxy由HumanML 22 joints计算，不等价于完整generated-IMU orientation consistency。
+
+为在更广动作分布上检验这一结论，我们进一步让MDM Stage-2b与MotionLab共享固定100条test motions，并比较严格Text-only、paired、zero和shuffled IMU。
+Factorized guidance中的严格Text-only同时关闭IMU主效应和Text-IMU交互项，即\texttt{\seqsplit{imu\_scale=0, joint\_scale=0}}；head和wrists两次Text-only输出完全一致。
+Head paired相对Text-only的active error降低$0.0110$ m（95\% CI $[-0.0204,-0.0010]$），但相对shuffled仅降低$0.0017$ m且不显著，说明head的实例级控制仍弱。
+Wrists paired相对Text-only、zero和shuffled分别降低$0.0196$ m、$0.0101$ m和$0.0203$ m，paired优于shuffled达到74/100（95\% CI 65\%--82\%，$p<0.0001$），首次超过预设70\%稳定门槛。
+相比之下，该通用100-motion子集上的jerk差值区间跨零，因此前述30条walking反事实实验中的Stage-2b平滑收益不能直接泛化到所有动作类别。
+
+MotionLab迁移模型也在同一固定100条test样本上比较Text-only、paired、zero和shuffled IMU。
+Head paired将平均active error从0.1733 m降至0.1548 m，配对差值为$-0.0185$ m（95\% bootstrap CI $[-0.0319,-0.0073]$，$p=0.0010$）；wrists从0.3924 m降至0.3615 m，差值为$-0.0309$ m（95\% CI $[-0.0512,-0.0122]$，$p=0.0024$）。
+paired相对shuffled的误差也显著更低，head与wrists差值分别为$-0.0070$ m和$-0.0159$ m。
+与此同时，paired相对zero control的差异均不显著，说明模型不仅利用了实例信息，也仍受到“开启控制通道”固定偏置的影响。
+paired优于Text-only的样本仅为60/100和63/100，其改善率95\%区间分别为50\%--69\%和54\%--72\%，均未稳定达到预设70\%门槛。
+Jerk ratio从2.319降至2.005和1.971，对应配对差值的95\%区间均严格低于零。
+上述结果支持“平均控制和平滑收益”，但不支持“绝大多数样本均可靠跟随IMU”的更强主张。
+
+我们进一步对该共享100-motion subset进行探索性分层。
+语义类别使用固定关键词多标签规则，因类别重叠和小样本量而不作显著性主张。
+MDM wrists在locomotion中有26/34条优于Text-only、28/34条优于shuffled，在turning中分别为13/14和11/14，是最稳定的两个类别。
+MDM head在upper-body类别的平均tracking变化接近零，jerk反而增加0.240。
+单seed长度分组曾显示MDM head在短序列上恶化，但该现象需要通过下述多seed实验复核。
+
+为检验结论是否依赖扩散噪声，我们从同一subset按长度分层抽取30条动作（短、中、长各10条），使用5个diffusion seeds重复严格Text-only、paired和固定shuffled条件。
+统计时先对每条motion的5个seed求平均，再以motion为bootstrap单位。
+Head paired相对Text-only和shuffled的误差变化分别为$-0.0038$ m（95\% CI $[-0.0108,0.0031]$）和$-0.0013$ m（$[-0.0088,0.0056]$），仅13/30和15/30条动作在至少3/5 seeds上改善。
+Wrists则分别降低$0.0281$ m（$[-0.0414,-0.0160]$）和$0.0179$ m（$[-0.0296,-0.0078]$），24/30和22/30条动作在多数seed上改善，且五个seed的平均差异方向完全一致。
+按长度看，wrists相对Text-only在短、中、长三组的区间均严格小于零；head各长度组tracking区间均跨零。
+该实验支持“双腕IMU提供跨随机种子的实例级控制”，但不支持对单头IMU作同等强度的主张。
+两种配置的通用jerk变化区间均跨零，因此walking subset上的平滑收益不能外推到全部动作。
+
+作为进一步消融，Direct-V3在帧内增加sensor attention，并把batch标量ranking改为同传感器配置的逐样本paired/shuffled/zero ranking。
+其512条预筛在validation上保持paired优于shuffled，但test-20仅有head 11/20、wrists 8/20改善，wrists平均误差反而增加0.0056 m，因此按预设门槛停止全量训练。
+该负结果表明，简单保留传感器身份和单步ranking仍不足以解决生成过程中的实例级控制。
+
+我们进一步尝试仅在训练期使用的Direct-V4 condition matcher。
+它将IMU control token与目标motion投影到共享embedding，并在相同sensor config内采用双向InfoNCE直接辨识paired与其他真实实例。
+512/128条train/validation预筛中，validation top-1从第一轮的56.4\%提升到第二轮的61.9\%，高于同配置batch内约25\%的随机水平；paired相对zero的margin满足率为96.9\%。
+这表明实例信息可以被识别，但仍未达到预设70\%门槛，且matcher检索提升尚不能证明生成动作控制同步改善。
+因此我们停止全量训练，并将其作为“辅助条件辨识并不自动转化为生成控制”的负结果。
+
+需要注意的是，MDM Text-only 在某些 joint-proxy control 指标上可能并不比 ITM 差，因为它没有接收目标 IMU，误差只反映生成动作与某个目标 joint 轨迹的偶然接近程度；head/wrist joint proxy 也不能完全代表真实 IMU orientation consistency。
+因此本文不把“所有 proxy error 都低于 Text-only”作为主张。
+更可靠的结论来自受控条件交换：固定文本、随机噪声和长度，只改变 IMU 时，生成结果在轨迹、节奏和运动细节上发生可解释变化；同时 Stage-2b 相比 Stage-1 显著降低 jerk，使这种控制更平滑。
+
+\begin{figure*}[t]
+\centering
+\fbox{\parbox[c][25mm][c]{0.94\textwidth}{\centering 图示占位：待插入最终实验可视化}}
+\caption{固定文本\texttt{\protect\seqsplit{a person walks}}和扩散噪声，对比MDM Text-only、ITM Text+head IMU、ITM Text+wrists IMU，并在下方同步绘制目标IMU曲线和active-joint轨迹。候选来自\texttt{\protect\seqsplit{same\_text\_different\_imu/test\_walk\_head\_wrists}}。}
+\label{fig:qualitative-1}
+\end{figure*}
+
+\subsubsection{Same Head IMU, Different Text}
+
+固定 head-only IMU，使用 6 条 walking prompts。
+Stage-1 的 prompt-level 结果如下：
+
+\begin{table*}[t]
+\centering
+\caption{固定头部 IMU 时的文本条件对比}
+\label{tab:result-14}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{LLLLL}
+\toprule
+Prompt & Head error & Arm swing & Jerk & Root travel \\
+\midrule
+walking with swinging arms & 0.1662 m & 0.2615 m & 6.2430 & 3.3377 m \\
+walking quickly & 0.1824 m & 0.2304 m & 5.6510 & 2.4707 m \\
+turning while walking & 0.2088 m & 0.2153 m & 4.1204 & 1.4661 m \\
+walking & 0.1731 m & 0.2088 m & 5.1645 & 2.4170 m \\
+walking slowly & 0.1776 m & 0.1742 m & 4.1510 & 2.1081 m \\
+walking with large steps & 0.1948 m & 0.1582 m & 3.7824 & 1.8873 m \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+
+Arm-swing prompt 的 arm swing proxy 最高，同时 head error 保持较低。
+这比初始单样本 pilot 更支持文本补全未观测身体语义的假设。
+不过，该 prompt 的 jerk 也最高，说明语义增强和动作平滑之间存在 trade-off。
+
+Stage-2b在该实验上的结果更保守：active head error从0.1838 m升至0.2152 m，jerk ratio从4.8521升至5.6981，arm swing proxy从0.2080 m降至0.1581 m。
+因此Stage-2b作为IMU-control和平滑主模型，而Stage-1作为head-only文本补全的诊断参考。
+Stage-4 text-anchor将same-head active head error小幅改善到0.2103 m，arm swing proxy提升到0.1666 m，但jerk仍为5.9120，且arm swing相比Stage-1仍下降约19.9\%。
+该结果构成本文讨论的主要trade-off。
+
+为避免只依赖平均proxy和人工观察，我们使用修正后的变长采样器对30条test motions重新生成六种文本条件，每条动作保留自身39--196帧长度。
+固定head IMU时，\texttt{\seqsplit{swinging arms}}相对普通walking的摆臂幅度增加$0.0979$ m（95\% CI $[0.0812,0.1144]$），29/30样本方向正确；\texttt{\seqsplit{turns while walking}}的累计root yaw增加$2.3689$ rad（95\% CI $[1.5691,3.1909]$），25/30方向正确。
+进一步检查显示净yaw在26/30样本增加，净转角占累计转角的效率在23/30增加，说明该结果不只是高频yaw抖动。
+相反，quick相对slow的路径速度差为$-0.0199$ m/s且区间跨零，仅5/30方向正确，cadence也仅19/30增加；large-steps的步幅proxy差为$-0.0237$ m且区间跨零，仅12/30方向正确，脚间距也仅14/30增加。
+这与人工判断一致：摆臂与转向是当前较稳定的文本补全属性，快慢和大步尚未被可靠控制。
+五类文本编辑使head error平均增加$0.0074$ m（95\% CI $[0.0031,0.0117]$），显示文本补全会轻微扰动局部IMU约束。
+
+\begin{figure*}[t]
+\centering
+\fbox{\parbox[c][25mm][c]{0.94\textwidth}{\centering 图示占位：待插入最终实验可视化}}
+\caption{固定head IMU和扩散噪声，比较\texttt{\protect\seqsplit{walks}}、\texttt{\protect\seqsplit{walks while swinging arms}}与\texttt{\protect\seqsplit{turns while walking}}。正文展示成功样例，补充材料同时保留快慢、大步等失败或弱响应样例。}
+\label{fig:qualitative-2}
+\end{figure*}
+
+\subsubsection{Guidance Sweep}
+
+扫描：
+
+\[\begin{aligned}w_{\mathrm{text}}&\in\{1.0,2.5,4.0\},\\w_{\mathrm{imu}}&\in\{0.5,1.0,2.0\},\\\mathrm{sensor}&\in\{\mathrm{head},\mathrm{wrists}\}.\end{aligned}\]
+
+用于定性展示的guidance配置为：
+
+\begin{table*}[t]
+\centering
+\caption{Controlled Condition-Swapping Suite on Test Split：实验结果}
+\label{tab:result-15}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{LLLLL}
+\toprule
+Sensor & Text scale & IMU scale & Active sensor error & Jerk \\
+\midrule
+head & 2.5 & 0.5 & 0.2003 m & 1.6134 \\
+wrists & 2.5 & 0.5 & 0.4794 m & 1.5036 \\
+wrists & 2.5 & 1.0 & 0.4847 m & 1.5066 \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+
+我们进一步在共享的100-motion test subset上固定\texttt{\seqsplit{text\_scale=2.5}}、\texttt{\seqsplit{imu\_scale=1.0}}，扫描factorized guidance的\texttt{\seqsplit{joint\_scale}}为0、0.25、0.5、1和1.5。
+Head各档active error为0.2131--0.2150 m，优于严格Text-only的样本数为58--61/100；wrists各档为0.4833--0.4868 m，改善样本数为69--71/100。
+Wrists在\texttt{\seqsplit{joint\_scale=0}}时平均误差最低，但相对默认\texttt{\seqsplit{joint\_scale=1}}仅降低0.0022 m，95\%配对bootstrap区间为[-0.0058, 0.0015]，差异不显著；其余档位相对默认值的tracking与jerk区间也均跨零。
+该结果说明当前控制主要来自IMU main effect，显式Text-IMU interaction scale在该范围内影响较弱，因此本文保留未针对测试集调优的默认值1.0。
+
+\subsubsection{Matrix Experiment}
+
+Matrix 实验随机选择 20 组 A/B test samples，对 head 和 wrists 分别生成 Text/IMU 的 8 种非空组合，并展示 Ground Truth A/B。
+该实验主要用于定性分析：
+
+\begin{itemize}
+\item Text A + IMU B 是否表现为 A 的语义与 B 的运动细节。
+\item Text B + IMU A 是否出现可解释的条件交换变化。
+\item Text-only 是否保持 MDM 语义能力。
+\item IMU-only diagnostic 是否提供轨迹/节奏但语义不足。
+\end{itemize}
+
+该矩阵直接呈现Text A + IMU B能否兼具A的语义与B的运动细节，也用于识别某一模态被模型忽略的失败情况。
+
+\begin{figure*}[t]
+\centering
+\fbox{\parbox[c][25mm][c]{0.94\textwidth}{\centering 图示占位：待插入最终实验可视化}}
+\caption{Ground Truth A/B位于首行，下方为Text None/A/B与IMU None/A/B的八种非空组合。候选使用Stage-2b的低jerk或高对比head/wrists矩阵样例。}
+\label{fig:qualitative-3}
+\end{figure*}
+
+\subsection{Qualitative Analysis}
+
+人工检查Figure 1--3候选后，可以稳定观察到文本和IMU都会改变生成结果，但控制强度并不均匀。
+在固定head IMU的文本编辑中，\texttt{\seqsplit{walks while swinging arms}}和\texttt{\seqsplit{turns while walking}}通常比普通walking产生更清楚的上肢或方向变化；相反，\texttt{\seqsplit{walks slowly}}、\texttt{\seqsplit{walks quickly}}和\texttt{\seqsplit{walks with large steps}}在不同样本上的区分度不稳定。
+部分动作能体现快慢或大步差异，但尚未形成跨样本一致现象。
+
+同文本换IMU的结果更稳定：更换head或wrists信号会改变root travel、局部轨迹和身体摆动，同时Stage-2b较Stage-1显著减少高频晃动。
+不过，现有样例主要证明“条件确实产生影响”，而不是每个条件都能实现精确语义或传感器匹配。
+因此正文图应同时呈现成功与失败案例，避免仅凭挑选样例扩大结论。
+
+MotionLab \cite{guo2025motionlab} test-20中按active trajectory proxy选出的best/worst样例也体现同一问题：部分metric-best样例降低了局部轨迹误差，却削弱了“抬手走路”“跌倒后起身”等文本语义；跳跃开合和肩高拍臂只得到部分形态。
+抽帧检查未发现持续骨长变化或早期回归模型式高频果冻抖动，但没有样例同时达到文本语义清楚、IMU影响可解释和视觉自然三个要求。
+因此MotionLab图只作为迁移诊断，不以metric-best替代人工语义判断。
+
+\subsection{Preliminary Zero-shot Study on Real Nymeria IMUs}
+
+为检查从AMASS/SMPL虚拟IMU训练得到的控制器能否接收真实传感器，我们在Nymeria上进行零样本预备实验。
+Nymeria narration的\texttt{\seqsplit{start\_time/end\_time}}属于head Aria的\texttt{\seqsplit{DEVICE\_TIME}}秒，Xsens \texttt{\seqsplit{timestamps\_us}}属于公共\texttt{\seqsplit{TIME\_CODE}}微秒。
+我们使用head VRS提供的设备时间到timecode转换，将每条narration精确索引到\texttt{\seqsplit{body/xdata.npz}}，再把Xsens Z-up坐标转换到ITM的Y-up六槽表示。
+实验选取3条来自不同录制序列、约5秒且head/wrists四元数有效的片段；另外5条候选因目标传感器四元数无效而排除。
+
+模型使用Stage-2b且不进行Nymeria微调，MDM Text-only、ITM+head与ITM+wrists共享caption、长度、seed和初始噪声：
+
+\begin{table*}[t]
+\centering
+\caption{Nymeria 真实 IMU 零样本预备实验}
+\label{tab:result-16}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{LLLLLL}
+\toprule
+Input & Active sensor trajectory error \ensuremath{\downarrow} & Root-relative error \ensuremath{\downarrow} & Jerk ratio \ensuremath{\downarrow} & Arm swing & Root travel \\
+\midrule
+MDM Text-only & 0.365 m & 0.294 m & 9.065 & 0.240 m & 0.402 m \\
+ITM + head & \textbf{0.198 m} & \textbf{0.241 m} & \textbf{7.789} & 0.147 m & 0.290 m \\
+ITM + wrists & 0.462 m & 0.344 m & 14.247 & 0.320 m & 0.599 m \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+
+Head配置的active trajectory error相对Text-only降低约45.8\%，说明真实head信号在零样本设置下没有被完全忽略。
+Wrists配置则同时恶化轨迹误差和jerk，反映真实Xsens与训练时SMPL虚拟腕部IMU之间存在安装朝向、噪声和统计分布偏移。
+由于样本仅3条，且生成骨架与Nymeria Xsens骨架并不完全一致，该结果只作为可行性诊断，不进入主表，也不能视为对Ego4o或其他Nymeria方法的正式比较。
+
+\begin{figure*}[t]
+\centering
+\fbox{\parbox[c][25mm][c]{0.94\textwidth}{\centering 图示占位：待插入最终实验可视化}}
+\caption{每条Nymeria片段展示GT、MDM Text-only、ITM+head和ITM+wrists，以及同步真实IMU曲线；现有可视化位于\texttt{\protect\seqsplit{outputs/nymeria\_pilot/stage2b\_zero\_shot/per\_clip/}}。}
+\label{fig:qualitative-4}
+\end{figure*}

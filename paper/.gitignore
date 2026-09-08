@@ -1,0 +1,37 @@
+# The unpacked IEEE template is versioned instead of its duplicate archive.
+/IEEE-Transactions-LaTeX2e-templates-and-instructions.zip
+
+# TeX build products; keep bibliography sources, reference PDFs and figure PDFs.
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.loa
+*.fls
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+*.xdv
+*.dvi
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+*.spl
+*.tdo
+*.synctex(busy)
+/latex-ITM/main*.pdf
+/latex-ITM/build/
+
+# Editor backups and operating-system metadata.
+*.bak
+*.backup
+*.swp
+*~
+.DS_Store
+Thumbs.db

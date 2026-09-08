@@ -1,0 +1,183 @@
+% !TeX root = ../main-cn.tex
+% Converted from paper/论文草稿.md; UTF-8.
+\section{方法}
+\label{sec:3_method}
+
+
+\subsection{Problem Formulation}
+
+给定文本描述 $c$、稀疏 IMU 序列 $s$、传感器有效 mask $m$ 和随机噪声 $z$，ITM 学习条件分布 $p_\theta(x\mid c,s,m)$，并生成动作样本 $x=G_\theta(c,s,m,z)$。
+文本描述动作语义，IMU 提供局部身体部位的连续时序控制，mask 指明实际可用的传感器。
+由于随机噪声允许同一组条件产生多个合理动作，任务目标不是确定性恢复唯一 ground truth，而是在保持文本语义和动作自然性的同时响应给定 IMU。
+
+动作采用 HumanML3D 263D representation。
+该表示联合编码根节点运动、局部关节位置、关节旋转、关节速度和足部接触；生成后使用 HumanML3D 的 \texttt{\seqsplit{recover\_from\_ric}} 过程积分根节点运动，并把局部关节坐标转换为 22 个全局三维关节。
+IMU表示为6个固定槽位，每个槽位每帧包含3D acceleration和3x3 orientation，共12D。
+方向采用完整旋转矩阵，是为了直接保存传感器坐标系朝向并与Slerp重采样兼容；将其改为连续6D旋转表示是可行的输入消融，但不属于当前实现。
+
+\subsection{Standard Virtual IMU Bridge}
+
+我们通过 HumanML3D \texttt{\seqsplit{index.csv}} 将 HumanML3D motion 映射回 AMASS/SMPL 序列，并从 SMPL/AMASS 生成标准虚拟 IMU。
+缓存频率为 30 FPS，训练和采样时重采样到 MDM 的 20 FPS。
+Acceleration 使用线性插值，orientation 使用 Slerp。
+每个 IMU 序列保留 6 个固定槽位：
+
+\begin{table}[t]
+\centering
+\caption{虚拟 IMU 的固定传感器槽位}
+\label{tab:result-1}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{LL}
+\toprule
+Slot & Part \\
+\midrule
+0 & Left Wrist \\
+1 & Right Wrist \\
+2 & Left Thigh \\
+3 & Right Thigh \\
+4 & Head \\
+5 & Pelvis \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+融合模型训练使用两种配置：head-only，即slot 4；wrists，即slots 0和1。
+头部配置对应头显、耳机和智能眼镜等常见设备，也是传感器最少、全身动作最欠定的设置；双腕配置对应智能手表或手环，能够提供更直接的上肢控制信号。
+两者分别用于检验“文本补全未观测身体”和“IMU控制局部运动”两类互补现象。
+数据规模为7009 train、434 val、1333 test aligned records。
+
+\subsection{Frozen MDM Backbone}
+
+我们使用官方MDM HumanML3D checkpoint \texttt{\seqsplit{humanml\_trans\_enc\_512/model000475000.pt}}。
+该模型使用CLIP ViT-B/32编码文本，Transformer latent width为512，包含8层Transformer Encoder，diffusion steps为1000，最大序列长度为196 frames。
+训练期间冻结MDM和CLIP，不更新其参数。
+
+冻结 MDM 的目的有三点。
+第一，保留官方模型已经学到的文本到动作生成先验。
+第二，降低训练成本，使实验可在单卡上快速迭代。
+第三，保证初始化时 Text-only 路径与官方 MDM 一致，便于分析 IMU 控制是否真正产生增量作用。
+
+\subsection{Sparse IMU Encoder}
+
+IMU encoder 输入为：
+
+\[s\in\mathbb{R}^{B\times T\times6\times12}.\]
+$B$表示batch size，$T$表示动作帧数，6为固定传感器槽位数，12为每个传感器的3维加速度和9维方向矩阵。
+每个 12D sensor feature 先通过共享线性层投影到 512D，并加入可学习 sensor embedding。
+随后使用 sensor mask 在传感器维度做 masked mean pooling，得到每帧一个 512D token。
+该序列再输入 2 层、8 heads 的 temporal Transformer Encoder，得到 IMU control feature：
+
+\[C_{\mathrm{imu}}\in\mathbb{R}^{B\times T\times512}.\]
+$C_{imu}$是逐帧控制序列，其中每个时间步由一个512维向量概括当前有效传感器及其前后时序上下文。
+本文在时序编码前进行多传感器pooling。
+这使模型能够直接支持可变sensor mask，但也可能削弱不同传感器之间的显式交互。
+
+\subsection{Zero-initialized Residual Adapters}
+
+我们在 MDM 的 8 个 Transformer layer 后分别添加一个零初始化线性 adapter：
+
+\begin{align}\widetilde H_l &= \operatorname{MDMLayer}_l(H_{l-1}),\\ H_l &= \widetilde H_l + W_l C_{\mathrm{imu}}+b_l.\end{align}
+
+每层 adapter 独立，不共享参数。
+由于 adapter 权重和 bias 都初始化为 0，初始模型与原始 MDM 完全等价。
+训练过程中，IMU encoder 学习提取控制特征，adapter 学习将这些特征注入不同层的 motion tokens。
+
+需要注意的是，MDM 内部序列包含一个 text/timestep condition token 和 T 个 motion tokens，而 IMU 只对应 T 个时间帧。
+因此我们在 control sequence 前补一个 zero token，使其与 MDM 的 T+1 token 对齐。
+
+\subsection{Training Objective}
+
+基础融合模型（工程记录名Stage-1）使用官方 MDM diffusion loss，即 predicted x\_start reconstruction loss。
+训练时文本条件和 IMU 条件独立 dropout：
+
+\begin{itemize}
+\item text dropout probability: 0.1。
+\item IMU dropout probability: 0.1。
+\end{itemize}
+
+训练超参数如下：
+
+\begin{table}[t]
+\centering
+\caption{训练配置}
+\label{tab:result-2}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{LL}
+\toprule
+Item & Value \\
+\midrule
+Training records & 7009 \\
+Sensor configs & head, wrists \\
+Epochs & 5 \\
+Batch size & 16 \\
+Optimizer & AdamW \\
+Learning rate & 1e-4 \\
+Gradient clipping & 1.0 \\
+Frozen modules & MDM, CLIP \\
+Trainable modules & IMU encoder, 8 adapters \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+五个 epoch 的 loss 为：
+
+\begin{quote}0.07791, 0.08080, 0.07893, 0.07619, 0.07642\end{quote}
+
+基础融合模型不包含显式 IMU consistency、velocity consistency、joint trajectory、foot contact 或 physics loss。
+实验中该模型能够响应 IMU，但 jerk 偏高，因此我们进一步引入轻量的关节空间正则。
+
+在正则化主模型中，我们保持MDM和CLIP冻结，从基础融合checkpoint继续训练IMU encoder和adapters。
+新增辅助损失包括active sensor trajectory loss、active sensor velocity loss和jerk regularization。
+本文主模型（实验记录名\texttt{\seqsplit{stage2b\_balanced\_b}}）使用如下设置：
+
+\begin{table}[t]
+\centering
+\caption{训练配置}
+\label{tab:result-3}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{LL}
+\toprule
+Item & Value \\
+\midrule
+Resume checkpoint & \texttt{\seqsplit{stage1\_full\_pilot\_v2.pt}} \\
+Output checkpoint & \texttt{\seqsplit{stage2b\_balanced\_b.pt}} \\
+Epochs & continue to 8 \\
+Batch size & 16 \\
+Learning rate & 5e-5 \\
+Trajectory loss weight & 1.0 \\
+Velocity loss weight & 0.1 \\
+Jerk loss weight & 0.003 \\
+Frozen modules & MDM, CLIP \\
+Trainable modules & IMU encoder, 8 adapters \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+辅助损失先将 normalized HumanML3D 263D motion 反标准化，再通过 torch 版 \texttt{\seqsplit{recover\_from\_ric}} 恢复 22 joints。
+Active sensor joints 按配置选择：head 对应 joint 15，wrists 对应 joints 20 和 21。
+该设计不引入 SMPL decoder、cross-attention 或完整 ControlNet backbone copy。
+
+作为方法消融，我们还加入 frozen MDM 的 Text-only prediction作为anchor，希望缓解正则化后“更平滑但文本补全变弱”的trade-off。
+普通text anchor loss权重为0.2，upper-body text anchor loss权重为0.4；后者只约束非active-sensor的上肢关节。
+该消融略微恢复same-head arm swing和active head error，但仍未达到基础融合模型的文本补全强度，因此不作为主模型。
+工程文档中的Stage-1、Stage-2b和Stage-4分别对应基础融合、正则化主模型和text-anchor消融；正文后续仅在消融表中保留这些简称。
+
+\subsection{Independent Guidance}
+
+推理时我们使用三分支 guidance：
+
+\begin{equation}\begin{split}f_{\mathrm{guided}}={}&f_{00}+w_{\mathrm{text}}(f_{10}-f_{00})\\ &+w_{\mathrm{imu}}(f_{11}-f_{10}).\end{split}\end{equation}
+式中，$f_{00}$、$f_{10}$ 和 $f_{11}$ 分别表示无条件、仅文本和文本与 IMU 联合条件下的预测；$w_{\mathrm{text}}$ 和 $w_{\mathrm{imu}}$ 分别对应 text scale 和 IMU scale。
+其中\texttt{\seqsplit{unconditional}}同时关闭文本和IMU，\texttt{\seqsplit{text\_only}}只启用文本，\texttt{\seqsplit{text\_imu}}同时启用文本和IMU。
+第一项差分表示文本相对无条件生成带来的变化，第二项差分表示IMU在给定文本后的增量控制。
+这使得 Text-only、IMU-only diagnostic、Text+IMU 可以通过同一个模型和同一组噪声比较。
+受控条件交换实验中所有条件共享 diffusion initial noise，以确保可见差异来自条件变化，而不是随机噪声变化。

@@ -1,0 +1,12 @@
+% !TeX root = ../main-cn.tex
+% Converted from paper/论文草稿.md; UTF-8.
+\section{结论}
+\label{sec:6_conclusion}
+
+
+本文提出IMU-guided Text-to-Motion Generation，将稀疏IMU作为预训练文本动作生成器的实例级控制条件。
+所提出的方法冻结MDM和CLIP，仅通过时序IMU encoder与逐层零初始化residual adapters学习控制，在较低训练成本下保留原有文本生成路径。
+HumanML3D/AMASS实验表明，IMU可以在模糊文本下改变具体运动细节，正则化主模型能够显著降低该过程中的jerk，同时基本保持文本检索指标。
+实验也揭示了局部IMU一致性、动作平滑性和未观测身体语义补全之间的系统性权衡；简单text anchor尚不足以同时优化三者。
+Nymeria真实IMU预备实验显示head控制具有初步跨域可行性，但wrists域偏移仍需校准。
+上述结果为结合语言语义与可穿戴传感器的可控人体动作生成提供了任务定义、轻量实现和受控条件交换评价基础。

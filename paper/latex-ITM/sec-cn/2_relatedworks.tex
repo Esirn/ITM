@@ -1,0 +1,42 @@
+% !TeX root = ../main-cn.tex
+% Converted from paper/论文草稿.md; UTF-8.
+\section{相关工作}
+\label{sec:2_relatedworks}
+
+
+\subsection{文本到动作生成}
+
+Text-to-Motion 工作从自然语言生成动作序列，常见模型包括 MotionDiffuse \cite{zhang2024motiondiffuse}、MDM \cite{tevet2023mdm}、MotionGPT \cite{jiang2023motiongpt}、T2M-GPT \cite{zhang2023t2mgpt} 和 LGTM \cite{sun2024lgtm}。
+HumanML3D \cite{guo2022humanml3d}建立了广泛采用的文本-动作数据与评价协议；MDM进一步将扩散模型用于人体动作生成，并使用 Matching Score、R-precision、FID、Diversity、Multimodality 等指标评价文本匹配、生成质量和多样性。
+
+纯 Text-to-Motion 的优势是语义生成能力强，但缺少外部物理控制信号。
+同一句文本可以产生大量动作，这既是多样性的来源，也是可控性的限制。
+ITM 继承 MDM 的动作生成先验，同时引入 IMU 作为时序控制，使生成动作不仅“像文本描述的动作”，也能“像某个传感器轨迹对应的动作”。
+
+\subsection{多条件控制生成}
+
+可控动作生成研究使用轨迹、关键帧、接触、物体、音乐、场景或其他条件控制生成结果。
+OmniControl \cite{xie2023omnicontrol}与ControlNet \cite{zhang2023controlnet}风格扩散控制表明，将额外条件注入预训练生成模型可以实现更强的可控性。
+
+ITM 与这类工作的联系在于都关注生成模型的可控性；区别在于 ITM 的控制信号来自 wearable IMU，即 acceleration 和 orientation 的连续时序信号，而不是人工指定的轨迹点或离散控制标签。
+本文方法借鉴 ControlNet 的零初始化 residual 思想，但采用轻量 adapters 而非复制完整生成 backbone。
+
+\subsection{稀疏 IMU 姿态估计与动作重建}
+
+传统高质量人体动作捕捉依赖多相机光学系统或专业动捕设备，能够获得准确的全身姿态，但成本高、部署复杂且活动范围受限。
+DIP \cite{huang2018dip}、TransPose \cite{yi2021transpose}、IMUPoser \cite{mollyn2023imuposer}、MobilePoser \cite{xu2024mobileposer}等方法研究从少量可穿戴 IMU 恢复人体姿态，通常以 root-relative MPJPE、rotation geodesic error、foot skating 和 jitter 评价与唯一 ground truth 的接近程度。
+Spatial-Related Sensors Matters \cite{yang2024spatialsensors}进一步关注传感器空间关系与文本语义对姿态恢复的帮助。
+即使相关系统引入语义条件，其核心目标仍是提高对真实姿态的恢复精度，而非保持随机动作生成分布。
+
+ITM 与上述工作的任务边界在于：它不以确定性重建唯一真实姿态为最终目标，而是在文本生成分布中使用 IMU 约束动作实例。
+IMU-only 方法适合回答“真实动作估计得多准”，ITM 则回答“文本语义不变时，生成动作能否响应传感器细节”。
+因此，本文使用 Flexible IMUPoser 描述 IMU-only reconstruction boundary，但不将其 MPJPE 与 ITM 的生成指标混为同一排名。
+
+\subsection{Text+IMU 与 Egocentric Multimodal Motion}
+
+Ego4o \cite{wang2025ego4o}等工作将第一视角视觉、文本或身体传感器用于全身动作理解与恢复；Spatial-Related Sensors Matters \cite{yang2024spatialsensors}也可在特定设置下构造出与 ITM 相近的文本、传感器输入和人体动作输出。
+这些工作说明文本或场景语义能够缓解稀疏身体观测的欠定性，与本文关注的模态互补具有直接联系。
+
+然而，相同输入输出形式并不意味着相同任务目标：相关方法主要强调姿态准确度或多模态动作恢复，ITM强调随机生成、文本语义保持和条件交换下的可控性。
+Ego4o未提供可直接使用的官方 checkpoint，Spatial-Related Sensors Matters亦缺少默认官方实现，因此本文不报告无法在统一协议下核验的对比数字。
+二者作为最接近的任务相关工作讨论；正式直接比较需要在相同Nymeria划分、传感器配置和评价代码下重新训练。
