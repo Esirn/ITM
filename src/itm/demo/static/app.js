@@ -124,7 +124,9 @@ el('load-run').addEventListener('click', async () => {
     const query = source === 'experiments' ? `?root=${encodeURIComponent(el('experiment-root').value)}` : '';
     const response = await fetch(`/api/${source}/${encoded}${query}`), data = await response.json();
     if (!response.ok) throw new Error(data.detail || 'Result not found');
-    setResult(data); setStatus(`Run ${data.run_id} loaded`);
+    setResult(data);
+    if (el('autoplay-loaded').checked) setPlaying(true);
+    setStatus(`Run ${data.run_id} loaded`);
   } catch (error) { setStatus(error.message, true); }
 });
 
@@ -144,6 +146,7 @@ el('generate-form').addEventListener('submit', async event => {
     const data = await response.json();
     if (!response.ok) throw new Error(data.detail || 'Generation failed');
     setResult(data);
+    if (el('autoplay-generated').checked) setPlaying(true);
     setStatus(`Run ${data.run_id} ready`);
   } catch (error) { setStatus(error.message, true); }
   finally { button.disabled = false; }
@@ -241,8 +244,45 @@ function renderFrame() {
   if (!state.result) return; state.panels.forEach(drawMotion);
   el('timeline').value=state.frame; el('time').value=`${(state.frame/state.result.fps).toFixed(2)} s`;
 }
-function tick(time) { if(state.playing&&state.result){const step=(time-state.lastTime)/1000*state.result.fps*Number(el('speed').value);if(step>=1){state.frame=(state.frame+Math.floor(step))%state.result.frame_count;state.lastTime=time;renderFrame();}}requestAnimationFrame(tick); }
-el('play').addEventListener('click',()=>{state.playing=!state.playing;state.lastTime=performance.now();el('play').textContent=state.playing?'❚❚':'▶';});
+for (const id of ['autoplay-generated', 'autoplay-loaded', 'loop-playback']) {
+  try {
+    const saved = localStorage.getItem(`itm-${id}`);
+    if (saved !== null) el(id).checked = saved === 'true';
+  } catch {}
+  el(id).addEventListener('change', () => {
+    try { localStorage.setItem(`itm-${id}`, String(el(id).checked)); } catch {}
+  });
+}
+function setPlaying(playing) {
+  state.playing = playing && Boolean(state.result);
+  state.lastTime = performance.now();
+  el('play').textContent = state.playing ? '❚❚' : '▶';
+}
+function tick(time) {
+  if (state.playing && state.result) {
+    const step = (time - state.lastTime) / 1000 * state.result.fps * Number(el('speed').value);
+    if (step >= 1) {
+      const next = state.frame + Math.floor(step);
+      if (el('loop-playback').checked) {
+        state.frame = next % state.result.frame_count;
+      } else {
+        state.frame = Math.min(next, state.result.frame_count - 1);
+        if (next >= state.result.frame_count - 1) setPlaying(false);
+      }
+      state.lastTime = time;
+      renderFrame();
+    }
+  }
+  requestAnimationFrame(tick);
+}
+el('play').addEventListener('click', () => {
+  if (!state.result) return;
+  if (!state.playing && state.frame >= state.result.frame_count - 1) {
+    state.frame = 0;
+    renderFrame();
+  }
+  setPlaying(!state.playing);
+});
 el('timeline').addEventListener('input',()=>{state.frame=Number(el('timeline').value);renderFrame();});
 function setPanelSize(value) {
   const size = Math.max(220, Math.min(620, Number(value)));

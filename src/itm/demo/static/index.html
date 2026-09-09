@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ITM Condition Lab</title>
-  <link rel="stylesheet" href="/static/style.css?v=5">
+  <link rel="stylesheet" href="/static/style.css?v=8">
 </head>
 <body>
   <header>
@@ -85,6 +85,21 @@
         <label>Recent results<select id="recent-runs"></select></label>
         <div class="run-loader"><input id="load-run-id" placeholder="Run ID"><button id="load-run" type="button">Load</button></div>
       </section>
+      <details id="layout-settings">
+        <summary>Layout settings</summary>
+        <div class="two-col">
+          <label>Rows<input id="layout-rows" type="number" min="1" max="100" value="4"></label>
+          <label>Columns<input id="layout-cols" type="number" min="1" max="12" value="3"></label>
+        </div>
+        <button id="layout-apply" type="button">Apply layout</button>
+        <button id="layout-reset" type="button">Restore default</button>
+        <output id="layout-status" role="status"></output>
+      </details>
+      <section class="playback-settings" aria-label="Playback settings">
+        <label><input id="autoplay-generated" type="checkbox">Auto-play after generation</label>
+        <label><input id="autoplay-loaded" type="checkbox">Auto-play after loaded</label>
+        <label><input id="loop-playback" type="checkbox" checked>Loop playback</label>
+      </section>
       <div id="status" role="status">Ready</div>
     </aside>
     <main>
@@ -103,6 +118,7 @@
       </section>
     </main>
   </div>
-  <script src="/static/app.js?v=9"></script>
+  <script src="/static/app.js?v=11"></script>
+  <script src="/static/layout.js?v=2"></script>
 </body>
 </html>
