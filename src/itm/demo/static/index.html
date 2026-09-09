@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ITM Condition Lab</title>
   <link rel="stylesheet" href="/static/style.css?v=8">
+  <link rel="stylesheet" href="/static/appearance.css?v=1">
 </head>
 <body>
   <header>
@@ -84,6 +85,7 @@
         </label>
         <label>Recent results<select id="recent-runs"></select></label>
         <div class="run-loader"><input id="load-run-id" placeholder="Run ID"><button id="load-run" type="button">Load</button></div>
+        <button id="mesh-clear" type="button" disabled title="Clear fitted meshes for the currently displayed result">Clear current SMPL cache</button>
       </section>
       <details id="layout-settings">
         <summary>Layout settings</summary>
@@ -96,10 +98,22 @@
         <output id="layout-status" role="status"></output>
       </details>
       <section class="playback-settings" aria-label="Playback settings">
+        <label>Display<select id="mesh-mode"><option value="skeleton">Skeleton</option><option value="both">SMPL + skeleton</option><option value="mesh">SMPL</option></select></label>
+        <label>Fit device<select id="mesh-device"><option value="auto">Auto</option><option value="gpu_all">GPU All</option><option value="cpu">CPU</option><option value="cuda:0">GPU 0</option><option value="cuda:1">GPU 1</option></select></label>
+        <button id="mesh-retry" type="button" hidden>Retry SMPL</button>
+        <output id="mesh-status" role="status"></output>
         <label><input id="autoplay-generated" type="checkbox">Auto-play after generation</label>
         <label><input id="autoplay-loaded" type="checkbox">Auto-play after loaded</label>
         <label><input id="loop-playback" type="checkbox" checked>Loop playback</label>
       </section>
+      <details id="appearance-settings">
+        <summary>Appearance settings</summary>
+        <label>Skeleton line width <output id="skeleton-width-value">5</output>
+          <input id="skeleton-width" type="range" min="1" max="15" step="0.5" value="5">
+        </label>
+        <div id="appearance-fields"></div>
+        <button id="appearance-reset" type="button">Restore default colors</button>
+      </details>
       <div id="status" role="status">Ready</div>
     </aside>
     <main>
@@ -118,7 +132,10 @@
       </section>
     </main>
   </div>
-  <script src="/static/app.js?v=11"></script>
+  <script src="/static/vendor/three.min.js"></script>
+  <script src="/static/appearance.js?v=2"></script>
+  <script src="/static/mesh.js?v=4"></script>
+  <script src="/static/app.js?v=14"></script>
   <script src="/static/layout.js?v=2"></script>
 </body>
 </html>

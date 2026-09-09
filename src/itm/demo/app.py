@@ -3,6 +3,12 @@
 from __future__ import annotations
 
 import json
+import hashlib
+import multiprocessing
+import shutil
+import traceback
+import time
+from concurrent.futures import ProcessPoolExecutor
 import os
 from pathlib import Path
 import random
@@ -62,6 +68,24 @@ IMU_MANIFESTS = {
 }
 SENSOR_SLOTS = {"head": 4, "wrists": 0}
 GENERATION_LOCK = Lock()
+MESH_LOCK = Lock()
+MESH_ROOT = ROOT / 'outputs/demo_meshes'
+MESH_ACTIVE = set()
+MESH_DEVICES = set()
+MESH_POOLS = {}
+MESH_GPU_FINISHED = {}
+
+
+class MeshRequest(BaseModel):
+    run_id: str = Field(min_length=1, max_length=500)
+    root: str | None = None
+    panel_index: int = Field(ge=0)
+    device: Literal['auto', 'gpu_all', 'cpu', 'cuda:0', 'cuda:1'] = 'auto'
+
+
+class MeshClearRequest(BaseModel):
+    run_id: str = Field(min_length=1, max_length=500)
+    root: str | None = None
 
 
 class GenerateRequest(BaseModel):
@@ -247,8 +271,11 @@ def generate(request: GenerateRequest):
         "--imu-scale", str(request.imu_scale),
         "--device", request.device,
     ]
-    if not GENERATION_LOCK.acquire(blocking=False):
-        raise HTTPException(409, "Another generation is already using the model")
+    with MESH_LOCK:
+        if request.device in MESH_DEVICES:
+            raise HTTPException(409, 'Selected GPU is fitting SMPL; retry after fitting or choose another device')
+        if not GENERATION_LOCK.acquire(blocking=False):
+            raise HTTPException(409, "Another generation is already using the model")
     try:
         process = subprocess.run(command, cwd=ROOT, text=True, capture_output=True)
     finally:
@@ -259,6 +286,147 @@ def generate(request: GenerateRequest):
     result = _serialize_result(run_id, request_payload, by_id, run_dir / "results.npz")
     (run_dir / "result.json").write_text(json.dumps(result), encoding="utf-8")
     return result
+
+
+@app.post('/api/mesh')
+def prepare_mesh(request: MeshRequest):
+    result = (get_experiment(request.run_id, request.root)
+              if request.root is not None else get_run(request.run_id))
+    if request.panel_index >= len(result['panels']):
+        raise HTTPException(400, 'Unknown panel')
+    motion, model, cache_id = _mesh_identity(result['panels'][request.panel_index])
+    directory = MESH_ROOT / cache_id
+    metadata = directory / 'metadata.json'
+    with MESH_LOCK:
+        if metadata.is_file():
+            return _mesh_response(metadata, cache_id)
+        if cache_id in MESH_ACTIVE:
+            raise HTTPException(409, 'This SMPL fit is already running')
+        device = _mesh_device(request.device)
+        if device is None:
+            raise HTTPException(409, 'Fitting device busy; waiting for an available slot')
+        MESH_ACTIVE.add(cache_id)
+        MESH_DEVICES.add(device)
+    try:
+        directory.mkdir(parents=True, exist_ok=True)
+        np.save(directory / 'motion.npy', motion)
+        _run_mesh_job(directory, model, device)
+    except Exception as exc:
+        (directory / 'fit.log').write_text(traceback.format_exc())
+        raise HTTPException(500, f'SMPL fitting failed on {device}; inspect {directory / "fit.log"}') from exc
+    finally:
+        with MESH_LOCK:
+            MESH_ACTIVE.discard(cache_id)
+            MESH_DEVICES.discard(device)
+            if device.startswith('cuda:'):
+                MESH_GPU_FINISHED[device] = time.monotonic()
+    return _mesh_response(metadata, cache_id)
+
+
+def _mesh_identity(panel):
+    motion = np.asarray(panel['motion'], dtype='<f4')
+    if motion.ndim != 3 or motion.shape[1:] != (22, 3) or not 3 <= len(motion) <= 196 or not np.isfinite(motion).all():
+        raise HTTPException(400, 'SMPL preview requires 3–196 frames of finite 22-joint motion')
+    model = MDM_ROOT / 'body_models/smpl/SMPL_NEUTRAL.pkl'
+    if not model.is_file():
+        raise HTTPException(503, 'SMPL model unavailable')
+    identity = f'neutral-preview-v1-200:{model.resolve()}:{model.stat().st_mtime_ns}'
+    cache_id = hashlib.sha256(identity.encode() + motion.tobytes()).hexdigest()
+    return motion, model, cache_id
+
+
+def _gpu_load():
+    try:
+        result = subprocess.run([
+            'nvidia-smi', '--query-gpu=index,memory.free,utilization.gpu',
+            '--format=csv,noheader,nounits',
+        ], capture_output=True, text=True, timeout=3, check=True)
+        return [tuple(int(value.strip()) for value in line.split(','))
+                for line in result.stdout.splitlines()]
+    except (OSError, ValueError, subprocess.SubprocessError):
+        return []
+
+
+@app.get('/api/mesh-devices')
+def mesh_devices():
+    return {'gpus': [index for index, _, _ in _gpu_load()]}
+
+
+def _mesh_device(requested):
+    # Called under MESH_LOCK so concurrent HTTP requests cannot reserve a GPU twice.
+    if requested != 'cpu' and not GENERATION_LOCK.locked():
+        for index, free_mib, utilization in sorted(_gpu_load(), key=lambda row: -row[1]):
+            device = f'cuda:{index}'
+            if requested not in ('auto', 'gpu_all', device) or device in MESH_DEVICES:
+                continue
+            if free_mib >= 6144 and utilization < 20:
+                return device
+    if requested == 'auto' and not GENERATION_LOCK.locked():
+        # GPU utilization is sampled over a window; let our previous fit's load decay.
+        if any(device.startswith('cuda:') for device in MESH_DEVICES) or any(
+                time.monotonic() - finished < 3 for finished in MESH_GPU_FINISHED.values()):
+            return None
+    if requested in ('auto', 'cpu') and 'cpu' not in MESH_DEVICES:
+        return 'cpu'
+    return None
+
+
+def _run_mesh_job(directory, model, device):
+    from itm.demo.mesh_worker import fit_mesh
+    with MESH_LOCK:
+        if device not in MESH_POOLS:
+            MESH_POOLS[device] = ProcessPoolExecutor(
+                max_workers=1, mp_context=multiprocessing.get_context('spawn'))
+        pool = MESH_POOLS[device]
+    try:
+        result = pool.submit(fit_mesh, str(directory / 'motion.npy'), str(model), str(directory), device).result()
+        (directory / 'fit.log').write_text(json.dumps(result, indent=2))
+    except Exception:
+        with MESH_LOCK:
+            MESH_POOLS.pop(device, None)
+        pool.shutdown(wait=True, cancel_futures=True)
+        raise
+
+
+def _mesh_response(metadata, cache_id):
+    return json.loads(metadata.read_text()) | {
+        'vertices_url': f'/api/mesh-cache/{cache_id}/vertices.bin',
+        'faces_url': f'/api/mesh-cache/{cache_id}/faces.json',
+    }
+
+
+@app.post('/api/mesh/clear')
+def clear_mesh(request: MeshClearRequest):
+    result = (get_experiment(request.run_id, request.root)
+              if request.root is not None else get_run(request.run_id))
+    keys = {_mesh_identity(panel)[2] for panel in result['panels']}
+    removed = 0
+    with MESH_LOCK:
+        if keys & MESH_ACTIVE:
+            raise HTTPException(409, 'This result is still being fitted; retry after fitting finishes')
+        for key in keys:
+            directory = MESH_ROOT / key
+            if directory.is_dir() and not directory.is_symlink():
+                shutil.rmtree(directory)
+                removed += 1
+    return {'removed': removed, 'shared_motion_cache': True}
+
+
+@app.on_event('shutdown')
+def close_mesh_workers():
+    for pool in MESH_POOLS.values():
+        pool.shutdown(wait=True, cancel_futures=True)
+    MESH_POOLS.clear()
+
+
+@app.get('/api/mesh-cache/{cache_id}/{filename}')
+def mesh_cache(cache_id: str, filename: str):
+    if len(cache_id) != 64 or any(char not in '0123456789abcdef' for char in cache_id) or filename not in ('vertices.bin', 'faces.json'):
+        raise HTTPException(400, 'Invalid mesh asset')
+    path = MESH_ROOT / cache_id / filename
+    if not path.is_file() or not (path.parent / 'metadata.json').is_file():
+        raise HTTPException(404, 'Mesh unavailable')
+    return FileResponse(path)
 
 
 def _sample_catalog(split):

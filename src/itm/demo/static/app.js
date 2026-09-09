@@ -1,5 +1,4 @@
 const chains = [[0,2,5,8,11],[0,1,4,7,10],[0,3,6,9,12,15],[9,14,17,19,21],[9,13,16,18,20]];
-const colors = { ground_truth: '#247ba0', generated: '#168f79' };
 const state = {
   result: null, frame: 0, playing: false, lastTime: 0, panels: [], samples: [], split: 'test',
   selectedSamples: { a: null, b: null },
@@ -168,6 +167,7 @@ function setResult(result) {
   }
   result.panels.forEach((panel, index) => setupMotionCanvas(panel, el(`motion-${index}`)));
   renderIMU(result); renderFrame();
+  window.meshPreview?.reset(result);
 }
 
 function summaryMarkup(result) {
@@ -212,17 +212,18 @@ function setupMotionCanvas(panel, canvas) {
 function drawMotion(view) {
   const { canvas, panel, yaw, pitch } = view, ctx = canvas.getContext('2d');
   const joints = panel.motion[Math.min(state.frame, panel.motion.length - 1)], root = joints[0];
-  ctx.clearRect(0,0,canvas.width,canvas.height); ctx.strokeStyle = '#e4e9eb'; ctx.lineWidth = 1;
+  ctx.fillStyle = appearance.get('canvas'); ctx.fillRect(0,0,canvas.width,canvas.height); ctx.strokeStyle = appearance.get('ground'); ctx.lineWidth = 1;
   ctx.beginPath(); ctx.moveTo(40, canvas.height-42); ctx.lineTo(canvas.width-40, canvas.height-42); ctx.stroke();
+  const meshOnly = window.meshPreview?.draw(view, state.frame);
   const projected = joints.map(joint => {
     const x = joint[0]-root[0], y=joint[1], z=joint[2]-root[2];
     const rx = x*Math.cos(yaw)-z*Math.sin(yaw), rz=x*Math.sin(yaw)+z*Math.cos(yaw);
     const ry = y*Math.cos(pitch)-rz*Math.sin(pitch);
     return [canvas.width/2 + rx*105, canvas.height-40-ry*105];
   });
-  ctx.strokeStyle = colors[panel.kind] || colors.generated; ctx.lineWidth = 5; ctx.lineCap='round'; ctx.lineJoin='round';
-  for (const chain of chains) { ctx.beginPath(); chain.forEach((joint,index) => index ? ctx.lineTo(...projected[joint]) : ctx.moveTo(...projected[joint])); ctx.stroke(); }
-  ctx.fillStyle='#17202a'; ctx.font='12px system-ui';
+  ctx.strokeStyle = appearance.get(panel.kind === 'ground_truth' ? 'skeleton-gt' : 'skeleton-generated'); ctx.lineWidth = appearance.skeletonWidth(); ctx.lineCap='round'; ctx.lineJoin='round';
+  if (!meshOnly) for (const chain of chains) { ctx.beginPath(); chain.forEach((joint,index) => index ? ctx.lineTo(...projected[joint]) : ctx.moveTo(...projected[joint])); ctx.stroke(); }
+  ctx.fillStyle=appearance.get('canvas-text'); ctx.font='12px system-ui';
   const travel = Math.hypot(joints[0][0]-panel.motion[0][0][0], joints[0][2]-panel.motion[0][0][2]);
   ctx.fillText(`root travel ${travel.toFixed(2)} m`, 12, 20);
 }
@@ -235,8 +236,8 @@ function renderIMU(result) {
 }
 
 function drawSignal(canvas, signal) {
-  const ctx=canvas.getContext('2d'), w=canvas.width, h=canvas.height, colors=['#d1495b','#2e8b57','#247ba0'];
-  const max=Math.max(1,...signal.flat().map(Math.abs)); ctx.clearRect(0,0,w,h); ctx.strokeStyle='#e2e7e9'; ctx.beginPath(); ctx.moveTo(0,h/2);ctx.lineTo(w,h/2);ctx.stroke();
+  const ctx=canvas.getContext('2d'), w=canvas.width, h=canvas.height, colors=['imu-x','imu-y','imu-z'].map(key => appearance.get(key));
+  const max=Math.max(1,...signal.flat().map(Math.abs)); ctx.fillStyle=appearance.get('imu-canvas'); ctx.fillRect(0,0,w,h); ctx.strokeStyle=appearance.get('imu-axis'); ctx.beginPath(); ctx.moveTo(0,h/2);ctx.lineTo(w,h/2);ctx.stroke();
   for(let c=0;c<3;c++){ctx.strokeStyle=colors[c];ctx.lineWidth=1.5;ctx.beginPath();signal.forEach((v,i)=>{const x=i/(signal.length-1)*w,y=h/2-v[c]/max*(h*.42);i?ctx.lineTo(x,y):ctx.moveTo(x,y)});ctx.stroke();}
 }
 
@@ -295,6 +296,9 @@ document.querySelector('main').addEventListener('wheel', event => {
   event.preventDefault();
   setPanelSize(Number(el('panel-size').value) + (event.deltaY < 0 ? 20 : -20));
 }, { passive: false });
-function setStatus(message,error=false){el('status').textContent=message;el('status').style.borderColor=error?'#d1495b':'#1abc9c';}
+window.addEventListener('itm-colors-changed', () => {
+  if (state.result) { renderFrame(); renderIMU(state.result); }
+});
+function setStatus(message,error=false){el('status').textContent=message;el('status').style.borderColor=error?'var(--color-error)':'var(--color-accent)';}
 function escapeHtml(value){return String(value).replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));}
 loadSamples().catch(error=>setStatus(error.message,true)); requestAnimationFrame(tick);
