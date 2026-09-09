@@ -33,14 +33,26 @@
             <select id="sensor"><option value="head">Head</option><option value="wrists">Wrists</option></select>
           </label>
         </div>
-        <label>Sample A
-          <input id="sample-a" list="sample-a-options" autocomplete="off" placeholder="Type an ID, e.g. 006504">
-          <datalist id="sample-a-options"></datalist>
-        </label>
-        <label id="sample-b-row" hidden>Sample B
-          <input id="sample-b" list="sample-b-options" autocomplete="off" placeholder="Type an ID">
-          <datalist id="sample-b-options"></datalist>
-        </label>
+        <section class="sample-picker" aria-labelledby="sample-a-label">
+          <div class="sample-picker-heading">
+            <label id="sample-a-label" for="sample-a-filter">Sample A</label>
+            <button id="sample-a-toggle" class="sample-picker-toggle" type="button" aria-controls="sample-a-options-wrap" aria-expanded="true">Hide list</button>
+          </div>
+          <input id="sample-a-filter" autocomplete="off" placeholder="Filter ID or text, e.g. 006504">
+          <div id="sample-a-options-wrap" class="sample-options-wrap">
+            <select id="sample-a" size="6" aria-label="Sample A candidates"></select>
+          </div>
+        </section>
+        <section id="sample-b-row" class="sample-picker" aria-labelledby="sample-b-label" hidden>
+          <div class="sample-picker-heading">
+            <label id="sample-b-label" for="sample-b-filter">Sample B</label>
+            <button id="sample-b-toggle" class="sample-picker-toggle" type="button" aria-controls="sample-b-options-wrap" aria-expanded="true">Hide list</button>
+          </div>
+          <input id="sample-b-filter" autocomplete="off" placeholder="Filter ID or text">
+          <div id="sample-b-options-wrap" class="sample-options-wrap">
+            <select id="sample-b" size="6" aria-label="Sample B candidates"></select>
+          </div>
+        </section>
         <button id="randomize" type="button" title="Choose random samples">↻ Randomize samples</button>
         <div class="two-col">
           <label>Text scale<input id="text-scale" type="number" min="0" max="10" step="0.1" value="2.5"></label>
@@ -91,6 +103,6 @@
       </section>
     </main>
   </div>
-  <script src="/static/app.js?v=7"></script>
+  <script src="/static/app.js?v=9"></script>
 </body>
 </html>

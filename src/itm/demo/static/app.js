@@ -1,32 +1,68 @@
 const chains = [[0,2,5,8,11],[0,1,4,7,10],[0,3,6,9,12,15],[9,14,17,19,21],[9,13,16,18,20]];
 const colors = { ground_truth: '#247ba0', generated: '#168f79' };
-const state = { result: null, frame: 0, playing: false, lastTime: 0, panels: [], samples: [], split: 'test' };
+const state = {
+  result: null, frame: 0, playing: false, lastTime: 0, panels: [], samples: [], split: 'test',
+  selectedSamples: { a: null, b: null },
+};
 const el = id => document.getElementById(id);
+const sampleKey = id => id === 'sample-a' ? 'a' : 'b';
+
+function selectedSampleId(id) {
+  return state.selectedSamples[sampleKey(id)];
+}
+
+function setSelectedSample(id, value) {
+  state.selectedSamples[sampleKey(id)] = value || null;
+}
+
+function setCandidatesVisible(id, visible) {
+  const wrapper = el(`${id}-options-wrap`);
+  const toggle = el(`${id}-toggle`);
+  wrapper.hidden = !visible;
+  toggle.textContent = visible ? 'Hide list' : 'Show list';
+  toggle.setAttribute('aria-expanded', String(visible));
+}
+
+function renderSamplePicker(id) {
+  const filter = el(`${id}-filter`).value.trim().toLowerCase();
+  const selected = selectedSampleId(id);
+  const matches = state.samples.filter(sample =>
+    !filter || sample.motion_id.toLowerCase().includes(filter) || sample.caption.toLowerCase().includes(filter)
+  );
+  const visible = matches.slice(0, 100);
+  const selectedSample = state.samples.find(sample => sample.motion_id === selected);
+  if (selectedSample && !visible.some(sample => sample.motion_id === selected)) visible.unshift(selectedSample);
+  el(id).innerHTML = visible.map(sample =>
+    `<option value="${escapeHtml(sample.motion_id)}">${escapeHtml(sample.motion_id)} · ${escapeHtml(sample.caption)}</option>`
+  ).join('');
+  el(id).value = selected || '';
+}
 
 async function loadSamples() {
   state.split = el('split').value;
   setStatus('Loading samples…');
   const response = await fetch(`/api/samples?split=${state.split}&limit=2000`);
   state.samples = await response.json();
-  const chooseRandom = !el('sample-a').value;
+  const chooseRandom = !selectedSampleId('sample-a');
   for (const id of ['sample-a', 'sample-b']) {
-    const selected = el(id).value;
-    el(`${id}-options`).innerHTML = state.samples.map(sample => `<option value="${sample.motion_id}">${escapeHtml(sample.caption)}</option>`).join('');
-    el(id).value = state.samples.some(sample => sample.motion_id === selected) ? selected : '';
+    const selected = selectedSampleId(id);
+    if (!state.samples.some(sample => sample.motion_id === selected)) setSelectedSample(id, null);
   }
   if (chooseRandom) randomizeSamples();
-  if (el('sample-b').value === el('sample-a').value && state.samples.length > 1) {
-    el('sample-b').value = state.samples.find(sample => sample.motion_id !== el('sample-a').value).motion_id;
+  if (selectedSampleId('sample-b') === selectedSampleId('sample-a') && state.samples.length > 1) {
+    setSelectedSample('sample-b', state.samples.find(sample => sample.motion_id !== selectedSampleId('sample-a')).motion_id);
   }
+  renderSamplePicker('sample-a'); renderSamplePicker('sample-b');
   updateDetails();
   setStatus(`${state.samples.length} samples available`);
 }
 
 function randomizeSamples() {
   if (!state.samples.length) return;
-  el('sample-a').value = state.samples[Math.floor(Math.random() * state.samples.length)].motion_id;
-  do { el('sample-b').value = state.samples[Math.floor(Math.random() * state.samples.length)].motion_id; }
-  while (state.samples.length > 1 && el('sample-b').value === el('sample-a').value);
+  setSelectedSample('sample-a', state.samples[Math.floor(Math.random() * state.samples.length)].motion_id);
+  do { setSelectedSample('sample-b', state.samples[Math.floor(Math.random() * state.samples.length)].motion_id); }
+  while (state.samples.length > 1 && selectedSampleId('sample-b') === selectedSampleId('sample-a'));
+  renderSamplePicker('sample-a'); renderSamplePicker('sample-b');
   updateDetails();
 }
 
@@ -58,15 +94,20 @@ function setSidebarMode(mode) {
 function updateDetails() {
   const ids = el('mode').value === 'matrix' ? ['sample-a', 'sample-b'] : ['sample-a'];
   el('sample-details').innerHTML = ids.map((id, index) => {
-    const sample = state.samples.find(value => value.motion_id === el(id).value);
+    const sample = state.samples.find(value => value.motion_id === selectedSampleId(id));
     return sample ? `<div class="sample-detail"><strong>${index ? 'B' : 'A'} · ${sample.motion_id}</strong>${escapeHtml(sample.caption)}<br>${sample.frames} IMU frames</div>` : '';
   }).join('');
 }
 
 el('mode').addEventListener('change', () => { el('sample-b-row').hidden = el('mode').value !== 'matrix'; updateDetails(); });
 el('split').addEventListener('change', loadSamples);
-el('sample-a').addEventListener('input', updateDetails);
-el('sample-b').addEventListener('input', updateDetails);
+for (const id of ['sample-a', 'sample-b']) {
+  el(`${id}-filter`).addEventListener('input', () => renderSamplePicker(id));
+  el(id).addEventListener('change', () => { setSelectedSample(id, el(id).value); updateDetails(); });
+  el(`${id}-toggle`).addEventListener('click', () => {
+    setCandidatesVisible(id, el(`${id}-options-wrap`).hidden);
+  });
+}
 el('randomize').addEventListener('click', randomizeSamples);
 el('generate-tab').addEventListener('click', () => setSidebarMode('generate'));
 el('load-tab').addEventListener('click', () => setSidebarMode('load'));
@@ -93,8 +134,8 @@ el('generate-form').addEventListener('submit', async event => {
   button.disabled = true;
   setStatus('Generating on GPU…');
   const payload = {
-    mode: el('mode').value, split: el('split').value, sample_a: el('sample-a').value,
-    sample_b: el('mode').value === 'matrix' ? el('sample-b').value : null,
+    mode: el('mode').value, split: el('split').value, sample_a: selectedSampleId('sample-a'),
+    sample_b: el('mode').value === 'matrix' ? selectedSampleId('sample-b') : null,
     sensor_config: el('sensor').value, seed: Number(el('seed').value),
     text_scale: Number(el('text-scale').value), imu_scale: Number(el('imu-scale').value), device: el('device').value
   };
