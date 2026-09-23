@@ -198,11 +198,14 @@ twist。项目没有用降低门槛或挑样本的方式把该结果包装成正
 | HY-Motion Lite Text-only smoke | 60帧，seed 1234，关闭prompt rewrite | 核心采样1.93 s，PyTorch峰值约19.6 GB；输出`[1,60,201]`、22关节6D旋转和52 joints | 在4090阶段完成 |
 | 固定prompt定性 | walk/run/sit/turn/jump，共5条 | 坐下最清楚；跑和转向可见；当前jump seed较弱 | 工程/定性验证 |
 | Rotation→virtual IMU | head 15，wrists 20/21 | 全局旋转正交误差约`1.5e-5`，行列式接近1 | joint-mounted proxy已打通 |
-| HY-Motion Text+IMU adapter | 计划512 train/128 val预筛 | 当前工作区无checkpoint、history或评价summary | A40待实施/待回传 |
-| A40正式量化实验 | 应记录GPU、数据、seed和checkpoint | 当前工作区未发现可核验结果；当前`nvidia-smi`不可用 | 不填数字 |
+| 早期hidden adapter | 512 train、2 epochs、128条held-out | paired>shuffled为74.22%/82.03%（head/wrists），但jerk为Text-only的6.82x/5.71x | 控制可辨识，但因jerk失败 |
+| Output-velocity controller | 512 train、4 epochs；全新indices 128--191 | paired>shuffled为78.13%/92.19%；jerk为Text-only的0.9893x/0.9901x | 控制和严格均值门槛通过 |
+| 预注册2% jerk非劣检验 | 同一全新64条；97.5% bootstrap上界 | head上界1.0421 m/s^3，高于0.9945边界0.0476；wrists通过 | 联合门槛失败，不授权7,009条训练 |
 
-因此，目前不能声称A40已经带来模型性能提升。A40的意义是为HY-Motion冻结主干加IMU
-adapter提供显存条件；实际结果必须在产物同步后新增，而不能用4090 smoke代替。
+这些结果证明paired IMU能稳定改变HY-Motion生成，而不再出现早期hidden adapter的平均
+jerk恶化。但最新预注册联合门槛仍失败，semantic gate也尚未正式量化，因此
+`full_training_allowed=false`。详见
+[HY-Motion实验总结](HYMOTION_EXPERIMENT_SUMMARY_2026-09-23.md)。
 
 ## 14. 早期回归基线（仅作lower bound）
 

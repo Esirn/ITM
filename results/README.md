@@ -1,21 +1,20 @@
 # ITM 主要实验结果
 
-本目录汇总截至2026-09-10可在当前仓库和本地实验产物中核验的主要结果。正文使用中文，
+本目录汇总截至2026-09-23可在当前仓库和本地实验产物中核验的主要结果。正文使用中文，
 尽量以表格呈现，适合论文写作、汇报和后续实验对照。
 
 | 文件 | 内容 |
 |---|---|
 | [MAIN_RESULTS.md](MAIN_RESULTS.md) | 数据集、冻结基座、生成质量、控制质量、重建基线、消融和跨数据集结果 |
+| [HYMOTION_EXPERIMENT_SUMMARY_2026-09-23.md](HYMOTION_EXPERIMENT_SUMMARY_2026-09-23.md) | A40上的HY-Motion Text+IMU控制实验、负结果和最新决策门槛 |
 | [METRICS.md](METRICS.md) | Matching、R-precision、FID、MM、MPJPE、jerk等指标的通俗定义与方向 |
 | [SOURCE_INDEX.md](SOURCE_INDEX.md) | 每组数字对应的原始JSON、日志和既有实验文档 |
 
 ## 硬件归属说明
 
-交接前可核验的主要训练与量化实验是在双RTX 4090机器上完成的。当前A40环境中的完整
-HY-Motion+IMU训练结果尚未同步到本工作区；当前可见的2026-09-09新产物主要是前端SMPL
-mesh预览，不属于论文模型实验。当前环境执行`nvidia-smi`也无法连接驱动，因此本目录不
-虚构A40性能数字。后续A40实验回传后，应新增独立表格并记录GPU、checkpoint、数据subset、
-seed和原始结果路径。
+交接前的MDM/ITM主要训练与量化实验是在双RTX 4090机器上完成的。HY-Motion Text+IMU
+实验随后在A40机器完成；对应表格明确记录GPU阶段、checkpoint hash、数据subset、seed和
+原始结果路径。两阶段的指标不强行横比，且`outputs/`中的大型产物仍不进入Git。
 
 ## 使用原则
 

@@ -4,6 +4,9 @@
 >
 > 分支：`master`；远端：`https://github.com/Esirn/ITM.git`
 
+> A40 接手后的实测状态、项目内 Python 环境及运行命令见
+> [A40 准备记录](A40_PREPARATION_2026-09-08.md)。本设备运行时优先使用该记录中的解释器路径。
+
 ## 使用前由用户手动填写
 
 下面信息无法从当前机器可靠推断。将本文交给宿主机Codex前，请只修改本节表格的
@@ -253,3 +256,34 @@ conda run -n itm python scripts/export_hymotion_virtual_imu.py \
 - 当前全量测试：96 passed（2026-08-26，9条PyTorch Transformer性能warning）。
 
 坐下样例语义清楚，快跑和转弯有可见变化，当前jump seed较弱。成功与失败样例都应保留。
+
+### A40 后续状态（2026-09-21）
+
+A40 迁移、数据审计、Text+IMU 控制实验及正负结果的完整记录见
+`docs/A40_PREPARATION_2026-09-08.md`。当前最有效方案已不再是上述最初的 18 层 hidden
+residual，而是训练时直接约束 201 维 flow velocity 的 output controller：512 条训练、4
+epochs、stride 4、timestep gate power 1、4 次结构内残差平滑。checkpoint 位于
+`outputs/hymotion/prescreen512x4_output_velocity_stride4_tgate1_smooth4_20260921`。
+
+锁定的全新验证索引 80--127 共 48 条已经完成并审计。paired 相对 shuffled 的胜率为
+head 81.25%、wrists 95.83%，两者 IMU-score bootstrap CI 均严格小于零；head jerk 为
+Text-only 的 0.99789 倍。wrists jerk 为 1.00129 倍，只增加 0.066 m/s^3，且 95% CI
+跨零，但仍违反原先“均值不得增加”的字面门槛。因此当前
+`full_training_allowed` 仍为 false，不能把该结果事后改写成严格通过，也不要直接启动
+7,009 条全量训练。审计汇总：
+`outputs/hymotion/output_velocity_x4_locked48_merged_20260921/summary.json`。
+
+2026-09-22 又在旧诊断区间 16--79 上完成了 64 条探索性复现：head/wrists 的
+paired-vs-shuffled 为 78.13%/82.81%，paired jerk 为 Text-only 的
+0.9903/0.9954 倍，完整审计也通过。该结果增强了可信度，但不能替代已预注册的全新
+128--191 区间。后者需要先把验证缓存从 128 条确定性扩展到 192 条；准备器已支持
+`--extend-prepared-data`。原流程要求至少 23 GiB 空闲显存，后续分阶段策略将
+prepare-only 门槛降到 18 GiB，同时保持未量化 Qwen3-8B 权重和精度不变。详见 A40
+文档末尾，当前仍不要启动 7,009 条全量训练。
+
+2026-09-23 已通过分阶段显存策略完成全新 128--191 区间。控制胜率为 head
+78.13%、wrists 92.19%，控制效果 CI 均严格小于零；平均 jerk 也分别降至 Text-only
+的 0.9893/0.9901 倍。但预注册的保守 2% 非劣规则要求 bootstrap 97.5% 上界不超过
+0.9945 m/s^3，head 上界为 1.0421，超出 0.0476，wrists 通过。因此联合门槛仍按失败
+处理，不得事后放宽或启动 7,009 条训练。正式汇总位于
+`outputs/hymotion/output_velocity_x4_fresh64_128_192_audited_20260923/summary.json`。

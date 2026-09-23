@@ -17,6 +17,8 @@
 | Nymeria | `outputs/nymeria_pilot/stage2b_zero_shot/`，`docs/NYMERIA_ZERO_SHOT_PILOT_2026-07-17.md` |
 | SMPL/virtual-IMU round trip | `outputs/mdm_control/virtual_imu_roundtrip/`，`docs/VIRTUAL_IMU_ROUNDTRIP_2026-08-25.md` |
 | HY-Motion smoke | `outputs/hymotion/text_only_smoke/`，`outputs/hymotion/text_only_fixed_prompts/`，`docs/HYMOTION_MIGRATION.md` |
+| HY-Motion A40 hidden adapter | `outputs/hymotion/prescreen_pad360_eval128_20260909/summary.json`，`results/HYMOTION_EXPERIMENT_SUMMARY_2026-09-23.md` |
+| HY-Motion A40 output controller | `outputs/hymotion/output_velocity_x4_{locked48_merged_20260921,exploratory64_16_80_audited_20260922,fresh64_128_192_audited_20260923}/summary.json`，`docs/A40_PREPARATION_2026-09-08.md` |
 
 `outputs/`默认不进入Git。复制本目录中的数字用于论文前，应再次确认对应原始文件仍存在，
 并保存最终实验环境、checkpoint hash与随机种子。
