@@ -1,6 +1,7 @@
 """SMPL preview cache and input boundaries, without running a body fit."""
 
 import json
+import io
 
 import pytest
 from fastapi import HTTPException
@@ -85,6 +86,18 @@ def test_gpu_all_uses_every_gpu_without_cpu_fallback(monkeypatch):
         assert demo._mesh_device('gpu_all') == expected
         demo.MESH_DEVICES.add(expected)
     assert demo._mesh_device('gpu_all') is None
+
+
+def test_worker_stream_repair_handles_detached_server(monkeypatch):
+    class ClosedPipe:
+        def flush(self):
+            raise BrokenPipeError
+
+    monkeypatch.setattr(demo.sys, 'stdout', ClosedPipe())
+    monkeypatch.setattr(demo.sys, 'stderr', ClosedPipe())
+    demo._repair_worker_streams()
+    assert isinstance(demo.sys.stdout, io.TextIOBase)
+    assert isinstance(demo.sys.stderr, io.TextIOBase)
     demo.MESH_DEVICES.clear()
     monkeypatch.setattr(demo, '_gpu_load', lambda: [(0, 20000, 90)])
     assert demo._mesh_device('gpu_all') is None

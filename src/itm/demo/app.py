@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import hashlib
 import multiprocessing
+import os
 import shutil
 import traceback
 import time
@@ -373,6 +374,7 @@ def _mesh_device(requested):
 
 def _run_mesh_job(directory, model, device):
     from itm.demo.mesh_worker import fit_mesh
+    _repair_worker_streams()
     with MESH_LOCK:
         if device not in MESH_POOLS:
             MESH_POOLS[device] = ProcessPoolExecutor(
@@ -386,6 +388,16 @@ def _run_mesh_job(directory, model, device):
             MESH_POOLS.pop(device, None)
         pool.shutdown(wait=True, cancel_futures=True)
         raise
+
+
+def _repair_worker_streams():
+    """Spawn flushes stdio; detached Uvicorn sessions may have a closed pipe."""
+    for name in ('stdout', 'stderr'):
+        stream = getattr(sys, name)
+        try:
+            stream.flush()
+        except (BrokenPipeError, OSError):
+            setattr(sys, name, open(os.devnull, 'w', encoding='utf-8'))
 
 
 def _mesh_response(metadata, cache_id):
