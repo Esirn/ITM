@@ -25,10 +25,14 @@ class HYMotionBackbone:
     device: str = "cuda:0"
     cfg_scale: float = 5.0
     sampler_script: Path | None = None
+    python_executable: Path | None = None
 
     def __post_init__(self) -> None:
         self.repo_root = Path(self.repo_root).expanduser().resolve()
         self.runtime_root = Path(self.runtime_root).expanduser().resolve()
+        if self.python_executable is not None:
+            # Do not resolve symlinks: venv Python must retain its environment path.
+            self.python_executable = Path(self.python_executable).expanduser().absolute()
         if self.sampler_script is None:
             self.sampler_script = (
                 Path(__file__).resolve().parents[3] / "scripts" / "sample_hymotion_text.py"
@@ -50,9 +54,12 @@ class HYMotionBackbone:
         self._validate_assets()
         with tempfile.TemporaryDirectory(prefix="itm-hymotion-") as directory:
             output = Path(directory) / "result.npz"
-            command = [
+            launcher = [str(self.python_executable)] if self.python_executable is not None else [
                 "conda", "run", "--no-capture-output", "-n", self.conda_env,
-                "python", str(self.sampler_script),
+                "python",
+            ]
+            command = launcher + [
+                str(self.sampler_script),
                 "--hymotion-root", str(self.repo_root),
                 "--runtime-root", str(self.runtime_root),
                 "--model", self.model,

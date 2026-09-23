@@ -28,6 +28,9 @@ def main() -> int:
 
     with np.load(args.results) as result:
         metadata = json.loads(result["metadata"].item())
+        if (metadata.get("joint_coordinate_system") != "world"
+                or metadata.get("rotation_6d_convention") != "interleaved first two columns"):
+            raise ValueError("Result has unverified joint coordinates; reconstruct world joints before exporting IMU")
         joints = np.asarray(result["keypoints3d"][0, :, :22], dtype=np.float32)
         rotations = np.asarray(result["global_rotations_mat"][0], dtype=np.float32)
     indices = np.asarray(SENSORS[args.sensor_config], dtype=np.int64)
@@ -38,6 +41,7 @@ def main() -> int:
         "sensor_config": args.sensor_config,
         "joint_indices": indices.tolist(),
         "fps": metadata["fps"],
+        "joint_coordinate_system": "world",
         "mounting": "joint-mounted proxy; no sensor-to-bone calibration",
         "acceleration": "second finite difference of generated joint position in m/s^2",
         "acceleration_smooth_window": 5,

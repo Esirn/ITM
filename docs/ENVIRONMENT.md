@@ -1,5 +1,21 @@
 # ITM Environment
 
+## A40 Host Runtime
+
+On the migrated A40 host, use `outputs/envs/itm/bin/python` and
+`outputs/envs/hymotion/bin/python` from the ITM repository. These project-local
+venvs share PyTorch with `/home/syx0011/miniconda3/envs/hymotion-syx` and
+override the conflicting NumPy/Transformers versions without modifying that
+Conda environment. They are not addressable with `conda run -n itm/hymotion`.
+Use `--config configs/paths.a40.toml` for host data paths.
+
+The original `hymotion-syx` has conflicting NumPy installation metadata:
+Conda lists 1.26.4 but Python imports 2.2.5. Verify actual imports rather than
+relying on Conda's listing. The project-local HY-Motion venv imports 1.26.4.
+See [A40 preparation](A40_PREPARATION_2026-09-08.md) for validation results,
+remaining gates, and exact commands. The Conda instructions below describe
+the original environment and an alternative clean installation.
+
 The project uses the conda environment `itm`.
 
 Installed lightweight base packages:

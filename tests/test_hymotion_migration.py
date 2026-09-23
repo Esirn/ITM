@@ -18,8 +18,14 @@ def test_checkpoint_hash_is_stable(tmp_path):
 
 
 def test_rot6d_and_global_rotation_are_valid():
-    identity6d = np.array([1, 0, 0, 0, 1, 0], dtype=np.float32)
+    identity6d = np.array([1, 0, 0, 1, 0, 0], dtype=np.float32)
     local = MODULE.rot6d_to_matrix(np.tile(identity6d, (2, 22, 1)))
     global_rotation = MODULE.local_to_global(local)
     expected = np.broadcast_to(np.eye(3, dtype=np.float32), global_rotation.shape)
     np.testing.assert_allclose(global_rotation, expected, atol=1e-6)
+
+
+def test_rot6d_uses_interleaved_columns_not_rows():
+    expected = np.array([[0, -1, 0], [1, 0, 0], [0, 0, 1]], dtype=np.float32)
+    value = expected[:, :2].reshape(6)
+    np.testing.assert_allclose(MODULE.rot6d_to_matrix(value), expected, atol=1e-6)

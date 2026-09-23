@@ -16,7 +16,9 @@ Qwen 并返回零上下文，因此 ITM 不直接导入挂载工作树，而由
 ## 表示与迁移价值
 
 HY-Motion 每帧201维中，官方decoder明确读取前3维根平移和随后132维的22关节6D
-旋转；剩余66维不参与当前FK解码，不能在未核验训练数据构造前武断命名。官方 body
+旋转；剩余66维不参与当前FK解码。[官方论文第3.1节](https://arxiv.org/html/2512.23464v1)
+将其定义为22关节局部位置，但没有完整公开预处理实现。A40预筛采用世界轴方向的
+root-relative WoodenMesh位置重建，明确标记为ITM实现，尚未与官方训练数据逐值核验。官方 body
 model 用旋转和平移做FK。这比 HumanML3D 263D 只恢复22关节位置更适合正式虚拟IMU评价，
 因为可从全局关节旋转计算传感器orientation，而无需从位置猜测骨骼twist。
 
@@ -24,6 +26,15 @@ model 用旋转和平移做FK。这比 HumanML3D 263D 只恢复22关节位置更
 逐步 `predict` 仍留在隔离进程中，避免 HY-Motion 的 Transformers/Qwen 依赖污染
 `itm` 环境。正式融合前应先在固定prompts上做Text-only人工检查，并验证官方旋转经
 WoodenMesh FK导出的虚拟IMU round trip。
+
+### A40坐标修正（2026-09-09）
+
+官方 `rot6d_to_rotation_matrix` 使用前两列交错存储（reshape为3x2），不是前两行。
+旧ITM导出的 `global_rotations_mat` 使用了错误约定；此外官方 `keypoints3d` 未包含
+根平移。新采样脚本根据正确旋转和已对齐地面的 `transl` 重建世界关节，保留原始
+`keypoints3d_official`。旧导出IMU不能用于评价。无需重采样，可用
+`scripts/repair_hymotion_world_joints.py` 写入新文件，再重新导出IMU。
+当前有效A40结果为 `outputs/hymotion/text_only_smoke/walk_swing_60_world_v2.npz`。
 
 ## 运行方式
 

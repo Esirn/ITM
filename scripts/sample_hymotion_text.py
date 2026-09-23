@@ -15,6 +15,8 @@ import numpy as np
 import torch
 import yaml
 
+from itm.data.hymotion import world_joints_from_result, rotation_6d_to_matrix
+
 
 BODY_PARENTS = np.array(
     [-1, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9, 12, 13, 14, 16, 17, 18, 19],
@@ -45,16 +47,8 @@ def sha256(path: Path) -> str:
 
 
 def rot6d_to_matrix(value: np.ndarray) -> np.ndarray:
-    """Convert HY-Motion's row-based 6D rotations to proper matrices."""
-
-    rotation = np.asarray(value, dtype=np.float32)
-    first = rotation[..., :3]
-    second = rotation[..., 3:6]
-    first = first / np.maximum(np.linalg.norm(first, axis=-1, keepdims=True), 1e-8)
-    second = second - np.sum(first * second, axis=-1, keepdims=True) * first
-    second = second / np.maximum(np.linalg.norm(second, axis=-1, keepdims=True), 1e-8)
-    third = np.cross(first, second)
-    return np.stack((first, second, third), axis=-2)
+    """Decode official interleaved first-two-column 6D rotations."""
+    return rotation_6d_to_matrix(value)
 
 
 def local_to_global(local: np.ndarray, parents: np.ndarray = BODY_PARENTS) -> np.ndarray:
@@ -132,12 +126,20 @@ def main() -> int:
         if key != "text"
     }
     arrays["global_rotations_mat"] = local_to_global(rot6d_to_matrix(arrays["rot6d"]))
+    arrays["keypoints3d_official"] = arrays["keypoints3d"]
+    arrays["keypoints3d"] = world_joints_from_result(
+        arrays, pipeline.body_model.j_template.cpu().numpy(),
+        pipeline.body_model.parents.cpu().numpy(),
+    )
     args.output.parent.mkdir(parents=True, exist_ok=True)
     metadata = {
         "model": model_name,
         "text": args.text,
         "frames": args.frames,
         "fps": 30,
+        "joint_coordinate_system": "world",
+        "rotation_6d_convention": "interleaved first two columns",
+        "joint_reconstruction": "WoodenMesh FK + ground-aligned transl; official joints retained separately",
         "seed": args.seed,
         "cfg_scale": args.cfg_scale,
         "device": str(device),

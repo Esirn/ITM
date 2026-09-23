@@ -1,0 +1,31 @@
+# Verified on the A40 host, 2026-09-08. Use --config configs/paths.a40.toml.
+[project]
+root = "/home/4T-2/syx0011/0proj/ITM"
+
+[datasets]
+root = "/home/4T-2/group_motion/datasets"
+amass = "/home/4T-2/group_motion/datasets/AMASS"
+smpl = "/home/4T-2/group_motion/datasets/SMPL"
+humanml3d = "/home/4T-2/group_motion/relatedworks/HumanML3D"
+humanml3d_texts = "/home/4T-2/group_motion/relatedworks/HumanML3D/HumanML3D/texts"
+humanml3d_joints = "/home/4T-2/group_motion/relatedworks/HumanML3D/HumanML3D/new_joints"
+humanml3d_joint_vecs = "/home/4T-2/group_motion/relatedworks/HumanML3D/HumanML3D/new_joint_vecs"
+humanml3d_index = "/home/4T-2/group_motion/relatedworks/HumanML3D/index.csv"
+motion_splits = "/home/4T-2/group_motion/relatedworks/HumanML3D/HumanML3D"
+
+# MDM entry points still require explicit --mean and --std arguments.
+[mdm_stats]
+mean = "/home/4T-2/group_motion/relatedworks/mdm/HumanML3D/HumanML3D/Mean.npy"
+std = "/home/4T-2/group_motion/relatedworks/mdm/HumanML3D/HumanML3D/Std.npy"
+
+[related_code]
+hymotion = "/home/4T-2/group_motion/relatedworks/HY-Motion-1.0"
+imuposer = "/home/4T-2/syx0011/0proj/ITM/outputs/deps/IMUPoser"
+mdm = "/home/4T-2/group_motion/relatedworks/mdm/motion-diffusion-model"
+
+[checkpoints]
+hymotion_lite = "/home/4T-2/group_motion/relatedworks/HY-Motion-1.0/ckpts/tencent/HY-Motion-1.0-Lite/latest.ckpt"
+mdm_humanml = "/home/4T-2/group_motion/relatedworks/mdm/motion-diffusion-model/save/humanml_trans_enc_512/model000475000.pt"
+mdm_humanml_args = "/home/4T-2/group_motion/relatedworks/mdm/motion-diffusion-model/save/humanml_trans_enc_512/args.json"
+mdm_stage1 = "/home/4T-2/syx0011/0proj/ITM/outputs/mdm_control/stage1_full_pilot_v2.pt"
+mdm_stage2b = "/home/4T-2/syx0011/0proj/ITM/outputs/mdm_control/stage2b_balanced_b.pt"
