@@ -51,6 +51,7 @@ def _resolve_mdm_root(candidates=None):
         Path(configured) if configured else None,
         Path("/home/a200/0relatedworks/motion-diffusion-model"),
         Path("/home/a200/mount/a40/relatedworks/mdm/motion-diffusion-model"),
+        Path("/home/4T-2/group_motion/relatedworks/mdm/motion-diffusion-model"),
         ROOT / "outputs/mdm/runtime_root",
     ))
     paths = [path for path in paths if path is not None]
@@ -167,7 +168,7 @@ def list_runs(limit: int = Query(50, ge=1, le=200)):
 
 @app.get("/api/runs/{run_id}")
 def get_run(run_id: str):
-    if not run_id.replace("-", "").isalnum():
+    if not run_id.replace("-", "").replace("_", "").isalnum():
         raise HTTPException(400, "Invalid run id")
     path = RUN_ROOT / run_id / "result.json"
     if not path.exists():

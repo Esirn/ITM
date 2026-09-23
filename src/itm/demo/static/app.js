@@ -1,6 +1,6 @@
 const chains = [[0,2,5,8,11],[0,1,4,7,10],[0,3,6,9,12,15],[9,14,17,19,21],[9,13,16,18,20]];
 const state = {
-  result: null, frame: 0, playing: false, lastTime: 0, panels: [], samples: [], split: 'test',
+  result: null, frame: 0, playing: false, lastTime: 0, panels: [], samples: [], split: 'test', rootBounds: null,
   selectedSamples: { a: null, b: null },
 };
 const el = id => document.getElementById(id);
@@ -153,6 +153,7 @@ el('generate-form').addEventListener('submit', async event => {
 
 function setResult(result) {
   state.result = result; state.frame = 0; state.playing = false; state.panels = [];
+  state.rootBounds = rootBounds(result.panels);
   el('run-id').textContent = result.run_id; el('empty').hidden = true;
   el('timeline').max = result.frame_count - 1; el('timeline').value = 0; el('play').textContent = '▶';
   const isMatrix = result.request.mode === 'matrix' || result.request.experiment === 'matrix';
@@ -226,6 +227,28 @@ function drawMotion(view) {
   ctx.fillStyle=appearance.get('canvas-text'); ctx.font='12px system-ui';
   const travel = Math.hypot(joints[0][0]-panel.motion[0][0][0], joints[0][2]-panel.motion[0][0][2]);
   ctx.fillText(`root travel ${travel.toFixed(2)} m`, 12, 20);
+  if (el('root-trails').checked) drawRootTrail(ctx, panel, state.frame);
+}
+
+function rootBounds(panels) {
+  const roots = panels.flatMap(panel => panel.motion.map(frame => frame[0]));
+  const xs = roots.map(root => root[0]), zs = roots.map(root => root[2]);
+  const minX = Math.min(...xs), maxX = Math.max(...xs), minZ = Math.min(...zs), maxZ = Math.max(...zs);
+  const span = Math.max(maxX - minX, maxZ - minZ, .5), pad = span * .08;
+  return {minX: minX - pad, maxX: maxX + pad, minZ: minZ - pad, maxZ: maxZ + pad};
+}
+
+function drawRootTrail(ctx, panel, frame) {
+  const bounds = state.rootBounds, width = 116, height = 82, left = ctx.canvas.width - width - 12, top = 30;
+  const point = root => [left + (root[0] - bounds.minX) / (bounds.maxX - bounds.minX) * width,
+                         top + height - (root[2] - bounds.minZ) / (bounds.maxZ - bounds.minZ) * height];
+  ctx.fillStyle = 'rgba(15, 23, 42, .88)'; ctx.fillRect(left - 5, top - 17, width + 10, height + 25);
+  ctx.strokeStyle = appearance.get('ground'); ctx.lineWidth = 1; ctx.strokeRect(left, top, width, height);
+  ctx.fillStyle = appearance.get('canvas-text'); ctx.font = '10px system-ui'; ctx.fillText('root path (world)', left, top - 6);
+  ctx.strokeStyle = appearance.get(panel.kind === 'ground_truth' ? 'skeleton-gt' : 'skeleton-generated'); ctx.lineWidth = 2; ctx.beginPath();
+  panel.motion.forEach((pose, index) => { const p = point(pose[0]); index ? ctx.lineTo(...p) : ctx.moveTo(...p); }); ctx.stroke();
+  const current = point(panel.motion[Math.min(frame, panel.motion.length - 1)][0]);
+  ctx.fillStyle = '#ffffff'; ctx.beginPath(); ctx.arc(...current, 3, 0, Math.PI * 2); ctx.fill();
 }
 
 function renderIMU(result) {
@@ -254,6 +277,7 @@ for (const id of ['autoplay-generated', 'autoplay-loaded', 'loop-playback']) {
     try { localStorage.setItem(`itm-${id}`, String(el(id).checked)); } catch {}
   });
 }
+el('root-trails').addEventListener('change', renderFrame);
 function setPlaying(playing) {
   state.playing = playing && Boolean(state.result);
   state.lastTime = performance.now();
