@@ -1,0 +1,67 @@
+trans_matrix = np.array([[1.0, 0.0, 0.0],
+                            [0.0, 0.0, 1.0],
+                            [0.0, 1.0, 0.0]])
+ex_fps = 20
+def amass_to_pose(src_path, save_path):
+    bdata = np.load(src_path, allow_pickle=True)
+    fps = 0
+    try:
+        fps = bdata['mocap_framerate']
+        frame_number = bdata['trans'].shape[0]
+    except:
+#         print(list(bdata.keys()))
+        return fps
+    
+    fId = 0 # frame id of the mocap sequence
+    pose_seq = []
+    if bdata['gender'] == 'male':
+        bm = male_bm
+    else:
+        bm = female_bm
+    down_sample = int(fps / ex_fps)
+#     print(frame_number)
+#     print(fps)
+
+    bdata_poses = bdata['poses'][::down_sample,...]
+    bdata_trans = bdata['trans'][::down_sample,...]
+    body_parms = {
+            'root_orient': torch.Tensor(bdata_poses[:, :3]).to(comp_device),
+            'pose_body': torch.Tensor(bdata_poses[:, 3:66]).to(comp_device),
+            'pose_hand': torch.Tensor(bdata_poses[:, 66:]).to(comp_device),
+            'trans': torch.Tensor(bdata_trans).to(comp_device),
+            'betas': torch.Tensor(np.repeat(bdata['betas'][:num_betas][np.newaxis], repeats=len(bdata_trans), axis=0)).to(comp_device),
+        }
+    
+    with torch.no_grad():
+        body = bm(**body_parms)
+    pose_seq_np = body.Jtr.detach().cpu().numpy()
+    pose_seq_np_n = np.dot(pose_seq_np, trans_matrix)
+    
+    
+    np.save(save_path, pose_seq_np_n)
+    return fps
+
+for i in tqdm(range(total_amount)):
+    source_path = index_file.loc[i]['source_path']
+    new_name = index_file.loc[i]['new_name']
+    data = np.load(source_path)
+    start_frame = index_file.loc[i]['start_frame']
+    end_frame = index_file.loc[i]['end_frame']
+    if 'humanact12' not in source_path:
+        if 'Eyes_Japan_Dataset' in source_path:
+            data = data[3*fps:]
+        if 'MPI_HDM05' in source_path:
+            data = data[3*fps:]
+        if 'TotalCapture' in source_path:
+            data = data[1*fps:]
+        if 'MPI_Limits' in source_path:
+            data = data[1*fps:]
+        if 'Transitions_mocap' in source_path:
+            data = data[int(0.5*fps):]
+        data = data[start_frame:end_frame]
+        data[..., 0] *= -1
+    
+    data_m = swap_left_right(data)
+#     save_path = pjoin(save_dir, )
+    np.save(pjoin(save_dir, new_name), data)
+    np.save(pjoin(save_dir, 'M'+new_name), data_m)

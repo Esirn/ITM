@@ -1,0 +1,23 @@
+{
+  "read_commit": "e14431a",
+  "version": "humanml-notebook-clock-diagnostic-v1",
+  "files": [
+    {
+      "path": "src/itm/data/humanml_clock.py",
+      "sha256": "0729a9ebe2598fe9b96f708971d92bce56bde4cd4a14e22491ea5b5e2d247d12"
+    },
+    {
+      "path": "scripts/audit_humanml_notebook_clock.py",
+      "sha256": "b4c65a7dfc0fa3d5c38365b2897db540eb7dc5ef653ceb760255e4db99416907"
+    },
+    {
+      "path": "scripts/audit_notebook_clock_geometry.py",
+      "sha256": "65ed11746965481ed38cd233690036698ba79610a4f1fa20d1f9b53ec1e5c896"
+    },
+    {
+      "path": "tests/test_humanml_clock.py",
+      "sha256": "5691b77ed9ebcf65d236de9ad553c9788ed89f772da2097b4e92a8c0206c6748"
+    }
+  ],
+  "change_commit_resolution": "git log -1 -- src/itm/data/humanml_clock.py"
+}
