@@ -2,6 +2,7 @@
 
 **最新输入追验：**`INPUT_FOLLOWUP_ACCEPTANCE_20260924.md` 接纳 `0574491` 的 seconds-v2 输入更新；83 项联合回归通过。
 已登记方法交接的 train ID 描述差异，并按明确 ID 补查。公共契约保持 v0.2-draft；世界系/骨架/caption、compatible witness 和合格 B0 仍未认证。
+01 已在 `0b7ed28` 正确勘误，02 已核对其仅改三份方法文档；样本记录差异闭环，无需再次回执。后续交接以实质依赖的新证据为准。
 以下是前批记录，不将旧 checkpoint 或旧诊断追认为新管线训练/研究结果。
 
 **第二批更新：**当前交接见 `METHOD_ACCEPTANCE_20260924.md`，读取方法提交 `5519365`，公共契约为 `itm-rework-v0.2-draft`。
