@@ -1,0 +1,214 @@
+{
+  "kind": "input_only_diagnostic",
+  "input_contract_version": "itm-rework-v0.2-draft",
+  "input_pipeline_version": "itm-method-seconds-v2",
+  "checkpoint_sha256": "623b16e6e22c09a2e6f8aaceaa635496b8afdde932ba0b3a3326eb7fbcbb00d9",
+  "checkpoint_contract_version": "itm-rework-v0.1-draft",
+  "model_forwards": 0,
+  "gpu_jobs": 0,
+  "normalization_recomputed": false,
+  "alignment_certified": false,
+  "train": [
+    {
+      "motion_id": "000004",
+      "sensor_config": "head",
+      "metadata": {
+        "input_pipeline_version": "itm-method-seconds-v2",
+        "original_motion_frames": 199,
+        "effective_frames": 196,
+        "time_interval_seconds": [
+          0.0,
+          9.75
+        ],
+        "clock_reference": "cache_crop_local_uncertified_against_HumanML",
+        "caption_interval_seconds": [
+          0.0,
+          0.0
+        ],
+        "alignment_status": "uncertified_diagnostic"
+      },
+      "finite": true
+    },
+    {
+      "motion_id": "000004",
+      "sensor_config": "wrists",
+      "metadata": {
+        "input_pipeline_version": "itm-method-seconds-v2",
+        "original_motion_frames": 199,
+        "effective_frames": 196,
+        "time_interval_seconds": [
+          0.0,
+          9.75
+        ],
+        "clock_reference": "cache_crop_local_uncertified_against_HumanML",
+        "caption_interval_seconds": [
+          0.0,
+          0.0
+        ],
+        "alignment_status": "uncertified_diagnostic"
+      },
+      "finite": true
+    },
+    {
+      "motion_id": "000006",
+      "sensor_config": "head",
+      "metadata": {
+        "input_pipeline_version": "itm-method-seconds-v2",
+        "original_motion_frames": 199,
+        "effective_frames": 196,
+        "time_interval_seconds": [
+          0.0,
+          9.75
+        ],
+        "clock_reference": "cache_crop_local_uncertified_against_HumanML",
+        "caption_interval_seconds": [
+          0.0,
+          5.0
+        ],
+        "alignment_status": "uncertified_diagnostic"
+      },
+      "finite": true
+    },
+    {
+      "motion_id": "000006",
+      "sensor_config": "wrists",
+      "metadata": {
+        "input_pipeline_version": "itm-method-seconds-v2",
+        "original_motion_frames": 199,
+        "effective_frames": 196,
+        "time_interval_seconds": [
+          0.0,
+          9.75
+        ],
+        "clock_reference": "cache_crop_local_uncertified_against_HumanML",
+        "caption_interval_seconds": [
+          0.0,
+          5.0
+        ],
+        "alignment_status": "uncertified_diagnostic"
+      },
+      "finite": true
+    },
+    {
+      "motion_id": "000008",
+      "sensor_config": "head",
+      "metadata": {
+        "input_pipeline_version": "itm-method-seconds-v2",
+        "original_motion_frames": 42,
+        "effective_frames": 42,
+        "time_interval_seconds": [
+          0.0,
+          2.05
+        ],
+        "clock_reference": "cache_crop_local_uncertified_against_HumanML",
+        "caption_interval_seconds": [
+          0.0,
+          0.0
+        ],
+        "alignment_status": "uncertified_diagnostic"
+      },
+      "finite": true
+    },
+    {
+      "motion_id": "000008",
+      "sensor_config": "wrists",
+      "metadata": {
+        "input_pipeline_version": "itm-method-seconds-v2",
+        "original_motion_frames": 42,
+        "effective_frames": 42,
+        "time_interval_seconds": [
+          0.0,
+          2.05
+        ],
+        "clock_reference": "cache_crop_local_uncertified_against_HumanML",
+        "caption_interval_seconds": [
+          0.0,
+          0.0
+        ],
+        "alignment_status": "uncertified_diagnostic"
+      },
+      "finite": true
+    }
+  ],
+  "val": [
+    {
+      "motion_id": "000133",
+      "frames": 59,
+      "interval": [
+        0.0,
+        2.9
+      ],
+      "finite": true
+    },
+    {
+      "motion_id": "000433",
+      "frames": 41,
+      "interval": [
+        0.0,
+        2.0
+      ],
+      "finite": true
+    },
+    {
+      "motion_id": "000382",
+      "frames": 94,
+      "interval": [
+        0.0,
+        4.65
+      ],
+      "finite": true
+    },
+    {
+      "motion_id": "000510",
+      "frames": 91,
+      "interval": [
+        0.0,
+        4.5
+      ],
+      "finite": true
+    },
+    {
+      "motion_id": "000134",
+      "frames": 183,
+      "interval": [
+        0.0,
+        9.1
+      ],
+      "finite": true
+    },
+    {
+      "motion_id": "000139",
+      "frames": 163,
+      "interval": [
+        0.0,
+        8.1
+      ],
+      "finite": true
+    }
+  ],
+  "static": [
+    {
+      "schema": "standard_imu_v1",
+      "fixture_version": "physical-static-v1",
+      "sensor_config": "head",
+      "quantity": "world_linear_acceleration_and_global_orientation",
+      "gravity_convention": "not_added",
+      "calibration": "declared_constant_segment_to_world",
+      "normalization_sha256": "0c5d363c50605d752656fb38d9d3f49e8c0e8e5e1c062b04eec6074c78f099fd",
+      "imu_condition_present": true,
+      "not_a_null_or_numerical_zero_condition": true
+    },
+    {
+      "schema": "standard_imu_v1",
+      "fixture_version": "physical-static-v1",
+      "sensor_config": "wrists",
+      "quantity": "world_linear_acceleration_and_global_orientation",
+      "gravity_convention": "not_added",
+      "calibration": "declared_constant_segment_to_world",
+      "normalization_sha256": "0c5d363c50605d752656fb38d9d3f49e8c0e8e5e1c062b04eec6074c78f099fd",
+      "imu_condition_present": true,
+      "not_a_null_or_numerical_zero_condition": true
+    }
+  ],
+  "uncertain_candidate_rejection": "B requires owner-02 compatible train head arm_spread_m witnesses, training_admissible=true and checked residuals/quality"
+}

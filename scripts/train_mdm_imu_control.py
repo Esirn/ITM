@@ -18,6 +18,10 @@ from itm.data.dataset import TextIMUMotionDataset
 from itm.data.humanml_torch import recover_from_ric_torch
 from itm.data.manifest import read_jsonl
 from itm.data.standard_imu import sensor_mask
+from itm.models.mdm_conditions import (
+    INPUT_CONTRACT_VERSION, INPUT_PIPELINE_VERSION, load_method_cache,
+    sample_imu_at_times, normalize_imu,
+)
 from itm.models.mdm_imu_control import (MDMIMUControlConfig, install_imu_control,
     configure_control_training, evaluating_preserving_modes)
 from itm.models.torch_frame_baseline import require_torch
@@ -71,7 +75,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--response-margin", type=float, default=0.02)
     parser.add_argument("--teacher-min-delta", type=float, default=0.01)
     parser.add_argument("--no-compatibility-weight", action="store_true")
-    parser.add_argument("--contract-version", default="itm-rework-v0.1-draft")
+    parser.add_argument("--contract-version", default=INPUT_CONTRACT_VERSION)
     parser.add_argument("--allow-unsynchronized-diagnostic", action="store_true",
                         help="Acknowledge that the current loader alignment is not certified; diagnostic only")
     return parser.parse_args()
@@ -240,6 +244,7 @@ def main() -> int:
                 if selected:
                     indices = torch.tensor([i for i, _ in selected], device=device)
                     rows = [row for _, row in selected]
+                    validate_response_intervals(rows, [y["input_metadata"][i] for i, _ in selected])
                     edit_y = {key: (value[indices] if torch.is_tensor(value) and key != "text_embed" else value)
                               for key, value in y.items() if key != "text_embed"}
                     edit_losses, diagnostic = semantic_response_step(
@@ -355,24 +360,28 @@ class _PairedDataset:
     def __getitem__(self, index):
         sample, imu_record, config_name, slots = self.items[index]
         motion = (np.asarray(sample["motion"], dtype=np.float32) - self.mean) / self.std
-        imu_path = Path(imu_record["imu_path"])
-        if not imu_path.is_absolute():
-            imu_path = self.workspace_root / imu_path
-        with np.load(imu_path) as data:
-            fps = float(data["fps"])
-            acceleration = data["acceleration"].astype(np.float32)
-            orientation = data["orientation"].astype(np.float32)
-        acceleration, orientation = _resample_imu(acceleration, orientation, fps, 20.0)
-        if self.normalization is not None:
-            mean = np.asarray(self.normalization["acceleration_mean"], dtype=np.float32)
-            std = np.asarray(self.normalization["acceleration_std"], dtype=np.float32)
-            acceleration = (acceleration - mean[None]) / std[None]
-        imu = np.concatenate(
-            (acceleration, orientation.reshape(len(orientation), 6, 9)), axis=-1
-        ).astype(np.float32)
-        length = min(len(motion), len(imu), 196)
+        cache = load_method_cache(imu_record, workspace_root=self.workspace_root)
+        length = min(len(motion), 196)
+        if length < 1:
+            raise ValueError("Empty motion")
+        times = np.arange(length, dtype=np.float64) / 20.0
+        if not cache["sensor_mask"][list(slots)].all():
+            raise ValueError("Requested sensors are absent from cache")
+        acceleration, orientation = sample_imu_at_times(cache, times)
+        normalization = self.normalization or {
+            "acceleration_mean": np.zeros((6, 3)), "acceleration_std": np.ones((6, 3))}
+        imu = normalize_imu(acceleration, orientation, normalization)
         return {
             "motion_id": str(sample["motion_id"]),
+            "timestamps_seconds": times,
+            "input_metadata": {
+                "input_pipeline_version": INPUT_PIPELINE_VERSION,
+                "original_motion_frames": len(motion), "effective_frames": length,
+                "time_interval_seconds": [float(times[0]), float(times[-1])],
+                "clock_reference": "cache_crop_local_uncertified_against_HumanML",
+                "caption_interval_seconds": [sample["caption_record"].start, sample["caption_record"].end],
+                "alignment_status": "uncertified_diagnostic",
+            },
             "motion": motion[:length],
             "imu": imu[:length],
             "sensor_mask": sensor_mask(slots, sensor_count=6),
@@ -392,8 +401,10 @@ class _PairedDataset:
             if path in seen:
                 continue
             seen.add(path)
-            with np.load(path) as data:
-                acceleration = data["acceleration"].astype(np.float64)
+            if record.get("split") != "train":
+                raise ValueError("IMU normalization requires train-only records")
+            cache = load_method_cache(record, workspace_root=self.workspace_root)
+            acceleration = cache["acceleration"].astype(np.float64)
             total += acceleration.sum(0)
             squared += np.square(acceleration).sum(0)
             count += len(acceleration)
@@ -416,10 +427,12 @@ def _collate(items):
     motion = torch.zeros(len(items), 263, 1, frames)
     imu = torch.zeros(len(items), frames, 6, 12)
     frame_mask = torch.arange(frames)[None] < lengths[:, None]
+    timestamps = torch.zeros(len(items), frames, dtype=torch.float64)
     for index, item in enumerate(items):
         length = len(item["motion"])
         motion[index, :, 0, :length] = torch.from_numpy(item["motion"].T)
         imu[index, :length] = torch.from_numpy(item["imu"])
+        timestamps[index, :length] = torch.from_numpy(item["timestamps_seconds"])
     y = {
         "motion_id": [item.get("motion_id", "") for item in items],
         "sensor_config": [item["sensor_config"] for item in items],
@@ -429,6 +442,8 @@ def _collate(items):
         "imu": imu,
         "sensor_mask": torch.from_numpy(np.stack([item["sensor_mask"] for item in items])),
         "imu_frame_mask": frame_mask,
+        "imu_timestamps": timestamps,
+        "input_metadata": [item["input_metadata"] for item in items],
     }
     return motion, y
 
@@ -494,13 +509,41 @@ def load_response_manifest(path):
                 or row.get("edited_attribute") != "arm_spread_m" or not row.get("evidence_type")
                 or not row.get("witness_observation_residuals") or not row.get("quality_checks")
                 or not row.get("reviewer_or_rule_version") or not row.get("tolerances")
-                or not row.get("witness_motion_path") or not Path(row["witness_motion_path"]).is_file()):
-            raise ValueError("B requires owner-02 compatible train arm_spread_m witnesses with checked residuals/quality")
+                or not row.get("witness_motion_path") or not Path(row["witness_motion_path"]).is_file()
+                or row.get("training_admissible") is not True or row.get("blockers")
+                or row.get("sensor_config") != "head"):
+            raise ValueError("B requires owner-02 compatible train head arm_spread_m witnesses, training_admissible=true and checked residuals/quality")
+        with np.load(row["witness_motion_path"], allow_pickle=False) as witness:
+            if "timestamps_seconds" not in witness.files:
+                raise ValueError("Witness artifact requires explicit timestamps_seconds")
+            row = dict(row, _witness_timestamps_seconds=witness["timestamps_seconds"].copy())
         key = (str(row["source_motion_id"]), row["sensor_config"])
         if key in result:
             raise ValueError("One edit per motion/config in this initial bounded implementation")
         result[key] = row
     return result
+
+
+def validate_response_intervals(rows, metadata):
+    """Do not silently crop a full-clip witness to the training prefix.
+
+    The initial B implementation only supports witnesses already checked for the
+    exact prefix on the HumanML clip-local 20Hz grid. No universal frame shift.
+    """
+    if len(rows) != len(metadata):
+        raise ValueError("One witness interval per training sample required")
+    for row, item in zip(rows, metadata):
+        times = row.get("timestamps", {})
+        count = times.get("frames")
+        if (times.get("clock") != "HumanML_clip_local_seconds" or times.get("fps") != 20.0
+                or not isinstance(count, int) or count != item["effective_frames"]
+                or times.get("start_seconds", 0.0) != item["time_interval_seconds"][0]
+                or not np.isclose((count - 1) / 20.0, item["time_interval_seconds"][1], rtol=0, atol=1e-10)):
+            raise ValueError("Witness timestamps must exactly match the checked training interval; no silent crop")
+        actual = np.asarray(row.get("_witness_timestamps_seconds", []), dtype=np.float64)
+        expected = np.arange(count, dtype=np.float64) / 20.0
+        if actual.shape != expected.shape or not np.allclose(actual, expected, rtol=0, atol=1e-10):
+            raise ValueError("Witness artifact time axis differs from training interval; no silent crop")
 
 
 def training_condition_dropout(model, y, text_probability, imu_probability):
@@ -737,6 +780,7 @@ def _save_checkpoint(
     torch.save(
         {
             "checkpoint_schema": "itm-control-v2",
+            "input_pipeline_version": INPUT_PIPELINE_VERSION,
             "contract_version": args.contract_version,
             "alignment_status": "uncertified_diagnostic",
             "resume_semantics": "weights_and_normalization_only_fresh_optimizer",

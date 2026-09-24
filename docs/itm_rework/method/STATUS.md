@@ -1,3 +1,33 @@
+# 01 STATUS — v0.2 交接跟进（2026-09-24）
+
+读取协议提交 `1bc3a41`，承接方法提交 `5519365`。本次改动提交可用
+`git log -1 -- docs/itm_rework/method/STATUS.md` 定位。公共契约 `itm-rework-v0.2-draft`，仍未冻结。
+
+已接纳 02 独立验收：旧方法 smoke 同源解码、strict null、3000 个噪声 hash 已核对；静止 fixture 已提供，
+公共 random_plan 也已随协议提交，上一批的这两项依赖已解除。
+
+本次完成的方法入口工作：
+
+- 训练、归一化和采样调用公共 `load_standard_cache`，拒绝 schema/物理量不符。
+- 输入管线版本 `itm-method-seconds-v2`。按显式 20Hz 秒时间轴对加速度和旋转共同采样，越界拒绝，无端点夹紧；不做统一一帧平移。
+- 训练不再以 IMU 更短为由悄悄缩短 motion；支持不足时拒绝。记录原始/有效帧、裁片区间、caption 区间和未认证对齐状态。
+- sampling 支持 `imu_mode=static`，调用 02 fixture 并使用当前 checkpoint 的 normalization，保持 presence=true。
+- B 入口要求明确 training_admissible、无未解决 blockers；metadata 与 witness 文件的实际 timestamps 都必须匹配训练片段。
+- 当前 arm_spread_m + 双编辑 active-joint-proxy 原型仅接纳 head。该约束不推导成 wrists IMU 的一般物理不相容结论。
+
+验证：48 项相关回归通过，日志 `logs/input_followup_v2.txt`。
+真实输入 dry-run：3 train 来源 × 两种配置、6 条固定 val 候选、2 种静止输入均通过，
+`input_handoff_20260924_v2.json`。模型前向 0，训练更新 0，GPU 作业 0，未修改旧 checkpoint/产物或重新标注其契约。
+代码快照 `code_snapshot_v2.json`；旧 `code_snapshot.json` 保留为 02 首次验收对应的历史快照。
+
+阶段：G1 方法接口继续补齐；G2 仍只有单次 update 的旧 smoke；G3 无相容编辑训练/完整采样收益；C/G4/G5 未启动。
+剩余实质阻塞仍是世界坐标/骨架与 caption 对齐认证、真正 compatible witness、独立评价阈值、冻结训练/采样预算和可验证输出观测链。
+不使用目标 GT 做部署 canonicalization，不把新 uncertain 候选当作训练许可。
+
+当前详细交接见 `FOLLOWUP_V02.md`。以下为第一批状态快照，历史未提交依赖/静止 fixture 缺失已由上文更新。
+
+---
+
 # 01 STATUS — 2026-09-24
 
 读取 commit：`663414f1d9bffd6a70189846739bc9d9b1d0d873`。

@@ -17,6 +17,12 @@ import numpy as np
 
 from itm.data.manifest import read_jsonl
 from itm.data.standard_imu import sensor_mask
+from itm.data.physical_time import resample_positions_at_times
+from itm.data.static_imu import static_imu_fixture
+from itm.models.mdm_conditions import (
+    INPUT_CONTRACT_VERSION, INPUT_PIPELINE_VERSION, load_method_cache,
+    sample_imu_at_times, normalize_imu, supported_frame_times,
+)
 from itm.backbones import MDMBackbone, MotionConditions
 from itm.models.mdm_imu_control import (
     MDMIMUControlConfig,
@@ -197,6 +203,8 @@ def main():
         "contract_version": control_state.get("contract_version", "legacy_unspecified"),
         "effective_control_config": config.__dict__,
         "time_policy": args.time_policy,
+        "input_contract_version": INPUT_CONTRACT_VERSION,
+        "input_pipeline_version": INPUT_PIPELINE_VERSION,
         "alignment_status": "uncertified_diagnostic",
         "sampler": "ddpm", "steps": diffusion.num_timesteps,
         "random_plan_mode": args.random_plan, "random_plans": plans,
@@ -245,41 +253,54 @@ def _load_case(case, records, normalization, *, time_policy="crop_seconds"):
     config_name = case.get("sensor_config", "head")
     if config_name not in SENSOR_CONFIGS:
         raise ValueError(f"Unknown sensor config: {config_name}")
-    with np.load(records[imu_motion_id]["imu_path"]) as data:
-        acceleration = data["acceleration"].astype(np.float32)
-        orientation = data["orientation"].astype(np.float32)
-        fps = float(data["fps"])
-    with np.load(records[motion_id]["imu_path"]) as data:
+    if time_policy not in {"crop_seconds", "legacy_stretch"}:
+        raise ValueError("Unknown time policy")
+    donor = load_method_cache(records[imu_motion_id], workspace_root=ROOT)
+    target = load_method_cache(records[motion_id], workspace_root=ROOT)
+    target_path = Path(records[motion_id]["imu_path"])
+    if not target_path.is_absolute():
+        target_path = ROOT / target_path
+    with np.load(target_path, allow_pickle=False) as data:
         gt = data["joints"].astype(np.float32)
-        gt_fps = float(data["fps"])
-    acceleration = _resample_linear(acceleration, fps, 20.0)
-    orientation = _resample_orientation(orientation, fps, 20.0)
-    gt = _resample_linear(gt, gt_fps, 20.0)
-    target_length = min(int(case.get("length", len(gt))), len(gt), 196)
-    if target_length < 1:
-        raise ValueError("Requested clip is empty")
+    if len(gt) != len(target["timestamps"]):
+        raise ValueError("Target joints and declared cache timestamps differ")
+    imu_mode = str(case.get("imu_mode", "paired"))
+    if imu_mode not in {"paired", "shuffled", "null", "zero", "static"}:
+        raise ValueError(f"Unknown IMU mode: {imu_mode}")
+    if not donor["sensor_mask"][list(SENSOR_CONFIGS[config_name])].all():
+        raise ValueError("Requested sensors are absent from cache")
+    fixture_metadata = None
     if time_policy == "legacy_stretch":
+        acceleration = _resample_linear(donor["acceleration"], float(donor["fps"]), 20.0)
+        orientation = _resample_orientation(donor["orientation"], float(donor["fps"]), 20.0)
+        gt = _resample_linear(gt, float(target["fps"]), 20.0)
+        requested_length = int(case.get("length", len(gt)))
+        target_length = min(requested_length, len(gt), 196)
+        if target_length < 1:
+            raise ValueError("Requested clip is empty")
         acceleration = _fit_length_linear(acceleration, target_length)
         orientation = _fit_length_orientation(orientation, target_length)
-    elif time_policy == "crop_seconds":
-        if len(acceleration) < target_length:
-            raise ValueError("IMU donor is too short on its seconds axis; choose another donor, no time warp")
-        acceleration = acceleration[:target_length]
-        orientation = orientation[:target_length]
+        gt = gt[:target_length]
     else:
-        raise ValueError("Unknown time policy")
-    gt = gt[:target_length]
-    mean = np.asarray(normalization["acceleration_mean"], dtype=np.float32)
-    std = np.asarray(normalization["acceleration_std"], dtype=np.float32)
-    normalized_acceleration = (acceleration - mean[None]) / std[None]
-    imu = np.concatenate(
-        (normalized_acceleration, orientation.reshape(len(orientation), 6, 9)), axis=-1
-    ).astype(np.float32)
-    imu_mode = str(case.get("imu_mode", "paired"))
+        available_times = supported_frame_times(target["timestamps"])
+        requested_length = int(case.get("length", len(available_times)))
+        target_length = min(requested_length, 196)
+        if target_length < 1 or target_length > len(available_times):
+            raise ValueError("Requested clip is empty or outside target time support")
+        times = available_times[:target_length]
+        if imu_mode != "static" and times[-1] > donor["timestamps"][-1]:
+            raise ValueError("IMU donor is too short on its seconds axis; no clamping or time warp")
+        gt = resample_positions_at_times(gt, target["timestamps"], times).astype(np.float32)
+        if imu_mode != "static":
+            acceleration, orientation = sample_imu_at_times(donor, times)
+    if imu_mode == "static":
+        fixture = static_imu_fixture(frames=target_length, fps=20.0, sensor_config=config_name,
+                                     normalization=normalization, orientations=case.get("static_orientations"))
+        acceleration, orientation = fixture["acceleration"], fixture["orientation"]
+        fixture_metadata = fixture["metadata"]
+    imu = normalize_imu(acceleration, orientation, normalization)
     if imu_mode == "zero":
         imu = np.zeros_like(imu)
-    elif imu_mode not in {"paired", "shuffled", "null"}:
-        raise ValueError(f"Unknown IMU mode: {imu_mode}")
     return {
         **case,
         "motion_id": motion_id,
@@ -287,6 +308,11 @@ def _load_case(case, records, normalization, *, time_policy="crop_seconds"):
         "imu_motion_id": imu_motion_id,
         "imu_mode": imu_mode,
         "time_policy": time_policy,
+        "input_pipeline_version": INPUT_PIPELINE_VERSION,
+        "requested_length": requested_length,
+        "truncated_at_model_limit": requested_length > 196,
+        "physical_static_fixture": fixture_metadata,
+        "imu_source_kind": "declared_static_fixture" if imu_mode == "static" else "standard_cache",
         "time_interval_seconds": [0.0, (target_length - 1) / 20.0],
         "clock_reference": "cache_crop_local_uncertified_against_HumanML",
         "fps": 20.0,

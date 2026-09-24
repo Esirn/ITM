@@ -201,8 +201,8 @@ def test_physical_crop_never_stretches_donor(tmp_path):
     def write(name,n):
         path=tmp_path/name
         acc=np.broadcast_to(np.arange(n)[:,None,None],(n,6,3)).astype(np.float32).copy()
-        np.savez(path,acceleration=acc,orientation=np.broadcast_to(np.eye(3),(n,6,3,3)),joints=np.zeros((n,24,3)),fps=20.)
-        return {'imu_path':str(path)}
+        np.savez(path,acceleration=acc,orientation=np.broadcast_to(np.eye(3),(n,6,3,3)),joints=np.zeros((n,24,3)),fps=20.,motion_id=np.array(name),sensor_mask=np.ones(6,dtype=bool))
+        return {'imu_path':str(path),'motion_id':name,'schema':'standard_imu_v1','num_frames':n,'fps':20.}
     records={'a':write('a.npz',8),'b':write('b.npz',4)}
     norm={'acceleration_mean':np.zeros((6,3)),'acceleration_std':np.ones((6,3))}
     case=helpers._load_case({'motion_id':'a','length':4},records,norm)

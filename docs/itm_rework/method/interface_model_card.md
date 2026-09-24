@@ -1,3 +1,7 @@
+> v0.2 更新：新入口接入公共缓存与严格秒插值，`static` 使用当前 checkpoint 的统计；新训练默认契约为 v0.2。
+> B 首版 head-only，要求明确 training_admissible、无 blockers、metadata/实际 witness 时间轴与裁片一致。
+> 本文下方参数量和旧 smoke 模型卡仍对应上一批；完整接口差异见 FOLLOWUP_V02.md，不升级旧 checkpoint 标签。
+
 # B0 / semantic-response 实现接口与模型卡
 
 状态：代码与 CPU 正确性通过；只有一个 update 的 smoke checkpoint，**没有通过验证筛选的 B0 checkpoint**。

@@ -53,3 +53,8 @@ B 训练使用同一训练 CLI；在 02 提供合法 train witness 后添加
 无权重、协议和见证时未启动此实验；不是已执行命令。
 `configs.json` 列出 null-only/identity-only/combined/B0/FiLM/目标函数消融，CLI 用相应 kebab-case 参数。
 正式 validation、B 的完整采样收益和 C 均未运行。
+
+## v0.2 交接后的输入适配
+
+新增实际命令和版本差异见 FOLLOWUP_V02.md。输入脚本成功检查 6 个 train/config 项、6 条 val、2 种静止输入，模型前向 0。
+48 项相关回归通过，日志 logs/input_followup_v2.txt。没有重新训练或重新完整采样，首批命令/产物保持历史版本。
