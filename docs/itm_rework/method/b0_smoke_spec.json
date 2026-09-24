@@ -1,0 +1,20 @@
+[
+  {
+    "motion_id": "000004",
+    "sensor_config": "head",
+    "length": 12,
+    "text": "a person walks",
+    "imu_mode": "paired",
+    "label": "head_paired",
+    "random_plan_case_id": "smoke_000004"
+  },
+  {
+    "motion_id": "000004",
+    "sensor_config": "head",
+    "length": 12,
+    "text": "a person walks",
+    "imu_mode": "null",
+    "label": "head_null",
+    "random_plan_case_id": "smoke_000004"
+  }
+]

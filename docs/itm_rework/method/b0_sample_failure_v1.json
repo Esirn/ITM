@@ -1,0 +1,6 @@
+{
+  "status": "failed_before_sampling",
+  "error": "target motion 000001 is absent from the IMU manifest",
+  "corrective_action": "use first actual train/IMU intersection used by the training smoke",
+  "corrected_motion_id": "000004"
+}

@@ -72,11 +72,13 @@ class MDMBackbone:
         with torch.inference_mode():
             extra.setdefault("text_embed", self.encode_text(conditions.text))
             if imu_encoder is not None and "imu_control" not in extra:
-                extra["imu_control"] = imu_encoder(
+                extra["imu_control"], extra["imu_condition_present"] = imu_encoder(
                     extra["imu"],
                     extra["sensor_mask"],
                     extra.get("imu_frame_mask"),
-                    force_mask=False,
+                    force_mask=extra.get("imu_uncond", False),
+                    condition_present=extra.get("imu_condition_present"),
+                    timestamps=extra.get("imu_timestamps"), return_presence=True,
                 )
         return conditions
 

@@ -60,6 +60,9 @@ def parse_args():
         action="store_true",
         help="Disable text/IMU caching for numerical compatibility diagnostics.",
     )
+    parser.add_argument("--random-plan", choices=("addressed", "legacy"), default="addressed")
+    parser.add_argument("--time-policy", choices=("crop_seconds", "legacy_stretch"), default="crop_seconds")
+    parser.add_argument("--null-mode", choices=("checkpoint", "strict", "legacy_null"), default="checkpoint")
     parser.add_argument("--device", default="cuda:1")
     parser.add_argument("--min-free-gib", type=float, default=4.0)
     return parser.parse_args()
@@ -79,6 +82,8 @@ def main():
     manifest_path = Path(args.standard_imu_manifest).resolve()
     spec_path = Path(args.spec).resolve()
     output = Path(args.output).resolve()
+    if output.exists() or output.with_suffix(".json").exists():
+        raise FileExistsError("Choose a new output run path")
     mean_path = Path(args.mean).resolve()
     std_path = Path(args.std).resolve()
     control_state = torch.load(control_checkpoint_path, map_location="cpu", weights_only=True)
@@ -100,7 +105,10 @@ def main():
     model, diffusion = create_model_and_diffusion(mdm_args, data_stub)
     mdm_state = torch.load(mdm_checkpoint_path, map_location="cpu", weights_only=True)
     load_model_wo_clip(model, mdm_state)
+    from dataclasses import replace
     config = MDMIMUControlConfig(**control_state["control_config"])
+    if args.null_mode != "checkpoint":
+        config = replace(config, null_mode=args.null_mode)
     controlled, encoder, hook = install_imu_control(model, config)
     encoder.load_state_dict(control_state["imu_encoder"])
     controlled.adapters.load_state_dict(control_state["adapters"])
@@ -116,7 +124,7 @@ def main():
     if not isinstance(cases, list) or not cases:
         raise ValueError("spec must contain a non-empty JSON list")
     records = {str(row["motion_id"]): row for row in read_jsonl(manifest_path)}
-    loaded = [_load_case(case, records, control_state["imu_normalization"]) for case in cases]
+    loaded = [_load_case(case, records, control_state["imu_normalization"], time_policy=args.time_policy) for case in cases]
     original_lengths = [len(case["imu"]) for case in loaded]
     effective_lengths = [min(length, 196) for length in original_lengths]
     frame_count = max(effective_lengths)
@@ -131,6 +139,8 @@ def main():
         "imu": imu,
         "sensor_mask": masks,
         "imu_frame_mask": frame_mask,
+        "imu_condition_present": torch.tensor([case["imu_mode"] != "null" for case in loaded], device=device),
+        "imu_timestamps": torch.arange(frame_count, device=device)[None].expand(batch, -1) / 20.0,
         "text_scale": torch.tensor(
             [case.get("text_scale", args.text_scale) for case in loaded], device=device
         ),
@@ -162,7 +172,16 @@ def main():
         torch.cuda.reset_peak_memory_stats(device)
     started = time.perf_counter()
     with torch.inference_mode():
-        sample = backbone.sample(conditions, seed=args.seed)
+        plans = None
+        if args.random_plan == "addressed":
+            from itm.models.mdm_sampling import sample_addressed_ddpm
+            sample, plans = sample_addressed_ddpm(
+                guided_model, diffusion, y=backbone._model_kwargs(conditions), lengths=lengths,
+                case_ids=[str(case.get("random_plan_case_id", case["motion_id"])) for case in loaded],
+                sample_seed=args.seed, backbone_id=_sha256(mdm_checkpoint_path),
+            )
+        else:
+            sample = backbone.sample(conditions, seed=args.seed)
         joints = backbone.decode_motion(sample).cpu()
     elapsed = time.perf_counter() - started
     peak_memory = (
@@ -174,6 +193,14 @@ def main():
         "control_checkpoint": str(control_checkpoint_path),
         "mdm_checkpoint": str(mdm_checkpoint_path),
         "seed": args.seed,
+        "training_seed": control_state.get("training_args", {}).get("seed"),
+        "contract_version": control_state.get("contract_version", "legacy_unspecified"),
+        "effective_control_config": config.__dict__,
+        "time_policy": args.time_policy,
+        "alignment_status": "uncertified_diagnostic",
+        "sampler": "ddpm", "steps": diffusion.num_timesteps,
+        "random_plan_mode": args.random_plan, "random_plans": plans,
+        "model_forward_calls": diffusion.num_timesteps * (len(loaded) if plans else 1) * (1 if args.branch_execution == "batched" else (4 if args.guidance_mode == "factorized" else 3)),
         "text_scale": args.text_scale,
         "imu_scale": args.imu_scale,
         "joint_scale": args.joint_scale,
@@ -193,6 +220,10 @@ def main():
     np.savez_compressed(
         output,
         motion=joints.numpy(),
+        normalized_humanml263=sample.cpu().numpy(),
+        fps=np.array(20.0),
+        timestamps_seconds=np.arange(frame_count, dtype=np.float64) / 20.0,
+        frame_mask=frame_mask.cpu().numpy(),
         gt=np.stack([_pad_frames(case["gt"][:, :22], frame_count) for case in loaded]),
         acceleration=np.stack([_pad_frames(case["raw_acceleration"], frame_count) for case in loaded]),
         orientation=np.stack([_pad_frames(case["raw_orientation"], frame_count) for case in loaded]),
@@ -205,7 +236,7 @@ def main():
     return 0
 
 
-def _load_case(case, records, normalization):
+def _load_case(case, records, normalization, *, time_policy="crop_seconds"):
     motion_id = str(case.get("target_motion_id", case["motion_id"]))
     imu_motion_id = str(case.get("imu_motion_id", case["motion_id"]))
     for role, value in (("target", motion_id), ("IMU", imu_motion_id)):
@@ -225,8 +256,18 @@ def _load_case(case, records, normalization):
     orientation = _resample_orientation(orientation, fps, 20.0)
     gt = _resample_linear(gt, gt_fps, 20.0)
     target_length = min(int(case.get("length", len(gt))), len(gt), 196)
-    acceleration = _fit_length_linear(acceleration, target_length)
-    orientation = _fit_length_orientation(orientation, target_length)
+    if target_length < 1:
+        raise ValueError("Requested clip is empty")
+    if time_policy == "legacy_stretch":
+        acceleration = _fit_length_linear(acceleration, target_length)
+        orientation = _fit_length_orientation(orientation, target_length)
+    elif time_policy == "crop_seconds":
+        if len(acceleration) < target_length:
+            raise ValueError("IMU donor is too short on its seconds axis; choose another donor, no time warp")
+        acceleration = acceleration[:target_length]
+        orientation = orientation[:target_length]
+    else:
+        raise ValueError("Unknown time policy")
     gt = gt[:target_length]
     mean = np.asarray(normalization["acceleration_mean"], dtype=np.float32)
     std = np.asarray(normalization["acceleration_std"], dtype=np.float32)
@@ -237,7 +278,7 @@ def _load_case(case, records, normalization):
     imu_mode = str(case.get("imu_mode", "paired"))
     if imu_mode == "zero":
         imu = np.zeros_like(imu)
-    elif imu_mode not in {"paired", "shuffled"}:
+    elif imu_mode not in {"paired", "shuffled", "null"}:
         raise ValueError(f"Unknown IMU mode: {imu_mode}")
     return {
         **case,
@@ -245,6 +286,10 @@ def _load_case(case, records, normalization):
         "target_motion_id": motion_id,
         "imu_motion_id": imu_motion_id,
         "imu_mode": imu_mode,
+        "time_policy": time_policy,
+        "time_interval_seconds": [0.0, (target_length - 1) / 20.0],
+        "clock_reference": "cache_crop_local_uncertified_against_HumanML",
+        "fps": 20.0,
         "text": str(case.get("text", "")),
         "label": str(case.get("label", motion_id)),
         "sensor_config": config_name,

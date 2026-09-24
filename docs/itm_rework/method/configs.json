@@ -1,0 +1,22 @@
+{
+  "schema": "itm-method-config-examples-v1",
+  "contract_version": "itm-rework-v0.1-draft",
+  "status": "implementation_only_not_selected_by_validation",
+  "shared": {"backbone_mode": "frozen_eval", "sensor_configs": "head,wrists", "diffusion_loss_weight": 1, "trajectory_loss_weight": 0, "velocity_loss_weight": 0, "jerk_loss_weight": 0, "derivative_units": "seconds"},
+  "variants": {
+    "legacy": {"encoder_variant": "legacy_mean", "null_mode": "legacy_null", "time_encoding": "none", "adapter_variant": "additive"},
+    "null_only": {"encoder_variant": "legacy_mean", "null_mode": "strict", "time_encoding": "none", "adapter_variant": "additive"},
+    "identity_only": {"encoder_variant": "ordered_concat", "null_mode": "legacy_null", "time_encoding": "none", "adapter_variant": "additive"},
+    "combined_no_time": {"encoder_variant": "ordered_concat", "null_mode": "strict", "time_encoding": "none", "adapter_variant": "additive"},
+    "B0": {"encoder_variant": "ordered_concat", "null_mode": "strict", "time_encoding": "physical_sinusoidal", "adapter_variant": "additive"},
+    "film_baseline": {"encoder_variant": "ordered_concat", "null_mode": "strict", "time_encoding": "physical_sinusoidal", "adapter_variant": "film"}
+  },
+  "objectives": {
+    "diffusion_only": {"diffusion_loss_weight": 1, "trajectory_loss_weight": 0},
+    "trajectory_only": {"diffusion_loss_weight": 0, "trajectory_loss_weight": 1, "trajectory_space": "global_joint_proxy"},
+    "absolute_anchor": {"text_anchor_loss_weight": "validation budget required"},
+    "relative_response": {"response_mode": "bounded_margin", "response_margin": 0.02, "teacher_min_delta": 0.01, "no_compatibility_weight": true},
+    "weighted_relative_response": {"response_mode": "bounded_margin", "response_margin": 0.02, "teacher_min_delta": 0.01, "no_compatibility_weight": false},
+    "exact_delta_ablation": {"response_mode": "exact_delta"}
+  }
+}

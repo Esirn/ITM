@@ -1,0 +1,19 @@
+{
+  "read_commit": "663414f1d9bffd6a70189846739bc9d9b1d0d873",
+  "kind": "final_delivery_source_snapshot",
+  "owned": {
+    "src/itm/models/mdm_imu_control.py": "9dd50c69d65cf245431be5bd5aa56feb4ab2357895414707f6541201d5c0ce93",
+    "src/itm/models/mdm_sampling.py": "8ce7c62e522c9f8dd2e5bbfa313ff14eb947cbc7ec6e4448001d60dbc4583da7",
+    "src/itm/models/semantic_response.py": "39a4b3512639d0c7eca1382b4ee9bc048e35fb316de2b70d7a0e248712c00c06",
+    "src/itm/backbones/mdm.py": "a5a21ae34d1d947775484f514472594276f641ec98c20899d52aa24a241d93f8",
+    "scripts/train_mdm_imu_control.py": "f40bf6f1cef590de23497fa82cfd78bdb59ac5f96eac186488fdd3bd27917361",
+    "scripts/sample_mdm_imu_control.py": "25587ae73a9b314294fd5f8ad20a9a3ff49265a9109e5b1498613c78b4d647ab",
+    "scripts/audit_mdm_method.py": "2338562b6508f973d4228180720c09f117f1a4fef0a2c9d93c396715ccc827a1",
+    "scripts/validate_mdm_identity.py": "34864bf9dfe9c065aa694075697ddeb5e8d6db41f5be4ebd8f16eb2d570fead8",
+    "tests/test_mdm_rework.py": "2e018e78d4154e5af5c67cf8f9aaecdd548a29e02ee6dcf58af583a8757da0c2"
+  },
+  "external_owner02_dependencies": {
+    "src/itm/data/random_plan.py": "5e2f8aed3669c97ca58c9d726f5da515bb409c2ace21a86965ad433ca0275c3a",
+    "docs/itm_rework/contract.yaml": "144248dce536ab36dcc9d6a698444a3331d01a0a278a73234aaeec4c458eba7f"
+  }
+}

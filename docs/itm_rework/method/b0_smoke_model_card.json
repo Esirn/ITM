@@ -1,0 +1,181 @@
+{
+  "checkpoint": "/home/a200/0proj/ITM/outputs/itm_rework/method/b0_cpu_smoke_20260924_v1/model.pt",
+  "checkpoint_sha256": "623b16e6e22c09a2e6f8aaceaa635496b8afdde932ba0b3a3326eb7fbcbb00d9",
+  "epoch": 1,
+  "schema": "itm-control-v2",
+  "effective_config": {
+    "sensor_feature_dim": 12,
+    "sensor_count": 6,
+    "latent_dim": 512,
+    "encoder_layers": 2,
+    "encoder_heads": 8,
+    "dropout": 0.1,
+    "imu_drop_probability": 0.1,
+    "encoder_variant": "ordered_concat",
+    "null_mode": "strict",
+    "time_encoding": "physical_sinusoidal",
+    "model_fps": 20.0
+  },
+  "training_args": {
+    "mdm_root": "outputs/mdm/runtime_root",
+    "mdm_checkpoint": "outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/model000475000.pt",
+    "mdm_args": "outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/args.json",
+    "manifest": "outputs/manifests_full/train.jsonl",
+    "standard_imu_manifest": "outputs/manifests_full/train_standard_imu.jsonl",
+    "mean": "/home/a200/0proj/datasets/all/Mean.npy",
+    "std": "/home/a200/0proj/datasets/all/Std.npy",
+    "sensor_configs": "head,wrists",
+    "output": "/home/a200/0proj/ITM/outputs/itm_rework/method/b0_cpu_smoke_20260924_v1/model.pt",
+    "epochs": 1,
+    "batch_size": 2,
+    "learning_rate": 5e-05,
+    "max_records": 1,
+    "resume": null,
+    "trajectory_loss_weight": 0.0,
+    "velocity_loss_weight": 0.0,
+    "jerk_loss_weight": 0.0,
+    "upper_body_loss_weight": 0.0,
+    "upper_body_velocity_loss_weight": 0.0,
+    "text_anchor_loss_weight": 0.0,
+    "upper_body_text_anchor_loss_weight": 0.0,
+    "min_free_gib": 4.0,
+    "seed": 1234,
+    "device": "cpu",
+    "encoder_variant": "ordered_concat",
+    "null_mode": "strict",
+    "time_encoding": "physical_sinusoidal",
+    "backbone_mode": "frozen_eval",
+    "text_drop_probability": 0.1,
+    "imu_drop_probability": 0.1,
+    "diffusion_loss_weight": 1.0,
+    "trajectory_space": "global_joint_proxy",
+    "derivative_units": "seconds",
+    "response_manifest": null,
+    "response_loss_weight": 0.0,
+    "response_proxy_weight": 0.0,
+    "response_mode": "bounded_margin",
+    "response_margin": 0.02,
+    "teacher_min_delta": 0.01,
+    "no_compatibility_weight": false,
+    "contract_version": "itm-rework-v0.1-draft",
+    "allow_unsynchronized_diagnostic": true
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.03011481463909149,
+      "response_loss": 0.0,
+      "response_joint_proxy_loss": 0.0,
+      "total_loss": 0.03011481463909149,
+      "diffusion_loss": 0.03011481463909149,
+      "trajectory_loss": 0.002957350807264447,
+      "velocity_loss": 0.05731069669127464,
+      "jerk_loss": 4087.5341796875,
+      "upper_body_loss": 0.0020444944966584444,
+      "upper_body_velocity_loss": 0.07210007309913635,
+      "text_anchor_loss": 0.0,
+      "upper_body_text_anchor_loss": 0.0,
+      "condition_counts_cumulative": {
+        "00": 0,
+        "10": 0,
+        "01": 0,
+        "11": 2
+      },
+      "response_coverage": {
+        "selected_examples": 0,
+        "accepted_attributes": 0,
+        "total_attributes": 0,
+        "student_forwards": 0,
+        "teacher_forwards": 0,
+        "timestep_buckets": {}
+      }
+    }
+  ],
+  "hashes": {
+    "outputs/manifests_full/train.jsonl": "05e18ec9690edb69242cb055f1b767f1d53acfe18dad370c814210934830a23e",
+    "outputs/manifests_full/train_standard_imu.jsonl": "3e83711385037f423c7b1fde63f2971cc4e5724a0f013fe914d81535ad8ed7cc",
+    "/home/a200/0proj/datasets/all/Mean.npy": "26e136555dab04c94a129d446c26e6b9939cbf045fbf77bcf5462c1fb5a2001c",
+    "/home/a200/0proj/datasets/all/Std.npy": "6565a65ed9b31e23c328829a309e1c482be8b85fd23b43d65451a9b19a917f40",
+    "docs/itm_rework/contract.yaml": "144248dce536ab36dcc9d6a698444a3331d01a0a278a73234aaeec4c458eba7f",
+    "docs/itm_rework/method/b0_smoke_spec.json": "b43b1ce79351a29ca168a43c4918c00ccbec6981199ebccd21a4121b8db61708"
+  },
+  "imu_normalization": {
+    "acceleration_mean": [
+      [
+        -0.058396413922309875,
+        0.00869693048298359,
+        -0.0024476980324834585
+      ],
+      [
+        9.23520274227485e-05,
+        0.00969086866825819,
+        -0.05698692426085472
+      ],
+      [
+        -0.006549133453518152,
+        0.0012746556894853711,
+        0.006769697181880474
+      ],
+      [
+        -0.006090400740504265,
+        0.00046091171680018306,
+        0.0035061656963080168
+      ],
+      [
+        -0.005057001952081919,
+        -0.008457967080175877,
+        0.009356017224490643
+      ],
+      [
+        -0.008777332492172718,
+        -0.00036728382110595703,
+        0.005006236024200916
+      ]
+    ],
+    "acceleration_std": [
+      [
+        3.0485610961914062,
+        2.8401131629943848,
+        3.0985565185546875
+      ],
+      [
+        2.994065046310425,
+        3.1574862003326416,
+        3.2632710933685303
+      ],
+      [
+        0.6235271692276001,
+        0.5206921100616455,
+        0.4764513373374939
+      ],
+      [
+        0.5781072974205017,
+        0.26968246698379517,
+        0.3476869463920593
+      ],
+      [
+        0.9252984523773193,
+        2.6031672954559326,
+        0.6492516398429871
+      ],
+      [
+        0.6887755990028381,
+        0.378410667181015,
+        0.3338776230812073
+      ]
+    ],
+    "orientation": "rotation_matrix_unscaled"
+  },
+  "sample_motion_shape": [
+    2,
+    12,
+    22,
+    3
+  ],
+  "sample_all_finite": true,
+  "sampling_seconds": 26.254498927970417,
+  "same_noise_plan_for_paired_null": true,
+  "sample_npz_sha256": "758bfd1d560add3d10ed1377da9ddb80687bf1ffec49a83b623564b054742adf",
+  "status": "one_update_smoke_not_validated_B0",
+  "full_B_validation": "blocked_missing_compatible_witnesses_and_frozen_panel"
+}

@@ -1,0 +1,59 @@
+{
+  "device": "cpu",
+  "gpu_jobs": 0,
+  "jobs": [
+    {
+      "id": "checkpoint_audit_20260924_v1",
+      "seed": 20260924,
+      "clips": 1,
+      "frames": 12,
+      "streams": 3,
+      "sampler": "ddpm",
+      "steps": 1000,
+      "threads": 2,
+      "purpose": "null equivalence diagnostics"
+    },
+    {
+      "id": "identity_overfit_20260924_v1",
+      "seed": 45,
+      "variants": 2,
+      "updates_per_variant": 120,
+      "batch": 8,
+      "frames": 4,
+      "threads": 1,
+      "purpose": "normalized identity learning only"
+    },
+    {
+      "id": "b0_cpu_smoke_20260924_v1",
+      "training_seed": 1234,
+      "train_records": 1,
+      "configs": [
+        "head",
+        "wrists"
+      ],
+      "epochs": 1,
+      "updates": 1,
+      "threads": 2,
+      "purpose": "real backbone training/checkpoint smoke; unsynchronized diagnostic"
+    },
+    {
+      "id": "b0_sample_20260924_v1",
+      "sampling_seed": 1234,
+      "train_motion": "000004",
+      "cases": 2,
+      "frames": 12,
+      "steps": 1000,
+      "guidance": "factorized",
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "branch_execution": "batched",
+      "forward_calls": 2000,
+      "threads": 2,
+      "purpose": "sampler/checkpoint smoke; not validation"
+    }
+  ],
+  "stop_condition": "no budget expansion or GPU job; stop at registered diagnostic artifacts"
+}

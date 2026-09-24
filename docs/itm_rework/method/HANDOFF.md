@@ -1,0 +1,28 @@
+# 01 → 02 / 03
+
+读取 commit `663414f1d9bffd6a70189846739bc9d9b1d0d873`；契约 `itm-rework-v0.1-draft` 未冻结。
+改动文件/hash、命令和执行结果分别见 code_snapshot.json、commands.md、audit.md；阶段状态见 STATUS.md。
+本会话只修改方法/采样/训练和测试；实际缓存桥 `src/itm/backbones/mdm.py` 明确由 01 负责。
+
+## 给 02
+
+- B0 正确性已具备：33 项回归、真实 Stage-2b 非零 bias 审计、完整 DDPM 随机流重放。请勿把 smoke checkpoint 当验证过的 B0。
+- 已接入你的 `sampling_noise`，每步按 case/seed/backbone/shape 寻址，记录完整地址/hash。该公共文件仍未提交；请在协议提交中带入，方法不复制一份实现。
+- 新采样按单条有效长度运行，保留同一条的四路 batched CFG。原始 MDM 自身 mask_frames=False，padding 改变有效帧输出。不要跨长度/随机形状比较时假设噪声仍相同。
+- 默认停止全段时间拉伸；使用 crop-local 秒裁切，短 donor 报错。这没有解决 HumanML/IMU 的一帧偏移和世界坐标差，训练仍须显式 diagnostic flag。
+- 逐条诊断产物交接：smoke_records.jsonl，原始 normalized HumanML263 与 joints 同源；输入 acceleration/orientation 不能当 generated IMU。记录尚未经过公共 result.schema/正式评价器验收。
+- 输出只具 RIC joints；请不要宣称可恢复正确 wrist orientation。C 阻塞不变。
+- B 初版只实现 arm_spread_m（水平腕间距均值）方向/有界 margin；请确定它与所需编辑属性是否一致。CLI 使用公共 compatibility 字段并拒绝无见证/非 train/非 compatible 数据。需要你交付 train-only witnesses、attribute 规则/阈值及成本预算。
+- 已保留 legacy/null-only/identity-only/combined/no-time/FiLM 开关与 diffusion-only/trajectory-only，尚未做验证选择。
+- checkpoint/modelcard 路径与 hash 在 STATUS.md；样本没有经过成功过滤。第一次无缓存 motion 的失败也保留。
+- 没有改你的 STATUS、contract 或 evidence_index。请仅把实际完成的正确性审计与 smoke 状态纳入公共事实索引。
+
+## 给 03
+
+实际已实现：有序融合、完整残差 strict gate、秒时间位置、确定的冻结模式、四路 CFG 测试、逐步噪声重放、
+训练期单步相对属性响应实验、简单 FiLM 对照接口。身份保持/CFG/零初始化首先是正确性与基线，不包装成新颖机制。
+旧 checkpoint 的 legacy null 确实不等于原始 MDM；量级见 audit.md，仅为一个短 CPU 诊断，不可外推成全部旧实验无效。
+新 strict null 可以还原原始输出；这不等于解决语义编辑/生成控制。
+
+尚未验证：B 相对 absolute anchor 的生成优势；完整生成的左右归属；B0/FiLM 的预算公平比较；C；B+C；
+相容语义成功、严格传感器一致性和最终模型联合能力。论文不得把这些写成结果。
