@@ -1,0 +1,176 @@
+{
+  "kind": "owner02_input_followup_acceptance",
+  "read_commit": "0574491ba4afaf9fd5626cce852229acf1c1fc28",
+  "contract_version": "itm-rework-v0.2-draft",
+  "pipeline_version": "itm-method-seconds-v2",
+  "status": "input_checks_passed_with_documented_panel_discrepancy",
+  "saved_input_report_reproduced_exactly": true,
+  "method_report_actual_train_ids": [
+    "000004",
+    "000006",
+    "000008"
+  ],
+  "followup_document_claimed_train_ids": [
+    "000004",
+    "000008",
+    "000010"
+  ],
+  "explicit_train": [
+    {
+      "motion_id": "000004",
+      "sensor_config": "head",
+      "metadata": {
+        "input_pipeline_version": "itm-method-seconds-v2",
+        "original_motion_frames": 199,
+        "effective_frames": 196,
+        "time_interval_seconds": [
+          0.0,
+          9.75
+        ],
+        "clock_reference": "cache_crop_local_uncertified_against_HumanML",
+        "caption_interval_seconds": [
+          0.0,
+          0.0
+        ],
+        "alignment_status": "uncertified_diagnostic"
+      },
+      "finite": true
+    },
+    {
+      "motion_id": "000004",
+      "sensor_config": "wrists",
+      "metadata": {
+        "input_pipeline_version": "itm-method-seconds-v2",
+        "original_motion_frames": 199,
+        "effective_frames": 196,
+        "time_interval_seconds": [
+          0.0,
+          9.75
+        ],
+        "clock_reference": "cache_crop_local_uncertified_against_HumanML",
+        "caption_interval_seconds": [
+          0.0,
+          0.0
+        ],
+        "alignment_status": "uncertified_diagnostic"
+      },
+      "finite": true
+    },
+    {
+      "motion_id": "000008",
+      "sensor_config": "head",
+      "metadata": {
+        "input_pipeline_version": "itm-method-seconds-v2",
+        "original_motion_frames": 42,
+        "effective_frames": 42,
+        "time_interval_seconds": [
+          0.0,
+          2.05
+        ],
+        "clock_reference": "cache_crop_local_uncertified_against_HumanML",
+        "caption_interval_seconds": [
+          0.0,
+          0.0
+        ],
+        "alignment_status": "uncertified_diagnostic"
+      },
+      "finite": true
+    },
+    {
+      "motion_id": "000008",
+      "sensor_config": "wrists",
+      "metadata": {
+        "input_pipeline_version": "itm-method-seconds-v2",
+        "original_motion_frames": 42,
+        "effective_frames": 42,
+        "time_interval_seconds": [
+          0.0,
+          2.05
+        ],
+        "clock_reference": "cache_crop_local_uncertified_against_HumanML",
+        "caption_interval_seconds": [
+          0.0,
+          0.0
+        ],
+        "alignment_status": "uncertified_diagnostic"
+      },
+      "finite": true
+    },
+    {
+      "motion_id": "000010",
+      "sensor_config": "head",
+      "metadata": {
+        "input_pipeline_version": "itm-method-seconds-v2",
+        "original_motion_frames": 69,
+        "effective_frames": 69,
+        "time_interval_seconds": [
+          0.0,
+          3.4
+        ],
+        "clock_reference": "cache_crop_local_uncertified_against_HumanML",
+        "caption_interval_seconds": [
+          0.0,
+          0.0
+        ],
+        "alignment_status": "uncertified_diagnostic"
+      },
+      "finite": true
+    },
+    {
+      "motion_id": "000010",
+      "sensor_config": "wrists",
+      "metadata": {
+        "input_pipeline_version": "itm-method-seconds-v2",
+        "original_motion_frames": 69,
+        "effective_frames": 69,
+        "time_interval_seconds": [
+          0.0,
+          3.4
+        ],
+        "clock_reference": "cache_crop_local_uncertified_against_HumanML",
+        "caption_interval_seconds": [
+          0.0,
+          0.0
+        ],
+        "alignment_status": "uncertified_diagnostic"
+      },
+      "finite": true
+    }
+  ],
+  "verified_code_and_contract_hashes": {
+    "src/itm/models/mdm_conditions.py": "c16c9f3199fa3bdc9de2f01a048f2673901bd83dcd9af9926965748bbd9377ad",
+    "scripts/train_mdm_imu_control.py": "42325cdd29d1b59c441d3cdc11d02362bed780edd8a4b521b2bad5a8b8ae6d75",
+    "scripts/sample_mdm_imu_control.py": "e92b618ae30e2582e38766e9960eceac77ee8438d1d535dbccb4aeb9005ecfda",
+    "scripts/check_mdm_input_handoff.py": "6ed53514917b9017299e1b020beaf46aaeec626579f1508eb06e35f44632212c",
+    "tests/test_mdm_conditions.py": "c30a0296c846135f8eb0dcd14613995e199ca23504f6871342cb3a5b940fe4d1",
+    "tests/test_mdm_rework.py": "83e01675759bc0d40bbef153882b63d25100795cb84a29a8afc9dd383470d18c",
+    "src/itm/data/observation.py": "5b82785d95152ce246c07f82d491679ed7e9aa9fbc95e1befc97d7e057898df9",
+    "src/itm/data/physical_time.py": "001a8e37ab86bf086902896fcf68d0204d23628d2387a27671413b5477b663e3",
+    "src/itm/data/static_imu.py": "011681bb6ee65af6c3130c5deba6849858836fd00f72b7b25eb8df683ad46131",
+    "docs/itm_rework/contract.yaml": "528b7db8818600dff9516600a9c5ad0311870de93609e2bcadbe320ee4f0fadb"
+  },
+  "artifacts": {
+    "docs/itm_rework/method/code_snapshot_v2.json": "9646ed8c710c052d2cd28f3dbfdb8cfee725e499c166977a4f751cd00a4bab6f",
+    "docs/itm_rework/method/input_handoff_20260924_v2.json": "a990fc39bd5801c29df6b142a4865580edc1b6ed4bf7d07f380f85cd584edf9a",
+    "outputs/itm_rework/method/b0_cpu_smoke_20260924_v1/model.pt": "623b16e6e22c09a2e6f8aaceaa635496b8afdde932ba0b3a3326eb7fbcbb00d9",
+    "outputs/manifests_full/train.jsonl": "05e18ec9690edb69242cb055f1b767f1d53acfe18dad370c814210934830a23e",
+    "docs/itm_rework/method/FOLLOWUP_V02.md": "25f30c36fbf6b87d759ba0ee9dad07e883ffd5c89289c401e6362f067eb54c6b",
+    "scripts/audit_method_input_followup.py": "f95d39f5b284bcce29a8d12b065d2491255f054ff3d9c9cb79e286f6773350c1"
+  },
+  "budget": {
+    "threads": 1,
+    "input_replay_timeout_seconds": 120,
+    "explicit_train_cases": 3,
+    "sensor_configs": 2,
+    "model_forwards": 0,
+    "training_updates": 0,
+    "generated_samples": 0,
+    "gpu_jobs": 0
+  },
+  "limitations": [
+    "No world-frame, skeleton or caption alignment certification.",
+    "No witness promotion, threshold change, new checkpoint or research outcome.",
+    "199-frame candidate still requires a separately reviewed 196-frame witness.",
+    "The corrected explicit panel is a new owner-02 check, not a correction to the old artifact."
+  ]
+}

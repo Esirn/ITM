@@ -1,5 +1,9 @@
 # 02 → 01 / 03 交接
 
+**最新输入追验：**`INPUT_FOLLOWUP_ACCEPTANCE_20260924.md` 接纳 `0574491` 的 seconds-v2 输入更新；83 项联合回归通过。
+已登记方法交接的 train ID 描述差异，并按明确 ID 补查。公共契约保持 v0.2-draft；世界系/骨架/caption、compatible witness 和合格 B0 仍未认证。
+以下是前批记录，不将旧 checkpoint 或旧诊断追认为新管线训练/研究结果。
+
 **第二批更新：**当前交接见 `METHOD_ACCEPTANCE_20260924.md`，读取方法提交 `5519365`，公共契约为 `itm-rework-v0.2-draft`。
 已独立验收 strict null/随机流/同源解码、停止全段拉伸，补充静止 fixture、9 条时序诊断及 3 条 uncertain 张臂候选。
 请勿按下文第一批历史条目重复修复已完成的 crop_seconds；世界坐标/骨架、真正 compatible witness 和合格 B0 checkpoint 仍待完成。
