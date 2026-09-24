@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ITM rework per-sample record v0.1",
+  "type": "object",
+  "required": [
+    "run_id",
+    "case_id",
+    "source_group_id",
+    "split_role",
+    "protocol",
+    "protocol_version",
+    "data_schema_hash",
+    "compatibility_manifest_hash",
+    "condition_ids",
+    "condition",
+    "model_id",
+    "code_commit",
+    "config_hash",
+    "checkpoint_hash",
+    "train_seed",
+    "sensor_config",
+    "caption_id",
+    "sampler",
+    "steps",
+    "guidance_mode",
+    "text_scale",
+    "imu_scale",
+    "joint_scale",
+    "sample_seed",
+    "random_plan_id",
+    "motion_representation_version",
+    "observation_operator_version",
+    "semantic_evaluator_version",
+    "quality_evaluator_version",
+    "evaluator_version",
+    "thresholds_version",
+    "output_path",
+    "semantic_metrics",
+    "observation_metrics",
+    "quality_metrics",
+    "joint_success",
+    "failure_reason",
+    "runtime_and_memory"
+  ],
+  "properties": {
+    "protocol": {
+      "enum": [
+        "P",
+        "C",
+        "D"
+      ]
+    },
+    "sensor_config": {
+      "enum": [
+        "head",
+        "wrists"
+      ]
+    },
+    "split_role": {
+      "enum": [
+        "val",
+        "sealed_test",
+        "historical_development_diagnostic"
+      ]
+    },
+    "sample_seed": {
+      "type": "integer"
+    },
+    "train_seed": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "joint_success": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "failure_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

@@ -1,0 +1,408 @@
+{
+  "operator": {
+    "path": "src/itm/data/standard_imu.py",
+    "exists": true,
+    "bytes": 6883,
+    "sha256": "3f4a6549374bd620ae9f3440cc4a7cf51942e4478c5dafeeaa9ae3582fb1b9a7"
+  },
+  "builder": {
+    "path": "scripts/build_standard_imu_cache.py",
+    "exists": true,
+    "bytes": 7330,
+    "sha256": "450808f7adb49012a6ba649f569c53d44dbb85ad715019430919d38d717d49d3"
+  },
+  "model": {
+    "path": "/home/a200/0relatedworks/IMUPoser/src/imuposer/smpl/basicmodel_m_lbs_10_207_0_v1.0.0.pkl",
+    "exists": true,
+    "bytes": 39056404,
+    "sha256": "0e8c0bbbbc635dcb166ed29c303fb4bef16ea5f623e5a89263495a9e403575bd"
+  },
+  "budget": {
+    "clips": 3,
+    "device": "cpu",
+    "torch_threads": 2
+  },
+  "mount_skinning": [
+    {
+      "vertex": 1961,
+      "top_skinning_segments": [
+        18,
+        20,
+        22
+      ],
+      "top_skinning_weights": [
+        0.8367573618888855,
+        0.15210919082164764,
+        0.008499999530613422
+      ]
+    },
+    {
+      "vertex": 5424,
+      "top_skinning_segments": [
+        19,
+        21,
+        17
+      ],
+      "top_skinning_weights": [
+        0.8377345204353333,
+        0.15516676008701324,
+        0.005035296082496643
+      ]
+    },
+    {
+      "vertex": 876,
+      "top_skinning_segments": [
+        1,
+        0,
+        4
+      ],
+      "top_skinning_weights": [
+        0.9530618786811829,
+        0.02375904843211174,
+        0.01909244805574417
+      ]
+    },
+    {
+      "vertex": 4362,
+      "top_skinning_segments": [
+        2,
+        0,
+        1
+      ],
+      "top_skinning_weights": [
+        0.9645155072212219,
+        0.028934618458151817,
+        0.00553235923871398
+      ]
+    },
+    {
+      "vertex": 411,
+      "top_skinning_segments": [
+        15,
+        12,
+        7
+      ],
+      "top_skinning_weights": [
+        0.9951491355895996,
+        0.004538754932582378,
+        0.00016031159611884505
+      ]
+    },
+    {
+      "vertex": 3021,
+      "top_skinning_segments": [
+        0,
+        3,
+        6
+      ],
+      "top_skinning_weights": [
+        0.59180748462677,
+        0.3781348466873169,
+        0.016480449587106705
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "split": "train",
+      "motion_id": "000004",
+      "source": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/CMU/80/80_63_poses.npz",
+        "exists": true,
+        "bytes": 3038264,
+        "sha256": "f0150504833273992384784f00388d542436f4bb31c42065bc4631cc9f30efd0"
+      },
+      "cache": {
+        "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/000004.npz",
+        "exists": true,
+        "bytes": 365259,
+        "sha256": "c87865698ee93515961575f004dd3e67e89091992066743369093b3bb9805b8c"
+      },
+      "comparison": {
+        "acceleration": {
+          "cached_shape": [
+            300,
+            6,
+            3
+          ],
+          "computed_shape": [
+            300,
+            6,
+            3
+          ],
+          "max_abs_difference": 0.000171661376953125,
+          "allclose_atol_1e-4_rtol_1e-4": false
+        },
+        "orientation": {
+          "cached_shape": [
+            300,
+            6,
+            3,
+            3
+          ],
+          "computed_shape": [
+            300,
+            6,
+            3,
+            3
+          ],
+          "max_abs_difference": 7.152557373046875e-07,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "local_rotation": {
+          "cached_shape": [
+            300,
+            24,
+            3,
+            3
+          ],
+          "computed_shape": [
+            300,
+            24,
+            3,
+            3
+          ],
+          "max_abs_difference": 5.960464477539062e-07,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "joints": {
+          "cached_shape": [
+            300,
+            24,
+            3
+          ],
+          "computed_shape": [
+            300,
+            24,
+            3
+          ],
+          "max_abs_difference": 3.725290298461914e-07,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "translation": {
+          "cached_shape": [
+            300,
+            3
+          ],
+          "computed_shape": [
+            300,
+            3
+          ],
+          "max_abs_difference": 0.0,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "shape": {
+          "cached_shape": [
+            10
+          ],
+          "computed_shape": [
+            10
+          ],
+          "max_abs_difference": 0.0,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        }
+      }
+    },
+    {
+      "split": "val",
+      "motion_id": "012808",
+      "source": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/MPI_mosh/50007/stretches_poses.npz",
+        "exists": true,
+        "bytes": 3435048,
+        "sha256": "33fb1f7678b587a65d6f40f1ae61283cfa8480ec1dc3e10ac9ca5dd138b958f0"
+      },
+      "cache": {
+        "path": "/home/a200/0proj/ITM/outputs/standard_imu/val/012808.npz",
+        "exists": true,
+        "bytes": 362360,
+        "sha256": "4e35708f17cecdf3d67b53cd14b27bf38d16d81289b0e77b46547e4cc1c420db"
+      },
+      "comparison": {
+        "acceleration": {
+          "cached_shape": [
+            300,
+            6,
+            3
+          ],
+          "computed_shape": [
+            300,
+            6,
+            3
+          ],
+          "max_abs_difference": 0.000171661376953125,
+          "allclose_atol_1e-4_rtol_1e-4": false
+        },
+        "orientation": {
+          "cached_shape": [
+            300,
+            6,
+            3,
+            3
+          ],
+          "computed_shape": [
+            300,
+            6,
+            3,
+            3
+          ],
+          "max_abs_difference": 5.364418029785156e-07,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "local_rotation": {
+          "cached_shape": [
+            300,
+            24,
+            3,
+            3
+          ],
+          "computed_shape": [
+            300,
+            24,
+            3,
+            3
+          ],
+          "max_abs_difference": 4.76837158203125e-07,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "joints": {
+          "cached_shape": [
+            300,
+            24,
+            3
+          ],
+          "computed_shape": [
+            300,
+            24,
+            3
+          ],
+          "max_abs_difference": 4.76837158203125e-07,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "translation": {
+          "cached_shape": [
+            300,
+            3
+          ],
+          "computed_shape": [
+            300,
+            3
+          ],
+          "max_abs_difference": 0.0,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "shape": {
+          "cached_shape": [
+            10
+          ],
+          "computed_shape": [
+            10
+          ],
+          "max_abs_difference": 0.0,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        }
+      }
+    },
+    {
+      "split": "test",
+      "motion_id": "004822",
+      "source": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/BioMotionLab_NTroje/rub006/0002_treadmill_slow_poses.npz",
+        "exists": true,
+        "bytes": 2441072,
+        "sha256": "37d38f4bc9a211a93770e2afc5fbf9f05c440c54e90d9b3aa3ed8c8fb9f1325e"
+      },
+      "cache": {
+        "path": "/home/a200/0proj/ITM/outputs/standard_imu/test/004822.npz",
+        "exists": true,
+        "bytes": 366916,
+        "sha256": "ed57bdb75221ef6dc3c8e22a495816fb6fcf048d5e09a299cb8d5be1ec91e347"
+      },
+      "comparison": {
+        "acceleration": {
+          "cached_shape": [
+            300,
+            6,
+            3
+          ],
+          "computed_shape": [
+            300,
+            6,
+            3
+          ],
+          "max_abs_difference": 0.00012874603271484375,
+          "allclose_atol_1e-4_rtol_1e-4": false
+        },
+        "orientation": {
+          "cached_shape": [
+            300,
+            6,
+            3,
+            3
+          ],
+          "computed_shape": [
+            300,
+            6,
+            3,
+            3
+          ],
+          "max_abs_difference": 5.364418029785156e-07,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "local_rotation": {
+          "cached_shape": [
+            300,
+            24,
+            3,
+            3
+          ],
+          "computed_shape": [
+            300,
+            24,
+            3,
+            3
+          ],
+          "max_abs_difference": 4.172325134277344e-07,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "joints": {
+          "cached_shape": [
+            300,
+            24,
+            3
+          ],
+          "computed_shape": [
+            300,
+            24,
+            3
+          ],
+          "max_abs_difference": 4.172325134277344e-07,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "translation": {
+          "cached_shape": [
+            300,
+            3
+          ],
+          "computed_shape": [
+            300,
+            3
+          ],
+          "max_abs_difference": 0.0,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "shape": {
+          "cached_shape": [
+            10
+          ],
+          "computed_shape": [
+            10
+          ],
+          "max_abs_difference": 0.0,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        }
+      }
+    }
+  ],
+  "limitation": "three source/cache comparisons only; not HumanML representation round-trip certification"
+}

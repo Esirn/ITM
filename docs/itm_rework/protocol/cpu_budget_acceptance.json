@@ -1,0 +1,36 @@
+{
+  "kind": "owner02_completed_bounded_CPU_acceptance",
+  "gpu_jobs": 0,
+  "new_training_updates": 0,
+  "new_full_generation_samples": 0,
+  "jobs": [
+    {
+      "id": "method_acceptance_v2",
+      "noise_draws_recomputed": 3000,
+      "model_forwards": 0
+    },
+    {
+      "id": "physical_static",
+      "threads": 2,
+      "frames": 12,
+      "model_forwards": 7
+    },
+    {
+      "id": "source_alignment",
+      "clips": 9,
+      "fixed_lags": [
+        -1,
+        0,
+        1
+      ],
+      "model_forwards": 0
+    },
+    {
+      "id": "arm_spread_candidates",
+      "train_clips": 3,
+      "fixed_rotation_degrees": 10,
+      "parameter_search": false
+    }
+  ],
+  "stop_condition": "No new GPU training/sampling, witness promotion or formal JSR before substantive protocol gates are met."
+}

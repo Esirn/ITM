@@ -1,0 +1,5 @@
+{
+  "status": "failed",
+  "reason": "audit used HumanML263 lengths; actual legacy sampler uses standard-cache GT joints (one-frame differences exist)",
+  "partial_results_written": false
+}

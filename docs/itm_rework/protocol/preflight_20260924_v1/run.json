@@ -1,0 +1,37 @@
+{
+  "queue": {
+    "path": "docs/itm_rework/protocol/run_queue.json",
+    "exists": true,
+    "bytes": 792,
+    "sha256": "b3ff0c3c575d7503b90fae918b053bb144de92f11bedff0f0023bb5b44c5e602"
+  },
+  "mode": "dry_run",
+  "gpu_jobs": 0,
+  "concurrency": 1,
+  "jobs": [
+    {
+      "job_id": "compatible_C",
+      "command": [
+        "/home/a200/miniconda3/envs/itm/bin/python",
+        "scripts/evaluate_rework_records.py",
+        "--expected",
+        "docs/itm_rework/protocol/C_expected_frozen.jsonl",
+        "--records",
+        "docs/itm_rework/protocol/C_output_records.jsonl",
+        "--thresholds",
+        "docs/itm_rework/protocol/thresholds.json",
+        "--output",
+        "docs/itm_rework/protocol/preflight_20260924_v1/compatible_C.json"
+      ],
+      "timeout_seconds": 60,
+      "blockers": [
+        "B0 not delivered by method owner",
+        "compatible witnesses absent",
+        "thresholds are draft",
+        "missing input: docs/itm_rework/protocol/C_expected_frozen.jsonl",
+        "missing input: docs/itm_rework/protocol/C_output_records.jsonl"
+      ],
+      "status": "blocked"
+    }
+  ]
+}

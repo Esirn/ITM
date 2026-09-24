@@ -1,0 +1,20 @@
+{
+  "version": "arm-spread-geometric-v1",
+  "target": "arms farther apart",
+  "training_metric": "mean_horizontal_wrist_separation_m",
+  "not_equivalent_to": "temporal_arm_swing_amplitude",
+  "secondary_check": "torso_frame_signed_shoulder_outward_angle_deg_from_elbows",
+  "implementation": {
+    "path": "src/itm/metrics/arm_attributes.py",
+    "sha256": "53f94605ac5f16f4ad7ae6faedcf89b8ab74287776de4db4ba132eb8217bbffe"
+  },
+  "semantic_thresholds": "unfrozen",
+  "naturalness_criterion": "pending_independent_review",
+  "supported_witness_status": {
+    "head": "analytic_head_joint_invariance_only_all_candidates_uncertain",
+    "wrists": "not_assumed_compatible; fixed_wrist_joint_proxy_determines_spread"
+  },
+  "triangle_inequality": "abs(spread(edit)-spread(base)) <= mean(norm(delta_left_wrist)+norm(delta_right_wrist))",
+  "measurement_claim": "joint_position_bound_is_not_an_IMU_incompatibility_proof",
+  "independent_semantic_success_certified": false
+}

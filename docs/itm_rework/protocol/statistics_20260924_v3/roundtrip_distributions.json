@@ -1,0 +1,68 @@
+{
+  "gt_5x200": {
+    "source": {
+      "path": "outputs/mdm_control/virtual_imu_roundtrip/gt_5x200.json",
+      "exists": true,
+      "bytes": 2592,
+      "sha256": "7088c49a418ac5de1c8090a943bf80b7df76db2fb8a1a9375ed75e27a13102ba"
+    },
+    "fit_failure_rate": 0.0,
+    "certified": false,
+    "metrics": {
+      "active_sensor_trajectory_error_m": {
+        "mean": 0.007646401263529291,
+        "median": 0.007632659266981842,
+        "p95": 0.011733827506974872,
+        "threshold": 0.05,
+        "exceedance_rate": 0.0
+      },
+      "virtual_acceleration_error_mps2": {
+        "mean": 0.8851078900844718,
+        "median": 0.5039898347143138,
+        "p95": 1.8422733351834617,
+        "threshold": 0.5,
+        "exceedance_rate": 0.6
+      },
+      "virtual_orientation_error_rad": {
+        "mean": 0.32008652857183123,
+        "median": 0.3170322872943452,
+        "p95": 0.40297223204974775,
+        "threshold": 0.2,
+        "exceedance_rate": 1.0
+      }
+    }
+  },
+  "gt_wrists_5x200": {
+    "source": {
+      "path": "outputs/mdm_control/virtual_imu_roundtrip/gt_wrists_5x200.json",
+      "exists": true,
+      "bytes": 2586,
+      "sha256": "8573e017bedb556d72c3d4a7a0b204fe23b11af82faad17e2fd1199f16145d09"
+    },
+    "fit_failure_rate": 0.0,
+    "certified": false,
+    "metrics": {
+      "active_sensor_trajectory_error_m": {
+        "mean": 0.007808525152569778,
+        "median": 0.007733715601831952,
+        "p95": 0.01139815032625283,
+        "threshold": 0.05,
+        "exceedance_rate": 0.0
+      },
+      "virtual_acceleration_error_mps2": {
+        "mean": 2.5635108395288646,
+        "median": 2.7246041821745584,
+        "p95": 4.42680735872436,
+        "threshold": 0.5,
+        "exceedance_rate": 1.0
+      },
+      "virtual_orientation_error_rad": {
+        "mean": 1.0324864339248816,
+        "median": 1.229810863650146,
+        "p95": 1.2632636664120689,
+        "threshold": 0.2,
+        "exceedance_rate": 1.0
+      }
+    }
+  }
+}

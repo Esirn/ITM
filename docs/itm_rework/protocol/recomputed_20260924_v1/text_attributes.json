@@ -1,0 +1,2711 @@
+{
+  "stage2b": {
+    "sources": [
+      "/home/a200/0proj/ITM/outputs/mdm_control/text_attribute_formal/results/stage2b_attributes_000.npz",
+      "/home/a200/0proj/ITM/outputs/mdm_control/text_attribute_formal/results/stage2b_attributes_005.npz",
+      "/home/a200/0proj/ITM/outputs/mdm_control/text_attribute_formal/results/stage2b_attributes_010.npz",
+      "/home/a200/0proj/ITM/outputs/mdm_control/text_attribute_formal/results/stage2b_attributes_015.npz",
+      "/home/a200/0proj/ITM/outputs/mdm_control/text_attribute_formal/results/stage2b_attributes_020.npz",
+      "/home/a200/0proj/ITM/outputs/mdm_control/text_attribute_formal/results/stage2b_attributes_025.npz"
+    ],
+    "checkpoint": "/home/a200/0proj/ITM/outputs/mdm_control/stage2b_balanced_b.pt",
+    "seed": 1234,
+    "samples": 30,
+    "frame_lengths": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      107,
+      107,
+      107,
+      107,
+      107,
+      107,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      102,
+      102,
+      102,
+      102,
+      102,
+      102,
+      113,
+      113,
+      113,
+      113,
+      113,
+      113,
+      159,
+      159,
+      159,
+      159,
+      159,
+      159,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      189,
+      189,
+      189,
+      189,
+      189,
+      189,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      39,
+      39,
+      39,
+      39,
+      39,
+      39,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      138,
+      138,
+      138,
+      138,
+      138,
+      138,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      70,
+      70,
+      70,
+      70,
+      70,
+      70,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196
+    ],
+    "summary": {
+      "quick_minus_slow_speed_mps": {
+        "mean": -0.01985830068588257,
+        "ci95": [
+          -0.11965222328901291,
+          0.11688216665138798
+        ],
+        "desired_count": 5,
+        "samples": 30
+      },
+      "turn_minus_base_turning_rad": {
+        "mean": 2.368867564201355,
+        "ci95": [
+          1.5690532165765763,
+          3.1908909447987854
+        ],
+        "desired_count": 25,
+        "samples": 30
+      },
+      "swing_minus_base_arm_swing_m": {
+        "mean": 0.09793430380523205,
+        "ci95": [
+          0.08120716068893671,
+          0.11438885661462943
+        ],
+        "desired_count": 29,
+        "samples": 30
+      },
+      "large_minus_base_stride_span_m": {
+        "mean": -0.023659132917722068,
+        "ci95": [
+          -0.0781620216369629,
+          0.030828117157022102
+        ],
+        "desired_count": 12,
+        "samples": 30
+      },
+      "quick_minus_slow_cadence_hz": {
+        "mean": 0.22035395193023274,
+        "ci95": [
+          -0.04818473700936179,
+          0.4909234348676637
+        ],
+        "desired_count": 19,
+        "samples": 30
+      },
+      "turn_minus_base_net_yaw_rad": {
+        "mean": 3.257286032040914,
+        "ci95": [
+          2.3434139860669774,
+          4.19626590758562
+        ],
+        "desired_count": 26,
+        "samples": 30
+      },
+      "turn_minus_base_efficiency": {
+        "mean": 0.3195504924409543,
+        "ci95": [
+          0.19645545008696183,
+          0.44005895253197674
+        ],
+        "desired_count": 23,
+        "samples": 30
+      },
+      "large_minus_base_foot_separation_m": {
+        "mean": -0.010079462329546611,
+        "ci95": [
+          -0.050361100832621256,
+          0.02890183192988236
+        ],
+        "desired_count": 14,
+        "samples": 30
+      },
+      "edited_minus_base_head_error_m": {
+        "mean": 0.007407790720462799,
+        "ci95": [
+          0.003045822979261478,
+          0.01167957356199622
+        ],
+        "samples": 150
+      }
+    },
+    "records": [
+      {
+        "motion_id": "002149",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.3136821687221527,
+            "turning_rad": 3.209529161453247,
+            "net_turning_rad": 0.8365533351898193,
+            "turning_efficiency": 0.2606467469549444,
+            "arm_swing_m": 0.0673658549785614,
+            "stride_span_m": 0.5126378536224365,
+            "cadence_hz": 1.6352201257861636,
+            "foot_separation_m": 0.5977110266685486,
+            "head_error_m": 0.1196405440568924
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.8859633803367615,
+            "turning_rad": 3.672661066055298,
+            "net_turning_rad": 2.2165322303771973,
+            "turning_efficiency": 0.6035221302786625,
+            "arm_swing_m": 0.15999917685985565,
+            "stride_span_m": 0.7315353155136108,
+            "cadence_hz": 1.6352201257861636,
+            "foot_separation_m": 0.7236632704734802,
+            "head_error_m": 0.1409025639295578
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.5977507829666138,
+            "turning_rad": 1.9459447860717773,
+            "net_turning_rad": 0.4698162078857422,
+            "turning_efficiency": 0.24143347295795922,
+            "arm_swing_m": 0.08376452326774597,
+            "stride_span_m": 0.813461422920227,
+            "cadence_hz": 1.1320754716981132,
+            "foot_separation_m": 0.6937479376792908,
+            "head_error_m": 0.12993116676807404
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.4933556020259857,
+            "turning_rad": 1.8627371788024902,
+            "net_turning_rad": 0.22035551071166992,
+            "turning_efficiency": 0.11829661920063854,
+            "arm_swing_m": 0.0715944916009903,
+            "stride_span_m": 0.5603322386741638,
+            "cadence_hz": 1.8867924528301887,
+            "foot_separation_m": 0.6469606161117554,
+            "head_error_m": 0.12198767811059952
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.5174735188484192,
+            "turning_rad": 4.250818252563477,
+            "net_turning_rad": 1.8818094730377197,
+            "turning_efficiency": 0.4426934677583276,
+            "arm_swing_m": 0.1359415352344513,
+            "stride_span_m": 0.6220909357070923,
+            "cadence_hz": 1.3836477987421383,
+            "foot_separation_m": 0.6040319204330444,
+            "head_error_m": 0.16782240569591522
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.28872841596603394,
+            "turning_rad": 0.9936175346374512,
+            "net_turning_rad": 0.39544010162353516,
+            "turning_efficiency": 0.3979801964423086,
+            "arm_swing_m": 0.05705893039703369,
+            "stride_span_m": 0.39284002780914307,
+            "cadence_hz": 1.6352201257861636,
+            "foot_separation_m": 0.4936983287334442,
+            "head_error_m": 0.12286076694726944
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.10439518094062805,
+          "turn_minus_base_turning_rad": 1.0412890911102295,
+          "swing_minus_base_arm_swing_m": 0.09263332188129425,
+          "large_minus_base_stride_span_m": -0.11979782581329346,
+          "quick_minus_slow_cadence_hz": 0.7547169811320755,
+          "turn_minus_base_net_yaw_rad": 1.0452561378479004,
+          "turn_minus_base_efficiency": 0.1820467208033832,
+          "large_minus_base_foot_separation_m": -0.10401269793510437
+        }
+      },
+      {
+        "motion_id": "005813",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.5277498960494995,
+            "turning_rad": 2.8420937061309814,
+            "net_turning_rad": 1.0155956745147705,
+            "turning_efficiency": 0.3573406718870393,
+            "arm_swing_m": 0.07642749696969986,
+            "stride_span_m": 0.6753650903701782,
+            "cadence_hz": 1.5094339622641508,
+            "foot_separation_m": 0.6530348658561707,
+            "head_error_m": 0.11983585357666016
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 1.0725308656692505,
+            "turning_rad": 2.7963037490844727,
+            "net_turning_rad": 0.05932331085205078,
+            "turning_efficiency": 0.021214902305042364,
+            "arm_swing_m": 0.06707476824522018,
+            "stride_span_m": 0.8408890962600708,
+            "cadence_hz": 1.6981132075471697,
+            "foot_separation_m": 0.8217822313308716,
+            "head_error_m": 0.1132645457983017
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.5015555620193481,
+            "turning_rad": 1.3900771141052246,
+            "net_turning_rad": 0.22283554077148438,
+            "turning_efficiency": 0.16030444535080404,
+            "arm_swing_m": 0.03489620238542557,
+            "stride_span_m": 0.6647450923919678,
+            "cadence_hz": 1.320754716981132,
+            "foot_separation_m": 0.6824354529380798,
+            "head_error_m": 0.11439983546733856
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.5887898206710815,
+            "turning_rad": 1.5100748538970947,
+            "net_turning_rad": 0.21616387367248535,
+            "turning_efficiency": 0.14314778708792142,
+            "arm_swing_m": 0.09266819804906845,
+            "stride_span_m": 0.5710769295692444,
+            "cadence_hz": 0.3773584905660377,
+            "foot_separation_m": 0.5591752529144287,
+            "head_error_m": 0.1468781977891922
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.7298517823219299,
+            "turning_rad": 4.643772602081299,
+            "net_turning_rad": 3.064927101135254,
+            "turning_efficiency": 0.6600080072313576,
+            "arm_swing_m": 0.12394104897975922,
+            "stride_span_m": 0.6192404627799988,
+            "cadence_hz": 1.6981132075471697,
+            "foot_separation_m": 0.5998921990394592,
+            "head_error_m": 0.16580018401145935
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.6044158339500427,
+            "turning_rad": 1.3119902610778809,
+            "net_turning_rad": 0.5712056159973145,
+            "turning_efficiency": 0.43537336590290987,
+            "arm_swing_m": 0.05354776233434677,
+            "stride_span_m": 0.5695291757583618,
+            "cadence_hz": 1.5094339622641508,
+            "foot_separation_m": 0.6257582306861877,
+            "head_error_m": 0.10507501661777496
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": 0.0872342586517334,
+          "turn_minus_base_turning_rad": 1.8016788959503174,
+          "swing_minus_base_arm_swing_m": -0.009352728724479675,
+          "large_minus_base_stride_span_m": -0.1058359146118164,
+          "quick_minus_slow_cadence_hz": -0.9433962264150944,
+          "turn_minus_base_net_yaw_rad": 2.0493314266204834,
+          "turn_minus_base_efficiency": 0.3026673353443183,
+          "large_minus_base_foot_separation_m": -0.02727663516998291
+        }
+      },
+      {
+        "motion_id": "008556",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.5906416773796082,
+            "turning_rad": 4.32924747467041,
+            "net_turning_rad": 1.9070600271224976,
+            "turning_efficiency": 0.44050612451247867,
+            "arm_swing_m": 0.1268843114376068,
+            "stride_span_m": 0.6009827852249146,
+            "cadence_hz": 1.9487179487179487,
+            "foot_separation_m": 0.6446037292480469,
+            "head_error_m": 0.6019615530967712
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 1.0216220617294312,
+            "turning_rad": 5.274124622344971,
+            "net_turning_rad": 3.8167872428894043,
+            "turning_efficiency": 0.7236816564247949,
+            "arm_swing_m": 0.20998939871788025,
+            "stride_span_m": 0.6797183752059937,
+            "cadence_hz": 1.7435897435897436,
+            "foot_separation_m": 0.667422890663147,
+            "head_error_m": 0.6075292825698853
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.39840081334114075,
+            "turning_rad": 1.5974016189575195,
+            "net_turning_rad": 0.5655040740966797,
+            "turning_efficiency": 0.3540149624148581,
+            "arm_swing_m": 0.04427973926067352,
+            "stride_span_m": 0.6231997013092041,
+            "cadence_hz": 1.1282051282051282,
+            "foot_separation_m": 0.6044694781303406,
+            "head_error_m": 0.5978879928588867
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.36013591289520264,
+            "turning_rad": 1.7229981422424316,
+            "net_turning_rad": 0.5557432174682617,
+            "turning_efficiency": 0.32254429290618863,
+            "arm_swing_m": 0.05348581075668335,
+            "stride_span_m": 0.5092006325721741,
+            "cadence_hz": 0.41025641025641024,
+            "foot_separation_m": 0.5533714294433594,
+            "head_error_m": 0.5787644982337952
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.41246023774147034,
+            "turning_rad": 6.465449333190918,
+            "net_turning_rad": 3.8910107612609863,
+            "turning_efficiency": 0.6018159853617847,
+            "arm_swing_m": 0.0951903760433197,
+            "stride_span_m": 0.533173680305481,
+            "cadence_hz": 1.3333333333333333,
+            "foot_separation_m": 0.5823804140090942,
+            "head_error_m": 0.6332488059997559
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.45934396982192993,
+            "turning_rad": 1.4875693321228027,
+            "net_turning_rad": 0.45775318145751953,
+            "turning_efficiency": 0.30771888850672463,
+            "arm_swing_m": 0.060125209391117096,
+            "stride_span_m": 0.5564444661140442,
+            "cadence_hz": 1.5384615384615383,
+            "foot_separation_m": 0.6149711608886719,
+            "head_error_m": 0.5411345362663269
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.03826490044593811,
+          "turn_minus_base_turning_rad": 2.136201858520508,
+          "swing_minus_base_arm_swing_m": 0.08310508728027344,
+          "large_minus_base_stride_span_m": -0.04453831911087036,
+          "quick_minus_slow_cadence_hz": -0.717948717948718,
+          "turn_minus_base_net_yaw_rad": 1.9839507341384888,
+          "turn_minus_base_efficiency": 0.16130986084930604,
+          "large_minus_base_foot_separation_m": -0.029632568359375
+        }
+      },
+      {
+        "motion_id": "004428",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.4302200675010681,
+            "turning_rad": 5.364928245544434,
+            "net_turning_rad": 3.0702455043792725,
+            "turning_efficiency": 0.5722808141803402,
+            "arm_swing_m": 0.059720419347286224,
+            "stride_span_m": 0.5629092454910278,
+            "cadence_hz": 1.846153846153846,
+            "foot_separation_m": 0.6617298126220703,
+            "head_error_m": 0.1106940284371376
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.8481764793395996,
+            "turning_rad": 3.797833204269409,
+            "net_turning_rad": 0.7777941226959229,
+            "turning_efficiency": 0.20479944243511017,
+            "arm_swing_m": 0.20575934648513794,
+            "stride_span_m": 0.6580406427383423,
+            "cadence_hz": 1.641025641025641,
+            "foot_separation_m": 0.7070025205612183,
+            "head_error_m": 0.0948324128985405
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.36970770359039307,
+            "turning_rad": 1.2271113395690918,
+            "net_turning_rad": 0.7441048622131348,
+            "turning_efficiency": 0.6063874061129874,
+            "arm_swing_m": 0.03975799307227135,
+            "stride_span_m": 0.6271451711654663,
+            "cadence_hz": 0.8205128205128205,
+            "foot_separation_m": 0.5112802982330322,
+            "head_error_m": 0.07978487014770508
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.27767854928970337,
+            "turning_rad": 2.5477652549743652,
+            "net_turning_rad": 2.323152542114258,
+            "turning_efficiency": 0.9118393217657851,
+            "arm_swing_m": 0.03827953338623047,
+            "stride_span_m": 0.4148437976837158,
+            "cadence_hz": 1.3333333333333333,
+            "foot_separation_m": 0.46457546949386597,
+            "head_error_m": 0.0853424146771431
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.5172357559204102,
+            "turning_rad": 11.816343307495117,
+            "net_turning_rad": 11.138349533081055,
+            "turning_efficiency": 0.9426223699861521,
+            "arm_swing_m": 0.15619933605194092,
+            "stride_span_m": 0.5647168159484863,
+            "cadence_hz": 1.5384615384615383,
+            "foot_separation_m": 0.5659700632095337,
+            "head_error_m": 0.12339728325605392
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.27729132771492004,
+            "turning_rad": 3.432668685913086,
+            "net_turning_rad": 1.4024087190628052,
+            "turning_efficiency": 0.40854764831164186,
+            "arm_swing_m": 0.05412522703409195,
+            "stride_span_m": 0.4462333917617798,
+            "cadence_hz": 1.2307692307692308,
+            "foot_separation_m": 0.46043187379837036,
+            "head_error_m": 0.08973314613103867
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.0920291543006897,
+          "turn_minus_base_turning_rad": 6.451415061950684,
+          "swing_minus_base_arm_swing_m": 0.14603892713785172,
+          "large_minus_base_stride_span_m": -0.11667585372924805,
+          "quick_minus_slow_cadence_hz": 0.5128205128205128,
+          "turn_minus_base_net_yaw_rad": 8.068104028701782,
+          "turn_minus_base_efficiency": 0.37034155580581196,
+          "large_minus_base_foot_separation_m": -0.20129793882369995
+        }
+      },
+      {
+        "motion_id": "006733",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.5696821808815002,
+            "turning_rad": 2.0100855827331543,
+            "net_turning_rad": 1.8099102973937988,
+            "turning_efficiency": 0.9004145459980002,
+            "arm_swing_m": 0.0870015099644661,
+            "stride_span_m": 0.6174086928367615,
+            "cadence_hz": 1.386138613861386,
+            "foot_separation_m": 0.6104577779769897,
+            "head_error_m": 0.08787361532449722
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.9581015706062317,
+            "turning_rad": 1.1315281391143799,
+            "net_turning_rad": 0.43343615531921387,
+            "turning_efficiency": 0.3830538016124407,
+            "arm_swing_m": 0.19993160665035248,
+            "stride_span_m": 0.749119758605957,
+            "cadence_hz": 1.584158415841584,
+            "foot_separation_m": 0.697913408279419,
+            "head_error_m": 0.09356660395860672
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.6239855289459229,
+            "turning_rad": 0.9586408138275146,
+            "net_turning_rad": 0.4421851634979248,
+            "turning_efficiency": 0.46126260964462323,
+            "arm_swing_m": 0.10839290916919708,
+            "stride_span_m": 0.7641730308532715,
+            "cadence_hz": 1.188118811881188,
+            "foot_separation_m": 0.6339454054832458,
+            "head_error_m": 0.09085909277200699
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.6116819977760315,
+            "turning_rad": 1.4121925830841064,
+            "net_turning_rad": 0.35036778450012207,
+            "turning_efficiency": 0.24810198601592223,
+            "arm_swing_m": 0.031076988205313683,
+            "stride_span_m": 0.6537485122680664,
+            "cadence_hz": 1.386138613861386,
+            "foot_separation_m": 0.6406204700469971,
+            "head_error_m": 0.06400030851364136
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.490104079246521,
+            "turning_rad": 2.968964099884033,
+            "net_turning_rad": 1.932508945465088,
+            "turning_efficiency": 0.6509034398700109,
+            "arm_swing_m": 0.07990521192550659,
+            "stride_span_m": 0.5525408983230591,
+            "cadence_hz": 1.584158415841584,
+            "foot_separation_m": 0.5610019564628601,
+            "head_error_m": 0.09134191274642944
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.7605600357055664,
+            "turning_rad": 1.7892658710479736,
+            "net_turning_rad": 0.3591935634613037,
+            "turning_efficiency": 0.20074912804932893,
+            "arm_swing_m": 0.051102057099342346,
+            "stride_span_m": 0.8422215580940247,
+            "cadence_hz": 1.386138613861386,
+            "foot_separation_m": 0.854833722114563,
+            "head_error_m": 0.09218434989452362
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.012303531169891357,
+          "turn_minus_base_turning_rad": 0.9588785171508789,
+          "swing_minus_base_arm_swing_m": 0.11293009668588638,
+          "large_minus_base_stride_span_m": 0.22481286525726318,
+          "quick_minus_slow_cadence_hz": 0.19801980198019797,
+          "turn_minus_base_net_yaw_rad": 0.12259864807128906,
+          "turn_minus_base_efficiency": -0.24951110612798932,
+          "large_minus_base_foot_separation_m": 0.24437594413757324
+        }
+      },
+      {
+        "motion_id": "008457",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.49308258295059204,
+            "turning_rad": 2.5611233711242676,
+            "net_turning_rad": 0.6248488426208496,
+            "turning_efficiency": 0.2439745190199709,
+            "arm_swing_m": 0.07751002162694931,
+            "stride_span_m": 0.6485312581062317,
+            "cadence_hz": 1.4285714285714284,
+            "foot_separation_m": 0.6400378942489624,
+            "head_error_m": 0.08411865681409836
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.9139900207519531,
+            "turning_rad": 1.937520980834961,
+            "net_turning_rad": 0.21407794952392578,
+            "turning_efficiency": 0.11049064843244712,
+            "arm_swing_m": 0.19516512751579285,
+            "stride_span_m": 0.7806684970855713,
+            "cadence_hz": 1.607142857142857,
+            "foot_separation_m": 0.7710586190223694,
+            "head_error_m": 0.10262401401996613
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.6455616354942322,
+            "turning_rad": 2.360854387283325,
+            "net_turning_rad": 0.16911911964416504,
+            "turning_efficiency": 0.07163471010966214,
+            "arm_swing_m": 0.050702013075351715,
+            "stride_span_m": 0.8971647620201111,
+            "cadence_hz": 1.0714285714285712,
+            "foot_separation_m": 0.8120554685592651,
+            "head_error_m": 0.11405491083860397
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.654272198677063,
+            "turning_rad": 1.8863558769226074,
+            "net_turning_rad": 0.3112363815307617,
+            "turning_efficiency": 0.1649934592609913,
+            "arm_swing_m": 0.10009857267141342,
+            "stride_span_m": 0.6770059466362,
+            "cadence_hz": 2.321428571428571,
+            "foot_separation_m": 0.7046344876289368,
+            "head_error_m": 0.08427036553621292
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.6117215156555176,
+            "turning_rad": 3.0634636878967285,
+            "net_turning_rad": 2.0045852661132812,
+            "turning_efficiency": 0.654352546770209,
+            "arm_swing_m": 0.10401062667369843,
+            "stride_span_m": 0.6274167895317078,
+            "cadence_hz": 1.4285714285714284,
+            "foot_separation_m": 0.5862405300140381,
+            "head_error_m": 0.12095028162002563
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.45161178708076477,
+            "turning_rad": 1.2072582244873047,
+            "net_turning_rad": 0.3138093948364258,
+            "turning_efficiency": 0.25993560322994985,
+            "arm_swing_m": 0.09747501462697983,
+            "stride_span_m": 0.5309752821922302,
+            "cadence_hz": 1.4285714285714284,
+            "foot_separation_m": 0.6071732640266418,
+            "head_error_m": 0.08406545221805573
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": 0.00871056318283081,
+          "turn_minus_base_turning_rad": 0.5023403167724609,
+          "swing_minus_base_arm_swing_m": 0.11765510588884354,
+          "large_minus_base_stride_span_m": -0.11755597591400146,
+          "quick_minus_slow_cadence_hz": 1.25,
+          "turn_minus_base_net_yaw_rad": 1.3797364234924316,
+          "turn_minus_base_efficiency": 0.41037802775023813,
+          "large_minus_base_foot_separation_m": -0.03286463022232056
+        }
+      },
+      {
+        "motion_id": "005787",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.34616708755493164,
+            "turning_rad": 3.7038350105285645,
+            "net_turning_rad": 0.48542022705078125,
+            "turning_efficiency": 0.13105881489616036,
+            "arm_swing_m": 0.06832021474838257,
+            "stride_span_m": 0.5818389654159546,
+            "cadence_hz": 1.3924050632911391,
+            "foot_separation_m": 0.6223745942115784,
+            "head_error_m": 0.08829333633184433
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.9876850247383118,
+            "turning_rad": 3.898580312728882,
+            "net_turning_rad": 0.47072625160217285,
+            "turning_efficiency": 0.12074299202333977,
+            "arm_swing_m": 0.13863505423069,
+            "stride_span_m": 0.7527220249176025,
+            "cadence_hz": 1.5189873417721516,
+            "foot_separation_m": 0.7633399367332458,
+            "head_error_m": 0.09144572168588638
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.470165878534317,
+            "turning_rad": 2.098660945892334,
+            "net_turning_rad": 0.6206393241882324,
+            "turning_efficiency": 0.29573110673403297,
+            "arm_swing_m": 0.03983836621046066,
+            "stride_span_m": 0.7332320809364319,
+            "cadence_hz": 1.0126582278481011,
+            "foot_separation_m": 0.5856152176856995,
+            "head_error_m": 0.09422365576028824
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.2874661684036255,
+            "turning_rad": 1.3621351718902588,
+            "net_turning_rad": 0.3955380916595459,
+            "turning_efficiency": 0.2903809400286249,
+            "arm_swing_m": 0.0380953773856163,
+            "stride_span_m": 0.3587407171726227,
+            "cadence_hz": 0.3797468354430379,
+            "foot_separation_m": 0.5706004500389099,
+            "head_error_m": 0.09672541916370392
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.7640921473503113,
+            "turning_rad": 5.168483734130859,
+            "net_turning_rad": 3.9032647609710693,
+            "turning_efficiency": 0.7552050004908158,
+            "arm_swing_m": 0.17756319046020508,
+            "stride_span_m": 0.7107104063034058,
+            "cadence_hz": 1.2658227848101264,
+            "foot_separation_m": 0.6936008334159851,
+            "head_error_m": 0.1507299542427063
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.6679056882858276,
+            "turning_rad": 3.4930224418640137,
+            "net_turning_rad": 2.5356884002685547,
+            "turning_efficiency": 0.7259296046536168,
+            "arm_swing_m": 0.06540878862142563,
+            "stride_span_m": 0.6142546534538269,
+            "cadence_hz": 1.5189873417721516,
+            "foot_separation_m": 0.6120627522468567,
+            "head_error_m": 0.08692507445812225
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.18269971013069153,
+          "turn_minus_base_turning_rad": 1.464648723602295,
+          "swing_minus_base_arm_swing_m": 0.07031483948230743,
+          "large_minus_base_stride_span_m": 0.032415688037872314,
+          "quick_minus_slow_cadence_hz": -0.6329113924050632,
+          "turn_minus_base_net_yaw_rad": 3.417844533920288,
+          "turn_minus_base_efficiency": 0.6241461855946555,
+          "large_minus_base_foot_separation_m": -0.01031184196472168
+        }
+      },
+      {
+        "motion_id": "007999",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.7591893076896667,
+            "turning_rad": 4.985157489776611,
+            "net_turning_rad": 1.5106377601623535,
+            "turning_efficiency": 0.3030270885644671,
+            "arm_swing_m": 0.14123928546905518,
+            "stride_span_m": 0.5891944169998169,
+            "cadence_hz": 1.9487179487179487,
+            "foot_separation_m": 0.6418300867080688,
+            "head_error_m": 0.19536150991916656
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.9984976649284363,
+            "turning_rad": 5.5817365646362305,
+            "net_turning_rad": 4.124508380889893,
+            "turning_efficiency": 0.7389292441748713,
+            "arm_swing_m": 0.1901405155658722,
+            "stride_span_m": 0.6540006399154663,
+            "cadence_hz": 1.7435897435897436,
+            "foot_separation_m": 0.7017871141433716,
+            "head_error_m": 0.17942899465560913
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.42510873079299927,
+            "turning_rad": 2.0053317546844482,
+            "net_turning_rad": 0.5341823101043701,
+            "turning_efficiency": 0.2663810159373989,
+            "arm_swing_m": 0.04117220267653465,
+            "stride_span_m": 0.637099027633667,
+            "cadence_hz": 1.1282051282051282,
+            "foot_separation_m": 0.6343668699264526,
+            "head_error_m": 0.17444351315498352
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.36934566497802734,
+            "turning_rad": 1.7589614391326904,
+            "net_turning_rad": 0.4246342182159424,
+            "turning_efficiency": 0.24141189725302975,
+            "arm_swing_m": 0.06152432784438133,
+            "stride_span_m": 0.5184205770492554,
+            "cadence_hz": 1.9487179487179487,
+            "foot_separation_m": 0.6107147336006165,
+            "head_error_m": 0.22541044652462006
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.43942996859550476,
+            "turning_rad": 7.440591335296631,
+            "net_turning_rad": 4.54653263092041,
+            "turning_efficiency": 0.6110445293981672,
+            "arm_swing_m": 0.10896708816289902,
+            "stride_span_m": 0.5234544277191162,
+            "cadence_hz": 1.435897435897436,
+            "foot_separation_m": 0.5713796615600586,
+            "head_error_m": 0.18693707883358002
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.3593066930770874,
+            "turning_rad": 1.431288242340088,
+            "net_turning_rad": 0.41518497467041016,
+            "turning_efficiency": 0.2900778210764888,
+            "arm_swing_m": 0.06457392126321793,
+            "stride_span_m": 0.4293035566806793,
+            "cadence_hz": 1.7435897435897436,
+            "foot_separation_m": 0.6042951345443726,
+            "head_error_m": 0.24477869272232056
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.055763065814971924,
+          "turn_minus_base_turning_rad": 2.4554338455200195,
+          "swing_minus_base_arm_swing_m": 0.04890123009681702,
+          "large_minus_base_stride_span_m": -0.15989086031913757,
+          "quick_minus_slow_cadence_hz": 0.8205128205128205,
+          "turn_minus_base_net_yaw_rad": 3.0358948707580566,
+          "turn_minus_base_efficiency": 0.30801744083370014,
+          "large_minus_base_foot_separation_m": -0.03753495216369629
+        }
+      },
+      {
+        "motion_id": "008170",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.534900963306427,
+            "turning_rad": 3.035694122314453,
+            "net_turning_rad": 2.0193231105804443,
+            "turning_efficiency": 0.6651932076216183,
+            "arm_swing_m": 0.05837581679224968,
+            "stride_span_m": 0.6596724987030029,
+            "cadence_hz": 1.8085106382978724,
+            "foot_separation_m": 0.6939879655838013,
+            "head_error_m": 0.12017808109521866
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.9691709280014038,
+            "turning_rad": 4.416046142578125,
+            "net_turning_rad": 0.8606863021850586,
+            "turning_efficiency": 0.19489975294564804,
+            "arm_swing_m": 0.1996784508228302,
+            "stride_span_m": 0.7072365880012512,
+            "cadence_hz": 1.702127659574468,
+            "foot_separation_m": 0.7380375862121582,
+            "head_error_m": 0.17432482540607452
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.3658801019191742,
+            "turning_rad": 1.2245986461639404,
+            "net_turning_rad": 0.8176600933074951,
+            "turning_efficiency": 0.6676963884198454,
+            "arm_swing_m": 0.039918698370456696,
+            "stride_span_m": 0.6788352727890015,
+            "cadence_hz": 0.7446808510638298,
+            "foot_separation_m": 0.5502730011940002,
+            "head_error_m": 0.11506101489067078
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.28442952036857605,
+            "turning_rad": 1.9051719903945923,
+            "net_turning_rad": 1.3382846117019653,
+            "turning_efficiency": 0.7024481875910766,
+            "arm_swing_m": 0.031221773475408554,
+            "stride_span_m": 0.43769556283950806,
+            "cadence_hz": 1.3829787234042554,
+            "foot_separation_m": 0.4671922028064728,
+            "head_error_m": 0.11652280390262604
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.40258118510246277,
+            "turning_rad": 8.870683670043945,
+            "net_turning_rad": 4.951129913330078,
+            "turning_efficiency": 0.5581452453377306,
+            "arm_swing_m": 0.15250970423221588,
+            "stride_span_m": 0.48499786853790283,
+            "cadence_hz": 1.4893617021276595,
+            "foot_separation_m": 0.4842144846916199,
+            "head_error_m": 0.15634502470493317
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.33829304575920105,
+            "turning_rad": 3.539079427719116,
+            "net_turning_rad": 1.2106326818466187,
+            "turning_efficiency": 0.34207558959106305,
+            "arm_swing_m": 0.05110393464565277,
+            "stride_span_m": 0.543400764465332,
+            "cadence_hz": 1.2765957446808511,
+            "foot_separation_m": 0.5562703609466553,
+            "head_error_m": 0.1073586568236351
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.08145058155059814,
+          "turn_minus_base_turning_rad": 5.834989547729492,
+          "swing_minus_base_arm_swing_m": 0.14130263403058052,
+          "large_minus_base_stride_span_m": -0.1162717342376709,
+          "quick_minus_slow_cadence_hz": 0.6382978723404257,
+          "turn_minus_base_net_yaw_rad": 2.931806802749634,
+          "turn_minus_base_efficiency": -0.10704796228388769,
+          "large_minus_base_foot_separation_m": -0.137717604637146
+        }
+      },
+      {
+        "motion_id": "008614",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.3736651837825775,
+            "turning_rad": 6.394411563873291,
+            "net_turning_rad": 0.9233360290527344,
+            "turning_efficiency": 0.14439734130804702,
+            "arm_swing_m": 0.07793360203504562,
+            "stride_span_m": 0.49969035387039185,
+            "cadence_hz": 1.2307692307692308,
+            "foot_separation_m": 0.5286887884140015,
+            "head_error_m": 0.29750722646713257
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.7629936933517456,
+            "turning_rad": 3.728440046310425,
+            "net_turning_rad": 1.0452783107757568,
+            "turning_efficiency": 0.28035272065327677,
+            "arm_swing_m": 0.20189495384693146,
+            "stride_span_m": 0.6389528512954712,
+            "cadence_hz": 1.5384615384615383,
+            "foot_separation_m": 0.6261773109436035,
+            "head_error_m": 0.312363862991333
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.5807349681854248,
+            "turning_rad": 2.3465254306793213,
+            "net_turning_rad": 0.9144589900970459,
+            "turning_efficiency": 0.38970768359936725,
+            "arm_swing_m": 0.11797945946455002,
+            "stride_span_m": 0.6828150749206543,
+            "cadence_hz": 1.1282051282051282,
+            "foot_separation_m": 0.5880692005157471,
+            "head_error_m": 0.3606225550174713
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.16334186494350433,
+            "turning_rad": 5.154333114624023,
+            "net_turning_rad": 0.8153707981109619,
+            "turning_efficiency": 0.15819132756429113,
+            "arm_swing_m": 0.14949581027030945,
+            "stride_span_m": 0.7504377365112305,
+            "cadence_hz": 1.846153846153846,
+            "foot_separation_m": 0.7306438684463501,
+            "head_error_m": 0.33053237199783325
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.2924306094646454,
+            "turning_rad": 6.114243984222412,
+            "net_turning_rad": 2.330923080444336,
+            "turning_efficiency": 0.38122833934321226,
+            "arm_swing_m": 0.07643827795982361,
+            "stride_span_m": 0.4066644310951233,
+            "cadence_hz": 1.5384615384615383,
+            "foot_separation_m": 0.4554320275783539,
+            "head_error_m": 0.3624413013458252
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.5234523415565491,
+            "turning_rad": 5.862442493438721,
+            "net_turning_rad": 4.155765533447266,
+            "turning_efficiency": 0.7088795392190921,
+            "arm_swing_m": 0.07056360691785812,
+            "stride_span_m": 0.6536190509796143,
+            "cadence_hz": 1.3333333333333333,
+            "foot_separation_m": 0.6444724798202515,
+            "head_error_m": 0.32624757289886475
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.41739310324192047,
+          "turn_minus_base_turning_rad": -0.2801675796508789,
+          "swing_minus_base_arm_swing_m": 0.12396135181188583,
+          "large_minus_base_stride_span_m": 0.1539286971092224,
+          "quick_minus_slow_cadence_hz": 0.7179487179487178,
+          "turn_minus_base_net_yaw_rad": 1.4075870513916016,
+          "turn_minus_base_efficiency": 0.23683099803516525,
+          "large_minus_base_foot_separation_m": 0.11578369140625
+        }
+      },
+      {
+        "motion_id": "014557",
+        "values": {
+          "a person walks": {
+            "speed_mps": 1.2363954782485962,
+            "turning_rad": 1.0863733291625977,
+            "net_turning_rad": 0.3005094528198242,
+            "turning_efficiency": 0.2766171119567746,
+            "arm_swing_m": 0.07202915847301483,
+            "stride_span_m": 0.905349850654602,
+            "cadence_hz": 1.5789473684210527,
+            "foot_separation_m": 0.8956371545791626,
+            "head_error_m": 0.23693694174289703
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 1.662314772605896,
+            "turning_rad": 1.371760368347168,
+            "net_turning_rad": 0.20778131484985352,
+            "turning_efficiency": 0.15147056267576015,
+            "arm_swing_m": 0.19431503117084503,
+            "stride_span_m": 0.8896071910858154,
+            "cadence_hz": 1.5789473684210527,
+            "foot_separation_m": 0.9017552733421326,
+            "head_error_m": 0.26923662424087524
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.7983479499816895,
+            "turning_rad": 0.8244662284851074,
+            "net_turning_rad": 0.04771089553833008,
+            "turning_efficiency": 0.05786882941948409,
+            "arm_swing_m": 0.1499670296907425,
+            "stride_span_m": 0.8172863125801086,
+            "cadence_hz": 1.0526315789473684,
+            "foot_separation_m": 0.8734090924263,
+            "head_error_m": 0.24907708168029785
+          },
+          "a person walks quickly": {
+            "speed_mps": 2.1131017208099365,
+            "turning_rad": 0.8324015140533447,
+            "net_turning_rad": 0.5579407215118408,
+            "turning_efficiency": 0.6702783597725231,
+            "arm_swing_m": 0.11801765859127045,
+            "stride_span_m": 0.7692561745643616,
+            "cadence_hz": 2.631578947368421,
+            "foot_separation_m": 0.8995054364204407,
+            "head_error_m": 0.24805405735969543
+          },
+          "a person turns while walking": {
+            "speed_mps": 1.170357346534729,
+            "turning_rad": 1.07149076461792,
+            "net_turning_rad": 0.10417795181274414,
+            "turning_efficiency": 0.09722711128536202,
+            "arm_swing_m": 0.08392082154750824,
+            "stride_span_m": 0.9055627584457397,
+            "cadence_hz": 1.5789473684210527,
+            "foot_separation_m": 0.7802567481994629,
+            "head_error_m": 0.2257046401500702
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.9292082786560059,
+            "turning_rad": 0.6309728622436523,
+            "net_turning_rad": 0.0664072036743164,
+            "turning_efficiency": 0.10524573662040165,
+            "arm_swing_m": 0.08519113063812256,
+            "stride_span_m": 0.5441991090774536,
+            "cadence_hz": 0.5263157894736842,
+            "foot_separation_m": 0.5933113694190979,
+            "head_error_m": 0.22561587393283844
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": 1.314753770828247,
+          "turn_minus_base_turning_rad": -0.014882564544677734,
+          "swing_minus_base_arm_swing_m": 0.1222858726978302,
+          "large_minus_base_stride_span_m": -0.36115074157714844,
+          "quick_minus_slow_cadence_hz": 1.5789473684210524,
+          "turn_minus_base_net_yaw_rad": -0.19633150100708008,
+          "turn_minus_base_efficiency": -0.17939000067141256,
+          "large_minus_base_foot_separation_m": -0.3023257851600647
+        }
+      },
+      {
+        "motion_id": "011687",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.25002655386924744,
+            "turning_rad": 4.144917011260986,
+            "net_turning_rad": 0.09802961349487305,
+            "turning_efficiency": 0.023650561212334144,
+            "arm_swing_m": 0.05608656629920006,
+            "stride_span_m": 0.47335323691368103,
+            "cadence_hz": 1.435897435897436,
+            "foot_separation_m": 0.5551942586898804,
+            "head_error_m": 0.08891969919204712
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.9972679018974304,
+            "turning_rad": 4.995497226715088,
+            "net_turning_rad": 0.7326831817626953,
+            "turning_efficiency": 0.14666871955096433,
+            "arm_swing_m": 0.13754235208034515,
+            "stride_span_m": 0.7505938410758972,
+            "cadence_hz": 1.7435897435897436,
+            "foot_separation_m": 0.7580294609069824,
+            "head_error_m": 0.09990017116069794
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.37354156374931335,
+            "turning_rad": 2.274097442626953,
+            "net_turning_rad": 0.7878885269165039,
+            "turning_efficiency": 0.3464620786022099,
+            "arm_swing_m": 0.0352286659181118,
+            "stride_span_m": 0.693379282951355,
+            "cadence_hz": 0.923076923076923,
+            "foot_separation_m": 0.546159029006958,
+            "head_error_m": 0.11293487250804901
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.3031720221042633,
+            "turning_rad": 1.6469924449920654,
+            "net_turning_rad": 0.5415403842926025,
+            "turning_efficiency": 0.32880562745702907,
+            "arm_swing_m": 0.057607825845479965,
+            "stride_span_m": 0.3518775403499603,
+            "cadence_hz": 0.3076923076923077,
+            "foot_separation_m": 0.4334893822669983,
+            "head_error_m": 0.10093194246292114
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.6098071336746216,
+            "turning_rad": 7.292568683624268,
+            "net_turning_rad": 5.8627543449401855,
+            "turning_efficiency": 0.8039354306124283,
+            "arm_swing_m": 0.16730435192584991,
+            "stride_span_m": 0.565075159072876,
+            "cadence_hz": 1.641025641025641,
+            "foot_separation_m": 0.555690348148346,
+            "head_error_m": 0.11888542771339417
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.6007364988327026,
+            "turning_rad": 5.121710777282715,
+            "net_turning_rad": 4.169798851013184,
+            "turning_efficiency": 0.8141418038496581,
+            "arm_swing_m": 0.10321404784917831,
+            "stride_span_m": 0.5985754728317261,
+            "cadence_hz": 1.5384615384615383,
+            "foot_separation_m": 0.6220536231994629,
+            "head_error_m": 0.0981706902384758
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.07036954164505005,
+          "turn_minus_base_turning_rad": 3.1476516723632812,
+          "swing_minus_base_arm_swing_m": 0.0814557857811451,
+          "large_minus_base_stride_span_m": 0.12522223591804504,
+          "quick_minus_slow_cadence_hz": -0.6153846153846153,
+          "turn_minus_base_net_yaw_rad": 5.7647247314453125,
+          "turn_minus_base_efficiency": 0.7802848694000942,
+          "large_minus_base_foot_separation_m": 0.06685936450958252
+        }
+      },
+      {
+        "motion_id": "000904",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.6625760793685913,
+            "turning_rad": 4.8158464431762695,
+            "net_turning_rad": 0.054555416107177734,
+            "turning_efficiency": 0.011328313049615419,
+            "arm_swing_m": 0.11211090534925461,
+            "stride_span_m": 0.623216986656189,
+            "cadence_hz": 1.9487179487179487,
+            "foot_separation_m": 0.6462111473083496,
+            "head_error_m": 0.131819948554039
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.9964097142219543,
+            "turning_rad": 6.554525375366211,
+            "net_turning_rad": 4.464256286621094,
+            "turning_efficiency": 0.6810952785992791,
+            "arm_swing_m": 0.20702660083770752,
+            "stride_span_m": 0.6723990440368652,
+            "cadence_hz": 1.7435897435897436,
+            "foot_separation_m": 0.7041001319885254,
+            "head_error_m": 0.14371943473815918
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.48455163836479187,
+            "turning_rad": 1.7081542015075684,
+            "net_turning_rad": 0.5049715042114258,
+            "turning_efficiency": 0.29562407408286223,
+            "arm_swing_m": 0.042648568749427795,
+            "stride_span_m": 0.6684533357620239,
+            "cadence_hz": 1.1282051282051282,
+            "foot_separation_m": 0.6326563954353333,
+            "head_error_m": 0.1405583918094635
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.36580145359039307,
+            "turning_rad": 1.7489902973175049,
+            "net_turning_rad": 0.5032193660736084,
+            "turning_efficiency": 0.2877199300907591,
+            "arm_swing_m": 0.06590007990598679,
+            "stride_span_m": 0.5179455280303955,
+            "cadence_hz": 0.41025641025641024,
+            "foot_separation_m": 0.5615370273590088,
+            "head_error_m": 0.17218799889087677
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.39077436923980713,
+            "turning_rad": 8.067719459533691,
+            "net_turning_rad": 7.741289138793945,
+            "turning_efficiency": 0.9595387119771498,
+            "arm_swing_m": 0.11572522670030594,
+            "stride_span_m": 0.5031392574310303,
+            "cadence_hz": 1.435897435897436,
+            "foot_separation_m": 0.5182435512542725,
+            "head_error_m": 0.11964432895183563
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.2591509222984314,
+            "turning_rad": 1.2753992080688477,
+            "net_turning_rad": 0.47492170333862305,
+            "turning_efficiency": 0.37237101946905565,
+            "arm_swing_m": 0.06020266190171242,
+            "stride_span_m": 0.3948981463909149,
+            "cadence_hz": 1.2307692307692308,
+            "foot_separation_m": 0.5614859461784363,
+            "head_error_m": 0.18806242942810059
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.1187501847743988,
+          "turn_minus_base_turning_rad": 3.251873016357422,
+          "swing_minus_base_arm_swing_m": 0.09491569548845291,
+          "large_minus_base_stride_span_m": -0.22831884026527405,
+          "quick_minus_slow_cadence_hz": -0.717948717948718,
+          "turn_minus_base_net_yaw_rad": 7.686733722686768,
+          "turn_minus_base_efficiency": 0.9482103989275343,
+          "large_minus_base_foot_separation_m": -0.08472520112991333
+        }
+      },
+      {
+        "motion_id": "013549",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.6391519904136658,
+            "turning_rad": 2.51522159576416,
+            "net_turning_rad": 2.3024706840515137,
+            "turning_efficiency": 0.9154146449478103,
+            "arm_swing_m": 0.08260027319192886,
+            "stride_span_m": 0.7057746052742004,
+            "cadence_hz": 1.897810218978102,
+            "foot_separation_m": 0.7072573304176331,
+            "head_error_m": 0.16717490553855896
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 1.2920171022415161,
+            "turning_rad": 4.1277174949646,
+            "net_turning_rad": 0.9142403602600098,
+            "turning_efficiency": 0.22148811331572257,
+            "arm_swing_m": 0.21721917390823364,
+            "stride_span_m": 0.8051230907440186,
+            "cadence_hz": 1.605839416058394,
+            "foot_separation_m": 0.7916632294654846,
+            "head_error_m": 0.2060198038816452
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.3911532759666443,
+            "turning_rad": 0.8764135837554932,
+            "net_turning_rad": 0.43586182594299316,
+            "turning_efficiency": 0.49732436149071874,
+            "arm_swing_m": 0.03159113600850105,
+            "stride_span_m": 0.5640631914138794,
+            "cadence_hz": 1.167883211678832,
+            "foot_separation_m": 0.5367129445075989,
+            "head_error_m": 0.17889635264873505
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.38071462512016296,
+            "turning_rad": 1.0404736995697021,
+            "net_turning_rad": 0.4417550563812256,
+            "turning_efficiency": 0.4245710934970462,
+            "arm_swing_m": 0.049650490283966064,
+            "stride_span_m": 0.5976578593254089,
+            "cadence_hz": 1.313868613138686,
+            "foot_separation_m": 0.5390079021453857,
+            "head_error_m": 0.1798248440027237
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.6040209531784058,
+            "turning_rad": 9.525398254394531,
+            "net_turning_rad": 9.50927734375,
+            "turning_efficiency": 0.9983075867051444,
+            "arm_swing_m": 0.17551250755786896,
+            "stride_span_m": 0.6476840972900391,
+            "cadence_hz": 1.4598540145985401,
+            "foot_separation_m": 0.6175366044044495,
+            "head_error_m": 0.19462719559669495
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.4103197455406189,
+            "turning_rad": 1.7930324077606201,
+            "net_turning_rad": 0.48218607902526855,
+            "turning_efficiency": 0.268922121506709,
+            "arm_swing_m": 0.04085763543844223,
+            "stride_span_m": 0.5980534553527832,
+            "cadence_hz": 1.167883211678832,
+            "foot_separation_m": 0.6660518646240234,
+            "head_error_m": 0.21244201064109802
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.010438650846481323,
+          "turn_minus_base_turning_rad": 7.010176658630371,
+          "swing_minus_base_arm_swing_m": 0.13461890071630478,
+          "large_minus_base_stride_span_m": -0.10772114992141724,
+          "quick_minus_slow_cadence_hz": 0.14598540145985406,
+          "turn_minus_base_net_yaw_rad": 7.206806659698486,
+          "turn_minus_base_efficiency": 0.08289294175733408,
+          "large_minus_base_foot_separation_m": -0.04120546579360962
+        }
+      },
+      {
+        "motion_id": "012616",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.376141756772995,
+            "turning_rad": 5.928714752197266,
+            "net_turning_rad": 0.2563483715057373,
+            "turning_efficiency": 0.04323843905809956,
+            "arm_swing_m": 0.07725196331739426,
+            "stride_span_m": 0.498857706785202,
+            "cadence_hz": 1.2307692307692308,
+            "foot_separation_m": 0.5391126871109009,
+            "head_error_m": 0.41681164503097534
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.6957654356956482,
+            "turning_rad": 5.154454231262207,
+            "net_turning_rad": 1.8413114547729492,
+            "turning_efficiency": 0.3572272392303413,
+            "arm_swing_m": 0.1927247792482376,
+            "stride_span_m": 0.6248779296875,
+            "cadence_hz": 1.641025641025641,
+            "foot_separation_m": 0.591724157333374,
+            "head_error_m": 0.405468612909317
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.5620452761650085,
+            "turning_rad": 2.6357555389404297,
+            "net_turning_rad": 0.8878812789916992,
+            "turning_efficiency": 0.33686025349248677,
+            "arm_swing_m": 0.15893134474754333,
+            "stride_span_m": 0.6950812339782715,
+            "cadence_hz": 1.1282051282051282,
+            "foot_separation_m": 0.5809991359710693,
+            "head_error_m": 0.37651896476745605
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.4848800301551819,
+            "turning_rad": 2.785841703414917,
+            "net_turning_rad": 0.7855641841888428,
+            "turning_efficiency": 0.28198450156944993,
+            "arm_swing_m": 0.07782250642776489,
+            "stride_span_m": 0.5723907947540283,
+            "cadence_hz": 1.5384615384615383,
+            "foot_separation_m": 0.6242730617523193,
+            "head_error_m": 0.38781341910362244
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.38895270228385925,
+            "turning_rad": 5.8374176025390625,
+            "net_turning_rad": 3.320183038711548,
+            "turning_efficiency": 0.5687760007554351,
+            "arm_swing_m": 0.07561225444078445,
+            "stride_span_m": 0.3958801031112671,
+            "cadence_hz": 1.7435897435897436,
+            "foot_separation_m": 0.42667677998542786,
+            "head_error_m": 0.3663974702358246
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.6333293318748474,
+            "turning_rad": 5.395099639892578,
+            "net_turning_rad": 4.075002193450928,
+            "turning_efficiency": 0.7553154650415437,
+            "arm_swing_m": 0.10419664531946182,
+            "stride_span_m": 0.6927851438522339,
+            "cadence_hz": 1.435897435897436,
+            "foot_separation_m": 0.6553274393081665,
+            "head_error_m": 0.3703894317150116
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.07716524600982666,
+          "turn_minus_base_turning_rad": -0.09129714965820312,
+          "swing_minus_base_arm_swing_m": 0.11547281593084335,
+          "large_minus_base_stride_span_m": 0.19392743706703186,
+          "quick_minus_slow_cadence_hz": 0.41025641025641013,
+          "turn_minus_base_net_yaw_rad": 3.0638346672058105,
+          "turn_minus_base_efficiency": 0.5255375616973356,
+          "large_minus_base_foot_separation_m": 0.11621475219726562
+        }
+      },
+      {
+        "motion_id": "005163",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.43547704815864563,
+            "turning_rad": 4.171082496643066,
+            "net_turning_rad": 1.8060224056243896,
+            "turning_efficiency": 0.43298649860747096,
+            "arm_swing_m": 0.1818665713071823,
+            "stride_span_m": 0.47479528188705444,
+            "cadence_hz": 1.435897435897436,
+            "foot_separation_m": 0.7106738090515137,
+            "head_error_m": 0.1836296021938324
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.9055553078651428,
+            "turning_rad": 6.1356072425842285,
+            "net_turning_rad": 4.060937404632568,
+            "turning_efficiency": 0.661863975980666,
+            "arm_swing_m": 0.244995579123497,
+            "stride_span_m": 0.7072782516479492,
+            "cadence_hz": 1.5384615384615383,
+            "foot_separation_m": 0.7302062511444092,
+            "head_error_m": 0.1283009797334671
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.5557571649551392,
+            "turning_rad": 1.705154538154602,
+            "net_turning_rad": 1.125064492225647,
+            "turning_efficiency": 0.6598020689920835,
+            "arm_swing_m": 0.10008140653371811,
+            "stride_span_m": 0.7321256995201111,
+            "cadence_hz": 1.1282051282051282,
+            "foot_separation_m": 0.8511463403701782,
+            "head_error_m": 0.1569836288690567
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.46569809317588806,
+            "turning_rad": 1.9553167819976807,
+            "net_turning_rad": 0.4848020076751709,
+            "turning_efficiency": 0.24794039111139074,
+            "arm_swing_m": 0.053687918931245804,
+            "stride_span_m": 0.5306412577629089,
+            "cadence_hz": 2.6666666666666665,
+            "foot_separation_m": 0.666959285736084,
+            "head_error_m": 0.12174610048532486
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.3272779583930969,
+            "turning_rad": 4.29313325881958,
+            "net_turning_rad": 1.4929499626159668,
+            "turning_efficiency": 0.3477529982440986,
+            "arm_swing_m": 0.09713983535766602,
+            "stride_span_m": 0.44361352920532227,
+            "cadence_hz": 0.3076923076923077,
+            "foot_separation_m": 0.5379694700241089,
+            "head_error_m": 0.1961115598678589
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.20792239904403687,
+            "turning_rad": 1.0643994808197021,
+            "net_turning_rad": 0.5345580577850342,
+            "turning_efficiency": 0.502215631835302,
+            "arm_swing_m": 0.055436402559280396,
+            "stride_span_m": 0.301811158657074,
+            "cadence_hz": 1.641025641025641,
+            "foot_separation_m": 0.5328463315963745,
+            "head_error_m": 0.14023944735527039
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.0900590717792511,
+          "turn_minus_base_turning_rad": 0.12205076217651367,
+          "swing_minus_base_arm_swing_m": 0.0631290078163147,
+          "large_minus_base_stride_span_m": -0.17298412322998047,
+          "quick_minus_slow_cadence_hz": 1.5384615384615383,
+          "turn_minus_base_net_yaw_rad": -0.31307244300842285,
+          "turn_minus_base_efficiency": -0.08523350036337235,
+          "large_minus_base_foot_separation_m": -0.17782747745513916
+        }
+      },
+      {
+        "motion_id": "003740",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.22950521111488342,
+            "turning_rad": 3.304381847381592,
+            "net_turning_rad": 0.38121700286865234,
+            "turning_efficiency": 0.11536711568934763,
+            "arm_swing_m": 0.061928290873765945,
+            "stride_span_m": 0.45523327589035034,
+            "cadence_hz": 1.435897435897436,
+            "foot_separation_m": 0.5463428497314453,
+            "head_error_m": 0.07408681511878967
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.9136864542961121,
+            "turning_rad": 3.3971235752105713,
+            "net_turning_rad": 0.5704576969146729,
+            "turning_efficiency": 0.16792374027174237,
+            "arm_swing_m": 0.09138613194227219,
+            "stride_span_m": 0.7149747610092163,
+            "cadence_hz": 1.7435897435897436,
+            "foot_separation_m": 0.7106609344482422,
+            "head_error_m": 0.09688699245452881
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.42591866850852966,
+            "turning_rad": 2.555868625640869,
+            "net_turning_rad": 0.7351932525634766,
+            "turning_efficiency": 0.28764907757304276,
+            "arm_swing_m": 0.03297991305589676,
+            "stride_span_m": 0.7175806164741516,
+            "cadence_hz": 0.923076923076923,
+            "foot_separation_m": 0.6061607599258423,
+            "head_error_m": 0.13395945727825165
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.19695036113262177,
+            "turning_rad": 1.109574556350708,
+            "net_turning_rad": 0.42290759086608887,
+            "turning_efficiency": 0.3811439154273637,
+            "arm_swing_m": 0.03261918947100639,
+            "stride_span_m": 0.2577283978462219,
+            "cadence_hz": 0.3076923076923077,
+            "foot_separation_m": 0.4682724177837372,
+            "head_error_m": 0.09256362915039062
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.6435918807983398,
+            "turning_rad": 6.694180011749268,
+            "net_turning_rad": 5.346043586730957,
+            "turning_efficiency": 0.7986106703655812,
+            "arm_swing_m": 0.1809217482805252,
+            "stride_span_m": 0.6057802438735962,
+            "cadence_hz": 1.435897435897436,
+            "foot_separation_m": 0.610568106174469,
+            "head_error_m": 0.11802176386117935
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.6867671608924866,
+            "turning_rad": 4.409640312194824,
+            "net_turning_rad": 3.7563326358795166,
+            "turning_efficiency": 0.8518455860201136,
+            "arm_swing_m": 0.10051784664392471,
+            "stride_span_m": 0.62403804063797,
+            "cadence_hz": 1.5384615384615383,
+            "foot_separation_m": 0.6427398920059204,
+            "head_error_m": 0.08969639986753464
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.2289683073759079,
+          "turn_minus_base_turning_rad": 3.389798164367676,
+          "swing_minus_base_arm_swing_m": 0.02945784106850624,
+          "large_minus_base_stride_span_m": 0.16880476474761963,
+          "quick_minus_slow_cadence_hz": -0.6153846153846153,
+          "turn_minus_base_net_yaw_rad": 4.964826583862305,
+          "turn_minus_base_efficiency": 0.6832435546762335,
+          "large_minus_base_foot_separation_m": 0.0963970422744751
+        }
+      },
+      {
+        "motion_id": "012423",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.5664323568344116,
+            "turning_rad": 3.0991604328155518,
+            "net_turning_rad": 0.3081696033477783,
+            "turning_efficiency": 0.09943647966227091,
+            "arm_swing_m": 0.0951734259724617,
+            "stride_span_m": 0.6179903745651245,
+            "cadence_hz": 1.9487179487179487,
+            "foot_separation_m": 0.6285444498062134,
+            "head_error_m": 0.08261118829250336
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 1.0305495262145996,
+            "turning_rad": 4.190315246582031,
+            "net_turning_rad": 0.34294629096984863,
+            "turning_efficiency": 0.081842599133701,
+            "arm_swing_m": 0.17968185245990753,
+            "stride_span_m": 0.6634337306022644,
+            "cadence_hz": 1.7435897435897436,
+            "foot_separation_m": 0.7107313871383667,
+            "head_error_m": 0.09825591742992401
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.3854292631149292,
+            "turning_rad": 1.396575689315796,
+            "net_turning_rad": 0.565072774887085,
+            "turning_efficiency": 0.4046130683858051,
+            "arm_swing_m": 0.029607277363538742,
+            "stride_span_m": 0.6108531951904297,
+            "cadence_hz": 1.1282051282051282,
+            "foot_separation_m": 0.594570517539978,
+            "head_error_m": 0.07283144444227219
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.26447704434394836,
+            "turning_rad": 1.1028900146484375,
+            "net_turning_rad": 0.47536373138427734,
+            "turning_efficiency": 0.43101644322694005,
+            "arm_swing_m": 0.04096461459994316,
+            "stride_span_m": 0.3923702836036682,
+            "cadence_hz": 1.641025641025641,
+            "foot_separation_m": 0.48890501260757446,
+            "head_error_m": 0.09722684323787689
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.35131484270095825,
+            "turning_rad": 7.613960266113281,
+            "net_turning_rad": 7.310905456542969,
+            "turning_efficiency": 0.9601974795010306,
+            "arm_swing_m": 0.09937120229005814,
+            "stride_span_m": 0.4720752537250519,
+            "cadence_hz": 1.435897435897436,
+            "foot_separation_m": 0.5523804426193237,
+            "head_error_m": 0.0985535979270935
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.33284175395965576,
+            "turning_rad": 1.4078795909881592,
+            "net_turning_rad": 0.5047733783721924,
+            "turning_efficiency": 0.35853448093377305,
+            "arm_swing_m": 0.06288397312164307,
+            "stride_span_m": 0.42445993423461914,
+            "cadence_hz": 1.641025641025641,
+            "foot_separation_m": 0.6510563492774963,
+            "head_error_m": 0.1651073396205902
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.12095221877098083,
+          "turn_minus_base_turning_rad": 4.5147998332977295,
+          "swing_minus_base_arm_swing_m": 0.08450842648744583,
+          "large_minus_base_stride_span_m": -0.19353044033050537,
+          "quick_minus_slow_cadence_hz": 0.5128205128205128,
+          "turn_minus_base_net_yaw_rad": 7.00273585319519,
+          "turn_minus_base_efficiency": 0.8607609998387598,
+          "large_minus_base_foot_separation_m": 0.02251189947128296
+        }
+      },
+      {
+        "motion_id": "008275",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.42804470658302307,
+            "turning_rad": 4.827715873718262,
+            "net_turning_rad": 2.292499542236328,
+            "turning_efficiency": 0.4748621505910343,
+            "arm_swing_m": 0.07536017149686813,
+            "stride_span_m": 0.6008853912353516,
+            "cadence_hz": 1.846153846153846,
+            "foot_separation_m": 0.6321979761123657,
+            "head_error_m": 0.5175530910491943
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.7690457105636597,
+            "turning_rad": 3.8006482124328613,
+            "net_turning_rad": 0.49986934661865234,
+            "turning_efficiency": 0.131522129562914,
+            "arm_swing_m": 0.20480382442474365,
+            "stride_span_m": 0.7056931257247925,
+            "cadence_hz": 1.641025641025641,
+            "foot_separation_m": 0.7431836724281311,
+            "head_error_m": 0.5460447072982788
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.4011556804180145,
+            "turning_rad": 1.218374490737915,
+            "net_turning_rad": 0.5609400272369385,
+            "turning_efficiency": 0.4604003379102284,
+            "arm_swing_m": 0.046600617468357086,
+            "stride_span_m": 0.7117166519165039,
+            "cadence_hz": 0.923076923076923,
+            "foot_separation_m": 0.5816101431846619,
+            "head_error_m": 0.5138933658599854
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.3632268011569977,
+            "turning_rad": 3.299121379852295,
+            "net_turning_rad": 2.1305575370788574,
+            "turning_efficiency": 0.6457954381703424,
+            "arm_swing_m": 0.062323376536369324,
+            "stride_span_m": 0.5131884813308716,
+            "cadence_hz": 1.435897435897436,
+            "foot_separation_m": 0.5365605354309082,
+            "head_error_m": 0.5337799191474915
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.3049265742301941,
+            "turning_rad": 7.02349853515625,
+            "net_turning_rad": 2.444856882095337,
+            "turning_efficiency": 0.34809673125972207,
+            "arm_swing_m": 0.1350860446691513,
+            "stride_span_m": 0.47140800952911377,
+            "cadence_hz": 1.435897435897436,
+            "foot_separation_m": 0.5044877529144287,
+            "head_error_m": 0.5508087277412415
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.3750030994415283,
+            "turning_rad": 3.8118770122528076,
+            "net_turning_rad": 1.6806995868682861,
+            "turning_efficiency": 0.4409112837234478,
+            "arm_swing_m": 0.07024495303630829,
+            "stride_span_m": 0.5711065530776978,
+            "cadence_hz": 1.3333333333333333,
+            "foot_separation_m": 0.6479596495628357,
+            "head_error_m": 0.5260330438613892
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.037928879261016846,
+          "turn_minus_base_turning_rad": 2.1957826614379883,
+          "swing_minus_base_arm_swing_m": 0.12944365292787552,
+          "large_minus_base_stride_span_m": -0.02977883815765381,
+          "quick_minus_slow_cadence_hz": 0.5128205128205129,
+          "turn_minus_base_net_yaw_rad": 0.1523573398590088,
+          "turn_minus_base_efficiency": -0.12676541933131225,
+          "large_minus_base_foot_separation_m": 0.01576167345046997
+        }
+      },
+      {
+        "motion_id": "011158",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.38771235942840576,
+            "turning_rad": 5.510529041290283,
+            "net_turning_rad": 0.3265509605407715,
+            "turning_efficiency": 0.059259457321417186,
+            "arm_swing_m": 0.08545030653476715,
+            "stride_span_m": 0.5451059937477112,
+            "cadence_hz": 1.2307692307692308,
+            "foot_separation_m": 0.6084520816802979,
+            "head_error_m": 0.1667703092098236
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 1.0007990598678589,
+            "turning_rad": 4.280596733093262,
+            "net_turning_rad": 1.6590607166290283,
+            "turning_efficiency": 0.38757697117386514,
+            "arm_swing_m": 0.21563023328781128,
+            "stride_span_m": 0.6871115565299988,
+            "cadence_hz": 1.846153846153846,
+            "foot_separation_m": 0.7031264305114746,
+            "head_error_m": 0.19082100689411163
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.4817346930503845,
+            "turning_rad": 1.3187944889068604,
+            "net_turning_rad": 0.6360785961151123,
+            "turning_efficiency": 0.4823182091414057,
+            "arm_swing_m": 0.12701235711574554,
+            "stride_span_m": 0.6869029402732849,
+            "cadence_hz": 1.2307692307692308,
+            "foot_separation_m": 0.5770846605300903,
+            "head_error_m": 0.19491896033287048
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.4672006368637085,
+            "turning_rad": 3.7680840492248535,
+            "net_turning_rad": 0.6648283004760742,
+            "turning_efficiency": 0.17643669615406762,
+            "arm_swing_m": 0.047312501817941666,
+            "stride_span_m": 0.5247153043746948,
+            "cadence_hz": 0.3076923076923077,
+            "foot_separation_m": 0.6137024760246277,
+            "head_error_m": 0.1823672652244568
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.3728494942188263,
+            "turning_rad": 5.989851951599121,
+            "net_turning_rad": 3.566744327545166,
+            "turning_efficiency": 0.5954645217221014,
+            "arm_swing_m": 0.07738335430622101,
+            "stride_span_m": 0.4120014011859894,
+            "cadence_hz": 1.5384615384615383,
+            "foot_separation_m": 0.4771026372909546,
+            "head_error_m": 0.22323773801326752
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.6976085305213928,
+            "turning_rad": 5.36329984664917,
+            "net_turning_rad": 4.027596950531006,
+            "turning_efficiency": 0.7509550212911047,
+            "arm_swing_m": 0.11390075087547302,
+            "stride_span_m": 0.7782875299453735,
+            "cadence_hz": 1.5384615384615383,
+            "foot_separation_m": 0.6885256767272949,
+            "head_error_m": 0.2005096971988678
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.014534056186676025,
+          "turn_minus_base_turning_rad": 0.4793229103088379,
+          "swing_minus_base_arm_swing_m": 0.13017992675304413,
+          "large_minus_base_stride_span_m": 0.23318153619766235,
+          "quick_minus_slow_cadence_hz": -0.9230769230769231,
+          "turn_minus_base_net_yaw_rad": 3.2401933670043945,
+          "turn_minus_base_efficiency": 0.5362050644006842,
+          "large_minus_base_foot_separation_m": 0.08007359504699707
+        }
+      },
+      {
+        "motion_id": "001419",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.8128678202629089,
+            "turning_rad": 1.8348276615142822,
+            "net_turning_rad": 1.1732442378997803,
+            "turning_efficiency": 0.6394302105362323,
+            "arm_swing_m": 0.0973416417837143,
+            "stride_span_m": 0.7238038182258606,
+            "cadence_hz": 1.7391304347826089,
+            "foot_separation_m": 0.7056125998497009,
+            "head_error_m": 0.06777902692556381
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 1.3858391046524048,
+            "turning_rad": 1.6259706020355225,
+            "net_turning_rad": 0.23316645622253418,
+            "turning_efficiency": 0.14340139725197823,
+            "arm_swing_m": 0.12044452875852585,
+            "stride_span_m": 0.8373078107833862,
+            "cadence_hz": 1.7391304347826089,
+            "foot_separation_m": 0.8152481317520142,
+            "head_error_m": 0.10507869720458984
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.8768355846405029,
+            "turning_rad": 1.4997427463531494,
+            "net_turning_rad": 0.1706392765045166,
+            "turning_efficiency": 0.11377903105012625,
+            "arm_swing_m": 0.1449739784002304,
+            "stride_span_m": 0.8365047574043274,
+            "cadence_hz": 1.4492753623188406,
+            "foot_separation_m": 0.8392727971076965,
+            "head_error_m": 0.07052043080329895
+          },
+          "a person walks quickly": {
+            "speed_mps": 1.8924144506454468,
+            "turning_rad": 2.7375290393829346,
+            "net_turning_rad": 0.2551600933074951,
+            "turning_efficiency": 0.09320817775325249,
+            "arm_swing_m": 0.15320152044296265,
+            "stride_span_m": 0.830704391002655,
+            "cadence_hz": 2.608695652173913,
+            "foot_separation_m": 0.8476872444152832,
+            "head_error_m": 0.07904272526502609
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.7469519376754761,
+            "turning_rad": 1.2174227237701416,
+            "net_turning_rad": 0.4722263813018799,
+            "turning_efficiency": 0.3878902307979588,
+            "arm_swing_m": 0.13314411044120789,
+            "stride_span_m": 0.8099620342254639,
+            "cadence_hz": 1.1594202898550725,
+            "foot_separation_m": 0.7170940637588501,
+            "head_error_m": 0.1156843975186348
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.6600778102874756,
+            "turning_rad": 0.7522773742675781,
+            "net_turning_rad": 0.3943495750427246,
+            "turning_efficiency": 0.5242076772901295,
+            "arm_swing_m": 0.06637754291296005,
+            "stride_span_m": 0.4756935238838196,
+            "cadence_hz": 1.7391304347826089,
+            "foot_separation_m": 0.6137048602104187,
+            "head_error_m": 0.08065500110387802
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": 1.0155788660049438,
+          "turn_minus_base_turning_rad": -0.6174049377441406,
+          "swing_minus_base_arm_swing_m": 0.023102886974811554,
+          "large_minus_base_stride_span_m": -0.24811029434204102,
+          "quick_minus_slow_cadence_hz": 1.1594202898550725,
+          "turn_minus_base_net_yaw_rad": -0.7010178565979004,
+          "turn_minus_base_efficiency": -0.25153997973827347,
+          "large_minus_base_foot_separation_m": -0.09190773963928223
+        }
+      },
+      {
+        "motion_id": "010897",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.22565867006778717,
+            "turning_rad": 4.8543009757995605,
+            "net_turning_rad": 0.30880165100097656,
+            "turning_efficiency": 0.06361403063808034,
+            "arm_swing_m": 0.06153176352381706,
+            "stride_span_m": 0.4635058343410492,
+            "cadence_hz": 1.3333333333333333,
+            "foot_separation_m": 0.5267865657806396,
+            "head_error_m": 0.11871121823787689
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.9257915616035461,
+            "turning_rad": 4.445000648498535,
+            "net_turning_rad": 0.5127971172332764,
+            "turning_efficiency": 0.11536491393010094,
+            "arm_swing_m": 0.1487787812948227,
+            "stride_span_m": 0.7372593879699707,
+            "cadence_hz": 1.7435897435897436,
+            "foot_separation_m": 0.7431411743164062,
+            "head_error_m": 0.14740076661109924
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.4315985143184662,
+            "turning_rad": 2.6409780979156494,
+            "net_turning_rad": 0.7066924571990967,
+            "turning_efficiency": 0.26758739792535297,
+            "arm_swing_m": 0.03349776193499565,
+            "stride_span_m": 0.7476535439491272,
+            "cadence_hz": 0.923076923076923,
+            "foot_separation_m": 0.6399123668670654,
+            "head_error_m": 0.1189642995595932
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.27114513516426086,
+            "turning_rad": 1.252351999282837,
+            "net_turning_rad": 0.45432591438293457,
+            "turning_efficiency": 0.36277812838810947,
+            "arm_swing_m": 0.04603751003742218,
+            "stride_span_m": 0.3119373619556427,
+            "cadence_hz": 0.3076923076923077,
+            "foot_separation_m": 0.4112243056297302,
+            "head_error_m": 0.10447879880666733
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.39413800835609436,
+            "turning_rad": 8.610201835632324,
+            "net_turning_rad": 6.629103660583496,
+            "turning_efficiency": 0.7699126904493362,
+            "arm_swing_m": 0.1215384379029274,
+            "stride_span_m": 0.48757418990135193,
+            "cadence_hz": 1.641025641025641,
+            "foot_separation_m": 0.47770100831985474,
+            "head_error_m": 0.1515347957611084
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.48416078090667725,
+            "turning_rad": 4.940221786499023,
+            "net_turning_rad": 4.172691345214844,
+            "turning_efficiency": 0.8446364405376011,
+            "arm_swing_m": 0.09217669069766998,
+            "stride_span_m": 0.551214337348938,
+            "cadence_hz": 1.5384615384615383,
+            "foot_separation_m": 0.5720428228378296,
+            "head_error_m": 0.1123105064034462
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.16045337915420532,
+          "turn_minus_base_turning_rad": 3.7559008598327637,
+          "swing_minus_base_arm_swing_m": 0.08724701777100563,
+          "large_minus_base_stride_span_m": 0.0877085030078888,
+          "quick_minus_slow_cadence_hz": -0.6153846153846153,
+          "turn_minus_base_net_yaw_rad": 6.3203020095825195,
+          "turn_minus_base_efficiency": 0.7062986598112558,
+          "large_minus_base_foot_separation_m": 0.04525625705718994
+        }
+      },
+      {
+        "motion_id": "002323",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.6003071665763855,
+            "turning_rad": 3.5953400135040283,
+            "net_turning_rad": 0.5158870220184326,
+            "turning_efficiency": 0.14348768686154045,
+            "arm_swing_m": 0.10873623937368393,
+            "stride_span_m": 0.6334347724914551,
+            "cadence_hz": 1.9487179487179487,
+            "foot_separation_m": 0.6331751942634583,
+            "head_error_m": 0.17076286673545837
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.9810287356376648,
+            "turning_rad": 6.661495208740234,
+            "net_turning_rad": 4.170858383178711,
+            "turning_efficiency": 0.6261144461541193,
+            "arm_swing_m": 0.18705566227436066,
+            "stride_span_m": 0.6597222089767456,
+            "cadence_hz": 1.7435897435897436,
+            "foot_separation_m": 0.6480533480644226,
+            "head_error_m": 0.21770396828651428
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.4819304347038269,
+            "turning_rad": 1.5286815166473389,
+            "net_turning_rad": 0.7108151912689209,
+            "turning_efficiency": 0.4649857956206998,
+            "arm_swing_m": 0.0360424630343914,
+            "stride_span_m": 0.674041748046875,
+            "cadence_hz": 1.1282051282051282,
+            "foot_separation_m": 0.6257904767990112,
+            "head_error_m": 0.19766686856746674
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.29328954219818115,
+            "turning_rad": 1.643761396408081,
+            "net_turning_rad": 0.7303140163421631,
+            "turning_efficiency": 0.4442944200648784,
+            "arm_swing_m": 0.051550980657339096,
+            "stride_span_m": 0.5018208026885986,
+            "cadence_hz": 1.641025641025641,
+            "foot_separation_m": 0.5617892146110535,
+            "head_error_m": 0.18237432837486267
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.5435202717781067,
+            "turning_rad": 9.707770347595215,
+            "net_turning_rad": 5.116189479827881,
+            "turning_efficiency": 0.5270200361811455,
+            "arm_swing_m": 0.09804216027259827,
+            "stride_span_m": 0.5846432447433472,
+            "cadence_hz": 1.435897435897436,
+            "foot_separation_m": 0.5821133852005005,
+            "head_error_m": 0.19118991494178772
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.3958381116390228,
+            "turning_rad": 1.5131187438964844,
+            "net_turning_rad": 0.5830988883972168,
+            "turning_efficiency": 0.3853622795628443,
+            "arm_swing_m": 0.05587795004248619,
+            "stride_span_m": 0.5633692741394043,
+            "cadence_hz": 1.641025641025641,
+            "foot_separation_m": 0.5794057846069336,
+            "head_error_m": 0.16310915350914001
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.18864089250564575,
+          "turn_minus_base_turning_rad": 6.1124303340911865,
+          "swing_minus_base_arm_swing_m": 0.07831942290067673,
+          "large_minus_base_stride_span_m": -0.07006549835205078,
+          "quick_minus_slow_cadence_hz": 0.5128205128205128,
+          "turn_minus_base_net_yaw_rad": 4.600302457809448,
+          "turn_minus_base_efficiency": 0.383532349319605,
+          "large_minus_base_foot_separation_m": -0.05376940965652466
+        }
+      },
+      {
+        "motion_id": "002460",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.4146274924278259,
+            "turning_rad": 2.944166660308838,
+            "net_turning_rad": 1.3284486532211304,
+            "turning_efficiency": 0.4512138090313741,
+            "arm_swing_m": 0.06544686108827591,
+            "stride_span_m": 0.623390793800354,
+            "cadence_hz": 1.846153846153846,
+            "foot_separation_m": 0.660913348197937,
+            "head_error_m": 0.12277374416589737
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.9977261424064636,
+            "turning_rad": 4.837236404418945,
+            "net_turning_rad": 0.5739319324493408,
+            "turning_efficiency": 0.11864872511193346,
+            "arm_swing_m": 0.26052573323249817,
+            "stride_span_m": 0.8484880924224854,
+            "cadence_hz": 1.435897435897436,
+            "foot_separation_m": 0.8400903940200806,
+            "head_error_m": 0.11523260176181793
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.37493228912353516,
+            "turning_rad": 1.4293601512908936,
+            "net_turning_rad": 0.41251063346862793,
+            "turning_efficiency": 0.28859810670955005,
+            "arm_swing_m": 0.04606049507856369,
+            "stride_span_m": 0.6570714116096497,
+            "cadence_hz": 0.8205128205128205,
+            "foot_separation_m": 0.5732313394546509,
+            "head_error_m": 0.10678983479738235
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.4000825881958008,
+            "turning_rad": 3.9089772701263428,
+            "net_turning_rad": 2.0024609565734863,
+            "turning_efficiency": 0.5122723459859782,
+            "arm_swing_m": 0.07980182021856308,
+            "stride_span_m": 0.4911777079105377,
+            "cadence_hz": 1.7435897435897436,
+            "foot_separation_m": 0.5192029476165771,
+            "head_error_m": 0.11323535442352295
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.3557997941970825,
+            "turning_rad": 6.864319324493408,
+            "net_turning_rad": 5.6139116287231445,
+            "turning_efficiency": 0.8178395210565842,
+            "arm_swing_m": 0.09930828958749771,
+            "stride_span_m": 0.4633792042732239,
+            "cadence_hz": 1.5384615384615383,
+            "foot_separation_m": 0.5105122923851013,
+            "head_error_m": 0.12999457120895386
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.3727044463157654,
+            "turning_rad": 3.832793951034546,
+            "net_turning_rad": 1.6318731307983398,
+            "turning_efficiency": 0.4257659429768891,
+            "arm_swing_m": 0.07573673129081726,
+            "stride_span_m": 0.5832358598709106,
+            "cadence_hz": 1.3333333333333333,
+            "foot_separation_m": 0.6847579479217529,
+            "head_error_m": 0.1257711946964264
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": 0.025150299072265625,
+          "turn_minus_base_turning_rad": 3.9201526641845703,
+          "swing_minus_base_arm_swing_m": 0.19507887214422226,
+          "large_minus_base_stride_span_m": -0.04015493392944336,
+          "quick_minus_slow_cadence_hz": 0.9230769230769231,
+          "turn_minus_base_net_yaw_rad": 4.285462975502014,
+          "turn_minus_base_efficiency": 0.3666257120252101,
+          "large_minus_base_foot_separation_m": 0.023844599723815918
+        }
+      },
+      {
+        "motion_id": "004708",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.3699192404747009,
+            "turning_rad": 6.190999984741211,
+            "net_turning_rad": 0.3690323829650879,
+            "turning_efficiency": 0.059607879805303174,
+            "arm_swing_m": 0.07591676712036133,
+            "stride_span_m": 0.5474316477775574,
+            "cadence_hz": 1.2307692307692308,
+            "foot_separation_m": 0.5448780059814453,
+            "head_error_m": 0.181801438331604
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.9727360606193542,
+            "turning_rad": 5.238256454467773,
+            "net_turning_rad": 1.3398289680480957,
+            "turning_efficiency": 0.25577765802308877,
+            "arm_swing_m": 0.1790771484375,
+            "stride_span_m": 0.6452422142028809,
+            "cadence_hz": 1.7435897435897436,
+            "foot_separation_m": 0.6516973972320557,
+            "head_error_m": 0.16388154029846191
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.5279597640037537,
+            "turning_rad": 2.2055270671844482,
+            "net_turning_rad": 0.8797242641448975,
+            "turning_efficiency": 0.3988725766435249,
+            "arm_swing_m": 0.10933832079172134,
+            "stride_span_m": 0.7210406064987183,
+            "cadence_hz": 1.1282051282051282,
+            "foot_separation_m": 0.5972075462341309,
+            "head_error_m": 0.18042463064193726
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.3109443187713623,
+            "turning_rad": 1.2060554027557373,
+            "net_turning_rad": 0.4856688976287842,
+            "turning_efficiency": 0.4026920293371853,
+            "arm_swing_m": 0.03139689937233925,
+            "stride_span_m": 0.5524929761886597,
+            "cadence_hz": 1.1282051282051282,
+            "foot_separation_m": 0.5382486581802368,
+            "head_error_m": 0.1715572476387024
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.3457900285720825,
+            "turning_rad": 6.296769142150879,
+            "net_turning_rad": 2.9836630821228027,
+            "turning_efficiency": 0.47384031632190815,
+            "arm_swing_m": 0.07848968356847763,
+            "stride_span_m": 0.5404824018478394,
+            "cadence_hz": 1.641025641025641,
+            "foot_separation_m": 0.5007392168045044,
+            "head_error_m": 0.1503559798002243
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.4113694429397583,
+            "turning_rad": 6.193062782287598,
+            "net_turning_rad": 4.35030460357666,
+            "turning_efficiency": 0.7024480061818043,
+            "arm_swing_m": 0.09784714877605438,
+            "stride_span_m": 0.6611624956130981,
+            "cadence_hz": 1.3333333333333333,
+            "foot_separation_m": 0.622850775718689,
+            "head_error_m": 0.18375122547149658
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.21701544523239136,
+          "turn_minus_base_turning_rad": 0.10576915740966797,
+          "swing_minus_base_arm_swing_m": 0.10316038131713867,
+          "large_minus_base_stride_span_m": 0.11373084783554077,
+          "quick_minus_slow_cadence_hz": 0.0,
+          "turn_minus_base_net_yaw_rad": 2.614630699157715,
+          "turn_minus_base_efficiency": 0.41423243651660496,
+          "large_minus_base_foot_separation_m": 0.07797276973724365
+        }
+      },
+      {
+        "motion_id": "014123",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.544966995716095,
+            "turning_rad": 4.356040954589844,
+            "net_turning_rad": 2.7298941612243652,
+            "turning_efficiency": 0.6266915737667592,
+            "arm_swing_m": 0.19319488108158112,
+            "stride_span_m": 0.5210893154144287,
+            "cadence_hz": 1.435897435897436,
+            "foot_separation_m": 0.6744791269302368,
+            "head_error_m": 0.1962008774280548
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.8943554759025574,
+            "turning_rad": 5.051970958709717,
+            "net_turning_rad": 3.517914056777954,
+            "turning_efficiency": 0.6963448692659223,
+            "arm_swing_m": 0.21119637787342072,
+            "stride_span_m": 0.7271124124526978,
+            "cadence_hz": 1.5384615384615383,
+            "foot_separation_m": 0.7265453934669495,
+            "head_error_m": 0.17418663203716278
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.5777317881584167,
+            "turning_rad": 3.0050697326660156,
+            "net_turning_rad": 0.002155780792236328,
+            "turning_efficiency": 0.0007173812869639396,
+            "arm_swing_m": 0.10441023111343384,
+            "stride_span_m": 0.697654128074646,
+            "cadence_hz": 1.1282051282051282,
+            "foot_separation_m": 0.8354825377464294,
+            "head_error_m": 0.21647892892360687
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.485272616147995,
+            "turning_rad": 4.757777690887451,
+            "net_turning_rad": 3.521151065826416,
+            "turning_efficiency": 0.740083142718177,
+            "arm_swing_m": 0.09816976636648178,
+            "stride_span_m": 0.5557853579521179,
+            "cadence_hz": 0.3076923076923077,
+            "foot_separation_m": 0.6909229755401611,
+            "head_error_m": 0.17235171794891357
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.3875601291656494,
+            "turning_rad": 4.515433311462402,
+            "net_turning_rad": 1.731821060180664,
+            "turning_efficiency": 0.3835337476437634,
+            "arm_swing_m": 0.09705013781785965,
+            "stride_span_m": 0.5217932462692261,
+            "cadence_hz": 1.3333333333333333,
+            "foot_separation_m": 0.5493698120117188,
+            "head_error_m": 0.17997661232948303
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.6075989007949829,
+            "turning_rad": 3.561962842941284,
+            "net_turning_rad": 2.2141008377075195,
+            "turning_efficiency": 0.6215957143110538,
+            "arm_swing_m": 0.07531720399856567,
+            "stride_span_m": 0.6163824796676636,
+            "cadence_hz": 1.435897435897436,
+            "foot_separation_m": 0.599214494228363,
+            "head_error_m": 0.16864873468875885
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.09245917201042175,
+          "turn_minus_base_turning_rad": 0.1593923568725586,
+          "swing_minus_base_arm_swing_m": 0.0180014967918396,
+          "large_minus_base_stride_span_m": 0.09529316425323486,
+          "quick_minus_slow_cadence_hz": -0.8205128205128205,
+          "turn_minus_base_net_yaw_rad": -0.9980731010437012,
+          "turn_minus_base_efficiency": -0.2431578261229958,
+          "large_minus_base_foot_separation_m": -0.07526463270187378
+        }
+      },
+      {
+        "motion_id": "004166",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.39628735184669495,
+            "turning_rad": 6.199764728546143,
+            "net_turning_rad": 0.047655582427978516,
+            "turning_efficiency": 0.007686675948936186,
+            "arm_swing_m": 0.09027181565761566,
+            "stride_span_m": 0.5512034296989441,
+            "cadence_hz": 1.5384615384615383,
+            "foot_separation_m": 0.5864909291267395,
+            "head_error_m": 0.26767346262931824
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.980580747127533,
+            "turning_rad": 4.0284576416015625,
+            "net_turning_rad": 0.5886080265045166,
+            "turning_efficiency": 0.14611250231999667,
+            "arm_swing_m": 0.1741647869348526,
+            "stride_span_m": 0.7455704808235168,
+            "cadence_hz": 1.7435897435897436,
+            "foot_separation_m": 0.7338537573814392,
+            "head_error_m": 0.28053268790245056
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.4685682952404022,
+            "turning_rad": 3.199143886566162,
+            "net_turning_rad": 0.8063373565673828,
+            "turning_efficiency": 0.2520478556633082,
+            "arm_swing_m": 0.038194771856069565,
+            "stride_span_m": 0.790107011795044,
+            "cadence_hz": 0.923076923076923,
+            "foot_separation_m": 0.6553521752357483,
+            "head_error_m": 0.24945664405822754
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.21429193019866943,
+            "turning_rad": 1.246572494506836,
+            "net_turning_rad": 0.5270066261291504,
+            "turning_efficiency": 0.42276452308346707,
+            "arm_swing_m": 0.030474185943603516,
+            "stride_span_m": 0.28026723861694336,
+            "cadence_hz": 0.3076923076923077,
+            "foot_separation_m": 0.491330087184906,
+            "head_error_m": 0.25395944714546204
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.5062136650085449,
+            "turning_rad": 8.55837631225586,
+            "net_turning_rad": 6.694406509399414,
+            "turning_efficiency": 0.7822052063558852,
+            "arm_swing_m": 0.13746947050094604,
+            "stride_span_m": 0.5040627717971802,
+            "cadence_hz": 1.641025641025641,
+            "foot_separation_m": 0.5002695322036743,
+            "head_error_m": 0.2856791615486145
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.605068027973175,
+            "turning_rad": 4.70512580871582,
+            "net_turning_rad": 4.167939186096191,
+            "turning_efficiency": 0.885829487996997,
+            "arm_swing_m": 0.10239194333553314,
+            "stride_span_m": 0.6553460359573364,
+            "cadence_hz": 1.435897435897436,
+            "foot_separation_m": 0.6295846700668335,
+            "head_error_m": 0.27063390612602234
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.2542763650417328,
+          "turn_minus_base_turning_rad": 2.358611583709717,
+          "swing_minus_base_arm_swing_m": 0.08389297127723694,
+          "large_minus_base_stride_span_m": 0.10414260625839233,
+          "quick_minus_slow_cadence_hz": -0.6153846153846153,
+          "turn_minus_base_net_yaw_rad": 6.6467509269714355,
+          "turn_minus_base_efficiency": 0.774518530406949,
+          "large_minus_base_foot_separation_m": 0.043093740940093994
+        }
+      },
+      {
+        "motion_id": "002954",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.5835571885108948,
+            "turning_rad": 4.141148567199707,
+            "net_turning_rad": 0.3788630962371826,
+            "turning_efficiency": 0.09148744366188588,
+            "arm_swing_m": 0.09625551849603653,
+            "stride_span_m": 0.6050320863723755,
+            "cadence_hz": 1.9487179487179487,
+            "foot_separation_m": 0.6358107328414917,
+            "head_error_m": 0.12704677879810333
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 1.0928163528442383,
+            "turning_rad": 5.9292426109313965,
+            "net_turning_rad": 4.061670780181885,
+            "turning_efficiency": 0.6850235429215902,
+            "arm_swing_m": 0.18796640634536743,
+            "stride_span_m": 0.7112176418304443,
+            "cadence_hz": 1.7435897435897436,
+            "foot_separation_m": 0.702511191368103,
+            "head_error_m": 0.13840611279010773
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.5855919718742371,
+            "turning_rad": 2.1187520027160645,
+            "net_turning_rad": 0.5503535270690918,
+            "turning_efficiency": 0.25975363155460585,
+            "arm_swing_m": 0.03780687227845192,
+            "stride_span_m": 0.7283675074577332,
+            "cadence_hz": 1.1282051282051282,
+            "foot_separation_m": 0.6092787981033325,
+            "head_error_m": 0.13734115660190582
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.44104036688804626,
+            "turning_rad": 1.8836016654968262,
+            "net_turning_rad": 0.49088430404663086,
+            "turning_efficiency": 0.26060940220986334,
+            "arm_swing_m": 0.05499410256743431,
+            "stride_span_m": 0.5700812339782715,
+            "cadence_hz": 1.9487179487179487,
+            "foot_separation_m": 0.6052072644233704,
+            "head_error_m": 0.1622263640165329
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.7508447766304016,
+            "turning_rad": 9.997045516967773,
+            "net_turning_rad": 5.100515365600586,
+            "turning_efficiency": 0.5102022749564948,
+            "arm_swing_m": 0.1154450997710228,
+            "stride_span_m": 0.5736851692199707,
+            "cadence_hz": 1.641025641025641,
+            "foot_separation_m": 0.5777480602264404,
+            "head_error_m": 0.10938969254493713
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.39489805698394775,
+            "turning_rad": 1.738107442855835,
+            "net_turning_rad": 0.4271881580352783,
+            "turning_efficiency": 0.24577776235361928,
+            "arm_swing_m": 0.061932727694511414,
+            "stride_span_m": 0.5108675956726074,
+            "cadence_hz": 1.641025641025641,
+            "foot_separation_m": 0.638839840888977,
+            "head_error_m": 0.18633967638015747
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.1445516049861908,
+          "turn_minus_base_turning_rad": 5.855896949768066,
+          "swing_minus_base_arm_swing_m": 0.0917108878493309,
+          "large_minus_base_stride_span_m": -0.09416449069976807,
+          "quick_minus_slow_cadence_hz": 0.8205128205128205,
+          "turn_minus_base_net_yaw_rad": 4.721652269363403,
+          "turn_minus_base_efficiency": 0.41871483129460896,
+          "large_minus_base_foot_separation_m": 0.0030291080474853516
+        }
+      },
+      {
+        "motion_id": "006281",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.36221009492874146,
+            "turning_rad": 2.8223283290863037,
+            "net_turning_rad": 1.3902084827423096,
+            "turning_efficiency": 0.49257503757274534,
+            "arm_swing_m": 0.06102323159575462,
+            "stride_span_m": 0.5566795468330383,
+            "cadence_hz": 1.846153846153846,
+            "foot_separation_m": 0.587169885635376,
+            "head_error_m": 0.1668330579996109
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.922021746635437,
+            "turning_rad": 4.648395538330078,
+            "net_turning_rad": 0.5049283504486084,
+            "turning_efficiency": 0.10862422233328327,
+            "arm_swing_m": 0.24346823990345,
+            "stride_span_m": 0.7385050058364868,
+            "cadence_hz": 1.7435897435897436,
+            "foot_separation_m": 0.7324630618095398,
+            "head_error_m": 0.15281932055950165
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.3205682337284088,
+            "turning_rad": 0.9651391506195068,
+            "net_turning_rad": 0.4150712490081787,
+            "turning_efficiency": 0.43006363252568436,
+            "arm_swing_m": 0.03641115874052048,
+            "stride_span_m": 0.6200963854789734,
+            "cadence_hz": 1.2307692307692308,
+            "foot_separation_m": 0.5041990876197815,
+            "head_error_m": 0.1689404845237732
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.21705001592636108,
+            "turning_rad": 2.362762928009033,
+            "net_turning_rad": 1.8343467712402344,
+            "turning_efficiency": 0.7763566752699708,
+            "arm_swing_m": 0.03253239393234253,
+            "stride_span_m": 0.41209548711776733,
+            "cadence_hz": 1.3333333333333333,
+            "foot_separation_m": 0.43063676357269287,
+            "head_error_m": 0.157671719789505
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.3883951008319855,
+            "turning_rad": 6.3159308433532715,
+            "net_turning_rad": 4.876163005828857,
+            "turning_efficiency": 0.7720418615666779,
+            "arm_swing_m": 0.11135397106409073,
+            "stride_span_m": 0.4779159128665924,
+            "cadence_hz": 1.435897435897436,
+            "foot_separation_m": 0.4891223907470703,
+            "head_error_m": 0.18345840275287628
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.3536384403705597,
+            "turning_rad": 3.7162489891052246,
+            "net_turning_rad": 1.744477391242981,
+            "turning_efficiency": 0.46941886734640065,
+            "arm_swing_m": 0.07765375822782516,
+            "stride_span_m": 0.4828752875328064,
+            "cadence_hz": 1.1282051282051282,
+            "foot_separation_m": 0.5827321410179138,
+            "head_error_m": 0.18753382563591003
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.10351821780204773,
+          "turn_minus_base_turning_rad": 3.4936025142669678,
+          "swing_minus_base_arm_swing_m": 0.1824450083076954,
+          "large_minus_base_stride_span_m": -0.07380425930023193,
+          "quick_minus_slow_cadence_hz": 0.10256410256410242,
+          "turn_minus_base_net_yaw_rad": 3.485954523086548,
+          "turn_minus_base_efficiency": 0.2794668239939325,
+          "large_minus_base_foot_separation_m": -0.004437744617462158
+        }
+      },
+      {
+        "motion_id": "005628",
+        "values": {
+          "a person walks": {
+            "speed_mps": 0.33386290073394775,
+            "turning_rad": 6.264154434204102,
+            "net_turning_rad": 0.30127811431884766,
+            "turning_efficiency": 0.048095575784942605,
+            "arm_swing_m": 0.07672601193189621,
+            "stride_span_m": 0.547051191329956,
+            "cadence_hz": 1.2307692307692308,
+            "foot_separation_m": 0.5569568276405334,
+            "head_error_m": 0.1513129323720932
+          },
+          "a person walks while swinging arms": {
+            "speed_mps": 0.804836094379425,
+            "turning_rad": 4.370794296264648,
+            "net_turning_rad": 1.7398455142974854,
+            "turning_efficiency": 0.39806163282138113,
+            "arm_swing_m": 0.23883838951587677,
+            "stride_span_m": 0.6967133283615112,
+            "cadence_hz": 1.5384615384615383,
+            "foot_separation_m": 0.6689972281455994,
+            "head_error_m": 0.12966187298297882
+          },
+          "a person walks slowly": {
+            "speed_mps": 0.5692374110221863,
+            "turning_rad": 2.5470235347747803,
+            "net_turning_rad": 0.8576662540435791,
+            "turning_efficiency": 0.336732755835889,
+            "arm_swing_m": 0.1186973825097084,
+            "stride_span_m": 0.713239848613739,
+            "cadence_hz": 1.1282051282051282,
+            "foot_separation_m": 0.6302303671836853,
+            "head_error_m": 0.13728387653827667
+          },
+          "a person walks quickly": {
+            "speed_mps": 0.4364410936832428,
+            "turning_rad": 2.574711561203003,
+            "net_turning_rad": 0.5008208751678467,
+            "turning_efficiency": 0.19451533240245528,
+            "arm_swing_m": 0.08662223815917969,
+            "stride_span_m": 0.3608499765396118,
+            "cadence_hz": 1.846153846153846,
+            "foot_separation_m": 0.43607038259506226,
+            "head_error_m": 0.14308451116085052
+          },
+          "a person turns while walking": {
+            "speed_mps": 0.39559513330459595,
+            "turning_rad": 5.813845634460449,
+            "net_turning_rad": 3.0289745330810547,
+            "turning_efficiency": 0.5209932845700945,
+            "arm_swing_m": 0.0831591859459877,
+            "stride_span_m": 0.4297553598880768,
+            "cadence_hz": 1.641025641025641,
+            "foot_separation_m": 0.49671316146850586,
+            "head_error_m": 0.11815141886472702
+          },
+          "a person walks with large steps": {
+            "speed_mps": 0.5565248727798462,
+            "turning_rad": 5.897050857543945,
+            "net_turning_rad": 4.253255844116211,
+            "turning_efficiency": 0.7212513418762754,
+            "arm_swing_m": 0.11801739037036896,
+            "stride_span_m": 0.7044589519500732,
+            "cadence_hz": 1.435897435897436,
+            "foot_separation_m": 0.7155108451843262,
+            "head_error_m": 0.13027159869670868
+          }
+        },
+        "contrasts": {
+          "quick_minus_slow_speed_mps": -0.13279631733894348,
+          "turn_minus_base_turning_rad": -0.45030879974365234,
+          "swing_minus_base_arm_swing_m": 0.16211237758398056,
+          "large_minus_base_stride_span_m": 0.1574077606201172,
+          "quick_minus_slow_cadence_hz": 0.7179487179487178,
+          "turn_minus_base_net_yaw_rad": 2.727696418762207,
+          "turn_minus_base_efficiency": 0.4728977087851519,
+          "large_minus_base_foot_separation_m": 0.15855401754379272
+        }
+      }
+    ]
+  }
+}

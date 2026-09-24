@@ -1,0 +1,95 @@
+{
+  "read_commit": "663414f1d9bffd6a70189846739bc9d9b1d0d873",
+  "change_commit": null,
+  "state": "uncommitted_workspace_snapshot",
+  "files": [
+    {
+      "path": "scripts/audit_itm_rework.py",
+      "sha256": "54cc96e61b227ed61e80c8a73f3ecede6ee50af7d6a5c9971e49163ccb068b23"
+    },
+    {
+      "path": "scripts/audit_rework_cache_full.py",
+      "sha256": "cecc8bd679e4510ff8b892c13e120bde66733f019f612241109fc21e7014599f"
+    },
+    {
+      "path": "scripts/audit_rework_sources.py",
+      "sha256": "9da267f28770bd5fb5e24ee1f8776280fc41e3f08be4319fab2508da1f972859"
+    },
+    {
+      "path": "scripts/audit_standard_imu_cache.py",
+      "sha256": "cb6067ed1de34bb7b7a38079e4f3b0a11fb337422bc9c73097149e2a06c3fca9"
+    },
+    {
+      "path": "scripts/build_standard_imu_cache.py",
+      "sha256": "450808f7adb49012a6ba649f569c53d44dbb85ad715019430919d38d717d49d3"
+    },
+    {
+      "path": "scripts/check_rework_cache_synthesis.py",
+      "sha256": "00972e901561a73dc2943c3e06f8f1081e598aeb00d63fd6b93cf3692605d058"
+    },
+    {
+      "path": "scripts/evaluate_mdm_control_conditions.py",
+      "sha256": "5c4f52c5772a795ebfe75219ce5f4a98f00c5580f798a900f4b7758841436f8c"
+    },
+    {
+      "path": "scripts/evaluate_mdm_multiseed_control.py",
+      "sha256": "4adcc7aadd88583ea15957f0d0d6b3a6958da9f3cb7a0b45e72ce894b07a77dc"
+    },
+    {
+      "path": "scripts/evaluate_motionlab_direct_suite.py",
+      "sha256": "5b33e359d692ed635660aca59e35040d6a335944549671b006638b40bb20f722"
+    },
+    {
+      "path": "scripts/evaluate_rework_records.py",
+      "sha256": "96059377339c2e44937a811aaae5ff8d33e820b9d80817b17e236bce61adcfb8"
+    },
+    {
+      "path": "scripts/evaluate_text_attribute_control.py",
+      "sha256": "6d7aa0482527229bb05c3fb5d0a86d95df769b243765eb5f8ca3b26faa518697"
+    },
+    {
+      "path": "scripts/plan_rework_validation.py",
+      "sha256": "36863f6c9f7e00a6e05c8b64445ec1f2cbcd6be5eaa4435f8c2d8412599b67aa"
+    },
+    {
+      "path": "scripts/recompute_rework_statistics.py",
+      "sha256": "63b163a37948b59a4a3f7b440eb417f825e97f36ab194fd03a163c86865c6ca0"
+    },
+    {
+      "path": "scripts/run_rework_stage.py",
+      "sha256": "984edfd576e1d8dad86b2b0b3b02ffee458068cd264bbd41b096e22c67bdfa1c"
+    },
+    {
+      "path": "src/itm/data/observation.py",
+      "sha256": "5b82785d95152ce246c07f82d491679ed7e9aa9fbc95e1befc97d7e057898df9"
+    },
+    {
+      "path": "src/itm/data/random_plan.py",
+      "sha256": "5e2f8aed3669c97ca58c9d726f5da515bb409c2ace21a86965ad433ca0275c3a"
+    },
+    {
+      "path": "src/itm/data/standard_imu.py",
+      "sha256": "3f4a6549374bd620ae9f3440cc4a7cf51942e4478c5dafeeaa9ae3582fb1b9a7"
+    },
+    {
+      "path": "src/itm/metrics/rework_protocol.py",
+      "sha256": "283316e50297b18adafa6ba9aa7ca81a1f281ac9e9ffc8a6ab38d910b383f9cb"
+    },
+    {
+      "path": "tests/test_rework_observation.py",
+      "sha256": "294705d3e8f9cdf9576bb0fd5714ed74fc6ef0cb729db337ca4d65e1ca2de054"
+    },
+    {
+      "path": "tests/test_rework_protocol.py",
+      "sha256": "40d34fd62b7094c791c44f1f96d881b7b872583867abfe83c63c290ff867abb9"
+    },
+    {
+      "path": "tests/test_rework_random_plan.py",
+      "sha256": "5e38c538eeb539abf7a411a232262a9bc42a2f812a5e1b4437e4ff3ec202835e"
+    },
+    {
+      "path": "tests/test_rework_runner.py",
+      "sha256": "944ed4701bf28c4ece868b8db645a62b77b48fe1274294f0938980bd147dc1bc"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "version": "itm-thresholds-v0.1-draft",
+  "status": "draft",
+  "fit_split": "val",
+  "validation_evidence": null,
+  "observation_space": "joint_proxy",
+  "semantic_evaluator_version": null,
+  "quality_evaluator_version": null,
+  "semantic_min": null,
+  "edit_delta_min": null,
+  "quality_min": null,
+  "observation_max": {},
+  "reason": "No independent validation calibration or compatible witness panel yet. The evaluator rejects this draft."
+}

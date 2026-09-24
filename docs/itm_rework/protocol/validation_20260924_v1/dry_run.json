@@ -1,0 +1,1100 @@
+{
+  "status": "blocked_for_generation",
+  "panel": {
+    "path": "docs/itm_rework/protocol/validation_20260924_v1/panel.jsonl",
+    "exists": true,
+    "bytes": 4185,
+    "sha256": "150d53da4d1d09daa49a85b897251431d59ed696f2b3735aadb1aa5ed9312791"
+  },
+  "panel_status": "candidate_ids_fixed_not_protocol_frozen",
+  "selected_cases": 6,
+  "eligible_per_length_bin": {
+    "short": 61,
+    "medium": 72,
+    "long": 45
+  },
+  "excluded": [
+    {
+      "motion_id": "000039",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "000228",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "000264",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "000272",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "000317",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "000346",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "000424",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "000515",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "000626",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "000630",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "000645",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "000751",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "000776",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "000783",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "000838",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "000859",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "000900",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "000932",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "000949",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "000966",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "001048",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "001077",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "001178",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "001297",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "001305",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "001375",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "001426",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "001637",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "001666",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "001816",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "001836",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "001871",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "001918",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "002047",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "002237",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "002345",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "002558",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "002566",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "002636",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "002670",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "002679",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "002728",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "002735",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "002952",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "003004",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "003036",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "003074",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "003113",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "003118",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "003172",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "003229",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "003334",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "003391",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "003459",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "003464",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "003466",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "003488",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "003511",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "003602",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "003621",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "003722",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "003759",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "003946",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "003979",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "004078",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "004130",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "004294",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "004308",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "004358",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "004371",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "004469",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "004657",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "004661",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "004784",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "004809",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "004845",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "004858",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "004887",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "004911",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "004972",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "004974",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "005109",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "005235",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "005336",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "005341",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "005358",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "005415",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "005467",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "005487",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "005571",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "005573",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "005574",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "005612",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "005663",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "005675",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "005702",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "005742",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "005846",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "005874",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "005942",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "005969",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "005973",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "006064",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "006109",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "006170",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "006181",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "006225",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "006286",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "006330",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "006353",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "006393",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "006411",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "006463",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "006542",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "006595",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "006972",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "007000",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "007034",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "007263",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "007297",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "007324",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "007353",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "007369",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "007440",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "007452",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "007480",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "007577",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "007599",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "007627",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "007691",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "007709",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "007758",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "007821",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "007867",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "008121",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "008199",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "008331",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "008504",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "008617",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "008630",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "008701",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "008748",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "008761",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "008906",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "008982",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "008995",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "009008",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "009043",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "009049",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "009055",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "009088",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "009102",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "009113",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "009225",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "009270",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "009316",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "009352",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "009450",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "009537",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "009541",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "009606",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "009750",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "009751",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "009844",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "009894",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "009933",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "009955",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010018",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010029",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010174",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010182",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "010213",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010238",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "010245",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010308",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010360",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010458",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010565",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010601",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010635",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010647",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010699",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010711",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010731",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010756",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010835",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010852",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010902",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010921",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010946",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010960",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "010978",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "011021",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "011022",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "011089",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "011132",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "011249",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "011310",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "011511",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "011543",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "011622",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "011641",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "011670",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "011751",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "011754",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "011795",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "011818",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "011873",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "011911",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "011926",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "012059",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "012065",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "012153",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "012187",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "012188",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "012299",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "012429",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "012434",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "012478",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "012508",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "012633",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "012795",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "012808",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "012891",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "012901",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "012940",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "012962",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "012969",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "013022",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "013041",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "013060",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "013074",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "013212",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "013244",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "013305",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "013363",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "013396",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "013397",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "013435",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "013485",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "013529",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "013592",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "013645",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "013682",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "013803",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "013804",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "013874",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "013880",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "013926",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "014078",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "014273",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "014426",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "014432",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "014562",
+      "reason": "length_or_no_full_clip_caption"
+    },
+    {
+      "motion_id": "014568",
+      "reason": "source_shared_with_train_or_test"
+    },
+    {
+      "motion_id": "014579",
+      "reason": "source_shared_with_train_or_test"
+    }
+  ],
+  "stages": [
+    {
+      "gate": "G1",
+      "action": "CPU schema/analytic observation/RNG tests",
+      "gpu_jobs": 0
+    },
+    {
+      "gate": "G2",
+      "action": "B0 null/mask/sampler correctness supplied by method owner",
+      "status": "awaiting_method_handoff"
+    },
+    {
+      "gate": "G3",
+      "action": "full-generation P then compatible C on candidate val panel",
+      "status": "blocked"
+    },
+    {
+      "gate": "G4",
+      "action": "sealed evaluation of final checkpoint",
+      "status": "blocked"
+    }
+  ],
+  "proposed_P_plan": {
+    "conditions": [
+      "text_only",
+      "imu_only",
+      "paired",
+      "same_class_near_length_shuffled",
+      "bypass",
+      "numeric_zero",
+      "physical_static"
+    ],
+    "sensor_configs": [
+      "head",
+      "wrists"
+    ],
+    "K": 1,
+    "sampling_seeds": [
+      20260924
+    ],
+    "training_seed": null,
+    "outputs_per_model": 84,
+    "sampler": null,
+    "steps": null,
+    "forward_calls": null,
+    "gpu": null,
+    "memory_limit_gib": null,
+    "authorized_gpu_budget": 0
+  },
+  "blockers": [
+    "no fixed B0 checkpoint/model card from owner 01",
+    "input synchronization/canonicalization not certified",
+    "no independent semantic/quality thresholds fitted on validation",
+    "no verified compatibility witnesses",
+    "same-class near-length shuffle partners and asymmetric wrist coverage need review",
+    "sampler, guidance, runtime and memory budget not frozen",
+    "independent test pool and pretrained exposure unresolved"
+  ]
+}

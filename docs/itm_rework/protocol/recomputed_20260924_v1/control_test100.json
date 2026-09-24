@@ -1,0 +1,4334 @@
+{
+  "protocol": {
+    "manifest": "/home/a200/0proj/ITM/outputs/mdm_control/control_test100/specs/manifest.json",
+    "seed": 1234,
+    "guidance_mode": "factorized",
+    "text_only_head_wrists_max_abs_difference": 0.0
+  },
+  "summary": {
+    "head": {
+      "samples": 100,
+      "paired_improves_text": 60,
+      "paired_beats_zero": 54,
+      "paired_beats_shuffled": 51,
+      "text_active_error_m": {
+        "mean": 0.22452252021059393,
+        "std": 0.16068973946425025,
+        "median": 0.18669521808624268
+      },
+      "paired_active_error_m": {
+        "mean": 0.2135676675103605,
+        "std": 0.15205293013469795,
+        "median": 0.1696341633796692
+      },
+      "zero_active_error_m": {
+        "mean": 0.21810584865510463,
+        "std": 0.15743890966805446,
+        "median": 0.16720658540725708
+      },
+      "shuffled_active_error_m": {
+        "mean": 0.2152789133042097,
+        "std": 0.1531684580174158,
+        "median": 0.18053913861513138
+      },
+      "paired_motion_difference_m": {
+        "mean": 0.08069231854751706,
+        "std": 0.0419861505688167,
+        "median": 0.07201068475842476
+      },
+      "text_jerk_ratio": {
+        "mean": 0.9954936787405582,
+        "std": 0.9640835765970627,
+        "median": 0.8320810636609731
+      },
+      "paired_jerk_ratio": {
+        "mean": 1.0410157368976274,
+        "std": 1.320303329341139,
+        "median": 0.7473104303638567
+      },
+      "text_root_travel_m": {
+        "mean": 3.075665316134691,
+        "std": 3.169495122944536,
+        "median": 1.8264540433883667
+      },
+      "paired_root_travel_m": {
+        "mean": 2.807471611313522,
+        "std": 2.983325259599852,
+        "median": 1.6068362593650818
+      },
+      "text_step_frequency_hz": {
+        "mean": 0.5908777586081922,
+        "std": 0.3426968960845559,
+        "median": 0.5598290598290598
+      },
+      "paired_step_frequency_hz": {
+        "mean": 0.5940131000623866,
+        "std": 0.38155429133357355,
+        "median": 0.5128205128205128
+      }
+    },
+    "wrists": {
+      "samples": 100,
+      "paired_improves_text": 70,
+      "paired_beats_zero": 65,
+      "paired_beats_shuffled": 74,
+      "text_active_error_m": {
+        "mean": 0.5050065674632788,
+        "std": 0.20174671013816065,
+        "median": 0.5119381546974182
+      },
+      "paired_active_error_m": {
+        "mean": 0.4854256825149059,
+        "std": 0.19484208644861917,
+        "median": 0.475955992937088
+      },
+      "zero_active_error_m": {
+        "mean": 0.49557481333613396,
+        "std": 0.19397816421264255,
+        "median": 0.47923679649829865
+      },
+      "shuffled_active_error_m": {
+        "mean": 0.5056946568191052,
+        "std": 0.196031935625504,
+        "median": 0.481605127453804
+      },
+      "paired_motion_difference_m": {
+        "mean": 0.07116032727062702,
+        "std": 0.04054888956422855,
+        "median": 0.06158401258289814
+      },
+      "text_jerk_ratio": {
+        "mean": 0.9954936787405582,
+        "std": 0.9640835765970627,
+        "median": 0.8320810636609731
+      },
+      "paired_jerk_ratio": {
+        "mean": 0.951285527106883,
+        "std": 1.0483544172783834,
+        "median": 0.7002396859324658
+      },
+      "text_root_travel_m": {
+        "mean": 3.075665316134691,
+        "std": 3.169495122944536,
+        "median": 1.8264540433883667
+      },
+      "paired_root_travel_m": {
+        "mean": 2.740414257608354,
+        "std": 2.9530248636828498,
+        "median": 1.5042348504066467
+      },
+      "text_step_frequency_hz": {
+        "mean": 0.5908777586081922,
+        "std": 0.3426968960845559,
+        "median": 0.5598290598290598
+      },
+      "paired_step_frequency_hz": {
+        "mean": 0.5749684152138798,
+        "std": 0.350957248641172,
+        "median": 0.5128205128205128
+      }
+    }
+  },
+  "records": [
+    {
+      "motion_id": "000055",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.26195916533470154,
+            "paired": 0.28118792176246643,
+            "zero": 0.35602840781211853,
+            "shuffled": 0.2652573585510254
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.05008020997047424,
+          "text_jerk_ratio": 0.09149718064812642,
+          "paired_jerk_ratio": 0.1923827982277673,
+          "text_root_travel_m": 0.7610964775085449,
+          "paired_root_travel_m": 0.6565998792648315,
+          "text_step_frequency_hz": 0.41025641025641024,
+          "paired_step_frequency_hz": 0.6153846153846154
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.5488525032997131,
+            "paired": 0.511572003364563,
+            "zero": 0.5288574695587158,
+            "shuffled": 0.526710569858551
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.04052764177322388,
+          "text_jerk_ratio": 0.09149718064812642,
+          "paired_jerk_ratio": 0.3548121521781771,
+          "text_root_travel_m": 0.7610964775085449,
+          "paired_root_travel_m": 0.4802853763103485,
+          "text_step_frequency_hz": 0.41025641025641024,
+          "paired_step_frequency_hz": 0.6666666666666666
+        }
+      },
+      "caption": "a person is lifting weights"
+    },
+    {
+      "motion_id": "000115",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.25841161608695984,
+            "paired": 0.28105366230010986,
+            "zero": 0.24798016250133514,
+            "shuffled": 0.2582397162914276
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.0971720963716507,
+          "text_jerk_ratio": 1.205814073314289,
+          "paired_jerk_ratio": 1.3762600893422037,
+          "text_root_travel_m": 8.106531143188477,
+          "paired_root_travel_m": 9.293525695800781,
+          "text_step_frequency_hz": 1.3076923076923077,
+          "paired_step_frequency_hz": 1.1538461538461537
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.3963561952114105,
+            "paired": 0.40872353315353394,
+            "zero": 0.41706201434135437,
+            "shuffled": 0.41793105006217957
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.07405931502580643,
+          "text_jerk_ratio": 1.205814073314289,
+          "paired_jerk_ratio": 1.1390899700914512,
+          "text_root_travel_m": 8.106531143188477,
+          "paired_root_travel_m": 7.315352439880371,
+          "text_step_frequency_hz": 1.3076923076923077,
+          "paired_step_frequency_hz": 0.8461538461538461
+        }
+      },
+      "caption": "a person steps backward, jumps up, runs forward, then runs backward."
+    },
+    {
+      "motion_id": "000680",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.1560804843902588,
+            "paired": 0.14138418436050415,
+            "zero": 0.12120751291513443,
+            "shuffled": 0.12703287601470947
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.0923372283577919,
+          "text_jerk_ratio": 0.4316076518114493,
+          "paired_jerk_ratio": 1.0742464251535022,
+          "text_root_travel_m": 0.36141732335090637,
+          "paired_root_travel_m": 0.5877567529678345,
+          "text_step_frequency_hz": 0.20512820512820512,
+          "paired_step_frequency_hz": 0.41025641025641024
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.468686580657959,
+            "paired": 0.4433976113796234,
+            "zero": 0.40330225229263306,
+            "shuffled": 0.4430777430534363
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.0867386907339096,
+          "text_jerk_ratio": 0.4316076518114493,
+          "paired_jerk_ratio": 1.004180298512025,
+          "text_root_travel_m": 0.36141732335090637,
+          "paired_root_travel_m": 0.6238623857498169,
+          "text_step_frequency_hz": 0.20512820512820512,
+          "paired_step_frequency_hz": 0.20512820512820512
+        }
+      },
+      "caption": "figure moves hands the times in midsection of figure,"
+    },
+    {
+      "motion_id": "000781",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.11737915128469467,
+            "paired": 0.1325732320547104,
+            "zero": 0.16759593784809113,
+            "shuffled": 0.13651318848133087
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.08854231983423233,
+          "text_jerk_ratio": 0.9968572114174089,
+          "paired_jerk_ratio": 0.9659030446765132,
+          "text_root_travel_m": 1.0651049613952637,
+          "paired_root_travel_m": 0.6657193303108215,
+          "text_step_frequency_hz": 0.2564102564102564,
+          "paired_step_frequency_hz": 0.15384615384615385
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.3587236702442169,
+            "paired": 0.2931554317474365,
+            "zero": 0.32614096999168396,
+            "shuffled": 0.36287805438041687
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.07029420882463455,
+          "text_jerk_ratio": 0.9968572114174089,
+          "paired_jerk_ratio": 0.4354965615336785,
+          "text_root_travel_m": 1.0651049613952637,
+          "paired_root_travel_m": 0.6097551584243774,
+          "text_step_frequency_hz": 0.2564102564102564,
+          "paired_step_frequency_hz": 0.10256410256410256
+        }
+      },
+      "caption": "a man raises left foot knee high then swings out and puts down repaets this motion twice"
+    },
+    {
+      "motion_id": "000926",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.21660366654396057,
+            "paired": 0.1470494121313095,
+            "zero": 0.2693323791027069,
+            "shuffled": 0.17396123707294464
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.13347677886486053,
+          "text_jerk_ratio": 0.6815777580491295,
+          "paired_jerk_ratio": 0.38300174596912157,
+          "text_root_travel_m": 1.498215913772583,
+          "paired_root_travel_m": 0.556437075138092,
+          "text_step_frequency_hz": 0.10256410256410256,
+          "paired_step_frequency_hz": 0.10256410256410256
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.7320796251296997,
+            "paired": 0.7419264912605286,
+            "zero": 0.7513362169265747,
+            "shuffled": 0.755000650882721
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.12332908064126968,
+          "text_jerk_ratio": 0.6815777580491295,
+          "paired_jerk_ratio": 0.32393913791720885,
+          "text_root_travel_m": 1.498215913772583,
+          "paired_root_travel_m": 0.7526900768280029,
+          "text_step_frequency_hz": 0.10256410256410256,
+          "paired_step_frequency_hz": 0.10256410256410256
+        }
+      },
+      "caption": "a person bends at the hips and moves from the left to right while lifting arms up, bent at the elbows"
+    },
+    {
+      "motion_id": "001436",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.5016263723373413,
+            "paired": 0.3819638192653656,
+            "zero": 0.46653565764427185,
+            "shuffled": 0.4801650047302246
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.14551189541816711,
+          "text_jerk_ratio": 1.0484129455781648,
+          "paired_jerk_ratio": 1.3871313997675032,
+          "text_root_travel_m": 2.7039732933044434,
+          "paired_root_travel_m": 4.202025890350342,
+          "text_step_frequency_hz": 0.33557046979865773,
+          "paired_step_frequency_hz": 0.6040268456375839
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.5675026178359985,
+            "paired": 0.5452036261558533,
+            "zero": 0.5105923414230347,
+            "shuffled": 0.6050468683242798
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.1518949419260025,
+          "text_jerk_ratio": 1.0484129455781648,
+          "paired_jerk_ratio": 1.036281223441148,
+          "text_root_travel_m": 2.7039732933044434,
+          "paired_root_travel_m": 3.0443220138549805,
+          "text_step_frequency_hz": 0.33557046979865773,
+          "paired_step_frequency_hz": 0.33557046979865773
+        }
+      },
+      "caption": "a person ducks down suddenly, steps forward, and stands back up."
+    },
+    {
+      "motion_id": "001485",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.36185237765312195,
+            "paired": 0.3570193350315094,
+            "zero": 0.37000375986099243,
+            "shuffled": 0.3548864722251892
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.07616890966892242,
+          "text_jerk_ratio": 1.749598342592343,
+          "paired_jerk_ratio": 1.4677569591446116,
+          "text_root_travel_m": 4.134647369384766,
+          "paired_root_travel_m": 3.6987292766571045,
+          "text_step_frequency_hz": 0.6153846153846154,
+          "paired_step_frequency_hz": 0.6153846153846154
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.6743656992912292,
+            "paired": 0.6129799485206604,
+            "zero": 0.637077808380127,
+            "shuffled": 0.6445932984352112
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.06551363319158554,
+          "text_jerk_ratio": 1.749598342592343,
+          "paired_jerk_ratio": 1.0438061068020426,
+          "text_root_travel_m": 4.134647369384766,
+          "paired_root_travel_m": 2.7316701412200928,
+          "text_step_frequency_hz": 0.6153846153846154,
+          "paired_step_frequency_hz": 0.5128205128205128
+        }
+      },
+      "caption": "a person walks down in an s pattern, bends down and picks something up and puts it down to the right twice in a row."
+    },
+    {
+      "motion_id": "001577",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.04075625538825989,
+            "paired": 0.04332849383354187,
+            "zero": 0.08163126558065414,
+            "shuffled": 0.03829210251569748
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.024718713015317917,
+          "text_jerk_ratio": 0.11042138156641769,
+          "paired_jerk_ratio": 0.3311690428524717,
+          "text_root_travel_m": 0.04749662056565285,
+          "paired_root_travel_m": 0.04476941376924515,
+          "text_step_frequency_hz": 0.7462686567164178,
+          "paired_step_frequency_hz": 0.8955223880597015
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.19453071057796478,
+            "paired": 0.14661303162574768,
+            "zero": 0.2052704095840454,
+            "shuffled": 0.18532319366931915
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.02852683700621128,
+          "text_jerk_ratio": 0.11042138156641769,
+          "paired_jerk_ratio": 0.40311550681987834,
+          "text_root_travel_m": 0.04749662056565285,
+          "paired_root_travel_m": 0.07461996376514435,
+          "text_step_frequency_hz": 0.7462686567164178,
+          "paired_step_frequency_hz": 1.044776119402985
+        }
+      },
+      "caption": "a person scratching their head"
+    },
+    {
+      "motion_id": "001752",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.2435043454170227,
+            "paired": 0.2608502209186554,
+            "zero": 0.32527056336402893,
+            "shuffled": 0.2637798488140106
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.05194275826215744,
+          "text_jerk_ratio": 0.13814161028364888,
+          "paired_jerk_ratio": 0.3509640478353076,
+          "text_root_travel_m": 0.502110481262207,
+          "paired_root_travel_m": 0.7822407484054565,
+          "text_step_frequency_hz": 0.08849557522123894,
+          "paired_step_frequency_hz": 0.08849557522123894
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.2711641490459442,
+            "paired": 0.2582601308822632,
+            "zero": 0.295138418674469,
+            "shuffled": 0.2951086759567261
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.04147903621196747,
+          "text_jerk_ratio": 0.13814161028364888,
+          "paired_jerk_ratio": 0.2949675338494059,
+          "text_root_travel_m": 0.502110481262207,
+          "paired_root_travel_m": 0.629117488861084,
+          "text_step_frequency_hz": 0.08849557522123894,
+          "paired_step_frequency_hz": 0.08849557522123894
+        }
+      },
+      "caption": "a person stands still then they throw a football"
+    },
+    {
+      "motion_id": "002078",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.17307166755199432,
+            "paired": 0.12964235246181488,
+            "zero": 0.1325453221797943,
+            "shuffled": 0.13459892570972443
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.05927880480885506,
+          "text_jerk_ratio": 0.06499862939953809,
+          "paired_jerk_ratio": 0.19603169559988423,
+          "text_root_travel_m": 0.3096901774406433,
+          "paired_root_travel_m": 0.33271121978759766,
+          "text_step_frequency_hz": 0.10416666666666667,
+          "paired_step_frequency_hz": 0.20833333333333334
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.574329674243927,
+            "paired": 0.5469943284988403,
+            "zero": 0.5285483002662659,
+            "shuffled": 0.5233873724937439
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.024335965514183044,
+          "text_jerk_ratio": 0.06499862939953809,
+          "paired_jerk_ratio": 0.2646732877282592,
+          "text_root_travel_m": 0.3096901774406433,
+          "paired_root_travel_m": 0.31729573011398315,
+          "text_step_frequency_hz": 0.10416666666666667,
+          "paired_step_frequency_hz": 0.10416666666666667
+        }
+      },
+      "caption": "the man is moving both arms awkwardly"
+    },
+    {
+      "motion_id": "002149",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.12828181684017181,
+            "paired": 0.12241614609956741,
+            "zero": 0.11049510538578033,
+            "shuffled": 0.12098708003759384
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.06829036772251129,
+          "text_jerk_ratio": 0.3235431718750986,
+          "paired_jerk_ratio": 0.22643527488581652,
+          "text_root_travel_m": 0.9036960005760193,
+          "paired_root_travel_m": 0.3031884431838989,
+          "text_step_frequency_hz": 0.3164556962025316,
+          "paired_step_frequency_hz": 0.12658227848101264
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.4620979428291321,
+            "paired": 0.4191291034221649,
+            "zero": 0.3983869254589081,
+            "shuffled": 0.4206533432006836
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.06734388321638107,
+          "text_jerk_ratio": 0.3235431718750986,
+          "paired_jerk_ratio": 0.13395781506357865,
+          "text_root_travel_m": 0.9036960005760193,
+          "paired_root_travel_m": 0.215379536151886,
+          "text_step_frequency_hz": 0.3164556962025316,
+          "paired_step_frequency_hz": 0.12658227848101264
+        }
+      },
+      "caption": "a person steps forward, turns to the side and gestures several times."
+    },
+    {
+      "motion_id": "002403",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.23542363941669464,
+            "paired": 0.25998762249946594,
+            "zero": 0.21124866604804993,
+            "shuffled": 0.23233196139335632
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.11103902757167816,
+          "text_jerk_ratio": 1.4225285749745868,
+          "paired_jerk_ratio": 1.044732394033238,
+          "text_root_travel_m": 9.154062271118164,
+          "paired_root_travel_m": 8.159187316894531,
+          "text_step_frequency_hz": 1.1931818181818181,
+          "paired_step_frequency_hz": 0.7386363636363635
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.44541534781455994,
+            "paired": 0.3915654420852661,
+            "zero": 0.39622384309768677,
+            "shuffled": 0.4101884067058563
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.09085401147603989,
+          "text_jerk_ratio": 1.4225285749745868,
+          "paired_jerk_ratio": 0.8805520998321553,
+          "text_root_travel_m": 9.154062271118164,
+          "paired_root_travel_m": 7.213934898376465,
+          "text_step_frequency_hz": 1.1931818181818181,
+          "paired_step_frequency_hz": 0.45454545454545453
+        }
+      },
+      "caption": "the person turns around and starts to walk backwards towards the screen. he then faces us and walks backwards"
+    },
+    {
+      "motion_id": "002483",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.09907973557710648,
+            "paired": 0.10355912148952484,
+            "zero": 0.10065329074859619,
+            "shuffled": 0.0726161077618599
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.0623302198946476,
+          "text_jerk_ratio": 0.39758950217695166,
+          "paired_jerk_ratio": 0.375060060153754,
+          "text_root_travel_m": 4.218319892883301,
+          "paired_root_travel_m": 4.174577236175537,
+          "text_step_frequency_hz": 0.41025641025641024,
+          "paired_step_frequency_hz": 0.41025641025641024
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.4414195716381073,
+            "paired": 0.4336990714073181,
+            "zero": 0.4154937267303467,
+            "shuffled": 0.4305226802825928
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.06274361163377762,
+          "text_jerk_ratio": 0.39758950217695166,
+          "paired_jerk_ratio": 0.33442850135435476,
+          "text_root_travel_m": 4.218319892883301,
+          "paired_root_travel_m": 4.457716464996338,
+          "text_step_frequency_hz": 0.41025641025641024,
+          "paired_step_frequency_hz": 0.46153846153846156
+        }
+      },
+      "caption": "person walks slowly on the spot"
+    },
+    {
+      "motion_id": "002522",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.20816443860530853,
+            "paired": 0.17095673084259033,
+            "zero": 0.13727685809135437,
+            "shuffled": 0.14573200047016144
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.05590056627988815,
+          "text_jerk_ratio": 0.702387923883637,
+          "paired_jerk_ratio": 0.6610297901208265,
+          "text_root_travel_m": 2.989156723022461,
+          "paired_root_travel_m": 2.531909942626953,
+          "text_step_frequency_hz": 0.576923076923077,
+          "paired_step_frequency_hz": 0.576923076923077
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.7685386538505554,
+            "paired": 0.7187055945396423,
+            "zero": 0.7078381180763245,
+            "shuffled": 0.7405331134796143
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.053071897476911545,
+          "text_jerk_ratio": 0.702387923883637,
+          "paired_jerk_ratio": 0.7167065729631444,
+          "text_root_travel_m": 2.989156723022461,
+          "paired_root_travel_m": 2.6531219482421875,
+          "text_step_frequency_hz": 0.576923076923077,
+          "paired_step_frequency_hz": 0.6410256410256411
+        }
+      },
+      "caption": "a man steps to the left steps in a small clockwise circle throws left arm then steps in a larger backward clockwise circle"
+    },
+    {
+      "motion_id": "002635",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.05959933251142502,
+            "paired": 0.06070560961961746,
+            "zero": 0.06664958596229553,
+            "shuffled": 0.060759466141462326
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.045194461941719055,
+          "text_jerk_ratio": 0.0640696777551088,
+          "paired_jerk_ratio": 0.22348084528330028,
+          "text_root_travel_m": 0.08246918022632599,
+          "paired_root_travel_m": 0.13288848102092743,
+          "text_step_frequency_hz": 0.2564102564102564,
+          "paired_step_frequency_hz": 0.9743589743589743
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.4768950045108795,
+            "paired": 0.4548605680465698,
+            "zero": 0.4580501317977905,
+            "shuffled": 0.46710532903671265
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.02082119509577751,
+          "text_jerk_ratio": 0.0640696777551088,
+          "paired_jerk_ratio": 0.17281627486332984,
+          "text_root_travel_m": 0.08246918022632599,
+          "paired_root_travel_m": 0.15316738188266754,
+          "text_step_frequency_hz": 0.2564102564102564,
+          "paired_step_frequency_hz": 0.6153846153846154
+        }
+      },
+      "caption": "person stands with arms extended to their side then lower them then walk forward then  swing arms side to side then go to side swinging arms still then punches in front"
+    },
+    {
+      "motion_id": "002749",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.07351532578468323,
+            "paired": 0.06859353929758072,
+            "zero": 0.10856099426746368,
+            "shuffled": 0.06002392619848251
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.05521863326430321,
+          "text_jerk_ratio": 2.083260194612596,
+          "paired_jerk_ratio": 3.835174116409091,
+          "text_root_travel_m": 0.03148765116930008,
+          "paired_root_travel_m": 0.049413394182920456,
+          "text_step_frequency_hz": 1.3846153846153846,
+          "paired_step_frequency_hz": 0.3076923076923077
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.17344222962856293,
+            "paired": 0.17110827565193176,
+            "zero": 0.17113062739372253,
+            "shuffled": 0.1479865312576294
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.049997299909591675,
+          "text_jerk_ratio": 2.083260194612596,
+          "paired_jerk_ratio": 4.643887164009968,
+          "text_root_travel_m": 0.03148765116930008,
+          "paired_root_travel_m": 0.08269305527210236,
+          "text_step_frequency_hz": 1.3846153846153846,
+          "paired_step_frequency_hz": 0.3076923076923077
+        }
+      },
+      "caption": "person is waving with their right hand"
+    },
+    {
+      "motion_id": "002754",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.17986124753952026,
+            "paired": 0.16615556180477142,
+            "zero": 0.1619718223810196,
+            "shuffled": 0.1963554322719574
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.09648783504962921,
+          "text_jerk_ratio": 0.9720497919151445,
+          "paired_jerk_ratio": 1.1293695046668673,
+          "text_root_travel_m": 7.5461530685424805,
+          "paired_root_travel_m": 7.847469806671143,
+          "text_step_frequency_hz": 0.9230769230769231,
+          "paired_step_frequency_hz": 1.0256410256410255
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.787469208240509,
+            "paired": 0.7802236676216125,
+            "zero": 0.8124423623085022,
+            "shuffled": 0.8326157331466675
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.08886857330799103,
+          "text_jerk_ratio": 0.9720497919151445,
+          "paired_jerk_ratio": 0.6543287000558153,
+          "text_root_travel_m": 7.5461530685424805,
+          "paired_root_travel_m": 6.846400260925293,
+          "text_step_frequency_hz": 0.9230769230769231,
+          "paired_step_frequency_hz": 0.9230769230769231
+        }
+      },
+      "caption": "a man does a dance, shuffles backward, and dances again."
+    },
+    {
+      "motion_id": "002870",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.15594302117824554,
+            "paired": 0.1379343420267105,
+            "zero": 0.11649290472269058,
+            "shuffled": 0.15313640236854553
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.06510868668556213,
+          "text_jerk_ratio": 0.2521682119708896,
+          "paired_jerk_ratio": 0.26983493145551246,
+          "text_root_travel_m": 2.2157394886016846,
+          "paired_root_travel_m": 2.466752290725708,
+          "text_step_frequency_hz": 0.3870967741935484,
+          "paired_step_frequency_hz": 0.3870967741935484
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.4252595603466034,
+            "paired": 0.3610279858112335,
+            "zero": 0.37355130910873413,
+            "shuffled": 0.36213892698287964
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.057308074086904526,
+          "text_jerk_ratio": 0.2521682119708896,
+          "paired_jerk_ratio": 0.2400919259840331,
+          "text_root_travel_m": 2.2157394886016846,
+          "paired_root_travel_m": 2.351381301879883,
+          "text_step_frequency_hz": 0.3870967741935484,
+          "paired_step_frequency_hz": 0.3870967741935484
+        }
+      },
+      "caption": "a person walks from side to side with their arms hanging loosely."
+    },
+    {
+      "motion_id": "002976",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.37438660860061646,
+            "paired": 0.2870575189590454,
+            "zero": 0.26367947459220886,
+            "shuffled": 0.30788132548332214
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.145132377743721,
+          "text_jerk_ratio": 0.9199516732071263,
+          "paired_jerk_ratio": 0.7742953338830288,
+          "text_root_travel_m": 5.008647918701172,
+          "paired_root_travel_m": 3.52203106880188,
+          "text_step_frequency_hz": 0.6666666666666666,
+          "paired_step_frequency_hz": 0.6153846153846154
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.6378239393234253,
+            "paired": 0.5433362126350403,
+            "zero": 0.509753406047821,
+            "shuffled": 0.5682879090309143
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.10944049805402756,
+          "text_jerk_ratio": 0.9199516732071263,
+          "paired_jerk_ratio": 0.563054207725313,
+          "text_root_travel_m": 5.008647918701172,
+          "paired_root_travel_m": 3.386295795440674,
+          "text_step_frequency_hz": 0.6666666666666666,
+          "paired_step_frequency_hz": 0.5128205128205128
+        }
+      },
+      "caption": "a person walks forward and turns clockwise, then grabs their knee in pain before continuing ahead and turning clockwise again."
+    },
+    {
+      "motion_id": "003379",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.11485476046800613,
+            "paired": 0.10296061635017395,
+            "zero": 0.1293635070323944,
+            "shuffled": 0.10763248801231384
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.03503171727061272,
+          "text_jerk_ratio": 0.37680430871978327,
+          "paired_jerk_ratio": 0.6689208661633221,
+          "text_root_travel_m": 0.03513991832733154,
+          "paired_root_travel_m": 0.04734766110777855,
+          "text_step_frequency_hz": 0.7462686567164178,
+          "paired_step_frequency_hz": 0.29850746268656714
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.2179526388645172,
+            "paired": 0.19352233409881592,
+            "zero": 0.23765884339809418,
+            "shuffled": 0.2406049370765686
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.03424142301082611,
+          "text_jerk_ratio": 0.37680430871978327,
+          "paired_jerk_ratio": 0.8506491414233749,
+          "text_root_travel_m": 0.03513991832733154,
+          "paired_root_travel_m": 0.07994125038385391,
+          "text_step_frequency_hz": 0.7462686567164178,
+          "paired_step_frequency_hz": 0.5970149253731343
+        }
+      },
+      "caption": "the character scratches his head with his right arm"
+    },
+    {
+      "motion_id": "003584",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.40794214606285095,
+            "paired": 0.355265349149704,
+            "zero": 0.33461111783981323,
+            "shuffled": 0.34230563044548035
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.06688638031482697,
+          "text_jerk_ratio": 2.5260428685457907,
+          "paired_jerk_ratio": 2.4346682151598493,
+          "text_root_travel_m": 6.293881416320801,
+          "paired_root_travel_m": 5.858293533325195,
+          "text_step_frequency_hz": 0.8527131782945736,
+          "paired_step_frequency_hz": 0.6201550387596899
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.406067430973053,
+            "paired": 0.3621051609516144,
+            "zero": 0.366964727640152,
+            "shuffled": 0.39773988723754883
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.07754762470722198,
+          "text_jerk_ratio": 2.5260428685457907,
+          "paired_jerk_ratio": 1.5279906220327377,
+          "text_root_travel_m": 6.293881416320801,
+          "paired_root_travel_m": 4.549022674560547,
+          "text_step_frequency_hz": 0.8527131782945736,
+          "paired_step_frequency_hz": 0.8527131782945736
+        }
+      },
+      "caption": "a person moves something out of the way in a effort to advance forward."
+    },
+    {
+      "motion_id": "003596",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.7102638483047485,
+            "paired": 0.6365804076194763,
+            "zero": 0.6103123426437378,
+            "shuffled": 0.6120815873146057
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.050874412059783936,
+          "text_jerk_ratio": 0.14876570573013106,
+          "paired_jerk_ratio": 0.25236801544577037,
+          "text_root_travel_m": 0.9543208479881287,
+          "paired_root_travel_m": 0.8618119955062866,
+          "text_step_frequency_hz": 0.125,
+          "paired_step_frequency_hz": 0.125
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.8950276970863342,
+            "paired": 0.8537625074386597,
+            "zero": 0.8711639642715454,
+            "shuffled": 0.88193678855896
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.07827699929475784,
+          "text_jerk_ratio": 0.14876570573013106,
+          "paired_jerk_ratio": 0.26786760782135466,
+          "text_root_travel_m": 0.9543208479881287,
+          "paired_root_travel_m": 1.0029714107513428,
+          "text_step_frequency_hz": 0.125,
+          "paired_step_frequency_hz": 0.25
+        }
+      },
+      "caption": "a person squats down to the ground, picks up a box, then stands back up, and places the box on a higher surface."
+    },
+    {
+      "motion_id": "003783",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.28360864520072937,
+            "paired": 0.23187485337257385,
+            "zero": 0.23612599074840546,
+            "shuffled": 0.21532677114009857
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.09008922427892685,
+          "text_jerk_ratio": 0.8620940372805876,
+          "paired_jerk_ratio": 0.4885773847052653,
+          "text_root_travel_m": 5.193102836608887,
+          "paired_root_travel_m": 4.17695426940918,
+          "text_step_frequency_hz": 0.6153846153846154,
+          "paired_step_frequency_hz": 0.46153846153846156
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.4627563953399658,
+            "paired": 0.4209890067577362,
+            "zero": 0.4695988595485687,
+            "shuffled": 0.41843995451927185
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.09306695312261581,
+          "text_jerk_ratio": 0.8620940372805876,
+          "paired_jerk_ratio": 0.5437131227907327,
+          "text_root_travel_m": 5.193102836608887,
+          "paired_root_travel_m": 3.5779919624328613,
+          "text_step_frequency_hz": 0.6153846153846154,
+          "paired_step_frequency_hz": 0.3076923076923077
+        }
+      },
+      "caption": "a person lunges over and gets back up."
+    },
+    {
+      "motion_id": "003857",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.16080358624458313,
+            "paired": 0.17295292019844055,
+            "zero": 0.16455218195915222,
+            "shuffled": 0.17206509411334991
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.029313458129763603,
+          "text_jerk_ratio": 0.05157609429211216,
+          "paired_jerk_ratio": 0.2983530392946494,
+          "text_root_travel_m": 0.1696031242609024,
+          "paired_root_travel_m": 0.21029207110404968,
+          "text_step_frequency_hz": 0.05128205128205128,
+          "paired_step_frequency_hz": 0.46153846153846156
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.4756055474281311,
+            "paired": 0.4924747943878174,
+            "zero": 0.477149099111557,
+            "shuffled": 0.4679163694381714
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.02921113930642605,
+          "text_jerk_ratio": 0.05157609429211216,
+          "paired_jerk_ratio": 0.09084127555302816,
+          "text_root_travel_m": 0.1696031242609024,
+          "paired_root_travel_m": 0.22742030024528503,
+          "text_step_frequency_hz": 0.05128205128205128,
+          "paired_step_frequency_hz": 0.20512820512820512
+        }
+      },
+      "caption": "a person stands and looks over their right shoulder behind them."
+    },
+    {
+      "motion_id": "003858",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.06627114862203598,
+            "paired": 0.055326394736766815,
+            "zero": 0.0678577646613121,
+            "shuffled": 0.058343030512332916
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.03159802407026291,
+          "text_jerk_ratio": 1.3539619848460411,
+          "paired_jerk_ratio": 1.912129868102341,
+          "text_root_travel_m": 0.12080664932727814,
+          "paired_root_travel_m": 0.16118967533111572,
+          "text_step_frequency_hz": 0.5128205128205128,
+          "paired_step_frequency_hz": 0.9230769230769231
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.7862151861190796,
+            "paired": 0.7754837274551392,
+            "zero": 0.7694007158279419,
+            "shuffled": 0.7699275016784668
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.026904072612524033,
+          "text_jerk_ratio": 1.3539619848460411,
+          "paired_jerk_ratio": 1.386483323168309,
+          "text_root_travel_m": 0.12080664932727814,
+          "paired_root_travel_m": 0.15990935266017914,
+          "text_step_frequency_hz": 0.5128205128205128,
+          "paired_step_frequency_hz": 0.8717948717948718
+        }
+      },
+      "caption": "a person raises both hands and waves them in various ways."
+    },
+    {
+      "motion_id": "003900",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.43035459518432617,
+            "paired": 0.3733048439025879,
+            "zero": 0.37686315178871155,
+            "shuffled": 0.3839610815048218
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.04018286615610123,
+          "text_jerk_ratio": 0.23945875334378938,
+          "paired_jerk_ratio": 0.35608521826676265,
+          "text_root_travel_m": 0.5604222416877747,
+          "paired_root_travel_m": 0.6442413330078125,
+          "text_step_frequency_hz": 0.36363636363636365,
+          "paired_step_frequency_hz": 0.18181818181818182
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.5231972932815552,
+            "paired": 0.48851075768470764,
+            "zero": 0.49420246481895447,
+            "shuffled": 0.5170609354972839
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.032419707626104355,
+          "text_jerk_ratio": 0.23945875334378938,
+          "paired_jerk_ratio": 0.39956700267503154,
+          "text_root_travel_m": 0.5604222416877747,
+          "paired_root_travel_m": 0.5752439498901367,
+          "text_step_frequency_hz": 0.36363636363636365,
+          "paired_step_frequency_hz": 0.18181818181818182
+        }
+      },
+      "caption": "a person bends down as if pushed."
+    },
+    {
+      "motion_id": "004284",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.19215837121009827,
+            "paired": 0.1847011148929596,
+            "zero": 0.1600712388753891,
+            "shuffled": 0.1782425493001938
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.057473186403512955,
+          "text_jerk_ratio": 1.3724869133943993,
+          "paired_jerk_ratio": 1.3512881268329484,
+          "text_root_travel_m": 6.949090480804443,
+          "paired_root_travel_m": 6.359189033508301,
+          "text_step_frequency_hz": 0.6666666666666666,
+          "paired_step_frequency_hz": 0.6666666666666666
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.5401415824890137,
+            "paired": 0.5369030833244324,
+            "zero": 0.50804603099823,
+            "shuffled": 0.49066051840782166
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.08063773065805435,
+          "text_jerk_ratio": 1.3724869133943993,
+          "paired_jerk_ratio": 1.32289710077427,
+          "text_root_travel_m": 6.949090480804443,
+          "paired_root_travel_m": 6.189280986785889,
+          "text_step_frequency_hz": 0.6666666666666666,
+          "paired_step_frequency_hz": 0.6666666666666666
+        }
+      },
+      "caption": "a person walks with side steps to the right and then walks forward, then turn around and walks back"
+    },
+    {
+      "motion_id": "004458",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.09366777539253235,
+            "paired": 0.09624806046485901,
+            "zero": 0.10363361984491348,
+            "shuffled": 0.1201256811618805
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.04299578815698624,
+          "text_jerk_ratio": 0.4409337054231258,
+          "paired_jerk_ratio": 0.697791338453712,
+          "text_root_travel_m": 1.1726075410842896,
+          "paired_root_travel_m": 1.491600513458252,
+          "text_step_frequency_hz": 0.3448275862068966,
+          "paired_step_frequency_hz": 0.3448275862068966
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.29107674956321716,
+            "paired": 0.27272436022758484,
+            "zero": 0.2849380075931549,
+            "shuffled": 0.2848210632801056
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.040203772485256195,
+          "text_jerk_ratio": 0.4409337054231258,
+          "paired_jerk_ratio": 0.561319158559269,
+          "text_root_travel_m": 1.1726075410842896,
+          "paired_root_travel_m": 1.504945158958435,
+          "text_step_frequency_hz": 0.3448275862068966,
+          "paired_step_frequency_hz": 0.3448275862068966
+        }
+      },
+      "caption": "person moves forward and extends the right leg and kicks something to the front"
+    },
+    {
+      "motion_id": "004472",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.20730023086071014,
+            "paired": 0.2016853541135788,
+            "zero": 0.16906492412090302,
+            "shuffled": 0.1922634243965149
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.042510971426963806,
+          "text_jerk_ratio": 1.062619041738023,
+          "paired_jerk_ratio": 1.176132508892109,
+          "text_root_travel_m": 3.700760841369629,
+          "paired_root_travel_m": 4.232744216918945,
+          "text_step_frequency_hz": 1.0256410256410255,
+          "paired_step_frequency_hz": 0.9743589743589743
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.7552517652511597,
+            "paired": 0.7210848331451416,
+            "zero": 0.712817907333374,
+            "shuffled": 0.728278636932373
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.027955273166298866,
+          "text_jerk_ratio": 1.062619041738023,
+          "paired_jerk_ratio": 1.1532762207438634,
+          "text_root_travel_m": 3.700760841369629,
+          "paired_root_travel_m": 3.913008451461792,
+          "text_step_frequency_hz": 1.0256410256410255,
+          "paired_step_frequency_hz": 0.7692307692307693
+        }
+      },
+      "caption": "a man dodges something to the left, then the right and then the left again."
+    },
+    {
+      "motion_id": "004844",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.09807277470827103,
+            "paired": 0.144924134016037,
+            "zero": 0.07252106070518494,
+            "shuffled": 0.12767669558525085
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.05214444547891617,
+          "text_jerk_ratio": 0.21469870007715122,
+          "paired_jerk_ratio": 0.5596952448674402,
+          "text_root_travel_m": 0.7425974607467651,
+          "paired_root_travel_m": 1.8996117115020752,
+          "text_step_frequency_hz": 0.2173913043478261,
+          "paired_step_frequency_hz": 0.6521739130434783
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.5866755247116089,
+            "paired": 0.512528121471405,
+            "zero": 0.5584666728973389,
+            "shuffled": 0.5115492939949036
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.045088641345500946,
+          "text_jerk_ratio": 0.21469870007715122,
+          "paired_jerk_ratio": 0.492387305681636,
+          "text_root_travel_m": 0.7425974607467651,
+          "paired_root_travel_m": 1.8066613674163818,
+          "text_step_frequency_hz": 0.2173913043478261,
+          "paired_step_frequency_hz": 0.6521739130434783
+        }
+      },
+      "caption": "a person jogs forward and begins to slow down."
+    },
+    {
+      "motion_id": "005119",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.08337602764368057,
+            "paired": 0.07656730711460114,
+            "zero": 0.11502859741449356,
+            "shuffled": 0.07258831709623337
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.05635126307606697,
+          "text_jerk_ratio": 0.38705313437495653,
+          "paired_jerk_ratio": 0.4629147606576512,
+          "text_root_travel_m": 0.4468528628349304,
+          "paired_root_travel_m": 0.8318384885787964,
+          "text_step_frequency_hz": 0.6060606060606061,
+          "paired_step_frequency_hz": 0.40404040404040403
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.4336385428905487,
+            "paired": 0.46545037627220154,
+            "zero": 0.4468666911125183,
+            "shuffled": 0.46481645107269287
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.044245313853025436,
+          "text_jerk_ratio": 0.38705313437495653,
+          "paired_jerk_ratio": 0.5049254471075763,
+          "text_root_travel_m": 0.4468528628349304,
+          "paired_root_travel_m": 0.7552778124809265,
+          "text_step_frequency_hz": 0.6060606060606061,
+          "paired_step_frequency_hz": 0.30303030303030304
+        }
+      },
+      "caption": "person appears to be holding some thing with both hands and then throws it forward with their right hand."
+    },
+    {
+      "motion_id": "005152",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.11351770162582397,
+            "paired": 0.10195031762123108,
+            "zero": 0.11296640336513519,
+            "shuffled": 0.10541865229606628
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.05017681047320366,
+          "text_jerk_ratio": 0.22203031367341144,
+          "paired_jerk_ratio": 0.605767780537984,
+          "text_root_travel_m": 0.13331596553325653,
+          "paired_root_travel_m": 0.24944791197776794,
+          "text_step_frequency_hz": 0.46153846153846156,
+          "paired_step_frequency_hz": 1.3846153846153846
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.4307721257209778,
+            "paired": 0.4264557361602783,
+            "zero": 0.4269377291202545,
+            "shuffled": 0.4341261386871338
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.02948193997144699,
+          "text_jerk_ratio": 0.22203031367341144,
+          "paired_jerk_ratio": 0.31561248778318196,
+          "text_root_travel_m": 0.13331596553325653,
+          "paired_root_travel_m": 0.20370787382125854,
+          "text_step_frequency_hz": 0.46153846153846156,
+          "paired_step_frequency_hz": 0.9743589743589743
+        }
+      },
+      "caption": "a person stands with their knees slightly bent and their hands pulled toward their chest, twists to one side then the other side, squats further, and stands back up."
+    },
+    {
+      "motion_id": "005433",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.29912155866622925,
+            "paired": 0.23949512839317322,
+            "zero": 0.2926478981971741,
+            "shuffled": 0.2688513696193695
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.07488290220499039,
+          "text_jerk_ratio": 0.36807128567577424,
+          "paired_jerk_ratio": 0.39029151049563443,
+          "text_root_travel_m": 1.3159781694412231,
+          "paired_root_travel_m": 1.1897255182266235,
+          "text_step_frequency_hz": 0.22857142857142856,
+          "paired_step_frequency_hz": 0.45714285714285713
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.2313099503517151,
+            "paired": 0.2678796052932739,
+            "zero": 0.3031572103500366,
+            "shuffled": 0.3568892180919647
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.055668145418167114,
+          "text_jerk_ratio": 0.36807128567577424,
+          "paired_jerk_ratio": 0.4034318463249365,
+          "text_root_travel_m": 1.3159781694412231,
+          "paired_root_travel_m": 1.1995265483856201,
+          "text_step_frequency_hz": 0.22857142857142856,
+          "paired_step_frequency_hz": 0.2857142857142857
+        }
+      },
+      "caption": "person sits on floor with legs crossed"
+    },
+    {
+      "motion_id": "005639",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.08869895339012146,
+            "paired": 0.08022625744342804,
+            "zero": 0.07891539484262466,
+            "shuffled": 0.08942615985870361
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.030499691143631935,
+          "text_jerk_ratio": 0.2736566610670842,
+          "paired_jerk_ratio": 0.34556740132010555,
+          "text_root_travel_m": 0.39219930768013,
+          "paired_root_travel_m": 0.5103592872619629,
+          "text_step_frequency_hz": 0.5128205128205128,
+          "paired_step_frequency_hz": 0.5128205128205128
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.3672131597995758,
+            "paired": 0.32223981618881226,
+            "zero": 0.336685448884964,
+            "shuffled": 0.3295937478542328
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.03254447504878044,
+          "text_jerk_ratio": 0.2736566610670842,
+          "paired_jerk_ratio": 0.4337134069777007,
+          "text_root_travel_m": 0.39219930768013,
+          "paired_root_travel_m": 0.9101197719573975,
+          "text_step_frequency_hz": 0.5128205128205128,
+          "paired_step_frequency_hz": 0.3076923076923077
+        }
+      },
+      "caption": "a person slowly walks forward."
+    },
+    {
+      "motion_id": "006033",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.2247987538576126,
+            "paired": 0.1950756311416626,
+            "zero": 0.19599781930446625,
+            "shuffled": 0.19388256967067719
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.04152549058198929,
+          "text_jerk_ratio": 0.07408563336395639,
+          "paired_jerk_ratio": 0.2619372192967918,
+          "text_root_travel_m": 0.33451324701309204,
+          "paired_root_travel_m": 0.37655502557754517,
+          "text_step_frequency_hz": 0.10256410256410256,
+          "paired_step_frequency_hz": 0.10256410256410256
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.5211048722267151,
+            "paired": 0.4742000997066498,
+            "zero": 0.4813244938850403,
+            "shuffled": 0.47107696533203125
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.032213903963565826,
+          "text_jerk_ratio": 0.07408563336395639,
+          "paired_jerk_ratio": 0.17163312625458613,
+          "text_root_travel_m": 0.33451324701309204,
+          "paired_root_travel_m": 0.36573776602745056,
+          "text_step_frequency_hz": 0.10256410256410256,
+          "paired_step_frequency_hz": 0.10256410256410256
+        }
+      },
+      "caption": "moving the hands and littly  band the legs and move front."
+    },
+    {
+      "motion_id": "006041",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.1322360783815384,
+            "paired": 0.11911971867084503,
+            "zero": 0.10759419947862625,
+            "shuffled": 0.11274311691522598
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.13290798664093018,
+          "text_jerk_ratio": 0.7619580213233049,
+          "paired_jerk_ratio": 0.7115919584539729,
+          "text_root_travel_m": 9.33852767944336,
+          "paired_root_travel_m": 6.88926887512207,
+          "text_step_frequency_hz": 0.8717948717948718,
+          "paired_step_frequency_hz": 0.8717948717948718
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.2753608226776123,
+            "paired": 0.35389548540115356,
+            "zero": 0.3825891315937042,
+            "shuffled": 0.4418882131576538
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.1344587206840515,
+          "text_jerk_ratio": 0.7619580213233049,
+          "paired_jerk_ratio": 0.33186109930912183,
+          "text_root_travel_m": 9.33852767944336,
+          "paired_root_travel_m": 7.2720184326171875,
+          "text_step_frequency_hz": 0.8717948717948718,
+          "paired_step_frequency_hz": 0.2564102564102564
+        }
+      },
+      "caption": "the man walks in a counterclockwise semicircle."
+    },
+    {
+      "motion_id": "006118",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.12542115151882172,
+            "paired": 0.102728471159935,
+            "zero": 0.11731193214654922,
+            "shuffled": 0.10784581303596497
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.06607915461063385,
+          "text_jerk_ratio": 0.08642484177028552,
+          "paired_jerk_ratio": 0.13533411694781822,
+          "text_root_travel_m": 0.2041008472442627,
+          "paired_root_travel_m": 0.09078611433506012,
+          "text_step_frequency_hz": 0.15384615384615385,
+          "paired_step_frequency_hz": 0.2564102564102564
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.19252842664718628,
+            "paired": 0.35448339581489563,
+            "zero": 0.22005918622016907,
+            "shuffled": 0.29312968254089355
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.05955255776643753,
+          "text_jerk_ratio": 0.08642484177028552,
+          "paired_jerk_ratio": 0.07750066887432198,
+          "text_root_travel_m": 0.2041008472442627,
+          "paired_root_travel_m": 0.21508827805519104,
+          "text_step_frequency_hz": 0.15384615384615385,
+          "paired_step_frequency_hz": 0.2564102564102564
+        }
+      },
+      "caption": "standing on one foot."
+    },
+    {
+      "motion_id": "006185",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.16472046077251434,
+            "paired": 0.13885176181793213,
+            "zero": 0.14359334111213684,
+            "shuffled": 0.13349470496177673
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.177104651927948,
+          "text_jerk_ratio": 2.1549264960415067,
+          "paired_jerk_ratio": 1.9640903968068368,
+          "text_root_travel_m": 11.031599044799805,
+          "paired_root_travel_m": 10.361333847045898,
+          "text_step_frequency_hz": 1.435897435897436,
+          "paired_step_frequency_hz": 1.435897435897436
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.36468178033828735,
+            "paired": 0.2667831480503082,
+            "zero": 0.31862637400627136,
+            "shuffled": 0.3348768651485443
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.1336711049079895,
+          "text_jerk_ratio": 2.1549264960415067,
+          "paired_jerk_ratio": 1.8368946380808326,
+          "text_root_travel_m": 11.031599044799805,
+          "paired_root_travel_m": 11.276692390441895,
+          "text_step_frequency_hz": 1.435897435897436,
+          "paired_step_frequency_hz": 1.5384615384615385
+        }
+      },
+      "caption": "the person is running around in a circle."
+    },
+    {
+      "motion_id": "006213",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.15734805166721344,
+            "paired": 0.21003618836402893,
+            "zero": 0.18984775245189667,
+            "shuffled": 0.18283572793006897
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.0666501596570015,
+          "text_jerk_ratio": 0.855973746086445,
+          "paired_jerk_ratio": 0.7807879704245332,
+          "text_root_travel_m": 0.8731996417045593,
+          "paired_root_travel_m": 0.9758227467536926,
+          "text_step_frequency_hz": 0.21897810218978103,
+          "paired_step_frequency_hz": 0.21897810218978103
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.3682139813899994,
+            "paired": 0.3437742292881012,
+            "zero": 0.412189781665802,
+            "shuffled": 0.40275973081588745
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.039608076214790344,
+          "text_jerk_ratio": 0.855973746086445,
+          "paired_jerk_ratio": 0.8652776253415879,
+          "text_root_travel_m": 0.8731996417045593,
+          "paired_root_travel_m": 0.8764363527297974,
+          "text_step_frequency_hz": 0.21897810218978103,
+          "paired_step_frequency_hz": 0.29197080291970806
+        }
+      },
+      "caption": "a person winds up his arm and then pitches a ball."
+    },
+    {
+      "motion_id": "006235",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.12718044221401215,
+            "paired": 0.3635590374469757,
+            "zero": 0.22014199197292328,
+            "shuffled": 0.3537607192993164
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.1397748589515686,
+          "text_jerk_ratio": 5.357967145713242,
+          "paired_jerk_ratio": 11.253511235177399,
+          "text_root_travel_m": 1.1227383613586426,
+          "paired_root_travel_m": 0.4425162672996521,
+          "text_step_frequency_hz": 0.9230769230769231,
+          "paired_step_frequency_hz": 2.1538461538461537
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.5705311298370361,
+            "paired": 0.4851978123188019,
+            "zero": 0.6381344795227051,
+            "shuffled": 0.5724579691886902
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.11990632116794586,
+          "text_jerk_ratio": 5.357967145713242,
+          "paired_jerk_ratio": 8.162399070329684,
+          "text_root_travel_m": 1.1227383613586426,
+          "paired_root_travel_m": 0.6107026934623718,
+          "text_step_frequency_hz": 0.9230769230769231,
+          "paired_step_frequency_hz": 1.5384615384615385
+        }
+      },
+      "caption": "the man does a wavelike dance using his arms and slightly sways."
+    },
+    {
+      "motion_id": "006371",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.05268837511539459,
+            "paired": 0.06383753567934036,
+            "zero": 0.042773012071847916,
+            "shuffled": 0.042452696710824966
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.04973609372973442,
+          "text_jerk_ratio": 0.5644816205312821,
+          "paired_jerk_ratio": 0.585380458198508,
+          "text_root_travel_m": 0.14685475826263428,
+          "paired_root_travel_m": 0.17642256617546082,
+          "text_step_frequency_hz": 0.6666666666666666,
+          "paired_step_frequency_hz": 0.358974358974359
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.8443443179130554,
+            "paired": 0.8376194834709167,
+            "zero": 0.8535540699958801,
+            "shuffled": 0.8462806344032288
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.04758553206920624,
+          "text_jerk_ratio": 0.5644816205312821,
+          "paired_jerk_ratio": 0.7008293596240783,
+          "text_root_travel_m": 0.14685475826263428,
+          "paired_root_travel_m": 0.24654856324195862,
+          "text_step_frequency_hz": 0.6666666666666666,
+          "paired_step_frequency_hz": 0.5641025641025641
+        }
+      },
+      "caption": "the person is doing arm gestures."
+    },
+    {
+      "motion_id": "006512",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.27173468470573425,
+            "paired": 0.27347391843795776,
+            "zero": 0.23263537883758545,
+            "shuffled": 0.26955872774124146
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.05444386228919029,
+          "text_jerk_ratio": 1.0333710969013583,
+          "paired_jerk_ratio": 0.8970045672985015,
+          "text_root_travel_m": 8.378780364990234,
+          "paired_root_travel_m": 7.9480156898498535,
+          "text_step_frequency_hz": 0.851063829787234,
+          "paired_step_frequency_hz": 0.6382978723404255
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.7152892351150513,
+            "paired": 0.6763312816619873,
+            "zero": 0.6696591377258301,
+            "shuffled": 0.7174383997917175
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.06298176944255829,
+          "text_jerk_ratio": 1.0333710969013583,
+          "paired_jerk_ratio": 0.9253765837256537,
+          "text_root_travel_m": 8.378780364990234,
+          "paired_root_travel_m": 9.363179206848145,
+          "text_step_frequency_hz": 0.851063829787234,
+          "paired_step_frequency_hz": 1.0106382978723405
+        }
+      },
+      "caption": "a person jumps up and down on both feet while circling both arms forward in time with the jumps."
+    },
+    {
+      "motion_id": "006724",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.21301014721393585,
+            "paired": 0.14427301287651062,
+            "zero": 0.1045861691236496,
+            "shuffled": 0.20939430594444275
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.17534016072750092,
+          "text_jerk_ratio": 2.3115547759018193,
+          "paired_jerk_ratio": 2.1324348608772423,
+          "text_root_travel_m": 9.467096328735352,
+          "paired_root_travel_m": 8.405365943908691,
+          "text_step_frequency_hz": 1.044776119402985,
+          "paired_step_frequency_hz": 1.044776119402985
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.565563440322876,
+            "paired": 0.5434005260467529,
+            "zero": 0.3855862021446228,
+            "shuffled": 0.5441331267356873
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.15029023587703705,
+          "text_jerk_ratio": 2.3115547759018193,
+          "paired_jerk_ratio": 2.016857478260318,
+          "text_root_travel_m": 9.467096328735352,
+          "paired_root_travel_m": 9.088982582092285,
+          "text_step_frequency_hz": 1.044776119402985,
+          "paired_step_frequency_hz": 1.044776119402985
+        }
+      },
+      "caption": "a man walks to the side, and then circles back around. only one arm is swinging."
+    },
+    {
+      "motion_id": "007097",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.11720994114875793,
+            "paired": 0.10403797775506973,
+            "zero": 0.09994707256555557,
+            "shuffled": 0.11705811321735382
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.07349199801683426,
+          "text_jerk_ratio": 1.0752853221750407,
+          "paired_jerk_ratio": 0.7907236152378222,
+          "text_root_travel_m": 8.947900772094727,
+          "paired_root_travel_m": 6.644565582275391,
+          "text_step_frequency_hz": 0.717948717948718,
+          "paired_step_frequency_hz": 0.6153846153846154
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.4018768072128296,
+            "paired": 0.4200490117073059,
+            "zero": 0.4463941156864166,
+            "shuffled": 0.4541355073451996
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.0620962418615818,
+          "text_jerk_ratio": 1.0752853221750407,
+          "paired_jerk_ratio": 0.8020082274386174,
+          "text_root_travel_m": 8.947900772094727,
+          "paired_root_travel_m": 7.116452217102051,
+          "text_step_frequency_hz": 0.717948717948718,
+          "paired_step_frequency_hz": 0.6153846153846154
+        }
+      },
+      "caption": "person was walking down the path around things."
+    },
+    {
+      "motion_id": "007240",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.06908732652664185,
+            "paired": 0.05817005783319473,
+            "zero": 0.0955665335059166,
+            "shuffled": 0.06376231461763382
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.0344170518219471,
+          "text_jerk_ratio": 0.26584634910421456,
+          "paired_jerk_ratio": 0.40299360179111626,
+          "text_root_travel_m": 1.190592646598816,
+          "paired_root_travel_m": 1.9821937084197998,
+          "text_step_frequency_hz": 0.7017543859649122,
+          "paired_step_frequency_hz": 0.7017543859649122
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.4353140890598297,
+            "paired": 0.4099190831184387,
+            "zero": 0.4328204095363617,
+            "shuffled": 0.4048023521900177
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.023435434326529503,
+          "text_jerk_ratio": 0.26584634910421456,
+          "paired_jerk_ratio": 0.30632312137671935,
+          "text_root_travel_m": 1.190592646598816,
+          "paired_root_travel_m": 1.5727304220199585,
+          "text_step_frequency_hz": 0.7017543859649122,
+          "paired_step_frequency_hz": 0.7017543859649122
+        }
+      },
+      "caption": "a person walks straight going slightly to the left"
+    },
+    {
+      "motion_id": "007409",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.6039502024650574,
+            "paired": 0.5450016856193542,
+            "zero": 0.5280182957649231,
+            "shuffled": 0.4582701027393341
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.10612119734287262,
+          "text_jerk_ratio": 1.4894854408087543,
+          "paired_jerk_ratio": 1.1106631893098164,
+          "text_root_travel_m": 3.557638168334961,
+          "paired_root_travel_m": 2.3792998790740967,
+          "text_step_frequency_hz": 0.41884816753926696,
+          "paired_step_frequency_hz": 0.20942408376963348
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.8089723587036133,
+            "paired": 0.7501867413520813,
+            "zero": 0.813060462474823,
+            "shuffled": 0.7970011234283447
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.1066187396645546,
+          "text_jerk_ratio": 1.4894854408087543,
+          "paired_jerk_ratio": 0.6973184559818604,
+          "text_root_travel_m": 3.557638168334961,
+          "paired_root_travel_m": 2.0394575595855713,
+          "text_step_frequency_hz": 0.41884816753926696,
+          "paired_step_frequency_hz": 0.41884816753926696
+        }
+      },
+      "caption": "the person is trying to hit a bug."
+    },
+    {
+      "motion_id": "007607",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.5992235541343689,
+            "paired": 0.6368348002433777,
+            "zero": 0.6369207501411438,
+            "shuffled": 0.666357696056366
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.13087940216064453,
+          "text_jerk_ratio": 0.6043093388911854,
+          "paired_jerk_ratio": 0.7381783359601376,
+          "text_root_travel_m": 3.0948872566223145,
+          "paired_root_travel_m": 3.383297920227051,
+          "text_step_frequency_hz": 0.5641025641025641,
+          "paired_step_frequency_hz": 0.46153846153846156
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.5443689227104187,
+            "paired": 0.5586445331573486,
+            "zero": 0.5722675323486328,
+            "shuffled": 0.584568977355957
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.14808973670005798,
+          "text_jerk_ratio": 0.6043093388911854,
+          "paired_jerk_ratio": 0.8299622568132881,
+          "text_root_travel_m": 3.0948872566223145,
+          "paired_root_travel_m": 4.123777866363525,
+          "text_step_frequency_hz": 0.5641025641025641,
+          "paired_step_frequency_hz": 0.5641025641025641
+        }
+      },
+      "caption": "person got down and is crawling across the floor."
+    },
+    {
+      "motion_id": "007678",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.08837491273880005,
+            "paired": 0.04273952916264534,
+            "zero": 0.03594378009438515,
+            "shuffled": 0.05769381672143936
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.027950230985879898,
+          "text_jerk_ratio": 0.21652069189265616,
+          "paired_jerk_ratio": 0.29447833269792856,
+          "text_root_travel_m": 0.033633455634117126,
+          "paired_root_travel_m": 0.024183716624975204,
+          "text_step_frequency_hz": 0.5172413793103449,
+          "paired_step_frequency_hz": 1.206896551724138
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.37969404458999634,
+            "paired": 0.28008612990379333,
+            "zero": 0.3783082067966461,
+            "shuffled": 0.38318127393722534
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.05059482529759407,
+          "text_jerk_ratio": 0.21652069189265616,
+          "paired_jerk_ratio": 0.828365253655541,
+          "text_root_travel_m": 0.033633455634117126,
+          "paired_root_travel_m": 0.05669879540801048,
+          "text_step_frequency_hz": 0.5172413793103449,
+          "paired_step_frequency_hz": 0.5172413793103449
+        }
+      },
+      "caption": "the person was turning on the faucet."
+    },
+    {
+      "motion_id": "007767",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.13777340948581696,
+            "paired": 0.14376096427440643,
+            "zero": 0.1501053124666214,
+            "shuffled": 0.15880511701107025
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.03623497858643532,
+          "text_jerk_ratio": 1.2008099221778006,
+          "paired_jerk_ratio": 1.2516088305829314,
+          "text_root_travel_m": 1.0453829765319824,
+          "paired_root_travel_m": 1.0639715194702148,
+          "text_step_frequency_hz": 0.21052631578947367,
+          "paired_step_frequency_hz": 0.21052631578947367
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.18987147510051727,
+            "paired": 0.21769078075885773,
+            "zero": 0.23158931732177734,
+            "shuffled": 0.24855148792266846
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.027042493224143982,
+          "text_jerk_ratio": 1.2008099221778006,
+          "paired_jerk_ratio": 1.2031966626245103,
+          "text_root_travel_m": 1.0453829765319824,
+          "paired_root_travel_m": 1.1246620416641235,
+          "text_step_frequency_hz": 0.21052631578947367,
+          "paired_step_frequency_hz": 0.21052631578947367
+        }
+      },
+      "caption": "a person slowly kicks with their right leg."
+    },
+    {
+      "motion_id": "008343",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.2708069384098053,
+            "paired": 0.16831159591674805,
+            "zero": 0.30445319414138794,
+            "shuffled": 0.2012602686882019
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.12249869108200073,
+          "text_jerk_ratio": 0.5724958846108995,
+          "paired_jerk_ratio": 0.45118912983447207,
+          "text_root_travel_m": 0.9079726934432983,
+          "paired_root_travel_m": 1.2659227848052979,
+          "text_step_frequency_hz": 0.21428571428571427,
+          "paired_step_frequency_hz": 0.14285714285714285
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.23056744039058685,
+            "paired": 0.21825803816318512,
+            "zero": 0.21789094805717468,
+            "shuffled": 0.220560222864151
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.03680959716439247,
+          "text_jerk_ratio": 0.5724958846108995,
+          "paired_jerk_ratio": 0.47718296554922035,
+          "text_root_travel_m": 0.9079726934432983,
+          "paired_root_travel_m": 0.9967962503433228,
+          "text_step_frequency_hz": 0.21428571428571427,
+          "paired_step_frequency_hz": 0.21428571428571427
+        }
+      },
+      "caption": "a standing man leans down to a kneeled position with his left knee contacting the ground and his right leg planted foot down. the man then stands up."
+    },
+    {
+      "motion_id": "008500",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.2151840627193451,
+            "paired": 0.19699779152870178,
+            "zero": 0.23817336559295654,
+            "shuffled": 0.20302599668502808
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.04101229086518288,
+          "text_jerk_ratio": 1.1601571727180018,
+          "paired_jerk_ratio": 1.186920923368309,
+          "text_root_travel_m": 3.07321834564209,
+          "paired_root_travel_m": 3.381565570831299,
+          "text_step_frequency_hz": 0.2150537634408602,
+          "paired_step_frequency_hz": 0.4301075268817204
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.5861291885375977,
+            "paired": 0.5264512896537781,
+            "zero": 0.5343005657196045,
+            "shuffled": 0.5613943934440613
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.038041334599256516,
+          "text_jerk_ratio": 1.1601571727180018,
+          "paired_jerk_ratio": 1.0252649815654138,
+          "text_root_travel_m": 3.07321834564209,
+          "paired_root_travel_m": 2.7712783813476562,
+          "text_step_frequency_hz": 0.2150537634408602,
+          "paired_step_frequency_hz": 1.5053763440860215
+        }
+      },
+      "caption": "a person jumps straight up with both arms down."
+    },
+    {
+      "motion_id": "008824",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.45915332436561584,
+            "paired": 0.34374725818634033,
+            "zero": 0.310526967048645,
+            "shuffled": 0.19261379539966583
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.11280690133571625,
+          "text_jerk_ratio": 0.6634170409940928,
+          "paired_jerk_ratio": 0.33258426420411435,
+          "text_root_travel_m": 5.000397682189941,
+          "paired_root_travel_m": 2.370999336242676,
+          "text_step_frequency_hz": 0.7333333333333333,
+          "paired_step_frequency_hz": 0.3333333333333333
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.5497163534164429,
+            "paired": 0.445050984621048,
+            "zero": 0.4319726824760437,
+            "shuffled": 0.41428178548812866
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.14277994632720947,
+          "text_jerk_ratio": 0.6634170409940928,
+          "paired_jerk_ratio": 0.21795332786563149,
+          "text_root_travel_m": 5.000397682189941,
+          "paired_root_travel_m": 1.5035245418548584,
+          "text_step_frequency_hz": 0.7333333333333333,
+          "paired_step_frequency_hz": 0.2
+        }
+      },
+      "caption": "the person waddles low to the ground and then stands up and walks back."
+    },
+    {
+      "motion_id": "009031",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.3395514488220215,
+            "paired": 0.30836719274520874,
+            "zero": 0.3106344938278198,
+            "shuffled": 0.30529892444610596
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.12401462346315384,
+          "text_jerk_ratio": 0.4797920773352556,
+          "paired_jerk_ratio": 0.14545361208743304,
+          "text_root_travel_m": 3.556368350982666,
+          "paired_root_travel_m": 0.13212384283542633,
+          "text_step_frequency_hz": 0.5128205128205129,
+          "paired_step_frequency_hz": 0.06410256410256411
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.5799330472946167,
+            "paired": 0.5932697057723999,
+            "zero": 0.5660814642906189,
+            "shuffled": 0.6168279051780701
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.12586134672164917,
+          "text_jerk_ratio": 0.4797920773352556,
+          "paired_jerk_ratio": 0.15774956149627214,
+          "text_root_travel_m": 3.556368350982666,
+          "paired_root_travel_m": 0.11062932014465332,
+          "text_step_frequency_hz": 0.5128205128205129,
+          "paired_step_frequency_hz": 0.19230769230769232
+        }
+      },
+      "caption": "a person takes small steps while holding something in both of their arms angled down towards the ground"
+    },
+    {
+      "motion_id": "009283",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.21961729228496552,
+            "paired": 0.28435060381889343,
+            "zero": 0.2436704784631729,
+            "shuffled": 0.2705625891685486
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.11008275300264359,
+          "text_jerk_ratio": 1.7019858759871236,
+          "paired_jerk_ratio": 0.828780518406445,
+          "text_root_travel_m": 4.37195348739624,
+          "paired_root_travel_m": 1.820081353187561,
+          "text_step_frequency_hz": 0.5641025641025641,
+          "paired_step_frequency_hz": 0.6153846153846154
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.5385963916778564,
+            "paired": 0.6307620406150818,
+            "zero": 0.6332794427871704,
+            "shuffled": 0.6440350413322449
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.13960492610931396,
+          "text_jerk_ratio": 1.7019858759871236,
+          "paired_jerk_ratio": 1.0031478238287037,
+          "text_root_travel_m": 4.37195348739624,
+          "paired_root_travel_m": 2.377255916595459,
+          "text_step_frequency_hz": 0.5641025641025641,
+          "paired_step_frequency_hz": 0.6666666666666666
+        }
+      },
+      "caption": "someone gets up from the floor, seems to be talking on the phone and starts to walk"
+    },
+    {
+      "motion_id": "009302",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.08091317862272263,
+            "paired": 0.08721847832202911,
+            "zero": 0.08021789789199829,
+            "shuffled": 0.0726279616355896
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.10022243857383728,
+          "text_jerk_ratio": 2.923888681387868,
+          "paired_jerk_ratio": 1.7553224513973076,
+          "text_root_travel_m": 2.7723569869995117,
+          "paired_root_travel_m": 2.726264238357544,
+          "text_step_frequency_hz": 1.3888888888888888,
+          "paired_step_frequency_hz": 1.111111111111111
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.20713487267494202,
+            "paired": 0.22949844598770142,
+            "zero": 0.2598193883895874,
+            "shuffled": 0.25043630599975586
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.09840992838144302,
+          "text_jerk_ratio": 2.923888681387868,
+          "paired_jerk_ratio": 2.0259406516728293,
+          "text_root_travel_m": 2.7723569869995117,
+          "paired_root_travel_m": 3.1206259727478027,
+          "text_step_frequency_hz": 1.3888888888888888,
+          "paired_step_frequency_hz": 1.2037037037037037
+        }
+      },
+      "caption": "person is running in place and then stands still"
+    },
+    {
+      "motion_id": "009355",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.32614582777023315,
+            "paired": 0.25371846556663513,
+            "zero": 0.3007621765136719,
+            "shuffled": 0.23521065711975098
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.10339011251926422,
+          "text_jerk_ratio": 0.3993455133675652,
+          "paired_jerk_ratio": 0.39045538233911525,
+          "text_root_travel_m": 1.0811636447906494,
+          "paired_root_travel_m": 1.1301642656326294,
+          "text_step_frequency_hz": 0.2564102564102564,
+          "paired_step_frequency_hz": 0.2564102564102564
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.5122287273406982,
+            "paired": 0.47771188616752625,
+            "zero": 0.45805981755256653,
+            "shuffled": 0.4725497364997864
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.06107178330421448,
+          "text_jerk_ratio": 0.3993455133675652,
+          "paired_jerk_ratio": 0.5582175972545418,
+          "text_root_travel_m": 1.0811636447906494,
+          "paired_root_travel_m": 1.4815558195114136,
+          "text_step_frequency_hz": 0.2564102564102564,
+          "paired_step_frequency_hz": 0.358974358974359
+        }
+      },
+      "caption": "the man is moving his body and making moves"
+    },
+    {
+      "motion_id": "009493",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.16025975346565247,
+            "paired": 0.1605524718761444,
+            "zero": 0.14466716349124908,
+            "shuffled": 0.15770971775054932
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.07631988823413849,
+          "text_jerk_ratio": 2.7345278675323414,
+          "paired_jerk_ratio": 1.653392290604189,
+          "text_root_travel_m": 1.3104430437088013,
+          "paired_root_travel_m": 0.7054837346076965,
+          "text_step_frequency_hz": 0.6666666666666666,
+          "paired_step_frequency_hz": 0.8205128205128205
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.7707292437553406,
+            "paired": 0.7048827409744263,
+            "zero": 0.7372673153877258,
+            "shuffled": 0.7596316933631897
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.07187392562627792,
+          "text_jerk_ratio": 2.7345278675323414,
+          "paired_jerk_ratio": 2.15702297135623,
+          "text_root_travel_m": 1.3104430437088013,
+          "paired_root_travel_m": 0.6987046599388123,
+          "text_step_frequency_hz": 0.6666666666666666,
+          "paired_step_frequency_hz": 0.6153846153846154
+        }
+      },
+      "caption": "a person staggers around drunk and repeatedly gestures down with their right hand, as if mumbling an imaginary argument to themselves."
+    },
+    {
+      "motion_id": "009924",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.49834224581718445,
+            "paired": 0.4070439338684082,
+            "zero": 0.4708001911640167,
+            "shuffled": 0.4115993082523346
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.20327790081501007,
+          "text_jerk_ratio": 0.9338032792682919,
+          "paired_jerk_ratio": 1.4787466684561665,
+          "text_root_travel_m": 7.0645647048950195,
+          "paired_root_travel_m": 7.857154846191406,
+          "text_step_frequency_hz": 0.546875,
+          "paired_step_frequency_hz": 0.546875
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.6972206830978394,
+            "paired": 0.7561784386634827,
+            "zero": 0.7334535717964172,
+            "shuffled": 0.765022873878479
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.1417820304632187,
+          "text_jerk_ratio": 0.9338032792682919,
+          "paired_jerk_ratio": 1.0019663535066639,
+          "text_root_travel_m": 7.0645647048950195,
+          "paired_root_travel_m": 6.604074478149414,
+          "text_step_frequency_hz": 0.546875,
+          "paired_step_frequency_hz": 0.3125
+        }
+      },
+      "caption": "the  person is running over a vault."
+    },
+    {
+      "motion_id": "010142",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.3190491795539856,
+            "paired": 0.18839596211910248,
+            "zero": 0.18612468242645264,
+            "shuffled": 0.3066071569919586
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.13251161575317383,
+          "text_jerk_ratio": 0.87775895723527,
+          "paired_jerk_ratio": 0.3560193733483212,
+          "text_root_travel_m": 1.3334053754806519,
+          "paired_root_travel_m": 0.37393689155578613,
+          "text_step_frequency_hz": 0.2564102564102564,
+          "paired_step_frequency_hz": 0.20512820512820512
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.6238470077514648,
+            "paired": 0.592437207698822,
+            "zero": 0.539703369140625,
+            "shuffled": 0.5775244832038879
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.046320077031850815,
+          "text_jerk_ratio": 0.87775895723527,
+          "paired_jerk_ratio": 0.905925480176235,
+          "text_root_travel_m": 1.3334053754806519,
+          "paired_root_travel_m": 1.2602779865264893,
+          "text_step_frequency_hz": 0.2564102564102564,
+          "paired_step_frequency_hz": 0.3076923076923077
+        }
+      },
+      "caption": "man turn right hand inward and outward the reach to the left with both hands bring both back to the center and then left hand flip back and forth to rest in center."
+    },
+    {
+      "motion_id": "010161",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.07810141891241074,
+            "paired": 0.08020980656147003,
+            "zero": 0.0880807489156723,
+            "shuffled": 0.07711342722177505
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.040618304163217545,
+          "text_jerk_ratio": 1.208952135027979,
+          "paired_jerk_ratio": 0.8738795563555266,
+          "text_root_travel_m": 0.12672564387321472,
+          "paired_root_travel_m": 0.14252391457557678,
+          "text_step_frequency_hz": 1.1794871794871795,
+          "paired_step_frequency_hz": 1.4871794871794872
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.6587832570075989,
+            "paired": 0.6105074882507324,
+            "zero": 0.6288800239562988,
+            "shuffled": 0.622795045375824
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.023022621870040894,
+          "text_jerk_ratio": 1.208952135027979,
+          "paired_jerk_ratio": 0.997147717068752,
+          "text_root_travel_m": 0.12672564387321472,
+          "paired_root_travel_m": 0.17626690864562988,
+          "text_step_frequency_hz": 1.1794871794871795,
+          "paired_step_frequency_hz": 1.3846153846153846
+        }
+      },
+      "caption": "a person stands still and raises their arms in basketball signal motions."
+    },
+    {
+      "motion_id": "010439",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.22181734442710876,
+            "paired": 0.22362175583839417,
+            "zero": 0.17248308658599854,
+            "shuffled": 0.19459809362888336
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.08542689681053162,
+          "text_jerk_ratio": 2.0286473463622223,
+          "paired_jerk_ratio": 1.3173228333796239,
+          "text_root_travel_m": 7.433553218841553,
+          "paired_root_travel_m": 6.137583255767822,
+          "text_step_frequency_hz": 0.8205128205128205,
+          "paired_step_frequency_hz": 0.5128205128205128
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.6229218244552612,
+            "paired": 0.5300036668777466,
+            "zero": 0.5290983319282532,
+            "shuffled": 0.5365495681762695
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.07945539802312851,
+          "text_jerk_ratio": 2.0286473463622223,
+          "paired_jerk_ratio": 1.5317103882388363,
+          "text_root_travel_m": 7.433553218841553,
+          "paired_root_travel_m": 6.8938493728637695,
+          "text_step_frequency_hz": 0.8205128205128205,
+          "paired_step_frequency_hz": 0.5128205128205128
+        }
+      },
+      "caption": "a person walks backwards on their toes."
+    },
+    {
+      "motion_id": "010698",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.35227420926094055,
+            "paired": 0.2445884644985199,
+            "zero": 0.34337955713272095,
+            "shuffled": 0.3057360053062439
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.11165256798267365,
+          "text_jerk_ratio": 1.1881989003651208,
+          "paired_jerk_ratio": 0.8959602865587726,
+          "text_root_travel_m": 3.1007699966430664,
+          "paired_root_travel_m": 3.2178401947021484,
+          "text_step_frequency_hz": 0.41025641025641024,
+          "paired_step_frequency_hz": 0.46153846153846156
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.5274378657341003,
+            "paired": 0.4929656982421875,
+            "zero": 0.5326388478279114,
+            "shuffled": 0.5296522378921509
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.07796189188957214,
+          "text_jerk_ratio": 1.1881989003651208,
+          "paired_jerk_ratio": 1.1907210894768694,
+          "text_root_travel_m": 3.1007699966430664,
+          "paired_root_travel_m": 3.1891579627990723,
+          "text_step_frequency_hz": 0.41025641025641024,
+          "paired_step_frequency_hz": 0.41025641025641024
+        }
+      },
+      "caption": "a person raises both hands and pushes outward, then return hands to a downward starting position. the person the puts both hands on hips, and return them to sides one more time before slightly crossing both arms."
+    },
+    {
+      "motion_id": "010817",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.0936942771077156,
+            "paired": 0.06018970161676407,
+            "zero": 0.05541737377643585,
+            "shuffled": 0.06044901907444
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.053239189088344574,
+          "text_jerk_ratio": 0.847219624975002,
+          "paired_jerk_ratio": 0.7423606328278366,
+          "text_root_travel_m": 5.199380874633789,
+          "paired_root_travel_m": 4.8290863037109375,
+          "text_step_frequency_hz": 0.718232044198895,
+          "paired_step_frequency_hz": 0.5524861878453038
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.35791173577308655,
+            "paired": 0.3349519968032837,
+            "zero": 0.33524826169013977,
+            "shuffled": 0.3369579017162323
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.050606418401002884,
+          "text_jerk_ratio": 0.847219624975002,
+          "paired_jerk_ratio": 0.6586404329583274,
+          "text_root_travel_m": 5.199380874633789,
+          "paired_root_travel_m": 4.825630187988281,
+          "text_step_frequency_hz": 0.718232044198895,
+          "paired_step_frequency_hz": 0.5524861878453038
+        }
+      },
+      "caption": "a person walks three steps to his right, then five steps to his left, and finally three steps to his right."
+    },
+    {
+      "motion_id": "010909",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.10105251520872116,
+            "paired": 0.1157858818769455,
+            "zero": 0.10757488757371902,
+            "shuffled": 0.1209532767534256
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.04532669112086296,
+          "text_jerk_ratio": 1.324792609237003,
+          "paired_jerk_ratio": 1.551598365891501,
+          "text_root_travel_m": 4.951690673828125,
+          "paired_root_travel_m": 4.923124313354492,
+          "text_step_frequency_hz": 0.5555555555555556,
+          "paired_step_frequency_hz": 0.617283950617284
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.4287368655204773,
+            "paired": 0.4602612853050232,
+            "zero": 0.4930720329284668,
+            "shuffled": 0.4942299425601959
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.03836103901267052,
+          "text_jerk_ratio": 1.324792609237003,
+          "paired_jerk_ratio": 1.50896363017585,
+          "text_root_travel_m": 4.951690673828125,
+          "paired_root_travel_m": 5.4398040771484375,
+          "text_step_frequency_hz": 0.5555555555555556,
+          "paired_step_frequency_hz": 0.617283950617284
+        }
+      },
+      "caption": "a person walks forward and then walks up some steps."
+    },
+    {
+      "motion_id": "010917",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.1269645243883133,
+            "paired": 0.09992722421884537,
+            "zero": 0.08854538947343826,
+            "shuffled": 0.11207664012908936
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.10580836236476898,
+          "text_jerk_ratio": 1.1296680142571802,
+          "paired_jerk_ratio": 0.39504156570454385,
+          "text_root_travel_m": 1.0996874570846558,
+          "paired_root_travel_m": 0.327633261680603,
+          "text_step_frequency_hz": 0.6153846153846154,
+          "paired_step_frequency_hz": 0.15384615384615385
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.6089580655097961,
+            "paired": 0.5904152989387512,
+            "zero": 0.6196289658546448,
+            "shuffled": 0.5936547517776489
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.1177845373749733,
+          "text_jerk_ratio": 1.1296680142571802,
+          "paired_jerk_ratio": 0.15284450999784152,
+          "text_root_travel_m": 1.0996874570846558,
+          "paired_root_travel_m": 0.40799760818481445,
+          "text_step_frequency_hz": 0.6153846153846154,
+          "paired_step_frequency_hz": 0.15384615384615385
+        }
+      },
+      "caption": "standing on one leg and swinging it."
+    },
+    {
+      "motion_id": "010928",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.10891490429639816,
+            "paired": 0.15931911766529083,
+            "zero": 0.14378505945205688,
+            "shuffled": 0.17339079082012177
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.09509391337633133,
+          "text_jerk_ratio": 2.598388688331669,
+          "paired_jerk_ratio": 1.7683205156828659,
+          "text_root_travel_m": 0.45066916942596436,
+          "paired_root_travel_m": 1.040224552154541,
+          "text_step_frequency_hz": 0.7142857142857143,
+          "paired_step_frequency_hz": 0.35714285714285715
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.133470356464386,
+            "paired": 0.18582521378993988,
+            "zero": 0.1795874834060669,
+            "shuffled": 0.15813374519348145
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.03390525281429291,
+          "text_jerk_ratio": 2.598388688331669,
+          "paired_jerk_ratio": 2.9171504865270816,
+          "text_root_travel_m": 0.45066916942596436,
+          "paired_root_travel_m": 0.6392827033996582,
+          "text_step_frequency_hz": 0.7142857142857143,
+          "paired_step_frequency_hz": 0.7142857142857143
+        }
+      },
+      "caption": "this person kicks with his right foot while standing."
+    },
+    {
+      "motion_id": "010996",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.1400073915719986,
+            "paired": 0.10914172232151031,
+            "zero": 0.11915253847837448,
+            "shuffled": 0.10401331633329391
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.16573530435562134,
+          "text_jerk_ratio": 1.168747016447221,
+          "paired_jerk_ratio": 0.9767948213495947,
+          "text_root_travel_m": 1.431200385093689,
+          "paired_root_travel_m": 0.5626822113990784,
+          "text_step_frequency_hz": 0.358974358974359,
+          "paired_step_frequency_hz": 0.5128205128205128
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.2617957890033722,
+            "paired": 0.3503902852535248,
+            "zero": 0.37347593903541565,
+            "shuffled": 0.3806092143058777
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.159346804022789,
+          "text_jerk_ratio": 1.168747016447221,
+          "paired_jerk_ratio": 0.947634468676936,
+          "text_root_travel_m": 1.431200385093689,
+          "paired_root_travel_m": 0.6093389987945557,
+          "text_step_frequency_hz": 0.358974358974359,
+          "paired_step_frequency_hz": 0.5128205128205128
+        }
+      },
+      "caption": "a person stands on his left leg, swings his right leg out to the side, back, and then he returns to a two-legged standing position."
+    },
+    {
+      "motion_id": "011075",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.824766218662262,
+            "paired": 0.8531650900840759,
+            "zero": 0.8648337721824646,
+            "shuffled": 0.8959822654724121
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.120946004986763,
+          "text_jerk_ratio": 0.6657924345268174,
+          "paired_jerk_ratio": 0.510438481445051,
+          "text_root_travel_m": 2.4729084968566895,
+          "paired_root_travel_m": 2.2463555335998535,
+          "text_step_frequency_hz": 0.3076923076923077,
+          "paired_step_frequency_hz": 0.3076923076923077
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.9621648788452148,
+            "paired": 0.988074779510498,
+            "zero": 0.9851760268211365,
+            "shuffled": 1.0392851829528809
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.10180521756410599,
+          "text_jerk_ratio": 0.6657924345268174,
+          "paired_jerk_ratio": 0.8518156028962823,
+          "text_root_travel_m": 2.4729084968566895,
+          "paired_root_travel_m": 3.925729751586914,
+          "text_step_frequency_hz": 0.3076923076923077,
+          "paired_step_frequency_hz": 0.5128205128205128
+        }
+      },
+      "caption": "a man bends over and puts his hands on the ground and is on all fours"
+    },
+    {
+      "motion_id": "011484",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.020417453721165657,
+            "paired": 0.016186965629458427,
+            "zero": 0.047876276075839996,
+            "shuffled": 0.03612210601568222
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.02467449940741062,
+          "text_jerk_ratio": 0.6494613979617322,
+          "paired_jerk_ratio": 0.6322999988106793,
+          "text_root_travel_m": 0.04402092471718788,
+          "paired_root_travel_m": 0.07846364378929138,
+          "text_step_frequency_hz": 0.47058823529411764,
+          "paired_step_frequency_hz": 0.5882352941176471
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.19740580022335052,
+            "paired": 0.20632819831371307,
+            "zero": 0.2403998225927353,
+            "shuffled": 0.20471110939979553
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.015936806797981262,
+          "text_jerk_ratio": 0.6494613979617322,
+          "paired_jerk_ratio": 0.579487821534097,
+          "text_root_travel_m": 0.04402092471718788,
+          "paired_root_travel_m": 0.07969380170106888,
+          "text_step_frequency_hz": 0.47058823529411764,
+          "paired_step_frequency_hz": 0.5882352941176471
+        }
+      },
+      "caption": "a  person's arms by sides are crossed in front of chest and then lowered by sides again."
+    },
+    {
+      "motion_id": "011892",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.2246646285057068,
+            "paired": 0.19772350788116455,
+            "zero": 0.20584256947040558,
+            "shuffled": 0.2000660002231598
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.0983959212899208,
+          "text_jerk_ratio": 0.9285846017014215,
+          "paired_jerk_ratio": 0.9608998752805482,
+          "text_root_travel_m": 11.380121231079102,
+          "paired_root_travel_m": 9.814817428588867,
+          "text_step_frequency_hz": 1.0256410256410255,
+          "paired_step_frequency_hz": 1.0769230769230769
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.37909263372421265,
+            "paired": 0.3531440794467926,
+            "zero": 0.39567920565605164,
+            "shuffled": 0.39669740200042725
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.058072227984666824,
+          "text_jerk_ratio": 0.9285846017014215,
+          "paired_jerk_ratio": 0.9467445822659278,
+          "text_root_travel_m": 11.380121231079102,
+          "paired_root_travel_m": 9.638901710510254,
+          "text_step_frequency_hz": 1.0256410256410255,
+          "paired_step_frequency_hz": 1.0769230769230769
+        }
+      },
+      "caption": "the person is running back-and-forth in a crescent shape"
+    },
+    {
+      "motion_id": "011935",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.23262596130371094,
+            "paired": 0.18373070657253265,
+            "zero": 0.1978125423192978,
+            "shuffled": 0.20447596907615662
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.09441820532083511,
+          "text_jerk_ratio": 0.3912812619089365,
+          "paired_jerk_ratio": 0.37352498574384496,
+          "text_root_travel_m": 3.675623893737793,
+          "paired_root_travel_m": 2.8948187828063965,
+          "text_step_frequency_hz": 0.5347593582887701,
+          "paired_step_frequency_hz": 0.4812834224598931
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.4657003879547119,
+            "paired": 0.36941033601760864,
+            "zero": 0.3387635052204132,
+            "shuffled": 0.3711656630039215
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.07711894810199738,
+          "text_jerk_ratio": 0.3912812619089365,
+          "paired_jerk_ratio": 0.4129233428153127,
+          "text_root_travel_m": 3.675623893737793,
+          "paired_root_travel_m": 3.8506245613098145,
+          "text_step_frequency_hz": 0.5347593582887701,
+          "paired_step_frequency_hz": 0.8021390374331551
+        }
+      },
+      "caption": "a person walks down a hill and places a box on the ground."
+    },
+    {
+      "motion_id": "011991",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.23763741552829742,
+            "paired": 0.26532474160194397,
+            "zero": 0.2666572332382202,
+            "shuffled": 0.2617391347885132
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.047387246042490005,
+          "text_jerk_ratio": 0.3491343907769906,
+          "paired_jerk_ratio": 0.4324943154219259,
+          "text_root_travel_m": 3.274588108062744,
+          "paired_root_travel_m": 2.899336338043213,
+          "text_step_frequency_hz": 0.358974358974359,
+          "paired_step_frequency_hz": 0.358974358974359
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.815089225769043,
+            "paired": 0.7875998616218567,
+            "zero": 0.8104817867279053,
+            "shuffled": 0.7910017967224121
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.035341378301382065,
+          "text_jerk_ratio": 0.3491343907769906,
+          "paired_jerk_ratio": 0.3882558457704696,
+          "text_root_travel_m": 3.274588108062744,
+          "paired_root_travel_m": 3.2632522583007812,
+          "text_step_frequency_hz": 0.358974358974359,
+          "paired_step_frequency_hz": 0.358974358974359
+        }
+      },
+      "caption": "a person appears to be pushing against a wall."
+    },
+    {
+      "motion_id": "012099",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.18123206496238708,
+            "paired": 0.17642392218112946,
+            "zero": 0.17339377105236053,
+            "shuffled": 0.16686171293258667
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.04402861371636391,
+          "text_jerk_ratio": 0.3511838154808075,
+          "paired_jerk_ratio": 0.38718798102262475,
+          "text_root_travel_m": 0.17518609762191772,
+          "paired_root_travel_m": 0.1969291865825653,
+          "text_step_frequency_hz": 0.20512820512820512,
+          "paired_step_frequency_hz": 0.7692307692307693
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.5601294040679932,
+            "paired": 0.5368504524230957,
+            "zero": 0.5793686509132385,
+            "shuffled": 0.5820069909095764
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.03512810915708542,
+          "text_jerk_ratio": 0.3511838154808075,
+          "paired_jerk_ratio": 0.2986392257972541,
+          "text_root_travel_m": 0.17518609762191772,
+          "paired_root_travel_m": 0.19266775250434875,
+          "text_step_frequency_hz": 0.20512820512820512,
+          "paired_step_frequency_hz": 0.2564102564102564
+        }
+      },
+      "caption": "a person lifts something to their face and wobbles their body in circles."
+    },
+    {
+      "motion_id": "012167",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.10031382739543915,
+            "paired": 0.15907971560955048,
+            "zero": 0.09795912355184555,
+            "shuffled": 0.19284822046756744
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.06981851160526276,
+          "text_jerk_ratio": 0.2585778290346612,
+          "paired_jerk_ratio": 0.2424681401612498,
+          "text_root_travel_m": 0.09880674630403519,
+          "paired_root_travel_m": 0.13030537962913513,
+          "text_step_frequency_hz": 0.5,
+          "paired_step_frequency_hz": 0.25
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.5585408806800842,
+            "paired": 0.5629670023918152,
+            "zero": 0.503187894821167,
+            "shuffled": 0.5486226677894592
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.05291606858372688,
+          "text_jerk_ratio": 0.2585778290346612,
+          "paired_jerk_ratio": 0.4137093734709261,
+          "text_root_travel_m": 0.09880674630403519,
+          "paired_root_travel_m": 0.14221137762069702,
+          "text_step_frequency_hz": 0.5,
+          "paired_step_frequency_hz": 0.75
+        }
+      },
+      "caption": "the right hand flings forward to the left side, the left hand meets the right hand, and is drag back right the shoulder."
+    },
+    {
+      "motion_id": "012219",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.4290449917316437,
+            "paired": 0.4345009922981262,
+            "zero": 0.376107394695282,
+            "shuffled": 0.37277883291244507
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.06180984526872635,
+          "text_jerk_ratio": 0.6233691424305129,
+          "paired_jerk_ratio": 0.7628997384009599,
+          "text_root_travel_m": 6.012594223022461,
+          "paired_root_travel_m": 6.757373809814453,
+          "text_step_frequency_hz": 0.5641025641025641,
+          "paired_step_frequency_hz": 0.8205128205128205
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.6158509254455566,
+            "paired": 0.6007249355316162,
+            "zero": 0.6105427145957947,
+            "shuffled": 0.6345179080963135
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.08692493289709091,
+          "text_jerk_ratio": 0.6233691424305129,
+          "paired_jerk_ratio": 0.7048398657491165,
+          "text_root_travel_m": 6.012594223022461,
+          "paired_root_travel_m": 7.818451881408691,
+          "text_step_frequency_hz": 0.5641025641025641,
+          "paired_step_frequency_hz": 0.8205128205128205
+        }
+      },
+      "caption": "person runs in place, stops, then runs in place again. he crouches down and creeps forward starting with his left foot."
+    },
+    {
+      "motion_id": "012238",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.22758260369300842,
+            "paired": 0.2976529598236084,
+            "zero": 0.3960205018520355,
+            "shuffled": 0.2719357907772064
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.0602271743118763,
+          "text_jerk_ratio": 0.29383863330623733,
+          "paired_jerk_ratio": 0.6910654920696133,
+          "text_root_travel_m": 0.24736692011356354,
+          "paired_root_travel_m": 0.43308308720588684,
+          "text_step_frequency_hz": 0.24,
+          "paired_step_frequency_hz": 0.48
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.6566442251205444,
+            "paired": 0.7454703450202942,
+            "zero": 0.7339181900024414,
+            "shuffled": 0.7712348699569702
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.05482208728790283,
+          "text_jerk_ratio": 0.29383863330623733,
+          "paired_jerk_ratio": 0.5539148525251838,
+          "text_root_travel_m": 0.24736692011356354,
+          "paired_root_travel_m": 0.3024195730686188,
+          "text_step_frequency_hz": 0.24,
+          "paired_step_frequency_hz": 0.48
+        }
+      },
+      "caption": "a person who is warming up their arms and legs"
+    },
+    {
+      "motion_id": "012264",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.26102328300476074,
+            "paired": 0.20505455136299133,
+            "zero": 0.2513762414455414,
+            "shuffled": 0.22895610332489014
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.10522408038377762,
+          "text_jerk_ratio": 1.7066648293839404,
+          "paired_jerk_ratio": 1.7841370092010445,
+          "text_root_travel_m": 2.958512544631958,
+          "paired_root_travel_m": 2.9722952842712402,
+          "text_step_frequency_hz": 1.0526315789473684,
+          "paired_step_frequency_hz": 0.8771929824561403
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.6369672417640686,
+            "paired": 0.6473340392112732,
+            "zero": 0.6302153468132019,
+            "shuffled": 0.6779946684837341
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.0937819629907608,
+          "text_jerk_ratio": 1.7066648293839404,
+          "paired_jerk_ratio": 1.581778046440498,
+          "text_root_travel_m": 2.958512544631958,
+          "paired_root_travel_m": 3.0221266746520996,
+          "text_step_frequency_hz": 1.0526315789473684,
+          "paired_step_frequency_hz": 0.8771929824561403
+        }
+      },
+      "caption": "a person does a jump"
+    },
+    {
+      "motion_id": "012398",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.17082925140857697,
+            "paired": 0.11793266981840134,
+            "zero": 0.1325153112411499,
+            "shuffled": 0.13145054876804352
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.056563831865787506,
+          "text_jerk_ratio": 0.034602116773541004,
+          "paired_jerk_ratio": 0.21707941271437264,
+          "text_root_travel_m": 0.15803460776805878,
+          "paired_root_travel_m": 0.24648837745189667,
+          "text_step_frequency_hz": 0.3076923076923077,
+          "paired_step_frequency_hz": 0.358974358974359
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.5593997240066528,
+            "paired": 0.5232949256896973,
+            "zero": 0.5215494632720947,
+            "shuffled": 0.5830870866775513
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.038305286318063736,
+          "text_jerk_ratio": 0.034602116773541004,
+          "paired_jerk_ratio": 0.1569480341473826,
+          "text_root_travel_m": 0.15803460776805878,
+          "paired_root_travel_m": 0.24869951605796814,
+          "text_step_frequency_hz": 0.3076923076923077,
+          "paired_step_frequency_hz": 0.5128205128205128
+        }
+      },
+      "caption": "the person stands and squats a couple of times with their hands out in front of them"
+    },
+    {
+      "motion_id": "012568",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.07446061819791794,
+            "paired": 0.09452052414417267,
+            "zero": 0.08341392129659653,
+            "shuffled": 0.07886092364788055
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.03635594993829727,
+          "text_jerk_ratio": 1.8867713187094188,
+          "paired_jerk_ratio": 1.7643727435820757,
+          "text_root_travel_m": 1.1082717180252075,
+          "paired_root_travel_m": 1.1524826288223267,
+          "text_step_frequency_hz": 0.2597402597402597,
+          "paired_step_frequency_hz": 0.2597402597402597
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.12109030038118362,
+            "paired": 0.1259661614894867,
+            "zero": 0.13721823692321777,
+            "shuffled": 0.17440658807754517
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.027657637372612953,
+          "text_jerk_ratio": 1.8867713187094188,
+          "paired_jerk_ratio": 1.6377177253569333,
+          "text_root_travel_m": 1.1082717180252075,
+          "paired_root_travel_m": 1.0374534130096436,
+          "text_step_frequency_hz": 0.2597402597402597,
+          "paired_step_frequency_hz": 0.2597402597402597
+        }
+      },
+      "caption": "the person does a couple of small kicks with his left leg"
+    },
+    {
+      "motion_id": "012601",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.22324535250663757,
+            "paired": 0.21520529687404633,
+            "zero": 0.22819632291793823,
+            "shuffled": 0.22732947766780853
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.07254787534475327,
+          "text_jerk_ratio": 0.1791537325729664,
+          "paired_jerk_ratio": 0.360036991004384,
+          "text_root_travel_m": 0.9958784580230713,
+          "paired_root_travel_m": 1.019271969795227,
+          "text_step_frequency_hz": 0.39215686274509803,
+          "paired_step_frequency_hz": 0.39215686274509803
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.16779881715774536,
+            "paired": 0.1780998706817627,
+            "zero": 0.1870492696762085,
+            "shuffled": 0.18012972176074982
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.03899649903178215,
+          "text_jerk_ratio": 0.1791537325729664,
+          "paired_jerk_ratio": 0.24989697209593084,
+          "text_root_travel_m": 0.9958784580230713,
+          "paired_root_travel_m": 0.9626436233520508,
+          "text_step_frequency_hz": 0.39215686274509803,
+          "paired_step_frequency_hz": 0.26143790849673204
+        }
+      },
+      "caption": "the person sat down and crossed his legs."
+    },
+    {
+      "motion_id": "012645",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.3402491807937622,
+            "paired": 0.33650636672973633,
+            "zero": 0.3387850821018219,
+            "shuffled": 0.39466914534568787
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.0883786603808403,
+          "text_jerk_ratio": 0.9919964401843073,
+          "paired_jerk_ratio": 1.0925124611170969,
+          "text_root_travel_m": 7.437830924987793,
+          "paired_root_travel_m": 6.677680015563965,
+          "text_step_frequency_hz": 0.853658536585366,
+          "paired_step_frequency_hz": 0.853658536585366
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.70243901014328,
+            "paired": 0.6714524030685425,
+            "zero": 0.7467583417892456,
+            "shuffled": 0.746645450592041
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.08265556395053864,
+          "text_jerk_ratio": 0.9919964401843073,
+          "paired_jerk_ratio": 1.024482259527981,
+          "text_root_travel_m": 7.437830924987793,
+          "paired_root_travel_m": 6.490233421325684,
+          "text_step_frequency_hz": 0.853658536585366,
+          "paired_step_frequency_hz": 1.1585365853658538
+        }
+      },
+      "caption": "a person looks around, steps back, then runs forward while throwing an object."
+    },
+    {
+      "motion_id": "013182",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.06903041899204254,
+            "paired": 0.15074880421161652,
+            "zero": 0.09902920573949814,
+            "shuffled": 0.08861128240823746
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.10689268261194229,
+          "text_jerk_ratio": 0.11947489575016822,
+          "paired_jerk_ratio": 0.1968449738955794,
+          "text_root_travel_m": 2.8480796813964844,
+          "paired_root_travel_m": 1.1673504114151,
+          "text_step_frequency_hz": 1.234567901234568,
+          "paired_step_frequency_hz": 0.4938271604938272
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.21147723495960236,
+            "paired": 0.1913049966096878,
+            "zero": 0.26337897777557373,
+            "shuffled": 0.2738509774208069
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.09817470610141754,
+          "text_jerk_ratio": 0.11947489575016822,
+          "paired_jerk_ratio": 0.2822708145717693,
+          "text_root_travel_m": 2.8480796813964844,
+          "paired_root_travel_m": 1.9865955114364624,
+          "text_step_frequency_hz": 1.234567901234568,
+          "paired_step_frequency_hz": 0.4938271604938272
+        }
+      },
+      "caption": "person moves left and right leg slowly then quickly moves them in a fast motion"
+    },
+    {
+      "motion_id": "013289",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.10063136368989944,
+            "paired": 0.13353580236434937,
+            "zero": 0.13567687571048737,
+            "shuffled": 0.11854646354913712
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.11311997473239899,
+          "text_jerk_ratio": 1.6019292599925248,
+          "paired_jerk_ratio": 1.4234196551644251,
+          "text_root_travel_m": 9.728177070617676,
+          "paired_root_travel_m": 9.166058540344238,
+          "text_step_frequency_hz": 0.8717948717948718,
+          "paired_step_frequency_hz": 0.8717948717948718
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.3743792176246643,
+            "paired": 0.2831158936023712,
+            "zero": 0.37740224599838257,
+            "shuffled": 0.3845747709274292
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.10750775039196014,
+          "text_jerk_ratio": 1.6019292599925248,
+          "paired_jerk_ratio": 1.5516356320869344,
+          "text_root_travel_m": 9.728177070617676,
+          "paired_root_travel_m": 9.079391479492188,
+          "text_step_frequency_hz": 0.8717948717948718,
+          "paired_step_frequency_hz": 0.9743589743589743
+        }
+      },
+      "caption": "a person walks counterclockwise in a large curve while swinging their arms."
+    },
+    {
+      "motion_id": "013294",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.06184222549200058,
+            "paired": 0.06136154755949974,
+            "zero": 0.07699026167392731,
+            "shuffled": 0.06702018529176712
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.04029134288430214,
+          "text_jerk_ratio": 0.1271535055490271,
+          "paired_jerk_ratio": 0.2553329928091555,
+          "text_root_travel_m": 0.26987171173095703,
+          "paired_root_travel_m": 0.21372678875923157,
+          "text_step_frequency_hz": 0.05181347150259067,
+          "paired_step_frequency_hz": 0.41450777202072536
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.40827399492263794,
+            "paired": 0.4205068349838257,
+            "zero": 0.3958144783973694,
+            "shuffled": 0.3928290605545044
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.029899070039391518,
+          "text_jerk_ratio": 0.1271535055490271,
+          "paired_jerk_ratio": 0.15693915754244403,
+          "text_root_travel_m": 0.26987171173095703,
+          "paired_root_travel_m": 0.13509781658649445,
+          "text_step_frequency_hz": 0.05181347150259067,
+          "paired_step_frequency_hz": 0.31088082901554404
+        }
+      },
+      "caption": "a man picks up a phone with his left hand and talks on it."
+    },
+    {
+      "motion_id": "013344",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.2053852677345276,
+            "paired": 0.3246127963066101,
+            "zero": 0.18069230020046234,
+            "shuffled": 0.20009076595306396
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.09069963544607162,
+          "text_jerk_ratio": 0.6428968793928017,
+          "paired_jerk_ratio": 2.390569409812877,
+          "text_root_travel_m": 0.4233211278915405,
+          "paired_root_travel_m": 1.7220720052719116,
+          "text_step_frequency_hz": 0.47619047619047616,
+          "paired_step_frequency_hz": 1.4285714285714286
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.6727371215820312,
+            "paired": 0.6834756135940552,
+            "zero": 0.7221971154212952,
+            "shuffled": 0.721010148525238
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.054111547768116,
+          "text_jerk_ratio": 0.6428968793928017,
+          "paired_jerk_ratio": 1.2005077919803888,
+          "text_root_travel_m": 0.4233211278915405,
+          "paired_root_travel_m": 0.6228867173194885,
+          "text_step_frequency_hz": 0.47619047619047616,
+          "paired_step_frequency_hz": 0.7142857142857143
+        }
+      },
+      "caption": "in a fighting stance, person punches downward with their left hand."
+    },
+    {
+      "motion_id": "013350",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.04479719325900078,
+            "paired": 0.0381733700633049,
+            "zero": 0.06353378295898438,
+            "shuffled": 0.05275440216064453
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.02670755237340927,
+          "text_jerk_ratio": 1.1431324635323195,
+          "paired_jerk_ratio": 0.8109837735122615,
+          "text_root_travel_m": 0.07337891310453415,
+          "paired_root_travel_m": 0.06659074127674103,
+          "text_step_frequency_hz": 0.8860759493670886,
+          "paired_step_frequency_hz": 0.37974683544303794
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.48505526781082153,
+            "paired": 0.4237295091152191,
+            "zero": 0.49845951795578003,
+            "shuffled": 0.4923740029335022
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.05577307567000389,
+          "text_jerk_ratio": 1.1431324635323195,
+          "paired_jerk_ratio": 1.4058506641495843,
+          "text_root_travel_m": 0.07337891310453415,
+          "paired_root_travel_m": 0.14116795361042023,
+          "text_step_frequency_hz": 0.8860759493670886,
+          "paired_step_frequency_hz": 0.7594936708860759
+        }
+      },
+      "caption": "a person raises their hand up towards their head and then outs it back down"
+    },
+    {
+      "motion_id": "013371",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.2639921307563782,
+            "paired": 0.26979005336761475,
+            "zero": 0.2695467174053192,
+            "shuffled": 0.3318703770637512
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.1364331841468811,
+          "text_jerk_ratio": 0.8831379492436244,
+          "paired_jerk_ratio": 0.6416138601559345,
+          "text_root_travel_m": 2.1546921730041504,
+          "paired_root_travel_m": 1.0814090967178345,
+          "text_step_frequency_hz": 0.6578947368421053,
+          "paired_step_frequency_hz": 0.19736842105263158
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.686543881893158,
+            "paired": 0.7183530330657959,
+            "zero": 0.6630760431289673,
+            "shuffled": 0.6495649814605713
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.10092933475971222,
+          "text_jerk_ratio": 0.8831379492436244,
+          "paired_jerk_ratio": 0.5690551776266062,
+          "text_root_travel_m": 2.1546921730041504,
+          "paired_root_travel_m": 1.2031234502792358,
+          "text_step_frequency_hz": 0.6578947368421053,
+          "paired_step_frequency_hz": 0.2631578947368421
+        }
+      },
+      "caption": "a person swings something with both hands"
+    },
+    {
+      "motion_id": "013373",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.031780943274497986,
+            "paired": 0.06260506063699722,
+            "zero": 0.07302652299404144,
+            "shuffled": 0.054390259087085724
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.0448327399790287,
+          "text_jerk_ratio": 2.0150816180940603,
+          "paired_jerk_ratio": 2.234697213809327,
+          "text_root_travel_m": 0.06838665902614594,
+          "paired_root_travel_m": 0.0716605931520462,
+          "text_step_frequency_hz": 0.8955223880597015,
+          "paired_step_frequency_hz": 1.4925373134328357
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.2748287320137024,
+            "paired": 0.25113287568092346,
+            "zero": 0.27226248383522034,
+            "shuffled": 0.25249776244163513
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.03682321310043335,
+          "text_jerk_ratio": 2.0150816180940603,
+          "paired_jerk_ratio": 3.203194945597078,
+          "text_root_travel_m": 0.06838665902614594,
+          "paired_root_travel_m": 0.10705162584781647,
+          "text_step_frequency_hz": 0.8955223880597015,
+          "paired_step_frequency_hz": 1.1940298507462686
+        }
+      },
+      "caption": "a person waves with their right hand"
+    },
+    {
+      "motion_id": "013475",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.10330913960933685,
+            "paired": 0.11018679291009903,
+            "zero": 0.11928452551364899,
+            "shuffled": 0.12317688763141632
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.21013961732387543,
+          "text_jerk_ratio": 2.317916263367528,
+          "paired_jerk_ratio": 1.9847059713828075,
+          "text_root_travel_m": 2.839475154876709,
+          "paired_root_travel_m": 2.2543771266937256,
+          "text_step_frequency_hz": 1.0106382978723405,
+          "paired_step_frequency_hz": 0.7978723404255319
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 1.0464011430740356,
+            "paired": 1.0066336393356323,
+            "zero": 1.0481609106063843,
+            "shuffled": 1.046514868736267
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.12072887271642685,
+          "text_jerk_ratio": 2.317916263367528,
+          "paired_jerk_ratio": 2.01359149765555,
+          "text_root_travel_m": 2.839475154876709,
+          "paired_root_travel_m": 1.9297213554382324,
+          "text_step_frequency_hz": 1.0106382978723405,
+          "paired_step_frequency_hz": 0.9574468085106382
+        }
+      },
+      "caption": "the person balances on their right toe, then switches to the left and spins in a circle"
+    },
+    {
+      "motion_id": "013586",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.19848786294460297,
+            "paired": 0.14149418473243713,
+            "zero": 0.16681723296642303,
+            "shuffled": 0.13031835854053497
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.04288884997367859,
+          "text_jerk_ratio": 1.3609662996947458,
+          "paired_jerk_ratio": 1.0801746246786836,
+          "text_root_travel_m": 2.5881738662719727,
+          "paired_root_travel_m": 2.173001289367676,
+          "text_step_frequency_hz": 0.6349206349206349,
+          "paired_step_frequency_hz": 0.5555555555555556
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.411449134349823,
+            "paired": 0.36356624960899353,
+            "zero": 0.3649318814277649,
+            "shuffled": 0.358014315366745
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.039156921207904816,
+          "text_jerk_ratio": 1.3609662996947458,
+          "paired_jerk_ratio": 1.007947876628191,
+          "text_root_travel_m": 2.5881738662719727,
+          "paired_root_travel_m": 2.2352638244628906,
+          "text_step_frequency_hz": 0.6349206349206349,
+          "paired_step_frequency_hz": 0.7936507936507937
+        }
+      },
+      "caption": "a person takes a large hop forward with both legs."
+    },
+    {
+      "motion_id": "013703",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.3230804204940796,
+            "paired": 0.30988991260528564,
+            "zero": 0.29863372445106506,
+            "shuffled": 0.30140772461891174
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.07622567564249039,
+          "text_jerk_ratio": 0.8169425023469442,
+          "paired_jerk_ratio": 0.7928196624262783,
+          "text_root_travel_m": 0.5075761675834656,
+          "paired_root_travel_m": 0.37692582607269287,
+          "text_step_frequency_hz": 0.41025641025641024,
+          "paired_step_frequency_hz": 0.41025641025641024
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.7144502997398376,
+            "paired": 0.6072882413864136,
+            "zero": 0.5899052023887634,
+            "shuffled": 0.6426787376403809
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.06812842190265656,
+          "text_jerk_ratio": 0.8169425023469442,
+          "paired_jerk_ratio": 0.39265310459504027,
+          "text_root_travel_m": 0.5075761675834656,
+          "paired_root_travel_m": 0.27692916989326477,
+          "text_step_frequency_hz": 0.41025641025641024,
+          "paired_step_frequency_hz": 0.41025641025641024
+        }
+      },
+      "caption": "this person is stretching his right leg."
+    },
+    {
+      "motion_id": "013765",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.30121302604675293,
+            "paired": 0.2927325367927551,
+            "zero": 0.2608768343925476,
+            "shuffled": 0.2893964946269989
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.07147349417209625,
+          "text_jerk_ratio": 1.0288567790312173,
+          "paired_jerk_ratio": 0.9512942517594919,
+          "text_root_travel_m": 11.619037628173828,
+          "paired_root_travel_m": 9.792055130004883,
+          "text_step_frequency_hz": 1.5384615384615385,
+          "paired_step_frequency_hz": 1.3333333333333333
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.8735418319702148,
+            "paired": 0.8523233532905579,
+            "zero": 0.8682708740234375,
+            "shuffled": 0.8452033400535583
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.044478889554739,
+          "text_jerk_ratio": 1.0288567790312173,
+          "paired_jerk_ratio": 0.9708578091680881,
+          "text_root_travel_m": 11.619037628173828,
+          "paired_root_travel_m": 10.732439041137695,
+          "text_step_frequency_hz": 1.5384615384615385,
+          "paired_step_frequency_hz": 1.435897435897436
+        }
+      },
+      "caption": "a person moves around in a random fashion, trying to dodge something."
+    },
+    {
+      "motion_id": "014025",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.15863116085529327,
+            "paired": 0.11168965697288513,
+            "zero": 0.11294324696063995,
+            "shuffled": 0.15479829907417297
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.07481909543275833,
+          "text_jerk_ratio": 1.4599751245100483,
+          "paired_jerk_ratio": 0.9461047030873433,
+          "text_root_travel_m": 4.525640964508057,
+          "paired_root_travel_m": 3.034595489501953,
+          "text_step_frequency_hz": 0.6432748538011696,
+          "paired_step_frequency_hz": 0.6432748538011696
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.5116475820541382,
+            "paired": 0.44581684470176697,
+            "zero": 0.4528375566005707,
+            "shuffled": 0.4434865415096283
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.07876835763454437,
+          "text_jerk_ratio": 1.4599751245100483,
+          "paired_jerk_ratio": 0.614848356206245,
+          "text_root_travel_m": 4.525640964508057,
+          "paired_root_travel_m": 2.3845763206481934,
+          "text_step_frequency_hz": 0.6432748538011696,
+          "paired_step_frequency_hz": 0.5263157894736842
+        }
+      },
+      "caption": "a person walks forward then back while looking down."
+    },
+    {
+      "motion_id": "014051",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.7383077144622803,
+            "paired": 0.7565128803253174,
+            "zero": 0.7547563910484314,
+            "shuffled": 0.7025140523910522
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.07594667375087738,
+          "text_jerk_ratio": 0.4404109894303911,
+          "paired_jerk_ratio": 0.7248053743178214,
+          "text_root_travel_m": 2.921074867248535,
+          "paired_root_travel_m": 3.3487069606781006,
+          "text_step_frequency_hz": 0.5128205128205128,
+          "paired_step_frequency_hz": 0.358974358974359
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.7706817388534546,
+            "paired": 0.7323935627937317,
+            "zero": 0.6931093335151672,
+            "shuffled": 0.6955611705780029
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.12584234774112701,
+          "text_jerk_ratio": 0.4404109894303911,
+          "paired_jerk_ratio": 0.24486420142894985,
+          "text_root_travel_m": 2.921074867248535,
+          "paired_root_travel_m": 1.6152827739715576,
+          "text_step_frequency_hz": 0.5128205128205128,
+          "paired_step_frequency_hz": 0.3076923076923077
+        }
+      },
+      "caption": "a man bends down to crawl on his knees."
+    },
+    {
+      "motion_id": "014169",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.481777161359787,
+            "paired": 0.45190852880477905,
+            "zero": 0.545501708984375,
+            "shuffled": 0.4851682186126709
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.03255322203040123,
+          "text_jerk_ratio": 0.360307009258175,
+          "paired_jerk_ratio": 0.574690692097333,
+          "text_root_travel_m": 0.937231719493866,
+          "paired_root_travel_m": 0.9791683554649353,
+          "text_step_frequency_hz": 0.30927835051546393,
+          "paired_step_frequency_hz": 0.051546391752577324
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.3390360474586487,
+            "paired": 0.357378214597702,
+            "zero": 0.36638879776000977,
+            "shuffled": 0.3645867109298706
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.07535780221223831,
+          "text_jerk_ratio": 0.360307009258175,
+          "paired_jerk_ratio": 0.28025436806989196,
+          "text_root_travel_m": 0.937231719493866,
+          "paired_root_travel_m": 0.3220308721065521,
+          "text_step_frequency_hz": 0.30927835051546393,
+          "paired_step_frequency_hz": 0.2061855670103093
+        }
+      },
+      "caption": "it looks like the person is taking care of his shoes"
+    },
+    {
+      "motion_id": "014171",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.3858146667480469,
+            "paired": 0.34589651226997375,
+            "zero": 0.4128863215446472,
+            "shuffled": 0.4529964327812195
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.08627519011497498,
+          "text_jerk_ratio": 2.0780346561104395,
+          "paired_jerk_ratio": 1.5195440887685254,
+          "text_root_travel_m": 6.2094407081604,
+          "paired_root_travel_m": 4.339478492736816,
+          "text_step_frequency_hz": 0.6153846153846154,
+          "paired_step_frequency_hz": 0.6153846153846154
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.4871158301830292,
+            "paired": 0.4185304343700409,
+            "zero": 0.4361470639705658,
+            "shuffled": 0.45218756794929504
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.11339856684207916,
+          "text_jerk_ratio": 2.0780346561104395,
+          "paired_jerk_ratio": 1.5366865529065914,
+          "text_root_travel_m": 6.2094407081604,
+          "paired_root_travel_m": 3.8647944927215576,
+          "text_step_frequency_hz": 0.6153846153846154,
+          "paired_step_frequency_hz": 0.717948717948718
+        }
+      },
+      "caption": "a walking man bumps something with his right leg then turns and walks in another direction."
+    },
+    {
+      "motion_id": "014244",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.0921846479177475,
+            "paired": 0.1084054559469223,
+            "zero": 0.1283671110868454,
+            "shuffled": 0.09216795116662979
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.0629379078745842,
+          "text_jerk_ratio": 0.5072776904248442,
+          "paired_jerk_ratio": 0.7522602278998768,
+          "text_root_travel_m": 3.2082889080047607,
+          "paired_root_travel_m": 4.694679260253906,
+          "text_step_frequency_hz": 0.9701492537313433,
+          "paired_step_frequency_hz": 0.7462686567164178
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.14723916351795197,
+            "paired": 0.16700288653373718,
+            "zero": 0.14645494520664215,
+            "shuffled": 0.16770361363887787
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.03424697369337082,
+          "text_jerk_ratio": 0.5072776904248442,
+          "paired_jerk_ratio": 0.6996500122408532,
+          "text_root_travel_m": 3.2082889080047607,
+          "paired_root_travel_m": 3.9119255542755127,
+          "text_step_frequency_hz": 0.9701492537313433,
+          "paired_step_frequency_hz": 0.8208955223880596
+        }
+      },
+      "caption": "someone scrolls from right to left and then stands"
+    },
+    {
+      "motion_id": "014420",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.12278808653354645,
+            "paired": 0.13475506007671356,
+            "zero": 0.12795549631118774,
+            "shuffled": 0.16395901143550873
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.08619746565818787,
+          "text_jerk_ratio": 0.37622213582091185,
+          "paired_jerk_ratio": 0.33114734724925043,
+          "text_root_travel_m": 5.667682647705078,
+          "paired_root_travel_m": 5.911379814147949,
+          "text_step_frequency_hz": 0.594059405940594,
+          "paired_step_frequency_hz": 0.594059405940594
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.4695773422718048,
+            "paired": 0.5017922520637512,
+            "zero": 0.490953266620636,
+            "shuffled": 0.493312805891037
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": false,
+          "paired_beats_shuffled": false,
+          "paired_motion_difference_m": 0.09128595888614655,
+          "text_jerk_ratio": 0.37622213582091185,
+          "paired_jerk_ratio": 0.1539243576750426,
+          "text_root_travel_m": 5.667682647705078,
+          "paired_root_travel_m": 6.561405181884766,
+          "text_step_frequency_hz": 0.594059405940594,
+          "paired_step_frequency_hz": 0.09900990099009901
+        }
+      },
+      "caption": "someone nervously pacing around in a circle"
+    },
+    {
+      "motion_id": "014448",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.26421961188316345,
+            "paired": 0.2647649347782135,
+            "zero": 0.26847773790359497,
+            "shuffled": 0.2653235197067261
+          },
+          "paired_improves_text": false,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.08488497138023376,
+          "text_jerk_ratio": 1.3149354839175134,
+          "paired_jerk_ratio": 1.3038493965393556,
+          "text_root_travel_m": 7.557507038116455,
+          "paired_root_travel_m": 7.91229248046875,
+          "text_step_frequency_hz": 1.2307692307692308,
+          "paired_step_frequency_hz": 1.0256410256410255
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.5469260811805725,
+            "paired": 0.5226984620094299,
+            "zero": 0.5339915752410889,
+            "shuffled": 0.5286282300949097
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.08091355115175247,
+          "text_jerk_ratio": 1.3149354839175134,
+          "paired_jerk_ratio": 1.2563286312986988,
+          "text_root_travel_m": 7.557507038116455,
+          "paired_root_travel_m": 5.945815086364746,
+          "text_step_frequency_hz": 1.2307692307692308,
+          "paired_step_frequency_hz": 0.8717948717948718
+        }
+      },
+      "caption": "a person walks forward, hops backwards, then defends themselves by putting their hands up in defense"
+    },
+    {
+      "motion_id": "014472",
+      "configs": {
+        "head": {
+          "active_error_m": {
+            "text": 0.5647664070129395,
+            "paired": 0.5142252445220947,
+            "zero": 0.6056713461875916,
+            "shuffled": 0.5276829600334167
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.20849740505218506,
+          "text_jerk_ratio": 6.092788280499466,
+          "paired_jerk_ratio": 6.2996251849075655,
+          "text_root_travel_m": 10.526086807250977,
+          "paired_root_travel_m": 12.101356506347656,
+          "text_step_frequency_hz": 0.7272727272727273,
+          "paired_step_frequency_hz": 0.9696969696969697
+        },
+        "wrists": {
+          "active_error_m": {
+            "text": 0.7892927527427673,
+            "paired": 0.7021282315254211,
+            "zero": 0.8035582304000854,
+            "shuffled": 0.7987989187240601
+          },
+          "paired_improves_text": true,
+          "paired_beats_zero": true,
+          "paired_beats_shuffled": true,
+          "paired_motion_difference_m": 0.24525848031044006,
+          "text_jerk_ratio": 6.092788280499466,
+          "paired_jerk_ratio": 3.700490033642136,
+          "text_root_travel_m": 10.526086807250977,
+          "paired_root_travel_m": 10.961511611938477,
+          "text_step_frequency_hz": 0.7272727272727273,
+          "paired_step_frequency_hz": 0.8484848484848485
+        }
+      },
+      "caption": "a person dances briefly and then performs a backflip."
+    }
+  ]
+}

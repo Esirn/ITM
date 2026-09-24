@@ -1,0 +1,6678 @@
+{
+  "mapped_count": 1333,
+  "eligible_count": 682,
+  "batch_size": 32,
+  "evaluated_count_if_drop_last": 672,
+  "filtered": [
+    {
+      "motion_id": "004822",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001969",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005799",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012805",
+      "length": 39,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001486",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005213",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006652",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010940",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008320",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010915",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007561",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012883",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011673",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009958",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003005",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010720",
+      "length": 19,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007450",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007779",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003450",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012361",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013207",
+      "length": 35,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006521",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010819",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014351",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009377",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003111",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002627",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010792",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001059",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012143",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012388",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009199",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007999",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008207",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013632",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010254",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002323",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005106",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007286",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011075",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000421",
+      "length": 38,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010248",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007301",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004366",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008597",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000026",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008177",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008060",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006442",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005375",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014512",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001211",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014171",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006756",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009437",
+      "length": 28,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010810",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013610",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011136",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002718",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011731",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005399",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004083",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000679",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002517",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005668",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010195",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008032",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000348",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000633",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003440",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012761",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004957",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006123",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009768",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002662",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004222",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013619",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007318",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000565",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009022",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004991",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001538",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010586",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009220",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008105",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010142",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003179",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010785",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000865",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005471",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005152",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007411",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001675",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009996",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000815",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009283",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011991",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005981",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008152",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010189",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008603",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005583",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013757",
+      "length": 34,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001008",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003013",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005229",
+      "length": 198,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009941",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011534",
+      "length": 197,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011892",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003278",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000207",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005638",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001520",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008493",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007598",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007191",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014087",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010161",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005407",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010443",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010547",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008740",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001772",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002486",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006852",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002754",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000889",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002168",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010843",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005818",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006853",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008775",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014046",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003104",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014557",
+      "length": 38,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013736",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007679",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014387",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009084",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000104",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004336",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012587",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012400",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002122",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012675",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008084",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003430",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011181",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014123",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006686",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009714",
+      "length": 36,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008505",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005712",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010956",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014361",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003268",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003108",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014444",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000153",
+      "length": 198,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004037",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006332",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001209",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003547",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009979",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006371",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002024",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012668",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001738",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011438",
+      "length": 197,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004863",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005589",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006979",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008692",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007418",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012716",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000921",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004240",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003877",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007428",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007232",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008338",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005951",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009710",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014310",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001801",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004853",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004414",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003138",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005747",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014307",
+      "length": 29,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013417",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013289",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001038",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005759",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012362",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009730",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005920",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012905",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011863",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013253",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012578",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005946",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009354",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001705",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013675",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007551",
+      "length": 37,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014431",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008082",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012399",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007095",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001349",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003255",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000088",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000905",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005037",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013122",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007559",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004759",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003077",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002868",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011211",
+      "length": 22,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011827",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004601",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006205",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004153",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004275",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014607",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004870",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001082",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002272",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013652",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002399",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000640",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002976",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005869",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007089",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014326",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001437",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007607",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012041",
+      "length": 24,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008614",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000629",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009332",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009716",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014342",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013476",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005458",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004906",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003823",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007946",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002459",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009671",
+      "length": 21,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000304",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005617",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003721",
+      "length": 35,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014604",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008542",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010160",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014554",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001425",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005628",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007822",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005465",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011687",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013778",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003685",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011653",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000486",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014448",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003483",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008556",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001428",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008904",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005531",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000246",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006644",
+      "length": 24,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012686",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000343",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002483",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013222",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008002",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004206",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010996",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000700",
+      "length": 27,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001250",
+      "length": 26,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000178",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009148",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002635",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008782",
+      "length": 35,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006433",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007896",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006053",
+      "length": 38,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006694",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004495",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003782",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004776",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009991",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004303",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000680",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014612",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010199",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006033",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005968",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001182",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014352",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001617",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009072",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000048",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008275",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006290",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010736",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007818",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006912",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003761",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003740",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000439",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005639",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012813",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003729",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005793",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011812",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008939",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005413",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003541",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010116",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010183",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002932",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011566",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000507",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004645",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011743",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011904",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008837",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003116",
+      "length": 30,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008696",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004455",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008588",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006457",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014110",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010226",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003712",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010282",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004574",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014535",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013980",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007102",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008069",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002572",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012992",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005744",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003800",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007708",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002453",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005296",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013597",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013415",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003441",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010698",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004960",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003790",
+      "length": 6,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008162",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006172",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008759",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005904",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007610",
+      "length": 198,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008598",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007157",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006390",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013978",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005163",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013700",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011144",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006420",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013068",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007824",
+      "length": 198,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013050",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009181",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003858",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013468",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013449",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009383",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010526",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000066",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003432",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004443",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000696",
+      "length": 24,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014285",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000106",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006575",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010509",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012639",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007655",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009942",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013444",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009493",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009926",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008567",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006741",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005404",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000781",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013174",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002661",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008232",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013075",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000717",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012398",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010917",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002108",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002192",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009432",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011226",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014039",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011555",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013753",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002223",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013765",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013562",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007354",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001203",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010703",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006709",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009338",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011823",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006281",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014051",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004166",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006735",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007695",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012956",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013568",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005751",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005676",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011146",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006251",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012611",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013703",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001285",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013125",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011504",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004428",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012099",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000612",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012833",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013579",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000904",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003339",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014380",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006185",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009135",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006473",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002460",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007924",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009410",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009477",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009645",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009584",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010897",
+      "length": 197,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001725",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005147",
+      "length": 30,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010068",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011224",
+      "length": 23,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005522",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010150",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008205",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008704",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011811",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010126",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006674",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001485",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006839",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011813",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011046",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001453",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004724",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012527",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012423",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013339",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012118",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003962",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002582",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005439",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004779",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005031",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000352",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002685",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005300",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007949",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009355",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008159",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000926",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001275",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012087",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008016",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011442",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002954",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001005",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010995",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006133",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003812",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008843",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009443",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008902",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001457",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004163",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006662",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007776",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005469",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004912",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006214",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012941",
+      "length": 6,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003897",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007581",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008100",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006272",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006888",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004521",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010823",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005052",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012235",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000792",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000268",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011797",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000597",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008851",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001640",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007423",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004749",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002242",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009600",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007706",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000363",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007131",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004733",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008431",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006986",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010447",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003991",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004975",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012488",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002171",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012616",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009831",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007097",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006118",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010032",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008057",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008755",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004284",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004008",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005610",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004398",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006693",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004122",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006095",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002647",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011158",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000302",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007436",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002277",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004707",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000419",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004605",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005826",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001782",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003857",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008498",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004708",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012005",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013208",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011668",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008803",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004192",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003149",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009762",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013833",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011359",
+      "length": 198,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004560",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011402",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014215",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007625",
+      "length": 197,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008449",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007971",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003771",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003365",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006383",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008840",
+      "length": 35,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011317",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008828",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013905",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "005607",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "001169",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010553",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010964",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009961",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009905",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004354",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002106",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000523",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000876",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008388",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000320",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011412",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007359",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010816",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006041",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002658",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003191",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002770",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013806",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "000055",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002382",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014002",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008910",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003119",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003653",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008014",
+      "length": 197,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013969",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012837",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010520",
+      "length": 28,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006378",
+      "length": 198,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003020",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007020",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "013314",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011607",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012132",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003537",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004573",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002074",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "010545",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004472",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004734",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002931",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002318",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011793",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "002492",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "012219",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008443",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004562",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004012",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007573",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003638",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009666",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "004007",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014072",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "006351",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "009773",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "003783",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "007171",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "008238",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "014384",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    },
+    {
+      "motion_id": "011372",
+      "length": 199,
+      "reason": "length_outside_40_196"
+    }
+  ],
+  "evaluated": [
+    {
+      "motion_id": "014457",
+      "length": 62,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009613",
+      "length": 64,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008463",
+      "length": 133,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014160",
+      "length": 82,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004945",
+      "length": 149,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004124",
+      "length": 174,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003424",
+      "length": 94,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006518",
+      "length": 142,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008399",
+      "length": 94,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003245",
+      "length": 67,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011978",
+      "length": 132,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004488",
+      "length": 122,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014477",
+      "length": 63,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008292",
+      "length": 150,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008131",
+      "length": 124,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012498",
+      "length": 90,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011441",
+      "length": 144,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000818",
+      "length": 114,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002139",
+      "length": 167,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007767",
+      "length": 96,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011684",
+      "length": 52,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012309",
+      "length": 142,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002606",
+      "length": 51,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007862",
+      "length": 92,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011028",
+      "length": 103,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013812",
+      "length": 56,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004394",
+      "length": 178,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004311",
+      "length": 48,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009161",
+      "length": 126,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011363",
+      "length": 55,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009539",
+      "length": 164,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008006",
+      "length": 146,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002795",
+      "length": 92,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003575",
+      "length": 83,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005485",
+      "length": 133,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011385",
+      "length": 186,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001262",
+      "length": 86,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002302",
+      "length": 78,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009521",
+      "length": 144,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010552",
+      "length": 183,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009184",
+      "length": 78,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003350",
+      "length": 88,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005277",
+      "length": 100,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012584",
+      "length": 70,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006236",
+      "length": 181,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006733",
+      "length": 101,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013549",
+      "length": 137,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012673",
+      "length": 173,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008967",
+      "length": 163,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009405",
+      "length": 138,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005274",
+      "length": 63,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003779",
+      "length": 86,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009968",
+      "length": 64,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009031",
+      "length": 157,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009910",
+      "length": 70,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005555",
+      "length": 60,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002473",
+      "length": 83,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013735",
+      "length": 118,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012280",
+      "length": 66,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000389",
+      "length": 100,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003095",
+      "length": 189,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013514",
+      "length": 190,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001589",
+      "length": 76,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012625",
+      "length": 56,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012985",
+      "length": 163,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006774",
+      "length": 134,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008157",
+      "length": 80,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008343",
+      "length": 141,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013849",
+      "length": 74,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011632",
+      "length": 110,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012167",
+      "length": 41,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010546",
+      "length": 122,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004720",
+      "length": 81,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012215",
+      "length": 137,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014311",
+      "length": 195,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011717",
+      "length": 188,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012558",
+      "length": 78,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005697",
+      "length": 184,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012798",
+      "length": 150,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012021",
+      "length": 185,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005932",
+      "length": 177,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006755",
+      "length": 132,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011095",
+      "length": 96,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005851",
+      "length": 45,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005596",
+      "length": 171,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007940",
+      "length": 135,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004180",
+      "length": 183,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013745",
+      "length": 74,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013911",
+      "length": 140,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009977",
+      "length": 64,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002522",
+      "length": 157,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005477",
+      "length": 110,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003142",
+      "length": 193,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012158",
+      "length": 184,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012925",
+      "length": 189,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008360",
+      "length": 75,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005141",
+      "length": 77,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012046",
+      "length": 91,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010639",
+      "length": 40,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004873",
+      "length": 83,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013278",
+      "length": 145,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007878",
+      "length": 151,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014205",
+      "length": 146,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004854",
+      "length": 128,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011055",
+      "length": 65,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003331",
+      "length": 75,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000534",
+      "length": 72,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002078",
+      "length": 193,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012098",
+      "length": 121,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001840",
+      "length": 55,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013777",
+      "length": 123,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002055",
+      "length": 156,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008801",
+      "length": 56,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010439",
+      "length": 196,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006512",
+      "length": 189,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011643",
+      "length": 123,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001179",
+      "length": 53,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009816",
+      "length": 98,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009709",
+      "length": 192,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012238",
+      "length": 126,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003780",
+      "length": 73,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003973",
+      "length": 77,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012032",
+      "length": 144,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007549",
+      "length": 84,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014336",
+      "length": 65,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004668",
+      "length": 185,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003881",
+      "length": 71,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002070",
+      "length": 110,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008998",
+      "length": 63,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006814",
+      "length": 172,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009096",
+      "length": 108,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012515",
+      "length": 92,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003437",
+      "length": 57,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010039",
+      "length": 75,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004988",
+      "length": 69,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005636",
+      "length": 161,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008620",
+      "length": 84,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011935",
+      "length": 188,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004157",
+      "length": 75,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001014",
+      "length": 80,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013373",
+      "length": 68,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006263",
+      "length": 164,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006426",
+      "length": 56,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012437",
+      "length": 115,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008266",
+      "length": 176,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007893",
+      "length": 96,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002733",
+      "length": 83,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000324",
+      "length": 59,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001214",
+      "length": 127,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002049",
+      "length": 81,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003677",
+      "length": 180,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003997",
+      "length": 70,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010616",
+      "length": 188,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002870",
+      "length": 156,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011825",
+      "length": 40,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002388",
+      "length": 146,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014420",
+      "length": 102,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005813",
+      "length": 106,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010445",
+      "length": 143,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001347",
+      "length": 92,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004264",
+      "length": 118,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010270",
+      "length": 169,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013586",
+      "length": 127,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001330",
+      "length": 81,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003423",
+      "length": 188,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010909",
+      "length": 163,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010739",
+      "length": 162,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010576",
+      "length": 75,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006724",
+      "length": 135,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009485",
+      "length": 68,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006101",
+      "length": 142,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004499",
+      "length": 83,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010617",
+      "length": 178,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005550",
+      "length": 189,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010298",
+      "length": 115,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008707",
+      "length": 78,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009841",
+      "length": 98,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002471",
+      "length": 129,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004602",
+      "length": 40,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006245",
+      "length": 125,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000687",
+      "length": 56,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007384",
+      "length": 151,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006213",
+      "length": 138,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012691",
+      "length": 84,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005698",
+      "length": 136,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000327",
+      "length": 152,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004865",
+      "length": 152,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003062",
+      "length": 77,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009519",
+      "length": 67,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007540",
+      "length": 134,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009566",
+      "length": 82,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007291",
+      "length": 68,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001359",
+      "length": 69,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008170",
+      "length": 189,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002651",
+      "length": 55,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000759",
+      "length": 88,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004808",
+      "length": 57,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010343",
+      "length": 56,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001882",
+      "length": 138,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004844",
+      "length": 47,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005084",
+      "length": 40,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012020",
+      "length": 105,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011257",
+      "length": 74,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014541",
+      "length": 87,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010658",
+      "length": 172,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007890",
+      "length": 184,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003934",
+      "length": 114,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009209",
+      "length": 68,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008053",
+      "length": 161,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007041",
+      "length": 56,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000909",
+      "length": 125,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012555",
+      "length": 92,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005180",
+      "length": 82,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004332",
+      "length": 167,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011406",
+      "length": 73,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005312",
+      "length": 120,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008592",
+      "length": 178,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011284",
+      "length": 142,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001861",
+      "length": 49,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007126",
+      "length": 69,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004297",
+      "length": 50,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013648",
+      "length": 91,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006235",
+      "length": 66,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000576",
+      "length": 194,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003723",
+      "length": 169,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007886",
+      "length": 74,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008208",
+      "length": 96,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010967",
+      "length": 120,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003481",
+      "length": 76,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001759",
+      "length": 99,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004695",
+      "length": 114,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008888",
+      "length": 48,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006573",
+      "length": 168,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005396",
+      "length": 108,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006576",
+      "length": 188,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002919",
+      "length": 194,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010651",
+      "length": 72,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008310",
+      "length": 194,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013426",
+      "length": 152,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013023",
+      "length": 50,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011493",
+      "length": 192,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007193",
+      "length": 191,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009252",
+      "length": 65,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003105",
+      "length": 163,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003703",
+      "length": 173,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008936",
+      "length": 66,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007666",
+      "length": 69,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005833",
+      "length": 114,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005803",
+      "length": 78,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004446",
+      "length": 105,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003596",
+      "length": 161,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004120",
+      "length": 196,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000847",
+      "length": 134,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011289",
+      "length": 168,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004504",
+      "length": 76,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011841",
+      "length": 138,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008900",
+      "length": 79,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010588",
+      "length": 90,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002514",
+      "length": 68,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004307",
+      "length": 184,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010157",
+      "length": 50,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004817",
+      "length": 90,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013046",
+      "length": 62,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009517",
+      "length": 130,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007676",
+      "length": 55,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006640",
+      "length": 137,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014305",
+      "length": 134,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004411",
+      "length": 119,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004458",
+      "length": 59,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000475",
+      "length": 194,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014588",
+      "length": 95,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004947",
+      "length": 171,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007134",
+      "length": 134,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005433",
+      "length": 176,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001315",
+      "length": 70,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010141",
+      "length": 180,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007409",
+      "length": 192,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003224",
+      "length": 75,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001723",
+      "length": 105,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000613",
+      "length": 65,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005481",
+      "length": 66,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005142",
+      "length": 189,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002755",
+      "length": 54,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007630",
+      "length": 149,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002897",
+      "length": 119,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012302",
+      "length": 193,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000091",
+      "length": 47,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008381",
+      "length": 138,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011757",
+      "length": 70,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012321",
+      "length": 97,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014472",
+      "length": 166,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001999",
+      "length": 47,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005787",
+      "length": 158,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009459",
+      "length": 113,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013471",
+      "length": 46,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014244",
+      "length": 135,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008458",
+      "length": 92,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009790",
+      "length": 72,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011295",
+      "length": 58,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014109",
+      "length": 120,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008633",
+      "length": 67,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010233",
+      "length": 82,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005728",
+      "length": 160,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004319",
+      "length": 163,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004736",
+      "length": 184,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000358",
+      "length": 109,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003227",
+      "length": 173,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001603",
+      "length": 196,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013350",
+      "length": 80,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005009",
+      "length": 75,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013003",
+      "length": 58,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013031",
+      "length": 77,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001648",
+      "length": 70,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013641",
+      "length": 74,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014279",
+      "length": 105,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008216",
+      "length": 76,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004621",
+      "length": 45,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006306",
+      "length": 108,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008383",
+      "length": 55,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004545",
+      "length": 63,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010286",
+      "length": 79,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002315",
+      "length": 61,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012371",
+      "length": 151,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010618",
+      "length": 94,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011430",
+      "length": 87,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006258",
+      "length": 74,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013294",
+      "length": 194,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012877",
+      "length": 185,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005722",
+      "length": 98,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000710",
+      "length": 133,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011035",
+      "length": 196,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008174",
+      "length": 164,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002403",
+      "length": 177,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001755",
+      "length": 90,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013963",
+      "length": 88,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010342",
+      "length": 99,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010315",
+      "length": 131,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013695",
+      "length": 188,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014012",
+      "length": 136,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007617",
+      "length": 60,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003017",
+      "length": 47,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001577",
+      "length": 68,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003954",
+      "length": 114,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009137",
+      "length": 166,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010817",
+      "length": 182,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008296",
+      "length": 109,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009216",
+      "length": 86,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001636",
+      "length": 122,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006992",
+      "length": 47,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010642",
+      "length": 69,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009579",
+      "length": 126,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004517",
+      "length": 62,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000813",
+      "length": 58,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009441",
+      "length": 48,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003584",
+      "length": 130,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012993",
+      "length": 130,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009455",
+      "length": 63,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014428",
+      "length": 132,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002848",
+      "length": 182,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013846",
+      "length": 50,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012670",
+      "length": 126,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000974",
+      "length": 106,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004977",
+      "length": 139,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010850",
+      "length": 69,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001919",
+      "length": 153,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014049",
+      "length": 139,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007659",
+      "length": 97,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000824",
+      "length": 110,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013636",
+      "length": 79,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013633",
+      "length": 139,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002749",
+      "length": 66,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010706",
+      "length": 195,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011484",
+      "length": 86,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009123",
+      "length": 130,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013475",
+      "length": 189,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010919",
+      "length": 66,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012782",
+      "length": 43,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001695",
+      "length": 71,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012355",
+      "length": 165,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001676",
+      "length": 173,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003752",
+      "length": 93,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007283",
+      "length": 136,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005308",
+      "length": 69,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010280",
+      "length": 97,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009400",
+      "length": 162,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000886",
+      "length": 121,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006712",
+      "length": 49,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012543",
+      "length": 109,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008560",
+      "length": 118,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008774",
+      "length": 51,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013071",
+      "length": 53,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006514",
+      "length": 183,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011755",
+      "length": 156,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008970",
+      "length": 124,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011334",
+      "length": 68,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006819",
+      "length": 74,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013182",
+      "length": 82,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011589",
+      "length": 158,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001332",
+      "length": 65,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012602",
+      "length": 92,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002900",
+      "length": 70,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012168",
+      "length": 108,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004095",
+      "length": 185,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013974",
+      "length": 86,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010928",
+      "length": 57,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010795",
+      "length": 110,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004364",
+      "length": 79,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010898",
+      "length": 80,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003491",
+      "length": 152,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013419",
+      "length": 97,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009771",
+      "length": 79,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000825",
+      "length": 96,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005540",
+      "length": 82,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007772",
+      "length": 122,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005761",
+      "length": 86,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012645",
+      "length": 165,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007240",
+      "length": 58,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009727",
+      "length": 152,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004317",
+      "length": 137,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008191",
+      "length": 178,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004273",
+      "length": 175,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007444",
+      "length": 140,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004075",
+      "length": 102,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000019",
+      "length": 150,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011073",
+      "length": 130,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001848",
+      "length": 63,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007027",
+      "length": 53,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007451",
+      "length": 50,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010495",
+      "length": 65,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010003",
+      "length": 62,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010671",
+      "length": 130,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014392",
+      "length": 174,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013343",
+      "length": 77,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002950",
+      "length": 133,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001843",
+      "length": 64,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008457",
+      "length": 112,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008173",
+      "length": 111,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004320",
+      "length": 196,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013647",
+      "length": 184,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012117",
+      "length": 66,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010878",
+      "length": 76,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012655",
+      "length": 100,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011222",
+      "length": 58,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004652",
+      "length": 152,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005356",
+      "length": 135,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014020",
+      "length": 79,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004719",
+      "length": 60,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014536",
+      "length": 94,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006014",
+      "length": 142,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009562",
+      "length": 86,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013668",
+      "length": 142,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012306",
+      "length": 182,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001647",
+      "length": 78,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013454",
+      "length": 151,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004102",
+      "length": 177,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008559",
+      "length": 41,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013567",
+      "length": 98,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003174",
+      "length": 63,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011629",
+      "length": 93,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006871",
+      "length": 107,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008905",
+      "length": 57,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007756",
+      "length": 74,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001467",
+      "length": 145,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014021",
+      "length": 153,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009924",
+      "length": 129,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012094",
+      "length": 106,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005050",
+      "length": 179,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011732",
+      "length": 147,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007693",
+      "length": 68,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007352",
+      "length": 133,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001278",
+      "length": 88,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001851",
+      "length": 77,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008179",
+      "length": 180,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013754",
+      "length": 89,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003592",
+      "length": 87,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000115",
+      "length": 131,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001307",
+      "length": 79,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010327",
+      "length": 138,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002470",
+      "length": 140,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004033",
+      "length": 128,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000638",
+      "length": 77,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008349",
+      "length": 127,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008730",
+      "length": 58,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007516",
+      "length": 87,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003582",
+      "length": 66,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005166",
+      "length": 184,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002824",
+      "length": 81,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003439",
+      "length": 74,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013981",
+      "length": 88,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000339",
+      "length": 54,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002798",
+      "length": 170,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001419",
+      "length": 69,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006065",
+      "length": 87,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002160",
+      "length": 145,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005069",
+      "length": 63,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006784",
+      "length": 180,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003669",
+      "length": 164,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007209",
+      "length": 161,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008500",
+      "length": 94,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002091",
+      "length": 80,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003301",
+      "length": 162,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008824",
+      "length": 151,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004098",
+      "length": 58,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012789",
+      "length": 154,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014496",
+      "length": 126,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013336",
+      "length": 166,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006987",
+      "length": 164,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005726",
+      "length": 118,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011608",
+      "length": 75,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002888",
+      "length": 70,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014603",
+      "length": 169,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007820",
+      "length": 92,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013249",
+      "length": 146,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003193",
+      "length": 154,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004067",
+      "length": 52,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008862",
+      "length": 95,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010759",
+      "length": 58,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006005",
+      "length": 141,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007572",
+      "length": 109,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011573",
+      "length": 57,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002928",
+      "length": 93,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002531",
+      "length": 41,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012791",
+      "length": 67,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013719",
+      "length": 130,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003902",
+      "length": 52,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003379",
+      "length": 68,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012644",
+      "length": 122,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008822",
+      "length": 144,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001981",
+      "length": 82,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013469",
+      "length": 108,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011471",
+      "length": 186,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002573",
+      "length": 69,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004117",
+      "length": 82,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009349",
+      "length": 188,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007246",
+      "length": 190,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002252",
+      "length": 188,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009462",
+      "length": 50,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008235",
+      "length": 77,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001534",
+      "length": 154,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006343",
+      "length": 171,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009643",
+      "length": 115,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006718",
+      "length": 58,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007678",
+      "length": 59,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013344",
+      "length": 43,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001483",
+      "length": 94,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005364",
+      "length": 64,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012324",
+      "length": 137,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010905",
+      "length": 88,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009917",
+      "length": 167,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001983",
+      "length": 110,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003151",
+      "length": 90,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002149",
+      "length": 159,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013221",
+      "length": 95,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002332",
+      "length": 72,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009577",
+      "length": 101,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014169",
+      "length": 195,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004544",
+      "length": 184,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000665",
+      "length": 130,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000350",
+      "length": 74,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013587",
+      "length": 64,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000296",
+      "length": 159,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013573",
+      "length": 143,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001473",
+      "length": 188,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009303",
+      "length": 108,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014025",
+      "length": 172,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002093",
+      "length": 148,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005119",
+      "length": 100,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014247",
+      "length": 64,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006567",
+      "length": 126,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002397",
+      "length": 180,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013423",
+      "length": 88,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006137",
+      "length": 78,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006692",
+      "length": 165,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012049",
+      "length": 185,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001436",
+      "length": 150,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013511",
+      "length": 142,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013558",
+      "length": 141,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001083",
+      "length": 117,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004063",
+      "length": 120,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004183",
+      "length": 78,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005621",
+      "length": 66,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001454",
+      "length": 150,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000903",
+      "length": 161,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011162",
+      "length": 149,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008114",
+      "length": 82,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002364",
+      "length": 80,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004412",
+      "length": 86,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000704",
+      "length": 124,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004864",
+      "length": 55,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001775",
+      "length": 90,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004940",
+      "length": 134,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003900",
+      "length": 111,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006106",
+      "length": 104,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000708",
+      "length": 63,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009712",
+      "length": 143,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004811",
+      "length": 112,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011798",
+      "length": 151,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006331",
+      "length": 90,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012601",
+      "length": 154,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008339",
+      "length": 142,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005077",
+      "length": 90,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009972",
+      "length": 76,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "002799",
+      "length": 79,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004318",
+      "length": 72,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012561",
+      "length": 168,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006432",
+      "length": 76,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001282",
+      "length": 190,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009871",
+      "length": 192,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004997",
+      "length": 138,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001352",
+      "length": 188,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012264",
+      "length": 58,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001897",
+      "length": 159,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005504",
+      "length": 170,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007165",
+      "length": 85,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014506",
+      "length": 99,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000099",
+      "length": 73,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014445",
+      "length": 56,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012559",
+      "length": 193,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005033",
+      "length": 123,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008871",
+      "length": 149,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000379",
+      "length": 182,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001463",
+      "length": 59,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008117",
+      "length": 65,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004968",
+      "length": 98,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003373",
+      "length": 145,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001614",
+      "length": 150,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001533",
+      "length": 138,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005457",
+      "length": 59,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009776",
+      "length": 110,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013728",
+      "length": 66,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009077",
+      "length": 75,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009849",
+      "length": 142,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010037",
+      "length": 74,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003859",
+      "length": 131,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004432",
+      "length": 186,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004281",
+      "length": 134,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007085",
+      "length": 176,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006570",
+      "length": 59,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011694",
+      "length": 86,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007514",
+      "length": 70,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010441",
+      "length": 192,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012330",
+      "length": 72,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009946",
+      "length": 75,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "005217",
+      "length": 63,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001193",
+      "length": 87,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008953",
+      "length": 64,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004344",
+      "length": 145,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011550",
+      "length": 86,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001420",
+      "length": 168,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001523",
+      "length": 101,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012195",
+      "length": 69,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011379",
+      "length": 103,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001086",
+      "length": 83,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013665",
+      "length": 89,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000189",
+      "length": 61,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013371",
+      "length": 153,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001152",
+      "length": 93,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009960",
+      "length": 111,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008739",
+      "length": 83,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012145",
+      "length": 46,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007523",
+      "length": 88,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007888",
+      "length": 74,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008357",
+      "length": 110,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014043",
+      "length": 112,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014222",
+      "length": 143,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "010007",
+      "length": 129,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001906",
+      "length": 168,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "000497",
+      "length": 106,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "007322",
+      "length": 45,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "014108",
+      "length": 128,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006304",
+      "length": 194,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "001752",
+      "length": 114,
+      "reason": "eligible"
+    }
+  ],
+  "tail_dropped": [
+    {
+      "motion_id": "010305",
+      "length": 60,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "004331",
+      "length": 144,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "006295",
+      "length": 107,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "013130",
+      "length": 99,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "008528",
+      "length": 71,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011101",
+      "length": 98,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "009302",
+      "length": 109,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "003910",
+      "length": 170,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "011014",
+      "length": 84,
+      "reason": "eligible"
+    },
+    {
+      "motion_id": "012568",
+      "length": 78,
+      "reason": "eligible"
+    }
+  ],
+  "status": "reconstructed_from_current_files_not_proof_of_historical_batch_order"
+}

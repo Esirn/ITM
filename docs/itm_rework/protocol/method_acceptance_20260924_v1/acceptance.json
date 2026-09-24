@@ -1,0 +1,170 @@
+{
+  "read_commit": "55193655b1a8e7835de7e6bd96ed21122957641e",
+  "kind": "independent_saved_artifact_acceptance_not_new_generation",
+  "source_hash_checks": [
+    {
+      "path": "src/itm/models/mdm_imu_control.py",
+      "exists": true,
+      "bytes": 20301,
+      "sha256": "9dd50c69d65cf245431be5bd5aa56feb4ab2357895414707f6541201d5c0ce93"
+    },
+    {
+      "path": "src/itm/models/mdm_sampling.py",
+      "exists": true,
+      "bytes": 3700,
+      "sha256": "8ce7c62e522c9f8dd2e5bbfa313ff14eb947cbc7ec6e4448001d60dbc4583da7"
+    },
+    {
+      "path": "src/itm/models/semantic_response.py",
+      "exists": true,
+      "bytes": 6507,
+      "sha256": "39a4b3512639d0c7eca1382b4ee9bc048e35fb316de2b70d7a0e248712c00c06"
+    },
+    {
+      "path": "src/itm/backbones/mdm.py",
+      "exists": true,
+      "bytes": 3606,
+      "sha256": "a5a21ae34d1d947775484f514472594276f641ec98c20899d52aa24a241d93f8"
+    },
+    {
+      "path": "scripts/train_mdm_imu_control.py",
+      "exists": true,
+      "bytes": 36961,
+      "sha256": "f40bf6f1cef590de23497fa82cfd78bdb59ac5f96eac186488fdd3bd27917361"
+    },
+    {
+      "path": "scripts/sample_mdm_imu_control.py",
+      "exists": true,
+      "bytes": 17855,
+      "sha256": "25587ae73a9b314294fd5f8ad20a9a3ff49265a9109e5b1498613c78b4d647ab"
+    },
+    {
+      "path": "scripts/audit_mdm_method.py",
+      "exists": true,
+      "bytes": 6632,
+      "sha256": "2338562b6508f973d4228180720c09f117f1a4fef0a2c9d93c396715ccc827a1"
+    },
+    {
+      "path": "scripts/validate_mdm_identity.py",
+      "exists": true,
+      "bytes": 2339,
+      "sha256": "34864bf9dfe9c065aa694075697ddeb5e8d6db41f5be4ebd8f16eb2d570fead8"
+    },
+    {
+      "path": "tests/test_mdm_rework.py",
+      "exists": true,
+      "bytes": 12120,
+      "sha256": "2e018e78d4154e5af5c67cf8f9aaecdd548a29e02ee6dcf58af583a8757da0c2"
+    },
+    {
+      "path": "src/itm/data/random_plan.py",
+      "exists": true,
+      "bytes": 1463,
+      "sha256": "5e2f8aed3669c97ca58c9d726f5da515bb409c2ace21a86965ad433ca0275c3a"
+    }
+  ],
+  "smoke_checkpoint": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/b0_cpu_smoke_20260924_v1/model.pt",
+    "exists": true,
+    "bytes": 104555498,
+    "sha256": "623b16e6e22c09a2e6f8aaceaa635496b8afdde932ba0b3a3326eb7fbcbb00d9"
+  },
+  "smoke_output": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/b0_cpu_smoke_20260924_v1/samples.npz",
+    "exists": true,
+    "bytes": 299628,
+    "sha256": "758bfd1d560add3d10ed1377da9ddb80687bf1ffec49a83b623564b054742adf"
+  },
+  "decode_max_abs_difference": 0.0,
+  "random_plan_checks": [
+    {
+      "random_plan_id": "24a8fb7710a702aa757ce7a2472d6a59c19e3f6a21762fbac89ad08e2cd57d57",
+      "draws_recomputed": 1000,
+      "status": "passed"
+    },
+    {
+      "random_plan_id": "24a8fb7710a702aa757ce7a2472d6a59c19e3f6a21762fbac89ad08e2cd57d57",
+      "draws_recomputed": 1000,
+      "status": "passed"
+    },
+    {
+      "random_plan_id": "0baa13a28543708adba5cd3edeb5d8a8631825c6395ddcf0ac417ca1706dbe41",
+      "draws_recomputed": 1000,
+      "status": "passed"
+    }
+  ],
+  "saved_null_comparisons": {
+    "strict_prediction_max_abs": 0.0,
+    "legacy_prediction_max_abs": 0.30133453011512756,
+    "strict_sample_max_abs": 0.0,
+    "legacy_sample_max_abs": 3.2042226791381836
+  },
+  "saved_audit_artifacts": [
+    {
+      "path": "docs/itm_rework/method/checkpoint_audit_20260924_v1.json",
+      "exists": true,
+      "bytes": 661950,
+      "sha256": "298719c5f611b6d7a4f47a9f92c656fca4fff4d378a7578a86538e79f1b238a1"
+    },
+    {
+      "path": "docs/itm_rework/method/checkpoint_audit_20260924_v1.npz",
+      "exists": true,
+      "bytes": 72296,
+      "sha256": "9b42c1be954fb0906c8b0b31f50be0ef4f62e2915b95fe8f8d0bbbe9415966ee"
+    }
+  ],
+  "formal_schema_admission": {
+    "accepted": false,
+    "missing_fields": [
+      "caption_id",
+      "case_id",
+      "checkpoint_hash",
+      "code_commit",
+      "compatibility_manifest_hash",
+      "condition",
+      "condition_ids",
+      "config_hash",
+      "data_schema_hash",
+      "failure_reason",
+      "guidance_mode",
+      "imu_scale",
+      "joint_scale",
+      "joint_success",
+      "model_id",
+      "motion_representation_version",
+      "observation_metrics",
+      "observation_operator_version",
+      "output_path",
+      "protocol",
+      "protocol_version",
+      "quality_evaluator_version",
+      "quality_metrics",
+      "run_id",
+      "runtime_and_memory",
+      "sample_seed",
+      "sampler",
+      "semantic_evaluator_version",
+      "semantic_metrics",
+      "sensor_config",
+      "source_group_id",
+      "split_role",
+      "steps",
+      "text_scale",
+      "thresholds_version",
+      "train_seed"
+    ],
+    "reason": "method handoff is explicitly diagnostic; do not invent metrics or change train to val"
+  },
+  "budget": {
+    "device": "cpu",
+    "threads": 2,
+    "new_model_forwards": 0,
+    "new_generated_clips": 0,
+    "noise_arrays_recomputed": 3000
+  },
+  "limitations": [
+    "no new null full-generation run; saved predictions independently compared",
+    "no motion quality or semantic evaluation inferred from finite values",
+    "B0 trained once, not validation-qualified"
+  ]
+}

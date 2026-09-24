@@ -1,0 +1,71 @@
+{
+  "index": {
+    "path": "/home/a200/mount/a40/relatedworks/mdm/HumanML3D/index.csv",
+    "exists": true,
+    "bytes": 1043628,
+    "sha256": "2fa6f1d14e6c4daf1a74727712b8b9e967a4c793e771523679467c8d2a014419"
+  },
+  "amass_root": "/home/a200/mount/a40/datasets/AMASS",
+  "splits": {
+    "train": {
+      "manifest": "/home/a200/0proj/ITM/outputs/itm_rework/cache_audit_20260924_v1/train_relocated_manifest.jsonl",
+      "manifest_sha256": "2722585357655611584038bddc1781a75b9dae9687943c4e8b207213bac89485",
+      "records": 7009,
+      "frames": 1604890,
+      "min_frames": 3,
+      "max_frames": 300,
+      "within_hymotion_20_360_frames": 7003,
+      "max_rotation_matrix_error": 1.5497207641601562e-06,
+      "cache_bytes": 1968139912,
+      "fps": 30.0,
+      "original_manifest": {
+        "path": "outputs/manifests_full/train_standard_imu.jsonl",
+        "exists": true,
+        "bytes": 1888447,
+        "sha256": "3e83711385037f423c7b1fde63f2971cc4e5724a0f013fe914d81535ad8ed7cc"
+      }
+    },
+    "val": {
+      "manifest": "/home/a200/0proj/ITM/outputs/itm_rework/cache_audit_20260924_v1/val_relocated_manifest.jsonl",
+      "manifest_sha256": "b8b30b320cbbc7731ac2fa7e430200643b758cea95c73a1a974290d2627ae74b",
+      "records": 434,
+      "frames": 102496,
+      "min_frames": 38,
+      "max_frames": 300,
+      "within_hymotion_20_360_frames": 434,
+      "max_rotation_matrix_error": 1.430511474609375e-06,
+      "cache_bytes": 125566454,
+      "fps": 30.0,
+      "original_manifest": {
+        "path": "outputs/manifests_full/val_standard_imu.jsonl",
+        "exists": true,
+        "bytes": 114569,
+        "sha256": "402e4f27fa90781ce85a5eed16be075e07231642039404fc25a74a34590b1ba3"
+      }
+    },
+    "test": {
+      "manifest": "/home/a200/0proj/ITM/outputs/itm_rework/cache_audit_20260924_v1/test_relocated_manifest.jsonl",
+      "manifest_sha256": "248ac842b9c5be587c96b584bed142e6aeeb7f8ff4e68ff33a3787619139b65d",
+      "records": 1333,
+      "frames": 304212,
+      "min_frames": 11,
+      "max_frames": 300,
+      "within_hymotion_20_360_frames": 1331,
+      "max_rotation_matrix_error": 1.430511474609375e-06,
+      "cache_bytes": 373351093,
+      "fps": 30.0,
+      "original_manifest": {
+        "path": "outputs/manifests_full/test_standard_imu.jsonl",
+        "exists": true,
+        "bytes": 356188,
+        "sha256": "bc24944f5be07ed7758eb9bf8a10dc1cb9ec616edd3bde03ba2787c910eebbaa"
+      }
+    }
+  },
+  "scope": "all legacy cache arrays; root remap only; no cache values changed",
+  "not_certified": [
+    "HumanML synchronization",
+    "source-disjoint split",
+    "output IMU roundtrip"
+  ]
+}

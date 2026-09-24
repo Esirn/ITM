@@ -1,0 +1,5 @@
+{
+  "status": "failed",
+  "reason": "legacy attribute specs omit length; audit assumed explicit length",
+  "partial_results_written": false
+}

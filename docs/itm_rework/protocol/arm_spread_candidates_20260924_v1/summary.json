@@ -1,0 +1,15 @@
+{
+  "attempted": 3,
+  "candidates": 3,
+  "failures": [],
+  "compatible_count": 0,
+  "training_admissible_count": 0,
+  "head_proxy_invariant_only": true,
+  "budget": {
+    "device": "cpu",
+    "clips": 3,
+    "angle_degrees": 10,
+    "parameter_search": false
+  },
+  "wrists_limitation": "Fixing both wrist positions fixes their horizontal separation; this is not an IMU incompatibility proof."
+}

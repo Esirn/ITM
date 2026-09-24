@@ -1,0 +1,50 @@
+{
+  "read_commit": "55193655b1a8e7835de7e6bd96ed21122957641e",
+  "change_commit": null,
+  "files": [
+    {
+      "path": "scripts/accept_method_handoff.py",
+      "sha256": "2d4b37d1fb29f847ab66e4b40bacdd2a0fee341c67c6d78489ffa715802bf751"
+    },
+    {
+      "path": "scripts/audit_humanml_imu_alignment.py",
+      "sha256": "722dbd012d3b2ff233a4fb8cc4a111325364105d936b8e7870cd458f9ea3f22f"
+    },
+    {
+      "path": "scripts/audit_physical_static.py",
+      "sha256": "abd6ad8c2594d28c8c48e994b867051bbf8b470012009a93a3d7be04d1f1b87a"
+    },
+    {
+      "path": "scripts/build_arm_spread_candidates.py",
+      "sha256": "f9c48ab62cd3c81ea03754a70fe946fc8e3b8547f5e1d814be80afdfacfca948"
+    },
+    {
+      "path": "src/itm/data/static_imu.py",
+      "sha256": "011681bb6ee65af6c3130c5deba6849858836fd00f72b7b25eb8df683ad46131"
+    },
+    {
+      "path": "src/itm/data/physical_time.py",
+      "sha256": "001a8e37ab86bf086902896fcf68d0204d23628d2387a27671413b5477b663e3"
+    },
+    {
+      "path": "src/itm/metrics/arm_attributes.py",
+      "sha256": "53f94605ac5f16f4ad7ae6faedcf89b8ab74287776de4db4ba132eb8217bbffe"
+    },
+    {
+      "path": "tests/test_method_handoff_acceptance.py",
+      "sha256": "59a86f20b53634991581e32b7ceb031e82ced6ee6ef078747eb64f1f7127ad2a"
+    },
+    {
+      "path": "tests/test_static_imu.py",
+      "sha256": "f882ceb3c374c43807435e5223fd7c72e5a4267a2c76b31f138b66981dd9c67e"
+    },
+    {
+      "path": "tests/test_physical_time.py",
+      "sha256": "2e966f58b219fd4309a5b3036bd2e83f354dbb97c12258aa91fe5b7374cb121f"
+    },
+    {
+      "path": "tests/test_arm_attributes.py",
+      "sha256": "0a884264a5c4a77cbe954e35958fb1f0fc03327e88d2ab8b5a7f236214be6bcc"
+    }
+  ]
+}

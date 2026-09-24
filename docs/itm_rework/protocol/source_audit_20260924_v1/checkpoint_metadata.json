@@ -1,0 +1,116 @@
+{
+  "checkpoint": "outputs/mdm_control/stage2b_balanced_b.pt",
+  "epoch": 8,
+  "normalization": {
+    "acceleration_mean": [
+      [
+        0.003562525613233447,
+        -0.001078964676707983,
+        -0.001569037907756865
+      ],
+      [
+        0.000583660148549825,
+        -0.00033081669243983924,
+        0.0005291420384310186
+      ],
+      [
+        0.0021288080606609583,
+        -0.000398803036659956,
+        0.00045706218224950135
+      ],
+      [
+        0.0009183118818327785,
+        -0.0005763274966739118,
+        0.00033785184496082366
+      ],
+      [
+        0.002111603505909443,
+        0.0017577196704223752,
+        -0.0009156287414953113
+      ],
+      [
+        0.0017134940717369318,
+        -0.00011228318908251822,
+        -0.00020288719679228961
+      ]
+    ],
+    "acceleration_std": [
+      [
+        3.6273441314697266,
+        4.322920799255371,
+        3.3413162231445312
+      ],
+      [
+        3.732487440109253,
+        4.487186431884766,
+        3.4559078216552734
+      ],
+      [
+        1.26499605178833,
+        2.160524606704712,
+        1.1800390481948853
+      ],
+      [
+        1.2373627424240112,
+        2.155186176300049,
+        1.1678850650787354
+      ],
+      [
+        1.2752182483673096,
+        2.3728461265563965,
+        1.213035225868225
+      ],
+      [
+        1.0495227575302124,
+        2.2135894298553467,
+        0.974301278591156
+      ]
+    ],
+    "orientation": "rotation_matrix_unscaled"
+  },
+  "normalization_canonical_json_sha256": "be0c3c21a4ad3cafb305df4310c5fea6047777c1215195e2fb2d8f3c93d209a1",
+  "metadata": {
+    "control_config": {
+      "sensor_feature_dim": 12,
+      "sensor_count": 6,
+      "latent_dim": 512,
+      "encoder_layers": 2,
+      "encoder_heads": 8,
+      "dropout": 0.1,
+      "imu_drop_probability": 0.1
+    },
+    "sensor_configs": {
+      "head": [
+        4
+      ],
+      "wrists": [
+        0,
+        1
+      ]
+    },
+    "mdm_checkpoint": "/home/a200/0proj/ITM/outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/model000475000.pt",
+    "epoch": 8,
+    "training_args": {
+      "mdm_root": "/home/a200/mount/a40/relatedworks/mdm/motion-diffusion-model",
+      "mdm_checkpoint": "outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/model000475000.pt",
+      "mdm_args": "outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/args.json",
+      "manifest": "outputs/manifests_full/train.jsonl",
+      "standard_imu_manifest": "outputs/manifests_full/train_standard_imu.jsonl",
+      "mean": "/home/a200/0proj/datasets/all/Mean.npy",
+      "std": "/home/a200/0proj/datasets/all/Std.npy",
+      "sensor_configs": "head,wrists",
+      "output": "outputs/mdm_control/stage2b_balanced_b.pt",
+      "epochs": 8,
+      "batch_size": 16,
+      "learning_rate": 5e-05,
+      "max_records": null,
+      "resume": "outputs/mdm_control/stage1_full_pilot_v2.pt",
+      "trajectory_loss_weight": 1.0,
+      "velocity_loss_weight": 0.1,
+      "jerk_loss_weight": 0.003,
+      "min_free_gib": 4.0,
+      "seed": 1234,
+      "device": "cuda:1"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Owner02 method diagnostic v1",
+  "type": "object",
+  "required": [
+    "artifact_schema",
+    "case_id",
+    "source_group_id",
+    "split_role",
+    "protocol",
+    "research_evaluation_eligible",
+    "condition",
+    "sensor_config",
+    "output",
+    "case_index",
+    "checkpoint_hash",
+    "train_seed",
+    "sample_seed",
+    "random_plan_id",
+    "joint_success",
+    "semantic_metrics",
+    "observation_metrics",
+    "quality_metrics",
+    "exclusion_reason"
+  ],
+  "properties": {
+    "artifact_schema": {
+      "const": "owner02-method-diagnostic-v1"
+    },
+    "split_role": {
+      "const": "train_diagnostic"
+    },
+    "protocol": {
+      "type": "null"
+    },
+    "research_evaluation_eligible": {
+      "const": false
+    },
+    "joint_success": {
+      "type": "null"
+    },
+    "semantic_metrics": {
+      "type": "null"
+    },
+    "observation_metrics": {
+      "type": "null"
+    },
+    "quality_metrics": {
+      "type": "null"
+    },
+    "sensor_config": {
+      "enum": [
+        "head",
+        "wrists"
+      ]
+    }
+  }
+}

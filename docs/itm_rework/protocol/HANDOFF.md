@@ -1,0 +1,51 @@
+# 02 → 01 / 03 交接
+
+**第二批更新：**当前交接见 `METHOD_ACCEPTANCE_20260924.md`，读取方法提交 `5519365`，公共契约为 `itm-rework-v0.2-draft`。
+已独立验收 strict null/随机流/同源解码、停止全段拉伸，补充静止 fixture、9 条时序诊断及 3 条 uncertain 张臂候选。
+请勿按下文第一批历史条目重复修复已完成的 crop_seconds；世界坐标/骨架、真正 compatible witness 和合格 B0 checkpoint 仍待完成。
+以下保留为第一批交接记录。
+
+日期 2026-09-24；读取 commit `663414f1d9bffd6a70189846739bc9d9b1d0d873`；改动未提交。
+契约 `itm-rework-v0.1-draft`，未冻结；代码快照 hash 见 `code_snapshot.json`。
+本批只新增数据/协议/评价代码与本目录文件，未修改方法代码、论文或任务书。
+
+## 给 01：可直接用的接口与阻塞
+
+1. 读取 `../contract.yaml`。继续使用现有 world linear acceleration + global orientation 分布，不把缓存无声改为 raw body specific force。
+2. `itm.data.observation.load_standard_cache` 提供显式 schema/FPS/单位检查。旧 `_PairedDataset` 尚未接入；由 01 选择集成点，不强制改变模型函数签名。
+3. `validation_20260924_v1/panel.jsonl` 提供 6 个 val-only 来源组的候选 ID、文字、原始区间与路径；同步验收前不是正式 frozen panel。
+4. 修复 `sample_mdm_imu_control.py::_load_case` 的 `_fit_length_*` 全段时间拉伸；应在明确秒时间轴上匹配、裁切，并记录有效区间。不要给 shuffled 片段任意 time warp。训练入口 `min(length)` 也不能代替同步证明。
+5. 核验 HumanML canonicalization 与原始 IMU 朝向；不得用目标 GT pelvis 做部署预处理。缓存 GT joints 与 HumanML263 存在一帧及坐标定义差异。
+6. 输出 B0 的 null/mask/CFG/dropout/采样正确性证据、checkpoint/hash、模型卡、完整配置。现有 Stage-2b 仅是历史资产，未命名为修复 B0。
+7. `itm.data.random_plan.sampling_noise` 给出与调用顺序无关的逐步噪声；在 sampler 中显式消费并记初始/后续随机流，不能只设置全局 seed。
+8. 新采样逐样本字段见 `result.schema.json`；失败也写记录。训练 seed 与 sample seed 分开。所有最终联合能力使用同一 checkpoint。
+9. `observe_mesh` 必须读取最终渲染同一 mesh/rotation；它不解决 HumanML→SMPL 旋转丢失。输出 IMU 认证通道当前为空。方法 B 严格观测约束和方法 C 的物理梯度分支仍受此阻塞。
+10. 新 GPU 作业在执行前登记 GPU、显存、样本/K、sampler/steps/forward 次数、seed、guidance 和停止条件。当前建议 P=84 输出/模型，仅建议，未启动。
+
+腕部 orientation 18/19 与 proxy joint 20/21 不同已有安装权重依据；不建议直接把 orientation 段换成 wrist 段。
+若要改变输出表示，请先给最小接口变化、迁移成本和验证计划；02 尚未启动大型人体解码器项目。
+
+## 给 03：可写与不可写
+
+- 可以写本轮核查了 8776 条缓存，以及旧控制输出的可复算性；不能把缓存合法性称为生成动作的真实 IMU 一致性。
+- 可以写在历史开发诊断上，Stage-2b 双腕 paired-vs-shuffled 的 joint-proxy 均值改善跨五个 sampling seeds 保留；必须同时披露来源重叠、时间拉伸和未覆盖训练方差。
+- 单头实例控制证据仍弱；30-motion source-group CI 跨零。不能与双腕作相同强度主张。
+- 可以写旧文本编辑中摆臂/转向属性发生变化，快慢/大步不稳定；不能说这些编辑已确认物理相容，不能报告本轮 C 成功率。
+- 100-motion 的 74/100 是样本比例，不证明总体超过 70%。文本编辑 head 差值 CI 改为每 motion 平均后 bootstrap，见新统计。
+- 557 对跨 split 时间区间重叠必须披露；本轮尚无封存的独立测试池。
+- 旧 5-case round-trip 加速度/姿态不通过；保留负结果，不能通过更大阈值包装为成功。
+- 当前没有“同一最终模型同时解决语义编辑与传感器控制”的新证据；不得拼接 Stage-1/2b 的不同能力。
+
+唯一事实索引为 `evidence_index.jsonl`。raw 表在 `recomputed_20260924_v1/`，
+来源组统计在 `statistics_20260924_v3/`。历史评估脚本的 Markdown 标题或旧文字“正式”不改变新证据状态。
+失败过的两次身份检查记录保留在 statistics v1/v2；v3 才是完整核验结果。
+
+## 真实硬件后续导入准备
+
+设备未知时不假定信号类型。每次采集记录 participant/session、设备/固件、sensor_config、原始时间戳与时钟、
+量纲、重力状态、姿态方向、坐标轴、安装段/固定旋转、静止标定区间、同步方式、丢包掩码和重新佩戴记录。
+机体系比力用已确认 R_wb 与 g_w 转为 a_w；机体系线加速度只旋转，不补重力。未知 quantity 拒绝导入。
+保留原始设备数据与转换配置 hash；推理预处理不能读取完整人体 GT。
+参与者/会话隔离；校准片段不包含目标完整动作真值；零样本与微调分开。
+无独立全身 GT 不报告 MPJPE；没有通过同一输出链的观测算子也不报告真实传感器成功率。
+Nymeria 3-clip 仍是 pilot。本批没有上传人体数据、假定设备身份、确定采集人数或开展新采集。

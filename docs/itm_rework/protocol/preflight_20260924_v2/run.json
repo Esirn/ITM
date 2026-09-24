@@ -1,0 +1,38 @@
+{
+  "queue": {
+    "path": "docs/itm_rework/protocol/run_queue.json",
+    "exists": true,
+    "bytes": 974,
+    "sha256": "8fd27a7eaa9093155214cdcb58352f3f94272989436f2622f5fe9b117bc631e4"
+  },
+  "mode": "dry_run",
+  "gpu_jobs": 0,
+  "concurrency": 1,
+  "jobs": [
+    {
+      "job_id": "compatible_C",
+      "command": [
+        "/home/a200/miniconda3/envs/itm/bin/python",
+        "scripts/evaluate_rework_records.py",
+        "--expected",
+        "docs/itm_rework/protocol/C_expected_frozen.jsonl",
+        "--records",
+        "docs/itm_rework/protocol/C_output_records.jsonl",
+        "--thresholds",
+        "docs/itm_rework/protocol/thresholds.json",
+        "--output",
+        "docs/itm_rework/protocol/preflight_20260924_v2/compatible_C.json"
+      ],
+      "timeout_seconds": 60,
+      "blockers": [
+        "No validation-qualified B0; only single-update smoke accepted",
+        "Compatible witnesses absent: three candidates remain uncertain",
+        "Independent semantic/quality thresholds are draft",
+        "World-frame/body-retarget alignment and generated IMU closure are uncertified",
+        "missing input: docs/itm_rework/protocol/C_expected_frozen.jsonl",
+        "missing input: docs/itm_rework/protocol/C_output_records.jsonl"
+      ],
+      "status": "blocked"
+    }
+  ]
+}

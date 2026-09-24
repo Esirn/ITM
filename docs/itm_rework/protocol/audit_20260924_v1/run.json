@@ -1,0 +1,14 @@
+{
+  "read_commit": "663414f1d9bffd6a70189846739bc9d9b1d0d873",
+  "command": [
+    "scripts/audit_itm_rework.py",
+    "--output",
+    "docs/itm_rework/protocol/audit_20260924_v1",
+    "--cache-samples-per-split",
+    "8"
+  ],
+  "assets": 627,
+  "cache_sample_budget_per_split": 8,
+  "gpu_jobs": 0,
+  "read_only_inputs": true
+}

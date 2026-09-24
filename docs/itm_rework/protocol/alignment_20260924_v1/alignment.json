@@ -1,0 +1,679 @@
+{
+  "kind": "diagnostic_not_alignment_certification",
+  "cases": [
+    {
+      "motion_id": "000004",
+      "split": "train",
+      "humanml_frames": 199,
+      "saved_joint_frames": 199,
+      "source_30fps_frames": 300,
+      "source_supported_20fps_count": 200,
+      "source_minus_feature_frames": 1,
+      "humanml_decode_max_abs_m": 0.0,
+      "feature_last_time_seconds": 9.9,
+      "cache_last_time_seconds": 9.966666666666667,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/datasets/all/new_joint_vecs/000004.npy",
+          "exists": true,
+          "bytes": 209476,
+          "sha256": "e7fcca33b0e4f3d878cc61625de0acd36babf40f42ec495c215a00955e2582cf"
+        },
+        {
+          "path": "/home/a200/0proj/datasets/all/new_joints/000004.npy",
+          "exists": true,
+          "bytes": 52664,
+          "sha256": "387819a8e9c6c9ee6d9076fb2550c65ae2534246cd0c7e5da4538a90f277cd0f"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/000004.npz",
+          "exists": true,
+          "bytes": 365259,
+          "sha256": "c87865698ee93515961575f004dd3e67e89091992066743369093b3bb9805b8c"
+        }
+      ],
+      "lag_diagnostics": [
+        {
+          "source_query_shift_frames_20fps": -1,
+          "compared_frames": 198,
+          "excluded_endpoint_frames": 1,
+          "root_relative_raw_mean_m": 0.11881906854675743,
+          "oracle_constant_yaw_mean_m": 0.03592056207826289,
+          "oracle_constant_yaw_p95_m": 0.0631814213426519,
+          "head_oracle_mean_m": 0.05258562770587623,
+          "wrists_oracle_mean_m": 0.042205320723945866,
+          "oracle_yaw_rad": -0.5723697400170116,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        },
+        {
+          "source_query_shift_frames_20fps": 0,
+          "compared_frames": 199,
+          "excluded_endpoint_frames": 0,
+          "root_relative_raw_mean_m": 0.1185908456003446,
+          "oracle_constant_yaw_mean_m": 0.031764712391125015,
+          "oracle_constant_yaw_p95_m": 0.05017603559418134,
+          "head_oracle_mean_m": 0.04571011269264623,
+          "wrists_oracle_mean_m": 0.032891366172467885,
+          "oracle_yaw_rad": -0.5760006427533828,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        },
+        {
+          "source_query_shift_frames_20fps": 1,
+          "compared_frames": 199,
+          "excluded_endpoint_frames": 0,
+          "root_relative_raw_mean_m": 0.11986685942992471,
+          "oracle_constant_yaw_mean_m": 0.03509965395125547,
+          "oracle_constant_yaw_p95_m": 0.06343666635948975,
+          "head_oracle_mean_m": 0.05318308460230588,
+          "wrists_oracle_mean_m": 0.03921513955295606,
+          "oracle_yaw_rad": -0.5796388491979502,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        }
+      ]
+    },
+    {
+      "motion_id": "000008",
+      "split": "train",
+      "humanml_frames": 42,
+      "saved_joint_frames": 42,
+      "source_30fps_frames": 64,
+      "source_supported_20fps_count": 43,
+      "source_minus_feature_frames": 1,
+      "humanml_decode_max_abs_m": 0.0,
+      "feature_last_time_seconds": 2.05,
+      "cache_last_time_seconds": 2.1,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/datasets/all/new_joint_vecs/000008.npy",
+          "exists": true,
+          "bytes": 44312,
+          "sha256": "6cc3790b90509da40b1c10bbb90c4236e046726e3fa46eb384e7b904f165a5bd"
+        },
+        {
+          "path": "/home/a200/0proj/datasets/all/new_joints/000008.npy",
+          "exists": true,
+          "bytes": 11216,
+          "sha256": "bac4ba74f8d3be070a550abb0fc0e92981e21705d51ac365f334a0b2c135c664"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/000008.npz",
+          "exists": true,
+          "bytes": 83434,
+          "sha256": "32a82dab26f9bf23bfac39a3734b28fdf7a456f717eb61b429c72505aff28d02"
+        }
+      ],
+      "lag_diagnostics": [
+        {
+          "source_query_shift_frames_20fps": -1,
+          "compared_frames": 41,
+          "excluded_endpoint_frames": 1,
+          "root_relative_raw_mean_m": 0.03774945712191267,
+          "oracle_constant_yaw_mean_m": 0.03662068089333206,
+          "oracle_constant_yaw_p95_m": 0.10622268728990575,
+          "head_oracle_mean_m": 0.029711099066924127,
+          "wrists_oracle_mean_m": 0.0752419144960046,
+          "oracle_yaw_rad": 0.045865203315005376,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        },
+        {
+          "source_query_shift_frames_20fps": 0,
+          "compared_frames": 42,
+          "excluded_endpoint_frames": 0,
+          "root_relative_raw_mean_m": 0.025902034891550473,
+          "oracle_constant_yaw_mean_m": 0.023997059647753314,
+          "oracle_constant_yaw_p95_m": 0.06372381253141517,
+          "head_oracle_mean_m": 0.020608099005307683,
+          "wrists_oracle_mean_m": 0.028779435591397284,
+          "oracle_yaw_rad": 0.046131923459732965,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        },
+        {
+          "source_query_shift_frames_20fps": 1,
+          "compared_frames": 42,
+          "excluded_endpoint_frames": 0,
+          "root_relative_raw_mean_m": 0.03744808370900393,
+          "oracle_constant_yaw_mean_m": 0.036204996215822974,
+          "oracle_constant_yaw_p95_m": 0.10206418323080081,
+          "head_oracle_mean_m": 0.028866875910695394,
+          "wrists_oracle_mean_m": 0.07276966897713676,
+          "oracle_yaw_rad": 0.04638331784748632,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        }
+      ]
+    },
+    {
+      "motion_id": "000010",
+      "split": "train",
+      "humanml_frames": 69,
+      "saved_joint_frames": 69,
+      "source_30fps_frames": 105,
+      "source_supported_20fps_count": 70,
+      "source_minus_feature_frames": 1,
+      "humanml_decode_max_abs_m": 0.0,
+      "feature_last_time_seconds": 3.4,
+      "cache_last_time_seconds": 3.466666666666667,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/datasets/all/new_joint_vecs/000010.npy",
+          "exists": true,
+          "bytes": 72716,
+          "sha256": "801aeffc10fd2d6b3bba7340cdc3d0d326db8a206ee893e058c4b4e844f758e4"
+        },
+        {
+          "path": "/home/a200/0proj/datasets/all/new_joints/000010.npy",
+          "exists": true,
+          "bytes": 18344,
+          "sha256": "005e2889d2202d91bab93c92d1f7755e067d3ed525a6277945dd0dad7654e542"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/000010.npz",
+          "exists": true,
+          "bytes": 134560,
+          "sha256": "a877c4431271f5e7cee6d32931be0480fc78af0937a7981a4a5579601ca8b5de"
+        }
+      ],
+      "lag_diagnostics": [
+        {
+          "source_query_shift_frames_20fps": -1,
+          "compared_frames": 68,
+          "excluded_endpoint_frames": 1,
+          "root_relative_raw_mean_m": 0.03198314007617292,
+          "oracle_constant_yaw_mean_m": 0.0269023161623561,
+          "oracle_constant_yaw_p95_m": 0.07717458079002501,
+          "head_oracle_mean_m": 0.026624503555279642,
+          "wrists_oracle_mean_m": 0.02793882285881472,
+          "oracle_yaw_rad": 0.11949580287465217,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        },
+        {
+          "source_query_shift_frames_20fps": 0,
+          "compared_frames": 69,
+          "excluded_endpoint_frames": 0,
+          "root_relative_raw_mean_m": 0.03134832810381064,
+          "oracle_constant_yaw_mean_m": 0.025929600458307164,
+          "oracle_constant_yaw_p95_m": 0.06975501545828097,
+          "head_oracle_mean_m": 0.02675643084906141,
+          "wrists_oracle_mean_m": 0.019255478270849353,
+          "oracle_yaw_rad": 0.11929737127546346,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        },
+        {
+          "source_query_shift_frames_20fps": 1,
+          "compared_frames": 69,
+          "excluded_endpoint_frames": 0,
+          "root_relative_raw_mean_m": 0.032015467362727,
+          "oracle_constant_yaw_mean_m": 0.02706141970671489,
+          "oracle_constant_yaw_p95_m": 0.07777275517913282,
+          "head_oracle_mean_m": 0.026957537360865282,
+          "wrists_oracle_mean_m": 0.028430629927996276,
+          "oracle_yaw_rad": 0.11913663079302834,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        }
+      ]
+    },
+    {
+      "motion_id": "000133",
+      "split": "val",
+      "humanml_frames": 59,
+      "saved_joint_frames": 59,
+      "source_30fps_frames": 90,
+      "source_supported_20fps_count": 60,
+      "source_minus_feature_frames": 1,
+      "humanml_decode_max_abs_m": 0.0,
+      "feature_last_time_seconds": 2.9,
+      "cache_last_time_seconds": 2.966666666666667,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/datasets/all/new_joint_vecs/000133.npy",
+          "exists": true,
+          "bytes": 62196,
+          "sha256": "11b85168e3162f6d14d6963a2cff460cd4196df230d48145b9a1a28e89cc1e5b"
+        },
+        {
+          "path": "/home/a200/0proj/datasets/all/new_joints/000133.npy",
+          "exists": true,
+          "bytes": 15704,
+          "sha256": "279fc3f615f8c27a23f52d4ae6072e8b24534fcfa34e04bdb701c6f018764d6b"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/standard_imu/val/000133.npz",
+          "exists": true,
+          "bytes": 111406,
+          "sha256": "6308e426b43bc4fc56d8eb25fffdcaccb0e1e3861d647a25e02215e5c43d4af2"
+        }
+      ],
+      "lag_diagnostics": [
+        {
+          "source_query_shift_frames_20fps": -1,
+          "compared_frames": 58,
+          "excluded_endpoint_frames": 1,
+          "root_relative_raw_mean_m": 0.20275577622417035,
+          "oracle_constant_yaw_mean_m": 0.04112045889948565,
+          "oracle_constant_yaw_p95_m": 0.1408277959248945,
+          "head_oracle_mean_m": 0.02063425791383102,
+          "wrists_oracle_mean_m": 0.08327001500121925,
+          "oracle_yaw_rad": 1.0906480898313575,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        },
+        {
+          "source_query_shift_frames_20fps": 0,
+          "compared_frames": 59,
+          "excluded_endpoint_frames": 0,
+          "root_relative_raw_mean_m": 0.1988730307654004,
+          "oracle_constant_yaw_mean_m": 0.005689955752917954,
+          "oracle_constant_yaw_p95_m": 0.018009821584986853,
+          "head_oracle_mean_m": 0.003270410106051232,
+          "wrists_oracle_mean_m": 0.006656254126946333,
+          "oracle_yaw_rad": 1.0807593300583065,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        },
+        {
+          "source_query_shift_frames_20fps": 1,
+          "compared_frames": 59,
+          "excluded_endpoint_frames": 0,
+          "root_relative_raw_mean_m": 0.2013552735313659,
+          "oracle_constant_yaw_mean_m": 0.04115856600022954,
+          "oracle_constant_yaw_p95_m": 0.14287256091527115,
+          "head_oracle_mean_m": 0.020792912506314806,
+          "wrists_oracle_mean_m": 0.08257883887853405,
+          "oracle_yaw_rad": 1.0706097960430716,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        }
+      ]
+    },
+    {
+      "motion_id": "000433",
+      "split": "val",
+      "humanml_frames": 41,
+      "saved_joint_frames": 41,
+      "source_30fps_frames": 63,
+      "source_supported_20fps_count": 42,
+      "source_minus_feature_frames": 1,
+      "humanml_decode_max_abs_m": 0.0,
+      "feature_last_time_seconds": 2.0,
+      "cache_last_time_seconds": 2.066666666666667,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/datasets/all/new_joint_vecs/000433.npy",
+          "exists": true,
+          "bytes": 43260,
+          "sha256": "6366f7bd063196c3f8f9bd0041b429f3afaf7b81618ac4c756a417d16f06d7ad"
+        },
+        {
+          "path": "/home/a200/0proj/datasets/all/new_joints/000433.npy",
+          "exists": true,
+          "bytes": 10952,
+          "sha256": "919bc56ccfedb925c2626dbd440f8c409e8aa02c967d813510cc76d570a51ac5"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/standard_imu/val/000433.npz",
+          "exists": true,
+          "bytes": 82421,
+          "sha256": "3f345622515a290df77ca8c0ad84615758cba8eae4bf9fa6e00280149043a2df"
+        }
+      ],
+      "lag_diagnostics": [
+        {
+          "source_query_shift_frames_20fps": -1,
+          "compared_frames": 40,
+          "excluded_endpoint_frames": 1,
+          "root_relative_raw_mean_m": 0.024768167363021596,
+          "oracle_constant_yaw_mean_m": 0.024772032031927342,
+          "oracle_constant_yaw_p95_m": 0.06199746102063674,
+          "head_oracle_mean_m": 0.021508128955523148,
+          "wrists_oracle_mean_m": 0.026026441221643038,
+          "oracle_yaw_rad": 0.01849589517968032,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        },
+        {
+          "source_query_shift_frames_20fps": 0,
+          "compared_frames": 41,
+          "excluded_endpoint_frames": 0,
+          "root_relative_raw_mean_m": 0.01538960909251843,
+          "oracle_constant_yaw_mean_m": 0.015062039488166689,
+          "oracle_constant_yaw_p95_m": 0.030108715938410538,
+          "head_oracle_mean_m": 0.016064770650684575,
+          "wrists_oracle_mean_m": 0.013285807958407662,
+          "oracle_yaw_rad": 0.02113676356777049,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        },
+        {
+          "source_query_shift_frames_20fps": 1,
+          "compared_frames": 41,
+          "excluded_endpoint_frames": 0,
+          "root_relative_raw_mean_m": 0.024799562413717436,
+          "oracle_constant_yaw_mean_m": 0.024586186603600207,
+          "oracle_constant_yaw_p95_m": 0.06785238921404574,
+          "head_oracle_mean_m": 0.021354020877277162,
+          "wrists_oracle_mean_m": 0.023668484157038722,
+          "oracle_yaw_rad": 0.024635748898383297,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        }
+      ]
+    },
+    {
+      "motion_id": "000382",
+      "split": "val",
+      "humanml_frames": 94,
+      "saved_joint_frames": 94,
+      "source_30fps_frames": 143,
+      "source_supported_20fps_count": 95,
+      "source_minus_feature_frames": 1,
+      "humanml_decode_max_abs_m": 0.0,
+      "feature_last_time_seconds": 4.65,
+      "cache_last_time_seconds": 4.733333333333333,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/datasets/all/new_joint_vecs/000382.npy",
+          "exists": true,
+          "bytes": 99016,
+          "sha256": "5231b8a4cf8ab07781a1140724a9876654b75fe250b33263fdbacb473ae61356"
+        },
+        {
+          "path": "/home/a200/0proj/datasets/all/new_joints/000382.npy",
+          "exists": true,
+          "bytes": 24944,
+          "sha256": "d7f59169ee3919149761dbedc689aea0bc405d6ebaedcacb647c9a151e201d96"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/standard_imu/val/000382.npz",
+          "exists": true,
+          "bytes": 181836,
+          "sha256": "166a42907732704af02383027ffbaff933df728c4f6854ffed254500c92a726f"
+        }
+      ],
+      "lag_diagnostics": [
+        {
+          "source_query_shift_frames_20fps": -1,
+          "compared_frames": 93,
+          "excluded_endpoint_frames": 1,
+          "root_relative_raw_mean_m": 0.021297277645674517,
+          "oracle_constant_yaw_mean_m": 0.019432749790974424,
+          "oracle_constant_yaw_p95_m": 0.03177762253126098,
+          "head_oracle_mean_m": 0.01904365092183391,
+          "wrists_oracle_mean_m": 0.027694283295772566,
+          "oracle_yaw_rad": 0.05836485765898852,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        },
+        {
+          "source_query_shift_frames_20fps": 0,
+          "compared_frames": 94,
+          "excluded_endpoint_frames": 0,
+          "root_relative_raw_mean_m": 0.020254807888261155,
+          "oracle_constant_yaw_mean_m": 0.01820108601980035,
+          "oracle_constant_yaw_p95_m": 0.031227643852496056,
+          "head_oracle_mean_m": 0.018998613081693472,
+          "wrists_oracle_mean_m": 0.016020265475934478,
+          "oracle_yaw_rad": 0.0578667493702112,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        },
+        {
+          "source_query_shift_frames_20fps": 1,
+          "compared_frames": 94,
+          "excluded_endpoint_frames": 0,
+          "root_relative_raw_mean_m": 0.021332874071150983,
+          "oracle_constant_yaw_mean_m": 0.01957902418645752,
+          "oracle_constant_yaw_p95_m": 0.03170752874747401,
+          "head_oracle_mean_m": 0.019034732303155943,
+          "wrists_oracle_mean_m": 0.028969552672378523,
+          "oracle_yaw_rad": 0.057358628593455585,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        }
+      ]
+    },
+    {
+      "motion_id": "000510",
+      "split": "val",
+      "humanml_frames": 91,
+      "saved_joint_frames": 91,
+      "source_30fps_frames": 138,
+      "source_supported_20fps_count": 92,
+      "source_minus_feature_frames": 1,
+      "humanml_decode_max_abs_m": 0.0,
+      "feature_last_time_seconds": 4.5,
+      "cache_last_time_seconds": 4.566666666666666,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/datasets/all/new_joint_vecs/000510.npy",
+          "exists": true,
+          "bytes": 95860,
+          "sha256": "a71f510b3561a3e831563e0d4348488bde09abf9b7f5b2394f74f957862bb7ad"
+        },
+        {
+          "path": "/home/a200/0proj/datasets/all/new_joints/000510.npy",
+          "exists": true,
+          "bytes": 24152,
+          "sha256": "3b7b0218555b28d6481b4d26189c0756b719bde549f1e064289561cfa33bb92d"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/standard_imu/val/000510.npz",
+          "exists": true,
+          "bytes": 176628,
+          "sha256": "dcbea2cb61b0f5f78f9065c8e88753ed379c57a3b6452a7710f3b9da6b324403"
+        }
+      ],
+      "lag_diagnostics": [
+        {
+          "source_query_shift_frames_20fps": -1,
+          "compared_frames": 90,
+          "excluded_endpoint_frames": 1,
+          "root_relative_raw_mean_m": 0.014793538901746641,
+          "oracle_constant_yaw_mean_m": 0.014812730712350487,
+          "oracle_constant_yaw_p95_m": 0.02480447985211267,
+          "head_oracle_mean_m": 0.010772646620942043,
+          "wrists_oracle_mean_m": 0.022105593563219613,
+          "oracle_yaw_rad": -0.0015719112131881419,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        },
+        {
+          "source_query_shift_frames_20fps": 0,
+          "compared_frames": 91,
+          "excluded_endpoint_frames": 0,
+          "root_relative_raw_mean_m": 0.013311392386804172,
+          "oracle_constant_yaw_mean_m": 0.01333214515772524,
+          "oracle_constant_yaw_p95_m": 0.023083827382274436,
+          "head_oracle_mean_m": 0.010334941356918646,
+          "wrists_oracle_mean_m": 0.01216588395411456,
+          "oracle_yaw_rad": -0.0032232738816057606,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        },
+        {
+          "source_query_shift_frames_20fps": 1,
+          "compared_frames": 91,
+          "excluded_endpoint_frames": 0,
+          "root_relative_raw_mean_m": 0.014702510590138216,
+          "oracle_constant_yaw_mean_m": 0.014742997369147205,
+          "oracle_constant_yaw_p95_m": 0.024774376988629686,
+          "head_oracle_mean_m": 0.010736514085584816,
+          "wrists_oracle_mean_m": 0.021467225171959755,
+          "oracle_yaw_rad": -0.0048906076989198265,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        }
+      ]
+    },
+    {
+      "motion_id": "000134",
+      "split": "val",
+      "humanml_frames": 183,
+      "saved_joint_frames": 183,
+      "source_30fps_frames": 275,
+      "source_supported_20fps_count": 183,
+      "source_minus_feature_frames": 0,
+      "humanml_decode_max_abs_m": 0.0,
+      "feature_last_time_seconds": 9.1,
+      "cache_last_time_seconds": 9.133333333333333,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/datasets/all/new_joint_vecs/000134.npy",
+          "exists": true,
+          "bytes": 192644,
+          "sha256": "f6f1814351dfc5670c6ad27b6c72fd42a51f2b5a85e0c767a0fd370264d3f0f2"
+        },
+        {
+          "path": "/home/a200/0proj/datasets/all/new_joints/000134.npy",
+          "exists": true,
+          "bytes": 48440,
+          "sha256": "d15bfa7e4cf377435cda3d9be5f4cdca33cd56848a30ec6fb45712bd4008f529"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/standard_imu/val/000134.npz",
+          "exists": true,
+          "bytes": 333889,
+          "sha256": "6e01f6e337b28bea13a94235a8703c6b7d96c9821422ba12f7462a4838e92134"
+        }
+      ],
+      "lag_diagnostics": [
+        {
+          "source_query_shift_frames_20fps": -1,
+          "compared_frames": 182,
+          "excluded_endpoint_frames": 1,
+          "root_relative_raw_mean_m": 0.16481443651057742,
+          "oracle_constant_yaw_mean_m": 0.019879285807709663,
+          "oracle_constant_yaw_p95_m": 0.051909885677714006,
+          "head_oracle_mean_m": 0.00992562748947902,
+          "wrists_oracle_mean_m": 0.03911803812387184,
+          "oracle_yaw_rad": 0.9009585230645899,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        },
+        {
+          "source_query_shift_frames_20fps": 0,
+          "compared_frames": 183,
+          "excluded_endpoint_frames": 0,
+          "root_relative_raw_mean_m": 0.16395491489351066,
+          "oracle_constant_yaw_mean_m": 0.016048116469696394,
+          "oracle_constant_yaw_p95_m": 0.04856321928111143,
+          "head_oracle_mean_m": 0.006806524553627988,
+          "wrists_oracle_mean_m": 0.02412907068497747,
+          "oracle_yaw_rad": 0.8950359948236999,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        },
+        {
+          "source_query_shift_frames_20fps": 1,
+          "compared_frames": 182,
+          "excluded_endpoint_frames": 1,
+          "root_relative_raw_mean_m": 0.16365634947413032,
+          "oracle_constant_yaw_mean_m": 0.019774845668715686,
+          "oracle_constant_yaw_p95_m": 0.05173995076240677,
+          "head_oracle_mean_m": 0.0092387187727104,
+          "wrists_oracle_mean_m": 0.039491745707496174,
+          "oracle_yaw_rad": 0.8891562540323373,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        }
+      ]
+    },
+    {
+      "motion_id": "000139",
+      "split": "val",
+      "humanml_frames": 163,
+      "saved_joint_frames": 163,
+      "source_30fps_frames": 246,
+      "source_supported_20fps_count": 164,
+      "source_minus_feature_frames": 1,
+      "humanml_decode_max_abs_m": 0.0,
+      "feature_last_time_seconds": 8.1,
+      "cache_last_time_seconds": 8.166666666666666,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/datasets/all/new_joint_vecs/000139.npy",
+          "exists": true,
+          "bytes": 171604,
+          "sha256": "c29bacd182ce6aefa5dde7346ac9d1750715aded6a88b79ae29ff83a75ce31cf"
+        },
+        {
+          "path": "/home/a200/0proj/datasets/all/new_joints/000139.npy",
+          "exists": true,
+          "bytes": 43160,
+          "sha256": "5fb24690331c09e246075adcd3fb22e9bd99040915beb7b81b0d197891b4eb45"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/standard_imu/val/000139.npz",
+          "exists": true,
+          "bytes": 297777,
+          "sha256": "e3c44e187f3b6a5791be4720a811dcc5a5f635b9f401f23fe1949434ec5e5e84"
+        }
+      ],
+      "lag_diagnostics": [
+        {
+          "source_query_shift_frames_20fps": -1,
+          "compared_frames": 162,
+          "excluded_endpoint_frames": 1,
+          "root_relative_raw_mean_m": 0.20241821259622622,
+          "oracle_constant_yaw_mean_m": 0.035524299196827834,
+          "oracle_constant_yaw_p95_m": 0.09457698691833862,
+          "head_oracle_mean_m": 0.033915915901342075,
+          "wrists_oracle_mean_m": 0.03527749844296817,
+          "oracle_yaw_rad": 1.62545495822363,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        },
+        {
+          "source_query_shift_frames_20fps": 0,
+          "compared_frames": 163,
+          "excluded_endpoint_frames": 0,
+          "root_relative_raw_mean_m": 0.20200949720945,
+          "oracle_constant_yaw_mean_m": 0.03238731565788017,
+          "oracle_constant_yaw_p95_m": 0.08689777919352316,
+          "head_oracle_mean_m": 0.03331355441992031,
+          "wrists_oracle_mean_m": 0.028135504769717296,
+          "oracle_yaw_rad": 1.623980593041259,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        },
+        {
+          "source_query_shift_frames_20fps": 1,
+          "compared_frames": 163,
+          "excluded_endpoint_frames": 0,
+          "root_relative_raw_mean_m": 0.20181786737325355,
+          "oracle_constant_yaw_mean_m": 0.03559022209478052,
+          "oracle_constant_yaw_p95_m": 0.09090143758266314,
+          "head_oracle_mean_m": 0.034195983418406364,
+          "wrists_oracle_mean_m": 0.03554054876136902,
+          "oracle_yaw_rad": 1.6225185212729674,
+          "fit_uses_complete_GT": true,
+          "permitted_as_deployable_input_transform": false
+        }
+      ]
+    }
+  ],
+  "budget": {
+    "device": "cpu",
+    "clips": 9,
+    "candidate_lags": [
+      -1,
+      0,
+      1
+    ],
+    "model_forwards": 0
+  },
+  "interpretation": [
+    "HumanML velocity features drop a terminal frame; T-1 alone does not prove a one-frame start offset",
+    "saved new_joints versus RIC decode is independently checked before source comparison",
+    "oracle constant yaw uses full GT and is forbidden in deployable head/wrists input processing",
+    "HumanML uniform skeleton retargeting changes body scale/offsets; fixed rotation alone may not suffice",
+    "no lag or yaw from this report is applied to training or test inputs"
+  ]
+}

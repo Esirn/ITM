@@ -1,0 +1,67 @@
+{
+  "kind": "synthetic_static_checkpoint_diagnostic_not_motion_quality",
+  "checkpoint": {
+    "path": "/home/a200/0proj/ITM/outputs/mdm_control/stage2b_balanced_b.pt",
+    "exists": true,
+    "bytes": 101045290,
+    "sha256": "5d0800e61994c79f862378871e2c149fde052c7419553939a06a6a6632788a98"
+  },
+  "effective_control_config": {
+    "sensor_feature_dim": 12,
+    "sensor_count": 6,
+    "latent_dim": 512,
+    "encoder_layers": 2,
+    "encoder_heads": 8,
+    "dropout": 0.1,
+    "imu_drop_probability": 0.1,
+    "encoder_variant": "legacy_mean",
+    "null_mode": "strict",
+    "time_encoding": "none",
+    "model_fps": 20.0,
+    "adapter_variant": "additive"
+  },
+  "backbone": {
+    "path": "/home/a200/0proj/ITM/outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/model000475000.pt",
+    "exists": true,
+    "bytes": 81806834,
+    "sha256": "ce43c1d4232fc2b897999d7996c2d2b889791d99585d87e1289af773ab56ab93"
+  },
+  "seed": 20260924,
+  "timestep": 500,
+  "budget": {
+    "device": "cpu",
+    "threads": 2,
+    "model_forwards": 7,
+    "generated_clips": 0
+  },
+  "cases": [
+    {
+      "sensor_config": "head",
+      "fixture": {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/static_audit_20260924_v1/head_static.npz",
+        "exists": true,
+        "bytes": 1832,
+        "sha256": "051d442b1fa8314ed9cb8820a57ab5c5b1a318822af235f02ec226e141225a5b"
+      },
+      "static_vs_zero_max_abs": 0.16165660321712494,
+      "static_vs_original_max_abs": 0.6421632766723633,
+      "strict_null_vs_original_max_abs": 0.0,
+      "unit": "normalized_HumanML263_prediction_not_metres",
+      "finite": true
+    },
+    {
+      "sensor_config": "wrists",
+      "fixture": {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/static_audit_20260924_v1/wrists_static.npz",
+        "exists": true,
+        "bytes": 1835,
+        "sha256": "173026d82447745f353eb8c5baa0032dfc26c9b053b99be8f38d11e9a9372b95"
+      },
+      "static_vs_zero_max_abs": 0.3800896406173706,
+      "static_vs_original_max_abs": 0.5993051528930664,
+      "strict_null_vs_original_max_abs": 0.0,
+      "unit": "normalized_HumanML263_prediction_not_metres",
+      "finite": true
+    }
+  ]
+}

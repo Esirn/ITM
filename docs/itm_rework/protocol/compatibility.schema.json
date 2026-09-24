@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ITM compatibility manifest v0.1",
+  "type": "object",
+  "required": [
+    "case_id",
+    "source_group_id",
+    "source_motion_id",
+    "sensor_config",
+    "base_caption_id",
+    "base_caption_text",
+    "edit_caption_id",
+    "edit_caption_text",
+    "edited_attribute",
+    "compatibility_label",
+    "evidence_type",
+    "witness_motion_path",
+    "witness_observation_residuals",
+    "quality_checks",
+    "tolerances",
+    "text_information_role",
+    "timestamps",
+    "calibration_id",
+    "split_role",
+    "construction_version",
+    "reviewer_or_rule_version"
+  ],
+  "properties": {
+    "compatibility_label": {
+      "enum": [
+        "compatible",
+        "incompatible",
+        "uncertain"
+      ]
+    },
+    "sensor_config": {
+      "enum": [
+        "head",
+        "wrists"
+      ]
+    },
+    "split_role": {
+      "enum": [
+        "train",
+        "val",
+        "sealed_test",
+        "historical_development_diagnostic"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "compatibility_label": {
+            "const": "compatible"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "witness_motion_path": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  ]
+}

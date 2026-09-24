@@ -1,0 +1,30 @@
+{
+  "queue_version": "itm-cpu-queue-v2",
+  "jobs": [
+    {
+      "job_id": "compatible_C",
+      "device": "cpu",
+      "script": "evaluate_rework_records.py",
+      "timeout_seconds": 60,
+      "output_kind": "file",
+      "arguments": [
+        "--expected",
+        "docs/itm_rework/protocol/C_expected_frozen.jsonl",
+        "--records",
+        "docs/itm_rework/protocol/C_output_records.jsonl",
+        "--thresholds",
+        "docs/itm_rework/protocol/thresholds.json"
+      ],
+      "required_files": [
+        "docs/itm_rework/protocol/C_expected_frozen.jsonl",
+        "docs/itm_rework/protocol/C_output_records.jsonl"
+      ],
+      "blockers": [
+        "No validation-qualified B0; only single-update smoke accepted",
+        "Compatible witnesses absent: three candidates remain uncertain",
+        "Independent semantic/quality thresholds are draft",
+        "World-frame/body-retarget alignment and generated IMU closure are uncertified"
+      ]
+    }
+  ]
+}
