@@ -1,3 +1,13 @@
+# seconds-v2 独立验收后的记录更正
+
+已读取 02 的 `c9cdc7b` / INPUT_FOLLOWUP_ACCEPTANCE_20260924.md。
+方法原检查的 train ID 更正为 **000004/000006/000008**（各 head/wrists），6 条 val 仅 head；
+02 单独补查的 000004/000008/000010 不计入方法旧报告。详见 FOLLOWUP_V02.md 的显式勘误。
+原 JSON/快照/checkpoint/样本保持不变；83 项联合回归属于 02 的独立验收，本轮未训练或重新生成。
+caption、坐标/骨架、相容见证及合格 B0 的阻塞仍在。
+
+---
+
 # 第二批方法入口交接
 
 读取 02 提交 `1bc3a41` 后完成 v0.2 输入适配，详见 [FOLLOWUP_V02.md](FOLLOWUP_V02.md)。

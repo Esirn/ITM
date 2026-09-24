@@ -1,6 +1,6 @@
-# 01 STATUS — v0.2 交接跟进（2026-09-24）
+# 01 STATUS — v0.2 输入验收与记录勘误（2026-09-24）
 
-读取协议提交 `1bc3a41`，承接方法提交 `5519365`。本次改动提交可用
+最新读取协议提交 `c9cdc7b`，独立验收对象为方法提交 `0574491`。本次仅更正交接记录与验收状态，未改方法代码或旧产物。改动提交可用
 `git log -1 -- docs/itm_rework/method/STATUS.md` 定位。公共契约 `itm-rework-v0.2-draft`，仍未冻结。
 
 已接纳 02 独立验收：旧方法 smoke 同源解码、strict null、3000 个噪声 hash 已核对；静止 fixture 已提供，
@@ -16,11 +16,15 @@
 - 当前 arm_spread_m + 双编辑 active-joint-proxy 原型仅接纳 head。该约束不推导成 wrists IMU 的一般物理不相容结论。
 
 验证：48 项相关回归通过，日志 `logs/input_followup_v2.txt`。
-真实输入 dry-run：3 train 来源 × 两种配置、6 条固定 val 候选、2 种静止输入均通过，
+真实输入 dry-run：train 000004/000006/000008 × head/wrists、6 条固定 val 候选的 head 输入、2 种静止输入均通过，
 `input_handoff_20260924_v2.json`。模型前向 0，训练更新 0，GPU 作业 0，未修改旧 checkpoint/产物或重新标注其契约。
 代码快照 `code_snapshot_v2.json`；旧 `code_snapshot.json` 保留为 02 首次验收对应的历史快照。
 
-阶段：G1 方法接口继续补齐；G2 仍只有单次 update 的旧 smoke；G3 无相容编辑训练/完整采样收益；C/G4/G5 未启动。
+02 在 `c9cdc7b` 独立重现原输入报告，并完成 83 项联合回归（是 02 的验收结果，本次未重跑）。
+02 另查的 train 000004/000008/000010 与本方法原报告分开记录；原文 ID 错误已在 FOLLOWUP_V02.md 显式勘误。
+000006 的 caption [0,5] 秒与输入 [0,9.75] 秒不匹配，仍不能用于正式配对语义评价。
+
+阶段：G1 输入软件正确性获独立验收，公共物理/评价契约仍未冻结；G2 仍只有单次 update 的旧 smoke；G3 无相容编辑训练/完整采样收益；C/G4/G5 未启动。
 剩余实质阻塞仍是世界坐标/骨架与 caption 对齐认证、真正 compatible witness、独立评价阈值、冻结训练/采样预算和可验证输出观测链。
 不使用目标 GT 做部署 canonicalization，不把新 uncertain 候选当作训练许可。
 

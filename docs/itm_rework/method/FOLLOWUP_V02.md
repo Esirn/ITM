@@ -2,7 +2,7 @@
 
 读取 `1bc3a41` 的 METHOD_ACCEPTANCE_20260924.md 与 `itm-rework-v0.2-draft`。
 本批只修改方法入口、方法测试和本目录；没有改公共契约/数据算子、候选裁定或事实索引。
-改动提交通过 `git log -1 -- docs/itm_rework/method/FOLLOWUP_V02.md` 定位。
+方法实现提交为 `0574491`；本文随后按 `c9cdc7b` 的独立验收更正记录，勘误提交可用 `git log -1 -- docs/itm_rework/method/FOLLOWUP_V02.md` 定位。
 
 ## 已落实
 
@@ -27,7 +27,8 @@
 
 新输入管线名为 `itm-method-seconds-v2`；新 checkpoint 记录该字段，默认 contract_version 为 v0.2。
 sampler 保留旧 checkpoint 的 contract_version，另写 input_contract_version/input_pipeline_version，不能把旧训练标成 v0.2。
-旧 model.pt、samples 和首批 JSON/快照未改。02 对 `5519365` 的验收仍是该版本的验收，不声称本批已被独立验收。
+旧 model.pt、samples 和首批 JSON/快照未改。02 对 `5519365` 的验收仍是该版本的已保存 smoke 验收；
+后续 `c9cdc7b` 已独立接纳 `0574491` 的输入正确性，见协议 INPUT_FOLLOWUP_ACCEPTANCE_20260924.md，不扩大为训练或生成效果验收。
 旧附属 `_resample_imu`/`_fit_length` 等函数为历史诊断保留，新路径不调用端点夹紧。
 
 ## 实际检查与预算
@@ -37,7 +38,13 @@ conda run -n itm python scripts/check_mdm_input_handoff.py --output docs/itm_rew
 conda run -n itm python -m pytest tests/test_mdm_conditions.py tests/test_mdm_rework.py tests/test_mdm_imu_control.py tests/test_backbones.py tests/test_mdm_control_conditions.py tests/test_mdm_control_suite.py tests/test_mdm_multiseed_control.py tests/test_mdm_joint_scale_sweep.py tests/test_rework_random_plan.py tests/test_method_handoff_acceptance.py tests/test_static_imu.py tests/test_physical_time.py -q
 ```
 
-真实 dry-run 仅加载旧 smoke checkpoint 的统计与输入，不执行模型：固定 000004/000008/000010 三来源各 head/wrists、6 条既定 val 面板、两种 static fixture。
+真实 dry-run 仅加载旧 smoke checkpoint 的统计与输入，不执行模型：按公共 ID 排序取前三个实际为 **000004/000006/000008**，各 head/wrists；
+6 条既定 val 面板只检查 **head** 输入，static fixture 检查 head/wrists 两种配置。
+
+**2026-09-24 勘误：**先前将训练清单误写为 000004/000008/000010，现按原始报告更正。
+02 在 `c9cdc7b` 中另行显式检查了 000004/000008/000010，全部通过；那是独立补查，不能追溯计入本方法报告。
+原始 `input_handoff_20260924_v2.json` 内容与 hash 不变。000006 的 caption 为 [0,5] 秒、输入前缀至 9.75 秒，
+因此本检查不构成 caption 对齐认证或正式配对语义评价的依据。
 全部通过；48 项回归通过，包含公共候选拒绝测试。数据/几何指标没有用于筛选，未改变训练预算或评价阈值。
 CPU、1 thread（输入脚本），模型前向/训练更新/采样/GPU 作业均为 0。
 
