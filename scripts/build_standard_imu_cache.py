@@ -118,9 +118,12 @@ def _process_source(source, body_model, imu_math, coordinate_rotation, target_fp
 
     with np.load(source.source_path) as data:
         source_fps = float(data["mocap_framerate"])
-        crop = source_crop_at_fps(source, source_fps)
-        poses = np.asarray(data["poses"][crop], dtype=np.float32)
-        translations = np.asarray(data["trans"][crop], dtype=np.float32)
+        source_poses, source_translations = data["poses"], data["trans"]
+        if len(source_poses) != len(source_translations):
+            raise ValueError(f"Source pose/translation lengths differ: {source.source_path}")
+        crop = source_crop_at_fps(source, source_fps, source_frame_count=len(source_poses))
+        poses = np.asarray(source_poses[crop], dtype=np.float32)
+        translations = np.asarray(source_translations[crop], dtype=np.float32)
         shape = np.asarray(data["betas"][:10], dtype=np.float32)
     if len(poses) < 3:
         raise ValueError(f"Source crop is too short: {source.source_path}")

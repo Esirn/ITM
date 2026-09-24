@@ -1,0 +1,13 @@
+{
+  "maximum_clips": 7500,
+  "splits": [
+    "train",
+    "val"
+  ],
+  "caption_reads_per_clip": 1,
+  "feature_access": "npy_header_mmap_shape_only",
+  "imu_support": "previously_audited_manifest",
+  "model_forwards": 0,
+  "training_updates": 0,
+  "gpu_jobs": 0
+}

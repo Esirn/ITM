@@ -1,0 +1,40 @@
+{
+  "read_commit": "2ee7b2e",
+  "contract_version": "itm-rework-v0.2-draft",
+  "caption_interface_version": "caption-interval-v1",
+  "change_commit_resolution": "git log -1 -- src/itm/data/caption_time.py",
+  "files": [
+    {
+      "path": "src/itm/data/caption_time.py",
+      "sha256": "643e13290d14dfc6fde8e4067071739da17183123414b8db9263a7dc3674e082"
+    },
+    {
+      "path": "src/itm/data/amass_bridge.py",
+      "sha256": "b4dbaa7f63e8c2e4f55c8e5f44aeeb14e0e5c864da8c548494399ced1c58f004"
+    },
+    {
+      "path": "scripts/build_standard_imu_cache.py",
+      "sha256": "f7904e82d48d6c4023602bf00e11577298f3af92582b677666cadee5f1526a5e"
+    },
+    {
+      "path": "scripts/audit_caption_intervals.py",
+      "sha256": "c6baec0ba33468a86554334a484ef4fa78b335dbc3d64a42967e8b257ba597e0"
+    },
+    {
+      "path": "scripts/plan_caption_inputs.py",
+      "sha256": "ca5e9829179e9e327c300380f41c6dc5a1017b27bb56056a428ed1cdb911999b"
+    },
+    {
+      "path": "scripts/audit_caption_time_support.py",
+      "sha256": "75963b7577ed08f9948ba1817003da877d2e4129ee38fdd80b262bec5c99589e"
+    },
+    {
+      "path": "tests/test_caption_time.py",
+      "sha256": "1e93a29e83e96a330ab6209e63b83e031afba1dbd6c89ba06b03622ac6203337"
+    },
+    {
+      "path": "tests/test_source_crop_support.py",
+      "sha256": "53a68ce05c8428e5091a9c94c99af89f108aff6f5d3c757656ca56438f72a846"
+    }
+  ]
+}

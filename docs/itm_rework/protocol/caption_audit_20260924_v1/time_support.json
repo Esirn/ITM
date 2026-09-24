@@ -1,0 +1,405 @@
+{
+  "kind": "caption_independent_prefix_support_audit",
+  "clips": 7443,
+  "failures": [
+    {
+      "motion_id": "000162",
+      "split": "train",
+      "source_group_id": "AMASS/SSM_synced/20160330_03333/chicken_wings_poses.npz",
+      "caption_first_status": "first_interval_matches_but_imu_support_blocked",
+      "requested_prefix_last_seconds": 7.8,
+      "cache_last_seconds": 5.233333333333333,
+      "feature_frames": 157,
+      "cache_frames": 158,
+      "source_pose_frames": 315,
+      "source_fps": 59.9999885559082,
+      "source_declared_crop": [
+        0,
+        474
+      ],
+      "crop_exceeds_source": true,
+      "available_source_crop_frames": 315,
+      "predicted_resampled_cache_frames": 158,
+      "actual_cache_frames": 158,
+      "predicted_cache_frames_match": true,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/SSM_synced/20160330_03333/chicken_wings_poses.npz",
+        "sha256": "1a18081a533f9e274052a1aff6f5ac0911ecbc403f5975de33f01c5a6719e983"
+      },
+      "cache_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/000162.npz",
+        "sha256": "ea54ba791a7c1c16fd2a4f38f96f6836cc9d3387662663f03a1d92d73003e2ed"
+      }
+    },
+    {
+      "motion_id": "002511",
+      "split": "train",
+      "source_group_id": "AMASS/SSM_synced/20160330_03333/side_hopping_poses.npz",
+      "caption_first_status": "full_caption_model_truncated",
+      "requested_prefix_last_seconds": 9.75,
+      "cache_last_seconds": 7.933333333333334,
+      "feature_frames": 199,
+      "cache_frames": 239,
+      "source_pose_frames": 498,
+      "source_fps": 59.9999885559082,
+      "source_declared_crop": [
+        21,
+        621
+      ],
+      "crop_exceeds_source": true,
+      "available_source_crop_frames": 477,
+      "predicted_resampled_cache_frames": 239,
+      "actual_cache_frames": 239,
+      "predicted_cache_frames_match": true,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/SSM_synced/20160330_03333/side_hopping_poses.npz",
+        "sha256": "e433c1291dd58557a4bfdf68bbb3da5a78bcaada83074bbd0900edbb11a63612"
+      },
+      "cache_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/002511.npz",
+        "sha256": "7521bf32ec16fcaf18c45baa8744b8a78e61aa510aefb2a2da276ddabafbeb32"
+      }
+    },
+    {
+      "motion_id": "002941",
+      "split": "train",
+      "source_group_id": "AMASS/SSM_synced/20160330_03333/walking_poses.npz",
+      "caption_first_status": "full_caption_model_truncated",
+      "requested_prefix_last_seconds": 9.75,
+      "cache_last_seconds": 7.266666666666667,
+      "feature_frames": 199,
+      "cache_frames": 219,
+      "source_pose_frames": 477,
+      "source_fps": 59.9999885559082,
+      "source_declared_crop": [
+        39,
+        639
+      ],
+      "crop_exceeds_source": true,
+      "available_source_crop_frames": 438,
+      "predicted_resampled_cache_frames": 219,
+      "actual_cache_frames": 219,
+      "predicted_cache_frames_match": true,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/SSM_synced/20160330_03333/walking_poses.npz",
+        "sha256": "8823b72205084135165f9ac524bc32d29ad256c911b56e36da14698e53d0dbfa"
+      },
+      "cache_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/002941.npz",
+        "sha256": "3ec0b583a94c216ce6dbb2a13db30556a48d28ff3237f822e06ed42ed8da0bd9"
+      }
+    },
+    {
+      "motion_id": "004028",
+      "split": "train",
+      "source_group_id": "AMASS/SSM_synced/20160330_03333/knees_poses.npz",
+      "caption_first_status": "first_interval_matches_but_imu_support_blocked",
+      "requested_prefix_last_seconds": 7.0,
+      "cache_last_seconds": 4.7,
+      "feature_frames": 141,
+      "cache_frames": 142,
+      "source_pose_frames": 284,
+      "source_fps": 59.9999885559082,
+      "source_declared_crop": [
+        0,
+        426
+      ],
+      "crop_exceeds_source": true,
+      "available_source_crop_frames": 284,
+      "predicted_resampled_cache_frames": 142,
+      "actual_cache_frames": 142,
+      "predicted_cache_frames_match": true,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/SSM_synced/20160330_03333/knees_poses.npz",
+        "sha256": "e48bed6b04487bdc751150e5248305dbc28b9ebdb9d524c29f9097ff53eb4f27"
+      },
+      "cache_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/004028.npz",
+        "sha256": "23570dea602bc8c0ab0baf40d499bb5f3c1e05ec6aae4f4673d2fde57a742a2a"
+      }
+    },
+    {
+      "motion_id": "006515",
+      "split": "train",
+      "source_group_id": "AMASS/SSM_synced/20160330_03333/shake_hips_poses.npz",
+      "caption_first_status": "full_caption_model_truncated",
+      "requested_prefix_last_seconds": 9.75,
+      "cache_last_seconds": 7.6,
+      "feature_frames": 199,
+      "cache_frames": 229,
+      "source_pose_frames": 521,
+      "source_fps": 59.9999885559082,
+      "source_declared_crop": [
+        63,
+        663
+      ],
+      "crop_exceeds_source": true,
+      "available_source_crop_frames": 458,
+      "predicted_resampled_cache_frames": 229,
+      "actual_cache_frames": 229,
+      "predicted_cache_frames_match": true,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/SSM_synced/20160330_03333/shake_hips_poses.npz",
+        "sha256": "9f90318fb0e4c6b552930825e8def081a7cc430ca9c609229489e919c398c24d"
+      },
+      "cache_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/006515.npz",
+        "sha256": "de3e65be7dc8ba42b466b2d0bd8c676255f04b6b8e324104a241f795ebd31998"
+      }
+    },
+    {
+      "motion_id": "006749",
+      "split": "train",
+      "source_group_id": "AMASS/SSM_synced/20160330_03333/jiggle_on_toes_poses.npz",
+      "caption_first_status": "first_interval_matches_but_imu_support_blocked",
+      "requested_prefix_last_seconds": 7.9,
+      "cache_last_seconds": 5.3,
+      "feature_frames": 159,
+      "cache_frames": 160,
+      "source_pose_frames": 319,
+      "source_fps": 59.9999885559082,
+      "source_declared_crop": [
+        0,
+        480
+      ],
+      "crop_exceeds_source": true,
+      "available_source_crop_frames": 319,
+      "predicted_resampled_cache_frames": 160,
+      "actual_cache_frames": 160,
+      "predicted_cache_frames_match": true,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/SSM_synced/20160330_03333/jiggle_on_toes_poses.npz",
+        "sha256": "35efc8008bb9c0e3fc53445672014d60b7c4a9456f86c459cd5d986f3f889f8d"
+      },
+      "cache_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/006749.npz",
+        "sha256": "59c49c31e1d57dd61f5f5515d928308096a5e9045c97b0a1a2c130380ff4423c"
+      }
+    },
+    {
+      "motion_id": "007129",
+      "split": "train",
+      "source_group_id": "AMASS/SSM_synced/20160330_03333/wrists_up_down_poses.npz",
+      "caption_first_status": "first_interval_matches_but_imu_support_blocked",
+      "requested_prefix_last_seconds": 8.1,
+      "cache_last_seconds": 5.433333333333334,
+      "feature_frames": 163,
+      "cache_frames": 164,
+      "source_pose_frames": 327,
+      "source_fps": 59.9999885559082,
+      "source_declared_crop": [
+        0,
+        492
+      ],
+      "crop_exceeds_source": true,
+      "available_source_crop_frames": 327,
+      "predicted_resampled_cache_frames": 164,
+      "actual_cache_frames": 164,
+      "predicted_cache_frames_match": true,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/SSM_synced/20160330_03333/wrists_up_down_poses.npz",
+        "sha256": "168dd952f1c84f486dcccd2d1bf2a18fd2b30d9459b2e68d88ef68ac057f92bc"
+      },
+      "cache_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/007129.npz",
+        "sha256": "ad88b00f906507896185e7e0dde6275c6c3aa1aade57b3c9c2a33ab7ceb7b508"
+      }
+    },
+    {
+      "motion_id": "007410",
+      "split": "train",
+      "source_group_id": "AMASS/SSM_synced/20160330_03333/punching_poses.npz",
+      "caption_first_status": "first_interval_matches_but_imu_support_blocked",
+      "requested_prefix_last_seconds": 5.75,
+      "cache_last_seconds": 3.8666666666666667,
+      "feature_frames": 116,
+      "cache_frames": 117,
+      "source_pose_frames": 234,
+      "source_fps": 59.9999885559082,
+      "source_declared_crop": [
+        0,
+        351
+      ],
+      "crop_exceeds_source": true,
+      "available_source_crop_frames": 234,
+      "predicted_resampled_cache_frames": 117,
+      "actual_cache_frames": 117,
+      "predicted_cache_frames_match": true,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/SSM_synced/20160330_03333/punching_poses.npz",
+        "sha256": "390cdcdff697b1ed700fc818f24e663fdd940810abe458513b0adc6f59d9450e"
+      },
+      "cache_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/007410.npz",
+        "sha256": "6163b4bf4bd2a526ba92b530d2647734df3d71dba57d630574b0e0e7341d086d"
+      }
+    },
+    {
+      "motion_id": "008802",
+      "split": "train",
+      "source_group_id": "AMASS/SSM_synced/20160330_03333/walking_01_poses.npz",
+      "caption_first_status": "first_interval_matches_but_imu_support_blocked",
+      "requested_prefix_last_seconds": 8.95,
+      "cache_last_seconds": 6.0,
+      "feature_frames": 180,
+      "cache_frames": 181,
+      "source_pose_frames": 362,
+      "source_fps": 59.9999885559082,
+      "source_declared_crop": [
+        0,
+        543
+      ],
+      "crop_exceeds_source": true,
+      "available_source_crop_frames": 362,
+      "predicted_resampled_cache_frames": 181,
+      "actual_cache_frames": 181,
+      "predicted_cache_frames_match": true,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/SSM_synced/20160330_03333/walking_01_poses.npz",
+        "sha256": "fc9b80c5450b7d32786c00baf129a8125e85c1b6101e9a7ab36604c17ac2b24a"
+      },
+      "cache_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/008802.npz",
+        "sha256": "25de03f82dbc68fd3c9900753c7b2c06655b643f8c18edf609aa802f875038b3"
+      }
+    },
+    {
+      "motion_id": "008894",
+      "split": "train",
+      "source_group_id": "AMASS/SSM_synced/20160330_03333/ankles_poses.npz",
+      "caption_first_status": "first_interval_matches_but_imu_support_blocked",
+      "requested_prefix_last_seconds": 5.9,
+      "cache_last_seconds": 3.966666666666667,
+      "feature_frames": 119,
+      "cache_frames": 120,
+      "source_pose_frames": 240,
+      "source_fps": 59.9999885559082,
+      "source_declared_crop": [
+        0,
+        360
+      ],
+      "crop_exceeds_source": true,
+      "available_source_crop_frames": 240,
+      "predicted_resampled_cache_frames": 120,
+      "actual_cache_frames": 120,
+      "predicted_cache_frames_match": true,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/SSM_synced/20160330_03333/ankles_poses.npz",
+        "sha256": "e90d8804c3e4a1ee3aa4a0da69e303c1e4190079e88b2b88e0ebe548f1d06d20"
+      },
+      "cache_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/008894.npz",
+        "sha256": "cb69fac983e41ac4ce2bae18d455c9c802360e2a47b62852aa41e0730b9303b3"
+      }
+    },
+    {
+      "motion_id": "009466",
+      "split": "train",
+      "source_group_id": "AMASS/SSM_synced/20160330_03333/shoulders_poses.npz",
+      "caption_first_status": "first_interval_matches_but_imu_support_blocked",
+      "requested_prefix_last_seconds": 6.95,
+      "cache_last_seconds": 4.666666666666667,
+      "feature_frames": 140,
+      "cache_frames": 141,
+      "source_pose_frames": 282,
+      "source_fps": 59.9999885559082,
+      "source_declared_crop": [
+        0,
+        423
+      ],
+      "crop_exceeds_source": true,
+      "available_source_crop_frames": 282,
+      "predicted_resampled_cache_frames": 141,
+      "actual_cache_frames": 141,
+      "predicted_cache_frames_match": true,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/SSM_synced/20160330_03333/shoulders_poses.npz",
+        "sha256": "73b68a724c0f42cc838287a1613115e9e8ab2977ff23e7752449b68f2f58f8df"
+      },
+      "cache_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/009466.npz",
+        "sha256": "819276d90fa317f61166d856027dbeec8b3add2db028cce5b10d4acf9e3febe7"
+      }
+    },
+    {
+      "motion_id": "011120",
+      "split": "train",
+      "source_group_id": "AMASS/SSM_synced/20160330_03333/ATU_001_poses.npz",
+      "caption_first_status": "first_interval_matches_but_imu_support_blocked",
+      "requested_prefix_last_seconds": 7.5,
+      "cache_last_seconds": 5.033333333333333,
+      "feature_frames": 151,
+      "cache_frames": 152,
+      "source_pose_frames": 304,
+      "source_fps": 59.9999885559082,
+      "source_declared_crop": [
+        0,
+        456
+      ],
+      "crop_exceeds_source": true,
+      "available_source_crop_frames": 304,
+      "predicted_resampled_cache_frames": 152,
+      "actual_cache_frames": 152,
+      "predicted_cache_frames_match": true,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/SSM_synced/20160330_03333/ATU_001_poses.npz",
+        "sha256": "11603544163a41a5c1c40b77d4e03c1241e9f91be7b149376de6b2089e334c84"
+      },
+      "cache_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/011120.npz",
+        "sha256": "8fc376d901528110a0e9fb81dc4dacb6c9ccf394dfeb499d11ca58783d360ece"
+      }
+    },
+    {
+      "motion_id": "011475",
+      "split": "train",
+      "source_group_id": "AMASS/SSM_synced/20160330_03333/shake_shoulders_poses.npz",
+      "caption_first_status": "first_interval_matches_but_imu_support_blocked",
+      "requested_prefix_last_seconds": 7.6,
+      "cache_last_seconds": 5.1,
+      "feature_frames": 153,
+      "cache_frames": 154,
+      "source_pose_frames": 307,
+      "source_fps": 59.9999885559082,
+      "source_declared_crop": [
+        0,
+        462
+      ],
+      "crop_exceeds_source": true,
+      "available_source_crop_frames": 307,
+      "predicted_resampled_cache_frames": 154,
+      "actual_cache_frames": 154,
+      "predicted_cache_frames_match": true,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/SSM_synced/20160330_03333/shake_shoulders_poses.npz",
+        "sha256": "22afde74bd4c2f05c3bbb063a79cddd5705cbd50366c637035ab5d0a2d2cd102"
+      },
+      "cache_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/011475.npz",
+        "sha256": "fcd26bff6149fd3630b88015254b2d189068817ec6892309e3dd246018137eb6"
+      }
+    }
+  ],
+  "failure_count": 13,
+  "inputs": [
+    {
+      "path": "docs/itm_rework/protocol/caption_audit_20260924_v1/clips.jsonl",
+      "sha256": "3b48ed3f70b60c31afd04ba275be4734dc9f789ae5136057694ab017f4790d6e"
+    }
+  ],
+  "code": {
+    "path": "/home/a200/0proj/ITM/scripts/audit_caption_time_support.py",
+    "sha256": "75963b7577ed08f9948ba1817003da877d2e4129ee38fdd80b262bec5c99589e"
+  },
+  "budget": {
+    "maximum_source_headers": 32,
+    "actual_source_headers": 13,
+    "model_forwards": 0,
+    "gpu_jobs": 0
+  },
+  "limitations": [
+    "Current source FPS metadata is checked, not independently calibrated.",
+    "No changed FPS, synthetic cache, time stretch or HumanML reconstruction.",
+    "Cause of the HumanML/source duration discrepancy is not certified."
+  ]
+}

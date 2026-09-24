@@ -1,0 +1,108 @@
+{
+  "version": "caption-interval-v1",
+  "read_commit": "2ee7b2ee2ddbc74972514697b14ac017151602aa",
+  "counts": {
+    "train": {
+      "full_caption_model_truncated": 3167,
+      "clips": 7009,
+      "annotations": 20938,
+      "invalid_annotations": 311,
+      "tagged_caption_mismatched_to_current_prefix": 187,
+      "first_caption_interval_matches_current_prefix": 3549,
+      "source_exclusive_complete_full_caption_candidates": 3550,
+      "invalid_or_missing_first_caption": 96,
+      "first_interval_matches_but_imu_support_blocked": 10
+    },
+    "val": {
+      "full_caption_model_truncated": 209,
+      "clips": 434,
+      "annotations": 1297,
+      "invalid_annotations": 20,
+      "first_caption_interval_matches_current_prefix": 200,
+      "source_exclusive_complete_full_caption_candidates": 184,
+      "tagged_caption_mismatched_to_current_prefix": 15,
+      "invalid_or_missing_first_caption": 10
+    }
+  },
+  "budget": {
+    "maximum_clips": 7500,
+    "splits": [
+      "train",
+      "val"
+    ],
+    "caption_reads_per_clip": 1,
+    "feature_access": "npy_header_mmap_shape_only",
+    "imu_support": "previously_audited_manifest",
+    "model_forwards": 0,
+    "training_updates": 0,
+    "gpu_jobs": 0
+  },
+  "input_artifacts": [
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/source_audit_20260924_v1/source_intervals.jsonl",
+      "sha256": "3f3a97038b1c9ef42df827d29452fdc508ee0d0684c6853c8ffbe2f2734cb78b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/validation_20260924_v1/panel.jsonl",
+      "sha256": "150d53da4d1d09daa49a85b897251431d59ed696f2b3735aadb1aa5ed9312791"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/manifests_full/train.jsonl",
+      "sha256": "05e18ec9690edb69242cb055f1b767f1d53acfe18dad370c814210934830a23e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/manifests_full/train_standard_imu.jsonl",
+      "sha256": "3e83711385037f423c7b1fde63f2971cc4e5724a0f013fe914d81535ad8ed7cc"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/manifests_full/val.jsonl",
+      "sha256": "8b97ecf55005b6f20b11988878bac56f73c1b6aae66ea6d592c981efa66f3091"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/manifests_full/val_standard_imu.jsonl",
+      "sha256": "402e4f27fa90781ce85a5eed16be075e07231642039404fc25a74a34590b1ba3"
+    }
+  ],
+  "code_artifacts": [
+    {
+      "path": "/home/a200/0proj/ITM/scripts/audit_caption_intervals.py",
+      "sha256": "c6baec0ba33468a86554334a484ef4fa78b335dbc3d64a42967e8b257ba597e0"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/caption_time.py",
+      "sha256": "643e13290d14dfc6fde8e4067071739da17183123414b8db9263a7dc3674e082"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/dataset.py",
+      "sha256": "6385144e217bb52dd369c55262522ab154fda7109110fab6b86f772adf7fda2c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/train_mdm_imu_control.py",
+      "sha256": "42325cdd29d1b59c441d3cdc11d02362bed780edd8a4b521b2bad5a8b8ae6d75"
+    },
+    {
+      "path": "/home/a200/0relatedworks/motion-diffusion-model/data_loaders/humanml/data/dataset.py",
+      "sha256": "6a80a6a2ef0a74ee3c6a3c6f7c3aed43013260197fe923f611f703ef7bcc2312"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "docs/itm_rework/protocol/caption_audit_20260924_v1/clips.jsonl",
+      "sha256": "3b48ed3f70b60c31afd04ba275be4734dc9f789ae5136057694ab017f4790d6e"
+    },
+    {
+      "path": "docs/itm_rework/protocol/caption_audit_20260924_v1/full_clip_candidates.jsonl",
+      "sha256": "892772999945ee4931b78e3bd255965cd8d99a045c27439cfaf6a27117f29be5"
+    },
+    {
+      "path": "docs/itm_rework/protocol/caption_audit_20260924_v1/fixed_cases.jsonl",
+      "sha256": "76dbf9f20b6dad64e51ed5da7756510666757a5e0a84e4b82796d82fc7407526"
+    }
+  ],
+  "limitations": [
+    "Header/tag/source-support audit, not semantic or physical alignment certification.",
+    "Candidate metadata is not a training manifest or a compatible edit witness.",
+    "Source exclusivity does not certify backbone pretraining independence.",
+    "No test caption reads, no model execution, no changed method loader or contract."
+  ]
+}

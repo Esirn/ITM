@@ -1,0 +1,34 @@
+{
+  "cases": 10,
+  "planned": 9,
+  "blocked": 1,
+  "panel": {
+    "path": "docs/itm_rework/protocol/validation_20260924_v1/panel.jsonl",
+    "sha256": "150d53da4d1d09daa49a85b897251431d59ed696f2b3735aadb1aa5ed9312791"
+  },
+  "cases_artifact": {
+    "path": "docs/itm_rework/protocol/caption_plan_20260924_v1/cases.jsonl",
+    "sha256": "1e4fb4bf9ad455b1851c3534bb03969d134e4a3f3722537b2ba0ad41b65384ae"
+  },
+  "code": [
+    {
+      "path": "/home/a200/0proj/ITM/scripts/plan_caption_inputs.py",
+      "sha256": "ca5e9829179e9e327c300380f41c6dc5a1017b27bb56056a428ed1cdb911999b"
+    },
+    {
+      "path": "src/itm/data/caption_time.py",
+      "sha256": "643e13290d14dfc6fde8e4067071739da17183123414b8db9263a7dc3674e082"
+    }
+  ],
+  "budget": {
+    "maximum_cases": 10,
+    "model_forwards": 0,
+    "training_updates": 0,
+    "gpu_jobs": 0
+  },
+  "limitations": [
+    "No method loader change; integration remains with owner 01.",
+    "Time support checks do not certify semantics, coordinates or a compatible witness.",
+    "No HumanML feature recanonicalization; cropped representation alignment remains open."
+  ]
+}
