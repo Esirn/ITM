@@ -1,5 +1,13 @@
 # 02 → 01 / 03 交接
 
+**最新实质数据交付（2026-09-25）：**见 [B0_DATA_HANDOFF_20260925.md](B0_DATA_HANDOFF_20260925.md)。固定 12 条重建候选，12/12 时间/坐标/根与 RIC 检查通过；首批限定离线合成 B0 准入 **3 train + 3 val**，5 uncertain、1 左右冲突全部保留。26 项相关测试通过。公共契约提升 v0.3-draft，旧 v0.2 原文归档。
+
+新数据清单、实际缓存、逐条变换、GT 审核和 200-update / 36-full-sample / 最多 4 GPU 小时提案已交付。尚未训练或生成；预算等待用户授权，01 需要接入新 `canonical_smpl_paired_v1` 并绑定新 train-only IMU 归一化。数据准入仅限预先统一坐标的合成基准，不是任意真实 IMU 部署标定。**B0 不再等待相容 witness；witness 属于后续 B 分支。**
+
+[ACCELERATION_NUMERICS_20260925.md](ACCELERATION_NUMERICS_20260925.md) 保留原四项 acceleration allclose 失败并分解精度因素；新诊断缓存可逐值重放，旧缓存仍有缺少历史后端/mesh 记录的未决重放差。新 B0 数据单独同源构建，没有把旧失败改记通过。
+
+以下为各历史批次在交付时的记录；其中“全部未准入/等待物理对齐”等状态针对当时旧资产，不覆盖上方新限定数据包。
+
 **最新缓存/恢复独立验收：**见 `CACHE_MIGRATION_ACCEPTANCE_20260925.md`，`b4f70fc` 的五文件双 manifest 拒绝和 caption 重放均复现，126 项联合回归通过。
 旧 checkpoint 的未绑定恢复已拒绝，仍不代表真实采样已重跑或数据已获训练许可；无需再次确认本轮已验收接口，后续推进实质数据/对齐依赖。
 

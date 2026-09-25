@@ -1,0 +1,7 @@
+{
+  "status": "Aborted after two FK calls: external quaternion helper adds 1e-4 to last component, causing nonidentity initial root. v3 uses explicit float64 yaw and bias-free shortest-arc bone IK.",
+  "log": {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v2/execution.log",
+    "sha256": "0438ad0f44827f2378b14cbc78ca3574f03eb364ec8d2f7a7756f11eb82da2e8"
+  }
+}

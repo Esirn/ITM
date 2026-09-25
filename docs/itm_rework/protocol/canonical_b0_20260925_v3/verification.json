@@ -1,0 +1,137 @@
+{
+  "pairs": {
+    "path": "outputs/itm_rework/canonical_b0_20260925_v3/built_pairs.jsonl",
+    "sha256": "892ff12e469b48224531c174f71ba1ae130127e3e8db37ae8b1f7f73d4b6d700"
+  },
+  "cases": [
+    {
+      "motion_id": "000010",
+      "status": "passed",
+      "frames": 69,
+      "RIC_roundtrip_max_abs_m": 5.960464477539063e-08,
+      "common_10hz_samples": 35,
+      "20hz_30hz_FK_max_abs_m": 0.0,
+      "caption_interval": "complete_full_clip",
+      "semantic_review": "not_part_of_this_numeric_check"
+    },
+    {
+      "motion_id": "000123",
+      "status": "passed",
+      "frames": 140,
+      "RIC_roundtrip_max_abs_m": 1.1920928955078125e-07,
+      "common_10hz_samples": 71,
+      "20hz_30hz_FK_max_abs_m": 0.0,
+      "caption_interval": "complete_full_clip",
+      "semantic_review": "not_part_of_this_numeric_check"
+    },
+    {
+      "motion_id": "000015",
+      "status": "passed",
+      "frames": 151,
+      "RIC_roundtrip_max_abs_m": 1.1920928955078125e-07,
+      "common_10hz_samples": 76,
+      "20hz_30hz_FK_max_abs_m": 0.0,
+      "caption_interval": "complete_full_clip",
+      "semantic_review": "not_part_of_this_numeric_check"
+    },
+    {
+      "motion_id": "000506",
+      "status": "passed",
+      "frames": 136,
+      "RIC_roundtrip_max_abs_m": 1.1920928955078125e-07,
+      "common_10hz_samples": 69,
+      "20hz_30hz_FK_max_abs_m": 0.0,
+      "caption_interval": "complete_full_clip",
+      "semantic_review": "not_part_of_this_numeric_check"
+    },
+    {
+      "motion_id": "004728",
+      "status": "passed",
+      "frames": 158,
+      "RIC_roundtrip_max_abs_m": 1.1920928955078125e-07,
+      "common_10hz_samples": 80,
+      "20hz_30hz_FK_max_abs_m": 0.0,
+      "caption_interval": "complete_full_clip",
+      "semantic_review": "not_part_of_this_numeric_check"
+    },
+    {
+      "motion_id": "000027",
+      "status": "passed",
+      "frames": 104,
+      "RIC_roundtrip_max_abs_m": 1.1920928955078125e-07,
+      "common_10hz_samples": 53,
+      "20hz_30hz_FK_max_abs_m": 0.0,
+      "caption_interval": "complete_full_clip",
+      "semantic_review": "not_part_of_this_numeric_check"
+    },
+    {
+      "motion_id": "000133",
+      "status": "passed",
+      "frames": 59,
+      "RIC_roundtrip_max_abs_m": 4.76837158203125e-07,
+      "common_10hz_samples": 30,
+      "20hz_30hz_FK_max_abs_m": 0.0,
+      "caption_interval": "complete_full_clip",
+      "semantic_review": "not_part_of_this_numeric_check"
+    },
+    {
+      "motion_id": "000433",
+      "status": "passed",
+      "frames": 41,
+      "RIC_roundtrip_max_abs_m": 1.1920928955078125e-07,
+      "common_10hz_samples": 21,
+      "20hz_30hz_FK_max_abs_m": 0.0,
+      "caption_interval": "complete_full_clip",
+      "semantic_review": "not_part_of_this_numeric_check"
+    },
+    {
+      "motion_id": "000382",
+      "status": "passed",
+      "frames": 94,
+      "RIC_roundtrip_max_abs_m": 2.9802322387695312e-08,
+      "common_10hz_samples": 48,
+      "20hz_30hz_FK_max_abs_m": 0.0,
+      "caption_interval": "complete_full_clip",
+      "semantic_review": "not_part_of_this_numeric_check"
+    },
+    {
+      "motion_id": "000510",
+      "status": "passed",
+      "frames": 91,
+      "RIC_roundtrip_max_abs_m": 1.1920928955078125e-07,
+      "common_10hz_samples": 46,
+      "20hz_30hz_FK_max_abs_m": 0.0,
+      "caption_interval": "complete_full_clip",
+      "semantic_review": "not_part_of_this_numeric_check"
+    },
+    {
+      "motion_id": "000134",
+      "status": "passed",
+      "frames": 183,
+      "RIC_roundtrip_max_abs_m": 1.1920928955078125e-07,
+      "common_10hz_samples": 92,
+      "20hz_30hz_FK_max_abs_m": 0.0,
+      "caption_interval": "complete_full_clip",
+      "semantic_review": "not_part_of_this_numeric_check"
+    },
+    {
+      "motion_id": "000139",
+      "status": "passed",
+      "frames": 163,
+      "RIC_roundtrip_max_abs_m": 2.384185791015625e-07,
+      "common_10hz_samples": 82,
+      "20hz_30hz_FK_max_abs_m": 0.0,
+      "caption_interval": "complete_full_clip",
+      "semantic_review": "not_part_of_this_numeric_check"
+    }
+  ],
+  "source_groups": 12,
+  "passed": 12,
+  "code": {
+    "path": "/home/a200/0proj/ITM/scripts/check_canonical_b0_panel.py",
+    "sha256": "c1b60cef51f3cb7c988a107fb236570059970e16d1d0baef81d3468eac8b2df7"
+  },
+  "gpu_jobs": 0,
+  "FK_calls": 0,
+  "generated_IMU_closure_certified": false
+}

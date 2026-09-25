@@ -1,0 +1,12 @@
+/home/a200/0relatedworks/motion-diffusion-model/data_loaders/humanml/common/quaternion.py:396: UserWarning: Using torch.cross without specifying the dim arg is deprecated.
+Please either pass the dim explicitly or simply use torch.linalg.cross.
+The default value of dim will change to agree with that of linalg.cross in a future release. (Triggered internally at /opt/conda/conda-bld/pytorch_1729647352509/work/aten/src/ATen/native/Cross.cpp:62.)
+  v = torch.cross(v0, v1)
+Traceback (most recent call last):
+  File "/home/a200/0proj/ITM/scripts/build_canonical_b0_panel.py", line 156, in <module>
+    else: build(args.plan,args.output)
+  File "/home/a200/0proj/ITM/scripts/build_canonical_b0_panel.py", line 105, in build
+    features = encode_humanml263(target.copy(), mdm_root=MDM)
+  File "/home/a200/0proj/ITM/src/itm/data/canonical_pair.py", line 62, in encode_humanml263
+    raise ValueError("Canonical initial root is not decoder identity")
+ValueError: Canonical initial root is not decoder identity

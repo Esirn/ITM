@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/a200/0proj/ITM/scripts/audit_acceleration_numerics.py", line 126, in <module>
+    main()
+  File "/home/a200/0proj/ITM/scripts/audit_acceleration_numerics.py", line 81, in main
+    replay32[name] = moving_average(second_difference(positions[name][key], 30.), 5)
+TypeError: second_difference() takes 1 positional argument but 2 were given

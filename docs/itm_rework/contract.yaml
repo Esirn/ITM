@@ -1,7 +1,7 @@
-contract_version: itm-rework-v0.2-draft
-status: draft_method_interface_accepted_alignment_and_evaluation_open
+contract_version: itm-rework-v0.3-draft
+status: scoped_synthetic_B0_data_admitted_method_adapter_and_budget_pending
 owner: 02_data_evaluation
-read_commit: 55193655b1a8e7835de7e6bd96ed21122957641e
+read_commit: 1581ba66e81bc5baf7b85ff9f143ce8187ebf2eb
 change_commit: null
 scope:
   mode: offline_full_clip
@@ -186,6 +186,21 @@ protocol:
     path: docs/itm_rework/protocol/arm_spread_spec.json
     version: arm-spread-geometric-v1
     status: metric_definition_accepted_semantic_thresholds_not_frozen
+  B0:
+    scope: tiny_synthetic_P_engineering_pilot
+    budget:
+      path: docs/itm_rework/protocol/canonical_b0_20260925_v3/b0_budget.json
+      sha256: 660b9f779eee1301f1bb92c30081c20e86248f76854f047f07ea88521ecead47
+    metrics:
+      path: docs/itm_rework/protocol/canonical_b0_20260925_v3/metrics.json
+      sha256: 30a598ba54bcb65c0adad7c19b71fd55dc86699a461d73cef06946b5b6bfc8b5
+    requires:
+    - explicit new-schema method adapter and replay
+    - new train-only IMU normalization bound to checkpoint
+    - authorized budget and available GPU
+    does_not_require:
+    - compatible edit witness (later B branch)
+    - strict generated IMU closure (required only for strict IMU claims)
 freeze_requirements:
 - owner_01_interface_acceptance
 - B0_null_mask_sampler_correctness
@@ -196,8 +211,8 @@ freeze_requirements:
 - final_checkpoint_hash
 - sealed_source_groups_with_pretraining_disclosure
 previous_contract:
-  path: docs/itm_rework/protocol/contract_history/itm-rework-v0.1-draft.yaml
-  sha256: 144248dce536ab36dcc9d6a698444a3331d01a0a278a73234aaeec4c458eba7f
+  path: docs/itm_rework/protocol/contract_history/itm-rework-v0.2-draft.yaml
+  sha256: 528b7db8818600dff9516600a9c5ad0311870de93609e2bcadbe320ee4f0fadb
 method_interface:
   accepted_method_commit: 55193655b1a8e7835de7e6bd96ed21122957641e
   acceptance:
@@ -214,3 +229,31 @@ method_interface:
   formal_smoke_admission: false
 change_commit_resolution: git log -1 -- docs/itm_rework/contract.yaml; snapshot commit
   does not freeze this draft
+scoped_data_products:
+  canonical_synthetic_B0_v1:
+    schema: canonical_smpl_paired_v1
+    mapping_version: canonical-smpl-pair-v1
+    package:
+      path: docs/itm_rework/protocol/canonical_b0_20260925_v3/package.json
+      sha256: 33de7fd98c1cf43fc5a51a7d35b502e154a233066efec13f17dda08bc53abe97
+    admission:
+      path: docs/itm_rework/protocol/canonical_b0_20260925_v3/admission.jsonl
+      sha256: 9fa1046c5bce7e25d507ac254d9f77a451ddf9ecd8c6a70309c79f611b6bf161
+    coordinate_scope: Offline GT-defined proper yaw plus translation; same source
+      SMPL male body shape for IMU and new HumanML263 target; no uniform-skeleton
+      retarget; real deployment calibration not certified.
+    clock: Exact 60/120Hz source; recorded dataset prefix; 20Hz target and 30Hz IMU
+      meet exactly at common 10Hz source times; endpoint and available source-tail
+      recorded.
+    root: First pelvis XZ zero, minimum whole-clip joint Y zero, smoothed anatomical
+      first heading to +Z; HumanML first root quaternion identity; full clip only.
+    admitted_train_groups: 3
+    admitted_val_groups: 3
+    semantic_scope: coarse action/order, single Codex GT review; uncertain object/finger
+      cases and directional contradiction excluded
+    legacy_cache_promotion: false
+    strict_generated_IMU_certified: false
+    method_interface_status: 01 adapter required; never relabel diagnostic/old NPZ
+      schema as standard
+freeze_requirements_scope: Existing freeze_requirements are for final multi-branch
+  research evidence; scoped B0 dependencies are separately specified in protocol.B0.

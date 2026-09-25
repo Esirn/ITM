@@ -1,0 +1,32 @@
+{
+  "version": "canonical-B0-metrics-v1",
+  "status": "frozen_before_any_B0_outputs",
+  "case_universe": {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/sampling_cases.json",
+    "sha256": "ddf2f01ae1ddcb6b6583f50508106f801a0b9b9564c917614954f5157d93c070"
+  },
+  "aggregation": "Report all 36 planned slots and per-case values; equal mean over 3 source groups within each config/condition. No headline CI/significance or generalization claim with n=3 and one training seed.",
+  "failure": "Missing output, budget stop, NaN/Inf, wrong length/frame/mask, checkpoint/data/noise hash mismatch are retained in failure_rate over all planned slots; numerical means explicitly state finite-count denominators.",
+  "alignment": "Use delivered canonical frame and exact 20Hz timestamps; no GT yaw fit, translation fit, Procrustes, temporal search or length stretching on generated outputs.",
+  "continuous_metrics": {
+    "global_MPJPE_m": "mean norm(output[t,j]-GT[t,j]) over valid 22 joints and all target frames",
+    "root_relative_MPJPE_m": "subtract each motion own pelvis at each frame, then mean joint Euclidean error",
+    "root_path_RMSE_m": "sqrt(mean squared Euclidean pelvis error)), no fitted translation",
+    "head_or_wrists_position_joint_proxy_m": "mean Euclidean error at joint 15 for head or joints 20/21 for wrists; NOT mounted vertex acceleration/orientation",
+    "velocity_joint_proxy_RMSE_m_s": "forward first difference at 20Hz on adjacent valid frames, sqrt(mean squared Euclidean difference to GT))",
+    "jerk_absolute_m_s3": "mean Euclidean norm of third forward difference *20^3 over valid four-frame stencils; report GT alongside; no ratio or smaller-is-better claim",
+    "motion_extent_m": "per-axis min/max extent and pelvis path length; report GT alongside to expose static/collapsed outputs",
+    "foot_contact_speed_proxy_m_s": "on 000433/000382 only, mean generated ankle/foot speed at frames marked contact by delivered GT last 4 feature channels; diagnostic, not calibrated physical slip",
+    "flat_floor_quality_for_000139": "not_applicable: GT rises approximately .64m on nonflat support; do not treat all raised feet as penetration/sliding failures",
+    "strict_null_vs_backbone_max_abs_m": "same text/noise/length decoded coordinate max difference; report continuous result and numerical replay status"
+  },
+  "semantic_review": "Owner02 reviews all outputs in randomized condition order against original coarse action/order: kick cycle then standing (000433), repeated hand approach/separation then arms down (000382), standing/sway then forward steps/arm swing (000139). Save review notes and failure cases; no automatic semantic pass threshold or JSR from these labels.",
+  "not_estimable": [
+    "strict generated IMU residual/JSR_IMU",
+    "compatible edit success",
+    "same-class shuffled instance advantage",
+    "conditional diversity at K=1",
+    "FID/R-precision population estimates from n=3"
+  ],
+  "normalization": "Use fixed pretrained motion Mean/Std for decoding; use checkpoint-bound new train-only IMU stats for input. Save all hashes."
+}

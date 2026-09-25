@@ -1,0 +1,259 @@
+contract_version: itm-rework-v0.3-draft
+status: scoped_synthetic_B0_data_admitted_method_adapter_and_budget_pending
+owner: 02_data_evaluation
+read_commit: 1581ba66e81bc5baf7b85ff9f143ce8187ebf2eb
+change_commit: null
+scope:
+  mode: offline_full_clip
+  sensor_configs:
+    head:
+    - 4
+    wrists:
+    - 0
+    - 1
+  joint_capability_requires_same_checkpoint: true
+imu:
+  schema_version: standard_imu_v1
+  schema_evidence: 8776 full cache array checks passed; three source re-synthesis
+    comparisons retained small acceleration discrepancies
+  quantity: world_linear_acceleration_and_global_orientation
+  acceleration_unit: m_per_s2
+  gravity_convention: not_added
+  rotation_convention: segment_to_world_column_vectors
+  matrix_flattening: row_major_C_order_after_acc_xyz
+  world_frame:
+    handedness: right
+    up_axis: Y
+    amass_to_cache_matrix:
+    - - 1
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 1
+    - - 0
+      - -1
+      - 0
+    initial_heading: source_heading_retained
+    initial_translation: source_translation_retained
+  sensor_mounts:
+    version: standard_imu_v1_smpl_male
+    vertex_indices:
+    - 1961
+    - 5424
+    - 876
+    - 4362
+    - 411
+    - 3021
+    orientation_segment_indices:
+    - 18
+    - 19
+    - 1
+    - 2
+    - 15
+    - 0
+    names:
+    - left_wrist
+    - right_wrist
+    - left_thigh
+    - right_thigh
+    - head
+    - pelvis
+    mount_rotation: identity_relative_to_declared_segment
+    skin_attachment_evidence:
+      path: docs/itm_rework/protocol/source_audit_20260924_v1/cache_synthesis.json
+      sha256: 1f124d6cde30ececfa79dd74155a03beadd2a12399c831a465a43d3a8402ecb0
+    wrists_note: sensor vertices predominantly weighted to forearms 18/19; proxy joints
+      20/21 are distinct locations
+  cache_fps: 30.0
+  model_fps: 20.0
+  smoothing:
+    operator: centered_box_after_second_difference
+    frames: 5
+    seconds_at_30fps: 0.16666666666666666
+  difference_boundary: legacy_zero_acceleration_then_edge_padded_box_smoothing
+  resample:
+    source_builder: pose_SLERP_translation_linear_before_FK_then_difference
+    imu_to_mdm: acc_linear_orientation_SLERP_30_to_20
+    antialias_certified: false
+  mirror: not_silently_supported; needs left_right swap and proper rotation basis
+    transform
+  crop: crop_seconds default accepted from method; HumanML terminal-frame differences
+    are not a universal start-time offset
+  timestamps:
+    legacy: implicit_arange_over_fps_crop_local_seconds
+    required_new: explicit_seconds_and_clock_reference_with_caption_interval
+    new_interface: explicit cache-crop-local seconds; prefix [0,(T-1)/fps], no arbitrary
+      stretch; coordinate mapping still uncertified
+  normalization:
+    kind: per_sensor_axis_acceleration_mean_std_orientation_unscaled
+    source: checkpoint_stage2b_resumed_stage1_training_statistics
+    canonical_json_sha256: be0c3c21a4ad3cafb305df4310c5fea6047777c1215195e2fb2d8f3c93d209a1
+    metadata:
+      path: docs/itm_rework/protocol/source_audit_20260924_v1/checkpoint_metadata.json
+      sha256: 50af60ffedd333bd107c8e18969359c58ce6ecaece441b10c51159ce3024d3d9
+    checkpoint_records_train_manifest: true
+    train_only_recomputation_verified: false
+  legacy_isolation:
+    joint_vector_acceleration_schema: separate_not_standard_imu_v1
+    physical_metadata_mismatch: reject
+    shape_only_inference: forbidden
+  full_cache_audit:
+    path: docs/itm_rework/protocol/full_cache_audit.json
+    sha256: d5843615f5f3a44bc89c98b74d46f80bf358f0e3a4227b3db843162f8f60ef97
+  static_fixture:
+    implementation:
+      path: src/itm/data/static_imu.py
+      sha256: 011681bb6ee65af6c3130c5deba6849858836fd00f72b7b25eb8df683ad46131
+    audit:
+      path: docs/itm_rework/protocol/static_audit_20260924_v1/report.json
+      sha256: 7425dd6bdab82a93612865dc1f4c48dc0369bbc9a3176af2fc6d14420be2b22d
+    normalization: must match target checkpoint; saved fixture imu uses historical
+      Stage-2b statistics
+motion:
+  representation: humanml263
+  decoder:
+    path: src/itm/data/humanml_torch.py
+    sha256: 41473f5d4c53b3d114497f7ede6f2c544e9c8b17918388f3f89e520e01ede186
+  world_alignment: 'not_certified: nine cases support same physical start rather than
+    universal one-frame shift; oracle GT yaw forbidden at inference; retarget scale
+    unresolved'
+  observation_operator:
+    version: smpl-vertex-observation-v1
+    source:
+      path: src/itm/data/observation.py
+      sha256: 5b82785d95152ce246c07f82d491679ed7e9aa9fbc95e1befc97d7e057898df9
+    certified_generated_IMU_channels: []
+    available_diagnostic_space: joint_proxy
+    legacy_rendered_22joint_to_SMPL_roundtrip: failed_acceleration_and_orientation_gates
+    new_operator_boundary: invalid_full_stencil_nan_with_masks
+    humanml_output_decoder_certification: pending
+  alignment_diagnostic:
+    path: docs/itm_rework/protocol/alignment_20260924_v1/alignment.json
+    sha256: abc725c6cc43a26c4fa71ea1fbccf465be75472178f79e9a7edbcceb724526c3
+protocol:
+  version: itm-protocol-v0.2-draft
+  P: original_paired_instance_control
+  C: witness_verified_compatible_edit
+  D: incompatible_or_uncertain_diagnostic
+  split_manifest:
+    train:
+      path: outputs/manifests_full/train_standard_imu.jsonl
+      sha256: 3e83711385037f423c7b1fde63f2971cc4e5724a0f013fe914d81535ad8ed7cc
+    val:
+      path: outputs/manifests_full/val_standard_imu.jsonl
+      sha256: 402e4f27fa90781ce85a5eed16be075e07231642039404fc25a74a34590b1ba3
+    test:
+      path: outputs/manifests_full/test_standard_imu.jsonl
+      sha256: bc24944f5be07ed7758eb9bf8a10dc1cb9ec616edd3bde03ba2787c910eebbaa
+  source_intervals:
+    path: docs/itm_rework/protocol/source_audit_20260924_v1/source_intervals.jsonl
+    sha256: 3f3a97038b1c9ef42df827d29452fdc508ee0d0684c6853c8ffbe2f2734cb78b
+  development_exposure:
+    path: docs/itm_rework/protocol/audit_20260924_v1/development_exposure.jsonl
+    sha256: 917af7aaebdcef43757904c5f3832c08bf576eabf61187779eca1fb9122bfc33
+  compatibility_manifest:
+    path: docs/itm_rework/protocol/compatibility_manifest.jsonl
+    status: empty_no_verified_witnesses
+  validation_panel:
+    path: docs/itm_rework/protocol/validation_20260924_v1/panel.jsonl
+    sha256: 150d53da4d1d09daa49a85b897251431d59ed696f2b3735aadb1aa5ed9312791
+  panel_status: candidate_ids_fixed_synchronization_and_attribute_coverage_pending
+  sealed_test_manifest: null
+  threshold_spec:
+    path: docs/itm_rework/protocol/thresholds.json
+    status: draft_no_numerical_thresholds_chosen
+  sampling_spec:
+    version: itm-pcg64-addressed-noise-v1
+    source:
+      path: src/itm/data/random_plan.py
+      sha256: 5e2f8aed3669c97ca58c9d726f5da515bb409c2ace21a86965ad433ca0275c3a
+    sampler_integration: method commit 5519365 integrated; 3000 draw hashes independently
+      reproduced; original shape/length required
+  metrics:
+    joint_success_name: JSR_joint_proxy
+    unverified_IMU_success: forbidden
+    failure_denominator: all_planned_valid_inputs
+    bootstrap: repeat_mean_per_case_then_equal_source_group_mean
+    CI_excludes_training_variance: true
+  training_witness_candidates:
+    artifact:
+      path: docs/itm_rework/protocol/arm_spread_candidates_20260924_v1/candidates.jsonl
+      sha256: 47965ee50461c05758cd28651676e73bf077e2457b42c94adacfbce0ae9dcc10
+    status: three_uncertain_not_training_admissible
+    public_compatible_count: 0
+  attribute_spec:
+    path: docs/itm_rework/protocol/arm_spread_spec.json
+    version: arm-spread-geometric-v1
+    status: metric_definition_accepted_semantic_thresholds_not_frozen
+  B0:
+    scope: tiny_synthetic_P_engineering_pilot
+    budget:
+      path: docs/itm_rework/protocol/canonical_b0_20260925_v3/b0_budget.json
+      sha256: 660b9f779eee1301f1bb92c30081c20e86248f76854f047f07ea88521ecead47
+    metrics:
+      path: docs/itm_rework/protocol/canonical_b0_20260925_v3/metrics.json
+      sha256: 30a598ba54bcb65c0adad7c19b71fd55dc86699a461d73cef06946b5b6bfc8b5
+    requires:
+    - explicit new-schema method adapter and replay
+    - new train-only IMU normalization bound to checkpoint
+    - authorized budget and available GPU
+    does_not_require:
+    - compatible edit witness (later B branch)
+    - strict generated IMU closure (required only for strict IMU claims)
+freeze_requirements:
+- owner_01_interface_acceptance
+- B0_null_mask_sampler_correctness
+- physical_time_alignment
+- independent_semantic_and_quality_thresholds
+- witnesses_and_frozen_labels
+- explicit_GPU_budget
+- final_checkpoint_hash
+- sealed_source_groups_with_pretraining_disclosure
+previous_contract:
+  path: docs/itm_rework/protocol/contract_history/itm-rework-v0.2-draft.yaml
+  sha256: 528b7db8818600dff9516600a9c5ad0311870de93609e2bcadbe320ee4f0fadb
+method_interface:
+  accepted_method_commit: 55193655b1a8e7835de7e6bd96ed21122957641e
+  acceptance:
+    path: docs/itm_rework/protocol/method_acceptance_20260924_v2/acceptance.json
+    sha256: 84a678ec152199f6123823d264c89a15274bdd86f5184c65cdbe2da06da1c9ec
+  imu_tensor: B,T,6,12
+  sensor_mask: B,6 bool
+  frame_mask: B,T bool
+  timestamps: B,T seconds
+  presence: B bool independent from numeric values
+  strict_null: complete_residual_gate
+  sampling_length: each_clip_own_effective_length
+  B0_checkpoint_state: single_update_train_smoke_not_validation_qualified
+  formal_smoke_admission: false
+change_commit_resolution: git log -1 -- docs/itm_rework/contract.yaml; snapshot commit
+  does not freeze this draft
+scoped_data_products:
+  canonical_synthetic_B0_v1:
+    schema: canonical_smpl_paired_v1
+    mapping_version: canonical-smpl-pair-v1
+    package:
+      path: docs/itm_rework/protocol/canonical_b0_20260925_v3/package.json
+      sha256: 33de7fd98c1cf43fc5a51a7d35b502e154a233066efec13f17dda08bc53abe97
+    admission:
+      path: docs/itm_rework/protocol/canonical_b0_20260925_v3/admission.jsonl
+      sha256: 9fa1046c5bce7e25d507ac254d9f77a451ddf9ecd8c6a70309c79f611b6bf161
+    coordinate_scope: Offline GT-defined proper yaw plus translation; same source
+      SMPL male body shape for IMU and new HumanML263 target; no uniform-skeleton
+      retarget; real deployment calibration not certified.
+    clock: Exact 60/120Hz source; recorded dataset prefix; 20Hz target and 30Hz IMU
+      meet exactly at common 10Hz source times; endpoint and available source-tail
+      recorded.
+    root: First pelvis XZ zero, minimum whole-clip joint Y zero, smoothed anatomical
+      first heading to +Z; HumanML first root quaternion identity; full clip only.
+    admitted_train_groups: 3
+    admitted_val_groups: 3
+    semantic_scope: coarse action/order, single Codex GT review; uncertain object/finger
+      cases and directional contradiction excluded
+    legacy_cache_promotion: false
+    strict_generated_IMU_certified: false
+    method_interface_status: 01 adapter required; never relabel diagnostic/old NPZ
+      schema as standard
+freeze_requirements_scope: Existing freeze_requirements are for final multi-branch
+  research evidence; scoped B0 dependencies are separately specified in protocol.B0.

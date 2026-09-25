@@ -1,0 +1,21 @@
+{
+  "review_version": "canonical-b0-gt-review-v1",
+  "reviewer": "owner-02 Codex visual review; not a human annotation panel",
+  "evidence": "review/*.png: 16 fixed GT snapshots and all-frame kinematic traces; verification.json; source captions selected before geometry review",
+  "rule": "Admit a complete original caption only when its coarse bodily action and stated side/order are supported. Exclude uncertain object/finger details and contradictory direction. No replacement or post-output selection.",
+  "limitations": "Single model reviewer, no inter-rater agreement. These labels support a tiny synthetic B0 engineering benchmark, not semantic success thresholds or human validation. Gendered wording is inherited, not visually certified identity.",
+  "cases": [
+    {"motion_id":"000010","decision":"uncertain","reason":"Both hands rise and approach, but the 22-joint view does not establish right-hand patting contact on the left hand. Fine hand semantics not certified."},
+    {"motion_id":"000123","decision":"uncertain","reason":"Right hand rises to head after hands are together. Dialling, a phone, tossing it, and talking cannot be established from the skeletal evidence."},
+    {"motion_id":"000015","decision":"uncertain","reason":"Right arm lowers from head level while the torso bends, then the body straightens. A can and preparing to fight are not established."},
+    {"motion_id":"000506","decision":"admit","reason":"Opposite legs alternate front-step/lunge motion with pelvis lowering, followed by a deeper squat. Coarse original caption agrees with the full interval."},
+    {"motion_id":"004728","decision":"admit","reason":"Right (red) leg lifts behind while torso leans, stays high around 4.5–6.5 s, then lowers with a brief stance correction. Left ankle stays low. Original first caption matches the coarse sequence; alternative left-leg caption was not substituted."},
+    {"motion_id":"000027","decision":"admit","reason":"Forward arm thrust is followed by crouching, airborne turn and landing. Anatomical heading progresses through about one full rotation; original full-clip caption index 1 preserved."},
+    {"motion_id":"000133","decision":"uncertain","reason":"Run/jump/resumed travel visible, but the selected caption's explicit stop is not established. Half-second mean horizontal speeds are about 3.01, 3.00, 1.88, 0.51, 0.78, 2.37 m/s. No alternative caption substituted."},
+    {"motion_id":"000433","decision":"admit","reason":"Standing start, one right-leg kick cycle, and standing end are visible. Caption is side-neutral and agrees with the complete interval."},
+    {"motion_id":"000382","decision":"admit","reason":"Stationary body raises both arms; repeated hand approach/separation occurs from roughly 1.4–3.7 s before arms lower. Coarse clapping sequence is supported; finger contact/audio are not measured."},
+    {"motion_id":"000510","decision":"conflicting_direction","reason":"Right arm extends, but the right wrist remains on the anatomical right during 0.8–3.5 s. Projection onto the anatomical left axis has min/median/max -0.438/-0.346/-0.337 m, contrary to the caption's left-side claim. Preserve as a negative, do not swap labels."},
+    {"motion_id":"000134","decision":"uncertain","reason":"Right-arm throw-like motion and later left-foot lift are supported, but holding/throwing an object is not established by the skeleton."},
+    {"motion_id":"000139","decision":"admit","reason":"Initial standing/sway, forward alternating steps and arm swing are visible. Root rises about 0.64 m while walking: nonflat support/stairs context. The broad walking caption does not require level ground; flat-floor penetration/sliding scores are not applicable for this case."}
+  ]
+}

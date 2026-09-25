@@ -1,0 +1,659 @@
+{
+  "version": "canonical-smpl-pair-v1",
+  "read_commit": "1581ba66e81bc5baf7b85ff9f143ce8187ebf2eb",
+  "scope": "offline_synthetic_precanonicalized_source_SMPL_body_no_uniform_retarget",
+  "selection": "Previously fixed five prefix rebuild IDs plus train 000010; original fixed six val IDs. 000008 excluded before build: nonexact 120.0000458Hz; 000004 overlength; 000006 non-full caption. No replacement of rejected cases.",
+  "budget": {
+    "cases": 12,
+    "CPU_FK_calls": 24,
+    "max_frames_per_call": 300,
+    "threads": 2,
+    "gpu_jobs": 0,
+    "training_updates": 0,
+    "model_generations": 0
+  },
+  "gates": {
+    "source_fps": [
+      60,
+      120
+    ],
+    "max_feature_frames": 196,
+    "RIC_roundtrip_max_abs_m": 1e-05,
+    "rotation_orthogonality_max_abs": 2e-05,
+    "caption": "Full interval plus explicit visual semantic review; uncertainty excluded, no replacement"
+  },
+  "cases": [
+    {
+      "motion_id": "000010",
+      "split": "train",
+      "source_group_id": "AMASS/BMLmovi/Subject_52_F_MoSh/Subject_52_F_6_poses.npz",
+      "caption_index": 0,
+      "caption": "a man pats his left hand with his right hand.",
+      "frame_slice": [
+        0,
+        69
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/000010.txt",
+        "sha256": "7d4bc734bae276fc64358471bddc33bbf5094f27cfd52735b3ccf53454b6cf7d"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "source": {
+        "motion_id": "000010",
+        "split": "train",
+        "source_group_id": "AMASS/BMLmovi/Subject_52_F_MoSh/Subject_52_F_6_poses.npz",
+        "start_frame_20fps": 0,
+        "end_frame_20fps": 70,
+        "resolved_source_path": "/home/a200/mount/a40/datasets/AMASS/BMLmovi/Subject_52_F_MoSh/Subject_52_F_6_poses.npz",
+        "source_exists": true,
+        "index_source_matches_manifest": true,
+        "status": "index_resolved"
+      },
+      "source_fps": 120.0,
+      "source_frames": 417,
+      "prefix_seconds": 0,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/BMLmovi/Subject_52_F_MoSh/Subject_52_F_6_poses.npz",
+        "sha256": "fc8ae700c0e06849b48bae11c11e1ccd6b9eea32d598cb58a07649caf2493181"
+      },
+      "requested_source_slice": [
+        0,
+        420
+      ],
+      "available_source_slice": [
+        0,
+        417
+      ],
+      "last_required_20hz_endpoint_source_frame": 414,
+      "terminal_policy": "Read through available final frame only when all requested 20Hz samples including the velocity endpoint exist; record the missing sub-20Hz tail explicitly.",
+      "builder_end_frame_20fps": -1
+    },
+    {
+      "motion_id": "000123",
+      "split": "train",
+      "source_group_id": "AMASS/Eyes_Japan_Dataset/kudo/gesture_etc-23-mobile call-kudo_poses.npz",
+      "caption_index": 0,
+      "caption": "someone dials a number on a cellphone, tosses it up to their right ear, and begins to talk.",
+      "frame_slice": [
+        0,
+        140
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/000123.txt",
+        "sha256": "2df1b688752b61c41d5847e1bd191a2d361b0d1e4be7ac9a2d8efda8374ff268"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "source": {
+        "motion_id": "000123",
+        "split": "train",
+        "source_group_id": "AMASS/Eyes_Japan_Dataset/kudo/gesture_etc-23-mobile call-kudo_poses.npz",
+        "start_frame_20fps": 339,
+        "end_frame_20fps": 480,
+        "resolved_source_path": "/home/a200/mount/a40/datasets/AMASS/Eyes_Japan_Dataset/kudo/gesture_etc-23-mobile call-kudo_poses.npz",
+        "source_exists": true,
+        "index_source_matches_manifest": true,
+        "status": "index_resolved"
+      },
+      "source_fps": 120.0,
+      "source_frames": 3960,
+      "prefix_seconds": 3.0,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/Eyes_Japan_Dataset/kudo/gesture_etc-23-mobile call-kudo_poses.npz",
+        "sha256": "9ae2c6526573680ebc33493ee449cfa2596d5c15154352ee228ddcc5667ea5dd"
+      },
+      "requested_source_slice": [
+        2394,
+        3240
+      ],
+      "available_source_slice": [
+        2394,
+        3240
+      ],
+      "last_required_20hz_endpoint_source_frame": 3234,
+      "terminal_policy": "Read through available final frame only when all requested 20Hz samples including the velocity endpoint exist; record the missing sub-20Hz tail explicitly.",
+      "builder_end_frame_20fps": 540
+    },
+    {
+      "motion_id": "000015",
+      "split": "train",
+      "source_group_id": "AMASS/MPI_HDM05/mm/HDM_mm_08-01_01_120_poses.npz",
+      "caption_index": 0,
+      "caption": "a man sets a can on the ground and prepares to fight.",
+      "frame_slice": [
+        0,
+        151
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/000015.txt",
+        "sha256": "1c5dc32e92604fd13c2815dd74485946bd1ea8ad8a95d315fb69e21ec8cba45a"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "source": {
+        "motion_id": "000015",
+        "split": "train",
+        "source_group_id": "AMASS/MPI_HDM05/mm/HDM_mm_08-01_01_120_poses.npz",
+        "start_frame_20fps": 157,
+        "end_frame_20fps": 309,
+        "resolved_source_path": "/home/a200/mount/a40/datasets/AMASS/MPI_HDM05/mm/HDM_mm_08-01_01_120_poses.npz",
+        "source_exists": true,
+        "index_source_matches_manifest": true,
+        "status": "index_resolved"
+      },
+      "source_fps": 120.0,
+      "source_frames": 2450,
+      "prefix_seconds": 3.0,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/MPI_HDM05/mm/HDM_mm_08-01_01_120_poses.npz",
+        "sha256": "1e469290fabcf8d79f0c5581a25ff882fbb98d0b13d26df8d14e9e546c9e73ee"
+      },
+      "requested_source_slice": [
+        1302,
+        2214
+      ],
+      "available_source_slice": [
+        1302,
+        2214
+      ],
+      "last_required_20hz_endpoint_source_frame": 2208,
+      "terminal_policy": "Read through available final frame only when all requested 20Hz samples including the velocity endpoint exist; record the missing sub-20Hz tail explicitly.",
+      "builder_end_frame_20fps": 369
+    },
+    {
+      "motion_id": "000506",
+      "split": "train",
+      "source_group_id": "AMASS/TotalCapture/s3/rom2_poses.npz",
+      "caption_index": 0,
+      "caption": "a person warming up their legs by alternating legs by doing front step sqauts",
+      "frame_slice": [
+        0,
+        136
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/000506.txt",
+        "sha256": "c3d64936d20e0ad00b979c16c2826b1881312262736e0fe6bb0457eac64c0f61"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "source": {
+        "motion_id": "000506",
+        "split": "train",
+        "source_group_id": "AMASS/TotalCapture/s3/rom2_poses.npz",
+        "start_frame_20fps": 1536,
+        "end_frame_20fps": 1673,
+        "resolved_source_path": "/home/a200/mount/a40/datasets/AMASS/TotalCapture/s3/rom2_poses.npz",
+        "source_exists": true,
+        "index_source_matches_manifest": true,
+        "status": "index_resolved"
+      },
+      "source_fps": 60.0,
+      "source_frames": 5319,
+      "prefix_seconds": 1.0,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/TotalCapture/s3/rom2_poses.npz",
+        "sha256": "7d63a7fd869352077d4313218878ec34a19af6c214cc815b5ea0f38d572e76c1"
+      },
+      "requested_source_slice": [
+        4668,
+        5079
+      ],
+      "available_source_slice": [
+        4668,
+        5079
+      ],
+      "last_required_20hz_endpoint_source_frame": 5076,
+      "terminal_policy": "Read through available final frame only when all requested 20Hz samples including the velocity endpoint exist; record the missing sub-20Hz tail explicitly.",
+      "builder_end_frame_20fps": 1693
+    },
+    {
+      "motion_id": "004728",
+      "split": "train",
+      "source_group_id": "AMASS/MPI_Limits/03099/op2_poses.npz",
+      "caption_index": 0,
+      "caption": "he raises his right leg behind him and holds it while leaning forward, then lets it down and momentarily loses his balance.",
+      "frame_slice": [
+        0,
+        158
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/004728.txt",
+        "sha256": "ee39935149b04e8581132466b50532d942a0d03332c25972256c557ffd30ba34"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "source": {
+        "motion_id": "004728",
+        "split": "train",
+        "source_group_id": "AMASS/MPI_Limits/03099/op2_poses.npz",
+        "start_frame_20fps": 0,
+        "end_frame_20fps": 159,
+        "resolved_source_path": "/home/a200/mount/a40/datasets/AMASS/MPI_Limits/03099/op2_poses.npz",
+        "source_exists": true,
+        "index_source_matches_manifest": true,
+        "status": "index_resolved"
+      },
+      "source_fps": 120.0,
+      "source_frames": 1314,
+      "prefix_seconds": 1.0,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/MPI_Limits/03099/op2_poses.npz",
+        "sha256": "9ba9d09f22e8d9ca077f3c2e9e8e8f44a6a5a2f4505fb3bb60fe5d3704dcf048"
+      },
+      "requested_source_slice": [
+        120,
+        1074
+      ],
+      "available_source_slice": [
+        120,
+        1074
+      ],
+      "last_required_20hz_endpoint_source_frame": 1068,
+      "terminal_policy": "Read through available final frame only when all requested 20Hz samples including the velocity endpoint exist; record the missing sub-20Hz tail explicitly.",
+      "builder_end_frame_20fps": 179
+    },
+    {
+      "motion_id": "000027",
+      "split": "train",
+      "source_group_id": "AMASS/Transitions_mocap/mazen_c3d/punchkarate_jumpingtwist360_poses.npz",
+      "caption_index": 1,
+      "caption": "a person punches their first forward, then spins around",
+      "frame_slice": [
+        0,
+        104
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/000027.txt",
+        "sha256": "33c719e68b7d4bf15541c217499ddbf33a7f2e01bc8aac8ea9927d5abb029b04"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "source": {
+        "motion_id": "000027",
+        "split": "train",
+        "source_group_id": "AMASS/Transitions_mocap/mazen_c3d/punchkarate_jumpingtwist360_poses.npz",
+        "start_frame_20fps": 0,
+        "end_frame_20fps": 105,
+        "resolved_source_path": "/home/a200/mount/a40/datasets/AMASS/Transitions_mocap/mazen_c3d/punchkarate_jumpingtwist360_poses.npz",
+        "source_exists": true,
+        "index_source_matches_manifest": true,
+        "status": "index_resolved"
+      },
+      "source_fps": 120.0,
+      "source_frames": 928,
+      "prefix_seconds": 0.5,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/Transitions_mocap/mazen_c3d/punchkarate_jumpingtwist360_poses.npz",
+        "sha256": "de0aa55709dae915be6cf9945019d93ea19482708eaf15fc00fe4b8f0fef5d3c"
+      },
+      "requested_source_slice": [
+        60,
+        690
+      ],
+      "available_source_slice": [
+        60,
+        690
+      ],
+      "last_required_20hz_endpoint_source_frame": 684,
+      "terminal_policy": "Read through available final frame only when all requested 20Hz samples including the velocity endpoint exist; record the missing sub-20Hz tail explicitly.",
+      "builder_end_frame_20fps": 115
+    },
+    {
+      "motion_id": "000133",
+      "split": "val",
+      "source_group_id": "AMASS/CMU/127/127_22_poses.npz",
+      "caption_index": 1,
+      "caption": "a person runs and then jumps and stops, then continues to run forward.",
+      "frame_slice": [
+        0,
+        59
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/000133.txt",
+        "sha256": "160f37d09f1eb2919091c7fd7cee355828dae31f9659fb149bb26990c890e4cb"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "source": {
+        "motion_id": "000133",
+        "split": "val",
+        "source_group_id": "AMASS/CMU/127/127_22_poses.npz",
+        "start_frame_20fps": 0,
+        "end_frame_20fps": 60,
+        "resolved_source_path": "/home/a200/mount/a40/datasets/AMASS/CMU/127/127_22_poses.npz",
+        "source_exists": true,
+        "index_source_matches_manifest": true,
+        "status": "index_resolved"
+      },
+      "source_fps": 120.0,
+      "source_frames": 359,
+      "prefix_seconds": 0,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/CMU/127/127_22_poses.npz",
+        "sha256": "866440b3236e3dee02e349f0a553fa89082dff6e44fd9813e34c848fa76f97bb"
+      },
+      "requested_source_slice": [
+        0,
+        360
+      ],
+      "available_source_slice": [
+        0,
+        359
+      ],
+      "last_required_20hz_endpoint_source_frame": 354,
+      "terminal_policy": "Read through available final frame only when all requested 20Hz samples including the velocity endpoint exist; record the missing sub-20Hz tail explicitly.",
+      "builder_end_frame_20fps": -1
+    },
+    {
+      "motion_id": "000433",
+      "split": "val",
+      "source_group_id": "AMASS/BMLmovi/Subject_25_F_MoSh/Subject_25_F_9_poses.npz",
+      "caption_index": 0,
+      "caption": "this person is standing straight and kicks his leg out once and then stands normal.",
+      "frame_slice": [
+        0,
+        41
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/000433.txt",
+        "sha256": "96ce8ca7c3d16f817b5102c8e00b842847ad05900246891fe4c39b1cc5901bc5"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "source": {
+        "motion_id": "000433",
+        "split": "val",
+        "source_group_id": "AMASS/BMLmovi/Subject_25_F_MoSh/Subject_25_F_9_poses.npz",
+        "start_frame_20fps": 0,
+        "end_frame_20fps": 42,
+        "resolved_source_path": "/home/a200/mount/a40/datasets/AMASS/BMLmovi/Subject_25_F_MoSh/Subject_25_F_9_poses.npz",
+        "source_exists": true,
+        "index_source_matches_manifest": true,
+        "status": "index_resolved"
+      },
+      "source_fps": 120.0,
+      "source_frames": 249,
+      "prefix_seconds": 0,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/BMLmovi/Subject_25_F_MoSh/Subject_25_F_9_poses.npz",
+        "sha256": "a707dc34817d4090f7d769ba11a72fe1993cec8c51af6928c99f7816f87d21b2"
+      },
+      "requested_source_slice": [
+        0,
+        252
+      ],
+      "available_source_slice": [
+        0,
+        249
+      ],
+      "last_required_20hz_endpoint_source_frame": 246,
+      "terminal_policy": "Read through available final frame only when all requested 20Hz samples including the velocity endpoint exist; record the missing sub-20Hz tail explicitly.",
+      "builder_end_frame_20fps": -1
+    },
+    {
+      "motion_id": "000382",
+      "split": "val",
+      "source_group_id": "AMASS/BMLmovi/Subject_59_F_MoSh/Subject_59_F_20_poses.npz",
+      "caption_index": 0,
+      "caption": "a person standing in place claps their hands and then places arms back down at their sides.",
+      "frame_slice": [
+        0,
+        94
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/000382.txt",
+        "sha256": "7bbe4f6366e2f5ae9ef18b7bd1e59c4cf149b4303dc274aa261785b2dfdb200e"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "source": {
+        "motion_id": "000382",
+        "split": "val",
+        "source_group_id": "AMASS/BMLmovi/Subject_59_F_MoSh/Subject_59_F_20_poses.npz",
+        "start_frame_20fps": 0,
+        "end_frame_20fps": 95,
+        "resolved_source_path": "/home/a200/mount/a40/datasets/AMASS/BMLmovi/Subject_59_F_MoSh/Subject_59_F_20_poses.npz",
+        "source_exists": true,
+        "index_source_matches_manifest": true,
+        "status": "index_resolved"
+      },
+      "source_fps": 120.0,
+      "source_frames": 569,
+      "prefix_seconds": 0,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/BMLmovi/Subject_59_F_MoSh/Subject_59_F_20_poses.npz",
+        "sha256": "7de77d9c6e7e63bec47d7f67705b82279aa426e7189c8afc75cdfbcb33858c56"
+      },
+      "requested_source_slice": [
+        0,
+        570
+      ],
+      "available_source_slice": [
+        0,
+        569
+      ],
+      "last_required_20hz_endpoint_source_frame": 564,
+      "terminal_policy": "Read through available final frame only when all requested 20Hz samples including the velocity endpoint exist; record the missing sub-20Hz tail explicitly.",
+      "builder_end_frame_20fps": -1
+    },
+    {
+      "motion_id": "000510",
+      "split": "val",
+      "source_group_id": "AMASS/BMLmovi/Subject_74_F_MoSh/Subject_74_F_11_poses.npz",
+      "caption_index": 0,
+      "caption": "a person standing up indicates somthing on his left with his right arm.",
+      "frame_slice": [
+        0,
+        91
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/000510.txt",
+        "sha256": "184b9638ba261549269881e124396f07b012f354526667cb1c9ff041cc0605ef"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "source": {
+        "motion_id": "000510",
+        "split": "val",
+        "source_group_id": "AMASS/BMLmovi/Subject_74_F_MoSh/Subject_74_F_11_poses.npz",
+        "start_frame_20fps": 0,
+        "end_frame_20fps": 92,
+        "resolved_source_path": "/home/a200/mount/a40/datasets/AMASS/BMLmovi/Subject_74_F_MoSh/Subject_74_F_11_poses.npz",
+        "source_exists": true,
+        "index_source_matches_manifest": true,
+        "status": "index_resolved"
+      },
+      "source_fps": 120.0,
+      "source_frames": 549,
+      "prefix_seconds": 0,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/BMLmovi/Subject_74_F_MoSh/Subject_74_F_11_poses.npz",
+        "sha256": "f57a17fadc18fa552a8bf01d0a6cb0f237776b63e76ee3b15bde071def023b69"
+      },
+      "requested_source_slice": [
+        0,
+        552
+      ],
+      "available_source_slice": [
+        0,
+        549
+      ],
+      "last_required_20hz_endpoint_source_frame": 546,
+      "terminal_policy": "Read through available final frame only when all requested 20Hz samples including the velocity endpoint exist; record the missing sub-20Hz tail explicitly.",
+      "builder_end_frame_20fps": -1
+    },
+    {
+      "motion_id": "000134",
+      "split": "val",
+      "source_group_id": "AMASS/BMLhandball/S02_Novice/Trial_upper_right_057_poses.npz",
+      "caption_index": 0,
+      "caption": "a person holds something with both hands then throws it with their right hand and then lifts their left foot behind them.",
+      "frame_slice": [
+        0,
+        183
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/000134.txt",
+        "sha256": "6e77bdc03766581733699e9421d7d585030e230480dc2700f89475618474f6c0"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "source": {
+        "motion_id": "000134",
+        "split": "val",
+        "source_group_id": "AMASS/BMLhandball/S02_Novice/Trial_upper_right_057_poses.npz",
+        "start_frame_20fps": 0,
+        "end_frame_20fps": 184,
+        "resolved_source_path": "/home/a200/mount/a40/datasets/AMASS/BMLhandball/S02_Novice/Trial_upper_right_057_poses.npz",
+        "source_exists": true,
+        "index_source_matches_manifest": true,
+        "status": "index_resolved"
+      },
+      "source_fps": 120.0,
+      "source_frames": 1100,
+      "prefix_seconds": 0,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/BMLhandball/S02_Novice/Trial_upper_right_057_poses.npz",
+        "sha256": "43c9118dd74902983aa535433cc1058ad82ddb25044b664bcd3a3cea4ddac821"
+      },
+      "requested_source_slice": [
+        0,
+        1104
+      ],
+      "available_source_slice": [
+        0,
+        1100
+      ],
+      "last_required_20hz_endpoint_source_frame": 1098,
+      "terminal_policy": "Read through available final frame only when all requested 20Hz samples including the velocity endpoint exist; record the missing sub-20Hz tail explicitly.",
+      "builder_end_frame_20fps": -1
+    },
+    {
+      "motion_id": "000139",
+      "split": "val",
+      "source_group_id": "AMASS/CMU/84/84_18_poses.npz",
+      "caption_index": 0,
+      "caption": "a person stands facing down the path, casually swaying for a moment then proceeds to walk a few steps forward, swinging its arms casually.",
+      "frame_slice": [
+        0,
+        163
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/000139.txt",
+        "sha256": "0493d0562b42ce27658639f2e78fd4199b4e1bcd6ccc80be187ae0d3b43bb89b"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "source": {
+        "motion_id": "000139",
+        "split": "val",
+        "source_group_id": "AMASS/CMU/84/84_18_poses.npz",
+        "start_frame_20fps": 0,
+        "end_frame_20fps": 164,
+        "resolved_source_path": "/home/a200/mount/a40/datasets/AMASS/CMU/84/84_18_poses.npz",
+        "source_exists": true,
+        "index_source_matches_manifest": true,
+        "status": "index_resolved"
+      },
+      "source_fps": 60.0,
+      "source_frames": 492,
+      "prefix_seconds": 0,
+      "source_artifact": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/CMU/84/84_18_poses.npz",
+        "sha256": "0f6bbf2e41f51780768bc41c64f68e38b2889ff6ffa29ba06f23f70e995fe735"
+      },
+      "requested_source_slice": [
+        0,
+        492
+      ],
+      "available_source_slice": [
+        0,
+        492
+      ],
+      "last_required_20hz_endpoint_source_frame": 489,
+      "terminal_policy": "Read through available final frame only when all requested 20Hz samples including the velocity endpoint exist; record the missing sub-20Hz tail explicitly.",
+      "builder_end_frame_20fps": 164
+    }
+  ],
+  "inputs": [
+    {
+      "path": "docs/itm_rework/protocol/source_audit_20260924_v1/source_intervals.jsonl",
+      "sha256": "3f3a97038b1c9ef42df827d29452fdc508ee0d0684c6853c8ffbe2f2734cb78b"
+    },
+    {
+      "path": "docs/itm_rework/protocol/caption_audit_20260924_v1/full_clip_candidates.jsonl",
+      "sha256": "892772999945ee4931b78e3bd255965cd8d99a045c27439cfaf6a27117f29be5"
+    },
+    {
+      "path": "/home/a200/0relatedworks/IMUPoser/src/imuposer/smpl/basicmodel_m_lbs_10_207_0_v1.0.0.pkl",
+      "sha256": "0e8c0bbbbc635dcb166ed29c303fb4bef16ea5f623e5a89263495a9e403575bd"
+    }
+  ],
+  "code": [
+    {
+      "path": "/home/a200/0proj/ITM/scripts/build_canonical_b0_panel.py",
+      "sha256": "e5e07a0372eef2d25e736232297da13d83b9b895562ec76cc1c18a4a43b84eb1"
+    },
+    {
+      "path": "src/itm/data/canonical_pair.py",
+      "sha256": "9939a29dacd7d426ab1cb363de92dd0b44cb81c384891f68db54984d375efcfb"
+    },
+    {
+      "path": "scripts/build_standard_imu_cache.py",
+      "sha256": "f7904e82d48d6c4023602bf00e11577298f3af92582b677666cadee5f1526a5e"
+    },
+    {
+      "path": "src/itm/data/standard_imu.py",
+      "sha256": "3f4a6549374bd620ae9f3440cc4a7cf51942e4478c5dafeeaa9ae3582fb1b9a7"
+    },
+    {
+      "path": "src/itm/data/amass_bridge.py",
+      "sha256": "b4dbaa7f63e8c2e4f55c8e5f44aeeb14e0e5c864da8c548494399ced1c58f004"
+    },
+    {
+      "path": "src/itm/data/humanml_clock.py",
+      "sha256": "0729a9ebe2598fe9b96f708971d92bce56bde4cd4a14e22491ea5b5e2d247d12"
+    },
+    {
+      "path": "/home/a200/0relatedworks/motion-diffusion-model/data_loaders/humanml/common/skeleton.py",
+      "sha256": "34c674795febeb0d4cb8666b9a7be2611abafdbedcbb84abf4043fb8ff4e85ee"
+    },
+    {
+      "path": "/home/a200/0relatedworks/motion-diffusion-model/data_loaders/humanml/common/quaternion.py",
+      "sha256": "ea509fcce6b479453d0995dac23b3443304f36574f1843a193fefb00692a136a"
+    },
+    {
+      "path": "/home/a200/0relatedworks/motion-diffusion-model/data_loaders/humanml/utils/paramUtil.py",
+      "sha256": "fe0265f3dcd0d466690d816eae973fcece145f64551cef7e46fed7ef3de80d34"
+    },
+    {
+      "path": "/home/a200/0relatedworks/IMUPoser/src/imuposer/smpl/parametricModel.py",
+      "sha256": "275441939d8abdb95cd58c0f9b4ee1d36111a1b9a767432c45788c9ba1ca57e0"
+    }
+  ]
+}

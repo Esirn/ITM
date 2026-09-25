@@ -1,0 +1,7 @@
+{
+  "status": "Aborted: fps passed positionally to keyword-only second_difference; one FK call executed, no report.",
+  "log": {
+    "path": "docs/itm_rework/protocol/acceleration_numerics_20260925_v1/execution.log",
+    "sha256": "4795286c970bc19121cec333efb0ddc5bc64915f1de4c9bf08463141eeca1988"
+  }
+}

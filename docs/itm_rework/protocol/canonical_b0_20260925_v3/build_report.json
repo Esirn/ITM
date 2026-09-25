@@ -1,0 +1,28 @@
+{
+  "plan": {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/plan.json",
+    "sha256": "ef0f3313fb5f49d59275f68cac41ee0a16dd21c75ec563100a31bbc51d5b2a83"
+  },
+  "pairs": {
+    "path": "outputs/itm_rework/canonical_b0_20260925_v3/built_pairs.jsonl",
+    "sha256": "892ff12e469b48224531c174f71ba1ae130127e3e8db37ae8b1f7f73d4b6d700"
+  },
+  "cases": 12,
+  "max_RIC_error_m": 4.3954121320410877e-07,
+  "budget": {
+    "cases": 12,
+    "CPU_FK_calls": 24,
+    "max_frames_per_call": 300,
+    "threads": 2,
+    "gpu_jobs": 0,
+    "training_updates": 0,
+    "model_generations": 0
+  },
+  "training_admissible_count": 0,
+  "limitations": [
+    "Semantic review pending.",
+    "No retarget to historical HumanML uniform skeleton; this is a new synthetic dataset.",
+    "GT canonicalization offline only; no deployable IMU calibration.",
+    "RIC closure does not certify generated vertex acceleration or segment orientation."
+  ]
+}

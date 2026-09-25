@@ -1,0 +1,32 @@
+{
+  "version": "canonical-B0-delivery-v1",
+  "admission": {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/admission.jsonl",
+    "sha256": "9fa1046c5bce7e25d507ac254d9f77a451ddf9ecd8c6a70309c79f611b6bf161"
+  },
+  "build": {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/build_report.json",
+    "sha256": "e009e471a85a572aa025a61f6e02261fed768720be17e541d966cf868c3a81a9"
+  },
+  "verification": {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/verification.json",
+    "sha256": "b382182c4cb1ec0b3b0d2dde20170ffa41010257dadfdff7b0dcafe00204d196"
+  },
+  "semantic_review": {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/semantic_review.json",
+    "sha256": "149c4006bbdb2b6fb2cee6524e8e04e73ce37dff7d4f529d061ae3ff4641c5ec"
+  },
+  "budget": {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/b0_budget.json",
+    "sha256": "660b9f779eee1301f1bb92c30081c20e86248f76854f047f07ea88521ecead47"
+  },
+  "code": {
+    "path": "/home/a200/0proj/ITM/scripts/finalize_canonical_b0_panel.py",
+    "sha256": "9687dd55445bf3fec05fa53dc86a70cf80924f3d5aca9ca5d3e2ae19efbb275a"
+  },
+  "admitted_train": 3,
+  "admitted_val": 3,
+  "uncertain": 5,
+  "conflicting": 1,
+  "training_or_generation_executed": false
+}

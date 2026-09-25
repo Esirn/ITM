@@ -1,0 +1,16 @@
+{
+  "clips": 5,
+  "CPU_FK_calls": 20,
+  "threads": 2,
+  "max_frames_per_call": 300,
+  "dtypes": [
+    "float32",
+    "float64"
+  ],
+  "gpu_jobs": 0,
+  "training_updates": 0,
+  "tolerance_unchanged": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "status": "Superseded: differentiator was float64 but reused smoothing that casts to float32. Its full-f64 label is invalid; use v3.",
+  "log": {
+    "path": "docs/itm_rework/protocol/acceleration_numerics_20260925_v2/execution.log",
+    "sha256": "ed3d21ef97dfb15deaf223609cf43f3306a29bca109f8ad8bda0f5adff94d578"
+  }
+}

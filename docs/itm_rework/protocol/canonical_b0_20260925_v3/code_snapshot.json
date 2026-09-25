@@ -1,0 +1,36 @@
+{
+  "files": [
+    {
+      "path": "scripts/audit_acceleration_numerics.py",
+      "sha256": "8c15394451ffc062a3a9c981db7c447174a91378038ad72bf28def96d8a68579"
+    },
+    {
+      "path": "scripts/build_canonical_b0_panel.py",
+      "sha256": "e5e07a0372eef2d25e736232297da13d83b9b895562ec76cc1c18a4a43b84eb1"
+    },
+    {
+      "path": "scripts/check_canonical_b0_panel.py",
+      "sha256": "c1b60cef51f3cb7c988a107fb236570059970e16d1d0baef81d3468eac8b2df7"
+    },
+    {
+      "path": "scripts/audit_canonical_b0_geometry.py",
+      "sha256": "6e5059ee5439320f5bd69bc0358f6707d54a55d88a3c3babc27849d97905ff90"
+    },
+    {
+      "path": "scripts/render_canonical_b0_review.py",
+      "sha256": "db244aaed91979d89331af9ae03342f1844352ab19ed6cb3555cc84fcf9583ca"
+    },
+    {
+      "path": "scripts/finalize_canonical_b0_panel.py",
+      "sha256": "9687dd55445bf3fec05fa53dc86a70cf80924f3d5aca9ca5d3e2ae19efbb275a"
+    },
+    {
+      "path": "src/itm/data/canonical_pair.py",
+      "sha256": "be46e954797cf6533f27a0ea5a96b8156b853ad324c27ad07a34165bdc7457ba"
+    },
+    {
+      "path": "tests/test_canonical_pair.py",
+      "sha256": "36fe00956e5f280849f1ad6ab44dfcd9dc6cb63f04f5c2ee5c112bb91b0ff3b8"
+    }
+  ]
+}

@@ -1,0 +1,395 @@
+{
+  "kind": "fixed_acceleration_numerical_decomposition",
+  "budget": {
+    "clips": 5,
+    "CPU_FK_calls": 20,
+    "threads": 2,
+    "max_frames_per_call": 300,
+    "dtypes": [
+      "float32",
+      "float64"
+    ],
+    "gpu_jobs": 0,
+    "training_updates": 0,
+    "tolerance_unchanged": {
+      "atol": 0.0001,
+      "rtol": 0.0001
+    }
+  },
+  "cases": [
+    {
+      "motion_id": "000123",
+      "overlap_valid_frames": 116,
+      "stored_local_rotation_difference": {
+        "max_abs": 4.172325134277344e-07,
+        "rms": 2.4091089180528303e-08
+      },
+      "stored_translation_difference": {
+        "max_abs": 0.0,
+        "rms": 0.0
+      },
+      "stored_shape_difference": {
+        "max_abs": 0.0,
+        "rms": 0.0
+      },
+      "saved_overlap_acceleration": {
+        "max_abs": 0.00012874603271484375,
+        "rms": 2.680326070757734e-05,
+        "allclose_atol_1e-4_rtol_1e-4": false
+      },
+      "same_float32_mesh_with_float64_difference": {
+        "max_abs": 8.58306884765625e-05,
+        "rms": 1.5613272180027046e-05,
+        "allclose_atol_1e-4_rtol_1e-4": true
+      },
+      "float64_FK_and_difference": {
+        "max_abs": 7.875263690948486e-05,
+        "rms": 1.1380401025101345e-05,
+        "allclose_atol_1e-4_rtol_1e-4": true
+      },
+      "cache_replay": {
+        "old": {
+          "max_abs": 0.000171661376953125,
+          "rms": 2.202452229743204e-05,
+          "allclose_atol_1e-4_rtol_1e-4": false
+        },
+        "new": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        }
+      },
+      "components": {
+        "saved_vs_replayed_cache_gap": {
+          "max_abs": 0.000171661376953125,
+          "rms": 2.3425191696349207e-05
+        },
+        "float32_difference_and_smoothing": {
+          "max_abs": 0.00010728836059570312,
+          "rms": 1.4845967306735492e-05
+        },
+        "float32_FK_mesh_coordinates": {
+          "max_abs": 6.202980875968933e-05,
+          "rms": 1.1215267841500835e-05
+        },
+        "stored_input_difference_in_float64_FK": {
+          "max_abs": 7.875263690948486e-05,
+          "rms": 1.1380401025101345e-05
+        }
+      },
+      "component_sum_residual": {
+        "max_abs": 0.0,
+        "rms": 0.0
+      },
+      "arrays": {
+        "path": "docs/itm_rework/protocol/acceleration_numerics_20260925_v2/000123_components.npz",
+        "sha256": "d28b7b3b3fb0e6d6665e42261205e9ab1ff124a66e9475027bb3bce9886e4a0a"
+      }
+    },
+    {
+      "motion_id": "000015",
+      "overlap_valid_frames": 132,
+      "stored_local_rotation_difference": {
+        "max_abs": 4.172325134277344e-07,
+        "rms": 1.9407197263789022e-08
+      },
+      "stored_translation_difference": {
+        "max_abs": 0.0,
+        "rms": 0.0
+      },
+      "stored_shape_difference": {
+        "max_abs": 0.0,
+        "rms": 0.0
+      },
+      "saved_overlap_acceleration": {
+        "max_abs": 0.00012874603271484375,
+        "rms": 2.3414058376950707e-05,
+        "allclose_atol_1e-4_rtol_1e-4": false
+      },
+      "same_float32_mesh_with_float64_difference": {
+        "max_abs": 7.510185241699219e-05,
+        "rms": 1.1458543767268168e-05,
+        "allclose_atol_1e-4_rtol_1e-4": true
+      },
+      "float64_FK_and_difference": {
+        "max_abs": 2.5138258934020996e-05,
+        "rms": 4.0688761045290405e-06,
+        "allclose_atol_1e-4_rtol_1e-4": true
+      },
+      "cache_replay": {
+        "old": {
+          "max_abs": 0.000171661376953125,
+          "rms": 2.2944770447736323e-05,
+          "allclose_atol_1e-4_rtol_1e-4": false
+        },
+        "new": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        }
+      },
+      "components": {
+        "saved_vs_replayed_cache_gap": {
+          "max_abs": 0.00012874603271484375,
+          "rms": 2.1816920113687105e-05
+        },
+        "float32_difference_and_smoothing": {
+          "max_abs": 8.58306884765625e-05,
+          "rms": 1.1223922119161152e-05
+        },
+        "float32_FK_mesh_coordinates": {
+          "max_abs": 7.906556129455566e-05,
+          "rms": 1.0779937497541701e-05
+        },
+        "stored_input_difference_in_float64_FK": {
+          "max_abs": 2.5138258934020996e-05,
+          "rms": 4.0688761045290405e-06
+        }
+      },
+      "component_sum_residual": {
+        "max_abs": 0.0,
+        "rms": 0.0
+      },
+      "arrays": {
+        "path": "docs/itm_rework/protocol/acceleration_numerics_20260925_v2/000015_components.npz",
+        "sha256": "b2668a67b7e4569095833fb3b4b590898615359fd105da1f5bd435c5596ee8f5"
+      }
+    },
+    {
+      "motion_id": "000506",
+      "overlap_valid_frames": 170,
+      "stored_local_rotation_difference": {
+        "max_abs": 2.384185791015625e-07,
+        "rms": 1.3959455128905526e-08
+      },
+      "stored_translation_difference": {
+        "max_abs": 0.0,
+        "rms": 0.0
+      },
+      "stored_shape_difference": {
+        "max_abs": 0.0,
+        "rms": 0.0
+      },
+      "saved_overlap_acceleration": {
+        "max_abs": 0.00012874603271484375,
+        "rms": 1.7696186913413032e-05,
+        "allclose_atol_1e-4_rtol_1e-4": false
+      },
+      "same_float32_mesh_with_float64_difference": {
+        "max_abs": 6.437301635742188e-05,
+        "rms": 9.55952228432287e-06,
+        "allclose_atol_1e-4_rtol_1e-4": true
+      },
+      "float64_FK_and_difference": {
+        "max_abs": 2.631545066833496e-05,
+        "rms": 3.872353836897295e-06,
+        "allclose_atol_1e-4_rtol_1e-4": true
+      },
+      "cache_replay": {
+        "old": {
+          "max_abs": 0.00012874603271484375,
+          "rms": 1.5727075887388967e-05,
+          "allclose_atol_1e-4_rtol_1e-4": false
+        },
+        "new": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        }
+      },
+      "components": {
+        "saved_vs_replayed_cache_gap": {
+          "max_abs": 0.00012874603271484375,
+          "rms": 1.5883279193568062e-05
+        },
+        "float32_difference_and_smoothing": {
+          "max_abs": 8.58306884765625e-05,
+          "rms": 1.0297201479812961e-05
+        },
+        "float32_FK_mesh_coordinates": {
+          "max_abs": 5.078315734863281e-05,
+          "rms": 8.68926730351077e-06
+        },
+        "stored_input_difference_in_float64_FK": {
+          "max_abs": 2.631545066833496e-05,
+          "rms": 3.872353836897295e-06
+        }
+      },
+      "component_sum_residual": {
+        "max_abs": 0.0,
+        "rms": 0.0
+      },
+      "arrays": {
+        "path": "docs/itm_rework/protocol/acceleration_numerics_20260925_v2/000506_components.npz",
+        "sha256": "6c5c5bda7a268fe37024536956fb3837b7a9faa4ae1bf69077cc324aa0bfc347"
+      }
+    },
+    {
+      "motion_id": "004728",
+      "overlap_valid_frames": 203,
+      "stored_local_rotation_difference": {
+        "max_abs": 4.172325134277344e-07,
+        "rms": 2.0609024185314355e-08
+      },
+      "stored_translation_difference": {
+        "max_abs": 0.0,
+        "rms": 0.0
+      },
+      "stored_shape_difference": {
+        "max_abs": 0.0,
+        "rms": 0.0
+      },
+      "saved_overlap_acceleration": {
+        "max_abs": 0.0001291334629058838,
+        "rms": 2.4306816117637172e-05,
+        "allclose_atol_1e-4_rtol_1e-4": false
+      },
+      "same_float32_mesh_with_float64_difference": {
+        "max_abs": 0.0001185387372970581,
+        "rms": 1.65454358889989e-05,
+        "allclose_atol_1e-4_rtol_1e-4": false
+      },
+      "float64_FK_and_difference": {
+        "max_abs": 8.404254913330078e-05,
+        "rms": 1.1045177717838337e-05,
+        "allclose_atol_1e-4_rtol_1e-4": true
+      },
+      "cache_replay": {
+        "old": {
+          "max_abs": 0.00012874603271484375,
+          "rms": 1.8038665583226194e-05,
+          "allclose_atol_1e-4_rtol_1e-4": false
+        },
+        "new": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        }
+      },
+      "components": {
+        "saved_vs_replayed_cache_gap": {
+          "max_abs": 0.00012874603271484375,
+          "rms": 1.7887599851087882e-05
+        },
+        "float32_difference_and_smoothing": {
+          "max_abs": 0.00012874603271484375,
+          "rms": 1.4612558234046814e-05
+        },
+        "float32_FK_mesh_coordinates": {
+          "max_abs": 7.303804159164429e-05,
+          "rms": 1.1824536247920445e-05
+        },
+        "stored_input_difference_in_float64_FK": {
+          "max_abs": 8.404254913330078e-05,
+          "rms": 1.1045177717838337e-05
+        }
+      },
+      "component_sum_residual": {
+        "max_abs": 0.0,
+        "rms": 0.0
+      },
+      "arrays": {
+        "path": "docs/itm_rework/protocol/acceleration_numerics_20260925_v2/004728_components.npz",
+        "sha256": "7b7d39be2248c668bb11471a5cb74acaea894f64a7f027939ac33fb4625ac76a"
+      }
+    },
+    {
+      "motion_id": "000027",
+      "overlap_valid_frames": 137,
+      "stored_local_rotation_difference": {
+        "max_abs": 4.172325134277344e-07,
+        "rms": 1.7936356204110787e-08
+      },
+      "stored_translation_difference": {
+        "max_abs": 0.0,
+        "rms": 0.0
+      },
+      "stored_shape_difference": {
+        "max_abs": 0.0,
+        "rms": 0.0
+      },
+      "saved_overlap_acceleration": {
+        "max_abs": 0.00012874603271484375,
+        "rms": 2.3972546322575236e-05,
+        "allclose_atol_1e-4_rtol_1e-4": true
+      },
+      "same_float32_mesh_with_float64_difference": {
+        "max_abs": 6.4849853515625e-05,
+        "rms": 1.1988427464814306e-05,
+        "allclose_atol_1e-4_rtol_1e-4": true
+      },
+      "float64_FK_and_difference": {
+        "max_abs": 3.62396240234375e-05,
+        "rms": 5.318731470597254e-06,
+        "allclose_atol_1e-4_rtol_1e-4": true
+      },
+      "cache_replay": {
+        "old": {
+          "max_abs": 0.000171661376953125,
+          "rms": 2.16233603747686e-05,
+          "allclose_atol_1e-4_rtol_1e-4": false
+        },
+        "new": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        }
+      },
+      "components": {
+        "saved_vs_replayed_cache_gap": {
+          "max_abs": 0.000171661376953125,
+          "rms": 2.1958459979680507e-05
+        },
+        "float32_difference_and_smoothing": {
+          "max_abs": 8.630752563476562e-05,
+          "rms": 1.4323310418176429e-05
+        },
+        "float32_FK_mesh_coordinates": {
+          "max_abs": 6.389617919921875e-05,
+          "rms": 1.0722253913781068e-05
+        },
+        "stored_input_difference_in_float64_FK": {
+          "max_abs": 3.62396240234375e-05,
+          "rms": 5.318731470597254e-06
+        }
+      },
+      "component_sum_residual": {
+        "max_abs": 0.0,
+        "rms": 0.0
+      },
+      "arrays": {
+        "path": "docs/itm_rework/protocol/acceleration_numerics_20260925_v2/000027_components.npz",
+        "sha256": "80864299707702730932027c2edeb8afd71c2fbf44f8b3c73d24ed8912d81ddb"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "path": "docs/itm_rework/protocol/prefix_rebuild_20260925_v1/report.json",
+      "sha256": "331b980ab1c2738596df55d9e754ae5a129a71adcecfd173081441e3b21e3925"
+    },
+    {
+      "path": "/home/a200/0relatedworks/IMUPoser/src/imuposer/smpl/basicmodel_m_lbs_10_207_0_v1.0.0.pkl",
+      "sha256": "0e8c0bbbbc635dcb166ed29c303fb4bef16ea5f623e5a89263495a9e403575bd"
+    }
+  ],
+  "code": [
+    {
+      "path": "/home/a200/0proj/ITM/scripts/audit_acceleration_numerics.py",
+      "sha256": "8aa2ecefcce70716074c3204c9943d8ecb9dbbbe85a449a83b9f43cf3b6d7d3c"
+    },
+    {
+      "path": "src/itm/data/standard_imu.py",
+      "sha256": "3f4a6549374bd620ae9f3440cc4a7cf51942e4478c5dafeeaa9ae3582fb1b9a7"
+    },
+    {
+      "path": "/home/a200/0relatedworks/IMUPoser/src/imuposer/smpl/parametricModel.py",
+      "sha256": "275441939d8abdb95cd58c0f9b4ee1d36111a1b9a767432c45788c9ba1ca57e0"
+    }
+  ],
+  "limitations": [
+    "Float64 FK promotes the same stored float32 model/input values; it is a numerical diagnostic, not new physical truth.",
+    "Component magnitudes can cancel and must not be interpreted as additive percentages.",
+    "Original allclose failures and tolerance remain unchanged; no caches overwritten."
+  ]
+}

@@ -1,0 +1,409 @@
+{
+  "pairs": {
+    "path": "outputs/itm_rework/canonical_b0_20260925_v3/built_pairs.jsonl",
+    "sha256": "892ff12e469b48224531c174f71ba1ae130127e3e8db37ae8b1f7f73d4b6d700"
+  },
+  "cases": [
+    {
+      "motion_id": "000010",
+      "sheet": {
+        "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/review/000010.png",
+        "sha256": "bd922c1713e3466b822700a599a88c9d492b81d63f68b6ed430e31f9d0aec96f"
+      },
+      "frame_indices": [
+        0,
+        5,
+        9,
+        14,
+        18,
+        23,
+        27,
+        32,
+        36,
+        41,
+        45,
+        50,
+        54,
+        59,
+        63,
+        68
+      ],
+      "caption_index": 0,
+      "caption": "a man pats his left hand with his right hand.",
+      "review_status": "pending",
+      "hand_distance_min_max_m": [
+        0.18845806626314562,
+        0.6140756369300656
+      ],
+      "root_height_range_m": 0.0039446353912353516
+    },
+    {
+      "motion_id": "000123",
+      "sheet": {
+        "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/review/000123.png",
+        "sha256": "9c41ed3b60a06b7320c8fd8d182d51c2997dee14347dd8b28857a49e6dbb0e74"
+      },
+      "frame_indices": [
+        0,
+        9,
+        19,
+        28,
+        37,
+        46,
+        56,
+        65,
+        74,
+        83,
+        93,
+        102,
+        111,
+        120,
+        130,
+        139
+      ],
+      "caption_index": 0,
+      "caption": "someone dials a number on a cellphone, tosses it up to their right ear, and begins to talk.",
+      "review_status": "pending",
+      "hand_distance_min_max_m": [
+        0.10990634029019254,
+        0.7356528700672575
+      ],
+      "root_height_range_m": 0.002360403537750244
+    },
+    {
+      "motion_id": "000015",
+      "sheet": {
+        "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/review/000015.png",
+        "sha256": "639e5df64b22eb93877bc559dce7cb42715711b71a4a02311032a282a0486241"
+      },
+      "frame_indices": [
+        0,
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100,
+        110,
+        120,
+        130,
+        140,
+        150
+      ],
+      "caption_index": 0,
+      "caption": "a man sets a can on the ground and prepares to fight.",
+      "review_status": "pending",
+      "hand_distance_min_max_m": [
+        0.5614955100105751,
+        1.0257406209086077
+      ],
+      "root_height_range_m": 0.16153103113174438
+    },
+    {
+      "motion_id": "000506",
+      "sheet": {
+        "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/review/000506.png",
+        "sha256": "37d4f25d739fc4d2a31aff82fed01654103dc55951a8dd13dd67b6592d209256"
+      },
+      "frame_indices": [
+        0,
+        9,
+        18,
+        27,
+        36,
+        45,
+        54,
+        63,
+        72,
+        81,
+        90,
+        99,
+        108,
+        117,
+        126,
+        135
+      ],
+      "caption_index": 0,
+      "caption": "a person warming up their legs by alternating legs by doing front step sqauts",
+      "review_status": "pending",
+      "hand_distance_min_max_m": [
+        0.4710049251675844,
+        0.7157258935172212
+      ],
+      "root_height_range_m": 0.6159065067768097
+    },
+    {
+      "motion_id": "004728",
+      "sheet": {
+        "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/review/004728.png",
+        "sha256": "cf3cb2dd292efc0c93a1d8809f06647e509022373832748dfa85fa0c3d35bf2b"
+      },
+      "frame_indices": [
+        0,
+        10,
+        21,
+        31,
+        42,
+        52,
+        63,
+        73,
+        84,
+        94,
+        105,
+        115,
+        126,
+        136,
+        147,
+        157
+      ],
+      "caption_index": 0,
+      "caption": "he raises his right leg behind him and holds it while leaning forward, then lets it down and momentarily loses his balance.",
+      "review_status": "pending",
+      "hand_distance_min_max_m": [
+        0.5984878725940286,
+        1.4156300223145721
+      ],
+      "root_height_range_m": 0.058929443359375
+    },
+    {
+      "motion_id": "000027",
+      "sheet": {
+        "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/review/000027.png",
+        "sha256": "9ffde06e53a079f7c8e6c68e334aee0f5e50a3922b14a017f97fac49e1b5f463"
+      },
+      "frame_indices": [
+        0,
+        7,
+        14,
+        21,
+        27,
+        34,
+        41,
+        48,
+        55,
+        62,
+        69,
+        76,
+        82,
+        89,
+        96,
+        103
+      ],
+      "caption_index": 1,
+      "caption": "a person punches their first forward, then spins around",
+      "review_status": "pending",
+      "hand_distance_min_max_m": [
+        0.4186351319510456,
+        0.9840074780859526
+      ],
+      "root_height_range_m": 0.6865785121917725
+    },
+    {
+      "motion_id": "000133",
+      "sheet": {
+        "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/review/000133.png",
+        "sha256": "64174b1e9fbe62dd12d6b2c71befff43f992b9094d70f1aa7614fee25dcda497"
+      },
+      "frame_indices": [
+        0,
+        4,
+        8,
+        12,
+        15,
+        19,
+        23,
+        27,
+        31,
+        35,
+        39,
+        43,
+        46,
+        50,
+        54,
+        58
+      ],
+      "caption_index": 1,
+      "caption": "a person runs and then jumps and stops, then continues to run forward.",
+      "review_status": "pending",
+      "hand_distance_min_max_m": [
+        0.39875498753684147,
+        1.0682726770044328
+      ],
+      "root_height_range_m": 0.518677830696106
+    },
+    {
+      "motion_id": "000433",
+      "sheet": {
+        "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/review/000433.png",
+        "sha256": "274d7a26ac47b209a706503b713bb935fe539511cf910f33d3ddca5f249e7840"
+      },
+      "frame_indices": [
+        0,
+        3,
+        5,
+        8,
+        11,
+        13,
+        16,
+        19,
+        21,
+        24,
+        27,
+        29,
+        32,
+        35,
+        37,
+        40
+      ],
+      "caption_index": 0,
+      "caption": "this person is standing straight and kicks his leg out once and then stands normal.",
+      "review_status": "pending",
+      "hand_distance_min_max_m": [
+        0.4367963225885468,
+        0.7226014349582652
+      ],
+      "root_height_range_m": 0.01832491159439087
+    },
+    {
+      "motion_id": "000382",
+      "sheet": {
+        "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/review/000382.png",
+        "sha256": "82ab078be3af3dc10936c13688788633bf057a627f55b515640b09f679d5a181"
+      },
+      "frame_indices": [
+        0,
+        6,
+        12,
+        19,
+        25,
+        31,
+        37,
+        43,
+        50,
+        56,
+        62,
+        68,
+        74,
+        81,
+        87,
+        93
+      ],
+      "caption_index": 0,
+      "caption": "a person standing in place claps their hands and then places arms back down at their sides.",
+      "review_status": "pending",
+      "hand_distance_min_max_m": [
+        0.09868716304062501,
+        0.7513009703821331
+      ],
+      "root_height_range_m": 0.008031964302062988
+    },
+    {
+      "motion_id": "000510",
+      "sheet": {
+        "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/review/000510.png",
+        "sha256": "c840503d87fb6abc1d148183e4ef810b3c8fc24a443afd93e2b35569f1b8b660"
+      },
+      "frame_indices": [
+        0,
+        6,
+        12,
+        18,
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72,
+        78,
+        84,
+        90
+      ],
+      "caption_index": 0,
+      "caption": "a person standing up indicates somthing on his left with his right arm.",
+      "review_status": "pending",
+      "hand_distance_min_max_m": [
+        0.48781576116698333,
+        0.9593028844275462
+      ],
+      "root_height_range_m": 0.007593631744384766
+    },
+    {
+      "motion_id": "000134",
+      "sheet": {
+        "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/review/000134.png",
+        "sha256": "e71ea41635a4ae6ce15d894b5dd82efd49603383c0a20a360107886fe42792cc"
+      },
+      "frame_indices": [
+        0,
+        12,
+        24,
+        36,
+        49,
+        61,
+        73,
+        85,
+        97,
+        109,
+        121,
+        133,
+        146,
+        158,
+        170,
+        182
+      ],
+      "caption_index": 0,
+      "caption": "a person holds something with both hands then throws it with their right hand and then lifts their left foot behind them.",
+      "review_status": "pending",
+      "hand_distance_min_max_m": [
+        0.20018559950121528,
+        1.35438452080868
+      ],
+      "root_height_range_m": 0.1262379288673401
+    },
+    {
+      "motion_id": "000139",
+      "sheet": {
+        "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/review/000139.png",
+        "sha256": "03174236990e5ff085ab80852fc8ee320ef3e2140b28eb4744978f795158f3ae"
+      },
+      "frame_indices": [
+        0,
+        11,
+        22,
+        32,
+        43,
+        54,
+        65,
+        76,
+        86,
+        97,
+        108,
+        119,
+        130,
+        140,
+        151,
+        162
+      ],
+      "caption_index": 0,
+      "caption": "a person stands facing down the path, casually swaying for a moment then proceeds to walk a few steps forward, swinging its arms casually.",
+      "review_status": "pending",
+      "hand_distance_min_max_m": [
+        0.4870665463152064,
+        0.6585660796238638
+      ],
+      "root_height_range_m": 0.6574379205703735
+    }
+  ],
+  "code": {
+    "path": "/home/a200/0proj/ITM/scripts/render_canonical_b0_review.py",
+    "sha256": "db244aaed91979d89331af9ae03342f1844352ab19ed6cb3555cc84fcf9583ca"
+  },
+  "limitation": "GT contact sheets and all-frame traces; objects/fingers/fine timing not certified by a 22-joint skeleton."
+}
