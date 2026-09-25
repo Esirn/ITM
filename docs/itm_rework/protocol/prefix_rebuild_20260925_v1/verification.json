@@ -1,0 +1,8 @@
+{
+  "old_cache_hashes_unchanged_from_predeclared_probe": 5,
+  "diagnostic_cache_hashes_verified": 5,
+  "finite_acceleration_and_valid_rotations": 5,
+  "declared_diagnostic_schema_rejected_by_standard_reader": 5,
+  "training_admissible": false,
+  "scope": "Manifest-schema rejection only; no claim that the reader inspects embedded diagnostic metadata when a caller supplies a different schema."
+}

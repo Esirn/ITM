@@ -1,5 +1,8 @@
 # 会话 02 状态（更新于 2026-09-25）
 
+**最新前缀核查：**`PREFIX_ALIGNMENT_20260925.md` 固定每类两个 train-only 来源组，10/10 在相同公共帧上的前缀补偿 oracle yaw 残差下降，均值 0.1580 → 0.0173 m。每类首条另做 CPU 重建，5/5 诊断 cache 支持完整片段，原 cache 不变；重叠 acceleration 的既定 allclose 4/5 未通过，负结果保留。
+最终相关 13 测试通过，完成 5 次有预算的 SMPL FK；无扩散模型生成/训练/GPU。所有新 cache 为独立 diagnostic schema、training_admissible=false，未修改运行时源映射或生产 manifest，不能外推 2177 条均已认证。
+
 **最新时钟诊断：**`HUMANML_CLOCK_20260925.md` 记录 13 条 SSM 样本与 notebook 整数降采样规则的吻合：13/13 特征帧数匹配，13/13 在相同公共帧上的 oracle yaw 残差下降，逐片段均值 0.1030 → 0.0338 m。历史原始处理产物缺失，仍未认证部署时钟或世界系。
 另有 2177 条 train/val 来自 notebook 存在前缀裁剪、当前桥接未补偿的数据集；仅列为代码推导待查范围，非已确认错位数。新增诊断相关 17 测试通过；未改运行时映射/缓存，未训练生成。
 

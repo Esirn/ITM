@@ -1,0 +1,241 @@
+{
+  "version": "humanml-prefix-fixed-probes-v1",
+  "read_commit": "94398181b6935b0dd9b861f7f7f8a65de6eb9dbc",
+  "selection": "First two distinct train-exclusive sources per dataset, sorted motion ID; complete full-clip caption, <=196 frames and > prefix_nominal_frames+20; no geometry inspected.",
+  "cases": [
+    {
+      "motion_id": "000123",
+      "split": "train",
+      "source_group_id": "AMASS/Eyes_Japan_Dataset/kudo/gesture_etc-23-mobile call-kudo_poses.npz",
+      "caption_index": 0,
+      "caption": "someone dials a number on a cellphone, tosses it up to their right ear, and begins to talk.",
+      "frame_slice": [
+        0,
+        140
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/000123.txt",
+        "sha256": "2df1b688752b61c41d5847e1bd191a2d361b0d1e4be7ac9a2d8efda8374ff268"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "dataset": "Eyes_Japan_Dataset"
+    },
+    {
+      "motion_id": "000161",
+      "split": "train",
+      "source_group_id": "AMASS/Eyes_Japan_Dataset/yamaoka/tennis-18-catch netball-yamaoka_poses.npz",
+      "caption_index": 1,
+      "caption": "a person runs forward and tries to catch a ball down by his ankles, then he backs up and does the same thing over again.",
+      "frame_slice": [
+        0,
+        172
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/000161.txt",
+        "sha256": "ae41094c85a0815000b3c842eb5587d3769b93d5aa6a3cfd9f6f29cdd48b442a"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "dataset": "Eyes_Japan_Dataset"
+    },
+    {
+      "motion_id": "000015",
+      "split": "train",
+      "source_group_id": "AMASS/MPI_HDM05/mm/HDM_mm_08-01_01_120_poses.npz",
+      "caption_index": 0,
+      "caption": "a man sets a can on the ground and prepares to fight.",
+      "frame_slice": [
+        0,
+        151
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/000015.txt",
+        "sha256": "1c5dc32e92604fd13c2815dd74485946bd1ea8ad8a95d315fb69e21ec8cba45a"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "dataset": "MPI_HDM05"
+    },
+    {
+      "motion_id": "000165",
+      "split": "train",
+      "source_group_id": "AMASS/MPI_HDM05/mm/HDM_mm_05-02_01_120_poses.npz",
+      "caption_index": 0,
+      "caption": "a peraon bends down to tie his shoe and then stands back up.",
+      "frame_slice": [
+        0,
+        159
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/000165.txt",
+        "sha256": "34486eaa41e0f0edbb70b02ec8646df8bc03245975248c88fdc0d56aad1b7d37"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "dataset": "MPI_HDM05"
+    },
+    {
+      "motion_id": "000506",
+      "split": "train",
+      "source_group_id": "AMASS/TotalCapture/s3/rom2_poses.npz",
+      "caption_index": 0,
+      "caption": "a person warming up their legs by alternating legs by doing front step sqauts",
+      "frame_slice": [
+        0,
+        136
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/000506.txt",
+        "sha256": "c3d64936d20e0ad00b979c16c2826b1881312262736e0fe6bb0457eac64c0f61"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "dataset": "TotalCapture"
+    },
+    {
+      "motion_id": "004659",
+      "split": "train",
+      "source_group_id": "AMASS/TotalCapture/s5/freestyle3_poses.npz",
+      "caption_index": 0,
+      "caption": "a man is sitting down with arms and legs splayed out to the sides of his body.",
+      "frame_slice": [
+        0,
+        183
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/004659.txt",
+        "sha256": "e61b07196f7732f9641c97019896888b219d7e61397e870acaea7aaf55a0d019"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "dataset": "TotalCapture"
+    },
+    {
+      "motion_id": "004728",
+      "split": "train",
+      "source_group_id": "AMASS/MPI_Limits/03099/op2_poses.npz",
+      "caption_index": 0,
+      "caption": "he raises his right leg behind him and holds it while leaning forward, then lets it down and momentarily loses his balance.",
+      "frame_slice": [
+        0,
+        158
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/004728.txt",
+        "sha256": "ee39935149b04e8581132466b50532d942a0d03332c25972256c557ffd30ba34"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "dataset": "MPI_Limits"
+    },
+    {
+      "motion_id": "005546",
+      "split": "train",
+      "source_group_id": "AMASS/MPI_Limits/03101/ulr1c_poses.npz",
+      "caption_index": 0,
+      "caption": "the person does a yoga pose with their leg high in the air",
+      "frame_slice": [
+        0,
+        140
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/005546.txt",
+        "sha256": "27b4f146337e07b3c4220f7b71377985eae38df4d9099fed3026b6183213a45d"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "dataset": "MPI_Limits"
+    },
+    {
+      "motion_id": "000027",
+      "split": "train",
+      "source_group_id": "AMASS/Transitions_mocap/mazen_c3d/punchkarate_jumpingtwist360_poses.npz",
+      "caption_index": 1,
+      "caption": "a person punches their first forward, then spins around",
+      "frame_slice": [
+        0,
+        104
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/000027.txt",
+        "sha256": "33c719e68b7d4bf15541c217499ddbf33a7f2e01bc8aac8ea9927d5abb029b04"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "dataset": "Transitions_mocap"
+    },
+    {
+      "motion_id": "000415",
+      "split": "train",
+      "source_group_id": "AMASS/Transitions_mocap/mazen_c3d/punchkarate_longjump_poses.npz",
+      "caption_index": 0,
+      "caption": "someone punches the ground with their right hand, then makes a leap towards the right.",
+      "frame_slice": [
+        0,
+        119
+      ],
+      "text_artifact": {
+        "path": "/home/a200/0proj/datasets/all/texts/000415.txt",
+        "sha256": "0a791e7f8fd66f88c8b33ef19618f949ca14d6668958c2e732eb3ad4116739c4"
+      },
+      "status": "full_clip_interval_candidate_only",
+      "training_admissible": false,
+      "world_alignment_certified": false,
+      "semantic_alignment_certified": false,
+      "dataset": "Transitions_mocap"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "docs/itm_rework/protocol/caption_audit_20260924_v1/full_clip_candidates.jsonl",
+      "sha256": "892772999945ee4931b78e3bd255965cd8d99a045c27439cfaf6a27117f29be5"
+    },
+    {
+      "path": "docs/itm_rework/protocol/source_audit_20260924_v1/source_intervals.jsonl",
+      "sha256": "3f3a97038b1c9ef42df827d29452fdc508ee0d0684c6853c8ffbe2f2734cb78b"
+    }
+  ],
+  "budget": {
+    "cases": 10,
+    "clock_hypotheses": [
+      "nominal_20hz",
+      "stride_only",
+      "stride_and_prefix"
+    ],
+    "minimum_common_frames": 20,
+    "source_headers": 10,
+    "body_model_forwards": 0,
+    "model_generation": 0,
+    "training_updates": 0,
+    "gpu_jobs": 0
+  },
+  "code": [
+    {
+      "path": "/home/a200/0proj/ITM/scripts/audit_humanml_prefix.py",
+      "sha256": "eaabe424f91308ac0c22cdf77c065c024fe184bcc0eba46e6971756a01b8dd37"
+    },
+    {
+      "path": "src/itm/data/humanml_clock.py",
+      "sha256": "0729a9ebe2598fe9b96f708971d92bce56bde4cd4a14e22491ea5b5e2d247d12"
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "kind": "five_prefix_diagnostic_cache_rebuilds",
+  "budget": {
+    "clips": 5,
+    "selection": "first already-declared case in each dataset; no metric selection",
+    "motion_ids": [
+      "000123",
+      "000015",
+      "000506",
+      "004728",
+      "000027"
+    ],
+    "device": "cpu",
+    "torch_threads": 2,
+    "maximum_output_frames_per_clip": 300,
+    "body_model_forwards": 5,
+    "diffusion_forwards": 0,
+    "training_updates": 0,
+    "gpu_jobs": 0
+  },
+  "plan": {
+    "path": "docs/itm_rework/protocol/prefix_audit_20260925_v1/plan.json",
+    "sha256": "a88b583df3b49b9aab57d095a2fe577c039cfe60f89ddc3b1695ad1d8aa8da02"
+  },
+  "body_model": {
+    "path": "/home/a200/0relatedworks/IMUPoser/src/imuposer/smpl/basicmodel_m_lbs_10_207_0_v1.0.0.pkl",
+    "sha256": "0e8c0bbbbc635dcb166ed29c303fb4bef16ea5f623e5a89263495a9e403575bd"
+  },
+  "checks": [
+    {
+      "motion_id": "000123",
+      "dataset": "Eyes_Japan_Dataset",
+      "prefix_seconds": 3.0,
+      "feature_frames": 140,
+      "new_cache_frames": 212,
+      "full_feature_time_support": true,
+      "overlap_frames": 122,
+      "acceleration_stencil_radius_frames": 3,
+      "overlap_comparisons": {
+        "joints": {
+          "frames": 122,
+          "max_abs_difference": 3.5762786865234375e-07,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "orientation": {
+          "frames": 122,
+          "max_abs_difference": 5.960464477539062e-07,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "acceleration": {
+          "frames": 116,
+          "max_abs_difference": 0.00012874603271484375,
+          "allclose_atol_1e-4_rtol_1e-4": false
+        }
+      },
+      "full_clip_oracle_geometry": {
+        "root_relative_raw_mean_m": 0.2527077777099708,
+        "oracle_constant_yaw_mean_m": 0.044639033536740015,
+        "oracle_constant_yaw_p95_m": 0.13467004863066015,
+        "head_oracle_mean_m": 0.031698702039748484,
+        "wrists_oracle_mean_m": 0.0366720680766079,
+        "oracle_yaw_rad": 3.0861965397747113,
+        "fit_uses_complete_GT": true,
+        "permitted_as_deployable_input_transform": false
+      },
+      "diagnostic_cache": {
+        "path": "outputs/itm_rework/prefix_rebuild_20260925_v1/000123.npz",
+        "sha256": "6fea61ec70ea03caa142ce458d4ec1a82420af99f4039e89462fe34ddd7bf150"
+      },
+      "source": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/Eyes_Japan_Dataset/kudo/gesture_etc-23-mobile call-kudo_poses.npz",
+        "sha256": "9ae2c6526573680ebc33493ee449cfa2596d5c15154352ee228ddcc5667ea5dd"
+      },
+      "old_cache": {
+        "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/000123.npz",
+        "sha256": "fb9d67d1dcefef204d9521da85b67e2d054b70fdc41c76803bb23b416c76af0c"
+      },
+      "target": {
+        "path": "/home/a200/0proj/datasets/all/new_joints/000123.npy",
+        "sha256": "c1735f911614b7c9129a9edabc586e20726686872538191b26d191b0df56a151"
+      },
+      "original_index_crop": [
+        339,
+        480
+      ],
+      "explicit_shifted_crop": [
+        399,
+        540
+      ],
+      "training_admissible": false
+    },
+    {
+      "motion_id": "000015",
+      "dataset": "MPI_HDM05",
+      "prefix_seconds": 3.0,
+      "feature_frames": 151,
+      "new_cache_frames": 228,
+      "full_feature_time_support": true,
+      "overlap_frames": 138,
+      "acceleration_stencil_radius_frames": 3,
+      "overlap_comparisons": {
+        "joints": {
+          "frames": 138,
+          "max_abs_difference": 2.384185791015625e-07,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "orientation": {
+          "frames": 138,
+          "max_abs_difference": 3.5762786865234375e-07,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "acceleration": {
+          "frames": 132,
+          "max_abs_difference": 0.00012874603271484375,
+          "allclose_atol_1e-4_rtol_1e-4": false
+        }
+      },
+      "full_clip_oracle_geometry": {
+        "root_relative_raw_mean_m": 0.06855519262105426,
+        "oracle_constant_yaw_mean_m": 0.014370808717947596,
+        "oracle_constant_yaw_p95_m": 0.028203297239681215,
+        "head_oracle_mean_m": 0.04549206060362662,
+        "wrists_oracle_mean_m": 0.014839723662874177,
+        "oracle_yaw_rad": 0.34114332498569777,
+        "fit_uses_complete_GT": true,
+        "permitted_as_deployable_input_transform": false
+      },
+      "diagnostic_cache": {
+        "path": "outputs/itm_rework/prefix_rebuild_20260925_v1/000015.npz",
+        "sha256": "f65af2f643b2cd8a7f17c39d6965c41802f17da890838324e9f2d3eb448aa8f2"
+      },
+      "source": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/MPI_HDM05/mm/HDM_mm_08-01_01_120_poses.npz",
+        "sha256": "1e469290fabcf8d79f0c5581a25ff882fbb98d0b13d26df8d14e9e546c9e73ee"
+      },
+      "old_cache": {
+        "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/000015.npz",
+        "sha256": "9edb6323b9d0fbf3ac9c4f1253a898292d1864b0a04ff85143f0e0e0580218de"
+      },
+      "target": {
+        "path": "/home/a200/0proj/datasets/all/new_joints/000015.npy",
+        "sha256": "1140238c12a92bf7fd93807c1827eadcb8dd5ea05aa8b5f5ce03b6d37c401e56"
+      },
+      "original_index_crop": [
+        157,
+        309
+      ],
+      "explicit_shifted_crop": [
+        217,
+        369
+      ],
+      "training_admissible": false
+    },
+    {
+      "motion_id": "000506",
+      "dataset": "TotalCapture",
+      "prefix_seconds": 1.0,
+      "feature_frames": 136,
+      "new_cache_frames": 206,
+      "full_feature_time_support": true,
+      "overlap_frames": 176,
+      "acceleration_stencil_radius_frames": 3,
+      "overlap_comparisons": {
+        "joints": {
+          "frames": 176,
+          "max_abs_difference": 2.980232238769531e-07,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "orientation": {
+          "frames": 176,
+          "max_abs_difference": 2.980232238769531e-07,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "acceleration": {
+          "frames": 170,
+          "max_abs_difference": 0.00012874603271484375,
+          "allclose_atol_1e-4_rtol_1e-4": false
+        }
+      },
+      "full_clip_oracle_geometry": {
+        "root_relative_raw_mean_m": 0.01773662813985876,
+        "oracle_constant_yaw_mean_m": 0.015230068983448565,
+        "oracle_constant_yaw_p95_m": 0.03255056689547304,
+        "head_oracle_mean_m": 0.024911387191403657,
+        "wrists_oracle_mean_m": 0.015168069003662495,
+        "oracle_yaw_rad": 0.048022562836123474,
+        "fit_uses_complete_GT": true,
+        "permitted_as_deployable_input_transform": false
+      },
+      "diagnostic_cache": {
+        "path": "outputs/itm_rework/prefix_rebuild_20260925_v1/000506.npz",
+        "sha256": "ec728a9337919e1a245df909d8c4e564b7d4479c30b6c2dff350d0a5059816d2"
+      },
+      "source": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/TotalCapture/s3/rom2_poses.npz",
+        "sha256": "7d63a7fd869352077d4313218878ec34a19af6c214cc815b5ea0f38d572e76c1"
+      },
+      "old_cache": {
+        "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/000506.npz",
+        "sha256": "9f21bae5182cb5dbdbb43cb807b4c456533c18a3948c2c93bd39c9d879db8126"
+      },
+      "target": {
+        "path": "/home/a200/0proj/datasets/all/new_joints/000506.npy",
+        "sha256": "973de91555efad261fe075c8e83c7fb3fbd85320a208a2b5f7dc1eb586dac2ad"
+      },
+      "original_index_crop": [
+        1536,
+        1673
+      ],
+      "explicit_shifted_crop": [
+        1556,
+        1693
+      ],
+      "training_admissible": false
+    },
+    {
+      "motion_id": "004728",
+      "dataset": "MPI_Limits",
+      "prefix_seconds": 1.0,
+      "feature_frames": 158,
+      "new_cache_frames": 239,
+      "full_feature_time_support": true,
+      "overlap_frames": 209,
+      "acceleration_stencil_radius_frames": 3,
+      "overlap_comparisons": {
+        "joints": {
+          "frames": 209,
+          "max_abs_difference": 3.5762786865234375e-07,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "orientation": {
+          "frames": 209,
+          "max_abs_difference": 5.364418029785156e-07,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "acceleration": {
+          "frames": 203,
+          "max_abs_difference": 0.0001291334629058838,
+          "allclose_atol_1e-4_rtol_1e-4": false
+        }
+      },
+      "full_clip_oracle_geometry": {
+        "root_relative_raw_mean_m": 0.31033943449889834,
+        "oracle_constant_yaw_mean_m": 0.019620803470015432,
+        "oracle_constant_yaw_p95_m": 0.03535764908085873,
+        "head_oracle_mean_m": 0.04818467038224969,
+        "wrists_oracle_mean_m": 0.014855193100893102,
+        "oracle_yaw_rad": 1.3456236622069389,
+        "fit_uses_complete_GT": true,
+        "permitted_as_deployable_input_transform": false
+      },
+      "diagnostic_cache": {
+        "path": "outputs/itm_rework/prefix_rebuild_20260925_v1/004728.npz",
+        "sha256": "9871e4eac6a45cef9147c3688c04b93656d037eba4a1edf48d9cc83fb255d61b"
+      },
+      "source": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/MPI_Limits/03099/op2_poses.npz",
+        "sha256": "9ba9d09f22e8d9ca077f3c2e9e8e8f44a6a5a2f4505fb3bb60fe5d3704dcf048"
+      },
+      "old_cache": {
+        "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/004728.npz",
+        "sha256": "fd8bbbf8b0fb841c31815d151f9b127c3b2cf9e9f323b0e49b5929ac0a021737"
+      },
+      "target": {
+        "path": "/home/a200/0proj/datasets/all/new_joints/004728.npy",
+        "sha256": "fa5a141e0ca7015a15aa5d4b85f313c6bbeb2f342b0bc796dc5e58d34515ee6f"
+      },
+      "original_index_crop": [
+        0,
+        159
+      ],
+      "explicit_shifted_crop": [
+        20,
+        179
+      ],
+      "training_admissible": false
+    },
+    {
+      "motion_id": "000027",
+      "dataset": "Transitions_mocap",
+      "prefix_seconds": 0.5,
+      "feature_frames": 104,
+      "new_cache_frames": 158,
+      "full_feature_time_support": true,
+      "overlap_frames": 143,
+      "acceleration_stencil_radius_frames": 3,
+      "overlap_comparisons": {
+        "joints": {
+          "frames": 143,
+          "max_abs_difference": 2.980232238769531e-07,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "orientation": {
+          "frames": 143,
+          "max_abs_difference": 4.76837158203125e-07,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        },
+        "acceleration": {
+          "frames": 137,
+          "max_abs_difference": 0.00012874603271484375,
+          "allclose_atol_1e-4_rtol_1e-4": true
+        }
+      },
+      "full_clip_oracle_geometry": {
+        "root_relative_raw_mean_m": 0.012054426350245456,
+        "oracle_constant_yaw_mean_m": 0.010788366808352209,
+        "oracle_constant_yaw_p95_m": 0.024222676956105017,
+        "head_oracle_mean_m": 0.025684170367845403,
+        "wrists_oracle_mean_m": 0.01665178685336998,
+        "oracle_yaw_rad": -0.024731284269814253,
+        "fit_uses_complete_GT": true,
+        "permitted_as_deployable_input_transform": false
+      },
+      "diagnostic_cache": {
+        "path": "outputs/itm_rework/prefix_rebuild_20260925_v1/000027.npz",
+        "sha256": "f7784d0a5aad70e1e5a6dfcbfa1702d5d0652b2664e20ea58faa866c2fb72283"
+      },
+      "source": {
+        "path": "/home/a200/mount/a40/datasets/AMASS/Transitions_mocap/mazen_c3d/punchkarate_jumpingtwist360_poses.npz",
+        "sha256": "de0aa55709dae915be6cf9945019d93ea19482708eaf15fc00fe4b8f0fef5d3c"
+      },
+      "old_cache": {
+        "path": "/home/a200/0proj/ITM/outputs/standard_imu/train/000027.npz",
+        "sha256": "b015f7ef1eecdea51a3ba6ee852b22c3ad6c73185305996e6fdc0976bd8376d9"
+      },
+      "target": {
+        "path": "/home/a200/0proj/datasets/all/new_joints/000027.npy",
+        "sha256": "cb03f0fc902872b84dcfe978c2394d2318b0328a67c8afd8e689a1e8fd0d2345"
+      },
+      "original_index_crop": [
+        0,
+        105
+      ],
+      "explicit_shifted_crop": [
+        10,
+        115
+      ],
+      "training_admissible": false
+    }
+  ],
+  "code": [
+    {
+      "path": "/home/a200/0proj/ITM/scripts/check_prefix_cache_rebuild.py",
+      "sha256": "6be37dfd724d65c7b3a5a38dbeee4a7a210cda3e54ce94447ae829a74c4dce88"
+    },
+    {
+      "path": "scripts/build_standard_imu_cache.py",
+      "sha256": "f7904e82d48d6c4023602bf00e11577298f3af92582b677666cadee5f1526a5e"
+    },
+    {
+      "path": "src/itm/data/amass_bridge.py",
+      "sha256": "b4dbaa7f63e8c2e4f55c8e5f44aeeb14e0e5c864da8c548494399ced1c58f004"
+    },
+    {
+      "path": "src/itm/data/standard_imu.py",
+      "sha256": "3f4a6549374bd620ae9f3440cc4a7cf51942e4478c5dafeeaa9ae3582fb1b9a7"
+    }
+  ],
+  "limitations": [
+    "Diagnostic schema only; never a replacement manifest or training-admissible cache.",
+    "Full temporal support is not semantic, coordinate or generated-IMU closure certification.",
+    "Oracle yaw uses target GT and is forbidden at inference.",
+    "Five exact-FPS sources only; no full 2177-case migration or source FPS calibration."
+  ]
+}

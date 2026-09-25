@@ -1,0 +1,11 @@
+{"motion_id": "000123", "status": "estimated_on_common_frames", "common_frames": 81}
+{"motion_id": "000161", "status": "estimated_on_common_frames", "common_frames": 113}
+{"motion_id": "000015", "status": "estimated_on_common_frames", "common_frames": 92}
+{"motion_id": "000165", "status": "estimated_on_common_frames", "common_frames": 100}
+{"motion_id": "000506", "status": "estimated_on_common_frames", "common_frames": 117}
+{"motion_id": "004659", "status": "estimated_on_common_frames", "common_frames": 164}
+{"motion_id": "004728", "status": "estimated_on_common_frames", "common_frames": 139}
+{"motion_id": "005546", "status": "estimated_on_common_frames", "common_frames": 121}
+{"motion_id": "000027", "status": "estimated_on_common_frames", "common_frames": 95}
+{"motion_id": "000415", "status": "estimated_on_common_frames", "common_frames": 110}
+{"status_counts": {"estimated_on_common_frames": 10}, "prefix_lower": 10, "mean_m": {"nominal_20hz": 0.15796106690433268, "stride_only": 0.15796106690433265, "stride_and_prefix": 0.017250564499336565}}

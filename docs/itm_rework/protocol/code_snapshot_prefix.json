@@ -1,0 +1,23 @@
+{
+  "read_commit": "9439818",
+  "contract_version": "itm-rework-v0.2-draft",
+  "files": [
+    {
+      "path": "scripts/audit_humanml_prefix.py",
+      "sha256": "eaabe424f91308ac0c22cdf77c065c024fe184bcc0eba46e6971756a01b8dd37"
+    },
+    {
+      "path": "scripts/check_prefix_cache_rebuild.py",
+      "sha256": "6be37dfd724d65c7b3a5a38dbeee4a7a210cda3e54ce94447ae829a74c4dce88"
+    },
+    {
+      "path": "tests/test_humanml_prefix.py",
+      "sha256": "300c6dea976857c719c12bb189437585d3bddec3112cf233aae1781f4d22c049"
+    },
+    {
+      "path": "tests/test_prefix_cache_rebuild.py",
+      "sha256": "dffd9d3ddd3b128663d3888c02be8ae40a9eef727253633810dda6bbe9373d00"
+    }
+  ],
+  "change_commit_resolution": "git log -1 -- scripts/audit_humanml_prefix.py"
+}
