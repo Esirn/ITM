@@ -1,0 +1,104 @@
+{
+  "kind": "owner02_caption_input_acceptance",
+  "pipeline": "itm-method-caption-seconds-v3",
+  "method_commit": "1a7e887ae4c258cdd7325ca5853c2ff3001009d0",
+  "read_commit": "d360e914200b00d0a6ebb08efd1606a971d6b924",
+  "status": "input_interface_accepted_not_physical_alignment_certified",
+  "saved_method_report_reproduced_exactly": true,
+  "verified_snapshot_files": [
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/mdm_caption_conditions.py",
+      "sha256": "23ca05c2f6a8c4dbc02322960a4b9d75bc32fe67cd00eacf66c3fa3ea10cfa9d"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/train_mdm_imu_control.py",
+      "sha256": "19c795dc8a87eb27dc727b6c4163ccea41fb8b7e4b8a83d9e0677775ad91537e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/sample_mdm_imu_control.py",
+      "sha256": "f8345554a515305fdb48418b4eba40baf886bc9248f698875ed3ae4b20ab378e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/check_mdm_caption_handoff.py",
+      "sha256": "8e4398984667574d6cee32a4b0427834e95a010261a7a83f970c98a5b1d2d396"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/tests/test_mdm_caption_conditions.py",
+      "sha256": "05df48eec43cd6e9b793b08d28de2fdab7f88dcc81286e36d7dc28518f3a9e4a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/caption_time.py",
+      "sha256": "643e13290d14dfc6fde8e4067071739da17183123414b8db9263a7dc3674e082"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/mdm_conditions.py",
+      "sha256": "c16c9f3199fa3bdc9de2f01a048f2673901bd83dcd9af9926965748bbd9377ad"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/caption_plan_20260924_v1/cases.jsonl",
+      "sha256": "1e4fb4bf9ad455b1851c3534bb03969d134e4a3f3722537b2ba0ad41b65384ae"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/caption_audit_20260924_v1/time_support.json",
+      "sha256": "d0f1763252fab55fc726aee8979b596f39201011cfff3c26d32f7956b378b361"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/contract.yaml",
+      "sha256": "528b7db8818600dff9516600a9c5ad0311870de93609e2bcadbe320ee4f0fadb"
+    }
+  ],
+  "model_card_normalization_matches_checkpoint": true,
+  "checkpoint_training_contract": "itm-rework-v0.1-draft",
+  "counts": {
+    "passed_inputs": 18,
+    "passed_train_inputs": 6,
+    "passed_val_inputs": 12,
+    "blocked_inputs": 2,
+    "ssm_rejected": 13
+  },
+  "artifacts": [
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/code_snapshot_caption_v3.json",
+      "sha256": "9b593a4b279cc8851f82f37e6cb574685c07383f9f5f1df3a43f3e80d22f3b72"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/b0_smoke_model_card.json",
+      "sha256": "eea3d457b144a98f1e05871ce9767a349c4f871ae144bc77cf32963e1d60347f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/caption_input_20260925_v1.json",
+      "sha256": "5607419e7ee12c10c91246caec7496b8defc40dd9126611f770ab46a0865b583"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/CAPTION_HANDOFF_20260925.md",
+      "sha256": "f7c95319705b8663e76fdfcea2ee31cc0954a561e7f9190140d325aa44ea834f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/accept_caption_handoff.py",
+      "sha256": "2546a8b5d5927a2da2d1501fdfde42cf42362e6bed8122a47a7107ecf70974de"
+    },
+    {
+      "path": "docs/itm_rework/protocol/caption_acceptance_20260925_v1/input_replay.json",
+      "sha256": "5607419e7ee12c10c91246caec7496b8defc40dd9126611f770ab46a0865b583"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/b0_cpu_smoke_20260924_v1/model.pt",
+      "sha256": "623b16e6e22c09a2e6f8aaceaa635496b8afdde932ba0b3a3326eb7fbcbb00d9"
+    }
+  ],
+  "budget": {
+    "cpu_threads": 1,
+    "replay_timeout_seconds": 120,
+    "model_forwards": 0,
+    "normalization_recomputed": false,
+    "training_updates": 0,
+    "generated_samples": 0,
+    "gpu_jobs": 0
+  },
+  "limitations": [
+    "Nonzero source origins are covered by synthetic regression fixtures, not these fixed real plans.",
+    "No new checkpoint or promotion of old v0.1 training to the new input pipeline.",
+    "World/skeleton/caption semantics, SSM clocks, dataset prefixes and nonzero-crop root frames remain uncertified.",
+    "No compatible witness, threshold freeze, formal P/C/D result or training permission."
+  ]
+}

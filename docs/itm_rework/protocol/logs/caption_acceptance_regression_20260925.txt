@@ -1,0 +1,22 @@
+........................................................................ [ 66%]
+.....................................                                    [100%]
+=============================== warnings summary ===============================
+tests/test_mdm_rework.py: 8 warnings
+tests/test_mdm_imu_control.py: 2 warnings
+  /home/a200/miniconda3/envs/itm/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+    warnings.warn(
+
+tests/test_mdm_rework.py::test_strict_null_nonzero_bias_mixed_cache_and_exception_cleanup
+tests/test_mdm_rework.py::test_strict_cfg_sequential_batched_uncached_and_identities
+tests/test_mdm_rework.py::test_frozen_modes_gradients_and_dropout
+tests/test_mdm_rework.py::test_addressed_full_loop_is_batch_order_and_global_rng_independent
+tests/test_mdm_rework.py::test_semantic_response_step_keeps_teacher_frozen_and_modes
+tests/test_mdm_rework.py::test_film_baseline_strict_null_with_trained_bias
+tests/test_mdm_rework.py::test_training_dropout_combinations_and_missing_witness_guard
+tests/test_mdm_imu_control.py::MDMIMUControlTest::test_encoder_mask_and_zero_adapters
+tests/test_mdm_imu_control.py::MDMIMUControlTest::test_install_hook_preserves_mdm_call_signature
+  /home/a200/miniconda3/envs/itm/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+109 passed, 19 warnings in 1.75s
