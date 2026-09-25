@@ -30,6 +30,7 @@ from itm.models.mdm_imu_control import (
     make_text_imu_guidance_model,
 )
 from itm.models.torch_frame_baseline import require_torch
+from itm.models.mdm_caption_conditions import CAPTION_PIPELINE_VERSION, read_caption_plans, prepare_caption_input
 
 
 SENSOR_CONFIGS = {"head": (4,), "wrists": (0, 1)}
@@ -41,6 +42,8 @@ def parse_args():
     parser.add_argument("--control-checkpoint", required=True)
     parser.add_argument("--mdm-args", required=True)
     parser.add_argument("--standard-imu-manifest", required=True)
+    parser.add_argument("--caption-plan", help="Optional artifact-bound caption plan JSONL")
+    parser.add_argument("--motion-manifest", help="HumanML manifest required with --caption-plan")
     parser.add_argument("--spec", required=True, help="JSON list of case objects")
     parser.add_argument("--output", required=True)
     parser.add_argument(
@@ -92,12 +95,24 @@ def main():
         raise FileExistsError("Choose a new output run path")
     mean_path = Path(args.mean).resolve()
     std_path = Path(args.std).resolve()
+    caption_plans = read_caption_plans(Path(args.caption_plan).resolve()) if args.caption_plan else None
+    if caption_plans is not None and (not args.motion_manifest or args.time_policy != "crop_seconds"):
+        raise ValueError("Caption plans require --motion-manifest and crop_seconds")
+    motion_records = ({str(row["motion_id"]): row for row in read_jsonl(Path(args.motion_manifest).resolve())}
+                      if caption_plans is not None else None)
     control_state = torch.load(control_checkpoint_path, map_location="cpu", weights_only=True)
     mdm_checkpoint_path = (
         Path(args.mdm_checkpoint).resolve()
         if args.mdm_checkpoint
         else Path(control_state["mdm_checkpoint"]).resolve()
     )
+    cases = json.loads(spec_path.read_text())
+    if not isinstance(cases, list) or not cases:
+        raise ValueError("spec must contain a non-empty JSON list")
+    records = {str(row["motion_id"]): row for row in read_jsonl(manifest_path)}
+    loaded = [_load_case(case, records, control_state["imu_normalization"], time_policy=args.time_policy,
+                         caption_plan=(caption_plans[str(case.get("target_motion_id", case["motion_id"]))] if caption_plans is not None else None),
+                         motion_records=motion_records) for case in cases]
     mdm_options = json.loads(mdm_args_path.read_text())
     _set_mdm_compatibility_defaults(mdm_options)
     root = Path(args.mdm_root).resolve()
@@ -126,11 +141,6 @@ def main():
     guided_model.to(device)
     guided_model.eval()
 
-    cases = json.loads(spec_path.read_text())
-    if not isinstance(cases, list) or not cases:
-        raise ValueError("spec must contain a non-empty JSON list")
-    records = {str(row["motion_id"]): row for row in read_jsonl(manifest_path)}
-    loaded = [_load_case(case, records, control_state["imu_normalization"], time_policy=args.time_policy) for case in cases]
     original_lengths = [len(case["imu"]) for case in loaded]
     effective_lengths = [min(length, 196) for length in original_lengths]
     frame_count = max(effective_lengths)
@@ -204,7 +214,7 @@ def main():
         "effective_control_config": config.__dict__,
         "time_policy": args.time_policy,
         "input_contract_version": INPUT_CONTRACT_VERSION,
-        "input_pipeline_version": INPUT_PIPELINE_VERSION,
+        "input_pipeline_version": CAPTION_PIPELINE_VERSION if caption_plans is not None else INPUT_PIPELINE_VERSION,
         "alignment_status": "uncertified_diagnostic",
         "sampler": "ddpm", "steps": diffusion.num_timesteps,
         "random_plan_mode": args.random_plan, "random_plans": plans,
@@ -244,7 +254,11 @@ def main():
     return 0
 
 
-def _load_case(case, records, normalization, *, time_policy="crop_seconds"):
+def _load_case(case, records, normalization, *, time_policy="crop_seconds", caption_plan=None, motion_records=None):
+    if caption_plan is not None:
+        if time_policy != "crop_seconds":
+            raise ValueError("Caption plans require crop_seconds")
+        return _load_caption_case(case, records, normalization, caption_plan, motion_records)
     motion_id = str(case.get("target_motion_id", case["motion_id"]))
     imu_motion_id = str(case.get("imu_motion_id", case["motion_id"]))
     for role, value in (("target", motion_id), ("IMU", imu_motion_id)):
@@ -325,6 +339,51 @@ def _load_case(case, records, normalization, *, time_policy="crop_seconds"):
         "raw_orientation": orientation,
         "gt": gt,
     }
+
+
+def _load_caption_case(case, records, normalization, plan, motion_records):
+    mid = str(case.get("target_motion_id", case["motion_id"]))
+    if motion_records is None or mid not in motion_records:
+        raise ValueError("Caption sampling requires the corresponding HumanML manifest record")
+    config_name = case.get("sensor_config", "head")
+    if config_name not in SENSOR_CONFIGS or config_name not in plan["sensor_configs"]:
+        raise ValueError("Sensor configuration absent from caption plan")
+    if str(case.get("imu_motion_id", mid)) != mid or case.get("imu_mode") == "shuffled":
+        raise ValueError("Caption-plan shuffled donors require a separately specified time mapping")
+    item = prepare_caption_input(plan, motion_records[mid], records[mid], normalization, workspace_root=ROOT)
+    frames = len(item["imu"])
+    if "length" in case and case["length"] != frames:
+        raise ValueError("Requested length differs from complete caption interval; no silent crop")
+    if "text" in case and case["text"] != item["caption"]:
+        raise ValueError("Requested text differs from planned caption; edits require a separate reviewed plan")
+    if not item["cache_sensor_mask"][list(SENSOR_CONFIGS[config_name])].all():
+        raise ValueError("Requested sensors are absent from cache")
+    mode = case.get("imu_mode", "paired")
+    if mode not in {"paired", "null", "zero", "static"}:
+        raise ValueError("Unknown caption-plan IMU mode")
+    acceleration, orientation, imu = item["acceleration"], item["orientation"], item["imu"]
+    fixture_metadata = None
+    if mode == "static":
+        fixture = static_imu_fixture(frames=frames, fps=20., sensor_config=config_name,
+                                     normalization=normalization, orientations=case.get("static_orientations"))
+        acceleration, orientation, imu = fixture["acceleration"], fixture["orientation"], fixture["imu"]
+        fixture_metadata = fixture["metadata"]
+    elif mode == "zero":
+        imu = np.zeros_like(imu)
+    path = Path(records[mid]["imu_path"])
+    with np.load(path if path.is_absolute() else ROOT / path, allow_pickle=False) as data:
+        gt = resample_positions_at_times(data["joints"], np.arange(len(data["joints"])) / float(data["fps"]),
+                                         item["source_times_seconds"]).astype(np.float32)
+    return {**case, "motion_id": mid, "target_motion_id": mid, "imu_motion_id": mid,
+            "imu_mode": mode, "text": item["caption"], "label": str(case.get("label", mid)),
+            "sensor_config": config_name, "sensor_mask": sensor_mask(SENSOR_CONFIGS[config_name], sensor_count=6),
+            "imu": imu, "raw_acceleration": acceleration, "raw_orientation": orientation, "gt": gt,
+            "fps": 20., "time_policy": "caption_interval", "requested_length": frames,
+            "truncated_at_model_limit": False, "physical_static_fixture": fixture_metadata,
+            "input_metadata": item["input_metadata"],
+            "time_interval_seconds": item["input_metadata"]["time_interval_seconds"],
+            "clock_reference": item["input_metadata"]["clock_reference"],
+            "input_pipeline_version": CAPTION_PIPELINE_VERSION}
 
 
 def _fit_length_linear(values, target_length):

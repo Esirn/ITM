@@ -25,6 +25,9 @@ from itm.models.mdm_conditions import (
 from itm.models.mdm_imu_control import (MDMIMUControlConfig, install_imu_control,
     configure_control_training, evaluating_preserving_modes)
 from itm.models.torch_frame_baseline import require_torch
+from itm.models.mdm_caption_conditions import (
+    CAPTION_PIPELINE_VERSION, read_caption_plans, prepare_caption_input, require_caption_training_admission,
+)
 
 
 SENSOR_CONFIGS = {"head": (4,), "wrists": (0, 1)}
@@ -68,6 +71,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--diffusion-loss-weight", type=float, default=1.0)
     parser.add_argument("--trajectory-space", choices=("global_joint_proxy", "root_relative_joint_proxy"), default="global_joint_proxy")
     parser.add_argument("--derivative-units", choices=("legacy_frame", "seconds"), default="seconds")
+    parser.add_argument("--caption-plan", help="Explicit owner-02 caption plan; unadmitted plans are input-check only")
     parser.add_argument("--response-manifest", help="Owner-02 train-only compatible arm_spread_m witness JSONL")
     parser.add_argument("--response-loss-weight", type=float, default=0.0)
     parser.add_argument("--response-proxy-weight", type=float, default=0.0)
@@ -88,6 +92,11 @@ def main() -> int:
                          "Use --allow-unsynchronized-diagnostic only for explicitly labelled diagnostics.")
     if not 0 <= args.text_drop_probability <= 1:
         raise ValueError("Invalid text dropout probability")
+    caption_plans = None
+    if args.caption_plan:
+        caption_plans = {mid: row for mid, row in read_caption_plans(Path(args.caption_plan).resolve()).items()
+                         if row["split"] == "train"}
+        require_caption_training_admission(caption_plans)
     torch = require_torch()
     random.seed(args.seed)
     np.random.seed(args.seed)
@@ -156,6 +165,7 @@ def main() -> int:
         configs,
         args.max_records,
         workspace_root,
+        caption_plans=caption_plans,
     )
     normalization = dataset.compute_normalization()
     dataset.set_normalization(normalization)
@@ -334,7 +344,7 @@ def main() -> int:
 
 
 class _PairedDataset:
-    def __init__(self, manifest, imu_manifest, mean, std, configs, limit, workspace_root):
+    def __init__(self, manifest, imu_manifest, mean, std, configs, limit, workspace_root, *, caption_plans=None):
         motion_dataset = TextIMUMotionDataset(
             manifest, load_joints=False, load_joint_vec=True, load_imu=False
         )
@@ -343,6 +353,12 @@ class _PairedDataset:
         sample_indices = {str(record["motion_id"]): index for index, record in enumerate(motion_dataset.records)}
         imu_records = {str(record["motion_id"]): record for record in read_jsonl(imu_manifest)}
         common = sorted(set(sample_indices) & set(imu_records))
+        if caption_plans is not None:
+            if set(caption_plans) - set(common):
+                raise ValueError("Caption plan references unavailable train/IMU records")
+            common = [mid for mid in common if mid in caption_plans]
+        self.caption_plans = caption_plans
+        self.motion_records = {str(r["motion_id"]): r for r in motion_dataset.records}
         if limit is not None:
             common = common[:limit]
         samples = {mid: motion_dataset[sample_indices[mid]] for mid in common}
@@ -359,6 +375,19 @@ class _PairedDataset:
 
     def __getitem__(self, index):
         sample, imu_record, config_name, slots = self.items[index]
+        if getattr(self, "caption_plans", None) is not None:
+            mid = str(sample["motion_id"])
+            plan = self.caption_plans[mid]
+            if config_name not in plan["sensor_configs"]:
+                raise ValueError("Sensor configuration absent from caption plan")
+            item = prepare_caption_input(plan, self.motion_records[mid], imu_record, self.normalization,
+                                         workspace_root=self.workspace_root)
+            if not item["cache_sensor_mask"][list(slots)].all():
+                raise ValueError("Requested sensors are absent from cache")
+            return {"motion_id": mid, "motion": (item["motion"] - self.mean) / self.std,
+                    "imu": item["imu"], "sensor_mask": sensor_mask(slots, sensor_count=6),
+                    "caption": item["caption"], "sensor_config": config_name,
+                    "timestamps_seconds": item["model_times_seconds"], "input_metadata": item["input_metadata"]}
         motion = (np.asarray(sample["motion"], dtype=np.float32) - self.mean) / self.std
         cache = load_method_cache(imu_record, workspace_root=self.workspace_root)
         length = min(len(motion), 196)
@@ -403,8 +432,14 @@ class _PairedDataset:
             seen.add(path)
             if record.get("split") != "train":
                 raise ValueError("IMU normalization requires train-only records")
-            cache = load_method_cache(record, workspace_root=self.workspace_root)
-            acceleration = cache["acceleration"].astype(np.float64)
+            if self.caption_plans is not None:
+                mid = str(record["motion_id"])
+                item = prepare_caption_input(self.caption_plans[mid], self.motion_records[mid], record, None,
+                                             workspace_root=self.workspace_root)
+                acceleration = item["acceleration"].astype(np.float64)
+            else:
+                cache = load_method_cache(record, workspace_root=self.workspace_root)
+                acceleration = cache["acceleration"].astype(np.float64)
             total += acceleration.sum(0)
             squared += np.square(acceleration).sum(0)
             count += len(acceleration)
@@ -533,6 +568,8 @@ def validate_response_intervals(rows, metadata):
     if len(rows) != len(metadata):
         raise ValueError("One witness interval per training sample required")
     for row, item in zip(rows, metadata):
+        if item.get("source_time_origin_seconds", 0.0) != 0.0:
+            raise ValueError("Nonzero caption crop requires separate witness/root-frame certification")
         times = row.get("timestamps", {})
         count = times.get("frames")
         if (times.get("clock") != "HumanML_clip_local_seconds" or times.get("fps") != 20.0
@@ -780,7 +817,7 @@ def _save_checkpoint(
     torch.save(
         {
             "checkpoint_schema": "itm-control-v2",
-            "input_pipeline_version": INPUT_PIPELINE_VERSION,
+            "input_pipeline_version": CAPTION_PIPELINE_VERSION if args.caption_plan else INPUT_PIPELINE_VERSION,
             "contract_version": args.contract_version,
             "alignment_status": "uncertified_diagnostic",
             "resume_semantics": "weights_and_normalization_only_fresh_optimizer",

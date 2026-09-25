@@ -58,3 +58,8 @@ B 训练使用同一训练 CLI；在 02 提供合法 train witness 后添加
 
 新增实际命令和版本差异见 FOLLOWUP_V02.md。输入脚本成功检查 6 个 train/config 项、6 条 val、2 种静止输入，模型前向 0。
 48 项相关回归通过，日志 logs/input_followup_v2.txt。没有重新训练或重新完整采样，首批命令/产物保持历史版本。
+
+## 2026-09-25 caption 接口
+
+本次两条实际命令、限定输入范围和结果见 CAPTION_HANDOFF_20260925.md。
+68 项测试通过，日志 logs/caption_input_20260925.txt；数据检查无模型执行，未重训或采样。

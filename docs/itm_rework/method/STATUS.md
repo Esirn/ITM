@@ -1,3 +1,21 @@
+# 01 STATUS — caption 计划接入（2026-09-25）
+
+读取 `9439818`；公共契约 v0.2-draft 未冻结。已完成显式 caption sidecar 消费，opt-in 管线
+`itm-method-caption-seconds-v3`；原 seconds-v2 路径/历史产物保留。
+
+- 严格绑定 artifact hash、caption index、半开区间与双时间轴；IMU 使用源秒轴，encoder 使用归零模型秒轴。
+- 固定 10 个来源各 head/wrists：9 个通过、000004 的 199 帧全段保持阻塞；000006 实际 100 帧；000133 保留索引 1 / 59 帧。
+- 已锁定 13 条 SSM 短输入全部继续拒绝。时钟 notebook 诊断没有进入部署/训练映射。
+- 未准入 caption 计划在训练 CLI 的模型/设备初始化前拒绝；非零起点不能复用未重审的 B witness。
+- 68 项相关测试通过；真实输入检查无模型前向、训练更新、生成或 GPU 作业。
+
+详情/命令：CAPTION_HANDOFF_20260925.md；逐条结果：caption_input_20260925_v1.json；
+代码快照：code_snapshot_caption_v3.json。没有修改 02 文件或旧 checkpoint/结果。
+G2 仍只有旧单 update smoke；物理时钟/坐标/骨架/根参考与语义认证、相容 witness、阈值及预算仍阻塞正式 B0/B/C。
+下面保留之前各批状态，不能将历史未完成项/运行范围套用于本批。
+
+---
+
 # 01 STATUS — v0.2 输入验收与记录勘误（2026-09-24）
 
 最新读取协议提交 `c9cdc7b`，独立验收对象为方法提交 `0574491`。本次仅更正交接记录与验收状态，未改方法代码或旧产物。改动提交可用

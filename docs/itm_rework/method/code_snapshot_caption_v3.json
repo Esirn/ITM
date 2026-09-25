@@ -1,0 +1,18 @@
+{
+  "read_commit": "94398181b6935b0dd9b861f7f7f8a65de6eb9dbc",
+  "pipeline_version": "itm-method-caption-seconds-v3",
+  "owned": {
+    "src/itm/models/mdm_caption_conditions.py": "23ca05c2f6a8c4dbc02322960a4b9d75bc32fe67cd00eacf66c3fa3ea10cfa9d",
+    "scripts/train_mdm_imu_control.py": "19c795dc8a87eb27dc727b6c4163ccea41fb8b7e4b8a83d9e0677775ad91537e",
+    "scripts/sample_mdm_imu_control.py": "f8345554a515305fdb48418b4eba40baf886bc9248f698875ed3ae4b20ab378e",
+    "scripts/check_mdm_caption_handoff.py": "8e4398984667574d6cee32a4b0427834e95a010261a7a83f970c98a5b1d2d396",
+    "tests/test_mdm_caption_conditions.py": "05df48eec43cd6e9b793b08d28de2fdab7f88dcc81286e36d7dc28518f3a9e4a"
+  },
+  "read_dependencies": {
+    "src/itm/data/caption_time.py": "643e13290d14dfc6fde8e4067071739da17183123414b8db9263a7dc3674e082",
+    "src/itm/models/mdm_conditions.py": "c16c9f3199fa3bdc9de2f01a048f2673901bd83dcd9af9926965748bbd9377ad",
+    "docs/itm_rework/protocol/caption_plan_20260924_v1/cases.jsonl": "1e4fb4bf9ad455b1851c3534bb03969d134e4a3f3722537b2ba0ad41b65384ae",
+    "docs/itm_rework/protocol/caption_audit_20260924_v1/time_support.json": "d0f1763252fab55fc726aee8979b596f39201011cfff3c26d32f7956b378b361",
+    "docs/itm_rework/contract.yaml": "528b7db8818600dff9516600a9c5ad0311870de93609e2bcadbe320ee4f0fadb"
+  }
+}
