@@ -1,0 +1,133 @@
+{
+  "kind": "owner02_cache_migration_acceptance",
+  "method_commit": "b4f70fcd61a07c5539bdbc5c473a5c8fe91a6256",
+  "read_commit": "b4f70fcd61a07c5539bdbc5c473a5c8fe91a6256",
+  "status": "cache_identity_and_resume_guards_accepted_not_training_admission",
+  "verified_snapshot_files": [
+    {
+      "path": "/home/a200/0proj/ITM/scripts/train_mdm_imu_control.py",
+      "sha256": "5d24a2b7f73ce39de8421466bf317ab1cd50ba63b318fe66c28a10322782bd51"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/check_mdm_cache_migration.py",
+      "sha256": "2e65635c435deb5ed6a52ee93a203a98538af6614e2df4e80372554e3e83b332"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/mdm_conditions.py",
+      "sha256": "95a53db85de8f60dc96461ab55eb430bb153d462502f7df4ad2a89f0be89a2a0"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/mdm_training_provenance.py",
+      "sha256": "57b5bc125fccac87b2f6a67f429cc72a0d1b32358b93ee4e3e30341439df4c11"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/tests/test_mdm_conditions.py",
+      "sha256": "af5c528655ff0d1a866fcaadf12c445f0f74e47c63ab5cd2576a12f4f19b5eb7"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/tests/test_mdm_training_provenance.py",
+      "sha256": "31e11a39a1b9983f3116d5cd114c5d213db690819d6fabe016994f563fb6ed2e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/observation.py",
+      "sha256": "5b82785d95152ce246c07f82d491679ed7e9aa9fbc95e1befc97d7e057898df9"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/mdm_caption_conditions.py",
+      "sha256": "23ca05c2f6a8c4dbc02322960a4b9d75bc32fe67cd00eacf66c3fa3ea10cfa9d"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/check_mdm_caption_handoff.py",
+      "sha256": "8e4398984667574d6cee32a4b0427834e95a010261a7a83f970c98a5b1d2d396"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/contract.yaml",
+      "sha256": "528b7db8818600dff9516600a9c5ad0311870de93609e2bcadbe320ee4f0fadb"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/prefix_rebuild_20260925_v1/diagnostic_manifest.jsonl",
+      "sha256": "12ad7dd97c16634635942f9e5a3f0417ad2ebc8f5734d811a4559abe9e84e068"
+    }
+  ],
+  "replays": {
+    "cache_migration": {
+      "saved": {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cache_migration_20260925_v1.json",
+        "sha256": "3dfd440c7017f657aafa4bfbf8f53518bff8843dd36c59b3eefcc8aa478eb47d"
+      },
+      "replay": {
+        "path": "docs/itm_rework/protocol/cache_migration_acceptance_20260925_v1/cache_migration_replay.json",
+        "sha256": "3dfd440c7017f657aafa4bfbf8f53518bff8843dd36c59b3eefcc8aa478eb47d"
+      },
+      "exact_match": true
+    },
+    "caption": {
+      "saved": {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/method/caption_input_migration_20260925_v1.json",
+        "sha256": "5607419e7ee12c10c91246caec7496b8defc40dd9126611f770ab46a0865b583"
+      },
+      "replay": {
+        "path": "docs/itm_rework/protocol/cache_migration_acceptance_20260925_v1/caption_replay.json",
+        "sha256": "5607419e7ee12c10c91246caec7496b8defc40dd9126611f770ab46a0865b583"
+      },
+      "exact_match": true
+    }
+  },
+  "counts": {
+    "diagnostic_files": 5,
+    "original_manifest_rejections": 5,
+    "relabelled_manifest_rejections": 5,
+    "caption_passed_inputs": 18,
+    "caption_blocked_inputs": 2,
+    "ssm_rejections": 13
+  },
+  "real_legacy_checkpoint_resume_rejection": "Resume checkpoint lacks training input provenance; no silent legacy migration. It remains usable for sampling; use a new run without --resume for new data.",
+  "old_checkpoint_normalization_matches_model_card": true,
+  "artifacts": [
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/code_snapshot_cache_migration_v1.json",
+      "sha256": "7b5a145141fc19f99360b9a9bde92d25fe29e69ae649ac0c87b2dbb3db4e558b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/caption_input_20260925_v1.json",
+      "sha256": "5607419e7ee12c10c91246caec7496b8defc40dd9126611f770ab46a0865b583"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/b0_smoke_model_card.json",
+      "sha256": "eea3d457b144a98f1e05871ce9767a349c4f871ae144bc77cf32963e1d60347f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/CACHE_MIGRATION_HANDOFF_20260925.md",
+      "sha256": "7c158f4799a35e29e3ec69d472c02c7e97e8228fd8c9c34422210b80b791e13b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/accept_cache_migration_handoff.py",
+      "sha256": "94f68f6958e1b6a79fb18149fa0708d373c08dac31bbe4a3692ef8c7017aeefe"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/accept_caption_handoff.py",
+      "sha256": "2546a8b5d5927a2da2d1501fdfde42cf42362e6bed8122a47a7107ecf70974de"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/b0_cpu_smoke_20260924_v1/model.pt",
+      "sha256": "623b16e6e22c09a2e6f8aaceaa635496b8afdde932ba0b3a3326eb7fbcbb00d9"
+    }
+  ],
+  "budget": {
+    "cpu_threads": 1,
+    "replay_processes": 2,
+    "timeout_seconds_per_replay": 120,
+    "real_training_statistics_recomputed": false,
+    "model_forwards": 0,
+    "training_updates": 0,
+    "generated_samples": 0,
+    "gpu_jobs": 0
+  },
+  "limitations": [
+    "Embedded-schema guard is method-side; public observation reader remains unchanged.",
+    "Matching provenance permits only a fresh-optimizer warm start, not exact optimizer/RNG resume.",
+    "Old checkpoint CPU loading and input replay checked; no new full sampling run performed.",
+    "Guard binds the listed paired inputs; it is not certification of all training semantics or physical alignment.",
+    "No new B0, compatible witness, source-clock migration or dataset training admission."
+  ]
+}

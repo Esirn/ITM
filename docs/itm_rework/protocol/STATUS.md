@@ -1,5 +1,8 @@
 # 会话 02 状态（更新于 2026-09-25）
 
+**最新缓存/恢复验收：**`CACHE_MIGRATION_ACCEPTANCE_20260925.md` 接纳方法提交 `b4f70fc`：五份诊断文件的原 manifest/重标 manifest 共十次拒绝全部重现；caption 报告不变；真实旧 checkpoint 缺少来源时恢复验证拒绝。独立联合回归 **126 passed**。
+检查限于方法侧缓存入口和明确绑定的恢复来源；无真实训练统计重算、新训练或生成，旧 checkpoint 采样未重新执行。物理/语义及训练准入仍未认证。
+
 **最新方法验收：**`CAPTION_METHOD_ACCEPTANCE_20260925.md` 独立接纳方法提交 `1a7e887` 的 opt-in caption 输入接口：18 条输入通过、2 条按计划阻塞、13 条 SSM 拒绝均完整复现，模型卡统计与旧 checkpoint 一致；联合回归 **109 passed**。
 真实非零起点、物理时钟、坐标/骨架、语义和训练准入仍未认证；没有新 B0/witness/生成，公共契约保持 v0.2-draft。
 
