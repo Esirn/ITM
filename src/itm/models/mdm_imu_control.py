@@ -151,6 +151,9 @@ def install_imu_control(mdm_model, config: MDMIMUControlConfig):
         y = kwargs.get("y")
         if y is None and len(args) >= 3:
             y = args[2]
+        if y and y.get('_raw_backbone_bypass', False):
+            controlled.set_control(None)
+            return
         set_mdm_imu_control(
             module.seqTransEncoder,
             module.imu_control_encoder,
@@ -320,7 +323,7 @@ def compose_factorized_text_imu_guidance(
     )
 
 
-def make_text_imu_guidance_model(model, *, mode="legacy", branch_execution="sequential"):
+def make_text_imu_guidance_model(model, *, mode="legacy", branch_execution="sequential", bypass_encoder=None):
     """Wrap MDM with independent text and incremental IMU guidance."""
 
     torch = require_torch()
@@ -347,6 +350,13 @@ def make_text_imu_guidance_model(model, *, mode="legacy", branch_execution="sequ
         def forward(self, x, timesteps, y=None):
             if y is None:
                 raise ValueError("Text/IMU guidance requires a condition dictionary")
+            if 'text_condition_present' in y:
+                y = dict(y)
+                text = y.get('text_embed')
+                if text is None:
+                    text = self.model.encode_text(y['text'])
+                present = _batch_flag(y['text_condition_present'], len(x), x.device)
+                y['text_embed'] = torch.where(present[None, :, None], text, 0)
             text_scale = y.get("text_scale", 1.0)
             imu_scale = y.get("imu_scale", 1.0)
             joint_scale = y.get("joint_scale", 1.0)
@@ -396,6 +406,19 @@ def make_text_imu_guidance_model(model, *, mode="legacy", branch_execution="sequ
             )
 
         def _run_branches(self, x, timesteps, branches):
+            bypass = _batch_flag(branches[0].get('backbone_bypass', False), len(x), x.device)
+            if bypass.any():
+                if not bypass.all() or bypass_encoder is None:
+                    raise ValueError('Raw backbone bypass requires its original encoder and a homogeneous clip batch')
+                current = self.model.seqTransEncoder
+                self.model.seqTransEncoder = bypass_encoder
+                try:
+                    return self._execute_branches(x, timesteps, [dict(b, _raw_backbone_bypass=True) for b in branches])
+                finally:
+                    self.model.seqTransEncoder = current
+            return self._execute_branches(x, timesteps, branches)
+
+        def _execute_branches(self, x, timesteps, branches):
             if branch_execution == "sequential":
                 return [self.model(x, timesteps, branch) for branch in branches]
             return self._run_batched(x, timesteps, branches)

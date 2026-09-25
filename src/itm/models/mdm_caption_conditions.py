@@ -46,7 +46,8 @@ def _sha(path):
     return h.hexdigest()
 
 
-def prepare_caption_input(plan, motion_record, imu_record, normalization, *, workspace_root):
+def prepare_caption_input(plan, motion_record, imu_record, normalization, *, workspace_root,
+                          cache_loader=load_method_cache):
     """Verify the selected caption and artifact-bound plan, then load exact slices.
 
     Source times retain the nominal HumanML clip origin; no SSM clock hypothesis,
@@ -75,7 +76,7 @@ def prepare_caption_input(plan, motion_record, imu_record, normalization, *, wor
     motion = np.load(paths[1], allow_pickle=False)
     if motion.ndim != 2 or motion.shape[1] != 263:
         raise ValueError("HumanML263 features required")
-    cache = load_method_cache(imu_record, workspace_root=workspace_root)
+    cache = cache_loader(imu_record, workspace_root=workspace_root)
     checked = plan_caption_crop(caption, len(motion), cache['timestamps'])
     for key in ('version', 'annotation_kind', 'raw_tags_seconds', 'frame_slice', 'fps', 'frames',
                 'clock', 'slice_convention', 'source_sample_interval_seconds', 'source_slice_bounds_seconds',

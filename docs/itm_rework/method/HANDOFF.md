@@ -1,4 +1,13 @@
-# 最新方法交接：缓存与恢复训练（2026-09-25）
+# 最新方法交接：限定合成 B0 输入（2026-09-25）
+
+已接入 `c36ea56` 的 `canonical_smpl_paired_v1` 数据，见 [CANONICAL_B0_HANDOFF_20260925.md](CANONICAL_B0_HANDOFF_20260925.md)。
+3 train / 3 val 准入仅适用于预先统一坐标的合成基准；新管线 `itm-method-canonical-b0-v1`。
+3 个训练源的 398 帧 20 Hz acceleration 已重算并绑定来源，36 个验证条件槽位已完成输入装配。
+联合 143 项通过；真实模型训练/前向/采样/GPU 均未执行。下一步由 02 重放输入，然后等待预算授权与 GPU 执行准备。
+
+---
+
+# 缓存与恢复训练交接（2026-09-25）
 
 已读取 02 的 `2de27a6` / `d360e91`。新交接见 [CACHE_MIGRATION_HANDOFF_20260925.md](CACHE_MIGRATION_HANDOFF_20260925.md)。
 方法入口拒绝 diagnostic NPZ 被 manifest 改标签；新 checkpoint 绑定实际输入来源与 normalization，恢复时严格核对。

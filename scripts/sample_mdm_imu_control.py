@@ -31,6 +31,9 @@ from itm.models.mdm_imu_control import (
 )
 from itm.models.torch_frame_baseline import require_torch
 from itm.models.mdm_caption_conditions import CAPTION_PIPELINE_VERSION, read_caption_plans, prepare_caption_input
+from itm.models.mdm_canonical_conditions import (CanonicalB0Package, CANONICAL_PIPELINE_VERSION,
+    CANONICAL_CONTRACT_VERSION, CANONICAL_SCOPE, CANONICAL_ALIGNMENT)
+from itm.models.mdm_training_provenance import _digest
 
 
 SENSOR_CONFIGS = {"head": (4,), "wrists": (0, 1)}
@@ -44,6 +47,7 @@ def parse_args():
     parser.add_argument("--standard-imu-manifest", required=True)
     parser.add_argument("--caption-plan", help="Optional artifact-bound caption plan JSONL")
     parser.add_argument("--motion-manifest", help="HumanML manifest required with --caption-plan")
+    parser.add_argument("--canonical-package", help="Opt in to the admitted synthetic B0 package")
     parser.add_argument("--spec", required=True, help="JSON list of case objects")
     parser.add_argument("--output", required=True)
     parser.add_argument(
@@ -82,7 +86,6 @@ def main():
     torch = require_torch()
     _legacy_compatibility()
     device = torch.device(args.device)
-    _check_device(torch, device, args.min_free_gib)
     torch.manual_seed(args.seed)
     np.random.seed(args.seed)
 
@@ -100,6 +103,11 @@ def main():
         raise ValueError("Caption plans require --motion-manifest and crop_seconds")
     motion_records = ({str(row["motion_id"]): row for row in read_jsonl(Path(args.motion_manifest).resolve())}
                       if caption_plans is not None else None)
+    canonical = CanonicalB0Package(args.canonical_package, workspace_root=ROOT) if args.canonical_package else None
+    if canonical:
+        canonical.require_manifests('val', args.motion_manifest, manifest_path, args.caption_plan)
+        if args.random_plan != 'addressed' or args.guidance_mode != 'factorized':
+            raise ValueError('Canonical B0 uses addressed DDPM and factorized guidance')
     control_state = torch.load(control_checkpoint_path, map_location="cpu", weights_only=True)
     mdm_checkpoint_path = (
         Path(args.mdm_checkpoint).resolve()
@@ -110,9 +118,22 @@ def main():
     if not isinstance(cases, list) or not cases:
         raise ValueError("spec must contain a non-empty JSON list")
     records = {str(row["motion_id"]): row for row in read_jsonl(manifest_path)}
+    if canonical:
+        if control_state.get('input_pipeline_version') != CANONICAL_PIPELINE_VERSION:
+            raise ValueError('Canonical sampling requires a newly trained canonical checkpoint')
+        provenance = control_state['training_input_provenance']['payload']['artifacts']
+        if _digest(control_state['imu_normalization']) != control_state['training_input_provenance']['payload']['imu_normalization_sha256']:
+            raise ValueError('Canonical checkpoint normalization differs from its bound training provenance')
+        for name, path in [('canonical_package', canonical.path), ('motion_mean', mean_path), ('motion_std', std_path),
+                           ('mdm_checkpoint', mdm_checkpoint_path), ('mdm_args', mdm_args_path)]:
+            if provenance[name]['sha256'] != _sha256(path):
+                raise ValueError(f'Canonical sampling/checkpoint identity mismatch: {name}')
+        if any(case.get('sampling_seed', args.seed) != args.seed for case in cases):
+            raise ValueError('Sampling seed differs from canonical case plan')
     loaded = [_load_case(case, records, control_state["imu_normalization"], time_policy=args.time_policy,
                          caption_plan=(caption_plans[str(case.get("target_motion_id", case["motion_id"]))] if caption_plans is not None else None),
-                         motion_records=motion_records) for case in cases]
+                         motion_records=motion_records, canonical_package=canonical) for case in cases]
+    _check_device(torch, device, args.min_free_gib)
     mdm_options = json.loads(mdm_args_path.read_text())
     _set_mdm_compatibility_defaults(mdm_options)
     root = Path(args.mdm_root).resolve()
@@ -130,13 +151,16 @@ def main():
     config = MDMIMUControlConfig(**control_state["control_config"])
     if args.null_mode != "checkpoint":
         config = replace(config, null_mode=args.null_mode)
+    original_encoder = model.seqTransEncoder
     controlled, encoder, hook = install_imu_control(model, config)
     encoder.load_state_dict(control_state["imu_encoder"])
     controlled.adapters.load_state_dict(control_state["adapters"])
     model.to(device)
     model.eval()
+    original_encoder.eval()
     guided_model = make_text_imu_guidance_model(
-        model, mode=args.guidance_mode, branch_execution=args.branch_execution
+        model, mode=args.guidance_mode, branch_execution=args.branch_execution,
+        bypass_encoder=original_encoder if canonical else None,
     )
     guided_model.to(device)
     guided_model.eval()
@@ -156,6 +180,8 @@ def main():
         "sensor_mask": masks,
         "imu_frame_mask": frame_mask,
         "imu_condition_present": torch.tensor([case["imu_mode"] != "null" for case in loaded], device=device),
+        "text_condition_present": torch.tensor([case.get('text_present', True) for case in loaded], device=device),
+        "backbone_bypass": torch.tensor([case.get('backbone_bypass', False) for case in loaded], device=device),
         "imu_timestamps": torch.arange(frame_count, device=device)[None].expand(batch, -1) / 20.0,
         "text_scale": torch.tensor(
             [case.get("text_scale", args.text_scale) for case in loaded], device=device
@@ -203,6 +229,9 @@ def main():
     peak_memory = (
         int(torch.cuda.max_memory_allocated(device)) if device.type == "cuda" else None
     )
+    if canonical:
+        for case in loaded:
+            case['status'] = 'generated'
 
     output.parent.mkdir(parents=True, exist_ok=True)
     metadata = {
@@ -213,9 +242,11 @@ def main():
         "contract_version": control_state.get("contract_version", "legacy_unspecified"),
         "effective_control_config": config.__dict__,
         "time_policy": args.time_policy,
-        "input_contract_version": INPUT_CONTRACT_VERSION,
-        "input_pipeline_version": CAPTION_PIPELINE_VERSION if caption_plans is not None else INPUT_PIPELINE_VERSION,
-        "alignment_status": "uncertified_diagnostic",
+        "input_contract_version": CANONICAL_CONTRACT_VERSION if canonical else INPUT_CONTRACT_VERSION,
+        "input_pipeline_version": CANONICAL_PIPELINE_VERSION if canonical else (CAPTION_PIPELINE_VERSION if caption_plans is not None else INPUT_PIPELINE_VERSION),
+        "alignment_status": CANONICAL_ALIGNMENT if canonical else "uncertified_diagnostic",
+        "world_alignment_scope": CANONICAL_SCOPE if canonical else "uncertified",
+        "training_input_provenance": control_state.get('training_input_provenance'),
         "sampler": "ddpm", "steps": diffusion.num_timesteps,
         "random_plan_mode": args.random_plan, "random_plans": plans,
         "model_forward_calls": diffusion.num_timesteps * (len(loaded) if plans else 1) * (1 if args.branch_execution == "batched" else (4 if args.guidance_mode == "factorized" else 3)),
@@ -246,6 +277,9 @@ def main():
         acceleration=np.stack([_pad_frames(case["raw_acceleration"], frame_count) for case in loaded]),
         orientation=np.stack([_pad_frames(case["raw_orientation"], frame_count) for case in loaded]),
         sensor_mask=np.stack([case["sensor_mask"] for case in loaded]),
+        normalized_imu=imu.cpu().numpy(),
+        text_condition_present=y['text_condition_present'].cpu().numpy(),
+        imu_condition_present=y['imu_condition_present'].cpu().numpy(),
         metadata=np.array(json.dumps(metadata)),
     )
     output.with_suffix(".json").write_text(json.dumps(metadata, indent=2), encoding="utf-8")
@@ -254,7 +288,12 @@ def main():
     return 0
 
 
-def _load_case(case, records, normalization, *, time_policy="crop_seconds", caption_plan=None, motion_records=None):
+def _load_case(case, records, normalization, *, time_policy="crop_seconds", caption_plan=None, motion_records=None,
+               canonical_package=None, canonical_split='val'):
+    if canonical_package is not None:
+        if time_policy != 'crop_seconds':
+            raise ValueError('Canonical B0 forbids legacy time stretching')
+        return _load_canonical_case(case, normalization, canonical_package, canonical_split)
     if caption_plan is not None:
         if time_policy != "crop_seconds":
             raise ValueError("Caption plans require crop_seconds")
@@ -339,6 +378,51 @@ def _load_case(case, records, normalization, *, time_policy="crop_seconds", capt
         "raw_orientation": orientation,
         "gt": gt,
     }
+
+
+def _load_canonical_case(case, normalization, package, split):
+    mid = str(case['motion_id'])
+    item = package.prepare(split, mid, normalization)
+    plan = package.plans[split][mid]
+    config = case.get('sensor_config', 'head')
+    if config not in SENSOR_CONFIGS or config not in plan['sensor_configs']:
+        raise ValueError('Unknown canonical sensor configuration')
+    conditions = {'paired': ('paired', True, True), 'text_only': ('null', True, False),
+                  'imu_only': ('paired', False, True), 'backbone_bypass': ('null', True, False),
+                  'numeric_zero': ('zero', True, True), 'physical_static': ('static', True, True)}
+    condition = case.get('condition', 'paired')
+    if condition not in conditions:
+        raise ValueError('Condition is outside the canonical B0 plan')
+    mode, text_present, imu_present = conditions[condition]
+    for key, expected in [('text_present', text_present), ('imu_present', imu_present),
+                           ('caption_index', plan['caption_index']), ('length', len(item['imu'])),
+                           ('imu_motion_id', mid), ('target_motion_id', mid), ('imu_mode', mode)]:
+        if key in case and case[key] != expected:
+            raise ValueError(f'Canonical case override differs from reviewed input: {key}')
+    if 'text' in case and case['text'] != item['caption'] and not (not text_present and case['text'] == ''):
+        raise ValueError('Canonical B0 requires the reviewed caption or explicit text absence')
+    if 'gt_path' in case and Path(case['gt_path']).resolve() != Path(item['input_metadata']['gt_path']).resolve():
+        raise ValueError('Canonical case GT differs from direct 20 Hz target')
+    acceleration, orientation, imu = item['acceleration'], item['orientation'], item['imu']
+    fixture_metadata = None
+    if mode == 'static':
+        fixture = static_imu_fixture(frames=len(imu), fps=20., sensor_config=config, normalization=normalization,
+                                     orientations=orientation[0])
+        acceleration, orientation, imu = fixture['acceleration'], fixture['orientation'], fixture['imu']
+        fixture_metadata = dict(fixture['metadata'], schema=plan['schema'], world_alignment_scope=CANONICAL_SCOPE,
+                                calibration='first_observed_orientation_held_constant')
+    elif mode == 'zero':
+        imu = np.zeros_like(imu)
+    return {**case, 'motion_id': mid, 'target_motion_id': mid, 'imu_motion_id': mid,
+            'condition': condition, 'imu_mode': mode, 'text': item['caption'], 'reviewed_caption': item['caption'],
+            'text_present': text_present, 'imu_present': imu_present, 'backbone_bypass': condition == 'backbone_bypass',
+            'sensor_config': config, 'sensor_mask': sensor_mask(SENSOR_CONFIGS[config], sensor_count=6),
+            'imu': imu, 'raw_acceleration': acceleration, 'raw_orientation': orientation, 'gt': item['gt'],
+            'fps': 20., 'requested_length': len(imu), 'truncated_at_model_limit': False,
+            'time_policy': 'canonical_full_clip', 'physical_static_fixture': fixture_metadata,
+            'input_metadata': item['input_metadata'], 'input_pipeline_version': CANONICAL_PIPELINE_VERSION,
+            'time_interval_seconds': item['input_metadata']['time_interval_seconds'],
+            'clock_reference': item['input_metadata']['clock_reference']}
 
 
 def _load_caption_case(case, records, normalization, plan, motion_records):

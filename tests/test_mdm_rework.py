@@ -63,6 +63,39 @@ def setup():
     return original, model, x, y
 
 
+@pytest.mark.parametrize('execution', ['sequential', 'batched'])
+def test_explicit_text_absence_and_raw_backbone_bypass(execution):
+    original, model, x, y = setup()
+    original.eval()
+    encoder = model.imu_control_encoder
+    y['text_embed'] = model.encode_text(y['text'])
+    y['imu_control'], y['imu_condition_present'] = encoder(
+        y['imu'], y['sensor_mask'], y['imu_frame_mask'], return_presence=True)
+    guided = make_text_imu_guidance_model(model, mode='factorized', branch_execution=execution,
+                                         bypass_encoder=original.seqTransEncoder).eval()
+    t = torch.zeros(len(x), dtype=torch.long)
+    absent = dict(y, text_condition_present=torch.zeros(len(x), dtype=torch.bool),
+                  text_scale=2.5, imu_scale=1., joint_scale=1.)
+    actual = guided(x, t, absent)
+    expected = model(x, t, dict(y, uncond=True, imu_uncond=False))
+    torch.testing.assert_close(actual, expected, atol=1e-6, rtol=1e-5)
+    changed = dict(absent, text_embed=y['text_embed'] * 300, text=['different', 'caption'])
+    torch.testing.assert_close(guided(x, t, changed), actual, atol=0, rtol=0)
+    # Explicit absence also works without caching on the sequential path.
+    if execution == 'sequential':
+        uncached = {k: v for k, v in absent.items() if k not in ('text_embed', 'imu_control')}
+        torch.testing.assert_close(guided(x, t, uncached), actual, atol=1e-6, rtol=1e-5)
+    controlled = model.seqTransEncoder
+    bypass = dict(y, backbone_bypass=True, text_scale=2.5, imu_scale=1., joint_scale=1.)
+    u = original(x, t, dict(y, uncond=True))
+    c = original(x, t, dict(y, uncond=False))
+    torch.testing.assert_close(guided(x, t, bypass), u + 2.5*(c-u), atol=1e-6, rtol=1e-5)
+    assert model.seqTransEncoder is controlled
+    with pytest.raises(RuntimeError, match='intentional'):
+        guided(x, t, dict(bypass, raise_before_encoder=True))
+    assert model.seqTransEncoder is controlled
+
+
 def test_legacy_normalized_wrist_swap_invariance_and_state_loading():
     torch.manual_seed(1)
     encoder = make_imu_control_encoder(config()).eval()

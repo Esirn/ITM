@@ -1,0 +1,86 @@
+{
+  "read_commit": "c36ea56872a971fe0a4d0396cc1690ab428a1c17",
+  "contract_version": "itm-rework-v0.3-draft",
+  "owned_files": [
+    {
+      "path": "src/itm/models/mdm_canonical_conditions.py",
+      "sha256": "d78f53dcaa388eddcec1ef8eeb819bb9a14297780de6430e9e35ffe1f449ba4a"
+    },
+    {
+      "path": "src/itm/models/mdm_caption_conditions.py",
+      "sha256": "fdfef2453bfd6ff1b187fe363a309c8ddc4c12652009d5d94572263de2676e39"
+    },
+    {
+      "path": "src/itm/models/mdm_imu_control.py",
+      "sha256": "51de85cbf5cff81d38c2381ea7e3551caadf6ec85b34f97200dd7250bdf01de0"
+    },
+    {
+      "path": "scripts/train_mdm_imu_control.py",
+      "sha256": "f19910f40a5dd2793370a2dd610f0745a38c87831fbf04d615b682cb853b4ac6"
+    },
+    {
+      "path": "scripts/sample_mdm_imu_control.py",
+      "sha256": "3c8fcc05a1e09b0dd3896f3a26a382f7e869ca3be33d6a420bb96f745ec3e1f1"
+    },
+    {
+      "path": "scripts/check_mdm_canonical_handoff.py",
+      "sha256": "f164948d86d2fa1619a23d2da08c2dac261e6563166120f5cf17cfba2dd68540"
+    },
+    {
+      "path": "tests/test_mdm_canonical_conditions.py",
+      "sha256": "63735089282c5e4e01476741aea9488c4d013cb09929439472a120a9eec9d1f6"
+    },
+    {
+      "path": "tests/test_mdm_rework.py",
+      "sha256": "82b4861157d95b38ce3f00437909c143952af6161f32dbfe996d4db360d76cb5"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "src/itm/data/canonical_pair.py",
+      "sha256": "be46e954797cf6533f27a0ea5a96b8156b853ad324c27ad07a34165bdc7457ba"
+    },
+    {
+      "path": "src/itm/data/caption_time.py",
+      "sha256": "643e13290d14dfc6fde8e4067071739da17183123414b8db9263a7dc3674e082"
+    },
+    {
+      "path": "src/itm/data/observation.py",
+      "sha256": "5b82785d95152ce246c07f82d491679ed7e9aa9fbc95e1befc97d7e057898df9"
+    },
+    {
+      "path": "src/itm/data/static_imu.py",
+      "sha256": "011681bb6ee65af6c3130c5deba6849858836fd00f72b7b25eb8df683ad46131"
+    },
+    {
+      "path": "src/itm/models/mdm_training_provenance.py",
+      "sha256": "57b5bc125fccac87b2f6a67f429cc72a0d1b32358b93ee4e3e30341439df4c11"
+    },
+    {
+      "path": "src/itm/models/mdm_conditions.py",
+      "sha256": "95a53db85de8f60dc96461ab55eb430bb153d462502f7df4ad2a89f0be89a2a0"
+    },
+    {
+      "path": "src/itm/models/mdm_sampling.py",
+      "sha256": "8ce7c62e522c9f8dd2e5bbfa313ff14eb947cbc7ec6e4448001d60dbc4583da7"
+    },
+    {
+      "path": "docs/itm_rework/contract.yaml",
+      "sha256": "a715d2fed356481ef66247b15a93dd2f747ce2e9d274d9e70211644e0556d705"
+    },
+    {
+      "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/package.json",
+      "sha256": "33de7fd98c1cf43fc5a51a7d35b502e154a233066efec13f17dda08bc53abe97"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "docs/itm_rework/method/canonical_training_input_20260925_v1.json",
+      "sha256": "ffbe676233e1750b105cbff73a587dfbe5369fb223cd4b645262ac1295b9d16f"
+    },
+    {
+      "path": "docs/itm_rework/method/canonical_input_replay_20260925_v1.json",
+      "sha256": "791ebecb3dcf2711eb562b9e22072686527af8c2efc3d509cb7e02a5d8474715"
+    }
+  ]
+}

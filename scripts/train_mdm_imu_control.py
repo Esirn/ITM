@@ -26,6 +26,8 @@ from itm.models.mdm_imu_control import (MDMIMUControlConfig, install_imu_control
     configure_control_training, evaluating_preserving_modes)
 from itm.models.torch_frame_baseline import require_torch
 from itm.models.mdm_training_provenance import build_training_input_provenance, validate_training_resume
+from itm.models.mdm_canonical_conditions import (CanonicalB0Package, CANONICAL_PIPELINE_VERSION,
+    CANONICAL_CONTRACT_VERSION, CANONICAL_SCOPE, CANONICAL_ALIGNMENT)
 from itm.models.mdm_caption_conditions import (
     CAPTION_PIPELINE_VERSION, read_caption_plans, prepare_caption_input, require_caption_training_admission,
 )
@@ -73,6 +75,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--trajectory-space", choices=("global_joint_proxy", "root_relative_joint_proxy"), default="global_joint_proxy")
     parser.add_argument("--derivative-units", choices=("legacy_frame", "seconds"), default="seconds")
     parser.add_argument("--caption-plan", help="Explicit owner-02 caption plan; unadmitted plans are input-check only")
+    parser.add_argument("--canonical-package", help="Opt in to owner-02's admitted synthetic B0 package")
+    parser.add_argument("--input-only-report", help="Write normalization/provenance on CPU and exit before MDM setup")
     parser.add_argument("--response-manifest", help="Owner-02 train-only compatible arm_spread_m witness JSONL")
     parser.add_argument("--response-loss-weight", type=float, default=0.0)
     parser.add_argument("--response-proxy-weight", type=float, default=0.0)
@@ -88,7 +92,15 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
-    if not args.allow_unsynchronized_diagnostic:
+    canonical = None
+    if getattr(args, 'canonical_package', None):
+        canonical = CanonicalB0Package(args.canonical_package, workspace_root=Path.cwd())
+        canonical.require_manifests('train', args.manifest, args.standard_imu_manifest, args.caption_plan)
+        if args.resume or args.max_records is not None or args.response_manifest:
+            raise ValueError('Canonical B0 requires all admitted train clips, a fresh controller and no edit witnesses')
+        if args.contract_version != CANONICAL_CONTRACT_VERSION:
+            raise ValueError('Canonical B0 requires explicit --contract-version '+CANONICAL_CONTRACT_VERSION)
+    if canonical is None and not args.allow_unsynchronized_diagnostic:
         raise ValueError("Training blocked: owner 02 has not certified loader time/world alignment. "
                          "Use --allow-unsynchronized-diagnostic only for explicitly labelled diagnostics.")
     if not 0 <= args.text_drop_probability <= 1:
@@ -129,6 +141,7 @@ def main() -> int:
         args.max_records,
         workspace_root,
         caption_plans=caption_plans,
+        canonical_package=canonical,
     )
     normalization = dataset.compute_normalization()
     dataset.set_normalization(normalization)
@@ -137,13 +150,25 @@ def main() -> int:
         artifacts={"motion_manifest": manifest_path, "imu_manifest": imu_manifest_path,
                    "motion_mean": mean_path, "motion_std": std_path,
                    "mdm_checkpoint": mdm_checkpoint_path, "mdm_args": mdm_args_path,
-                   "caption_plan": Path(args.caption_plan).resolve() if args.caption_plan else None},
-        pipeline_version=CAPTION_PIPELINE_VERSION if args.caption_plan else INPUT_PIPELINE_VERSION,
+                   "caption_plan": Path(args.caption_plan).resolve() if args.caption_plan else None,
+                   **(canonical.provenance_artifacts if canonical else {})},
+        pipeline_version=_input_pipeline(args),
         contract_version=args.contract_version,
     )
     resume = torch.load(resume_path, map_location="cpu", weights_only=True) if resume_path else None
     if resume is not None:
         validate_training_resume(resume, input_provenance, normalization)
+    if getattr(args, 'input_only_report', None):
+        report = {'imu_normalization': normalization, 'training_input_provenance': input_provenance,
+                  'training_args': vars(args), 'inputs': [dataset[i]['input_metadata'] for i in range(len(dataset))],
+                  'model_forwards': 0, 'training_updates': 0, 'generated_samples': 0, 'gpu_jobs': 0}
+        report_path = Path(args.input_only_report).resolve()
+        report_path.parent.mkdir(parents=True, exist_ok=True)
+        with report_path.open('x') as stream:
+            json.dump(report, stream, indent=2)
+            stream.write('\n')
+        print(f'input_only_report: {report_path}')
+        return 0
 
     mdm_options = json.loads(mdm_args_path.read_text())
     _set_mdm_compatibility_defaults(mdm_options)
@@ -358,7 +383,14 @@ def main() -> int:
 
 
 class _PairedDataset:
-    def __init__(self, manifest, imu_manifest, mean, std, configs, limit, workspace_root, *, caption_plans=None):
+    def __init__(self, manifest, imu_manifest, mean, std, configs, limit, workspace_root, *, caption_plans=None,
+                 canonical_package=None):
+        self.canonical_package = canonical_package
+        if canonical_package is not None:
+            canonical_package.require_manifests('train', manifest, imu_manifest,
+                                                canonical_package.manifests['train_caption_plans'])
+            if caption_plans != canonical_package.plans['train'] or limit is not None:
+                raise ValueError('Use the complete delivered canonical training plan')
         motion_dataset = TextIMUMotionDataset(
             manifest, load_joints=False, load_joint_vec=True, load_imu=False
         )
@@ -394,8 +426,10 @@ class _PairedDataset:
             plan = self.caption_plans[mid]
             if config_name not in plan["sensor_configs"]:
                 raise ValueError("Sensor configuration absent from caption plan")
-            item = prepare_caption_input(plan, self.motion_records[mid], imu_record, self.normalization,
-                                         workspace_root=self.workspace_root)
+            canonical = getattr(self, 'canonical_package', None)
+            item = (canonical.prepare('train', mid, self.normalization) if canonical else
+                    prepare_caption_input(plan, self.motion_records[mid], imu_record, self.normalization,
+                                          workspace_root=self.workspace_root))
             if not item["cache_sensor_mask"][list(slots)].all():
                 raise ValueError("Requested sensors are absent from cache")
             return {"motion_id": mid, "motion": (item["motion"] - self.mean) / self.std,
@@ -448,8 +482,10 @@ class _PairedDataset:
                 raise ValueError("IMU normalization requires train-only records")
             if self.caption_plans is not None:
                 mid = str(record["motion_id"])
-                item = prepare_caption_input(self.caption_plans[mid], self.motion_records[mid], record, None,
-                                             workspace_root=self.workspace_root)
+                canonical = getattr(self, 'canonical_package', None)
+                item = (canonical.prepare('train', mid) if canonical else
+                        prepare_caption_input(self.caption_plans[mid], self.motion_records[mid], record, None,
+                                              workspace_root=self.workspace_root))
                 acceleration = item["acceleration"].astype(np.float64)
             else:
                 cache = load_method_cache(record, workspace_root=self.workspace_root)
@@ -459,11 +495,16 @@ class _PairedDataset:
             count += len(acceleration)
         mean = total / count
         variance = np.maximum(squared / count - np.square(mean), 1e-8)
-        return {
+        result = {
             "acceleration_mean": mean.astype(np.float32).tolist(),
             "acceleration_std": np.sqrt(variance).astype(np.float32).tolist(),
             "orientation": "rotation_matrix_unscaled",
         }
+        if getattr(self, 'canonical_package', None):
+            result['source'] = {'split': 'train', 'unique_motion_ids': sorted(self.caption_plans),
+                                'fps': 20., 'unique_frames': count, 'configuration_duplicates_counted': False,
+                                'pipeline': CANONICAL_PIPELINE_VERSION}
+        return result
 
     def set_normalization(self, normalization):
         self.normalization = normalization
@@ -821,6 +862,12 @@ def _resample_imu(acceleration, orientation, source_fps, target_fps):
     return resampled_acceleration.astype(np.float32), resampled_orientation
 
 
+def _input_pipeline(args):
+    if getattr(args, 'canonical_package', None):
+        return CANONICAL_PIPELINE_VERSION
+    return CAPTION_PIPELINE_VERSION if args.caption_plan else INPUT_PIPELINE_VERSION
+
+
 def _save_checkpoint(
     path, torch, imu_encoder, controlled, optimizer, control_config, configs,
     mdm_checkpoint_path, normalization, history, epoch, args, input_provenance,
@@ -831,9 +878,10 @@ def _save_checkpoint(
     torch.save(
         {
             "checkpoint_schema": "itm-control-v2",
-            "input_pipeline_version": CAPTION_PIPELINE_VERSION if args.caption_plan else INPUT_PIPELINE_VERSION,
+            "input_pipeline_version": _input_pipeline(args),
             "contract_version": args.contract_version,
-            "alignment_status": "uncertified_diagnostic",
+            "alignment_status": CANONICAL_ALIGNMENT if getattr(args, 'canonical_package', None) else "uncertified_diagnostic",
+            "world_alignment_scope": CANONICAL_SCOPE if getattr(args, 'canonical_package', None) else "uncertified",
             "resume_semantics": "input_bound_weights_verified_normalization_fresh_optimizer",
             "training_input_provenance": input_provenance,
             "imu_encoder": imu_encoder.state_dict(),

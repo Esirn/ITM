@@ -1,3 +1,20 @@
+# 01 STATUS — 限定合成 B0 数据接入（2026-09-25）
+
+读取 `c36ea56`，公共契约 v0.3-draft。首批 3 train / 3 val 的限定合成准入已接入，旧的全面“对齐未认证”阻塞不套用到该 scope。
+
+- 显式 canonical package/schema/mapping/hash 消费，完整片段、审核 caption index 和直接 20 Hz GT。
+- 实际训练输入 398 帧重新计算 IMU normalization，唯一源只计一次；val 不参与统计，MDM Mean/Std 不重拟合。
+- 新统计已绑定输入 provenance 预检报告；尚未生成新研究 checkpoint。
+- 六种采样条件含显式文本关闭、原 backbone bypass 与首次观测姿态静止 fixture；36 槽位输入已装配。
+- 最终联合 143 项通过；旧两份输入报告完整重放相等。真实模型前向/训练/采样/GPU 为 0。
+
+新交接：[CANONICAL_B0_HANDOFF_20260925.md](CANONICAL_B0_HANDOFF_20260925.md)。
+下一步 02 验收实际输入/统计；预算授权、GPU 检查与受限运行调度准备完成后再由 01 执行 B0。
+相容编辑 witness 不阻塞该 B0；仍是 B 分支依赖。真实设备标定与生成 IMU 闭环未认证。
+以下为历史记录。
+
+---
+
 # 01 STATUS — 缓存与恢复训练来源核验（2026-09-25）
 
 读取 `2de27a6` / `d360e91`，接纳 02 caption 独立验收及前缀负结果边界。公共契约仍为 v0.2-draft。
