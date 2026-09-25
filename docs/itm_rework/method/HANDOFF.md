@@ -1,4 +1,13 @@
-# 最新方法交接（2026-09-25）
+# 最新方法交接：缓存与恢复训练（2026-09-25）
+
+已读取 02 的 `2de27a6` / `d360e91`。新交接见 [CACHE_MIGRATION_HANDOFF_20260925.md](CACHE_MIGRATION_HANDOFF_20260925.md)。
+方法入口拒绝 diagnostic NPZ 被 manifest 改标签；新 checkpoint 绑定实际输入来源与 normalization，恢复时严格核对。
+5 份真实缓存的原声明/改标签声明均拒绝；固定 caption 重放与旧报告相同；联合 126 项通过。
+没有训练/生成/GPU 作业。旧 checkpoint 采样不变，缺少来源记录时不能从当前训练 CLI 恢复。
+
+---
+
+# caption 方法交接（2026-09-25）
 
 caption 计划接口已接入，见 [CAPTION_HANDOFF_20260925.md](CAPTION_HANDOFF_20260925.md)。
 固定 10 来源各两配置：9 通过、000004 阻塞；13 条 SSM 短输入仍拒绝，68 项测试通过。

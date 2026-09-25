@@ -25,6 +25,7 @@ from itm.models.mdm_conditions import (
 from itm.models.mdm_imu_control import (MDMIMUControlConfig, install_imu_control,
     configure_control_training, evaluating_preserving_modes)
 from itm.models.torch_frame_baseline import require_torch
+from itm.models.mdm_training_provenance import build_training_input_provenance, validate_training_resume
 from itm.models.mdm_caption_conditions import (
     CAPTION_PIPELINE_VERSION, read_caption_plans, prepare_caption_input, require_caption_training_admission,
 )
@@ -118,28 +119,53 @@ def main() -> int:
     response_records = load_response_manifest(args.response_manifest) if args.response_manifest else {}
     if args.response_loss_weight > 0 and not response_records:
         raise ValueError("Response training requires nonempty train-only verified witnesses")
-    root = Path(args.mdm_root).resolve()
-    os.chdir(root)
-    sys.path.insert(0, str(root))
-    from utils.model_util import create_model_and_diffusion, load_model_wo_clip
+    configs = _parse_configs(args.sensor_configs)
+    dataset = _PairedDataset(
+        manifest_path,
+        imu_manifest_path,
+        motion_mean,
+        motion_std,
+        configs,
+        args.max_records,
+        workspace_root,
+        caption_plans=caption_plans,
+    )
+    normalization = dataset.compute_normalization()
+    dataset.set_normalization(normalization)
+    input_provenance = build_training_input_provenance(
+        dataset, normalization,
+        artifacts={"motion_manifest": manifest_path, "imu_manifest": imu_manifest_path,
+                   "motion_mean": mean_path, "motion_std": std_path,
+                   "mdm_checkpoint": mdm_checkpoint_path, "mdm_args": mdm_args_path,
+                   "caption_plan": Path(args.caption_plan).resolve() if args.caption_plan else None},
+        pipeline_version=CAPTION_PIPELINE_VERSION if args.caption_plan else INPUT_PIPELINE_VERSION,
+        contract_version=args.contract_version,
+    )
+    resume = torch.load(resume_path, map_location="cpu", weights_only=True) if resume_path else None
+    if resume is not None:
+        validate_training_resume(resume, input_provenance, normalization)
 
     mdm_options = json.loads(mdm_args_path.read_text())
     _set_mdm_compatibility_defaults(mdm_options)
     if not mdm_options.get("predict_xstart", False):
         raise ValueError("ITM auxiliary losses require an MDM checkpoint with predict_xstart=true")
     mdm_args = SimpleNamespace(**mdm_options)
-    data_stub = SimpleNamespace(dataset=SimpleNamespace(num_actions=1))
-    model, diffusion = create_model_and_diffusion(mdm_args, data_stub)
-    state = torch.load(mdm_checkpoint_path, map_location="cpu", weights_only=True)
-    load_model_wo_clip(model, state)
     control_config = MDMIMUControlConfig(
         latent_dim=mdm_args.latent_dim, encoder_variant=args.encoder_variant, adapter_variant=args.adapter_variant,
         null_mode=args.null_mode, time_encoding=args.time_encoding,
         imu_drop_probability=args.imu_drop_probability,
     )
-    resume = torch.load(resume_path, map_location="cpu", weights_only=True) if resume_path else None
     if resume is not None and MDMIMUControlConfig(**resume["control_config"]) != control_config:
         raise ValueError("Resume config differs; legacy weights require explicit legacy settings. No silent migration.")
+    root = Path(args.mdm_root).resolve()
+    os.chdir(root)
+    sys.path.insert(0, str(root))
+    from utils.model_util import create_model_and_diffusion, load_model_wo_clip
+
+    data_stub = SimpleNamespace(dataset=SimpleNamespace(num_actions=1))
+    model, diffusion = create_model_and_diffusion(mdm_args, data_stub)
+    state = torch.load(mdm_checkpoint_path, map_location="cpu", weights_only=True)
+    load_model_wo_clip(model, state)
     controlled, imu_encoder, hook = install_imu_control(model, control_config)
     for parameter in model.parameters():
         parameter.requires_grad = False
@@ -156,19 +182,6 @@ def main() -> int:
         model.train()
         model.clip_model.eval()
 
-    configs = _parse_configs(args.sensor_configs)
-    dataset = _PairedDataset(
-        manifest_path,
-        imu_manifest_path,
-        motion_mean,
-        motion_std,
-        configs,
-        args.max_records,
-        workspace_root,
-        caption_plans=caption_plans,
-    )
-    normalization = dataset.compute_normalization()
-    dataset.set_normalization(normalization)
     loader = torch.utils.data.DataLoader(
         dataset, batch_size=args.batch_size, shuffle=True, collate_fn=_collate
     )
@@ -181,8 +194,8 @@ def main() -> int:
         controlled.adapters.load_state_dict(resume["adapters"])
         history = list(resume.get("history", []))
         start_epoch = int(resume.get("epoch", len(history))) + 1
-        normalization = resume["imu_normalization"]
-        dataset.set_normalization(normalization)
+        # Current normalization has been recomputed and verified against the
+        # bound checkpoint; never silently replace it with unverified statistics.
         # Stage-2 commonly changes the loss mix and learning rate, so keep the
         # weights but start with a fresh optimizer unless explicitly extended later.
     mean_tensor = torch.from_numpy(motion_mean).view(1, -1, 1, 1).to(device)
@@ -331,13 +344,14 @@ def main() -> int:
             history,
             epoch,
             args,
+            input_provenance,
         )
     hook.remove()
     output = output_path
     output.parent.mkdir(parents=True, exist_ok=True)
     _save_checkpoint(
         output, torch, imu_encoder, controlled, optimizer, control_config, configs,
-        mdm_checkpoint_path, normalization, history, args.epochs, args,
+        mdm_checkpoint_path, normalization, history, args.epochs, args, input_provenance,
     )
     print(f"control_checkpoint: {output}")
     return 0
@@ -809,7 +823,7 @@ def _resample_imu(acceleration, orientation, source_fps, target_fps):
 
 def _save_checkpoint(
     path, torch, imu_encoder, controlled, optimizer, control_config, configs,
-    mdm_checkpoint_path, normalization, history, epoch, args,
+    mdm_checkpoint_path, normalization, history, epoch, args, input_provenance,
 ):
     path.parent.mkdir(parents=True, exist_ok=True)
     if path.exists():
@@ -820,7 +834,8 @@ def _save_checkpoint(
             "input_pipeline_version": CAPTION_PIPELINE_VERSION if args.caption_plan else INPUT_PIPELINE_VERSION,
             "contract_version": args.contract_version,
             "alignment_status": "uncertified_diagnostic",
-            "resume_semantics": "weights_and_normalization_only_fresh_optimizer",
+            "resume_semantics": "input_bound_weights_verified_normalization_fresh_optimizer",
+            "training_input_provenance": input_provenance,
             "imu_encoder": imu_encoder.state_dict(),
             "adapters": controlled.adapters.state_dict(),
             "optimizer": optimizer.state_dict(),

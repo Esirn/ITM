@@ -1,0 +1,52 @@
+{
+  "read_commit": "2de27a6ec209ef1f6ab407ed7787a5f0a790c7e0",
+  "contract_version": "itm-rework-v0.2-draft",
+  "owned_files": [
+    {
+      "path": "scripts/train_mdm_imu_control.py",
+      "sha256": "5d24a2b7f73ce39de8421466bf317ab1cd50ba63b318fe66c28a10322782bd51"
+    },
+    {
+      "path": "scripts/check_mdm_cache_migration.py",
+      "sha256": "2e65635c435deb5ed6a52ee93a203a98538af6614e2df4e80372554e3e83b332"
+    },
+    {
+      "path": "src/itm/models/mdm_conditions.py",
+      "sha256": "95a53db85de8f60dc96461ab55eb430bb153d462502f7df4ad2a89f0be89a2a0"
+    },
+    {
+      "path": "src/itm/models/mdm_training_provenance.py",
+      "sha256": "57b5bc125fccac87b2f6a67f429cc72a0d1b32358b93ee4e3e30341439df4c11"
+    },
+    {
+      "path": "tests/test_mdm_conditions.py",
+      "sha256": "af5c528655ff0d1a866fcaadf12c445f0f74e47c63ab5cd2576a12f4f19b5eb7"
+    },
+    {
+      "path": "tests/test_mdm_training_provenance.py",
+      "sha256": "31e11a39a1b9983f3116d5cd114c5d213db690819d6fabe016994f563fb6ed2e"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "src/itm/data/observation.py",
+      "sha256": "5b82785d95152ce246c07f82d491679ed7e9aa9fbc95e1befc97d7e057898df9"
+    },
+    {
+      "path": "src/itm/models/mdm_caption_conditions.py",
+      "sha256": "23ca05c2f6a8c4dbc02322960a4b9d75bc32fe67cd00eacf66c3fa3ea10cfa9d"
+    },
+    {
+      "path": "scripts/check_mdm_caption_handoff.py",
+      "sha256": "8e4398984667574d6cee32a4b0427834e95a010261a7a83f970c98a5b1d2d396"
+    },
+    {
+      "path": "docs/itm_rework/contract.yaml",
+      "sha256": "528b7db8818600dff9516600a9c5ad0311870de93609e2bcadbe320ee4f0fadb"
+    },
+    {
+      "path": "docs/itm_rework/protocol/prefix_rebuild_20260925_v1/diagnostic_manifest.jsonl",
+      "sha256": "12ad7dd97c16634635942f9e5a3f0417ad2ebc8f5734d811a4559abe9e84e068"
+    }
+  ]
+}

@@ -17,6 +17,12 @@ def load_method_cache(record, *, workspace_root):
     item = dict(record)
     path = Path(item["imu_path"])
     item["imu_path"] = str(path if path.is_absolute() else Path(workspace_root) / path)
+    # Old standard caches have no embedded schema. New diagnostic artifacts do;
+    # changing only their manifest must not make them legacy training inputs.
+    with np.load(item["imu_path"], allow_pickle=False) as data:
+        if "schema" in data and (data["schema"].shape != ()
+                                 or str(data["schema"].item()) != item.get("schema")):
+            raise ValueError("Embedded cache schema disagrees with manifest; no implicit cache migration")
     return load_standard_cache(item)
 
 

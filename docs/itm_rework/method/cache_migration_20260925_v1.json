@@ -1,0 +1,78 @@
+{
+  "manifest_sha256": "12ad7dd97c16634635942f9e5a3f0417ad2ebc8f5734d811a4559abe9e84e068",
+  "cases": [
+    {
+      "motion_id": "000123",
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/prefix_rebuild_20260925_v1/000123.npz",
+      "sha256": "6fea61ec70ea03caa142ce458d4ec1a82420af99f4039e89462fe34ddd7bf150",
+      "original_manifest": {
+        "status": "rejected",
+        "reason": "explicit standard_imu_v1 manifest required; legacy schemas are separate"
+      },
+      "relabelled_manifest": {
+        "status": "rejected",
+        "reason": "Embedded cache schema disagrees with manifest; no implicit cache migration"
+      }
+    },
+    {
+      "motion_id": "000015",
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/prefix_rebuild_20260925_v1/000015.npz",
+      "sha256": "f65af2f643b2cd8a7f17c39d6965c41802f17da890838324e9f2d3eb448aa8f2",
+      "original_manifest": {
+        "status": "rejected",
+        "reason": "explicit standard_imu_v1 manifest required; legacy schemas are separate"
+      },
+      "relabelled_manifest": {
+        "status": "rejected",
+        "reason": "Embedded cache schema disagrees with manifest; no implicit cache migration"
+      }
+    },
+    {
+      "motion_id": "000506",
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/prefix_rebuild_20260925_v1/000506.npz",
+      "sha256": "ec728a9337919e1a245df909d8c4e564b7d4479c30b6c2dff350d0a5059816d2",
+      "original_manifest": {
+        "status": "rejected",
+        "reason": "explicit standard_imu_v1 manifest required; legacy schemas are separate"
+      },
+      "relabelled_manifest": {
+        "status": "rejected",
+        "reason": "Embedded cache schema disagrees with manifest; no implicit cache migration"
+      }
+    },
+    {
+      "motion_id": "004728",
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/prefix_rebuild_20260925_v1/004728.npz",
+      "sha256": "9871e4eac6a45cef9147c3688c04b93656d037eba4a1edf48d9cc83fb255d61b",
+      "original_manifest": {
+        "status": "rejected",
+        "reason": "explicit standard_imu_v1 manifest required; legacy schemas are separate"
+      },
+      "relabelled_manifest": {
+        "status": "rejected",
+        "reason": "Embedded cache schema disagrees with manifest; no implicit cache migration"
+      }
+    },
+    {
+      "motion_id": "000027",
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/prefix_rebuild_20260925_v1/000027.npz",
+      "sha256": "f7784d0a5aad70e1e5a6dfcbfa1702d5d0652b2664e20ea58faa866c2fb72283",
+      "original_manifest": {
+        "status": "rejected",
+        "reason": "explicit standard_imu_v1 manifest required; legacy schemas are separate"
+      },
+      "relabelled_manifest": {
+        "status": "rejected",
+        "reason": "Embedded cache schema disagrees with manifest; no implicit cache migration"
+      }
+    }
+  ],
+  "budget": {
+    "cache_files": 5,
+    "attempts_per_cache": 2,
+    "model_forwards": 0,
+    "training_updates": 0,
+    "generated_samples": 0,
+    "gpu_jobs": 0
+  }
+}

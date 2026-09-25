@@ -52,6 +52,24 @@ def test_cache_rejects_schema_and_quantity_before_model(tmp_path):
         load_method_cache(dict(record, quantity='body_specific_force'), workspace_root=tmp_path)
 
 
+@pytest.mark.parametrize('embedded_schema', ['standard_imu_prefix_diagnostic_v1', ['standard_imu_v1']])
+def test_relabelled_or_malformed_embedded_schema_is_rejected(tmp_path, embedded_schema):
+    record = cache_record(tmp_path)
+    with np.load(record['imu_path']) as data:
+        arrays = {key: data[key] for key in data.files}
+    np.savez(record['imu_path'], **arrays, schema=embedded_schema)
+    with pytest.raises(ValueError, match='Embedded cache schema'):
+        load_method_cache(record, workspace_root=tmp_path)
+
+
+def test_explicit_standard_embedded_schema_remains_readable(tmp_path):
+    record = cache_record(tmp_path)
+    with np.load(record['imu_path']) as data:
+        arrays = {key: data[key] for key in data.files}
+    np.savez(record['imu_path'], **arrays, schema='standard_imu_v1')
+    assert load_method_cache(record, workspace_root=tmp_path)['acceleration'].shape == (3, 6, 3)
+
+
 def test_sampling_static_uses_current_checkpoint_normalization(tmp_path):
     helper = script('sample_mdm_imu_control')
     record = cache_record(tmp_path)

@@ -1,3 +1,19 @@
+# 01 STATUS — 缓存与恢复训练来源核验（2026-09-25）
+
+读取 `2de27a6` / `d360e91`，接纳 02 caption 独立验收及前缀负结果边界。公共契约仍为 v0.2-draft。
+
+- 方法 cache wrapper 检查内嵌 schema，拒绝诊断缓存仅通过 manifest 改标签进入标准输入。
+- 新 checkpoint 记录实际输入/配置/管线/MDM/normalization 来源哈希；`--resume` 在模型初始化前核验，不再静默覆盖统计。
+- 旧 checkpoint 采样兼容；缺少来源记录时拒绝训练恢复。来源一致的恢复仍是 fresh optimizer warm start。
+- 5 条真实诊断声明和 5 条内存改标签声明均拒绝；caption 重放 JSON 与旧报告相等。
+- 定向 29 项、联合 126 项通过；无真实训练更新/生成/GPU，无新增研究 checkpoint。
+
+详情、命令和兼容边界见 [CACHE_MIGRATION_HANDOFF_20260925.md](CACHE_MIGRATION_HANDOFF_20260925.md)。
+没有迁移新缓存或重算真实训练统计。物理/语义准入、witness、预算等 G2/G3 阻塞保持不变。
+下面为历史状态记录。
+
+---
+
 # 01 STATUS — caption 计划接入（2026-09-25）
 
 读取 `9439818`；公共契约 v0.2-draft 未冻结。已完成显式 caption sidecar 消费，opt-in 管线
