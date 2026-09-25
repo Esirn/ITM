@@ -1,0 +1,41 @@
+{
+  "read_method_commit": "1d7a32d",
+  "files": [
+    {
+      "path": "scripts/accept_canonical_b0_handoff.py",
+      "sha256": "7d7c826eb378b51293141549f8b5c415a7c5c165949e7c6271aae3ed03c649f4"
+    },
+    {
+      "path": "scripts/plan_canonical_b0_execution.py",
+      "sha256": "f406733cc81a6afae55d66a1a6603018b572e78c5efe7455c52b258eb6682a4d"
+    },
+    {
+      "path": "src/itm/models/mdm_canonical_conditions.py",
+      "sha256": "d78f53dcaa388eddcec1ef8eeb819bb9a14297780de6430e9e35ffe1f449ba4a"
+    },
+    {
+      "path": "src/itm/models/mdm_caption_conditions.py",
+      "sha256": "fdfef2453bfd6ff1b187fe363a309c8ddc4c12652009d5d94572263de2676e39"
+    },
+    {
+      "path": "src/itm/models/mdm_imu_control.py",
+      "sha256": "51de85cbf5cff81d38c2381ea7e3551caadf6ec85b34f97200dd7250bdf01de0"
+    },
+    {
+      "path": "src/itm/models/mdm_training_provenance.py",
+      "sha256": "57b5bc125fccac87b2f6a67f429cc72a0d1b32358b93ee4e3e30341439df4c11"
+    },
+    {
+      "path": "scripts/train_mdm_imu_control.py",
+      "sha256": "f19910f40a5dd2793370a2dd610f0745a38c87831fbf04d615b682cb853b4ac6"
+    },
+    {
+      "path": "scripts/sample_mdm_imu_control.py",
+      "sha256": "3c8fcc05a1e09b0dd3896f3a26a382f7e869ca3be33d6a420bb96f745ec3e1f1"
+    },
+    {
+      "path": "scripts/check_mdm_canonical_handoff.py",
+      "sha256": "f164948d86d2fa1619a23d2da08c2dac261e6563166120f5cf17cfba2dd68540"
+    }
+  ]
+}

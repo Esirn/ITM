@@ -1,0 +1,13 @@
+{
+  "plan": {
+    "path": "docs/itm_rework/protocol/canonical_method_acceptance_20260925_v1/execution_plan/execution_plan.json",
+    "sha256": "fd1618f69e16ba79fabcbf67849d73078cd6fcc8d2afd18affdbe3d128c102bc"
+  },
+  "training_argv_parses": true,
+  "single_case_sampling_argv_parses": 36,
+  "planned_updates": 200,
+  "planned_sampling_slots": 36,
+  "jobs_launched": 0,
+  "caps_implemented": false,
+  "authorization_obtained": false
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "case_id": "000433-head-paired",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "condition": "paired",
+    "caption_index": 0,
+    "text": "this person is standing straight and kicks his leg out once and then stands normal.",
+    "text_present": true,
+    "imu_present": true,
+    "length": 41,
+    "sampling_seed": 20260926,
+    "random_plan_case_id": "canonical-B0-000433-head",
+    "gt_path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000433/joints.npy",
+    "environment": "approximately_stationary_floor",
+    "checkpoint_selection": "same_final_checkpoint_for_all_control_conditions",
+    "status": "planned_not_executed"
+  }
+]

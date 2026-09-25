@@ -1,0 +1,19 @@
+[
+  {
+    "case_id": "000139-wrists-backbone_bypass",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "condition": "backbone_bypass",
+    "caption_index": 0,
+    "text": "a person stands facing down the path, casually swaying for a moment then proceeds to walk a few steps forward, swinging its arms casually.",
+    "text_present": true,
+    "imu_present": false,
+    "length": 163,
+    "sampling_seed": 20260926,
+    "random_plan_case_id": "canonical-B0-000139-wrists",
+    "gt_path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000139/joints.npy",
+    "environment": "nonflat_support",
+    "checkpoint_selection": "same_final_checkpoint_for_all_control_conditions",
+    "status": "planned_not_executed"
+  }
+]

@@ -1,0 +1,626 @@
+{
+  "read_commit": "1d7a32d39af745bec2430c80f072a7284d03e93f",
+  "budget": {
+    "real_source_clips": 6,
+    "training_config_inputs": 6,
+    "validation_slots": 36,
+    "real_model_forwards": 0,
+    "training_updates": 0,
+    "diffusion_samples": 0,
+    "FK_calls": 0,
+    "gpu_jobs": 0
+  },
+  "source": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/canonical_training_input_20260925_v1.json",
+    "sha256": "ffbe676233e1750b105cbff73a587dfbe5369fb223cd4b645262ac1295b9d16f"
+  },
+  "input_commands": [
+    [
+      "/home/a200/miniconda3/envs/itm/bin/python",
+      "/home/a200/0proj/ITM/scripts/train_mdm_imu_control.py",
+      "--canonical-package",
+      "docs/itm_rework/protocol/canonical_b0_20260925_v3/package.json",
+      "--manifest",
+      "docs/itm_rework/protocol/canonical_b0_20260925_v3/train_motion.jsonl",
+      "--standard-imu-manifest",
+      "docs/itm_rework/protocol/canonical_b0_20260925_v3/train_imu.jsonl",
+      "--caption-plan",
+      "docs/itm_rework/protocol/canonical_b0_20260925_v3/train_caption_plans.jsonl",
+      "--contract-version",
+      "itm-rework-v0.3-draft",
+      "--mdm-root",
+      "outputs/mdm/runtime_root",
+      "--mdm-checkpoint",
+      "outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/model000475000.pt",
+      "--mdm-args",
+      "outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/args.json",
+      "--mean",
+      "/home/a200/0proj/datasets/all/Mean.npy",
+      "--std",
+      "/home/a200/0proj/datasets/all/Std.npy",
+      "--epochs",
+      "100",
+      "--batch-size",
+      "3",
+      "--seed",
+      "20260925",
+      "--device",
+      "cpu",
+      "--output",
+      "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_method_acceptance_20260925_v1/replay/never_created_model.pt",
+      "--input-only-report",
+      "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_method_acceptance_20260925_v1/replay/training_input_replay.json"
+    ],
+    [
+      "/home/a200/miniconda3/envs/itm/bin/python",
+      "/home/a200/0proj/ITM/scripts/check_mdm_canonical_handoff.py",
+      "--package",
+      "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/package.json",
+      "--training-report",
+      "/home/a200/0proj/ITM/docs/itm_rework/method/canonical_training_input_20260925_v1.json",
+      "--output",
+      "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_method_acceptance_20260925_v1/replay/method_replay.json"
+    ]
+  ],
+  "normalization": {
+    "acceleration_mean": [
+      [
+        0.08606275916099548,
+        0.05218241736292839,
+        -0.004557386506348848
+      ],
+      [
+        -0.09847400337457657,
+        0.053035516291856766,
+        0.04503466188907623
+      ],
+      [
+        0.0032043559476733208,
+        -0.010230185464024544,
+        0.012104523368179798
+      ],
+      [
+        -0.006135671865195036,
+        -0.01956915855407715,
+        0.031618811190128326
+      ],
+      [
+        -0.02227126806974411,
+        -0.0007158907246775925,
+        0.0325159877538681
+      ],
+      [
+        -0.025184188038110733,
+        -0.014637482352554798,
+        0.029162513092160225
+      ]
+    ],
+    "acceleration_std": [
+      [
+        3.8313040733337402,
+        2.830742835998535,
+        3.970366954803467
+      ],
+      [
+        3.2768919467926025,
+        3.168140172958374,
+        3.643237829208374
+      ],
+      [
+        1.6565872430801392,
+        2.1855318546295166,
+        1.638021469116211
+      ],
+      [
+        1.9980077743530273,
+        1.9947030544281006,
+        1.7800812721252441
+      ],
+      [
+        1.3888434171676636,
+        2.744654417037964,
+        1.7099049091339111
+      ],
+      [
+        1.2581554651260376,
+        2.269946336746216,
+        1.5072047710418701
+      ]
+    ],
+    "orientation": "rotation_matrix_unscaled",
+    "source": {
+      "split": "train",
+      "unique_motion_ids": [
+        "000027",
+        "000506",
+        "004728"
+      ],
+      "fps": 20.0,
+      "unique_frames": 398,
+      "configuration_duplicates_counted": false,
+      "pipeline": "itm-method-canonical-b0-v1"
+    }
+  },
+  "independent_population_frames": 398,
+  "mean_bitwise_equal": true,
+  "std_max_abs_difference": 0.0,
+  "std_max_relative_difference": 0.0,
+  "wrong_population_sensitivity": {
+    "using_30hz_train_mean_max_difference": 0.014320534064548762,
+    "including_val_mean_max_difference": 0.051623889521411996
+  },
+  "training_provenance_sha256": "9f39bf7ffd93b2595dfdcea4ee3288761b14a6e75a6585fedb841fd490295ef1",
+  "all_six_prepared_inputs": [
+    {
+      "motion_id": "000506",
+      "split": "train",
+      "frames": 136,
+      "acceleration_max_abs_error": 0.0,
+      "orientation_max_abs_error": 0.0,
+      "imu_sha256": "755a77581405732167efbef420156f92ae1eea8d3a4b2d3edc7600d2912b70b1",
+      "direct_GT_equal": true,
+      "caption_index": 0
+    },
+    {
+      "motion_id": "004728",
+      "split": "train",
+      "frames": 158,
+      "acceleration_max_abs_error": 0.0,
+      "orientation_max_abs_error": 0.0,
+      "imu_sha256": "f009b1735ebe4600acc136c726b50613ce660da32b55d211afdf0e9312259a76",
+      "direct_GT_equal": true,
+      "caption_index": 0
+    },
+    {
+      "motion_id": "000027",
+      "split": "train",
+      "frames": 104,
+      "acceleration_max_abs_error": 0.0,
+      "orientation_max_abs_error": 0.0,
+      "imu_sha256": "267f9be0ac6002bf4a09a7c8c297083527b89e92e51e1f146c45c41b060ec10e",
+      "direct_GT_equal": true,
+      "caption_index": 1
+    },
+    {
+      "motion_id": "000433",
+      "split": "val",
+      "frames": 41,
+      "acceleration_max_abs_error": 0.0,
+      "orientation_max_abs_error": 0.0,
+      "imu_sha256": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+      "direct_GT_equal": true,
+      "caption_index": 0
+    },
+    {
+      "motion_id": "000382",
+      "split": "val",
+      "frames": 94,
+      "acceleration_max_abs_error": 0.0,
+      "orientation_max_abs_error": 0.0,
+      "imu_sha256": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+      "direct_GT_equal": true,
+      "caption_index": 0
+    },
+    {
+      "motion_id": "000139",
+      "split": "val",
+      "frames": 163,
+      "acceleration_max_abs_error": 0.0,
+      "orientation_max_abs_error": 0.0,
+      "imu_sha256": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+      "direct_GT_equal": true,
+      "caption_index": 0
+    }
+  ],
+  "train_config_inputs_equal": 6,
+  "validation_slots": [
+    {
+      "case_id": "000433-head-paired",
+      "condition": "paired",
+      "frames": 41,
+      "normalized_imu_sha256": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+      "text_present": true,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000433-head-text_only",
+      "condition": "text_only",
+      "frames": 41,
+      "normalized_imu_sha256": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+      "text_present": true,
+      "imu_present": false,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000433-head-imu_only",
+      "condition": "imu_only",
+      "frames": 41,
+      "normalized_imu_sha256": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+      "text_present": false,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000433-head-backbone_bypass",
+      "condition": "backbone_bypass",
+      "frames": 41,
+      "normalized_imu_sha256": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+      "text_present": true,
+      "imu_present": false,
+      "backbone_bypass": true,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000433-head-numeric_zero",
+      "condition": "numeric_zero",
+      "frames": 41,
+      "normalized_imu_sha256": "8d64839fb5adeda9d1b8272548a264ebe4e60299f9831abb7227e9a157cda545",
+      "text_present": true,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000433-head-physical_static",
+      "condition": "physical_static",
+      "frames": 41,
+      "normalized_imu_sha256": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+      "text_present": true,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000433-wrists-paired",
+      "condition": "paired",
+      "frames": 41,
+      "normalized_imu_sha256": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+      "text_present": true,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000433-wrists-text_only",
+      "condition": "text_only",
+      "frames": 41,
+      "normalized_imu_sha256": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+      "text_present": true,
+      "imu_present": false,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000433-wrists-imu_only",
+      "condition": "imu_only",
+      "frames": 41,
+      "normalized_imu_sha256": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+      "text_present": false,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000433-wrists-backbone_bypass",
+      "condition": "backbone_bypass",
+      "frames": 41,
+      "normalized_imu_sha256": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+      "text_present": true,
+      "imu_present": false,
+      "backbone_bypass": true,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000433-wrists-numeric_zero",
+      "condition": "numeric_zero",
+      "frames": 41,
+      "normalized_imu_sha256": "8d64839fb5adeda9d1b8272548a264ebe4e60299f9831abb7227e9a157cda545",
+      "text_present": true,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000433-wrists-physical_static",
+      "condition": "physical_static",
+      "frames": 41,
+      "normalized_imu_sha256": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+      "text_present": true,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000382-head-paired",
+      "condition": "paired",
+      "frames": 94,
+      "normalized_imu_sha256": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+      "text_present": true,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000382-head-text_only",
+      "condition": "text_only",
+      "frames": 94,
+      "normalized_imu_sha256": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+      "text_present": true,
+      "imu_present": false,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000382-head-imu_only",
+      "condition": "imu_only",
+      "frames": 94,
+      "normalized_imu_sha256": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+      "text_present": false,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000382-head-backbone_bypass",
+      "condition": "backbone_bypass",
+      "frames": 94,
+      "normalized_imu_sha256": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+      "text_present": true,
+      "imu_present": false,
+      "backbone_bypass": true,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000382-head-numeric_zero",
+      "condition": "numeric_zero",
+      "frames": 94,
+      "normalized_imu_sha256": "a78865e83dac42f13322257206f07104b7d929893a30bac20ae248170bb4bddb",
+      "text_present": true,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000382-head-physical_static",
+      "condition": "physical_static",
+      "frames": 94,
+      "normalized_imu_sha256": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+      "text_present": true,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000382-wrists-paired",
+      "condition": "paired",
+      "frames": 94,
+      "normalized_imu_sha256": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+      "text_present": true,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000382-wrists-text_only",
+      "condition": "text_only",
+      "frames": 94,
+      "normalized_imu_sha256": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+      "text_present": true,
+      "imu_present": false,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000382-wrists-imu_only",
+      "condition": "imu_only",
+      "frames": 94,
+      "normalized_imu_sha256": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+      "text_present": false,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000382-wrists-backbone_bypass",
+      "condition": "backbone_bypass",
+      "frames": 94,
+      "normalized_imu_sha256": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+      "text_present": true,
+      "imu_present": false,
+      "backbone_bypass": true,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000382-wrists-numeric_zero",
+      "condition": "numeric_zero",
+      "frames": 94,
+      "normalized_imu_sha256": "a78865e83dac42f13322257206f07104b7d929893a30bac20ae248170bb4bddb",
+      "text_present": true,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000382-wrists-physical_static",
+      "condition": "physical_static",
+      "frames": 94,
+      "normalized_imu_sha256": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+      "text_present": true,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000139-head-paired",
+      "condition": "paired",
+      "frames": 163,
+      "normalized_imu_sha256": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+      "text_present": true,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000139-head-text_only",
+      "condition": "text_only",
+      "frames": 163,
+      "normalized_imu_sha256": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+      "text_present": true,
+      "imu_present": false,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000139-head-imu_only",
+      "condition": "imu_only",
+      "frames": 163,
+      "normalized_imu_sha256": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+      "text_present": false,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000139-head-backbone_bypass",
+      "condition": "backbone_bypass",
+      "frames": 163,
+      "normalized_imu_sha256": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+      "text_present": true,
+      "imu_present": false,
+      "backbone_bypass": true,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000139-head-numeric_zero",
+      "condition": "numeric_zero",
+      "frames": 163,
+      "normalized_imu_sha256": "b5a642cdd1f725eaee2a892a850a19d9f9270932eb5d72c6048f14be8ed4f798",
+      "text_present": true,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000139-head-physical_static",
+      "condition": "physical_static",
+      "frames": 163,
+      "normalized_imu_sha256": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+      "text_present": true,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000139-wrists-paired",
+      "condition": "paired",
+      "frames": 163,
+      "normalized_imu_sha256": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+      "text_present": true,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000139-wrists-text_only",
+      "condition": "text_only",
+      "frames": 163,
+      "normalized_imu_sha256": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+      "text_present": true,
+      "imu_present": false,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000139-wrists-imu_only",
+      "condition": "imu_only",
+      "frames": 163,
+      "normalized_imu_sha256": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+      "text_present": false,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000139-wrists-backbone_bypass",
+      "condition": "backbone_bypass",
+      "frames": 163,
+      "normalized_imu_sha256": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+      "text_present": true,
+      "imu_present": false,
+      "backbone_bypass": true,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000139-wrists-numeric_zero",
+      "condition": "numeric_zero",
+      "frames": 163,
+      "normalized_imu_sha256": "b5a642cdd1f725eaee2a892a850a19d9f9270932eb5d72c6048f14be8ed4f798",
+      "text_present": true,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    },
+    {
+      "case_id": "000139-wrists-physical_static",
+      "condition": "physical_static",
+      "frames": 163,
+      "normalized_imu_sha256": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+      "text_present": true,
+      "imu_present": true,
+      "backbone_bypass": false,
+      "input_matches_independent_reference": true,
+      "status": "input_checked_not_generated"
+    }
+  ],
+  "method_report_reproduced": true,
+  "reserved_noise_groups_checked": 6,
+  "noise_draws_executed": 0,
+  "code": {
+    "path": "/home/a200/0proj/ITM/scripts/accept_canonical_b0_handoff.py",
+    "sha256": "7d7c826eb378b51293141549f8b5c415a7c5c165949e7c6271aae3ed03c649f4"
+  },
+  "limitations": [
+    "No real model forward or full DDPM run.",
+    "Software fixtures separately test text absence/bypass; no model capability claim.",
+    "Input acceptance is not budget authorization or runtime-cap enforcement acceptance."
+  ]
+}

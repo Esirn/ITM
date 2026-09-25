@@ -1,0 +1,19 @@
+[
+  {
+    "case_id": "000382-head-numeric_zero",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "condition": "numeric_zero",
+    "caption_index": 0,
+    "text": "a person standing in place claps their hands and then places arms back down at their sides.",
+    "text_present": true,
+    "imu_present": true,
+    "length": 94,
+    "sampling_seed": 20260926,
+    "random_plan_case_id": "canonical-B0-000382-head",
+    "gt_path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000382/joints.npy",
+    "environment": "approximately_stationary_floor",
+    "checkpoint_selection": "same_final_checkpoint_for_all_control_conditions",
+    "status": "planned_not_executed"
+  }
+]

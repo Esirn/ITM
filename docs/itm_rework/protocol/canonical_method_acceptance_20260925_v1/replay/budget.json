@@ -1,0 +1,10 @@
+{
+  "real_source_clips": 6,
+  "training_config_inputs": 6,
+  "validation_slots": 36,
+  "real_model_forwards": 0,
+  "training_updates": 0,
+  "diffusion_samples": 0,
+  "FK_calls": 0,
+  "gpu_jobs": 0
+}
