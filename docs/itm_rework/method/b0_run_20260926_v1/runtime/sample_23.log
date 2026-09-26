@@ -1,0 +1,13 @@
+device=cuda:0 free=23.18GiB total=23.63GiB
+/home/a200/0proj/ITM/outputs/mdm/runtime_root/diffusion/nn.py:151: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, run_function, length, *args):
+/home/a200/0proj/ITM/outputs/mdm/runtime_root/diffusion/nn.py:161: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, *output_grads):
+TRANS_ENC init
+/home/a200/miniconda3/envs/itm/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(
+EMBED TEXT
+Loading CLIP...
+/home/a200/miniconda3/envs/itm/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+results: /home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-physical_static.npz

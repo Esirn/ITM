@@ -1,0 +1,36 @@
+{
+  "version": "method-B0-delivery-integrity-v1",
+  "scope": "Integrity only; independent effectiveness evaluation belongs to 02.",
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1",
+  "status": "completed",
+  "gpu_preflight": {
+    "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+    "total_MiB": 24564,
+    "free_MiB": 24124,
+    "compute_processes": 0
+  },
+  "slot_counts": {
+    "completed": 36
+  },
+  "updates_completed": 200,
+  "denoising_calls": 36000,
+  "branch_examples": 144000,
+  "peak_allocated_bytes": 737469952,
+  "train_start_to_last_receipt_seconds": 33.65433710301295,
+  "sampling_phase_to_last_receipt_seconds": 526.3337590360316,
+  "total_start_to_last_receipt_seconds": 561.1310130039928,
+  "timing_note": "Last persisted child receipt; parent verification/exit may add small overhead. Absolute deadlines enforced by accepted runner.",
+  "checkpoint": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/model.pt",
+    "sha256": "44d2c3307f27bca2c79ab7d367890f968f78777168c3c37a306a7bf0560d6ac2"
+  },
+  "checkpoint_provenance_matches_accepted_input": true,
+  "six_condition_noise_plans_equal_within_groups": [
+    "canonical-B0-000433-head",
+    "canonical-B0-000433-wrists",
+    "canonical-B0-000382-head",
+    "canonical-B0-000382-wrists",
+    "canonical-B0-000139-head",
+    "canonical-B0-000139-wrists"
+  ]
+}

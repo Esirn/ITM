@@ -1,0 +1,142 @@
+{
+  "version": "itm-b0-run-receipt-v1",
+  "phase": "sample",
+  "status": "completed",
+  "context": {
+    "phase": "sample",
+    "deadline_monotonic": 538108.141437223,
+    "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+    "receipt_path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/runtime/sample_13.receipt.json",
+    "memory_bytes": 25769803776,
+    "expected_artifacts": [
+      {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/admission.jsonl",
+        "sha256": "9fa1046c5bce7e25d507ac254d9f77a451ddf9ecd8c6a70309c79f611b6bf161"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/b0_budget.json",
+        "sha256": "660b9f779eee1301f1bb92c30081c20e86248f76854f047f07ea88521ecead47"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/build_report.json",
+        "sha256": "e009e471a85a572aa025a61f6e02261fed768720be17e541d966cf868c3a81a9"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/package.json",
+        "sha256": "33de7fd98c1cf43fc5a51a7d35b502e154a233066efec13f17dda08bc53abe97"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/sampling_cases.json",
+        "sha256": "ddf2f01ae1ddcb6b6583f50508106f801a0b9b9564c917614954f5157d93c070"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/semantic_review.json",
+        "sha256": "149c4006bbdb2b6fb2cee6524e8e04e73ce37dff7d4f529d061ae3ff4641c5ec"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/train_caption_plans.jsonl",
+        "sha256": "71720d8d970ae68da8169b2bb037551090b759809e5f6957058bf30216559fc8"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/train_imu.jsonl",
+        "sha256": "97daa478cdb17fdc45a40c376c28becf595c7e4e2d0eaa97f3bc96e964fb592a"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/train_motion.jsonl",
+        "sha256": "d1a42a16b6dd3e61682dc59a389ae00f8189d371d372d08d90f67bf6c22ed2ca"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/val_caption_plans.jsonl",
+        "sha256": "c2f58d1452c821219554586ee99200ad4d04e83afb295f6810b75ebd4ab493f3"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/val_imu.jsonl",
+        "sha256": "2fffd1d6809c832cd5063e155d27940c5c351647e5c29814f2f7c3ccf5735dd5"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/val_motion.jsonl",
+        "sha256": "7d79378e48c006c4fecf59cf7a2f59310c9c65caf7b8f71f8c6a7c3fd5fbacb6"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/verification.json",
+        "sha256": "b382182c4cb1ec0b3b0d2dde20170ffa41010257dadfdff7b0dcafe00204d196"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/train_caption_plans.jsonl",
+        "sha256": "71720d8d970ae68da8169b2bb037551090b759809e5f6957058bf30216559fc8"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/train_imu.jsonl",
+        "sha256": "97daa478cdb17fdc45a40c376c28becf595c7e4e2d0eaa97f3bc96e964fb592a"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/args.json",
+        "sha256": "2feda496a83142e38fd22d2db860d4d054c9ed678e23362fd18a5c09f660683b"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/model000475000.pt",
+        "sha256": "ce43c1d4232fc2b897999d7996c2d2b889791d99585d87e1289af773ab56ab93"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/train_motion.jsonl",
+        "sha256": "d1a42a16b6dd3e61682dc59a389ae00f8189d371d372d08d90f67bf6c22ed2ca"
+      },
+      {
+        "path": "/home/a200/0proj/datasets/all/Mean.npy",
+        "sha256": "26e136555dab04c94a129d446c26e6b9939cbf045fbf77bcf5462c1fb5a2001c"
+      },
+      {
+        "path": "/home/a200/0proj/datasets/all/Std.npy",
+        "sha256": "6565a65ed9b31e23c328829a309e1c482be8b85fd23b43d65451a9b19a917f40"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/scripts/train_mdm_imu_control.py",
+        "sha256": "14e7bee3de0d5b60815c7550f7e6787fb7d844e12c224fef8b33987177ea8f89"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/scripts/sample_mdm_imu_control.py",
+        "sha256": "569711343f38c75fa34d670ee76882bf048571ea60e3da377e3cac0309e0c463"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/src/itm/models/mdm_run_limits.py",
+        "sha256": "cf339ae8d8a6b4d76946281fa0be974ca2a7b4462a781a6d70aebb3c1dfc7f76"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/src/itm/models/mdm_sampling.py",
+        "sha256": "def8c1bf77446e652be1216fa20485a00474b1884071e2305fc204ee1f0a3e68"
+      },
+      {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/model.pt",
+        "sha256": "44d2c3307f27bca2c79ab7d367890f968f78777168c3c37a306a7bf0560d6ac2"
+      },
+      {
+        "path": "docs/itm_rework/protocol/canonical_method_acceptance_20260925_v1/execution_plan/case_specs/000382-head-text_only.json",
+        "sha256": "6f4ee910b496b03b0637b01bb1c085fb7d23b233eebaa655db624b620611adfa"
+      }
+    ],
+    "max_denoising_calls": 1000,
+    "max_branch_examples": 4000
+  },
+  "pid": 710990,
+  "started_monotonic": 527517.646806224,
+  "updates_attempted": 0,
+  "updates_completed": 0,
+  "denoising_calls": 1000,
+  "branch_examples": 4000,
+  "peak_allocated_bytes": 520582656,
+  "artifacts": [
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-text_only.npz",
+      "sha256": "b9b8da80eace7533acfcea7b5907d5ab053f1801fffc0206d314b0c39e5e363c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-text_only.json",
+      "sha256": "b1437bc5321b7621bd70d33ab26680f7e85b9f7e1743ffeb0ff649e78ebd432d"
+    }
+  ],
+  "last_monotonic": 527530.879658584,
+  "allocator_cap_bytes": 25377767424,
+  "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+  "active_case_id": "canonical-B0-000382-head",
+  "active_step": 0
+}

@@ -1,0 +1,26 @@
+{
+  "authorized": true,
+  "approved_by": "user",
+  "user_instruction_reference": "用户在 02 已提交 030c191 的交接（待批准一次 B0：200 updates＋36 条完整采样，单 GPU、最多 24 GiB、合计最多 4 小时）后明确回复「可以」，随后回复「continue」。训练最多 1 小时，36 条采样共享最多 3 小时；超时、OOM、非有限值即停。",
+  "recorded_at": "2026-09-26T03:27:23.500308+00:00",
+  "budget_sha256": "660b9f779eee1301f1bb92c30081c20e86248f76854f047f07ea88521ecead47",
+  "execution_plan_sha256": "fd1618f69e16ba79fabcbf67849d73078cd6fcc8d2afd18affdbe3d128c102bc",
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1",
+  "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+  "accepted_method_commit": "1d44adc",
+  "independent_acceptance_commit": "030c191",
+  "limits": {
+    "updates": 200,
+    "samples": 36,
+    "training_seconds": 3600,
+    "shared_sampling_seconds": 10800,
+    "total_seconds": 14400,
+    "allocated_memory_bytes": 25769803776,
+    "gpus": 1
+  },
+  "launch_environment": {
+    "OMP_NUM_THREADS": "2",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "scope": "One attempt, no automatic retry or CPU fallback; canonical synthetic B0 only."
+}

@@ -1,0 +1,1370 @@
+{
+  "version": "method-B0-delivery-integrity-v1",
+  "scope": "Integrity only; independent effectiveness evaluation belongs to 02.",
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1",
+  "status": "completed",
+  "gpu_preflight": {
+    "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+    "total_MiB": 24564,
+    "free_MiB": 24124,
+    "compute_processes": 0
+  },
+  "slot_counts": {
+    "completed": 36
+  },
+  "updates_completed": 200,
+  "denoising_calls": 36000,
+  "branch_examples": 144000,
+  "peak_allocated_bytes": 737469952,
+  "train_start_to_last_receipt_seconds": 33.65433710301295,
+  "sampling_phase_to_last_receipt_seconds": 526.3337590360316,
+  "total_start_to_last_receipt_seconds": 561.1310130039928,
+  "timing_note": "Last persisted child receipt; parent verification/exit may add small overhead. Absolute deadlines enforced by accepted runner.",
+  "checkpoint": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/model.pt",
+    "sha256": "44d2c3307f27bca2c79ab7d367890f968f78777168c3c37a306a7bf0560d6ac2"
+  },
+  "checkpoint_provenance_matches_accepted_input": true,
+  "six_condition_noise_plans_equal_within_groups": [
+    "canonical-B0-000433-head",
+    "canonical-B0-000433-wrists",
+    "canonical-B0-000382-head",
+    "canonical-B0-000382-wrists",
+    "canonical-B0-000139-head",
+    "canonical-B0-000139-wrists"
+  ],
+  "slots": [
+    {
+      "case_id": "000433-head-paired",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          41,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          41
+        ]
+      },
+      "frame_count": 41,
+      "condition": "paired",
+      "sensor_config": "head",
+      "random_plan_case_id": "canonical-B0-000433-head",
+      "random_plan_id": "52807a48c82d9243c5328a2df92e252d21cdbb55b0435faca7dccf291a656ec9",
+      "sampling_seconds": 14.696051095961593,
+      "peak_allocated_bytes": 515075072,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-paired.npz",
+          "sha256": "880687d2595e54a27359fe67f067ebd24f28fd02ef642d39b2e3f8d3c5784052"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-paired.json",
+          "sha256": "9cc4c0c32ffea28b7b2cde88b7687f5c5ee32a56cf188235479cf2f646d6164b"
+        }
+      ]
+    },
+    {
+      "case_id": "000433-head-text_only",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          41,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          41
+        ]
+      },
+      "frame_count": 41,
+      "condition": "text_only",
+      "sensor_config": "head",
+      "random_plan_case_id": "canonical-B0-000433-head",
+      "random_plan_id": "52807a48c82d9243c5328a2df92e252d21cdbb55b0435faca7dccf291a656ec9",
+      "sampling_seconds": 14.100589615991339,
+      "peak_allocated_bytes": 515075072,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-text_only.npz",
+          "sha256": "c947c06ade69511ecb408f51efceaf31370b4e4c2f2d0fe308104033b286e37e"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-text_only.json",
+          "sha256": "cc4b5c2da1ec6228de6591b9db2b4e9b54e42af0c10a222798f0e6f86dd807aa"
+        }
+      ]
+    },
+    {
+      "case_id": "000433-head-imu_only",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          41,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          41
+        ]
+      },
+      "frame_count": 41,
+      "condition": "imu_only",
+      "sensor_config": "head",
+      "random_plan_case_id": "canonical-B0-000433-head",
+      "random_plan_id": "52807a48c82d9243c5328a2df92e252d21cdbb55b0435faca7dccf291a656ec9",
+      "sampling_seconds": 13.684274533996359,
+      "peak_allocated_bytes": 515075072,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-imu_only.npz",
+          "sha256": "9a53546977945ab8c0ecd19627172298ea07a494cd07a6a05c01b1ba30524c64"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-imu_only.json",
+          "sha256": "d45e84f55c12e8b30d0c3fdba30f3d7582e258f785f23c687de3cfb41607f57b"
+        }
+      ]
+    },
+    {
+      "case_id": "000433-head-backbone_bypass",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          41,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          41
+        ]
+      },
+      "frame_count": 41,
+      "condition": "backbone_bypass",
+      "sensor_config": "head",
+      "random_plan_case_id": "canonical-B0-000433-head",
+      "random_plan_id": "52807a48c82d9243c5328a2df92e252d21cdbb55b0435faca7dccf291a656ec9",
+      "sampling_seconds": 14.190982063068077,
+      "peak_allocated_bytes": 514385920,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-backbone_bypass.npz",
+          "sha256": "30f4a32e9d90f181b6303c461f49cc167cb89ccbd95e1aeecfbe1e73697c5ed1"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-backbone_bypass.json",
+          "sha256": "cd3c8805dee54ba6498d3134554c8a3a5d9797f0af23f5969fcfa3f50faf7f20"
+        }
+      ]
+    },
+    {
+      "case_id": "000433-head-numeric_zero",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          41,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          41
+        ]
+      },
+      "frame_count": 41,
+      "condition": "numeric_zero",
+      "sensor_config": "head",
+      "random_plan_case_id": "canonical-B0-000433-head",
+      "random_plan_id": "52807a48c82d9243c5328a2df92e252d21cdbb55b0435faca7dccf291a656ec9",
+      "sampling_seconds": 14.04873756901361,
+      "peak_allocated_bytes": 515075072,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-numeric_zero.npz",
+          "sha256": "67e42e63bca5c583765ee69085f15789249e0d558c83ff43c55642b56d32b235"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-numeric_zero.json",
+          "sha256": "9a305504ac224a228fd3a801d2769b495d6ab491ad344dd2f195abc574c8a20b"
+        }
+      ]
+    },
+    {
+      "case_id": "000433-head-physical_static",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          41,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          41
+        ]
+      },
+      "frame_count": 41,
+      "condition": "physical_static",
+      "sensor_config": "head",
+      "random_plan_case_id": "canonical-B0-000433-head",
+      "random_plan_id": "52807a48c82d9243c5328a2df92e252d21cdbb55b0435faca7dccf291a656ec9",
+      "sampling_seconds": 13.73065189900808,
+      "peak_allocated_bytes": 515075072,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-physical_static.npz",
+          "sha256": "3b9a706afb3f5d30f7bb973d25151f940ab7ffa464722d388aecf775720d4d9c"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-physical_static.json",
+          "sha256": "b42865848497b23fea5cfe39e48ec9805e5ccbe77a7102934022f4a4537d7bdd"
+        }
+      ]
+    },
+    {
+      "case_id": "000433-wrists-paired",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          41,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          41
+        ]
+      },
+      "frame_count": 41,
+      "condition": "paired",
+      "sensor_config": "wrists",
+      "random_plan_case_id": "canonical-B0-000433-wrists",
+      "random_plan_id": "867bed3e702aa06489c16cd6813cc800773c59c5113a432ab42300a45784c563",
+      "sampling_seconds": 14.677143448032439,
+      "peak_allocated_bytes": 515075072,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-paired.npz",
+          "sha256": "2f91a993c7259162750283a8bd81a47d159f02bf191baf3d79cfcf9464510f2b"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-paired.json",
+          "sha256": "d14ecd5bb5e0f5a8706f0b6ae4bb4dbe86caa4655dde48dd4bbbd35db89d1526"
+        }
+      ]
+    },
+    {
+      "case_id": "000433-wrists-text_only",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          41,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          41
+        ]
+      },
+      "frame_count": 41,
+      "condition": "text_only",
+      "sensor_config": "wrists",
+      "random_plan_case_id": "canonical-B0-000433-wrists",
+      "random_plan_id": "867bed3e702aa06489c16cd6813cc800773c59c5113a432ab42300a45784c563",
+      "sampling_seconds": 10.175320480018854,
+      "peak_allocated_bytes": 515075072,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-text_only.npz",
+          "sha256": "bc69ea9673f107d950e2b80dbdcceac51c1f5059fae7d0edd273b42b0a887a9c"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-text_only.json",
+          "sha256": "378aa78b3fec0edc261be77ee6b49f3354c32a9086e6506ca50e611c724d4af6"
+        }
+      ]
+    },
+    {
+      "case_id": "000433-wrists-imu_only",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          41,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          41
+        ]
+      },
+      "frame_count": 41,
+      "condition": "imu_only",
+      "sensor_config": "wrists",
+      "random_plan_case_id": "canonical-B0-000433-wrists",
+      "random_plan_id": "867bed3e702aa06489c16cd6813cc800773c59c5113a432ab42300a45784c563",
+      "sampling_seconds": 9.922760579036549,
+      "peak_allocated_bytes": 515075072,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-imu_only.npz",
+          "sha256": "d04fed9b0b9821164b4630816d74fad80ee9c1bd66055a180be512526c53be06"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-imu_only.json",
+          "sha256": "d08e2a2aa4b2539d94bbf69a7b8d87449cb7c605ff4ea91ea728b5f3a0e8bfbe"
+        }
+      ]
+    },
+    {
+      "case_id": "000433-wrists-backbone_bypass",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          41,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          41
+        ]
+      },
+      "frame_count": 41,
+      "condition": "backbone_bypass",
+      "sensor_config": "wrists",
+      "random_plan_case_id": "canonical-B0-000433-wrists",
+      "random_plan_id": "867bed3e702aa06489c16cd6813cc800773c59c5113a432ab42300a45784c563",
+      "sampling_seconds": 10.21135978307575,
+      "peak_allocated_bytes": 514385920,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-backbone_bypass.npz",
+          "sha256": "a439410fcf0936b825ab157ec9f8d01c03040b8f442288c3556be14bd47ed649"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-backbone_bypass.json",
+          "sha256": "65d65540a3dfc342bd4fcbe70b698b7c779917bbf575d388212157b04e16ef45"
+        }
+      ]
+    },
+    {
+      "case_id": "000433-wrists-numeric_zero",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          41,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          41
+        ]
+      },
+      "frame_count": 41,
+      "condition": "numeric_zero",
+      "sensor_config": "wrists",
+      "random_plan_case_id": "canonical-B0-000433-wrists",
+      "random_plan_id": "867bed3e702aa06489c16cd6813cc800773c59c5113a432ab42300a45784c563",
+      "sampling_seconds": 10.059251889935695,
+      "peak_allocated_bytes": 515075072,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-numeric_zero.npz",
+          "sha256": "4629077c3ecf0fd6192f237296fab9b0e49d5d1ead3d6a93dd77ca15754d9cd4"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-numeric_zero.json",
+          "sha256": "54fc7437660924aa4bb2e00df28f799e2abce6233fe024c54e86e5d5f820ce02"
+        }
+      ]
+    },
+    {
+      "case_id": "000433-wrists-physical_static",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          41,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          41
+        ]
+      },
+      "frame_count": 41,
+      "condition": "physical_static",
+      "sensor_config": "wrists",
+      "random_plan_case_id": "canonical-B0-000433-wrists",
+      "random_plan_id": "867bed3e702aa06489c16cd6813cc800773c59c5113a432ab42300a45784c563",
+      "sampling_seconds": 10.055051315925084,
+      "peak_allocated_bytes": 515075072,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-physical_static.npz",
+          "sha256": "0cbe81822223bc112bfbcc92df28bf2fd4100808af15439b7dbf9800b9268d19"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-physical_static.json",
+          "sha256": "9350c1738874f20ee1f5e1b647fac2d7378219d96105b947d6803603aabd43ef"
+        }
+      ]
+    },
+    {
+      "case_id": "000382-head-paired",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          94,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          94
+        ]
+      },
+      "frame_count": 94,
+      "condition": "paired",
+      "sensor_config": "head",
+      "random_plan_case_id": "canonical-B0-000382-head",
+      "random_plan_id": "78e031195676d4c0956336cdf487b6a30904866da8d7395d9f42c67cb7fa3d10",
+      "sampling_seconds": 9.9521497359965,
+      "peak_allocated_bytes": 520582656,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-paired.npz",
+          "sha256": "44005c53f8234ddf6cb49a447e4427d915135dcef4525f8d592467241c6df130"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-paired.json",
+          "sha256": "25353b135279b9bd8c36bf7048d0065949c89f35f9d37e286035c85e7e1a1e1d"
+        }
+      ]
+    },
+    {
+      "case_id": "000382-head-text_only",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          94,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          94
+        ]
+      },
+      "frame_count": 94,
+      "condition": "text_only",
+      "sensor_config": "head",
+      "random_plan_case_id": "canonical-B0-000382-head",
+      "random_plan_id": "78e031195676d4c0956336cdf487b6a30904866da8d7395d9f42c67cb7fa3d10",
+      "sampling_seconds": 9.93025781493634,
+      "peak_allocated_bytes": 520582656,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-text_only.npz",
+          "sha256": "b9b8da80eace7533acfcea7b5907d5ab053f1801fffc0206d314b0c39e5e363c"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-text_only.json",
+          "sha256": "b1437bc5321b7621bd70d33ab26680f7e85b9f7e1743ffeb0ff649e78ebd432d"
+        }
+      ]
+    },
+    {
+      "case_id": "000382-head-imu_only",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          94,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          94
+        ]
+      },
+      "frame_count": 94,
+      "condition": "imu_only",
+      "sensor_config": "head",
+      "random_plan_case_id": "canonical-B0-000382-head",
+      "random_plan_id": "78e031195676d4c0956336cdf487b6a30904866da8d7395d9f42c67cb7fa3d10",
+      "sampling_seconds": 10.134075193898752,
+      "peak_allocated_bytes": 520582656,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-imu_only.npz",
+          "sha256": "2fe1bc55fd95ea06c014b81b1287a53c1ac35dbdb0b8e084d1c417c512fcd5fe"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-imu_only.json",
+          "sha256": "6c933d25f3a0e8883ba5e258d23bf4012a0e08083e87c100192ecd6ec43b22bf"
+        }
+      ]
+    },
+    {
+      "case_id": "000382-head-backbone_bypass",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          94,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          94
+        ]
+      },
+      "frame_count": 94,
+      "condition": "backbone_bypass",
+      "sensor_config": "head",
+      "random_plan_case_id": "canonical-B0-000382-head",
+      "random_plan_id": "78e031195676d4c0956336cdf487b6a30904866da8d7395d9f42c67cb7fa3d10",
+      "sampling_seconds": 10.068270002957433,
+      "peak_allocated_bytes": 519025152,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-backbone_bypass.npz",
+          "sha256": "fa6ccbdd7f6a49b86f76653f838e7bbabd7f064ed8786f4daee86a22563abc60"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-backbone_bypass.json",
+          "sha256": "b91c0eb838bca4888da33e1f2621f6ab2902c902679a64fc06c59c4ab7727fce"
+        }
+      ]
+    },
+    {
+      "case_id": "000382-head-numeric_zero",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          94,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          94
+        ]
+      },
+      "frame_count": 94,
+      "condition": "numeric_zero",
+      "sensor_config": "head",
+      "random_plan_case_id": "canonical-B0-000382-head",
+      "random_plan_id": "78e031195676d4c0956336cdf487b6a30904866da8d7395d9f42c67cb7fa3d10",
+      "sampling_seconds": 9.848947938997298,
+      "peak_allocated_bytes": 520582656,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-numeric_zero.npz",
+          "sha256": "bf1151f2660bcd5edea3e5d97c609b09e1189dc062a2bdd06458ae5c90fe7732"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-numeric_zero.json",
+          "sha256": "ffbf8c5c7a3845ba2d2e112fb9d6fc6b295f39ef50c76696d8142b2d12d8b763"
+        }
+      ]
+    },
+    {
+      "case_id": "000382-head-physical_static",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          94,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          94
+        ]
+      },
+      "frame_count": 94,
+      "condition": "physical_static",
+      "sensor_config": "head",
+      "random_plan_case_id": "canonical-B0-000382-head",
+      "random_plan_id": "78e031195676d4c0956336cdf487b6a30904866da8d7395d9f42c67cb7fa3d10",
+      "sampling_seconds": 9.907619694946334,
+      "peak_allocated_bytes": 520582656,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-physical_static.npz",
+          "sha256": "ceae42c9fd6798233bc2b0278545376bcb83bacb87f07922c09f4d38db1a5eeb"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-physical_static.json",
+          "sha256": "53fb24da5ab31163e840fbe3e3b19349382bf8ef16799a58d32d6bdbcb58b776"
+        }
+      ]
+    },
+    {
+      "case_id": "000382-wrists-paired",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          94,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          94
+        ]
+      },
+      "frame_count": 94,
+      "condition": "paired",
+      "sensor_config": "wrists",
+      "random_plan_case_id": "canonical-B0-000382-wrists",
+      "random_plan_id": "d4d76b82968c804658609cd01527d875b4df017202c41c5f19302e168465a51a",
+      "sampling_seconds": 9.865197631996125,
+      "peak_allocated_bytes": 520582656,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-paired.npz",
+          "sha256": "d55671999edbbb533fe1ff27ccbcdd531482251194d58e8ebee80c9b9c310389"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-paired.json",
+          "sha256": "70425efdb71483ed1dda457d82fd0c59fba256416ae299bf014085574d7448af"
+        }
+      ]
+    },
+    {
+      "case_id": "000382-wrists-text_only",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          94,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          94
+        ]
+      },
+      "frame_count": 94,
+      "condition": "text_only",
+      "sensor_config": "wrists",
+      "random_plan_case_id": "canonical-B0-000382-wrists",
+      "random_plan_id": "d4d76b82968c804658609cd01527d875b4df017202c41c5f19302e168465a51a",
+      "sampling_seconds": 9.702954606967978,
+      "peak_allocated_bytes": 520582656,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-text_only.npz",
+          "sha256": "a6fbcfa998dde60abd82588e15adc44243457c7d0af1b8665723caa1c5275730"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-text_only.json",
+          "sha256": "7e7345879d8d6d0fc0f06b898c2e80bd64a083da9cc364d128bb5fbe6df19892"
+        }
+      ]
+    },
+    {
+      "case_id": "000382-wrists-imu_only",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          94,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          94
+        ]
+      },
+      "frame_count": 94,
+      "condition": "imu_only",
+      "sensor_config": "wrists",
+      "random_plan_case_id": "canonical-B0-000382-wrists",
+      "random_plan_id": "d4d76b82968c804658609cd01527d875b4df017202c41c5f19302e168465a51a",
+      "sampling_seconds": 9.800240816082805,
+      "peak_allocated_bytes": 520582656,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-imu_only.npz",
+          "sha256": "e8f720934eafc1175072126ecf88049bc687a31eb84ef78f83759304550170a9"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-imu_only.json",
+          "sha256": "4b0253661bab8ba00058618c7415be5dcbfde43be2fff88601a79eba881cd790"
+        }
+      ]
+    },
+    {
+      "case_id": "000382-wrists-backbone_bypass",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          94,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          94
+        ]
+      },
+      "frame_count": 94,
+      "condition": "backbone_bypass",
+      "sensor_config": "wrists",
+      "random_plan_case_id": "canonical-B0-000382-wrists",
+      "random_plan_id": "d4d76b82968c804658609cd01527d875b4df017202c41c5f19302e168465a51a",
+      "sampling_seconds": 10.081692098989151,
+      "peak_allocated_bytes": 519025152,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-backbone_bypass.npz",
+          "sha256": "d81c54cbe541b1571a6016ced8b4704bc90187966625cd2cab3f2045a162a5bb"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-backbone_bypass.json",
+          "sha256": "1fbccb81607c571efec813d8ee5536a58226dc8cb2c75c438402625f46a3c1bd"
+        }
+      ]
+    },
+    {
+      "case_id": "000382-wrists-numeric_zero",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          94,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          94
+        ]
+      },
+      "frame_count": 94,
+      "condition": "numeric_zero",
+      "sensor_config": "wrists",
+      "random_plan_case_id": "canonical-B0-000382-wrists",
+      "random_plan_id": "d4d76b82968c804658609cd01527d875b4df017202c41c5f19302e168465a51a",
+      "sampling_seconds": 10.016828163992614,
+      "peak_allocated_bytes": 520582656,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-numeric_zero.npz",
+          "sha256": "10b2dd03331972d5b5cca224f5d5f30e81bc515283a2aff324a7e5d0344b61d2"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-numeric_zero.json",
+          "sha256": "3fe2336cc4647301bd17208c994514b29247ccdff42169b700f3b574d1e15d1c"
+        }
+      ]
+    },
+    {
+      "case_id": "000382-wrists-physical_static",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          94,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          94
+        ]
+      },
+      "frame_count": 94,
+      "condition": "physical_static",
+      "sensor_config": "wrists",
+      "random_plan_case_id": "canonical-B0-000382-wrists",
+      "random_plan_id": "d4d76b82968c804658609cd01527d875b4df017202c41c5f19302e168465a51a",
+      "sampling_seconds": 10.278590371017344,
+      "peak_allocated_bytes": 520582656,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-physical_static.npz",
+          "sha256": "ed81c892cae3660707a6b59e498fb03fa99c4337e7638faa13a4aafe896b283c"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-physical_static.json",
+          "sha256": "5cbe6e6036198ac49d457570875b6b99e51e467b39062fb8ad31cd56fab07404"
+        }
+      ]
+    },
+    {
+      "case_id": "000139-head-paired",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          163,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          163
+        ]
+      },
+      "frame_count": 163,
+      "condition": "paired",
+      "sensor_config": "head",
+      "random_plan_case_id": "canonical-B0-000139-head",
+      "random_plan_id": "536eade3617bce7ec452fe17545ac9d81e70b586b6f534313491a2201c90e0a4",
+      "sampling_seconds": 10.164022758952342,
+      "peak_allocated_bytes": 528702976,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-paired.npz",
+          "sha256": "bd737c75cf9e23509fc3a2356749c9d21bef936df363d50ecbf75d7ad18a17d7"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-paired.json",
+          "sha256": "6aaddc1433babbadb981ba35efe3fa145fb5207b46a5ec8cb1578c0f14b6f914"
+        }
+      ]
+    },
+    {
+      "case_id": "000139-head-text_only",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          163,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          163
+        ]
+      },
+      "frame_count": 163,
+      "condition": "text_only",
+      "sensor_config": "head",
+      "random_plan_case_id": "canonical-B0-000139-head",
+      "random_plan_id": "536eade3617bce7ec452fe17545ac9d81e70b586b6f534313491a2201c90e0a4",
+      "sampling_seconds": 9.97735400206875,
+      "peak_allocated_bytes": 528702976,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-text_only.npz",
+          "sha256": "050dbfdbc2b737085b36c97e9e56382151dda5fd1abca1e4f59afc1a3d0354cf"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-text_only.json",
+          "sha256": "3714dc2b96a0d2aaf51ed9bfce8d0879c5d36cb3a11b2693e060e7c1b9a453c9"
+        }
+      ]
+    },
+    {
+      "case_id": "000139-head-imu_only",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          163,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          163
+        ]
+      },
+      "frame_count": 163,
+      "condition": "imu_only",
+      "sensor_config": "head",
+      "random_plan_case_id": "canonical-B0-000139-head",
+      "random_plan_id": "536eade3617bce7ec452fe17545ac9d81e70b586b6f534313491a2201c90e0a4",
+      "sampling_seconds": 9.963246779050678,
+      "peak_allocated_bytes": 528702976,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-imu_only.npz",
+          "sha256": "b619706a2fb5190d08834f6568eb94eb122db333763e1a775ff88440c858aa3b"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-imu_only.json",
+          "sha256": "12a00c5784d42792f8295728d81af351e79e177760a6df23fee83c75937f0f76"
+        }
+      ]
+    },
+    {
+      "case_id": "000139-head-backbone_bypass",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          163,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          163
+        ]
+      },
+      "frame_count": 163,
+      "condition": "backbone_bypass",
+      "sensor_config": "head",
+      "random_plan_case_id": "canonical-B0-000139-head",
+      "random_plan_id": "536eade3617bce7ec452fe17545ac9d81e70b586b6f534313491a2201c90e0a4",
+      "sampling_seconds": 9.956033900962211,
+      "peak_allocated_bytes": 526022656,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-backbone_bypass.npz",
+          "sha256": "284576c261ed96ffbc545528e7bd6bc18cb4ba898066915d92358d99cb762dc2"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-backbone_bypass.json",
+          "sha256": "1ff06ba6f51652064beff269ef660b413a03327ab73f59b8382992ee9b47d0d4"
+        }
+      ]
+    },
+    {
+      "case_id": "000139-head-numeric_zero",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          163,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          163
+        ]
+      },
+      "frame_count": 163,
+      "condition": "numeric_zero",
+      "sensor_config": "head",
+      "random_plan_case_id": "canonical-B0-000139-head",
+      "random_plan_id": "536eade3617bce7ec452fe17545ac9d81e70b586b6f534313491a2201c90e0a4",
+      "sampling_seconds": 9.941526242066175,
+      "peak_allocated_bytes": 528702976,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-numeric_zero.npz",
+          "sha256": "3f566c4ab51859af6dba9186d5873f65b1290cb53b47a60fbe40d6a9440cfd01"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-numeric_zero.json",
+          "sha256": "61a9409ed64dba1a66bd8d4d8581fc50efeb1fc6fbbbe57998a4747ad1b764ed"
+        }
+      ]
+    },
+    {
+      "case_id": "000139-head-physical_static",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          163,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          163
+        ]
+      },
+      "frame_count": 163,
+      "condition": "physical_static",
+      "sensor_config": "head",
+      "random_plan_case_id": "canonical-B0-000139-head",
+      "random_plan_id": "536eade3617bce7ec452fe17545ac9d81e70b586b6f534313491a2201c90e0a4",
+      "sampling_seconds": 9.90521407907363,
+      "peak_allocated_bytes": 528702976,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-physical_static.npz",
+          "sha256": "ca98dc200c3cb31f44f36422d6c81091895c353110b4b36a6ec9b03c5e59da27"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-physical_static.json",
+          "sha256": "23b83062ea1d7bff058bc160c9af906d4937aa98944418f444ab8bc6a0a50d44"
+        }
+      ]
+    },
+    {
+      "case_id": "000139-wrists-paired",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          163,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          163
+        ]
+      },
+      "frame_count": 163,
+      "condition": "paired",
+      "sensor_config": "wrists",
+      "random_plan_case_id": "canonical-B0-000139-wrists",
+      "random_plan_id": "d913830b9a25628644b319a3741822343efe390a44801eb6c2e4bf35bd50141f",
+      "sampling_seconds": 9.841340558952652,
+      "peak_allocated_bytes": 528702976,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-paired.npz",
+          "sha256": "6dc6974f16dfdd37c2137f5eca54cd87cbdec758ea7ea8b0bc0d6acc222bd9f4"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-paired.json",
+          "sha256": "6bc19586d777f074e1b0f0a2b2febead16460694f558e371a3f3186f9facf828"
+        }
+      ]
+    },
+    {
+      "case_id": "000139-wrists-text_only",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          163,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          163
+        ]
+      },
+      "frame_count": 163,
+      "condition": "text_only",
+      "sensor_config": "wrists",
+      "random_plan_case_id": "canonical-B0-000139-wrists",
+      "random_plan_id": "d913830b9a25628644b319a3741822343efe390a44801eb6c2e4bf35bd50141f",
+      "sampling_seconds": 10.239274204010144,
+      "peak_allocated_bytes": 528702976,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-text_only.npz",
+          "sha256": "922ffe41a3b979e949149a0c4da58f2f2cd500fa74fff79d2b32628f02be0115"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-text_only.json",
+          "sha256": "26b8bda4f5bcaee93bc0e628e39be20bc082442eb8bb0e09df4e94d6cce6c6ba"
+        }
+      ]
+    },
+    {
+      "case_id": "000139-wrists-imu_only",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          163,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          163
+        ]
+      },
+      "frame_count": 163,
+      "condition": "imu_only",
+      "sensor_config": "wrists",
+      "random_plan_case_id": "canonical-B0-000139-wrists",
+      "random_plan_id": "d913830b9a25628644b319a3741822343efe390a44801eb6c2e4bf35bd50141f",
+      "sampling_seconds": 10.153506050002761,
+      "peak_allocated_bytes": 528702976,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-imu_only.npz",
+          "sha256": "8bf57cf274169653304d27d221746812842157b40ec5ba31b4c3ec121086ce72"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-imu_only.json",
+          "sha256": "d0c333a749e6aa397a0195757dc16153eb4e7b7308a2702e1e55356ef972b9db"
+        }
+      ]
+    },
+    {
+      "case_id": "000139-wrists-backbone_bypass",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          163,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          163
+        ]
+      },
+      "frame_count": 163,
+      "condition": "backbone_bypass",
+      "sensor_config": "wrists",
+      "random_plan_case_id": "canonical-B0-000139-wrists",
+      "random_plan_id": "d913830b9a25628644b319a3741822343efe390a44801eb6c2e4bf35bd50141f",
+      "sampling_seconds": 10.008538248948753,
+      "peak_allocated_bytes": 526022656,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-backbone_bypass.npz",
+          "sha256": "abc0467569707d7c4ab7f0e3a64cd73eb3836dd865d6d798e0b0bdce7a2bb9d7"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-backbone_bypass.json",
+          "sha256": "a3b4a4d7cffb655fa513238937ec99c68ecb508f4d52dd8e5f729b107fef2983"
+        }
+      ]
+    },
+    {
+      "case_id": "000139-wrists-numeric_zero",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          163,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          163
+        ]
+      },
+      "frame_count": 163,
+      "condition": "numeric_zero",
+      "sensor_config": "wrists",
+      "random_plan_case_id": "canonical-B0-000139-wrists",
+      "random_plan_id": "d913830b9a25628644b319a3741822343efe390a44801eb6c2e4bf35bd50141f",
+      "sampling_seconds": 10.108177943038754,
+      "peak_allocated_bytes": 528702976,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-numeric_zero.npz",
+          "sha256": "afbec353593085f7226c98b28a0fd0180aad5b908fac94a726ffafd04b55a6af"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-numeric_zero.json",
+          "sha256": "4ad94552cca6784262f3a0746fe40de4e2b32cfc314956d813239eadc1b03656"
+        }
+      ]
+    },
+    {
+      "case_id": "000139-wrists-physical_static",
+      "status": "completed",
+      "launched": true,
+      "reason": null,
+      "array_shapes": {
+        "motion": [
+          1,
+          163,
+          22,
+          3
+        ],
+        "normalized_humanml263": [
+          1,
+          263,
+          1,
+          163
+        ]
+      },
+      "frame_count": 163,
+      "condition": "physical_static",
+      "sensor_config": "wrists",
+      "random_plan_case_id": "canonical-B0-000139-wrists",
+      "random_plan_id": "d913830b9a25628644b319a3741822343efe390a44801eb6c2e4bf35bd50141f",
+      "sampling_seconds": 9.923657282954082,
+      "peak_allocated_bytes": 528702976,
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-physical_static.npz",
+          "sha256": "6527ff4d58ec3704ac2cbb8cad13b0e8e78c2a3ad2092b2d70fd116e11eef3f6"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-physical_static.json",
+          "sha256": "08caa1eb7e93811c3d77ad192c5722d1b884f0c6240d207ab11d37e175857517"
+        }
+      ]
+    }
+  ]
+}
