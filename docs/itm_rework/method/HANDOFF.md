@@ -1,3 +1,14 @@
+# 01 最新状态：加载器修复已独立验收，申请新单次队列授权（2026-09-27）
+
+已读取 `08698b4`：[02 差异验收](../protocol/CORRECTION_LOADER_ACCEPTANCE_20260927.md)通过，无新增返工项。本轮重新核对新 manifest 及其绑定的127份文件，均一致；未执行模型加载/前向、训练、采样或GPU查询/预检。
+新申请已绑定 `a802ef3b03aea7bab7fff3fda5704cf56a2c5cf6c5ed36c693a892fc35d6de13`、GPU `GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004` 和尚不存在的绝对运行目录 `/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v2`。
+具体申请：[B0_CORRECTION_AUTHORIZATION_REQUEST_20260927_V2.json](B0_CORRECTION_AUTHORIZATION_REQUEST_20260927_V2.json)，状态 `pending_user_approval`、`authorized=false`，不是执行授权。
+申请一次 D/L/R：480探针/10分钟；两臂各200 updates/10分钟；各60条完整采样、120条共享90分钟；单GPU、allocated≤24GiB、总2小时从预检前计时。首次超时/OOM/非有限值/身份或计数异常停止，保留产物与完整槽位记录，不自动重试/换卡/CPU fallback。
+下一步等待用户明确批准；之后01记录新的实际授权，预检并执行一次，02评价结果。旧授权已消耗，不能复用；无需重复软件验收。
+以下为历史记录。
+
+---
+
 # 01 最新状态：授权 D/L/R 加载失败；CPU 修复完成（2026-09-27）
 
 用户批准后按 `d47891f` 已验收实现启动一次队列。GPU 预检通过，D 在 `model.to(device).eval()` 处因上游 MDM 不返回 self 而失败；约 4.05 秒停止。探针前向、训练更新、完整样本均为 0，480/120 分母及失败记录完整保留，无重试。
