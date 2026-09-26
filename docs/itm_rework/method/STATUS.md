@@ -1,3 +1,14 @@
+# 01 最新状态：D/L/R 实现与 CPU 验证完成（2026-09-26）
+
+按 `62eed84` 冻结包实现真实长度累积、R 静止参照差分、D hook 证据、共享随机计划和新多阶段受限运行器。
+联合 **203 passed / 0 failed / 0 skipped**，含25项新增修正实验 CPU 测试；无预训练MDM前向、真实训练/采样或GPU查询。
+共同初始权重和126个代码/输入资产已绑定，最终准备目录为 `outputs/itm_rework/method/correction_implementation_20260926_v3/`。
+具体实现、测试、manifest/hash和复现入口见 [B0_CORRECTION_IMPLEMENTATION_20260926.md](B0_CORRECTION_IMPLEMENTATION_20260926.md)。
+下一步由 **02 独立软件验收**，再对冻结的2小时整队申请新授权；本轮没有创建真实授权，不执行D/L/R。
+以下为历史记录。
+
+---
+
 # 01 最新状态：B0 能力诊断与修正提案（2026-09-26）
 
 已接纳 `dec5e93` 的独立评价：完整性通过，联合控制/实例信息收益尚未证实。

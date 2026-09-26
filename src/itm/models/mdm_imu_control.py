@@ -24,8 +24,13 @@ class MDMIMUControlConfig:
     time_encoding: str = "none"
     model_fps: float = 20.0
     adapter_variant: str = "additive"
+    reference_mode: str = "none"
 
     def __post_init__(self):
+        if self.reference_mode not in {"none", "static_delta"}:
+            raise ValueError("Unknown reference_mode")
+        if self.reference_mode == "static_delta" and (self.adapter_variant != "additive" or self.null_mode != "strict"):
+            raise ValueError("Static delta requires additive strict control")
         if self.adapter_variant not in {"additive", "film"}:
             raise ValueError("Unknown adapter_variant")
         if self.encoder_variant not in {"legacy_mean", "ordered_concat"}:
@@ -47,6 +52,8 @@ def make_imu_control_encoder(config: MDMIMUControlConfig):
         def __init__(self):
             super().__init__()
             self.config = config
+            self.fused_observer = torch.nn.Identity()
+            self.timed_observer = torch.nn.Identity()
             if config.encoder_variant == "legacy_mean":
                 self.feature_projection = torch.nn.Linear(config.sensor_feature_dim, config.latent_dim)
                 self.sensor_embedding = torch.nn.Embedding(config.sensor_count, config.latent_dim)
@@ -99,6 +106,7 @@ def make_imu_control_encoder(config: MDMIMUControlConfig):
                 clean = torch.where(active[:, None, :, None] & valid[:, :, None, None], imu, 0)
                 features = torch.cat((clean.flatten(2), active[:, None].expand(-1, frames, -1).to(imu.dtype)), -1)
                 hidden = self.fusion(features)
+            hidden = self.fused_observer(hidden)
             if config.time_encoding == "physical_sinusoidal":
                 seconds = (torch.arange(frames, device=imu.device, dtype=imu.dtype)[None].expand(batch, -1)
                            / config.model_fps if timestamps is None else timestamps.to(imu))
@@ -118,6 +126,7 @@ def make_imu_control_encoder(config: MDMIMUControlConfig):
             # expose a zero token, then clear all invalid outputs below.
             safe_valid = valid.clone()
             safe_valid[~valid.any(-1), 0] = True
+            hidden = self.timed_observer(hidden)
             encoded = self.temporal_encoder(hidden, src_key_padding_mask=~safe_valid)
             if config.null_mode == "strict":
                 encoded = torch.where(valid[..., None] & present[:, None, None], encoded, 0)
@@ -136,6 +145,10 @@ def attach_zero_control_adapters(mdm_model, config: MDMIMUControlConfig):
     if not isinstance(original, torch.nn.TransformerEncoder):
         raise TypeError("Control adapters currently require MDM arch=trans_enc")
     controlled = _make_controlled_encoder(original, config.latent_dim, config.null_mode, config.adapter_variant)
+    controlled.reference_mode = config.reference_mode
+    if config.reference_mode == "static_delta":
+        for adapter in controlled.adapters:
+            adapter.bias.requires_grad_(False)
     mdm_model.seqTransEncoder = controlled
     return controlled
 
@@ -183,6 +196,9 @@ def _make_controlled_encoder(original, latent_dim, null_mode, adapter_variant):
             super().__init__()
             self.layers = original.layers
             self.norm = original.norm
+            self.hidden_observers = torch.nn.ModuleList([torch.nn.Identity() for _ in self.layers])
+            self.residual_observers = torch.nn.ModuleList([torch.nn.Identity() for _ in self.layers])
+            self.reference_mode = "none"
             self.adapters = torch.nn.ModuleList(
                 [torch.nn.Linear(latent_dim, latent_dim * (2 if adapter_variant == "film" else 1)) for _ in self.layers]
             )
@@ -220,12 +236,15 @@ def _make_controlled_encoder(original, latent_dim, null_mode, adapter_variant):
             for index, layer in enumerate(self.layers):
                 output = layer(output, src_mask=mask, src_key_padding_mask=src_key_padding_mask, **kwargs)
                 if control is not None:
-                    residual = self.adapters[index](control)
+                    output = self.hidden_observers[index](output)
+                    residual = (torch.nn.functional.linear(control, self.adapters[index].weight, None)
+                                if self.reference_mode == "static_delta" else self.adapters[index](control))
                     if adapter_variant == "film":
                         scale, shift = residual.chunk(2, dim=-1)
                         residual = scale * output + shift
                     if self.null_mode == "strict":
                         residual = torch.where(gate, residual, 0)
+                    residual = self.residual_observers[index](residual)
                     output = output + residual
             return self.norm(output) if self.norm is not None else output
 
@@ -238,6 +257,8 @@ def set_mdm_imu_control(controlled_encoder, imu_encoder, y):
     controlled_encoder.set_control(None)
     cached = y.get("imu_control")
     strict = controlled_encoder.null_mode == "strict"
+    if controlled_encoder.reference_mode == "static_delta" and (cached is None or y.get("imu_control_mode") != "static_delta"):
+        raise ValueError("Static delta requires an explicitly identified reference-difference cache")
     if cached is not None:
         torch = require_torch()
         batch = len(cached)
@@ -280,6 +301,9 @@ def configure_control_training(model):
         module.train()
         for parameter in module.parameters():
             parameter.requires_grad_(True)
+    if getattr(model.seqTransEncoder, "reference_mode", "none") == "static_delta":
+        for adapter in model.seqTransEncoder.adapters:
+            adapter.bias.requires_grad_(False)
 
 
 @contextmanager

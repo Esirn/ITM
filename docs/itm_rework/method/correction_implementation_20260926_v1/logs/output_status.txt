@@ -1,0 +1,13 @@
+..                                                                       [100%]
+=============================== warnings summary ===============================
+tests/test_mdm_correction.py::test_worker_probe_records_same_forward_activations_and_padding
+  /home/a200/miniconda3/envs/itm/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+    warnings.warn(
+
+tests/test_mdm_correction.py::test_worker_probe_records_same_forward_activations_and_padding
+tests/test_mdm_correction.py::test_worker_complete_sampling_cpu_fixture_static_equals_null
+  /home/a200/miniconda3/envs/itm/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+2 passed, 3 warnings in 33.87s
