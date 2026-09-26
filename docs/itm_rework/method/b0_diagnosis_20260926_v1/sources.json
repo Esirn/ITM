@@ -1,0 +1,82 @@
+[
+  {
+    "path": "outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/model.pt",
+    "sha256": "44d2c3307f27bca2c79ab7d367890f968f78777168c3c37a306a7bf0560d6ac2"
+  },
+  {
+    "path": "outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/model_epoch001.pt",
+    "sha256": "d5c527c71decb49ea9f847b9e84129e91e0b5e6834db49c4326d8a6c41cd2a3c"
+  },
+  {
+    "path": "scripts/train_mdm_imu_control.py",
+    "sha256": "14e7bee3de0d5b60815c7550f7e6787fb7d844e12c224fef8b33987177ea8f89"
+  },
+  {
+    "path": "src/itm/models/mdm_imu_control.py",
+    "sha256": "51de85cbf5cff81d38c2381ea7e3551caadf6ec85b34f97200dd7250bdf01de0"
+  },
+  {
+    "path": "outputs/mdm/runtime_root/model/mdm.py",
+    "sha256": "2c9af8e389cc616039f78193c01250e7bfe7e3345036405ba1567e4a523be2bf"
+  },
+  {
+    "path": "docs/itm_rework/protocol/B0_EVALUATION_20260926.md",
+    "sha256": "e29d61d2704e524d39b4e5a37dba0e58caaaf8a04e086acee15876e8ea447aae"
+  },
+  {
+    "path": "outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-paired.npz",
+    "sha256": "bd737c75cf9e23509fc3a2356749c9d21bef936df363d50ecbf75d7ad18a17d7"
+  },
+  {
+    "path": "outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-paired.npz",
+    "sha256": "6dc6974f16dfdd37c2137f5eca54cd87cbdec758ea7ea8b0bc0d6acc222bd9f4"
+  },
+  {
+    "path": "outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-paired.npz",
+    "sha256": "44005c53f8234ddf6cb49a447e4427d915135dcef4525f8d592467241c6df130"
+  },
+  {
+    "path": "outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-paired.npz",
+    "sha256": "d55671999edbbb533fe1ff27ccbcdd531482251194d58e8ebee80c9b9c310389"
+  },
+  {
+    "path": "outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-paired.npz",
+    "sha256": "880687d2595e54a27359fe67f067ebd24f28fd02ef642d39b2e3f8d3c5784052"
+  },
+  {
+    "path": "outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-paired.npz",
+    "sha256": "2f91a993c7259162750283a8bd81a47d159f02bf191baf3d79cfcf9464510f2b"
+  },
+  {
+    "path": "outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-physical_static.npz",
+    "sha256": "ca98dc200c3cb31f44f36422d6c81091895c353110b4b36a6ec9b03c5e59da27"
+  },
+  {
+    "path": "outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-physical_static.npz",
+    "sha256": "6527ff4d58ec3704ac2cbb8cad13b0e8e78c2a3ad2092b2d70fd116e11eef3f6"
+  },
+  {
+    "path": "outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-physical_static.npz",
+    "sha256": "ceae42c9fd6798233bc2b0278545376bcb83bacb87f07922c09f4d38db1a5eeb"
+  },
+  {
+    "path": "outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-physical_static.npz",
+    "sha256": "ed81c892cae3660707a6b59e498fb03fa99c4337e7638faa13a4aafe896b283c"
+  },
+  {
+    "path": "outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-physical_static.npz",
+    "sha256": "3b9a706afb3f5d30f7bb973d25151f940ab7ffa464722d388aecf775720d4d9c"
+  },
+  {
+    "path": "outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-physical_static.npz",
+    "sha256": "0cbe81822223bc112bfbcc92df28bf2fd4100808af15439b7dbf9800b9268d19"
+  },
+  {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/train_caption_plans.jsonl",
+    "sha256": "71720d8d970ae68da8169b2bb037551090b759809e5f6957058bf30216559fc8"
+  },
+  {
+    "path": "outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/args.json",
+    "sha256": "2feda496a83142e38fd22d2db860d4d054c9ed678e23362fd18a5c09f660683b"
+  }
+]

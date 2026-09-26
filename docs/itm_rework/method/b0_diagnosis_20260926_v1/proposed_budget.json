@@ -1,0 +1,139 @@
+{
+  "version": "method-B0-correction-budget-proposal-v1",
+  "status": "proposal_not_authorized",
+  "read_commit": "dec5e93",
+  "owner": "01",
+  "runner_compatibility": "Requires a new version; existing one-run 36-slot runner must reject this proposal",
+  "scope": "Development mechanism diagnosis, not research validation or real-device calibration",
+  "dependencies": [
+    {
+      "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/package.json",
+      "sha256": "33de7fd98c1cf43fc5a51a7d35b502e154a233066efec13f17dda08bc53abe97"
+    },
+    {
+      "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/metrics.json",
+      "sha256": "30a598ba54bcb65c0adad7c19b71fd55dc86699a461d73cef06946b5b6bfc8b5"
+    },
+    {
+      "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/b0_budget.json",
+      "sha256": "660b9f779eee1301f1bb92c30081c20e86248f76854f047f07ea88521ecead47"
+    }
+  ],
+  "diagnostic": {
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/model.pt",
+      "sha256": "44d2c3307f27bca2c79ab7d367890f968f78777168c3c37a306a7bf0560d6ac2"
+    },
+    "sources": 6,
+    "sensor_configs": [
+      "head",
+      "wrists"
+    ],
+    "timesteps": [
+      50,
+      250,
+      500,
+      900
+    ],
+    "noise_seeds": [
+      20260927,
+      20260928
+    ],
+    "conditions": [
+      "text_only",
+      "paired",
+      "physical_static",
+      "tail_reversed"
+    ],
+    "exact_length_branch_examples": 384,
+    "padded_train_branch_examples": 96,
+    "maximum_branch_example_forwards": 480,
+    "updates": 0,
+    "full_samples": 0,
+    "maximum_seconds": 600,
+    "slots": {
+      "path": "docs/itm_rework/method/b0_diagnosis_20260926_v1/proposed_probe_slots.json",
+      "sha256": "7e79f55ae6790558ddb2e045570bf301a8a43c968f0a0cc374861847e1a64590"
+    }
+  },
+  "training": {
+    "arms": [
+      "L_exact_length",
+      "R_static_reference_delta"
+    ],
+    "runs": 2,
+    "seed": 20260925,
+    "fresh_initialization": true,
+    "clone_common_initial_parameters": true,
+    "updates_per_arm": 200,
+    "total_updates": 400,
+    "effective_batch_size": 3,
+    "microbatch_size": 1,
+    "epochs_per_arm": 100,
+    "examples_per_arm": 600,
+    "total_examples": 1200,
+    "maximum_MDM_branch_example_forwards": 1200,
+    "maximum_encoder_example_forwards": {
+      "L": 600,
+      "R_including_reference": 1200
+    },
+    "learning_rate": 5e-05,
+    "loss": "diffusion_x0_MSE_only",
+    "text_dropout": 0.1,
+    "imu_dropout": 0.1,
+    "encoder_dropout": 0.1,
+    "reference_dropout": "same per-example random masks as observed branch",
+    "optimizer": "AdamW original defaults",
+    "backbone": "frozen_eval; mask_frames unchanged false",
+    "checkpoint_selection": "final_update_200_each_arm_only",
+    "maximum_seconds_per_arm": 600,
+    "maximum_seconds_shared": 1200,
+    "checkpoint_policy": "Publish at completed updates 50/100/150 and final200 only; preserve last complete checkpoint on failure, never promote partial to final."
+  },
+  "sampling": {
+    "slots": {
+      "path": "docs/itm_rework/method/b0_diagnosis_20260926_v1/proposed_sampling_slots.json",
+      "sha256": "93a637cf8bc00c5eeba312a1f4891f48dcb50e81392b4af88156f3e7e2dba622"
+    },
+    "count_per_arm": 60,
+    "total_count": 120,
+    "original_val_per_arm": 36,
+    "tail_reversed_val_per_arm": 6,
+    "train_diagnostic_per_arm": 18,
+    "K": 1,
+    "seed": 20260926,
+    "steps": 1000,
+    "maximum_denoising_calls": 120000,
+    "maximum_branch_example_forwards": 480000,
+    "guidance": {
+      "mode": "factorized",
+      "branch_execution": "batched",
+      "text_scale": 2.5,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0
+    },
+    "maximum_seconds_shared": 5400
+  },
+  "resource_caps": {
+    "concurrent_gpus": 1,
+    "maximum_allocated_memory_bytes": 25769803776,
+    "total_seconds": 7200,
+    "gpu_uuid": null,
+    "run_directory": null,
+    "stop": "First timeout, OOM, nonfinite, identity or counter failure stops whole queue; preserve all planned slots and completed artifacts; no retry or CPU fallback"
+  },
+  "execution_dependencies": [
+    "02 freezes revised data/metric/sampling/probe plan",
+    "01 implements and CPU tests new paths and bounded multi-arm runner",
+    "02 software acceptance",
+    "new user authorization bound to exact immutable plans and directory/GPU",
+    "GPU preflight"
+  ],
+  "stage_order": [
+    "D_probe",
+    "L_train",
+    "R_train",
+    "L_sample_60",
+    "R_sample_60"
+  ]
+}

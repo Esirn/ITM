@@ -1,0 +1,283 @@
+{
+  "read_commit": "dec5e93",
+  "scope": "CPU saved-artifact inspection; zero model forwards, updates, sampling, GPU calls",
+  "checkpoint_sha256": "44d2c3307f27bca2c79ab7d367890f968f78777168c3c37a306a7bf0560d6ac2",
+  "train_captions": [
+    {
+      "motion_id": "000506",
+      "frames": 136,
+      "caption": "a person warming up their legs by alternating legs by doing front step sqauts"
+    },
+    {
+      "motion_id": "004728",
+      "frames": 158,
+      "caption": "he raises his right leg behind him and holds it while leaning forward, then lets it down and momentarily loses his balance."
+    },
+    {
+      "motion_id": "000027",
+      "frames": 104,
+      "caption": "a person punches their first forward, then spins around"
+    }
+  ],
+  "unique_train_frames": 398,
+  "trainable_parameter_counts": {
+    "imu_encoder": 6607872,
+    "adapters": 2101248
+  },
+  "condition_counts": {
+    "00": 2,
+    "10": 51,
+    "01": 56,
+    "11": 491
+  },
+  "imu_present_examples": 547,
+  "loss_summary": {
+    "first10": {
+      "mean": 0.08860420361161232,
+      "min": 0.026167395524680614,
+      "max": 0.32473073713481426,
+      "std": 0.0870724272954066
+    },
+    "last10": {
+      "mean": 0.048182808235287665,
+      "min": 0.020266559906303883,
+      "max": 0.0903116874396801,
+      "std": 0.018847676531681273
+    },
+    "all100": {
+      "mean": 0.06729505870491266,
+      "min": 0.015121505130082369,
+      "max": 0.32473073713481426,
+      "std": 0.061737212004957395
+    }
+  },
+  "loss_caveat": "Random timestep/noise/dropout each batch; no matched-probe loss and no generalization diagnosis from these means.",
+  "adapters": [
+    {
+      "name": "0.weight",
+      "shape": [
+        512,
+        512
+      ],
+      "l2": 0.3484196662902832,
+      "max_abs": 0.0033526846673339605,
+      "epoch1_to_final_l2": 0.3466113209724426
+    },
+    {
+      "name": "0.bias",
+      "shape": [
+        512
+      ],
+      "l2": 0.015487181954085827,
+      "max_abs": 0.0022245903965085745,
+      "epoch1_to_final_l2": 0.015386042185127735
+    },
+    {
+      "name": "1.weight",
+      "shape": [
+        512,
+        512
+      ],
+      "l2": 0.3289949297904968,
+      "max_abs": 0.003323481883853674,
+      "epoch1_to_final_l2": 0.3270411193370819
+    },
+    {
+      "name": "1.bias",
+      "shape": [
+        512
+      ],
+      "l2": 0.015060821548104286,
+      "max_abs": 0.0022883976344019175,
+      "epoch1_to_final_l2": 0.014841992408037186
+    },
+    {
+      "name": "2.weight",
+      "shape": [
+        512,
+        512
+      ],
+      "l2": 0.3374769985675812,
+      "max_abs": 0.0035793117713183165,
+      "epoch1_to_final_l2": 0.33562222123146057
+    },
+    {
+      "name": "2.bias",
+      "shape": [
+        512
+      ],
+      "l2": 0.013634604401886463,
+      "max_abs": 0.0019217402441427112,
+      "epoch1_to_final_l2": 0.013433090411126614
+    },
+    {
+      "name": "3.weight",
+      "shape": [
+        512,
+        512
+      ],
+      "l2": 0.35601484775543213,
+      "max_abs": 0.0039789704605937,
+      "epoch1_to_final_l2": 0.3535161316394806
+    },
+    {
+      "name": "3.bias",
+      "shape": [
+        512
+      ],
+      "l2": 0.014619044028222561,
+      "max_abs": 0.0020470418967306614,
+      "epoch1_to_final_l2": 0.014338860288262367
+    },
+    {
+      "name": "4.weight",
+      "shape": [
+        512,
+        512
+      ],
+      "l2": 0.3587469458580017,
+      "max_abs": 0.003967035096138716,
+      "epoch1_to_final_l2": 0.3557816445827484
+    },
+    {
+      "name": "4.bias",
+      "shape": [
+        512
+      ],
+      "l2": 0.014659387990832329,
+      "max_abs": 0.002007031347602606,
+      "epoch1_to_final_l2": 0.014387521892786026
+    },
+    {
+      "name": "5.weight",
+      "shape": [
+        512,
+        512
+      ],
+      "l2": 0.3830418884754181,
+      "max_abs": 0.004024107940495014,
+      "epoch1_to_final_l2": 0.37908312678337097
+    },
+    {
+      "name": "5.bias",
+      "shape": [
+        512
+      ],
+      "l2": 0.016571220010519028,
+      "max_abs": 0.0018071464728564024,
+      "epoch1_to_final_l2": 0.01620928943157196
+    },
+    {
+      "name": "6.weight",
+      "shape": [
+        512,
+        512
+      ],
+      "l2": 0.3603808879852295,
+      "max_abs": 0.00431336835026741,
+      "epoch1_to_final_l2": 0.35540109872817993
+    },
+    {
+      "name": "6.bias",
+      "shape": [
+        512
+      ],
+      "l2": 0.015205633826553822,
+      "max_abs": 0.0021803558338433504,
+      "epoch1_to_final_l2": 0.014802083373069763
+    },
+    {
+      "name": "7.weight",
+      "shape": [
+        512,
+        512
+      ],
+      "l2": 0.24430541694164276,
+      "max_abs": 0.003983505070209503,
+      "epoch1_to_final_l2": 0.24089503288269043
+    },
+    {
+      "name": "7.bias",
+      "shape": [
+        512
+      ],
+      "l2": 0.010454785078763962,
+      "max_abs": 0.002787427743896842,
+      "epoch1_to_final_l2": 0.01001988910138607
+    }
+  ],
+  "encoder_epoch1_to_final_l2": 2.262788397379106,
+  "mdm_mask_frames_in_args": "absent; model default false",
+  "all_possible_batches_mixed_length": true,
+  "batch_combinations": 20,
+  "expected_padding_fraction": 0.1357656986845371,
+  "padding_note": "Combinatorial expectation under uniform shuffle, not reconstruction of actual batches; loss masks invalid frames, frozen MDM attention does not.",
+  "input_static_comparisons": [
+    {
+      "motion_id": "000433",
+      "config": "head",
+      "frames": 41,
+      "active_normalized_input_rms": 0.5419789521804421,
+      "static_normalized_input_rms": 0.5000515672848792,
+      "paired_minus_static_input_rms": 0.2137678226917731,
+      "acceleration_difference_rms": 0.4188675691453463,
+      "orientation_difference_rms": 0.04945262915758854,
+      "paired_static_output_distance_m": 0.01017649658024311
+    },
+    {
+      "motion_id": "000433",
+      "config": "wrists",
+      "frames": 41,
+      "active_normalized_input_rms": 0.5431051140561923,
+      "static_normalized_input_rms": 0.5000908998409014,
+      "paired_minus_static_input_rms": 0.3658404192193852,
+      "acceleration_difference_rms": 0.4231108707107318,
+      "orientation_difference_rms": 0.3446418626269249,
+      "paired_static_output_distance_m": 0.03701476752758026
+    },
+    {
+      "motion_id": "000382",
+      "config": "head",
+      "frames": 94,
+      "active_normalized_input_rms": 0.5011238083374255,
+      "static_normalized_input_rms": 0.500051563058239,
+      "paired_minus_static_input_rms": 0.03798171401554894,
+      "acceleration_difference_rms": 0.06536905908518936,
+      "orientation_difference_rms": 0.022340758809500403,
+      "paired_static_output_distance_m": 0.0010693077929317951
+    },
+    {
+      "motion_id": "000382",
+      "config": "wrists",
+      "frames": 94,
+      "active_normalized_input_rms": 0.560477738327031,
+      "static_normalized_input_rms": 0.5000909004546994,
+      "paired_minus_static_input_rms": 0.596538183070274,
+      "acceleration_difference_rms": 0.5061719009793638,
+      "orientation_difference_rms": 0.6237577580284597,
+      "paired_static_output_distance_m": 0.04823925346136093
+    },
+    {
+      "motion_id": "000139",
+      "config": "head",
+      "frames": 163,
+      "active_normalized_input_rms": 0.5559960845371327,
+      "static_normalized_input_rms": 0.5000515703022863,
+      "paired_minus_static_input_rms": 0.2837703499337758,
+      "acceleration_difference_rms": 0.48602051116724865,
+      "orientation_difference_rms": 0.1692005799151574,
+      "paired_static_output_distance_m": 0.004095439799129963
+    },
+    {
+      "motion_id": "000139",
+      "config": "wrists",
+      "frames": 163,
+      "active_normalized_input_rms": 0.5328558069595556,
+      "static_normalized_input_rms": 0.5000909033696356,
+      "paired_minus_static_input_rms": 0.23268178432414643,
+      "acceleration_difference_rms": 0.36806654810674605,
+      "orientation_difference_rms": 0.1644082998613095,
+      "paired_static_output_distance_m": 0.004370021168142557
+    }
+  ]
+}
