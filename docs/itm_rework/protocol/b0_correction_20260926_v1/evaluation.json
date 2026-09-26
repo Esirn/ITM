@@ -1,0 +1,41 @@
+{
+  "version": "canonical-B0-correction-evaluation-v1",
+  "base_metrics": {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/metrics.json",
+    "sha256": "30a598ba54bcb65c0adad7c19b71fd55dc86699a461d73cef06946b5b6bfc8b5"
+  },
+  "alignment": "direct original GT, 20Hz, no spatial/time fits; retain all original metric definitions",
+  "split_rules": {
+    "development_val": "42 per arm = original36 + tail-reversed6; six original conditions separately n=3 per config; reversed separately n=3",
+    "train_diagnostic": "18 per arm, separate n=3 per config/condition; never merge train and val or call memorization generalization",
+    "foot_contact": "Only original val000433/000382 use GT contacts; val000139 nonflat N/A; all train N/A (flat-floor admission not frozen for train). Other metrics apply all cases."
+  },
+  "contrasts": [
+    "Within each split/config/source: paired-text_only, paired-physical_static; val also paired-tail_reversed and paired-numeric_zero.",
+    "Matched R-L per original source/config/condition, same noise; never mix checkpoints inside arm.",
+    "Difference of contrasts (R paired - R comparator) - (L paired - L comparator), comparator text_only/static; val also tail_reversed. Raw metrics, deltas and output-to-output mean joint distance.",
+    "Historical B0 vs L/R only for original36 identical-noise val cases; descriptive, not pure causal padding ablation."
+  ],
+  "aggregation": "Show all120 planned slots, separate arm/split/config/condition denominators; equal source means n=3 only with all3 valid. On missing, label partial mean and completed n, include missing denominators; paired contrasts only matched available groups with n and missing reasons. Never pool frames, conditions, arms, train/val.",
+  "failure": "Any missing/not-run/timeout/OOM/nonfinite/bad length-mask/checkpoint-input-random identity is failure over planned120, and arm60, val42/train18 denominators. Quality negatives remain valid outputs. R-static architecture mismatches reported separately; stop subsequent queue as correctness discrepancy.",
+  "D_rows": "Store per slot valid count, finite count, x0 masked MSE; RMS over valid feature/time entries and max_abs for encoder fused pre-temporal, each of2 temporal layers, final E; each of8 pre-add motion hidden h_l, gated residual r_l; ratio RMS(r_l)/RMS(h_l) with zero denominator=null and explicit status. Exclude prepended text/timestep token and padding.",
+  "D_deltas": "For matched source/config/t/replicate: encoder and residual differences paired-static and paired-reversed; normalized x0 differences each condition-text_only, paired-static, paired-reversed; all absolute RMS/max and x0 MSE changes. padded-exact for text_only/paired, valid frames only. Never divide unlike physical units or claim direction/causation from norm alone.",
+  "D_aggregation": "Retain480 rows and all96 matched padding rows. Average 2 replicas within source/config/t first; split train/val; source-equal means across3 plus min/max; keep each t/layer separately. No pooling t as a headline. Length158 padding comparison marked no_added_padding, others104/136 actual treatment.",
+  "semantic_review": "All120 outputs in predeclared random order, hide arm/config/condition; show source coarse target; save notes before key. Pose snapshots plus every-frame traces; uncertain retained. No new automatic threshold, semantic pass rate or JSR. Train actions use existing reviewed original captions/order/side.",
+  "interpretation": {
+    "static_restoration": "R static==text-only is built in, not empirical IMU advantage.",
+    "input_sensitivity": "paired != reversed/zero/static proves sensitivity only, not useful control; reversed is invalid time-correspondence, not a physical donor or ground-truth counterfactual.",
+    "no_dynamic_evidence": "If R approaches text-only and neither preserved-target proxy nor coarse semantics benefits from real temporal input, report no demonstrated dynamic IMU use. Do not declare success based on static identity.",
+    "possible_panel_evidence": "Report the sign/magnitude of all joint-position, velocity, root-relative and semantic contrasts; qualitative improvements only as developer-panel observations when real paired input is useful relative to both static and reversed and no renewed walk->kick negative. No binary certification or effect-size cutoff.",
+    "train_val": "Train failure means learned free-generation competence unestablished even if loss falls; train better but val fails motivates separately reviewed coverage expansion, not reuse of uncertain data.",
+    "causality": "D is local teacher-forced evidence. L-history changes training/RNG too. R-L tests whole reference-difference residual definition including removal of bias; cannot separately attribute to bias or static embedding."
+  },
+  "not_estimable": [
+    "generalization/significance/CI from3 sources and1 seed",
+    "conditional diversity K=1",
+    "same-class shuffled donor advantage",
+    "generated strict IMU closure/JSR_IMU",
+    "compatible editing",
+    "real-device calibration"
+  ]
+}

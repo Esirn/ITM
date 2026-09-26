@@ -1,0 +1,486 @@
+{
+  "seed": 20260929,
+  "algorithm": "numpy PCG64 permutation of frozen120 slot order",
+  "rows": [
+    {
+      "review_id": "C001",
+      "case_id": "L_exact_length--000433-head-text_only"
+    },
+    {
+      "review_id": "C002",
+      "case_id": "L_exact_length--000433-head-physical_static"
+    },
+    {
+      "review_id": "C003",
+      "case_id": "R_static_reference_delta--000139-head-text_only"
+    },
+    {
+      "review_id": "C004",
+      "case_id": "L_exact_length--train-000027-head-physical_static"
+    },
+    {
+      "review_id": "C005",
+      "case_id": "L_exact_length--000382-wrists-physical_static"
+    },
+    {
+      "review_id": "C006",
+      "case_id": "R_static_reference_delta--000433-head-imu_only"
+    },
+    {
+      "review_id": "C007",
+      "case_id": "L_exact_length--train-000506-wrists-text_only"
+    },
+    {
+      "review_id": "C008",
+      "case_id": "L_exact_length--train-004728-head-paired"
+    },
+    {
+      "review_id": "C009",
+      "case_id": "R_static_reference_delta--000433-head-physical_static"
+    },
+    {
+      "review_id": "C010",
+      "case_id": "R_static_reference_delta--000382-head-paired"
+    },
+    {
+      "review_id": "C011",
+      "case_id": "R_static_reference_delta--000433-wrists-numeric_zero"
+    },
+    {
+      "review_id": "C012",
+      "case_id": "R_static_reference_delta--000382-wrists-backbone_bypass"
+    },
+    {
+      "review_id": "C013",
+      "case_id": "R_static_reference_delta--000433-wrists-imu_only"
+    },
+    {
+      "review_id": "C014",
+      "case_id": "R_static_reference_delta--000139-wrists-numeric_zero"
+    },
+    {
+      "review_id": "C015",
+      "case_id": "R_static_reference_delta--000139-head-paired"
+    },
+    {
+      "review_id": "C016",
+      "case_id": "L_exact_length--000433-wrists-numeric_zero"
+    },
+    {
+      "review_id": "C017",
+      "case_id": "R_static_reference_delta--000139-wrists-paired"
+    },
+    {
+      "review_id": "C018",
+      "case_id": "L_exact_length--000382-head-numeric_zero"
+    },
+    {
+      "review_id": "C019",
+      "case_id": "L_exact_length--000433-head-backbone_bypass"
+    },
+    {
+      "review_id": "C020",
+      "case_id": "R_static_reference_delta--000382-head-numeric_zero"
+    },
+    {
+      "review_id": "C021",
+      "case_id": "R_static_reference_delta--000139-wrists-physical_static"
+    },
+    {
+      "review_id": "C022",
+      "case_id": "L_exact_length--000382-wrists-text_only"
+    },
+    {
+      "review_id": "C023",
+      "case_id": "R_static_reference_delta--000433-wrists-physical_static"
+    },
+    {
+      "review_id": "C024",
+      "case_id": "L_exact_length--000433-wrists-physical_static"
+    },
+    {
+      "review_id": "C025",
+      "case_id": "L_exact_length--000433-wrists-text_only"
+    },
+    {
+      "review_id": "C026",
+      "case_id": "R_static_reference_delta--000139-wrists-text_only"
+    },
+    {
+      "review_id": "C027",
+      "case_id": "R_static_reference_delta--000433-wrists-paired"
+    },
+    {
+      "review_id": "C028",
+      "case_id": "L_exact_length--000382-head-paired"
+    },
+    {
+      "review_id": "C029",
+      "case_id": "L_exact_length--000382-wrists-tail_reversed"
+    },
+    {
+      "review_id": "C030",
+      "case_id": "L_exact_length--000433-head-imu_only"
+    },
+    {
+      "review_id": "C031",
+      "case_id": "R_static_reference_delta--train-004728-wrists-physical_static"
+    },
+    {
+      "review_id": "C032",
+      "case_id": "R_static_reference_delta--000382-wrists-paired"
+    },
+    {
+      "review_id": "C033",
+      "case_id": "R_static_reference_delta--train-000506-wrists-text_only"
+    },
+    {
+      "review_id": "C034",
+      "case_id": "L_exact_length--train-004728-wrists-physical_static"
+    },
+    {
+      "review_id": "C035",
+      "case_id": "R_static_reference_delta--000139-head-tail_reversed"
+    },
+    {
+      "review_id": "C036",
+      "case_id": "R_static_reference_delta--train-004728-head-paired"
+    },
+    {
+      "review_id": "C037",
+      "case_id": "R_static_reference_delta--000433-wrists-backbone_bypass"
+    },
+    {
+      "review_id": "C038",
+      "case_id": "L_exact_length--000139-wrists-tail_reversed"
+    },
+    {
+      "review_id": "C039",
+      "case_id": "R_static_reference_delta--train-000027-head-physical_static"
+    },
+    {
+      "review_id": "C040",
+      "case_id": "L_exact_length--000382-wrists-numeric_zero"
+    },
+    {
+      "review_id": "C041",
+      "case_id": "R_static_reference_delta--train-000506-wrists-paired"
+    },
+    {
+      "review_id": "C042",
+      "case_id": "L_exact_length--000139-wrists-numeric_zero"
+    },
+    {
+      "review_id": "C043",
+      "case_id": "R_static_reference_delta--train-004728-wrists-paired"
+    },
+    {
+      "review_id": "C044",
+      "case_id": "R_static_reference_delta--000382-wrists-imu_only"
+    },
+    {
+      "review_id": "C045",
+      "case_id": "L_exact_length--000139-wrists-imu_only"
+    },
+    {
+      "review_id": "C046",
+      "case_id": "R_static_reference_delta--train-000027-wrists-physical_static"
+    },
+    {
+      "review_id": "C047",
+      "case_id": "R_static_reference_delta--000433-wrists-tail_reversed"
+    },
+    {
+      "review_id": "C048",
+      "case_id": "L_exact_length--train-000506-head-paired"
+    },
+    {
+      "review_id": "C049",
+      "case_id": "L_exact_length--000139-wrists-backbone_bypass"
+    },
+    {
+      "review_id": "C050",
+      "case_id": "R_static_reference_delta--000382-head-tail_reversed"
+    },
+    {
+      "review_id": "C051",
+      "case_id": "L_exact_length--000433-head-numeric_zero"
+    },
+    {
+      "review_id": "C052",
+      "case_id": "R_static_reference_delta--000139-wrists-imu_only"
+    },
+    {
+      "review_id": "C053",
+      "case_id": "R_static_reference_delta--000139-head-imu_only"
+    },
+    {
+      "review_id": "C054",
+      "case_id": "L_exact_length--000433-wrists-imu_only"
+    },
+    {
+      "review_id": "C055",
+      "case_id": "L_exact_length--000139-head-numeric_zero"
+    },
+    {
+      "review_id": "C056",
+      "case_id": "R_static_reference_delta--train-004728-head-text_only"
+    },
+    {
+      "review_id": "C057",
+      "case_id": "R_static_reference_delta--000433-head-text_only"
+    },
+    {
+      "review_id": "C058",
+      "case_id": "L_exact_length--000139-head-tail_reversed"
+    },
+    {
+      "review_id": "C059",
+      "case_id": "R_static_reference_delta--000433-head-numeric_zero"
+    },
+    {
+      "review_id": "C060",
+      "case_id": "L_exact_length--000382-head-imu_only"
+    },
+    {
+      "review_id": "C061",
+      "case_id": "L_exact_length--000139-head-imu_only"
+    },
+    {
+      "review_id": "C062",
+      "case_id": "L_exact_length--000382-head-physical_static"
+    },
+    {
+      "review_id": "C063",
+      "case_id": "L_exact_length--000433-wrists-backbone_bypass"
+    },
+    {
+      "review_id": "C064",
+      "case_id": "L_exact_length--000433-head-tail_reversed"
+    },
+    {
+      "review_id": "C065",
+      "case_id": "R_static_reference_delta--000433-wrists-text_only"
+    },
+    {
+      "review_id": "C066",
+      "case_id": "L_exact_length--train-000027-head-paired"
+    },
+    {
+      "review_id": "C067",
+      "case_id": "R_static_reference_delta--train-000027-head-paired"
+    },
+    {
+      "review_id": "C068",
+      "case_id": "L_exact_length--000382-head-tail_reversed"
+    },
+    {
+      "review_id": "C069",
+      "case_id": "L_exact_length--000139-wrists-physical_static"
+    },
+    {
+      "review_id": "C070",
+      "case_id": "L_exact_length--train-004728-head-text_only"
+    },
+    {
+      "review_id": "C071",
+      "case_id": "L_exact_length--train-000506-wrists-paired"
+    },
+    {
+      "review_id": "C072",
+      "case_id": "R_static_reference_delta--000139-head-backbone_bypass"
+    },
+    {
+      "review_id": "C073",
+      "case_id": "L_exact_length--000139-wrists-text_only"
+    },
+    {
+      "review_id": "C074",
+      "case_id": "L_exact_length--train-004728-wrists-text_only"
+    },
+    {
+      "review_id": "C075",
+      "case_id": "R_static_reference_delta--train-000027-head-text_only"
+    },
+    {
+      "review_id": "C076",
+      "case_id": "L_exact_length--000139-wrists-paired"
+    },
+    {
+      "review_id": "C077",
+      "case_id": "L_exact_length--000382-head-text_only"
+    },
+    {
+      "review_id": "C078",
+      "case_id": "L_exact_length--000382-head-backbone_bypass"
+    },
+    {
+      "review_id": "C079",
+      "case_id": "L_exact_length--train-000027-wrists-text_only"
+    },
+    {
+      "review_id": "C080",
+      "case_id": "R_static_reference_delta--train-000506-head-physical_static"
+    },
+    {
+      "review_id": "C081",
+      "case_id": "L_exact_length--train-000506-head-text_only"
+    },
+    {
+      "review_id": "C082",
+      "case_id": "R_static_reference_delta--000382-wrists-physical_static"
+    },
+    {
+      "review_id": "C083",
+      "case_id": "L_exact_length--000139-head-backbone_bypass"
+    },
+    {
+      "review_id": "C084",
+      "case_id": "R_static_reference_delta--train-004728-wrists-text_only"
+    },
+    {
+      "review_id": "C085",
+      "case_id": "L_exact_length--train-000506-wrists-physical_static"
+    },
+    {
+      "review_id": "C086",
+      "case_id": "L_exact_length--000139-head-text_only"
+    },
+    {
+      "review_id": "C087",
+      "case_id": "L_exact_length--000433-wrists-tail_reversed"
+    },
+    {
+      "review_id": "C088",
+      "case_id": "L_exact_length--000382-wrists-imu_only"
+    },
+    {
+      "review_id": "C089",
+      "case_id": "R_static_reference_delta--000382-wrists-tail_reversed"
+    },
+    {
+      "review_id": "C090",
+      "case_id": "R_static_reference_delta--000382-head-physical_static"
+    },
+    {
+      "review_id": "C091",
+      "case_id": "R_static_reference_delta--000433-head-backbone_bypass"
+    },
+    {
+      "review_id": "C092",
+      "case_id": "R_static_reference_delta--000139-wrists-tail_reversed"
+    },
+    {
+      "review_id": "C093",
+      "case_id": "R_static_reference_delta--000382-head-backbone_bypass"
+    },
+    {
+      "review_id": "C094",
+      "case_id": "L_exact_length--train-000027-wrists-physical_static"
+    },
+    {
+      "review_id": "C095",
+      "case_id": "R_static_reference_delta--train-000506-wrists-physical_static"
+    },
+    {
+      "review_id": "C096",
+      "case_id": "R_static_reference_delta--000433-head-paired"
+    },
+    {
+      "review_id": "C097",
+      "case_id": "R_static_reference_delta--train-000506-head-text_only"
+    },
+    {
+      "review_id": "C098",
+      "case_id": "R_static_reference_delta--000139-head-numeric_zero"
+    },
+    {
+      "review_id": "C099",
+      "case_id": "R_static_reference_delta--000139-head-physical_static"
+    },
+    {
+      "review_id": "C100",
+      "case_id": "R_static_reference_delta--000382-head-text_only"
+    },
+    {
+      "review_id": "C101",
+      "case_id": "L_exact_length--000382-wrists-paired"
+    },
+    {
+      "review_id": "C102",
+      "case_id": "R_static_reference_delta--train-000506-head-paired"
+    },
+    {
+      "review_id": "C103",
+      "case_id": "L_exact_length--train-004728-head-physical_static"
+    },
+    {
+      "review_id": "C104",
+      "case_id": "L_exact_length--train-004728-wrists-paired"
+    },
+    {
+      "review_id": "C105",
+      "case_id": "L_exact_length--train-000027-wrists-paired"
+    },
+    {
+      "review_id": "C106",
+      "case_id": "L_exact_length--000382-wrists-backbone_bypass"
+    },
+    {
+      "review_id": "C107",
+      "case_id": "L_exact_length--train-000506-head-physical_static"
+    },
+    {
+      "review_id": "C108",
+      "case_id": "R_static_reference_delta--000382-wrists-numeric_zero"
+    },
+    {
+      "review_id": "C109",
+      "case_id": "R_static_reference_delta--train-004728-head-physical_static"
+    },
+    {
+      "review_id": "C110",
+      "case_id": "R_static_reference_delta--train-000027-wrists-text_only"
+    },
+    {
+      "review_id": "C111",
+      "case_id": "R_static_reference_delta--000433-head-tail_reversed"
+    },
+    {
+      "review_id": "C112",
+      "case_id": "R_static_reference_delta--000382-head-imu_only"
+    },
+    {
+      "review_id": "C113",
+      "case_id": "L_exact_length--train-000027-head-text_only"
+    },
+    {
+      "review_id": "C114",
+      "case_id": "R_static_reference_delta--train-000027-wrists-paired"
+    },
+    {
+      "review_id": "C115",
+      "case_id": "R_static_reference_delta--000382-wrists-text_only"
+    },
+    {
+      "review_id": "C116",
+      "case_id": "L_exact_length--000433-head-paired"
+    },
+    {
+      "review_id": "C117",
+      "case_id": "L_exact_length--000433-wrists-paired"
+    },
+    {
+      "review_id": "C118",
+      "case_id": "L_exact_length--000139-head-paired"
+    },
+    {
+      "review_id": "C119",
+      "case_id": "R_static_reference_delta--000139-wrists-backbone_bypass"
+    },
+    {
+      "review_id": "C120",
+      "case_id": "L_exact_length--000139-head-physical_static"
+    }
+  ]
+}

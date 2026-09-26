@@ -1,0 +1,16 @@
+{
+  "version": "B0-correction-freeze-CPU-checks-v1",
+  "read_commit": "cd1079e",
+  "package_sha256": "e24c8cddce0d0cb11a7b71d2cd91a24c05fab2bbceafd2f83d56f25063c48d8a",
+  "test_command": "PYTHONPATH=src /home/a200/miniconda3/envs/itm/bin/python -m pytest -q tests/test_b0_correction_protocol.py",
+  "tests_passed": 6,
+  "tests_failed": 0,
+  "rebuild_command": "PYTHONPATH=src /home/a200/miniconda3/envs/itm/bin/python scripts/freeze_b0_correction_protocol.py --output /tmp/itm_b0_correction_final_replay_20260926_v2",
+  "reproduced_package_files_byte_identical": 11,
+  "model_forwards": 0,
+  "training_updates": 0,
+  "diffusion_samples": 0,
+  "GPU_jobs": 0,
+  "GPU_queries": 0,
+  "note": "Plan tests and finite CPU random-array reconstruction only. No method implementation acceptance or execution authorization."
+}

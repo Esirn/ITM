@@ -1,0 +1,102 @@
+[
+  {
+    "path": "docs/itm_rework/method/B0_CORRECTION_PROPOSAL_20260926.md",
+    "sha256": "ad0300408f7beb574bae0166a41db59a8210ff650828f00016f42752ae2c0f00"
+  },
+  {
+    "path": "docs/itm_rework/method/b0_diagnosis_20260926_v1/proposed_budget.json",
+    "sha256": "742c63dc9e4cf08bcb411e627a171db87005000d85b54f50dc0fdb81405f85ad"
+  },
+  {
+    "path": "docs/itm_rework/method/b0_diagnosis_20260926_v1/proposed_probe_slots.json",
+    "sha256": "7e79f55ae6790558ddb2e045570bf301a8a43c968f0a0cc374861847e1a64590"
+  },
+  {
+    "path": "docs/itm_rework/method/b0_diagnosis_20260926_v1/proposed_sampling_slots.json",
+    "sha256": "93a637cf8bc00c5eeba312a1f4891f48dcb50e81392b4af88156f3e7e2dba622"
+  },
+  {
+    "path": "docs/itm_rework/method/b0_diagnosis_20260926_v1/existing_artifact_diagnosis.json",
+    "sha256": "808f5a02a485c748f590093400472fc6d36954e9655122df3772d0c76f00075f"
+  },
+  {
+    "path": "docs/itm_rework/method/b0_diagnosis_20260926_v1/sources.json",
+    "sha256": "c874919c2c6030b62bfb2c030b558679f98a943104ed56c5bf42d64252398dd4"
+  },
+  {
+    "path": "docs/itm_rework/protocol/B0_EVALUATION_20260926.md",
+    "sha256": "e29d61d2704e524d39b4e5a37dba0e58caaaf8a04e086acee15876e8ea447aae"
+  },
+  {
+    "path": "docs/itm_rework/method/canonical_training_input_20260925_v1.json",
+    "sha256": "ffbe676233e1750b105cbff73a587dfbe5369fb223cd4b645262ac1295b9d16f"
+  },
+  {
+    "path": "scripts/freeze_b0_correction_protocol.py",
+    "sha256": "a9e760e04d35fd3b4088acae53967207b014d14b976567fb8a35c3537baa1f13"
+  },
+  {
+    "path": "src/itm/data/random_plan.py",
+    "sha256": "5e2f8aed3669c97ca58c9d726f5da515bb409c2ace21a86965ad433ca0275c3a"
+  },
+  {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/package.json",
+    "sha256": "33de7fd98c1cf43fc5a51a7d35b502e154a233066efec13f17dda08bc53abe97"
+  },
+  {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/metrics.json",
+    "sha256": "30a598ba54bcb65c0adad7c19b71fd55dc86699a461d73cef06946b5b6bfc8b5"
+  },
+  {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/semantic_review.json",
+    "sha256": "149c4006bbdb2b6fb2cee6524e8e04e73ce37dff7d4f529d061ae3ff4641c5ec"
+  },
+  {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/sampling_cases.json",
+    "sha256": "ddf2f01ae1ddcb6b6583f50508106f801a0b9b9564c917614954f5157d93c070"
+  },
+  {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/admission.jsonl",
+    "sha256": "9fa1046c5bce7e25d507ac254d9f77a451ddf9ecd8c6a70309c79f611b6bf161"
+  },
+  {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/train_motion.jsonl",
+    "sha256": "d1a42a16b6dd3e61682dc59a389ae00f8189d371d372d08d90f67bf6c22ed2ca"
+  },
+  {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/val_motion.jsonl",
+    "sha256": "7d79378e48c006c4fecf59cf7a2f59310c9c65caf7b8f71f8c6a7c3fd5fbacb6"
+  },
+  {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/train_imu.jsonl",
+    "sha256": "97daa478cdb17fdc45a40c376c28becf595c7e4e2d0eaa97f3bc96e964fb592a"
+  },
+  {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/val_imu.jsonl",
+    "sha256": "2fffd1d6809c832cd5063e155d27940c5c351647e5c29814f2f7c3ccf5735dd5"
+  },
+  {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/train_caption_plans.jsonl",
+    "sha256": "71720d8d970ae68da8169b2bb037551090b759809e5f6957058bf30216559fc8"
+  },
+  {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/val_caption_plans.jsonl",
+    "sha256": "c2f58d1452c821219554586ee99200ad4d04e83afb295f6810b75ebd4ab493f3"
+  },
+  {
+    "path": "outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/model.pt",
+    "sha256": "44d2c3307f27bca2c79ab7d367890f968f78777168c3c37a306a7bf0560d6ac2"
+  },
+  {
+    "path": "outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/model000475000.pt",
+    "sha256": "ce43c1d4232fc2b897999d7996c2d2b889791d99585d87e1289af773ab56ab93"
+  },
+  {
+    "path": "/home/a200/0proj/datasets/all/Mean.npy",
+    "sha256": "26e136555dab04c94a129d446c26e6b9939cbf045fbf77bcf5462c1fb5a2001c"
+  },
+  {
+    "path": "/home/a200/0proj/datasets/all/Std.npy",
+    "sha256": "6565a65ed9b31e23c328829a309e1c482be8b85fd23b43d65451a9b19a917f40"
+  }
+]

@@ -1,0 +1,160 @@
+{
+  "version": "canonical-B0-correction-budget-v1",
+  "status": "frozen_not_authorized",
+  "read_commit": "cd1079e",
+  "owner": "02 protocol / 01 implementation and execution",
+  "runner_compatibility": "Requires a new version; existing one-run 36-slot runner must reject this proposal",
+  "scope": "Development mechanism diagnosis, not research validation or real-device calibration",
+  "dependencies": [
+    {
+      "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/package.json",
+      "sha256": "33de7fd98c1cf43fc5a51a7d35b502e154a233066efec13f17dda08bc53abe97"
+    },
+    {
+      "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/metrics.json",
+      "sha256": "30a598ba54bcb65c0adad7c19b71fd55dc86699a461d73cef06946b5b6bfc8b5"
+    },
+    {
+      "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/b0_budget.json",
+      "sha256": "660b9f779eee1301f1bb92c30081c20e86248f76854f047f07ea88521ecead47"
+    }
+  ],
+  "diagnostic": {
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/model.pt",
+      "sha256": "44d2c3307f27bca2c79ab7d367890f968f78777168c3c37a306a7bf0560d6ac2"
+    },
+    "sources": 6,
+    "sensor_configs": [
+      "head",
+      "wrists"
+    ],
+    "timesteps": [
+      50,
+      250,
+      500,
+      900
+    ],
+    "noise_seeds": [
+      20260927,
+      20260928
+    ],
+    "conditions": [
+      "text_only",
+      "paired",
+      "physical_static",
+      "tail_reversed"
+    ],
+    "exact_length_branch_examples": 384,
+    "padded_train_branch_examples": 96,
+    "maximum_branch_example_forwards": 480,
+    "updates": 0,
+    "full_samples": 0,
+    "maximum_seconds": 600,
+    "slots": {
+      "path": "docs/itm_rework/protocol/b0_correction_20260926_v1/probe_slots.json",
+      "sha256": "21136b1dc88f8dce79db3bb05b7a4f5229a9e132419a675794fbcda8e4a19321"
+    }
+  },
+  "training": {
+    "arms": [
+      "L_exact_length",
+      "R_static_reference_delta"
+    ],
+    "runs": 2,
+    "seed": 20260925,
+    "fresh_initialization": true,
+    "clone_common_initial_parameters": true,
+    "updates_per_arm": 200,
+    "total_updates": 400,
+    "effective_batch_size": 3,
+    "microbatch_size": 1,
+    "epochs_per_arm": 100,
+    "examples_per_arm": 600,
+    "total_examples": 1200,
+    "maximum_MDM_branch_example_forwards": 1200,
+    "maximum_encoder_example_forwards": {
+      "L": 600,
+      "R_including_reference": 1200
+    },
+    "learning_rate": 5e-05,
+    "loss": "diffusion_x0_MSE_only",
+    "text_dropout": 0.1,
+    "imu_dropout": 0.1,
+    "encoder_dropout": 0.1,
+    "reference_dropout": "same per-example random masks as observed branch",
+    "optimizer": "AdamW original defaults",
+    "backbone": "frozen_eval; mask_frames unchanged false",
+    "checkpoint_selection": "final_update_200_each_arm_only",
+    "maximum_seconds_per_arm": 600,
+    "maximum_seconds_shared": 1200,
+    "checkpoint_policy": "Publish at completed updates 50/100/150 and final200 only; preserve last complete checkpoint on failure, never promote partial to final."
+  },
+  "sampling": {
+    "slots": {
+      "path": "docs/itm_rework/protocol/b0_correction_20260926_v1/sampling_slots.json",
+      "sha256": "a63ecbc283df093ed814f09ee0a0cf476768e70be58fa1e52297df8dc5c74e1b"
+    },
+    "count_per_arm": 60,
+    "total_count": 120,
+    "original_val_per_arm": 36,
+    "tail_reversed_val_per_arm": 6,
+    "train_diagnostic_per_arm": 18,
+    "K": 1,
+    "seed": 20260926,
+    "steps": 1000,
+    "maximum_denoising_calls": 120000,
+    "maximum_branch_example_forwards": 480000,
+    "guidance": {
+      "mode": "factorized",
+      "branch_execution": "batched",
+      "text_scale": 2.5,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0
+    },
+    "maximum_seconds_shared": 5400
+  },
+  "resource_caps": {
+    "concurrent_gpus": 1,
+    "maximum_allocated_memory_bytes": 25769803776,
+    "total_seconds": 7200,
+    "gpu_uuid": null,
+    "run_directory": null,
+    "stop": "First timeout, OOM, nonfinite, identity or counter failure stops whole queue; preserve all planned slots and completed artifacts; no retry or CPU fallback"
+  },
+  "execution_dependencies": [
+    "01 implements exact frozen design and CPU tests",
+    "02 software acceptance of concrete code/inputs/counters",
+    "new explicit user authorization bound to package/code/run_directory/GPU_UUID",
+    "GPU preflight"
+  ],
+  "stage_order": [
+    "D_probe",
+    "L_train",
+    "R_train",
+    "L_sample_60",
+    "R_sample_60"
+  ],
+  "clock_rules": {
+    "total": "7200s starts at queue launch BEFORE GPU preflight/load; never extends",
+    "D": "min(total_deadline,D_start+600)",
+    "training": "shared1200 starts immediately before L_train; each arm min(total,train_shared_deadline,arm_start+600)",
+    "sampling": "shared5400 starts immediately before L samples; R shares same deadline; no reset per arm or slot",
+    "stages": "All load/save/verification overhead counts; no transferring unused stage limits into another cap"
+  },
+  "counter_rules": {
+    "D_MDM": 480,
+    "training_MDM_total": 1200,
+    "training_encoder_L_max": 600,
+    "training_encoder_R_max": 1200,
+    "sampling_denoising": 120000,
+    "sampling_MDM_branch_examples": 480000,
+    "sampling_encoder_max": {
+      "L_observed": 60,
+      "R_observed": 60,
+      "R_reference": 60
+    },
+    "D_encoder": "at most one observed encoding per branch example (<=480); eval caches may reduce this; static comparisons use already budgeted static probes. Hook extraction adds zero MDM calls.",
+    "count": "Reserve counters before forward/update. Unused null-branch encoder calls may be skipped but not shifted into extra MDM work. Record actual encoder calls separately. All new real MDM probes/counts, including verification, must fit these caps; no unlisted GPU warmup probes."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "version": "canonical-B0-correction-package-v1",
+  "status": "frozen_for_implementation_not_authorized",
+  "source_commit": "cd1079e",
+  "schema_scope": "new experiment package; does not revise old data contract or old authorization",
+  "artifacts": [
+    {
+      "path": "docs/itm_rework/protocol/b0_correction_20260926_v1/budget.json",
+      "sha256": "aa3084b7d93e13f17415a34d8eeaddb65d823cd35dd43ab990918ddfdcc3dc0f"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_correction_20260926_v1/design.json",
+      "sha256": "5d348d5290e29bedc613ba5507abe9f4dec2ba294b886109f76185edef8f7420"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_correction_20260926_v1/evaluation.json",
+      "sha256": "2b90f43a9b69bf598ded0f9c07431d1008aaba4491a7c9ec3d98914a9b40ed2b"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_correction_20260926_v1/probe_noise.json",
+      "sha256": "cd71c4e6d65a5e7e9c5958f5d0505e0c4f86f8d4709e7cea9813008c97d2882d"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_correction_20260926_v1/probe_slots.json",
+      "sha256": "21136b1dc88f8dce79db3bb05b7a4f5229a9e132419a675794fbcda8e4a19321"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_correction_20260926_v1/review_order.json",
+      "sha256": "28cee58a5cf8318abeb479a4d4976f295609f7e4431371c0e081cda8ad2ba484"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_correction_20260926_v1/sampling_slots.json",
+      "sha256": "a63ecbc283df093ed814f09ee0a0cf476768e70be58fa1e52297df8dc5c74e1b"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_correction_20260926_v1/sources.json",
+      "sha256": "cd79fe017be3042db9730234fb58d5bc19c52306e9187241dd0e4695e1fd13e9"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_correction_20260926_v1/training_schedule.json",
+      "sha256": "6b91f51312794aeddef684f9b355513694c5ec4765e75f37c57eb73080d43152"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_correction_20260926_v1/validation.json",
+      "sha256": "48f8d37dc7e55c5c8db4698938dc59719475a696bc3c4650c96502b12b2e5687"
+    }
+  ],
+  "execution_authorization": null,
+  "GPU_UUID": null,
+  "run_directory": null
+}
