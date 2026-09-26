@@ -1,0 +1,70 @@
+{
+  "read_commit": "8046f5e8b4da077b83d01fda65fe1424639bbd6d",
+  "contract_version": "itm-rework-v0.3-draft",
+  "owned_files": [
+    {
+      "path": "src/itm/models/mdm_run_limits.py",
+      "sha256": "cf339ae8d8a6b4d76946281fa0be974ca2a7b4462a781a6d70aebb3c1dfc7f76"
+    },
+    {
+      "path": "src/itm/models/mdm_sampling.py",
+      "sha256": "def8c1bf77446e652be1216fa20485a00474b1884071e2305fc204ee1f0a3e68"
+    },
+    {
+      "path": "scripts/run_mdm_b0_bounded.py",
+      "sha256": "9cf84ee396e9617f0c4e9ac684845f96abd6a1d8f43b2cdf0e252a936068247e"
+    },
+    {
+      "path": "scripts/train_mdm_imu_control.py",
+      "sha256": "14e7bee3de0d5b60815c7550f7e6787fb7d844e12c224fef8b33987177ea8f89"
+    },
+    {
+      "path": "scripts/sample_mdm_imu_control.py",
+      "sha256": "569711343f38c75fa34d670ee76882bf048571ea60e3da377e3cac0309e0c463"
+    },
+    {
+      "path": "tests/test_mdm_run_limits.py",
+      "sha256": "bad5b2dc50523ea264a8c88695c77ebf3af93b711bad76f3376b85d5ffb6d27f"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "docs/itm_rework/contract.yaml",
+      "sha256": "a715d2fed356481ef66247b15a93dd2f747ce2e9d274d9e70211644e0556d705"
+    },
+    {
+      "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/b0_budget.json",
+      "sha256": "660b9f779eee1301f1bb92c30081c20e86248f76854f047f07ea88521ecead47"
+    },
+    {
+      "path": "docs/itm_rework/protocol/canonical_method_acceptance_20260925_v1/execution_plan/execution_plan.json",
+      "sha256": "fd1618f69e16ba79fabcbf67849d73078cd6fcc8d2afd18affdbe3d128c102bc"
+    },
+    {
+      "path": "src/itm/models/mdm_canonical_conditions.py",
+      "sha256": "d78f53dcaa388eddcec1ef8eeb819bb9a14297780de6430e9e35ffe1f449ba4a"
+    },
+    {
+      "path": "src/itm/models/mdm_imu_control.py",
+      "sha256": "51de85cbf5cff81d38c2381ea7e3551caadf6ec85b34f97200dd7250bdf01de0"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "docs/itm_rework/method/b0_limits_cpu_report_20260926.json",
+      "sha256": "8a8c57b64c9895bf7edf7e566a73239f92bbc04f9071a0ee3037e343cb4c3ee3"
+    },
+    {
+      "path": "docs/itm_rework/method/b0_limits_preparation_20260926_v2.json",
+      "sha256": "6f27205a201ba9b940dd73f02dc26055d11e75878c9a35fdd2cfe8e772f8459b"
+    },
+    {
+      "path": "docs/itm_rework/method/logs/b0_limits_regression_20260926_v2.txt",
+      "sha256": "e0a74fb5f2d41ca19520b1a97563dd7b1106e6667c834fbe01de705cc013534e"
+    },
+    {
+      "path": "docs/itm_rework/method/logs/b0_limits_regression_20260926_v2.xml",
+      "sha256": "9b9742bcfd1f80ed3a307b2c5cfa13fb8863186389a350d3cb0cf6d791707b65"
+    }
+  ]
+}

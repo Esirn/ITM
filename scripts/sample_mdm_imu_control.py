@@ -34,6 +34,7 @@ from itm.models.mdm_caption_conditions import CAPTION_PIPELINE_VERSION, read_cap
 from itm.models.mdm_canonical_conditions import (CanonicalB0Package, CANONICAL_PIPELINE_VERSION,
     CANONICAL_CONTRACT_VERSION, CANONICAL_SCOPE, CANONICAL_ALIGNMENT)
 from itm.models.mdm_training_provenance import _digest
+from itm.models.mdm_run_limits import guarded_main, atomic_artifact
 
 
 SENSOR_CONFIGS = {"head": (4,), "wrists": (0, 1)}
@@ -48,6 +49,7 @@ def parse_args():
     parser.add_argument("--caption-plan", help="Optional artifact-bound caption plan JSONL")
     parser.add_argument("--motion-manifest", help="HumanML manifest required with --caption-plan")
     parser.add_argument("--canonical-package", help="Opt in to the admitted synthetic B0 package")
+    parser.add_argument("--run-context", help="Shared absolute sampling deadline from the bounded B0 runner")
     parser.add_argument("--spec", required=True, help="JSON list of case objects")
     parser.add_argument("--output", required=True)
     parser.add_argument(
@@ -82,10 +84,17 @@ def parse_args():
 
 
 def main():
-    args = parse_args()
+    return guarded_main(parse_args(), 'sample', _main)
+
+
+def _main(args, run_guard=None):
+    if args.canonical_package and run_guard is None:
+        raise ValueError('Canonical B0 sampling requires the bounded runner')
     torch = require_torch()
     _legacy_compatibility()
     device = torch.device(args.device)
+    if run_guard:
+        run_guard.configure_cuda(torch, device)
     torch.manual_seed(args.seed)
     np.random.seed(args.seed)
 
@@ -119,6 +128,10 @@ def main():
         raise ValueError("spec must contain a non-empty JSON list")
     records = {str(row["motion_id"]): row for row in read_jsonl(manifest_path)}
     if canonical:
+        execution = control_state.get('execution') or {}
+        if (execution.get('final_update_200') is not True or execution.get('updates_completed') != 200
+                or execution.get('updates_attempted') != 200):
+            raise ValueError('Canonical validation requires the completed final update-200 checkpoint')
         if control_state.get('input_pipeline_version') != CANONICAL_PIPELINE_VERSION:
             raise ValueError('Canonical sampling requires a newly trained canonical checkpoint')
         provenance = control_state['training_input_provenance']['payload']['artifacts']
@@ -145,6 +158,8 @@ def main():
     mdm_args = SimpleNamespace(**mdm_options)
     data_stub = SimpleNamespace(dataset=SimpleNamespace(num_actions=1))
     model, diffusion = create_model_and_diffusion(mdm_args, data_stub)
+    if run_guard and diffusion.num_timesteps != 1000:
+        raise ValueError('Bounded B0 requires exactly 1000 DDPM steps')
     mdm_state = torch.load(mdm_checkpoint_path, map_location="cpu", weights_only=True)
     load_model_wo_clip(model, mdm_state)
     from dataclasses import replace
@@ -210,7 +225,7 @@ def main():
         backbone.cache_conditions(conditions, encoder)
     elif args.branch_execution == "batched":
         raise ValueError("Batched branch execution requires condition caching")
-    if device.type == "cuda":
+    if device.type == "cuda" and not run_guard:
         torch.cuda.reset_peak_memory_stats(device)
     started = time.perf_counter()
     with torch.inference_mode():
@@ -221,10 +236,14 @@ def main():
                 guided_model, diffusion, y=backbone._model_kwargs(conditions), lengths=lengths,
                 case_ids=[str(case.get("random_plan_case_id", case["motion_id"])) for case in loaded],
                 sample_seed=args.seed, backbone_id=_sha256(mdm_checkpoint_path),
+                run_guard=run_guard,
             )
         else:
             sample = backbone.sample(conditions, seed=args.seed)
         joints = backbone.decode_motion(sample).cpu()
+        if run_guard:
+            run_guard.ensure_finite(joints, 'decoded joints')
+            run_guard.check()
     elapsed = time.perf_counter() - started
     peak_memory = (
         int(torch.cuda.max_memory_allocated(device)) if device.type == "cuda" else None
@@ -266,8 +285,7 @@ def main():
         "mdm_checkpoint_sha256": _sha256(mdm_checkpoint_path),
         "cases": [{k: v for k, v in case.items() if k not in {"imu", "gt", "raw_acceleration", "raw_orientation", "sensor_mask"}} for case in loaded],
     }
-    np.savez_compressed(
-        output,
+    arrays = dict(
         motion=joints.numpy(),
         normalized_humanml263=sample.cpu().numpy(),
         fps=np.array(20.0),
@@ -282,7 +300,8 @@ def main():
         imu_condition_present=y['imu_condition_present'].cpu().numpy(),
         metadata=np.array(json.dumps(metadata)),
     )
-    output.with_suffix(".json").write_text(json.dumps(metadata, indent=2), encoding="utf-8")
+    atomic_artifact(output, lambda stream: np.savez_compressed(stream, **arrays), run_guard)
+    atomic_artifact(output.with_suffix('.json'), lambda stream: stream.write(json.dumps(metadata, indent=2).encode()), run_guard)
     hook.remove()
     print(f"results: {output}")
     return 0

@@ -26,6 +26,7 @@ from itm.models.mdm_imu_control import (MDMIMUControlConfig, install_imu_control
     configure_control_training, evaluating_preserving_modes)
 from itm.models.torch_frame_baseline import require_torch
 from itm.models.mdm_training_provenance import build_training_input_provenance, validate_training_resume
+from itm.models.mdm_run_limits import guarded_main, atomic_artifact
 from itm.models.mdm_canonical_conditions import (CanonicalB0Package, CANONICAL_PIPELINE_VERSION,
     CANONICAL_CONTRACT_VERSION, CANONICAL_SCOPE, CANONICAL_ALIGNMENT)
 from itm.models.mdm_caption_conditions import (
@@ -54,6 +55,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--learning-rate", type=float, default=5e-5)
     parser.add_argument("--max-records", type=int)
     parser.add_argument("--resume", default=None)
+    parser.add_argument("--run-context", help="Absolute deadline and resource context from the bounded B0 runner")
     parser.add_argument("--trajectory-loss-weight", type=float, default=0.0)
     parser.add_argument("--velocity-loss-weight", type=float, default=0.0)
     parser.add_argument("--jerk-loss-weight", type=float, default=0.0)
@@ -91,7 +93,10 @@ def parse_args() -> argparse.Namespace:
 
 
 def main() -> int:
-    args = parse_args()
+    return guarded_main(parse_args(), 'train', _main)
+
+
+def _main(args, run_guard=None) -> int:
     canonical = None
     if getattr(args, 'canonical_package', None):
         canonical = CanonicalB0Package(args.canonical_package, workspace_root=Path.cwd())
@@ -100,6 +105,8 @@ def main() -> int:
             raise ValueError('Canonical B0 requires all admitted train clips, a fresh controller and no edit witnesses')
         if args.contract_version != CANONICAL_CONTRACT_VERSION:
             raise ValueError('Canonical B0 requires explicit --contract-version '+CANONICAL_CONTRACT_VERSION)
+        if not getattr(args, 'input_only_report', None) and run_guard is None:
+            raise ValueError('Canonical B0 execution requires the bounded runner; input-only checks remain available')
     if canonical is None and not args.allow_unsynchronized_diagnostic:
         raise ValueError("Training blocked: owner 02 has not certified loader time/world alignment. "
                          "Use --allow-unsynchronized-diagnostic only for explicitly labelled diagnostics.")
@@ -111,6 +118,8 @@ def main() -> int:
                          if row["split"] == "train"}
         require_caption_training_admission(caption_plans)
     torch = require_torch()
+    if run_guard:
+        run_guard.configure_cuda(torch, torch.device(args.device))
     random.seed(args.seed)
     np.random.seed(args.seed)
     torch.manual_seed(args.seed)
@@ -246,6 +255,8 @@ def main() -> int:
         response_coverage = {"selected_examples": 0, "accepted_attributes": 0, "total_attributes": 0,
                              "student_forwards": 0, "teacher_forwards": 0, "timestep_buckets": {}}
         for motion, y in loader:
+            if run_guard:
+                run_guard.before_update()
             motion = motion.to(device)
             y = {key: (value.to(device) if torch.is_tensor(value) else value) for key, value in y.items()}
             if args.backbone_mode == "frozen_eval":
@@ -326,10 +337,14 @@ def main() -> int:
                 + args.text_anchor_loss_weight * text_anchor_loss
                 + args.upper_body_text_anchor_loss_weight * upper_body_text_anchor_loss
             )
-            optimizer.zero_grad(set_to_none=True)
-            loss.backward()
-            torch.nn.utils.clip_grad_norm_(trainable, 1.0)
-            optimizer.step()
+            if run_guard:
+                run_guard.ensure_finite(model_output, 'model prediction')
+                run_guard.optimizer_step(loss, optimizer, trainable)
+            else:
+                optimizer.zero_grad(set_to_none=True)
+                loss.backward()
+                torch.nn.utils.clip_grad_norm_(trainable, 1.0)
+                optimizer.step()
             batch = len(motion)
             totals["response_loss"] += float(response_loss.item()) * batch
             totals["response_joint_proxy_loss"] += float(response_proxy.item()) * batch
@@ -370,13 +385,17 @@ def main() -> int:
             epoch,
             args,
             input_provenance,
+            run_guard=run_guard,
         )
     hook.remove()
     output = output_path
     output.parent.mkdir(parents=True, exist_ok=True)
+    if run_guard and run_guard.state['updates_completed'] != 200:
+        raise RuntimeError('Partial training cannot publish the final B0 checkpoint')
     _save_checkpoint(
         output, torch, imu_encoder, controlled, optimizer, control_config, configs,
         mdm_checkpoint_path, normalization, history, args.epochs, args, input_provenance,
+        run_guard=run_guard, final=True,
     )
     print(f"control_checkpoint: {output}")
     return 0
@@ -870,13 +889,12 @@ def _input_pipeline(args):
 
 def _save_checkpoint(
     path, torch, imu_encoder, controlled, optimizer, control_config, configs,
-    mdm_checkpoint_path, normalization, history, epoch, args, input_provenance,
+    mdm_checkpoint_path, normalization, history, epoch, args, input_provenance, *, run_guard=None, final=False,
 ):
     path.parent.mkdir(parents=True, exist_ok=True)
     if path.exists():
         raise FileExistsError(path)
-    torch.save(
-        {
+    payload = {
             "checkpoint_schema": "itm-control-v2",
             "input_pipeline_version": _input_pipeline(args),
             "contract_version": args.contract_version,
@@ -894,9 +912,14 @@ def _save_checkpoint(
             "history": history,
             "epoch": epoch,
             "training_args": vars(args),
-        },
-        path,
-    )
+            "execution": ({'updates_completed': run_guard.state['updates_completed'],
+                           'updates_attempted': run_guard.state['updates_attempted'],
+                           'final_update_200': bool(final and run_guard.state['updates_completed'] == 200),
+                           'run_context': run_guard.context,
+                           'optimizer_resolved_defaults': optimizer.defaults}
+                          if run_guard else None),
+        }
+    atomic_artifact(path, lambda stream: torch.save(payload, stream), run_guard)
 
 
 def _check_device(torch, device, min_free_gib):

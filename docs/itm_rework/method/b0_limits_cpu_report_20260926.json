@@ -1,0 +1,49 @@
+{
+  "read_commit": "8046f5e8b4da077b83d01fda65fe1424639bbd6d",
+  "scope": "CPU software fault fixtures and preparation only",
+  "fault_test_count": 23,
+  "fault_tests": [
+    "test_200_updates_and_final_gate",
+    "test_nonfinite_never_publishes_checkpoint_or_retries[loss]",
+    "test_nonfinite_never_publishes_checkpoint_or_retries[gradient]",
+    "test_nonfinite_never_publishes_checkpoint_or_retries[gradient_norm]",
+    "test_nonfinite_never_publishes_checkpoint_or_retries[optimizer_result]",
+    "test_timeout_after_update_is_not_final_success",
+    "test_allocator_cap_configured_before_allocations_and_one_device",
+    "test_actual_ddpm_loop_stops_before_excess_work[steps]",
+    "test_actual_ddpm_loop_stops_before_excess_work[branches]",
+    "test_actual_ddpm_loop_stops_before_excess_work[oom]",
+    "test_actual_ddpm_loop_stops_before_excess_work[nan]",
+    "test_actual_ddpm_loop_stops_before_excess_work[timeout]",
+    "test_partial_atomic_writes_and_completed_artifacts_survive",
+    "test_queue_keeps_completed_slot_and_stops_remaining_without_retry[oom]",
+    "test_queue_keeps_completed_slot_and_stops_remaining_without_retry[nan]",
+    "test_queue_keeps_completed_slot_and_stops_remaining_without_retry[hang]",
+    "test_deadline_exhausted_never_starts_child",
+    "test_timeout_kills_child_process_group",
+    "test_only_completed_final_200_checkpoint_passes",
+    "test_prepare_needs_no_gpu_and_execution_needs_authorization",
+    "test_changed_checkpoint_identity_stops_before_model_setup",
+    "test_partial_training_finish_is_rejected",
+    "test_authorization_is_bound_to_one_run_directory_and_gpu"
+  ],
+  "joint_regression": {
+    "passed": 166,
+    "warnings": 23,
+    "skipped": 0
+  },
+  "real_B0": {
+    "training_updates": 0,
+    "generated_samples": 0,
+    "gpu_jobs": 0,
+    "gpu_preflight_executed": false
+  },
+  "fixture_notes": "Scalar SGD 200-step boundary and synthetic DDPM/child-process faults are software tests, not B0 runs.",
+  "prepared_status": {
+    "path": "outputs/itm_rework/method/b0_limits_prepare_20260926_v2/runtime/status.json",
+    "sha256": "6f27205a201ba9b940dd73f02dc26055d11e75878c9a35fdd2cfe8e772f8459b"
+  },
+  "authorization_record_created": false,
+  "budget_authorization": "pending",
+  "runtime_acceptance_owner02": "pending"
+}

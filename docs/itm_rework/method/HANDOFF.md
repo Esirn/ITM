@@ -1,4 +1,13 @@
-# 最新方法交接：限定合成 B0 输入（2026-09-25）
+# 最新方法交接：B0 运行限额（2026-09-26）
+
+读取 `8046f5e`，新增受限运行器，复用 02 的一条训练和 36 条采样模板。
+已落实 200 updates / 训练 1 小时、采样共享 3 小时、总 4 小时、单 GPU / 24 GiB allocated，以及失败停止和已完成产物保留。
+23 项 CPU 限额/故障测试、166 项联合回归通过。详见 [B0_RUNTIME_LIMITS_HANDOFF_20260926.md](B0_RUNTIME_LIMITS_HANDOFF_20260926.md)。
+下一步 02 核验本批执行限制；真实训练/生成、预算授权、GPU 预检均未发生。
+
+---
+
+# 限定合成 B0 输入交接（2026-09-25）
 
 已接入 `c36ea56` 的 `canonical_smpl_paired_v1` 数据，见 [CANONICAL_B0_HANDOFF_20260925.md](CANONICAL_B0_HANDOFF_20260925.md)。
 3 train / 3 val 准入仅适用于预先统一坐标的合成基准；新管线 `itm-method-canonical-b0-v1`。

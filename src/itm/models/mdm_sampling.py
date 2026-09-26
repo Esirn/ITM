@@ -9,7 +9,8 @@ from itm.data.random_plan import sampling_noise, VERSION
 from itm.models.torch_frame_baseline import require_torch
 
 
-def sample_addressed_ddpm(model, diffusion, *, y, lengths, case_ids, sample_seed, backbone_id):
+def sample_addressed_ddpm(model, diffusion, *, y, lengths, case_ids, sample_seed, backbone_id,
+                          run_guard=None, branch_examples_per_clip=4):
     """Sample each clip at its own length (MDM legacy padding is not invariant).
 
     case_ids identify a noise group, shared across paired/shuffled/null/text edits.
@@ -28,6 +29,8 @@ def sample_addressed_ddpm(model, diffusion, *, y, lengths, case_ids, sample_seed
     outputs, plans = [], []
     with torch.no_grad():
         for index, case_id in enumerate(case_ids):
+            if run_guard:
+                run_guard.check()
             length = int(lengths[index])
             item = slice_condition(y, index, length, batch)
             shape = (1, model.njoints, model.nfeats, length)
@@ -41,13 +44,19 @@ def sample_addressed_ddpm(model, diffusion, *, y, lengths, case_ids, sample_seed
 
             x = draw(-1)
             for step in reversed(range(diffusion.num_timesteps)):
+                if run_guard:
+                    run_guard.before_denoise(case_id, step, branch_examples_per_clip)
                 t = torch.full((1,), step, device=x.device, dtype=torch.long)
                 posterior = diffusion.p_mean_variance(model, x, t, clip_denoised=False, model_kwargs={"y": item})
+                if run_guard:
+                    run_guard.ensure_finite(posterior, 'DDPM posterior')
                 x = posterior["mean"]
                 if step:
                     x = x + torch.exp(0.5 * posterior["log_variance"]) * draw(step)
                 if not torch.isfinite(x).all():
                     raise FloatingPointError(f"Nonfinite DDPM sample at step {step}, case {case_id}")
+                if run_guard:
+                    run_guard.check()
             outputs.append(torch.nn.functional.pad(x, (0, frames - length)))
             payload = json.dumps(addresses, sort_keys=True, separators=(",", ":")).encode()
             plans.append({"random_plan_id": hashlib.sha256(payload).hexdigest(), "version": VERSION,
