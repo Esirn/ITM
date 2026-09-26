@@ -1,0 +1,218 @@
+[
+  {
+    "review_id": "R01",
+    "observation": "双手先抬起并接近，约中段保持接近，随后放下；反复开合在全帧手间距曲线上不清楚。脚与根近静止。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000382-wrists-backbone_bypass"
+  },
+  {
+    "review_id": "R02",
+    "observation": "长时间单腿高举/踢腿，随后放下；没有目标的连续前进步态，根路径仅小范围弧线。",
+    "assessment": "target_not_observed",
+    "case_id": "000139-wrists-numeric_zero"
+  },
+  {
+    "review_id": "R03",
+    "observation": "中段单腿高举保持数秒，末尾站回；目标的前进走步未观察到。",
+    "assessment": "target_not_observed",
+    "case_id": "000139-head-physical_static"
+  },
+  {
+    "review_id": "R04",
+    "observation": "前中段手靠近并有幅度变化，后段双手分开且一臂抬高，末尾另有抬脚；不满足明确的拍手后双臂放下顺序。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000382-head-numeric_zero"
+  },
+  {
+    "review_id": "R05",
+    "observation": "双手举起接近并保持，中后段放下；反复开合不明显，身体近静止。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000382-wrists-text_only"
+  },
+  {
+    "review_id": "R06",
+    "observation": "可见持续交替步态、手臂摆动及数米根移动，中段弯腰；起始先站立摇摆的顺序不清楚，移动较早开始。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000139-wrists-backbone_bypass"
+  },
+  {
+    "review_id": "R07",
+    "observation": "主要为单腿高举并保持，再回站立；没有要求的向前连续走步。",
+    "assessment": "target_not_observed",
+    "case_id": "000139-wrists-imu_only"
+  },
+  {
+    "review_id": "R08",
+    "observation": "手间距有多次开合，身体稳定，末尾双手开始降低；末帧手仍偏高，完全放下未确认。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000382-head-backbone_bypass"
+  },
+  {
+    "review_id": "R09",
+    "observation": "中段持续单腿高踢/保持，末段落腿；目标步行没有出现。",
+    "assessment": "target_not_observed",
+    "case_id": "000139-wrists-physical_static"
+  },
+  {
+    "review_id": "R10",
+    "observation": "可见多次双手靠近/分开和末段降低；末帧未明确双臂完全放下。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000382-head-text_only"
+  },
+  {
+    "review_id": "R11",
+    "observation": "主要为屈膝行走或跑步样的转向移动，根移动数米；未见目标反复手开合后放下。",
+    "assessment": "target_not_observed",
+    "case_id": "000382-wrists-imu_only"
+  },
+  {
+    "review_id": "R12",
+    "observation": "前半站立，后半屈膝抬腿且末尾仍抬着；没有踢腿后恢复站立的结束阶段。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000433-head-numeric_zero"
+  },
+  {
+    "review_id": "R13",
+    "observation": "手在前中段靠近/改变间距，末尾张臂并抬脚；双臂放下的终止阶段未见。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000382-head-paired"
+  },
+  {
+    "review_id": "R14",
+    "observation": "站立后单腿高举保持，再落腿；未出现目标前行步态。",
+    "assessment": "target_not_observed",
+    "case_id": "000139-wrists-paired"
+  },
+  {
+    "review_id": "R15",
+    "observation": "脚大体留在低位，后半抬臂和身体转向；未见明确踢腿周期。",
+    "assessment": "target_not_observed",
+    "case_id": "000433-wrists-text_only"
+  },
+  {
+    "review_id": "R16",
+    "observation": "中段持续单腿高举，结束落腿；不是要求的站立后向前走步。",
+    "assessment": "target_not_observed",
+    "case_id": "000139-head-paired"
+  },
+  {
+    "review_id": "R17",
+    "observation": "前中段手部靠近变化，后段手分开/抬高，末尾抬脚；拍手后双臂放下未确认。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000382-head-physical_static"
+  },
+  {
+    "review_id": "R18",
+    "observation": "有交替步态、臂摆和较长根移动，中段明显弯腰；起始站立摇摆后再走的时序不清楚。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000139-wrists-text_only"
+  },
+  {
+    "review_id": "R19",
+    "observation": "站立后在后半抬起一腿，末帧仍保持；缺少回到正常站立的完整结束。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000433-head-physical_static"
+  },
+  {
+    "review_id": "R20",
+    "observation": "腿部小幅抬落并身体转动，比较像小步调整；清楚的踢腿伸展不确定。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000433-wrists-physical_static"
+  },
+  {
+    "review_id": "R21",
+    "observation": "双手先向身前靠近，中后段分离，末尾一手仍较高；反复开合和双臂最终放下都不清楚。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000382-wrists-numeric_zero"
+  },
+  {
+    "review_id": "R22",
+    "observation": "双手靠近一次后下落，身体基本站立；没有清楚的多次开合周期。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000382-wrists-paired"
+  },
+  {
+    "review_id": "R23",
+    "observation": "腿大体在地面附近，后半抬臂/转体；目标踢腿未观察到。",
+    "assessment": "target_not_observed",
+    "case_id": "000433-wrists-backbone_bypass"
+  },
+  {
+    "review_id": "R24",
+    "observation": "末段有明显高抬腿/踢腿，但结束仍单腿举起；缺少返回站立。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000433-head-imu_only"
+  },
+  {
+    "review_id": "R25",
+    "observation": "中段屈膝后出现双踝/根高度同时升高的跳起样动作，后续零散手臂摆动；未见目标反复手开合。",
+    "assessment": "target_not_observed",
+    "case_id": "000382-head-imu_only"
+  },
+  {
+    "review_id": "R26",
+    "observation": "中段单腿高举保持数秒，再站回；目标前行步态未见。",
+    "assessment": "target_not_observed",
+    "case_id": "000139-head-imu_only"
+  },
+  {
+    "review_id": "R27",
+    "observation": "前中段抬腿/身体上升，后段落下呈屈膝姿态；有踢腿样片段，但回到正常站立不清楚。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000433-wrists-imu_only"
+  },
+  {
+    "review_id": "R28",
+    "observation": "后段抬腿再部分回收，末尾腿仍离地；踢腿后完整站回未见。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000433-head-text_only"
+  },
+  {
+    "review_id": "R29",
+    "observation": "一腿先抬起后回落，末段接近双腿站立，有粗粒度抬腿周期；伸膝踢出幅度及接地自然度仍不明确。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000433-wrists-numeric_zero"
+  },
+  {
+    "review_id": "R30",
+    "observation": "持续交替迈步/摆臂并沿弯曲路径移动数米；初始站立摇摆阶段不明显，目标顺序仅部分可见。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000139-head-text_only"
+  },
+  {
+    "review_id": "R31",
+    "observation": "后半单腿举起，结束仍保持；未完成抬腿后站回的完整顺序。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000433-head-paired"
+  },
+  {
+    "review_id": "R32",
+    "observation": "交替步态与臂摆可见、根明显前移后转弯；起始站立摇摆后再走的阶段不明确。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000139-head-backbone_bypass"
+  },
+  {
+    "review_id": "R33",
+    "observation": "长时间高抬单腿并保持后落下；没有目标前进步态。",
+    "assessment": "target_not_observed",
+    "case_id": "000139-head-numeric_zero"
+  },
+  {
+    "review_id": "R34",
+    "observation": "双手接近后降低，身体站立；只有一次宽泛开合，反复拍手过程不清楚。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000382-wrists-physical_static"
+  },
+  {
+    "review_id": "R35",
+    "observation": "后段一腿抬起再部分下落，结束仍未站回；目标完整顺序没有完成。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000433-head-backbone_bypass"
+  },
+  {
+    "review_id": "R36",
+    "observation": "一腿小幅抬起再落下、身体转动；有腿部周期，但明确踢出不确定。",
+    "assessment": "partial_or_uncertain",
+    "case_id": "000433-wrists-paired"
+  }
+]

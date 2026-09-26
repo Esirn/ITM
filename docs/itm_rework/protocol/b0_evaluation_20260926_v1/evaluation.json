@@ -1,0 +1,3374 @@
+{
+  "version": "independent-canonical-B0-evaluation-v1",
+  "read_commit": "4ae11d0f93de798f1d0d0d68d2f86ed7d4a3e50f",
+  "protocol": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/metrics.json",
+    "sha256": "30a598ba54bcb65c0adad7c19b71fd55dc86699a461d73cef06946b5b6bfc8b5"
+  },
+  "execution_scope": "CPU evaluation/reconstruction only; no model forward, training, sampling or GPU job",
+  "checkpoint_sha256": "44d2c3307f27bca2c79ab7d367890f968f78777168c3c37a306a7bf0560d6ac2",
+  "training_provenance_sha256": "9f39bf7ffd93b2595dfdcea4ee3288761b14a6e75a6585fedb841fd490295ef1",
+  "updates": 200,
+  "normalization_population_frames": 398,
+  "noise_draws_replayed": 6000,
+  "noise_groups": 6,
+  "planned_slots": 36,
+  "valid_slots": 36,
+  "failure_rate": 0.0,
+  "max_allocated_bytes": 737469952,
+  "receipt_elapsed_seconds": 561.1310130039928,
+  "strict_null_vs_backbone": [
+    {
+      "motion_id": "000433",
+      "config": "head",
+      "max_abs_m": 0.0,
+      "bitwise_equal": true
+    },
+    {
+      "motion_id": "000433",
+      "config": "wrists",
+      "max_abs_m": 0.0,
+      "bitwise_equal": true
+    },
+    {
+      "motion_id": "000382",
+      "config": "head",
+      "max_abs_m": 0.0,
+      "bitwise_equal": true
+    },
+    {
+      "motion_id": "000382",
+      "config": "wrists",
+      "max_abs_m": 0.0,
+      "bitwise_equal": true
+    },
+    {
+      "motion_id": "000139",
+      "config": "head",
+      "max_abs_m": 0.0,
+      "bitwise_equal": true
+    },
+    {
+      "motion_id": "000139",
+      "config": "wrists",
+      "max_abs_m": 0.0,
+      "bitwise_equal": true
+    }
+  ],
+  "rows": [
+    {
+      "case_id": "000433-head-paired",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "paired",
+      "length": 41,
+      "status": "valid",
+      "decode_max_abs_m": 5.960464477539063e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.20053225174890266,
+        "root_relative_MPJPE_m": 0.18703761122753693,
+        "root_path_RMSE_m": 0.09709201354306371,
+        "head_or_wrists_position_joint_proxy_m": 0.19921480812051437,
+        "velocity_joint_proxy_RMSE_m_s": 1.0345190338858885,
+        "jerk_absolute_m_s3": 61.87332010958886,
+        "GT_jerk_absolute_m_s3": 51.31867968686227,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.5086067318916321,
+            -0.0021347030997276306,
+            -0.31614410877227783
+          ],
+          "max_xyz": [
+            0.4330587387084961,
+            1.5621395111083984,
+            0.47187352180480957
+          ],
+          "range_xyz": [
+            0.9416654706001282,
+            1.564274214208126,
+            0.7880176305770874
+          ],
+          "pelvis_path_length_m": 0.25684043239136944
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.31188341975212097,
+            0.00043123960494995117,
+            -0.14257219433784485
+          ],
+          "max_xyz": [
+            0.38774609565734863,
+            1.6013257503509521,
+            0.9531304836273193
+          ],
+          "range_xyz": [
+            0.6996295154094696,
+            1.6008945107460022,
+            1.0957026779651642
+          ],
+          "pelvis_path_length_m": 0.24677695903168267
+        },
+        "foot_contact_speed_proxy_m_s": 0.24096625322794277,
+        "GT_foot_contact_speed_proxy_m_s": 0.08367894458274214,
+        "foot_contact_stencils": 120,
+        "foot_status": "GT_contact_proxy",
+        "frames": 41,
+        "velocity_stencils": 40,
+        "jerk_stencils": 38
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-paired.npz",
+          "sha256": "880687d2595e54a27359fe67f067ebd24f28fd02ef642d39b2e3f8d3c5784052"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-paired.json",
+          "sha256": "9cc4c0c32ffea28b7b2cde88b7687f5c5ee32a56cf188235479cf2f646d6164b"
+        }
+      ],
+      "random_plan_id": "52807a48c82d9243c5328a2df92e252d21cdbb55b0435faca7dccf291a656ec9"
+    },
+    {
+      "case_id": "000433-head-text_only",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "text_only",
+      "length": 41,
+      "status": "valid",
+      "decode_max_abs_m": 5.960464477539063e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.16816159846173878,
+        "root_relative_MPJPE_m": 0.1499295875658201,
+        "root_path_RMSE_m": 0.09420858133045626,
+        "head_or_wrists_position_joint_proxy_m": 0.1957897975700003,
+        "velocity_joint_proxy_RMSE_m_s": 1.0842305717400034,
+        "jerk_absolute_m_s3": 50.29703855311074,
+        "GT_jerk_absolute_m_s3": 51.31867968686227,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.39229151606559753,
+            -0.011975321918725967,
+            -0.3070871829986572
+          ],
+          "max_xyz": [
+            0.607642412185669,
+            1.5274187326431274,
+            0.8328012228012085
+          ],
+          "range_xyz": [
+            0.9999339282512665,
+            1.5393940545618534,
+            1.1398884057998657
+          ],
+          "pelvis_path_length_m": 0.24822954913345438
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.31188341975212097,
+            0.00043123960494995117,
+            -0.14257219433784485
+          ],
+          "max_xyz": [
+            0.38774609565734863,
+            1.6013257503509521,
+            0.9531304836273193
+          ],
+          "range_xyz": [
+            0.6996295154094696,
+            1.6008945107460022,
+            1.0957026779651642
+          ],
+          "pelvis_path_length_m": 0.24677695903168267
+        },
+        "foot_contact_speed_proxy_m_s": 0.23384430271086815,
+        "GT_foot_contact_speed_proxy_m_s": 0.08367894458274214,
+        "foot_contact_stencils": 120,
+        "foot_status": "GT_contact_proxy",
+        "frames": 41,
+        "velocity_stencils": 40,
+        "jerk_stencils": 38
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-text_only.npz",
+          "sha256": "c947c06ade69511ecb408f51efceaf31370b4e4c2f2d0fe308104033b286e37e"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-text_only.json",
+          "sha256": "cc4b5c2da1ec6228de6591b9db2b4e9b54e42af0c10a222798f0e6f86dd807aa"
+        }
+      ],
+      "random_plan_id": "52807a48c82d9243c5328a2df92e252d21cdbb55b0435faca7dccf291a656ec9"
+    },
+    {
+      "case_id": "000433-head-imu_only",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "imu_only",
+      "length": 41,
+      "status": "valid",
+      "decode_max_abs_m": 5.960464477539063e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.27364914805439433,
+        "root_relative_MPJPE_m": 0.22573172150058604,
+        "root_path_RMSE_m": 0.18393503758911317,
+        "head_or_wrists_position_joint_proxy_m": 0.2705614166058664,
+        "velocity_joint_proxy_RMSE_m_s": 1.128335178591102,
+        "jerk_absolute_m_s3": 53.53872378459279,
+        "GT_jerk_absolute_m_s3": 51.31867968686227,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.6238829493522644,
+            0.03036542423069477,
+            -0.3009113073348999
+          ],
+          "max_xyz": [
+            0.46645426750183105,
+            1.5948076248168945,
+            0.39800336956977844
+          ],
+          "range_xyz": [
+            1.0903372168540955,
+            1.5644422005861998,
+            0.6989146769046783
+          ],
+          "pelvis_path_length_m": 0.4421875034734677
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.31188341975212097,
+            0.00043123960494995117,
+            -0.14257219433784485
+          ],
+          "max_xyz": [
+            0.38774609565734863,
+            1.6013257503509521,
+            0.9531304836273193
+          ],
+          "range_xyz": [
+            0.6996295154094696,
+            1.6008945107460022,
+            1.0957026779651642
+          ],
+          "pelvis_path_length_m": 0.24677695903168267
+        },
+        "foot_contact_speed_proxy_m_s": 0.27857997902747783,
+        "GT_foot_contact_speed_proxy_m_s": 0.08367894458274214,
+        "foot_contact_stencils": 120,
+        "foot_status": "GT_contact_proxy",
+        "frames": 41,
+        "velocity_stencils": 40,
+        "jerk_stencils": 38
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-imu_only.npz",
+          "sha256": "9a53546977945ab8c0ecd19627172298ea07a494cd07a6a05c01b1ba30524c64"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-imu_only.json",
+          "sha256": "d45e84f55c12e8b30d0c3fdba30f3d7582e258f785f23c687de3cfb41607f57b"
+        }
+      ],
+      "random_plan_id": "52807a48c82d9243c5328a2df92e252d21cdbb55b0435faca7dccf291a656ec9"
+    },
+    {
+      "case_id": "000433-head-backbone_bypass",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "backbone_bypass",
+      "length": 41,
+      "status": "valid",
+      "decode_max_abs_m": 5.960464477539063e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.16816159846173878,
+        "root_relative_MPJPE_m": 0.1499295875658201,
+        "root_path_RMSE_m": 0.09420858133045626,
+        "head_or_wrists_position_joint_proxy_m": 0.1957897975700003,
+        "velocity_joint_proxy_RMSE_m_s": 1.0842305717400034,
+        "jerk_absolute_m_s3": 50.29703855311074,
+        "GT_jerk_absolute_m_s3": 51.31867968686227,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.39229151606559753,
+            -0.011975321918725967,
+            -0.3070871829986572
+          ],
+          "max_xyz": [
+            0.607642412185669,
+            1.5274187326431274,
+            0.8328012228012085
+          ],
+          "range_xyz": [
+            0.9999339282512665,
+            1.5393940545618534,
+            1.1398884057998657
+          ],
+          "pelvis_path_length_m": 0.24822954913345438
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.31188341975212097,
+            0.00043123960494995117,
+            -0.14257219433784485
+          ],
+          "max_xyz": [
+            0.38774609565734863,
+            1.6013257503509521,
+            0.9531304836273193
+          ],
+          "range_xyz": [
+            0.6996295154094696,
+            1.6008945107460022,
+            1.0957026779651642
+          ],
+          "pelvis_path_length_m": 0.24677695903168267
+        },
+        "foot_contact_speed_proxy_m_s": 0.23384430271086815,
+        "GT_foot_contact_speed_proxy_m_s": 0.08367894458274214,
+        "foot_contact_stencils": 120,
+        "foot_status": "GT_contact_proxy",
+        "frames": 41,
+        "velocity_stencils": 40,
+        "jerk_stencils": 38
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-backbone_bypass.npz",
+          "sha256": "30f4a32e9d90f181b6303c461f49cc167cb89ccbd95e1aeecfbe1e73697c5ed1"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-backbone_bypass.json",
+          "sha256": "cd3c8805dee54ba6498d3134554c8a3a5d9797f0af23f5969fcfa3f50faf7f20"
+        }
+      ],
+      "random_plan_id": "52807a48c82d9243c5328a2df92e252d21cdbb55b0435faca7dccf291a656ec9"
+    },
+    {
+      "case_id": "000433-head-numeric_zero",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "numeric_zero",
+      "length": 41,
+      "status": "valid",
+      "decode_max_abs_m": 2.9802322387695312e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.19932278986507182,
+        "root_relative_MPJPE_m": 0.18920621496498993,
+        "root_path_RMSE_m": 0.09613414255838834,
+        "head_or_wrists_position_joint_proxy_m": 0.1816717512585661,
+        "velocity_joint_proxy_RMSE_m_s": 0.9940526431047815,
+        "jerk_absolute_m_s3": 46.882460740652256,
+        "GT_jerk_absolute_m_s3": 51.31867968686227,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.5469450950622559,
+            0.0018700361251831055,
+            -0.34751468896865845
+          ],
+          "max_xyz": [
+            0.427861750125885,
+            1.56926429271698,
+            0.30290868878364563
+          ],
+          "range_xyz": [
+            0.9748068451881409,
+            1.5673942565917969,
+            0.6504233777523041
+          ],
+          "pelvis_path_length_m": 0.2331296213421749
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.31188341975212097,
+            0.00043123960494995117,
+            -0.14257219433784485
+          ],
+          "max_xyz": [
+            0.38774609565734863,
+            1.6013257503509521,
+            0.9531304836273193
+          ],
+          "range_xyz": [
+            0.6996295154094696,
+            1.6008945107460022,
+            1.0957026779651642
+          ],
+          "pelvis_path_length_m": 0.24677695903168267
+        },
+        "foot_contact_speed_proxy_m_s": 0.226150638174686,
+        "GT_foot_contact_speed_proxy_m_s": 0.08367894458274214,
+        "foot_contact_stencils": 120,
+        "foot_status": "GT_contact_proxy",
+        "frames": 41,
+        "velocity_stencils": 40,
+        "jerk_stencils": 38
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-numeric_zero.npz",
+          "sha256": "67e42e63bca5c583765ee69085f15789249e0d558c83ff43c55642b56d32b235"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-numeric_zero.json",
+          "sha256": "9a305504ac224a228fd3a801d2769b495d6ab491ad344dd2f195abc574c8a20b"
+        }
+      ],
+      "random_plan_id": "52807a48c82d9243c5328a2df92e252d21cdbb55b0435faca7dccf291a656ec9"
+    },
+    {
+      "case_id": "000433-head-physical_static",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "physical_static",
+      "length": 41,
+      "status": "valid",
+      "decode_max_abs_m": 5.960464477539063e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.20323897011082745,
+        "root_relative_MPJPE_m": 0.18993874313900827,
+        "root_path_RMSE_m": 0.10106797961343783,
+        "head_or_wrists_position_joint_proxy_m": 0.20455457003722205,
+        "velocity_joint_proxy_RMSE_m_s": 1.0265957882880694,
+        "jerk_absolute_m_s3": 56.48212009417023,
+        "GT_jerk_absolute_m_s3": 51.31867968686227,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.5282419919967651,
+            -0.001222461462020874,
+            -0.3219894766807556
+          ],
+          "max_xyz": [
+            0.4464857876300812,
+            1.5578962564468384,
+            0.4522380232810974
+          ],
+          "range_xyz": [
+            0.9747277796268463,
+            1.5591187179088593,
+            0.774227499961853
+          ],
+          "pelvis_path_length_m": 0.2555328245284041
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.31188341975212097,
+            0.00043123960494995117,
+            -0.14257219433784485
+          ],
+          "max_xyz": [
+            0.38774609565734863,
+            1.6013257503509521,
+            0.9531304836273193
+          ],
+          "range_xyz": [
+            0.6996295154094696,
+            1.6008945107460022,
+            1.0957026779651642
+          ],
+          "pelvis_path_length_m": 0.24677695903168267
+        },
+        "foot_contact_speed_proxy_m_s": 0.23234323068225657,
+        "GT_foot_contact_speed_proxy_m_s": 0.08367894458274214,
+        "foot_contact_stencils": 120,
+        "foot_status": "GT_contact_proxy",
+        "frames": 41,
+        "velocity_stencils": 40,
+        "jerk_stencils": 38
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-physical_static.npz",
+          "sha256": "3b9a706afb3f5d30f7bb973d25151f940ab7ffa464722d388aecf775720d4d9c"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-physical_static.json",
+          "sha256": "b42865848497b23fea5cfe39e48ec9805e5ccbe77a7102934022f4a4537d7bdd"
+        }
+      ],
+      "random_plan_id": "52807a48c82d9243c5328a2df92e252d21cdbb55b0435faca7dccf291a656ec9"
+    },
+    {
+      "case_id": "000433-wrists-paired",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "paired",
+      "length": 41,
+      "status": "valid",
+      "decode_max_abs_m": 5.960464477539063e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.1787860207974407,
+        "root_relative_MPJPE_m": 0.1468162680934283,
+        "root_path_RMSE_m": 0.1273831648780497,
+        "head_or_wrists_position_joint_proxy_m": 0.272321366720045,
+        "velocity_joint_proxy_RMSE_m_s": 0.7553304286698944,
+        "jerk_absolute_m_s3": 14.261031874328122,
+        "GT_jerk_absolute_m_s3": 51.31867968686227,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.5457426309585571,
+            -0.0001260712742805481,
+            -0.2619885504245758
+          ],
+          "max_xyz": [
+            0.25460803508758545,
+            1.5260250568389893,
+            0.21920591592788696
+          ],
+          "range_xyz": [
+            0.8003506660461426,
+            1.5261511281132698,
+            0.48119446635246277
+          ],
+          "pelvis_path_length_m": 0.2420786710551565
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.31188341975212097,
+            0.00043123960494995117,
+            -0.14257219433784485
+          ],
+          "max_xyz": [
+            0.38774609565734863,
+            1.6013257503509521,
+            0.9531304836273193
+          ],
+          "range_xyz": [
+            0.6996295154094696,
+            1.6008945107460022,
+            1.0957026779651642
+          ],
+          "pelvis_path_length_m": 0.24677695903168267
+        },
+        "foot_contact_speed_proxy_m_s": 0.07097208040917954,
+        "GT_foot_contact_speed_proxy_m_s": 0.08367894458274214,
+        "foot_contact_stencils": 120,
+        "foot_status": "GT_contact_proxy",
+        "frames": 41,
+        "velocity_stencils": 40,
+        "jerk_stencils": 38
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-paired.npz",
+          "sha256": "2f91a993c7259162750283a8bd81a47d159f02bf191baf3d79cfcf9464510f2b"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-paired.json",
+          "sha256": "d14ecd5bb5e0f5a8706f0b6ae4bb4dbe86caa4655dde48dd4bbbd35db89d1526"
+        }
+      ],
+      "random_plan_id": "867bed3e702aa06489c16cd6813cc800773c59c5113a432ab42300a45784c563"
+    },
+    {
+      "case_id": "000433-wrists-text_only",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "text_only",
+      "length": 41,
+      "status": "valid",
+      "decode_max_abs_m": 5.960464477539063e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.20671907864851954,
+        "root_relative_MPJPE_m": 0.15178234381433492,
+        "root_path_RMSE_m": 0.11574412825425649,
+        "head_or_wrists_position_joint_proxy_m": 0.34077079478329064,
+        "velocity_joint_proxy_RMSE_m_s": 0.7631499437146759,
+        "jerk_absolute_m_s3": 11.593375221835386,
+        "GT_jerk_absolute_m_s3": 51.31867968686227,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.3459875285625458,
+            -0.0004224628210067749,
+            -0.04763337969779968
+          ],
+          "max_xyz": [
+            0.4930628836154938,
+            1.4792451858520508,
+            0.7196226716041565
+          ],
+          "range_xyz": [
+            0.8390504121780396,
+            1.4796676486730576,
+            0.7672560513019562
+          ],
+          "pelvis_path_length_m": 0.24043751747668934
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.31188341975212097,
+            0.00043123960494995117,
+            -0.14257219433784485
+          ],
+          "max_xyz": [
+            0.38774609565734863,
+            1.6013257503509521,
+            0.9531304836273193
+          ],
+          "range_xyz": [
+            0.6996295154094696,
+            1.6008945107460022,
+            1.0957026779651642
+          ],
+          "pelvis_path_length_m": 0.24677695903168267
+        },
+        "foot_contact_speed_proxy_m_s": 0.06658769318631451,
+        "GT_foot_contact_speed_proxy_m_s": 0.08367894458274214,
+        "foot_contact_stencils": 120,
+        "foot_status": "GT_contact_proxy",
+        "frames": 41,
+        "velocity_stencils": 40,
+        "jerk_stencils": 38
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-text_only.npz",
+          "sha256": "bc69ea9673f107d950e2b80dbdcceac51c1f5059fae7d0edd273b42b0a887a9c"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-text_only.json",
+          "sha256": "378aa78b3fec0edc261be77ee6b49f3354c32a9086e6506ca50e611c724d4af6"
+        }
+      ],
+      "random_plan_id": "867bed3e702aa06489c16cd6813cc800773c59c5113a432ab42300a45784c563"
+    },
+    {
+      "case_id": "000433-wrists-imu_only",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "imu_only",
+      "length": 41,
+      "status": "valid",
+      "decode_max_abs_m": 4.470348358154297e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.25505021778249537,
+        "root_relative_MPJPE_m": 0.19094550747447991,
+        "root_path_RMSE_m": 0.21541903675168605,
+        "head_or_wrists_position_joint_proxy_m": 0.3184785179782598,
+        "velocity_joint_proxy_RMSE_m_s": 0.9490189323419632,
+        "jerk_absolute_m_s3": 57.23007168582344,
+        "GT_jerk_absolute_m_s3": 51.31867968686227,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.4747810959815979,
+            0.024979716166853905,
+            -0.31019508838653564
+          ],
+          "max_xyz": [
+            0.3614395260810852,
+            1.857857346534729,
+            0.34233590960502625
+          ],
+          "range_xyz": [
+            0.8362206220626831,
+            1.832877630367875,
+            0.6525309979915619
+          ],
+          "pelvis_path_length_m": 0.8109594741335339
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.31188341975212097,
+            0.00043123960494995117,
+            -0.14257219433784485
+          ],
+          "max_xyz": [
+            0.38774609565734863,
+            1.6013257503509521,
+            0.9531304836273193
+          ],
+          "range_xyz": [
+            0.6996295154094696,
+            1.6008945107460022,
+            1.0957026779651642
+          ],
+          "pelvis_path_length_m": 0.24677695903168267
+        },
+        "foot_contact_speed_proxy_m_s": 0.2722157215403981,
+        "GT_foot_contact_speed_proxy_m_s": 0.08367894458274214,
+        "foot_contact_stencils": 120,
+        "foot_status": "GT_contact_proxy",
+        "frames": 41,
+        "velocity_stencils": 40,
+        "jerk_stencils": 38
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-imu_only.npz",
+          "sha256": "d04fed9b0b9821164b4630816d74fad80ee9c1bd66055a180be512526c53be06"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-imu_only.json",
+          "sha256": "d08e2a2aa4b2539d94bbf69a7b8d87449cb7c605ff4ea91ea728b5f3a0e8bfbe"
+        }
+      ],
+      "random_plan_id": "867bed3e702aa06489c16cd6813cc800773c59c5113a432ab42300a45784c563"
+    },
+    {
+      "case_id": "000433-wrists-backbone_bypass",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "backbone_bypass",
+      "length": 41,
+      "status": "valid",
+      "decode_max_abs_m": 5.960464477539063e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.20671907864851954,
+        "root_relative_MPJPE_m": 0.15178234381433492,
+        "root_path_RMSE_m": 0.11574412825425649,
+        "head_or_wrists_position_joint_proxy_m": 0.34077079478329064,
+        "velocity_joint_proxy_RMSE_m_s": 0.7631499437146759,
+        "jerk_absolute_m_s3": 11.593375221835386,
+        "GT_jerk_absolute_m_s3": 51.31867968686227,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.3459875285625458,
+            -0.0004224628210067749,
+            -0.04763337969779968
+          ],
+          "max_xyz": [
+            0.4930628836154938,
+            1.4792451858520508,
+            0.7196226716041565
+          ],
+          "range_xyz": [
+            0.8390504121780396,
+            1.4796676486730576,
+            0.7672560513019562
+          ],
+          "pelvis_path_length_m": 0.24043751747668934
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.31188341975212097,
+            0.00043123960494995117,
+            -0.14257219433784485
+          ],
+          "max_xyz": [
+            0.38774609565734863,
+            1.6013257503509521,
+            0.9531304836273193
+          ],
+          "range_xyz": [
+            0.6996295154094696,
+            1.6008945107460022,
+            1.0957026779651642
+          ],
+          "pelvis_path_length_m": 0.24677695903168267
+        },
+        "foot_contact_speed_proxy_m_s": 0.06658769318631451,
+        "GT_foot_contact_speed_proxy_m_s": 0.08367894458274214,
+        "foot_contact_stencils": 120,
+        "foot_status": "GT_contact_proxy",
+        "frames": 41,
+        "velocity_stencils": 40,
+        "jerk_stencils": 38
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-backbone_bypass.npz",
+          "sha256": "a439410fcf0936b825ab157ec9f8d01c03040b8f442288c3556be14bd47ed649"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-backbone_bypass.json",
+          "sha256": "65d65540a3dfc342bd4fcbe70b698b7c779917bbf575d388212157b04e16ef45"
+        }
+      ],
+      "random_plan_id": "867bed3e702aa06489c16cd6813cc800773c59c5113a432ab42300a45784c563"
+    },
+    {
+      "case_id": "000433-wrists-numeric_zero",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "numeric_zero",
+      "length": 41,
+      "status": "valid",
+      "decode_max_abs_m": 5.960464477539063e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.19407362787398585,
+        "root_relative_MPJPE_m": 0.1660332320190919,
+        "root_path_RMSE_m": 0.1352151339117261,
+        "head_or_wrists_position_joint_proxy_m": 0.3099149636716403,
+        "velocity_joint_proxy_RMSE_m_s": 0.7620042589420167,
+        "jerk_absolute_m_s3": 15.981178806253407,
+        "GT_jerk_absolute_m_s3": 51.31867968686227,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.5667911171913147,
+            0.03873078525066376,
+            -0.3143032491207123
+          ],
+          "max_xyz": [
+            0.3117823600769043,
+            1.604882836341858,
+            0.20534582436084747
+          ],
+          "range_xyz": [
+            0.878573477268219,
+            1.5661520510911942,
+            0.5196490734815598
+          ],
+          "pelvis_path_length_m": 0.21100610893448887
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.31188341975212097,
+            0.00043123960494995117,
+            -0.14257219433784485
+          ],
+          "max_xyz": [
+            0.38774609565734863,
+            1.6013257503509521,
+            0.9531304836273193
+          ],
+          "range_xyz": [
+            0.6996295154094696,
+            1.6008945107460022,
+            1.0957026779651642
+          ],
+          "pelvis_path_length_m": 0.24677695903168267
+        },
+        "foot_contact_speed_proxy_m_s": 0.10419949460202511,
+        "GT_foot_contact_speed_proxy_m_s": 0.08367894458274214,
+        "foot_contact_stencils": 120,
+        "foot_status": "GT_contact_proxy",
+        "frames": 41,
+        "velocity_stencils": 40,
+        "jerk_stencils": 38
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-numeric_zero.npz",
+          "sha256": "4629077c3ecf0fd6192f237296fab9b0e49d5d1ead3d6a93dd77ca15754d9cd4"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-numeric_zero.json",
+          "sha256": "54fc7437660924aa4bb2e00df28f799e2abce6233fe024c54e86e5d5f820ce02"
+        }
+      ],
+      "random_plan_id": "867bed3e702aa06489c16cd6813cc800773c59c5113a432ab42300a45784c563"
+    },
+    {
+      "case_id": "000433-wrists-physical_static",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "physical_static",
+      "length": 41,
+      "status": "valid",
+      "decode_max_abs_m": 5.960464477539063e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.18793675265496368,
+        "root_relative_MPJPE_m": 0.13984659764654575,
+        "root_path_RMSE_m": 0.14504564618926355,
+        "head_or_wrists_position_joint_proxy_m": 0.2612597134604081,
+        "velocity_joint_proxy_RMSE_m_s": 0.7535118575853111,
+        "jerk_absolute_m_s3": 11.62819685605202,
+        "GT_jerk_absolute_m_s3": 51.31867968686227,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.5196368098258972,
+            -0.004032064229249954,
+            -0.2296665757894516
+          ],
+          "max_xyz": [
+            0.25251859426498413,
+            1.5218816995620728,
+            0.19597722589969635
+          ],
+          "range_xyz": [
+            0.7721554040908813,
+            1.5259137637913227,
+            0.42564380168914795
+          ],
+          "pelvis_path_length_m": 0.24811267895007988
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.31188341975212097,
+            0.00043123960494995117,
+            -0.14257219433784485
+          ],
+          "max_xyz": [
+            0.38774609565734863,
+            1.6013257503509521,
+            0.9531304836273193
+          ],
+          "range_xyz": [
+            0.6996295154094696,
+            1.6008945107460022,
+            1.0957026779651642
+          ],
+          "pelvis_path_length_m": 0.24677695903168267
+        },
+        "foot_contact_speed_proxy_m_s": 0.06337956152820647,
+        "GT_foot_contact_speed_proxy_m_s": 0.08367894458274214,
+        "foot_contact_stencils": 120,
+        "foot_status": "GT_contact_proxy",
+        "frames": 41,
+        "velocity_stencils": 40,
+        "jerk_stencils": 38
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-physical_static.npz",
+          "sha256": "0cbe81822223bc112bfbcc92df28bf2fd4100808af15439b7dbf9800b9268d19"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-physical_static.json",
+          "sha256": "9350c1738874f20ee1f5e1b647fac2d7378219d96105b947d6803603aabd43ef"
+        }
+      ],
+      "random_plan_id": "867bed3e702aa06489c16cd6813cc800773c59c5113a432ab42300a45784c563"
+    },
+    {
+      "case_id": "000382-head-paired",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "paired",
+      "length": 94,
+      "status": "valid",
+      "decode_max_abs_m": 5.960464477539063e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.1344709866181842,
+        "root_relative_MPJPE_m": 0.10033546352656775,
+        "root_path_RMSE_m": 0.07498976277855997,
+        "head_or_wrists_position_joint_proxy_m": 0.13783767865692603,
+        "velocity_joint_proxy_RMSE_m_s": 0.3335360899824527,
+        "jerk_absolute_m_s3": 18.935141648019314,
+        "GT_jerk_absolute_m_s3": 12.911626494375213,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.30629146099090576,
+            -0.0027040913701057434,
+            -0.39591047167778015
+          ],
+          "max_xyz": [
+            0.7250432372093201,
+            1.4972338676452637,
+            0.3738093078136444
+          ],
+          "range_xyz": [
+            1.0313346982002258,
+            1.4999379590153694,
+            0.7697197794914246
+          ],
+          "pelvis_path_length_m": 0.25992057380994793
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3666035234928131,
+            0.0,
+            -0.0621158741414547
+          ],
+          "max_xyz": [
+            0.382340669631958,
+            1.5222959518432617,
+            0.3179101049900055
+          ],
+          "range_xyz": [
+            0.7489441931247711,
+            1.5222959518432617,
+            0.3800259791314602
+          ],
+          "pelvis_path_length_m": 0.06031564838331186
+        },
+        "foot_contact_speed_proxy_m_s": 0.06881439995041494,
+        "GT_foot_contact_speed_proxy_m_s": 0.0075715095840498976,
+        "foot_contact_stencils": 372,
+        "foot_status": "GT_contact_proxy",
+        "frames": 94,
+        "velocity_stencils": 93,
+        "jerk_stencils": 91
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-paired.npz",
+          "sha256": "44005c53f8234ddf6cb49a447e4427d915135dcef4525f8d592467241c6df130"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-paired.json",
+          "sha256": "25353b135279b9bd8c36bf7048d0065949c89f35f9d37e286035c85e7e1a1e1d"
+        }
+      ],
+      "random_plan_id": "78e031195676d4c0956336cdf487b6a30904866da8d7395d9f42c67cb7fa3d10"
+    },
+    {
+      "case_id": "000382-head-text_only",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "text_only",
+      "length": 94,
+      "status": "valid",
+      "decode_max_abs_m": 2.9802322387695312e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.05411560319603193,
+        "root_relative_MPJPE_m": 0.05456446002737998,
+        "root_path_RMSE_m": 0.034707373860631656,
+        "head_or_wrists_position_joint_proxy_m": 0.022002676091784818,
+        "velocity_joint_proxy_RMSE_m_s": 0.3129043113559227,
+        "jerk_absolute_m_s3": 31.347464894871795,
+        "GT_jerk_absolute_m_s3": 12.911626494375213,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.5183818936347961,
+            -0.004302028566598892,
+            -0.14841927587985992
+          ],
+          "max_xyz": [
+            0.4761689007282257,
+            1.5431492328643799,
+            0.31023722887039185
+          ],
+          "range_xyz": [
+            0.9945507943630219,
+            1.5474512614309788,
+            0.45865650475025177
+          ],
+          "pelvis_path_length_m": 0.06802280384120084
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3666035234928131,
+            0.0,
+            -0.0621158741414547
+          ],
+          "max_xyz": [
+            0.382340669631958,
+            1.5222959518432617,
+            0.3179101049900055
+          ],
+          "range_xyz": [
+            0.7489441931247711,
+            1.5222959518432617,
+            0.3800259791314602
+          ],
+          "pelvis_path_length_m": 0.06031564838331186
+        },
+        "foot_contact_speed_proxy_m_s": 0.03927573441839102,
+        "GT_foot_contact_speed_proxy_m_s": 0.0075715095840498976,
+        "foot_contact_stencils": 372,
+        "foot_status": "GT_contact_proxy",
+        "frames": 94,
+        "velocity_stencils": 93,
+        "jerk_stencils": 91
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-text_only.npz",
+          "sha256": "b9b8da80eace7533acfcea7b5907d5ab053f1801fffc0206d314b0c39e5e363c"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-text_only.json",
+          "sha256": "b1437bc5321b7621bd70d33ab26680f7e85b9f7e1743ffeb0ff649e78ebd432d"
+        }
+      ],
+      "random_plan_id": "78e031195676d4c0956336cdf487b6a30904866da8d7395d9f42c67cb7fa3d10"
+    },
+    {
+      "case_id": "000382-head-imu_only",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "imu_only",
+      "length": 94,
+      "status": "valid",
+      "decode_max_abs_m": 8.940696716308594e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.25460130691218597,
+        "root_relative_MPJPE_m": 0.14475669631395444,
+        "root_path_RMSE_m": 0.22738815133832269,
+        "head_or_wrists_position_joint_proxy_m": 0.2462441226322698,
+        "velocity_joint_proxy_RMSE_m_s": 0.7883641553220678,
+        "jerk_absolute_m_s3": 45.310587556986825,
+        "GT_jerk_absolute_m_s3": 12.911626494375213,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.259585976600647,
+            0.0026647932827472687,
+            -0.5926617980003357
+          ],
+          "max_xyz": [
+            0.7229553461074829,
+            1.9707492589950562,
+            0.19601154327392578
+          ],
+          "range_xyz": [
+            0.9825413227081299,
+            1.9680844657123089,
+            0.7886733412742615
+          ],
+          "pelvis_path_length_m": 1.8892722115965979
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3666035234928131,
+            0.0,
+            -0.0621158741414547
+          ],
+          "max_xyz": [
+            0.382340669631958,
+            1.5222959518432617,
+            0.3179101049900055
+          ],
+          "range_xyz": [
+            0.7489441931247711,
+            1.5222959518432617,
+            0.3800259791314602
+          ],
+          "pelvis_path_length_m": 0.06031564838331186
+        },
+        "foot_contact_speed_proxy_m_s": 0.2855571169060522,
+        "GT_foot_contact_speed_proxy_m_s": 0.0075715095840498976,
+        "foot_contact_stencils": 372,
+        "foot_status": "GT_contact_proxy",
+        "frames": 94,
+        "velocity_stencils": 93,
+        "jerk_stencils": 91
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-imu_only.npz",
+          "sha256": "2fe1bc55fd95ea06c014b81b1287a53c1ac35dbdb0b8e084d1c417c512fcd5fe"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-imu_only.json",
+          "sha256": "6c933d25f3a0e8883ba5e258d23bf4012a0e08083e87c100192ecd6ec43b22bf"
+        }
+      ],
+      "random_plan_id": "78e031195676d4c0956336cdf487b6a30904866da8d7395d9f42c67cb7fa3d10"
+    },
+    {
+      "case_id": "000382-head-backbone_bypass",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "backbone_bypass",
+      "length": 94,
+      "status": "valid",
+      "decode_max_abs_m": 2.9802322387695312e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.05411560319603193,
+        "root_relative_MPJPE_m": 0.05456446002737998,
+        "root_path_RMSE_m": 0.034707373860631656,
+        "head_or_wrists_position_joint_proxy_m": 0.022002676091784818,
+        "velocity_joint_proxy_RMSE_m_s": 0.3129043113559227,
+        "jerk_absolute_m_s3": 31.347464894871795,
+        "GT_jerk_absolute_m_s3": 12.911626494375213,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.5183818936347961,
+            -0.004302028566598892,
+            -0.14841927587985992
+          ],
+          "max_xyz": [
+            0.4761689007282257,
+            1.5431492328643799,
+            0.31023722887039185
+          ],
+          "range_xyz": [
+            0.9945507943630219,
+            1.5474512614309788,
+            0.45865650475025177
+          ],
+          "pelvis_path_length_m": 0.06802280384120084
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3666035234928131,
+            0.0,
+            -0.0621158741414547
+          ],
+          "max_xyz": [
+            0.382340669631958,
+            1.5222959518432617,
+            0.3179101049900055
+          ],
+          "range_xyz": [
+            0.7489441931247711,
+            1.5222959518432617,
+            0.3800259791314602
+          ],
+          "pelvis_path_length_m": 0.06031564838331186
+        },
+        "foot_contact_speed_proxy_m_s": 0.03927573441839102,
+        "GT_foot_contact_speed_proxy_m_s": 0.0075715095840498976,
+        "foot_contact_stencils": 372,
+        "foot_status": "GT_contact_proxy",
+        "frames": 94,
+        "velocity_stencils": 93,
+        "jerk_stencils": 91
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-backbone_bypass.npz",
+          "sha256": "fa6ccbdd7f6a49b86f76653f838e7bbabd7f064ed8786f4daee86a22563abc60"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-backbone_bypass.json",
+          "sha256": "b91c0eb838bca4888da33e1f2621f6ab2902c902679a64fc06c59c4ab7727fce"
+        }
+      ],
+      "random_plan_id": "78e031195676d4c0956336cdf487b6a30904866da8d7395d9f42c67cb7fa3d10"
+    },
+    {
+      "case_id": "000382-head-numeric_zero",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "numeric_zero",
+      "length": 94,
+      "status": "valid",
+      "decode_max_abs_m": 5.960464477539063e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.130615701773493,
+        "root_relative_MPJPE_m": 0.098276788684979,
+        "root_path_RMSE_m": 0.08208336991763064,
+        "head_or_wrists_position_joint_proxy_m": 0.13023169930661202,
+        "velocity_joint_proxy_RMSE_m_s": 0.3345180174714678,
+        "jerk_absolute_m_s3": 20.164687949606872,
+        "GT_jerk_absolute_m_s3": 12.911626494375213,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.32177501916885376,
+            -0.003949321806430817,
+            -0.3677593469619751
+          ],
+          "max_xyz": [
+            0.7316554188728333,
+            1.540406584739685,
+            0.3438836932182312
+          ],
+          "range_xyz": [
+            1.053430438041687,
+            1.5443559065461159,
+            0.7116430401802063
+          ],
+          "pelvis_path_length_m": 0.2572251613128706
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3666035234928131,
+            0.0,
+            -0.0621158741414547
+          ],
+          "max_xyz": [
+            0.382340669631958,
+            1.5222959518432617,
+            0.3179101049900055
+          ],
+          "range_xyz": [
+            0.7489441931247711,
+            1.5222959518432617,
+            0.3800259791314602
+          ],
+          "pelvis_path_length_m": 0.06031564838331186
+        },
+        "foot_contact_speed_proxy_m_s": 0.10169492091728255,
+        "GT_foot_contact_speed_proxy_m_s": 0.0075715095840498976,
+        "foot_contact_stencils": 372,
+        "foot_status": "GT_contact_proxy",
+        "frames": 94,
+        "velocity_stencils": 93,
+        "jerk_stencils": 91
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-numeric_zero.npz",
+          "sha256": "bf1151f2660bcd5edea3e5d97c609b09e1189dc062a2bdd06458ae5c90fe7732"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-numeric_zero.json",
+          "sha256": "ffbf8c5c7a3845ba2d2e112fb9d6fc6b295f39ef50c76696d8142b2d12d8b763"
+        }
+      ],
+      "random_plan_id": "78e031195676d4c0956336cdf487b6a30904866da8d7395d9f42c67cb7fa3d10"
+    },
+    {
+      "case_id": "000382-head-physical_static",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "physical_static",
+      "length": 94,
+      "status": "valid",
+      "decode_max_abs_m": 5.960464477539063e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.13459747213486928,
+        "root_relative_MPJPE_m": 0.10047337074223786,
+        "root_path_RMSE_m": 0.07515587511855201,
+        "head_or_wrists_position_joint_proxy_m": 0.13803365702258252,
+        "velocity_joint_proxy_RMSE_m_s": 0.3346860890165609,
+        "jerk_absolute_m_s3": 18.95240099309181,
+        "GT_jerk_absolute_m_s3": 12.911626494375213,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.30656498670578003,
+            -0.0026910193264484406,
+            -0.3957443833351135
+          ],
+          "max_xyz": [
+            0.7286369800567627,
+            1.4985862970352173,
+            0.374498188495636
+          ],
+          "range_xyz": [
+            1.0352019667625427,
+            1.5012773163616657,
+            0.7702425718307495
+          ],
+          "pelvis_path_length_m": 0.2610329514964545
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3666035234928131,
+            0.0,
+            -0.0621158741414547
+          ],
+          "max_xyz": [
+            0.382340669631958,
+            1.5222959518432617,
+            0.3179101049900055
+          ],
+          "range_xyz": [
+            0.7489441931247711,
+            1.5222959518432617,
+            0.3800259791314602
+          ],
+          "pelvis_path_length_m": 0.06031564838331186
+        },
+        "foot_contact_speed_proxy_m_s": 0.07026328827396856,
+        "GT_foot_contact_speed_proxy_m_s": 0.0075715095840498976,
+        "foot_contact_stencils": 372,
+        "foot_status": "GT_contact_proxy",
+        "frames": 94,
+        "velocity_stencils": 93,
+        "jerk_stencils": 91
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-physical_static.npz",
+          "sha256": "ceae42c9fd6798233bc2b0278545376bcb83bacb87f07922c09f4d38db1a5eeb"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-physical_static.json",
+          "sha256": "53fb24da5ab31163e840fbe3e3b19349382bf8ef16799a58d32d6bdbcb58b776"
+        }
+      ],
+      "random_plan_id": "78e031195676d4c0956336cdf487b6a30904866da8d7395d9f42c67cb7fa3d10"
+    },
+    {
+      "case_id": "000382-wrists-paired",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "paired",
+      "length": 94,
+      "status": "valid",
+      "decode_max_abs_m": 5.960464477539063e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.1650821147419202,
+        "root_relative_MPJPE_m": 0.11210508092765657,
+        "root_path_RMSE_m": 0.101210595788312,
+        "head_or_wrists_position_joint_proxy_m": 0.40412787561385244,
+        "velocity_joint_proxy_RMSE_m_s": 0.23488370691998303,
+        "jerk_absolute_m_s3": 7.969101558844389,
+        "GT_jerk_absolute_m_s3": 12.911626494375213,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.27954697608947754,
+            -0.008375264704227448,
+            -0.36377668380737305
+          ],
+          "max_xyz": [
+            0.44727402925491333,
+            1.4707785844802856,
+            0.1937292218208313
+          ],
+          "range_xyz": [
+            0.7268210053443909,
+            1.479153849184513,
+            0.5575059056282043
+          ],
+          "pelvis_path_length_m": 0.27442747443452736
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3666035234928131,
+            0.0,
+            -0.0621158741414547
+          ],
+          "max_xyz": [
+            0.382340669631958,
+            1.5222959518432617,
+            0.3179101049900055
+          ],
+          "range_xyz": [
+            0.7489441931247711,
+            1.5222959518432617,
+            0.3800259791314602
+          ],
+          "pelvis_path_length_m": 0.06031564838331186
+        },
+        "foot_contact_speed_proxy_m_s": 0.05326232943157465,
+        "GT_foot_contact_speed_proxy_m_s": 0.0075715095840498976,
+        "foot_contact_stencils": 372,
+        "foot_status": "GT_contact_proxy",
+        "frames": 94,
+        "velocity_stencils": 93,
+        "jerk_stencils": 91
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-paired.npz",
+          "sha256": "d55671999edbbb533fe1ff27ccbcdd531482251194d58e8ebee80c9b9c310389"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-paired.json",
+          "sha256": "70425efdb71483ed1dda457d82fd0c59fba256416ae299bf014085574d7448af"
+        }
+      ],
+      "random_plan_id": "d4d76b82968c804658609cd01527d875b4df017202c41c5f19302e168465a51a"
+    },
+    {
+      "case_id": "000382-wrists-text_only",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "text_only",
+      "length": 94,
+      "status": "valid",
+      "decode_max_abs_m": 2.9802322387695312e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.061830781874366046,
+        "root_relative_MPJPE_m": 0.06209187189964028,
+        "root_path_RMSE_m": 0.030320409185614596,
+        "head_or_wrists_position_joint_proxy_m": 0.2337560391461312,
+        "velocity_joint_proxy_RMSE_m_s": 0.25209210184064695,
+        "jerk_absolute_m_s3": 5.213508973229147,
+        "GT_jerk_absolute_m_s3": 12.911626494375213,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.33516672253608704,
+            -0.004974365234375,
+            -0.13727040588855743
+          ],
+          "max_xyz": [
+            0.36104077100753784,
+            1.521971344947815,
+            0.24181775748729706
+          ],
+          "range_xyz": [
+            0.6962074935436249,
+            1.52694571018219,
+            0.3790881633758545
+          ],
+          "pelvis_path_length_m": 0.06631449285425703
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3666035234928131,
+            0.0,
+            -0.0621158741414547
+          ],
+          "max_xyz": [
+            0.382340669631958,
+            1.5222959518432617,
+            0.3179101049900055
+          ],
+          "range_xyz": [
+            0.7489441931247711,
+            1.5222959518432617,
+            0.3800259791314602
+          ],
+          "pelvis_path_length_m": 0.06031564838331186
+        },
+        "foot_contact_speed_proxy_m_s": 0.015153353005126475,
+        "GT_foot_contact_speed_proxy_m_s": 0.0075715095840498976,
+        "foot_contact_stencils": 372,
+        "foot_status": "GT_contact_proxy",
+        "frames": 94,
+        "velocity_stencils": 93,
+        "jerk_stencils": 91
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-text_only.npz",
+          "sha256": "a6fbcfa998dde60abd82588e15adc44243457c7d0af1b8665723caa1c5275730"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-text_only.json",
+          "sha256": "7e7345879d8d6d0fc0f06b898c2e80bd64a083da9cc364d128bb5fbe6df19892"
+        }
+      ],
+      "random_plan_id": "d4d76b82968c804658609cd01527d875b4df017202c41c5f19302e168465a51a"
+    },
+    {
+      "case_id": "000382-wrists-imu_only",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "imu_only",
+      "length": 94,
+      "status": "valid",
+      "decode_max_abs_m": 9.5367431640625e-07,
+      "metrics": {
+        "global_MPJPE_m": 1.4761189327661688,
+        "root_relative_MPJPE_m": 0.17755697833361989,
+        "root_path_RMSE_m": 1.6217589144567732,
+        "head_or_wrists_position_joint_proxy_m": 1.6307560900844968,
+        "velocity_joint_proxy_RMSE_m_s": 1.3415471978605433,
+        "jerk_absolute_m_s3": 111.38765748263887,
+        "GT_jerk_absolute_m_s3": 12.911626494375213,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.42934224009513855,
+            0.007890060544013977,
+            -1.4028542041778564
+          ],
+          "max_xyz": [
+            2.652614116668701,
+            1.5238456726074219,
+            0.4293682873249054
+          ],
+          "range_xyz": [
+            3.0819563567638397,
+            1.515955612063408,
+            1.8322224915027618
+          ],
+          "pelvis_path_length_m": 4.773945048117714
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3666035234928131,
+            0.0,
+            -0.0621158741414547
+          ],
+          "max_xyz": [
+            0.382340669631958,
+            1.5222959518432617,
+            0.3179101049900055
+          ],
+          "range_xyz": [
+            0.7489441931247711,
+            1.5222959518432617,
+            0.3800259791314602
+          ],
+          "pelvis_path_length_m": 0.06031564838331186
+        },
+        "foot_contact_speed_proxy_m_s": 1.167925219469506,
+        "GT_foot_contact_speed_proxy_m_s": 0.0075715095840498976,
+        "foot_contact_stencils": 372,
+        "foot_status": "GT_contact_proxy",
+        "frames": 94,
+        "velocity_stencils": 93,
+        "jerk_stencils": 91
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-imu_only.npz",
+          "sha256": "e8f720934eafc1175072126ecf88049bc687a31eb84ef78f83759304550170a9"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-imu_only.json",
+          "sha256": "4b0253661bab8ba00058618c7415be5dcbfde43be2fff88601a79eba881cd790"
+        }
+      ],
+      "random_plan_id": "d4d76b82968c804658609cd01527d875b4df017202c41c5f19302e168465a51a"
+    },
+    {
+      "case_id": "000382-wrists-backbone_bypass",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "backbone_bypass",
+      "length": 94,
+      "status": "valid",
+      "decode_max_abs_m": 2.9802322387695312e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.061830781874366046,
+        "root_relative_MPJPE_m": 0.06209187189964028,
+        "root_path_RMSE_m": 0.030320409185614596,
+        "head_or_wrists_position_joint_proxy_m": 0.2337560391461312,
+        "velocity_joint_proxy_RMSE_m_s": 0.25209210184064695,
+        "jerk_absolute_m_s3": 5.213508973229147,
+        "GT_jerk_absolute_m_s3": 12.911626494375213,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.33516672253608704,
+            -0.004974365234375,
+            -0.13727040588855743
+          ],
+          "max_xyz": [
+            0.36104077100753784,
+            1.521971344947815,
+            0.24181775748729706
+          ],
+          "range_xyz": [
+            0.6962074935436249,
+            1.52694571018219,
+            0.3790881633758545
+          ],
+          "pelvis_path_length_m": 0.06631449285425703
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3666035234928131,
+            0.0,
+            -0.0621158741414547
+          ],
+          "max_xyz": [
+            0.382340669631958,
+            1.5222959518432617,
+            0.3179101049900055
+          ],
+          "range_xyz": [
+            0.7489441931247711,
+            1.5222959518432617,
+            0.3800259791314602
+          ],
+          "pelvis_path_length_m": 0.06031564838331186
+        },
+        "foot_contact_speed_proxy_m_s": 0.015153353005126475,
+        "GT_foot_contact_speed_proxy_m_s": 0.0075715095840498976,
+        "foot_contact_stencils": 372,
+        "foot_status": "GT_contact_proxy",
+        "frames": 94,
+        "velocity_stencils": 93,
+        "jerk_stencils": 91
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-backbone_bypass.npz",
+          "sha256": "d81c54cbe541b1571a6016ced8b4704bc90187966625cd2cab3f2045a162a5bb"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-backbone_bypass.json",
+          "sha256": "1fbccb81607c571efec813d8ee5536a58226dc8cb2c75c438402625f46a3c1bd"
+        }
+      ],
+      "random_plan_id": "d4d76b82968c804658609cd01527d875b4df017202c41c5f19302e168465a51a"
+    },
+    {
+      "case_id": "000382-wrists-numeric_zero",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "numeric_zero",
+      "length": 94,
+      "status": "valid",
+      "decode_max_abs_m": 5.960464477539063e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.16992728525950312,
+        "root_relative_MPJPE_m": 0.11596808497013358,
+        "root_path_RMSE_m": 0.12793710282109028,
+        "head_or_wrists_position_joint_proxy_m": 0.44759527433492907,
+        "velocity_joint_proxy_RMSE_m_s": 0.25151343729364756,
+        "jerk_absolute_m_s3": 3.4653644410509714,
+        "GT_jerk_absolute_m_s3": 12.911626494375213,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.28587087988853455,
+            -0.006249722093343735,
+            -0.45043620467185974
+          ],
+          "max_xyz": [
+            0.6185109615325928,
+            1.492019772529602,
+            0.20128107070922852
+          ],
+          "range_xyz": [
+            0.9043818414211273,
+            1.4982694946229458,
+            0.6517172753810883
+          ],
+          "pelvis_path_length_m": 0.31200098254493813
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3666035234928131,
+            0.0,
+            -0.0621158741414547
+          ],
+          "max_xyz": [
+            0.382340669631958,
+            1.5222959518432617,
+            0.3179101049900055
+          ],
+          "range_xyz": [
+            0.7489441931247711,
+            1.5222959518432617,
+            0.3800259791314602
+          ],
+          "pelvis_path_length_m": 0.06031564838331186
+        },
+        "foot_contact_speed_proxy_m_s": 0.05479565709181575,
+        "GT_foot_contact_speed_proxy_m_s": 0.0075715095840498976,
+        "foot_contact_stencils": 372,
+        "foot_status": "GT_contact_proxy",
+        "frames": 94,
+        "velocity_stencils": 93,
+        "jerk_stencils": 91
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-numeric_zero.npz",
+          "sha256": "10b2dd03331972d5b5cca224f5d5f30e81bc515283a2aff324a7e5d0344b61d2"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-numeric_zero.json",
+          "sha256": "3fe2336cc4647301bd17208c994514b29247ccdff42169b700f3b574d1e15d1c"
+        }
+      ],
+      "random_plan_id": "d4d76b82968c804658609cd01527d875b4df017202c41c5f19302e168465a51a"
+    },
+    {
+      "case_id": "000382-wrists-physical_static",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "physical_static",
+      "length": 94,
+      "status": "valid",
+      "decode_max_abs_m": 2.9802322387695312e-08,
+      "metrics": {
+        "global_MPJPE_m": 0.16115122027119294,
+        "root_relative_MPJPE_m": 0.12042718385003888,
+        "root_path_RMSE_m": 0.06704282000260345,
+        "head_or_wrists_position_joint_proxy_m": 0.4144367835304894,
+        "velocity_joint_proxy_RMSE_m_s": 0.21257969159986895,
+        "jerk_absolute_m_s3": 2.6147137499499933,
+        "GT_jerk_absolute_m_s3": 12.911626494375213,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.2725905478000641,
+            -0.012836474925279617,
+            -0.24935372173786163
+          ],
+          "max_xyz": [
+            0.3653079867362976,
+            1.468186855316162,
+            0.20602017641067505
+          ],
+          "range_xyz": [
+            0.6378985345363617,
+            1.4810233302414417,
+            0.4553738981485367
+          ],
+          "pelvis_path_length_m": 0.19093860452794595
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3666035234928131,
+            0.0,
+            -0.0621158741414547
+          ],
+          "max_xyz": [
+            0.382340669631958,
+            1.5222959518432617,
+            0.3179101049900055
+          ],
+          "range_xyz": [
+            0.7489441931247711,
+            1.5222959518432617,
+            0.3800259791314602
+          ],
+          "pelvis_path_length_m": 0.06031564838331186
+        },
+        "foot_contact_speed_proxy_m_s": 0.042913585892799457,
+        "GT_foot_contact_speed_proxy_m_s": 0.0075715095840498976,
+        "foot_contact_stencils": 372,
+        "foot_status": "GT_contact_proxy",
+        "frames": 94,
+        "velocity_stencils": 93,
+        "jerk_stencils": 91
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-physical_static.npz",
+          "sha256": "ed81c892cae3660707a6b59e498fb03fa99c4337e7638faa13a4aafe896b283c"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-physical_static.json",
+          "sha256": "5cbe6e6036198ac49d457570875b6b99e51e467b39062fb8ad31cd56fab07404"
+        }
+      ],
+      "random_plan_id": "d4d76b82968c804658609cd01527d875b4df017202c41c5f19302e168465a51a"
+    },
+    {
+      "case_id": "000139-head-paired",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "paired",
+      "length": 163,
+      "status": "valid",
+      "decode_max_abs_m": 1.4901161193847656e-07,
+      "metrics": {
+        "global_MPJPE_m": 1.2173162995478848,
+        "root_relative_MPJPE_m": 0.2943667604357085,
+        "root_path_RMSE_m": 1.4519317966310168,
+        "head_or_wrists_position_joint_proxy_m": 1.0961906867850804,
+        "velocity_joint_proxy_RMSE_m_s": 0.688016684864951,
+        "jerk_absolute_m_s3": 10.03804731793528,
+        "GT_jerk_absolute_m_s3": 27.22962410936607,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.579980194568634,
+            -0.00565609335899353,
+            -0.7419847249984741
+          ],
+          "max_xyz": [
+            0.7460552453994751,
+            1.7587493658065796,
+            0.9569856524467468
+          ],
+          "range_xyz": [
+            1.3260354399681091,
+            1.7644054591655731,
+            1.698970377445221
+          ],
+          "pelvis_path_length_m": 0.80371337455744
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3095889091491699,
+            0.0,
+            -0.19121433794498444
+          ],
+          "max_xyz": [
+            0.3045164942741394,
+            2.044423818588257,
+            2.69637393951416
+          ],
+          "range_xyz": [
+            0.6141054034233093,
+            2.044423818588257,
+            2.8875882774591446
+          ],
+          "pelvis_path_length_m": 3.005467054663517
+        },
+        "foot_contact_speed_proxy_m_s": null,
+        "GT_foot_contact_speed_proxy_m_s": null,
+        "foot_contact_stencils": 0,
+        "foot_status": "not_applicable_nonflat_support",
+        "frames": 163,
+        "velocity_stencils": 162,
+        "jerk_stencils": 160
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-paired.npz",
+          "sha256": "bd737c75cf9e23509fc3a2356749c9d21bef936df363d50ecbf75d7ad18a17d7"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-paired.json",
+          "sha256": "6aaddc1433babbadb981ba35efe3fa145fb5207b46a5ec8cb1578c0f14b6f914"
+        }
+      ],
+      "random_plan_id": "536eade3617bce7ec452fe17545ac9d81e70b586b6f534313491a2201c90e0a4"
+    },
+    {
+      "case_id": "000139-head-text_only",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "text_only",
+      "length": 163,
+      "status": "valid",
+      "decode_max_abs_m": 2.86102294921875e-06,
+      "metrics": {
+        "global_MPJPE_m": 2.041549681441015,
+        "root_relative_MPJPE_m": 0.18072438038451452,
+        "root_path_RMSE_m": 2.183323855704643,
+        "head_or_wrists_position_joint_proxy_m": 1.9303003289989635,
+        "velocity_joint_proxy_RMSE_m_s": 1.2287652259799748,
+        "jerk_absolute_m_s3": 54.31289569815741,
+        "GT_jerk_absolute_m_s3": 27.22962410936607,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.8409069180488586,
+            0.0036530420184135437,
+            -0.20951658487319946
+          ],
+          "max_xyz": [
+            2.2920432090759277,
+            1.5760325193405151,
+            4.612270355224609
+          ],
+          "range_xyz": [
+            3.1329501271247864,
+            1.5723794773221016,
+            4.821786940097809
+          ],
+          "pelvis_path_length_m": 7.57967213251786
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3095889091491699,
+            0.0,
+            -0.19121433794498444
+          ],
+          "max_xyz": [
+            0.3045164942741394,
+            2.044423818588257,
+            2.69637393951416
+          ],
+          "range_xyz": [
+            0.6141054034233093,
+            2.044423818588257,
+            2.8875882774591446
+          ],
+          "pelvis_path_length_m": 3.005467054663517
+        },
+        "foot_contact_speed_proxy_m_s": null,
+        "GT_foot_contact_speed_proxy_m_s": null,
+        "foot_contact_stencils": 0,
+        "foot_status": "not_applicable_nonflat_support",
+        "frames": 163,
+        "velocity_stencils": 162,
+        "jerk_stencils": 160
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-text_only.npz",
+          "sha256": "050dbfdbc2b737085b36c97e9e56382151dda5fd1abca1e4f59afc1a3d0354cf"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-text_only.json",
+          "sha256": "3714dc2b96a0d2aaf51ed9bfce8d0879c5d36cb3a11b2693e060e7c1b9a453c9"
+        }
+      ],
+      "random_plan_id": "536eade3617bce7ec452fe17545ac9d81e70b586b6f534313491a2201c90e0a4"
+    },
+    {
+      "case_id": "000139-head-imu_only",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "imu_only",
+      "length": 163,
+      "status": "valid",
+      "decode_max_abs_m": 1.1920928955078125e-07,
+      "metrics": {
+        "global_MPJPE_m": 1.2398349592625217,
+        "root_relative_MPJPE_m": 0.29614871324623243,
+        "root_path_RMSE_m": 1.4871866009802552,
+        "head_or_wrists_position_joint_proxy_m": 1.1137470890054209,
+        "velocity_joint_proxy_RMSE_m_s": 0.689370592834703,
+        "jerk_absolute_m_s3": 9.577429489145468,
+        "GT_jerk_absolute_m_s3": 27.22962410936607,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.5598422288894653,
+            -0.012346070259809494,
+            -0.789584755897522
+          ],
+          "max_xyz": [
+            0.7494653463363647,
+            1.7502222061157227,
+            0.9081557393074036
+          ],
+          "range_xyz": [
+            1.30930757522583,
+            1.7625682763755322,
+            1.6977404952049255
+          ],
+          "pelvis_path_length_m": 0.7145681062340452
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3095889091491699,
+            0.0,
+            -0.19121433794498444
+          ],
+          "max_xyz": [
+            0.3045164942741394,
+            2.044423818588257,
+            2.69637393951416
+          ],
+          "range_xyz": [
+            0.6141054034233093,
+            2.044423818588257,
+            2.8875882774591446
+          ],
+          "pelvis_path_length_m": 3.005467054663517
+        },
+        "foot_contact_speed_proxy_m_s": null,
+        "GT_foot_contact_speed_proxy_m_s": null,
+        "foot_contact_stencils": 0,
+        "foot_status": "not_applicable_nonflat_support",
+        "frames": 163,
+        "velocity_stencils": 162,
+        "jerk_stencils": 160
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-imu_only.npz",
+          "sha256": "b619706a2fb5190d08834f6568eb94eb122db333763e1a775ff88440c858aa3b"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-imu_only.json",
+          "sha256": "12a00c5784d42792f8295728d81af351e79e177760a6df23fee83c75937f0f76"
+        }
+      ],
+      "random_plan_id": "536eade3617bce7ec452fe17545ac9d81e70b586b6f534313491a2201c90e0a4"
+    },
+    {
+      "case_id": "000139-head-backbone_bypass",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "backbone_bypass",
+      "length": 163,
+      "status": "valid",
+      "decode_max_abs_m": 2.86102294921875e-06,
+      "metrics": {
+        "global_MPJPE_m": 2.041549681441015,
+        "root_relative_MPJPE_m": 0.18072438038451452,
+        "root_path_RMSE_m": 2.183323855704643,
+        "head_or_wrists_position_joint_proxy_m": 1.9303003289989635,
+        "velocity_joint_proxy_RMSE_m_s": 1.2287652259799748,
+        "jerk_absolute_m_s3": 54.31289569815741,
+        "GT_jerk_absolute_m_s3": 27.22962410936607,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.8409069180488586,
+            0.0036530420184135437,
+            -0.20951658487319946
+          ],
+          "max_xyz": [
+            2.2920432090759277,
+            1.5760325193405151,
+            4.612270355224609
+          ],
+          "range_xyz": [
+            3.1329501271247864,
+            1.5723794773221016,
+            4.821786940097809
+          ],
+          "pelvis_path_length_m": 7.57967213251786
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3095889091491699,
+            0.0,
+            -0.19121433794498444
+          ],
+          "max_xyz": [
+            0.3045164942741394,
+            2.044423818588257,
+            2.69637393951416
+          ],
+          "range_xyz": [
+            0.6141054034233093,
+            2.044423818588257,
+            2.8875882774591446
+          ],
+          "pelvis_path_length_m": 3.005467054663517
+        },
+        "foot_contact_speed_proxy_m_s": null,
+        "GT_foot_contact_speed_proxy_m_s": null,
+        "foot_contact_stencils": 0,
+        "foot_status": "not_applicable_nonflat_support",
+        "frames": 163,
+        "velocity_stencils": 162,
+        "jerk_stencils": 160
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-backbone_bypass.npz",
+          "sha256": "284576c261ed96ffbc545528e7bd6bc18cb4ba898066915d92358d99cb762dc2"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-backbone_bypass.json",
+          "sha256": "1ff06ba6f51652064beff269ef660b413a03327ab73f59b8382992ee9b47d0d4"
+        }
+      ],
+      "random_plan_id": "536eade3617bce7ec452fe17545ac9d81e70b586b6f534313491a2201c90e0a4"
+    },
+    {
+      "case_id": "000139-head-numeric_zero",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "numeric_zero",
+      "length": 163,
+      "status": "valid",
+      "decode_max_abs_m": 1.1920928955078125e-07,
+      "metrics": {
+        "global_MPJPE_m": 1.2330912660725841,
+        "root_relative_MPJPE_m": 0.29332676894872545,
+        "root_path_RMSE_m": 1.4730984526648299,
+        "head_or_wrists_position_joint_proxy_m": 1.1062610075013282,
+        "velocity_joint_proxy_RMSE_m_s": 0.6853929277364295,
+        "jerk_absolute_m_s3": 5.762684430794141,
+        "GT_jerk_absolute_m_s3": 27.22962410936607,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.579231858253479,
+            -0.0033551566302776337,
+            -0.7683039307594299
+          ],
+          "max_xyz": [
+            0.7415291666984558,
+            1.7443386316299438,
+            0.9290347099304199
+          ],
+          "range_xyz": [
+            1.3207610249519348,
+            1.7476937882602215,
+            1.6973386406898499
+          ],
+          "pelvis_path_length_m": 0.7587328850941787
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3095889091491699,
+            0.0,
+            -0.19121433794498444
+          ],
+          "max_xyz": [
+            0.3045164942741394,
+            2.044423818588257,
+            2.69637393951416
+          ],
+          "range_xyz": [
+            0.6141054034233093,
+            2.044423818588257,
+            2.8875882774591446
+          ],
+          "pelvis_path_length_m": 3.005467054663517
+        },
+        "foot_contact_speed_proxy_m_s": null,
+        "GT_foot_contact_speed_proxy_m_s": null,
+        "foot_contact_stencils": 0,
+        "foot_status": "not_applicable_nonflat_support",
+        "frames": 163,
+        "velocity_stencils": 162,
+        "jerk_stencils": 160
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-numeric_zero.npz",
+          "sha256": "3f566c4ab51859af6dba9186d5873f65b1290cb53b47a60fbe40d6a9440cfd01"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-numeric_zero.json",
+          "sha256": "61a9409ed64dba1a66bd8d4d8581fc50efeb1fc6fbbbe57998a4747ad1b764ed"
+        }
+      ],
+      "random_plan_id": "536eade3617bce7ec452fe17545ac9d81e70b586b6f534313491a2201c90e0a4"
+    },
+    {
+      "case_id": "000139-head-physical_static",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "physical_static",
+      "length": 163,
+      "status": "valid",
+      "decode_max_abs_m": 1.1920928955078125e-07,
+      "metrics": {
+        "global_MPJPE_m": 1.215252224278716,
+        "root_relative_MPJPE_m": 0.2944418562272628,
+        "root_path_RMSE_m": 1.4491310248636724,
+        "head_or_wrists_position_joint_proxy_m": 1.0944143482605189,
+        "velocity_joint_proxy_RMSE_m_s": 0.6882658850309085,
+        "jerk_absolute_m_s3": 6.453077841309211,
+        "GT_jerk_absolute_m_s3": 27.22962410936607,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.5855605006217957,
+            -0.006485942751169205,
+            -0.7408156394958496
+          ],
+          "max_xyz": [
+            0.7441556453704834,
+            1.7574869394302368,
+            0.959846019744873
+          ],
+          "range_xyz": [
+            1.329716145992279,
+            1.763972882181406,
+            1.7006616592407227
+          ],
+          "pelvis_path_length_m": 0.799601778181146
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3095889091491699,
+            0.0,
+            -0.19121433794498444
+          ],
+          "max_xyz": [
+            0.3045164942741394,
+            2.044423818588257,
+            2.69637393951416
+          ],
+          "range_xyz": [
+            0.6141054034233093,
+            2.044423818588257,
+            2.8875882774591446
+          ],
+          "pelvis_path_length_m": 3.005467054663517
+        },
+        "foot_contact_speed_proxy_m_s": null,
+        "GT_foot_contact_speed_proxy_m_s": null,
+        "foot_contact_stencils": 0,
+        "foot_status": "not_applicable_nonflat_support",
+        "frames": 163,
+        "velocity_stencils": 162,
+        "jerk_stencils": 160
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-physical_static.npz",
+          "sha256": "ca98dc200c3cb31f44f36422d6c81091895c353110b4b36a6ec9b03c5e59da27"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-physical_static.json",
+          "sha256": "23b83062ea1d7bff058bc160c9af906d4937aa98944418f444ab8bc6a0a50d44"
+        }
+      ],
+      "random_plan_id": "536eade3617bce7ec452fe17545ac9d81e70b586b6f534313491a2201c90e0a4"
+    },
+    {
+      "case_id": "000139-wrists-paired",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "paired",
+      "length": 163,
+      "status": "valid",
+      "decode_max_abs_m": 2.384185791015625e-07,
+      "metrics": {
+        "global_MPJPE_m": 1.190775577883207,
+        "root_relative_MPJPE_m": 0.2862345291795602,
+        "root_path_RMSE_m": 1.4163295906188431,
+        "head_or_wrists_position_joint_proxy_m": 1.2338198924597374,
+        "velocity_joint_proxy_RMSE_m_s": 0.6893326922586501,
+        "jerk_absolute_m_s3": 6.699873150989933,
+        "GT_jerk_absolute_m_s3": 27.22962410936607,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.5884800553321838,
+            -0.01311839371919632,
+            -0.7315280437469482
+          ],
+          "max_xyz": [
+            0.7411990165710449,
+            1.7607883214950562,
+            1.0102598667144775
+          ],
+          "range_xyz": [
+            1.3296790719032288,
+            1.7739067152142525,
+            1.7417879104614258
+          ],
+          "pelvis_path_length_m": 0.7867045666824215
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3095889091491699,
+            0.0,
+            -0.19121433794498444
+          ],
+          "max_xyz": [
+            0.3045164942741394,
+            2.044423818588257,
+            2.69637393951416
+          ],
+          "range_xyz": [
+            0.6141054034233093,
+            2.044423818588257,
+            2.8875882774591446
+          ],
+          "pelvis_path_length_m": 3.005467054663517
+        },
+        "foot_contact_speed_proxy_m_s": null,
+        "GT_foot_contact_speed_proxy_m_s": null,
+        "foot_contact_stencils": 0,
+        "foot_status": "not_applicable_nonflat_support",
+        "frames": 163,
+        "velocity_stencils": 162,
+        "jerk_stencils": 160
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-paired.npz",
+          "sha256": "6dc6974f16dfdd37c2137f5eca54cd87cbdec758ea7ea8b0bc0d6acc222bd9f4"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-paired.json",
+          "sha256": "6bc19586d777f074e1b0f0a2b2febead16460694f558e371a3f3186f9facf828"
+        }
+      ],
+      "random_plan_id": "d913830b9a25628644b319a3741822343efe390a44801eb6c2e4bf35bd50141f"
+    },
+    {
+      "case_id": "000139-wrists-text_only",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "text_only",
+      "length": 163,
+      "status": "valid",
+      "decode_max_abs_m": 1.430511474609375e-06,
+      "metrics": {
+        "global_MPJPE_m": 2.152969169955402,
+        "root_relative_MPJPE_m": 0.1652894101010941,
+        "root_path_RMSE_m": 2.2798843444936,
+        "head_or_wrists_position_joint_proxy_m": 2.241965218846514,
+        "velocity_joint_proxy_RMSE_m_s": 1.1405817882310356,
+        "jerk_absolute_m_s3": 50.948084103868325,
+        "GT_jerk_absolute_m_s3": 27.22962410936607,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.3201449513435364,
+            0.005909912288188934,
+            -0.3747018575668335
+          ],
+          "max_xyz": [
+            3.6771233081817627,
+            1.589532494544983,
+            4.858742713928223
+          ],
+          "range_xyz": [
+            3.997268259525299,
+            1.583622582256794,
+            5.233444571495056
+          ],
+          "pelvis_path_length_m": 6.809302842669099
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3095889091491699,
+            0.0,
+            -0.19121433794498444
+          ],
+          "max_xyz": [
+            0.3045164942741394,
+            2.044423818588257,
+            2.69637393951416
+          ],
+          "range_xyz": [
+            0.6141054034233093,
+            2.044423818588257,
+            2.8875882774591446
+          ],
+          "pelvis_path_length_m": 3.005467054663517
+        },
+        "foot_contact_speed_proxy_m_s": null,
+        "GT_foot_contact_speed_proxy_m_s": null,
+        "foot_contact_stencils": 0,
+        "foot_status": "not_applicable_nonflat_support",
+        "frames": 163,
+        "velocity_stencils": 162,
+        "jerk_stencils": 160
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-text_only.npz",
+          "sha256": "922ffe41a3b979e949149a0c4da58f2f2cd500fa74fff79d2b32628f02be0115"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-text_only.json",
+          "sha256": "26b8bda4f5bcaee93bc0e628e39be20bc082442eb8bb0e09df4e94d6cce6c6ba"
+        }
+      ],
+      "random_plan_id": "d913830b9a25628644b319a3741822343efe390a44801eb6c2e4bf35bd50141f"
+    },
+    {
+      "case_id": "000139-wrists-imu_only",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "imu_only",
+      "length": 163,
+      "status": "valid",
+      "decode_max_abs_m": 1.7881393432617188e-07,
+      "metrics": {
+        "global_MPJPE_m": 1.2111175193325583,
+        "root_relative_MPJPE_m": 0.28886852379332384,
+        "root_path_RMSE_m": 1.4474763834024849,
+        "head_or_wrists_position_joint_proxy_m": 1.2618026644915843,
+        "velocity_joint_proxy_RMSE_m_s": 0.6888975517020978,
+        "jerk_absolute_m_s3": 6.679738155508889,
+        "GT_jerk_absolute_m_s3": 27.22962410936607,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.5750195980072021,
+            -0.01918383687734604,
+            -0.786156177520752
+          ],
+          "max_xyz": [
+            0.7477502822875977,
+            1.7556349039077759,
+            0.962958574295044
+          ],
+          "range_xyz": [
+            1.3227698802947998,
+            1.774818740785122,
+            1.749114751815796
+          ],
+          "pelvis_path_length_m": 0.7104432056448178
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3095889091491699,
+            0.0,
+            -0.19121433794498444
+          ],
+          "max_xyz": [
+            0.3045164942741394,
+            2.044423818588257,
+            2.69637393951416
+          ],
+          "range_xyz": [
+            0.6141054034233093,
+            2.044423818588257,
+            2.8875882774591446
+          ],
+          "pelvis_path_length_m": 3.005467054663517
+        },
+        "foot_contact_speed_proxy_m_s": null,
+        "GT_foot_contact_speed_proxy_m_s": null,
+        "foot_contact_stencils": 0,
+        "foot_status": "not_applicable_nonflat_support",
+        "frames": 163,
+        "velocity_stencils": 162,
+        "jerk_stencils": 160
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-imu_only.npz",
+          "sha256": "8bf57cf274169653304d27d221746812842157b40ec5ba31b4c3ec121086ce72"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-imu_only.json",
+          "sha256": "d0c333a749e6aa397a0195757dc16153eb4e7b7308a2702e1e55356ef972b9db"
+        }
+      ],
+      "random_plan_id": "d913830b9a25628644b319a3741822343efe390a44801eb6c2e4bf35bd50141f"
+    },
+    {
+      "case_id": "000139-wrists-backbone_bypass",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "backbone_bypass",
+      "length": 163,
+      "status": "valid",
+      "decode_max_abs_m": 1.430511474609375e-06,
+      "metrics": {
+        "global_MPJPE_m": 2.152969169955402,
+        "root_relative_MPJPE_m": 0.1652894101010941,
+        "root_path_RMSE_m": 2.2798843444936,
+        "head_or_wrists_position_joint_proxy_m": 2.241965218846514,
+        "velocity_joint_proxy_RMSE_m_s": 1.1405817882310356,
+        "jerk_absolute_m_s3": 50.948084103868325,
+        "GT_jerk_absolute_m_s3": 27.22962410936607,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.3201449513435364,
+            0.005909912288188934,
+            -0.3747018575668335
+          ],
+          "max_xyz": [
+            3.6771233081817627,
+            1.589532494544983,
+            4.858742713928223
+          ],
+          "range_xyz": [
+            3.997268259525299,
+            1.583622582256794,
+            5.233444571495056
+          ],
+          "pelvis_path_length_m": 6.809302842669099
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3095889091491699,
+            0.0,
+            -0.19121433794498444
+          ],
+          "max_xyz": [
+            0.3045164942741394,
+            2.044423818588257,
+            2.69637393951416
+          ],
+          "range_xyz": [
+            0.6141054034233093,
+            2.044423818588257,
+            2.8875882774591446
+          ],
+          "pelvis_path_length_m": 3.005467054663517
+        },
+        "foot_contact_speed_proxy_m_s": null,
+        "GT_foot_contact_speed_proxy_m_s": null,
+        "foot_contact_stencils": 0,
+        "foot_status": "not_applicable_nonflat_support",
+        "frames": 163,
+        "velocity_stencils": 162,
+        "jerk_stencils": 160
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-backbone_bypass.npz",
+          "sha256": "abc0467569707d7c4ab7f0e3a64cd73eb3836dd865d6d798e0b0bdce7a2bb9d7"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-backbone_bypass.json",
+          "sha256": "a3b4a4d7cffb655fa513238937ec99c68ecb508f4d52dd8e5f729b107fef2983"
+        }
+      ],
+      "random_plan_id": "d913830b9a25628644b319a3741822343efe390a44801eb6c2e4bf35bd50141f"
+    },
+    {
+      "case_id": "000139-wrists-numeric_zero",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "numeric_zero",
+      "length": 163,
+      "status": "valid",
+      "decode_max_abs_m": 1.4901161193847656e-07,
+      "metrics": {
+        "global_MPJPE_m": 1.2353049302418078,
+        "root_relative_MPJPE_m": 0.2964799058839165,
+        "root_path_RMSE_m": 1.472694182350832,
+        "head_or_wrists_position_joint_proxy_m": 1.2828395344633963,
+        "velocity_joint_proxy_RMSE_m_s": 0.6872010493203884,
+        "jerk_absolute_m_s3": 5.6585923899855475,
+        "GT_jerk_absolute_m_s3": 27.22962410936607,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.5698480606079102,
+            -0.0018223486840724945,
+            -0.7681169509887695
+          ],
+          "max_xyz": [
+            0.7468661069869995,
+            1.740253210067749,
+            0.9364703893661499
+          ],
+          "range_xyz": [
+            1.3167141675949097,
+            1.7420755587518215,
+            1.7045873403549194
+          ],
+          "pelvis_path_length_m": 0.7508895954086264
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3095889091491699,
+            0.0,
+            -0.19121433794498444
+          ],
+          "max_xyz": [
+            0.3045164942741394,
+            2.044423818588257,
+            2.69637393951416
+          ],
+          "range_xyz": [
+            0.6141054034233093,
+            2.044423818588257,
+            2.8875882774591446
+          ],
+          "pelvis_path_length_m": 3.005467054663517
+        },
+        "foot_contact_speed_proxy_m_s": null,
+        "GT_foot_contact_speed_proxy_m_s": null,
+        "foot_contact_stencils": 0,
+        "foot_status": "not_applicable_nonflat_support",
+        "frames": 163,
+        "velocity_stencils": 162,
+        "jerk_stencils": 160
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-numeric_zero.npz",
+          "sha256": "afbec353593085f7226c98b28a0fd0180aad5b908fac94a726ffafd04b55a6af"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-numeric_zero.json",
+          "sha256": "4ad94552cca6784262f3a0746fe40de4e2b32cfc314956d813239eadc1b03656"
+        }
+      ],
+      "random_plan_id": "d913830b9a25628644b319a3741822343efe390a44801eb6c2e4bf35bd50141f"
+    },
+    {
+      "case_id": "000139-wrists-physical_static",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "physical_static",
+      "length": 163,
+      "status": "valid",
+      "decode_max_abs_m": 1.1920928955078125e-07,
+      "metrics": {
+        "global_MPJPE_m": 1.1890479891275734,
+        "root_relative_MPJPE_m": 0.2856053738707892,
+        "root_path_RMSE_m": 1.4154278696743576,
+        "head_or_wrists_position_joint_proxy_m": 1.2336445771324287,
+        "velocity_joint_proxy_RMSE_m_s": 0.6916604069724106,
+        "jerk_absolute_m_s3": 5.769974232986391,
+        "GT_jerk_absolute_m_s3": 27.22962410936607,
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.5886412858963013,
+            -0.013087049126625061,
+            -0.7291355133056641
+          ],
+          "max_xyz": [
+            0.7409652471542358,
+            1.7627551555633545,
+            1.0107579231262207
+          ],
+          "range_xyz": [
+            1.329606533050537,
+            1.7758422046899796,
+            1.7398934364318848
+          ],
+          "pelvis_path_length_m": 0.7848927343994032
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            -0.3095889091491699,
+            0.0,
+            -0.19121433794498444
+          ],
+          "max_xyz": [
+            0.3045164942741394,
+            2.044423818588257,
+            2.69637393951416
+          ],
+          "range_xyz": [
+            0.6141054034233093,
+            2.044423818588257,
+            2.8875882774591446
+          ],
+          "pelvis_path_length_m": 3.005467054663517
+        },
+        "foot_contact_speed_proxy_m_s": null,
+        "GT_foot_contact_speed_proxy_m_s": null,
+        "foot_contact_stencils": 0,
+        "foot_status": "not_applicable_nonflat_support",
+        "frames": 163,
+        "velocity_stencils": 162,
+        "jerk_stencils": 160
+      },
+      "artifacts": [
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-physical_static.npz",
+          "sha256": "6527ff4d58ec3704ac2cbb8cad13b0e8e78c2a3ad2092b2d70fd116e11eef3f6"
+        },
+        {
+          "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-physical_static.json",
+          "sha256": "08caa1eb7e93811c3d77ad192c5722d1b884f0c6240d207ab11d37e175857517"
+        }
+      ],
+      "random_plan_id": "d913830b9a25628644b319a3741822343efe390a44801eb6c2e4bf35bd50141f"
+    }
+  ],
+  "aggregates": [
+    {
+      "config": "head",
+      "condition": "paired",
+      "planned": 3,
+      "valid": 3,
+      "metrics": {
+        "global_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.5174398459716573
+        },
+        "root_relative_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.19391327839660435
+        },
+        "root_path_RMSE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.5413378576508802
+        },
+        "head_or_wrists_position_joint_proxy_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.4777477245208403
+        },
+        "velocity_joint_proxy_RMSE_m_s": {
+          "source_groups": 3,
+          "equal_source_mean": 0.685357269577764
+        },
+        "jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 30.282169691847816
+        },
+        "GT_jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 30.486643430201184
+        },
+        "foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.15489032658917884
+        },
+        "GT_foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.04562522708339602
+        },
+        "foot_contact_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 164.0
+        },
+        "frames": {
+          "source_groups": 3,
+          "equal_source_mean": 99.33333333333333
+        },
+        "velocity_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 98.33333333333333
+        },
+        "jerk_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 96.33333333333333
+        }
+      }
+    },
+    {
+      "config": "head",
+      "condition": "text_only",
+      "planned": 3,
+      "valid": 3,
+      "metrics": {
+        "global_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.7546089610329285
+        },
+        "root_relative_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.1284061426592382
+        },
+        "root_path_RMSE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.7707466036319103
+        },
+        "head_or_wrists_position_joint_proxy_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.7160309342202495
+        },
+        "velocity_joint_proxy_RMSE_m_s": {
+          "source_groups": 3,
+          "equal_source_mean": 0.8753000363586336
+        },
+        "jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 45.31913304871332
+        },
+        "GT_jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 30.486643430201184
+        },
+        "foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.13656001856462957
+        },
+        "GT_foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.04562522708339602
+        },
+        "foot_contact_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 164.0
+        },
+        "frames": {
+          "source_groups": 3,
+          "equal_source_mean": 99.33333333333333
+        },
+        "velocity_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 98.33333333333333
+        },
+        "jerk_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 96.33333333333333
+        }
+      }
+    },
+    {
+      "config": "head",
+      "condition": "imu_only",
+      "planned": 3,
+      "valid": 3,
+      "metrics": {
+        "global_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.589361804743034
+        },
+        "root_relative_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.22221237702025762
+        },
+        "root_path_RMSE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.632836596635897
+        },
+        "head_or_wrists_position_joint_proxy_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.5435175427478524
+        },
+        "velocity_joint_proxy_RMSE_m_s": {
+          "source_groups": 3,
+          "equal_source_mean": 0.8686899755826243
+        },
+        "jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 36.142246943575024
+        },
+        "GT_jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 30.486643430201184
+        },
+        "foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.282068547966765
+        },
+        "GT_foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.04562522708339602
+        },
+        "foot_contact_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 164.0
+        },
+        "frames": {
+          "source_groups": 3,
+          "equal_source_mean": 99.33333333333333
+        },
+        "velocity_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 98.33333333333333
+        },
+        "jerk_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 96.33333333333333
+        }
+      }
+    },
+    {
+      "config": "head",
+      "condition": "backbone_bypass",
+      "planned": 3,
+      "valid": 3,
+      "metrics": {
+        "global_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.7546089610329285
+        },
+        "root_relative_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.1284061426592382
+        },
+        "root_path_RMSE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.7707466036319103
+        },
+        "head_or_wrists_position_joint_proxy_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.7160309342202495
+        },
+        "velocity_joint_proxy_RMSE_m_s": {
+          "source_groups": 3,
+          "equal_source_mean": 0.8753000363586336
+        },
+        "jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 45.31913304871332
+        },
+        "GT_jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 30.486643430201184
+        },
+        "foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.13656001856462957
+        },
+        "GT_foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.04562522708339602
+        },
+        "foot_contact_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 164.0
+        },
+        "frames": {
+          "source_groups": 3,
+          "equal_source_mean": 99.33333333333333
+        },
+        "velocity_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 98.33333333333333
+        },
+        "jerk_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 96.33333333333333
+        }
+      }
+    },
+    {
+      "config": "head",
+      "condition": "numeric_zero",
+      "planned": 3,
+      "valid": 3,
+      "metrics": {
+        "global_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.5210099192370496
+        },
+        "root_relative_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.19360325753289812
+        },
+        "root_path_RMSE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.5504386550469497
+        },
+        "head_or_wrists_position_joint_proxy_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.47272148602216874
+        },
+        "velocity_joint_proxy_RMSE_m_s": {
+          "source_groups": 3,
+          "equal_source_mean": 0.6713211961042264
+        },
+        "jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 24.26994437368442
+        },
+        "GT_jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 30.486643430201184
+        },
+        "foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.16392277954598428
+        },
+        "GT_foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.04562522708339602
+        },
+        "foot_contact_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 164.0
+        },
+        "frames": {
+          "source_groups": 3,
+          "equal_source_mean": 99.33333333333333
+        },
+        "velocity_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 98.33333333333333
+        },
+        "jerk_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 96.33333333333333
+        }
+      }
+    },
+    {
+      "config": "head",
+      "condition": "physical_static",
+      "planned": 3,
+      "valid": 3,
+      "metrics": {
+        "global_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.5176962221748043
+        },
+        "root_relative_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.19495132336950297
+        },
+        "root_path_RMSE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.5417849598652208
+        },
+        "head_or_wrists_position_joint_proxy_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.4790008584401078
+        },
+        "velocity_joint_proxy_RMSE_m_s": {
+          "source_groups": 3,
+          "equal_source_mean": 0.6831825874451796
+        },
+        "jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 27.29586630952375
+        },
+        "GT_jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 30.486643430201184
+        },
+        "foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.15130325947811257
+        },
+        "GT_foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.04562522708339602
+        },
+        "foot_contact_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 164.0
+        },
+        "frames": {
+          "source_groups": 3,
+          "equal_source_mean": 99.33333333333333
+        },
+        "velocity_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 98.33333333333333
+        },
+        "jerk_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 96.33333333333333
+        }
+      }
+    },
+    {
+      "config": "wrists",
+      "condition": "paired",
+      "planned": 3,
+      "valid": 3,
+      "metrics": {
+        "global_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.5115479044741893
+        },
+        "root_relative_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.18171862606688172
+        },
+        "root_path_RMSE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.548307783761735
+        },
+        "head_or_wrists_position_joint_proxy_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.636756378264545
+        },
+        "velocity_joint_proxy_RMSE_m_s": {
+          "source_groups": 3,
+          "equal_source_mean": 0.5598489426161759
+        },
+        "jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 9.643335528054148
+        },
+        "GT_jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 30.486643430201184
+        },
+        "foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.062117204920377096
+        },
+        "GT_foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.04562522708339602
+        },
+        "foot_contact_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 164.0
+        },
+        "frames": {
+          "source_groups": 3,
+          "equal_source_mean": 99.33333333333333
+        },
+        "velocity_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 98.33333333333333
+        },
+        "jerk_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 96.33333333333333
+        }
+      }
+    },
+    {
+      "config": "wrists",
+      "condition": "text_only",
+      "planned": 3,
+      "valid": 3,
+      "metrics": {
+        "global_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.8071730101594291
+        },
+        "root_relative_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.12638787527168976
+        },
+        "root_path_RMSE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.8086496273111571
+        },
+        "head_or_wrists_position_joint_proxy_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.9388306842586452
+        },
+        "velocity_joint_proxy_RMSE_m_s": {
+          "source_groups": 3,
+          "equal_source_mean": 0.7186079445954529
+        },
+        "jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 22.58498943297762
+        },
+        "GT_jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 30.486643430201184
+        },
+        "foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.04087052309572049
+        },
+        "GT_foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.04562522708339602
+        },
+        "foot_contact_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 164.0
+        },
+        "frames": {
+          "source_groups": 3,
+          "equal_source_mean": 99.33333333333333
+        },
+        "velocity_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 98.33333333333333
+        },
+        "jerk_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 96.33333333333333
+        }
+      }
+    },
+    {
+      "config": "wrists",
+      "condition": "imu_only",
+      "planned": 3,
+      "valid": 3,
+      "metrics": {
+        "global_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.9807622232937409
+        },
+        "root_relative_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.21912366986714119
+        },
+        "root_path_RMSE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 1.094884778203648
+        },
+        "head_or_wrists_position_joint_proxy_m": {
+          "source_groups": 3,
+          "equal_source_mean": 1.0703457575181137
+        },
+        "velocity_joint_proxy_RMSE_m_s": {
+          "source_groups": 3,
+          "equal_source_mean": 0.9931545606348681
+        },
+        "jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 58.4324891079904
+        },
+        "GT_jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 30.486643430201184
+        },
+        "foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.7200704705049521
+        },
+        "GT_foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.04562522708339602
+        },
+        "foot_contact_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 164.0
+        },
+        "frames": {
+          "source_groups": 3,
+          "equal_source_mean": 99.33333333333333
+        },
+        "velocity_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 98.33333333333333
+        },
+        "jerk_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 96.33333333333333
+        }
+      }
+    },
+    {
+      "config": "wrists",
+      "condition": "backbone_bypass",
+      "planned": 3,
+      "valid": 3,
+      "metrics": {
+        "global_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.8071730101594291
+        },
+        "root_relative_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.12638787527168976
+        },
+        "root_path_RMSE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.8086496273111571
+        },
+        "head_or_wrists_position_joint_proxy_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.9388306842586452
+        },
+        "velocity_joint_proxy_RMSE_m_s": {
+          "source_groups": 3,
+          "equal_source_mean": 0.7186079445954529
+        },
+        "jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 22.58498943297762
+        },
+        "GT_jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 30.486643430201184
+        },
+        "foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.04087052309572049
+        },
+        "GT_foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.04562522708339602
+        },
+        "foot_contact_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 164.0
+        },
+        "frames": {
+          "source_groups": 3,
+          "equal_source_mean": 99.33333333333333
+        },
+        "velocity_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 98.33333333333333
+        },
+        "jerk_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 96.33333333333333
+        }
+      }
+    },
+    {
+      "config": "wrists",
+      "condition": "numeric_zero",
+      "planned": 3,
+      "valid": 3,
+      "metrics": {
+        "global_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.5331019477917656
+        },
+        "root_relative_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.1928270742910473
+        },
+        "root_path_RMSE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.5786154730278827
+        },
+        "head_or_wrists_position_joint_proxy_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.6801165908233219
+        },
+        "velocity_joint_proxy_RMSE_m_s": {
+          "source_groups": 3,
+          "equal_source_mean": 0.5669062485186842
+        },
+        "jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 8.368378545763308
+        },
+        "GT_jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 30.486643430201184
+        },
+        "foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.07949757584692044
+        },
+        "GT_foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.04562522708339602
+        },
+        "foot_contact_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 164.0
+        },
+        "frames": {
+          "source_groups": 3,
+          "equal_source_mean": 99.33333333333333
+        },
+        "velocity_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 98.33333333333333
+        },
+        "jerk_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 96.33333333333333
+        }
+      }
+    },
+    {
+      "config": "wrists",
+      "condition": "physical_static",
+      "planned": 3,
+      "valid": 3,
+      "metrics": {
+        "global_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.5127119873512433
+        },
+        "root_relative_MPJPE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.18195971845579129
+        },
+        "root_path_RMSE_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.5425054452887416
+        },
+        "head_or_wrists_position_joint_proxy_m": {
+          "source_groups": 3,
+          "equal_source_mean": 0.6364470247077754
+        },
+        "velocity_joint_proxy_RMSE_m_s": {
+          "source_groups": 3,
+          "equal_source_mean": 0.5525839853858635
+        },
+        "jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 6.670961612996135
+        },
+        "GT_jerk_absolute_m_s3": {
+          "source_groups": 3,
+          "equal_source_mean": 30.486643430201184
+        },
+        "foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.053146573710502965
+        },
+        "GT_foot_contact_speed_proxy_m_s": {
+          "source_groups": 2,
+          "equal_source_mean": 0.04562522708339602
+        },
+        "foot_contact_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 164.0
+        },
+        "frames": {
+          "source_groups": 3,
+          "equal_source_mean": 99.33333333333333
+        },
+        "velocity_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 98.33333333333333
+        },
+        "jerk_stencils": {
+          "source_groups": 3,
+          "equal_source_mean": 96.33333333333333
+        }
+      }
+    }
+  ]
+}

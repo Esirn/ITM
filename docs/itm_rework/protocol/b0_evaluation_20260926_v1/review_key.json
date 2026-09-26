@@ -1,0 +1,150 @@
+{
+  "seed": 20260926,
+  "algorithm": "numpy PCG64 permutation of frozen slot list",
+  "rows": [
+    {
+      "review_id": "R01",
+      "case_id": "000382-wrists-backbone_bypass"
+    },
+    {
+      "review_id": "R02",
+      "case_id": "000139-wrists-numeric_zero"
+    },
+    {
+      "review_id": "R03",
+      "case_id": "000139-head-physical_static"
+    },
+    {
+      "review_id": "R04",
+      "case_id": "000382-head-numeric_zero"
+    },
+    {
+      "review_id": "R05",
+      "case_id": "000382-wrists-text_only"
+    },
+    {
+      "review_id": "R06",
+      "case_id": "000139-wrists-backbone_bypass"
+    },
+    {
+      "review_id": "R07",
+      "case_id": "000139-wrists-imu_only"
+    },
+    {
+      "review_id": "R08",
+      "case_id": "000382-head-backbone_bypass"
+    },
+    {
+      "review_id": "R09",
+      "case_id": "000139-wrists-physical_static"
+    },
+    {
+      "review_id": "R10",
+      "case_id": "000382-head-text_only"
+    },
+    {
+      "review_id": "R11",
+      "case_id": "000382-wrists-imu_only"
+    },
+    {
+      "review_id": "R12",
+      "case_id": "000433-head-numeric_zero"
+    },
+    {
+      "review_id": "R13",
+      "case_id": "000382-head-paired"
+    },
+    {
+      "review_id": "R14",
+      "case_id": "000139-wrists-paired"
+    },
+    {
+      "review_id": "R15",
+      "case_id": "000433-wrists-text_only"
+    },
+    {
+      "review_id": "R16",
+      "case_id": "000139-head-paired"
+    },
+    {
+      "review_id": "R17",
+      "case_id": "000382-head-physical_static"
+    },
+    {
+      "review_id": "R18",
+      "case_id": "000139-wrists-text_only"
+    },
+    {
+      "review_id": "R19",
+      "case_id": "000433-head-physical_static"
+    },
+    {
+      "review_id": "R20",
+      "case_id": "000433-wrists-physical_static"
+    },
+    {
+      "review_id": "R21",
+      "case_id": "000382-wrists-numeric_zero"
+    },
+    {
+      "review_id": "R22",
+      "case_id": "000382-wrists-paired"
+    },
+    {
+      "review_id": "R23",
+      "case_id": "000433-wrists-backbone_bypass"
+    },
+    {
+      "review_id": "R24",
+      "case_id": "000433-head-imu_only"
+    },
+    {
+      "review_id": "R25",
+      "case_id": "000382-head-imu_only"
+    },
+    {
+      "review_id": "R26",
+      "case_id": "000139-head-imu_only"
+    },
+    {
+      "review_id": "R27",
+      "case_id": "000433-wrists-imu_only"
+    },
+    {
+      "review_id": "R28",
+      "case_id": "000433-head-text_only"
+    },
+    {
+      "review_id": "R29",
+      "case_id": "000433-wrists-numeric_zero"
+    },
+    {
+      "review_id": "R30",
+      "case_id": "000139-head-text_only"
+    },
+    {
+      "review_id": "R31",
+      "case_id": "000433-head-paired"
+    },
+    {
+      "review_id": "R32",
+      "case_id": "000139-head-backbone_bypass"
+    },
+    {
+      "review_id": "R33",
+      "case_id": "000139-head-numeric_zero"
+    },
+    {
+      "review_id": "R34",
+      "case_id": "000382-wrists-physical_static"
+    },
+    {
+      "review_id": "R35",
+      "case_id": "000433-head-backbone_bypass"
+    },
+    {
+      "review_id": "R36",
+      "case_id": "000433-wrists-paired"
+    }
+  ]
+}

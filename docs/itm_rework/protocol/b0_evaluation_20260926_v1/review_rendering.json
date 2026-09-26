@@ -1,0 +1,30 @@
+{
+  "images": [
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_evaluation_20260926_v1/review/page_1.png",
+      "sha256": "a541d334915a01f8f31577da5722a72ae5ac13144d57f8cd239bd8d5591aa3ac"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_evaluation_20260926_v1/review/page_2.png",
+      "sha256": "51a3923591ebeffd3d9b1f5f1a1b97f3132c94ca549ec74626406b42df00aeb1"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_evaluation_20260926_v1/review/page_3.png",
+      "sha256": "c908f61674f3ae660bd756f99103e2638cb2404cd01d0bad3b64abd09222748f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_evaluation_20260926_v1/review/page_4.png",
+      "sha256": "d20e3e126874e5d8ff594c9e8d081e2b813e1793f3a3ed3e79dc0c69f8120b51"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_evaluation_20260926_v1/review/page_5.png",
+      "sha256": "33fbea31b8e48fb5185f68bdd8efd9e30ce1bfefb8b9d65e2dd37dbad424153f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_evaluation_20260926_v1/review/page_6.png",
+      "sha256": "70c120cb9e76ea1c25a48b7c3bd38c0899e64602ef55f413587dd62b381f6c20"
+    }
+  ],
+  "review_key_sha256": "e14efe88434e0ebef73460411fb5c5f2fa5bef6b2f296f2aba12ec091acc136b",
+  "scope": "10 uniform pose snapshots plus all-frame hand/ankle/root traces; condition/config hidden, coarse target action shown. Root XZ centering only for visualization, never metrics. Single AI reviewer; no inter-rater certification."
+}

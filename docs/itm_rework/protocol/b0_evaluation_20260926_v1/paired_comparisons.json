@@ -1,0 +1,362 @@
+[
+  {
+    "paired_case": "000433-head-paired",
+    "comparator_case": "000433-head-text_only",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": 0.032370653287163875,
+      "root_relative_MPJPE_m": 0.03710802366171684,
+      "root_path_RMSE_m": 0.0028834322126074508,
+      "head_or_wrists_position_joint_proxy_m": 0.003425010550514057,
+      "velocity_joint_proxy_RMSE_m_s": -0.04971153785411486,
+      "jerk_absolute_m_s3": 11.576281556478122,
+      "foot_contact_speed_proxy_m_s": 0.007121950517074621
+    },
+    "output_to_output_mean_joint_distance_m": 0.17365970499310435,
+    "output_to_output_max_abs_m": 0.6077119708061218
+  },
+  {
+    "paired_case": "000433-head-paired",
+    "comparator_case": "000433-head-numeric_zero",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": 0.0012094618838308369,
+      "root_relative_MPJPE_m": -0.0021686037374530065,
+      "root_path_RMSE_m": 0.0009578709846753686,
+      "head_or_wrists_position_joint_proxy_m": 0.017543056861948264,
+      "velocity_joint_proxy_RMSE_m_s": 0.04046639078110703,
+      "jerk_absolute_m_s3": 14.990859368936604,
+      "foot_contact_speed_proxy_m_s": 0.014815615053256764
+    },
+    "output_to_output_mean_joint_distance_m": 0.030993285084449353,
+    "output_to_output_max_abs_m": 0.16896483302116394
+  },
+  {
+    "paired_case": "000433-head-paired",
+    "comparator_case": "000433-head-physical_static",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": -0.0027067183619247925,
+      "root_relative_MPJPE_m": -0.002901131911471344,
+      "root_path_RMSE_m": -0.003975966070374121,
+      "head_or_wrists_position_joint_proxy_m": -0.00533976191670768,
+      "velocity_joint_proxy_RMSE_m_s": 0.007923245597819095,
+      "jerk_absolute_m_s3": 5.391200015418633,
+      "foot_contact_speed_proxy_m_s": 0.008623022545686199
+    },
+    "output_to_output_mean_joint_distance_m": 0.010176497191430581,
+    "output_to_output_max_abs_m": 0.06115648150444031
+  },
+  {
+    "paired_case": "000433-head-paired",
+    "comparator_case": "000433-head-imu_only",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": -0.07311689630549167,
+      "root_relative_MPJPE_m": -0.038694110273049115,
+      "root_path_RMSE_m": -0.08684302404604946,
+      "head_or_wrists_position_joint_proxy_m": -0.07134660848535204,
+      "velocity_joint_proxy_RMSE_m_s": -0.09381614470521349,
+      "jerk_absolute_m_s3": 8.33459632499607,
+      "foot_contact_speed_proxy_m_s": -0.037613725799535064
+    },
+    "output_to_output_mean_joint_distance_m": 0.1307598841609569,
+    "output_to_output_max_abs_m": 0.39875097945332527
+  },
+  {
+    "paired_case": "000433-wrists-paired",
+    "comparator_case": "000433-wrists-text_only",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": -0.027933057851078857,
+      "root_relative_MPJPE_m": -0.004966075720906626,
+      "root_path_RMSE_m": 0.011639036623793217,
+      "head_or_wrists_position_joint_proxy_m": -0.06844942806324567,
+      "velocity_joint_proxy_RMSE_m_s": -0.007819515044781511,
+      "jerk_absolute_m_s3": 2.6676566524927363,
+      "foot_contact_speed_proxy_m_s": 0.0043843872228650355
+    },
+    "output_to_output_mean_joint_distance_m": 0.20969971632828927,
+    "output_to_output_max_abs_m": 0.6865579038858414
+  },
+  {
+    "paired_case": "000433-wrists-paired",
+    "comparator_case": "000433-wrists-numeric_zero",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": -0.015287607076545168,
+      "root_relative_MPJPE_m": -0.019216963925663605,
+      "root_path_RMSE_m": -0.00783196903367639,
+      "head_or_wrists_position_joint_proxy_m": -0.03759359695159531,
+      "velocity_joint_proxy_RMSE_m_s": -0.006673830272122316,
+      "jerk_absolute_m_s3": -1.7201469319252851,
+      "foot_contact_speed_proxy_m_s": -0.03322741419284557
+    },
+    "output_to_output_mean_joint_distance_m": 0.08963428964134836,
+    "output_to_output_max_abs_m": 0.24357202649116516
+  },
+  {
+    "paired_case": "000433-wrists-paired",
+    "comparator_case": "000433-wrists-physical_static",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": -0.009150731857522992,
+      "root_relative_MPJPE_m": 0.006969670446882542,
+      "root_path_RMSE_m": -0.01766248131121384,
+      "head_or_wrists_position_joint_proxy_m": 0.011061653259636872,
+      "velocity_joint_proxy_RMSE_m_s": 0.0018185710845832759,
+      "jerk_absolute_m_s3": 2.6328350182761024,
+      "foot_contact_speed_proxy_m_s": 0.007592518880973079
+    },
+    "output_to_output_mean_joint_distance_m": 0.03701477013248752,
+    "output_to_output_max_abs_m": 0.15119775384664536
+  },
+  {
+    "paired_case": "000433-wrists-paired",
+    "comparator_case": "000433-wrists-imu_only",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": -0.07626419698505468,
+      "root_relative_MPJPE_m": -0.04412923938105162,
+      "root_path_RMSE_m": -0.08803587187363635,
+      "head_or_wrists_position_joint_proxy_m": -0.046157151258214846,
+      "velocity_joint_proxy_RMSE_m_s": -0.1936885036720688,
+      "jerk_absolute_m_s3": -42.96903981149532,
+      "foot_contact_speed_proxy_m_s": -0.20124364113121854
+    },
+    "output_to_output_mean_joint_distance_m": 0.21870476875247014,
+    "output_to_output_max_abs_m": 0.5560625046491623
+  },
+  {
+    "paired_case": "000382-head-paired",
+    "comparator_case": "000382-head-text_only",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": 0.08035538342215229,
+      "root_relative_MPJPE_m": 0.045771003499187765,
+      "root_path_RMSE_m": 0.04028238891792831,
+      "head_or_wrists_position_joint_proxy_m": 0.11583500256514122,
+      "velocity_joint_proxy_RMSE_m_s": 0.020631778626529984,
+      "jerk_absolute_m_s3": -12.41232324685248,
+      "foot_contact_speed_proxy_m_s": 0.029538665532023917
+    },
+    "output_to_output_mean_joint_distance_m": 0.13317915416496842,
+    "output_to_output_max_abs_m": 0.5202808976173401
+  },
+  {
+    "paired_case": "000382-head-paired",
+    "comparator_case": "000382-head-numeric_zero",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": 0.0038552848446912202,
+      "root_relative_MPJPE_m": 0.0020586748415887535,
+      "root_path_RMSE_m": -0.007093607139070673,
+      "head_or_wrists_position_joint_proxy_m": 0.007605979350314013,
+      "velocity_joint_proxy_RMSE_m_s": -0.0009819274890150997,
+      "jerk_absolute_m_s3": -1.2295463015875576,
+      "foot_contact_speed_proxy_m_s": -0.03288052096686761
+    },
+    "output_to_output_mean_joint_distance_m": 0.043708629351340345,
+    "output_to_output_max_abs_m": 0.30685658752918243
+  },
+  {
+    "paired_case": "000382-head-paired",
+    "comparator_case": "000382-head-physical_static",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": -0.00012648551668506536,
+      "root_relative_MPJPE_m": -0.00013790721567011333,
+      "root_path_RMSE_m": -0.00016611233999204444,
+      "head_or_wrists_position_joint_proxy_m": -0.00019597836565649063,
+      "velocity_joint_proxy_RMSE_m_s": -0.0011499990341081734,
+      "jerk_absolute_m_s3": -0.017259345072496046,
+      "foot_contact_speed_proxy_m_s": -0.0014488883235536237
+    },
+    "output_to_output_mean_joint_distance_m": 0.0010693078131498537,
+    "output_to_output_max_abs_m": 0.0120115727186203
+  },
+  {
+    "paired_case": "000382-head-paired",
+    "comparator_case": "000382-head-imu_only",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": -0.12013032029400175,
+      "root_relative_MPJPE_m": -0.04442123278738669,
+      "root_path_RMSE_m": -0.15239838855976273,
+      "head_or_wrists_position_joint_proxy_m": -0.10840644397534377,
+      "velocity_joint_proxy_RMSE_m_s": -0.4548280653396151,
+      "jerk_absolute_m_s3": -26.37544590896751,
+      "foot_contact_speed_proxy_m_s": -0.21674271695563724
+    },
+    "output_to_output_mean_joint_distance_m": 0.1763826855498342,
+    "output_to_output_max_abs_m": 0.6106335073709488
+  },
+  {
+    "paired_case": "000382-wrists-paired",
+    "comparator_case": "000382-wrists-text_only",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": 0.10325133286755414,
+      "root_relative_MPJPE_m": 0.050013209028016294,
+      "root_path_RMSE_m": 0.0708901866026974,
+      "head_or_wrists_position_joint_proxy_m": 0.17037183646772125,
+      "velocity_joint_proxy_RMSE_m_s": -0.017208394920663922,
+      "jerk_absolute_m_s3": 2.7555925856152417,
+      "foot_contact_speed_proxy_m_s": 0.03810897642644817
+    },
+    "output_to_output_mean_joint_distance_m": 0.13103486152305716,
+    "output_to_output_max_abs_m": 0.44824016094207764
+  },
+  {
+    "paired_case": "000382-wrists-paired",
+    "comparator_case": "000382-wrists-numeric_zero",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": -0.004845170517582931,
+      "root_relative_MPJPE_m": -0.0038630040424770112,
+      "root_path_RMSE_m": -0.026726507032778277,
+      "head_or_wrists_position_joint_proxy_m": -0.04346739872107663,
+      "velocity_joint_proxy_RMSE_m_s": -0.016629730373664525,
+      "jerk_absolute_m_s3": 4.503737117793417,
+      "foot_contact_speed_proxy_m_s": -0.001533327660241099
+    },
+    "output_to_output_mean_joint_distance_m": 0.06451404250407505,
+    "output_to_output_max_abs_m": 0.27215254306793213
+  },
+  {
+    "paired_case": "000382-wrists-paired",
+    "comparator_case": "000382-wrists-physical_static",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": 0.003930894470727253,
+      "root_relative_MPJPE_m": -0.008322102922382307,
+      "root_path_RMSE_m": 0.03416777578570855,
+      "head_or_wrists_position_joint_proxy_m": -0.010308907916636967,
+      "velocity_joint_proxy_RMSE_m_s": 0.022304015320114084,
+      "jerk_absolute_m_s3": 5.354387808894396,
+      "foot_contact_speed_proxy_m_s": 0.010348743538775192
+    },
+    "output_to_output_mean_joint_distance_m": 0.04823925178166619,
+    "output_to_output_max_abs_m": 0.2631314992904663
+  },
+  {
+    "paired_case": "000382-wrists-paired",
+    "comparator_case": "000382-wrists-imu_only",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": -1.3110368180242487,
+      "root_relative_MPJPE_m": -0.06545189740596331,
+      "root_path_RMSE_m": -1.5205483186684612,
+      "head_or_wrists_position_joint_proxy_m": -1.2266282144706444,
+      "velocity_joint_proxy_RMSE_m_s": -1.1066634909405604,
+      "jerk_absolute_m_s3": -103.41855592379449,
+      "foot_contact_speed_proxy_m_s": -1.1146628900379314
+    },
+    "output_to_output_mean_joint_distance_m": 1.37023642621483,
+    "output_to_output_max_abs_m": 2.583863914012909
+  },
+  {
+    "paired_case": "000139-head-paired",
+    "comparator_case": "000139-head-text_only",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": -0.8242333818931302,
+      "root_relative_MPJPE_m": 0.11364238005119395,
+      "root_path_RMSE_m": -0.731392059073626,
+      "head_or_wrists_position_joint_proxy_m": -0.8341096422138832,
+      "velocity_joint_proxy_RMSE_m_s": -0.5407485411150238,
+      "jerk_absolute_m_s3": -44.27484838022213,
+      "foot_contact_speed_proxy_m_s": null
+    },
+    "output_to_output_mean_joint_distance_m": 2.9530342393984905,
+    "output_to_output_max_abs_m": 4.922715842723846
+  },
+  {
+    "paired_case": "000139-head-paired",
+    "comparator_case": "000139-head-numeric_zero",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": -0.01577496652469934,
+      "root_relative_MPJPE_m": 0.0010399914869830273,
+      "root_path_RMSE_m": -0.02116665603381307,
+      "head_or_wrists_position_joint_proxy_m": -0.010070320716247805,
+      "velocity_joint_proxy_RMSE_m_s": 0.0026237571285215866,
+      "jerk_absolute_m_s3": 4.2753628871411395,
+      "foot_contact_speed_proxy_m_s": null
+    },
+    "output_to_output_mean_joint_distance_m": 0.02955130209323418,
+    "output_to_output_max_abs_m": 0.09488034248352051
+  },
+  {
+    "paired_case": "000139-head-paired",
+    "comparator_case": "000139-head-physical_static",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": 0.0020640752691687414,
+      "root_relative_MPJPE_m": -7.509579155434709e-05,
+      "root_path_RMSE_m": 0.00280077176734439,
+      "head_or_wrists_position_joint_proxy_m": 0.0017763385245614938,
+      "velocity_joint_proxy_RMSE_m_s": -0.00024920016595741945,
+      "jerk_absolute_m_s3": 3.5849694766260694,
+      "foot_contact_speed_proxy_m_s": null
+    },
+    "output_to_output_mean_joint_distance_m": 0.004095439543190668,
+    "output_to_output_max_abs_m": 0.015474796295166016
+  },
+  {
+    "paired_case": "000139-head-paired",
+    "comparator_case": "000139-head-imu_only",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": -0.022518659714636957,
+      "root_relative_MPJPE_m": -0.0017819528105239568,
+      "root_path_RMSE_m": -0.035254804349238444,
+      "head_or_wrists_position_joint_proxy_m": -0.017556402220340495,
+      "velocity_joint_proxy_RMSE_m_s": -0.0013539079697519885,
+      "jerk_absolute_m_s3": 0.46061782878981283,
+      "foot_contact_speed_proxy_m_s": null
+    },
+    "output_to_output_mean_joint_distance_m": 0.046217217687709915,
+    "output_to_output_max_abs_m": 0.09538820385932922
+  },
+  {
+    "paired_case": "000139-wrists-paired",
+    "comparator_case": "000139-wrists-text_only",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": -0.9621935920721949,
+      "root_relative_MPJPE_m": 0.12094511907846611,
+      "root_path_RMSE_m": -0.8635547538747568,
+      "head_or_wrists_position_joint_proxy_m": -1.0081453263867763,
+      "velocity_joint_proxy_RMSE_m_s": -0.4512490959723855,
+      "jerk_absolute_m_s3": -44.248210952878395,
+      "foot_contact_speed_proxy_m_s": null
+    },
+    "output_to_output_mean_joint_distance_m": 2.9605287620686727,
+    "output_to_output_max_abs_m": 4.9376025795936584
+  },
+  {
+    "paired_case": "000139-wrists-paired",
+    "comparator_case": "000139-wrists-numeric_zero",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": -0.04452935235860078,
+      "root_relative_MPJPE_m": -0.010245376704356268,
+      "root_path_RMSE_m": -0.05636459173198882,
+      "head_or_wrists_position_joint_proxy_m": -0.049019642003658825,
+      "velocity_joint_proxy_RMSE_m_s": 0.0021316429382617352,
+      "jerk_absolute_m_s3": 1.0412807610043853,
+      "foot_contact_speed_proxy_m_s": null
+    },
+    "output_to_output_mean_joint_distance_m": 0.0586111442985028,
+    "output_to_output_max_abs_m": 0.302679181098938
+  },
+  {
+    "paired_case": "000139-wrists-paired",
+    "comparator_case": "000139-wrists-physical_static",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": 0.0017275887556336134,
+      "root_relative_MPJPE_m": 0.0006291553087710011,
+      "root_path_RMSE_m": 0.0009017209444854846,
+      "head_or_wrists_position_joint_proxy_m": 0.00017531532730874488,
+      "velocity_joint_proxy_RMSE_m_s": -0.002327714713760476,
+      "jerk_absolute_m_s3": 0.9298989180035422,
+      "foot_contact_speed_proxy_m_s": null
+    },
+    "output_to_output_mean_joint_distance_m": 0.004370020945188986,
+    "output_to_output_max_abs_m": 0.047144293785095215
+  },
+  {
+    "paired_case": "000139-wrists-paired",
+    "comparator_case": "000139-wrists-imu_only",
+    "metric_difference_paired_minus_comparator": {
+      "global_MPJPE_m": -0.02034194144935131,
+      "root_relative_MPJPE_m": -0.002633994613763624,
+      "root_path_RMSE_m": -0.03114679278364174,
+      "head_or_wrists_position_joint_proxy_m": -0.027982772031846848,
+      "velocity_joint_proxy_RMSE_m_s": 0.0004351405565523603,
+      "jerk_absolute_m_s3": 0.020134995481043916,
+      "foot_contact_speed_proxy_m_s": null
+    },
+    "output_to_output_mean_joint_distance_m": 0.04227877210482886,
+    "output_to_output_max_abs_m": 0.12427446246147156
+  }
+]

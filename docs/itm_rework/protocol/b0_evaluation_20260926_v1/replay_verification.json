@@ -1,0 +1,28 @@
+{
+  "evaluation_json_byte_identical": true,
+  "review_order_byte_identical": true,
+  "reason": "Final auditor replaces inline backbone hash expression with cached artifact checker and adds descriptive export; repeat CPU audit verifies unchanged results. No new model sampling.",
+  "final_code": [
+    {
+      "path": "/home/a200/0proj/ITM/scripts/evaluate_canonical_b0.py",
+      "sha256": "be17916e5f8f9e2ef346e1f28575a8426c9cf73088c7fcc782043d7215fea707"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/metrics/canonical_b0.py",
+      "sha256": "a3d8d42cc9391f34308f8b3e3246fe7b1dbf80c29b2466222e6ea1b68b820364"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/humanml_torch.py",
+      "sha256": "41473f5d4c53b3d114497f7ede6f2c544e9c8b17918388f3f89e520e01ede186"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/accept_canonical_b0_handoff.py",
+      "sha256": "7d7c826eb378b51293141549f8b5c415a7c5c165949e7c6271aae3ed03c649f4"
+    }
+  ],
+  "tests": {
+    "passed": 6,
+    "failed": 0,
+    "log": "tests.log"
+  }
+}
