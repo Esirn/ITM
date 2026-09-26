@@ -1,0 +1,61 @@
+{
+  "read_commit": "8e4df1e",
+  "status": "independent_CPU_software_acceptance_passed",
+  "regression": {
+    "passed": 203,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "warnings": 34,
+    "new_method_tests_in_total": 25,
+    "seconds": 100.94
+  },
+  "independent_real_input_slots": 120,
+  "distinct_input_definitions": 60,
+  "train_normalization_frames": 398,
+  "bound_files_verified": 127,
+  "initial_tensor_and_file_identity": true,
+  "code": [
+    {
+      "path": "scripts/accept_b0_correction_implementation.py",
+      "sha256": "889818ae7f449ea30890cb32a71acaf377e6cff8e208f91e74eb1ee1fcb12e80"
+    },
+    {
+      "path": "scripts/accept_canonical_b0_handoff.py",
+      "sha256": "7d7c826eb378b51293141549f8b5c415a7c5c165949e7c6271aae3ed03c649f4"
+    },
+    {
+      "path": "scripts/run_mdm_correction_bounded.py",
+      "sha256": "4c6050d25a4017a0a469f0487d7b002c153009be21dad1d650dd724c2744df99"
+    },
+    {
+      "path": "scripts/run_mdm_correction_worker.py",
+      "sha256": "ffa8518cd4e8e5eba328e25430f03f463ef31b3ea88a99b70de1f592cdf2dc66"
+    },
+    {
+      "path": "src/itm/models/mdm_correction.py",
+      "sha256": "2f7d86f44c574e56c97cfe1430ca1238bab381c03d65c52883cddbb4c1cf3ba4"
+    },
+    {
+      "path": "src/itm/models/mdm_correction_limits.py",
+      "sha256": "747bd74c20e4214f964dbc6cc93fcf1d3e39fc143b29116ec6e8d0fbcd470b36"
+    },
+    {
+      "path": "src/itm/models/mdm_imu_control.py",
+      "sha256": "2165efead5f5d7f05b910bc6f32c66948be9e455426de6b1cd7011e835befad2"
+    },
+    {
+      "path": "tests/test_mdm_correction.py",
+      "sha256": "a94c90419e8f36656c74cfdd744e3fedc04e0b2a84061b53abca2ab711f3c92f"
+    }
+  ],
+  "real_pretrained_model_forwards": 0,
+  "real_training_updates": 0,
+  "real_diffusion_samples": 0,
+  "GPU_preflight": 0,
+  "authorization_created": false,
+  "limitations": [
+    "CPU fixtures do not certify real GPU speed/memory or model efficacy.",
+    "Original one-shot B0 authorization cannot be reused; new concrete queue authorization remains required."
+  ]
+}

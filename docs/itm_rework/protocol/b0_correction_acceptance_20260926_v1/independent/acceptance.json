@@ -1,0 +1,2579 @@
+{
+  "read_commit": "8e4df1e5a735e336bcb88d187ccdb33c08889203",
+  "package_sha256": "e24c8cddce0d0cb11a7b71d2cd91a24c05fab2bbceafd2f83d56f25063c48d8a",
+  "method_manifest": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_implementation_20260926_v3/implementation.json",
+    "sha256": "449b8d278a5a4d1ee31c6dad8a9eedbe59c2990f1efceedc45ad4ae70c805676"
+  },
+  "checked_artifacts": [
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/B0_CORRECTION_PROPOSAL_20260926.md",
+      "sha256": "ad0300408f7beb574bae0166a41db59a8210ff650828f00016f42752ae2c0f00"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/b0_diagnosis_20260926_v1/existing_artifact_diagnosis.json",
+      "sha256": "808f5a02a485c748f590093400472fc6d36954e9655122df3772d0c76f00075f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/b0_diagnosis_20260926_v1/proposed_budget.json",
+      "sha256": "742c63dc9e4cf08bcb411e627a171db87005000d85b54f50dc0fdb81405f85ad"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/b0_diagnosis_20260926_v1/proposed_probe_slots.json",
+      "sha256": "7e79f55ae6790558ddb2e045570bf301a8a43c968f0a0cc374861847e1a64590"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/b0_diagnosis_20260926_v1/proposed_sampling_slots.json",
+      "sha256": "93a637cf8bc00c5eeba312a1f4891f48dcb50e81392b4af88156f3e7e2dba622"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/b0_diagnosis_20260926_v1/sources.json",
+      "sha256": "c874919c2c6030b62bfb2c030b558679f98a943104ed56c5bf42d64252398dd4"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/canonical_training_input_20260925_v1.json",
+      "sha256": "ffbe676233e1750b105cbff73a587dfbe5369fb223cd4b645262ac1295b9d16f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/B0_EVALUATION_20260926.md",
+      "sha256": "e29d61d2704e524d39b4e5a37dba0e58caaaf8a04e086acee15876e8ea447aae"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_correction_20260926_v1/budget.json",
+      "sha256": "aa3084b7d93e13f17415a34d8eeaddb65d823cd35dd43ab990918ddfdcc3dc0f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_correction_20260926_v1/design.json",
+      "sha256": "5d348d5290e29bedc613ba5507abe9f4dec2ba294b886109f76185edef8f7420"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_correction_20260926_v1/evaluation.json",
+      "sha256": "2b90f43a9b69bf598ded0f9c07431d1008aaba4491a7c9ec3d98914a9b40ed2b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_correction_20260926_v1/package.json",
+      "sha256": "e24c8cddce0d0cb11a7b71d2cd91a24c05fab2bbceafd2f83d56f25063c48d8a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_correction_20260926_v1/probe_noise.json",
+      "sha256": "cd71c4e6d65a5e7e9c5958f5d0505e0c4f86f8d4709e7cea9813008c97d2882d"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_correction_20260926_v1/probe_slots.json",
+      "sha256": "21136b1dc88f8dce79db3bb05b7a4f5229a9e132419a675794fbcda8e4a19321"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_correction_20260926_v1/review_order.json",
+      "sha256": "28cee58a5cf8318abeb479a4d4976f295609f7e4431371c0e081cda8ad2ba484"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_correction_20260926_v1/sampling_slots.json",
+      "sha256": "a63ecbc283df093ed814f09ee0a0cf476768e70be58fa1e52297df8dc5c74e1b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_correction_20260926_v1/sources.json",
+      "sha256": "cd79fe017be3042db9730234fb58d5bc19c52306e9187241dd0e4695e1fd13e9"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_correction_20260926_v1/training_schedule.json",
+      "sha256": "6b91f51312794aeddef684f9b355513694c5ec4765e75f37c57eb73080d43152"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_correction_20260926_v1/validation.json",
+      "sha256": "48f8d37dc7e55c5c8db4698938dc59719475a696bc3c4650c96502b12b2e5687"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/admission.jsonl",
+      "sha256": "9fa1046c5bce7e25d507ac254d9f77a451ddf9ecd8c6a70309c79f611b6bf161"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/b0_budget.json",
+      "sha256": "660b9f779eee1301f1bb92c30081c20e86248f76854f047f07ea88521ecead47"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/build_report.json",
+      "sha256": "e009e471a85a572aa025a61f6e02261fed768720be17e541d966cf868c3a81a9"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/metrics.json",
+      "sha256": "30a598ba54bcb65c0adad7c19b71fd55dc86699a461d73cef06946b5b6bfc8b5"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/package.json",
+      "sha256": "33de7fd98c1cf43fc5a51a7d35b502e154a233066efec13f17dda08bc53abe97"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/sampling_cases.json",
+      "sha256": "ddf2f01ae1ddcb6b6583f50508106f801a0b9b9564c917614954f5157d93c070"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/semantic_review.json",
+      "sha256": "149c4006bbdb2b6fb2cee6524e8e04e73ce37dff7d4f529d061ae3ff4641c5ec"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/train_caption_plans.jsonl",
+      "sha256": "71720d8d970ae68da8169b2bb037551090b759809e5f6957058bf30216559fc8"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/train_imu.jsonl",
+      "sha256": "97daa478cdb17fdc45a40c376c28becf595c7e4e2d0eaa97f3bc96e964fb592a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/train_motion.jsonl",
+      "sha256": "d1a42a16b6dd3e61682dc59a389ae00f8189d371d372d08d90f67bf6c22ed2ca"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/val_caption_plans.jsonl",
+      "sha256": "c2f58d1452c821219554586ee99200ad4d04e83afb295f6810b75ebd4ab493f3"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/val_imu.jsonl",
+      "sha256": "2fffd1d6809c832cd5063e155d27940c5c351647e5c29814f2f7c3ccf5735dd5"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/val_motion.jsonl",
+      "sha256": "7d79378e48c006c4fecf59cf7a2f59310c9c65caf7b8f71f8c6a7c3fd5fbacb6"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/verification.json",
+      "sha256": "b382182c4cb1ec0b3b0d2dde20170ffa41010257dadfdff7b0dcafe00204d196"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000027/caption.txt",
+      "sha256": "33c719e68b7d4bf15541c217499ddbf33a7f2e01bc8aac8ea9927d5abb029b04"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000027/imu.npz",
+      "sha256": "927ef35d453e6b88d755bd2f186b5977f727dc1709a46c3a17011e69a3c59299"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000027/joints.npy",
+      "sha256": "54d2142c8472de2baef5949fb94690dfedeb4b60cc931bc64fe9964339c1090e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000027/joints_with_endpoint.npy",
+      "sha256": "9bd31dc27db6e72192989da7ae0d36c1bb7b8b6310397a6137878bbfd1f76bab"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000027/motion.npy",
+      "sha256": "e88c8cfcb6139ea74d568aebbc47f435317b0222c3592f01a00f1633d6ab7a21"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000027/source_20hz.npz",
+      "sha256": "9142c1a93fb1485117098861b663c625d9524b4278beea0cd365d232d0c0715a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000027/source_30hz.npz",
+      "sha256": "ac7b75a4b23b7ea2f0cce25f16d51adf800359a91f9d2da25b8a55e57a4fa66d"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000506/caption.txt",
+      "sha256": "c3d64936d20e0ad00b979c16c2826b1881312262736e0fe6bb0457eac64c0f61"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000506/imu.npz",
+      "sha256": "a7d196b1839d9ecaa482a01d42df5616ad469ce92938232b4a96f089b43e13b3"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000506/joints.npy",
+      "sha256": "b84fe41444a69c762fbad09a39ab41039f0c64e960f9b7424f2923378bf6222f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000506/joints_with_endpoint.npy",
+      "sha256": "7a1a6eb62e5d37febc3683dfbca814f399b923540b129010abd0f32279f9626f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000506/motion.npy",
+      "sha256": "d7cc1be92bed7f83a50a49c40990a6598dfbf5c45a3ecc2e7b9b2fce11e41e2b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000506/source_20hz.npz",
+      "sha256": "b11210ca330dd0daf23f54be344eaf633f3fb6944e05fe15bdd103452345ad9d"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000506/source_30hz.npz",
+      "sha256": "e062d0faaf9a750e6fd266649ed22369a071f5b271b115bfffd592a881b13868"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/004728/caption.txt",
+      "sha256": "ee39935149b04e8581132466b50532d942a0d03332c25972256c557ffd30ba34"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/004728/imu.npz",
+      "sha256": "5aea0acc33fb9c967cbadc6c4844baf8f4edb640bc0532e92167718a856617f7"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/004728/joints.npy",
+      "sha256": "3cd4fdecf7fff8c7faf39320ccb86e49452d5434249b6f328b66387369413dd1"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/004728/joints_with_endpoint.npy",
+      "sha256": "d909bf4d4314012f65158e3a014db4a3bb85b9ec5559dfba410877cda6d3e444"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/004728/motion.npy",
+      "sha256": "f1894b2a582b6a54b8b5b2c7f124616ea383bb6b8ed447e4236459017cf1e269"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/004728/source_20hz.npz",
+      "sha256": "e3f5e1095fcdbac3996455eaf66d846e4a533d2dee64220fdc75ee760eb77b22"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/004728/source_30hz.npz",
+      "sha256": "488f4c0a5051a5ee9e4758a7d347f5e9d3e24b3caf06db087e6c64c8ee819a8a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000139/caption.txt",
+      "sha256": "0493d0562b42ce27658639f2e78fd4199b4e1bcd6ccc80be187ae0d3b43bb89b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000139/imu.npz",
+      "sha256": "c5ba5840b9c43ca75549b091b9abbab22641572c8b3c7b0d526dd2dbb1b4fa61"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000139/joints.npy",
+      "sha256": "9b321abcd2e52e154b7be33e1560e7b813b35821f65f67afe841e19d46eb84c1"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000139/joints_with_endpoint.npy",
+      "sha256": "ffaa81a26f232d005ddd9270367dc602a8d32847c10719f04d4192744faa5c97"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000139/motion.npy",
+      "sha256": "8575feda705364d98f26adaccc04f6c19b69923398bbb4e6406d88b4c9cbd3e0"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000139/source_20hz.npz",
+      "sha256": "be08460e09c08d9521e980201ce926cc583c97eb959764f58cc1b114b472b0a5"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000139/source_30hz.npz",
+      "sha256": "34ba5e962c0583407bfe2a27c337f6b936b0c029e34138b0ead5f7d27943bd5d"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000382/caption.txt",
+      "sha256": "7bbe4f6366e2f5ae9ef18b7bd1e59c4cf149b4303dc274aa261785b2dfdb200e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000382/imu.npz",
+      "sha256": "6e8e9bccd30727ba74c3221d44e82ca3a83aa285c031e809f77f8f8ae0742498"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000382/joints.npy",
+      "sha256": "4751463feb449496f369405d2f59525cd5e371e3d80ac57f7982dcd61dce4816"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000382/joints_with_endpoint.npy",
+      "sha256": "cae3a1a7f8cc0e113a35c0b498bff4b7236e39c761235f13c1375ef8199675f1"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000382/motion.npy",
+      "sha256": "b564b9123a2fefe20309329e5557b038b379176bd4b8dc0eb6c6e99e4a75882a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000382/source_20hz.npz",
+      "sha256": "f8458cc2be5593d0a626fa38358e85a6d04616bae5c5b1b254d1c7ecf5a274ce"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000382/source_30hz.npz",
+      "sha256": "ba7a544577aa9e2a0f9ac3207265eef20fa492cbb3dc095d593e67b0517dd697"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000433/caption.txt",
+      "sha256": "96ce8ca7c3d16f817b5102c8e00b842847ad05900246891fe4c39b1cc5901bc5"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000433/imu.npz",
+      "sha256": "582aed7d8321d00193acbc10949380f4ba3576120eed4800246e7ad0b48623de"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000433/joints.npy",
+      "sha256": "3bb2c5b6685e5560e6ea10dd3be525d5f1b77521a9f60b00b291805c8cabb69e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000433/joints_with_endpoint.npy",
+      "sha256": "c56536f3c1e19b1cb58da503db28c91b9043995d24ea0d6319bd3f2ebdd803c4"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000433/motion.npy",
+      "sha256": "c1f6e8d1008a183f5970512d470326732c400e063e570690022bdaab0f38a382"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000433/source_20hz.npz",
+      "sha256": "fd52033eeba25795eb5d43947668eb35797df379ed2090db2e7a1eb4f33a75d5"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/val/000433/source_30hz.npz",
+      "sha256": "8667a869232b9ca7f56868031face4d912194874ce3abea13466b972719edf7d"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/model.pt",
+      "sha256": "44d2c3307f27bca2c79ab7d367890f968f78777168c3c37a306a7bf0560d6ac2"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/args.json",
+      "sha256": "2feda496a83142e38fd22d2db860d4d054c9ed678e23362fd18a5c09f660683b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/model000475000.pt",
+      "sha256": "ce43c1d4232fc2b897999d7996c2d2b889791d99585d87e1289af773ab56ab93"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/freeze_b0_correction_protocol.py",
+      "sha256": "a9e760e04d35fd3b4088acae53967207b014d14b976567fb8a35c3537baa1f13"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/run_mdm_b0_bounded.py",
+      "sha256": "9cf84ee396e9617f0c4e9ac684845f96abd6a1d8f43b2cdf0e252a936068247e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/run_mdm_correction_bounded.py",
+      "sha256": "4c6050d25a4017a0a469f0487d7b002c153009be21dad1d650dd724c2744df99"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/run_mdm_correction_worker.py",
+      "sha256": "ffa8518cd4e8e5eba328e25430f03f463ef31b3ea88a99b70de1f592cdf2dc66"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/train_mdm_imu_control.py",
+      "sha256": "14e7bee3de0d5b60815c7550f7e6787fb7d844e12c224fef8b33987177ea8f89"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/backbones/__init__.py",
+      "sha256": "de079343cf02cfe6b5850dba85c2b7b14f08cdc380b25d1ba2704f1b97020c3f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/backbones/base.py",
+      "sha256": "d0d763cd1e764a4b25a125b0d3c2a6751f249d286b3927cfe01582ddceb58e38"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/backbones/hymotion.py",
+      "sha256": "42c9d463d9ff02e0c4d60714acb736588086435e7ef0d05ae8403aeffb70a240"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/backbones/mdm.py",
+      "sha256": "a5a21ae34d1d947775484f514472594276f641ec98c20899d52aa24a241d93f8"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/backbones/motionlab.py",
+      "sha256": "5a0176302ba56f2159ed4b836ebae77981e1c387b905993b8964cb7094083440"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/__init__.py",
+      "sha256": "8530e3fdbea92515321f08a17f98213b9646b3aa1d37fed2e8819d101e2466a2"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/amass_bridge.py",
+      "sha256": "b4dbaa7f63e8c2e4f55c8e5f44aeeb14e0e5c864da8c548494399ced1c58f004"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/canonical_pair.py",
+      "sha256": "be46e954797cf6533f27a0ea5a96b8156b853ad324c27ad07a34165bdc7457ba"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/caption_time.py",
+      "sha256": "643e13290d14dfc6fde8e4067071739da17183123414b8db9263a7dc3674e082"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/dataset.py",
+      "sha256": "6385144e217bb52dd369c55262522ab154fda7109110fab6b86f772adf7fda2c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/humanml.py",
+      "sha256": "180b5ba8b75dfae23a5a020fd912fb31aa99b9086a51645c82ff7591e186fc94"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/humanml_clock.py",
+      "sha256": "0729a9ebe2598fe9b96f708971d92bce56bde4cd4a14e22491ea5b5e2d247d12"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/humanml_torch.py",
+      "sha256": "41473f5d4c53b3d114497f7ede6f2c544e9c8b17918388f3f89e520e01ede186"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/hymotion.py",
+      "sha256": "64442cfac5e00065a5bdb0b4d26b46f74340d9dcb6961e4be49f67fefff020de"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/imu_cache.py",
+      "sha256": "d63bf730f7269812cca0c9b5fc42e57a29e2cea43aa3a2184b7c3bfa1dc0b86b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/manifest.py",
+      "sha256": "57944991653eda1e00ba9c49fd05b210d1bf80429608f9be3685eea09f38c571"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/nymeria.py",
+      "sha256": "1a9567b4f6762bbdced5f9998e22e3ce477711c071f0c78067ffa22d72df1308"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/observation.py",
+      "sha256": "5b82785d95152ce246c07f82d491679ed7e9aa9fbc95e1befc97d7e057898df9"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/physical_time.py",
+      "sha256": "001a8e37ab86bf086902896fcf68d0204d23628d2387a27671413b5477b663e3"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/random_plan.py",
+      "sha256": "5e2f8aed3669c97ca58c9d726f5da515bb409c2ace21a86965ad433ca0275c3a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/smpl_fitting.py",
+      "sha256": "ad252075f4997536bca13661570275cbe79413e8390978b1d73f0f467a3d1a4e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/standard_imu.py",
+      "sha256": "3f4a6549374bd620ae9f3440cc4a7cf51942e4478c5dafeeaa9ae3582fb1b9a7"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/static_imu.py",
+      "sha256": "011681bb6ee65af6c3130c5deba6849858836fd00f72b7b25eb8df683ad46131"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/synthetic_imu.py",
+      "sha256": "f2084b017fb54e12c8e92bac4dbfa3af8fecd74231632099032376aa441ec5bf"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/text_embeddings.py",
+      "sha256": "2096454499b51bfa92b6c460c79726a88e6f6488a7647813e4e5d1015720c89a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/__init__.py",
+      "sha256": "240181afb683d2570e5292c4a10b5f414fa8662f5ed461df23b83c17eebdc5ad"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/flexible_imu_poser.py",
+      "sha256": "73d7beacb5c2070ce13047c872242bd0efdd6ac0618c110715bd6ca1828ef018"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/hymotion_imu_adapter.py",
+      "sha256": "3cfe1928e87ba51383d70445aea9149a654c8719bb957bae27d9c8731b189942"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/mdm_canonical_conditions.py",
+      "sha256": "d78f53dcaa388eddcec1ef8eeb819bb9a14297780de6430e9e35ffe1f449ba4a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/mdm_caption_conditions.py",
+      "sha256": "fdfef2453bfd6ff1b187fe363a309c8ddc4c12652009d5d94572263de2676e39"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/mdm_conditions.py",
+      "sha256": "95a53db85de8f60dc96461ab55eb430bb153d462502f7df4ad2a89f0be89a2a0"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/mdm_correction.py",
+      "sha256": "2f7d86f44c574e56c97cfe1430ca1238bab381c03d65c52883cddbb4c1cf3ba4"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/mdm_correction_limits.py",
+      "sha256": "747bd74c20e4214f964dbc6cc93fcf1d3e39fc143b29116ec6e8d0fbcd470b36"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/mdm_imu_control.py",
+      "sha256": "2165efead5f5d7f05b910bc6f32c66948be9e455426de6b1cd7011e835befad2"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/mdm_run_limits.py",
+      "sha256": "cf339ae8d8a6b4d76946281fa0be974ca2a7b4462a781a6d70aebb3c1dfc7f76"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/mdm_sampling.py",
+      "sha256": "def8c1bf77446e652be1216fa20485a00474b1884071e2305fc204ee1f0a3e68"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/mdm_training_provenance.py",
+      "sha256": "57b5bc125fccac87b2f6a67f429cc72a0d1b32358b93ee4e3e30341439df4c11"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/motionlab_imu_adapter.py",
+      "sha256": "3c319f315f6eac806faf2ae7de97a3eaba6d3db70d5ed9eff22cec79f5abf957"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/semantic_response.py",
+      "sha256": "39a4b3512639d0c7eca1382b4ee9bc048e35fb316de2b70d7a0e248712c00c06"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/torch_frame_baseline.py",
+      "sha256": "3e3c543ca91c5d71f05951fd32999d1f7e05b3e6689de889bd6d88dcf0b7c0de"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/torch_temporal_baseline.py",
+      "sha256": "ce5a373dcfe02048364f37295f81583a3df09bf477b4fabc2416db912cc6de66"
+    },
+    {
+      "path": "/home/a200/0proj/datasets/all/Mean.npy",
+      "sha256": "26e136555dab04c94a129d446c26e6b9939cbf045fbf77bcf5462c1fb5a2001c"
+    },
+    {
+      "path": "/home/a200/0proj/datasets/all/Std.npy",
+      "sha256": "6565a65ed9b31e23c328829a309e1c482be8b85fd23b43d65451a9b19a917f40"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_implementation_20260926_v3/initial.pt",
+      "sha256": "3ad3c1bca7ff7398386662e4831eb29136d3c0f2e06e5abbea8e7c4cb13d0401"
+    }
+  ],
+  "independent_preparation": {
+    "path": "outputs/itm_rework/protocol/b0_correction_acceptance_prepare_20260926_v1/implementation.json",
+    "sha256": "03f89f48781ce9d2c532a7e39f44987daa43b18c9bae25c8d9c49000ffe9041c"
+  },
+  "preparation_matches_method_except_new_paths": true,
+  "initial_tensor_hashes_equal": true,
+  "initial_file_byte_identical": true,
+  "preparation_forwards_and_GPU_calls_prohibited": true,
+  "prohibited_calls_observed": [],
+  "normalization_unique_train_frames": 398,
+  "slot_checks": [
+    {
+      "case_id": "L_exact_length--000433-head-paired",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "9d4928cb12026af99dd7af44daadc79cf40e1fb14107b1f2119d21973e77ce8d",
+        "raw_orientation": "3464ac0e3f58a9e35dc0c4cd3b7516191b9c6c32f97246f3d40c7f52f70403d7",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000433-head-text_only",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "9d4928cb12026af99dd7af44daadc79cf40e1fb14107b1f2119d21973e77ce8d",
+        "raw_orientation": "3464ac0e3f58a9e35dc0c4cd3b7516191b9c6c32f97246f3d40c7f52f70403d7",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000433-head-imu_only",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "9d4928cb12026af99dd7af44daadc79cf40e1fb14107b1f2119d21973e77ce8d",
+        "raw_orientation": "3464ac0e3f58a9e35dc0c4cd3b7516191b9c6c32f97246f3d40c7f52f70403d7",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000433-head-backbone_bypass",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "9d4928cb12026af99dd7af44daadc79cf40e1fb14107b1f2119d21973e77ce8d",
+        "raw_orientation": "3464ac0e3f58a9e35dc0c4cd3b7516191b9c6c32f97246f3d40c7f52f70403d7",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000433-head-numeric_zero",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "8d64839fb5adeda9d1b8272548a264ebe4e60299f9831abb7227e9a157cda545",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "9d4928cb12026af99dd7af44daadc79cf40e1fb14107b1f2119d21973e77ce8d",
+        "raw_orientation": "3464ac0e3f58a9e35dc0c4cd3b7516191b9c6c32f97246f3d40c7f52f70403d7",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000433-head-physical_static",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "7df491c5f0816aef0995196ae8751c2ab26c50a6104f2e05bd243876187d68b3",
+        "raw_orientation": "afe174802d1b345f181e28f3a913dfe474ee161083486820943d8d80ddf5c093",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000433-wrists-paired",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "9d4928cb12026af99dd7af44daadc79cf40e1fb14107b1f2119d21973e77ce8d",
+        "raw_orientation": "3464ac0e3f58a9e35dc0c4cd3b7516191b9c6c32f97246f3d40c7f52f70403d7",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000433-wrists-text_only",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "9d4928cb12026af99dd7af44daadc79cf40e1fb14107b1f2119d21973e77ce8d",
+        "raw_orientation": "3464ac0e3f58a9e35dc0c4cd3b7516191b9c6c32f97246f3d40c7f52f70403d7",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000433-wrists-imu_only",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "9d4928cb12026af99dd7af44daadc79cf40e1fb14107b1f2119d21973e77ce8d",
+        "raw_orientation": "3464ac0e3f58a9e35dc0c4cd3b7516191b9c6c32f97246f3d40c7f52f70403d7",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000433-wrists-backbone_bypass",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "9d4928cb12026af99dd7af44daadc79cf40e1fb14107b1f2119d21973e77ce8d",
+        "raw_orientation": "3464ac0e3f58a9e35dc0c4cd3b7516191b9c6c32f97246f3d40c7f52f70403d7",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000433-wrists-numeric_zero",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "8d64839fb5adeda9d1b8272548a264ebe4e60299f9831abb7227e9a157cda545",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "9d4928cb12026af99dd7af44daadc79cf40e1fb14107b1f2119d21973e77ce8d",
+        "raw_orientation": "3464ac0e3f58a9e35dc0c4cd3b7516191b9c6c32f97246f3d40c7f52f70403d7",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000433-wrists-physical_static",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "7df491c5f0816aef0995196ae8751c2ab26c50a6104f2e05bd243876187d68b3",
+        "raw_orientation": "afe174802d1b345f181e28f3a913dfe474ee161083486820943d8d80ddf5c093",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000382-head-paired",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "f11b4b6b843f99d438a3ab6783ad22be52c658241fde99818c2afa196adffa0d",
+        "raw_orientation": "35b80211db5594961230ac924861aa1ad7031cef71f8765c67d9e8b51bec27ca",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000382-head-text_only",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "f11b4b6b843f99d438a3ab6783ad22be52c658241fde99818c2afa196adffa0d",
+        "raw_orientation": "35b80211db5594961230ac924861aa1ad7031cef71f8765c67d9e8b51bec27ca",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000382-head-imu_only",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "f11b4b6b843f99d438a3ab6783ad22be52c658241fde99818c2afa196adffa0d",
+        "raw_orientation": "35b80211db5594961230ac924861aa1ad7031cef71f8765c67d9e8b51bec27ca",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000382-head-backbone_bypass",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "f11b4b6b843f99d438a3ab6783ad22be52c658241fde99818c2afa196adffa0d",
+        "raw_orientation": "35b80211db5594961230ac924861aa1ad7031cef71f8765c67d9e8b51bec27ca",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000382-head-numeric_zero",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "a78865e83dac42f13322257206f07104b7d929893a30bac20ae248170bb4bddb",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "f11b4b6b843f99d438a3ab6783ad22be52c658241fde99818c2afa196adffa0d",
+        "raw_orientation": "35b80211db5594961230ac924861aa1ad7031cef71f8765c67d9e8b51bec27ca",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000382-head-physical_static",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "4b1b998d1925a1130d508996ff5d3ed650050e7e32a80cfe99a71c103e0ca986",
+        "raw_orientation": "d945f5ac99e39765c981ced9c152298abba52a7d12ef6b5e3ff30d8e83d90f11",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000382-wrists-paired",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "f11b4b6b843f99d438a3ab6783ad22be52c658241fde99818c2afa196adffa0d",
+        "raw_orientation": "35b80211db5594961230ac924861aa1ad7031cef71f8765c67d9e8b51bec27ca",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000382-wrists-text_only",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "f11b4b6b843f99d438a3ab6783ad22be52c658241fde99818c2afa196adffa0d",
+        "raw_orientation": "35b80211db5594961230ac924861aa1ad7031cef71f8765c67d9e8b51bec27ca",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000382-wrists-imu_only",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "f11b4b6b843f99d438a3ab6783ad22be52c658241fde99818c2afa196adffa0d",
+        "raw_orientation": "35b80211db5594961230ac924861aa1ad7031cef71f8765c67d9e8b51bec27ca",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000382-wrists-backbone_bypass",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "f11b4b6b843f99d438a3ab6783ad22be52c658241fde99818c2afa196adffa0d",
+        "raw_orientation": "35b80211db5594961230ac924861aa1ad7031cef71f8765c67d9e8b51bec27ca",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000382-wrists-numeric_zero",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "a78865e83dac42f13322257206f07104b7d929893a30bac20ae248170bb4bddb",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "f11b4b6b843f99d438a3ab6783ad22be52c658241fde99818c2afa196adffa0d",
+        "raw_orientation": "35b80211db5594961230ac924861aa1ad7031cef71f8765c67d9e8b51bec27ca",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000382-wrists-physical_static",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "4b1b998d1925a1130d508996ff5d3ed650050e7e32a80cfe99a71c103e0ca986",
+        "raw_orientation": "d945f5ac99e39765c981ced9c152298abba52a7d12ef6b5e3ff30d8e83d90f11",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000139-head-paired",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "40a1b17c1cae752f86fc552c3e10f95365a8b64ad60c4dc39063f174b5a6ffb1",
+        "raw_orientation": "6547ac6052c2061193454de0ca9bdd7b1f5edad34be40a680d89a2c1138dcbc0",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000139-head-text_only",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "40a1b17c1cae752f86fc552c3e10f95365a8b64ad60c4dc39063f174b5a6ffb1",
+        "raw_orientation": "6547ac6052c2061193454de0ca9bdd7b1f5edad34be40a680d89a2c1138dcbc0",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000139-head-imu_only",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "40a1b17c1cae752f86fc552c3e10f95365a8b64ad60c4dc39063f174b5a6ffb1",
+        "raw_orientation": "6547ac6052c2061193454de0ca9bdd7b1f5edad34be40a680d89a2c1138dcbc0",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000139-head-backbone_bypass",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "40a1b17c1cae752f86fc552c3e10f95365a8b64ad60c4dc39063f174b5a6ffb1",
+        "raw_orientation": "6547ac6052c2061193454de0ca9bdd7b1f5edad34be40a680d89a2c1138dcbc0",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000139-head-numeric_zero",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "b5a642cdd1f725eaee2a892a850a19d9f9270932eb5d72c6048f14be8ed4f798",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "40a1b17c1cae752f86fc552c3e10f95365a8b64ad60c4dc39063f174b5a6ffb1",
+        "raw_orientation": "6547ac6052c2061193454de0ca9bdd7b1f5edad34be40a680d89a2c1138dcbc0",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000139-head-physical_static",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "e6cb4d58eaa459a2cd604fdb791e61b0d2ff0d340766f37fc0571286c32616ee",
+        "raw_orientation": "11f13d43d1a3349db0ec97c91eaab10e94d4cfb480c902a50a0b8419b467f59f",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000139-wrists-paired",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "40a1b17c1cae752f86fc552c3e10f95365a8b64ad60c4dc39063f174b5a6ffb1",
+        "raw_orientation": "6547ac6052c2061193454de0ca9bdd7b1f5edad34be40a680d89a2c1138dcbc0",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000139-wrists-text_only",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "40a1b17c1cae752f86fc552c3e10f95365a8b64ad60c4dc39063f174b5a6ffb1",
+        "raw_orientation": "6547ac6052c2061193454de0ca9bdd7b1f5edad34be40a680d89a2c1138dcbc0",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000139-wrists-imu_only",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "40a1b17c1cae752f86fc552c3e10f95365a8b64ad60c4dc39063f174b5a6ffb1",
+        "raw_orientation": "6547ac6052c2061193454de0ca9bdd7b1f5edad34be40a680d89a2c1138dcbc0",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000139-wrists-backbone_bypass",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "40a1b17c1cae752f86fc552c3e10f95365a8b64ad60c4dc39063f174b5a6ffb1",
+        "raw_orientation": "6547ac6052c2061193454de0ca9bdd7b1f5edad34be40a680d89a2c1138dcbc0",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000139-wrists-numeric_zero",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "b5a642cdd1f725eaee2a892a850a19d9f9270932eb5d72c6048f14be8ed4f798",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "40a1b17c1cae752f86fc552c3e10f95365a8b64ad60c4dc39063f174b5a6ffb1",
+        "raw_orientation": "6547ac6052c2061193454de0ca9bdd7b1f5edad34be40a680d89a2c1138dcbc0",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000139-wrists-physical_static",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "e6cb4d58eaa459a2cd604fdb791e61b0d2ff0d340766f37fc0571286c32616ee",
+        "raw_orientation": "11f13d43d1a3349db0ec97c91eaab10e94d4cfb480c902a50a0b8419b467f59f",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000433-head-tail_reversed",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "bcb0b9e4499e7fed76368f2e57bbc6bd13a1fe0068b90ce794328c70dd7dabbc",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "a091381369ca25cbf917f565aadaccf88e15daaaa0758b647cec0bdcd0d20de6",
+        "raw_orientation": "aaf4f3af5c33eb1f1f58e84fd99535882db7560f4d7846c207d1d41b0ac8e70a",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000433-wrists-tail_reversed",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "bcb0b9e4499e7fed76368f2e57bbc6bd13a1fe0068b90ce794328c70dd7dabbc",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "a091381369ca25cbf917f565aadaccf88e15daaaa0758b647cec0bdcd0d20de6",
+        "raw_orientation": "aaf4f3af5c33eb1f1f58e84fd99535882db7560f4d7846c207d1d41b0ac8e70a",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000382-head-tail_reversed",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "bc7ebd12755e7e682f4f898ea209f7e299ff013a08e95d8d0321f1c30885af09",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "271d1ed311a58157c6c8921cd8239e8bfa64fe62f244ac7bf5ff989e0bdc945c",
+        "raw_orientation": "4402980f4b7d939babbee9202b9b5957b419cbb815483ba0f8fb3f65d51181b2",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000382-wrists-tail_reversed",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "bc7ebd12755e7e682f4f898ea209f7e299ff013a08e95d8d0321f1c30885af09",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "271d1ed311a58157c6c8921cd8239e8bfa64fe62f244ac7bf5ff989e0bdc945c",
+        "raw_orientation": "4402980f4b7d939babbee9202b9b5957b419cbb815483ba0f8fb3f65d51181b2",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000139-head-tail_reversed",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "37cb361fa382e17a58f3a92f9ea05c8d9c12c30b8eebc4ef09e0771d2b25aef8",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "e3f2f7e26dd42972bfd8e76d9c6aba3bdc57a96348a681fa6c5bb2f1c2a9fa23",
+        "raw_orientation": "0a59b6fd3d63679c952b1cc57ac9634116b6e6b8bc84abbc901ed450eca0e260",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--000139-wrists-tail_reversed",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "37cb361fa382e17a58f3a92f9ea05c8d9c12c30b8eebc4ef09e0771d2b25aef8",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "e3f2f7e26dd42972bfd8e76d9c6aba3bdc57a96348a681fa6c5bb2f1c2a9fa23",
+        "raw_orientation": "0a59b6fd3d63679c952b1cc57ac9634116b6e6b8bc84abbc901ed450eca0e260",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--train-000027-head-paired",
+      "input_hashes": {
+        "motion": "ee23844132be2c83de10293bd35c3df341cadb4269fa7c2d1f71d9f45c1c8622",
+        "imu": "267f9be0ac6002bf4a09a7c8c297083527b89e92e51e1f146c45c41b060ec10e",
+        "reference": "85976ee3ee1f0f09555c98c51c8e488de090ac62422505d7d1b92ded7ce6ee30",
+        "raw_acceleration": "745358976914a2372fceb7850b6b344cb76254645fa53afc603981102a0b8696",
+        "raw_orientation": "f6575d503463e9bd1b52f97303589dc62de084805372ca68123f3fe33d259b9d",
+        "original_orientation0": "c6ed00dbb1427eaa9b455a9d3e6fae51408a95fd46dd47366769ae6f0a8f59e3",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "814302695c1aa6a569f6a896e446d1ec0bb8a1c1f8b5106b994cd25502c3774f",
+        "gt": "20e0d6aa599224d47ac5ca1f22f060654f1b81d8baf34f1c9340a6b7cfb1094a"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--train-000027-head-text_only",
+      "input_hashes": {
+        "motion": "ee23844132be2c83de10293bd35c3df341cadb4269fa7c2d1f71d9f45c1c8622",
+        "imu": "267f9be0ac6002bf4a09a7c8c297083527b89e92e51e1f146c45c41b060ec10e",
+        "reference": "85976ee3ee1f0f09555c98c51c8e488de090ac62422505d7d1b92ded7ce6ee30",
+        "raw_acceleration": "745358976914a2372fceb7850b6b344cb76254645fa53afc603981102a0b8696",
+        "raw_orientation": "f6575d503463e9bd1b52f97303589dc62de084805372ca68123f3fe33d259b9d",
+        "original_orientation0": "c6ed00dbb1427eaa9b455a9d3e6fae51408a95fd46dd47366769ae6f0a8f59e3",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "814302695c1aa6a569f6a896e446d1ec0bb8a1c1f8b5106b994cd25502c3774f",
+        "gt": "20e0d6aa599224d47ac5ca1f22f060654f1b81d8baf34f1c9340a6b7cfb1094a"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--train-000027-head-physical_static",
+      "input_hashes": {
+        "motion": "ee23844132be2c83de10293bd35c3df341cadb4269fa7c2d1f71d9f45c1c8622",
+        "imu": "85976ee3ee1f0f09555c98c51c8e488de090ac62422505d7d1b92ded7ce6ee30",
+        "reference": "85976ee3ee1f0f09555c98c51c8e488de090ac62422505d7d1b92ded7ce6ee30",
+        "raw_acceleration": "815a644a03ed0297e45c2df07fc6a18026d963c1d422289cbd2c00af626c61dd",
+        "raw_orientation": "aa0c238f47071c33d2b787b028c97c396600949e03224ac56d82ab8236f1d29d",
+        "original_orientation0": "c6ed00dbb1427eaa9b455a9d3e6fae51408a95fd46dd47366769ae6f0a8f59e3",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "814302695c1aa6a569f6a896e446d1ec0bb8a1c1f8b5106b994cd25502c3774f",
+        "gt": "20e0d6aa599224d47ac5ca1f22f060654f1b81d8baf34f1c9340a6b7cfb1094a"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--train-000027-wrists-paired",
+      "input_hashes": {
+        "motion": "ee23844132be2c83de10293bd35c3df341cadb4269fa7c2d1f71d9f45c1c8622",
+        "imu": "267f9be0ac6002bf4a09a7c8c297083527b89e92e51e1f146c45c41b060ec10e",
+        "reference": "85976ee3ee1f0f09555c98c51c8e488de090ac62422505d7d1b92ded7ce6ee30",
+        "raw_acceleration": "745358976914a2372fceb7850b6b344cb76254645fa53afc603981102a0b8696",
+        "raw_orientation": "f6575d503463e9bd1b52f97303589dc62de084805372ca68123f3fe33d259b9d",
+        "original_orientation0": "c6ed00dbb1427eaa9b455a9d3e6fae51408a95fd46dd47366769ae6f0a8f59e3",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "814302695c1aa6a569f6a896e446d1ec0bb8a1c1f8b5106b994cd25502c3774f",
+        "gt": "20e0d6aa599224d47ac5ca1f22f060654f1b81d8baf34f1c9340a6b7cfb1094a"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--train-000027-wrists-text_only",
+      "input_hashes": {
+        "motion": "ee23844132be2c83de10293bd35c3df341cadb4269fa7c2d1f71d9f45c1c8622",
+        "imu": "267f9be0ac6002bf4a09a7c8c297083527b89e92e51e1f146c45c41b060ec10e",
+        "reference": "85976ee3ee1f0f09555c98c51c8e488de090ac62422505d7d1b92ded7ce6ee30",
+        "raw_acceleration": "745358976914a2372fceb7850b6b344cb76254645fa53afc603981102a0b8696",
+        "raw_orientation": "f6575d503463e9bd1b52f97303589dc62de084805372ca68123f3fe33d259b9d",
+        "original_orientation0": "c6ed00dbb1427eaa9b455a9d3e6fae51408a95fd46dd47366769ae6f0a8f59e3",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "814302695c1aa6a569f6a896e446d1ec0bb8a1c1f8b5106b994cd25502c3774f",
+        "gt": "20e0d6aa599224d47ac5ca1f22f060654f1b81d8baf34f1c9340a6b7cfb1094a"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--train-000027-wrists-physical_static",
+      "input_hashes": {
+        "motion": "ee23844132be2c83de10293bd35c3df341cadb4269fa7c2d1f71d9f45c1c8622",
+        "imu": "85976ee3ee1f0f09555c98c51c8e488de090ac62422505d7d1b92ded7ce6ee30",
+        "reference": "85976ee3ee1f0f09555c98c51c8e488de090ac62422505d7d1b92ded7ce6ee30",
+        "raw_acceleration": "815a644a03ed0297e45c2df07fc6a18026d963c1d422289cbd2c00af626c61dd",
+        "raw_orientation": "aa0c238f47071c33d2b787b028c97c396600949e03224ac56d82ab8236f1d29d",
+        "original_orientation0": "c6ed00dbb1427eaa9b455a9d3e6fae51408a95fd46dd47366769ae6f0a8f59e3",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "814302695c1aa6a569f6a896e446d1ec0bb8a1c1f8b5106b994cd25502c3774f",
+        "gt": "20e0d6aa599224d47ac5ca1f22f060654f1b81d8baf34f1c9340a6b7cfb1094a"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--train-000506-head-paired",
+      "input_hashes": {
+        "motion": "9bf25a4fc4462b59d62b4e714dccf4cf72f3e93f076292aa7c6055eac7f3b8ba",
+        "imu": "755a77581405732167efbef420156f92ae1eea8d3a4b2d3edc7600d2912b70b1",
+        "reference": "d11a4b49ff0b13ee7876feedfd4519b458836456be31dc81f7c601ff3c903734",
+        "raw_acceleration": "d26d5420518ca267c5847c96df5e1c60de4837475cc1f5989614e23dd63dbe6c",
+        "raw_orientation": "f4d8041570adcd773679fdf01b175d3ed8b1190c70c086203c476319786a1623",
+        "original_orientation0": "671244c9be5e15aa1869c1044f6591aa04a3a875060fefea0bc39dcb6adcef26",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "00a4da3411b1d1faa12809bee90a2d1a2779041e73c6ee66a63b13714658d830",
+        "gt": "19c4e33736d69f1f4b599e3c367697b33768750bc8c402cb53cdda0d0f246b1f"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--train-000506-head-text_only",
+      "input_hashes": {
+        "motion": "9bf25a4fc4462b59d62b4e714dccf4cf72f3e93f076292aa7c6055eac7f3b8ba",
+        "imu": "755a77581405732167efbef420156f92ae1eea8d3a4b2d3edc7600d2912b70b1",
+        "reference": "d11a4b49ff0b13ee7876feedfd4519b458836456be31dc81f7c601ff3c903734",
+        "raw_acceleration": "d26d5420518ca267c5847c96df5e1c60de4837475cc1f5989614e23dd63dbe6c",
+        "raw_orientation": "f4d8041570adcd773679fdf01b175d3ed8b1190c70c086203c476319786a1623",
+        "original_orientation0": "671244c9be5e15aa1869c1044f6591aa04a3a875060fefea0bc39dcb6adcef26",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "00a4da3411b1d1faa12809bee90a2d1a2779041e73c6ee66a63b13714658d830",
+        "gt": "19c4e33736d69f1f4b599e3c367697b33768750bc8c402cb53cdda0d0f246b1f"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--train-000506-head-physical_static",
+      "input_hashes": {
+        "motion": "9bf25a4fc4462b59d62b4e714dccf4cf72f3e93f076292aa7c6055eac7f3b8ba",
+        "imu": "d11a4b49ff0b13ee7876feedfd4519b458836456be31dc81f7c601ff3c903734",
+        "reference": "d11a4b49ff0b13ee7876feedfd4519b458836456be31dc81f7c601ff3c903734",
+        "raw_acceleration": "b9823fb510bca6884b43f0003eaa962061e4c3ee5b87b5af48ba687fa882b4b8",
+        "raw_orientation": "176a20daa089f633278f7804f7b3f63ded013075278721f66571d08ef127b4e1",
+        "original_orientation0": "671244c9be5e15aa1869c1044f6591aa04a3a875060fefea0bc39dcb6adcef26",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "00a4da3411b1d1faa12809bee90a2d1a2779041e73c6ee66a63b13714658d830",
+        "gt": "19c4e33736d69f1f4b599e3c367697b33768750bc8c402cb53cdda0d0f246b1f"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--train-000506-wrists-paired",
+      "input_hashes": {
+        "motion": "9bf25a4fc4462b59d62b4e714dccf4cf72f3e93f076292aa7c6055eac7f3b8ba",
+        "imu": "755a77581405732167efbef420156f92ae1eea8d3a4b2d3edc7600d2912b70b1",
+        "reference": "d11a4b49ff0b13ee7876feedfd4519b458836456be31dc81f7c601ff3c903734",
+        "raw_acceleration": "d26d5420518ca267c5847c96df5e1c60de4837475cc1f5989614e23dd63dbe6c",
+        "raw_orientation": "f4d8041570adcd773679fdf01b175d3ed8b1190c70c086203c476319786a1623",
+        "original_orientation0": "671244c9be5e15aa1869c1044f6591aa04a3a875060fefea0bc39dcb6adcef26",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "00a4da3411b1d1faa12809bee90a2d1a2779041e73c6ee66a63b13714658d830",
+        "gt": "19c4e33736d69f1f4b599e3c367697b33768750bc8c402cb53cdda0d0f246b1f"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--train-000506-wrists-text_only",
+      "input_hashes": {
+        "motion": "9bf25a4fc4462b59d62b4e714dccf4cf72f3e93f076292aa7c6055eac7f3b8ba",
+        "imu": "755a77581405732167efbef420156f92ae1eea8d3a4b2d3edc7600d2912b70b1",
+        "reference": "d11a4b49ff0b13ee7876feedfd4519b458836456be31dc81f7c601ff3c903734",
+        "raw_acceleration": "d26d5420518ca267c5847c96df5e1c60de4837475cc1f5989614e23dd63dbe6c",
+        "raw_orientation": "f4d8041570adcd773679fdf01b175d3ed8b1190c70c086203c476319786a1623",
+        "original_orientation0": "671244c9be5e15aa1869c1044f6591aa04a3a875060fefea0bc39dcb6adcef26",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "00a4da3411b1d1faa12809bee90a2d1a2779041e73c6ee66a63b13714658d830",
+        "gt": "19c4e33736d69f1f4b599e3c367697b33768750bc8c402cb53cdda0d0f246b1f"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--train-000506-wrists-physical_static",
+      "input_hashes": {
+        "motion": "9bf25a4fc4462b59d62b4e714dccf4cf72f3e93f076292aa7c6055eac7f3b8ba",
+        "imu": "d11a4b49ff0b13ee7876feedfd4519b458836456be31dc81f7c601ff3c903734",
+        "reference": "d11a4b49ff0b13ee7876feedfd4519b458836456be31dc81f7c601ff3c903734",
+        "raw_acceleration": "b9823fb510bca6884b43f0003eaa962061e4c3ee5b87b5af48ba687fa882b4b8",
+        "raw_orientation": "176a20daa089f633278f7804f7b3f63ded013075278721f66571d08ef127b4e1",
+        "original_orientation0": "671244c9be5e15aa1869c1044f6591aa04a3a875060fefea0bc39dcb6adcef26",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "00a4da3411b1d1faa12809bee90a2d1a2779041e73c6ee66a63b13714658d830",
+        "gt": "19c4e33736d69f1f4b599e3c367697b33768750bc8c402cb53cdda0d0f246b1f"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--train-004728-head-paired",
+      "input_hashes": {
+        "motion": "0e9c5fc08a4579f4b59e8e4988fab12a9befccbb09d96df3017bbb41fb783bf7",
+        "imu": "f009b1735ebe4600acc136c726b50613ce660da32b55d211afdf0e9312259a76",
+        "reference": "d527921b1be7fafc345fe1ef323c3d62acab05e732090e9d1f811fc610d99b1f",
+        "raw_acceleration": "029e04b5749a48a8954ba3bafb38bda03842801f0c3f06c601722afff8426877",
+        "raw_orientation": "f91bc2eaa920c72629bef0b16dc9e99b50a911ad6829be9aa9d540e76f98d3ce",
+        "original_orientation0": "542e662f70116c8d7fd9cddef0aad64789370e59b5aae01f214904dec8c2f289",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "9ebb1f214a690b7b27dfb930a5d82c914c0cbc9b4a07a9886755358e9e3897f1",
+        "gt": "4c69097c9e5a5768170c582c91f5dbab4cd25ec3e1cb8661ccd337bb074bc8db"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--train-004728-head-text_only",
+      "input_hashes": {
+        "motion": "0e9c5fc08a4579f4b59e8e4988fab12a9befccbb09d96df3017bbb41fb783bf7",
+        "imu": "f009b1735ebe4600acc136c726b50613ce660da32b55d211afdf0e9312259a76",
+        "reference": "d527921b1be7fafc345fe1ef323c3d62acab05e732090e9d1f811fc610d99b1f",
+        "raw_acceleration": "029e04b5749a48a8954ba3bafb38bda03842801f0c3f06c601722afff8426877",
+        "raw_orientation": "f91bc2eaa920c72629bef0b16dc9e99b50a911ad6829be9aa9d540e76f98d3ce",
+        "original_orientation0": "542e662f70116c8d7fd9cddef0aad64789370e59b5aae01f214904dec8c2f289",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "9ebb1f214a690b7b27dfb930a5d82c914c0cbc9b4a07a9886755358e9e3897f1",
+        "gt": "4c69097c9e5a5768170c582c91f5dbab4cd25ec3e1cb8661ccd337bb074bc8db"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--train-004728-head-physical_static",
+      "input_hashes": {
+        "motion": "0e9c5fc08a4579f4b59e8e4988fab12a9befccbb09d96df3017bbb41fb783bf7",
+        "imu": "d527921b1be7fafc345fe1ef323c3d62acab05e732090e9d1f811fc610d99b1f",
+        "reference": "d527921b1be7fafc345fe1ef323c3d62acab05e732090e9d1f811fc610d99b1f",
+        "raw_acceleration": "77f4d83787faf064a2871d49e67c6809b48e381d4bc9014beacfaf59ce6672a2",
+        "raw_orientation": "8fb5b9e8518691ee8dda5b58bf702c8beaa413ca1ebb20598be6b069f074ca60",
+        "original_orientation0": "542e662f70116c8d7fd9cddef0aad64789370e59b5aae01f214904dec8c2f289",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "9ebb1f214a690b7b27dfb930a5d82c914c0cbc9b4a07a9886755358e9e3897f1",
+        "gt": "4c69097c9e5a5768170c582c91f5dbab4cd25ec3e1cb8661ccd337bb074bc8db"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--train-004728-wrists-paired",
+      "input_hashes": {
+        "motion": "0e9c5fc08a4579f4b59e8e4988fab12a9befccbb09d96df3017bbb41fb783bf7",
+        "imu": "f009b1735ebe4600acc136c726b50613ce660da32b55d211afdf0e9312259a76",
+        "reference": "d527921b1be7fafc345fe1ef323c3d62acab05e732090e9d1f811fc610d99b1f",
+        "raw_acceleration": "029e04b5749a48a8954ba3bafb38bda03842801f0c3f06c601722afff8426877",
+        "raw_orientation": "f91bc2eaa920c72629bef0b16dc9e99b50a911ad6829be9aa9d540e76f98d3ce",
+        "original_orientation0": "542e662f70116c8d7fd9cddef0aad64789370e59b5aae01f214904dec8c2f289",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "9ebb1f214a690b7b27dfb930a5d82c914c0cbc9b4a07a9886755358e9e3897f1",
+        "gt": "4c69097c9e5a5768170c582c91f5dbab4cd25ec3e1cb8661ccd337bb074bc8db"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--train-004728-wrists-text_only",
+      "input_hashes": {
+        "motion": "0e9c5fc08a4579f4b59e8e4988fab12a9befccbb09d96df3017bbb41fb783bf7",
+        "imu": "f009b1735ebe4600acc136c726b50613ce660da32b55d211afdf0e9312259a76",
+        "reference": "d527921b1be7fafc345fe1ef323c3d62acab05e732090e9d1f811fc610d99b1f",
+        "raw_acceleration": "029e04b5749a48a8954ba3bafb38bda03842801f0c3f06c601722afff8426877",
+        "raw_orientation": "f91bc2eaa920c72629bef0b16dc9e99b50a911ad6829be9aa9d540e76f98d3ce",
+        "original_orientation0": "542e662f70116c8d7fd9cddef0aad64789370e59b5aae01f214904dec8c2f289",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "9ebb1f214a690b7b27dfb930a5d82c914c0cbc9b4a07a9886755358e9e3897f1",
+        "gt": "4c69097c9e5a5768170c582c91f5dbab4cd25ec3e1cb8661ccd337bb074bc8db"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "L_exact_length--train-004728-wrists-physical_static",
+      "input_hashes": {
+        "motion": "0e9c5fc08a4579f4b59e8e4988fab12a9befccbb09d96df3017bbb41fb783bf7",
+        "imu": "d527921b1be7fafc345fe1ef323c3d62acab05e732090e9d1f811fc610d99b1f",
+        "reference": "d527921b1be7fafc345fe1ef323c3d62acab05e732090e9d1f811fc610d99b1f",
+        "raw_acceleration": "77f4d83787faf064a2871d49e67c6809b48e381d4bc9014beacfaf59ce6672a2",
+        "raw_orientation": "8fb5b9e8518691ee8dda5b58bf702c8beaa413ca1ebb20598be6b069f074ca60",
+        "original_orientation0": "542e662f70116c8d7fd9cddef0aad64789370e59b5aae01f214904dec8c2f289",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "9ebb1f214a690b7b27dfb930a5d82c914c0cbc9b4a07a9886755358e9e3897f1",
+        "gt": "4c69097c9e5a5768170c582c91f5dbab4cd25ec3e1cb8661ccd337bb074bc8db"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-head-paired",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "9d4928cb12026af99dd7af44daadc79cf40e1fb14107b1f2119d21973e77ce8d",
+        "raw_orientation": "3464ac0e3f58a9e35dc0c4cd3b7516191b9c6c32f97246f3d40c7f52f70403d7",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-head-text_only",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "9d4928cb12026af99dd7af44daadc79cf40e1fb14107b1f2119d21973e77ce8d",
+        "raw_orientation": "3464ac0e3f58a9e35dc0c4cd3b7516191b9c6c32f97246f3d40c7f52f70403d7",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-head-imu_only",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "9d4928cb12026af99dd7af44daadc79cf40e1fb14107b1f2119d21973e77ce8d",
+        "raw_orientation": "3464ac0e3f58a9e35dc0c4cd3b7516191b9c6c32f97246f3d40c7f52f70403d7",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-head-backbone_bypass",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "9d4928cb12026af99dd7af44daadc79cf40e1fb14107b1f2119d21973e77ce8d",
+        "raw_orientation": "3464ac0e3f58a9e35dc0c4cd3b7516191b9c6c32f97246f3d40c7f52f70403d7",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-head-numeric_zero",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "8d64839fb5adeda9d1b8272548a264ebe4e60299f9831abb7227e9a157cda545",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "9d4928cb12026af99dd7af44daadc79cf40e1fb14107b1f2119d21973e77ce8d",
+        "raw_orientation": "3464ac0e3f58a9e35dc0c4cd3b7516191b9c6c32f97246f3d40c7f52f70403d7",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-head-physical_static",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "7df491c5f0816aef0995196ae8751c2ab26c50a6104f2e05bd243876187d68b3",
+        "raw_orientation": "afe174802d1b345f181e28f3a913dfe474ee161083486820943d8d80ddf5c093",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-wrists-paired",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "9d4928cb12026af99dd7af44daadc79cf40e1fb14107b1f2119d21973e77ce8d",
+        "raw_orientation": "3464ac0e3f58a9e35dc0c4cd3b7516191b9c6c32f97246f3d40c7f52f70403d7",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-wrists-text_only",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "9d4928cb12026af99dd7af44daadc79cf40e1fb14107b1f2119d21973e77ce8d",
+        "raw_orientation": "3464ac0e3f58a9e35dc0c4cd3b7516191b9c6c32f97246f3d40c7f52f70403d7",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-wrists-imu_only",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "9d4928cb12026af99dd7af44daadc79cf40e1fb14107b1f2119d21973e77ce8d",
+        "raw_orientation": "3464ac0e3f58a9e35dc0c4cd3b7516191b9c6c32f97246f3d40c7f52f70403d7",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-wrists-backbone_bypass",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "02fc64ff90a766dd027847302c3b1b702e5bcbf3c68085e54e0f003f74d6b594",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "9d4928cb12026af99dd7af44daadc79cf40e1fb14107b1f2119d21973e77ce8d",
+        "raw_orientation": "3464ac0e3f58a9e35dc0c4cd3b7516191b9c6c32f97246f3d40c7f52f70403d7",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-wrists-numeric_zero",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "8d64839fb5adeda9d1b8272548a264ebe4e60299f9831abb7227e9a157cda545",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "9d4928cb12026af99dd7af44daadc79cf40e1fb14107b1f2119d21973e77ce8d",
+        "raw_orientation": "3464ac0e3f58a9e35dc0c4cd3b7516191b9c6c32f97246f3d40c7f52f70403d7",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-wrists-physical_static",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "7df491c5f0816aef0995196ae8751c2ab26c50a6104f2e05bd243876187d68b3",
+        "raw_orientation": "afe174802d1b345f181e28f3a913dfe474ee161083486820943d8d80ddf5c093",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-head-paired",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "f11b4b6b843f99d438a3ab6783ad22be52c658241fde99818c2afa196adffa0d",
+        "raw_orientation": "35b80211db5594961230ac924861aa1ad7031cef71f8765c67d9e8b51bec27ca",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-head-text_only",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "f11b4b6b843f99d438a3ab6783ad22be52c658241fde99818c2afa196adffa0d",
+        "raw_orientation": "35b80211db5594961230ac924861aa1ad7031cef71f8765c67d9e8b51bec27ca",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-head-imu_only",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "f11b4b6b843f99d438a3ab6783ad22be52c658241fde99818c2afa196adffa0d",
+        "raw_orientation": "35b80211db5594961230ac924861aa1ad7031cef71f8765c67d9e8b51bec27ca",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-head-backbone_bypass",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "f11b4b6b843f99d438a3ab6783ad22be52c658241fde99818c2afa196adffa0d",
+        "raw_orientation": "35b80211db5594961230ac924861aa1ad7031cef71f8765c67d9e8b51bec27ca",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-head-numeric_zero",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "a78865e83dac42f13322257206f07104b7d929893a30bac20ae248170bb4bddb",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "f11b4b6b843f99d438a3ab6783ad22be52c658241fde99818c2afa196adffa0d",
+        "raw_orientation": "35b80211db5594961230ac924861aa1ad7031cef71f8765c67d9e8b51bec27ca",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-head-physical_static",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "4b1b998d1925a1130d508996ff5d3ed650050e7e32a80cfe99a71c103e0ca986",
+        "raw_orientation": "d945f5ac99e39765c981ced9c152298abba52a7d12ef6b5e3ff30d8e83d90f11",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-wrists-paired",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "f11b4b6b843f99d438a3ab6783ad22be52c658241fde99818c2afa196adffa0d",
+        "raw_orientation": "35b80211db5594961230ac924861aa1ad7031cef71f8765c67d9e8b51bec27ca",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-wrists-text_only",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "f11b4b6b843f99d438a3ab6783ad22be52c658241fde99818c2afa196adffa0d",
+        "raw_orientation": "35b80211db5594961230ac924861aa1ad7031cef71f8765c67d9e8b51bec27ca",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-wrists-imu_only",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "f11b4b6b843f99d438a3ab6783ad22be52c658241fde99818c2afa196adffa0d",
+        "raw_orientation": "35b80211db5594961230ac924861aa1ad7031cef71f8765c67d9e8b51bec27ca",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-wrists-backbone_bypass",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "b73b1a13e52744ef611beeded50befc015ca5e81fa0970ab9a578bdd6c85fe6a",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "f11b4b6b843f99d438a3ab6783ad22be52c658241fde99818c2afa196adffa0d",
+        "raw_orientation": "35b80211db5594961230ac924861aa1ad7031cef71f8765c67d9e8b51bec27ca",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-wrists-numeric_zero",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "a78865e83dac42f13322257206f07104b7d929893a30bac20ae248170bb4bddb",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "f11b4b6b843f99d438a3ab6783ad22be52c658241fde99818c2afa196adffa0d",
+        "raw_orientation": "35b80211db5594961230ac924861aa1ad7031cef71f8765c67d9e8b51bec27ca",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-wrists-physical_static",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "4b1b998d1925a1130d508996ff5d3ed650050e7e32a80cfe99a71c103e0ca986",
+        "raw_orientation": "d945f5ac99e39765c981ced9c152298abba52a7d12ef6b5e3ff30d8e83d90f11",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-head-paired",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "40a1b17c1cae752f86fc552c3e10f95365a8b64ad60c4dc39063f174b5a6ffb1",
+        "raw_orientation": "6547ac6052c2061193454de0ca9bdd7b1f5edad34be40a680d89a2c1138dcbc0",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-head-text_only",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "40a1b17c1cae752f86fc552c3e10f95365a8b64ad60c4dc39063f174b5a6ffb1",
+        "raw_orientation": "6547ac6052c2061193454de0ca9bdd7b1f5edad34be40a680d89a2c1138dcbc0",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-head-imu_only",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "40a1b17c1cae752f86fc552c3e10f95365a8b64ad60c4dc39063f174b5a6ffb1",
+        "raw_orientation": "6547ac6052c2061193454de0ca9bdd7b1f5edad34be40a680d89a2c1138dcbc0",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-head-backbone_bypass",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "40a1b17c1cae752f86fc552c3e10f95365a8b64ad60c4dc39063f174b5a6ffb1",
+        "raw_orientation": "6547ac6052c2061193454de0ca9bdd7b1f5edad34be40a680d89a2c1138dcbc0",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-head-numeric_zero",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "b5a642cdd1f725eaee2a892a850a19d9f9270932eb5d72c6048f14be8ed4f798",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "40a1b17c1cae752f86fc552c3e10f95365a8b64ad60c4dc39063f174b5a6ffb1",
+        "raw_orientation": "6547ac6052c2061193454de0ca9bdd7b1f5edad34be40a680d89a2c1138dcbc0",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-head-physical_static",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "e6cb4d58eaa459a2cd604fdb791e61b0d2ff0d340766f37fc0571286c32616ee",
+        "raw_orientation": "11f13d43d1a3349db0ec97c91eaab10e94d4cfb480c902a50a0b8419b467f59f",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-wrists-paired",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "40a1b17c1cae752f86fc552c3e10f95365a8b64ad60c4dc39063f174b5a6ffb1",
+        "raw_orientation": "6547ac6052c2061193454de0ca9bdd7b1f5edad34be40a680d89a2c1138dcbc0",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-wrists-text_only",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "40a1b17c1cae752f86fc552c3e10f95365a8b64ad60c4dc39063f174b5a6ffb1",
+        "raw_orientation": "6547ac6052c2061193454de0ca9bdd7b1f5edad34be40a680d89a2c1138dcbc0",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-wrists-imu_only",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "40a1b17c1cae752f86fc552c3e10f95365a8b64ad60c4dc39063f174b5a6ffb1",
+        "raw_orientation": "6547ac6052c2061193454de0ca9bdd7b1f5edad34be40a680d89a2c1138dcbc0",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-wrists-backbone_bypass",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "675f77edd92d61fae9c828ec06207e890428c552bdce750c3c4462ce7f49b4a4",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "40a1b17c1cae752f86fc552c3e10f95365a8b64ad60c4dc39063f174b5a6ffb1",
+        "raw_orientation": "6547ac6052c2061193454de0ca9bdd7b1f5edad34be40a680d89a2c1138dcbc0",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-wrists-numeric_zero",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "b5a642cdd1f725eaee2a892a850a19d9f9270932eb5d72c6048f14be8ed4f798",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "40a1b17c1cae752f86fc552c3e10f95365a8b64ad60c4dc39063f174b5a6ffb1",
+        "raw_orientation": "6547ac6052c2061193454de0ca9bdd7b1f5edad34be40a680d89a2c1138dcbc0",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-wrists-physical_static",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "e6cb4d58eaa459a2cd604fdb791e61b0d2ff0d340766f37fc0571286c32616ee",
+        "raw_orientation": "11f13d43d1a3349db0ec97c91eaab10e94d4cfb480c902a50a0b8419b467f59f",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-head-tail_reversed",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "bcb0b9e4499e7fed76368f2e57bbc6bd13a1fe0068b90ce794328c70dd7dabbc",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "a091381369ca25cbf917f565aadaccf88e15daaaa0758b647cec0bdcd0d20de6",
+        "raw_orientation": "aaf4f3af5c33eb1f1f58e84fd99535882db7560f4d7846c207d1d41b0ac8e70a",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-wrists-tail_reversed",
+      "input_hashes": {
+        "motion": "db5bddeb557ea22f859194665a9108936dd58639b41cce3d95b8d25c12d6954d",
+        "imu": "bcb0b9e4499e7fed76368f2e57bbc6bd13a1fe0068b90ce794328c70dd7dabbc",
+        "reference": "9797bc88f5841ca3d1a87f7a7fdbbad9d4217db668533126ca25ab7deb5db4f5",
+        "raw_acceleration": "a091381369ca25cbf917f565aadaccf88e15daaaa0758b647cec0bdcd0d20de6",
+        "raw_orientation": "aaf4f3af5c33eb1f1f58e84fd99535882db7560f4d7846c207d1d41b0ac8e70a",
+        "original_orientation0": "f0cc0f46eb5955ebc2a2e4aa0dc0981da07326ce6b0a84f3de7ee76f17eddd50",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "9cf23edb8b79a3be68abf5694eebd10282a809f48276b1d7577e610a11380a59",
+        "gt": "13e33835a18edef22b30c8606cf70665b7c932eb96dca3352ebdc10846cdefa1"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-head-tail_reversed",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "bc7ebd12755e7e682f4f898ea209f7e299ff013a08e95d8d0321f1c30885af09",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "271d1ed311a58157c6c8921cd8239e8bfa64fe62f244ac7bf5ff989e0bdc945c",
+        "raw_orientation": "4402980f4b7d939babbee9202b9b5957b419cbb815483ba0f8fb3f65d51181b2",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-wrists-tail_reversed",
+      "input_hashes": {
+        "motion": "8c4af54b8c0cd96816d3d747814c7c66528d9b367491de38aaaf69979e1650dc",
+        "imu": "bc7ebd12755e7e682f4f898ea209f7e299ff013a08e95d8d0321f1c30885af09",
+        "reference": "30c273137936b37ca0535433f24cd4ef1a3e9bdbd56bf346e440ae20f65b95d8",
+        "raw_acceleration": "271d1ed311a58157c6c8921cd8239e8bfa64fe62f244ac7bf5ff989e0bdc945c",
+        "raw_orientation": "4402980f4b7d939babbee9202b9b5957b419cbb815483ba0f8fb3f65d51181b2",
+        "original_orientation0": "6d6a7bcc93ea6513ec7f4f9eaf73c4f3a654995bfb2e7478a5d74964e8ba15dd",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "980f69689af0d991b046c09336294f2019c0d3186ba8d51eb3b397e47f170bad",
+        "gt": "b1198388b2a730a0e0f0e64e4454e2fd313b5385c726ca7052a5d926602a14af"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-head-tail_reversed",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "37cb361fa382e17a58f3a92f9ea05c8d9c12c30b8eebc4ef09e0771d2b25aef8",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "e3f2f7e26dd42972bfd8e76d9c6aba3bdc57a96348a681fa6c5bb2f1c2a9fa23",
+        "raw_orientation": "0a59b6fd3d63679c952b1cc57ac9634116b6e6b8bc84abbc901ed450eca0e260",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-wrists-tail_reversed",
+      "input_hashes": {
+        "motion": "0ec12af5bb5738a09ce88d17a7040b592f76a43a88612478a41fd7c2f77e6cc7",
+        "imu": "37cb361fa382e17a58f3a92f9ea05c8d9c12c30b8eebc4ef09e0771d2b25aef8",
+        "reference": "be20fdb62da5044906512c84f24b884b387c45c77042496d9d238d1c136b5fed",
+        "raw_acceleration": "e3f2f7e26dd42972bfd8e76d9c6aba3bdc57a96348a681fa6c5bb2f1c2a9fa23",
+        "raw_orientation": "0a59b6fd3d63679c952b1cc57ac9634116b6e6b8bc84abbc901ed450eca0e260",
+        "original_orientation0": "7bd1dbb4dee02eb9beb8da2af2a4a0ba66c34442f68138fb326db17fae6d62aa",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "adbbdad50309a0e455ff4f282f514006286213c7eb27772b98082590d7467e57",
+        "gt": "2a199d7b78d6dd4b1a51b6b14f73e31f8b1b8cdca98a4a1781f8aa491aa387f9"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000027-head-paired",
+      "input_hashes": {
+        "motion": "ee23844132be2c83de10293bd35c3df341cadb4269fa7c2d1f71d9f45c1c8622",
+        "imu": "267f9be0ac6002bf4a09a7c8c297083527b89e92e51e1f146c45c41b060ec10e",
+        "reference": "85976ee3ee1f0f09555c98c51c8e488de090ac62422505d7d1b92ded7ce6ee30",
+        "raw_acceleration": "745358976914a2372fceb7850b6b344cb76254645fa53afc603981102a0b8696",
+        "raw_orientation": "f6575d503463e9bd1b52f97303589dc62de084805372ca68123f3fe33d259b9d",
+        "original_orientation0": "c6ed00dbb1427eaa9b455a9d3e6fae51408a95fd46dd47366769ae6f0a8f59e3",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "814302695c1aa6a569f6a896e446d1ec0bb8a1c1f8b5106b994cd25502c3774f",
+        "gt": "20e0d6aa599224d47ac5ca1f22f060654f1b81d8baf34f1c9340a6b7cfb1094a"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000027-head-text_only",
+      "input_hashes": {
+        "motion": "ee23844132be2c83de10293bd35c3df341cadb4269fa7c2d1f71d9f45c1c8622",
+        "imu": "267f9be0ac6002bf4a09a7c8c297083527b89e92e51e1f146c45c41b060ec10e",
+        "reference": "85976ee3ee1f0f09555c98c51c8e488de090ac62422505d7d1b92ded7ce6ee30",
+        "raw_acceleration": "745358976914a2372fceb7850b6b344cb76254645fa53afc603981102a0b8696",
+        "raw_orientation": "f6575d503463e9bd1b52f97303589dc62de084805372ca68123f3fe33d259b9d",
+        "original_orientation0": "c6ed00dbb1427eaa9b455a9d3e6fae51408a95fd46dd47366769ae6f0a8f59e3",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "814302695c1aa6a569f6a896e446d1ec0bb8a1c1f8b5106b994cd25502c3774f",
+        "gt": "20e0d6aa599224d47ac5ca1f22f060654f1b81d8baf34f1c9340a6b7cfb1094a"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000027-head-physical_static",
+      "input_hashes": {
+        "motion": "ee23844132be2c83de10293bd35c3df341cadb4269fa7c2d1f71d9f45c1c8622",
+        "imu": "85976ee3ee1f0f09555c98c51c8e488de090ac62422505d7d1b92ded7ce6ee30",
+        "reference": "85976ee3ee1f0f09555c98c51c8e488de090ac62422505d7d1b92ded7ce6ee30",
+        "raw_acceleration": "815a644a03ed0297e45c2df07fc6a18026d963c1d422289cbd2c00af626c61dd",
+        "raw_orientation": "aa0c238f47071c33d2b787b028c97c396600949e03224ac56d82ab8236f1d29d",
+        "original_orientation0": "c6ed00dbb1427eaa9b455a9d3e6fae51408a95fd46dd47366769ae6f0a8f59e3",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "814302695c1aa6a569f6a896e446d1ec0bb8a1c1f8b5106b994cd25502c3774f",
+        "gt": "20e0d6aa599224d47ac5ca1f22f060654f1b81d8baf34f1c9340a6b7cfb1094a"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000027-wrists-paired",
+      "input_hashes": {
+        "motion": "ee23844132be2c83de10293bd35c3df341cadb4269fa7c2d1f71d9f45c1c8622",
+        "imu": "267f9be0ac6002bf4a09a7c8c297083527b89e92e51e1f146c45c41b060ec10e",
+        "reference": "85976ee3ee1f0f09555c98c51c8e488de090ac62422505d7d1b92ded7ce6ee30",
+        "raw_acceleration": "745358976914a2372fceb7850b6b344cb76254645fa53afc603981102a0b8696",
+        "raw_orientation": "f6575d503463e9bd1b52f97303589dc62de084805372ca68123f3fe33d259b9d",
+        "original_orientation0": "c6ed00dbb1427eaa9b455a9d3e6fae51408a95fd46dd47366769ae6f0a8f59e3",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "814302695c1aa6a569f6a896e446d1ec0bb8a1c1f8b5106b994cd25502c3774f",
+        "gt": "20e0d6aa599224d47ac5ca1f22f060654f1b81d8baf34f1c9340a6b7cfb1094a"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000027-wrists-text_only",
+      "input_hashes": {
+        "motion": "ee23844132be2c83de10293bd35c3df341cadb4269fa7c2d1f71d9f45c1c8622",
+        "imu": "267f9be0ac6002bf4a09a7c8c297083527b89e92e51e1f146c45c41b060ec10e",
+        "reference": "85976ee3ee1f0f09555c98c51c8e488de090ac62422505d7d1b92ded7ce6ee30",
+        "raw_acceleration": "745358976914a2372fceb7850b6b344cb76254645fa53afc603981102a0b8696",
+        "raw_orientation": "f6575d503463e9bd1b52f97303589dc62de084805372ca68123f3fe33d259b9d",
+        "original_orientation0": "c6ed00dbb1427eaa9b455a9d3e6fae51408a95fd46dd47366769ae6f0a8f59e3",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "814302695c1aa6a569f6a896e446d1ec0bb8a1c1f8b5106b994cd25502c3774f",
+        "gt": "20e0d6aa599224d47ac5ca1f22f060654f1b81d8baf34f1c9340a6b7cfb1094a"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000027-wrists-physical_static",
+      "input_hashes": {
+        "motion": "ee23844132be2c83de10293bd35c3df341cadb4269fa7c2d1f71d9f45c1c8622",
+        "imu": "85976ee3ee1f0f09555c98c51c8e488de090ac62422505d7d1b92ded7ce6ee30",
+        "reference": "85976ee3ee1f0f09555c98c51c8e488de090ac62422505d7d1b92ded7ce6ee30",
+        "raw_acceleration": "815a644a03ed0297e45c2df07fc6a18026d963c1d422289cbd2c00af626c61dd",
+        "raw_orientation": "aa0c238f47071c33d2b787b028c97c396600949e03224ac56d82ab8236f1d29d",
+        "original_orientation0": "c6ed00dbb1427eaa9b455a9d3e6fae51408a95fd46dd47366769ae6f0a8f59e3",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "814302695c1aa6a569f6a896e446d1ec0bb8a1c1f8b5106b994cd25502c3774f",
+        "gt": "20e0d6aa599224d47ac5ca1f22f060654f1b81d8baf34f1c9340a6b7cfb1094a"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000506-head-paired",
+      "input_hashes": {
+        "motion": "9bf25a4fc4462b59d62b4e714dccf4cf72f3e93f076292aa7c6055eac7f3b8ba",
+        "imu": "755a77581405732167efbef420156f92ae1eea8d3a4b2d3edc7600d2912b70b1",
+        "reference": "d11a4b49ff0b13ee7876feedfd4519b458836456be31dc81f7c601ff3c903734",
+        "raw_acceleration": "d26d5420518ca267c5847c96df5e1c60de4837475cc1f5989614e23dd63dbe6c",
+        "raw_orientation": "f4d8041570adcd773679fdf01b175d3ed8b1190c70c086203c476319786a1623",
+        "original_orientation0": "671244c9be5e15aa1869c1044f6591aa04a3a875060fefea0bc39dcb6adcef26",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "00a4da3411b1d1faa12809bee90a2d1a2779041e73c6ee66a63b13714658d830",
+        "gt": "19c4e33736d69f1f4b599e3c367697b33768750bc8c402cb53cdda0d0f246b1f"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000506-head-text_only",
+      "input_hashes": {
+        "motion": "9bf25a4fc4462b59d62b4e714dccf4cf72f3e93f076292aa7c6055eac7f3b8ba",
+        "imu": "755a77581405732167efbef420156f92ae1eea8d3a4b2d3edc7600d2912b70b1",
+        "reference": "d11a4b49ff0b13ee7876feedfd4519b458836456be31dc81f7c601ff3c903734",
+        "raw_acceleration": "d26d5420518ca267c5847c96df5e1c60de4837475cc1f5989614e23dd63dbe6c",
+        "raw_orientation": "f4d8041570adcd773679fdf01b175d3ed8b1190c70c086203c476319786a1623",
+        "original_orientation0": "671244c9be5e15aa1869c1044f6591aa04a3a875060fefea0bc39dcb6adcef26",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "00a4da3411b1d1faa12809bee90a2d1a2779041e73c6ee66a63b13714658d830",
+        "gt": "19c4e33736d69f1f4b599e3c367697b33768750bc8c402cb53cdda0d0f246b1f"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000506-head-physical_static",
+      "input_hashes": {
+        "motion": "9bf25a4fc4462b59d62b4e714dccf4cf72f3e93f076292aa7c6055eac7f3b8ba",
+        "imu": "d11a4b49ff0b13ee7876feedfd4519b458836456be31dc81f7c601ff3c903734",
+        "reference": "d11a4b49ff0b13ee7876feedfd4519b458836456be31dc81f7c601ff3c903734",
+        "raw_acceleration": "b9823fb510bca6884b43f0003eaa962061e4c3ee5b87b5af48ba687fa882b4b8",
+        "raw_orientation": "176a20daa089f633278f7804f7b3f63ded013075278721f66571d08ef127b4e1",
+        "original_orientation0": "671244c9be5e15aa1869c1044f6591aa04a3a875060fefea0bc39dcb6adcef26",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "00a4da3411b1d1faa12809bee90a2d1a2779041e73c6ee66a63b13714658d830",
+        "gt": "19c4e33736d69f1f4b599e3c367697b33768750bc8c402cb53cdda0d0f246b1f"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000506-wrists-paired",
+      "input_hashes": {
+        "motion": "9bf25a4fc4462b59d62b4e714dccf4cf72f3e93f076292aa7c6055eac7f3b8ba",
+        "imu": "755a77581405732167efbef420156f92ae1eea8d3a4b2d3edc7600d2912b70b1",
+        "reference": "d11a4b49ff0b13ee7876feedfd4519b458836456be31dc81f7c601ff3c903734",
+        "raw_acceleration": "d26d5420518ca267c5847c96df5e1c60de4837475cc1f5989614e23dd63dbe6c",
+        "raw_orientation": "f4d8041570adcd773679fdf01b175d3ed8b1190c70c086203c476319786a1623",
+        "original_orientation0": "671244c9be5e15aa1869c1044f6591aa04a3a875060fefea0bc39dcb6adcef26",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "00a4da3411b1d1faa12809bee90a2d1a2779041e73c6ee66a63b13714658d830",
+        "gt": "19c4e33736d69f1f4b599e3c367697b33768750bc8c402cb53cdda0d0f246b1f"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000506-wrists-text_only",
+      "input_hashes": {
+        "motion": "9bf25a4fc4462b59d62b4e714dccf4cf72f3e93f076292aa7c6055eac7f3b8ba",
+        "imu": "755a77581405732167efbef420156f92ae1eea8d3a4b2d3edc7600d2912b70b1",
+        "reference": "d11a4b49ff0b13ee7876feedfd4519b458836456be31dc81f7c601ff3c903734",
+        "raw_acceleration": "d26d5420518ca267c5847c96df5e1c60de4837475cc1f5989614e23dd63dbe6c",
+        "raw_orientation": "f4d8041570adcd773679fdf01b175d3ed8b1190c70c086203c476319786a1623",
+        "original_orientation0": "671244c9be5e15aa1869c1044f6591aa04a3a875060fefea0bc39dcb6adcef26",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "00a4da3411b1d1faa12809bee90a2d1a2779041e73c6ee66a63b13714658d830",
+        "gt": "19c4e33736d69f1f4b599e3c367697b33768750bc8c402cb53cdda0d0f246b1f"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000506-wrists-physical_static",
+      "input_hashes": {
+        "motion": "9bf25a4fc4462b59d62b4e714dccf4cf72f3e93f076292aa7c6055eac7f3b8ba",
+        "imu": "d11a4b49ff0b13ee7876feedfd4519b458836456be31dc81f7c601ff3c903734",
+        "reference": "d11a4b49ff0b13ee7876feedfd4519b458836456be31dc81f7c601ff3c903734",
+        "raw_acceleration": "b9823fb510bca6884b43f0003eaa962061e4c3ee5b87b5af48ba687fa882b4b8",
+        "raw_orientation": "176a20daa089f633278f7804f7b3f63ded013075278721f66571d08ef127b4e1",
+        "original_orientation0": "671244c9be5e15aa1869c1044f6591aa04a3a875060fefea0bc39dcb6adcef26",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "00a4da3411b1d1faa12809bee90a2d1a2779041e73c6ee66a63b13714658d830",
+        "gt": "19c4e33736d69f1f4b599e3c367697b33768750bc8c402cb53cdda0d0f246b1f"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-004728-head-paired",
+      "input_hashes": {
+        "motion": "0e9c5fc08a4579f4b59e8e4988fab12a9befccbb09d96df3017bbb41fb783bf7",
+        "imu": "f009b1735ebe4600acc136c726b50613ce660da32b55d211afdf0e9312259a76",
+        "reference": "d527921b1be7fafc345fe1ef323c3d62acab05e732090e9d1f811fc610d99b1f",
+        "raw_acceleration": "029e04b5749a48a8954ba3bafb38bda03842801f0c3f06c601722afff8426877",
+        "raw_orientation": "f91bc2eaa920c72629bef0b16dc9e99b50a911ad6829be9aa9d540e76f98d3ce",
+        "original_orientation0": "542e662f70116c8d7fd9cddef0aad64789370e59b5aae01f214904dec8c2f289",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "9ebb1f214a690b7b27dfb930a5d82c914c0cbc9b4a07a9886755358e9e3897f1",
+        "gt": "4c69097c9e5a5768170c582c91f5dbab4cd25ec3e1cb8661ccd337bb074bc8db"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-004728-head-text_only",
+      "input_hashes": {
+        "motion": "0e9c5fc08a4579f4b59e8e4988fab12a9befccbb09d96df3017bbb41fb783bf7",
+        "imu": "f009b1735ebe4600acc136c726b50613ce660da32b55d211afdf0e9312259a76",
+        "reference": "d527921b1be7fafc345fe1ef323c3d62acab05e732090e9d1f811fc610d99b1f",
+        "raw_acceleration": "029e04b5749a48a8954ba3bafb38bda03842801f0c3f06c601722afff8426877",
+        "raw_orientation": "f91bc2eaa920c72629bef0b16dc9e99b50a911ad6829be9aa9d540e76f98d3ce",
+        "original_orientation0": "542e662f70116c8d7fd9cddef0aad64789370e59b5aae01f214904dec8c2f289",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "9ebb1f214a690b7b27dfb930a5d82c914c0cbc9b4a07a9886755358e9e3897f1",
+        "gt": "4c69097c9e5a5768170c582c91f5dbab4cd25ec3e1cb8661ccd337bb074bc8db"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-004728-head-physical_static",
+      "input_hashes": {
+        "motion": "0e9c5fc08a4579f4b59e8e4988fab12a9befccbb09d96df3017bbb41fb783bf7",
+        "imu": "d527921b1be7fafc345fe1ef323c3d62acab05e732090e9d1f811fc610d99b1f",
+        "reference": "d527921b1be7fafc345fe1ef323c3d62acab05e732090e9d1f811fc610d99b1f",
+        "raw_acceleration": "77f4d83787faf064a2871d49e67c6809b48e381d4bc9014beacfaf59ce6672a2",
+        "raw_orientation": "8fb5b9e8518691ee8dda5b58bf702c8beaa413ca1ebb20598be6b069f074ca60",
+        "original_orientation0": "542e662f70116c8d7fd9cddef0aad64789370e59b5aae01f214904dec8c2f289",
+        "sensor_mask": "588611f65741c171a3d92c1d5343f5dd67f4fc472fc56f01c9bc568f5ac2a623",
+        "timestamps": "9ebb1f214a690b7b27dfb930a5d82c914c0cbc9b4a07a9886755358e9e3897f1",
+        "gt": "4c69097c9e5a5768170c582c91f5dbab4cd25ec3e1cb8661ccd337bb074bc8db"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-004728-wrists-paired",
+      "input_hashes": {
+        "motion": "0e9c5fc08a4579f4b59e8e4988fab12a9befccbb09d96df3017bbb41fb783bf7",
+        "imu": "f009b1735ebe4600acc136c726b50613ce660da32b55d211afdf0e9312259a76",
+        "reference": "d527921b1be7fafc345fe1ef323c3d62acab05e732090e9d1f811fc610d99b1f",
+        "raw_acceleration": "029e04b5749a48a8954ba3bafb38bda03842801f0c3f06c601722afff8426877",
+        "raw_orientation": "f91bc2eaa920c72629bef0b16dc9e99b50a911ad6829be9aa9d540e76f98d3ce",
+        "original_orientation0": "542e662f70116c8d7fd9cddef0aad64789370e59b5aae01f214904dec8c2f289",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "9ebb1f214a690b7b27dfb930a5d82c914c0cbc9b4a07a9886755358e9e3897f1",
+        "gt": "4c69097c9e5a5768170c582c91f5dbab4cd25ec3e1cb8661ccd337bb074bc8db"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-004728-wrists-text_only",
+      "input_hashes": {
+        "motion": "0e9c5fc08a4579f4b59e8e4988fab12a9befccbb09d96df3017bbb41fb783bf7",
+        "imu": "f009b1735ebe4600acc136c726b50613ce660da32b55d211afdf0e9312259a76",
+        "reference": "d527921b1be7fafc345fe1ef323c3d62acab05e732090e9d1f811fc610d99b1f",
+        "raw_acceleration": "029e04b5749a48a8954ba3bafb38bda03842801f0c3f06c601722afff8426877",
+        "raw_orientation": "f91bc2eaa920c72629bef0b16dc9e99b50a911ad6829be9aa9d540e76f98d3ce",
+        "original_orientation0": "542e662f70116c8d7fd9cddef0aad64789370e59b5aae01f214904dec8c2f289",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "9ebb1f214a690b7b27dfb930a5d82c914c0cbc9b4a07a9886755358e9e3897f1",
+        "gt": "4c69097c9e5a5768170c582c91f5dbab4cd25ec3e1cb8661ccd337bb074bc8db"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-004728-wrists-physical_static",
+      "input_hashes": {
+        "motion": "0e9c5fc08a4579f4b59e8e4988fab12a9befccbb09d96df3017bbb41fb783bf7",
+        "imu": "d527921b1be7fafc345fe1ef323c3d62acab05e732090e9d1f811fc610d99b1f",
+        "reference": "d527921b1be7fafc345fe1ef323c3d62acab05e732090e9d1f811fc610d99b1f",
+        "raw_acceleration": "77f4d83787faf064a2871d49e67c6809b48e381d4bc9014beacfaf59ce6672a2",
+        "raw_orientation": "8fb5b9e8518691ee8dda5b58bf702c8beaa413ca1ebb20598be6b069f074ca60",
+        "original_orientation0": "542e662f70116c8d7fd9cddef0aad64789370e59b5aae01f214904dec8c2f289",
+        "sensor_mask": "1a71797cab8ed23c72233b7706b166a33049e4e87dfbc55b9e252f9c1843eca6",
+        "timestamps": "9ebb1f214a690b7b27dfb930a5d82c914c0cbc9b4a07a9886755358e9e3897f1",
+        "gt": "4c69097c9e5a5768170c582c91f5dbab4cd25ec3e1cb8661ccd337bb074bc8db"
+      },
+      "normalized_input_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0,
+      "passed": true
+    }
+  ],
+  "distinct_inputs": 60,
+  "real_pretrained_model_forwards": 0,
+  "real_training_updates": 0,
+  "real_diffusion_samples": 0,
+  "GPU_queries": 0,
+  "code": {
+    "path": "/home/a200/0proj/ITM/scripts/accept_b0_correction_implementation.py",
+    "sha256": "889818ae7f449ea30890cb32a71acaf377e6cff8e208f91e74eb1ee1fcb12e80"
+  }
+}
