@@ -1,0 +1,115 @@
+{
+  "read_commit": "03e6d95d02fc5024e286339021c0d8952c6ef46f",
+  "old_manifest": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_implementation_20260926_v3/implementation.json",
+    "sha256": "449b8d278a5a4d1ee31c6dad8a9eedbe59c2990f1efceedc45ad4ae70c805676"
+  },
+  "accepted_replacement_manifest": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_implementation_20260927_v1/implementation.json",
+    "sha256": "a802ef3b03aea7bab7fff3fda5704cf56a2c5cf6c5ed36c693a892fc35d6de13"
+  },
+  "changed_bound_artifacts": [
+    "/home/a200/0proj/ITM/scripts/run_mdm_correction_worker.py"
+  ],
+  "replacement_bound_files_verified": 127,
+  "unchanged_initialization": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_implementation_20260927_v1/initial.pt",
+    "sha256": "3ad3c1bca7ff7398386662e4831eb29136d3c0f2e06e5abbea8e7c4cb13d0401"
+  },
+  "unchanged_environment": {
+    "python": "3.10.20",
+    "torch": "2.5.1",
+    "numpy": "2.2.5",
+    "cuda_build": "12.1",
+    "cudnn": 90100,
+    "default_dtype": "torch.float32",
+    "threads": 2,
+    "matmul_tf32": false,
+    "cudnn_tf32": true,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "deterministic_algorithms": false
+  },
+  "unchanged_input_metadata_count": 60,
+  "unchanged_package": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_correction_20260926_v1/package.json",
+    "sha256": "e24c8cddce0d0cb11a7b71d2cd91a24c05fab2bbceafd2f83d56f25063c48d8a"
+  },
+  "runtime_copies": [
+    {
+      "original": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v1/runtime/D_probe.context.json",
+        "sha256": "5cca0f19063219e6ae19aa4a24fbfd0ed168019b34e37c4e80145d7903249871"
+      },
+      "copy": {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/method/correction_run_20260927_v1/runtime/D_probe.context.json",
+        "sha256": "5cca0f19063219e6ae19aa4a24fbfd0ed168019b34e37c4e80145d7903249871"
+      },
+      "byte_identical": true
+    },
+    {
+      "original": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v1/runtime/D_probe.log",
+        "sha256": "28482e2ae46387bda5fc6afac3c26ea5d1f2afdd172130fe14905f3de4dc07f2"
+      },
+      "copy": {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/method/correction_run_20260927_v1/runtime/D_probe.log",
+        "sha256": "28482e2ae46387bda5fc6afac3c26ea5d1f2afdd172130fe14905f3de4dc07f2"
+      },
+      "byte_identical": true
+    },
+    {
+      "original": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v1/runtime/D_probe.receipt.json",
+        "sha256": "f57125058f7c7f6f2f6885b0364a4992ce9aba1065f1a55978ca41d434e9672f"
+      },
+      "copy": {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/method/correction_run_20260927_v1/runtime/D_probe.receipt.json",
+        "sha256": "f57125058f7c7f6f2f6885b0364a4992ce9aba1065f1a55978ca41d434e9672f"
+      },
+      "byte_identical": true
+    },
+    {
+      "original": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v1/runtime/status.json",
+        "sha256": "59840cf7c4d877f817469acfec31548ed0a6b402798483a3244fa498cd38e3fd"
+      },
+      "copy": {
+        "path": "/home/a200/0proj/ITM/docs/itm_rework/method/correction_run_20260927_v1/runtime/status.json",
+        "sha256": "59840cf7c4d877f817469acfec31548ed0a6b402798483a3244fa498cd38e3fd"
+      },
+      "byte_identical": true
+    }
+  ],
+  "failure": {
+    "kind": "exception",
+    "type": "AttributeError",
+    "message": "'NoneType' object has no attribute 'eval'"
+  },
+  "counters": {
+    "mdm_examples": 0,
+    "encoder_examples": 0,
+    "updates_attempted": 0,
+    "updates_completed": 0,
+    "denoising_calls": 0,
+    "branch_examples": 0,
+    "exposures": 0
+  },
+  "elapsed_seconds_from_record": 4.0475696719950065,
+  "peak_allocated_bytes_from_receipt": 500039680,
+  "probes_not_run": 480,
+  "samples_not_run": 120,
+  "observed_run_runtime_children": [
+    "D_probe"
+  ],
+  "new_model_or_sample_artifacts_in_failed_run": 0,
+  "method_joint_204_evidence_verified_not_rerun": true,
+  "current_audit_model_forwards": 0,
+  "current_audit_GPU_queries": 0,
+  "replacement_authorization_created": false,
+  "old_authorization_consumed": true,
+  "code": {
+    "path": "/home/a200/0proj/ITM/scripts/accept_correction_loader_fix.py",
+    "sha256": "5c1bab9bae56153a6efe81048b0df24d101a54ac13034ad674b27f196464733f"
+  }
+}
