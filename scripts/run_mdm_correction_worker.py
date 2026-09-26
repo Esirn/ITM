@@ -44,7 +44,10 @@ def load_model(package, state, device):
     config = MDMIMUControlConfig(**state['control_config'])
     controlled, encoder, handles = install_imu_control(model, config)
     encoder.load_state_dict(state['imu_encoder']); controlled.adapters.load_state_dict(state['adapters'])
-    model.to(device).eval(); original.eval()
+    # Upstream MDM._apply/train return None; neither call supports chaining.
+    model.to(device)
+    model.eval()
+    original.eval()
     backbone = MDMBackbone(model, diffusion, torch.from_numpy(package.mean).to(device),
                            torch.from_numpy(package.std).to(device), recover_from_ric)
     return model, diffusion, controlled, encoder, original, handles, backbone

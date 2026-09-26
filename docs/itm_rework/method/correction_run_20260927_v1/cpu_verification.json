@@ -1,0 +1,63 @@
+{
+  "version": "itm-correction-loader-cpu-verification-v1",
+  "regression": {
+    "tests": 204,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "warnings": 36,
+  "seconds_reported": 100.94,
+  "loader_before_fix": {
+    "exit_code": 1,
+    "failed": 1
+  },
+  "loader_after_fix": {
+    "exit_code": 0,
+    "passed": 1
+  },
+  "changed_code": [
+    {
+      "path": "scripts/run_mdm_correction_worker.py",
+      "sha256": "d65e327219ad07e0c83dfe51d764418ce4331dfe629c6a9f937c1b72b5f0a5e1"
+    },
+    {
+      "path": "tests/test_mdm_correction.py",
+      "sha256": "0a09dd97a4dec2c6a6c73f922ba22a3aa2d6feff40a49967eb6bde71fb4b8bde"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "docs/itm_rework/method/correction_run_20260927_v1/logs/loader_after_fix.txt",
+      "sha256": "8fe568293f941dcb8cc06d594919bbcd20f9feb9add7a2ab56b276042f1af05f"
+    },
+    {
+      "path": "docs/itm_rework/method/correction_run_20260927_v1/logs/loader_before_fix.txt",
+      "sha256": "9303ea5e0f22ecb0e7d0e3289f0c1d5d3e72807149873ac121dd2aa2777564eb"
+    },
+    {
+      "path": "docs/itm_rework/method/correction_run_20260927_v1/logs/preparation.txt",
+      "sha256": "9313b6fca24a6367f047d40ae25f93729c4a5403c65599af9d8886784c61e9be"
+    },
+    {
+      "path": "docs/itm_rework/method/correction_run_20260927_v1/logs/regression.txt",
+      "sha256": "136b8b369215196c3587e2a4f4a26de2001b87e94242bb42f2903f41d78c9cf0"
+    },
+    {
+      "path": "docs/itm_rework/method/correction_run_20260927_v1/logs/regression.xml",
+      "sha256": "461e6437122cae75966333593cf93517e184ab3404bf95838dfdb23394d42889"
+    },
+    {
+      "path": "docs/itm_rework/method/correction_run_20260927_v1/implementation.json",
+      "sha256": "a802ef3b03aea7bab7fff3fda5704cf56a2c5cf6c5ed36c693a892fc35d6de13"
+    },
+    {
+      "path": "docs/itm_rework/method/correction_run_20260927_v1/run_summary.json",
+      "sha256": "d7675f9b54a6047e18b54f610df0bc26d899a31f115c21dc7aa7aa0bdda1b671"
+    }
+  ],
+  "pretrained_forwards_after_failure": 0,
+  "real_updates_after_failure": 0,
+  "real_samples_after_failure": 0,
+  "retries": 0
+}

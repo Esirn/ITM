@@ -1,0 +1,106 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_____ test_load_model_with_upstream_nonreturning_device_and_train_methods ______
+
+tmp_path = PosixPath('/tmp/pytest-of-a200/pytest-41/test_load_model_with_upstream_0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f709dfeb310>
+
+    def test_load_model_with_upstream_nonreturning_device_and_train_methods(tmp_path, monkeypatch):
+        """Exercise the real loader with upstream methods, without CLIP/SMPL/forwards."""
+        source = ROOT/'outputs/mdm/runtime_root/model/mdm.py'
+        upstream = next(n for n in ast.parse(source.read_text()).body
+                        if isinstance(n, ast.ClassDef) and n.name == 'MDM')
+        methods = [n for n in upstream.body if isinstance(n, ast.FunctionDef)
+                   and n.name in ('_apply', 'train')]
+        assert len(methods) == 2
+        fixture = ast.ClassDef(name='UpstreamMDM', bases=[ast.Name(id='TinyMDM', ctx=ast.Load())],
+                               keywords=[], body=methods, decorator_list=[])
+        namespace = {'TinyMDM': TinyMDM}
+        exec(compile(ast.fix_missing_locations(ast.Module(body=[fixture], type_ignores=[])),
+                     str(source), 'exec'), namespace)
+        model = namespace['UpstreamMDM']()
+        model.rot2xyz = SimpleNamespace(smpl_model=torch.nn.Linear(2, 2))
+        assert model.to('cpu') is None
+        assert model.eval() is None
+        model.train()
+        original = model.seqTransEncoder
+        config = small_config()
+        control, encoder, _ = install_imu_control(TinyMDM(), config)
+        state = dict(control_config=asdict(config), imu_encoder=encoder.state_dict(),
+                     adapters=control.adapters.state_dict())
+        checkpoint = tmp_path/'backbone.pt'
+        torch.save(model.state_dict(), checkpoint)
+        options = tmp_path/'args.json'
+        options.write_text(json.dumps(dict(predict_xstart=True, mask_frames=False)))
+        def artifact(path):
+            return dict(path=str(path), sha256=sha256(path))
+        package = SimpleNamespace(common=dict(backbone=artifact(checkpoint),
+            training_input_provenance=dict(payload=dict(artifacts=dict(mdm_args=artifact(options))))),
+            mean=np.zeros(263, dtype=np.float32), std=np.ones(263, dtype=np.float32))
+        diffusion = SimpleNamespace(num_timesteps=1000)
+        monkeypatch.setattr(sys, 'path', list(sys.path))
+        worker = script('run_mdm_correction_worker')
+        monkeypatch.setitem(sys.modules, 'train_mdm_imu_control', SimpleNamespace(
+            _legacy_compatibility=lambda: None, _set_mdm_compatibility_defaults=lambda options: None))
+        monkeypatch.setitem(sys.modules, 'utils.model_util', SimpleNamespace(
+            create_model_and_diffusion=lambda *args: (model, diffusion),
+            load_model_wo_clip=lambda target, weights: target.load_state_dict(weights)))
+        monkeypatch.setitem(sys.modules, 'data_loaders.humanml.scripts.motion_process',
+                            SimpleNamespace(recover_from_ric=lambda *args: None))
+        runtime = tmp_path/'outputs/mdm/runtime_root'
+        runtime.mkdir(parents=True)
+        monkeypatch.setattr(worker, 'ROOT', tmp_path)
+        monkeypatch.chdir(tmp_path)  # Restore cwd after the loader changes it.
+        def forbidden_forward(*args, **kwargs):
+            pytest.fail('Loading must not call a model forward')
+        monkeypatch.setattr(torch.nn.Module, '_call_impl', forbidden_forward)
+>       loaded, actual_diffusion, controlled, actual_encoder, raw, handles, backbone = worker.load_model(
+            package, state, 'cpu')
+
+/home/a200/0proj/ITM/tests/test_mdm_correction.py:130: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+package = namespace(common={'backbone': {'path': '/tmp/pytest-of-a200/pytest-41/test_load_model_with_upstream_0/backbone.pt', 's...1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+       1., 1., 1., 1., 1., 1., 1., 1.], dtype=float32))
+state = {'adapters': OrderedDict([('0.weight', tensor([[0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0., 0., 0., ...., 1., 1., 1., 1., 1., 1., 1.])), ('temporal_encoder.layers.1.norm2.bias', tensor([0., 0., 0., 0., 0., 0., 0., 0.]))])}
+device = 'cpu'
+
+    def load_model(package, state, device):
+        from train_mdm_imu_control import _legacy_compatibility, _set_mdm_compatibility_defaults
+        _legacy_compatibility()
+        common = package.common
+        mdm_path = verify(common['backbone'])
+        args_path = verify(common['training_input_provenance']['payload']['artifacts']['mdm_args'])
+        options = read(args_path); _set_mdm_compatibility_defaults(options)
+        if options.get('mask_frames', False) or not options['predict_xstart']:
+            raise ValueError('Frozen backbone must predict x0 without frame attention masking')
+        mdm_root = ROOT/'outputs/mdm/runtime_root'
+        os.chdir(mdm_root); sys.path.insert(0, str(mdm_root))
+        from utils.model_util import create_model_and_diffusion, load_model_wo_clip
+        from data_loaders.humanml.scripts.motion_process import recover_from_ric
+        model, diffusion = create_model_and_diffusion(SimpleNamespace(**options), SimpleNamespace(dataset=SimpleNamespace(num_actions=1)))
+        load_model_wo_clip(model, torch.load(mdm_path, map_location='cpu', weights_only=True))
+        if diffusion.num_timesteps != 1000:
+            raise ValueError('Frozen 1000-step diffusion required')
+        original = model.seqTransEncoder
+        config = MDMIMUControlConfig(**state['control_config'])
+        controlled, encoder, handles = install_imu_control(model, config)
+        encoder.load_state_dict(state['imu_encoder']); controlled.adapters.load_state_dict(state['adapters'])
+>       model.to(device).eval(); original.eval()
+E       AttributeError: 'NoneType' object has no attribute 'eval'
+
+/home/a200/0proj/ITM/scripts/run_mdm_correction_worker.py:47: AttributeError
+=============================== warnings summary ===============================
+tests/test_mdm_correction.py::test_load_model_with_upstream_nonreturning_device_and_train_methods
+  /home/a200/miniconda3/envs/itm/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+    warnings.warn(
+
+tests/test_mdm_correction.py::test_load_model_with_upstream_nonreturning_device_and_train_methods
+  /home/a200/miniconda3/envs/itm/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_mdm_correction.py::test_load_model_with_upstream_nonreturning_device_and_train_methods
+1 failed, 2 warnings in 1.03s

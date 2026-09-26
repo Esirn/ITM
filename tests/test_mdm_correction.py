@@ -1,5 +1,6 @@
 """CPU fixtures only: no pretrained backbone, CUDA, real training or generation."""
-from dataclasses import replace
+import ast
+from dataclasses import asdict, replace
 import importlib.util
 import json
 from pathlib import Path
@@ -75,6 +76,68 @@ class TinyMDM(torch.nn.Module):
         self.seqTransEncoder=torch.nn.TransformerEncoder(layer,2)
     def forward(self,x,t=None,y=None):
         return self.seqTransEncoder(x)
+
+
+def test_load_model_with_upstream_nonreturning_device_and_train_methods(tmp_path, monkeypatch):
+    """Exercise the real loader with upstream methods, without CLIP/SMPL/forwards."""
+    source = ROOT/'outputs/mdm/runtime_root/model/mdm.py'
+    upstream = next(n for n in ast.parse(source.read_text()).body
+                    if isinstance(n, ast.ClassDef) and n.name == 'MDM')
+    methods = [n for n in upstream.body if isinstance(n, ast.FunctionDef)
+               and n.name in ('_apply', 'train')]
+    assert len(methods) == 2
+    fixture = ast.ClassDef(name='UpstreamMDM', bases=[ast.Name(id='TinyMDM', ctx=ast.Load())],
+                           keywords=[], body=methods, decorator_list=[])
+    namespace = {'TinyMDM': TinyMDM}
+    exec(compile(ast.fix_missing_locations(ast.Module(body=[fixture], type_ignores=[])),
+                 str(source), 'exec'), namespace)
+    model = namespace['UpstreamMDM']()
+    model.rot2xyz = SimpleNamespace(smpl_model=torch.nn.Linear(2, 2))
+    assert model.to('cpu') is None
+    assert model.eval() is None
+    model.train()
+    original = model.seqTransEncoder
+    config = small_config()
+    control, encoder, _ = install_imu_control(TinyMDM(), config)
+    state = dict(control_config=asdict(config), imu_encoder=encoder.state_dict(),
+                 adapters=control.adapters.state_dict())
+    checkpoint = tmp_path/'backbone.pt'
+    torch.save(model.state_dict(), checkpoint)
+    options = tmp_path/'args.json'
+    options.write_text(json.dumps(dict(predict_xstart=True, mask_frames=False)))
+    def artifact(path):
+        return dict(path=str(path), sha256=sha256(path))
+    package = SimpleNamespace(common=dict(backbone=artifact(checkpoint),
+        training_input_provenance=dict(payload=dict(artifacts=dict(mdm_args=artifact(options))))),
+        mean=np.zeros(263, dtype=np.float32), std=np.ones(263, dtype=np.float32))
+    diffusion = SimpleNamespace(num_timesteps=1000)
+    monkeypatch.setattr(sys, 'path', list(sys.path))
+    worker = script('run_mdm_correction_worker')
+    monkeypatch.setitem(sys.modules, 'train_mdm_imu_control', SimpleNamespace(
+        _legacy_compatibility=lambda: None, _set_mdm_compatibility_defaults=lambda options: None))
+    monkeypatch.setitem(sys.modules, 'utils.model_util', SimpleNamespace(
+        create_model_and_diffusion=lambda *args: (model, diffusion),
+        load_model_wo_clip=lambda target, weights: target.load_state_dict(weights)))
+    monkeypatch.setitem(sys.modules, 'data_loaders.humanml.scripts.motion_process',
+                        SimpleNamespace(recover_from_ric=lambda *args: None))
+    runtime = tmp_path/'outputs/mdm/runtime_root'
+    runtime.mkdir(parents=True)
+    monkeypatch.setattr(worker, 'ROOT', tmp_path)
+    monkeypatch.chdir(tmp_path)  # Restore cwd after the loader changes it.
+    def forbidden_forward(*args, **kwargs):
+        pytest.fail('Loading must not call a model forward')
+    monkeypatch.setattr(torch.nn.Module, '_call_impl', forbidden_forward)
+    loaded, actual_diffusion, controlled, actual_encoder, raw, handles, backbone = worker.load_model(
+        package, state, 'cpu')
+    assert loaded is model and raw is original and actual_diffusion is diffusion
+    assert backbone.model is model and backbone.diffusion is diffusion
+    assert handles and all(not module.training for module in model.modules())
+    assert not original.training and not model.rot2xyz.smpl_model.training
+    assert all(p.device.type == 'cpu' for p in model.parameters())
+    for actual, expected in ((actual_encoder.state_dict(), state['imu_encoder']),
+                             (controlled.adapters.state_dict(), state['adapters'])):
+        assert actual.keys() == expected.keys()
+        assert all(torch.equal(actual[key], expected[key]) for key in expected)
 
 
 def test_static_delta_bias_unused_frozen_and_null_matches_raw():

@@ -1,0 +1,78 @@
+{
+  "version": "itm-correction-failed-run-handoff-v1",
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v1",
+  "authorization_record": "/home/a200/0proj/ITM/docs/itm_rework/method/B0_CORRECTION_AUTHORIZATION_20260927.json",
+  "attempted_implementation_sha256": "449b8d278a5a4d1ee31c6dad8a9eedbe59c2990f1efceedc45ad4ae70c805676",
+  "replacement_implementation_sha256": "a802ef3b03aea7bab7fff3fda5704cf56a2c5cf6c5ed36c693a892fc35d6de13",
+  "replacement_implementation": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_implementation_20260927_v1/implementation.json",
+  "initialization_sha256": "3ad3c1bca7ff7398386662e4831eb29136d3c0f2e06e5abbea8e7c4cb13d0401",
+  "changed_bound_artifacts": [
+    "/home/a200/0proj/ITM/scripts/run_mdm_correction_worker.py"
+  ],
+  "verified_replacement_artifacts": 127,
+  "unchanged_input_metadata": true,
+  "unchanged_environment": true,
+  "unchanged_initial_file": true,
+  "queue_status": "failed",
+  "exit_code": 1,
+  "elapsed_seconds": 4.0475696719950065,
+  "peak_allocated_bytes": 500039680,
+  "failure": {
+    "kind": "exception",
+    "type": "AttributeError",
+    "message": "'NoneType' object has no attribute 'eval'"
+  },
+  "gpu_preflight": {
+    "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+    "total_MiB": 24564,
+    "free_MiB": 24121,
+    "compute_processes": 0
+  },
+  "counters": {
+    "mdm_examples": 0,
+    "encoder_examples": 0,
+    "updates_attempted": 0,
+    "updates_completed": 0,
+    "denoising_calls": 0,
+    "exposures": 0
+  },
+  "probes_by_status": {
+    "not_run_after_stop": 480
+  },
+  "samples_by_status": {
+    "not_run_after_stop": 120
+  },
+  "retries": 0,
+  "replacement_authorized": false,
+  "post_failure_gpu_query": {
+    "command": "nvidia-smi --query-compute-apps=gpu_uuid,pid,used_memory --format=csv,noheader",
+    "stdout": "GPU-43c2f925-db05-c655-bb46-25196d0627d6, 747617, 1478 MiB\n",
+    "authorized_gpu_has_compute_process": false
+  },
+  "preserved_runtime": [
+    {
+      "path": "docs/itm_rework/method/correction_run_20260927_v1/runtime/D_probe.context.json",
+      "sha256": "5cca0f19063219e6ae19aa4a24fbfd0ed168019b34e37c4e80145d7903249871",
+      "original_path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v1/runtime/D_probe.context.json",
+      "byte_identical": true
+    },
+    {
+      "path": "docs/itm_rework/method/correction_run_20260927_v1/runtime/D_probe.log",
+      "sha256": "28482e2ae46387bda5fc6afac3c26ea5d1f2afdd172130fe14905f3de4dc07f2",
+      "original_path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v1/runtime/D_probe.log",
+      "byte_identical": true
+    },
+    {
+      "path": "docs/itm_rework/method/correction_run_20260927_v1/runtime/D_probe.receipt.json",
+      "sha256": "f57125058f7c7f6f2f6885b0364a4992ce9aba1065f1a55978ca41d434e9672f",
+      "original_path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v1/runtime/D_probe.receipt.json",
+      "byte_identical": true
+    },
+    {
+      "path": "docs/itm_rework/method/correction_run_20260927_v1/runtime/status.json",
+      "sha256": "59840cf7c4d877f817469acfec31548ed0a6b402798483a3244fa498cd38e3fd",
+      "original_path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v1/runtime/status.json",
+      "byte_identical": true
+    }
+  ]
+}
