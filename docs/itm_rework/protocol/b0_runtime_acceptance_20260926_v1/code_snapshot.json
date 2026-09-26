@@ -1,0 +1,33 @@
+{
+  "method_commit": "1d44adc",
+  "files": [
+    {
+      "path": "scripts/accept_b0_runtime_limits.py",
+      "sha256": "5faa7929279809800a53b4082cdbf16cc22e64464670de7e614200b28f346e43"
+    },
+    {
+      "path": "scripts/run_mdm_b0_bounded.py",
+      "sha256": "9cf84ee396e9617f0c4e9ac684845f96abd6a1d8f43b2cdf0e252a936068247e"
+    },
+    {
+      "path": "scripts/train_mdm_imu_control.py",
+      "sha256": "14e7bee3de0d5b60815c7550f7e6787fb7d844e12c224fef8b33987177ea8f89"
+    },
+    {
+      "path": "scripts/sample_mdm_imu_control.py",
+      "sha256": "569711343f38c75fa34d670ee76882bf048571ea60e3da377e3cac0309e0c463"
+    },
+    {
+      "path": "src/itm/models/mdm_run_limits.py",
+      "sha256": "cf339ae8d8a6b4d76946281fa0be974ca2a7b4462a781a6d70aebb3c1dfc7f76"
+    },
+    {
+      "path": "src/itm/models/mdm_sampling.py",
+      "sha256": "def8c1bf77446e652be1216fa20485a00474b1884071e2305fc204ee1f0a3e68"
+    },
+    {
+      "path": "tests/test_mdm_run_limits.py",
+      "sha256": "bad5b2dc50523ea264a8c88695c77ebf3af93b711bad76f3376b85d5ffb6d27f"
+    }
+  ]
+}

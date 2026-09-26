@@ -1,0 +1,10 @@
+{
+  "CPU_supervisor_scenarios": 3,
+  "tiny_CPU_DDPM_calls": 1000,
+  "scalar_GPU_calls": 0,
+  "real_model_forwards": 0,
+  "B0_training_updates": 0,
+  "B0_samples": 0,
+  "gpu_preflight": false,
+  "user_authorization_record_created": false
+}

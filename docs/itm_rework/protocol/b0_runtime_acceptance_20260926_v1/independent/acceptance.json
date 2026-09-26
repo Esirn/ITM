@@ -1,0 +1,66 @@
+{
+  "read_commit": "1d44adc7ba1d57080c74c9643f9531ec71c71f81",
+  "scope": "CPU runtime control-flow and software fault acceptance only",
+  "scenarios": [
+    {
+      "scenario": "success",
+      "status": "passed",
+      "artifact": {
+        "path": "docs/itm_rework/protocol/b0_runtime_acceptance_20260926_v1/independent/success_CPU_FIXTURE.json",
+        "sha256": "cae94732e215d7ac0083b0e6a87bbb5fd14db1b94f3c21cb1af759677b3f35c9"
+      }
+    },
+    {
+      "scenario": "partial_training",
+      "status": "passed",
+      "artifact": {
+        "path": "docs/itm_rework/protocol/b0_runtime_acceptance_20260926_v1/independent/partial_training_CPU_FIXTURE.json",
+        "sha256": "f464e8a4c88817039003f406201ca4414233ad3557ce4f61aec9ed9a2c727046"
+      }
+    },
+    {
+      "scenario": "sample_timeout",
+      "status": "passed",
+      "artifact": {
+        "path": "docs/itm_rework/protocol/b0_runtime_acceptance_20260926_v1/independent/sample_timeout_CPU_FIXTURE.json",
+        "sha256": "dbcad1d35c4c1a896de6e7f1413dee9d5709c0095574b1e22f92930470757841"
+      }
+    }
+  ],
+  "tiny_sampler": {
+    "calls": 1000,
+    "branch_budget_count": 4000,
+    "noise_draws": 1000,
+    "call_1001_refused": true,
+    "short_completed_receipt_rejected": true,
+    "real_model": false
+  },
+  "preparation": {
+    "matches_01_after_only_run_path_substitution": true,
+    "slots_planned": 36,
+    "authorization": null,
+    "current": {
+      "path": "docs/itm_rework/protocol/b0_runtime_acceptance_20260926_v1/independent/preparation_status.json",
+      "sha256": "57aa4b3a2fdc28020dab232481ee6626d7ed8e0831f7b914d9f61ca9e01ad260"
+    },
+    "previous": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/b0_limits_preparation_20260926_v2.json",
+      "sha256": "6f27205a201ba9b940dd73f02dc26055d11e75878c9a35fdd2cfe8e772f8459b"
+    }
+  },
+  "code": {
+    "path": "/home/a200/0proj/ITM/scripts/accept_b0_runtime_limits.py",
+    "sha256": "5faa7929279809800a53b4082cdbf16cc22e64464670de7e614200b28f346e43"
+  },
+  "real_B0": {
+    "training_updates": 0,
+    "samples": 0,
+    "GPU_jobs": 0,
+    "GPU_preflight": false
+  },
+  "limitations": [
+    "Top-level execution fixtures stub authorization/GPU/subprocess jobs; they are not approvals or generation results.",
+    "GPU allocator cap verified only by software mocks; actual CUDA driver/device preflight remains required.",
+    "No user budget authorization has been received or created."
+  ]
+}
