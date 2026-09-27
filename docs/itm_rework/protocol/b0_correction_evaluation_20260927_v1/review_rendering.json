@@ -1,0 +1,86 @@
+{
+  "images": [
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_correction_evaluation_20260927_v1/review/page_01.png",
+      "sha256": "84460e3313328e5d4639baa9d0d8a41c61e3965b748e9e9e9405a808c9367f4b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_correction_evaluation_20260927_v1/review/page_02.png",
+      "sha256": "d95198a28bd9a75a4306f2c09de227f82da621a8de603c01296a84fb4514f300"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_correction_evaluation_20260927_v1/review/page_03.png",
+      "sha256": "3c32dac098a01433f26124b6247d335daa4d52fa7cf2b9af74880c711fe03a5a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_correction_evaluation_20260927_v1/review/page_04.png",
+      "sha256": "e17d1a469b9e6b0baec0c31f17695479693aa6e0ea04248badee2dfac3d8792e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_correction_evaluation_20260927_v1/review/page_05.png",
+      "sha256": "fd47491e04d4d981579a29436d9a9fe11c06281cae1d0f6a5b484c5edfe86345"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_correction_evaluation_20260927_v1/review/page_06.png",
+      "sha256": "3cf36b1d78b504c753171dbef52ce3252361085d0086891b6e9bcc340e9e3b3a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_correction_evaluation_20260927_v1/review/page_07.png",
+      "sha256": "daa58ce14bc165417031e5dc769d0480fda88457a3c4e539d50b16abe159749e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_correction_evaluation_20260927_v1/review/page_08.png",
+      "sha256": "a1d9ee4f21a6c9b889fd23dbab156cd070127a7107185e760562fd143919b545"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_correction_evaluation_20260927_v1/review/page_09.png",
+      "sha256": "d30a5d33f7ad44c0de76c702b63f4ab4b4f27f996426a82d4216ad9a231dd30f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_correction_evaluation_20260927_v1/review/page_10.png",
+      "sha256": "18315855dbd5d6350ef95a5bfde5a6cc4d1f3e3ca42117e49952e7a334eb74d6"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_correction_evaluation_20260927_v1/review/page_11.png",
+      "sha256": "f044958fbfbca99df032bfc2c41b6a8fa4a48af2378d8468e253dd201a39c4a6"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_correction_evaluation_20260927_v1/review/page_12.png",
+      "sha256": "2ee2adb7e8c1d1acef3e5685569181e7917911805400c78fed2431aaaa469a85"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_correction_evaluation_20260927_v1/review/page_13.png",
+      "sha256": "5957f3ed0c0e1db06e7e6632113026cfc417d0be4acba1366410f12ad7629f65"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_correction_evaluation_20260927_v1/review/page_14.png",
+      "sha256": "872687fe833594362d4f72d9314664cc18947b3beb32cd2c1cbab284ceea3757"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_correction_evaluation_20260927_v1/review/page_15.png",
+      "sha256": "79a65df7499f52d3a70e33a05d668c26a9fdde9059594f5ee6e1fcc876d1e42c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_correction_evaluation_20260927_v1/review/page_16.png",
+      "sha256": "acd29fb922ffadb0c3722a44354269249bf81625c0b123b029c05dd66c114983"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_correction_evaluation_20260927_v1/review/page_17.png",
+      "sha256": "ed7eb39054f351bea50d9a3182ed88acb06a00fbb81dc33362a82d1e2144342a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_correction_evaluation_20260927_v1/review/page_18.png",
+      "sha256": "251395d37a0b09757d3130ae71c02d8797700abc3e5559a77a541e64b7fe079e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_correction_evaluation_20260927_v1/review/page_19.png",
+      "sha256": "f3b2c4d76389d810f46fe829b25740fe12dae50868001ba27b7f086316867243"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/b0_correction_evaluation_20260927_v1/review/page_20.png",
+      "sha256": "30aee27ed938665ce86a6fa740a7daa0bfbca0be12d6478d571a022a2a3062d8"
+    }
+  ],
+  "order_sha256": "28cee58a5cf8318abeb479a4d4976f295609f7e4431371c0e081cda8ad2ba484",
+  "scope": "Arm/config/condition hidden on figures. Single AI reviewer; snapshots plus all-frame traces. Mapping file partially inspected during schema discovery; not a fully blinded independent human assessment."
+}

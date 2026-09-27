@@ -1,0 +1,34 @@
+{
+  "code": [
+    {
+      "path": "scripts/evaluate_b0_correction.py",
+      "sha256": "903332a2315af02ac3249b1334184ad46d25bf7a79fce33490754a609b157f59"
+    },
+    {
+      "path": "scripts/audit_b0_correction_execution.py",
+      "sha256": "cc576db72ba83a3179e9d104718fd64a99c88775de0ca1887442ef0f1f1d478f"
+    },
+    {
+      "path": "tests/test_b0_correction_evaluation.py",
+      "sha256": "b187c6fdcd48e17c2edb643d01fca2e00e49a3e3afe78e63a4e554f917c1a3ba"
+    },
+    {
+      "path": "src/itm/metrics/canonical_b0.py",
+      "sha256": "a3d8d42cc9391f34308f8b3e3246fe7b1dbf80c29b2466222e6ea1b68b820364"
+    },
+    {
+      "path": "src/itm/data/humanml_torch.py",
+      "sha256": "41473f5d4c53b3d114497f7ede6f2c544e9c8b17918388f3f89e520e01ede186"
+    },
+    {
+      "path": "scripts/accept_canonical_b0_handoff.py",
+      "sha256": "7d7c826eb378b51293141549f8b5c415a7c5c165949e7c6271aae3ed03c649f4"
+    }
+  ],
+  "reviewed_rows": 120,
+  "review_pages": 20,
+  "all_image_hashes_verified": true,
+  "notes_hash_before_unmask_verified": true,
+  "current_model_forwards": 0,
+  "current_GPU_queries": 0
+}

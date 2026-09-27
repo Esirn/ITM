@@ -1,0 +1,6 @@
+/home/a200/.config/matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /tmp/matplotlib-atvhvctq because there was an issue with the default path (/home/a200/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+rendered 17/20
+rendered 18/20
+rendered 19/20
+rendered 20/20

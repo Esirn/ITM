@@ -1,0 +1,121 @@
+Single AI reviewer. Frozen order; arm/config/condition hidden in figures. Some mapping was exposed during schema discovery, so this is not fully blinded. Notes recorded before quantitative metrics/unmasking. No semantic success rate; uncertain distinctions retained. Ten snapshots plus every-frame hand/ankle/root traces.
+C001: Late right-leg kick/lift; leg still elevated at end; return to standing incomplete.
+C002: Mostly fixed split stance with hands near torso; small late leg motion, clear kick uncertain.
+C003: Repeated alternating steps and long root travel; walking visible, initial stand/sway timing uncertain.
+C004: Early forward arm thrusts and bent knees, later turning/steps and arms down; broadly punch then turn, exact ordering uncertain.
+C005: Arms approach at chest then lower; repeated hand contacts uncertain, wrist separation stays substantial.
+C006: Late right-leg lift with bent support posture; leg stays raised at end, full kick/return uncertain.
+C007: Sustained very low crouch/seated posture and tiny foot changes; no clear alternating forward lunges.
+C008: Right leg rises very high, holds, then lowers; backwards direction uncertain in oblique projection; upper body leans strongly.
+C009: Late right-leg kick/lift, not fully lowered by final frame.
+C010: Repeated hand approach/separation near chest then arms lower; coarse clapping visible.
+C011: Late collapse into low crouch; no clear upright kick-return sequence.
+C012: Arms rise and stay together then lower; repeated clap contacts uncertain from nearly flat hand-separation trace.
+C013: Large hopping/jumping and deep landing crouch with large travel; target single standing kick not preserved.
+C014: Repeated large high steps/hops and arm spread, elevated ankles; normal walking uncertain.
+C015: Alternating steps with forward root travel; walking visible, initial pause/timing uncertain.
+C016: Almost fixed split stance and arm change; no clear kick.
+C017: Repeated steps and arm swing with long travel; walking visible, pauses/timing uncertain.
+C018: Arms come together and hold, lower only at end; repeated claps uncertain.
+C019: Late high right-leg lift, incomplete return to standing.
+C020: Hands come together and remain close with small oscillations, then separate/lower; repeated claps uncertain.
+C021: Alternating stepping and arm swing, brief torso bend, long forward root travel; walking visible.
+C022: Arms raised together then down; repeated clap contacts uncertain.
+C023: Upright standing with late arm reach; no substantial kick visible.
+C024: Split stance and hands at chest, little leg motion; no clear kick.
+C025: Mostly upright stance, late arm reach; no clear kick.
+C026: Alternating walking steps, brief forward bend, long travel; initial sway timing uncertain.
+C027: Small late right-leg lift and crouch; kick amplitude/return uncertain.
+C028: Arms approach and hold at chest, late separation/lowering; repetitions uncertain.
+C029: Arms together at chest then lower; separation largely smooth, repeated claps uncertain.
+C030: Forward stance with late right-leg lift, remains raised; complete kick-return uncertain.
+C031: Persistent forward-bent stance with hands near thighs, almost fixed ankle heights; target back-leg hold absent.
+C032: Both feet elevated with arms together and forward knee/leg hold; clapping while normal standing not preserved.
+C033: Persistent very low crouch/seated posture; no clear alternating lunges.
+C034: High right-leg raise/hold then lower with strong lean; backward direction uncertain.
+C035: Alternating steps and long root travel; walking visible, stand-first timing uncertain.
+C036: Leaning then small late steps/turn, no clear sustained backward right-leg lift.
+C037: Upright almost-static legs with late arm reach; no clear kick.
+C038: Sustained very high right-leg hold then lower; walking replaced by leg-lift action.
+C039: Repeated alternating arm reaches/thrusts with steps and turns; punch-like motion visible, precise punch-then-turn order uncertain.
+C040: Hands approach and hold, then arms down; repeated claps uncertain.
+C041: Sustained low seated/crouched posture and slow root drift; no clear alternating forward lunges.
+C042: High right-leg lift/hold then lower; no walking sequence.
+C043: Right leg lifts very high for a long hold and lowers; backward direction uncertain, extreme elevation.
+C044: Repeated deep stepping/lunging with arms raised and long travel; standing clapping not preserved.
+C045: High right-leg lift/hold and lowering; no alternating walking.
+C046: Large alternating arm extensions with steps/turn; punch-like, exact ordering and naturalness uncertain.
+C047: Tiny ankle lift and slight crouch/arm motion; clear kick uncertain.
+C048: Standing transitions to a low crouch/lean with one high leg episode; alternating lunges not evident.
+C049: Alternating steps/arm swing and long travel, brief bend; walking visible.
+C050: Repeated hand approach/separation followed by lowering; coarse clap sequence visible.
+C051: Mostly split stance, small late leg lift; clear kick uncertain.
+C052: Early large jump/hop, then walking; initial stand/sway is not preserved.
+C053: One early high knee and later bend with little net travel; sustained walking unclear.
+C054: Split stance and minor arm/leg changes; no clear kick.
+C055: Very high right-leg hold then lowering; walking replaced by leg lift.
+C056: LEFT leg bent backward and held, lowered late; opposite side to requested RIGHT leg.
+C057: Late high right-leg kick/lift, leg remains elevated at end.
+C058: Very high right-leg hold then lowering; no walking.
+C059: Late high right-leg lift, incomplete return to standing.
+C060: Split stance, arms near chest then lower, isolated middle hop; regular clapping uncertain.
+C061: Very high right-leg hold then lower; walking absent.
+C062: Hands approach at chest and remain close, lower at end; repeat contacts uncertain.
+C063: Upright stance and late arm reach; no substantial kick.
+C064: Fixed split stance with small late leg movement; distinct kick uncertain.
+C065: Upright stance and late arm reach; no substantial kick.
+C066: Early arm thrusts with low stance, later turn/steps and arms down; coarse punch/turn visible, exact action ordering uncertain.
+C067: Early arm motions and several large hops then standing; punch-to-turn ordering uncertain, extra jumping.
+C068: Arms together and held at chest, lower late; repeated claps uncertain.
+C069: Very high right-leg lift/hold then lower; walking absent.
+C070: LEFT leg bent back and held, lowered late; side conflicts with requested RIGHT leg.
+C071: Low crouch with single large right knee/foot raise and return; alternating forward lunges uncertain.
+C072: Repeated alternating steps/arm swing and long travel; walking visible, initial still phase uncertain.
+C073: Alternating walking and long travel, brief bend; initial pause timing uncertain.
+C074: Persistent bent stance, hands near thighs, feet remain down; backward leg raise absent.
+C075: Repeated arm thrusts/extensions with turning steps; punch-like, exact ordering uncertain.
+C076: High right-leg hold then lower; walking absent.
+C077: Repeated hand approach/separation at chest followed by lowering; coarse clapping visible.
+C078: Repeated hand approach/separation at chest followed by lowering; coarse clapping visible.
+C079: Large arm extensions and turning steps; punch-like with extra stepping, order uncertain.
+C080: Standing then descending to seated/deep crouch, stays low; alternating lunges absent.
+C081: Standing then descending to seated/deep crouch, stays low; alternating lunges absent.
+C082: Arms together and held before lowering; repeated contacts uncertain.
+C083: Alternating steps/arm swing with long root travel; walking visible.
+C084: Persistent bent stance, feet down; target back-leg hold absent.
+C085: Low stance with one right-leg raise/return; repeated alternating forward lunges not evident.
+C086: Alternating steps/arm swing and long root travel; walking visible.
+C087: Split stance with minimal ankle motion and late arm change; no clear kick.
+C088: Wide steps/lunges and turns with large travel; hands stay near body, clapping not evident.
+C089: Arms close while both ankles elevated, held leg/knee position; standing clap target not preserved.
+C090: Repeated hand approach/separation then lowering; coarse clapping visible.
+C091: Late high right-leg kick/lift with incomplete lowering by end.
+C092: Repeated alternating steps and long root travel; walking visible, initial timing uncertain.
+C093: Repeated hand approach/separation then arms lower; coarse clapping visible.
+C094: Early arm thrusts and low stance, later turning/steps and arms down; coarse punch/turn visible, timing uncertain.
+C095: Sustained very low seated/crouched posture; no alternating forward lunges.
+C096: Late high right-leg kick/lift, leg still elevated at end.
+C097: Standing then prolonged low seated/crouched posture; no repeated alternating forward lunges.
+C098: Alternating walking with bent torso, vertical root/ankle drift; walking visible but support/naturalness uncertain.
+C099: Alternating steps and long travel; walking visible, initial pause timing uncertain.
+C100: Repeated hand approach/separation then lowering; coarse clapping visible.
+C101: Hands together then lower, smooth separation trace; repeated claps uncertain.
+C102: Standing then settling into deep seated/crouched posture; no alternating lunge sequence.
+C103: Very high right-leg hold then lower; backward direction uncertain and extreme elevation.
+C104: Very high right-leg hold then lower; backward direction uncertain and extreme elevation.
+C105: Early thrust-like arm motions in low stance, later turns/steps and arms down; extra hopping, precise order uncertain.
+C106: Arms together and held then lower; repeated claps uncertain.
+C107: Standing to deep crouch/lean with one leg-lift episode; no clear repeated alternating lunges.
+C108: Arms come together and hold with bent stance, later some hand movement; repeated clap contacts uncertain.
+C109: LEFT leg bent backward and held, lowered late; side conflicts with requested RIGHT leg.
+C110: Large alternating arm extensions with turning steps; punch-like, order and extra stepping uncertain.
+C111: Late high right-leg kick/lift; incomplete return to standing.
+C112: Repeated large arm raises/spreads with hops, rather than chest-level clapping and lowering.
+C113: Repeated arm thrusts and turning steps; punch-like but exact ordering uncertain.
+C114: Early arm motion and deep stance followed by one large hop and standing; punch/turn uncertain.
+C115: Arms together and held before lowering; repeated contacts uncertain.
+C116: Split stance and small late leg lift; clear kick uncertain.
+C117: Nearly fixed split stance with late arm motion; no clear kick.
+C118: High right-leg hold then lower; walking absent.
+C119: Alternating steps and long travel, brief bend; walking visible, initial pause timing uncertain.
+C120: High right-leg hold then lower; walking absent.

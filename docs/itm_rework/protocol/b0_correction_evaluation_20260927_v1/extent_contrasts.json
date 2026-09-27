@@ -1,0 +1,5550 @@
+{
+  "within": [
+    {
+      "case_id": "L_exact_length--000433-head-paired",
+      "comparator_case_id": "L_exact_length--000433-head-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0013510584831237793,
+            0.022186435759067535,
+            0.1087133139371872
+          ],
+          "max_xyz": [
+            -0.22372812032699585,
+            -0.016584038734436035,
+            -0.5696455240249634
+          ],
+          "range_xyz": [
+            -0.22507917881011963,
+            -0.03877047449350357,
+            -0.6783588379621506
+          ],
+          "pelvis_path_length_m": -0.027830231822458223
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000433-head-paired",
+      "comparator_case_id": "L_exact_length--000433-head-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.022462666034698486,
+            0.00024326518177986145,
+            0.002857580780982971
+          ],
+          "max_xyz": [
+            0.0017590820789337158,
+            -0.001950383186340332,
+            0.00506100058555603
+          ],
+          "range_xyz": [
+            -0.02070358395576477,
+            -0.0021936483681201935,
+            0.002203419804573059
+          ],
+          "pelvis_path_length_m": -0.004947203545839135
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000433-head-paired",
+      "comparator_case_id": "L_exact_length--000433-head-tail_reversed",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.014760106801986694,
+            0.00018624216318130493,
+            -0.00744195282459259
+          ],
+          "max_xyz": [
+            0.0037756264209747314,
+            0.0009690523147583008,
+            0.004021555185317993
+          ],
+          "range_xyz": [
+            -0.010984480381011963,
+            0.0007828101515769958,
+            0.011463508009910583
+          ],
+          "pelvis_path_length_m": 0.010260577729931608
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000433-head-paired",
+      "comparator_case_id": "L_exact_length--000433-head-numeric_zero",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.01633015275001526,
+            0.0023060590028762817,
+            0.004530742764472961
+          ],
+          "max_xyz": [
+            0.03736943006515503,
+            -0.005199790000915527,
+            0.021662160754203796
+          ],
+          "range_xyz": [
+            0.02103927731513977,
+            -0.007505849003791809,
+            0.017131417989730835
+          ],
+          "pelvis_path_length_m": 0.0023682077550340186
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000433-wrists-paired",
+      "comparator_case_id": "L_exact_length--000433-wrists-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.013591766357421875,
+            -0.0021371990442276,
+            -0.2013418972492218
+          ],
+          "max_xyz": [
+            -0.12125217914581299,
+            0.010682821273803711,
+            -0.4251083433628082
+          ],
+          "range_xyz": [
+            -0.10766041278839111,
+            0.012820020318031311,
+            -0.22376644611358643
+          ],
+          "pelvis_path_length_m": -0.06888569629221306
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000433-wrists-paired",
+      "comparator_case_id": "L_exact_length--000433-wrists-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.026311904191970825,
+            0.0006012171506881714,
+            0.0016277730464935303
+          ],
+          "max_xyz": [
+            0.010526448488235474,
+            0.004271388053894043,
+            0.01032528281211853
+          ],
+          "range_xyz": [
+            -0.01578545570373535,
+            0.0036701709032058716,
+            0.008697509765625
+          ],
+          "pelvis_path_length_m": -0.016404179741397157
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000433-wrists-paired",
+      "comparator_case_id": "L_exact_length--000433-wrists-tail_reversed",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.007845491170883179,
+            -0.0008054189383983612,
+            0.005346447229385376
+          ],
+          "max_xyz": [
+            -0.0029975473880767822,
+            -0.0006998777389526367,
+            0.002711176872253418
+          ],
+          "range_xyz": [
+            -0.010843038558959961,
+            0.00010554119944572449,
+            -0.002635270357131958
+          ],
+          "pelvis_path_length_m": -0.009324528750150801
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000433-wrists-paired",
+      "comparator_case_id": "L_exact_length--000433-wrists-numeric_zero",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.01854473352432251,
+            -0.010952029377222061,
+            -0.011068835854530334
+          ],
+          "max_xyz": [
+            -0.01579377055168152,
+            -0.01685953140258789,
+            0.018656015396118164
+          ],
+          "range_xyz": [
+            0.002750962972640991,
+            -0.0059075020253658295,
+            0.0297248512506485
+          ],
+          "pelvis_path_length_m": 0.0017332360909792233
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000382-head-paired",
+      "comparator_case_id": "L_exact_length--000382-head-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.09146401286125183,
+            -0.0023362189531326294,
+            -0.15395380556583405
+          ],
+          "max_xyz": [
+            -0.05388548970222473,
+            -0.10816991329193115,
+            -0.039676398038864136
+          ],
+          "range_xyz": [
+            -0.14534950256347656,
+            -0.10583369433879852,
+            0.11427740752696991
+          ],
+          "pelvis_path_length_m": 0.1599077482758337
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000382-head-paired",
+      "comparator_case_id": "L_exact_length--000382-head-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.0008307397365570068,
+            3.7811696529388428e-06,
+            0.0005969703197479248
+          ],
+          "max_xyz": [
+            -0.004398435354232788,
+            -0.0004317760467529297,
+            -0.000625908374786377
+          ],
+          "range_xyz": [
+            -0.0035676956176757812,
+            -0.00043555721640586853,
+            -0.0012228786945343018
+          ],
+          "pelvis_path_length_m": 0.0007414293550911111
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000382-head-paired",
+      "comparator_case_id": "L_exact_length--000382-head-tail_reversed",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.0007495880126953125,
+            -9.685754776000977e-06,
+            -2.6345252990722656e-05
+          ],
+          "max_xyz": [
+            -0.00034350156784057617,
+            -0.0005289316177368164,
+            -0.0008733570575714111
+          ],
+          "range_xyz": [
+            0.00040608644485473633,
+            -0.0005192458629608154,
+            -0.0008470118045806885
+          ],
+          "pelvis_path_length_m": 0.00038814371144801907
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000382-head-paired",
+      "comparator_case_id": "L_exact_length--000382-head-numeric_zero",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.009475260972976685,
+            -0.0027146749198436737,
+            -0.008916407823562622
+          ],
+          "max_xyz": [
+            -0.007258474826812744,
+            -0.01347053050994873,
+            0.022479161620140076
+          ],
+          "range_xyz": [
+            0.0022167861461639404,
+            -0.010755855590105057,
+            0.0313955694437027
+          ],
+          "pelvis_path_length_m": 0.02704407580445861
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000382-wrists-paired",
+      "comparator_case_id": "L_exact_length--000382-wrists-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0005348622798919678,
+            -0.008991360664367676,
+            -0.0976102203130722
+          ],
+          "max_xyz": [
+            0.037443310022354126,
+            -0.07225489616394043,
+            -0.04662144184112549
+          ],
+          "range_xyz": [
+            0.03690844774246216,
+            -0.06326353549957275,
+            0.050988778471946716
+          ],
+          "pelvis_path_length_m": 0.1268767891655598
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000382-wrists-paired",
+      "comparator_case_id": "L_exact_length--000382-wrists-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.04448166489601135,
+            0.005271397531032562,
+            0.02966761589050293
+          ],
+          "max_xyz": [
+            0.03308892250061035,
+            0.004080772399902344,
+            0.02659069001674652
+          ],
+          "range_xyz": [
+            0.0775705873966217,
+            -0.0011906251311302185,
+            -0.0030769258737564087
+          ],
+          "pelvis_path_length_m": 0.004773813603490634
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000382-wrists-paired",
+      "comparator_case_id": "L_exact_length--000382-wrists-tail_reversed",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            3.191828727722168e-05,
+            -0.0004726722836494446,
+            -0.0012717843055725098
+          ],
+          "max_xyz": [
+            -0.00043779611587524414,
+            0.0004911422729492188,
+            -0.004092186689376831
+          ],
+          "range_xyz": [
+            -0.0004697144031524658,
+            0.0009638145565986633,
+            -0.0028204023838043213
+          ],
+          "pelvis_path_length_m": -0.00035424833246811005
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000382-wrists-paired",
+      "comparator_case_id": "L_exact_length--000382-wrists-numeric_zero",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.016009390354156494,
+            -0.011008135974407196,
+            -0.030950844287872314
+          ],
+          "max_xyz": [
+            0.030171722173690796,
+            -0.01038062572479248,
+            0.00794471800327301
+          ],
+          "range_xyz": [
+            0.04618111252784729,
+            0.0006275102496147156,
+            0.038895562291145325
+          ],
+          "pelvis_path_length_m": 0.04940112139597269
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000139-head-paired",
+      "comparator_case_id": "L_exact_length--000139-head-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.09002441167831421,
+            -0.018486015498638153,
+            -0.7439678907394409
+          ],
+          "max_xyz": [
+            -1.5826411247253418,
+            0.035898685455322266,
+            -3.9548574686050415
+          ],
+          "range_xyz": [
+            -1.672665536403656,
+            0.05438470095396042,
+            -3.2108895778656006
+          ],
+          "pelvis_path_length_m": -6.836432968024543
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000139-head-paired",
+      "comparator_case_id": "L_exact_length--000139-head-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.006889522075653076,
+            0.00011786073446273804,
+            0.002251148223876953
+          ],
+          "max_xyz": [
+            0.0010241270065307617,
+            -0.000516057014465332,
+            0.0030342936515808105
+          ],
+          "range_xyz": [
+            -0.0058653950691223145,
+            -0.0006339177489280701,
+            0.0007831454277038574
+          ],
+          "pelvis_path_length_m": 0.010697045322924592
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000139-head-paired",
+      "comparator_case_id": "L_exact_length--000139-head-tail_reversed",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.0044708251953125,
+            -0.00019638985395431519,
+            0.0041068196296691895
+          ],
+          "max_xyz": [
+            -0.000789940357208252,
+            -0.0012102127075195312,
+            0.0028232932090759277
+          ],
+          "range_xyz": [
+            0.003680884838104248,
+            -0.001013822853565216,
+            -0.0012835264205932617
+          ],
+          "pelvis_path_length_m": 0.026077590338489887
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000139-head-paired",
+      "comparator_case_id": "L_exact_length--000139-head-numeric_zero",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.024466276168823242,
+            -0.0028099268674850464,
+            0.0021746158599853516
+          ],
+          "max_xyz": [
+            0.004158079624176025,
+            -0.004024624824523926,
+            0.008397459983825684
+          ],
+          "range_xyz": [
+            0.028624355792999268,
+            -0.0012146979570388794,
+            0.006222844123840332
+          ],
+          "pelvis_path_length_m": 0.04009389756895587
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000139-wrists-paired",
+      "comparator_case_id": "L_exact_length--000139-wrists-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.3783455491065979,
+            -0.03368324041366577,
+            -0.5327224135398865
+          ],
+          "max_xyz": [
+            -2.9983831644058228,
+            0.0071849822998046875,
+            -4.143299877643585
+          ],
+          "range_xyz": [
+            -2.620037615299225,
+            0.04086822271347046,
+            -3.6105774641036987
+          ],
+          "pelvis_path_length_m": -5.991545816739746
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000139-wrists-paired",
+      "comparator_case_id": "L_exact_length--000139-wrists-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.004111528396606445,
+            0.00023449212312698364,
+            -0.006345689296722412
+          ],
+          "max_xyz": [
+            0.0012273788452148438,
+            0.00036346912384033203,
+            -0.0019345879554748535
+          ],
+          "range_xyz": [
+            0.005338907241821289,
+            0.0001289770007133484,
+            0.004411101341247559
+          ],
+          "pelvis_path_length_m": 0.011345411073349632
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000139-wrists-paired",
+      "comparator_case_id": "L_exact_length--000139-wrists-tail_reversed",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0002605915069580078,
+            -0.000146426260471344,
+            -0.002542257308959961
+          ],
+          "max_xyz": [
+            0.003575742244720459,
+            0.0002799034118652344,
+            0.0019890666007995605
+          ],
+          "range_xyz": [
+            0.003315150737762451,
+            0.00042632967233657837,
+            0.0045313239097595215
+          ],
+          "pelvis_path_length_m": -0.0014552008887852574
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--000139-wrists-paired",
+      "comparator_case_id": "L_exact_length--000139-wrists-numeric_zero",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.08160722255706787,
+            -0.017567366361618042,
+            0.02368175983428955
+          ],
+          "max_xyz": [
+            -0.06458473205566406,
+            -0.022276639938354492,
+            0.03224915266036987
+          ],
+          "range_xyz": [
+            0.01702249050140381,
+            -0.00470927357673645,
+            0.008567392826080322
+          ],
+          "pelvis_path_length_m": 0.08897042890938855
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--train-000027-head-paired",
+      "comparator_case_id": "L_exact_length--train-000027-head-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.03890877962112427,
+            0.0002565309405326843,
+            -0.3993239998817444
+          ],
+          "max_xyz": [
+            0.0034934282302856445,
+            -0.10294711589813232,
+            -0.36831599473953247
+          ],
+          "range_xyz": [
+            0.04240220785140991,
+            -0.10320364683866501,
+            0.031008005142211914
+          ],
+          "pelvis_path_length_m": 0.23511086907413192
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--train-000027-head-paired",
+      "comparator_case_id": "L_exact_length--train-000027-head-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.18627142906188965,
+            -0.0004901662468910217,
+            0.39256441593170166
+          ],
+          "max_xyz": [
+            -0.3119286298751831,
+            0.03501451015472412,
+            0.21220168471336365
+          ],
+          "range_xyz": [
+            -0.12565720081329346,
+            0.03550467640161514,
+            -0.180362731218338
+          ],
+          "pelvis_path_length_m": -0.1669684408804577
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--train-000027-wrists-paired",
+      "comparator_case_id": "L_exact_length--train-000027-wrists-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.428061306476593,
+            -0.005709238350391388,
+            1.1013877391815186
+          ],
+          "max_xyz": [
+            0.6339796781539917,
+            -0.06735718250274658,
+            -0.027533769607543945
+          ],
+          "range_xyz": [
+            0.20591837167739868,
+            -0.061647944152355194,
+            -1.1289215087890625
+          ],
+          "pelvis_path_length_m": -0.866326271783012
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--train-000027-wrists-paired",
+      "comparator_case_id": "L_exact_length--train-000027-wrists-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.05334186553955078,
+            0.006474468857049942,
+            0.5142052173614502
+          ],
+          "max_xyz": [
+            0.13954806327819824,
+            0.03277277946472168,
+            0.01695042848587036
+          ],
+          "range_xyz": [
+            0.08620619773864746,
+            0.026298310607671738,
+            -0.49725478887557983
+          ],
+          "pelvis_path_length_m": 0.10896419892267328
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--train-000506-head-paired",
+      "comparator_case_id": "L_exact_length--train-000506-head-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.02836713194847107,
+            -0.001644030213356018,
+            -0.5272992104291916
+          ],
+          "max_xyz": [
+            0.10610592365264893,
+            0.01937687397003174,
+            -0.195343017578125
+          ],
+          "range_xyz": [
+            0.13447305560112,
+            0.021020904183387756,
+            0.3319561928510666
+          ],
+          "pelvis_path_length_m": 0.7439529992008787
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--train-000506-head-paired",
+      "comparator_case_id": "L_exact_length--train-000506-head-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.000955432653427124,
+            0.00014624744653701782,
+            -0.009649574756622314
+          ],
+          "max_xyz": [
+            0.004731237888336182,
+            -0.0006097555160522461,
+            -0.0032942891120910645
+          ],
+          "range_xyz": [
+            0.0037758052349090576,
+            -0.0007560029625892639,
+            0.00635528564453125
+          ],
+          "pelvis_path_length_m": 0.007075948899440299
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--train-000506-wrists-paired",
+      "comparator_case_id": "L_exact_length--train-000506-wrists-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.018229752779006958,
+            -0.029214031994342804,
+            -0.25000542402267456
+          ],
+          "max_xyz": [
+            -0.10862505435943604,
+            0.34572815895080566,
+            -1.0766203999519348
+          ],
+          "range_xyz": [
+            -0.09039530158042908,
+            0.37494219094514847,
+            -0.8266149759292603
+          ],
+          "pelvis_path_length_m": -0.07504890207228254
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--train-000506-wrists-paired",
+      "comparator_case_id": "L_exact_length--train-000506-wrists-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.012833088636398315,
+            0.0018906667828559875,
+            -0.006521463394165039
+          ],
+          "max_xyz": [
+            0.00273934006690979,
+            0.010406970977783203,
+            -0.003969311714172363
+          ],
+          "range_xyz": [
+            0.015572428703308105,
+            0.008516304194927216,
+            0.0025521516799926758
+          ],
+          "pelvis_path_length_m": 0.01970136331104999
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--train-004728-head-paired",
+      "comparator_case_id": "L_exact_length--train-004728-head-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.378725528717041,
+            -0.025416474789381027,
+            -0.14009195566177368
+          ],
+          "max_xyz": [
+            -0.0758255124092102,
+            0.20361804962158203,
+            0.06334847211837769
+          ],
+          "range_xyz": [
+            0.3029000163078308,
+            0.22903452441096306,
+            0.20344042778015137
+          ],
+          "pelvis_path_length_m": -0.3677916124339886
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--train-004728-head-paired",
+      "comparator_case_id": "L_exact_length--train-004728-head-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.013253211975097656,
+            0.001111745834350586,
+            0.008291482925415039
+          ],
+          "max_xyz": [
+            0.0008808374404907227,
+            -0.014600515365600586,
+            0.007361054420471191
+          ],
+          "range_xyz": [
+            -0.012372374534606934,
+            -0.015712261199951172,
+            -0.0009304285049438477
+          ],
+          "pelvis_path_length_m": 0.0005206894789234751
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--train-004728-wrists-paired",
+      "comparator_case_id": "L_exact_length--train-004728-wrists-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.4446824789047241,
+            -0.03242676332592964,
+            -0.9762631803750992
+          ],
+          "max_xyz": [
+            0.3647461533546448,
+            0.2701530456542969,
+            0.15839794278144836
+          ],
+          "range_xyz": [
+            0.8094286322593689,
+            0.3025798089802265,
+            1.1346611231565475
+          ],
+          "pelvis_path_length_m": 0.21371628847774615
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "L_exact_length--train-004728-wrists-paired",
+      "comparator_case_id": "L_exact_length--train-004728-wrists-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.018348753452301025,
+            -0.004450440406799316,
+            -0.027065038681030273
+          ],
+          "max_xyz": [
+            -0.0017116665840148926,
+            0.061234116554260254,
+            -0.010463118553161621
+          ],
+          "range_xyz": [
+            0.016637086868286133,
+            0.06568455696105957,
+            0.016601920127868652
+          ],
+          "pelvis_path_length_m": 0.0050591900050888094
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-head-paired",
+      "comparator_case_id": "R_static_reference_delta--000433-head-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.006981641054153442,
+            0.0026487596333026886,
+            0.19490975886583328
+          ],
+          "max_xyz": [
+            0.02197808027267456,
+            0.001887202262878418,
+            0.013314366340637207
+          ],
+          "range_xyz": [
+            0.028959721326828003,
+            -0.0007615573704242706,
+            -0.18159539252519608
+          ],
+          "pelvis_path_length_m": -0.01873899595143816
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-head-paired",
+      "comparator_case_id": "R_static_reference_delta--000433-head-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.006981641054153442,
+            0.0026487596333026886,
+            0.19490975886583328
+          ],
+          "max_xyz": [
+            0.02197808027267456,
+            0.001887202262878418,
+            0.013314366340637207
+          ],
+          "range_xyz": [
+            0.028959721326828003,
+            -0.0007615573704242706,
+            -0.18159539252519608
+          ],
+          "pelvis_path_length_m": -0.01873899595143816
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-head-paired",
+      "comparator_case_id": "R_static_reference_delta--000433-head-tail_reversed",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.023509681224822998,
+            0.0006927289068698883,
+            0.053817398846149445
+          ],
+          "max_xyz": [
+            -0.011774122714996338,
+            -0.0029124021530151367,
+            0.002063274383544922
+          ],
+          "range_xyz": [
+            0.01173555850982666,
+            -0.003605131059885025,
+            -0.05175412446260452
+          ],
+          "pelvis_path_length_m": -0.013386182535953584
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-head-paired",
+      "comparator_case_id": "R_static_reference_delta--000433-head-numeric_zero",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.23856015503406525,
+            -0.007510840892791748,
+            0.3414710536599159
+          ],
+          "max_xyz": [
+            0.29662078619003296,
+            -0.04916560649871826,
+            0.035303473472595215
+          ],
+          "range_xyz": [
+            0.5351809412240982,
+            -0.041654765605926514,
+            -0.3061675801873207
+          ],
+          "pelvis_path_length_m": -0.013599008179505406
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-wrists-paired",
+      "comparator_case_id": "R_static_reference_delta--000433-wrists-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.01897484064102173,
+            -2.1845102310180664e-05,
+            -0.0942215621471405
+          ],
+          "max_xyz": [
+            0.020236819982528687,
+            -0.014824390411376953,
+            0.031462252140045166
+          ],
+          "range_xyz": [
+            0.039211660623550415,
+            -0.014802545309066772,
+            0.12568381428718567
+          ],
+          "pelvis_path_length_m": -0.04009133830539802
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-wrists-paired",
+      "comparator_case_id": "R_static_reference_delta--000433-wrists-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.01897484064102173,
+            -2.1845102310180664e-05,
+            -0.0942215621471405
+          ],
+          "max_xyz": [
+            0.020236819982528687,
+            -0.014824390411376953,
+            0.031462252140045166
+          ],
+          "range_xyz": [
+            0.039211660623550415,
+            -0.014802545309066772,
+            0.12568381428718567
+          ],
+          "pelvis_path_length_m": -0.04009133830539802
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-wrists-paired",
+      "comparator_case_id": "R_static_reference_delta--000433-wrists-tail_reversed",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.023778945207595825,
+            -0.0023043192923069,
+            -0.0015704631805419922
+          ],
+          "max_xyz": [
+            0.044939279556274414,
+            0.011048674583435059,
+            0.008856415748596191
+          ],
+          "range_xyz": [
+            0.06871822476387024,
+            0.013352993875741959,
+            0.010426878929138184
+          ],
+          "pelvis_path_length_m": -0.012545093242416927
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-wrists-paired",
+      "comparator_case_id": "R_static_reference_delta--000433-wrists-numeric_zero",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.005389362573623657,
+            -0.016282688826322556,
+            -0.07295972853899002
+          ],
+          "max_xyz": [
+            -0.15341007709503174,
+            0.14178311824798584,
+            -0.025886118412017822
+          ],
+          "range_xyz": [
+            -0.1587994396686554,
+            0.1580658070743084,
+            0.0470736101269722
+          ],
+          "pelvis_path_length_m": -0.3105119898845065
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-head-paired",
+      "comparator_case_id": "R_static_reference_delta--000382-head-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.001426994800567627,
+            0.0003907345235347748,
+            8.27014446258545e-06
+          ],
+          "max_xyz": [
+            0.0072164833545684814,
+            0.0024002790451049805,
+            0.0007304251194000244
+          ],
+          "range_xyz": [
+            0.008643478155136108,
+            0.0020095445215702057,
+            0.000722154974937439
+          ],
+          "pelvis_path_length_m": 0.00029099755408570904
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-head-paired",
+      "comparator_case_id": "R_static_reference_delta--000382-head-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.001426994800567627,
+            0.0003907345235347748,
+            8.27014446258545e-06
+          ],
+          "max_xyz": [
+            0.0072164833545684814,
+            0.0024002790451049805,
+            0.0007304251194000244
+          ],
+          "range_xyz": [
+            0.008643478155136108,
+            0.0020095445215702057,
+            0.000722154974937439
+          ],
+          "pelvis_path_length_m": 0.00029099755408570904
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-head-paired",
+      "comparator_case_id": "R_static_reference_delta--000382-head-tail_reversed",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0010352134704589844,
+            -1.4066696166992188e-05,
+            -0.011431977152824402
+          ],
+          "max_xyz": [
+            0.00790870189666748,
+            -0.0010303258895874023,
+            0.0020016133785247803
+          ],
+          "range_xyz": [
+            0.006873488426208496,
+            -0.0010162591934204102,
+            0.013433590531349182
+          ],
+          "pelvis_path_length_m": 0.000326687261711478
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-head-paired",
+      "comparator_case_id": "R_static_reference_delta--000382-head-numeric_zero",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.13553965091705322,
+            -0.0019813887774944305,
+            0.03563828766345978
+          ],
+          "max_xyz": [
+            -0.030645251274108887,
+            -0.010019898414611816,
+            -0.029787033796310425
+          ],
+          "range_xyz": [
+            0.10489439964294434,
+            -0.008038509637117386,
+            -0.0654253214597702
+          ],
+          "pelvis_path_length_m": -0.029069000499117162
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-wrists-paired",
+      "comparator_case_id": "R_static_reference_delta--000382-wrists-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.11911213397979736,
+            0.10653281211853027,
+            0.03118160367012024
+          ],
+          "max_xyz": [
+            0.47317129373550415,
+            0.05015838146209717,
+            0.541360929608345
+          ],
+          "range_xyz": [
+            0.5922834277153015,
+            -0.056374430656433105,
+            0.5101793259382248
+          ],
+          "pelvis_path_length_m": 0.35827706260816894
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-wrists-paired",
+      "comparator_case_id": "R_static_reference_delta--000382-wrists-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.11911213397979736,
+            0.10653281211853027,
+            0.03118160367012024
+          ],
+          "max_xyz": [
+            0.47317129373550415,
+            0.05015838146209717,
+            0.541360929608345
+          ],
+          "range_xyz": [
+            0.5922834277153015,
+            -0.056374430656433105,
+            0.5101793259382248
+          ],
+          "pelvis_path_length_m": 0.35827706260816894
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-wrists-paired",
+      "comparator_case_id": "R_static_reference_delta--000382-wrists-tail_reversed",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.005225777626037598,
+            -0.000960618257522583,
+            0.014579162001609802
+          ],
+          "max_xyz": [
+            -0.013943314552307129,
+            0.005352616310119629,
+            0.03107774257659912
+          ],
+          "range_xyz": [
+            -0.019169092178344727,
+            0.006313234567642212,
+            0.01649858057498932
+          ],
+          "pelvis_path_length_m": -0.03112996975319926
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-wrists-paired",
+      "comparator_case_id": "R_static_reference_delta--000382-wrists-numeric_zero",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.14540168642997742,
+            0.10170232504606247,
+            0.014181166887283325
+          ],
+          "max_xyz": [
+            0.41343218088150024,
+            0.10820436477661133,
+            0.3624696731567383
+          ],
+          "range_xyz": [
+            0.5588338673114777,
+            0.006502039730548859,
+            0.34828850626945496
+          ],
+          "pelvis_path_length_m": 0.20692025402109784
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-head-paired",
+      "comparator_case_id": "R_static_reference_delta--000139-head-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.21436947584152222,
+            -0.008440952748060226,
+            0.12502890080213547
+          ],
+          "max_xyz": [
+            0.6628882884979248,
+            -0.050940632820129395,
+            -0.2001051902770996
+          ],
+          "range_xyz": [
+            0.4485188126564026,
+            -0.04249968007206917,
+            -0.3251340910792351
+          ],
+          "pelvis_path_length_m": -0.13819531150016218
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-head-paired",
+      "comparator_case_id": "R_static_reference_delta--000139-head-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.21436947584152222,
+            -0.008440952748060226,
+            0.12502890080213547
+          ],
+          "max_xyz": [
+            0.6628882884979248,
+            -0.050940632820129395,
+            -0.2001051902770996
+          ],
+          "range_xyz": [
+            0.4485188126564026,
+            -0.04249968007206917,
+            -0.3251340910792351
+          ],
+          "pelvis_path_length_m": -0.13819531150016218
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-head-paired",
+      "comparator_case_id": "R_static_reference_delta--000139-head-tail_reversed",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.27492856979370117,
+            -0.003821462392807007,
+            0.03217712789773941
+          ],
+          "max_xyz": [
+            0.47283411026000977,
+            -0.010050773620605469,
+            -0.5257396697998047
+          ],
+          "range_xyz": [
+            0.1979055404663086,
+            -0.006229311227798462,
+            -0.5579167976975441
+          ],
+          "pelvis_path_length_m": -0.09041266744619136
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-head-paired",
+      "comparator_case_id": "R_static_reference_delta--000139-head-numeric_zero",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.3648882806301117,
+            -0.07734928652644157,
+            0.01942148059606552
+          ],
+          "max_xyz": [
+            0.05623650550842285,
+            -0.2999074459075928,
+            0.95444655418396
+          ],
+          "range_xyz": [
+            0.42112478613853455,
+            -0.2225581593811512,
+            0.9350250735878944
+          ],
+          "pelvis_path_length_m": 1.3237155764559905
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-wrists-paired",
+      "comparator_case_id": "R_static_reference_delta--000139-wrists-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0027709007263183594,
+            -0.005092699080705643,
+            -0.008905589580535889
+          ],
+          "max_xyz": [
+            -0.10262179374694824,
+            -0.030033349990844727,
+            0.37404489517211914
+          ],
+          "range_xyz": [
+            -0.1053926944732666,
+            -0.024940650910139084,
+            0.38295048475265503
+          ],
+          "pelvis_path_length_m": 0.166883695587007
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-wrists-paired",
+      "comparator_case_id": "R_static_reference_delta--000139-wrists-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0027709007263183594,
+            -0.005092699080705643,
+            -0.008905589580535889
+          ],
+          "max_xyz": [
+            -0.10262179374694824,
+            -0.030033349990844727,
+            0.37404489517211914
+          ],
+          "range_xyz": [
+            -0.1053926944732666,
+            -0.024940650910139084,
+            0.38295048475265503
+          ],
+          "pelvis_path_length_m": 0.166883695587007
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-wrists-paired",
+      "comparator_case_id": "R_static_reference_delta--000139-wrists-tail_reversed",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.019321829080581665,
+            0.002353113144636154,
+            0.0009615421295166016
+          ],
+          "max_xyz": [
+            0.08108639717102051,
+            0.0001373291015625,
+            0.3825211524963379
+          ],
+          "range_xyz": [
+            0.06176456809043884,
+            -0.002215784043073654,
+            0.3815596103668213
+          ],
+          "pelvis_path_length_m": 0.04976278753589103
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-wrists-paired",
+      "comparator_case_id": "R_static_reference_delta--000139-wrists-numeric_zero",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.21640056371688843,
+            -0.02555355429649353,
+            -0.2435845136642456
+          ],
+          "max_xyz": [
+            -2.2202200889587402,
+            -0.08395969867706299,
+            1.234724998474121
+          ],
+          "range_xyz": [
+            -2.4366206526756287,
+            -0.05840614438056946,
+            1.4783095121383667
+          ],
+          "pelvis_path_length_m": -0.32195692071561854
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000027-head-paired",
+      "comparator_case_id": "R_static_reference_delta--train-000027-head-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.25949835777282715,
+            -0.0076931677758693695,
+            -0.1626107096672058
+          ],
+          "max_xyz": [
+            1.0250324010849,
+            0.2138577699661255,
+            -0.653362512588501
+          ],
+          "range_xyz": [
+            0.7655340433120728,
+            0.22155093774199486,
+            -0.49075180292129517
+          ],
+          "pelvis_path_length_m": 1.4551419703964399
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000027-head-paired",
+      "comparator_case_id": "R_static_reference_delta--train-000027-head-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.25949835777282715,
+            -0.0076931677758693695,
+            -0.1626107096672058
+          ],
+          "max_xyz": [
+            1.0250324010849,
+            0.2138577699661255,
+            -0.653362512588501
+          ],
+          "range_xyz": [
+            0.7655340433120728,
+            0.22155093774199486,
+            -0.49075180292129517
+          ],
+          "pelvis_path_length_m": 1.4551419703964399
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000027-wrists-paired",
+      "comparator_case_id": "R_static_reference_delta--train-000027-wrists-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.14918136596679688,
+            -0.0152641162276268,
+            1.2228286266326904
+          ],
+          "max_xyz": [
+            0.1243518590927124,
+            0.05438220500946045,
+            -0.08295100927352905
+          ],
+          "range_xyz": [
+            -0.024829506874084473,
+            0.06964632123708725,
+            -1.3057796359062195
+          ],
+          "pelvis_path_length_m": -0.8635023137813658
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000027-wrists-paired",
+      "comparator_case_id": "R_static_reference_delta--train-000027-wrists-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.14918136596679688,
+            -0.0152641162276268,
+            1.2228286266326904
+          ],
+          "max_xyz": [
+            0.1243518590927124,
+            0.05438220500946045,
+            -0.08295100927352905
+          ],
+          "range_xyz": [
+            -0.024829506874084473,
+            0.06964632123708725,
+            -1.3057796359062195
+          ],
+          "pelvis_path_length_m": -0.8635023137813658
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000506-head-paired",
+      "comparator_case_id": "R_static_reference_delta--train-000506-head-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.03686907887458801,
+            -0.0012412890791893005,
+            -0.036901429295539856
+          ],
+          "max_xyz": [
+            -0.07846105098724365,
+            -0.0316089391708374,
+            -0.18048352003097534
+          ],
+          "range_xyz": [
+            -0.11533012986183167,
+            -0.030367650091648102,
+            -0.14358209073543549
+          ],
+          "pelvis_path_length_m": -0.07029858429455293
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000506-head-paired",
+      "comparator_case_id": "R_static_reference_delta--train-000506-head-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.03686907887458801,
+            -0.0012412890791893005,
+            -0.036901429295539856
+          ],
+          "max_xyz": [
+            -0.07846105098724365,
+            -0.0316089391708374,
+            -0.18048352003097534
+          ],
+          "range_xyz": [
+            -0.11533012986183167,
+            -0.030367650091648102,
+            -0.14358209073543549
+          ],
+          "pelvis_path_length_m": -0.07029858429455293
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000506-wrists-paired",
+      "comparator_case_id": "R_static_reference_delta--train-000506-wrists-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.022523999214172363,
+            0.007547490298748016,
+            -0.4764084815979004
+          ],
+          "max_xyz": [
+            -0.20024606585502625,
+            0.05131596326828003,
+            -1.0678548216819763
+          ],
+          "range_xyz": [
+            -0.17772206664085388,
+            0.04376847296953201,
+            -0.5914463400840759
+          ],
+          "pelvis_path_length_m": -0.2635314122501935
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000506-wrists-paired",
+      "comparator_case_id": "R_static_reference_delta--train-000506-wrists-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.022523999214172363,
+            0.007547490298748016,
+            -0.4764084815979004
+          ],
+          "max_xyz": [
+            -0.20024606585502625,
+            0.05131596326828003,
+            -1.0678548216819763
+          ],
+          "range_xyz": [
+            -0.17772206664085388,
+            0.04376847296953201,
+            -0.5914463400840759
+          ],
+          "pelvis_path_length_m": -0.2635314122501935
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-004728-head-paired",
+      "comparator_case_id": "R_static_reference_delta--train-004728-head-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.09102365374565125,
+            0.019737321883440018,
+            0.7420415431261063
+          ],
+          "max_xyz": [
+            -0.0008735060691833496,
+            0.07865285873413086,
+            0.5665860176086426
+          ],
+          "range_xyz": [
+            0.0901501476764679,
+            0.05891553685069084,
+            -0.17545552551746368
+          ],
+          "pelvis_path_length_m": 0.6815336579538582
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-004728-head-paired",
+      "comparator_case_id": "R_static_reference_delta--train-004728-head-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.09102365374565125,
+            0.019737321883440018,
+            0.7420415431261063
+          ],
+          "max_xyz": [
+            -0.0008735060691833496,
+            0.07865285873413086,
+            0.5665860176086426
+          ],
+          "range_xyz": [
+            0.0901501476764679,
+            0.05891553685069084,
+            -0.17545552551746368
+          ],
+          "pelvis_path_length_m": 0.6815336579538582
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-004728-wrists-paired",
+      "comparator_case_id": "R_static_reference_delta--train-004728-wrists-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.37345045804977417,
+            -0.01069435104727745,
+            -1.0955026298761368
+          ],
+          "max_xyz": [
+            0.38844454288482666,
+            0.2842484712600708,
+            -0.00626257061958313
+          ],
+          "range_xyz": [
+            0.7618950009346008,
+            0.29494282230734825,
+            1.0892400592565536
+          ],
+          "pelvis_path_length_m": 0.4386583152693089
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-004728-wrists-paired",
+      "comparator_case_id": "R_static_reference_delta--train-004728-wrists-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.37345045804977417,
+            -0.01069435104727745,
+            -1.0955026298761368
+          ],
+          "max_xyz": [
+            0.38844454288482666,
+            0.2842484712600708,
+            -0.00626257061958313
+          ],
+          "range_xyz": [
+            0.7618950009346008,
+            0.29494282230734825,
+            1.0892400592565536
+          ],
+          "pelvis_path_length_m": 0.4386583152693089
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    }
+  ],
+  "R_minus_L": [
+    {
+      "case_id": "R_static_reference_delta--000433-head-paired",
+      "comparator_case_id": "L_exact_length--000433-head-paired",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.008332699537277222,
+            -0.019537676125764847,
+            0.08619644492864609
+          ],
+          "max_xyz": [
+            0.2457062005996704,
+            0.018471240997314453,
+            0.5829598903656006
+          ],
+          "range_xyz": [
+            0.25403890013694763,
+            0.0380089171230793,
+            0.4967634454369545
+          ],
+          "pelvis_path_length_m": 0.009091235871020065
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-head-text_only",
+      "comparator_case_id": "L_exact_length--000433-head-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-head-imu_only",
+      "comparator_case_id": "L_exact_length--000433-head-imu_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.15990328788757324,
+            -0.02740478329360485,
+            0.13390954583883286
+          ],
+          "max_xyz": [
+            -0.05221891403198242,
+            -0.05862438678741455,
+            0.7100963890552521
+          ],
+          "range_xyz": [
+            -0.21212220191955566,
+            -0.0312196034938097,
+            0.5761868432164192
+          ],
+          "pelvis_path_length_m": -0.04893519049653583
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-head-backbone_bypass",
+      "comparator_case_id": "L_exact_length--000433-head-backbone_bypass",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-head-numeric_zero",
+      "comparator_case_id": "L_exact_length--000433-head-numeric_zero",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.24655760824680328,
+            -0.009720776230096817,
+            -0.2507438659667969
+          ],
+          "max_xyz": [
+            -0.01354515552520752,
+            0.06243705749511719,
+            0.5693185776472092
+          ],
+          "range_xyz": [
+            -0.2601027637720108,
+            0.072157833725214,
+            0.820062443614006
+          ],
+          "pelvis_path_length_m": 0.02505845180555949
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-head-physical_static",
+      "comparator_case_id": "L_exact_length--000433-head-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.021111607551574707,
+            -0.021943170577287674,
+            -0.10585573315620422
+          ],
+          "max_xyz": [
+            0.22548720240592957,
+            0.014633655548095703,
+            0.5747065246105194
+          ],
+          "range_xyz": [
+            0.20437559485435486,
+            0.03657682612538338,
+            0.6805622577667236
+          ],
+          "pelvis_path_length_m": 0.02288302827661909
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-wrists-paired",
+      "comparator_case_id": "L_exact_length--000433-wrists-paired",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.0053830742835998535,
+            0.0021153539419174194,
+            0.1071203351020813
+          ],
+          "max_xyz": [
+            0.14148899912834167,
+            -0.025507211685180664,
+            0.4565705955028534
+          ],
+          "range_xyz": [
+            0.14687207341194153,
+            -0.027622565627098083,
+            0.3494502604007721
+          ],
+          "pelvis_path_length_m": 0.02879435798681504
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-wrists-text_only",
+      "comparator_case_id": "L_exact_length--000433-wrists-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-wrists-imu_only",
+      "comparator_case_id": "L_exact_length--000433-wrists-imu_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.5076616704463959,
+            0.016309339553117752,
+            0.1916152462363243
+          ],
+          "max_xyz": [
+            -0.16937440633773804,
+            0.5984518527984619,
+            2.503421366214752
+          ],
+          "range_xyz": [
+            0.33828726410865784,
+            0.5821425132453442,
+            2.311806119978428
+          ],
+          "pelvis_path_length_m": 3.202809703281294
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-wrists-backbone_bypass",
+      "comparator_case_id": "L_exact_length--000433-wrists-backbone_bypass",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-wrists-numeric_zero",
+      "comparator_case_id": "L_exact_length--000433-wrists-numeric_zero",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.02931717038154602,
+            0.007446013391017914,
+            0.16901122778654099
+          ],
+          "max_xyz": [
+            0.2791053056716919,
+            -0.1841498613357544,
+            0.5011127293109894
+          ],
+          "range_xyz": [
+            0.3084224760532379,
+            -0.1915958747267723,
+            0.3321015015244484
+          ],
+          "pelvis_path_length_m": 0.3410395839623008
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-wrists-physical_static",
+      "comparator_case_id": "L_exact_length--000433-wrists-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0399036705493927,
+            0.0027384161949157715,
+            0.20296967029571533
+          ],
+          "max_xyz": [
+            0.13177862763404846,
+            -0.006411433219909668,
+            0.43543362617492676
+          ],
+          "range_xyz": [
+            0.09187495708465576,
+            -0.00914984941482544,
+            0.23246395587921143
+          ],
+          "pelvis_path_length_m": 0.0524815165508159
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-head-paired",
+      "comparator_case_id": "L_exact_length--000382-head-paired",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.09289100766181946,
+            0.002726953476667404,
+            0.15396207571029663
+          ],
+          "max_xyz": [
+            0.06110197305679321,
+            0.11057019233703613,
+            0.04040682315826416
+          ],
+          "range_xyz": [
+            0.15399298071861267,
+            0.10784323886036873,
+            -0.11355525255203247
+          ],
+          "pelvis_path_length_m": -0.15961675072174802
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-head-text_only",
+      "comparator_case_id": "L_exact_length--000382-head-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-head-imu_only",
+      "comparator_case_id": "L_exact_length--000382-head-imu_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.4088144302368164,
+            0.0493769571185112,
+            -0.05743199586868286
+          ],
+          "max_xyz": [
+            0.26664799451828003,
+            0.36083412170410156,
+            0.059925228357315063
+          ],
+          "range_xyz": [
+            0.6754624247550964,
+            0.31145716458559036,
+            0.11735722422599792
+          ],
+          "pelvis_path_length_m": 1.0621303333522938
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-head-backbone_bypass",
+      "comparator_case_id": "L_exact_length--000382-head-backbone_bypass",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-head-numeric_zero",
+      "comparator_case_id": "L_exact_length--000382-head-numeric_zero",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.03317338228225708,
+            0.001993667334318161,
+            0.10940738022327423
+          ],
+          "max_xyz": [
+            0.08448874950408936,
+            0.10711956024169922,
+            0.09267301857471466
+          ],
+          "range_xyz": [
+            0.051315367221832275,
+            0.10512589290738106,
+            -0.01673436164855957
+          ],
+          "pelvis_path_length_m": -0.10350367441817224
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-head-physical_static",
+      "comparator_case_id": "L_exact_length--000382-head-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.09229475259780884,
+            0.0023400001227855682,
+            0.15455077588558197
+          ],
+          "max_xyz": [
+            0.04948705434799194,
+            0.10773813724517822,
+            0.03905048966407776
+          ],
+          "range_xyz": [
+            0.14178180694580078,
+            0.10539813712239265,
+            -0.11550028622150421
+          ],
+          "pelvis_path_length_m": -0.15916631892074262
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-wrists-paired",
+      "comparator_case_id": "L_exact_length--000382-wrists-paired",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.11964699625968933,
+            0.11552417278289795,
+            0.12879182398319244
+          ],
+          "max_xyz": [
+            0.43572798371315,
+            0.1224132776260376,
+            0.5879823714494705
+          ],
+          "range_xyz": [
+            0.5553749799728394,
+            0.0068891048431396484,
+            0.4591905474662781
+          ],
+          "pelvis_path_length_m": 0.23140027344260916
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-wrists-text_only",
+      "comparator_case_id": "L_exact_length--000382-wrists-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-wrists-imu_only",
+      "comparator_case_id": "L_exact_length--000382-wrists-imu_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.22644877433776855,
+            0.003648519515991211,
+            0.6854835897684097
+          ],
+          "max_xyz": [
+            0.28743696212768555,
+            -0.021752476692199707,
+            1.6742587238550186
+          ],
+          "range_xyz": [
+            0.06098818778991699,
+            -0.025400996208190918,
+            0.9887751340866089
+          ],
+          "pelvis_path_length_m": -0.6855497103163808
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-wrists-backbone_bypass",
+      "comparator_case_id": "L_exact_length--000382-wrists-backbone_bypass",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-wrists-numeric_zero",
+      "comparator_case_id": "L_exact_length--000382-wrists-numeric_zero",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.009745299816131592,
+            0.0028137117624282837,
+            0.0836598128080368
+          ],
+          "max_xyz": [
+            0.052467525005340576,
+            0.003828287124633789,
+            0.23345741629600525
+          ],
+          "range_xyz": [
+            0.042722225189208984,
+            0.0010145753622055054,
+            0.14979760348796844
+          ],
+          "pelvis_path_length_m": 0.07388114081748401
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-wrists-physical_static",
+      "comparator_case_id": "L_exact_length--000382-wrists-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.04501652717590332,
+            0.014262758195400238,
+            0.12727783620357513
+          ],
+          "max_xyz": [
+            -0.004354387521743774,
+            0.07633566856384277,
+            0.07321213185787201
+          ],
+          "range_xyz": [
+            0.040662139654159546,
+            0.062072910368442535,
+            -0.054065704345703125
+          ],
+          "pelvis_path_length_m": -0.12210297556206917
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-head-paired",
+      "comparator_case_id": "L_exact_length--000139-head-paired",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.12434506416320801,
+            0.010045062750577927,
+            0.8689967915415764
+          ],
+          "max_xyz": [
+            2.2455294132232666,
+            -0.08683931827545166,
+            3.754752278327942
+          ],
+          "range_xyz": [
+            2.1211843490600586,
+            -0.09688438102602959,
+            2.8857554867863655
+          ],
+          "pelvis_path_length_m": 6.69823765652438
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-head-text_only",
+      "comparator_case_id": "L_exact_length--000139-head-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-head-imu_only",
+      "comparator_case_id": "L_exact_length--000139-head-imu_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.208064466714859,
+            0.016837820410728455,
+            0.7749960422515869
+          ],
+          "max_xyz": [
+            0.015506148338317871,
+            -0.05650293827056885,
+            0.9283877611160278
+          ],
+          "range_xyz": [
+            -0.19255831837654114,
+            -0.0733407586812973,
+            0.15339171886444092
+          ],
+          "pelvis_path_length_m": 2.0296632432423642
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-head-backbone_bypass",
+      "comparator_case_id": "L_exact_length--000139-head-backbone_bypass",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-head-numeric_zero",
+      "comparator_case_id": "L_exact_length--000139-head-numeric_zero",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.46476706862449646,
+            0.08458442240953445,
+            0.8517499268054962
+          ],
+          "max_xyz": [
+            2.1934509873390198,
+            0.2090435028076172,
+            2.8087031841278076
+          ],
+          "range_xyz": [
+            1.7286839187145233,
+            0.12445908039808273,
+            1.9569532573223114
+          ],
+          "pelvis_path_length_m": 5.414615977637346
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-head-physical_static",
+      "comparator_case_id": "L_exact_length--000139-head-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.08313488960266113,
+            0.01860387623310089,
+            0.7462190389633179
+          ],
+          "max_xyz": [
+            1.5836652517318726,
+            -0.0364147424697876,
+            3.9578917622566223
+          ],
+          "range_xyz": [
+            1.6668001413345337,
+            -0.05501861870288849,
+            3.2116727232933044
+          ],
+          "pelvis_path_length_m": 6.847130013347467
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-wrists-paired",
+      "comparator_case_id": "L_exact_length--000139-wrists-paired",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.38111644983291626,
+            0.02859054133296013,
+            0.5238168239593506
+          ],
+          "max_xyz": [
+            2.8957613706588745,
+            -0.037218332290649414,
+            4.517344772815704
+          ],
+          "range_xyz": [
+            2.5146449208259583,
+            -0.06580887362360954,
+            3.9935279488563538
+          ],
+          "pelvis_path_length_m": 6.158429512326753
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-wrists-text_only",
+      "comparator_case_id": "L_exact_length--000139-wrists-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-wrists-imu_only",
+      "comparator_case_id": "L_exact_length--000139-wrists-imu_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.28436824679374695,
+            0.031950145959854126,
+            0.7870811522006989
+          ],
+          "max_xyz": [
+            0.9332450032234192,
+            0.6688406467437744,
+            5.46233069896698
+          ],
+          "range_xyz": [
+            0.6488767564296722,
+            0.6368905007839203,
+            4.675249546766281
+          ],
+          "pelvis_path_length_m": 8.490989656823015
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-wrists-backbone_bypass",
+      "comparator_case_id": "L_exact_length--000139-wrists-backbone_bypass",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-wrists-numeric_zero",
+      "comparator_case_id": "L_exact_length--000139-wrists-numeric_zero",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.08310866355895996,
+            0.03657672926783562,
+            0.7910830974578857
+          ],
+          "max_xyz": [
+            5.051396727561951,
+            0.024464726448059082,
+            3.314868927001953
+          ],
+          "range_xyz": [
+            4.968288064002991,
+            -0.012112002819776535,
+            2.5237858295440674
+          ],
+          "pelvis_path_length_m": 6.569356861951761
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-wrists-physical_static",
+      "comparator_case_id": "L_exact_length--000139-wrists-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.37423402070999146,
+            0.033917732536792755,
+            0.5263767242431641
+          ],
+          "max_xyz": [
+            2.9996105432510376,
+            -0.0068215131759643555,
+            4.14136528968811
+          ],
+          "range_xyz": [
+            2.625376522541046,
+            -0.04073924571275711,
+            3.6149885654449463
+          ],
+          "pelvis_path_length_m": 6.0028912278130955
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-head-tail_reversed",
+      "comparator_case_id": "L_exact_length--000433-head-tail_reversed",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.02993708848953247,
+            -0.02004416286945343,
+            0.024937093257904053
+          ],
+          "max_xyz": [
+            0.2612559497356415,
+            0.02235269546508789,
+            0.5849181711673737
+          ],
+          "range_xyz": [
+            0.231318861246109,
+            0.04239685833454132,
+            0.5599810779094696
+          ],
+          "pelvis_path_length_m": 0.032737996136905256
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-wrists-tail_reversed",
+      "comparator_case_id": "L_exact_length--000433-wrists-tail_reversed",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.02624136209487915,
+            0.0036142542958259583,
+            0.11403724551200867
+          ],
+          "max_xyz": [
+            0.09355217218399048,
+            -0.03725576400756836,
+            0.4504253566265106
+          ],
+          "range_xyz": [
+            0.06731081008911133,
+            -0.04087001830339432,
+            0.33638811111450195
+          ],
+          "pelvis_path_length_m": 0.032014922479081165
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-head-tail_reversed",
+      "comparator_case_id": "L_exact_length--000382-head-tail_reversed",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.09467580914497375,
+            0.0027313344180583954,
+            0.1653677076101303
+          ],
+          "max_xyz": [
+            0.052849769592285156,
+            0.11107158660888672,
+            0.03753185272216797
+          ],
+          "range_xyz": [
+            0.1475255787372589,
+            0.10834025219082832,
+            -0.12783585488796234
+          ],
+          "pelvis_path_length_m": -0.15955529427201148
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-wrists-tail_reversed",
+      "comparator_case_id": "L_exact_length--000382-wrists-tail_reversed",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.12484085559844971,
+            0.11601211875677109,
+            0.11294087767601013
+          ],
+          "max_xyz": [
+            0.4492335021495819,
+            0.11755180358886719,
+            0.5528124421834946
+          ],
+          "range_xyz": [
+            0.5740743577480316,
+            0.0015396848320960999,
+            0.43987156450748444
+          ],
+          "pelvis_path_length_m": 0.2621759948633403
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-head-tail_reversed",
+      "comparator_case_id": "L_exact_length--000139-head-tail_reversed",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.15505433082580566,
+            0.013670135289430618,
+            0.8409264832735062
+          ],
+          "max_xyz": [
+            1.7719053626060486,
+            -0.07799875736236572,
+            4.2833152413368225
+          ],
+          "range_xyz": [
+            1.9269596934318542,
+            -0.09166889265179634,
+            3.4423887580633163
+          ],
+          "pelvis_path_length_m": 6.814727914309062
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-wrists-tail_reversed",
+      "comparator_case_id": "L_exact_length--000139-wrists-tail_reversed",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.3620552122592926,
+            0.02609100192785263,
+            0.520313024520874
+          ],
+          "max_xyz": [
+            2.8182507157325745,
+            -0.03707575798034668,
+            4.136812686920166
+          ],
+          "range_xyz": [
+            2.456195503473282,
+            -0.06316675990819931,
+            3.616499662399292
+          ],
+          "pelvis_path_length_m": 6.107211523902077
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000027-head-paired",
+      "comparator_case_id": "L_exact_length--train-000027-head-paired",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.2984071373939514,
+            -0.007949698716402054,
+            0.23671329021453857
+          ],
+          "max_xyz": [
+            1.0215389728546143,
+            0.3168048858642578,
+            -0.2850465178489685
+          ],
+          "range_xyz": [
+            0.7231318354606628,
+            0.32475458458065987,
+            -0.5217598080635071
+          ],
+          "pelvis_path_length_m": 1.220031101322308
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000027-head-text_only",
+      "comparator_case_id": "L_exact_length--train-000027-head-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000027-head-physical_static",
+      "comparator_case_id": "L_exact_length--train-000027-head-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.14736264944076538,
+            -0.0007466971874237061,
+            0.791888415813446
+          ],
+          "max_xyz": [
+            -0.31542205810546875,
+            0.13796162605285645,
+            0.5805176794528961
+          ],
+          "range_xyz": [
+            -0.16805940866470337,
+            0.13870832324028015,
+            -0.21137073636054993
+          ],
+          "pelvis_path_length_m": -0.4020793099545896
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000027-wrists-paired",
+      "comparator_case_id": "L_exact_length--train-000027-wrists-paired",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.27887994050979614,
+            -0.009554877877235413,
+            0.12144088745117188
+          ],
+          "max_xyz": [
+            -0.5096278190612793,
+            0.12173938751220703,
+            -0.05541723966598511
+          ],
+          "range_xyz": [
+            -0.23074787855148315,
+            0.13129426538944244,
+            -0.17685812711715698
+          ],
+          "pelvis_path_length_m": 0.002823958001646254
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000027-wrists-text_only",
+      "comparator_case_id": "L_exact_length--train-000027-wrists-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000027-wrists-physical_static",
+      "comparator_case_id": "L_exact_length--train-000027-wrists-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.37471944093704224,
+            0.01218370720744133,
+            -0.5871825218200684
+          ],
+          "max_xyz": [
+            -0.49443161487579346,
+            0.10012996196746826,
+            0.04448419809341431
+          ],
+          "range_xyz": [
+            -0.11971217393875122,
+            0.08794625476002693,
+            0.6316667199134827
+          ],
+          "pelvis_path_length_m": 0.9752904707056853
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000506-head-paired",
+      "comparator_case_id": "L_exact_length--train-000506-head-paired",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.06523621082305908,
+            0.00040274113416671753,
+            0.49039778113365173
+          ],
+          "max_xyz": [
+            -0.18456697463989258,
+            -0.05098581314086914,
+            0.014859497547149658
+          ],
+          "range_xyz": [
+            -0.24980318546295166,
+            -0.05138855427503586,
+            -0.4755382835865021
+          ],
+          "pelvis_path_length_m": -0.8142515834954316
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000506-head-text_only",
+      "comparator_case_id": "L_exact_length--train-000506-head-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000506-head-physical_static",
+      "comparator_case_id": "L_exact_length--train-000506-head-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.029322564601898193,
+            0.0017902776598930359,
+            0.5176496356725693
+          ],
+          "max_xyz": [
+            -0.10137468576431274,
+            -0.019986629486083984,
+            0.19204872846603394
+          ],
+          "range_xyz": [
+            -0.13069725036621094,
+            -0.02177690714597702,
+            -0.32560090720653534
+          ],
+          "pelvis_path_length_m": -0.7368770503014384
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000506-wrists-paired",
+      "comparator_case_id": "L_exact_length--train-000506-wrists-paired",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            -0.004294246435165405,
+            0.03676152229309082,
+            -0.22640305757522583
+          ],
+          "max_xyz": [
+            -0.09162101149559021,
+            -0.29441219568252563,
+            0.008765578269958496
+          ],
+          "range_xyz": [
+            -0.0873267650604248,
+            -0.33117371797561646,
+            0.23516863584518433
+          ],
+          "pelvis_path_length_m": -0.18848251017791096
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000506-wrists-text_only",
+      "comparator_case_id": "L_exact_length--train-000506-wrists-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000506-wrists-physical_static",
+      "comparator_case_id": "L_exact_length--train-000506-wrists-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.005396664142608643,
+            0.03110469877719879,
+            0.24348396062850952
+          ],
+          "max_xyz": [
+            0.11136439442634583,
+            -0.33532118797302246,
+            1.0726510882377625
+          ],
+          "range_xyz": [
+            0.10596773028373718,
+            -0.36642588675022125,
+            0.8291671276092529
+          ],
+          "pelvis_path_length_m": 0.09475026538333253
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-004728-head-paired",
+      "comparator_case_id": "L_exact_length--train-004728-head-paired",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.28770187497138977,
+            0.045153796672821045,
+            0.8821334987878799
+          ],
+          "max_xyz": [
+            0.07495200634002686,
+            -0.12496519088745117,
+            0.5032375454902649
+          ],
+          "range_xyz": [
+            -0.21274986863136292,
+            -0.17011898756027222,
+            -0.37889595329761505
+          ],
+          "pelvis_path_length_m": 1.0493252703878468
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-004728-head-text_only",
+      "comparator_case_id": "L_exact_length--train-004728-head-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-004728-head-physical_static",
+      "comparator_case_id": "L_exact_length--train-004728-head-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.39197874069213867,
+            0.026528220623731613,
+            0.14838343858718872
+          ],
+          "max_xyz": [
+            0.07670634984970093,
+            -0.21821856498718262,
+            -0.055987417697906494
+          ],
+          "range_xyz": [
+            -0.31527239084243774,
+            -0.24474678561091423,
+            -0.20437085628509521
+          ],
+          "pelvis_path_length_m": 0.3683123019129121
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-004728-wrists-paired",
+      "comparator_case_id": "L_exact_length--train-004728-wrists-paired",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.07123202085494995,
+            0.02173241227865219,
+            -0.1192394495010376
+          ],
+          "max_xyz": [
+            0.023698389530181885,
+            0.014095425605773926,
+            -0.1646605134010315
+          ],
+          "range_xyz": [
+            -0.047533631324768066,
+            -0.007636986672878265,
+            -0.045421063899993896
+          ],
+          "pelvis_path_length_m": 0.22494202679156272
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-004728-wrists-text_only",
+      "comparator_case_id": "L_exact_length--train-004728-wrists-text_only",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "R_static_reference_delta--train-004728-wrists-physical_static",
+      "comparator_case_id": "L_exact_length--train-004728-wrists-physical_static",
+      "extent_difference_m": {
+        "motion_extent_m": {
+          "min_xyz": [
+            0.4263337254524231,
+            0.027976322919130325,
+            0.9491981416940689
+          ],
+          "max_xyz": [
+            -0.36645781993865967,
+            -0.20891892910003662,
+            -0.16886106133460999
+          ],
+          "range_xyz": [
+            -0.7927915453910828,
+            -0.23689525201916695,
+            -1.118059203028679
+          ],
+          "pelvis_path_length_m": -0.20865709847265734
+        },
+        "GT_motion_extent_m": {
+          "min_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pelvis_path_length_m": 0.0
+        }
+      }
+    }
+  ]
+}

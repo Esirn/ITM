@@ -1,0 +1,1370 @@
+[
+  {
+    "case_id": "L_exact_length--000433-head-paired",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-paired.npz",
+    "old_sha256": "880687d2595e54a27359fe67f067ebd24f28fd02ef642d39b2e3f8d3c5784052",
+    "metrics": {
+      "global_MPJPE_m": 0.004329814445582392,
+      "root_relative_MPJPE_m": -0.01925421054890042,
+      "root_path_RMSE_m": 0.0017659397542370003,
+      "head_or_wrists_position_joint_proxy_m": 0.008875113336415497,
+      "velocity_joint_proxy_RMSE_m_s": -0.22481762148787943,
+      "jerk_absolute_m_s3": -47.64174476025474,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.1349114326980479,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.14607851390857385,
+    "max_abs_m": 0.6751681119203568,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000433-head-text_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-text_only.npz",
+    "old_sha256": "c947c06ade69511ecb408f51efceaf31370b4e4c2f2d0fe308104033b286e37e",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.0,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "L_exact_length--000433-head-imu_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-imu_only.npz",
+    "old_sha256": "9a53546977945ab8c0ecd19627172298ea07a494cd07a6a05c01b1ba30524c64",
+    "metrics": {
+      "global_MPJPE_m": -0.006913270593929932,
+      "root_relative_MPJPE_m": -0.025804155822411523,
+      "root_path_RMSE_m": -0.02514913079468259,
+      "head_or_wrists_position_joint_proxy_m": 0.014740525203944421,
+      "velocity_joint_proxy_RMSE_m_s": -0.20544140410036982,
+      "jerk_absolute_m_s3": -33.451480188418316,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.09439186019917753,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.21665708083303972,
+    "max_abs_m": 0.7463853359222412,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000433-head-backbone_bypass",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-backbone_bypass.npz",
+    "old_sha256": "30f4a32e9d90f181b6303c461f49cc167cb89ccbd95e1aeecfbe1e73697c5ed1",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.0,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "L_exact_length--000433-head-numeric_zero",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-numeric_zero.npz",
+    "old_sha256": "67e42e63bca5c583765ee69085f15789249e0d558c83ff43c55642b56d32b235",
+    "metrics": {
+      "global_MPJPE_m": 2.9872391704849344e-05,
+      "root_relative_MPJPE_m": -0.022383256310123972,
+      "root_path_RMSE_m": 0.0008937788091463728,
+      "head_or_wrists_position_joint_proxy_m": 0.02289677931025985,
+      "velocity_joint_proxy_RMSE_m_s": -0.19146221511617478,
+      "jerk_absolute_m_s3": -33.71085912989902,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.1258242010298345,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.14798892760817367,
+    "max_abs_m": 0.6868397146463394,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000433-head-physical_static",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-physical_static.npz",
+    "old_sha256": "3b9a706afb3f5d30f7bb973d25151f940ab7ffa464722d388aecf775720d4d9c",
+    "metrics": {
+      "global_MPJPE_m": 0.0020118583347755736,
+      "root_relative_MPJPE_m": -0.02090450290036977,
+      "root_path_RMSE_m": -0.001698869107337811,
+      "head_or_wrists_position_joint_proxy_m": 0.004203144223505484,
+      "velocity_joint_proxy_RMSE_m_s": -0.22225575617334348,
+      "jerk_absolute_m_s3": -42.963351115870964,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.12790157548104847,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.14553812133662986,
+    "max_abs_m": 0.6898252964019775,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000433-wrists-paired",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-paired.npz",
+    "old_sha256": "2f91a993c7259162750283a8bd81a47d159f02bf191baf3d79cfcf9464510f2b",
+    "metrics": {
+      "global_MPJPE_m": 0.01504461066008747,
+      "root_relative_MPJPE_m": 0.014216875487009756,
+      "root_path_RMSE_m": -0.03605436941942672,
+      "head_or_wrists_position_joint_proxy_m": 0.0029310463106518303,
+      "velocity_joint_proxy_RMSE_m_s": -0.015024843051265724,
+      "jerk_absolute_m_s3": -1.2608578433694166,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.020528013129628153,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.10512488724475003,
+    "max_abs_m": 0.21876133978366852,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000433-wrists-text_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-text_only.npz",
+    "old_sha256": "bc69ea9673f107d950e2b80dbdcceac51c1f5059fae7d0edd273b42b0a887a9c",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.0,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "L_exact_length--000433-wrists-imu_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-imu_only.npz",
+    "old_sha256": "d04fed9b0b9821164b4630816d74fad80ee9c1bd66055a180be512526c53be06",
+    "metrics": {
+      "global_MPJPE_m": -0.030142327400500046,
+      "root_relative_MPJPE_m": -0.010471246148384766,
+      "root_path_RMSE_m": -0.10091300010294843,
+      "head_or_wrists_position_joint_proxy_m": -0.00684045414071166,
+      "velocity_joint_proxy_RMSE_m_s": -0.11628365533397489,
+      "jerk_absolute_m_s3": -28.780077815394275,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.16022474979032392,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.2508459762414437,
+    "max_abs_m": 0.5749469101428986,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000433-wrists-backbone_bypass",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-backbone_bypass.npz",
+    "old_sha256": "a439410fcf0936b825ab157ec9f8d01c03040b8f442288c3556be14bd47ed649",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.0,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "L_exact_length--000433-wrists-numeric_zero",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-numeric_zero.npz",
+    "old_sha256": "4629077c3ecf0fd6192f237296fab9b0e49d5d1ead3d6a93dd77ca15754d9cd4",
+    "metrics": {
+      "global_MPJPE_m": -0.0048104787438872365,
+      "root_relative_MPJPE_m": -0.0026801754655085552,
+      "root_path_RMSE_m": -0.06037136005479282,
+      "head_or_wrists_position_joint_proxy_m": -0.030263095667384277,
+      "velocity_joint_proxy_RMSE_m_s": -0.019960245449700653,
+      "jerk_absolute_m_s3": -4.4587641521356645,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.057024870851594064,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.15887245761014945,
+    "max_abs_m": 0.4412979334592819,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000433-wrists-physical_static",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-physical_static.npz",
+    "old_sha256": "0cbe81822223bc112bfbcc92df28bf2fd4100808af15439b7dbf9800b9268d19",
+    "metrics": {
+      "global_MPJPE_m": 0.012212875434527093,
+      "root_relative_MPJPE_m": 0.019613314080700522,
+      "root_path_RMSE_m": -0.03771727596599121,
+      "head_or_wrists_position_joint_proxy_m": 0.016612278479576026,
+      "velocity_joint_proxy_RMSE_m_s": -0.008739488253640904,
+      "jerk_absolute_m_s3": 0.3871637555137646,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.00912971643651437,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.09779648578399151,
+    "max_abs_m": 0.2098030485212803,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000382-head-paired",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-paired.npz",
+    "old_sha256": "44005c53f8234ddf6cb49a447e4427d915135dcef4525f8d592467241c6df130",
+    "metrics": {
+      "global_MPJPE_m": 0.03535596058377613,
+      "root_relative_MPJPE_m": 0.022603083604640847,
+      "root_path_RMSE_m": 0.0110508657084714,
+      "head_or_wrists_position_joint_proxy_m": -0.0033051683611677873,
+      "velocity_joint_proxy_RMSE_m_s": -0.09329686256683392,
+      "jerk_absolute_m_s3": -12.384557419211847,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.015028623579507433,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.13268766282296499,
+    "max_abs_m": 0.47417259216308594,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000382-head-text_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-text_only.npz",
+    "old_sha256": "b9b8da80eace7533acfcea7b5907d5ab053f1801fffc0206d314b0c39e5e363c",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.0,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "L_exact_length--000382-head-imu_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-imu_only.npz",
+    "old_sha256": "2fe1bc55fd95ea06c014b81b1287a53c1ac35dbdb0b8e084d1c417c512fcd5fe",
+    "metrics": {
+      "global_MPJPE_m": -0.02376119722969572,
+      "root_relative_MPJPE_m": -0.004243564328710314,
+      "root_path_RMSE_m": -0.05544602453742886,
+      "head_or_wrists_position_joint_proxy_m": -0.03930687372787389,
+      "velocity_joint_proxy_RMSE_m_s": -0.1168882878680878,
+      "jerk_absolute_m_s3": -5.833854956316465,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.0664366753133191,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.1322563189365738,
+    "max_abs_m": 0.44662851095199585,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000382-head-backbone_bypass",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-backbone_bypass.npz",
+    "old_sha256": "fa6ccbdd7f6a49b86f76653f838e7bbabd7f064ed8786f4daee86a22563abc60",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.0,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "L_exact_length--000382-head-numeric_zero",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-numeric_zero.npz",
+    "old_sha256": "bf1151f2660bcd5edea3e5d97c609b09e1189dc062a2bdd06458ae5c90fe7732",
+    "metrics": {
+      "global_MPJPE_m": 0.0215894693039477,
+      "root_relative_MPJPE_m": 0.017051666302549104,
+      "root_path_RMSE_m": -0.015566602572991153,
+      "head_or_wrists_position_joint_proxy_m": -0.016468331242424014,
+      "velocity_joint_proxy_RMSE_m_s": -0.09915107854750749,
+      "jerk_absolute_m_s3": -14.020538132326362,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.05185497230436835,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.13834023914944168,
+    "max_abs_m": 0.5229640603065491,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000382-head-physical_static",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-physical_static.npz",
+    "old_sha256": "ceae42c9fd6798233bc2b0278545376bcb83bacb87f07922c09f4d38db1a5eeb",
+    "metrics": {
+      "global_MPJPE_m": 0.034821191472937635,
+      "root_relative_MPJPE_m": 0.022417993918075932,
+      "root_path_RMSE_m": 0.010285335682619592,
+      "head_or_wrists_position_joint_proxy_m": -0.003990146877419387,
+      "velocity_joint_proxy_RMSE_m_s": -0.09394694326495201,
+      "jerk_absolute_m_s3": -12.58334993738054,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.016386678996327314,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.1325727230201681,
+    "max_abs_m": 0.4751344919204712,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000382-wrists-paired",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-paired.npz",
+    "old_sha256": "d55671999edbbb533fe1ff27ccbcdd531482251194d58e8ebee80c9b9c310389",
+    "metrics": {
+      "global_MPJPE_m": -0.009197958128067174,
+      "root_relative_MPJPE_m": 0.00645428436043001,
+      "root_path_RMSE_m": -0.04012318038885887,
+      "head_or_wrists_position_joint_proxy_m": -0.045388186508454886,
+      "velocity_joint_proxy_RMSE_m_s": -0.023872267907462608,
+      "jerk_absolute_m_s3": -1.9324979982879187,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.006588420543094192,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.12399168452304574,
+    "max_abs_m": 0.35087763518095016,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000382-wrists-text_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-text_only.npz",
+    "old_sha256": "a6fbcfa998dde60abd82588e15adc44243457c7d0af1b8665723caa1c5275730",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.0,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "L_exact_length--000382-wrists-imu_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-imu_only.npz",
+    "old_sha256": "e8f720934eafc1175072126ecf88049bc687a31eb84ef78f83759304550170a9",
+    "metrics": {
+      "global_MPJPE_m": -0.34456940756329746,
+      "root_relative_MPJPE_m": -0.015566143569282431,
+      "root_path_RMSE_m": -0.32068579924312557,
+      "head_or_wrists_position_joint_proxy_m": -0.4236891228324895,
+      "velocity_joint_proxy_RMSE_m_s": -0.04925680126563292,
+      "jerk_absolute_m_s3": -10.199405081577979,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.11023569740733707,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.46702087715016477,
+    "max_abs_m": 1.3126623034477234,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000382-wrists-backbone_bypass",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-backbone_bypass.npz",
+    "old_sha256": "d81c54cbe541b1571a6016ced8b4704bc90187966625cd2cab3f2045a162a5bb",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.0,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "L_exact_length--000382-wrists-numeric_zero",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-numeric_zero.npz",
+    "old_sha256": "10b2dd03331972d5b5cca224f5d5f30e81bc515283a2aff324a7e5d0344b61d2",
+    "metrics": {
+      "global_MPJPE_m": -0.0365271135024714,
+      "root_relative_MPJPE_m": -0.0033762625936213653,
+      "root_path_RMSE_m": -0.09041055373733689,
+      "head_or_wrists_position_joint_proxy_m": -0.09556443262048525,
+      "velocity_joint_proxy_RMSE_m_s": -0.04405781342975043,
+      "jerk_absolute_m_s3": -0.11023227481758191,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.01755063423830274,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.14904120641488358,
+    "max_abs_m": 0.4509545639157295,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000382-wrists-physical_static",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-physical_static.npz",
+    "old_sha256": "ed81c892cae3660707a6b59e498fb03fa99c4337e7638faa13a4aafe896b283c",
+    "metrics": {
+      "global_MPJPE_m": -0.0011604112593638916,
+      "root_relative_MPJPE_m": 0.0032308228462943483,
+      "root_path_RMSE_m": -0.002905069218862452,
+      "head_or_wrists_position_joint_proxy_m": -0.026751161055858008,
+      "velocity_joint_proxy_RMSE_m_s": -0.0007694372045671249,
+      "jerk_absolute_m_s3": 0.6266006093303469,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.0028443729595996475,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.09583268847178116,
+    "max_abs_m": 0.3111139088869095,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000139-head-paired",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-paired.npz",
+    "old_sha256": "bd737c75cf9e23509fc3a2356749c9d21bef936df363d50ecbf75d7ad18a17d7",
+    "metrics": {
+      "global_MPJPE_m": 0.12587496191631597,
+      "root_relative_MPJPE_m": -0.053369636258916164,
+      "root_path_RMSE_m": 0.15996198432055864,
+      "head_or_wrists_position_joint_proxy_m": 0.1829533661148055,
+      "velocity_joint_proxy_RMSE_m_s": 0.03681026910759855,
+      "jerk_absolute_m_s3": 5.440692998415196,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 0.2845770628347401,
+    "max_abs_m": 1.6719212085008621,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000139-head-text_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-text_only.npz",
+    "old_sha256": "050dbfdbc2b737085b36c97e9e56382151dda5fd1abca1e4f59afc1a3d0354cf",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "L_exact_length--000139-head-imu_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-imu_only.npz",
+    "old_sha256": "b619706a2fb5190d08834f6568eb94eb122db333763e1a775ff88440c858aa3b",
+    "metrics": {
+      "global_MPJPE_m": 0.16265094154674542,
+      "root_relative_MPJPE_m": -0.03814705900237203,
+      "root_path_RMSE_m": 0.20953980021483964,
+      "head_or_wrists_position_joint_proxy_m": 0.20888341806601618,
+      "velocity_joint_proxy_RMSE_m_s": 0.017278543959047266,
+      "jerk_absolute_m_s3": 3.2847703414784117,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 0.2795454015347713,
+    "max_abs_m": 1.5977511666715145,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000139-head-backbone_bypass",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-backbone_bypass.npz",
+    "old_sha256": "284576c261ed96ffbc545528e7bd6bc18cb4ba898066915d92358d99cb762dc2",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "L_exact_length--000139-head-numeric_zero",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-numeric_zero.npz",
+    "old_sha256": "3f566c4ab51859af6dba9186d5873f65b1290cb53b47a60fbe40d6a9440cfd01",
+    "metrics": {
+      "global_MPJPE_m": 0.11899899893769139,
+      "root_relative_MPJPE_m": -0.053019380419102785,
+      "root_path_RMSE_m": 0.15195032457852942,
+      "head_or_wrists_position_joint_proxy_m": 0.17763377442560868,
+      "velocity_joint_proxy_RMSE_m_s": 0.036001386929731205,
+      "jerk_absolute_m_s3": 7.247253437831101,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 0.2716424827225148,
+    "max_abs_m": 1.6577590703964233,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000139-head-physical_static",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-physical_static.npz",
+    "old_sha256": "ca98dc200c3cb31f44f36422d6c81091895c353110b4b36a6ec9b03c5e59da27",
+    "metrics": {
+      "global_MPJPE_m": 0.1304873860648208,
+      "root_relative_MPJPE_m": -0.05216546983965173,
+      "root_path_RMSE_m": 0.1664329506272677,
+      "head_or_wrists_position_joint_proxy_m": 0.18633851858331862,
+      "velocity_joint_proxy_RMSE_m_s": 0.03533082721232905,
+      "jerk_absolute_m_s3": 6.961688537837084,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 0.2870650082870165,
+    "max_abs_m": 1.6718455255031586,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000139-wrists-paired",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-paired.npz",
+    "old_sha256": "6dc6974f16dfdd37c2137f5eca54cd87cbdec758ea7ea8b0bc0d6acc222bd9f4",
+    "metrics": {
+      "global_MPJPE_m": 0.09463153434154181,
+      "root_relative_MPJPE_m": -0.059900929249917884,
+      "root_path_RMSE_m": 0.1346096293902752,
+      "head_or_wrists_position_joint_proxy_m": 0.1221209962145704,
+      "velocity_joint_proxy_RMSE_m_s": 0.04250768070852373,
+      "jerk_absolute_m_s3": 6.695790504057368,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 0.26123492390918485,
+    "max_abs_m": 1.7080250345170498,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000139-wrists-text_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-text_only.npz",
+    "old_sha256": "922ffe41a3b979e949149a0c4da58f2f2cd500fa74fff79d2b32628f02be0115",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "L_exact_length--000139-wrists-imu_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-imu_only.npz",
+    "old_sha256": "8bf57cf274169653304d27d221746812842157b40ec5ba31b4c3ec121086ce72",
+    "metrics": {
+      "global_MPJPE_m": 0.3093040999321721,
+      "root_relative_MPJPE_m": -0.05492731460104017,
+      "root_path_RMSE_m": 0.404877086497053,
+      "head_or_wrists_position_joint_proxy_m": 0.33509030343443835,
+      "velocity_joint_proxy_RMSE_m_s": 0.02834855652106405,
+      "jerk_absolute_m_s3": 2.4664889440174056,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 0.4875169681903684,
+    "max_abs_m": 1.6998544670641422,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000139-wrists-backbone_bypass",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-backbone_bypass.npz",
+    "old_sha256": "abc0467569707d7c4ab7f0e3a64cd73eb3836dd865d6d798e0b0bdce7a2bb9d7",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "L_exact_length--000139-wrists-numeric_zero",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-numeric_zero.npz",
+    "old_sha256": "afbec353593085f7226c98b28a0fd0180aad5b908fac94a726ffafd04b55a6af",
+    "metrics": {
+      "global_MPJPE_m": 0.09231378471525375,
+      "root_relative_MPJPE_m": -0.06033945597750576,
+      "root_path_RMSE_m": 0.12720311821128694,
+      "head_or_wrists_position_joint_proxy_m": 0.13707153904563008,
+      "velocity_joint_proxy_RMSE_m_s": 0.04172359177459095,
+      "jerk_absolute_m_s3": 6.640424458328364,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 0.25445393535624944,
+    "max_abs_m": 1.6512208208441734,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "L_exact_length--000139-wrists-physical_static",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-physical_static.npz",
+    "old_sha256": "6527ff4d58ec3704ac2cbb8cad13b0e8e78c2a3ad2092b2d70fd116e11eef3f6",
+    "metrics": {
+      "global_MPJPE_m": 0.09922549735402741,
+      "root_relative_MPJPE_m": -0.060583925802880384,
+      "root_path_RMSE_m": 0.1404937646704103,
+      "head_or_wrists_position_joint_proxy_m": 0.126180355819989,
+      "velocity_joint_proxy_RMSE_m_s": 0.04255767205198957,
+      "jerk_absolute_m_s3": 7.489717251478064,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 0.2638374879661535,
+    "max_abs_m": 1.7134380154311657,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000433-head-paired",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-paired.npz",
+    "old_sha256": "880687d2595e54a27359fe67f067ebd24f28fd02ef642d39b2e3f8d3c5784052",
+    "metrics": {
+      "global_MPJPE_m": -0.026589269874060045,
+      "root_relative_MPJPE_m": -0.0384580699084108,
+      "root_path_RMSE_m": -0.004891195239359811,
+      "head_or_wrists_position_joint_proxy_m": -0.01508917218151759,
+      "velocity_joint_proxy_RMSE_m_s": 0.046232777181107076,
+      "jerk_absolute_m_s3": -8.795451209890956,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.003999002352974401,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.1760557164694852,
+    "max_abs_m": 0.5902758836746216,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000433-head-text_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-text_only.npz",
+    "old_sha256": "c947c06ade69511ecb408f51efceaf31370b4e4c2f2d0fe308104033b286e37e",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.0,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "R_static_reference_delta--000433-head-imu_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-imu_only.npz",
+    "old_sha256": "9a53546977945ab8c0ecd19627172298ea07a494cd07a6a05c01b1ba30524c64",
+    "metrics": {
+      "global_MPJPE_m": 0.0013700557264076374,
+      "root_relative_MPJPE_m": -0.038953700317096884,
+      "root_path_RMSE_m": -0.005456438082381498,
+      "head_or_wrists_position_joint_proxy_m": 0.017247011564616777,
+      "velocity_joint_proxy_RMSE_m_s": 0.059504560689007224,
+      "jerk_absolute_m_s3": 6.884776440261362,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.040454561283895574,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.30543264042732554,
+    "max_abs_m": 0.9536283314228058,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000433-head-backbone_bypass",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-backbone_bypass.npz",
+    "old_sha256": "30f4a32e9d90f181b6303c461f49cc167cb89ccbd95e1aeecfbe1e73697c5ed1",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.0,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "R_static_reference_delta--000433-head-numeric_zero",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-numeric_zero.npz",
+    "old_sha256": "67e42e63bca5c583765ee69085f15789249e0d558c83ff43c55642b56d32b235",
+    "metrics": {
+      "global_MPJPE_m": -0.027599176333572478,
+      "root_relative_MPJPE_m": -0.036911555313175276,
+      "root_path_RMSE_m": 0.0009686221993806116,
+      "head_or_wrists_position_joint_proxy_m": -0.04717982199088619,
+      "velocity_joint_proxy_RMSE_m_s": 0.06263378943718634,
+      "jerk_absolute_m_s3": -4.271118777316772,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.03654401933461765,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.1536622876006486,
+    "max_abs_m": 0.7586368434131145,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000433-head-physical_static",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-head-physical_static.npz",
+    "old_sha256": "3b9a706afb3f5d30f7bb973d25151f940ab7ffa464722d388aecf775720d4d9c",
+    "metrics": {
+      "global_MPJPE_m": -0.03507737164908867,
+      "root_relative_MPJPE_m": -0.04000915557318818,
+      "root_path_RMSE_m": -0.006859398282981571,
+      "head_or_wrists_position_joint_proxy_m": -0.008764772467221738,
+      "velocity_joint_proxy_RMSE_m_s": 0.05763478345193396,
+      "jerk_absolute_m_s3": -6.185081541059489,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.0015010720286115775,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.17609297120343917,
+    "max_abs_m": 0.6206688284873962,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000433-wrists-paired",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-paired.npz",
+    "old_sha256": "2f91a993c7259162750283a8bd81a47d159f02bf191baf3d79cfcf9464510f2b",
+    "metrics": {
+      "global_MPJPE_m": 0.014199317834801911,
+      "root_relative_MPJPE_m": 0.019455394338048798,
+      "root_path_RMSE_m": -0.040929652785772735,
+      "head_or_wrists_position_joint_proxy_m": 0.10396862478640112,
+      "velocity_joint_proxy_RMSE_m_s": 0.01320121270626895,
+      "jerk_absolute_m_s3": 9.192248970799461,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.006852224747812843,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.23709164935015697,
+    "max_abs_m": 0.730828270316124,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000433-wrists-text_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-text_only.npz",
+    "old_sha256": "bc69ea9673f107d950e2b80dbdcceac51c1f5059fae7d0edd273b42b0a887a9c",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.0,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "R_static_reference_delta--000433-wrists-imu_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-imu_only.npz",
+    "old_sha256": "d04fed9b0b9821164b4630816d74fad80ee9c1bd66055a180be512526c53be06",
+    "metrics": {
+      "global_MPJPE_m": 1.6245044464991827,
+      "root_relative_MPJPE_m": 0.1301523796796209,
+      "root_path_RMSE_m": 1.640323764638579,
+      "head_or_wrists_position_joint_proxy_m": 1.7397326198208243,
+      "velocity_joint_proxy_RMSE_m_s": 1.8021837783603578,
+      "jerk_absolute_m_s3": 276.3546142819281,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 1.7858992231490705,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 1.878695576845588,
+    "max_abs_m": 2.9286025911569595,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000433-wrists-backbone_bypass",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-backbone_bypass.npz",
+    "old_sha256": "a439410fcf0936b825ab157ec9f8d01c03040b8f442288c3556be14bd47ed649",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.0,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "R_static_reference_delta--000433-wrists-numeric_zero",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-numeric_zero.npz",
+    "old_sha256": "4629077c3ecf0fd6192f237296fab9b0e49d5d1ead3d6a93dd77ca15754d9cd4",
+    "metrics": {
+      "global_MPJPE_m": 0.19042649352608038,
+      "root_relative_MPJPE_m": 0.07679399167778661,
+      "root_path_RMSE_m": 0.2210375583071619,
+      "head_or_wrists_position_joint_proxy_m": 0.26719608372694725,
+      "velocity_joint_proxy_RMSE_m_s": 0.02238915522173468,
+      "jerk_absolute_m_s3": 3.0790151842323823,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.020055411175683407,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.44629463100734745,
+    "max_abs_m": 0.8670797422528267,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000433-wrists-physical_static",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000433-wrists-physical_static.npz",
+    "old_sha256": "0cbe81822223bc112bfbcc92df28bf2fd4100808af15439b7dbf9800b9268d19",
+    "metrics": {
+      "global_MPJPE_m": 0.018782325993555865,
+      "root_relative_MPJPE_m": 0.011935746167789169,
+      "root_path_RMSE_m": -0.029301517935007057,
+      "head_or_wrists_position_joint_proxy_m": 0.07951108132288254,
+      "velocity_joint_proxy_RMSE_m_s": 0.009638086129364787,
+      "jerk_absolute_m_s3": -0.03482163421663387,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.0032081316581080432,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.2078754350284388,
+    "max_abs_m": 0.6910155862569809,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000382-head-paired",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-paired.npz",
+    "old_sha256": "44005c53f8234ddf6cb49a447e4427d915135dcef4525f8d592467241c6df130",
+    "metrics": {
+      "global_MPJPE_m": -0.08042865147466059,
+      "root_relative_MPJPE_m": -0.04568590149683677,
+      "root_path_RMSE_m": -0.03882022180620136,
+      "head_or_wrists_position_joint_proxy_m": -0.1143311600906563,
+      "velocity_joint_proxy_RMSE_m_s": -0.018929630624855864,
+      "jerk_absolute_m_s3": 13.213397545523588,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.029008451440275557,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.13547215352647704,
+    "max_abs_m": 0.5321459770202637,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000382-head-text_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-text_only.npz",
+    "old_sha256": "b9b8da80eace7533acfcea7b5907d5ab053f1801fffc0206d314b0c39e5e363c",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.0,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "R_static_reference_delta--000382-head-imu_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-imu_only.npz",
+    "old_sha256": "2fe1bc55fd95ea06c014b81b1287a53c1ac35dbdb0b8e084d1c417c512fcd5fe",
+    "metrics": {
+      "global_MPJPE_m": 0.014565124144663266,
+      "root_relative_MPJPE_m": 0.013412379335945829,
+      "root_path_RMSE_m": -0.0019977501637716,
+      "head_or_wrists_position_joint_proxy_m": -0.005900833313018938,
+      "velocity_joint_proxy_RMSE_m_s": 0.20106494369867456,
+      "jerk_absolute_m_s3": 46.18621567371566,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.1528972779291734,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.35329975963376853,
+    "max_abs_m": 1.4025744795799255,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000382-head-backbone_bypass",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-backbone_bypass.npz",
+    "old_sha256": "fa6ccbdd7f6a49b86f76653f838e7bbabd7f064ed8786f4daee86a22563abc60",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.0,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "R_static_reference_delta--000382-head-numeric_zero",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-numeric_zero.npz",
+    "old_sha256": "bf1151f2660bcd5edea3e5d97c609b09e1189dc062a2bdd06458ae5c90fe7732",
+    "metrics": {
+      "global_MPJPE_m": -0.04177403747247431,
+      "root_relative_MPJPE_m": -0.01078782984582928,
+      "root_path_RMSE_m": -0.030232636366185,
+      "head_or_wrists_position_joint_proxy_m": -0.0149398939313969,
+      "velocity_joint_proxy_RMSE_m_s": -0.06813277752050168,
+      "jerk_absolute_m_s3": 1.762448883450947,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.06797332216045165,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.1430792133095533,
+    "max_abs_m": 0.5656556487083435,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000382-head-physical_static",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-head-physical_static.npz",
+    "old_sha256": "ceae42c9fd6798233bc2b0278545376bcb83bacb87f07922c09f4d38db1a5eeb",
+    "metrics": {
+      "global_MPJPE_m": -0.08048186893883735,
+      "root_relative_MPJPE_m": -0.04590891071485788,
+      "root_path_RMSE_m": -0.040448501257920356,
+      "head_or_wrists_position_joint_proxy_m": -0.11603098093079771,
+      "velocity_joint_proxy_RMSE_m_s": -0.021781777660638157,
+      "jerk_absolute_m_s3": 12.395063901779984,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.03098755385557754,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.13322256419468562,
+    "max_abs_m": 0.5171689689159393,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000382-wrists-paired",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-paired.npz",
+    "old_sha256": "d55671999edbbb533fe1ff27ccbcdd531482251194d58e8ebee80c9b9c310389",
+    "metrics": {
+      "global_MPJPE_m": 0.18558506774544758,
+      "root_relative_MPJPE_m": 0.16392792054907263,
+      "root_path_RMSE_m": 0.04895542088352979,
+      "head_or_wrists_position_joint_proxy_m": -0.1047898266295001,
+      "velocity_joint_proxy_RMSE_m_s": 0.002519826805819275,
+      "jerk_absolute_m_s3": 9.58872031492913,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.13348481437150067,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.381929826682002,
+    "max_abs_m": 0.9226240813732147,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000382-wrists-text_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-text_only.npz",
+    "old_sha256": "a6fbcfa998dde60abd82588e15adc44243457c7d0af1b8665723caa1c5275730",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.0,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "R_static_reference_delta--000382-wrists-imu_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-imu_only.npz",
+    "old_sha256": "e8f720934eafc1175072126ecf88049bc687a31eb84ef78f83759304550170a9",
+    "metrics": {
+      "global_MPJPE_m": 0.4417489479032022,
+      "root_relative_MPJPE_m": 0.09394079591512416,
+      "root_path_RMSE_m": 0.5195897278313573,
+      "head_or_wrists_position_joint_proxy_m": 0.2583010175553955,
+      "velocity_joint_proxy_RMSE_m_s": -0.21890480555457614,
+      "jerk_absolute_m_s3": -31.84852896687542,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.05964267729320216,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 1.6395871811762393,
+    "max_abs_m": 2.8866885900497437,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000382-wrists-backbone_bypass",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-backbone_bypass.npz",
+    "old_sha256": "d81c54cbe541b1571a6016ced8b4704bc90187966625cd2cab3f2045a162a5bb",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": 0.0,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "R_static_reference_delta--000382-wrists-numeric_zero",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-numeric_zero.npz",
+    "old_sha256": "10b2dd03331972d5b5cca224f5d5f30e81bc515283a2aff324a7e5d0344b61d2",
+    "metrics": {
+      "global_MPJPE_m": 0.026798279833444044,
+      "root_relative_MPJPE_m": 0.07286439861147667,
+      "root_path_RMSE_m": -0.04554161005274228,
+      "head_or_wrists_position_joint_proxy_m": -0.146650933066167,
+      "velocity_joint_proxy_RMSE_m_s": 0.054371156720508906,
+      "jerk_absolute_m_s3": 4.830390086031624,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.01391257775963052,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.22145784343203265,
+    "max_abs_m": 0.6819396018981934,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000382-wrists-physical_static",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000382-wrists-physical_static.npz",
+    "old_sha256": "ed81c892cae3660707a6b59e498fb03fa99c4337e7638faa13a4aafe896b283c",
+    "metrics": {
+      "global_MPJPE_m": -0.09932043839682689,
+      "root_relative_MPJPE_m": -0.0583353119503986,
+      "root_path_RMSE_m": -0.03672241081698885,
+      "head_or_wrists_position_joint_proxy_m": -0.18068074438435822,
+      "velocity_joint_proxy_RMSE_m_s": 0.039512410240778006,
+      "jerk_absolute_m_s3": 2.598795223279154,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": -0.02776023288767298,
+      "GT_foot_contact_speed_proxy_m_s": 0.0
+    },
+    "mean_joint_distance_m": 0.12787492718043955,
+    "max_abs_m": 0.5072084069252014,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000139-head-paired",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-paired.npz",
+    "old_sha256": "bd737c75cf9e23509fc3a2356749c9d21bef936df363d50ecbf75d7ad18a17d7",
+    "metrics": {
+      "global_MPJPE_m": 0.7416970402091385,
+      "root_relative_MPJPE_m": -0.12422834503374894,
+      "root_path_RMSE_m": 0.6484561266098878,
+      "head_or_wrists_position_joint_proxy_m": 0.7686658475967572,
+      "velocity_joint_proxy_RMSE_m_s": 0.5083698158195123,
+      "jerk_absolute_m_s3": 46.48052092710445,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 2.851588678867177,
+    "max_abs_m": 4.72374415397644,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000139-head-text_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-text_only.npz",
+    "old_sha256": "050dbfdbc2b737085b36c97e9e56382151dda5fd1abca1e4f59afc1a3d0354cf",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "R_static_reference_delta--000139-head-imu_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-imu_only.npz",
+    "old_sha256": "b619706a2fb5190d08834f6568eb94eb122db333763e1a775ff88440c858aa3b",
+    "metrics": {
+      "global_MPJPE_m": 0.22654395060539434,
+      "root_relative_MPJPE_m": -0.14489811526862817,
+      "root_path_RMSE_m": 0.20784064071421193,
+      "head_or_wrists_position_joint_proxy_m": 0.33627021311602356,
+      "velocity_joint_proxy_RMSE_m_s": 0.3135598706411101,
+      "jerk_absolute_m_s3": 26.369841206561496,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 0.5276240561857484,
+    "max_abs_m": 1.7486999705433846,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000139-head-backbone_bypass",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-backbone_bypass.npz",
+    "old_sha256": "284576c261ed96ffbc545528e7bd6bc18cb4ba898066915d92358d99cb762dc2",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "R_static_reference_delta--000139-head-numeric_zero",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-numeric_zero.npz",
+    "old_sha256": "3f566c4ab51859af6dba9186d5873f65b1290cb53b47a60fbe40d6a9440cfd01",
+    "metrics": {
+      "global_MPJPE_m": 0.28024520455271884,
+      "root_relative_MPJPE_m": -0.11524108534682642,
+      "root_path_RMSE_m": 0.09812097094677186,
+      "head_or_wrists_position_joint_proxy_m": 0.38567353353554057,
+      "velocity_joint_proxy_RMSE_m_s": 0.40054126085717656,
+      "jerk_absolute_m_s3": 44.03960104016805,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 2.3215180505847677,
+    "max_abs_m": 3.866987645626068,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000139-head-physical_static",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-head-physical_static.npz",
+    "old_sha256": "ca98dc200c3cb31f44f36422d6c81091895c353110b4b36a6ec9b03c5e59da27",
+    "metrics": {
+      "global_MPJPE_m": 0.826297457162299,
+      "root_relative_MPJPE_m": -0.1137174758427483,
+      "root_path_RMSE_m": 0.7341928308409704,
+      "head_or_wrists_position_joint_proxy_m": 0.8358859807384447,
+      "velocity_joint_proxy_RMSE_m_s": 0.5404993409490664,
+      "jerk_absolute_m_s3": 47.8598178568482,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 2.9511208086885135,
+    "max_abs_m": 4.924704551696777,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000139-wrists-paired",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-paired.npz",
+    "old_sha256": "6dc6974f16dfdd37c2137f5eca54cd87cbdec758ea7ea8b0bc0d6acc222bd9f4",
+    "metrics": {
+      "global_MPJPE_m": 1.0081787557749147,
+      "root_relative_MPJPE_m": -0.13925289828393328,
+      "root_path_RMSE_m": 0.9421331343691486,
+      "head_or_wrists_position_joint_proxy_m": 0.9982335117466994,
+      "velocity_joint_proxy_RMSE_m_s": 0.45775297830197303,
+      "jerk_absolute_m_s3": 52.83775467946161,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 3.0108118631282155,
+    "max_abs_m": 5.154710352420807,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000139-wrists-text_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-text_only.npz",
+    "old_sha256": "922ffe41a3b979e949149a0c4da58f2f2cd500fa74fff79d2b32628f02be0115",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "R_static_reference_delta--000139-wrists-imu_only",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-imu_only.npz",
+    "old_sha256": "8bf57cf274169653304d27d221746812842157b40ec5ba31b4c3ec121086ce72",
+    "metrics": {
+      "global_MPJPE_m": 1.8397423466066274,
+      "root_relative_MPJPE_m": -0.11297040233469571,
+      "root_path_RMSE_m": 1.736875180056364,
+      "head_or_wrists_position_joint_proxy_m": 1.8270900515776587,
+      "velocity_joint_proxy_RMSE_m_s": 1.1002465307104665,
+      "jerk_absolute_m_s3": 115.93313239879178,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 3.9961123016856757,
+    "max_abs_m": 6.067158102989197,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000139-wrists-backbone_bypass",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-backbone_bypass.npz",
+    "old_sha256": "abc0467569707d7c4ab7f0e3a64cd73eb3836dd865d6d798e0b0bdce7a2bb9d7",
+    "metrics": {
+      "global_MPJPE_m": 0.0,
+      "root_relative_MPJPE_m": 0.0,
+      "root_path_RMSE_m": 0.0,
+      "head_or_wrists_position_joint_proxy_m": 0.0,
+      "velocity_joint_proxy_RMSE_m_s": 0.0,
+      "jerk_absolute_m_s3": 0.0,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 0.0,
+    "max_abs_m": 0.0,
+    "bitwise_equal": true
+  },
+  {
+    "case_id": "R_static_reference_delta--000139-wrists-numeric_zero",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-numeric_zero.npz",
+    "old_sha256": "afbec353593085f7226c98b28a0fd0180aad5b908fac94a726ffafd04b55a6af",
+    "metrics": {
+      "global_MPJPE_m": 1.6627492076998642,
+      "root_relative_MPJPE_m": -0.014875685268011751,
+      "root_path_RMSE_m": 1.5660434465732949,
+      "head_or_wrists_position_joint_proxy_m": 1.7930162446057123,
+      "velocity_joint_proxy_RMSE_m_s": 0.6213962986602113,
+      "jerk_absolute_m_s3": 66.13414657995577,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 3.345953624364672,
+    "max_abs_m": 6.364569664001465,
+    "bitwise_equal": false
+  },
+  {
+    "case_id": "R_static_reference_delta--000139-wrists-physical_static",
+    "old_file": "/home/a200/0proj/ITM/outputs/itm_rework/method/canonical_b0_authorized_20260926_v1/samples/000139-wrists-physical_static.npz",
+    "old_sha256": "6527ff4d58ec3704ac2cbb8cad13b0e8e78c2a3ad2092b2d70fd116e11eef3f6",
+    "metrics": {
+      "global_MPJPE_m": 0.9639211808278285,
+      "root_relative_MPJPE_m": -0.12031596376969511,
+      "root_path_RMSE_m": 0.8644564748192423,
+      "head_or_wrists_position_joint_proxy_m": 1.008320641714085,
+      "velocity_joint_proxy_RMSE_m_s": 0.448921381258625,
+      "jerk_absolute_m_s3": 45.17810987088193,
+      "GT_jerk_absolute_m_s3": 0.0,
+      "foot_contact_speed_proxy_m_s": null,
+      "GT_foot_contact_speed_proxy_m_s": null
+    },
+    "mean_joint_distance_m": 2.9590279645482807,
+    "max_abs_m": 4.940478682518005,
+    "bitwise_equal": false
+  }
+]
