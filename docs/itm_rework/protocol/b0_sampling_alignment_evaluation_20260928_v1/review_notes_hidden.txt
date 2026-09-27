@@ -1,0 +1,123 @@
+Single AI coarse review, frozen order, condition/config/arm hidden on figures.
+Prior results known; S001 mapping seen in schema read; not fully blind/human certification.
+Snapshots plus all-frame traces. Left blue, right red. Uncertain is retained; no semantic success threshold.
+S001 hands approach and lower, relatively stable legs; precise clap cycles uncertain.
+S002 late right-leg lift, ankle still raised at end; full return not shown.
+S003 brief repeated right-leg high lifts around middle then lower; sustained back hold/direction uncertain; substantial root travel.
+S004 persistently extremely low seated/crouched posture; no alternating standing lunge-return sequence.
+S005 continuous alternating stepping with root travel; coarse walking present.
+S006 punch/turn-like arm and torso change, early hops/jumps; intended ordering uncertain.
+S007 stepping then sustained bent crouch; no repeated alternating lunge-return.
+S008 arm approach with persistently lifted legs/feet; substantial unrelated lower-body deformation.
+S009 coarse walking with alternating feet and root travel.
+S010 stays upright with later arm extension; no clear kick/return.
+S011 late high right-leg lift; does not fully lower before end.
+S012 hand approach/lowering with bent body and raised feet; mild lower-body deviation; precise clap timing uncertain.
+S013 hands converge then lower, legs stable; precise clap cycles uncertain.
+S014 repeated broad arm movement and hand approach, final arms spread; stable legs, clean lowering uncertain.
+S015 stepping/root travel with pronounced body bobbing; coarse walking, timing uncertain.
+S016 large traveling strides/leaps and uneven heights; walking target not reliably preserved.
+S017 brief low right ankle lift then lower, not a clear large kick; target amplitude uncertain.
+S018 hand approach with both ankles persistently elevated, lower-body deformation.
+S019 initial stepping then sustained seated/low posture; no complete alternating lunge-return sequence.
+S020 broad punch/turn-like arm motion with extra jumps; exact target sequence uncertain.
+S021 small late right-leg lift/lower, upright finish; kick amplitude weak/uncertain.
+S022 repeated hands-together gesture with stable legs; arms remain raised until near end, complete lowering uncertain.
+S023 hands together then lower, stable upright legs; exact clap timing uncertain.
+S024 coarse walking with alternating feet and substantial root travel.
+S025 regular stepping/root travel, coarse walking preserved.
+S026 repeated arm strikes and turning/stepping; coarse punch-turn present, ordering uncertain.
+S027 early arm strikes then turns/settles; mild hops, exact sequence uncertain.
+S028 sustained elevated bent legs during hand convergence; lower-body deformation.
+S029 low right-foot gesture then lower; clear large kick uncertain.
+S030 repeated hand convergence, legs stable; hands largely remain raised at end.
+S031 isolated left-leg lift then bend; sustained walking not present, root path small.
+S032 largely upright shifting/leaning, no clear high right back-leg hold; direction uncertain.
+S033 broad arms and bouncing/jumping; not clean clap with stable stance.
+S034 late high right-leg lift, incomplete return before endpoint.
+S035 repeated punch-like arm extensions and turn/steps; fine order uncertain.
+S036 repeated hand convergence with stable stance, incomplete final lowering uncertain.
+S037 late high right-leg lift, remains raised at end.
+S038 late right-leg lift with hands near head; foot remains elevated at endpoint.
+S039 only small ankle movement and arm gesture; no clear full kick.
+S040 hand convergence with lifted bent legs; lower-body deformation.
+S041 alternating steps and large root displacement; coarse walking present.
+S042 persistently seated/very low bent posture, no alternating standing lunges or return.
+S043 upright with arm movement, no clear kick; feet remain near floor.
+S044 regular walking steps and root travel.
+S045 right leg rises very high, held several seconds then lowered; direction/back alignment uncertain, exaggerated height.
+S046 stepping with body-height oscillation and curving travel; coarse walk, timing uncertain.
+S047 sustained low crouch/seated posture after early brief rise, no full alternating lunges.
+S048 repeated broad arm raises and body bouncing; clap target not cleanly realized.
+S049 low ankle movement then standing/arm gesture; clear kick absent/uncertain.
+S050 late high right-leg lift, not returned to standing by endpoint.
+S051 late high right-leg lift held through endpoint.
+S052 walking/stepping throughout, no sustained right back-leg hold.
+S053 alternating steps and root travel; coarse walking present.
+S054 large early jump then steps/walk; target stand/sway onset not preserved.
+S055 late high right-leg lift remains raised at end.
+S056 hands approach then lower, stable stance; precise clap timing uncertain.
+S057 prolonged bent/leaning standing, no visible right-leg hold.
+S058 low traveling stride/crouch, arm motion; clap without unrelated lower-body change not present.
+S059 late high right-leg lift, incomplete lowering by endpoint.
+S060 brief small ankle lift then sustained crouch, no full kick-return.
+S061 standing then collapses into sustained seated/crouched pose; no alternating lunge-return.
+S062 regular steps and root travel, coarse walk.
+S063 walking after brief initial stance/arm movement; root travel present.
+S064 LEFT leg lifted and held then lowered; wrong side for RIGHT target, direction uncertain.
+S065 large leaping strides and uneven heights; clean walking not preserved.
+S066 punch/turn-like arm motion with repeated hops, precise order uncertain.
+S067 isolated left high-leg lift then bend; no sustained walking.
+S068 stepping/travel instead of sustained right back-leg hold.
+S069 brief punch/turn-like gestures with a conspicuous mid-sequence jump; ordering uncertain.
+S070 regular walking steps and root travel.
+S071 prolonged bent standing, no clear right-leg lift/hold.
+S072 bent/leaning standing with little foot motion, no right back-leg hold.
+S073 persistent low seated/crouched motion, not alternating standing lunges.
+S074 coarse walking with regular feet and traveling root.
+S075 stepping then sustained crouch, no alternating lunge-return sequence.
+S076 early small rise then prolonged very low crouch/seated posture, no lunge-return.
+S077 arm strike/turn-like action with pronounced mid-sequence jump, ordering uncertain.
+S078 hands approach then lower, stable stance; clap timing uncertain.
+S079 very high right-leg hold followed by lowering; correct side but back direction/exaggerated height uncertain.
+S080 modest right-foot lift and lower, bent finish; full kick amplitude uncertain.
+S081 hands together then lowered, stable legs, exact clap cycles uncertain.
+S082 brief rise from crouch then returns to prolonged very low posture; no alternating lunges.
+S083 hands converge/raise with stable legs; end arms spread, clean lowering uncertain.
+S084 repeated hand convergence at chest, stable feet; arms spread at finish.
+S085 regular walking steps/root travel.
+S086 late high right-leg lift, incomplete return.
+S087 crouched traveling strides rather than stable clapping, major lower-body deviation.
+S088 high right-leg lift late, elevated at endpoint.
+S089 small right-foot lift then deep crouch; incomplete kick-return.
+S090 upright arm gesture, little foot height variation, no clear kick.
+S091 hands raised/converged then spread; stable legs, lowering uncertain.
+S092 alternating walking with brief mid-sequence bend; substantial root travel.
+S093 late high right-leg lift remains raised at endpoint.
+S094 repeated arm strikes with turn/steps, exact punch-turn ordering uncertain.
+S095 standing then prolonged very low seated posture, no alternating lunge-return.
+S096 hands raised/converged then spread, feet stable; clean lowering uncertain.
+S097 repeated chest-height hand convergence with stable stance; complete lowering uncertain.
+S098 repeated arm extensions/strikes plus turn/steps; precise ordering uncertain.
+S099 bent standing without clear right-leg lift/hold.
+S100 arm strike/turn-like action, pronounced middle jump; ordering uncertain.
+S101 hands converge then lower, stable stance; exact clap timing uncertain.
+S102 regular walking, brief initial bend/turn; large root travel.
+S103 LEFT leg held aloft then lowered, wrong side for RIGHT target; direction uncertain.
+S104 hands raise/converge then spread; stable feet, clean lowering uncertain.
+S105 large early jump then walking; standing/sway onset lost.
+S106 alternating walking/root travel.
+S107 repeated hand convergence while feet stable; arms remain raised/spread near endpoint.
+S108 high right-leg kick late, remains elevated at endpoint.
+S109 stable feet with raised/converged hands then spread; clean lowering uncertain.
+S110 large traveling jump/high-leg motion then sustained crouch; no clean kick-return to standing.
+S111 late high right-leg lift, not fully lowered by endpoint.
+S112 regular walking and root travel.
+S113 walking with brief mid-sequence bend, root travel.
+S114 standing transitions to persistent seated/very low posture, no alternating lunges.
+S115 large jump/travel followed by sustained crouch; no clean full kick-return.
+S116 only low ankle/arm movement; clear large kick absent/uncertain.
+S117 walking/root travel with a brief broad-arm step; coarse walking preserved.
+S118 walking with mid-sequence bend; substantial root travel.
+S119 coarse walking after initial stance/arm movement, root travel.
+S120 early arm strikes and turn/steps then settles; precise sequence uncertain.

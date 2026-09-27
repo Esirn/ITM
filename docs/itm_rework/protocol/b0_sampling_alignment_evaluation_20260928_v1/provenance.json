@@ -1,0 +1,11 @@
+{
+  "code_sha256": "2b99793e073984bb615f83bd0245c3aff2d4fae859a5c034918743313a82736e",
+  "read_commit": "f6da7a8066384700b06b427845aab969b20695a3",
+  "package_sha256": "537895c45695a48cb4b5114941e4bf8cab3962c40be893fcc79b4c9eeb311d60",
+  "checkpoint_sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642",
+  "neural_forward_and_CUDA_prohibited": true,
+  "current_model_forwards": 0,
+  "current_training_updates": 0,
+  "current_diffusion_samples": 0,
+  "current_GPU_queries": 0
+}

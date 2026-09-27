@@ -1,0 +1,10 @@
+execution audit passed
+120 samples and contrasts passed
+Traceback (most recent call last):
+  File "/home/a200/0proj/ITM/scripts/evaluate_b0_sampling_alignment.py", line 390, in <module>
+    {'evaluate':evaluate,'render':render}[args.mode]()
+  File "/home/a200/0proj/ITM/scripts/evaluate_b0_sampling_alignment.py", line 339, in evaluate
+    probes(manifest,inputs);print('480 Q and 864 derived/contrast rows passed',flush=True)
+  File "/home/a200/0proj/ITM/scripts/evaluate_b0_sampling_alignment.py", line 242, in probes
+    assert m['scaled_t']==[slot['timestep']] and m['diffusion']['betas_sha256']==ah(betas)
+AssertionError

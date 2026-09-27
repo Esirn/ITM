@@ -1,0 +1,4 @@
+  File "/home/a200/0proj/ITM/scripts/evaluate_b0_sampling_alignment.py", line 210
+    b=wi[ARMS[0],*key[1:]]
+                 ^
+SyntaxError: invalid syntax

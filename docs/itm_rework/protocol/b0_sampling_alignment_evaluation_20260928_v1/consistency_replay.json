@@ -1,0 +1,9 @@
+{
+  "full_sample_checks": 24,
+  "all_method_reports_exactly_reproduced": true,
+  "bitwise_count": 18,
+  "max_coordinate_error_m": 1.6689300537109375e-06,
+  "Q_static_text_bitwise": 96,
+  "Q_x_t_max_error": 0.0,
+  "trace_max_error_over_bound": 0.06840279719297788
+}

@@ -1,0 +1,27 @@
+{
+  "read_commit": "f6da7a8066384700b06b427845aab969b20695a3",
+  "bound_files": 743,
+  "run_files": 1805,
+  "receipt_artifacts": 1621,
+  "checked_files": 2548,
+  "receipts": 61,
+  "finite_counts": {
+    "npz": 840,
+    "numeric_arrays": 3900,
+    "numeric_elements": 91329180
+  },
+  "elapsed_seconds": 2043.6146058089798,
+  "Q_seconds": 41.05934896192048,
+  "S1_seconds": 2001.847149910056,
+  "peak_allocated_bytes": 535660544,
+  "MDM_branch_examples": 240480,
+  "encoder_examples": 696,
+  "updates": 0,
+  "complete_denominators": {
+    "Q": 480,
+    "S1": 60,
+    "trace": 240
+  },
+  "new_model_forwards": 0,
+  "new_GPU_queries": 0
+}

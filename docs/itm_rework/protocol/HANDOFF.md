@@ -1,5 +1,9 @@
 # 02 → 01 / 03 交接
 
+**最新固定R guidance独立效果评价（2026-09-28）：**[B0_SAMPLING_ALIGNMENT_EVALUATION_20260928.md](B0_SAMPLING_ALIGNMENT_EVALUATION_20260928.md) 已评价 `f6da7a8`：480 Q、60新完整采样、240 trace及60旧R全部保留。743绑定文件＋1805运行文件核验通过，24一致性重放通过（18逐位一致），全部Q x_t重建差0；18项评价解析测试通过，120条冻结顺序粗审阅完成。本轮无模型前向/训练/采样/GPU查询。
+
+**交付通过，B0联合控制有效性仍未认证；下一责任方为01。** unit guidance的val paired全局位置均值下降主要来自步行，但两配置relative/velocity均值上升；head paired仍劣于reversed，wrists拍手下肢退化、train交替弓步未完整生成等负例保留。Q的train/val方向混合，不支持额外文本是统一根因；train定点响应不等于可靠完整生成。01先据既有数组提出区分这些问题的最小诊断/修正及预算，若需新计算再由02冻结和新授权；不追加作业，不续用旧预算，不重复软件验收。以下旧“待授权/待评价”均为历史状态。
+
 **最新固定R采样对照软件验收（2026-09-27）：**[B0_SAMPLING_ALIGNMENT_ACCEPTANCE_20260927.md](B0_SAMPLING_ALIGNMENT_ACCEPTANCE_20260927.md) 接受 `f9b3cb1`，无新增返工项。02独立联合回归 **258 passed，0 failed/error/skipped**；743份文件hash通过，manifest独立重建逐字节相同。全部540输入槽位、66种变换输入和398帧train-only统计通过原始数据重算，normalized input/reference最大差0；固定R身份与旧输入/噪声绑定保持一致。
 
 **下一责任方为01：绑定 implementation `793fdd9a…`、package `537895c4…`、唯一新目录与GPU申请新单次授权。** 480 Q＋60完整采样＋240条零额外调用trace，Q10分钟、S1共享40分钟、单GPU/24GiB/总1小时；0训练/新checkpoint。02本轮仅CPU软件验收，未运行真实模型前向、训练、采样或GPU查询/预检，未创建实际授权；有效性待真实产物独立评价。相同实现无需再次冻结或验收，不复用旧预算。以下旧“待实现/待验收”均为历史批次状态。

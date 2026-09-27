@@ -1,0 +1,4 @@
+execution audit passed
+120 samples and contrasts passed
+480 Q and 864 derived/contrast rows passed
+240 traces passed

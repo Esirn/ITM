@@ -1,0 +1,48 @@
+{
+  "directory": "/tmp/itm_alignment_evaluation_replay_20260928_v1",
+  "files": [
+    {
+      "file": "contrasts.json",
+      "sha256": "09b008d8031122b051afde64b78c78a6d0fd64274c8a1c5127d1565eb7eae14d",
+      "matches_delivered": true
+    },
+    {
+      "file": "execution_audit.json",
+      "sha256": "828dab30273bc1dcbbd9cc3d8373fcf40ca654a74571f6460f99bae069c53931",
+      "matches_delivered": true
+    },
+    {
+      "file": "per_case.csv",
+      "sha256": "a7f054614c86da7b987f0d83a13eb79f13ac308ac70e7da319331471b3e7c6ec",
+      "matches_delivered": true
+    },
+    {
+      "file": "probe_contrasts.json",
+      "sha256": "68dced61f322df9d94d8a338bccce008402d86ffc4f29d2c3bb95f758cf25d82",
+      "matches_delivered": true
+    },
+    {
+      "file": "probes.json",
+      "sha256": "9798f443d64cef6ab43d21aca81bfd6a2cfb23604d53c025bfa133cb4b27a6e1",
+      "matches_delivered": true
+    },
+    {
+      "file": "provenance.json",
+      "sha256": "60bfa416fd84e97c72bc911a89277ad3829c0af322fb07e1425c2dab35fa7c92",
+      "matches_delivered": true
+    },
+    {
+      "file": "samples.json",
+      "sha256": "02d872eb9df1d6248f9c68d3490349c9f21ebe7953cde9399f128df88207f73f",
+      "matches_delivered": true
+    },
+    {
+      "file": "traces.json",
+      "sha256": "6a90e70cca6d5f56192cf5b235204a73d2f6765917a36cfb154c1526b50c24d3",
+      "matches_delivered": true
+    }
+  ],
+  "initial_sample_metrics_byte_identical": true,
+  "historical_60_metrics_exactly_match_previous_evaluation": true,
+  "notes": "Final evaluator CPU rerun after correcting identity-respacing schedule reconstruction; forward/CUDA blocked."
+}

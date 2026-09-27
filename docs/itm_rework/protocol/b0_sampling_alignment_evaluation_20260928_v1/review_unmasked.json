@@ -1,0 +1,1206 @@
+{
+  "notes_sha256_before_key": "36133754149bf204b72eaa333c9a424773babba4b2d89188392013d6a1dba4ba",
+  "rows": [
+    {
+      "review_id": "S001",
+      "case_id": "R_static_reference_delta--000382-wrists-numeric_zero",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "numeric_zero",
+      "note": "hands approach and lower, relatively stable legs; precise clap cycles uncertain."
+    },
+    {
+      "review_id": "S002",
+      "case_id": "R_static_reference_delta--000433-head-tail_reversed",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "tail_reversed",
+      "note": "late right-leg lift, ankle still raised at end; full return not shown."
+    },
+    {
+      "review_id": "S003",
+      "case_id": "S1_R_unit_guidance--train-004728-head-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "condition": "paired",
+      "note": "brief repeated right-leg high lifts around middle then lower; sustained back hold/direction uncertain; substantial root travel."
+    },
+    {
+      "review_id": "S004",
+      "case_id": "R_static_reference_delta--train-000506-wrists-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "condition": "physical_static",
+      "note": "persistently extremely low seated/crouched posture; no alternating standing lunge-return sequence."
+    },
+    {
+      "review_id": "S005",
+      "case_id": "S1_R_unit_guidance--000139-wrists-backbone_bypass",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "backbone_bypass",
+      "note": "continuous alternating stepping with root travel; coarse walking present."
+    },
+    {
+      "review_id": "S006",
+      "case_id": "R_static_reference_delta--train-000027-head-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "condition": "paired",
+      "note": "punch/turn-like arm and torso change, early hops/jumps; intended ordering uncertain."
+    },
+    {
+      "review_id": "S007",
+      "case_id": "S1_R_unit_guidance--train-000506-head-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "condition": "physical_static",
+      "note": "stepping then sustained bent crouch; no repeated alternating lunge-return."
+    },
+    {
+      "review_id": "S008",
+      "case_id": "R_static_reference_delta--000382-wrists-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "paired",
+      "note": "arm approach with persistently lifted legs/feet; substantial unrelated lower-body deformation."
+    },
+    {
+      "review_id": "S009",
+      "case_id": "S1_R_unit_guidance--000139-wrists-tail_reversed",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "tail_reversed",
+      "note": "coarse walking with alternating feet and root travel."
+    },
+    {
+      "review_id": "S010",
+      "case_id": "R_static_reference_delta--000433-wrists-backbone_bypass",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "backbone_bypass",
+      "note": "stays upright with later arm extension; no clear kick/return."
+    },
+    {
+      "review_id": "S011",
+      "case_id": "R_static_reference_delta--000433-head-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "text_only",
+      "note": "late high right-leg lift; does not fully lower before end."
+    },
+    {
+      "review_id": "S012",
+      "case_id": "S1_R_unit_guidance--000382-wrists-numeric_zero",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "numeric_zero",
+      "note": "hand approach/lowering with bent body and raised feet; mild lower-body deviation; precise clap timing uncertain."
+    },
+    {
+      "review_id": "S013",
+      "case_id": "S1_R_unit_guidance--000382-wrists-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "text_only",
+      "note": "hands converge then lower, legs stable; precise clap cycles uncertain."
+    },
+    {
+      "review_id": "S014",
+      "case_id": "S1_R_unit_guidance--000382-head-numeric_zero",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "numeric_zero",
+      "note": "repeated broad arm movement and hand approach, final arms spread; stable legs, clean lowering uncertain."
+    },
+    {
+      "review_id": "S015",
+      "case_id": "R_static_reference_delta--000139-head-numeric_zero",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "numeric_zero",
+      "note": "stepping/root travel with pronounced body bobbing; coarse walking, timing uncertain."
+    },
+    {
+      "review_id": "S016",
+      "case_id": "R_static_reference_delta--000139-wrists-numeric_zero",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "numeric_zero",
+      "note": "large traveling strides/leaps and uneven heights; walking target not reliably preserved."
+    },
+    {
+      "review_id": "S017",
+      "case_id": "S1_R_unit_guidance--000433-wrists-tail_reversed",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "tail_reversed",
+      "note": "brief low right ankle lift then lower, not a clear large kick; target amplitude uncertain."
+    },
+    {
+      "review_id": "S018",
+      "case_id": "S1_R_unit_guidance--000382-wrists-tail_reversed",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "tail_reversed",
+      "note": "hand approach with both ankles persistently elevated, lower-body deformation."
+    },
+    {
+      "review_id": "S019",
+      "case_id": "S1_R_unit_guidance--train-000506-head-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "condition": "paired",
+      "note": "initial stepping then sustained seated/low posture; no complete alternating lunge-return sequence."
+    },
+    {
+      "review_id": "S020",
+      "case_id": "R_static_reference_delta--train-000027-wrists-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "condition": "physical_static",
+      "note": "broad punch/turn-like arm motion with extra jumps; exact target sequence uncertain."
+    },
+    {
+      "review_id": "S021",
+      "case_id": "R_static_reference_delta--000433-wrists-tail_reversed",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "tail_reversed",
+      "note": "small late right-leg lift/lower, upright finish; kick amplitude weak/uncertain."
+    },
+    {
+      "review_id": "S022",
+      "case_id": "R_static_reference_delta--000382-head-backbone_bypass",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "backbone_bypass",
+      "note": "repeated hands-together gesture with stable legs; arms remain raised until near end, complete lowering uncertain."
+    },
+    {
+      "review_id": "S023",
+      "case_id": "R_static_reference_delta--000382-wrists-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "text_only",
+      "note": "hands together then lower, stable upright legs; exact clap timing uncertain."
+    },
+    {
+      "review_id": "S024",
+      "case_id": "S1_R_unit_guidance--000139-wrists-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "text_only",
+      "note": "coarse walking with alternating feet and substantial root travel."
+    },
+    {
+      "review_id": "S025",
+      "case_id": "R_static_reference_delta--000139-head-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "physical_static",
+      "note": "regular stepping/root travel, coarse walking preserved."
+    },
+    {
+      "review_id": "S026",
+      "case_id": "S1_R_unit_guidance--train-000027-head-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "condition": "physical_static",
+      "note": "repeated arm strikes and turning/stepping; coarse punch-turn present, ordering uncertain."
+    },
+    {
+      "review_id": "S027",
+      "case_id": "S1_R_unit_guidance--train-000027-wrists-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "condition": "text_only",
+      "note": "early arm strikes then turns/settles; mild hops, exact sequence uncertain."
+    },
+    {
+      "review_id": "S028",
+      "case_id": "S1_R_unit_guidance--000382-wrists-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "paired",
+      "note": "sustained elevated bent legs during hand convergence; lower-body deformation."
+    },
+    {
+      "review_id": "S029",
+      "case_id": "S1_R_unit_guidance--000433-wrists-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "paired",
+      "note": "low right-foot gesture then lower; clear large kick uncertain."
+    },
+    {
+      "review_id": "S030",
+      "case_id": "R_static_reference_delta--000382-head-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "paired",
+      "note": "repeated hand convergence, legs stable; hands largely remain raised at end."
+    },
+    {
+      "review_id": "S031",
+      "case_id": "S1_R_unit_guidance--000139-head-imu_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "imu_only",
+      "note": "isolated left-leg lift then bend; sustained walking not present, root path small."
+    },
+    {
+      "review_id": "S032",
+      "case_id": "R_static_reference_delta--train-004728-head-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "condition": "paired",
+      "note": "largely upright shifting/leaning, no clear high right back-leg hold; direction uncertain."
+    },
+    {
+      "review_id": "S033",
+      "case_id": "R_static_reference_delta--000382-head-imu_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "imu_only",
+      "note": "broad arms and bouncing/jumping; not clean clap with stable stance."
+    },
+    {
+      "review_id": "S034",
+      "case_id": "R_static_reference_delta--000433-head-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "paired",
+      "note": "late high right-leg lift, incomplete return before endpoint."
+    },
+    {
+      "review_id": "S035",
+      "case_id": "R_static_reference_delta--train-000027-head-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "condition": "physical_static",
+      "note": "repeated punch-like arm extensions and turn/steps; fine order uncertain."
+    },
+    {
+      "review_id": "S036",
+      "case_id": "R_static_reference_delta--000382-head-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "text_only",
+      "note": "repeated hand convergence with stable stance, incomplete final lowering uncertain."
+    },
+    {
+      "review_id": "S037",
+      "case_id": "S1_R_unit_guidance--000433-head-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "paired",
+      "note": "late high right-leg lift, remains raised at end."
+    },
+    {
+      "review_id": "S038",
+      "case_id": "R_static_reference_delta--000433-head-imu_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "imu_only",
+      "note": "late right-leg lift with hands near head; foot remains elevated at endpoint."
+    },
+    {
+      "review_id": "S039",
+      "case_id": "S1_R_unit_guidance--000433-wrists-backbone_bypass",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "backbone_bypass",
+      "note": "only small ankle movement and arm gesture; no clear full kick."
+    },
+    {
+      "review_id": "S040",
+      "case_id": "R_static_reference_delta--000382-wrists-tail_reversed",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "tail_reversed",
+      "note": "hand convergence with lifted bent legs; lower-body deformation."
+    },
+    {
+      "review_id": "S041",
+      "case_id": "S1_R_unit_guidance--000139-wrists-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "physical_static",
+      "note": "alternating steps and large root displacement; coarse walking present."
+    },
+    {
+      "review_id": "S042",
+      "case_id": "R_static_reference_delta--train-000506-wrists-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "condition": "paired",
+      "note": "persistently seated/very low bent posture, no alternating standing lunges or return."
+    },
+    {
+      "review_id": "S043",
+      "case_id": "R_static_reference_delta--000433-wrists-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "text_only",
+      "note": "upright with arm movement, no clear kick; feet remain near floor."
+    },
+    {
+      "review_id": "S044",
+      "case_id": "R_static_reference_delta--000139-head-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "paired",
+      "note": "regular walking steps and root travel."
+    },
+    {
+      "review_id": "S045",
+      "case_id": "R_static_reference_delta--train-004728-wrists-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "condition": "paired",
+      "note": "right leg rises very high, held several seconds then lowered; direction/back alignment uncertain, exaggerated height."
+    },
+    {
+      "review_id": "S046",
+      "case_id": "S1_R_unit_guidance--000139-head-numeric_zero",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "numeric_zero",
+      "note": "stepping with body-height oscillation and curving travel; coarse walk, timing uncertain."
+    },
+    {
+      "review_id": "S047",
+      "case_id": "S1_R_unit_guidance--train-000506-wrists-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "condition": "text_only",
+      "note": "sustained low crouch/seated posture after early brief rise, no full alternating lunges."
+    },
+    {
+      "review_id": "S048",
+      "case_id": "S1_R_unit_guidance--000382-head-imu_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "imu_only",
+      "note": "repeated broad arm raises and body bouncing; clap target not cleanly realized."
+    },
+    {
+      "review_id": "S049",
+      "case_id": "S1_R_unit_guidance--000433-wrists-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "text_only",
+      "note": "low ankle movement then standing/arm gesture; clear kick absent/uncertain."
+    },
+    {
+      "review_id": "S050",
+      "case_id": "S1_R_unit_guidance--000433-head-numeric_zero",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "numeric_zero",
+      "note": "late high right-leg lift, not returned to standing by endpoint."
+    },
+    {
+      "review_id": "S051",
+      "case_id": "S1_R_unit_guidance--000433-head-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "text_only",
+      "note": "late high right-leg lift held through endpoint."
+    },
+    {
+      "review_id": "S052",
+      "case_id": "S1_R_unit_guidance--train-004728-head-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "condition": "physical_static",
+      "note": "walking/stepping throughout, no sustained right back-leg hold."
+    },
+    {
+      "review_id": "S053",
+      "case_id": "S1_R_unit_guidance--000139-head-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "paired",
+      "note": "alternating steps and root travel; coarse walking present."
+    },
+    {
+      "review_id": "S054",
+      "case_id": "R_static_reference_delta--000139-wrists-imu_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "imu_only",
+      "note": "large early jump then steps/walk; target stand/sway onset not preserved."
+    },
+    {
+      "review_id": "S055",
+      "case_id": "S1_R_unit_guidance--000433-head-tail_reversed",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "tail_reversed",
+      "note": "late high right-leg lift remains raised at end."
+    },
+    {
+      "review_id": "S056",
+      "case_id": "R_static_reference_delta--000382-wrists-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "physical_static",
+      "note": "hands approach then lower, stable stance; precise clap timing uncertain."
+    },
+    {
+      "review_id": "S057",
+      "case_id": "S1_R_unit_guidance--train-004728-wrists-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "condition": "physical_static",
+      "note": "prolonged bent/leaning standing, no visible right-leg hold."
+    },
+    {
+      "review_id": "S058",
+      "case_id": "R_static_reference_delta--000382-wrists-imu_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "imu_only",
+      "note": "low traveling stride/crouch, arm motion; clap without unrelated lower-body change not present."
+    },
+    {
+      "review_id": "S059",
+      "case_id": "R_static_reference_delta--000433-head-numeric_zero",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "numeric_zero",
+      "note": "late high right-leg lift, incomplete lowering by endpoint."
+    },
+    {
+      "review_id": "S060",
+      "case_id": "S1_R_unit_guidance--000433-wrists-numeric_zero",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "numeric_zero",
+      "note": "brief small ankle lift then sustained crouch, no full kick-return."
+    },
+    {
+      "review_id": "S061",
+      "case_id": "R_static_reference_delta--train-000506-head-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "condition": "text_only",
+      "note": "standing then collapses into sustained seated/crouched pose; no alternating lunge-return."
+    },
+    {
+      "review_id": "S062",
+      "case_id": "R_static_reference_delta--000139-head-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "text_only",
+      "note": "regular steps and root travel, coarse walk."
+    },
+    {
+      "review_id": "S063",
+      "case_id": "S1_R_unit_guidance--000139-head-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "physical_static",
+      "note": "walking after brief initial stance/arm movement; root travel present."
+    },
+    {
+      "review_id": "S064",
+      "case_id": "R_static_reference_delta--train-004728-head-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "condition": "text_only",
+      "note": "LEFT leg lifted and held then lowered; wrong side for RIGHT target, direction uncertain."
+    },
+    {
+      "review_id": "S065",
+      "case_id": "S1_R_unit_guidance--000139-wrists-numeric_zero",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "numeric_zero",
+      "note": "large leaping strides and uneven heights; clean walking not preserved."
+    },
+    {
+      "review_id": "S066",
+      "case_id": "R_static_reference_delta--train-000027-wrists-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "condition": "text_only",
+      "note": "punch/turn-like arm motion with repeated hops, precise order uncertain."
+    },
+    {
+      "review_id": "S067",
+      "case_id": "R_static_reference_delta--000139-head-imu_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "imu_only",
+      "note": "isolated left high-leg lift then bend; no sustained walking."
+    },
+    {
+      "review_id": "S068",
+      "case_id": "S1_R_unit_guidance--train-004728-head-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "condition": "text_only",
+      "note": "stepping/travel instead of sustained right back-leg hold."
+    },
+    {
+      "review_id": "S069",
+      "case_id": "S1_R_unit_guidance--train-000027-head-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "condition": "paired",
+      "note": "brief punch/turn-like gestures with a conspicuous mid-sequence jump; ordering uncertain."
+    },
+    {
+      "review_id": "S070",
+      "case_id": "R_static_reference_delta--000139-wrists-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "paired",
+      "note": "regular walking steps and root travel."
+    },
+    {
+      "review_id": "S071",
+      "case_id": "S1_R_unit_guidance--train-004728-wrists-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "condition": "text_only",
+      "note": "prolonged bent standing, no clear right-leg lift/hold."
+    },
+    {
+      "review_id": "S072",
+      "case_id": "R_static_reference_delta--train-004728-wrists-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "condition": "physical_static",
+      "note": "bent/leaning standing with little foot motion, no right back-leg hold."
+    },
+    {
+      "review_id": "S073",
+      "case_id": "R_static_reference_delta--train-000506-wrists-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "condition": "text_only",
+      "note": "persistent low seated/crouched motion, not alternating standing lunges."
+    },
+    {
+      "review_id": "S074",
+      "case_id": "S1_R_unit_guidance--000139-head-backbone_bypass",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "backbone_bypass",
+      "note": "coarse walking with regular feet and traveling root."
+    },
+    {
+      "review_id": "S075",
+      "case_id": "S1_R_unit_guidance--train-000506-head-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "condition": "text_only",
+      "note": "stepping then sustained crouch, no alternating lunge-return sequence."
+    },
+    {
+      "review_id": "S076",
+      "case_id": "S1_R_unit_guidance--train-000506-wrists-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "condition": "physical_static",
+      "note": "early small rise then prolonged very low crouch/seated posture, no lunge-return."
+    },
+    {
+      "review_id": "S077",
+      "case_id": "S1_R_unit_guidance--train-000027-wrists-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "condition": "paired",
+      "note": "arm strike/turn-like action with pronounced mid-sequence jump, ordering uncertain."
+    },
+    {
+      "review_id": "S078",
+      "case_id": "R_static_reference_delta--000382-wrists-backbone_bypass",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "backbone_bypass",
+      "note": "hands approach then lower, stable stance; clap timing uncertain."
+    },
+    {
+      "review_id": "S079",
+      "case_id": "S1_R_unit_guidance--train-004728-wrists-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "condition": "paired",
+      "note": "very high right-leg hold followed by lowering; correct side but back direction/exaggerated height uncertain."
+    },
+    {
+      "review_id": "S080",
+      "case_id": "R_static_reference_delta--000433-wrists-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "paired",
+      "note": "modest right-foot lift and lower, bent finish; full kick amplitude uncertain."
+    },
+    {
+      "review_id": "S081",
+      "case_id": "S1_R_unit_guidance--000382-wrists-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "physical_static",
+      "note": "hands together then lowered, stable legs, exact clap cycles uncertain."
+    },
+    {
+      "review_id": "S082",
+      "case_id": "S1_R_unit_guidance--train-000506-wrists-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "condition": "paired",
+      "note": "brief rise from crouch then returns to prolonged very low posture; no alternating lunges."
+    },
+    {
+      "review_id": "S083",
+      "case_id": "S1_R_unit_guidance--000382-head-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "paired",
+      "note": "hands converge/raise with stable legs; end arms spread, clean lowering uncertain."
+    },
+    {
+      "review_id": "S084",
+      "case_id": "R_static_reference_delta--000382-head-numeric_zero",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "numeric_zero",
+      "note": "repeated hand convergence at chest, stable feet; arms spread at finish."
+    },
+    {
+      "review_id": "S085",
+      "case_id": "R_static_reference_delta--000139-head-tail_reversed",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "tail_reversed",
+      "note": "regular walking steps/root travel."
+    },
+    {
+      "review_id": "S086",
+      "case_id": "R_static_reference_delta--000433-head-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "physical_static",
+      "note": "late high right-leg lift, incomplete return."
+    },
+    {
+      "review_id": "S087",
+      "case_id": "S1_R_unit_guidance--000382-wrists-imu_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "imu_only",
+      "note": "crouched traveling strides rather than stable clapping, major lower-body deviation."
+    },
+    {
+      "review_id": "S088",
+      "case_id": "S1_R_unit_guidance--000433-head-imu_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "imu_only",
+      "note": "high right-leg lift late, elevated at endpoint."
+    },
+    {
+      "review_id": "S089",
+      "case_id": "R_static_reference_delta--000433-wrists-numeric_zero",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "numeric_zero",
+      "note": "small right-foot lift then deep crouch; incomplete kick-return."
+    },
+    {
+      "review_id": "S090",
+      "case_id": "R_static_reference_delta--000433-wrists-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "physical_static",
+      "note": "upright arm gesture, little foot height variation, no clear kick."
+    },
+    {
+      "review_id": "S091",
+      "case_id": "S1_R_unit_guidance--000382-head-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "physical_static",
+      "note": "hands raised/converged then spread; stable legs, lowering uncertain."
+    },
+    {
+      "review_id": "S092",
+      "case_id": "R_static_reference_delta--000139-wrists-backbone_bypass",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "backbone_bypass",
+      "note": "alternating walking with brief mid-sequence bend; substantial root travel."
+    },
+    {
+      "review_id": "S093",
+      "case_id": "S1_R_unit_guidance--000433-head-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "physical_static",
+      "note": "late high right-leg lift remains raised at endpoint."
+    },
+    {
+      "review_id": "S094",
+      "case_id": "S1_R_unit_guidance--train-000027-head-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "condition": "text_only",
+      "note": "repeated arm strikes with turn/steps, exact punch-turn ordering uncertain."
+    },
+    {
+      "review_id": "S095",
+      "case_id": "R_static_reference_delta--train-000506-head-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "condition": "paired",
+      "note": "standing then prolonged very low seated posture, no alternating lunge-return."
+    },
+    {
+      "review_id": "S096",
+      "case_id": "S1_R_unit_guidance--000382-head-tail_reversed",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "tail_reversed",
+      "note": "hands raised/converged then spread, feet stable; clean lowering uncertain."
+    },
+    {
+      "review_id": "S097",
+      "case_id": "R_static_reference_delta--000382-head-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "physical_static",
+      "note": "repeated chest-height hand convergence with stable stance; complete lowering uncertain."
+    },
+    {
+      "review_id": "S098",
+      "case_id": "R_static_reference_delta--train-000027-head-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "condition": "text_only",
+      "note": "repeated arm extensions/strikes plus turn/steps; precise ordering uncertain."
+    },
+    {
+      "review_id": "S099",
+      "case_id": "R_static_reference_delta--train-004728-wrists-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "condition": "text_only",
+      "note": "bent standing without clear right-leg lift/hold."
+    },
+    {
+      "review_id": "S100",
+      "case_id": "R_static_reference_delta--train-000027-wrists-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "condition": "paired",
+      "note": "arm strike/turn-like action, pronounced middle jump; ordering uncertain."
+    },
+    {
+      "review_id": "S101",
+      "case_id": "S1_R_unit_guidance--000382-wrists-backbone_bypass",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "backbone_bypass",
+      "note": "hands converge then lower, stable stance; exact clap timing uncertain."
+    },
+    {
+      "review_id": "S102",
+      "case_id": "S1_R_unit_guidance--000139-wrists-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "paired",
+      "note": "regular walking, brief initial bend/turn; large root travel."
+    },
+    {
+      "review_id": "S103",
+      "case_id": "R_static_reference_delta--train-004728-head-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "condition": "physical_static",
+      "note": "LEFT leg held aloft then lowered, wrong side for RIGHT target; direction uncertain."
+    },
+    {
+      "review_id": "S104",
+      "case_id": "S1_R_unit_guidance--000382-head-backbone_bypass",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "backbone_bypass",
+      "note": "hands raise/converge then spread; stable feet, clean lowering uncertain."
+    },
+    {
+      "review_id": "S105",
+      "case_id": "S1_R_unit_guidance--000139-wrists-imu_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "imu_only",
+      "note": "large early jump then walking; standing/sway onset lost."
+    },
+    {
+      "review_id": "S106",
+      "case_id": "S1_R_unit_guidance--000139-head-tail_reversed",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "tail_reversed",
+      "note": "alternating walking/root travel."
+    },
+    {
+      "review_id": "S107",
+      "case_id": "R_static_reference_delta--000382-head-tail_reversed",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "tail_reversed",
+      "note": "repeated hand convergence while feet stable; arms remain raised/spread near endpoint."
+    },
+    {
+      "review_id": "S108",
+      "case_id": "R_static_reference_delta--000433-head-backbone_bypass",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "backbone_bypass",
+      "note": "high right-leg kick late, remains elevated at endpoint."
+    },
+    {
+      "review_id": "S109",
+      "case_id": "S1_R_unit_guidance--000382-head-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "text_only",
+      "note": "stable feet with raised/converged hands then spread; clean lowering uncertain."
+    },
+    {
+      "review_id": "S110",
+      "case_id": "S1_R_unit_guidance--000433-wrists-imu_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "imu_only",
+      "note": "large traveling jump/high-leg motion then sustained crouch; no clean kick-return to standing."
+    },
+    {
+      "review_id": "S111",
+      "case_id": "S1_R_unit_guidance--000433-head-backbone_bypass",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "backbone_bypass",
+      "note": "late high right-leg lift, not fully lowered by endpoint."
+    },
+    {
+      "review_id": "S112",
+      "case_id": "R_static_reference_delta--000139-head-backbone_bypass",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "backbone_bypass",
+      "note": "regular walking and root travel."
+    },
+    {
+      "review_id": "S113",
+      "case_id": "R_static_reference_delta--000139-wrists-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "text_only",
+      "note": "walking with brief mid-sequence bend, root travel."
+    },
+    {
+      "review_id": "S114",
+      "case_id": "R_static_reference_delta--train-000506-head-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "condition": "physical_static",
+      "note": "standing transitions to persistent seated/very low posture, no alternating lunges."
+    },
+    {
+      "review_id": "S115",
+      "case_id": "R_static_reference_delta--000433-wrists-imu_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "imu_only",
+      "note": "large jump/travel followed by sustained crouch; no clean full kick-return."
+    },
+    {
+      "review_id": "S116",
+      "case_id": "S1_R_unit_guidance--000433-wrists-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "physical_static",
+      "note": "only low ankle/arm movement; clear large kick absent/uncertain."
+    },
+    {
+      "review_id": "S117",
+      "case_id": "R_static_reference_delta--000139-wrists-tail_reversed",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "tail_reversed",
+      "note": "walking/root travel with a brief broad-arm step; coarse walking preserved."
+    },
+    {
+      "review_id": "S118",
+      "case_id": "R_static_reference_delta--000139-wrists-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "physical_static",
+      "note": "walking with mid-sequence bend; substantial root travel."
+    },
+    {
+      "review_id": "S119",
+      "case_id": "S1_R_unit_guidance--000139-head-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "text_only",
+      "note": "coarse walking after initial stance/arm movement, root travel."
+    },
+    {
+      "review_id": "S120",
+      "case_id": "S1_R_unit_guidance--train-000027-wrists-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "condition": "physical_static",
+      "note": "early arm strikes and turn/steps then settles; precise sequence uncertain."
+    }
+  ],
+  "limitation": "All notes completed before this bulk decoding; prior results and S001 mapping known; single AI coarse assessment, not blind human validation or semantic success rate."
+}
