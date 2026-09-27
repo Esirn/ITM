@@ -1,0 +1,3808 @@
+{
+  "read_commit": "f9b3cb18053892dd9e66dbdf31085883a99b76d1",
+  "manifest_sha256": "793fdd9a95a102484d2dbc7579aa398f3af0120c66422ba6ec966cc01f8cb7c4",
+  "bound_files_verified": 743,
+  "method_manifest_copy_byte_identical": true,
+  "rebuilt_manifest_byte_identical": true,
+  "independent_preparation_path": "/tmp/itm_sampling_alignment_acceptance_20260927_v2",
+  "checkpoint": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+    "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+  },
+  "checkpoint_final_updates": 200,
+  "unique_train_frames": 398,
+  "distinct_transformed_inputs": 66,
+  "input_slot_checks": [
+    {
+      "phase": "Q",
+      "slot": "Q0001",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0002",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0003",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0004",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0005",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0006",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0007",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0008",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0009",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0010",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0011",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0012",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0013",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0014",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0015",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0016",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0017",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0018",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0019",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0020",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0021",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0022",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0023",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0024",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0025",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0026",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0027",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0028",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0029",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0030",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0031",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0032",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0033",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0034",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0035",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0036",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0037",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0038",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0039",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0040",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0041",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0042",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0043",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0044",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0045",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0046",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0047",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0048",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0049",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0050",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0051",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0052",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0053",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0054",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0055",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0056",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0057",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0058",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0059",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0060",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0061",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0062",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0063",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0064",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0065",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0066",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0067",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0068",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0069",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0070",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0071",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0072",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0073",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0074",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0075",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0076",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0077",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0078",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0079",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0080",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0081",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0082",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0083",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0084",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0085",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0086",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0087",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0088",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0089",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0090",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0091",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0092",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0093",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0094",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0095",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0096",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0097",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0098",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0099",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0100",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0101",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0102",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0103",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0104",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0105",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0106",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0107",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0108",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0109",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0110",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0111",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0112",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0113",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0114",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0115",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0116",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0117",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0118",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0119",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0120",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0121",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0122",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0123",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0124",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0125",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0126",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0127",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0128",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0129",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0130",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0131",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0132",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0133",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0134",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0135",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0136",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0137",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0138",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0139",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0140",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0141",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0142",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0143",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0144",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0145",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0146",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0147",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0148",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0149",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0150",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0151",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0152",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0153",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0154",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0155",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0156",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0157",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0158",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0159",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0160",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0161",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0162",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0163",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0164",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0165",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0166",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0167",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0168",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0169",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0170",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0171",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0172",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0173",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0174",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0175",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0176",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0177",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0178",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0179",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0180",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0181",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0182",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0183",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0184",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0185",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0186",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0187",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0188",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0189",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0190",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0191",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0192",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0193",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0194",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0195",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0196",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0197",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0198",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0199",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0200",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0201",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0202",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0203",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0204",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0205",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0206",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0207",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0208",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0209",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0210",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0211",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0212",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0213",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0214",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0215",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0216",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0217",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0218",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0219",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0220",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0221",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0222",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0223",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0224",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0225",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0226",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0227",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0228",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0229",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0230",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0231",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0232",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0233",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0234",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0235",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0236",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0237",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0238",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0239",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0240",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0241",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0242",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0243",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0244",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0245",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0246",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0247",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0248",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0249",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0250",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0251",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0252",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0253",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0254",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0255",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0256",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0257",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0258",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0259",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0260",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0261",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0262",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0263",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0264",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0265",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0266",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0267",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0268",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0269",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0270",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0271",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0272",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0273",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0274",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0275",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0276",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0277",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0278",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0279",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0280",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0281",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0282",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0283",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0284",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0285",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0286",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0287",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0288",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0289",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0290",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0291",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0292",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0293",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0294",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0295",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0296",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0297",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0298",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0299",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0300",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0301",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0302",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0303",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0304",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0305",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0306",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0307",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0308",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0309",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0310",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0311",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0312",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0313",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0314",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0315",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0316",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0317",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0318",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0319",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0320",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0321",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0322",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0323",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0324",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0325",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0326",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0327",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0328",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0329",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0330",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0331",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0332",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0333",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0334",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0335",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0336",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0337",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0338",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0339",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0340",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0341",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0342",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0343",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0344",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0345",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0346",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0347",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0348",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0349",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0350",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0351",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0352",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0353",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0354",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0355",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0356",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0357",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0358",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0359",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0360",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0361",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0362",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0363",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0364",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0365",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0366",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0367",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0368",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0369",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0370",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0371",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0372",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0373",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0374",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0375",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0376",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0377",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0378",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0379",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0380",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0381",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0382",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0383",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0384",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0385",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0386",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0387",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0388",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0389",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0390",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0391",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0392",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0393",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0394",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0395",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0396",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0397",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0398",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0399",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0400",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0401",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0402",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0403",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0404",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0405",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0406",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0407",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0408",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0409",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0410",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0411",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0412",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0413",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0414",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0415",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0416",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0417",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0418",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0419",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0420",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0421",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0422",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0423",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0424",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0425",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0426",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0427",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0428",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0429",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0430",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0431",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0432",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0433",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0434",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0435",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0436",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0437",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0438",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0439",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0440",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0441",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0442",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0443",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0444",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0445",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0446",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0447",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0448",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0449",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0450",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0451",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0452",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0453",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0454",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0455",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0456",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0457",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0458",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0459",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0460",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0461",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0462",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0463",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0464",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0465",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0466",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0467",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0468",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0469",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0470",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0471",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0472",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0473",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0474",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0475",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0476",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0477",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0478",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0479",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "Q",
+      "slot": "Q0480",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000433-head-paired",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000433-head-text_only",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000433-head-imu_only",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000433-head-backbone_bypass",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000433-head-numeric_zero",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000433-head-physical_static",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000433-wrists-paired",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000433-wrists-text_only",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000433-wrists-imu_only",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000433-wrists-backbone_bypass",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000433-wrists-numeric_zero",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000433-wrists-physical_static",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000382-head-paired",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000382-head-text_only",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000382-head-imu_only",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000382-head-backbone_bypass",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000382-head-numeric_zero",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000382-head-physical_static",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000382-wrists-paired",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000382-wrists-text_only",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000382-wrists-imu_only",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000382-wrists-backbone_bypass",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000382-wrists-numeric_zero",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000382-wrists-physical_static",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000139-head-paired",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000139-head-text_only",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000139-head-imu_only",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000139-head-backbone_bypass",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000139-head-numeric_zero",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000139-head-physical_static",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000139-wrists-paired",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000139-wrists-text_only",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000139-wrists-imu_only",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000139-wrists-backbone_bypass",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000139-wrists-numeric_zero",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000139-wrists-physical_static",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000433-head-tail_reversed",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000433-wrists-tail_reversed",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000382-head-tail_reversed",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000382-wrists-tail_reversed",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000139-head-tail_reversed",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--000139-wrists-tail_reversed",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--train-000027-head-paired",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--train-000027-head-text_only",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--train-000027-head-physical_static",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--train-000027-wrists-paired",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--train-000027-wrists-text_only",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--train-000027-wrists-physical_static",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--train-000506-head-paired",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--train-000506-head-text_only",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--train-000506-head-physical_static",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--train-000506-wrists-paired",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--train-000506-wrists-text_only",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--train-000506-wrists-physical_static",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--train-004728-head-paired",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--train-004728-head-text_only",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--train-004728-head-physical_static",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--train-004728-wrists-paired",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--train-004728-wrists-text_only",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    },
+    {
+      "phase": "S1",
+      "slot": "S1_R_unit_guidance--train-004728-wrists-physical_static",
+      "passed": true,
+      "normalized_max_abs_error": 0.0,
+      "reference_max_abs_error": 0.0
+    }
+  ],
+  "prohibited_calls_observed": [],
+  "preparation_has_only_manifest": true,
+  "real_model_forwards": 0,
+  "training_updates": 0,
+  "real_samples": 0,
+  "GPU_queries": 0,
+  "new_authorization_created": false,
+  "code": {
+    "path": "/home/a200/0proj/ITM/scripts/accept_b0_sampling_alignment.py",
+    "sha256": "20bb329ea690083f2f8a805d0d01c282d0d59a1a88f80cb616e1e297ed70b454"
+  }
+}

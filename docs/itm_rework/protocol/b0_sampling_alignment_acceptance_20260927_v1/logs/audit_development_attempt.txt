@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/a200/0proj/ITM/scripts/accept_b0_sampling_alignment.py", line 115, in <module>
+    if __name__ == '__main__': main()
+  File "/home/a200/0proj/ITM/scripts/accept_b0_sampling_alignment.py", line 91, in main
+    gt = np.load(row['gt_path'], allow_pickle=False)
+KeyError: 'gt_path'
