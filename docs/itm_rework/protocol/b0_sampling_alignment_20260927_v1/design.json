@@ -1,0 +1,432 @@
+{
+  "version": "canonical-B0-sampling-alignment-design-v1",
+  "status": "frozen_for_implementation_not_authorized",
+  "read_method_commit": "d2d28fb",
+  "public_contract": "itm-rework-v0.3-draft unchanged; no new data admission",
+  "scope": "Fixed-R sampling intervention on exposed development panel",
+  "checkpoint": {
+    "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+    "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+  },
+  "checkpoint_arm": "R_static_reference_delta",
+  "new_checkpoints": 0,
+  "training_updates": 0,
+  "old_package": {
+    "path": "docs/itm_rework/protocol/b0_correction_20260926_v1/package.json",
+    "sha256": "e24c8cddce0d0cb11a7b71d2cd91a24c05fab2bbceafd2f83d56f25063c48d8a"
+  },
+  "old_implementation": {
+    "path": "outputs/itm_rework/method/correction_implementation_20260927_v1/implementation.json",
+    "sha256": "a802ef3b03aea7bab7fff3fda5704cf56a2c5cf6c5ed36c693a892fc35d6de13"
+  },
+  "common": {
+    "backbone": {
+      "path": "outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/model000475000.pt",
+      "sha256": "ce43c1d4232fc2b897999d7996c2d2b889791d99585d87e1289af773ab56ab93",
+      "mode": "frozen_eval",
+      "mask_frames": false
+    },
+    "control_reference_mode": "static_delta",
+    "imu_normalization": {
+      "acceleration_mean": [
+        [
+          0.08606275916099548,
+          0.05218241736292839,
+          -0.004557386506348848
+        ],
+        [
+          -0.09847400337457657,
+          0.053035516291856766,
+          0.04503466188907623
+        ],
+        [
+          0.0032043559476733208,
+          -0.010230185464024544,
+          0.012104523368179798
+        ],
+        [
+          -0.006135671865195036,
+          -0.01956915855407715,
+          0.031618811190128326
+        ],
+        [
+          -0.02227126806974411,
+          -0.0007158907246775925,
+          0.0325159877538681
+        ],
+        [
+          -0.025184188038110733,
+          -0.014637482352554798,
+          0.029162513092160225
+        ]
+      ],
+      "acceleration_std": [
+        [
+          3.8313040733337402,
+          2.830742835998535,
+          3.970366954803467
+        ],
+        [
+          3.2768919467926025,
+          3.168140172958374,
+          3.643237829208374
+        ],
+        [
+          1.6565872430801392,
+          2.1855318546295166,
+          1.638021469116211
+        ],
+        [
+          1.9980077743530273,
+          1.9947030544281006,
+          1.7800812721252441
+        ],
+        [
+          1.3888434171676636,
+          2.744654417037964,
+          1.7099049091339111
+        ],
+        [
+          1.2581554651260376,
+          2.269946336746216,
+          1.5072047710418701
+        ]
+      ],
+      "orientation": "rotation_matrix_unscaled",
+      "source": {
+        "split": "train",
+        "unique_motion_ids": [
+          "000027",
+          "000506",
+          "004728"
+        ],
+        "fps": 20.0,
+        "unique_frames": 398,
+        "configuration_duplicates_counted": false,
+        "pipeline": "itm-method-canonical-b0-v1"
+      }
+    },
+    "training_input_provenance": {
+      "payload": {
+        "schema": "itm-training-input-provenance-v1",
+        "input_pipeline_version": "itm-method-canonical-b0-v1",
+        "contract_version": "itm-rework-v0.3-draft",
+        "artifacts": {
+          "canonical_admission": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/admission.jsonl",
+            "sha256": "9fa1046c5bce7e25d507ac254d9f77a451ddf9ecd8c6a70309c79f611b6bf161"
+          },
+          "canonical_budget": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/b0_budget.json",
+            "sha256": "660b9f779eee1301f1bb92c30081c20e86248f76854f047f07ea88521ecead47"
+          },
+          "canonical_build": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/build_report.json",
+            "sha256": "e009e471a85a572aa025a61f6e02261fed768720be17e541d966cf868c3a81a9"
+          },
+          "canonical_package": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/package.json",
+            "sha256": "33de7fd98c1cf43fc5a51a7d35b502e154a233066efec13f17dda08bc53abe97"
+          },
+          "canonical_sampling_plan": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/sampling_cases.json",
+            "sha256": "ddf2f01ae1ddcb6b6583f50508106f801a0b9b9564c917614954f5157d93c070"
+          },
+          "canonical_semantic_review": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/semantic_review.json",
+            "sha256": "149c4006bbdb2b6fb2cee6524e8e04e73ce37dff7d4f529d061ae3ff4641c5ec"
+          },
+          "canonical_train_caption_plans": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/train_caption_plans.jsonl",
+            "sha256": "71720d8d970ae68da8169b2bb037551090b759809e5f6957058bf30216559fc8"
+          },
+          "canonical_train_imu": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/train_imu.jsonl",
+            "sha256": "97daa478cdb17fdc45a40c376c28becf595c7e4e2d0eaa97f3bc96e964fb592a"
+          },
+          "canonical_train_motion": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/train_motion.jsonl",
+            "sha256": "d1a42a16b6dd3e61682dc59a389ae00f8189d371d372d08d90f67bf6c22ed2ca"
+          },
+          "canonical_val_caption_plans": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/val_caption_plans.jsonl",
+            "sha256": "c2f58d1452c821219554586ee99200ad4d04e83afb295f6810b75ebd4ab493f3"
+          },
+          "canonical_val_imu": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/val_imu.jsonl",
+            "sha256": "2fffd1d6809c832cd5063e155d27940c5c351647e5c29814f2f7c3ccf5735dd5"
+          },
+          "canonical_val_motion": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/val_motion.jsonl",
+            "sha256": "7d79378e48c006c4fecf59cf7a2f59310c9c65caf7b8f71f8c6a7c3fd5fbacb6"
+          },
+          "canonical_verification": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/verification.json",
+            "sha256": "b382182c4cb1ec0b3b0d2dde20170ffa41010257dadfdff7b0dcafe00204d196"
+          },
+          "caption_plan": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/train_caption_plans.jsonl",
+            "sha256": "71720d8d970ae68da8169b2bb037551090b759809e5f6957058bf30216559fc8"
+          },
+          "imu_manifest": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/train_imu.jsonl",
+            "sha256": "97daa478cdb17fdc45a40c376c28becf595c7e4e2d0eaa97f3bc96e964fb592a"
+          },
+          "mdm_args": {
+            "path": "/home/a200/0proj/ITM/outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/args.json",
+            "sha256": "2feda496a83142e38fd22d2db860d4d054c9ed678e23362fd18a5c09f660683b"
+          },
+          "mdm_checkpoint": {
+            "path": "/home/a200/0proj/ITM/outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/model000475000.pt",
+            "sha256": "ce43c1d4232fc2b897999d7996c2d2b889791d99585d87e1289af773ab56ab93"
+          },
+          "motion_manifest": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/train_motion.jsonl",
+            "sha256": "d1a42a16b6dd3e61682dc59a389ae00f8189d371d372d08d90f67bf6c22ed2ca"
+          },
+          "motion_mean": {
+            "path": "/home/a200/0proj/datasets/all/Mean.npy",
+            "sha256": "26e136555dab04c94a129d446c26e6b9939cbf045fbf77bcf5462c1fb5a2001c"
+          },
+          "motion_std": {
+            "path": "/home/a200/0proj/datasets/all/Std.npy",
+            "sha256": "6565a65ed9b31e23c328829a309e1c482be8b85fd23b43d65451a9b19a917f40"
+          }
+        },
+        "selected_inputs": [
+          {
+            "motion_id": "000027",
+            "motion": {
+              "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000027/motion.npy",
+              "sha256": "e88c8cfcb6139ea74d568aebbc47f435317b0222c3592f01a00f1633d6ab7a21"
+            },
+            "text": {
+              "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000027/caption.txt",
+              "sha256": "33c719e68b7d4bf15541c217499ddbf33a7f2e01bc8aac8ea9927d5abb029b04"
+            },
+            "imu": {
+              "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000027/imu.npz",
+              "sha256": "927ef35d453e6b88d755bd2f186b5977f727dc1709a46c3a17011e69a3c59299"
+            }
+          },
+          {
+            "motion_id": "000506",
+            "motion": {
+              "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000506/motion.npy",
+              "sha256": "d7cc1be92bed7f83a50a49c40990a6598dfbf5c45a3ecc2e7b9b2fce11e41e2b"
+            },
+            "text": {
+              "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000506/caption.txt",
+              "sha256": "c3d64936d20e0ad00b979c16c2826b1881312262736e0fe6bb0457eac64c0f61"
+            },
+            "imu": {
+              "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000506/imu.npz",
+              "sha256": "a7d196b1839d9ecaa482a01d42df5616ad469ce92938232b4a96f089b43e13b3"
+            }
+          },
+          {
+            "motion_id": "004728",
+            "motion": {
+              "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/004728/motion.npy",
+              "sha256": "f1894b2a582b6a54b8b5b2c7f124616ea383bb6b8ed447e4236459017cf1e269"
+            },
+            "text": {
+              "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/004728/caption.txt",
+              "sha256": "ee39935149b04e8581132466b50532d942a0d03332c25972256c557ffd30ba34"
+            },
+            "imu": {
+              "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/004728/imu.npz",
+              "sha256": "5aea0acc33fb9c967cbadc6c4844baf8f4edb640bc0532e92167718a856617f7"
+            }
+          }
+        ],
+        "item_order": [
+          {
+            "motion_id": "000027",
+            "sensor_config": "head",
+            "slots": [
+              4
+            ]
+          },
+          {
+            "motion_id": "000027",
+            "sensor_config": "wrists",
+            "slots": [
+              0,
+              1
+            ]
+          },
+          {
+            "motion_id": "000506",
+            "sensor_config": "head",
+            "slots": [
+              4
+            ]
+          },
+          {
+            "motion_id": "000506",
+            "sensor_config": "wrists",
+            "slots": [
+              0,
+              1
+            ]
+          },
+          {
+            "motion_id": "004728",
+            "sensor_config": "head",
+            "slots": [
+              4
+            ]
+          },
+          {
+            "motion_id": "004728",
+            "sensor_config": "wrists",
+            "slots": [
+              0,
+              1
+            ]
+          }
+        ],
+        "imu_normalization_sha256": "bf12059c4cdcc043540889d5cf31392c365e1f7e06b917668e3f8451b26610cb"
+      },
+      "sha256": "9f39bf7ffd93b2595dfdcea4ee3288761b14a6e75a6585fedb841fd490295ef1"
+    },
+    "motion_normalization": [
+      {
+        "path": "/home/a200/0proj/datasets/all/Mean.npy",
+        "sha256": "26e136555dab04c94a129d446c26e6b9939cbf045fbf77bcf5462c1fb5a2001c"
+      },
+      {
+        "path": "/home/a200/0proj/datasets/all/Std.npy",
+        "sha256": "6565a65ed9b31e23c328829a309e1c482be8b85fd23b43d65451a9b19a917f40"
+      }
+    ],
+    "environment": {
+      "python": "3.10.20",
+      "torch": "2.5.1",
+      "numpy": "2.2.5",
+      "cuda_build": "12.1",
+      "cudnn": 90100,
+      "default_dtype": "torch.float32",
+      "threads": 2,
+      "matmul_tf32": false,
+      "cudnn_tf32": true,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "deterministic_algorithms": false
+    },
+    "execution": "all modules eval, float32, no autograd/AMP/optimizer/dropout; same backend as historical R; same input, reference, cache and motion decoding",
+    "input_transforms": {
+      "base": "Existing independently accepted 30Hz->20Hz input, train-only normalization, caption index, coordinates and root reference unchanged.",
+      "physical_static": "At model 20Hz: a=0, O[t]=original O[0]; same mask/timestamps; normalize with old accepted train-only stats.",
+      "tail_reversed": "At model 20Hz after interpolation: raw a and O jointly indexed [0,T-1,T-2,...,1] on all slots, then normalize; preserve frame timestamps/masks and original O[0] reference. No velocity sign flip or rotation inverse. Deliberately nonphysical sensitivity input.",
+      "numeric_zero": "All normalized input entries zero; presence remains true. R reference still uses ORIGINAL source O[0] and normalized raw a=0. Never interpret zero rotation as valid orientation.",
+      "condition_off": "strict presence gate; original raw backbone bypass remains available unchanged.",
+      "R_cache": "Build observed and reference embeddings once per case in eval; subtract before adapters, then cache. No new MDM branch forwards per diffusion step."
+    }
+  },
+  "Q": {
+    "groups": 96,
+    "branches_per_group": 5,
+    "MDM_branch_examples": 480,
+    "encoder_examples_max": 576,
+    "batch": "Exactly one same-length MDM batch of5 per group, in probe_groups.json order; branch examples count5, not1. No mixing groups, padding or sequential branch fallback.",
+    "conditions": "f00/f10 use exact null cached control and false IMU presence, zero encoder calls; f00 text embedding zero. For paired/static/reversed compute observed and original-frame0 reference embeddings in eval, subtract with shared R encoder; max2 encodings per condition. Precache then form batch5.",
+    "x_t": "Same GT normalization, original diffusion betas/timestep_map/scaled t and valid noise as old exact D. No padding noise consumed. Replicate one x_t five times, save/hash target/noise/x_t/mask.",
+    "output": "Per480 slot save float32 f prediction [263,1,T], target, x_t, frame_mask, branch/source/config/t/noise/checkpoint/input/reference identities and actual scaled t; group5 ordering persisted. Float64 count/finite_count/MSE/RMS/max. Raw inputs/reference can use checked shared hash references.",
+    "composition": "Per96 group and3 IMU conditions: conceptual float64 unit=f11, legacy_reduced=f11+1.5*(f10-f00), a,b, cross and b-energy. Q intentionally lacks f01: do not report actual float32 four-branch replay or add f01 calls. Static f11 vs f10 checked on same batch.",
+    "decision": "Finite Q effect never changes S1 parameters or selects a model; software/identity/nonfinite/budget discrepancy stops remaining queue."
+  },
+  "S1": {
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "historical_guidance": {
+      "text_scale": 2.5,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "only_intervention": "Guidance scalar wt:2.5->1; no reduced-expression fast path or altered null/bypass execution. New versioned entrypoint, old D/L/R semantics unchanged.",
+    "sampling": "60 fixed full samples, K1,1000-step DDPM,float32,clip_denoised=false, timestep_map=0..999; old12 noise groups preserved. Strict IMU-only gates text off despite audit caption.",
+    "reference": "numeric_zero uses normalized zeros but reference retains original observed O[0]; static equals reference; tail-reversal AFTER 20Hz interpolation [0,T-1,...,1], not a physical donor.",
+    "output": "Same120-independent-evaluation compatible arrays and identities as oldR, with new case/arm/package/guidance and explicit comparison_case_id + old artifacts; no metadata relabeling of old results."
+  },
+  "trace": {
+    "slots": 240,
+    "timesteps_in_visit_order": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "additional_MDM_calls": 0,
+    "additional_encoder_calls": 0,
+    "attach": "Observe the existing four-branch batch and its actual combined return once at unscaled integer step before posterior update/noise addition. Detached independent snapshots only; no mutation, RNG use, callback model call, alternate branch execution or cache invalidation.",
+    "output": "Pertrace float32 x_t,f00,f10,f01,f11,actual_combined_prediction and same-call returned-prediction hash; frame mask,slot/t/scaled_t,branch flags,checkpoint/package/guidance/input/random plan IDs. Retain dtype/shape/hash and all finite counts; missing trace is incomplete diagnostic output, never silently ignored.",
+    "offline": "Recompose both weights on these same S1 states and report text-increment RMS/max plus combined differences. Optional direct GT feature MSE must be labeled S1-state diagnostic; no GT alignment, new model call or old-trajectory claim.",
+    "limits": "Old2.5 trajectory branch values were not recorded. Counterfactual recombination here is local on S1 trajectory only, not a full counterfactual rollout or old-state comparison."
+  },
+  "software_tolerances": {
+    "purpose": "Software arithmetic and identity only; no effectiveness cutoff",
+    "hashes_masks_ids_counts": "exact; no tolerance",
+    "inputs": {
+      "acceleration": "exact",
+      "orientation_normalized_imu_reference": {
+        "atol": 2e-07,
+        "rtol": 0
+      },
+      "original_orientation0": "from original observation; no GT calibration"
+    },
+    "RIC_decode": {
+      "atol_m": 2e-06,
+      "rtol": 1e-06
+    },
+    "Q_static_vs_text": {
+      "atol": 1e-06,
+      "rtol": 1e-06
+    },
+    "trace_absent_branch_equalities": {
+      "atol": 1e-06,
+      "rtol": 1e-06,
+      "description": "Absent text: f00=f10 and f01=f11; absent IMU, bypass or R-static: f00=f01 and f10=f11. Save bitwise/max/RMS."
+    },
+    "trace_return": "Observer attaches no replacement tensor; trace enabled/disabled CPU fixtures bitwise identical outputs AND RNG AND cache/call counters. Save returned prediction and same-call combined tensor with identical hashes.",
+    "float32_combination": {
+      "unit_roundoff": 5.960464477539063e-08,
+      "gamma_ops": 16,
+      "absolute_bound": "gamma16*max(1,abs(f00)+abs(wt)*(abs(f10)+abs(f00))+(abs(f01)+abs(f00))+(abs(f11)+abs(f10)+abs(f01)+abs(f00))) elementwise",
+      "reference": "Convert stored float32 branches to float64. Compare actual combined prediction to factorized float64 expression and reduced f11+(wt-1)*(f10-f00). No requirement that unit==f11 bitwise.",
+      "reporting": "All max/RMS differences plus maximum absolute-error/bound; finite bounds required; frozen scale-dependent rounding bound, never widened from observations."
+    },
+    "float64_MSE_identity": {
+      "absolute_bound": "64*eps_float64*max(1,MSE_legacy_reduced,MSE_unit,abs(2mean(a*b)),mean(b*b))",
+      "reference": "a=float64(f11)-float64(target), b=1.5*(float64(f10)-float64(f00)); all reductions float64 over valid entries"
+    },
+    "full_sample": {
+      "max_abs_m": 1e-05,
+      "comparisons": [
+        "new text_only vs new backbone_bypass: val6",
+        "new R-static vs new text_only: all12",
+        "new IMU-only vs historical IMU-only: val6"
+      ],
+      "report": "All24 checks, bitwise and max/RMS; same exact seeds/inputs, no coordinate fit. Exceedance is replay/software discrepancy, not quality; halt later slots and retain complete ledger."
+    },
+    "nonfinite": "Any nonfinite saved/returned tensor or required reduction stops the queue; finite poor effects do not stop or adapt the candidate"
+  },
+  "CPU_acceptance": [
+    "Real new loader/entrypoint binds exact R final200, eval/static_delta, initial provenance, backbone/stats/environment; reject wrong checkpoint even if schema-compatible.",
+    "Q batch5 branch order and gates including caption-present audit vs text-off; identical x_t/noise across all5; off branches skip encoder; no padding or hidden sixth f01.",
+    "Actual four-branch function at wt1 and2.5 checked on analytic CPU fixtures; reduced float64 algebra tests do not substitute for method implementation tests.",
+    "Trace on/off yields bitwise-identical fixture outputs, random stream and cache/counters including off/static/bypass; exactly four predeclared timesteps; never extra real verification forwards.",
+    "Replay frozen60 input/reference/time/caption/noise identities incl train-reversed Q input; same numeric_zero/static semantics.",
+    "Q480/S1_60/trace240 startup ledger, pre-forward counter reservation, total/stage caps, first failure retention (during probe, sampling or trace write), exact outputs/failed/not-run slots; no retry/fallback.",
+    "All24 sample identity checks same-device tolerance frozen above; report checks only when counterparts completed, otherwise not_comparable, no fabricated pass."
+  ],
+  "execution": "01 implements/CPU validates;02 accepts concrete software;01 then obtains new authorization bound to final implementation+this package+unique run directory+GPU UUID. No actual GPU preflight before authorization."
+}

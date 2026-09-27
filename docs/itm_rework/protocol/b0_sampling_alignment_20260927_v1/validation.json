@@ -1,0 +1,21 @@
+{
+  "scope": "CPU files/NumPy/noise/algebra only; no pretrained model import/load/forward,training,sampling or GPU query",
+  "read_method_commit": "d2d28fb",
+  "new_sample_slots": 60,
+  "historical_samples_bound": 60,
+  "train_samples": 18,
+  "val_samples": 42,
+  "Q_groups": 96,
+  "Q_branches": 480,
+  "trace_slots": 240,
+  "Q_valid_noise_arrays_replayed": 96,
+  "sampling_noise_groups": 12,
+  "sampling_noise_draws_replayed": 12000,
+  "expected_identity_checks": 24,
+  "review_rows": 120,
+  "source_files_verified": 726,
+  "training_updates": 0,
+  "new_checkpoint_count": 0,
+  "current_model_forwards": 0,
+  "current_GPU_queries": 0
+}

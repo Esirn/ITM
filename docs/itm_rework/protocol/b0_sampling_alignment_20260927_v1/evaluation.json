@@ -1,0 +1,58 @@
+{
+  "version": "canonical-B0-sampling-alignment-evaluation-v1",
+  "base_metrics": {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/metrics.json",
+    "sha256": "30a598ba54bcb65c0adad7c19b71fd55dc86699a461d73cef06946b5b6bfc8b5"
+  },
+  "previous_evaluation": {
+    "path": "docs/itm_rework/protocol/b0_correction_20260926_v1/evaluation.json",
+    "sha256": "2b90f43a9b69bf598ded0f9c07431d1008aaba4491a7c9ec3d98914a9b40ed2b"
+  },
+  "alignment": "Original20Hz GT without yaw/translation/temporal fitting; same root conventions.",
+  "sample_denominators": {
+    "new": 60,
+    "historical": 60,
+    "new_val": 42,
+    "new_train": 18,
+    "conditions": {
+      "paired": 12,
+      "text_only": 12,
+      "imu_only": 6,
+      "backbone_bypass": 6,
+      "numeric_zero": 6,
+      "physical_static": 12,
+      "tail_reversed": 6
+    },
+    "trace_records": 240,
+    "Q_branches": 480,
+    "Q_groups": 96,
+    "Q_derived_state_condition_pairs": 288
+  },
+  "metrics": "All frozen scalar metrics and per-axis extent/pelvis path, GT jerk/contact alongside; head/wrist joint proxy only, no generated IMU residual or new success threshold.",
+  "contact": "Only val000433/000382 n=2 legal contact sources; val000139 nonflat N/A and ALL train floor-unadmitted N/A. No reclassification or zero fill.",
+  "contrasts": [
+    "New−historical for all60 matched source/config/condition cases, not just paired; same checkpoint/noise/input identities required.",
+    "Within EACH guidance: paired−text_only,paired−static; val additionally paired−reversed,paired−numeric_zero.36 contrasts per guidance,72 combined.",
+    "(S1 paired−S1 comparator)−(oldR paired−oldR comparator): all36 matching contrasts; retain raw scalar differences, extent differences and mean joint output distances. Nonzero distance is sensitivity, not control.",
+    "Q: raw branch MSE plus unit/legacy_reduced errors and decomposition per96group/3condition; paired−static/reversed in each scale (384 rows), difference-of-contrasts (192 rows). Shared b cancels in raw paired−static/reversed prediction difference; squared-error contrast can still change via cross term.",
+    "Q vs free output: report source/config/t separately, no replacement of complete free-sample evaluation by teacher-forced scores. No comparing Qbatch5 bitwise against tracebatch4 or old D of another checkpoint."
+  ],
+  "aggregation": "Train/val and config/condition separate. Mean two Q replicates per source first, then3 sources equally with min/max at each t; no pooled t headline. Full sample cells n=3, label partial n/missing reasons; failure denominator remains60 new,42val/18train plus240trace/480Q. No frame-weighted or cherry-picked means.",
+  "failure": "Missing/not-run/timeout/OOM/nonfinite/bad identity/shape/mask/forbidden fit or fixed software tolerance violation remains in planned denominator. Missing required trace prevents complete delivery for its sample even if motion saved; preserve motion metrics labeled diagnostic_incomplete. Quality negatives remain finite valid outputs. First software/runtime fault stops later queue; no rerun.",
+  "review": "All120 new+old cases in review_order.json. Hide arm/config/condition, show original coarse target. Ten fixed uniform poses plus all-frame hand/ankle/root traces; notes before key, uncertain retained. Old outputs known: no fully blind claim or semantic pass rate.",
+  "mandatory_negatives": [
+    "train000506 alternating forward lunges with return/order, not sustained crouch",
+    "train004728 RIGHT back leg direction/height/hold/return, not left-leg substitution",
+    "val000382 wrists clap without unrelated lower-body deformation",
+    "val000139 both configs walking preservation vs text-only/static/reversed",
+    "val000433 full kick-return and all numeric_zero/IMU-only rows"
+  ],
+  "interpretation": {
+    "support": "If extra text increases Q MSE AND new free generation improves target motions, report limited panel support for guidance mismatch; dynamic benefit still requires improvement relative to own-scale text/static/reversed, not merely new text prior.",
+    "failure": "If Q joint remains poor or S1 cannot freely generate training actions, this candidate has not resolved competence. No extra updates/data/guidance sweep automatically follows.",
+    "mixed": "Q good/free bad indicates unresolved state/rollout mismatch, not unique causality; Q bad/free better or different signs bysource/t stay mixed. Do not turn root-motion tradeoffs into success.",
+    "IMU_only": "Text absent means algebraic invariance to wt; cross-scale drift beyond1e-5m is software/replay discrepancy. Invariant bad IMU-only remains a model negative, cannot be repaired by this guidance intervention.",
+    "static": "R static=text-only and null=bypass are architectural correctness, not learned IMU advantage.",
+    "limitations": "Three exposed dev sources per split, fixed training seed,K1; no significance/generalization/diversity/strict IMU closure/compatible editing/real-device/test certification. Single AI coarse review not human validation."
+  }
+}

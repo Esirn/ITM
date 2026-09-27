@@ -1,0 +1,5762 @@
+[
+  {
+    "trace_id": "T0001",
+    "case_id": "S1_R_unit_guidance--000433-head-paired",
+    "slot_index": 0,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0002",
+    "case_id": "S1_R_unit_guidance--000433-head-paired",
+    "slot_index": 0,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0003",
+    "case_id": "S1_R_unit_guidance--000433-head-paired",
+    "slot_index": 0,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0004",
+    "case_id": "S1_R_unit_guidance--000433-head-paired",
+    "slot_index": 0,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0005",
+    "case_id": "S1_R_unit_guidance--000433-head-text_only",
+    "slot_index": 1,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0006",
+    "case_id": "S1_R_unit_guidance--000433-head-text_only",
+    "slot_index": 1,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0007",
+    "case_id": "S1_R_unit_guidance--000433-head-text_only",
+    "slot_index": 1,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0008",
+    "case_id": "S1_R_unit_guidance--000433-head-text_only",
+    "slot_index": 1,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0009",
+    "case_id": "S1_R_unit_guidance--000433-head-imu_only",
+    "slot_index": 2,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0010",
+    "case_id": "S1_R_unit_guidance--000433-head-imu_only",
+    "slot_index": 2,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0011",
+    "case_id": "S1_R_unit_guidance--000433-head-imu_only",
+    "slot_index": 2,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0012",
+    "case_id": "S1_R_unit_guidance--000433-head-imu_only",
+    "slot_index": 2,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0013",
+    "case_id": "S1_R_unit_guidance--000433-head-backbone_bypass",
+    "slot_index": 3,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0014",
+    "case_id": "S1_R_unit_guidance--000433-head-backbone_bypass",
+    "slot_index": 3,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0015",
+    "case_id": "S1_R_unit_guidance--000433-head-backbone_bypass",
+    "slot_index": 3,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0016",
+    "case_id": "S1_R_unit_guidance--000433-head-backbone_bypass",
+    "slot_index": 3,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0017",
+    "case_id": "S1_R_unit_guidance--000433-head-numeric_zero",
+    "slot_index": 4,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0018",
+    "case_id": "S1_R_unit_guidance--000433-head-numeric_zero",
+    "slot_index": 4,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0019",
+    "case_id": "S1_R_unit_guidance--000433-head-numeric_zero",
+    "slot_index": 4,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0020",
+    "case_id": "S1_R_unit_guidance--000433-head-numeric_zero",
+    "slot_index": 4,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0021",
+    "case_id": "S1_R_unit_guidance--000433-head-physical_static",
+    "slot_index": 5,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0022",
+    "case_id": "S1_R_unit_guidance--000433-head-physical_static",
+    "slot_index": 5,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0023",
+    "case_id": "S1_R_unit_guidance--000433-head-physical_static",
+    "slot_index": 5,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0024",
+    "case_id": "S1_R_unit_guidance--000433-head-physical_static",
+    "slot_index": 5,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0025",
+    "case_id": "S1_R_unit_guidance--000433-wrists-paired",
+    "slot_index": 6,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0026",
+    "case_id": "S1_R_unit_guidance--000433-wrists-paired",
+    "slot_index": 6,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0027",
+    "case_id": "S1_R_unit_guidance--000433-wrists-paired",
+    "slot_index": 6,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0028",
+    "case_id": "S1_R_unit_guidance--000433-wrists-paired",
+    "slot_index": 6,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0029",
+    "case_id": "S1_R_unit_guidance--000433-wrists-text_only",
+    "slot_index": 7,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0030",
+    "case_id": "S1_R_unit_guidance--000433-wrists-text_only",
+    "slot_index": 7,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0031",
+    "case_id": "S1_R_unit_guidance--000433-wrists-text_only",
+    "slot_index": 7,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0032",
+    "case_id": "S1_R_unit_guidance--000433-wrists-text_only",
+    "slot_index": 7,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0033",
+    "case_id": "S1_R_unit_guidance--000433-wrists-imu_only",
+    "slot_index": 8,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0034",
+    "case_id": "S1_R_unit_guidance--000433-wrists-imu_only",
+    "slot_index": 8,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0035",
+    "case_id": "S1_R_unit_guidance--000433-wrists-imu_only",
+    "slot_index": 8,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0036",
+    "case_id": "S1_R_unit_guidance--000433-wrists-imu_only",
+    "slot_index": 8,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0037",
+    "case_id": "S1_R_unit_guidance--000433-wrists-backbone_bypass",
+    "slot_index": 9,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0038",
+    "case_id": "S1_R_unit_guidance--000433-wrists-backbone_bypass",
+    "slot_index": 9,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0039",
+    "case_id": "S1_R_unit_guidance--000433-wrists-backbone_bypass",
+    "slot_index": 9,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0040",
+    "case_id": "S1_R_unit_guidance--000433-wrists-backbone_bypass",
+    "slot_index": 9,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0041",
+    "case_id": "S1_R_unit_guidance--000433-wrists-numeric_zero",
+    "slot_index": 10,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0042",
+    "case_id": "S1_R_unit_guidance--000433-wrists-numeric_zero",
+    "slot_index": 10,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0043",
+    "case_id": "S1_R_unit_guidance--000433-wrists-numeric_zero",
+    "slot_index": 10,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0044",
+    "case_id": "S1_R_unit_guidance--000433-wrists-numeric_zero",
+    "slot_index": 10,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0045",
+    "case_id": "S1_R_unit_guidance--000433-wrists-physical_static",
+    "slot_index": 11,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0046",
+    "case_id": "S1_R_unit_guidance--000433-wrists-physical_static",
+    "slot_index": 11,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0047",
+    "case_id": "S1_R_unit_guidance--000433-wrists-physical_static",
+    "slot_index": 11,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0048",
+    "case_id": "S1_R_unit_guidance--000433-wrists-physical_static",
+    "slot_index": 11,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0049",
+    "case_id": "S1_R_unit_guidance--000382-head-paired",
+    "slot_index": 12,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0050",
+    "case_id": "S1_R_unit_guidance--000382-head-paired",
+    "slot_index": 12,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0051",
+    "case_id": "S1_R_unit_guidance--000382-head-paired",
+    "slot_index": 12,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0052",
+    "case_id": "S1_R_unit_guidance--000382-head-paired",
+    "slot_index": 12,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0053",
+    "case_id": "S1_R_unit_guidance--000382-head-text_only",
+    "slot_index": 13,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0054",
+    "case_id": "S1_R_unit_guidance--000382-head-text_only",
+    "slot_index": 13,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0055",
+    "case_id": "S1_R_unit_guidance--000382-head-text_only",
+    "slot_index": 13,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0056",
+    "case_id": "S1_R_unit_guidance--000382-head-text_only",
+    "slot_index": 13,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0057",
+    "case_id": "S1_R_unit_guidance--000382-head-imu_only",
+    "slot_index": 14,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0058",
+    "case_id": "S1_R_unit_guidance--000382-head-imu_only",
+    "slot_index": 14,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0059",
+    "case_id": "S1_R_unit_guidance--000382-head-imu_only",
+    "slot_index": 14,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0060",
+    "case_id": "S1_R_unit_guidance--000382-head-imu_only",
+    "slot_index": 14,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0061",
+    "case_id": "S1_R_unit_guidance--000382-head-backbone_bypass",
+    "slot_index": 15,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0062",
+    "case_id": "S1_R_unit_guidance--000382-head-backbone_bypass",
+    "slot_index": 15,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0063",
+    "case_id": "S1_R_unit_guidance--000382-head-backbone_bypass",
+    "slot_index": 15,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0064",
+    "case_id": "S1_R_unit_guidance--000382-head-backbone_bypass",
+    "slot_index": 15,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0065",
+    "case_id": "S1_R_unit_guidance--000382-head-numeric_zero",
+    "slot_index": 16,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0066",
+    "case_id": "S1_R_unit_guidance--000382-head-numeric_zero",
+    "slot_index": 16,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0067",
+    "case_id": "S1_R_unit_guidance--000382-head-numeric_zero",
+    "slot_index": 16,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0068",
+    "case_id": "S1_R_unit_guidance--000382-head-numeric_zero",
+    "slot_index": 16,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0069",
+    "case_id": "S1_R_unit_guidance--000382-head-physical_static",
+    "slot_index": 17,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0070",
+    "case_id": "S1_R_unit_guidance--000382-head-physical_static",
+    "slot_index": 17,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0071",
+    "case_id": "S1_R_unit_guidance--000382-head-physical_static",
+    "slot_index": 17,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0072",
+    "case_id": "S1_R_unit_guidance--000382-head-physical_static",
+    "slot_index": 17,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0073",
+    "case_id": "S1_R_unit_guidance--000382-wrists-paired",
+    "slot_index": 18,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0074",
+    "case_id": "S1_R_unit_guidance--000382-wrists-paired",
+    "slot_index": 18,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0075",
+    "case_id": "S1_R_unit_guidance--000382-wrists-paired",
+    "slot_index": 18,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0076",
+    "case_id": "S1_R_unit_guidance--000382-wrists-paired",
+    "slot_index": 18,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0077",
+    "case_id": "S1_R_unit_guidance--000382-wrists-text_only",
+    "slot_index": 19,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0078",
+    "case_id": "S1_R_unit_guidance--000382-wrists-text_only",
+    "slot_index": 19,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0079",
+    "case_id": "S1_R_unit_guidance--000382-wrists-text_only",
+    "slot_index": 19,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0080",
+    "case_id": "S1_R_unit_guidance--000382-wrists-text_only",
+    "slot_index": 19,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0081",
+    "case_id": "S1_R_unit_guidance--000382-wrists-imu_only",
+    "slot_index": 20,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0082",
+    "case_id": "S1_R_unit_guidance--000382-wrists-imu_only",
+    "slot_index": 20,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0083",
+    "case_id": "S1_R_unit_guidance--000382-wrists-imu_only",
+    "slot_index": 20,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0084",
+    "case_id": "S1_R_unit_guidance--000382-wrists-imu_only",
+    "slot_index": 20,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0085",
+    "case_id": "S1_R_unit_guidance--000382-wrists-backbone_bypass",
+    "slot_index": 21,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0086",
+    "case_id": "S1_R_unit_guidance--000382-wrists-backbone_bypass",
+    "slot_index": 21,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0087",
+    "case_id": "S1_R_unit_guidance--000382-wrists-backbone_bypass",
+    "slot_index": 21,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0088",
+    "case_id": "S1_R_unit_guidance--000382-wrists-backbone_bypass",
+    "slot_index": 21,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0089",
+    "case_id": "S1_R_unit_guidance--000382-wrists-numeric_zero",
+    "slot_index": 22,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0090",
+    "case_id": "S1_R_unit_guidance--000382-wrists-numeric_zero",
+    "slot_index": 22,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0091",
+    "case_id": "S1_R_unit_guidance--000382-wrists-numeric_zero",
+    "slot_index": 22,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0092",
+    "case_id": "S1_R_unit_guidance--000382-wrists-numeric_zero",
+    "slot_index": 22,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0093",
+    "case_id": "S1_R_unit_guidance--000382-wrists-physical_static",
+    "slot_index": 23,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0094",
+    "case_id": "S1_R_unit_guidance--000382-wrists-physical_static",
+    "slot_index": 23,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0095",
+    "case_id": "S1_R_unit_guidance--000382-wrists-physical_static",
+    "slot_index": 23,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0096",
+    "case_id": "S1_R_unit_guidance--000382-wrists-physical_static",
+    "slot_index": 23,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0097",
+    "case_id": "S1_R_unit_guidance--000139-head-paired",
+    "slot_index": 24,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0098",
+    "case_id": "S1_R_unit_guidance--000139-head-paired",
+    "slot_index": 24,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0099",
+    "case_id": "S1_R_unit_guidance--000139-head-paired",
+    "slot_index": 24,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0100",
+    "case_id": "S1_R_unit_guidance--000139-head-paired",
+    "slot_index": 24,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0101",
+    "case_id": "S1_R_unit_guidance--000139-head-text_only",
+    "slot_index": 25,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0102",
+    "case_id": "S1_R_unit_guidance--000139-head-text_only",
+    "slot_index": 25,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0103",
+    "case_id": "S1_R_unit_guidance--000139-head-text_only",
+    "slot_index": 25,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0104",
+    "case_id": "S1_R_unit_guidance--000139-head-text_only",
+    "slot_index": 25,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0105",
+    "case_id": "S1_R_unit_guidance--000139-head-imu_only",
+    "slot_index": 26,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0106",
+    "case_id": "S1_R_unit_guidance--000139-head-imu_only",
+    "slot_index": 26,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0107",
+    "case_id": "S1_R_unit_guidance--000139-head-imu_only",
+    "slot_index": 26,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0108",
+    "case_id": "S1_R_unit_guidance--000139-head-imu_only",
+    "slot_index": 26,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0109",
+    "case_id": "S1_R_unit_guidance--000139-head-backbone_bypass",
+    "slot_index": 27,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0110",
+    "case_id": "S1_R_unit_guidance--000139-head-backbone_bypass",
+    "slot_index": 27,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0111",
+    "case_id": "S1_R_unit_guidance--000139-head-backbone_bypass",
+    "slot_index": 27,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0112",
+    "case_id": "S1_R_unit_guidance--000139-head-backbone_bypass",
+    "slot_index": 27,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0113",
+    "case_id": "S1_R_unit_guidance--000139-head-numeric_zero",
+    "slot_index": 28,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0114",
+    "case_id": "S1_R_unit_guidance--000139-head-numeric_zero",
+    "slot_index": 28,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0115",
+    "case_id": "S1_R_unit_guidance--000139-head-numeric_zero",
+    "slot_index": 28,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0116",
+    "case_id": "S1_R_unit_guidance--000139-head-numeric_zero",
+    "slot_index": 28,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0117",
+    "case_id": "S1_R_unit_guidance--000139-head-physical_static",
+    "slot_index": 29,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0118",
+    "case_id": "S1_R_unit_guidance--000139-head-physical_static",
+    "slot_index": 29,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0119",
+    "case_id": "S1_R_unit_guidance--000139-head-physical_static",
+    "slot_index": 29,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0120",
+    "case_id": "S1_R_unit_guidance--000139-head-physical_static",
+    "slot_index": 29,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0121",
+    "case_id": "S1_R_unit_guidance--000139-wrists-paired",
+    "slot_index": 30,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0122",
+    "case_id": "S1_R_unit_guidance--000139-wrists-paired",
+    "slot_index": 30,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0123",
+    "case_id": "S1_R_unit_guidance--000139-wrists-paired",
+    "slot_index": 30,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0124",
+    "case_id": "S1_R_unit_guidance--000139-wrists-paired",
+    "slot_index": 30,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0125",
+    "case_id": "S1_R_unit_guidance--000139-wrists-text_only",
+    "slot_index": 31,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0126",
+    "case_id": "S1_R_unit_guidance--000139-wrists-text_only",
+    "slot_index": 31,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0127",
+    "case_id": "S1_R_unit_guidance--000139-wrists-text_only",
+    "slot_index": 31,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0128",
+    "case_id": "S1_R_unit_guidance--000139-wrists-text_only",
+    "slot_index": 31,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0129",
+    "case_id": "S1_R_unit_guidance--000139-wrists-imu_only",
+    "slot_index": 32,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0130",
+    "case_id": "S1_R_unit_guidance--000139-wrists-imu_only",
+    "slot_index": 32,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0131",
+    "case_id": "S1_R_unit_guidance--000139-wrists-imu_only",
+    "slot_index": 32,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0132",
+    "case_id": "S1_R_unit_guidance--000139-wrists-imu_only",
+    "slot_index": 32,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0133",
+    "case_id": "S1_R_unit_guidance--000139-wrists-backbone_bypass",
+    "slot_index": 33,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0134",
+    "case_id": "S1_R_unit_guidance--000139-wrists-backbone_bypass",
+    "slot_index": 33,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0135",
+    "case_id": "S1_R_unit_guidance--000139-wrists-backbone_bypass",
+    "slot_index": 33,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0136",
+    "case_id": "S1_R_unit_guidance--000139-wrists-backbone_bypass",
+    "slot_index": 33,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0137",
+    "case_id": "S1_R_unit_guidance--000139-wrists-numeric_zero",
+    "slot_index": 34,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0138",
+    "case_id": "S1_R_unit_guidance--000139-wrists-numeric_zero",
+    "slot_index": 34,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0139",
+    "case_id": "S1_R_unit_guidance--000139-wrists-numeric_zero",
+    "slot_index": 34,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0140",
+    "case_id": "S1_R_unit_guidance--000139-wrists-numeric_zero",
+    "slot_index": 34,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0141",
+    "case_id": "S1_R_unit_guidance--000139-wrists-physical_static",
+    "slot_index": 35,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0142",
+    "case_id": "S1_R_unit_guidance--000139-wrists-physical_static",
+    "slot_index": 35,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0143",
+    "case_id": "S1_R_unit_guidance--000139-wrists-physical_static",
+    "slot_index": 35,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0144",
+    "case_id": "S1_R_unit_guidance--000139-wrists-physical_static",
+    "slot_index": 35,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0145",
+    "case_id": "S1_R_unit_guidance--000433-head-tail_reversed",
+    "slot_index": 36,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0146",
+    "case_id": "S1_R_unit_guidance--000433-head-tail_reversed",
+    "slot_index": 36,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0147",
+    "case_id": "S1_R_unit_guidance--000433-head-tail_reversed",
+    "slot_index": 36,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0148",
+    "case_id": "S1_R_unit_guidance--000433-head-tail_reversed",
+    "slot_index": 36,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0149",
+    "case_id": "S1_R_unit_guidance--000433-wrists-tail_reversed",
+    "slot_index": 37,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0150",
+    "case_id": "S1_R_unit_guidance--000433-wrists-tail_reversed",
+    "slot_index": 37,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0151",
+    "case_id": "S1_R_unit_guidance--000433-wrists-tail_reversed",
+    "slot_index": 37,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0152",
+    "case_id": "S1_R_unit_guidance--000433-wrists-tail_reversed",
+    "slot_index": 37,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0153",
+    "case_id": "S1_R_unit_guidance--000382-head-tail_reversed",
+    "slot_index": 38,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0154",
+    "case_id": "S1_R_unit_guidance--000382-head-tail_reversed",
+    "slot_index": 38,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0155",
+    "case_id": "S1_R_unit_guidance--000382-head-tail_reversed",
+    "slot_index": 38,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0156",
+    "case_id": "S1_R_unit_guidance--000382-head-tail_reversed",
+    "slot_index": 38,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0157",
+    "case_id": "S1_R_unit_guidance--000382-wrists-tail_reversed",
+    "slot_index": 39,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0158",
+    "case_id": "S1_R_unit_guidance--000382-wrists-tail_reversed",
+    "slot_index": 39,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0159",
+    "case_id": "S1_R_unit_guidance--000382-wrists-tail_reversed",
+    "slot_index": 39,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0160",
+    "case_id": "S1_R_unit_guidance--000382-wrists-tail_reversed",
+    "slot_index": 39,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0161",
+    "case_id": "S1_R_unit_guidance--000139-head-tail_reversed",
+    "slot_index": 40,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0162",
+    "case_id": "S1_R_unit_guidance--000139-head-tail_reversed",
+    "slot_index": 40,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0163",
+    "case_id": "S1_R_unit_guidance--000139-head-tail_reversed",
+    "slot_index": 40,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0164",
+    "case_id": "S1_R_unit_guidance--000139-head-tail_reversed",
+    "slot_index": 40,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0165",
+    "case_id": "S1_R_unit_guidance--000139-wrists-tail_reversed",
+    "slot_index": 41,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0166",
+    "case_id": "S1_R_unit_guidance--000139-wrists-tail_reversed",
+    "slot_index": 41,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0167",
+    "case_id": "S1_R_unit_guidance--000139-wrists-tail_reversed",
+    "slot_index": 41,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0168",
+    "case_id": "S1_R_unit_guidance--000139-wrists-tail_reversed",
+    "slot_index": 41,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0169",
+    "case_id": "S1_R_unit_guidance--train-000027-head-paired",
+    "slot_index": 42,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0170",
+    "case_id": "S1_R_unit_guidance--train-000027-head-paired",
+    "slot_index": 42,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0171",
+    "case_id": "S1_R_unit_guidance--train-000027-head-paired",
+    "slot_index": 42,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0172",
+    "case_id": "S1_R_unit_guidance--train-000027-head-paired",
+    "slot_index": 42,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0173",
+    "case_id": "S1_R_unit_guidance--train-000027-head-text_only",
+    "slot_index": 43,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0174",
+    "case_id": "S1_R_unit_guidance--train-000027-head-text_only",
+    "slot_index": 43,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0175",
+    "case_id": "S1_R_unit_guidance--train-000027-head-text_only",
+    "slot_index": 43,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0176",
+    "case_id": "S1_R_unit_guidance--train-000027-head-text_only",
+    "slot_index": 43,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0177",
+    "case_id": "S1_R_unit_guidance--train-000027-head-physical_static",
+    "slot_index": 44,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0178",
+    "case_id": "S1_R_unit_guidance--train-000027-head-physical_static",
+    "slot_index": 44,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0179",
+    "case_id": "S1_R_unit_guidance--train-000027-head-physical_static",
+    "slot_index": 44,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0180",
+    "case_id": "S1_R_unit_guidance--train-000027-head-physical_static",
+    "slot_index": 44,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0181",
+    "case_id": "S1_R_unit_guidance--train-000027-wrists-paired",
+    "slot_index": 45,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0182",
+    "case_id": "S1_R_unit_guidance--train-000027-wrists-paired",
+    "slot_index": 45,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0183",
+    "case_id": "S1_R_unit_guidance--train-000027-wrists-paired",
+    "slot_index": 45,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0184",
+    "case_id": "S1_R_unit_guidance--train-000027-wrists-paired",
+    "slot_index": 45,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0185",
+    "case_id": "S1_R_unit_guidance--train-000027-wrists-text_only",
+    "slot_index": 46,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0186",
+    "case_id": "S1_R_unit_guidance--train-000027-wrists-text_only",
+    "slot_index": 46,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0187",
+    "case_id": "S1_R_unit_guidance--train-000027-wrists-text_only",
+    "slot_index": 46,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0188",
+    "case_id": "S1_R_unit_guidance--train-000027-wrists-text_only",
+    "slot_index": 46,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0189",
+    "case_id": "S1_R_unit_guidance--train-000027-wrists-physical_static",
+    "slot_index": 47,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0190",
+    "case_id": "S1_R_unit_guidance--train-000027-wrists-physical_static",
+    "slot_index": 47,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0191",
+    "case_id": "S1_R_unit_guidance--train-000027-wrists-physical_static",
+    "slot_index": 47,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0192",
+    "case_id": "S1_R_unit_guidance--train-000027-wrists-physical_static",
+    "slot_index": 47,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0193",
+    "case_id": "S1_R_unit_guidance--train-000506-head-paired",
+    "slot_index": 48,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0194",
+    "case_id": "S1_R_unit_guidance--train-000506-head-paired",
+    "slot_index": 48,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0195",
+    "case_id": "S1_R_unit_guidance--train-000506-head-paired",
+    "slot_index": 48,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0196",
+    "case_id": "S1_R_unit_guidance--train-000506-head-paired",
+    "slot_index": 48,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0197",
+    "case_id": "S1_R_unit_guidance--train-000506-head-text_only",
+    "slot_index": 49,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0198",
+    "case_id": "S1_R_unit_guidance--train-000506-head-text_only",
+    "slot_index": 49,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0199",
+    "case_id": "S1_R_unit_guidance--train-000506-head-text_only",
+    "slot_index": 49,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0200",
+    "case_id": "S1_R_unit_guidance--train-000506-head-text_only",
+    "slot_index": 49,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0201",
+    "case_id": "S1_R_unit_guidance--train-000506-head-physical_static",
+    "slot_index": 50,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0202",
+    "case_id": "S1_R_unit_guidance--train-000506-head-physical_static",
+    "slot_index": 50,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0203",
+    "case_id": "S1_R_unit_guidance--train-000506-head-physical_static",
+    "slot_index": 50,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0204",
+    "case_id": "S1_R_unit_guidance--train-000506-head-physical_static",
+    "slot_index": 50,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0205",
+    "case_id": "S1_R_unit_guidance--train-000506-wrists-paired",
+    "slot_index": 51,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0206",
+    "case_id": "S1_R_unit_guidance--train-000506-wrists-paired",
+    "slot_index": 51,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0207",
+    "case_id": "S1_R_unit_guidance--train-000506-wrists-paired",
+    "slot_index": 51,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0208",
+    "case_id": "S1_R_unit_guidance--train-000506-wrists-paired",
+    "slot_index": 51,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0209",
+    "case_id": "S1_R_unit_guidance--train-000506-wrists-text_only",
+    "slot_index": 52,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0210",
+    "case_id": "S1_R_unit_guidance--train-000506-wrists-text_only",
+    "slot_index": 52,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0211",
+    "case_id": "S1_R_unit_guidance--train-000506-wrists-text_only",
+    "slot_index": 52,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0212",
+    "case_id": "S1_R_unit_guidance--train-000506-wrists-text_only",
+    "slot_index": 52,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0213",
+    "case_id": "S1_R_unit_guidance--train-000506-wrists-physical_static",
+    "slot_index": 53,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0214",
+    "case_id": "S1_R_unit_guidance--train-000506-wrists-physical_static",
+    "slot_index": 53,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0215",
+    "case_id": "S1_R_unit_guidance--train-000506-wrists-physical_static",
+    "slot_index": 53,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0216",
+    "case_id": "S1_R_unit_guidance--train-000506-wrists-physical_static",
+    "slot_index": 53,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0217",
+    "case_id": "S1_R_unit_guidance--train-004728-head-paired",
+    "slot_index": 54,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0218",
+    "case_id": "S1_R_unit_guidance--train-004728-head-paired",
+    "slot_index": 54,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0219",
+    "case_id": "S1_R_unit_guidance--train-004728-head-paired",
+    "slot_index": 54,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0220",
+    "case_id": "S1_R_unit_guidance--train-004728-head-paired",
+    "slot_index": 54,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0221",
+    "case_id": "S1_R_unit_guidance--train-004728-head-text_only",
+    "slot_index": 55,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0222",
+    "case_id": "S1_R_unit_guidance--train-004728-head-text_only",
+    "slot_index": 55,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0223",
+    "case_id": "S1_R_unit_guidance--train-004728-head-text_only",
+    "slot_index": 55,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0224",
+    "case_id": "S1_R_unit_guidance--train-004728-head-text_only",
+    "slot_index": 55,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0225",
+    "case_id": "S1_R_unit_guidance--train-004728-head-physical_static",
+    "slot_index": 56,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0226",
+    "case_id": "S1_R_unit_guidance--train-004728-head-physical_static",
+    "slot_index": 56,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0227",
+    "case_id": "S1_R_unit_guidance--train-004728-head-physical_static",
+    "slot_index": 56,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0228",
+    "case_id": "S1_R_unit_guidance--train-004728-head-physical_static",
+    "slot_index": 56,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0229",
+    "case_id": "S1_R_unit_guidance--train-004728-wrists-paired",
+    "slot_index": 57,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0230",
+    "case_id": "S1_R_unit_guidance--train-004728-wrists-paired",
+    "slot_index": 57,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0231",
+    "case_id": "S1_R_unit_guidance--train-004728-wrists-paired",
+    "slot_index": 57,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0232",
+    "case_id": "S1_R_unit_guidance--train-004728-wrists-paired",
+    "slot_index": 57,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0233",
+    "case_id": "S1_R_unit_guidance--train-004728-wrists-text_only",
+    "slot_index": 58,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0234",
+    "case_id": "S1_R_unit_guidance--train-004728-wrists-text_only",
+    "slot_index": 58,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0235",
+    "case_id": "S1_R_unit_guidance--train-004728-wrists-text_only",
+    "slot_index": 58,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0236",
+    "case_id": "S1_R_unit_guidance--train-004728-wrists-text_only",
+    "slot_index": 58,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0237",
+    "case_id": "S1_R_unit_guidance--train-004728-wrists-physical_static",
+    "slot_index": 59,
+    "timestep": 900,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0238",
+    "case_id": "S1_R_unit_guidance--train-004728-wrists-physical_static",
+    "slot_index": 59,
+    "timestep": 500,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0239",
+    "case_id": "S1_R_unit_guidance--train-004728-wrists-physical_static",
+    "slot_index": 59,
+    "timestep": 250,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  },
+  {
+    "trace_id": "T0240",
+    "case_id": "S1_R_unit_guidance--train-004728-wrists-physical_static",
+    "slot_index": 59,
+    "timestep": 50,
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "status": "frozen_not_executed",
+    "checkpoint": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "additional_MDM_branch_examples": 0
+  }
+]

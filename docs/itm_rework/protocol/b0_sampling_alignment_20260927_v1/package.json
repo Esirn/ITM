@@ -1,0 +1,62 @@
+{
+  "version": "canonical-B0-sampling-alignment-package-v1",
+  "status": "frozen_for_implementation_not_authorized",
+  "source_commit": "d2d28fb",
+  "artifacts": [
+    {
+      "path": "docs/itm_rework/protocol/b0_sampling_alignment_20260927_v1/budget.json",
+      "sha256": "3979e2121e947a121cc9ef63ccfbc7d5035472754e27ed6510144d605e384e1f"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_sampling_alignment_20260927_v1/design.json",
+      "sha256": "675c6cb4e27bb9ea6ea1a6f5d8bef30e77415a355f66c041e9e62c626f3df2b3"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_sampling_alignment_20260927_v1/evaluation.json",
+      "sha256": "4057dcaf2ee81540bdecfda95b2749f1aa75df7269b53dc9106d5a038faff139"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_sampling_alignment_20260927_v1/historical_samples.json",
+      "sha256": "07a916486c5f6690ff7895c2a9fde3010769bf21967d7dd63c3985813a314150"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_sampling_alignment_20260927_v1/probe_groups.json",
+      "sha256": "8e927d6b166a20ad50f4ac66a2042a72ee4bc7f2cc9c4c2784941088da18fa4f"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_sampling_alignment_20260927_v1/probe_noise.json",
+      "sha256": "f0f03eb263785ad31d5e6b45fcd046b00342ae880ef33f81ed374ea26893ed49"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_sampling_alignment_20260927_v1/probe_slots.json",
+      "sha256": "45e405db5a4a35b37f55b2e08f625025fb6d595939c996dc2d2303d8c74ff42c"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_sampling_alignment_20260927_v1/review_order.json",
+      "sha256": "52d2df2df4333dfe0200916a04c6e618c6e5eed0bf3b1cde8a5de51c4fcf6ca6"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_sampling_alignment_20260927_v1/sampling_noise_groups.json",
+      "sha256": "0fba3d6ff2369fd4f3c8c779d207157507202c6127ef0109cbac2780c08f24ce"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_sampling_alignment_20260927_v1/sampling_slots.json",
+      "sha256": "86da32de7ac414606136be582fea60ff92fa7bc95390e6900cf70ec415fa81cb"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_sampling_alignment_20260927_v1/sources.json",
+      "sha256": "1d46a012e060376c4b13bc8f1558a869306ab57112b13ce69eb6671264933f7b"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_sampling_alignment_20260927_v1/trace_slots.json",
+      "sha256": "ee4b064d37fa5ecfe69c434ea5de4f8c049bc3cef589f3472236c58b8e5250d2"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_sampling_alignment_20260927_v1/validation.json",
+      "sha256": "94b0d8e9b86f3e9d99f13b4bb587b8297c5ca877e243a18a6bcff0685158a17e"
+    }
+  ],
+  "execution_authorization": null,
+  "run_directory": null,
+  "GPU_UUID": null
+}

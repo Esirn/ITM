@@ -1,0 +1,134 @@
+{
+  "canonical-B0-000433-head": {
+    "metadata": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/samples/R_static_reference_delta--000433-head-paired.json",
+      "sha256": "17d8e502860cf85e8a888974f2e0e97a998a1736fa6e4bafd928d7ae20ed5a93"
+    },
+    "json_pointer": "/random_plans/0",
+    "random_plan_id": "52807a48c82d9243c5328a2df92e252d21cdbb55b0435faca7dccf291a656ec9",
+    "random_plan_sha256": "db3d7ce0b0150c8055912b4f70decff69c62a69a74e234d5d9a524a9331cf533",
+    "frames": 41,
+    "draws": 1000
+  },
+  "canonical-B0-000433-wrists": {
+    "metadata": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/samples/R_static_reference_delta--000433-wrists-paired.json",
+      "sha256": "9c343d99b467d1080d79e7d4d126f863a34208ef49da202efc0f2108b61c3bd4"
+    },
+    "json_pointer": "/random_plans/0",
+    "random_plan_id": "867bed3e702aa06489c16cd6813cc800773c59c5113a432ab42300a45784c563",
+    "random_plan_sha256": "a6e5e6d0fdee8f1f0e3bbb6cbb8f6c463901f748273b8daa55fac05d989cc39b",
+    "frames": 41,
+    "draws": 1000
+  },
+  "canonical-B0-000382-head": {
+    "metadata": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/samples/R_static_reference_delta--000382-head-paired.json",
+      "sha256": "07b54c3cc6e216cf92787686d1c9d8cf433b938839cef75fd2d49130582a773c"
+    },
+    "json_pointer": "/random_plans/0",
+    "random_plan_id": "78e031195676d4c0956336cdf487b6a30904866da8d7395d9f42c67cb7fa3d10",
+    "random_plan_sha256": "25bae63f0bebcd413ee98db71f0240fd5c1d1c8b1295d95fd45efcf5159ce8cc",
+    "frames": 94,
+    "draws": 1000
+  },
+  "canonical-B0-000382-wrists": {
+    "metadata": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/samples/R_static_reference_delta--000382-wrists-paired.json",
+      "sha256": "0c09633cbd48d16e4be6153eed74d1f608088cd0008e7f6a17701817a904a551"
+    },
+    "json_pointer": "/random_plans/0",
+    "random_plan_id": "d4d76b82968c804658609cd01527d875b4df017202c41c5f19302e168465a51a",
+    "random_plan_sha256": "0e50b37e00f221d3db49a90076cc5d8fc44666d81777e7a058da5b4028acebbc",
+    "frames": 94,
+    "draws": 1000
+  },
+  "canonical-B0-000139-head": {
+    "metadata": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/samples/R_static_reference_delta--000139-head-paired.json",
+      "sha256": "de72d71e22ba5761ea6455078122f08cb4a3fb8bcd756a96f6df87bd34cf2fe2"
+    },
+    "json_pointer": "/random_plans/0",
+    "random_plan_id": "536eade3617bce7ec452fe17545ac9d81e70b586b6f534313491a2201c90e0a4",
+    "random_plan_sha256": "b5f4828f41380be9ec0c28f3f4a6ce2d278eca4afc3b0beebea4dc63fd35c11b",
+    "frames": 163,
+    "draws": 1000
+  },
+  "canonical-B0-000139-wrists": {
+    "metadata": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/samples/R_static_reference_delta--000139-wrists-paired.json",
+      "sha256": "a84859a5ff158df0d00f89a9612ba2971593a58bb694cd42244ee34ffc722643"
+    },
+    "json_pointer": "/random_plans/0",
+    "random_plan_id": "d913830b9a25628644b319a3741822343efe390a44801eb6c2e4bf35bd50141f",
+    "random_plan_sha256": "f1b3f2e45d279f7698960e53d9866d059a2c4797391099445059e59097ee44ef",
+    "frames": 163,
+    "draws": 1000
+  },
+  "canonical-B0-probe-train-000027-head": {
+    "metadata": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/samples/R_static_reference_delta--train-000027-head-paired.json",
+      "sha256": "ab7363c5f2f45b0067908ebe51b920178efb021b97c6d1e7387e20ca0585ce72"
+    },
+    "json_pointer": "/random_plans/0",
+    "random_plan_id": "cd364853984e9358cb4acea74af487cfbe45624a3d68cc7103c5b9e92e88aa3d",
+    "random_plan_sha256": "d9bc0ac146aab2189a6ec277c03e953c61dfa04fc94fe5b7a20ddabe89048cb6",
+    "frames": 104,
+    "draws": 1000
+  },
+  "canonical-B0-probe-train-000027-wrists": {
+    "metadata": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/samples/R_static_reference_delta--train-000027-wrists-paired.json",
+      "sha256": "9a92cc83143136c4681305d92aebadfeeb4382e15cb1604c71015f04ab47c8dd"
+    },
+    "json_pointer": "/random_plans/0",
+    "random_plan_id": "f55874f73237d6511144f1cbf79a73c0e03966dcf63ed4f7988d98b7d573f2ac",
+    "random_plan_sha256": "a08367a092bdf0df58728289a4e91aa13231d3e07d0bdc0fe6c2a6d46b458908",
+    "frames": 104,
+    "draws": 1000
+  },
+  "canonical-B0-probe-train-000506-head": {
+    "metadata": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/samples/R_static_reference_delta--train-000506-head-paired.json",
+      "sha256": "b581ba25ace4274995d78d56f216852da61a593b81e990dd64a5831165fc59b0"
+    },
+    "json_pointer": "/random_plans/0",
+    "random_plan_id": "afeddb215f2c5c1a4d69921a971f4d17731894873d81cb7d958a2da43e58b932",
+    "random_plan_sha256": "411713f73ef67c5f1f1adfe74ef8527caafac7475d6f38e065a6a4b74d2254d9",
+    "frames": 136,
+    "draws": 1000
+  },
+  "canonical-B0-probe-train-000506-wrists": {
+    "metadata": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/samples/R_static_reference_delta--train-000506-wrists-paired.json",
+      "sha256": "d0b82b1a8d824db0ac3da8892d3fe590fcc30500a967cf898da801d53ebdee08"
+    },
+    "json_pointer": "/random_plans/0",
+    "random_plan_id": "7392ea50947b1ba1f6940f5498f6abac20f4da272384341bbefc0bef5b5f803a",
+    "random_plan_sha256": "62e50fb973c52e007dd683a32ad8dedf6245418d2f84f568ae52e1cbf22840d2",
+    "frames": 136,
+    "draws": 1000
+  },
+  "canonical-B0-probe-train-004728-head": {
+    "metadata": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/samples/R_static_reference_delta--train-004728-head-paired.json",
+      "sha256": "5e3fd53e136bfa0feabd4d3851eff5d247de974cd10080272274b3d15d313efd"
+    },
+    "json_pointer": "/random_plans/0",
+    "random_plan_id": "7c3523a3509b482e4aa8ee45f9108ed475ff7b270f14761028c050cba1b41775",
+    "random_plan_sha256": "92b04085fdd16202f66d397d7972af5a091681f2acbf4a2921527a82f0e2f6af",
+    "frames": 158,
+    "draws": 1000
+  },
+  "canonical-B0-probe-train-004728-wrists": {
+    "metadata": {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/samples/R_static_reference_delta--train-004728-wrists-paired.json",
+      "sha256": "ea879b3253120da4fb5c7911faf65e1ac7c11261d0d30e73320c6cacd23b16a3"
+    },
+    "json_pointer": "/random_plans/0",
+    "random_plan_id": "0b6e475a59a0bfc433fb1d507aec7edc5bf24b7bff79666c5c1c1c77779c3509",
+    "random_plan_sha256": "8e71b7d8c73e9a42512812d89334c512c2b3f7033e1e8a0bcf2bb7acbf2be48f",
+    "frames": 158,
+    "draws": 1000
+  }
+}

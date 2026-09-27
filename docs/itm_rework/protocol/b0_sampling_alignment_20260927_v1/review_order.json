@@ -1,0 +1,1087 @@
+{
+  "seed": 20260930,
+  "algorithm": "NumPy PCG64 permutation of [new60 in slot order, historical60 in slot order]",
+  "rows": [
+    {
+      "review_id": "S001",
+      "case_id": "R_static_reference_delta--000382-wrists-numeric_zero",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "S002",
+      "case_id": "R_static_reference_delta--000433-head-tail_reversed",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "S003",
+      "case_id": "S1_R_unit_guidance--train-004728-head-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S004",
+      "case_id": "R_static_reference_delta--train-000506-wrists-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S005",
+      "case_id": "S1_R_unit_guidance--000139-wrists-backbone_bypass",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "S006",
+      "case_id": "R_static_reference_delta--train-000027-head-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S007",
+      "case_id": "S1_R_unit_guidance--train-000506-head-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S008",
+      "case_id": "R_static_reference_delta--000382-wrists-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S009",
+      "case_id": "S1_R_unit_guidance--000139-wrists-tail_reversed",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "S010",
+      "case_id": "R_static_reference_delta--000433-wrists-backbone_bypass",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "S011",
+      "case_id": "R_static_reference_delta--000433-head-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S012",
+      "case_id": "S1_R_unit_guidance--000382-wrists-numeric_zero",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "S013",
+      "case_id": "S1_R_unit_guidance--000382-wrists-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S014",
+      "case_id": "S1_R_unit_guidance--000382-head-numeric_zero",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "S015",
+      "case_id": "R_static_reference_delta--000139-head-numeric_zero",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "S016",
+      "case_id": "R_static_reference_delta--000139-wrists-numeric_zero",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "S017",
+      "case_id": "S1_R_unit_guidance--000433-wrists-tail_reversed",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "S018",
+      "case_id": "S1_R_unit_guidance--000382-wrists-tail_reversed",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "S019",
+      "case_id": "S1_R_unit_guidance--train-000506-head-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S020",
+      "case_id": "R_static_reference_delta--train-000027-wrists-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S021",
+      "case_id": "R_static_reference_delta--000433-wrists-tail_reversed",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "S022",
+      "case_id": "R_static_reference_delta--000382-head-backbone_bypass",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "S023",
+      "case_id": "R_static_reference_delta--000382-wrists-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S024",
+      "case_id": "S1_R_unit_guidance--000139-wrists-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S025",
+      "case_id": "R_static_reference_delta--000139-head-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S026",
+      "case_id": "S1_R_unit_guidance--train-000027-head-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S027",
+      "case_id": "S1_R_unit_guidance--train-000027-wrists-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S028",
+      "case_id": "S1_R_unit_guidance--000382-wrists-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S029",
+      "case_id": "S1_R_unit_guidance--000433-wrists-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S030",
+      "case_id": "R_static_reference_delta--000382-head-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S031",
+      "case_id": "S1_R_unit_guidance--000139-head-imu_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "S032",
+      "case_id": "R_static_reference_delta--train-004728-head-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S033",
+      "case_id": "R_static_reference_delta--000382-head-imu_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "S034",
+      "case_id": "R_static_reference_delta--000433-head-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S035",
+      "case_id": "R_static_reference_delta--train-000027-head-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S036",
+      "case_id": "R_static_reference_delta--000382-head-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S037",
+      "case_id": "S1_R_unit_guidance--000433-head-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S038",
+      "case_id": "R_static_reference_delta--000433-head-imu_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "S039",
+      "case_id": "S1_R_unit_guidance--000433-wrists-backbone_bypass",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "S040",
+      "case_id": "R_static_reference_delta--000382-wrists-tail_reversed",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "S041",
+      "case_id": "S1_R_unit_guidance--000139-wrists-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S042",
+      "case_id": "R_static_reference_delta--train-000506-wrists-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S043",
+      "case_id": "R_static_reference_delta--000433-wrists-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S044",
+      "case_id": "R_static_reference_delta--000139-head-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S045",
+      "case_id": "R_static_reference_delta--train-004728-wrists-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S046",
+      "case_id": "S1_R_unit_guidance--000139-head-numeric_zero",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "S047",
+      "case_id": "S1_R_unit_guidance--train-000506-wrists-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S048",
+      "case_id": "S1_R_unit_guidance--000382-head-imu_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "S049",
+      "case_id": "S1_R_unit_guidance--000433-wrists-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S050",
+      "case_id": "S1_R_unit_guidance--000433-head-numeric_zero",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "S051",
+      "case_id": "S1_R_unit_guidance--000433-head-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S052",
+      "case_id": "S1_R_unit_guidance--train-004728-head-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S053",
+      "case_id": "S1_R_unit_guidance--000139-head-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S054",
+      "case_id": "R_static_reference_delta--000139-wrists-imu_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "S055",
+      "case_id": "S1_R_unit_guidance--000433-head-tail_reversed",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "S056",
+      "case_id": "R_static_reference_delta--000382-wrists-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S057",
+      "case_id": "S1_R_unit_guidance--train-004728-wrists-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S058",
+      "case_id": "R_static_reference_delta--000382-wrists-imu_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "S059",
+      "case_id": "R_static_reference_delta--000433-head-numeric_zero",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "S060",
+      "case_id": "S1_R_unit_guidance--000433-wrists-numeric_zero",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "S061",
+      "case_id": "R_static_reference_delta--train-000506-head-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S062",
+      "case_id": "R_static_reference_delta--000139-head-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S063",
+      "case_id": "S1_R_unit_guidance--000139-head-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S064",
+      "case_id": "R_static_reference_delta--train-004728-head-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S065",
+      "case_id": "S1_R_unit_guidance--000139-wrists-numeric_zero",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "S066",
+      "case_id": "R_static_reference_delta--train-000027-wrists-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S067",
+      "case_id": "R_static_reference_delta--000139-head-imu_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "S068",
+      "case_id": "S1_R_unit_guidance--train-004728-head-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S069",
+      "case_id": "S1_R_unit_guidance--train-000027-head-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S070",
+      "case_id": "R_static_reference_delta--000139-wrists-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S071",
+      "case_id": "S1_R_unit_guidance--train-004728-wrists-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S072",
+      "case_id": "R_static_reference_delta--train-004728-wrists-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S073",
+      "case_id": "R_static_reference_delta--train-000506-wrists-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S074",
+      "case_id": "S1_R_unit_guidance--000139-head-backbone_bypass",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "S075",
+      "case_id": "S1_R_unit_guidance--train-000506-head-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S076",
+      "case_id": "S1_R_unit_guidance--train-000506-wrists-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S077",
+      "case_id": "S1_R_unit_guidance--train-000027-wrists-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S078",
+      "case_id": "R_static_reference_delta--000382-wrists-backbone_bypass",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "S079",
+      "case_id": "S1_R_unit_guidance--train-004728-wrists-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S080",
+      "case_id": "R_static_reference_delta--000433-wrists-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S081",
+      "case_id": "S1_R_unit_guidance--000382-wrists-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S082",
+      "case_id": "S1_R_unit_guidance--train-000506-wrists-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S083",
+      "case_id": "S1_R_unit_guidance--000382-head-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S084",
+      "case_id": "R_static_reference_delta--000382-head-numeric_zero",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "S085",
+      "case_id": "R_static_reference_delta--000139-head-tail_reversed",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "S086",
+      "case_id": "R_static_reference_delta--000433-head-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S087",
+      "case_id": "S1_R_unit_guidance--000382-wrists-imu_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "S088",
+      "case_id": "S1_R_unit_guidance--000433-head-imu_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "S089",
+      "case_id": "R_static_reference_delta--000433-wrists-numeric_zero",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "S090",
+      "case_id": "R_static_reference_delta--000433-wrists-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S091",
+      "case_id": "S1_R_unit_guidance--000382-head-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S092",
+      "case_id": "R_static_reference_delta--000139-wrists-backbone_bypass",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "S093",
+      "case_id": "S1_R_unit_guidance--000433-head-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S094",
+      "case_id": "S1_R_unit_guidance--train-000027-head-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S095",
+      "case_id": "R_static_reference_delta--train-000506-head-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S096",
+      "case_id": "S1_R_unit_guidance--000382-head-tail_reversed",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "S097",
+      "case_id": "R_static_reference_delta--000382-head-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S098",
+      "case_id": "R_static_reference_delta--train-000027-head-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S099",
+      "case_id": "R_static_reference_delta--train-004728-wrists-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S100",
+      "case_id": "R_static_reference_delta--train-000027-wrists-paired",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S101",
+      "case_id": "S1_R_unit_guidance--000382-wrists-backbone_bypass",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "S102",
+      "case_id": "S1_R_unit_guidance--000139-wrists-paired",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "S103",
+      "case_id": "R_static_reference_delta--train-004728-head-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S104",
+      "case_id": "S1_R_unit_guidance--000382-head-backbone_bypass",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "S105",
+      "case_id": "S1_R_unit_guidance--000139-wrists-imu_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "S106",
+      "case_id": "S1_R_unit_guidance--000139-head-tail_reversed",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "S107",
+      "case_id": "R_static_reference_delta--000382-head-tail_reversed",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "S108",
+      "case_id": "R_static_reference_delta--000433-head-backbone_bypass",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "S109",
+      "case_id": "S1_R_unit_guidance--000382-head-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S110",
+      "case_id": "S1_R_unit_guidance--000433-wrists-imu_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "S111",
+      "case_id": "S1_R_unit_guidance--000433-head-backbone_bypass",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "S112",
+      "case_id": "R_static_reference_delta--000139-head-backbone_bypass",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "S113",
+      "case_id": "R_static_reference_delta--000139-wrists-text_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S114",
+      "case_id": "R_static_reference_delta--train-000506-head-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S115",
+      "case_id": "R_static_reference_delta--000433-wrists-imu_only",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "S116",
+      "case_id": "S1_R_unit_guidance--000433-wrists-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S117",
+      "case_id": "R_static_reference_delta--000139-wrists-tail_reversed",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "S118",
+      "case_id": "R_static_reference_delta--000139-wrists-physical_static",
+      "arm": "R_static_reference_delta",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "S119",
+      "case_id": "S1_R_unit_guidance--000139-head-text_only",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "S120",
+      "case_id": "S1_R_unit_guidance--train-000027-wrists-physical_static",
+      "arm": "S1_R_unit_guidance",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    }
+  ],
+  "limits": "Hide arm/config/condition in figures; preserve all notes/uncertain before unmasking. Old results already known; do not claim fully blinded or independent human assessment."
+}

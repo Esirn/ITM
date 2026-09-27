@@ -1,0 +1,71 @@
+{
+  "version": "canonical-B0-sampling-alignment-budget-v1",
+  "status": "frozen_not_authorized",
+  "authorized": false,
+  "read_commit": "d2d28fb",
+  "training_updates": 0,
+  "new_checkpoints": 0,
+  "existing_checkpoint": {
+    "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+    "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+  },
+  "diagnostics": {
+    "branch_examples": 480,
+    "encoder_examples_max": 576,
+    "maximum_seconds": 600
+  },
+  "sampling": {
+    "count": 60,
+    "K": 1,
+    "steps": 1000,
+    "denoising_calls_max": 60000,
+    "branch_examples_max": 240000,
+    "encoder_examples_max": 120,
+    "maximum_seconds_shared": 2400,
+    "trace_records_max": 240,
+    "trace_additional_model_forwards": 0
+  },
+  "totals": {
+    "MDM_branch_examples_max": 240480,
+    "encoder_examples_max": 696,
+    "GPUs": 1,
+    "allocated_memory_bytes": 25769803776,
+    "maximum_seconds": 3600
+  },
+  "stage_order": [
+    "Q_R_final_fixed_probes",
+    "S1_60_samples"
+  ],
+  "stop": "First timeout/OOM/nonfinite/identity/counter failure stops queue; retain every slot and completed artifact; no retries, fallback or extra cases",
+  "interpretation": "Poor finite probe scores do not change the predeclared sampler or select a checkpoint",
+  "gpu_uuid": null,
+  "run_directory": null,
+  "prerequisites": [
+    "02 freezes evaluation/slots/noise/tolerances/budget",
+    "01 implements versioned runner and CPU checks",
+    "02 software acceptance",
+    "new explicit user authorization bound to final implementation and run/GPU",
+    "GPU preflight"
+  ],
+  "clock_rules": {
+    "total": "3600s from launch BEFORE preflight/load; deadline never extended",
+    "Q": "min(total_deadline,Q_start+600)",
+    "S1": "min(total_deadline,sampling_start+2400), shared by all60; no per-case reset",
+    "overhead": "All load/save/trace validation overhead included. Sum stage caps3000 does not authorize600s extra model work; remaining total time is only preflight/orchestration, no transfer of unused caps."
+  },
+  "counter_rules": {
+    "updates": 0,
+    "new_checkpoints": 0,
+    "Q_MDM": 480,
+    "Q_encoder": 576,
+    "S1_denoising": 60000,
+    "S1_MDM": 240000,
+    "S1_encoder": 120,
+    "total_MDM": 240480,
+    "total_encoder": 696,
+    "trace_records": 240,
+    "trace_extra_forwards": 0,
+    "reservation": "Reserve before forward; observed and reference encodings counted individually; f00/f10 Q zero encoder; no unlisted real warmup/verification/retry."
+  },
+  "required_ledger": "Predeclare all480 Q,60 sample and240 trace slots; terminal completed/failed/not_run_after_stop, attempted/reserved/completed counters, timings/GPU/peakallocated/artifact hashes; preserve partial output."
+}
