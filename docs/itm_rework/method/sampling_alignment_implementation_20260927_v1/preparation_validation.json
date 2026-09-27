@@ -1,0 +1,25 @@
+{
+  "implementation": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_implementation_20260927_v1/implementation.json",
+    "sha256": "793fdd9a95a102484d2dbc7579aa398f3af0120c66422ba6ec966cc01f8cb7c4"
+  },
+  "bound_files": 743,
+  "frozen_sources": 726,
+  "sample_inputs": 60,
+  "probe_inputs": 480,
+  "checkpoint": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+    "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+  },
+  "package": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_sampling_alignment_20260927_v1/package.json",
+    "sha256": "537895c45695a48cb4b5114941e4bf8cab3962c40be893fcc79b4c9eeb311d60"
+  },
+  "CPU_only": true,
+  "new_checkpoint_files": [],
+  "real_model_forwards": 0,
+  "real_training_updates": 0,
+  "real_diffusion_samples": 0,
+  "gpu_queries": 0,
+  "authorization_created": false
+}

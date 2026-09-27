@@ -1,3 +1,14 @@
+# 01 最新状态：固定 R guidance 实现与 CPU 验证完成（2026-09-27）
+
+按 `1680618` 冻结包实现 Q 96×batch5、S1 四分支完整采样与 240 条零额外调用 trace；固定 R final200，仅 guidance 从 2.5/1/1 改为 1/1/1，无新训练或 checkpoint。
+联合 **258 passed / 0 failed / 0 skipped**，含 **33 项新增方法测试**；覆盖真实加载接口、trace 开关逐位一致、全部 24 项完整采样检查及 480/60/240 分母和故障保留。
+CPU 准备 manifest `793fdd9a95a102484d2dbc7579aa398f3af0120c66422ba6ec966cc01f8cb7c4` 绑定 **743 份文件**，保存全部 60/480 输入身份，位于 `outputs/itm_rework/method/sampling_alignment_implementation_20260927_v1/`。
+详情及复现入口：[B0_SAMPLING_ALIGNMENT_IMPLEMENTATION_20260927.md](B0_SAMPLING_ALIGNMENT_IMPLEMENTATION_20260927.md)。本轮无预训练模型前向、真实训练/采样、GPU 查询/预检或新运行授权。
+下一步由 **02 独立软件验收**；通过后 01 再申请新单次授权（480 Q＋60 S1＋240 trace，单 GPU/24GiB/总 1 小时），随后才预检执行。原模型负例与准入边界保留，软件通过不代表模型有效。
+以下为历史记录。
+
+---
+
 # 01 最新状态：接纳 D/L/R 负例，提出固定 R 权重的采样修正（2026-09-27）
 
 已读取 `c6aef58`。完整性通过不代表能力通过：L步行→抬腿、R wrists拍手下肢退化、train000506/004728生成失败继续保留；不能只归因于padding或覆盖不足。
