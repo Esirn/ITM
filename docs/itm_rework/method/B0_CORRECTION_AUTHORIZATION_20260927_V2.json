@@ -1,0 +1,30 @@
+{
+  "implementation_sha256": "a802ef3b03aea7bab7fff3fda5704cf56a2c5cf6c5ed36c693a892fc35d6de13",
+  "package_sha256": "e24c8cddce0d0cb11a7b71d2cd91a24c05fab2bbceafd2f83d56f25063c48d8a",
+  "accepted_implementation_commit": "03e6d95",
+  "independent_acceptance_commit": "08698b4",
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v2",
+  "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+  "launch_environment": {
+    "OMP_NUM_THREADS": "2",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "limits": {
+    "diagnostic_branch_examples": 480,
+    "updates_per_arm": 200,
+    "exposures_per_arm": 600,
+    "samples_per_arm": 60,
+    "probe_seconds": 600,
+    "training_seconds_per_arm": 600,
+    "training_shared_seconds": 1200,
+    "sampling_shared_seconds": 5400,
+    "total_seconds": 7200,
+    "allocated_memory_bytes": 25769803776,
+    "GPUs": 1
+  },
+  "scope": "One new D/L/R queue. GPU preflight only after approval. Total clock starts before preflight. Stop on first timeout/OOM/nonfinite/identity/counter failure; preserve all completed artifacts and planned-slot records. No retry, GPU switch or CPU fallback.",
+  "authorized": true,
+  "approved_by": "user",
+  "recorded_at_utc": "2026-09-26T22:08:02.343514+00:00",
+  "user_instruction_reference": "用户在绑定 a802ef3b… 新 manifest、GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004 和全新 correction_authorized_20260927_v2 目录的 71088af 单次 D/L/R 授权申请后，明确回复「批准通过」。预算为480探针/10分钟、两臂各200 updates/10分钟、各60条完整采样共120条共享90分钟，单GPU/allocated≤24GiB/总2小时；首次故障停止，保留产物，不自动重试。"
+}

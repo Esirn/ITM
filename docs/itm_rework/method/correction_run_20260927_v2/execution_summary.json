@@ -1,0 +1,293 @@
+{
+  "version": "itm-correction-v2-execution-summary-v1",
+  "queue_status": "completed",
+  "exit_code": 0,
+  "retries": 0,
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v2",
+  "authorization": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/B0_CORRECTION_AUTHORIZATION_20260927_V2.json",
+    "sha256": "487c466901bf29e5e1f0848267b97caee0161e2c8ac809e5fa11772fd4e00564"
+  },
+  "implementation": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_implementation_20260927_v1/implementation.json",
+    "sha256": "a802ef3b03aea7bab7fff3fda5704cf56a2c5cf6c5ed36c693a892fc35d6de13"
+  },
+  "accepted_implementation_commit": "03e6d95",
+  "independent_acceptance_commit": "08698b4",
+  "gpu_preflight": {
+    "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+    "total_MiB": 24564,
+    "free_MiB": 24121,
+    "compute_processes": 0
+  },
+  "peak_allocated_bytes": 677558784,
+  "elapsed_seconds": 2423.5458787649404,
+  "phase_elapsed_seconds": {
+    "D": 133.4381391670322,
+    "L_train": 28.805575471022166,
+    "R_train": 33.80276382097509,
+    "sampling": 2227.274092052947
+  },
+  "time_definition": "Parent stage boundaries inferred from fixed, unclamped 600s phase deadlines and 5400s shared sample deadline; total includes preflight and all loading/saving/verification.",
+  "counters": {
+    "mdm_examples": 481680,
+    "encoder_examples": 2460,
+    "denoising_calls": 120000,
+    "updates_completed": 400,
+    "updates_attempted": 400,
+    "exposures": 1200
+  },
+  "consistency_checks": [
+    {
+      "case_id": "L_exact_length--000433-head-backbone_bypass",
+      "arm": "L_exact_length",
+      "condition": "backbone_bypass",
+      "reference": "L_exact_length--000433-head-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "L_exact_length--000433-wrists-backbone_bypass",
+      "arm": "L_exact_length",
+      "condition": "backbone_bypass",
+      "reference": "L_exact_length--000433-wrists-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "L_exact_length--000382-head-backbone_bypass",
+      "arm": "L_exact_length",
+      "condition": "backbone_bypass",
+      "reference": "L_exact_length--000382-head-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "L_exact_length--000382-wrists-backbone_bypass",
+      "arm": "L_exact_length",
+      "condition": "backbone_bypass",
+      "reference": "L_exact_length--000382-wrists-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "L_exact_length--000139-head-backbone_bypass",
+      "arm": "L_exact_length",
+      "condition": "backbone_bypass",
+      "reference": "L_exact_length--000139-head-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "L_exact_length--000139-wrists-backbone_bypass",
+      "arm": "L_exact_length",
+      "condition": "backbone_bypass",
+      "reference": "L_exact_length--000139-wrists-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-head-backbone_bypass",
+      "arm": "R_static_reference_delta",
+      "condition": "backbone_bypass",
+      "reference": "R_static_reference_delta--000433-head-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-head-physical_static",
+      "arm": "R_static_reference_delta",
+      "condition": "physical_static",
+      "reference": "R_static_reference_delta--000433-head-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-wrists-backbone_bypass",
+      "arm": "R_static_reference_delta",
+      "condition": "backbone_bypass",
+      "reference": "R_static_reference_delta--000433-wrists-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000433-wrists-physical_static",
+      "arm": "R_static_reference_delta",
+      "condition": "physical_static",
+      "reference": "R_static_reference_delta--000433-wrists-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-head-backbone_bypass",
+      "arm": "R_static_reference_delta",
+      "condition": "backbone_bypass",
+      "reference": "R_static_reference_delta--000382-head-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-head-physical_static",
+      "arm": "R_static_reference_delta",
+      "condition": "physical_static",
+      "reference": "R_static_reference_delta--000382-head-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-wrists-backbone_bypass",
+      "arm": "R_static_reference_delta",
+      "condition": "backbone_bypass",
+      "reference": "R_static_reference_delta--000382-wrists-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000382-wrists-physical_static",
+      "arm": "R_static_reference_delta",
+      "condition": "physical_static",
+      "reference": "R_static_reference_delta--000382-wrists-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-head-backbone_bypass",
+      "arm": "R_static_reference_delta",
+      "condition": "backbone_bypass",
+      "reference": "R_static_reference_delta--000139-head-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-head-physical_static",
+      "arm": "R_static_reference_delta",
+      "condition": "physical_static",
+      "reference": "R_static_reference_delta--000139-head-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-wrists-backbone_bypass",
+      "arm": "R_static_reference_delta",
+      "condition": "backbone_bypass",
+      "reference": "R_static_reference_delta--000139-wrists-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "R_static_reference_delta--000139-wrists-physical_static",
+      "arm": "R_static_reference_delta",
+      "condition": "physical_static",
+      "reference": "R_static_reference_delta--000139-wrists-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000027-head-physical_static",
+      "arm": "R_static_reference_delta",
+      "condition": "physical_static",
+      "reference": "R_static_reference_delta--train-000027-head-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000027-wrists-physical_static",
+      "arm": "R_static_reference_delta",
+      "condition": "physical_static",
+      "reference": "R_static_reference_delta--train-000027-wrists-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000506-head-physical_static",
+      "arm": "R_static_reference_delta",
+      "condition": "physical_static",
+      "reference": "R_static_reference_delta--train-000506-head-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-000506-wrists-physical_static",
+      "arm": "R_static_reference_delta",
+      "condition": "physical_static",
+      "reference": "R_static_reference_delta--train-000506-wrists-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-004728-head-physical_static",
+      "arm": "R_static_reference_delta",
+      "condition": "physical_static",
+      "reference": "R_static_reference_delta--train-004728-head-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    },
+    {
+      "case_id": "R_static_reference_delta--train-004728-wrists-physical_static",
+      "arm": "R_static_reference_delta",
+      "condition": "physical_static",
+      "reference": "R_static_reference_delta--train-004728-wrists-text_only",
+      "max_abs_m": 0.0,
+      "bitwise": true
+    }
+  ],
+  "delivery_integrity": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/correction_run_20260927_v2/delivery_integrity.json",
+    "sha256": "c61fd09ac71740031bbad20cdadca7c262baa7ae416529edc22070601e7c0c09"
+  },
+  "verification_script": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/correction_run_20260927_v2/verify_delivery.py",
+    "sha256": "6ffd758143d433bcda3ab555935d8854e99ea720071b7a9d358ee0ac5178791d"
+  },
+  "preserved_runtime_copies": [
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/correction_run_20260927_v2/runtime/D_probe.log",
+      "sha256": "ac3c938feb73ef13f839e2f6772d247ffc219407c700d1ed59ea645dadf036c2",
+      "original_path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v2/runtime/D_probe.log",
+      "byte_identical": true
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/correction_run_20260927_v2/runtime/D_probe.receipt.json",
+      "sha256": "266f0bd9eb418892271d67ed21e1da49548f18735ce7035ba23bfb13f6f8da11",
+      "original_path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v2/runtime/D_probe.receipt.json",
+      "byte_identical": true
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/correction_run_20260927_v2/runtime/L_train.log",
+      "sha256": "ac3c938feb73ef13f839e2f6772d247ffc219407c700d1ed59ea645dadf036c2",
+      "original_path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v2/runtime/L_train.log",
+      "byte_identical": true
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/correction_run_20260927_v2/runtime/L_train.receipt.json",
+      "sha256": "0bcc9185684ffc24c97282d9c43bf73b4f3ec3033f4b05288b741a85d6984ae4",
+      "original_path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v2/runtime/L_train.receipt.json",
+      "byte_identical": true
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/correction_run_20260927_v2/runtime/R_train.log",
+      "sha256": "ac3c938feb73ef13f839e2f6772d247ffc219407c700d1ed59ea645dadf036c2",
+      "original_path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v2/runtime/R_train.log",
+      "byte_identical": true
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/correction_run_20260927_v2/runtime/R_train.receipt.json",
+      "sha256": "d7a1f0bbc560a5954b968570fef39d4b8c9d3f292e8b0829bb94111fe06bec45",
+      "original_path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v2/runtime/R_train.receipt.json",
+      "byte_identical": true
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/correction_run_20260927_v2/runtime/status.json",
+      "sha256": "33a7c6d748ae210e447bf3cdfaccf528e7d5df41398fc4a75facb912844625eb",
+      "original_path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v2/runtime/status.json",
+      "byte_identical": true
+    }
+  ],
+  "original_runtime_file_count": 370,
+  "post_run_gpu_query": {
+    "command": "nvidia-smi --query-compute-apps=gpu_uuid,pid,used_memory --format=csv,noheader",
+    "stdout": "GPU-43c2f925-db05-c655-bb46-25196d0627d6, 770431, 1478 MiB\n",
+    "authorized_gpu_has_compute_process": false
+  },
+  "evaluation_status": "Pending owner02 independent evaluation; execution completeness does not certify model effectiveness"
+}
