@@ -1,0 +1,1174 @@
+{
+  "read_commit": "c6aef58",
+  "status": "CPU_existing_artifacts_only",
+  "anchors": [
+    {
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "case_id": "R_static_reference_delta--000433-head-paired",
+      "input_statistics_dimensionless": {
+        "active_input_rms": 0.5419789521804421,
+        "active_delta_rms": 0.21376782632797126,
+        "acceleration_delta_rms": 0.4188675765801681,
+        "orientation_delta_rms": 0.049452629123905884,
+        "active_input_abs_max": 1.3217192888259888
+      },
+      "owner02_metrics": {
+        "paired": {
+          "global_MPJPE_m": 0.1739429818748426,
+          "root_relative_MPJPE_m": 0.14857954131912612,
+          "head_or_wrists_position_joint_proxy_m": 0.18412563593899678,
+          "velocity_joint_proxy_RMSE_m_s": 1.0807518110669956
+        },
+        "text_only": {
+          "global_MPJPE_m": 0.16816159846173878,
+          "root_relative_MPJPE_m": 0.1499295875658201,
+          "head_or_wrists_position_joint_proxy_m": 0.1957897975700003,
+          "velocity_joint_proxy_RMSE_m_s": 1.0842305717400034
+        },
+        "physical_static": {
+          "global_MPJPE_m": 0.16816159846173878,
+          "root_relative_MPJPE_m": 0.1499295875658201,
+          "head_or_wrists_position_joint_proxy_m": 0.1957897975700003,
+          "velocity_joint_proxy_RMSE_m_s": 1.0842305717400034
+        },
+        "tail_reversed": {
+          "global_MPJPE_m": 0.16292131612923677,
+          "root_relative_MPJPE_m": 0.1431238131638556,
+          "head_or_wrists_position_joint_proxy_m": 0.17933329567627396,
+          "velocity_joint_proxy_RMSE_m_s": 1.0296500883658952
+        },
+        "imu_only": {
+          "global_MPJPE_m": 0.27501920378080197,
+          "root_relative_MPJPE_m": 0.18677802118348916,
+          "head_or_wrists_position_joint_proxy_m": 0.2878084281704832,
+          "velocity_joint_proxy_RMSE_m_s": 1.1878397392801092
+        }
+      }
+    },
+    {
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "case_id": "R_static_reference_delta--000433-wrists-paired",
+      "input_statistics_dimensionless": {
+        "active_input_rms": 0.5431051140561923,
+        "active_delta_rms": 0.36584041959354807,
+        "acceleration_delta_rms": 0.42311087148340104,
+        "orientation_delta_rms": 0.344641862840297,
+        "active_input_abs_max": 1.5095500946044922
+      },
+      "owner02_metrics": {
+        "paired": {
+          "global_MPJPE_m": 0.1929853386322426,
+          "root_relative_MPJPE_m": 0.1662716624314771,
+          "head_or_wrists_position_joint_proxy_m": 0.3762899915064461,
+          "velocity_joint_proxy_RMSE_m_s": 0.7685316413761634
+        },
+        "text_only": {
+          "global_MPJPE_m": 0.20671907864851954,
+          "root_relative_MPJPE_m": 0.15178234381433492,
+          "head_or_wrists_position_joint_proxy_m": 0.34077079478329064,
+          "velocity_joint_proxy_RMSE_m_s": 0.7631499437146759
+        },
+        "physical_static": {
+          "global_MPJPE_m": 0.20671907864851954,
+          "root_relative_MPJPE_m": 0.15178234381433492,
+          "head_or_wrists_position_joint_proxy_m": 0.34077079478329064,
+          "velocity_joint_proxy_RMSE_m_s": 0.7631499437146759
+        },
+        "tail_reversed": {
+          "global_MPJPE_m": 0.20530301670184237,
+          "root_relative_MPJPE_m": 0.1697711772560336,
+          "head_or_wrists_position_joint_proxy_m": 0.3882098607834614,
+          "velocity_joint_proxy_RMSE_m_s": 0.8015816908375853
+        },
+        "imu_only": {
+          "global_MPJPE_m": 1.879554664281678,
+          "root_relative_MPJPE_m": 0.3210978871541008,
+          "head_or_wrists_position_joint_proxy_m": 2.058211137799084,
+          "velocity_joint_proxy_RMSE_m_s": 2.751202710702321
+        }
+      }
+    },
+    {
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "case_id": "R_static_reference_delta--000382-head-paired",
+      "input_statistics_dimensionless": {
+        "active_input_rms": 0.5011238083374255,
+        "active_delta_rms": 0.03798171410199603,
+        "acceleration_delta_rms": 0.06536905929692371,
+        "orientation_delta_rms": 0.022340758798948063,
+        "active_input_abs_max": 0.9995220899581909
+      },
+      "owner02_metrics": {
+        "paired": {
+          "global_MPJPE_m": 0.05404233514352362,
+          "root_relative_MPJPE_m": 0.05464956202973098,
+          "head_or_wrists_position_joint_proxy_m": 0.023506518566269726,
+          "velocity_joint_proxy_RMSE_m_s": 0.31460645935759685
+        },
+        "text_only": {
+          "global_MPJPE_m": 0.05411560319603193,
+          "root_relative_MPJPE_m": 0.05456446002737998,
+          "head_or_wrists_position_joint_proxy_m": 0.022002676091784818,
+          "velocity_joint_proxy_RMSE_m_s": 0.3129043113559227
+        },
+        "physical_static": {
+          "global_MPJPE_m": 0.05411560319603193,
+          "root_relative_MPJPE_m": 0.05456446002737998,
+          "head_or_wrists_position_joint_proxy_m": 0.022002676091784818,
+          "velocity_joint_proxy_RMSE_m_s": 0.3129043113559227
+        },
+        "tail_reversed": {
+          "global_MPJPE_m": 0.0537342466691929,
+          "root_relative_MPJPE_m": 0.05422067521996494,
+          "head_or_wrists_position_joint_proxy_m": 0.025380808625736037,
+          "velocity_joint_proxy_RMSE_m_s": 0.31586378321558817
+        },
+        "imu_only": {
+          "global_MPJPE_m": 0.26916643105684923,
+          "root_relative_MPJPE_m": 0.15816907564990026,
+          "head_or_wrists_position_joint_proxy_m": 0.24034328931925086,
+          "velocity_joint_proxy_RMSE_m_s": 0.9894290990207424
+        }
+      }
+    },
+    {
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "case_id": "R_static_reference_delta--000382-wrists-paired",
+      "input_statistics_dimensionless": {
+        "active_input_rms": 0.560477738327031,
+        "active_delta_rms": 0.5965381836257402,
+        "acceleration_delta_rms": 0.5061719009428051,
+        "orientation_delta_rms": 0.6237577587466513,
+        "active_input_abs_max": 2.0472843647003174
+      },
+      "owner02_metrics": {
+        "paired": {
+          "global_MPJPE_m": 0.3506671824873678,
+          "root_relative_MPJPE_m": 0.2760330014767292,
+          "head_or_wrists_position_joint_proxy_m": 0.29933804898435235,
+          "velocity_joint_proxy_RMSE_m_s": 0.2374035337258023
+        },
+        "text_only": {
+          "global_MPJPE_m": 0.061830781874366046,
+          "root_relative_MPJPE_m": 0.06209187189964028,
+          "head_or_wrists_position_joint_proxy_m": 0.2337560391461312,
+          "velocity_joint_proxy_RMSE_m_s": 0.25209210184064695
+        },
+        "physical_static": {
+          "global_MPJPE_m": 0.061830781874366046,
+          "root_relative_MPJPE_m": 0.06209187189964028,
+          "head_or_wrists_position_joint_proxy_m": 0.2337560391461312,
+          "velocity_joint_proxy_RMSE_m_s": 0.25209210184064695
+        },
+        "tail_reversed": {
+          "global_MPJPE_m": 0.3337975777661732,
+          "root_relative_MPJPE_m": 0.26749921022740825,
+          "head_or_wrists_position_joint_proxy_m": 0.2851669248831881,
+          "velocity_joint_proxy_RMSE_m_s": 0.25646585041537984
+        },
+        "imu_only": {
+          "global_MPJPE_m": 1.917867880669371,
+          "root_relative_MPJPE_m": 0.27149777424874405,
+          "head_or_wrists_position_joint_proxy_m": 1.8890571076398923,
+          "velocity_joint_proxy_RMSE_m_s": 1.1226423923059672
+        }
+      }
+    },
+    {
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "case_id": "R_static_reference_delta--000139-head-paired",
+      "input_statistics_dimensionless": {
+        "active_input_rms": 0.5559960845371327,
+        "active_delta_rms": 0.2837703502380195,
+        "acceleration_delta_rms": 0.4860205117819958,
+        "orientation_delta_rms": 0.169200580006886,
+        "active_input_abs_max": 1.8709015846252441
+      },
+      "owner02_metrics": {
+        "paired": {
+          "global_MPJPE_m": 1.9590133397570233,
+          "root_relative_MPJPE_m": 0.17013841540195954,
+          "head_or_wrists_position_joint_proxy_m": 1.8648565343818375,
+          "velocity_joint_proxy_RMSE_m_s": 1.1963865006844634
+        },
+        "text_only": {
+          "global_MPJPE_m": 2.041549681441015,
+          "root_relative_MPJPE_m": 0.18072438038451452,
+          "head_or_wrists_position_joint_proxy_m": 1.9303003289989635,
+          "velocity_joint_proxy_RMSE_m_s": 1.2287652259799748
+        },
+        "physical_static": {
+          "global_MPJPE_m": 2.041549681441015,
+          "root_relative_MPJPE_m": 0.18072438038451452,
+          "head_or_wrists_position_joint_proxy_m": 1.9303003289989635,
+          "velocity_joint_proxy_RMSE_m_s": 1.2287652259799748
+        },
+        "tail_reversed": {
+          "global_MPJPE_m": 2.07241965611205,
+          "root_relative_MPJPE_m": 0.16453783243555134,
+          "head_or_wrists_position_joint_proxy_m": 1.9912981022448137,
+          "velocity_joint_proxy_RMSE_m_s": 1.2022489848799678
+        },
+        "imu_only": {
+          "global_MPJPE_m": 1.466378909867916,
+          "root_relative_MPJPE_m": 0.15125059797760426,
+          "head_or_wrists_position_joint_proxy_m": 1.4500173021214444,
+          "velocity_joint_proxy_RMSE_m_s": 1.0029304634758132
+        }
+      }
+    },
+    {
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "case_id": "R_static_reference_delta--000139-wrists-paired",
+      "input_statistics_dimensionless": {
+        "active_input_rms": 0.5328558069595556,
+        "active_delta_rms": 0.23268178462890787,
+        "acceleration_delta_rms": 0.3680665482685881,
+        "orientation_delta_rms": 0.16440830031562786,
+        "active_input_abs_max": 1.3750308752059937
+      },
+      "owner02_metrics": {
+        "paired": {
+          "global_MPJPE_m": 2.1989543336581217,
+          "root_relative_MPJPE_m": 0.14698163089562694,
+          "head_or_wrists_position_joint_proxy_m": 2.232053404206437,
+          "velocity_joint_proxy_RMSE_m_s": 1.1470856705606232
+        },
+        "text_only": {
+          "global_MPJPE_m": 2.152969169955402,
+          "root_relative_MPJPE_m": 0.1652894101010941,
+          "head_or_wrists_position_joint_proxy_m": 2.241965218846514,
+          "velocity_joint_proxy_RMSE_m_s": 1.1405817882310356
+        },
+        "physical_static": {
+          "global_MPJPE_m": 2.152969169955402,
+          "root_relative_MPJPE_m": 0.1652894101010941,
+          "head_or_wrists_position_joint_proxy_m": 2.241965218846514,
+          "velocity_joint_proxy_RMSE_m_s": 1.1405817882310356
+        },
+        "tail_reversed": {
+          "global_MPJPE_m": 2.0245031237585938,
+          "root_relative_MPJPE_m": 0.14674822637568224,
+          "head_or_wrists_position_joint_proxy_m": 2.0629813069980574,
+          "velocity_joint_proxy_RMSE_m_s": 1.1920739943324343
+        },
+        "imu_only": {
+          "global_MPJPE_m": 3.0508598659391857,
+          "root_relative_MPJPE_m": 0.17589812145862813,
+          "head_or_wrists_position_joint_proxy_m": 3.088892716069243,
+          "velocity_joint_proxy_RMSE_m_s": 1.7891440824125642
+        }
+      }
+    },
+    {
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "case_id": "R_static_reference_delta--train-000027-head-paired",
+      "input_statistics_dimensionless": {
+        "active_input_rms": 1.0075646926799637,
+        "active_delta_rms": 0.9139777762221292,
+        "acceleration_delta_rms": 1.7498913660584001,
+        "orientation_delta_rms": 0.30512385938940717,
+        "active_input_abs_max": 7.0266242027282715
+      },
+      "owner02_metrics": {
+        "paired": {
+          "global_MPJPE_m": 0.4225174519122246,
+          "root_relative_MPJPE_m": 0.10761025545108267,
+          "head_or_wrists_position_joint_proxy_m": 0.3987008748470608,
+          "velocity_joint_proxy_RMSE_m_s": 1.019852977972832
+        },
+        "text_only": {
+          "global_MPJPE_m": 0.7966659661874215,
+          "root_relative_MPJPE_m": 0.22987378985758783,
+          "head_or_wrists_position_joint_proxy_m": 0.7238647342545755,
+          "velocity_joint_proxy_RMSE_m_s": 2.148893755754723
+        },
+        "physical_static": {
+          "global_MPJPE_m": 0.7966659661874215,
+          "root_relative_MPJPE_m": 0.22987378985758783,
+          "head_or_wrists_position_joint_proxy_m": 0.7238647342545755,
+          "velocity_joint_proxy_RMSE_m_s": 2.148893755754723
+        },
+        "tail_reversed": null,
+        "imu_only": null
+      }
+    },
+    {
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "case_id": "R_static_reference_delta--train-000027-wrists-paired",
+      "input_statistics_dimensionless": {
+        "active_input_rms": 1.05022096004285,
+        "active_delta_rms": 1.0137924763523984,
+        "acceleration_delta_rms": 1.8476998471392085,
+        "orientation_delta_rms": 0.4820463377852993,
+        "active_input_abs_max": 6.661087512969971
+      },
+      "owner02_metrics": {
+        "paired": {
+          "global_MPJPE_m": 0.34646944930993845,
+          "root_relative_MPJPE_m": 0.07381092217755415,
+          "head_or_wrists_position_joint_proxy_m": 0.35560243875368197,
+          "velocity_joint_proxy_RMSE_m_s": 0.7140960951772499
+        },
+        "text_only": {
+          "global_MPJPE_m": 0.7323662175939466,
+          "root_relative_MPJPE_m": 0.2577438918576163,
+          "head_or_wrists_position_joint_proxy_m": 0.8883763926439244,
+          "velocity_joint_proxy_RMSE_m_s": 2.2354270646466126
+        },
+        "physical_static": {
+          "global_MPJPE_m": 0.7323662175939466,
+          "root_relative_MPJPE_m": 0.2577438918576163,
+          "head_or_wrists_position_joint_proxy_m": 0.8883763926439244,
+          "velocity_joint_proxy_RMSE_m_s": 2.2354270646466126
+        },
+        "tail_reversed": null,
+        "imu_only": null
+      }
+    },
+    {
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "case_id": "R_static_reference_delta--train-000506-head-paired",
+      "input_statistics_dimensionless": {
+        "active_input_rms": 0.586197683689342,
+        "active_delta_rms": 0.31721261276813634,
+        "acceleration_delta_rms": 0.6117069831419844,
+        "orientation_delta_rms": 0.09714239303222649,
+        "active_input_abs_max": 1.751617193222046
+      },
+      "owner02_metrics": {
+        "paired": {
+          "global_MPJPE_m": 0.8287056505286985,
+          "root_relative_MPJPE_m": 0.2341228713445953,
+          "head_or_wrists_position_joint_proxy_m": 0.877742350812392,
+          "velocity_joint_proxy_RMSE_m_s": 0.6531780394742148
+        },
+        "text_only": {
+          "global_MPJPE_m": 1.032514651925286,
+          "root_relative_MPJPE_m": 0.2709724325970263,
+          "head_or_wrists_position_joint_proxy_m": 1.0877391340174276,
+          "velocity_joint_proxy_RMSE_m_s": 0.707864881293887
+        },
+        "physical_static": {
+          "global_MPJPE_m": 1.032514651925286,
+          "root_relative_MPJPE_m": 0.2709724325970263,
+          "head_or_wrists_position_joint_proxy_m": 1.0877391340174276,
+          "velocity_joint_proxy_RMSE_m_s": 0.707864881293887
+        },
+        "tail_reversed": null,
+        "imu_only": null
+      }
+    },
+    {
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "case_id": "R_static_reference_delta--train-000506-wrists-paired",
+      "input_statistics_dimensionless": {
+        "active_input_rms": 0.5367844551858001,
+        "active_delta_rms": 0.21468969496399667,
+        "acceleration_delta_rms": 0.39027852393347245,
+        "orientation_delta_rms": 0.10335913804343533,
+        "active_input_abs_max": 1.3741214275360107
+      },
+      "owner02_metrics": {
+        "paired": {
+          "global_MPJPE_m": 0.6643535687212168,
+          "root_relative_MPJPE_m": 0.2583408255256505,
+          "head_or_wrists_position_joint_proxy_m": 0.7013771344497015,
+          "velocity_joint_proxy_RMSE_m_s": 0.6275730223802487
+        },
+        "text_only": {
+          "global_MPJPE_m": 1.3656369650452518,
+          "root_relative_MPJPE_m": 0.3258104688493805,
+          "head_or_wrists_position_joint_proxy_m": 1.3624396473792861,
+          "velocity_joint_proxy_RMSE_m_s": 0.7346053550708416
+        },
+        "physical_static": {
+          "global_MPJPE_m": 1.3656369650452518,
+          "root_relative_MPJPE_m": 0.3258104688493805,
+          "head_or_wrists_position_joint_proxy_m": 1.3624396473792861,
+          "velocity_joint_proxy_RMSE_m_s": 0.7346053550708416
+        },
+        "tail_reversed": null,
+        "imu_only": null
+      }
+    },
+    {
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "case_id": "R_static_reference_delta--train-004728-head-paired",
+      "input_statistics_dimensionless": {
+        "active_input_rms": 0.5435887352037103,
+        "active_delta_rms": 0.24992027620347163,
+        "acceleration_delta_rms": 0.42643947917972946,
+        "orientation_delta_rms": 0.15054340285268702,
+        "active_input_abs_max": 4.41088342666626
+      },
+      "owner02_metrics": {
+        "paired": {
+          "global_MPJPE_m": 0.6101264705398676,
+          "root_relative_MPJPE_m": 0.31254965353761294,
+          "head_or_wrists_position_joint_proxy_m": 0.5958164702992466,
+          "velocity_joint_proxy_RMSE_m_s": 0.5560070590987714
+        },
+        "text_only": {
+          "global_MPJPE_m": 0.43359096815465664,
+          "root_relative_MPJPE_m": 0.3477909236111064,
+          "head_or_wrists_position_joint_proxy_m": 0.49817787102525674,
+          "velocity_joint_proxy_RMSE_m_s": 0.5094993343124649
+        },
+        "physical_static": {
+          "global_MPJPE_m": 0.43359096815465664,
+          "root_relative_MPJPE_m": 0.3477909236111064,
+          "head_or_wrists_position_joint_proxy_m": 0.49817787102525674,
+          "velocity_joint_proxy_RMSE_m_s": 0.5094993343124649
+        },
+        "tail_reversed": null,
+        "imu_only": null
+      }
+    },
+    {
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "case_id": "R_static_reference_delta--train-004728-wrists-paired",
+      "input_statistics_dimensionless": {
+        "active_input_rms": 0.5342984958866877,
+        "active_delta_rms": 0.6563713834397608,
+        "acceleration_delta_rms": 0.3763088910558637,
+        "orientation_delta_rms": 0.7261049489127605,
+        "active_input_abs_max": 3.2750208377838135
+      },
+      "owner02_metrics": {
+        "paired": {
+          "global_MPJPE_m": 0.20222501935945483,
+          "root_relative_MPJPE_m": 0.09744157736041967,
+          "head_or_wrists_position_joint_proxy_m": 0.2219460295376003,
+          "velocity_joint_proxy_RMSE_m_s": 0.30689370865820276
+        },
+        "text_only": {
+          "global_MPJPE_m": 0.4040989592560485,
+          "root_relative_MPJPE_m": 0.3233433332575538,
+          "head_or_wrists_position_joint_proxy_m": 0.6258679950393966,
+          "velocity_joint_proxy_RMSE_m_s": 0.413768444347061
+        },
+        "physical_static": {
+          "global_MPJPE_m": 0.4040989592560485,
+          "root_relative_MPJPE_m": 0.3233433332575538,
+          "head_or_wrists_position_joint_proxy_m": 0.6258679950393966,
+          "velocity_joint_proxy_RMSE_m_s": 0.413768444347061
+        },
+        "tail_reversed": null,
+        "imu_only": null
+      }
+    }
+  ],
+  "training": [
+    {
+      "arm": "L_exact_length",
+      "updates": 200,
+      "exposures": 600,
+      "condition_counts": {
+        "text=1,imu=1": 495,
+        "text=1,imu=0": 58,
+        "text=0,imu=1": 43,
+        "text=0,imu=0": 4
+      },
+      "descriptive_loss_strata": [
+        {
+          "stratum": "000027/head/t0/imu0",
+          "n": 3,
+          "mean": 0.023537205532193184,
+          "min": 0.0223209448158741,
+          "max": 0.02585526555776596
+        },
+        {
+          "stratum": "000027/head/t0/imu1",
+          "n": 26,
+          "mean": 0.021844875998795033,
+          "min": 0.01670772396028042,
+          "max": 0.025138599798083305
+        },
+        {
+          "stratum": "000027/head/t1/imu0",
+          "n": 3,
+          "mean": 0.03649570420384407,
+          "min": 0.03481275960803032,
+          "max": 0.03911733254790306
+        },
+        {
+          "stratum": "000027/head/t1/imu1",
+          "n": 18,
+          "mean": 0.029173249792721536,
+          "min": 0.023255489766597748,
+          "max": 0.03801475837826729
+        },
+        {
+          "stratum": "000027/head/t2/imu0",
+          "n": 2,
+          "mean": 0.06560908071696758,
+          "min": 0.0437958650290966,
+          "max": 0.08742229640483856
+        },
+        {
+          "stratum": "000027/head/t2/imu1",
+          "n": 23,
+          "mean": 0.050052500451388565,
+          "min": 0.03501239791512489,
+          "max": 0.07023268193006516
+        },
+        {
+          "stratum": "000027/head/t3/imu0",
+          "n": 4,
+          "mean": 0.19889825955033302,
+          "min": 0.09449731558561325,
+          "max": 0.3315519392490387
+        },
+        {
+          "stratum": "000027/head/t3/imu1",
+          "n": 21,
+          "mean": 0.18861125019334612,
+          "min": 0.07257852703332901,
+          "max": 0.8445771336555481
+        },
+        {
+          "stratum": "000027/wrists/t0/imu0",
+          "n": 4,
+          "mean": 0.025180764496326447,
+          "min": 0.022809699177742004,
+          "max": 0.02667953632771969
+        },
+        {
+          "stratum": "000027/wrists/t0/imu1",
+          "n": 28,
+          "mean": 0.021735400493655885,
+          "min": 0.015739858150482178,
+          "max": 0.05844196677207947
+        },
+        {
+          "stratum": "000027/wrists/t1/imu0",
+          "n": 2,
+          "mean": 0.03343752399086952,
+          "min": 0.031143270432949066,
+          "max": 0.03573177754878998
+        },
+        {
+          "stratum": "000027/wrists/t1/imu1",
+          "n": 18,
+          "mean": 0.029229654516610835,
+          "min": 0.022316766902804375,
+          "max": 0.036074064671993256
+        },
+        {
+          "stratum": "000027/wrists/t2/imu0",
+          "n": 4,
+          "mean": 0.07599408365786076,
+          "min": 0.056088000535964966,
+          "max": 0.09009021520614624
+        },
+        {
+          "stratum": "000027/wrists/t2/imu1",
+          "n": 22,
+          "mean": 0.05394608595154502,
+          "min": 0.03539756312966347,
+          "max": 0.0789416953921318
+        },
+        {
+          "stratum": "000027/wrists/t3/imu0",
+          "n": 2,
+          "mean": 0.12335076928138733,
+          "min": 0.11018870770931244,
+          "max": 0.13651283085346222
+        },
+        {
+          "stratum": "000027/wrists/t3/imu1",
+          "n": 20,
+          "mean": 0.22616134509444236,
+          "min": 0.06478960067033768,
+          "max": 1.1361212730407715
+        },
+        {
+          "stratum": "000506/head/t0/imu0",
+          "n": 2,
+          "mean": 0.008904745336622,
+          "min": 0.0085637541487813,
+          "max": 0.0092457365244627
+        },
+        {
+          "stratum": "000506/head/t0/imu1",
+          "n": 23,
+          "mean": 0.009317885578164587,
+          "min": 0.006843609735369682,
+          "max": 0.013237479142844677
+        },
+        {
+          "stratum": "000506/head/t1/imu0",
+          "n": 2,
+          "mean": 0.012109842617064714,
+          "min": 0.011862101964652538,
+          "max": 0.01235758326947689
+        },
+        {
+          "stratum": "000506/head/t1/imu1",
+          "n": 25,
+          "mean": 0.01336168996989727,
+          "min": 0.008599666878581047,
+          "max": 0.01856219582259655
+        },
+        {
+          "stratum": "000506/head/t2/imu1",
+          "n": 21,
+          "mean": 0.020655739431579907,
+          "min": 0.014492440037429333,
+          "max": 0.02797270566225052
+        },
+        {
+          "stratum": "000506/head/t3/imu0",
+          "n": 3,
+          "mean": 0.20117729405562082,
+          "min": 0.06529151648283005,
+          "max": 0.4690878391265869
+        },
+        {
+          "stratum": "000506/head/t3/imu1",
+          "n": 24,
+          "mean": 0.08034639184673627,
+          "min": 0.025075454264879227,
+          "max": 0.36136388778686523
+        },
+        {
+          "stratum": "000506/wrists/t0/imu0",
+          "n": 2,
+          "mean": 0.010908013675361872,
+          "min": 0.010883943177759647,
+          "max": 0.010932084172964096
+        },
+        {
+          "stratum": "000506/wrists/t0/imu1",
+          "n": 19,
+          "mean": 0.009883706212828034,
+          "min": 0.007110173813998699,
+          "max": 0.012838286347687244
+        },
+        {
+          "stratum": "000506/wrists/t1/imu0",
+          "n": 2,
+          "mean": 0.013879969716072083,
+          "min": 0.01287112571299076,
+          "max": 0.014888813719153404
+        },
+        {
+          "stratum": "000506/wrists/t1/imu1",
+          "n": 20,
+          "mean": 0.012607631320133806,
+          "min": 0.009973431006073952,
+          "max": 0.016240743920207024
+        },
+        {
+          "stratum": "000506/wrists/t2/imu0",
+          "n": 4,
+          "mean": 0.020947500597685575,
+          "min": 0.018166035413742065,
+          "max": 0.024378985166549683
+        },
+        {
+          "stratum": "000506/wrists/t2/imu1",
+          "n": 24,
+          "mean": 0.021491663918520015,
+          "min": 0.013312382623553276,
+          "max": 0.03741646558046341
+        },
+        {
+          "stratum": "000506/wrists/t3/imu0",
+          "n": 1,
+          "mean": 0.06294210255146027,
+          "min": 0.06294210255146027,
+          "max": 0.06294210255146027
+        },
+        {
+          "stratum": "000506/wrists/t3/imu1",
+          "n": 28,
+          "mean": 0.12692631781101227,
+          "min": 0.026573356240987778,
+          "max": 0.9119125008583069
+        },
+        {
+          "stratum": "004728/head/t0/imu0",
+          "n": 1,
+          "mean": 0.020177075639367104,
+          "min": 0.020177075639367104,
+          "max": 0.020177075639367104
+        },
+        {
+          "stratum": "004728/head/t0/imu1",
+          "n": 18,
+          "mean": 0.014651975439240536,
+          "min": 0.011150981299579144,
+          "max": 0.027347715571522713
+        },
+        {
+          "stratum": "004728/head/t1/imu0",
+          "n": 5,
+          "mean": 0.02486256994307041,
+          "min": 0.022183064371347427,
+          "max": 0.027517851442098618
+        },
+        {
+          "stratum": "004728/head/t1/imu1",
+          "n": 24,
+          "mean": 0.018175580732834835,
+          "min": 0.011769820936024189,
+          "max": 0.03398071974515915
+        },
+        {
+          "stratum": "004728/head/t2/imu0",
+          "n": 2,
+          "mean": 0.031610618345439434,
+          "min": 0.03058207966387272,
+          "max": 0.03263915702700615
+        },
+        {
+          "stratum": "004728/head/t2/imu1",
+          "n": 27,
+          "mean": 0.02815473886827628,
+          "min": 0.017162874341011047,
+          "max": 0.049669649451971054
+        },
+        {
+          "stratum": "004728/head/t3/imu0",
+          "n": 5,
+          "mean": 0.4054576724767685,
+          "min": 0.06842843443155289,
+          "max": 1.6038070917129517
+        },
+        {
+          "stratum": "004728/head/t3/imu1",
+          "n": 18,
+          "mean": 0.08870301788879766,
+          "min": 0.0368269607424736,
+          "max": 0.3908362090587616
+        },
+        {
+          "stratum": "004728/wrists/t0/imu0",
+          "n": 2,
+          "mean": 0.020080983638763428,
+          "min": 0.019842956215143204,
+          "max": 0.02031901106238365
+        },
+        {
+          "stratum": "004728/wrists/t0/imu1",
+          "n": 21,
+          "mean": 0.017979855383081094,
+          "min": 0.011118889786303043,
+          "max": 0.05825082212686539
+        },
+        {
+          "stratum": "004728/wrists/t1/imu0",
+          "n": 4,
+          "mean": 0.02328309090808034,
+          "min": 0.02176010236144066,
+          "max": 0.026487529277801514
+        },
+        {
+          "stratum": "004728/wrists/t1/imu1",
+          "n": 30,
+          "mean": 0.018704260202745595,
+          "min": 0.011899261735379696,
+          "max": 0.029513472691178322
+        },
+        {
+          "stratum": "004728/wrists/t2/imu0",
+          "n": 3,
+          "mean": 0.03357488662004471,
+          "min": 0.030663561075925827,
+          "max": 0.037605974823236465
+        },
+        {
+          "stratum": "004728/wrists/t2/imu1",
+          "n": 13,
+          "mean": 0.029231560058318652,
+          "min": 0.019832255318760872,
+          "max": 0.0389833003282547
+        },
+        {
+          "stratum": "004728/wrists/t3/imu1",
+          "n": 27,
+          "mean": 0.16817204336877223,
+          "min": 0.04097432643175125,
+          "max": 1.578914761543274
+        }
+      ],
+      "interpretation": "Descriptive changing-weights/noise population, not convergence or final-model teacher-forced performance"
+    },
+    {
+      "arm": "R_static_reference_delta",
+      "updates": 200,
+      "exposures": 600,
+      "condition_counts": {
+        "text=1,imu=1": 495,
+        "text=1,imu=0": 58,
+        "text=0,imu=1": 43,
+        "text=0,imu=0": 4
+      },
+      "descriptive_loss_strata": [
+        {
+          "stratum": "000027/head/t0/imu0",
+          "n": 3,
+          "mean": 0.023537205532193184,
+          "min": 0.0223209448158741,
+          "max": 0.02585526555776596
+        },
+        {
+          "stratum": "000027/head/t0/imu1",
+          "n": 26,
+          "mean": 0.01860251621558116,
+          "min": 0.015779340639710426,
+          "max": 0.024743156507611275
+        },
+        {
+          "stratum": "000027/head/t1/imu0",
+          "n": 3,
+          "mean": 0.03649570420384407,
+          "min": 0.03481275960803032,
+          "max": 0.03911733254790306
+        },
+        {
+          "stratum": "000027/head/t1/imu1",
+          "n": 18,
+          "mean": 0.02565813913113541,
+          "min": 0.019329017028212547,
+          "max": 0.03423213213682175
+        },
+        {
+          "stratum": "000027/head/t2/imu0",
+          "n": 2,
+          "mean": 0.06560908071696758,
+          "min": 0.0437958650290966,
+          "max": 0.08742229640483856
+        },
+        {
+          "stratum": "000027/head/t2/imu1",
+          "n": 23,
+          "mean": 0.04492469957989195,
+          "min": 0.030887208878993988,
+          "max": 0.06867731362581253
+        },
+        {
+          "stratum": "000027/head/t3/imu0",
+          "n": 4,
+          "mean": 0.19889825955033302,
+          "min": 0.09449731558561325,
+          "max": 0.3315519392490387
+        },
+        {
+          "stratum": "000027/head/t3/imu1",
+          "n": 21,
+          "mean": 0.17393724407468522,
+          "min": 0.06473009288311005,
+          "max": 0.8527452945709229
+        },
+        {
+          "stratum": "000027/wrists/t0/imu0",
+          "n": 4,
+          "mean": 0.025180764496326447,
+          "min": 0.022809699177742004,
+          "max": 0.02667953632771969
+        },
+        {
+          "stratum": "000027/wrists/t0/imu1",
+          "n": 28,
+          "mean": 0.017991518235898445,
+          "min": 0.014099880121648312,
+          "max": 0.022288937121629715
+        },
+        {
+          "stratum": "000027/wrists/t1/imu0",
+          "n": 2,
+          "mean": 0.03343752399086952,
+          "min": 0.031143270432949066,
+          "max": 0.03573177754878998
+        },
+        {
+          "stratum": "000027/wrists/t1/imu1",
+          "n": 18,
+          "mean": 0.02529110811236832,
+          "min": 0.020946400240063667,
+          "max": 0.03195624053478241
+        },
+        {
+          "stratum": "000027/wrists/t2/imu0",
+          "n": 4,
+          "mean": 0.07599408365786076,
+          "min": 0.056088000535964966,
+          "max": 0.09009021520614624
+        },
+        {
+          "stratum": "000027/wrists/t2/imu1",
+          "n": 22,
+          "mean": 0.04811474647034298,
+          "min": 0.031009569764137268,
+          "max": 0.07673808187246323
+        },
+        {
+          "stratum": "000027/wrists/t3/imu0",
+          "n": 2,
+          "mean": 0.12335076928138733,
+          "min": 0.11018870770931244,
+          "max": 0.13651283085346222
+        },
+        {
+          "stratum": "000027/wrists/t3/imu1",
+          "n": 20,
+          "mean": 0.20026709903031586,
+          "min": 0.04976746812462807,
+          "max": 1.0388609170913696
+        },
+        {
+          "stratum": "000506/head/t0/imu0",
+          "n": 2,
+          "mean": 0.008904745336622,
+          "min": 0.0085637541487813,
+          "max": 0.0092457365244627
+        },
+        {
+          "stratum": "000506/head/t0/imu1",
+          "n": 23,
+          "mean": 0.008327266363346058,
+          "min": 0.007187532726675272,
+          "max": 0.009811189025640488
+        },
+        {
+          "stratum": "000506/head/t1/imu0",
+          "n": 2,
+          "mean": 0.012109842617064714,
+          "min": 0.011862101964652538,
+          "max": 0.01235758326947689
+        },
+        {
+          "stratum": "000506/head/t1/imu1",
+          "n": 25,
+          "mean": 0.013024223558604718,
+          "min": 0.009258762001991272,
+          "max": 0.016991281881928444
+        },
+        {
+          "stratum": "000506/head/t2/imu1",
+          "n": 21,
+          "mean": 0.022703698614523524,
+          "min": 0.015848621726036072,
+          "max": 0.032984212040901184
+        },
+        {
+          "stratum": "000506/head/t3/imu0",
+          "n": 3,
+          "mean": 0.20117729405562082,
+          "min": 0.06529151648283005,
+          "max": 0.4690878391265869
+        },
+        {
+          "stratum": "000506/head/t3/imu1",
+          "n": 24,
+          "mean": 0.09697587167223294,
+          "min": 0.031652018427848816,
+          "max": 0.4202936589717865
+        },
+        {
+          "stratum": "000506/wrists/t0/imu0",
+          "n": 2,
+          "mean": 0.010908013675361872,
+          "min": 0.010883943177759647,
+          "max": 0.010932084172964096
+        },
+        {
+          "stratum": "000506/wrists/t0/imu1",
+          "n": 19,
+          "mean": 0.008093251773205242,
+          "min": 0.006853623781353235,
+          "max": 0.009215216152369976
+        },
+        {
+          "stratum": "000506/wrists/t1/imu0",
+          "n": 2,
+          "mean": 0.013879969716072083,
+          "min": 0.01287112571299076,
+          "max": 0.014888813719153404
+        },
+        {
+          "stratum": "000506/wrists/t1/imu1",
+          "n": 20,
+          "mean": 0.012137196538969875,
+          "min": 0.010001525282859802,
+          "max": 0.016846774145960808
+        },
+        {
+          "stratum": "000506/wrists/t2/imu0",
+          "n": 4,
+          "mean": 0.020947500597685575,
+          "min": 0.018166035413742065,
+          "max": 0.024378985166549683
+        },
+        {
+          "stratum": "000506/wrists/t2/imu1",
+          "n": 24,
+          "mean": 0.02261762643077721,
+          "min": 0.014358175918459892,
+          "max": 0.036576952785253525
+        },
+        {
+          "stratum": "000506/wrists/t3/imu0",
+          "n": 1,
+          "mean": 0.06294210255146027,
+          "min": 0.06294210255146027,
+          "max": 0.06294210255146027
+        },
+        {
+          "stratum": "000506/wrists/t3/imu1",
+          "n": 28,
+          "mean": 0.14379715287525738,
+          "min": 0.029264429584145546,
+          "max": 0.9998926520347595
+        },
+        {
+          "stratum": "004728/head/t0/imu0",
+          "n": 1,
+          "mean": 0.020177075639367104,
+          "min": 0.020177075639367104,
+          "max": 0.020177075639367104
+        },
+        {
+          "stratum": "004728/head/t0/imu1",
+          "n": 18,
+          "mean": 0.016033313651051786,
+          "min": 0.012180104851722717,
+          "max": 0.020691536366939545
+        },
+        {
+          "stratum": "004728/head/t1/imu0",
+          "n": 5,
+          "mean": 0.02486256994307041,
+          "min": 0.022183064371347427,
+          "max": 0.027517851442098618
+        },
+        {
+          "stratum": "004728/head/t1/imu1",
+          "n": 24,
+          "mean": 0.01889910874888301,
+          "min": 0.012757992371916771,
+          "max": 0.027922838926315308
+        },
+        {
+          "stratum": "004728/head/t2/imu0",
+          "n": 2,
+          "mean": 0.031610618345439434,
+          "min": 0.03058207966387272,
+          "max": 0.03263915702700615
+        },
+        {
+          "stratum": "004728/head/t2/imu1",
+          "n": 27,
+          "mean": 0.0309328918379766,
+          "min": 0.018491877242922783,
+          "max": 0.055239204317331314
+        },
+        {
+          "stratum": "004728/head/t3/imu0",
+          "n": 5,
+          "mean": 0.4054576724767685,
+          "min": 0.06842843443155289,
+          "max": 1.6038070917129517
+        },
+        {
+          "stratum": "004728/head/t3/imu1",
+          "n": 18,
+          "mean": 0.1076251237342755,
+          "min": 0.041972145438194275,
+          "max": 0.4934723377227783
+        },
+        {
+          "stratum": "004728/wrists/t0/imu0",
+          "n": 2,
+          "mean": 0.020080983638763428,
+          "min": 0.019842956215143204,
+          "max": 0.02031901106238365
+        },
+        {
+          "stratum": "004728/wrists/t0/imu1",
+          "n": 21,
+          "mean": 0.015454364497037161,
+          "min": 0.009975984692573547,
+          "max": 0.029444819316267967
+        },
+        {
+          "stratum": "004728/wrists/t1/imu0",
+          "n": 4,
+          "mean": 0.02328309090808034,
+          "min": 0.02176010236144066,
+          "max": 0.026487529277801514
+        },
+        {
+          "stratum": "004728/wrists/t1/imu1",
+          "n": 30,
+          "mean": 0.019444177796443304,
+          "min": 0.01161275990307331,
+          "max": 0.04751076176762581
+        },
+        {
+          "stratum": "004728/wrists/t2/imu0",
+          "n": 3,
+          "mean": 0.03357488662004471,
+          "min": 0.030663561075925827,
+          "max": 0.037605974823236465
+        },
+        {
+          "stratum": "004728/wrists/t2/imu1",
+          "n": 13,
+          "mean": 0.030272145970509604,
+          "min": 0.021773450076580048,
+          "max": 0.04258447885513306
+        },
+        {
+          "stratum": "004728/wrists/t3/imu1",
+          "n": 27,
+          "mean": 0.16330636885982971,
+          "min": 0.04405030980706215,
+          "max": 1.5749475955963135
+        }
+      ],
+      "interpretation": "Descriptive changing-weights/noise population, not convergence or final-model teacher-forced performance"
+    }
+  ],
+  "numerical_algebra_check": {
+    "unit_vs_joint_max_abs": 1.3322676295501878e-15,
+    "original_vs_joint_plus_text_max_abs": 3.552713678800501e-15,
+    "mse_decomposition_abs_error": 0.0
+  },
+  "new_model_forwards": 0,
+  "new_training_updates": 0,
+  "new_samples": 0,
+  "gpu_queries": 0,
+  "missing_evidence": [
+    "No fixed teacher-forced probes of final L/R",
+    "No stored L/R free-trajectory branch predictions",
+    "No evidence that unit guidance resolves either failure"
+  ]
+}

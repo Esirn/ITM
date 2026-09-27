@@ -1,0 +1,50 @@
+{
+  "version": "itm-sampling-alignment-proposal-v1",
+  "status": "proposed_not_frozen_not_authorized",
+  "authorized": false,
+  "read_commit": "c6aef58",
+  "training_updates": 0,
+  "new_checkpoints": 0,
+  "existing_checkpoint": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+    "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+  },
+  "diagnostics": {
+    "branch_examples": 480,
+    "encoder_examples_max": 576,
+    "maximum_seconds": 600
+  },
+  "sampling": {
+    "count": 60,
+    "K": 1,
+    "steps": 1000,
+    "denoising_calls_max": 60000,
+    "branch_examples_max": 240000,
+    "encoder_examples_max": 120,
+    "maximum_seconds_shared": 2400,
+    "trace_records_max": 240,
+    "trace_additional_model_forwards": 0
+  },
+  "totals": {
+    "MDM_branch_examples_max": 240480,
+    "encoder_examples_max": 696,
+    "GPUs": 1,
+    "allocated_memory_bytes": 25769803776,
+    "maximum_seconds": 3600
+  },
+  "stage_order": [
+    "Q_R_final_fixed_probes",
+    "S1_60_samples"
+  ],
+  "stop": "First timeout/OOM/nonfinite/identity/counter failure stops queue; retain every slot and completed artifact; no retries, fallback or extra cases",
+  "interpretation": "Poor finite probe scores do not change the predeclared sampler or select a checkpoint",
+  "gpu_uuid": null,
+  "run_directory": null,
+  "prerequisites": [
+    "02 freezes evaluation/slots/noise/tolerances/budget",
+    "01 implements versioned runner and CPU checks",
+    "02 software acceptance",
+    "new explicit user authorization bound to final implementation and run/GPU",
+    "GPU preflight"
+  ]
+}

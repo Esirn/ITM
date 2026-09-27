@@ -1,0 +1,14 @@
+{
+  "anchors": 12,
+  "existing_training_records": 400,
+  "proposed_probes": 480,
+  "proposed_samples": 60,
+  "proposed_updates": 0,
+  "new_model_forwards": 0,
+  "gpu_queries": 0,
+  "algebra": {
+    "unit_vs_joint_max_abs": 1.3322676295501878e-15,
+    "original_vs_joint_plus_text_max_abs": 3.552713678800501e-15,
+    "mse_decomposition_abs_error": 0.0
+  }
+}

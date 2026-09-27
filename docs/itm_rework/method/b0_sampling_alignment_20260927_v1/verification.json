@@ -1,0 +1,18 @@
+{
+  "status": "proposal_consistency_checks_passed",
+  "samples": 60,
+  "sample_population": {
+    "train": 18,
+    "val": 42
+  },
+  "probe_groups": 96,
+  "probe_branches": 480,
+  "training_updates_proposed": 0,
+  "trace_additional_forwards": 0,
+  "unchanged_historical_slot_fields_verified": true,
+  "source_hashes_verified": 424,
+  "new_real_model_forwards": 0,
+  "new_training_updates": 0,
+  "new_samples": 0,
+  "gpu_queries": 0
+}
