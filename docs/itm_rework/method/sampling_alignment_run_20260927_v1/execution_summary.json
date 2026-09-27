@@ -1,0 +1,305 @@
+{
+  "version": "itm-alignment-execution-summary-v1",
+  "status": "completed",
+  "exit_code": 0,
+  "retries": 0,
+  "authorization": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/B0_SAMPLING_ALIGNMENT_AUTHORIZATION_20260927.json",
+    "sha256": "cf75dbec9742fe041b573fe9502ea880fe064b40506fa558a5b4e21028cd45bb"
+  },
+  "implementation": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_implementation_20260927_v1/implementation.json",
+    "sha256": "793fdd9a95a102484d2dbc7579aa398f3af0120c66422ba6ec966cc01f8cb7c4"
+  },
+  "package": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_sampling_alignment_20260927_v1/package.json",
+    "sha256": "537895c45695a48cb4b5114941e4bf8cab3962c40be893fcc79b4c9eeb311d60"
+  },
+  "checkpoint": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+    "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+  },
+  "accepted_implementation_commit": "f9b3cb18053892dd9e66dbdf31085883a99b76d1",
+  "independent_acceptance_commit": "a90d3e7",
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1",
+  "gpu_preflight": {
+    "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+    "total_MiB": 24564,
+    "free_MiB": 24124,
+    "compute_processes": 0
+  },
+  "elapsed_seconds": 2043.6146058089798,
+  "phase_elapsed_seconds": {
+    "preflight_and_binding": 0.708106937003322,
+    "Q": 41.05934896192048,
+    "S1": 2001.847149910056
+  },
+  "time_definition": "Parent boundaries reconstructed from fixed unclamped Q600/S1_shared2400 deadlines; includes phase load/save/checks, with total clock before preflight.",
+  "peak_allocated_bytes": 535660544,
+  "counters": {
+    "Q_probes": 480,
+    "Q_batched_MDM_calls": 96,
+    "Q_encoder_examples": 576,
+    "S1_samples": 60,
+    "S1_denoising_calls": 60000,
+    "S1_MDM_branch_examples": 240000,
+    "S1_encoder_examples": 120,
+    "trace_records": 240,
+    "total_MDM_branch_examples": 240480,
+    "total_encoder_examples": 696,
+    "training_updates": 0,
+    "new_checkpoints": 0
+  },
+  "Q_static_checks": {
+    "count": 96,
+    "max_abs": 0.0,
+    "bitwise_count": 96
+  },
+  "trace_combination_max_error_over_bound": 0.06840279719297788,
+  "RIC_max_abs_m": 1.9073486328125e-06,
+  "consistency_checks": [
+    {
+      "case_id": "S1_R_unit_guidance--000433-head-imu_only",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "R_static_reference_delta--000433-head-imu_only",
+      "max_abs_m": 2.384185791015625e-07,
+      "rms_m": 3.299204037764024e-08,
+      "bitwise": false,
+      "count": 2706
+    },
+    {
+      "case_id": "S1_R_unit_guidance--000433-head-backbone_bypass",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "S1_R_unit_guidance--000433-head-text_only",
+      "max_abs_m": 0.0,
+      "rms_m": 0.0,
+      "bitwise": true,
+      "count": 2706
+    },
+    {
+      "case_id": "S1_R_unit_guidance--000433-head-physical_static",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "S1_R_unit_guidance--000433-head-text_only",
+      "max_abs_m": 0.0,
+      "rms_m": 0.0,
+      "bitwise": true,
+      "count": 2706
+    },
+    {
+      "case_id": "S1_R_unit_guidance--000433-wrists-imu_only",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "R_static_reference_delta--000433-wrists-imu_only",
+      "max_abs_m": 4.76837158203125e-07,
+      "rms_m": 1.0647180616920318e-07,
+      "bitwise": false,
+      "count": 2706
+    },
+    {
+      "case_id": "S1_R_unit_guidance--000433-wrists-backbone_bypass",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "S1_R_unit_guidance--000433-wrists-text_only",
+      "max_abs_m": 0.0,
+      "rms_m": 0.0,
+      "bitwise": true,
+      "count": 2706
+    },
+    {
+      "case_id": "S1_R_unit_guidance--000433-wrists-physical_static",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "S1_R_unit_guidance--000433-wrists-text_only",
+      "max_abs_m": 0.0,
+      "rms_m": 0.0,
+      "bitwise": true,
+      "count": 2706
+    },
+    {
+      "case_id": "S1_R_unit_guidance--000382-head-imu_only",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "R_static_reference_delta--000382-head-imu_only",
+      "max_abs_m": 4.76837158203125e-07,
+      "rms_m": 4.949789280398034e-08,
+      "bitwise": false,
+      "count": 6204
+    },
+    {
+      "case_id": "S1_R_unit_guidance--000382-head-backbone_bypass",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "S1_R_unit_guidance--000382-head-text_only",
+      "max_abs_m": 0.0,
+      "rms_m": 0.0,
+      "bitwise": true,
+      "count": 6204
+    },
+    {
+      "case_id": "S1_R_unit_guidance--000382-head-physical_static",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "S1_R_unit_guidance--000382-head-text_only",
+      "max_abs_m": 0.0,
+      "rms_m": 0.0,
+      "bitwise": true,
+      "count": 6204
+    },
+    {
+      "case_id": "S1_R_unit_guidance--000382-wrists-imu_only",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "R_static_reference_delta--000382-wrists-imu_only",
+      "max_abs_m": 1.6689300537109375e-06,
+      "rms_m": 4.7466213102328636e-07,
+      "bitwise": false,
+      "count": 6204
+    },
+    {
+      "case_id": "S1_R_unit_guidance--000382-wrists-backbone_bypass",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "S1_R_unit_guidance--000382-wrists-text_only",
+      "max_abs_m": 0.0,
+      "rms_m": 0.0,
+      "bitwise": true,
+      "count": 6204
+    },
+    {
+      "case_id": "S1_R_unit_guidance--000382-wrists-physical_static",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "S1_R_unit_guidance--000382-wrists-text_only",
+      "max_abs_m": 0.0,
+      "rms_m": 0.0,
+      "bitwise": true,
+      "count": 6204
+    },
+    {
+      "case_id": "S1_R_unit_guidance--000139-head-imu_only",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "R_static_reference_delta--000139-head-imu_only",
+      "max_abs_m": 4.76837158203125e-07,
+      "rms_m": 7.853457099541021e-08,
+      "bitwise": false,
+      "count": 10758
+    },
+    {
+      "case_id": "S1_R_unit_guidance--000139-head-backbone_bypass",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "S1_R_unit_guidance--000139-head-text_only",
+      "max_abs_m": 0.0,
+      "rms_m": 0.0,
+      "bitwise": true,
+      "count": 10758
+    },
+    {
+      "case_id": "S1_R_unit_guidance--000139-head-physical_static",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "S1_R_unit_guidance--000139-head-text_only",
+      "max_abs_m": 0.0,
+      "rms_m": 0.0,
+      "bitwise": true,
+      "count": 10758
+    },
+    {
+      "case_id": "S1_R_unit_guidance--000139-wrists-imu_only",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "R_static_reference_delta--000139-wrists-imu_only",
+      "max_abs_m": 1.430511474609375e-06,
+      "rms_m": 6.458885737722633e-07,
+      "bitwise": false,
+      "count": 10758
+    },
+    {
+      "case_id": "S1_R_unit_guidance--000139-wrists-backbone_bypass",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "S1_R_unit_guidance--000139-wrists-text_only",
+      "max_abs_m": 0.0,
+      "rms_m": 0.0,
+      "bitwise": true,
+      "count": 10758
+    },
+    {
+      "case_id": "S1_R_unit_guidance--000139-wrists-physical_static",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "S1_R_unit_guidance--000139-wrists-text_only",
+      "max_abs_m": 0.0,
+      "rms_m": 0.0,
+      "bitwise": true,
+      "count": 10758
+    },
+    {
+      "case_id": "S1_R_unit_guidance--train-000027-head-physical_static",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "S1_R_unit_guidance--train-000027-head-text_only",
+      "max_abs_m": 0.0,
+      "rms_m": 0.0,
+      "bitwise": true,
+      "count": 6864
+    },
+    {
+      "case_id": "S1_R_unit_guidance--train-000027-wrists-physical_static",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "S1_R_unit_guidance--train-000027-wrists-text_only",
+      "max_abs_m": 0.0,
+      "rms_m": 0.0,
+      "bitwise": true,
+      "count": 6864
+    },
+    {
+      "case_id": "S1_R_unit_guidance--train-000506-head-physical_static",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "S1_R_unit_guidance--train-000506-head-text_only",
+      "max_abs_m": 0.0,
+      "rms_m": 0.0,
+      "bitwise": true,
+      "count": 8976
+    },
+    {
+      "case_id": "S1_R_unit_guidance--train-000506-wrists-physical_static",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "S1_R_unit_guidance--train-000506-wrists-text_only",
+      "max_abs_m": 0.0,
+      "rms_m": 0.0,
+      "bitwise": true,
+      "count": 8976
+    },
+    {
+      "case_id": "S1_R_unit_guidance--train-004728-head-physical_static",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "S1_R_unit_guidance--train-004728-head-text_only",
+      "max_abs_m": 0.0,
+      "rms_m": 0.0,
+      "bitwise": true,
+      "count": 10428
+    },
+    {
+      "case_id": "S1_R_unit_guidance--train-004728-wrists-physical_static",
+      "status": "passed",
+      "reason": "slot_not_completed",
+      "reference": "S1_R_unit_guidance--train-004728-wrists-text_only",
+      "max_abs_m": 0.0,
+      "rms_m": 0.0,
+      "bitwise": true,
+      "count": 10428
+    }
+  ],
+  "failure": null,
+  "authorization_consumed": true,
+  "model_effectiveness": "Pending owner02 independent frozen evaluation; no automatic follow-up run."
+}

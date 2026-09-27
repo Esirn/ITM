@@ -1,0 +1,38 @@
+{
+  "run_status": "completed",
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1",
+  "runtime_status": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/runtime/status.json",
+    "sha256": "2c52aa757f02e3872bb4136d59e55a19a245644926866aa48f7640bc46cfd3cf"
+  },
+  "counts": {
+    "probes": {
+      "completed": 480
+    },
+    "samples": {
+      "completed": 60
+    },
+    "traces": {
+      "completed": 240
+    }
+  },
+  "elapsed_seconds": 2043.6146058089798,
+  "MDM_branch_examples": 240480,
+  "encoder_examples": 696,
+  "denoising_calls": 60000,
+  "peak_allocated_bytes": 535660544,
+  "verified_receipt_artifacts": 1621,
+  "finite_arrays": {
+    "array_files": 840,
+    "numeric_arrays": 3900,
+    "numeric_elements": 91329180
+  },
+  "full_sample_checks": {
+    "passed": 24
+  },
+  "full_sample_max_abs_m": 1.6689300537109375e-06,
+  "full_sample_bitwise_count": 18,
+  "failure": null,
+  "CPU_only": true,
+  "model_effectiveness": "Not evaluated here; pending owner02 frozen evaluation"
+}
