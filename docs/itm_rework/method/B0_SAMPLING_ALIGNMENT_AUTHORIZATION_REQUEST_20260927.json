@@ -1,0 +1,58 @@
+{
+  "version": "itm-alignment-authorization-request-v1",
+  "status": "pending_user_approval",
+  "authorized": false,
+  "implementation": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_implementation_20260927_v1/implementation.json",
+  "implementation_sha256": "793fdd9a95a102484d2dbc7579aa398f3af0120c66422ba6ec966cc01f8cb7c4",
+  "package": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_sampling_alignment_20260927_v1/package.json",
+    "sha256": "537895c45695a48cb4b5114941e4bf8cab3962c40be893fcc79b4c9eeb311d60"
+  },
+  "package_sha256": "537895c45695a48cb4b5114941e4bf8cab3962c40be893fcc79b4c9eeb311d60",
+  "checkpoint": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+    "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+  },
+  "accepted_implementation_commit": "f9b3cb18053892dd9e66dbdf31085883a99b76d1",
+  "independent_acceptance_commit": "a90d3e7",
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1",
+  "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+  "launch_environment": {
+    "OMP_NUM_THREADS": "2",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "verified_bound_files": 743,
+  "limits": {
+    "training_updates": 0,
+    "new_checkpoints": 0,
+    "Q_groups": 96,
+    "Q_branch_examples": 480,
+    "Q_encoder_examples_max": 576,
+    "Q_seconds": 600,
+    "S1_samples": 60,
+    "S1_steps_per_sample": 1000,
+    "S1_denoising_calls": 60000,
+    "S1_MDM_branch_examples": 240000,
+    "S1_encoder_examples_max": 120,
+    "S1_shared_seconds": 2400,
+    "trace_records": 240,
+    "trace_additional_MDM_calls": 0,
+    "trace_additional_encoder_calls": 0,
+    "total_MDM_branch_examples": 240480,
+    "total_encoder_examples_max": 696,
+    "total_seconds": 3600,
+    "allocated_memory_bytes": 25769803776,
+    "GPUs": 1
+  },
+  "scope": "One fixed-R Q/S1 queue, guidance 1/1/1; no training, checkpoint selection or historical-arm regeneration. Preflight only after approval. Total clock begins before preflight; each phase uses the earlier phase/total deadline, including loading, saving and checks.",
+  "stop_policy": "Stop on first timeout, OOM, nonfinite, identity, counter or frozen software-consistency failure. Preserve all completed artifacts and full 480/60/240 ledgers including failed/not-run slots. No retry, GPU switch, CPU fallback or real warmup. Finite poor Q does not change S1.",
+  "previous_authorizations": "Consumed by historical runs; not reusable for this new frozen experiment.",
+  "execution_authorization_record": "/home/a200/0proj/ITM/docs/itm_rework/method/B0_SAMPLING_ALIGNMENT_AUTHORIZATION_20260927.json",
+  "verification": {
+    "bound_hashes_match": true,
+    "environment_matches": true,
+    "run_directory_absent": true,
+    "GPU_queried": false,
+    "real_forward_calls": 0
+  }
+}

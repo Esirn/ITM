@@ -1,3 +1,15 @@
+# 01 最新状态：固定 R guidance 已独立验收，申请新单次授权（2026-09-27）
+
+已读取 `a90d3e7`：[02 独立软件验收](../protocol/B0_SAMPLING_ALIGNMENT_ACCEPTANCE_20260927.md)通过，无新增返工项；相同实现无需重复验收。本轮再次核对已验收 manifest 的743份绑定文件及环境，全部一致，没有运行模型或查询GPU。
+新申请绑定 implementation `793fdd9a95a102484d2dbc7579aa398f3af0120c66422ba6ec966cc01f8cb7c4`、冻结package `537895c45695a48cb4b5114941e4bf8cab3962c40be893fcc79b4c9eeb311d60`、固定R final200，以及GPU `GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004`。
+唯一新运行目录为 `/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1`，已确认不存在。
+具体申请：[B0_SAMPLING_ALIGNMENT_AUTHORIZATION_REQUEST_20260927.json](B0_SAMPLING_ALIGNMENT_AUTHORIZATION_REQUEST_20260927.json)，`pending_user_approval`、`authorized=false`，不是执行授权。
+申请一次480 Q（最多10分钟）＋60条1000步S1（共享最多40分钟）＋240条零额外前向trace；0训练/新checkpoint，单GPU、allocated≤24GiB、从预检前起总计≤1小时。首次超时/OOM/非有限/身份/计数/冻结软件一致性异常即停，保留完整480/60/240账本与产物；不重试、换卡或回退。
+下一步等待本次新授权，获批后01预检并执行一次，02评价。历史授权不复用，原负例与模型未认证状态保留。
+以下为历史记录。
+
+---
+
 # 01 最新状态：固定 R guidance 实现与 CPU 验证完成（2026-09-27）
 
 按 `1680618` 冻结包实现 Q 96×batch5、S1 四分支完整采样与 240 条零额外调用 trace；固定 R final200，仅 guidance 从 2.5/1/1 改为 1/1/1，无新训练或 checkpoint。
