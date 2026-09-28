@@ -1,3 +1,13 @@
+# 01 最新状态：V保存状态入口与CPU验证完成（2026-09-28）
+
+按 `c0fc63f` 冻结包完成新V入口：48个保存状态、192个T/P/S/R分支、144个软件锚点；12次batch1 caption编码和72个IMU encoder examples跨t缓存。复用固定R loader，原始有限预测先落盘，调用预留/实际/完成分别记录，首错停止并保留完整分母。
+增量联合回归 **135 passed / 0 failed / 0 skipped**，含29项新增V方法测试；覆盖新入口、复用依赖、缓存、锚点、300秒共享期限及故障保留。没有真实预训练模型前向、训练/采样或GPU查询/预检。
+新manifest **`71cb4e2306559295e59ee5c179ce57e971a1a60dcb9f021cf1ddc33c4c45ee46`** 绑定1656份文件，保存12个cache/48套分支输入/48状态身份；CPU准备目录 `outputs/itm_rework/method/state_diagnostic_implementation_20260928_v1/`，无新checkpoint或授权。
+详情：[B0_STATE_DIAGNOSTIC_IMPLEMENTATION_20260928.md](B0_STATE_DIAGNOSTIC_IMPLEMENTATION_20260928.md)。下一步由 **02进行新入口增量软件验收**，之后01再申请单GPU/24GiB/300秒的新单次授权；获批才预检执行。旧代码/协议/结果未改，模型有效性仍未认证。
+以下为历史记录。
+
+---
+
 # 01 最新状态：接纳 guidance 混合结果，提出同状态时间顺序诊断（2026-09-28）
 
 已读取 `9f82183`。联合控制仍未认证，不将额外文本引导认定为统一根因。CPU重算全部288个Q条件和240个trace的同状态IMU残差：000506在实际S1状态上也有相对文本的单步特征误差改善，但动作仍不完整；000382 wrists仍恶化，晚期下肢RIC问题突出。不能简单归因于“离开GT状态就失效”或直接续训。
