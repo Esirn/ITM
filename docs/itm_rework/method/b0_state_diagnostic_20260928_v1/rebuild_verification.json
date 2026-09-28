@@ -1,0 +1,40 @@
+{
+  "rebuilt_directory": "/tmp/itm_state_proposal_rebuild_uupwqyzv",
+  "byte_identical_JSON_files": 7,
+  "files": [
+    {
+      "name": "feature_partition.json",
+      "sha256": "2032897010e61e98b55fc1f2acd619dfbe061f4a3e0a2ac001eab840200e6c45"
+    },
+    {
+      "name": "proposed_budget.json",
+      "sha256": "7719169b9acd84f771cfb64ae87c053780ab74d93bc60659996052a13e5ba947"
+    },
+    {
+      "name": "proposed_state_groups.json",
+      "sha256": "1e86879d094e846a88771506c7c589b3fa1b8fc2e28396e1d61736a99287b4c2"
+    },
+    {
+      "name": "residual_decomposition.json",
+      "sha256": "b29c232f57447518dad940978f750870385776672fad3fc26a456aa2739bee25"
+    },
+    {
+      "name": "sources.json",
+      "sha256": "f377a8e48016e3b79fe696f8f33399cca37b67ab96adc3b169b3ce1617df839d"
+    },
+    {
+      "name": "training_population.json",
+      "sha256": "41db9f31fbdebe718e7e03650d14938d9a0915be9370d96df6d9d59c732466a3"
+    },
+    {
+      "name": "verification.json",
+      "sha256": "781a613f984225879db8a7f3285e9fd145301bdf7280500b7fe4370c4a60c4fc"
+    }
+  ],
+  "verified_source_files": 1073,
+  "neural_import_or_subprocess_attempts": [],
+  "real_model_forwards": 0,
+  "training_updates": 0,
+  "real_samples": 0,
+  "GPU_queries": 0
+}

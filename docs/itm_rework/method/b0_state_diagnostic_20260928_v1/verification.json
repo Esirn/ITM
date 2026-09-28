@@ -1,0 +1,18 @@
+{
+  "existing_Q_condition_records": 288,
+  "existing_trace_records": 240,
+  "all_feature_rows": 528,
+  "normalized_MSE_matches_owner02": 288,
+  "paired_S1_states": 48,
+  "planned_MDM_branch_examples": 192,
+  "planned_encoder_examples_max": 72,
+  "training_exposures": 600,
+  "bound_sources": 1073,
+  "partition_covers_263_once": true,
+  "analytic_signed_cases": 2,
+  "model_imports": 0,
+  "new_model_forwards": 0,
+  "new_training_updates": 0,
+  "new_samples": 0,
+  "GPU_queries": 0
+}

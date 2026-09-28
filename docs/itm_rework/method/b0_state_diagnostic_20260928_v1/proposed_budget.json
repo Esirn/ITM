@@ -1,0 +1,20 @@
+{
+  "status": "proposed_not_frozen_not_authorized",
+  "training_updates": 0,
+  "new_checkpoints": 0,
+  "new_samples": 0,
+  "new_diffusion_steps": 0,
+  "new_noise_draws": 0,
+  "groups": 48,
+  "MDM_calls": 48,
+  "MDM_branch_examples": 192,
+  "encoder_examples_max": 72,
+  "GPUs": 1,
+  "allocated_memory_bytes": 25769803776,
+  "total_seconds": 300,
+  "deadline_starts": "Before preflight/load",
+  "stop": "First timeout/OOM/nonfinite/identity/counter/software mismatch; retain all planned/failed/not-run outputs; no retries/fallback/warmup",
+  "run_directory": null,
+  "gpu_uuid": null,
+  "authorization": null
+}

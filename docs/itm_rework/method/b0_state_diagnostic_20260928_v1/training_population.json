@@ -1,0 +1,687 @@
+{
+  "total_exposures": 600,
+  "rows": [
+    {
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "exposures": 100,
+      "cells": [
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            0,
+            249
+          ],
+          "count": 1
+        },
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            500,
+            749
+          ],
+          "count": 1
+        },
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            750,
+            999
+          ],
+          "count": 1
+        },
+        {
+          "text_present": true,
+          "imu_present": false,
+          "t_range": [
+            0,
+            249
+          ],
+          "count": 3
+        },
+        {
+          "text_present": true,
+          "imu_present": false,
+          "t_range": [
+            250,
+            499
+          ],
+          "count": 3
+        },
+        {
+          "text_present": true,
+          "imu_present": false,
+          "t_range": [
+            500,
+            749
+          ],
+          "count": 2
+        },
+        {
+          "text_present": true,
+          "imu_present": false,
+          "t_range": [
+            750,
+            999
+          ],
+          "count": 4
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            0,
+            249
+          ],
+          "count": 25
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            250,
+            499
+          ],
+          "count": 18
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            500,
+            749
+          ],
+          "count": 22
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            750,
+            999
+          ],
+          "count": 20
+        }
+      ]
+    },
+    {
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "exposures": 100,
+      "cells": [
+        {
+          "text_present": false,
+          "imu_present": false,
+          "t_range": [
+            0,
+            249
+          ],
+          "count": 1
+        },
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            0,
+            249
+          ],
+          "count": 2
+        },
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            250,
+            499
+          ],
+          "count": 3
+        },
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            500,
+            749
+          ],
+          "count": 1
+        },
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            750,
+            999
+          ],
+          "count": 1
+        },
+        {
+          "text_present": true,
+          "imu_present": false,
+          "t_range": [
+            0,
+            249
+          ],
+          "count": 3
+        },
+        {
+          "text_present": true,
+          "imu_present": false,
+          "t_range": [
+            250,
+            499
+          ],
+          "count": 2
+        },
+        {
+          "text_present": true,
+          "imu_present": false,
+          "t_range": [
+            500,
+            749
+          ],
+          "count": 4
+        },
+        {
+          "text_present": true,
+          "imu_present": false,
+          "t_range": [
+            750,
+            999
+          ],
+          "count": 2
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            0,
+            249
+          ],
+          "count": 26
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            250,
+            499
+          ],
+          "count": 15
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            500,
+            749
+          ],
+          "count": 21
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            750,
+            999
+          ],
+          "count": 19
+        }
+      ]
+    },
+    {
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "exposures": 100,
+      "cells": [
+        {
+          "text_present": false,
+          "imu_present": false,
+          "t_range": [
+            750,
+            999
+          ],
+          "count": 1
+        },
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            0,
+            249
+          ],
+          "count": 4
+        },
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            250,
+            499
+          ],
+          "count": 1
+        },
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            750,
+            999
+          ],
+          "count": 3
+        },
+        {
+          "text_present": true,
+          "imu_present": false,
+          "t_range": [
+            0,
+            249
+          ],
+          "count": 2
+        },
+        {
+          "text_present": true,
+          "imu_present": false,
+          "t_range": [
+            250,
+            499
+          ],
+          "count": 2
+        },
+        {
+          "text_present": true,
+          "imu_present": false,
+          "t_range": [
+            750,
+            999
+          ],
+          "count": 2
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            0,
+            249
+          ],
+          "count": 19
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            250,
+            499
+          ],
+          "count": 24
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            500,
+            749
+          ],
+          "count": 21
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            750,
+            999
+          ],
+          "count": 21
+        }
+      ]
+    },
+    {
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "exposures": 100,
+      "cells": [
+        {
+          "text_present": false,
+          "imu_present": false,
+          "t_range": [
+            750,
+            999
+          ],
+          "count": 1
+        },
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            0,
+            249
+          ],
+          "count": 2
+        },
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            250,
+            499
+          ],
+          "count": 1
+        },
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            500,
+            749
+          ],
+          "count": 1
+        },
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            750,
+            999
+          ],
+          "count": 1
+        },
+        {
+          "text_present": true,
+          "imu_present": false,
+          "t_range": [
+            0,
+            249
+          ],
+          "count": 2
+        },
+        {
+          "text_present": true,
+          "imu_present": false,
+          "t_range": [
+            250,
+            499
+          ],
+          "count": 2
+        },
+        {
+          "text_present": true,
+          "imu_present": false,
+          "t_range": [
+            500,
+            749
+          ],
+          "count": 4
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            0,
+            249
+          ],
+          "count": 17
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            250,
+            499
+          ],
+          "count": 19
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            500,
+            749
+          ],
+          "count": 23
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            750,
+            999
+          ],
+          "count": 27
+        }
+      ]
+    },
+    {
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "exposures": 100,
+      "cells": [
+        {
+          "text_present": false,
+          "imu_present": false,
+          "t_range": [
+            500,
+            749
+          ],
+          "count": 1
+        },
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            0,
+            249
+          ],
+          "count": 1
+        },
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            250,
+            499
+          ],
+          "count": 1
+        },
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            500,
+            749
+          ],
+          "count": 5
+        },
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            750,
+            999
+          ],
+          "count": 3
+        },
+        {
+          "text_present": true,
+          "imu_present": false,
+          "t_range": [
+            0,
+            249
+          ],
+          "count": 1
+        },
+        {
+          "text_present": true,
+          "imu_present": false,
+          "t_range": [
+            250,
+            499
+          ],
+          "count": 5
+        },
+        {
+          "text_present": true,
+          "imu_present": false,
+          "t_range": [
+            500,
+            749
+          ],
+          "count": 1
+        },
+        {
+          "text_present": true,
+          "imu_present": false,
+          "t_range": [
+            750,
+            999
+          ],
+          "count": 5
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            0,
+            249
+          ],
+          "count": 17
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            250,
+            499
+          ],
+          "count": 23
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            500,
+            749
+          ],
+          "count": 22
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            750,
+            999
+          ],
+          "count": 15
+        }
+      ]
+    },
+    {
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "exposures": 100,
+      "cells": [
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            0,
+            249
+          ],
+          "count": 3
+        },
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            250,
+            499
+          ],
+          "count": 3
+        },
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            500,
+            749
+          ],
+          "count": 2
+        },
+        {
+          "text_present": false,
+          "imu_present": true,
+          "t_range": [
+            750,
+            999
+          ],
+          "count": 2
+        },
+        {
+          "text_present": true,
+          "imu_present": false,
+          "t_range": [
+            0,
+            249
+          ],
+          "count": 2
+        },
+        {
+          "text_present": true,
+          "imu_present": false,
+          "t_range": [
+            250,
+            499
+          ],
+          "count": 4
+        },
+        {
+          "text_present": true,
+          "imu_present": false,
+          "t_range": [
+            500,
+            749
+          ],
+          "count": 3
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            0,
+            249
+          ],
+          "count": 18
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            250,
+            499
+          ],
+          "count": 27
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            500,
+            749
+          ],
+          "count": 11
+        },
+        {
+          "text_present": true,
+          "imu_present": true,
+          "t_range": [
+            750,
+            999
+          ],
+          "count": 25
+        }
+      ]
+    }
+  ],
+  "interpretation": "Counts only; varying t/noise/dropout/weights preclude a fixed-population convergence curve."
+}
