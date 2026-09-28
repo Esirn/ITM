@@ -1,0 +1,1 @@
+{'bound_files': 1656, 'frozen_sources': 1640, 'input_sets': 48, 'states': 48, 'train_frames': 398, 'manifest_byte_identical': True, 'forbidden_calls': 0}
