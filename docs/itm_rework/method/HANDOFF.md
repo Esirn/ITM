@@ -1,3 +1,14 @@
+# 01 最新状态：V已增量验收，申请新单次授权（2026-09-28）
+
+已读取 `ea7f802`：[02增量软件验收](../protocol/B0_STATE_DIAGNOSTIC_ACCEPTANCE_20260928.md)通过，无新增返工项；相同实现无需再次冻结或重复验收。01再次核对1656份绑定文件、manifest副本和环境，均一致；未运行模型或查询GPU。
+申请绑定 implementation `71cb4e2306559295e59ee5c179ce57e971a1a60dcb9f021cf1ddc33c4c45ee46`、V package `6f050dbfbe57c508e86d83a30b3cdfb505f7700b6781cb52b43d85b6ffc0b012`、固定R final200及GPU `GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004`。
+唯一新目录 `/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20260928_v1` 已确认不存在。具体申请：[B0_STATE_DIAGNOSTIC_AUTHORIZATION_REQUEST_20260928.json](B0_STATE_DIAGNOSTIC_AUTHORIZATION_REQUEST_20260928.json)，`pending_user_approval`、`authorized=false`，不是执行授权。
+申请一次 **48状态/192分支/144软件锚点、最多72 IMU examples/12 caption调用**；单GPU、allocated≤24GiB、从预检前起整队≤300秒。0训练/新checkpoint/完整采样/新噪声；首错即停，保留有限原始输出及全分母，不重试、warmup、换卡或回退。
+下一步等待本次新授权；获批后01预检并执行一次，再交02按冻结协议评价。历史授权不复用，软件通过不代表真实GPU锚点或模型有效性通过。
+以下为历史记录。
+
+---
+
 # 01 最新状态：V保存状态入口与CPU验证完成（2026-09-28）
 
 按 `c0fc63f` 冻结包完成新V入口：48个保存状态、192个T/P/S/R分支、144个软件锚点；12次batch1 caption编码和72个IMU encoder examples跨t缓存。复用固定R loader，原始有限预测先落盘，调用预留/实际/完成分别记录，首错停止并保留完整分母。

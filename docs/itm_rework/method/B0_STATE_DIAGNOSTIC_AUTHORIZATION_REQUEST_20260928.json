@@ -1,0 +1,56 @@
+{
+  "version": "itm-state-authorization-request-v1",
+  "status": "pending_user_approval",
+  "authorized": false,
+  "implementation": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_implementation_20260928_v1/implementation.json",
+  "implementation_sha256": "71cb4e2306559295e59ee5c179ce57e971a1a60dcb9f021cf1ddc33c4c45ee46",
+  "package": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_state_diagnostic_20260928_v1/package.json",
+    "sha256": "6f050dbfbe57c508e86d83a30b3cdfb505f7700b6781cb52b43d85b6ffc0b012"
+  },
+  "package_sha256": "6f050dbfbe57c508e86d83a30b3cdfb505f7700b6781cb52b43d85b6ffc0b012",
+  "checkpoint": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+    "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+  },
+  "accepted_implementation_commit": "0b3642252dbb1c9295d9ee5e16a8eec726ec6fb8",
+  "independent_acceptance_commit": "ea7f802",
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20260928_v1",
+  "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+  "launch_environment": {
+    "OMP_NUM_THREADS": "2",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "verified_bound_files": 1656,
+  "limits": {
+    "groups": 48,
+    "MDM_calls": 48,
+    "MDM_branch_examples": 192,
+    "software_checks": 144,
+    "encoder_examples_max": 72,
+    "caption_encoder_calls_max": 12,
+    "training_updates": 0,
+    "new_checkpoints": 0,
+    "new_samples": 0,
+    "q_sample_calls": 0,
+    "posterior_steps": 0,
+    "new_noise_draws": 0,
+    "CFG_calls": 0,
+    "motion_decode_calls": 0,
+    "total_seconds": 300,
+    "allocated_memory_bytes": 25769803776,
+    "GPUs": 1
+  },
+  "scope": "One fixed-R V queue on48 saved states, exactly one batch4 T/P/S/R per state. Preflight only after new approval. One absolute300-second deadline starts before preflight and includes binding/load/cache/forward/save/checks.",
+  "stop_policy": "Stop on first timeout/OOM/nonfinite/identity/counter/software-anchor/write failure. Preserve all finite raw outputs and complete48group/192branch/144check ledgers. No retry, warmup, GPU switch or CPU fallback; finite poor diagnostic metrics do not alter the queue.",
+  "previous_authorizations": "Historical runs consumed their authorizations; none authorizes V.",
+  "execution_authorization_record": "/home/a200/0proj/ITM/docs/itm_rework/method/B0_STATE_DIAGNOSTIC_AUTHORIZATION_20260928.json",
+  "verification": {
+    "bound_hashes_match": true,
+    "manifest_copy_exact": true,
+    "environment_matches": true,
+    "run_directory_absent": true,
+    "GPU_queried": false,
+    "real_forward_calls": 0
+  }
+}
