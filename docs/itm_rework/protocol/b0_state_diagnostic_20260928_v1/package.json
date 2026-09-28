@@ -1,0 +1,58 @@
+{
+  "version": "canonical-B0-state-diagnostic-package-v1",
+  "status": "frozen_for_implementation_not_authorized",
+  "source_commit": "feb0d11",
+  "artifacts": [
+    {
+      "path": "docs/itm_rework/protocol/b0_state_diagnostic_20260928_v1/branch_slots.json",
+      "sha256": "ade6f2d19a47e6bf708d783640d803b58f06fd5e56d3125bce3a7c2a7a77152d"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_state_diagnostic_20260928_v1/budget.json",
+      "sha256": "513baf6ded4e6055effcc923e4513f4aa083c44e0e3e95b86a52592815383f2f"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_state_diagnostic_20260928_v1/design.json",
+      "sha256": "fbc5c4cba26c50c8a1883b5b2c7cf59ee8d3478928d5a569c8da9750ce0b5882"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_state_diagnostic_20260928_v1/evaluation.json",
+      "sha256": "62a3634c7afbabe48fdffa759f9c9ee1817b9b4f2fd4ebe0c2a9d22a81f5b664"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_state_diagnostic_20260928_v1/feature_partition.json",
+      "sha256": "2032897010e61e98b55fc1f2acd619dfbe061f4a3e0a2ac001eab840200e6c45"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_state_diagnostic_20260928_v1/historical_Q.json",
+      "sha256": "fa3a0762207cef8f0d1e7d1372e3ba8d25507b7fc6a18bfbc673c226787f761b"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_state_diagnostic_20260928_v1/input_cases.json",
+      "sha256": "b4b7cb6809576b56693684349454d8f79d2e6955983bfaafe62389ef014bc17b"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_state_diagnostic_20260928_v1/proposal_audit.json",
+      "sha256": "5683b492ceb782961d950553d961645bf16e7174deddb2cda151b359469e949c"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_state_diagnostic_20260928_v1/software_checks.json",
+      "sha256": "ffcca8181c773cac7ad15f84c47c2a5c8f9ebbc7870881575a5aef64398e8e72"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_state_diagnostic_20260928_v1/sources.json",
+      "sha256": "0520321e89dc9862e20e2978b12aa0280dd7fc5011445acc11fc1fb2ef78a772"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_state_diagnostic_20260928_v1/state_groups.json",
+      "sha256": "3d1b41c9cc0d98523c1b5951640c3e85a794c14062e46534c3dc8ffaae4d1a20"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_state_diagnostic_20260928_v1/validation.json",
+      "sha256": "e6c2037837b237fb0d9aab77864c3fe2bc17b09718601cc0293c20c685071c0f"
+    }
+  ],
+  "execution_authorization": null,
+  "run_directory": null,
+  "GPU_UUID": null
+}

@@ -1,0 +1,131 @@
+{
+  "proposal_files_byte_identical": 7,
+  "freeze_files_byte_identical": 13,
+  "sources_verified": 1640,
+  "forbidden_operations": [],
+  "real_model_forwards": 0,
+  "GPU_queries": 0,
+  "new_samples": 0,
+  "checks": [
+    {
+      "bundle": "01_proposal",
+      "name": "feature_partition.json",
+      "byte_identical": true,
+      "sha256": "2032897010e61e98b55fc1f2acd619dfbe061f4a3e0a2ac001eab840200e6c45"
+    },
+    {
+      "bundle": "01_proposal",
+      "name": "proposed_budget.json",
+      "byte_identical": true,
+      "sha256": "7719169b9acd84f771cfb64ae87c053780ab74d93bc60659996052a13e5ba947"
+    },
+    {
+      "bundle": "01_proposal",
+      "name": "proposed_state_groups.json",
+      "byte_identical": true,
+      "sha256": "1e86879d094e846a88771506c7c589b3fa1b8fc2e28396e1d61736a99287b4c2"
+    },
+    {
+      "bundle": "01_proposal",
+      "name": "residual_decomposition.json",
+      "byte_identical": true,
+      "sha256": "b29c232f57447518dad940978f750870385776672fad3fc26a456aa2739bee25"
+    },
+    {
+      "bundle": "01_proposal",
+      "name": "sources.json",
+      "byte_identical": true,
+      "sha256": "f377a8e48016e3b79fe696f8f33399cca37b67ab96adc3b169b3ce1617df839d"
+    },
+    {
+      "bundle": "01_proposal",
+      "name": "training_population.json",
+      "byte_identical": true,
+      "sha256": "41db9f31fbdebe718e7e03650d14938d9a0915be9370d96df6d9d59c732466a3"
+    },
+    {
+      "bundle": "01_proposal",
+      "name": "verification.json",
+      "byte_identical": true,
+      "sha256": "781a613f984225879db8a7f3285e9fd145301bdf7280500b7fe4370c4a60c4fc"
+    },
+    {
+      "bundle": "02_freeze",
+      "name": "branch_slots.json",
+      "byte_identical": true,
+      "sha256": "ade6f2d19a47e6bf708d783640d803b58f06fd5e56d3125bce3a7c2a7a77152d"
+    },
+    {
+      "bundle": "02_freeze",
+      "name": "budget.json",
+      "byte_identical": true,
+      "sha256": "513baf6ded4e6055effcc923e4513f4aa083c44e0e3e95b86a52592815383f2f"
+    },
+    {
+      "bundle": "02_freeze",
+      "name": "design.json",
+      "byte_identical": true,
+      "sha256": "fbc5c4cba26c50c8a1883b5b2c7cf59ee8d3478928d5a569c8da9750ce0b5882"
+    },
+    {
+      "bundle": "02_freeze",
+      "name": "evaluation.json",
+      "byte_identical": true,
+      "sha256": "62a3634c7afbabe48fdffa759f9c9ee1817b9b4f2fd4ebe0c2a9d22a81f5b664"
+    },
+    {
+      "bundle": "02_freeze",
+      "name": "feature_partition.json",
+      "byte_identical": true,
+      "sha256": "2032897010e61e98b55fc1f2acd619dfbe061f4a3e0a2ac001eab840200e6c45"
+    },
+    {
+      "bundle": "02_freeze",
+      "name": "historical_Q.json",
+      "byte_identical": true,
+      "sha256": "fa3a0762207cef8f0d1e7d1372e3ba8d25507b7fc6a18bfbc673c226787f761b"
+    },
+    {
+      "bundle": "02_freeze",
+      "name": "input_cases.json",
+      "byte_identical": true,
+      "sha256": "b4b7cb6809576b56693684349454d8f79d2e6955983bfaafe62389ef014bc17b"
+    },
+    {
+      "bundle": "02_freeze",
+      "name": "package.json",
+      "byte_identical": true,
+      "sha256": "6f050dbfbe57c508e86d83a30b3cdfb505f7700b6781cb52b43d85b6ffc0b012"
+    },
+    {
+      "bundle": "02_freeze",
+      "name": "proposal_audit.json",
+      "byte_identical": true,
+      "sha256": "5683b492ceb782961d950553d961645bf16e7174deddb2cda151b359469e949c"
+    },
+    {
+      "bundle": "02_freeze",
+      "name": "software_checks.json",
+      "byte_identical": true,
+      "sha256": "ffcca8181c773cac7ad15f84c47c2a5c8f9ebbc7870881575a5aef64398e8e72"
+    },
+    {
+      "bundle": "02_freeze",
+      "name": "sources.json",
+      "byte_identical": true,
+      "sha256": "0520321e89dc9862e20e2978b12aa0280dd7fc5011445acc11fc1fb2ef78a772"
+    },
+    {
+      "bundle": "02_freeze",
+      "name": "state_groups.json",
+      "byte_identical": true,
+      "sha256": "3d1b41c9cc0d98523c1b5951640c3e85a794c14062e46534c3dc8ffaae4d1a20"
+    },
+    {
+      "bundle": "02_freeze",
+      "name": "validation.json",
+      "byte_identical": true,
+      "sha256": "e6c2037837b237fb0d9aab77864c3fe2bc17b09718601cc0293c20c685071c0f"
+    }
+  ]
+}

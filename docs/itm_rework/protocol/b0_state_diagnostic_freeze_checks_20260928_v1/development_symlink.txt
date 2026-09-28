@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/home/a200/0proj/ITM/scripts/freeze_b0_state_diagnostic.py", line 265, in <module>
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',type=Path,default=ROOT/REL);a=p.parse_args();guarded_build(a.output)
+  File "/home/a200/0proj/ITM/scripts/freeze_b0_state_diagnostic.py", line 262, in guarded_build
+    build(output)
+  File "/home/a200/0proj/ITM/scripts/freeze_b0_state_diagnostic.py", line 72, in build
+    for a in read(PROPOSAL/'sources.json'):verify(a)
+  File "/home/a200/0proj/ITM/scripts/freeze_b0_state_diagnostic.py", line 71, in verify
+    def verify(a):return bind(a['path'],a['sha256'])
+  File "/home/a200/0proj/ITM/scripts/freeze_b0_state_diagnostic.py", line 67, in bind
+    if key not in sources:sources[key]=dict(path=str(path.relative_to(ROOT)),sha256=sha(path))
+  File "/home/a200/miniconda3/envs/itm/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: '/home/a200/0relatedworks/motion-diffusion-model/data_loaders/humanml/scripts/motion_process.py' is not in the subpath of '/home/a200/0proj/ITM' OR one path is relative and the other is absolute.

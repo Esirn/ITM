@@ -1,0 +1,67 @@
+{
+  "version": "canonical-B0-state-diagnostic-evaluation-v1",
+  "denominators": {
+    "groups": 48,
+    "branch_predictions": 192,
+    "software_checks": 144,
+    "source_config_trajectories": 12,
+    "train_groups": 24,
+    "val_groups": 24
+  },
+  "target": "Fixed GT normalized HumanML263 at original frame index; descriptive error only, not Bayes target of a free-state denoiser. No yaw/translation/time fit.",
+  "units": "Pretrained-normalized feature MSE; not meters, physical IMU residual, semantic success or generated motion quality.",
+  "branches": "All192 branch MSEs with all9 blocks (1728 cells), absolute predicted/target magnitude and residual RMS/max/count; preserve all raw signs.",
+  "contrasts": [
+    {
+      "name": "P-S",
+      "prediction": "P",
+      "baseline": "S",
+      "role": "primary"
+    },
+    {
+      "name": "P-R",
+      "prediction": "P",
+      "baseline": "R",
+      "role": "primary"
+    },
+    {
+      "name": "P-T",
+      "prediction": "P",
+      "baseline": "T",
+      "role": "supporting"
+    },
+    {
+      "name": "R-S",
+      "prediction": "R",
+      "baseline": "S",
+      "role": "supporting"
+    }
+  ],
+  "contrast_counts": {
+    "rows": 192,
+    "block_cells": 1728,
+    "primary_rows": 96,
+    "supporting_rows": 96
+  },
+  "decomposition": "For EACH contrast and block: e=baseline-GT,d=prediction-baseline,delta=MSEprediction-MSEbaseline=2mean(e*d)+mean(d*d); also raw prediction difference RMS/max/count. Static does not mean zero GT error.",
+  "partition": "Primary5 partition covers263 once; weighted block contribution uses dims/263 and sums to overall. RIC3 partition covers63 once; its contribution also dims/263, not extra terms to sum with primaryRIC. No post-hoc block/threshold choice.",
+  "aggregation": "For V source/config/t/split: one trajectory, retain source rows; mean3 sources equally, min/max,n and all missing reasons. No pooling t or treating four states as independent samples. Feature/time mean only within fixed block and valid frames.",
+  "historical_Q": "4 contrasts on existing Q96 groups (384rows), two noise replicates averaged within source first; match V by source/config/t and show both values and V-Q contrast difference (192rows), descriptive only. No replay or new calls.",
+  "incomplete": "Keep48groups/192branches/144checks denominators; raw finite outputs from failed groups may be listed diagnostic_only, excluded from primary valid means; preserve planned denominator and n/missing. Missing counterpart is not_comparable, not zero or pass. No pruning poor finite outcomes.",
+  "decision_rules": [
+    "Q P-R favorable but V unfavorable: conditional ordering differs on these saved states; not controlled causal evidence for distribution shift or authorization for new-state training.",
+    "V P-R favorable with old full action missing: local gain insufficient for complete action, not evidence to increase gain.",
+    "P and R both worse than S on wrists clap: retain harmful response not requiring correct ordering; does not prove all IMU should be disabled or only legs should be masked.",
+    "Finite near-zero difference is descriptive, not an equivalence claim without prespecified effect bounds; architectural S=T is not learned IMU benefit.",
+    "No model correction implemented or new output generated: no new effectiveness certification; old negatives and full-sample results stand."
+  ],
+  "mandatory_cases": [
+    "train000506 both configs full alternating lunges absent",
+    "train004728 right back hold/direction/amplitude",
+    "val000382 wrists lower-body deformation",
+    "val000139 paired versus text/static/reversed",
+    "val000433 kick-return; old numeric-zero/IMU-only negatives retained"
+  ],
+  "limitations": "6 exposed sources,3 per split;1 fixed training seed and1 paired S1 trajectory/config; reversed is input perturbation not physical donor; no generalization/significance/IMU closure/compatible edit/real-device or repaired-motion claims.",
+  "new_motion_review": "No new motions; link previous120-case review, do not invent a new semantic success rate."
+}
