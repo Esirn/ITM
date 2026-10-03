@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "verification": "CPU file/hash/ledger audit only",
+  "elapsed_seconds": 1.413580719847232,
+  "verified_bound_files": 1656,
+  "ledger_status": {
+    "groups": {
+      "not_run_after_stop": 48
+    },
+    "branches": {
+      "not_run_after_stop": 192
+    },
+    "checks": {
+      "not_run_after_stop": 144
+    }
+  },
+  "counts": {
+    "mdm": {
+      "reserved": 0,
+      "actual": 0,
+      "completed": 0,
+      "reserved_calls": 0,
+      "actual_calls": 0,
+      "completed_calls": 0
+    },
+    "encoder": {
+      "reserved": 0,
+      "actual": 0,
+      "completed": 0,
+      "reserved_calls": 0,
+      "actual_calls": 0,
+      "completed_calls": 0
+    },
+    "caption": {
+      "reserved": 0,
+      "actual": 0,
+      "completed": 0,
+      "reserved_calls": 0,
+      "actual_calls": 0,
+      "completed_calls": 0
+    }
+  },
+  "worker_launched": false,
+  "model_outputs": 0,
+  "status_sha256": "afbe17b7a43bcc37a0321b6a51dc2fe6127b768b7a62ea030e765b5e4597c4cb",
+  "authorization_sha256": "e927e614738013314c6b6c303e2acd5f57e83d43fa755d5dd1c1ff138ab5cc71",
+  "gpu_queries_during_audit": 0
+}

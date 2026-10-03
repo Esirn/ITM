@@ -1,0 +1,2223 @@
+{
+  "version": "itm-state-queue-v1",
+  "status": "failed",
+  "authorization": {
+    "version": "itm-state-authorization-v1",
+    "status": "approved_single_run",
+    "authorized": true,
+    "implementation": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_implementation_20260928_v1/implementation.json",
+    "implementation_sha256": "71cb4e2306559295e59ee5c179ce57e971a1a60dcb9f021cf1ddc33c4c45ee46",
+    "package": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_state_diagnostic_20260928_v1/package.json",
+      "sha256": "6f050dbfbe57c508e86d83a30b3cdfb505f7700b6781cb52b43d85b6ffc0b012"
+    },
+    "package_sha256": "6f050dbfbe57c508e86d83a30b3cdfb505f7700b6781cb52b43d85b6ffc0b012",
+    "checkpoint": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "accepted_implementation_commit": "0b3642252dbb1c9295d9ee5e16a8eec726ec6fb8",
+    "independent_acceptance_commit": "ea7f802",
+    "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20260928_v1",
+    "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+    "launch_environment": {
+      "OMP_NUM_THREADS": "2",
+      "PYTHONUNBUFFERED": "1"
+    },
+    "verified_bound_files": 1656,
+    "limits": {
+      "groups": 48,
+      "MDM_calls": 48,
+      "MDM_branch_examples": 192,
+      "software_checks": 144,
+      "encoder_examples_max": 72,
+      "caption_encoder_calls_max": 12,
+      "training_updates": 0,
+      "new_checkpoints": 0,
+      "new_samples": 0,
+      "q_sample_calls": 0,
+      "posterior_steps": 0,
+      "new_noise_draws": 0,
+      "CFG_calls": 0,
+      "motion_decode_calls": 0,
+      "total_seconds": 300,
+      "allocated_memory_bytes": 25769803776,
+      "GPUs": 1
+    },
+    "scope": "One fixed-R V queue on48 saved states, exactly one batch4 T/P/S/R per state. Preflight only after new approval. One absolute300-second deadline starts before preflight and includes binding/load/cache/forward/save/checks.",
+    "stop_policy": "Stop on first timeout/OOM/nonfinite/identity/counter/software-anchor/write failure. Preserve all finite raw outputs and complete48group/192branch/144check ledgers. No retry, warmup, GPU switch or CPU fallback; finite poor diagnostic metrics do not alter the queue.",
+    "previous_authorizations": "Historical runs consumed their authorizations; none authorizes V.",
+    "execution_authorization_record": "/home/a200/0proj/ITM/docs/itm_rework/method/B0_STATE_DIAGNOSTIC_AUTHORIZATION_20260928.json",
+    "verification": {
+      "bound_hashes_match": true,
+      "manifest_copy_exact": true,
+      "environment_matches": true,
+      "run_directory_absent": true,
+      "GPU_queried": false,
+      "real_forward_calls": 0
+    },
+    "approved_by": "user",
+    "user_instruction": "\u6279\u51c6",
+    "user_instruction_reference": "User reply \u6279\u51c6 to 01 authorization request commit 25e99c1 in this conversation, 2026-09-28",
+    "approved_at": "2026-09-28T10:48:03.635637+00:00",
+    "request": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/B0_STATE_DIAGNOSTIC_AUTHORIZATION_REQUEST_20260928.json",
+      "sha256": "b33d1fa9531ba5f564deb8eb2ef49f74ed749a9248665e18b840c60bd8c5aeee"
+    }
+  },
+  "implementation": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_implementation_20260928_v1/implementation.json",
+    "sha256": "71cb4e2306559295e59ee5c179ce57e971a1a60dcb9f021cf1ddc33c4c45ee46"
+  },
+  "started_monotonic": 1137136.566642716,
+  "deadline_monotonic": 1137436.566642716,
+  "groups": [
+    {
+      "group_id": "V001",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V002",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V003",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V004",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V005",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V006",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V007",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V008",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V009",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V010",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V011",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V012",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V013",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V014",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V015",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V016",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V017",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V018",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V019",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V020",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V021",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V022",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V023",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V024",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V025",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V026",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V027",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V028",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V029",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V030",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V031",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V032",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V033",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V034",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V035",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V036",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V037",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V038",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V039",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V040",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V041",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V042",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V043",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V044",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V045",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V046",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V047",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "group_id": "V048",
+      "status": "not_run_after_stop",
+      "executed": false
+    }
+  ],
+  "branches": [
+    {
+      "slot_id": "V001-T",
+      "group_id": "V001",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V001-P",
+      "group_id": "V001",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V001-S",
+      "group_id": "V001",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V001-R",
+      "group_id": "V001",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V002-T",
+      "group_id": "V002",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V002-P",
+      "group_id": "V002",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V002-S",
+      "group_id": "V002",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V002-R",
+      "group_id": "V002",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V003-T",
+      "group_id": "V003",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V003-P",
+      "group_id": "V003",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V003-S",
+      "group_id": "V003",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V003-R",
+      "group_id": "V003",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V004-T",
+      "group_id": "V004",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V004-P",
+      "group_id": "V004",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V004-S",
+      "group_id": "V004",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V004-R",
+      "group_id": "V004",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V005-T",
+      "group_id": "V005",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V005-P",
+      "group_id": "V005",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V005-S",
+      "group_id": "V005",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V005-R",
+      "group_id": "V005",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V006-T",
+      "group_id": "V006",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V006-P",
+      "group_id": "V006",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V006-S",
+      "group_id": "V006",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V006-R",
+      "group_id": "V006",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V007-T",
+      "group_id": "V007",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V007-P",
+      "group_id": "V007",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V007-S",
+      "group_id": "V007",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V007-R",
+      "group_id": "V007",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V008-T",
+      "group_id": "V008",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V008-P",
+      "group_id": "V008",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V008-S",
+      "group_id": "V008",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V008-R",
+      "group_id": "V008",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V009-T",
+      "group_id": "V009",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V009-P",
+      "group_id": "V009",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V009-S",
+      "group_id": "V009",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V009-R",
+      "group_id": "V009",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V010-T",
+      "group_id": "V010",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V010-P",
+      "group_id": "V010",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V010-S",
+      "group_id": "V010",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V010-R",
+      "group_id": "V010",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V011-T",
+      "group_id": "V011",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V011-P",
+      "group_id": "V011",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V011-S",
+      "group_id": "V011",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V011-R",
+      "group_id": "V011",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V012-T",
+      "group_id": "V012",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V012-P",
+      "group_id": "V012",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V012-S",
+      "group_id": "V012",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V012-R",
+      "group_id": "V012",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V013-T",
+      "group_id": "V013",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V013-P",
+      "group_id": "V013",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V013-S",
+      "group_id": "V013",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V013-R",
+      "group_id": "V013",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V014-T",
+      "group_id": "V014",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V014-P",
+      "group_id": "V014",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V014-S",
+      "group_id": "V014",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V014-R",
+      "group_id": "V014",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V015-T",
+      "group_id": "V015",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V015-P",
+      "group_id": "V015",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V015-S",
+      "group_id": "V015",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V015-R",
+      "group_id": "V015",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V016-T",
+      "group_id": "V016",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V016-P",
+      "group_id": "V016",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V016-S",
+      "group_id": "V016",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V016-R",
+      "group_id": "V016",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V017-T",
+      "group_id": "V017",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V017-P",
+      "group_id": "V017",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V017-S",
+      "group_id": "V017",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V017-R",
+      "group_id": "V017",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V018-T",
+      "group_id": "V018",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V018-P",
+      "group_id": "V018",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V018-S",
+      "group_id": "V018",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V018-R",
+      "group_id": "V018",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V019-T",
+      "group_id": "V019",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V019-P",
+      "group_id": "V019",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V019-S",
+      "group_id": "V019",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V019-R",
+      "group_id": "V019",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V020-T",
+      "group_id": "V020",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V020-P",
+      "group_id": "V020",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V020-S",
+      "group_id": "V020",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V020-R",
+      "group_id": "V020",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V021-T",
+      "group_id": "V021",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V021-P",
+      "group_id": "V021",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V021-S",
+      "group_id": "V021",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V021-R",
+      "group_id": "V021",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V022-T",
+      "group_id": "V022",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V022-P",
+      "group_id": "V022",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V022-S",
+      "group_id": "V022",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V022-R",
+      "group_id": "V022",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V023-T",
+      "group_id": "V023",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V023-P",
+      "group_id": "V023",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V023-S",
+      "group_id": "V023",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V023-R",
+      "group_id": "V023",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V024-T",
+      "group_id": "V024",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V024-P",
+      "group_id": "V024",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V024-S",
+      "group_id": "V024",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V024-R",
+      "group_id": "V024",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V025-T",
+      "group_id": "V025",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V025-P",
+      "group_id": "V025",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V025-S",
+      "group_id": "V025",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V025-R",
+      "group_id": "V025",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V026-T",
+      "group_id": "V026",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V026-P",
+      "group_id": "V026",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V026-S",
+      "group_id": "V026",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V026-R",
+      "group_id": "V026",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V027-T",
+      "group_id": "V027",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V027-P",
+      "group_id": "V027",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V027-S",
+      "group_id": "V027",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V027-R",
+      "group_id": "V027",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V028-T",
+      "group_id": "V028",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V028-P",
+      "group_id": "V028",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V028-S",
+      "group_id": "V028",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V028-R",
+      "group_id": "V028",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V029-T",
+      "group_id": "V029",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V029-P",
+      "group_id": "V029",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V029-S",
+      "group_id": "V029",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V029-R",
+      "group_id": "V029",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V030-T",
+      "group_id": "V030",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V030-P",
+      "group_id": "V030",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V030-S",
+      "group_id": "V030",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V030-R",
+      "group_id": "V030",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V031-T",
+      "group_id": "V031",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V031-P",
+      "group_id": "V031",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V031-S",
+      "group_id": "V031",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V031-R",
+      "group_id": "V031",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V032-T",
+      "group_id": "V032",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V032-P",
+      "group_id": "V032",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V032-S",
+      "group_id": "V032",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V032-R",
+      "group_id": "V032",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V033-T",
+      "group_id": "V033",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V033-P",
+      "group_id": "V033",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V033-S",
+      "group_id": "V033",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V033-R",
+      "group_id": "V033",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V034-T",
+      "group_id": "V034",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V034-P",
+      "group_id": "V034",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V034-S",
+      "group_id": "V034",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V034-R",
+      "group_id": "V034",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V035-T",
+      "group_id": "V035",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V035-P",
+      "group_id": "V035",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V035-S",
+      "group_id": "V035",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V035-R",
+      "group_id": "V035",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V036-T",
+      "group_id": "V036",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V036-P",
+      "group_id": "V036",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V036-S",
+      "group_id": "V036",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V036-R",
+      "group_id": "V036",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V037-T",
+      "group_id": "V037",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V037-P",
+      "group_id": "V037",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V037-S",
+      "group_id": "V037",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V037-R",
+      "group_id": "V037",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V038-T",
+      "group_id": "V038",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V038-P",
+      "group_id": "V038",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V038-S",
+      "group_id": "V038",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V038-R",
+      "group_id": "V038",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V039-T",
+      "group_id": "V039",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V039-P",
+      "group_id": "V039",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V039-S",
+      "group_id": "V039",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V039-R",
+      "group_id": "V039",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V040-T",
+      "group_id": "V040",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V040-P",
+      "group_id": "V040",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V040-S",
+      "group_id": "V040",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V040-R",
+      "group_id": "V040",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V041-T",
+      "group_id": "V041",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V041-P",
+      "group_id": "V041",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V041-S",
+      "group_id": "V041",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V041-R",
+      "group_id": "V041",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V042-T",
+      "group_id": "V042",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V042-P",
+      "group_id": "V042",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V042-S",
+      "group_id": "V042",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V042-R",
+      "group_id": "V042",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V043-T",
+      "group_id": "V043",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V043-P",
+      "group_id": "V043",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V043-S",
+      "group_id": "V043",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V043-R",
+      "group_id": "V043",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V044-T",
+      "group_id": "V044",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V044-P",
+      "group_id": "V044",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V044-S",
+      "group_id": "V044",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V044-R",
+      "group_id": "V044",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V045-T",
+      "group_id": "V045",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V045-P",
+      "group_id": "V045",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V045-S",
+      "group_id": "V045",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V045-R",
+      "group_id": "V045",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V046-T",
+      "group_id": "V046",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V046-P",
+      "group_id": "V046",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V046-S",
+      "group_id": "V046",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V046-R",
+      "group_id": "V046",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V047-T",
+      "group_id": "V047",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V047-P",
+      "group_id": "V047",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V047-S",
+      "group_id": "V047",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V047-R",
+      "group_id": "V047",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V048-T",
+      "group_id": "V048",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V048-P",
+      "group_id": "V048",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V048-S",
+      "group_id": "V048",
+      "status": "not_run_after_stop",
+      "executed": false
+    },
+    {
+      "slot_id": "V048-R",
+      "group_id": "V048",
+      "status": "not_run_after_stop",
+      "executed": false
+    }
+  ],
+  "checks": [
+    {
+      "check_id": "V001-P_vs_trace_f11",
+      "group_id": "V001",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V001-T_vs_trace_f10",
+      "group_id": "V001",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V001-S_vs_T",
+      "group_id": "V001",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V002-P_vs_trace_f11",
+      "group_id": "V002",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V002-T_vs_trace_f10",
+      "group_id": "V002",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V002-S_vs_T",
+      "group_id": "V002",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V003-P_vs_trace_f11",
+      "group_id": "V003",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V003-T_vs_trace_f10",
+      "group_id": "V003",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V003-S_vs_T",
+      "group_id": "V003",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V004-P_vs_trace_f11",
+      "group_id": "V004",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V004-T_vs_trace_f10",
+      "group_id": "V004",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V004-S_vs_T",
+      "group_id": "V004",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V005-P_vs_trace_f11",
+      "group_id": "V005",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V005-T_vs_trace_f10",
+      "group_id": "V005",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V005-S_vs_T",
+      "group_id": "V005",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V006-P_vs_trace_f11",
+      "group_id": "V006",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V006-T_vs_trace_f10",
+      "group_id": "V006",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V006-S_vs_T",
+      "group_id": "V006",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V007-P_vs_trace_f11",
+      "group_id": "V007",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V007-T_vs_trace_f10",
+      "group_id": "V007",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V007-S_vs_T",
+      "group_id": "V007",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V008-P_vs_trace_f11",
+      "group_id": "V008",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V008-T_vs_trace_f10",
+      "group_id": "V008",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V008-S_vs_T",
+      "group_id": "V008",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V009-P_vs_trace_f11",
+      "group_id": "V009",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V009-T_vs_trace_f10",
+      "group_id": "V009",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V009-S_vs_T",
+      "group_id": "V009",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V010-P_vs_trace_f11",
+      "group_id": "V010",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V010-T_vs_trace_f10",
+      "group_id": "V010",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V010-S_vs_T",
+      "group_id": "V010",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V011-P_vs_trace_f11",
+      "group_id": "V011",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V011-T_vs_trace_f10",
+      "group_id": "V011",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V011-S_vs_T",
+      "group_id": "V011",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V012-P_vs_trace_f11",
+      "group_id": "V012",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V012-T_vs_trace_f10",
+      "group_id": "V012",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V012-S_vs_T",
+      "group_id": "V012",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V013-P_vs_trace_f11",
+      "group_id": "V013",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V013-T_vs_trace_f10",
+      "group_id": "V013",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V013-S_vs_T",
+      "group_id": "V013",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V014-P_vs_trace_f11",
+      "group_id": "V014",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V014-T_vs_trace_f10",
+      "group_id": "V014",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V014-S_vs_T",
+      "group_id": "V014",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V015-P_vs_trace_f11",
+      "group_id": "V015",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V015-T_vs_trace_f10",
+      "group_id": "V015",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V015-S_vs_T",
+      "group_id": "V015",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V016-P_vs_trace_f11",
+      "group_id": "V016",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V016-T_vs_trace_f10",
+      "group_id": "V016",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V016-S_vs_T",
+      "group_id": "V016",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V017-P_vs_trace_f11",
+      "group_id": "V017",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V017-T_vs_trace_f10",
+      "group_id": "V017",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V017-S_vs_T",
+      "group_id": "V017",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V018-P_vs_trace_f11",
+      "group_id": "V018",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V018-T_vs_trace_f10",
+      "group_id": "V018",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V018-S_vs_T",
+      "group_id": "V018",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V019-P_vs_trace_f11",
+      "group_id": "V019",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V019-T_vs_trace_f10",
+      "group_id": "V019",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V019-S_vs_T",
+      "group_id": "V019",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V020-P_vs_trace_f11",
+      "group_id": "V020",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V020-T_vs_trace_f10",
+      "group_id": "V020",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V020-S_vs_T",
+      "group_id": "V020",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V021-P_vs_trace_f11",
+      "group_id": "V021",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V021-T_vs_trace_f10",
+      "group_id": "V021",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V021-S_vs_T",
+      "group_id": "V021",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V022-P_vs_trace_f11",
+      "group_id": "V022",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V022-T_vs_trace_f10",
+      "group_id": "V022",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V022-S_vs_T",
+      "group_id": "V022",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V023-P_vs_trace_f11",
+      "group_id": "V023",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V023-T_vs_trace_f10",
+      "group_id": "V023",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V023-S_vs_T",
+      "group_id": "V023",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V024-P_vs_trace_f11",
+      "group_id": "V024",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V024-T_vs_trace_f10",
+      "group_id": "V024",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V024-S_vs_T",
+      "group_id": "V024",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V025-P_vs_trace_f11",
+      "group_id": "V025",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V025-T_vs_trace_f10",
+      "group_id": "V025",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V025-S_vs_T",
+      "group_id": "V025",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V026-P_vs_trace_f11",
+      "group_id": "V026",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V026-T_vs_trace_f10",
+      "group_id": "V026",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V026-S_vs_T",
+      "group_id": "V026",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V027-P_vs_trace_f11",
+      "group_id": "V027",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V027-T_vs_trace_f10",
+      "group_id": "V027",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V027-S_vs_T",
+      "group_id": "V027",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V028-P_vs_trace_f11",
+      "group_id": "V028",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V028-T_vs_trace_f10",
+      "group_id": "V028",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V028-S_vs_T",
+      "group_id": "V028",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V029-P_vs_trace_f11",
+      "group_id": "V029",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V029-T_vs_trace_f10",
+      "group_id": "V029",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V029-S_vs_T",
+      "group_id": "V029",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V030-P_vs_trace_f11",
+      "group_id": "V030",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V030-T_vs_trace_f10",
+      "group_id": "V030",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V030-S_vs_T",
+      "group_id": "V030",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V031-P_vs_trace_f11",
+      "group_id": "V031",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V031-T_vs_trace_f10",
+      "group_id": "V031",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V031-S_vs_T",
+      "group_id": "V031",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V032-P_vs_trace_f11",
+      "group_id": "V032",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V032-T_vs_trace_f10",
+      "group_id": "V032",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V032-S_vs_T",
+      "group_id": "V032",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V033-P_vs_trace_f11",
+      "group_id": "V033",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V033-T_vs_trace_f10",
+      "group_id": "V033",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V033-S_vs_T",
+      "group_id": "V033",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V034-P_vs_trace_f11",
+      "group_id": "V034",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V034-T_vs_trace_f10",
+      "group_id": "V034",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V034-S_vs_T",
+      "group_id": "V034",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V035-P_vs_trace_f11",
+      "group_id": "V035",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V035-T_vs_trace_f10",
+      "group_id": "V035",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V035-S_vs_T",
+      "group_id": "V035",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V036-P_vs_trace_f11",
+      "group_id": "V036",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V036-T_vs_trace_f10",
+      "group_id": "V036",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V036-S_vs_T",
+      "group_id": "V036",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V037-P_vs_trace_f11",
+      "group_id": "V037",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V037-T_vs_trace_f10",
+      "group_id": "V037",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V037-S_vs_T",
+      "group_id": "V037",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V038-P_vs_trace_f11",
+      "group_id": "V038",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V038-T_vs_trace_f10",
+      "group_id": "V038",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V038-S_vs_T",
+      "group_id": "V038",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V039-P_vs_trace_f11",
+      "group_id": "V039",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V039-T_vs_trace_f10",
+      "group_id": "V039",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V039-S_vs_T",
+      "group_id": "V039",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V040-P_vs_trace_f11",
+      "group_id": "V040",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V040-T_vs_trace_f10",
+      "group_id": "V040",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V040-S_vs_T",
+      "group_id": "V040",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V041-P_vs_trace_f11",
+      "group_id": "V041",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V041-T_vs_trace_f10",
+      "group_id": "V041",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V041-S_vs_T",
+      "group_id": "V041",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V042-P_vs_trace_f11",
+      "group_id": "V042",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V042-T_vs_trace_f10",
+      "group_id": "V042",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V042-S_vs_T",
+      "group_id": "V042",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V043-P_vs_trace_f11",
+      "group_id": "V043",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V043-T_vs_trace_f10",
+      "group_id": "V043",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V043-S_vs_T",
+      "group_id": "V043",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V044-P_vs_trace_f11",
+      "group_id": "V044",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V044-T_vs_trace_f10",
+      "group_id": "V044",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V044-S_vs_T",
+      "group_id": "V044",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V045-P_vs_trace_f11",
+      "group_id": "V045",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V045-T_vs_trace_f10",
+      "group_id": "V045",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V045-S_vs_T",
+      "group_id": "V045",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V046-P_vs_trace_f11",
+      "group_id": "V046",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V046-T_vs_trace_f10",
+      "group_id": "V046",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V046-S_vs_T",
+      "group_id": "V046",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V047-P_vs_trace_f11",
+      "group_id": "V047",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V047-T_vs_trace_f10",
+      "group_id": "V047",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V047-S_vs_T",
+      "group_id": "V047",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V048-P_vs_trace_f11",
+      "group_id": "V048",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V048-T_vs_trace_f10",
+      "group_id": "V048",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "V048-S_vs_T",
+      "group_id": "V048",
+      "status": "not_run_after_stop"
+    }
+  ],
+  "counts": {
+    "mdm": {
+      "reserved": 0,
+      "actual": 0,
+      "completed": 0,
+      "reserved_calls": 0,
+      "actual_calls": 0,
+      "completed_calls": 0
+    },
+    "encoder": {
+      "reserved": 0,
+      "actual": 0,
+      "completed": 0,
+      "reserved_calls": 0,
+      "actual_calls": 0,
+      "completed_calls": 0
+    },
+    "caption": {
+      "reserved": 0,
+      "actual": 0,
+      "completed": 0,
+      "reserved_calls": 0,
+      "actual_calls": 0,
+      "completed_calls": 0
+    }
+  },
+  "finished_monotonic": 1137137.980223436,
+  "failure": {
+    "type": "RuntimeError",
+    "message": "GPU identity/free-memory preflight failed"
+  }
+}

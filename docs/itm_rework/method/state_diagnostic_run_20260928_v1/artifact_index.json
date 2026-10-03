@@ -1,0 +1,26 @@
+[
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/state_diagnostic_run_20260928_v1/commands.md",
+    "sha256": "847860349f7b7bfbff1ecd25e559773b8c574525f76c0b98e58c3ba21d15ab3b"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/state_diagnostic_run_20260928_v1/delivery_integrity.json",
+    "sha256": "02b9132ea359fc94f35cbc55afa45beb5f7b42054d94d04af2d6e8a4741178bf"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/state_diagnostic_run_20260928_v1/execution_summary.json",
+    "sha256": "689fda054cef7eecb22101a9524583e0a0a10b51215b5dcf82c3c70a36232d33"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/state_diagnostic_run_20260928_v1/logs/parent.log",
+    "sha256": "36ce78f0f9848cb55594dd1f52a46e7ac162799a301b784339fc63e7c5585e11"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/state_diagnostic_run_20260928_v1/runtime/status.json",
+    "sha256": "afbe17b7a43bcc37a0321b6a51dc2fe6127b768b7a62ea030e765b5e4597c4cb"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/state_diagnostic_run_20260928_v1/verify_delivery.py",
+    "sha256": "0984c72fa5ea7c10d682c23da1ffb121eccfa4bee72991567437a4cb6e2e235d"
+  }
+]
