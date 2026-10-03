@@ -1,0 +1,1538 @@
+[
+  {
+    "group_id": "V001",
+    "branch": "T",
+    "uniform": 1.2561869755305437,
+    "root_ric": 1.373120959052473,
+    "remaining": 1.21621464442866,
+    "proposed_balanced": 1.2946678017405664
+  },
+  {
+    "group_id": "V001",
+    "branch": "P",
+    "uniform": 1.2726305454978168,
+    "root_ric": 1.3846014391000843,
+    "remaining": 1.2343547808480624,
+    "proposed_balanced": 1.3094781099740733
+  },
+  {
+    "group_id": "V001",
+    "branch": "S",
+    "uniform": 1.2561869755305437,
+    "root_ric": 1.373120959052473,
+    "remaining": 1.21621464442866,
+    "proposed_balanced": 1.2946678017405664
+  },
+  {
+    "group_id": "V001",
+    "branch": "R",
+    "uniform": 1.247745700613517,
+    "root_ric": 1.3602619967975331,
+    "remaining": 1.209283497326124,
+    "proposed_balanced": 1.2847727470618286
+  },
+  {
+    "group_id": "V002",
+    "branch": "T",
+    "uniform": 1.3946032270688058,
+    "root_ric": 1.4087614770686958,
+    "remaining": 1.3897634171198638,
+    "proposed_balanced": 1.3992624470942798
+  },
+  {
+    "group_id": "V002",
+    "branch": "P",
+    "uniform": 1.4034295826410499,
+    "root_ric": 1.4102801297007246,
+    "remaining": 1.401087814003304,
+    "proposed_balanced": 1.4056839718520142
+  },
+  {
+    "group_id": "V002",
+    "branch": "S",
+    "uniform": 1.3946032270688058,
+    "root_ric": 1.4087614770686958,
+    "remaining": 1.3897634171198638,
+    "proposed_balanced": 1.3992624470942798
+  },
+  {
+    "group_id": "V002",
+    "branch": "R",
+    "uniform": 1.3896179803054447,
+    "root_ric": 1.4005401704497975,
+    "remaining": 1.3858843744907936,
+    "proposed_balanced": 1.3932122724702956
+  },
+  {
+    "group_id": "V003",
+    "branch": "T",
+    "uniform": 1.4004148598320527,
+    "root_ric": 1.4655873964692423,
+    "remaining": 1.378136492716279,
+    "proposed_balanced": 1.4218619445927607
+  },
+  {
+    "group_id": "V003",
+    "branch": "P",
+    "uniform": 1.408432571512902,
+    "root_ric": 1.467101069024868,
+    "remaining": 1.3883775238940157,
+    "proposed_balanced": 1.4277392964594418
+  },
+  {
+    "group_id": "V003",
+    "branch": "S",
+    "uniform": 1.4004148598320527,
+    "root_ric": 1.4655873964692423,
+    "remaining": 1.378136492716279,
+    "proposed_balanced": 1.4218619445927607
+  },
+  {
+    "group_id": "V003",
+    "branch": "R",
+    "uniform": 1.3956701316598537,
+    "root_ric": 1.4570948998474003,
+    "remaining": 1.3746728894732947,
+    "proposed_balanced": 1.4158838946603476
+  },
+  {
+    "group_id": "V004",
+    "branch": "T",
+    "uniform": 1.3760629039684387,
+    "root_ric": 1.4534028099967176,
+    "remaining": 1.3496252830302005,
+    "proposed_balanced": 1.401514046513459
+  },
+  {
+    "group_id": "V004",
+    "branch": "P",
+    "uniform": 1.3849340417579763,
+    "root_ric": 1.4557352855180714,
+    "remaining": 1.36073157577876,
+    "proposed_balanced": 1.4082334306484157
+  },
+  {
+    "group_id": "V004",
+    "branch": "S",
+    "uniform": 1.3760629039684387,
+    "root_ric": 1.4534028099967176,
+    "remaining": 1.3496252830302005,
+    "proposed_balanced": 1.401514046513459
+  },
+  {
+    "group_id": "V004",
+    "branch": "R",
+    "uniform": 1.3714857182440028,
+    "root_ric": 1.4444972927616384,
+    "remaining": 1.3465276800160355,
+    "proposed_balanced": 1.3955124863888368
+  },
+  {
+    "group_id": "V005",
+    "branch": "T",
+    "uniform": 1.2655712145162807,
+    "root_ric": 1.640364184768726,
+    "remaining": 1.1374532093789655,
+    "proposed_balanced": 1.3889086970738458
+  },
+  {
+    "group_id": "V005",
+    "branch": "P",
+    "uniform": 1.276789533952731,
+    "root_ric": 1.6609523392765446,
+    "remaining": 1.145468574989999,
+    "proposed_balanced": 1.4032104571332717
+  },
+  {
+    "group_id": "V005",
+    "branch": "S",
+    "uniform": 1.2655712145162807,
+    "root_ric": 1.640364184768726,
+    "remaining": 1.1374532093789655,
+    "proposed_balanced": 1.3889086970738458
+  },
+  {
+    "group_id": "V005",
+    "branch": "R",
+    "uniform": 1.2817640643290313,
+    "root_ric": 1.665521150239537,
+    "remaining": 1.150581795165746,
+    "proposed_balanced": 1.4080514727026414
+  },
+  {
+    "group_id": "V006",
+    "branch": "T",
+    "uniform": 1.3750640653054655,
+    "root_ric": 1.6145450633255427,
+    "remaining": 1.293200662921052,
+    "proposed_balanced": 1.4538728631232973
+  },
+  {
+    "group_id": "V006",
+    "branch": "P",
+    "uniform": 1.379011352192834,
+    "root_ric": 1.6149822565612342,
+    "remaining": 1.2983478287607788,
+    "proposed_balanced": 1.4566650426610064
+  },
+  {
+    "group_id": "V006",
+    "branch": "S",
+    "uniform": 1.3750640653054655,
+    "root_ric": 1.6145450633255427,
+    "remaining": 1.293200662921052,
+    "proposed_balanced": 1.4538728631232973
+  },
+  {
+    "group_id": "V006",
+    "branch": "R",
+    "uniform": 1.3826387210358193,
+    "root_ric": 1.6206698765851222,
+    "remaining": 1.3012709280674353,
+    "proposed_balanced": 1.4609704023262786
+  },
+  {
+    "group_id": "V007",
+    "branch": "T",
+    "uniform": 1.3721497407476912,
+    "root_ric": 1.553535858511166,
+    "remaining": 1.3101453025326262,
+    "proposed_balanced": 1.4318405805218961
+  },
+  {
+    "group_id": "V007",
+    "branch": "P",
+    "uniform": 1.3757340573397512,
+    "root_ric": 1.5508896575677664,
+    "remaining": 1.3158594388944602,
+    "proposed_balanced": 1.4333745482311133
+  },
+  {
+    "group_id": "V007",
+    "branch": "S",
+    "uniform": 1.3721497407476912,
+    "root_ric": 1.553535858511166,
+    "remaining": 1.3101453025326262,
+    "proposed_balanced": 1.4318405805218961
+  },
+  {
+    "group_id": "V007",
+    "branch": "R",
+    "uniform": 1.3781139845544785,
+    "root_ric": 1.5568407632079002,
+    "remaining": 1.3170186061372378,
+    "proposed_balanced": 1.436929684672569
+  },
+  {
+    "group_id": "V008",
+    "branch": "T",
+    "uniform": 1.3446681783428476,
+    "root_ric": 1.4319393189435503,
+    "remaining": 1.3148356966068926,
+    "proposed_balanced": 1.3733875077752216
+  },
+  {
+    "group_id": "V008",
+    "branch": "P",
+    "uniform": 1.3498549438826453,
+    "root_ric": 1.4323421896260706,
+    "remaining": 1.3216577731438213,
+    "proposed_balanced": 1.3769999813849458
+  },
+  {
+    "group_id": "V008",
+    "branch": "S",
+    "uniform": 1.3446681783428476,
+    "root_ric": 1.4319393189435503,
+    "remaining": 1.3148356966068926,
+    "proposed_balanced": 1.3733875077752216
+  },
+  {
+    "group_id": "V008",
+    "branch": "R",
+    "uniform": 1.3527034609019706,
+    "root_ric": 1.438429106355421,
+    "remaining": 1.3233992861806378,
+    "proposed_balanced": 1.3809141962680296
+  },
+  {
+    "group_id": "V009",
+    "branch": "T",
+    "uniform": 0.11635187931040174,
+    "root_ric": 0.08458273438341661,
+    "remaining": 0.12721174007625888,
+    "proposed_balanced": 0.10589723722983774
+  },
+  {
+    "group_id": "V009",
+    "branch": "P",
+    "uniform": 0.11740773303282359,
+    "root_ric": 0.08631380514681063,
+    "remaining": 0.1280367798101852,
+    "proposed_balanced": 0.10717529247849791
+  },
+  {
+    "group_id": "V009",
+    "branch": "S",
+    "uniform": 0.11635187931040174,
+    "root_ric": 0.08458273438341661,
+    "remaining": 0.12721174007625888,
+    "proposed_balanced": 0.10589723722983774
+  },
+  {
+    "group_id": "V009",
+    "branch": "R",
+    "uniform": 0.1171512671550875,
+    "root_ric": 0.08678690483789975,
+    "remaining": 0.1275309216206568,
+    "proposed_balanced": 0.10715891322927827
+  },
+  {
+    "group_id": "V010",
+    "branch": "T",
+    "uniform": 0.29339762262624747,
+    "root_ric": 0.21174519103690148,
+    "remaining": 0.32130942322056466,
+    "proposed_balanced": 0.26652730712873307
+  },
+  {
+    "group_id": "V010",
+    "branch": "P",
+    "uniform": 0.29463006685745696,
+    "root_ric": 0.21348119770869733,
+    "remaining": 0.3223697313113697,
+    "proposed_balanced": 0.2679254645100335
+  },
+  {
+    "group_id": "V010",
+    "branch": "S",
+    "uniform": 0.29339762262624747,
+    "root_ric": 0.21174519103690148,
+    "remaining": 0.32130942322056466,
+    "proposed_balanced": 0.26652730712873307
+  },
+  {
+    "group_id": "V010",
+    "branch": "R",
+    "uniform": 0.29456924164393683,
+    "root_ric": 0.21432638201933776,
+    "remaining": 0.32199919876050903,
+    "proposed_balanced": 0.2681627903899234
+  },
+  {
+    "group_id": "V011",
+    "branch": "T",
+    "uniform": 0.3208471520943994,
+    "root_ric": 0.23226116660727233,
+    "remaining": 0.35112909611295823,
+    "proposed_balanced": 0.29169513136011527
+  },
+  {
+    "group_id": "V011",
+    "branch": "P",
+    "uniform": 0.3221230072422344,
+    "root_ric": 0.23414173141714986,
+    "remaining": 0.3521982392844828,
+    "proposed_balanced": 0.29316998535081634
+  },
+  {
+    "group_id": "V011",
+    "branch": "S",
+    "uniform": 0.3208471520943994,
+    "root_ric": 0.23226116660727233,
+    "remaining": 0.35112909611295823,
+    "proposed_balanced": 0.29169513136011527
+  },
+  {
+    "group_id": "V011",
+    "branch": "R",
+    "uniform": 0.32198886899545315,
+    "root_ric": 0.23492992332264115,
+    "remaining": 0.3517488147101389,
+    "proposed_balanced": 0.29333936901639
+  },
+  {
+    "group_id": "V012",
+    "branch": "T",
+    "uniform": 0.36247142837517604,
+    "root_ric": 0.2591282581446644,
+    "remaining": 0.3977979202396877,
+    "proposed_balanced": 0.32846308919217604
+  },
+  {
+    "group_id": "V012",
+    "branch": "P",
+    "uniform": 0.36388063636079937,
+    "root_ric": 0.2610953580820113,
+    "remaining": 0.3990164202622219,
+    "proposed_balanced": 0.3300558891721166
+  },
+  {
+    "group_id": "V012",
+    "branch": "S",
+    "uniform": 0.36247142837517604,
+    "root_ric": 0.2591282581446644,
+    "remaining": 0.3977979202396877,
+    "proposed_balanced": 0.32846308919217604
+  },
+  {
+    "group_id": "V012",
+    "branch": "R",
+    "uniform": 0.3636472101628344,
+    "root_ric": 0.2617616105002546,
+    "remaining": 0.39847545086381825,
+    "proposed_balanced": 0.33011853068203645
+  },
+  {
+    "group_id": "V013",
+    "branch": "T",
+    "uniform": 0.19342968251404608,
+    "root_ric": 0.15759471701599023,
+    "remaining": 0.20567939010776926,
+    "proposed_balanced": 0.18163705356187976
+  },
+  {
+    "group_id": "V013",
+    "branch": "P",
+    "uniform": 0.23040715450251245,
+    "root_ric": 0.21959555005301135,
+    "remaining": 0.23410295806433165,
+    "proposed_balanced": 0.2268492540586715
+  },
+  {
+    "group_id": "V013",
+    "branch": "S",
+    "uniform": 0.19342968251404608,
+    "root_ric": 0.15759471701599023,
+    "remaining": 0.20567939010776926,
+    "proposed_balanced": 0.18163705356187976
+  },
+  {
+    "group_id": "V013",
+    "branch": "R",
+    "uniform": 0.23107122083286563,
+    "root_ric": 0.2194632898034857,
+    "remaining": 0.23503923807250066,
+    "proposed_balanced": 0.22725126393799316
+  },
+  {
+    "group_id": "V014",
+    "branch": "T",
+    "uniform": 0.3121865467886112,
+    "root_ric": 0.3096027364386237,
+    "remaining": 0.31306978808171915,
+    "proposed_balanced": 0.3113362622601714
+  },
+  {
+    "group_id": "V014",
+    "branch": "P",
+    "uniform": 0.40307843469696636,
+    "root_ric": 0.46927476994893635,
+    "remaining": 0.38045009560573173,
+    "proposed_balanced": 0.42486243277733404
+  },
+  {
+    "group_id": "V014",
+    "branch": "S",
+    "uniform": 0.3121865467886112,
+    "root_ric": 0.3096027364386237,
+    "remaining": 0.31306978808171915,
+    "proposed_balanced": 0.3113362622601714
+  },
+  {
+    "group_id": "V014",
+    "branch": "R",
+    "uniform": 0.40161207719853176,
+    "root_ric": 0.4662632801729256,
+    "remaining": 0.37951192107973386,
+    "proposed_balanced": 0.42288760062632974
+  },
+  {
+    "group_id": "V015",
+    "branch": "T",
+    "uniform": 0.4444098779690345,
+    "root_ric": 0.616737121435858,
+    "remaining": 0.38550209576353883,
+    "proposed_balanced": 0.5011196085996984
+  },
+  {
+    "group_id": "V015",
+    "branch": "P",
+    "uniform": 0.5794321478255441,
+    "root_ric": 0.8584455561009454,
+    "remaining": 0.4840551154048712,
+    "proposed_balanced": 0.6712503357529083
+  },
+  {
+    "group_id": "V015",
+    "branch": "S",
+    "uniform": 0.4444098779690345,
+    "root_ric": 0.616737121435858,
+    "remaining": 0.38550209576353883,
+    "proposed_balanced": 0.5011196085996984
+  },
+  {
+    "group_id": "V015",
+    "branch": "R",
+    "uniform": 0.5776949067211361,
+    "root_ric": 0.8543223316949499,
+    "remaining": 0.483133491041312,
+    "proposed_balanced": 0.6687279113681309
+  },
+  {
+    "group_id": "V016",
+    "branch": "T",
+    "uniform": 0.8638524720060773,
+    "root_ric": 1.6501363188631843,
+    "remaining": 0.5950717692539027,
+    "proposed_balanced": 1.1226040440585434
+  },
+  {
+    "group_id": "V016",
+    "branch": "P",
+    "uniform": 1.0489150566326026,
+    "root_ric": 1.9234006357284967,
+    "remaining": 0.7499837617375779,
+    "proposed_balanced": 1.3366921987330374
+  },
+  {
+    "group_id": "V016",
+    "branch": "S",
+    "uniform": 0.8638524720060773,
+    "root_ric": 1.6501363188631843,
+    "remaining": 0.5950717692539027,
+    "proposed_balanced": 1.1226040440585434
+  },
+  {
+    "group_id": "V016",
+    "branch": "R",
+    "uniform": 1.0463506679810404,
+    "root_ric": 1.9185132284177515,
+    "remaining": 0.7482134661991034,
+    "proposed_balanced": 1.3333633473084274
+  },
+  {
+    "group_id": "V017",
+    "branch": "T",
+    "uniform": 2.275512114048602,
+    "root_ric": 3.157166118764413,
+    "remaining": 1.9741303879467689,
+    "proposed_balanced": 2.565648253355591
+  },
+  {
+    "group_id": "V017",
+    "branch": "P",
+    "uniform": 2.2516774501975005,
+    "root_ric": 3.2088058914771507,
+    "remaining": 1.9244957891478245,
+    "proposed_balanced": 2.5666508403124877
+  },
+  {
+    "group_id": "V017",
+    "branch": "S",
+    "uniform": 2.275512114048602,
+    "root_ric": 3.157166118764413,
+    "remaining": 1.9741303879467689,
+    "proposed_balanced": 2.565648253355591
+  },
+  {
+    "group_id": "V017",
+    "branch": "R",
+    "uniform": 2.2410912556235223,
+    "root_ric": 3.227388516424766,
+    "remaining": 1.9039386205537094,
+    "proposed_balanced": 2.5656635684892377
+  },
+  {
+    "group_id": "V018",
+    "branch": "T",
+    "uniform": 2.3214295784333485,
+    "root_ric": 3.395338412387389,
+    "remaining": 1.9543280892755899,
+    "proposed_balanced": 2.6748332508314894
+  },
+  {
+    "group_id": "V018",
+    "branch": "P",
+    "uniform": 2.3099663335462064,
+    "root_ric": 3.4431807263241625,
+    "remaining": 1.922592025810884,
+    "proposed_balanced": 2.6828863760675232
+  },
+  {
+    "group_id": "V018",
+    "branch": "S",
+    "uniform": 2.3214295784333485,
+    "root_ric": 3.395338412387389,
+    "remaining": 1.9543280892755899,
+    "proposed_balanced": 2.6748332508314894
+  },
+  {
+    "group_id": "V018",
+    "branch": "R",
+    "uniform": 2.3027703284345327,
+    "root_ric": 3.4459693302900694,
+    "remaining": 1.9119829145349352,
+    "proposed_balanced": 2.6789761224125024
+  },
+  {
+    "group_id": "V019",
+    "branch": "T",
+    "uniform": 2.340598402248986,
+    "root_ric": 3.43975745098303,
+    "remaining": 1.964865462120512,
+    "proposed_balanced": 2.702311456551771
+  },
+  {
+    "group_id": "V019",
+    "branch": "P",
+    "uniform": 2.330536888863993,
+    "root_ric": 3.487715194877435,
+    "remaining": 1.9349708352777655,
+    "proposed_balanced": 2.7113430150776003
+  },
+  {
+    "group_id": "V019",
+    "branch": "S",
+    "uniform": 2.340598402248986,
+    "root_ric": 3.43975745098303,
+    "remaining": 1.964865462120512,
+    "proposed_balanced": 2.702311456551771
+  },
+  {
+    "group_id": "V019",
+    "branch": "R",
+    "uniform": 2.323065613185553,
+    "root_ric": 3.4886944736220884,
+    "remaining": 1.9246108496689824,
+    "proposed_balanced": 2.7066526616455353
+  },
+  {
+    "group_id": "V020",
+    "branch": "T",
+    "uniform": 2.376308901612618,
+    "root_ric": 3.5169287544215724,
+    "remaining": 1.9864031356013943,
+    "proposed_balanced": 2.7516659450114833
+  },
+  {
+    "group_id": "V020",
+    "branch": "P",
+    "uniform": 2.366035719591383,
+    "root_ric": 3.56713247412602,
+    "remaining": 1.9554567269698484,
+    "proposed_balanced": 2.7612946005479344
+  },
+  {
+    "group_id": "V020",
+    "branch": "S",
+    "uniform": 2.376308901612618,
+    "root_ric": 3.5169287544215724,
+    "remaining": 1.9864031356013943,
+    "proposed_balanced": 2.7516659450114833
+  },
+  {
+    "group_id": "V020",
+    "branch": "R",
+    "uniform": 2.358088814077833,
+    "root_ric": 3.565001279865946,
+    "remaining": 1.945521797711488,
+    "proposed_balanced": 2.755261538788717
+  },
+  {
+    "group_id": "V021",
+    "branch": "T",
+    "uniform": 2.8445301481548135,
+    "root_ric": 3.6693356666332995,
+    "remaining": 2.562581322960638,
+    "proposed_balanced": 3.1159584947969687
+  },
+  {
+    "group_id": "V021",
+    "branch": "P",
+    "uniform": 2.813738479340145,
+    "root_ric": 3.657074378696804,
+    "remaining": 2.5254552892539404,
+    "proposed_balanced": 3.091264833975372
+  },
+  {
+    "group_id": "V021",
+    "branch": "S",
+    "uniform": 2.8445301481548135,
+    "root_ric": 3.6693356666332995,
+    "remaining": 2.562581322960638,
+    "proposed_balanced": 3.1159584947969687
+  },
+  {
+    "group_id": "V021",
+    "branch": "R",
+    "uniform": 2.8165059981812974,
+    "root_ric": 3.6561025400853726,
+    "remaining": 2.529501057836537,
+    "proposed_balanced": 3.092801798960955
+  },
+  {
+    "group_id": "V022",
+    "branch": "T",
+    "uniform": 2.6060858345412896,
+    "root_ric": 3.628719237328533,
+    "remaining": 2.256512171343609,
+    "proposed_balanced": 2.9426157043360712
+  },
+  {
+    "group_id": "V022",
+    "branch": "P",
+    "uniform": 2.589405933800796,
+    "root_ric": 3.61722869474501,
+    "remaining": 2.2380583573555795,
+    "proposed_balanced": 2.9276435260502947
+  },
+  {
+    "group_id": "V022",
+    "branch": "S",
+    "uniform": 2.6060858345412896,
+    "root_ric": 3.628719237328533,
+    "remaining": 2.256512171343609,
+    "proposed_balanced": 2.9426157043360712
+  },
+  {
+    "group_id": "V022",
+    "branch": "R",
+    "uniform": 2.589309253313684,
+    "root_ric": 3.6155683225200375,
+    "remaining": 2.2384962041462058,
+    "proposed_balanced": 2.9270322633331216
+  },
+  {
+    "group_id": "V023",
+    "branch": "T",
+    "uniform": 2.5583186785116614,
+    "root_ric": 3.601007071890157,
+    "remaining": 2.2018894828159508,
+    "proposed_balanced": 2.9014482773530537
+  },
+  {
+    "group_id": "V023",
+    "branch": "P",
+    "uniform": 2.5422663664034766,
+    "root_ric": 3.5894267263301867,
+    "remaining": 2.1843084882652644,
+    "proposed_balanced": 2.8868676072977255
+  },
+  {
+    "group_id": "V023",
+    "branch": "S",
+    "uniform": 2.5583186785116614,
+    "root_ric": 3.601007071890157,
+    "remaining": 2.2018894828159508,
+    "proposed_balanced": 2.9014482773530537
+  },
+  {
+    "group_id": "V023",
+    "branch": "R",
+    "uniform": 2.541965661567404,
+    "root_ric": 3.58809613134395,
+    "remaining": 2.184359837715217,
+    "proposed_balanced": 2.8862279845295835
+  },
+  {
+    "group_id": "V024",
+    "branch": "T",
+    "uniform": 2.4938124454126025,
+    "root_ric": 3.5327573919858297,
+    "remaining": 2.138662897349306,
+    "proposed_balanced": 2.835710144667568
+  },
+  {
+    "group_id": "V024",
+    "branch": "P",
+    "uniform": 2.478805056419901,
+    "root_ric": 3.523087232257281,
+    "remaining": 2.121831047332633,
+    "proposed_balanced": 2.822459139794957
+  },
+  {
+    "group_id": "V024",
+    "branch": "S",
+    "uniform": 2.4938124454126025,
+    "root_ric": 3.5327573919858297,
+    "remaining": 2.138662897349306,
+    "proposed_balanced": 2.835710144667568
+  },
+  {
+    "group_id": "V024",
+    "branch": "R",
+    "uniform": 2.478492323348155,
+    "root_ric": 3.5214180271384445,
+    "remaining": 2.1219820062361685,
+    "proposed_balanced": 2.8217000166873065
+  },
+  {
+    "group_id": "V025",
+    "branch": "T",
+    "uniform": 0.8649533625832898,
+    "root_ric": 0.5144154120134418,
+    "remaining": 0.9847801109923705,
+    "proposed_balanced": 0.7495977615029061
+  },
+  {
+    "group_id": "V025",
+    "branch": "P",
+    "uniform": 0.5925827559777052,
+    "root_ric": 0.3341923935165155,
+    "remaining": 0.6809100737578057,
+    "proposed_balanced": 0.5075512336371606
+  },
+  {
+    "group_id": "V025",
+    "branch": "S",
+    "uniform": 0.8649533625832898,
+    "root_ric": 0.5144154120134418,
+    "remaining": 0.9847801109923705,
+    "proposed_balanced": 0.7495977615029061
+  },
+  {
+    "group_id": "V025",
+    "branch": "R",
+    "uniform": 0.7647391406998477,
+    "root_ric": 0.4335078390853183,
+    "remaining": 0.8779661672721613,
+    "proposed_balanced": 0.6557370031787397
+  },
+  {
+    "group_id": "V026",
+    "branch": "T",
+    "uniform": 0.6801371192694137,
+    "root_ric": 0.4292767673268475,
+    "remaining": 0.7658904028416174,
+    "proposed_balanced": 0.5975835850842324
+  },
+  {
+    "group_id": "V026",
+    "branch": "P",
+    "uniform": 0.5885605522128963,
+    "root_ric": 0.36106552972146033,
+    "remaining": 0.6663267078604789,
+    "proposed_balanced": 0.5136961187909697
+  },
+  {
+    "group_id": "V026",
+    "branch": "S",
+    "uniform": 0.6801371192694137,
+    "root_ric": 0.4292767673268475,
+    "remaining": 0.7658904028416174,
+    "proposed_balanced": 0.5975835850842324
+  },
+  {
+    "group_id": "V026",
+    "branch": "R",
+    "uniform": 0.6653453695127581,
+    "root_ric": 0.39899982752123253,
+    "remaining": 0.7563920598874122,
+    "proposed_balanced": 0.5776959437043223
+  },
+  {
+    "group_id": "V027",
+    "branch": "T",
+    "uniform": 0.5947796823873123,
+    "root_ric": 0.3720661222025426,
+    "remaining": 0.6709113585729224,
+    "proposed_balanced": 0.5214887403877325
+  },
+  {
+    "group_id": "V027",
+    "branch": "P",
+    "uniform": 0.5341560062930792,
+    "root_ric": 0.33086081194997013,
+    "remaining": 0.603649771706285,
+    "proposed_balanced": 0.46725529182812753
+  },
+  {
+    "group_id": "V027",
+    "branch": "S",
+    "uniform": 0.5947796823873123,
+    "root_ric": 0.3720661222025426,
+    "remaining": 0.6709113585729224,
+    "proposed_balanced": 0.5214887403877325
+  },
+  {
+    "group_id": "V027",
+    "branch": "R",
+    "uniform": 0.5920782931980199,
+    "root_ric": 0.3568557366343654,
+    "remaining": 0.6724860038600855,
+    "proposed_balanced": 0.5146708702472255
+  },
+  {
+    "group_id": "V028",
+    "branch": "T",
+    "uniform": 0.5138682554428744,
+    "root_ric": 0.3267157768742166,
+    "remaining": 0.5778438476066502,
+    "proposed_balanced": 0.4522798122404334
+  },
+  {
+    "group_id": "V028",
+    "branch": "P",
+    "uniform": 0.4757452069956591,
+    "root_ric": 0.30492479629292574,
+    "remaining": 0.5341378984093484,
+    "proposed_balanced": 0.41953134735113706
+  },
+  {
+    "group_id": "V028",
+    "branch": "S",
+    "uniform": 0.5138682554428744,
+    "root_ric": 0.3267157768742166,
+    "remaining": 0.5778438476066502,
+    "proposed_balanced": 0.4522798122404334
+  },
+  {
+    "group_id": "V028",
+    "branch": "R",
+    "uniform": 0.5181289090526194,
+    "root_ric": 0.3213302307513623,
+    "remaining": 0.5854019266351921,
+    "proposed_balanced": 0.45336607869327716
+  },
+  {
+    "group_id": "V029",
+    "branch": "T",
+    "uniform": 1.4782477509178231,
+    "root_ric": 1.0100972867638647,
+    "remaining": 1.6382787769296354,
+    "proposed_balanced": 1.32418803184675
+  },
+  {
+    "group_id": "V029",
+    "branch": "P",
+    "uniform": 1.046462984922529,
+    "root_ric": 0.6861403018733505,
+    "remaining": 1.1696345143321973,
+    "proposed_balanced": 0.9278874081027739
+  },
+  {
+    "group_id": "V029",
+    "branch": "S",
+    "uniform": 1.4782477509178231,
+    "root_ric": 1.0100972867638647,
+    "remaining": 1.6382787769296354,
+    "proposed_balanced": 1.32418803184675
+  },
+  {
+    "group_id": "V029",
+    "branch": "R",
+    "uniform": 1.3391951536774267,
+    "root_ric": 0.9119044266037475,
+    "remaining": 1.485258820585266,
+    "proposed_balanced": 1.1985816235945066
+  },
+  {
+    "group_id": "V030",
+    "branch": "T",
+    "uniform": 0.8565621750866268,
+    "root_ric": 0.5132252902613829,
+    "remaining": 0.9739273346952562,
+    "proposed_balanced": 0.7435763124783195
+  },
+  {
+    "group_id": "V030",
+    "branch": "P",
+    "uniform": 0.7174213980934484,
+    "root_ric": 0.4203659661115068,
+    "remaining": 0.8189658569852345,
+    "proposed_balanced": 0.6196659115483707
+  },
+  {
+    "group_id": "V030",
+    "branch": "S",
+    "uniform": 0.8565621750866268,
+    "root_ric": 0.5132252902613829,
+    "remaining": 0.9739273346952562,
+    "proposed_balanced": 0.7435763124783195
+  },
+  {
+    "group_id": "V030",
+    "branch": "R",
+    "uniform": 0.8122306571037465,
+    "root_ric": 0.48531115801773816,
+    "remaining": 0.9239837511790656,
+    "proposed_balanced": 0.7046474545984018
+  },
+  {
+    "group_id": "V031",
+    "branch": "T",
+    "uniform": 0.7219627577955148,
+    "root_ric": 0.43159420426038564,
+    "remaining": 0.8212213959937477,
+    "proposed_balanced": 0.6264078001270666
+  },
+  {
+    "group_id": "V031",
+    "branch": "P",
+    "uniform": 0.6230307525516795,
+    "root_ric": 0.36949073438656704,
+    "remaining": 0.7097000444754679,
+    "proposed_balanced": 0.5395953894310175
+  },
+  {
+    "group_id": "V031",
+    "branch": "S",
+    "uniform": 0.7219627577955148,
+    "root_ric": 0.43159420426038564,
+    "remaining": 0.8212213959937477,
+    "proposed_balanced": 0.6264078001270666
+  },
+  {
+    "group_id": "V031",
+    "branch": "R",
+    "uniform": 0.6935572016479646,
+    "root_ric": 0.4151766598368094,
+    "remaining": 0.7887178970630025,
+    "proposed_balanced": 0.601947278449906
+  },
+  {
+    "group_id": "V032",
+    "branch": "T",
+    "uniform": 0.5672663228724384,
+    "root_ric": 0.34537144925243995,
+    "remaining": 0.6431181419160091,
+    "proposed_balanced": 0.4942447955842245
+  },
+  {
+    "group_id": "V032",
+    "branch": "P",
+    "uniform": 0.50194407592746,
+    "root_ric": 0.30787195427110103,
+    "remaining": 0.5682850562895827,
+    "proposed_balanced": 0.43807850528034187
+  },
+  {
+    "group_id": "V032",
+    "branch": "S",
+    "uniform": 0.5672663228724384,
+    "root_ric": 0.34537144925243995,
+    "remaining": 0.6431181419160091,
+    "proposed_balanced": 0.4942447955842245
+  },
+  {
+    "group_id": "V032",
+    "branch": "R",
+    "uniform": 0.5526157247039013,
+    "root_ric": 0.3402729087629926,
+    "remaining": 0.6252022995408447,
+    "proposed_balanced": 0.4827376041519187
+  },
+  {
+    "group_id": "V033",
+    "branch": "T",
+    "uniform": 2.1633280976456537,
+    "root_ric": 3.09101784187325,
+    "remaining": 1.8462096646698936,
+    "proposed_balanced": 2.4686137532715717
+  },
+  {
+    "group_id": "V033",
+    "branch": "P",
+    "uniform": 2.0721656336156618,
+    "root_ric": 3.0133420220489584,
+    "remaining": 1.7504369702226468,
+    "proposed_balanced": 2.381889496135803
+  },
+  {
+    "group_id": "V033",
+    "branch": "S",
+    "uniform": 2.1633280976456537,
+    "root_ric": 3.09101784187325,
+    "remaining": 1.8462096646698936,
+    "proposed_balanced": 2.4686137532715717
+  },
+  {
+    "group_id": "V033",
+    "branch": "R",
+    "uniform": 2.0999661814431736,
+    "root_ric": 3.0538961050957667,
+    "remaining": 1.7738778912149908,
+    "proposed_balanced": 2.4138869981553785
+  },
+  {
+    "group_id": "V034",
+    "branch": "T",
+    "uniform": 2.396240158520942,
+    "root_ric": 3.8049198310243346,
+    "remaining": 1.9147016990427412,
+    "proposed_balanced": 2.859810765033538
+  },
+  {
+    "group_id": "V034",
+    "branch": "P",
+    "uniform": 2.3397691456152696,
+    "root_ric": 3.785315418021454,
+    "remaining": 1.8456283280070331,
+    "proposed_balanced": 2.8154718730142436
+  },
+  {
+    "group_id": "V034",
+    "branch": "S",
+    "uniform": 2.396240158520942,
+    "root_ric": 3.8049198310243346,
+    "remaining": 1.9147016990427412,
+    "proposed_balanced": 2.859810765033538
+  },
+  {
+    "group_id": "V034",
+    "branch": "R",
+    "uniform": 2.346788111519067,
+    "root_ric": 3.778085481501022,
+    "remaining": 1.8575180921885006,
+    "proposed_balanced": 2.817801786844761
+  },
+  {
+    "group_id": "V035",
+    "branch": "T",
+    "uniform": 2.4690931121872173,
+    "root_ric": 3.9039488945699903,
+    "remaining": 1.9786066967808607,
+    "proposed_balanced": 2.9412777956754255
+  },
+  {
+    "group_id": "V035",
+    "branch": "P",
+    "uniform": 2.4172510572042913,
+    "root_ric": 3.9027861126972434,
+    "remaining": 1.9094406045612922,
+    "proposed_balanced": 2.906113358629268
+  },
+  {
+    "group_id": "V035",
+    "branch": "S",
+    "uniform": 2.4690931121872173,
+    "root_ric": 3.9039488945699903,
+    "remaining": 1.9786066967808607,
+    "proposed_balanced": 2.9412777956754255
+  },
+  {
+    "group_id": "V035",
+    "branch": "R",
+    "uniform": 2.421649452614411,
+    "root_ric": 3.8888003220871865,
+    "remaining": 1.9201233900905534,
+    "proposed_balanced": 2.90446185608887
+  },
+  {
+    "group_id": "V036",
+    "branch": "T",
+    "uniform": 2.562379901740804,
+    "root_ric": 4.028309548438871,
+    "remaining": 2.061271298022588,
+    "proposed_balanced": 3.0447904232307295
+  },
+  {
+    "group_id": "V036",
+    "branch": "P",
+    "uniform": 2.5140809493491947,
+    "root_ric": 4.040328640169763,
+    "remaining": 1.9923534223850208,
+    "proposed_balanced": 3.016341031277392
+  },
+  {
+    "group_id": "V036",
+    "branch": "S",
+    "uniform": 2.562379901740804,
+    "root_ric": 4.028309548438871,
+    "remaining": 2.061271298022588,
+    "proposed_balanced": 3.0447904232307295
+  },
+  {
+    "group_id": "V036",
+    "branch": "R",
+    "uniform": 2.5166095541038294,
+    "root_ric": 4.024031089633152,
+    "remaining": 2.0013174985912543,
+    "proposed_balanced": 3.0126742941122036
+  },
+  {
+    "group_id": "V037",
+    "branch": "T",
+    "uniform": 2.527666037046861,
+    "root_ric": 5.906239772586464,
+    "remaining": 1.3727454233675065,
+    "proposed_balanced": 3.6394925979769854
+  },
+  {
+    "group_id": "V037",
+    "branch": "P",
+    "uniform": 2.400956606909965,
+    "root_ric": 5.713648470720914,
+    "remaining": 1.2685568371378546,
+    "proposed_balanced": 3.491102653929384
+  },
+  {
+    "group_id": "V037",
+    "branch": "S",
+    "uniform": 2.527666037046861,
+    "root_ric": 5.906239772586464,
+    "remaining": 1.3727454233675065,
+    "proposed_balanced": 3.6394925979769854
+  },
+  {
+    "group_id": "V037",
+    "branch": "R",
+    "uniform": 2.427877757455143,
+    "root_ric": 5.74390632621638,
+    "remaining": 1.2943373793581896,
+    "proposed_balanced": 3.519121852787285
+  },
+  {
+    "group_id": "V038",
+    "branch": "T",
+    "uniform": 2.5433245243310783,
+    "root_ric": 6.057567218468597,
+    "remaining": 1.3420272768452932,
+    "proposed_balanced": 3.699797247656945
+  },
+  {
+    "group_id": "V038",
+    "branch": "P",
+    "uniform": 2.4947542148054684,
+    "root_ric": 6.050499930564112,
+    "remaining": 1.279269709928789,
+    "proposed_balanced": 3.6648848202464506
+  },
+  {
+    "group_id": "V038",
+    "branch": "S",
+    "uniform": 2.5433245243310783,
+    "root_ric": 6.057567218468597,
+    "remaining": 1.3420272768452932,
+    "proposed_balanced": 3.699797247656945
+  },
+  {
+    "group_id": "V038",
+    "branch": "R",
+    "uniform": 2.507334623907705,
+    "root_ric": 6.054984307548688,
+    "remaining": 1.2946176402141034,
+    "proposed_balanced": 3.674800973881396
+  },
+  {
+    "group_id": "V039",
+    "branch": "T",
+    "uniform": 2.5048027415451886,
+    "root_ric": 5.949208251467077,
+    "remaining": 1.32737840907189,
+    "proposed_balanced": 3.6382933302694838
+  },
+  {
+    "group_id": "V039",
+    "branch": "P",
+    "uniform": 2.456167712959345,
+    "root_ric": 5.93412662143291,
+    "remaining": 1.2672735962872588,
+    "proposed_balanced": 3.6007001088600843
+  },
+  {
+    "group_id": "V039",
+    "branch": "S",
+    "uniform": 2.5048027415451886,
+    "root_ric": 5.949208251467077,
+    "remaining": 1.32737840907189,
+    "proposed_balanced": 3.6382933302694838
+  },
+  {
+    "group_id": "V039",
+    "branch": "R",
+    "uniform": 2.4711939806653245,
+    "root_ric": 5.946073560216345,
+    "remaining": 1.2833524917371695,
+    "proposed_balanced": 3.614713025976757
+  },
+  {
+    "group_id": "V040",
+    "branch": "T",
+    "uniform": 2.4063708389651013,
+    "root_ric": 5.645091715282313,
+    "remaining": 1.2992570700199315,
+    "proposed_balanced": 3.472174392651122
+  },
+  {
+    "group_id": "V040",
+    "branch": "P",
+    "uniform": 2.3441926954807495,
+    "root_ric": 5.584080391560612,
+    "remaining": 1.2366800646779386,
+    "proposed_balanced": 3.410380228119275
+  },
+  {
+    "group_id": "V040",
+    "branch": "S",
+    "uniform": 2.4063708389651013,
+    "root_ric": 5.645091715282313,
+    "remaining": 1.2992570700199315,
+    "proposed_balanced": 3.472174392651122
+  },
+  {
+    "group_id": "V040",
+    "branch": "R",
+    "uniform": 2.3619577626639474,
+    "root_ric": 5.603274700109055,
+    "remaining": 1.2539565646597521,
+    "proposed_balanced": 3.4286156323844037
+  },
+  {
+    "group_id": "V041",
+    "branch": "T",
+    "uniform": 2.1832764455648626,
+    "root_ric": 3.499529637404936,
+    "remaining": 1.733332752435858,
+    "proposed_balanced": 2.6164311949203967
+  },
+  {
+    "group_id": "V041",
+    "branch": "P",
+    "uniform": 2.060831937033116,
+    "root_ric": 3.247898645964819,
+    "remaining": 1.655048929388095,
+    "proposed_balanced": 2.451473787676457
+  },
+  {
+    "group_id": "V041",
+    "branch": "S",
+    "uniform": 2.1832764455648626,
+    "root_ric": 3.499529637404936,
+    "remaining": 1.733332752435858,
+    "proposed_balanced": 2.6164311949203967
+  },
+  {
+    "group_id": "V041",
+    "branch": "R",
+    "uniform": 2.1817585167378035,
+    "root_ric": 3.4800673129139135,
+    "remaining": 1.737948877228623,
+    "proposed_balanced": 2.6090080950712684
+  },
+  {
+    "group_id": "V042",
+    "branch": "T",
+    "uniform": 2.0456121950201416,
+    "root_ric": 2.9779917725894154,
+    "remaining": 1.7268906047286048,
+    "proposed_balanced": 2.35244118865901
+  },
+  {
+    "group_id": "V042",
+    "branch": "P",
+    "uniform": 1.9713554586636743,
+    "root_ric": 2.838984199723706,
+    "remaining": 1.6747680828931533,
+    "proposed_balanced": 2.2568761413084295
+  },
+  {
+    "group_id": "V042",
+    "branch": "S",
+    "uniform": 2.0456121950201416,
+    "root_ric": 2.9779917725894154,
+    "remaining": 1.7268906047286048,
+    "proposed_balanced": 2.35244118865901
+  },
+  {
+    "group_id": "V042",
+    "branch": "R",
+    "uniform": 2.046282275762799,
+    "root_ric": 2.9750230989694124,
+    "remaining": 1.7288045453809464,
+    "proposed_balanced": 2.351913822175179
+  },
+  {
+    "group_id": "V043",
+    "branch": "T",
+    "uniform": 1.9815038976307615,
+    "root_ric": 2.887488040580048,
+    "remaining": 1.6718052365205462,
+    "proposed_balanced": 2.279646638550297
+  },
+  {
+    "group_id": "V043",
+    "branch": "P",
+    "uniform": 1.9136959094130284,
+    "root_ric": 2.754225284040229,
+    "remaining": 1.6263720925761789,
+    "proposed_balanced": 2.190298688308204
+  },
+  {
+    "group_id": "V043",
+    "branch": "S",
+    "uniform": 1.9815038976307615,
+    "root_ric": 2.887488040580048,
+    "remaining": 1.6718052365205462,
+    "proposed_balanced": 2.279646638550297
+  },
+  {
+    "group_id": "V043",
+    "branch": "R",
+    "uniform": 1.9813731573780662,
+    "root_ric": 2.8833742798808397,
+    "remaining": 1.6730360389715055,
+    "proposed_balanced": 2.2782051594261725
+  },
+  {
+    "group_id": "V044",
+    "branch": "T",
+    "uniform": 1.902202949183828,
+    "root_ric": 2.749767520254365,
+    "remaining": 1.6124742437668582,
+    "proposed_balanced": 2.1811208820106116
+  },
+  {
+    "group_id": "V044",
+    "branch": "P",
+    "uniform": 1.8392768435479483,
+    "root_ric": 2.619776252716569,
+    "remaining": 1.5724734740872466,
+    "proposed_balanced": 2.096124863401908
+  },
+  {
+    "group_id": "V044",
+    "branch": "S",
+    "uniform": 1.902202949183828,
+    "root_ric": 2.749767520254365,
+    "remaining": 1.6124742437668582,
+    "proposed_balanced": 2.1811208820106116
+  },
+  {
+    "group_id": "V044",
+    "branch": "R",
+    "uniform": 1.9013593317579054,
+    "root_ric": 2.744646169919872,
+    "remaining": 1.6130929125902946,
+    "proposed_balanced": 2.178869541255083
+  },
+  {
+    "group_id": "V045",
+    "branch": "T",
+    "uniform": 0.34221120968983104,
+    "root_ric": 0.6412584034815603,
+    "remaining": 0.23998589344469912,
+    "proposed_balanced": 0.4406221484631297
+  },
+  {
+    "group_id": "V045",
+    "branch": "P",
+    "uniform": 0.18520465407739212,
+    "root_ric": 0.3018352253363151,
+    "remaining": 0.14533604043276027,
+    "proposed_balanced": 0.2235856328845377
+  },
+  {
+    "group_id": "V045",
+    "branch": "S",
+    "uniform": 0.34221120968983104,
+    "root_ric": 0.6412584034815603,
+    "remaining": 0.23998589344469912,
+    "proposed_balanced": 0.4406221484631297
+  },
+  {
+    "group_id": "V045",
+    "branch": "R",
+    "uniform": 0.37737372392956253,
+    "root_ric": 0.789160999558454,
+    "remaining": 0.23660970624009459,
+    "proposed_balanced": 0.5128853528992743
+  },
+  {
+    "group_id": "V046",
+    "branch": "T",
+    "uniform": 0.14912061833067874,
+    "root_ric": 0.1877879946708339,
+    "remaining": 0.1359026886633808,
+    "proposed_balanced": 0.16184534166710735
+  },
+  {
+    "group_id": "V046",
+    "branch": "P",
+    "uniform": 0.12108155837606496,
+    "root_ric": 0.15491866067746446,
+    "remaining": 0.10951479381385192,
+    "proposed_balanced": 0.1322167272456582
+  },
+  {
+    "group_id": "V046",
+    "branch": "S",
+    "uniform": 0.14912061833067874,
+    "root_ric": 0.1877879946708339,
+    "remaining": 0.1359026886633808,
+    "proposed_balanced": 0.16184534166710735
+  },
+  {
+    "group_id": "V046",
+    "branch": "R",
+    "uniform": 0.2066466738522975,
+    "root_ric": 0.36448086195041524,
+    "remaining": 0.1526931503697777,
+    "proposed_balanced": 0.25858700616009644
+  },
+  {
+    "group_id": "V047",
+    "branch": "T",
+    "uniform": 0.13213162367903578,
+    "root_ric": 0.17086708560721353,
+    "remaining": 0.11889041985664851,
+    "proposed_balanced": 0.14487875273193102
+  },
+  {
+    "group_id": "V047",
+    "branch": "P",
+    "uniform": 0.11822551682512074,
+    "root_ric": 0.16226416294990303,
+    "remaining": 0.10317148983348598,
+    "proposed_balanced": 0.1327178263916945
+  },
+  {
+    "group_id": "V047",
+    "branch": "S",
+    "uniform": 0.13213162367903578,
+    "root_ric": 0.17086708560721353,
+    "remaining": 0.11889041985664851,
+    "proposed_balanced": 0.14487875273193102
+  },
+  {
+    "group_id": "V047",
+    "branch": "R",
+    "uniform": 0.18816784916925333,
+    "root_ric": 0.3363360450462195,
+    "remaining": 0.1375185169051884,
+    "proposed_balanced": 0.23692728097570395
+  },
+  {
+    "group_id": "V048",
+    "branch": "T",
+    "uniform": 0.1351839931403779,
+    "root_ric": 0.19042079417781405,
+    "remaining": 0.11630202543880538,
+    "proposed_balanced": 0.1533614098083097
+  },
+  {
+    "group_id": "V048",
+    "branch": "P",
+    "uniform": 0.1309404407410255,
+    "root_ric": 0.19352275114037187,
+    "remaining": 0.10954750810451425,
+    "proposed_balanced": 0.15153512962244306
+  },
+  {
+    "group_id": "V048",
+    "branch": "S",
+    "uniform": 0.1351839931403779,
+    "root_ric": 0.19042079417781405,
+    "remaining": 0.11630202543880538,
+    "proposed_balanced": 0.1533614098083097
+  },
+  {
+    "group_id": "V048",
+    "branch": "R",
+    "uniform": 0.19417634740853126,
+    "root_ric": 0.35189732311362326,
+    "remaining": 0.1402615240807702,
+    "proposed_balanced": 0.24607942359719673
+  }
+]

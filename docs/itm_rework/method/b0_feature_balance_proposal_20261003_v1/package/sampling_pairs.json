@@ -1,0 +1,2462 @@
+[
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "condition": "paired",
+    "frames": 41,
+    "text": "this person is standing straight and kicks his leg out once and then stands normal.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000433-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F001",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000433-head-paired",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-head-paired.npz",
+      "sha256": "5dcb2b5e7ae9f4aae8ec60b2bc489d164d3f2713c8174b292d5c6c7b33bda23f"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-head-paired.json",
+      "sha256": "b722878abe8353f6344e617a697482b8d6e577d5dd3b197c713c017504642ea3"
+    },
+    "random_plan_id": "52807a48c82d9243c5328a2df92e252d21cdbb55b0435faca7dccf291a656ec9",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "condition": "text_only",
+    "frames": 41,
+    "text": "this person is standing straight and kicks his leg out once and then stands normal.",
+    "text_present": true,
+    "imu_present": false,
+    "random_plan_case_id": "canonical-B0-000433-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F002",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000433-head-text_only",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-head-text_only.npz",
+      "sha256": "8d818f77568c6bf8f2e49f680cae3baf59e314b8cf61223e1237f6ef994f8f10"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-head-text_only.json",
+      "sha256": "68f549df05e6fc68c13a15b2964e3c57006bf924c66162e8f2e75253db71a0b2"
+    },
+    "random_plan_id": "52807a48c82d9243c5328a2df92e252d21cdbb55b0435faca7dccf291a656ec9",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "condition": "imu_only",
+    "frames": 41,
+    "text": "this person is standing straight and kicks his leg out once and then stands normal.",
+    "text_present": false,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000433-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F003",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000433-head-imu_only",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-head-imu_only.npz",
+      "sha256": "3fadda44b3c5d3bb0de487b1644365cd3414baa276e0175339efb6ea177a0e4e"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-head-imu_only.json",
+      "sha256": "0f1a9551c8ddda80ff2f8384bc7df3dca523d89179e290ccda64f33cd5c89065"
+    },
+    "random_plan_id": "52807a48c82d9243c5328a2df92e252d21cdbb55b0435faca7dccf291a656ec9",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "condition": "backbone_bypass",
+    "frames": 41,
+    "text": "this person is standing straight and kicks his leg out once and then stands normal.",
+    "text_present": true,
+    "imu_present": false,
+    "random_plan_case_id": "canonical-B0-000433-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F004",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000433-head-backbone_bypass",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-head-backbone_bypass.npz",
+      "sha256": "1f887a2711e55f2fe4d207aff8e0b4f899d97a71b5585eb68488cc45b513313b"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-head-backbone_bypass.json",
+      "sha256": "75f8f465bee4ff3095c918f6f295add220745674f4354f08fa2fb85e150956fb"
+    },
+    "random_plan_id": "52807a48c82d9243c5328a2df92e252d21cdbb55b0435faca7dccf291a656ec9",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "condition": "numeric_zero",
+    "frames": 41,
+    "text": "this person is standing straight and kicks his leg out once and then stands normal.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000433-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F005",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000433-head-numeric_zero",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-head-numeric_zero.npz",
+      "sha256": "0d0508ba59344fcdbe5610c5a649c58a2656ed757f6c0112f96a0c121bc94ea0"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-head-numeric_zero.json",
+      "sha256": "adfeabe755a8f2c2c44c69b2c134d92eac204d84646c49d8bca43e120624ff2f"
+    },
+    "random_plan_id": "52807a48c82d9243c5328a2df92e252d21cdbb55b0435faca7dccf291a656ec9",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "condition": "physical_static",
+    "frames": 41,
+    "text": "this person is standing straight and kicks his leg out once and then stands normal.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000433-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F006",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000433-head-physical_static",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-head-physical_static.npz",
+      "sha256": "cb2c90960ef73c89251a24bb1b7ae9443518c1f80fcdd8c8494564e708bd6acd"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-head-physical_static.json",
+      "sha256": "c11ea07322fee0e025746a67ddf5ad894a82bbcb8f7ba0b89ca7eb62d6690f4d"
+    },
+    "random_plan_id": "52807a48c82d9243c5328a2df92e252d21cdbb55b0435faca7dccf291a656ec9",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "condition": "paired",
+    "frames": 41,
+    "text": "this person is standing straight and kicks his leg out once and then stands normal.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000433-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F007",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000433-wrists-paired",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-wrists-paired.npz",
+      "sha256": "4d2462d68bf46e97b0ef3da2e9a91a464f665804edfd8cd871f8047be13ab29a"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-wrists-paired.json",
+      "sha256": "e6b5789a1015b2589546b6e9b8700c0849b963d010a05c628741c7b0a633e655"
+    },
+    "random_plan_id": "867bed3e702aa06489c16cd6813cc800773c59c5113a432ab42300a45784c563",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "condition": "text_only",
+    "frames": 41,
+    "text": "this person is standing straight and kicks his leg out once and then stands normal.",
+    "text_present": true,
+    "imu_present": false,
+    "random_plan_case_id": "canonical-B0-000433-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F008",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000433-wrists-text_only",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-wrists-text_only.npz",
+      "sha256": "c255d30da7c67a575766a49dc0940329262f8532b7e3267f0a738181d6f565f7"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-wrists-text_only.json",
+      "sha256": "8c8b3322af0e178f6fb4461a8f0a0be5d3aeaa39850e2f142bb42d98316b94a8"
+    },
+    "random_plan_id": "867bed3e702aa06489c16cd6813cc800773c59c5113a432ab42300a45784c563",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "condition": "imu_only",
+    "frames": 41,
+    "text": "this person is standing straight and kicks his leg out once and then stands normal.",
+    "text_present": false,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000433-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F009",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000433-wrists-imu_only",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-wrists-imu_only.npz",
+      "sha256": "0aa032b3074c576e330873875e5689c1daa7d53c63834342103de56e83d2ca24"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-wrists-imu_only.json",
+      "sha256": "ee0f33c4c762b93b4164912551f0674dfd3efabde572392b264b8ac23584350e"
+    },
+    "random_plan_id": "867bed3e702aa06489c16cd6813cc800773c59c5113a432ab42300a45784c563",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "condition": "backbone_bypass",
+    "frames": 41,
+    "text": "this person is standing straight and kicks his leg out once and then stands normal.",
+    "text_present": true,
+    "imu_present": false,
+    "random_plan_case_id": "canonical-B0-000433-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F010",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000433-wrists-backbone_bypass",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-wrists-backbone_bypass.npz",
+      "sha256": "cf235813dfea46a33b442bfa92354471212595adc51e4f29568ad8b34edfb7e8"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-wrists-backbone_bypass.json",
+      "sha256": "a53dc2f4ce3e9ea42d3b19c78b6ef4d7d453da09ee91508598a04d92fccfcd4c"
+    },
+    "random_plan_id": "867bed3e702aa06489c16cd6813cc800773c59c5113a432ab42300a45784c563",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "condition": "numeric_zero",
+    "frames": 41,
+    "text": "this person is standing straight and kicks his leg out once and then stands normal.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000433-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F011",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000433-wrists-numeric_zero",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-wrists-numeric_zero.npz",
+      "sha256": "143c5854dcaaf6aaae9d37c0d39b94ee2ff687b17fab88dd169756a586a92de6"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-wrists-numeric_zero.json",
+      "sha256": "7fb21c89a9546e7f7e57b0cefe722560e9920156d5e45ba8dab7ea4685a5d38d"
+    },
+    "random_plan_id": "867bed3e702aa06489c16cd6813cc800773c59c5113a432ab42300a45784c563",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "condition": "physical_static",
+    "frames": 41,
+    "text": "this person is standing straight and kicks his leg out once and then stands normal.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000433-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F012",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000433-wrists-physical_static",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-wrists-physical_static.npz",
+      "sha256": "a63983df21d4e823573715f9bdbe823015f29e7aca5a8faf6f875d1402f1250d"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-wrists-physical_static.json",
+      "sha256": "e048a79d578a82d077c43dce2afb199459ffffaa92886591daa7c1f1d07a18cc"
+    },
+    "random_plan_id": "867bed3e702aa06489c16cd6813cc800773c59c5113a432ab42300a45784c563",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "condition": "paired",
+    "frames": 94,
+    "text": "a person standing in place claps their hands and then places arms back down at their sides.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000382-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F013",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000382-head-paired",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-head-paired.npz",
+      "sha256": "f361466c06708eaba45c81e3c30aafe70dd41b3f39176165f1c954254119e676"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-head-paired.json",
+      "sha256": "df73640233bd9de4a9cfadc0b83084db0e115d418c96c9fd837821992d3c4ca4"
+    },
+    "random_plan_id": "78e031195676d4c0956336cdf487b6a30904866da8d7395d9f42c67cb7fa3d10",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "condition": "text_only",
+    "frames": 94,
+    "text": "a person standing in place claps their hands and then places arms back down at their sides.",
+    "text_present": true,
+    "imu_present": false,
+    "random_plan_case_id": "canonical-B0-000382-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F014",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000382-head-text_only",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-head-text_only.npz",
+      "sha256": "884eeb0fdd9cbd1d0a7683d9278d9068efbd10d34948098243f5aca93d6522e9"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-head-text_only.json",
+      "sha256": "57a91b535706ef9f8cf9f668d2be4e6b51144b997d0d6bbf55542033b034af31"
+    },
+    "random_plan_id": "78e031195676d4c0956336cdf487b6a30904866da8d7395d9f42c67cb7fa3d10",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "condition": "imu_only",
+    "frames": 94,
+    "text": "a person standing in place claps their hands and then places arms back down at their sides.",
+    "text_present": false,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000382-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F015",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000382-head-imu_only",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-head-imu_only.npz",
+      "sha256": "832545e7d0a584e1f0866374fc8998746b503a10bb359628a17d7075ecd27a50"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-head-imu_only.json",
+      "sha256": "45d582e730f9a7a03fd87f59401a3fe901ebb9a8e99567ba877a4c3fd74fca6d"
+    },
+    "random_plan_id": "78e031195676d4c0956336cdf487b6a30904866da8d7395d9f42c67cb7fa3d10",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "condition": "backbone_bypass",
+    "frames": 94,
+    "text": "a person standing in place claps their hands and then places arms back down at their sides.",
+    "text_present": true,
+    "imu_present": false,
+    "random_plan_case_id": "canonical-B0-000382-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F016",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000382-head-backbone_bypass",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-head-backbone_bypass.npz",
+      "sha256": "81742a88568808669e07947be21e7a1502d489382268ab6062a95b00ab912dd3"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-head-backbone_bypass.json",
+      "sha256": "4d60076a5c7038dab1ae207bb9fe232d114dbf9a860c18afe85bcd7e55ecfb41"
+    },
+    "random_plan_id": "78e031195676d4c0956336cdf487b6a30904866da8d7395d9f42c67cb7fa3d10",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "condition": "numeric_zero",
+    "frames": 94,
+    "text": "a person standing in place claps their hands and then places arms back down at their sides.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000382-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F017",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000382-head-numeric_zero",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-head-numeric_zero.npz",
+      "sha256": "ef69329f8517b853a36c3402bd2983d49661461f6b79e0f3785ba10ebb7fe837"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-head-numeric_zero.json",
+      "sha256": "2412dda9b969cac7eb05160aadcc49e3562c7417ee715c0868dd2404682342e7"
+    },
+    "random_plan_id": "78e031195676d4c0956336cdf487b6a30904866da8d7395d9f42c67cb7fa3d10",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "condition": "physical_static",
+    "frames": 94,
+    "text": "a person standing in place claps their hands and then places arms back down at their sides.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000382-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F018",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000382-head-physical_static",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-head-physical_static.npz",
+      "sha256": "65f69b2318cf8bc8f073ced0543f4f712e57cfc56ab396689d86fc199c667202"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-head-physical_static.json",
+      "sha256": "9645cdb58d22d83f4f45934ea3f4c282cf4553a3408e3a7f5fa13e766239f738"
+    },
+    "random_plan_id": "78e031195676d4c0956336cdf487b6a30904866da8d7395d9f42c67cb7fa3d10",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "condition": "paired",
+    "frames": 94,
+    "text": "a person standing in place claps their hands and then places arms back down at their sides.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000382-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F019",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000382-wrists-paired",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-wrists-paired.npz",
+      "sha256": "bac635fdb57a3d08b6c76b59bd25ee30cf7887f1ed8b1da8c87e269c447a3e82"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-wrists-paired.json",
+      "sha256": "81d7e6d8924ef307a032ae699c6ba1f0b0d6c5fe4cf67bd43b1d35c3ddc00882"
+    },
+    "random_plan_id": "d4d76b82968c804658609cd01527d875b4df017202c41c5f19302e168465a51a",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "condition": "text_only",
+    "frames": 94,
+    "text": "a person standing in place claps their hands and then places arms back down at their sides.",
+    "text_present": true,
+    "imu_present": false,
+    "random_plan_case_id": "canonical-B0-000382-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F020",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000382-wrists-text_only",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-wrists-text_only.npz",
+      "sha256": "dcea82ca2a890bfbcb820fa3f75c267b3bed57619022b5a516470f877812ced0"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-wrists-text_only.json",
+      "sha256": "e8d3ae8ddbdea61f1b36a246ef1783632e0bf44c5c9118916acc3346dc0f808b"
+    },
+    "random_plan_id": "d4d76b82968c804658609cd01527d875b4df017202c41c5f19302e168465a51a",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "condition": "imu_only",
+    "frames": 94,
+    "text": "a person standing in place claps their hands and then places arms back down at their sides.",
+    "text_present": false,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000382-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F021",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000382-wrists-imu_only",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-wrists-imu_only.npz",
+      "sha256": "1ea7151543f4be5052a253aaa7392a6cfff763b55e6f673119f00d75e261880f"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-wrists-imu_only.json",
+      "sha256": "fb6ab64ea1494827aba570d79497b73c5d369736799bb470a1d1cda745994b1b"
+    },
+    "random_plan_id": "d4d76b82968c804658609cd01527d875b4df017202c41c5f19302e168465a51a",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "condition": "backbone_bypass",
+    "frames": 94,
+    "text": "a person standing in place claps their hands and then places arms back down at their sides.",
+    "text_present": true,
+    "imu_present": false,
+    "random_plan_case_id": "canonical-B0-000382-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F022",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000382-wrists-backbone_bypass",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-wrists-backbone_bypass.npz",
+      "sha256": "da0fb44bfe6f669210abdd07367d89114c57a247f69274317c944d0e37e02474"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-wrists-backbone_bypass.json",
+      "sha256": "3d3a785d651fa28ba8bd166947779c2645766c956e03084666b6ac463ae267a6"
+    },
+    "random_plan_id": "d4d76b82968c804658609cd01527d875b4df017202c41c5f19302e168465a51a",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "condition": "numeric_zero",
+    "frames": 94,
+    "text": "a person standing in place claps their hands and then places arms back down at their sides.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000382-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F023",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000382-wrists-numeric_zero",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-wrists-numeric_zero.npz",
+      "sha256": "cc2fb7f01f2d41c2eed6602199150f164a7ca85dcd80d500c0e9848374d178a6"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-wrists-numeric_zero.json",
+      "sha256": "01e72e0719a741c0bf53286754cdfa17a1a4535ab987152d1d6276541138be9b"
+    },
+    "random_plan_id": "d4d76b82968c804658609cd01527d875b4df017202c41c5f19302e168465a51a",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "condition": "physical_static",
+    "frames": 94,
+    "text": "a person standing in place claps their hands and then places arms back down at their sides.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000382-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F024",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000382-wrists-physical_static",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-wrists-physical_static.npz",
+      "sha256": "eff767ec399fceabcaba8fc6cf34ea71b56494e88c9bd62951f4f54ecb6d4e37"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-wrists-physical_static.json",
+      "sha256": "f180b8f21a41dca1da170f6663047bae54ce453a3ed36dcaef609a83b3e28ecf"
+    },
+    "random_plan_id": "d4d76b82968c804658609cd01527d875b4df017202c41c5f19302e168465a51a",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "condition": "paired",
+    "frames": 163,
+    "text": "a person stands facing down the path, casually swaying for a moment then proceeds to walk a few steps forward, swinging its arms casually.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000139-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F025",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000139-head-paired",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-head-paired.npz",
+      "sha256": "377162b27eceea2fd66c3e1e4085920f2f5bbdd73c9d0c68aa77658804d5285f"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-head-paired.json",
+      "sha256": "284e09ce3c946fd95528a98f3c8cb3a09e52164e5bb6129bd8681d3a61dc646d"
+    },
+    "random_plan_id": "536eade3617bce7ec452fe17545ac9d81e70b586b6f534313491a2201c90e0a4",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "condition": "text_only",
+    "frames": 163,
+    "text": "a person stands facing down the path, casually swaying for a moment then proceeds to walk a few steps forward, swinging its arms casually.",
+    "text_present": true,
+    "imu_present": false,
+    "random_plan_case_id": "canonical-B0-000139-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F026",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000139-head-text_only",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-head-text_only.npz",
+      "sha256": "544ef29df9e1bac3e0bad8ef2242a3d52d281fd9ab360ecbe4e52bc91a5ec69d"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-head-text_only.json",
+      "sha256": "83b8c87ae10f47e756e00d6a58e4cf2dcc87a93498bb4d6bb1df67e683ad05a5"
+    },
+    "random_plan_id": "536eade3617bce7ec452fe17545ac9d81e70b586b6f534313491a2201c90e0a4",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "condition": "imu_only",
+    "frames": 163,
+    "text": "a person stands facing down the path, casually swaying for a moment then proceeds to walk a few steps forward, swinging its arms casually.",
+    "text_present": false,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000139-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F027",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000139-head-imu_only",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-head-imu_only.npz",
+      "sha256": "35616c227b05b822bb6a8c61c2ac0e4af6e0e622e8d01e3aa29ae60135c4df16"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-head-imu_only.json",
+      "sha256": "70cb3f57eb87e5c8cd57a5ba7df2a38a2accfdf6ee03937a152933dbf4ba03b3"
+    },
+    "random_plan_id": "536eade3617bce7ec452fe17545ac9d81e70b586b6f534313491a2201c90e0a4",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "condition": "backbone_bypass",
+    "frames": 163,
+    "text": "a person stands facing down the path, casually swaying for a moment then proceeds to walk a few steps forward, swinging its arms casually.",
+    "text_present": true,
+    "imu_present": false,
+    "random_plan_case_id": "canonical-B0-000139-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F028",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000139-head-backbone_bypass",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-head-backbone_bypass.npz",
+      "sha256": "20c37afabcce9670434d91795e4b0358d4885d52d97cfd07bc6ef2baf56f38cf"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-head-backbone_bypass.json",
+      "sha256": "86450dbd11fa643f0202392cb1a4f1bf10b15f2659d0f0a54ac5ffdf9ffa589f"
+    },
+    "random_plan_id": "536eade3617bce7ec452fe17545ac9d81e70b586b6f534313491a2201c90e0a4",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "condition": "numeric_zero",
+    "frames": 163,
+    "text": "a person stands facing down the path, casually swaying for a moment then proceeds to walk a few steps forward, swinging its arms casually.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000139-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F029",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000139-head-numeric_zero",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-head-numeric_zero.npz",
+      "sha256": "8aa2a0287bacdc190a87f02a1a8c1d44f9c53096fb0cfb602e44a397a2d44ddf"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-head-numeric_zero.json",
+      "sha256": "f05b8246a7583e30b4be62250fbfeb7af4a1e1ec9d689761cc1a45e5bfe5eaa9"
+    },
+    "random_plan_id": "536eade3617bce7ec452fe17545ac9d81e70b586b6f534313491a2201c90e0a4",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "condition": "physical_static",
+    "frames": 163,
+    "text": "a person stands facing down the path, casually swaying for a moment then proceeds to walk a few steps forward, swinging its arms casually.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000139-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F030",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000139-head-physical_static",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-head-physical_static.npz",
+      "sha256": "2307516fd5a997eae967a1e1f24d3df03dfef7284c2d313a83237e4b3031ceeb"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-head-physical_static.json",
+      "sha256": "8a074f4f2a86af0c335ce918b2e006b149b660d33df084455f3fbc84bcc6c9cd"
+    },
+    "random_plan_id": "536eade3617bce7ec452fe17545ac9d81e70b586b6f534313491a2201c90e0a4",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "condition": "paired",
+    "frames": 163,
+    "text": "a person stands facing down the path, casually swaying for a moment then proceeds to walk a few steps forward, swinging its arms casually.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000139-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F031",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000139-wrists-paired",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-wrists-paired.npz",
+      "sha256": "81c75a39c4d8ee748f8033b87aec89fa7b68772454b358f7aa91ca04734d40ce"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-wrists-paired.json",
+      "sha256": "3daebe8c5269811c7b05062a158b9af570e271f0bcb5ce7c89172bc32ca38683"
+    },
+    "random_plan_id": "d913830b9a25628644b319a3741822343efe390a44801eb6c2e4bf35bd50141f",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "condition": "text_only",
+    "frames": 163,
+    "text": "a person stands facing down the path, casually swaying for a moment then proceeds to walk a few steps forward, swinging its arms casually.",
+    "text_present": true,
+    "imu_present": false,
+    "random_plan_case_id": "canonical-B0-000139-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F032",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000139-wrists-text_only",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-wrists-text_only.npz",
+      "sha256": "ccc65295b72a4dfd97b2ac020116fc7b2e02065acdd3bb7d63e74a5fa8aac11b"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-wrists-text_only.json",
+      "sha256": "014ccc684c0e100a3679f3568c402a883487c0f96e3289037ac3fd1f67c9fd79"
+    },
+    "random_plan_id": "d913830b9a25628644b319a3741822343efe390a44801eb6c2e4bf35bd50141f",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "condition": "imu_only",
+    "frames": 163,
+    "text": "a person stands facing down the path, casually swaying for a moment then proceeds to walk a few steps forward, swinging its arms casually.",
+    "text_present": false,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000139-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F033",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000139-wrists-imu_only",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-wrists-imu_only.npz",
+      "sha256": "f305dfa2cdaf76907316f5370d8cc50ef2de619aa9fe3e5fa0aef4ad823061d4"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-wrists-imu_only.json",
+      "sha256": "6415da01afcd7f18c494494c2bd87b915a1effa51e4f7dcf1eef1de1e18e385c"
+    },
+    "random_plan_id": "d913830b9a25628644b319a3741822343efe390a44801eb6c2e4bf35bd50141f",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "condition": "backbone_bypass",
+    "frames": 163,
+    "text": "a person stands facing down the path, casually swaying for a moment then proceeds to walk a few steps forward, swinging its arms casually.",
+    "text_present": true,
+    "imu_present": false,
+    "random_plan_case_id": "canonical-B0-000139-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F034",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000139-wrists-backbone_bypass",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-wrists-backbone_bypass.npz",
+      "sha256": "686f8c49718eef6808382e02299eaad1df9505a417f83b01d12e08e5c3ece137"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-wrists-backbone_bypass.json",
+      "sha256": "6dfea7d48e6464ddf23e9f609ad858561d9ccfad97f4755e8262c682e3a14bc1"
+    },
+    "random_plan_id": "d913830b9a25628644b319a3741822343efe390a44801eb6c2e4bf35bd50141f",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "condition": "numeric_zero",
+    "frames": 163,
+    "text": "a person stands facing down the path, casually swaying for a moment then proceeds to walk a few steps forward, swinging its arms casually.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000139-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F035",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000139-wrists-numeric_zero",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-wrists-numeric_zero.npz",
+      "sha256": "7d967807e78b506762f1452e1f25869606c48f839d47f8c506dfcf64871fb501"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-wrists-numeric_zero.json",
+      "sha256": "99df6d0b71449f5c972e906fd364dcf554940ef2c3df12154440ffdb7db47eab"
+    },
+    "random_plan_id": "d913830b9a25628644b319a3741822343efe390a44801eb6c2e4bf35bd50141f",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "condition": "physical_static",
+    "frames": 163,
+    "text": "a person stands facing down the path, casually swaying for a moment then proceeds to walk a few steps forward, swinging its arms casually.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000139-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F036",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000139-wrists-physical_static",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-wrists-physical_static.npz",
+      "sha256": "4b69e22b2dc1779fdf9127e505615a8be2688cbc4f4980ab0c68e4c3808d42e4"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-wrists-physical_static.json",
+      "sha256": "5a9a72d6bb6069e1cac10a925690272e296bdcd37acd495c154e1c9916a42a38"
+    },
+    "random_plan_id": "d913830b9a25628644b319a3741822343efe390a44801eb6c2e4bf35bd50141f",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "condition": "tail_reversed",
+    "frames": 41,
+    "text": "this person is standing straight and kicks his leg out once and then stands normal.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000433-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F037",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000433-head-tail_reversed",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-head-tail_reversed.npz",
+      "sha256": "f101517d3b9fffecd900e2abf6e47450eaccbac8b2c980e9719f35391574ada9"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-head-tail_reversed.json",
+      "sha256": "dfc257c472ee34deec7ad578889738c8d6e18b86dfe32efd832e70ad12a42485"
+    },
+    "random_plan_id": "52807a48c82d9243c5328a2df92e252d21cdbb55b0435faca7dccf291a656ec9",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "condition": "tail_reversed",
+    "frames": 41,
+    "text": "this person is standing straight and kicks his leg out once and then stands normal.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000433-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F038",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000433-wrists-tail_reversed",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-wrists-tail_reversed.npz",
+      "sha256": "75d49b85ebad95124907000cd65b892ff2d062276c0544e1feeafc2a50fd9b48"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-wrists-tail_reversed.json",
+      "sha256": "7296d600c990f47a2b516817dd985bcae1df67b1512d4827c21b1ac3af715d52"
+    },
+    "random_plan_id": "867bed3e702aa06489c16cd6813cc800773c59c5113a432ab42300a45784c563",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "condition": "tail_reversed",
+    "frames": 94,
+    "text": "a person standing in place claps their hands and then places arms back down at their sides.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000382-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F039",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000382-head-tail_reversed",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-head-tail_reversed.npz",
+      "sha256": "5a3be27161a95586349e77331cdfd2a079d923f0a2aa77fa48e4d1392e2575a4"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-head-tail_reversed.json",
+      "sha256": "4d2fa373670c18f73c130f88c693829e64b0d545e5ef1d97888080d5c9723974"
+    },
+    "random_plan_id": "78e031195676d4c0956336cdf487b6a30904866da8d7395d9f42c67cb7fa3d10",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "condition": "tail_reversed",
+    "frames": 94,
+    "text": "a person standing in place claps their hands and then places arms back down at their sides.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000382-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F040",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000382-wrists-tail_reversed",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-wrists-tail_reversed.npz",
+      "sha256": "da6cc72d661584d4423ec471277326c95420c76d419f96545b84d68f44f680fe"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-wrists-tail_reversed.json",
+      "sha256": "0ad95b99afa0aa15881bfcc1efe173c85b1016768169512812c9eba9d4309ae3"
+    },
+    "random_plan_id": "d4d76b82968c804658609cd01527d875b4df017202c41c5f19302e168465a51a",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "condition": "tail_reversed",
+    "frames": 163,
+    "text": "a person stands facing down the path, casually swaying for a moment then proceeds to walk a few steps forward, swinging its arms casually.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000139-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F041",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000139-head-tail_reversed",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-head-tail_reversed.npz",
+      "sha256": "c377d65c75c2f0650280bdbab8d6ce295ffdd59c4694623fc2ad7cf6e784dfea"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-head-tail_reversed.json",
+      "sha256": "7aa574cecb8db3f6134eea5c41bee906fa6f416444a2ab07b5b9bb762ce8c021"
+    },
+    "random_plan_id": "536eade3617bce7ec452fe17545ac9d81e70b586b6f534313491a2201c90e0a4",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "condition": "tail_reversed",
+    "frames": 163,
+    "text": "a person stands facing down the path, casually swaying for a moment then proceeds to walk a few steps forward, swinging its arms casually.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-000139-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F042",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--000139-wrists-tail_reversed",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-wrists-tail_reversed.npz",
+      "sha256": "a873f2b33e3bec0490e42012782ad1763603b3a30536fe630c03e3802ddf2c43"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-wrists-tail_reversed.json",
+      "sha256": "93e552f9e09f3ef808474073a41aab54aae7c512a3fc1e9f37a83f35b40a2017"
+    },
+    "random_plan_id": "d913830b9a25628644b319a3741822343efe390a44801eb6c2e4bf35bd50141f",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "condition": "paired",
+    "frames": 104,
+    "text": "a person punches their first forward, then spins around",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-probe-train-000027-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F043",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--train-000027-head-paired",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000027-head-paired.npz",
+      "sha256": "c2d056a93ed8918428abca2758f67df6d0e51fcc8a79b118f953798524b96f23"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000027-head-paired.json",
+      "sha256": "e7acece03858e33f41ca07f3dced76bd2fc8c9729885c5d222e81a0b338fdd35"
+    },
+    "random_plan_id": "cd364853984e9358cb4acea74af487cfbe45624a3d68cc7103c5b9e92e88aa3d",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "condition": "text_only",
+    "frames": 104,
+    "text": "a person punches their first forward, then spins around",
+    "text_present": true,
+    "imu_present": false,
+    "random_plan_case_id": "canonical-B0-probe-train-000027-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F044",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--train-000027-head-text_only",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000027-head-text_only.npz",
+      "sha256": "2cea2bf71a93323e5ff757e803db5002492eeff24b473f916509ffe84032bacc"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000027-head-text_only.json",
+      "sha256": "4c7209e5a5372e5e6fd0cd50f2ac2380e475c5326a6c3ab38cc9ed257a0b5932"
+    },
+    "random_plan_id": "cd364853984e9358cb4acea74af487cfbe45624a3d68cc7103c5b9e92e88aa3d",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "condition": "physical_static",
+    "frames": 104,
+    "text": "a person punches their first forward, then spins around",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-probe-train-000027-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F045",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--train-000027-head-physical_static",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000027-head-physical_static.npz",
+      "sha256": "a8e3a19abe2ee908a10675af2fda3c65ed7e14dc1301b0d16492a00c7c0b25c6"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000027-head-physical_static.json",
+      "sha256": "94dae955e1e80e06751784b9e52b489f7632933a5dd03044ce3efd2b26b7baa6"
+    },
+    "random_plan_id": "cd364853984e9358cb4acea74af487cfbe45624a3d68cc7103c5b9e92e88aa3d",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "condition": "paired",
+    "frames": 104,
+    "text": "a person punches their first forward, then spins around",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-probe-train-000027-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F046",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--train-000027-wrists-paired",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000027-wrists-paired.npz",
+      "sha256": "a80675eb0d35a850a119b0e9fc428f38b9374b730b7f79f543d6ed71ff615ca2"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000027-wrists-paired.json",
+      "sha256": "6bace3d41b4d4d5f15a3db7a6d88a545c4b637f5af08eadf142b32ca79b6ea0f"
+    },
+    "random_plan_id": "f55874f73237d6511144f1cbf79a73c0e03966dcf63ed4f7988d98b7d573f2ac",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "condition": "text_only",
+    "frames": 104,
+    "text": "a person punches their first forward, then spins around",
+    "text_present": true,
+    "imu_present": false,
+    "random_plan_case_id": "canonical-B0-probe-train-000027-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F047",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--train-000027-wrists-text_only",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000027-wrists-text_only.npz",
+      "sha256": "85030e91679d6fa8da188945ae594c14db95d70ab0873514313243c50b88f0c0"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000027-wrists-text_only.json",
+      "sha256": "49903e7091bfa0e67a41858c793d77c29e0392edc6d39f66511e06ca6918b23b"
+    },
+    "random_plan_id": "f55874f73237d6511144f1cbf79a73c0e03966dcf63ed4f7988d98b7d573f2ac",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "condition": "physical_static",
+    "frames": 104,
+    "text": "a person punches their first forward, then spins around",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-probe-train-000027-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F048",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--train-000027-wrists-physical_static",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000027-wrists-physical_static.npz",
+      "sha256": "d8d0dcfccffbb928e2c0d017c9bd26269f484586cfda6d909833e222d935771d"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000027-wrists-physical_static.json",
+      "sha256": "21a8a43f5e1c1eef965a28b9cfeaba7e48a7c15176da4a421c620c07fe27a919"
+    },
+    "random_plan_id": "f55874f73237d6511144f1cbf79a73c0e03966dcf63ed4f7988d98b7d573f2ac",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "condition": "paired",
+    "frames": 136,
+    "text": "a person warming up their legs by alternating legs by doing front step sqauts",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-probe-train-000506-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F049",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--train-000506-head-paired",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000506-head-paired.npz",
+      "sha256": "ed521670585e9d103e69995684db5d9d2fcf14398fc9615bb67f99d2f4358364"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000506-head-paired.json",
+      "sha256": "7310ccd6e481735d5630d4da929b1928773bfc27c7e5a59740507572fc8c077f"
+    },
+    "random_plan_id": "afeddb215f2c5c1a4d69921a971f4d17731894873d81cb7d958a2da43e58b932",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "condition": "text_only",
+    "frames": 136,
+    "text": "a person warming up their legs by alternating legs by doing front step sqauts",
+    "text_present": true,
+    "imu_present": false,
+    "random_plan_case_id": "canonical-B0-probe-train-000506-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F050",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--train-000506-head-text_only",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000506-head-text_only.npz",
+      "sha256": "0d289f0b0dccd20eb3bb81d1efdd2efc8352b42980b649b9ed70a641bf338a3e"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000506-head-text_only.json",
+      "sha256": "dd6c8289d7ddcdaec25c95de52dfd751591b1dce9c2c76d091c7dc556fd9c386"
+    },
+    "random_plan_id": "afeddb215f2c5c1a4d69921a971f4d17731894873d81cb7d958a2da43e58b932",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "condition": "physical_static",
+    "frames": 136,
+    "text": "a person warming up their legs by alternating legs by doing front step sqauts",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-probe-train-000506-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F051",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--train-000506-head-physical_static",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000506-head-physical_static.npz",
+      "sha256": "a53255fb9842ca0d0101114dc3e4d5ee2e52aacd66a3b32f3adbe93e429045e1"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000506-head-physical_static.json",
+      "sha256": "2666ab9094006fa5b38c2194eb0cfbf9c98414e06d81b2c4216a2f50d3a92bef"
+    },
+    "random_plan_id": "afeddb215f2c5c1a4d69921a971f4d17731894873d81cb7d958a2da43e58b932",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "condition": "paired",
+    "frames": 136,
+    "text": "a person warming up their legs by alternating legs by doing front step sqauts",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-probe-train-000506-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F052",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--train-000506-wrists-paired",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000506-wrists-paired.npz",
+      "sha256": "5a9c6c0e6acc7b3268ada958e28601d91aa01ccaa514150fa0af2b1e7094b494"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000506-wrists-paired.json",
+      "sha256": "b648e66a63a4dc2be10fa913345466fae0e25e95e6fa32fd0181ce73d9e562c5"
+    },
+    "random_plan_id": "7392ea50947b1ba1f6940f5498f6abac20f4da272384341bbefc0bef5b5f803a",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "condition": "text_only",
+    "frames": 136,
+    "text": "a person warming up their legs by alternating legs by doing front step sqauts",
+    "text_present": true,
+    "imu_present": false,
+    "random_plan_case_id": "canonical-B0-probe-train-000506-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F053",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--train-000506-wrists-text_only",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000506-wrists-text_only.npz",
+      "sha256": "0a284c735172175ea5e98b50b4bf5ac13d10be6a0f64b94d27e6f1da80ff66ff"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000506-wrists-text_only.json",
+      "sha256": "813c72626564c0c362e70a8ddd11033e8e2e525a177e6b066d00698385e54600"
+    },
+    "random_plan_id": "7392ea50947b1ba1f6940f5498f6abac20f4da272384341bbefc0bef5b5f803a",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "condition": "physical_static",
+    "frames": 136,
+    "text": "a person warming up their legs by alternating legs by doing front step sqauts",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-probe-train-000506-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F054",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--train-000506-wrists-physical_static",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000506-wrists-physical_static.npz",
+      "sha256": "b40d4456d607dba1c11d64286eda75eef284a8b04c66223dccae0cddb20732b1"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000506-wrists-physical_static.json",
+      "sha256": "6305940284a362e9333fcefeaebc3ca2e8e004d35ac6757cf2de49c451e7e8b1"
+    },
+    "random_plan_id": "7392ea50947b1ba1f6940f5498f6abac20f4da272384341bbefc0bef5b5f803a",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "condition": "paired",
+    "frames": 158,
+    "text": "he raises his right leg behind him and holds it while leaning forward, then lets it down and momentarily loses his balance.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-probe-train-004728-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F055",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--train-004728-head-paired",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-004728-head-paired.npz",
+      "sha256": "937aac5a19647800198473c34e8112e6fa304215c5fb276bc436cc72c00a34bb"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-004728-head-paired.json",
+      "sha256": "539826da93a54c07b7d91e11bf49faf4d9b104ff8161523d3d801c2fc150c8d7"
+    },
+    "random_plan_id": "7c3523a3509b482e4aa8ee45f9108ed475ff7b270f14761028c050cba1b41775",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "condition": "text_only",
+    "frames": 158,
+    "text": "he raises his right leg behind him and holds it while leaning forward, then lets it down and momentarily loses his balance.",
+    "text_present": true,
+    "imu_present": false,
+    "random_plan_case_id": "canonical-B0-probe-train-004728-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F056",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--train-004728-head-text_only",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-004728-head-text_only.npz",
+      "sha256": "04ee1564889728f3a5bc5b78e55688d0c69c70ebee62148b426ce6d42fe4d88b"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-004728-head-text_only.json",
+      "sha256": "ca1d72317d1e0267f1185d46f686c33c56692df84844702b70deb5735de6c0ea"
+    },
+    "random_plan_id": "7c3523a3509b482e4aa8ee45f9108ed475ff7b270f14761028c050cba1b41775",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "condition": "physical_static",
+    "frames": 158,
+    "text": "he raises his right leg behind him and holds it while leaning forward, then lets it down and momentarily loses his balance.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-probe-train-004728-head",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F057",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--train-004728-head-physical_static",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-004728-head-physical_static.npz",
+      "sha256": "6ef416f4bf8d7436377fd5c761061b00fb482051a56fb67f6dd1d5b54751a95a"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-004728-head-physical_static.json",
+      "sha256": "fac674584f362f359f9c6a25543120c111a20095a3f10ad8795322a45a2afb27"
+    },
+    "random_plan_id": "7c3523a3509b482e4aa8ee45f9108ed475ff7b270f14761028c050cba1b41775",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "condition": "paired",
+    "frames": 158,
+    "text": "he raises his right leg behind him and holds it while leaning forward, then lets it down and momentarily loses his balance.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-probe-train-004728-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F058",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--train-004728-wrists-paired",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-004728-wrists-paired.npz",
+      "sha256": "006d94c62a25fcb662e03aebf587698939ff76a9e9f770354243e83e111a8177"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-004728-wrists-paired.json",
+      "sha256": "343bca8328818407b32307dee3e8aec17b15869cc9752a937a8ef7559afd2c14"
+    },
+    "random_plan_id": "0b6e475a59a0bfc433fb1d507aec7edc5bf24b7bff79666c5c1c1c77779c3509",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "condition": "text_only",
+    "frames": 158,
+    "text": "he raises his right leg behind him and holds it while leaning forward, then lets it down and momentarily loses his balance.",
+    "text_present": true,
+    "imu_present": false,
+    "random_plan_case_id": "canonical-B0-probe-train-004728-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F059",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--train-004728-wrists-text_only",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-004728-wrists-text_only.npz",
+      "sha256": "fec58e224dd09fe0241cee937015612cfd2fffb9be4b34e7527a23bd1b280334"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-004728-wrists-text_only.json",
+      "sha256": "77640a445a43d9005025ae4f418aa5b9e2bda16a59eee2b21a836a6b587fd2ec"
+    },
+    "random_plan_id": "0b6e475a59a0bfc433fb1d507aec7edc5bf24b7bff79666c5c1c1c77779c3509",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  },
+  {
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "condition": "physical_static",
+    "frames": 158,
+    "text": "he raises his right leg behind him and holds it while leaning forward, then lets it down and momentarily loses his balance.",
+    "text_present": true,
+    "imu_present": true,
+    "random_plan_case_id": "canonical-B0-probe-train-004728-wrists",
+    "sampling_seed": 20260926,
+    "guidance": {
+      "text_scale": 1.0,
+      "imu_scale": 1.0,
+      "joint_scale": 1.0,
+      "mode": "factorized",
+      "branch_execution": "batched"
+    },
+    "slot_id": "F060",
+    "arm": "F_root_ric_balanced",
+    "status": "proposed_not_frozen_not_authorized",
+    "K": 1,
+    "steps": 1000,
+    "old_case_id": "S1_R_unit_guidance--train-004728-wrists-physical_static",
+    "baseline_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-004728-wrists-physical_static.npz",
+      "sha256": "dc703594be665a790d23e9d7496e25083325fdcb290e7a611f02feb91a34a4c1"
+    },
+    "baseline_metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-004728-wrists-physical_static.json",
+      "sha256": "a1851d25a117a5851f9be4a800efd6b5720e6c2383a6e6c332dd7d4f6d03a84a"
+    },
+    "random_plan_id": "0b6e475a59a0bfc433fb1d507aec7edc5bf24b7bff79666c5c1c1c77779c3509",
+    "trace_timesteps": [
+      900,
+      500,
+      250,
+      50
+    ],
+    "extra_trace_model_calls": 0
+  }
+]

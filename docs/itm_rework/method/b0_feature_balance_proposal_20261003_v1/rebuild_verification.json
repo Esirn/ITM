@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "package_files": 7,
+  "files": [
+    {
+      "file": "budget.json",
+      "sha256": "76a004c94d330fe7403544075356028d46117749ca7608661ebd69453cfc1448",
+      "byte_identical": true
+    },
+    {
+      "file": "design.json",
+      "sha256": "8125abf033f8216e518252279fa01378d34a6bdefed2669a58242495dd56a6f0",
+      "byte_identical": true
+    },
+    {
+      "file": "sampling_pairs.json",
+      "sha256": "beafed1b7aa4be8499c0e20d99d4afacaa2ddbc1067dcdf6a84c239fda0c57ac",
+      "byte_identical": true
+    },
+    {
+      "file": "saved_branch_loss_views.json",
+      "sha256": "77cc90974ded5fab3bce4cb5ca9f8a379a4416d6142f89b1d3b068b802a7e0cd",
+      "byte_identical": true
+    },
+    {
+      "file": "saved_contrast_loss_views.json",
+      "sha256": "f24b54ba5eb5514129dc046dc4ed2dd88e573d9bd5d8795ebf38e76507cdc9f8",
+      "byte_identical": true
+    },
+    {
+      "file": "sources.json",
+      "sha256": "c2fe3ac0fd40fd36b6a7d9111c1c9b5a87ae4b5b062cb2e5cef000d1ffe7d400",
+      "byte_identical": true
+    },
+    {
+      "file": "validation.json",
+      "sha256": "41b3b58dcdf27982d0fcb412927d81a44ea4bbb0a490f8117764f23b2b6c4774",
+      "byte_identical": true
+    }
+  ],
+  "rebuild_audit": {
+    "status": "CPU_saved_artifacts_only",
+    "raw_branch_reductions": 192,
+    "contrasts_recomputed": 192,
+    "training_schedule_rows_verified": 600,
+    "training_update_records_verified": 200,
+    "sampling_pairs": 60,
+    "split_counts": {
+      "val": 42,
+      "train": 18
+    },
+    "source_files": 573,
+    "new_model_calls": 0,
+    "new_training_updates": 0,
+    "new_samples": 0,
+    "GPU_queries": 0,
+    "checkpoint_tensor_loads": 0,
+    "interpretation": "Loss allocation is a hypothesis prompted by RIC/all-feature disagreement; no evidence of a gradient conflict or root cause is claimed."
+  },
+  "GPU_queries": 0,
+  "model_calls": 0
+}

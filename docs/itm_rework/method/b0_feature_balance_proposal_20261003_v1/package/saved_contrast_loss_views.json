@@ -1,0 +1,2690 @@
+[
+  {
+    "group_id": "V001",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": 0.01644356996727314,
+      "root_ric": 0.011480480047611374,
+      "remaining": 0.018140136419402486,
+      "proposed_balanced": 0.01481030823350693
+    }
+  },
+  {
+    "group_id": "V001",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": 0.02488484488429976,
+      "root_ric": 0.02433944230255114,
+      "remaining": 0.025071283521938437,
+      "proposed_balanced": 0.024705362912244677
+    }
+  },
+  {
+    "group_id": "V001",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": 0.01644356996727314,
+      "root_ric": 0.011480480047611374,
+      "remaining": 0.018140136419402486,
+      "proposed_balanced": 0.01481030823350693
+    }
+  },
+  {
+    "group_id": "V001",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.00844127491702662,
+      "root_ric": -0.012858962254939765,
+      "remaining": -0.0069311471025359506,
+      "proposed_balanced": -0.009895054678737747
+    }
+  },
+  {
+    "group_id": "V002",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": 0.008826355572244093,
+      "root_ric": 0.0015186526320287719,
+      "remaining": 0.011324396883440224,
+      "proposed_balanced": 0.006421524757734387
+    }
+  },
+  {
+    "group_id": "V002",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": 0.013811602335605189,
+      "root_ric": 0.009739959250927077,
+      "remaining": 0.015203439512510464,
+      "proposed_balanced": 0.01247169938171866
+    }
+  },
+  {
+    "group_id": "V002",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": 0.008826355572244093,
+      "root_ric": 0.0015186526320287719,
+      "remaining": 0.011324396883440224,
+      "proposed_balanced": 0.006421524757734387
+    }
+  },
+  {
+    "group_id": "V002",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.004985246763361095,
+      "root_ric": -0.008221306618898305,
+      "remaining": -0.0038790426290702396,
+      "proposed_balanced": -0.006050174623984272
+    }
+  },
+  {
+    "group_id": "V003",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": 0.008017711680849304,
+      "root_ric": 0.0015136725556257336,
+      "remaining": 0.010241031177736781,
+      "proposed_balanced": 0.005877351866681035
+    }
+  },
+  {
+    "group_id": "V003",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": 0.012762439853048368,
+      "root_ric": 0.010006169177467772,
+      "remaining": 0.013704634420721007,
+      "proposed_balanced": 0.011855401799094167
+    }
+  },
+  {
+    "group_id": "V003",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": 0.008017711680849304,
+      "root_ric": 0.0015136725556257336,
+      "remaining": 0.010241031177736781,
+      "proposed_balanced": 0.005877351866681035
+    }
+  },
+  {
+    "group_id": "V003",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.004744728172199064,
+      "root_ric": -0.008492496621842038,
+      "remaining": -0.0034636032429842256,
+      "proposed_balanced": -0.005978049932413132
+    }
+  },
+  {
+    "group_id": "V004",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": 0.008871137789537631,
+      "root_ric": 0.0023324755213538495,
+      "remaining": 0.011106292748559454,
+      "proposed_balanced": 0.006719384134956652
+    }
+  },
+  {
+    "group_id": "V004",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": 0.013448323513973515,
+      "root_ric": 0.011237992756433002,
+      "remaining": 0.014203895762724406,
+      "proposed_balanced": 0.012720944259578815
+    }
+  },
+  {
+    "group_id": "V004",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": 0.008871137789537631,
+      "root_ric": 0.0023324755213538495,
+      "remaining": 0.011106292748559454,
+      "proposed_balanced": 0.006719384134956652
+    }
+  },
+  {
+    "group_id": "V004",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.004577185724435884,
+      "root_ric": -0.008905517235079152,
+      "remaining": -0.0030976030141649513,
+      "proposed_balanced": -0.006001560124622163
+    }
+  },
+  {
+    "group_id": "V005",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": 0.011218319436450352,
+      "root_ric": 0.02058815450781859,
+      "remaining": 0.008015365611033554,
+      "proposed_balanced": 0.01430176005942596
+    }
+  },
+  {
+    "group_id": "V005",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.004974530376300246,
+      "root_ric": -0.004568810962992442,
+      "remaining": -0.005113220175746891,
+      "proposed_balanced": -0.004841015569369667
+    }
+  },
+  {
+    "group_id": "V005",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": 0.011218319436450352,
+      "root_ric": 0.02058815450781859,
+      "remaining": 0.008015365611033554,
+      "proposed_balanced": 0.01430176005942596
+    }
+  },
+  {
+    "group_id": "V005",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": 0.016192849812750598,
+      "root_ric": 0.025156965470811032,
+      "remaining": 0.013128585786780445,
+      "proposed_balanced": 0.019142775628795627
+    }
+  },
+  {
+    "group_id": "V006",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": 0.003947286887368451,
+      "root_ric": 0.00043719323569146873,
+      "remaining": 0.005147165839726853,
+      "proposed_balanced": 0.0027921795377090497
+    }
+  },
+  {
+    "group_id": "V006",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.0036273688429853124,
+      "root_ric": -0.005687620023888007,
+      "remaining": -0.0029230993066564626,
+      "proposed_balanced": -0.004305359665272235
+    }
+  },
+  {
+    "group_id": "V006",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": 0.003947286887368451,
+      "root_ric": 0.00043719323569146873,
+      "remaining": 0.005147165839726853,
+      "proposed_balanced": 0.0027921795377090497
+    }
+  },
+  {
+    "group_id": "V006",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": 0.007574655730353763,
+      "root_ric": 0.006124813259579476,
+      "remaining": 0.008070265146383315,
+      "proposed_balanced": 0.0070975392029812845
+    }
+  },
+  {
+    "group_id": "V007",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": 0.003584316592059933,
+      "root_ric": -0.0026462009433996236,
+      "remaining": 0.0057141363618340435,
+      "proposed_balanced": 0.00153396770921721
+    }
+  },
+  {
+    "group_id": "V007",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.002379927214727351,
+      "root_ric": -0.005951105640133791,
+      "remaining": -0.0011591672427775368,
+      "proposed_balanced": -0.003555136441455664
+    }
+  },
+  {
+    "group_id": "V007",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": 0.003584316592059933,
+      "root_ric": -0.0026462009433996236,
+      "remaining": 0.0057141363618340435,
+      "proposed_balanced": 0.00153396770921721
+    }
+  },
+  {
+    "group_id": "V007",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": 0.005964243806787284,
+      "root_ric": 0.0033049046967341678,
+      "remaining": 0.00687330360461158,
+      "proposed_balanced": 0.005089104150672874
+    }
+  },
+  {
+    "group_id": "V008",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": 0.005186765539797689,
+      "root_ric": 0.00040287068252031766,
+      "remaining": 0.0068220765369286784,
+      "proposed_balanced": 0.003612473609724276
+    }
+  },
+  {
+    "group_id": "V008",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.002848517019325314,
+      "root_ric": -0.006086916729350467,
+      "remaining": -0.0017415130368165777,
+      "proposed_balanced": -0.003914214883083744
+    }
+  },
+  {
+    "group_id": "V008",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": 0.005186765539797689,
+      "root_ric": 0.00040287068252031766,
+      "remaining": 0.0068220765369286784,
+      "proposed_balanced": 0.003612473609724276
+    }
+  },
+  {
+    "group_id": "V008",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": 0.008035282559123003,
+      "root_ric": 0.006489787411870784,
+      "remaining": 0.008563589573745256,
+      "proposed_balanced": 0.00752668849280802
+    }
+  },
+  {
+    "group_id": "V009",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": 0.001055853722421854,
+      "root_ric": 0.0017310707633940159,
+      "remaining": 0.0008250397339263082,
+      "proposed_balanced": 0.001278055248660176
+    }
+  },
+  {
+    "group_id": "V009",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": 0.00025646587773608953,
+      "root_ric": -0.0004730996910891211,
+      "remaining": 0.0005058581895283909,
+      "proposed_balanced": 1.6379249219641845e-05
+    }
+  },
+  {
+    "group_id": "V009",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": 0.001055853722421854,
+      "root_ric": 0.0017310707633940159,
+      "remaining": 0.0008250397339263082,
+      "proposed_balanced": 0.001278055248660176
+    }
+  },
+  {
+    "group_id": "V009",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": 0.0007993878446857644,
+      "root_ric": 0.002204170454483137,
+      "remaining": 0.00031918154439791735,
+      "proposed_balanced": 0.001261675999440534
+    }
+  },
+  {
+    "group_id": "V010",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": 0.0012324442312094952,
+      "root_ric": 0.0017360066717958533,
+      "remaining": 0.00106030809080504,
+      "proposed_balanced": 0.0013981573813004466
+    }
+  },
+  {
+    "group_id": "V010",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": 6.082521352013259e-05,
+      "root_ric": -0.0008451843106404289,
+      "remaining": 0.0003705325508606694,
+      "proposed_balanced": -0.00023732587988989362
+    }
+  },
+  {
+    "group_id": "V010",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": 0.0012324442312094952,
+      "root_ric": 0.0017360066717958533,
+      "remaining": 0.00106030809080504,
+      "proposed_balanced": 0.0013981573813004466
+    }
+  },
+  {
+    "group_id": "V010",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": 0.0011716190176893626,
+      "root_ric": 0.002581190982436282,
+      "remaining": 0.0006897755399443706,
+      "proposed_balanced": 0.0016354832611903403
+    }
+  },
+  {
+    "group_id": "V011",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": 0.0012758551478350144,
+      "root_ric": 0.0018805648098775274,
+      "remaining": 0.001069143171524567,
+      "proposed_balanced": 0.001474853990701075
+    }
+  },
+  {
+    "group_id": "V011",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": 0.00013413824678126796,
+      "root_ric": -0.0007881919054912867,
+      "remaining": 0.00044942457434388183,
+      "proposed_balanced": -0.00016938366557367468
+    }
+  },
+  {
+    "group_id": "V011",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": 0.0012758551478350144,
+      "root_ric": 0.0018805648098775274,
+      "remaining": 0.001069143171524567,
+      "proposed_balanced": 0.001474853990701075
+    }
+  },
+  {
+    "group_id": "V011",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": 0.0011417169010537465,
+      "root_ric": 0.002668756715368814,
+      "remaining": 0.0006197185971806851,
+      "proposed_balanced": 0.0016442376562747496
+    }
+  },
+  {
+    "group_id": "V012",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": 0.0014092079856233286,
+      "root_ric": 0.0019670999373468945,
+      "remaining": 0.001218500022534208,
+      "proposed_balanced": 0.0015927999799405512
+    }
+  },
+  {
+    "group_id": "V012",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": 0.00023342619796495878,
+      "root_ric": -0.0006662524182433072,
+      "remaining": 0.0005409693984036457,
+      "proposed_balanced": -6.264150991985851e-05
+    }
+  },
+  {
+    "group_id": "V012",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": 0.0014092079856233286,
+      "root_ric": 0.0019670999373468945,
+      "remaining": 0.001218500022534208,
+      "proposed_balanced": 0.0015927999799405512
+    }
+  },
+  {
+    "group_id": "V012",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": 0.0011757817876583698,
+      "root_ric": 0.0026333523555902016,
+      "remaining": 0.0006775306241305623,
+      "proposed_balanced": 0.0016554414898604097
+    }
+  },
+  {
+    "group_id": "V013",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": 0.036977471988466376,
+      "root_ric": 0.062000833037021114,
+      "remaining": 0.028423567956562396,
+      "proposed_balanced": 0.045212200496791755
+    }
+  },
+  {
+    "group_id": "V013",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.0006640663303531802,
+      "root_ric": 0.0001322602495256453,
+      "remaining": -0.0009362800081690048,
+      "proposed_balanced": -0.000402009879321652
+    }
+  },
+  {
+    "group_id": "V013",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": 0.036977471988466376,
+      "root_ric": 0.062000833037021114,
+      "remaining": 0.028423567956562396,
+      "proposed_balanced": 0.045212200496791755
+    }
+  },
+  {
+    "group_id": "V013",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": 0.037641538318819556,
+      "root_ric": 0.06186857278749547,
+      "remaining": 0.0293598479647314,
+      "proposed_balanced": 0.04561421037611341
+    }
+  },
+  {
+    "group_id": "V014",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": 0.09089188790835517,
+      "root_ric": 0.15967203351031267,
+      "remaining": 0.06738030752401258,
+      "proposed_balanced": 0.11352617051716263
+    }
+  },
+  {
+    "group_id": "V014",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": 0.0014663574984346006,
+      "root_ric": 0.003011489776010734,
+      "remaining": 0.0009381745259978702,
+      "proposed_balanced": 0.001974832151004302
+    }
+  },
+  {
+    "group_id": "V014",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": 0.09089188790835517,
+      "root_ric": 0.15967203351031267,
+      "remaining": 0.06738030752401258,
+      "proposed_balanced": 0.11352617051716263
+    }
+  },
+  {
+    "group_id": "V014",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": 0.08942553040992057,
+      "root_ric": 0.15666054373430194,
+      "remaining": 0.06644213299801471,
+      "proposed_balanced": 0.11155133836615833
+    }
+  },
+  {
+    "group_id": "V015",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": 0.1350222698565096,
+      "root_ric": 0.2417084346650874,
+      "remaining": 0.09855301964133234,
+      "proposed_balanced": 0.17013072715320987
+    }
+  },
+  {
+    "group_id": "V015",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": 0.0017372411044079827,
+      "root_ric": 0.004123224405995551,
+      "remaining": 0.0009216243635591925,
+      "proposed_balanced": 0.002522424384777344
+    }
+  },
+  {
+    "group_id": "V015",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": 0.1350222698565096,
+      "root_ric": 0.2417084346650874,
+      "remaining": 0.09855301964133234,
+      "proposed_balanced": 0.17013072715320987
+    }
+  },
+  {
+    "group_id": "V015",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": 0.13328502875210163,
+      "root_ric": 0.23758521025909185,
+      "remaining": 0.09763139527777315,
+      "proposed_balanced": 0.16760830276843253
+    }
+  },
+  {
+    "group_id": "V016",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": 0.18506258462652536,
+      "root_ric": 0.2732643168653124,
+      "remaining": 0.15491199248367515,
+      "proposed_balanced": 0.21408815467449394
+    }
+  },
+  {
+    "group_id": "V016",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": 0.002564388651562277,
+      "root_ric": 0.004887407310745218,
+      "remaining": 0.001770295538474409,
+      "proposed_balanced": 0.0033288514246099243
+    }
+  },
+  {
+    "group_id": "V016",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": 0.18506258462652536,
+      "root_ric": 0.2732643168653124,
+      "remaining": 0.15491199248367515,
+      "proposed_balanced": 0.21408815467449394
+    }
+  },
+  {
+    "group_id": "V016",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": 0.18249819597496308,
+      "root_ric": 0.26837690955456717,
+      "remaining": 0.15314169694520074,
+      "proposed_balanced": 0.210759303249884
+    }
+  },
+  {
+    "group_id": "V017",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.023834663851101556,
+      "root_ric": 0.051639772712737564,
+      "remaining": -0.049634598798944385,
+      "proposed_balanced": 0.0010025869568965895
+    }
+  },
+  {
+    "group_id": "V017",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": 0.010586194573978247,
+      "root_ric": -0.01858262494761531,
+      "remaining": 0.02055716859411505,
+      "proposed_balanced": 0.00098727182324998
+    }
+  },
+  {
+    "group_id": "V017",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.023834663851101556,
+      "root_ric": 0.051639772712737564,
+      "remaining": -0.049634598798944385,
+      "proposed_balanced": 0.0010025869568965895
+    }
+  },
+  {
+    "group_id": "V017",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.0344208584250798,
+      "root_ric": 0.07022239766035288,
+      "remaining": -0.07019176739305943,
+      "proposed_balanced": 1.5315133646609524e-05
+    }
+  },
+  {
+    "group_id": "V018",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.011463244887142121,
+      "root_ric": 0.04784231393677363,
+      "remaining": -0.03173606346470592,
+      "proposed_balanced": 0.008053125236033853
+    }
+  },
+  {
+    "group_id": "V018",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": 0.007196005111673731,
+      "root_ric": -0.002788603965906855,
+      "remaining": 0.010609111275948768,
+      "proposed_balanced": 0.0039102536550208455
+    }
+  },
+  {
+    "group_id": "V018",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.011463244887142121,
+      "root_ric": 0.04784231393677363,
+      "remaining": -0.03173606346470592,
+      "proposed_balanced": 0.008053125236033853
+    }
+  },
+  {
+    "group_id": "V018",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.018659249998815852,
+      "root_ric": 0.05063091790268048,
+      "remaining": -0.04234517474065469,
+      "proposed_balanced": 0.004142871581013008
+    }
+  },
+  {
+    "group_id": "V019",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.01006151338499306,
+      "root_ric": 0.04795774389440499,
+      "remaining": -0.029894626842746463,
+      "proposed_balanced": 0.009031558525829375
+    }
+  },
+  {
+    "group_id": "V019",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": 0.007471275678439859,
+      "root_ric": -0.0009792787446532003,
+      "remaining": 0.01035998560878304,
+      "proposed_balanced": 0.004690353432065031
+    }
+  },
+  {
+    "group_id": "V019",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.01006151338499306,
+      "root_ric": 0.04795774389440499,
+      "remaining": -0.029894626842746463,
+      "proposed_balanced": 0.009031558525829375
+    }
+  },
+  {
+    "group_id": "V019",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.01753278906343292,
+      "root_ric": 0.04893702263905819,
+      "remaining": -0.0402546124515295,
+      "proposed_balanced": 0.004341205093764344
+    }
+  },
+  {
+    "group_id": "V020",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.010273182021235172,
+      "root_ric": 0.05020371970444781,
+      "remaining": -0.030946408631545852,
+      "proposed_balanced": 0.009628655536451092
+    }
+  },
+  {
+    "group_id": "V020",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": 0.007946905513549929,
+      "root_ric": 0.002131194260074132,
+      "remaining": 0.00993492925836037,
+      "proposed_balanced": 0.006033061759217251
+    }
+  },
+  {
+    "group_id": "V020",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.010273182021235172,
+      "root_ric": 0.05020371970444781,
+      "remaining": -0.030946408631545852,
+      "proposed_balanced": 0.009628655536451092
+    }
+  },
+  {
+    "group_id": "V020",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.0182200875347851,
+      "root_ric": 0.04807252544437368,
+      "remaining": -0.04088133788990622,
+      "proposed_balanced": 0.003595593777233841
+    }
+  },
+  {
+    "group_id": "V021",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.030791668814668327,
+      "root_ric": -0.012261287936495613,
+      "remaining": -0.03712603370669765,
+      "proposed_balanced": -0.02469366082159663
+    }
+  },
+  {
+    "group_id": "V021",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.002767518841152228,
+      "root_ric": 0.0009718386114312416,
+      "remaining": -0.004045768582596754,
+      "proposed_balanced": -0.001536964985582756
+    }
+  },
+  {
+    "group_id": "V021",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.030791668814668327,
+      "root_ric": -0.012261287936495613,
+      "remaining": -0.03712603370669765,
+      "proposed_balanced": -0.02469366082159663
+    }
+  },
+  {
+    "group_id": "V021",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.0280241499735161,
+      "root_ric": -0.013233126547926854,
+      "remaining": -0.033080265124100894,
+      "proposed_balanced": -0.023156695836013874
+    }
+  },
+  {
+    "group_id": "V022",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.016679900740493636,
+      "root_ric": -0.011490542583523222,
+      "remaining": -0.018453813988029477,
+      "proposed_balanced": -0.014972178285776572
+    }
+  },
+  {
+    "group_id": "V022",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": 9.668048711208854e-05,
+      "root_ric": 0.0016603722249723951,
+      "remaining": -0.00043784679062630616,
+      "proposed_balanced": 0.0006112627171730445
+    }
+  },
+  {
+    "group_id": "V022",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.016679900740493636,
+      "root_ric": -0.011490542583523222,
+      "remaining": -0.018453813988029477,
+      "proposed_balanced": -0.014972178285776572
+    }
+  },
+  {
+    "group_id": "V022",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.016776581227605725,
+      "root_ric": -0.013150914808495617,
+      "remaining": -0.01801596719740317,
+      "proposed_balanced": -0.015583441002949616
+    }
+  },
+  {
+    "group_id": "V023",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.016052312108184807,
+      "root_ric": -0.01158034555997034,
+      "remaining": -0.017580994550686402,
+      "proposed_balanced": -0.014580670055328149
+    }
+  },
+  {
+    "group_id": "V023",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": 0.00030070483607280707,
+      "root_ric": 0.0013305949862365551,
+      "remaining": -5.134944995255353e-05,
+      "proposed_balanced": 0.0006396227681420008
+    }
+  },
+  {
+    "group_id": "V023",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.016052312108184807,
+      "root_ric": -0.01158034555997034,
+      "remaining": -0.017580994550686402,
+      "proposed_balanced": -0.014580670055328149
+    }
+  },
+  {
+    "group_id": "V023",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.016353016944257615,
+      "root_ric": -0.012910940546206895,
+      "remaining": -0.01752964510073385,
+      "proposed_balanced": -0.01522029282347015
+    }
+  },
+  {
+    "group_id": "V024",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.015007388992701376,
+      "root_ric": -0.0096701597285489,
+      "remaining": -0.016831850016672867,
+      "proposed_balanced": -0.013251004872610661
+    }
+  },
+  {
+    "group_id": "V024",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": 0.000312733071746063,
+      "root_ric": 0.001669205118836281,
+      "remaining": -0.00015095890353533647,
+      "proposed_balanced": 0.0007591231076506944
+    }
+  },
+  {
+    "group_id": "V024",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.015007388992701376,
+      "root_ric": -0.0096701597285489,
+      "remaining": -0.016831850016672867,
+      "proposed_balanced": -0.013251004872610661
+    }
+  },
+  {
+    "group_id": "V024",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.015320122064447439,
+      "root_ric": -0.01133936484738518,
+      "remaining": -0.01668089111313753,
+      "proposed_balanced": -0.014010127980261355
+    }
+  },
+  {
+    "group_id": "V025",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.27237060660558465,
+      "root_ric": -0.1802230184969263,
+      "remaining": -0.30387003723456485,
+      "proposed_balanced": -0.24204652786574554
+    }
+  },
+  {
+    "group_id": "V025",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.17215638472214256,
+      "root_ric": -0.09931544556880284,
+      "remaining": -0.1970560935143556,
+      "proposed_balanced": -0.14818576954157914
+    }
+  },
+  {
+    "group_id": "V025",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.27237060660558465,
+      "root_ric": -0.1802230184969263,
+      "remaining": -0.30387003723456485,
+      "proposed_balanced": -0.24204652786574554
+    }
+  },
+  {
+    "group_id": "V025",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.10021422188344209,
+      "root_ric": -0.08090757292812345,
+      "remaining": -0.10681394372020925,
+      "proposed_balanced": -0.0938607583241664
+    }
+  },
+  {
+    "group_id": "V026",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.0915765670565174,
+      "root_ric": -0.06821123760538716,
+      "remaining": -0.09956369498113848,
+      "proposed_balanced": -0.08388746629326271
+    }
+  },
+  {
+    "group_id": "V026",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.07678481729986186,
+      "root_ric": -0.0379342977997722,
+      "remaining": -0.09006535202693333,
+      "proposed_balanced": -0.06399982491335265
+    }
+  },
+  {
+    "group_id": "V026",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.0915765670565174,
+      "root_ric": -0.06821123760538716,
+      "remaining": -0.09956369498113848,
+      "proposed_balanced": -0.08388746629326271
+    }
+  },
+  {
+    "group_id": "V026",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.014791749756655537,
+      "root_ric": -0.030276939805614966,
+      "remaining": -0.009498342954205152,
+      "proposed_balanced": -0.01988764137991006
+    }
+  },
+  {
+    "group_id": "V027",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.060623676094233026,
+      "root_ric": -0.04120531025257246,
+      "remaining": -0.06726158686663741,
+      "proposed_balanced": -0.05423344855960499
+    }
+  },
+  {
+    "group_id": "V027",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.05792228690494061,
+      "root_ric": -0.025994924684395238,
+      "remaining": -0.06883623215380053,
+      "proposed_balanced": -0.04741557841909794
+    }
+  },
+  {
+    "group_id": "V027",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.060623676094233026,
+      "root_ric": -0.04120531025257246,
+      "remaining": -0.06726158686663741,
+      "proposed_balanced": -0.05423344855960499
+    }
+  },
+  {
+    "group_id": "V027",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.0027013891892924136,
+      "root_ric": -0.01521038556817722,
+      "remaining": 0.0015746452871631123,
+      "proposed_balanced": -0.006817870140507054
+    }
+  },
+  {
+    "group_id": "V028",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.03812304844721531,
+      "root_ric": -0.021790980581290864,
+      "remaining": -0.04370594919730175,
+      "proposed_balanced": -0.032748464889296336
+    }
+  },
+  {
+    "group_id": "V028",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.04238370205696035,
+      "root_ric": -0.016405434458436563,
+      "remaining": -0.05126402822584364,
+      "proposed_balanced": -0.0338347313421401
+    }
+  },
+  {
+    "group_id": "V028",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.03812304844721531,
+      "root_ric": -0.021790980581290864,
+      "remaining": -0.04370594919730175,
+      "proposed_balanced": -0.032748464889296336
+    }
+  },
+  {
+    "group_id": "V028",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": 0.004260653609745035,
+      "root_ric": -0.005385546122854301,
+      "remaining": 0.007558079028541886,
+      "proposed_balanced": 0.0010862664528437649
+    }
+  },
+  {
+    "group_id": "V029",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.43178476599529403,
+      "root_ric": -0.32395698489051417,
+      "remaining": -0.4686442625974381,
+      "proposed_balanced": -0.3963006237439761
+    }
+  },
+  {
+    "group_id": "V029",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.2927321687548976,
+      "root_ric": -0.22576412473039698,
+      "remaining": -0.3156243062530686,
+      "proposed_balanced": -0.27069421549173267
+    }
+  },
+  {
+    "group_id": "V029",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.43178476599529403,
+      "root_ric": -0.32395698489051417,
+      "remaining": -0.4686442625974381,
+      "proposed_balanced": -0.3963006237439761
+    }
+  },
+  {
+    "group_id": "V029",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.13905259724039642,
+      "root_ric": -0.09819286016011719,
+      "remaining": -0.1530199563443695,
+      "proposed_balanced": -0.12560640825224345
+    }
+  },
+  {
+    "group_id": "V030",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.1391407769931784,
+      "root_ric": -0.09285932414987608,
+      "remaining": -0.15496147771002167,
+      "proposed_balanced": -0.12391040092994876
+    }
+  },
+  {
+    "group_id": "V030",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.09480925901029813,
+      "root_ric": -0.06494519190623138,
+      "remaining": -0.10501789419383112,
+      "proposed_balanced": -0.08498154305003114
+    }
+  },
+  {
+    "group_id": "V030",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.1391407769931784,
+      "root_ric": -0.09285932414987608,
+      "remaining": -0.15496147771002167,
+      "proposed_balanced": -0.12391040092994876
+    }
+  },
+  {
+    "group_id": "V030",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.044331517982880264,
+      "root_ric": -0.027914132243644696,
+      "remaining": -0.04994358351619055,
+      "proposed_balanced": -0.03892885787991762
+    }
+  },
+  {
+    "group_id": "V031",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.09893200524383527,
+      "root_ric": -0.062103469873818595,
+      "remaining": -0.1115213515182798,
+      "proposed_balanced": -0.08681241069604917
+    }
+  },
+  {
+    "group_id": "V031",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.07052644909628514,
+      "root_ric": -0.04568592545024236,
+      "remaining": -0.07901785258753469,
+      "proposed_balanced": -0.06235188901888855
+    }
+  },
+  {
+    "group_id": "V031",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.09893200524383527,
+      "root_ric": -0.062103469873818595,
+      "remaining": -0.1115213515182798,
+      "proposed_balanced": -0.08681241069604917
+    }
+  },
+  {
+    "group_id": "V031",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.028405556147550137,
+      "root_ric": -0.016417544423576236,
+      "remaining": -0.03250349893074511,
+      "proposed_balanced": -0.024460521677160618
+    }
+  },
+  {
+    "group_id": "V032",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.06532224694497835,
+      "root_ric": -0.03749949498133892,
+      "remaining": -0.07483308562642643,
+      "proposed_balanced": -0.05616629030388265
+    }
+  },
+  {
+    "group_id": "V032",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.05067164877644126,
+      "root_ric": -0.032400954491891565,
+      "remaining": -0.05691724325126202,
+      "proposed_balanced": -0.04465909887157682
+    }
+  },
+  {
+    "group_id": "V032",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.06532224694497835,
+      "root_ric": -0.03749949498133892,
+      "remaining": -0.07483308562642643,
+      "proposed_balanced": -0.05616629030388265
+    }
+  },
+  {
+    "group_id": "V032",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.014650598168537088,
+      "root_ric": -0.005098540489447356,
+      "remaining": -0.017915842375164415,
+      "proposed_balanced": -0.01150719143230583
+    }
+  },
+  {
+    "group_id": "V033",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.09116246402999195,
+      "root_ric": -0.07767581982429173,
+      "remaining": -0.09577269444724679,
+      "proposed_balanced": -0.08672425713576892
+    }
+  },
+  {
+    "group_id": "V033",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.027800547827511846,
+      "root_ric": -0.0405540830468083,
+      "remaining": -0.023440920992344072,
+      "proposed_balanced": -0.03199750201957574
+    }
+  },
+  {
+    "group_id": "V033",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.09116246402999195,
+      "root_ric": -0.07767581982429173,
+      "remaining": -0.09577269444724679,
+      "proposed_balanced": -0.08672425713576892
+    }
+  },
+  {
+    "group_id": "V033",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.0633619162024801,
+      "root_ric": -0.03712173677748343,
+      "remaining": -0.07233177345490271,
+      "proposed_balanced": -0.05472675511619318
+    }
+  },
+  {
+    "group_id": "V034",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.056471012905672247,
+      "root_ric": -0.019604413002880516,
+      "remaining": -0.0690733710357081,
+      "proposed_balanced": -0.044338892019294196
+    }
+  },
+  {
+    "group_id": "V034",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.007018965903797358,
+      "root_ric": 0.007229936520432023,
+      "remaining": -0.011889764181467477,
+      "proposed_balanced": -0.002329913830517505
+    }
+  },
+  {
+    "group_id": "V034",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.056471012905672247,
+      "root_ric": -0.019604413002880516,
+      "remaining": -0.0690733710357081,
+      "proposed_balanced": -0.044338892019294196
+    }
+  },
+  {
+    "group_id": "V034",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.04945204700187489,
+      "root_ric": -0.02683434952331254,
+      "remaining": -0.05718360685424062,
+      "proposed_balanced": -0.04200897818877669
+    }
+  },
+  {
+    "group_id": "V035",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.051842054982925934,
+      "root_ric": -0.0011627818727468764,
+      "remaining": -0.06916609221956849,
+      "proposed_balanced": -0.03516443704615746
+    }
+  },
+  {
+    "group_id": "V035",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.004398395410119438,
+      "root_ric": 0.013985790610056892,
+      "remaining": -0.010682785529261274,
+      "proposed_balanced": 0.001651502540398031
+    }
+  },
+  {
+    "group_id": "V035",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.051842054982925934,
+      "root_ric": -0.0011627818727468764,
+      "remaining": -0.06916609221956849,
+      "proposed_balanced": -0.03516443704615746
+    }
+  },
+  {
+    "group_id": "V035",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.047443659572806496,
+      "root_ric": -0.015148572482803768,
+      "remaining": -0.05848330669030721,
+      "proposed_balanced": -0.03681593958655549
+    }
+  },
+  {
+    "group_id": "V036",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.04829895239160953,
+      "root_ric": 0.012019091730891773,
+      "remaining": -0.06891787563756724,
+      "proposed_balanced": -0.02844939195333751
+    }
+  },
+  {
+    "group_id": "V036",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.002528604754634678,
+      "root_ric": 0.01629755053661075,
+      "remaining": -0.008964076206233518,
+      "proposed_balanced": 0.003666737165188394
+    }
+  },
+  {
+    "group_id": "V036",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.04829895239160953,
+      "root_ric": 0.012019091730891773,
+      "remaining": -0.06891787563756724,
+      "proposed_balanced": -0.02844939195333751
+    }
+  },
+  {
+    "group_id": "V036",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.04577034763697485,
+      "root_ric": -0.0042784588057189765,
+      "remaining": -0.05995379943133372,
+      "proposed_balanced": -0.032116129118525905
+    }
+  },
+  {
+    "group_id": "V037",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.12670943013689628,
+      "root_ric": -0.1925913018655505,
+      "remaining": -0.10418858622965188,
+      "proposed_balanced": -0.1483899440476013
+    }
+  },
+  {
+    "group_id": "V037",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.026921150545178296,
+      "root_ric": -0.030257855495466224,
+      "remaining": -0.02578054222033499,
+      "proposed_balanced": -0.02801919885790083
+    }
+  },
+  {
+    "group_id": "V037",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.12670943013689628,
+      "root_ric": -0.1925913018655505,
+      "remaining": -0.10418858622965188,
+      "proposed_balanced": -0.1483899440476013
+    }
+  },
+  {
+    "group_id": "V037",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.09978827959171799,
+      "root_ric": -0.1623334463700843,
+      "remaining": -0.07840804400931689,
+      "proposed_balanced": -0.12037074518970048
+    }
+  },
+  {
+    "group_id": "V038",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.04857030952560981,
+      "root_ric": -0.0070672879044844095,
+      "remaining": -0.06275756691650414,
+      "proposed_balanced": -0.034912427410494384
+    }
+  },
+  {
+    "group_id": "V038",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.012580409102236345,
+      "root_ric": -0.004484376984575711,
+      "remaining": -0.015347930285314337,
+      "proposed_balanced": -0.009916153634945246
+    }
+  },
+  {
+    "group_id": "V038",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.04857030952560981,
+      "root_ric": -0.0070672879044844095,
+      "remaining": -0.06275756691650414,
+      "proposed_balanced": -0.034912427410494384
+    }
+  },
+  {
+    "group_id": "V038",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.035989900423373467,
+      "root_ric": -0.0025829109199086986,
+      "remaining": -0.0474096366311898,
+      "proposed_balanced": -0.024996273775549138
+    }
+  },
+  {
+    "group_id": "V039",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.048635028585843454,
+      "root_ric": -0.015081630034167404,
+      "remaining": -0.06010481278463131,
+      "proposed_balanced": -0.03759322140939947
+    }
+  },
+  {
+    "group_id": "V039",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.015026267705979368,
+      "root_ric": -0.011946938783435002,
+      "remaining": -0.016078895449910702,
+      "proposed_balanced": -0.014012917116672519
+    }
+  },
+  {
+    "group_id": "V039",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.048635028585843454,
+      "root_ric": -0.015081630034167404,
+      "remaining": -0.06010481278463131,
+      "proposed_balanced": -0.03759322140939947
+    }
+  },
+  {
+    "group_id": "V039",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.033608760879864086,
+      "root_ric": -0.003134691250732402,
+      "remaining": -0.04402591733472061,
+      "proposed_balanced": -0.02358030429272695
+    }
+  },
+  {
+    "group_id": "V040",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.0621781434843518,
+      "root_ric": -0.061011323721701594,
+      "remaining": -0.06257700534199295,
+      "proposed_balanced": -0.06179416453184716
+    }
+  },
+  {
+    "group_id": "V040",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.017765067183197925,
+      "root_ric": -0.019194308548443395,
+      "remaining": -0.017276499981813576,
+      "proposed_balanced": -0.018235404265128707
+    }
+  },
+  {
+    "group_id": "V040",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.0621781434843518,
+      "root_ric": -0.061011323721701594,
+      "remaining": -0.06257700534199295,
+      "proposed_balanced": -0.06179416453184716
+    }
+  },
+  {
+    "group_id": "V040",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.044413076301153875,
+      "root_ric": -0.0418170151732582,
+      "remaining": -0.04530050536017938,
+      "proposed_balanced": -0.043558760266718455
+    }
+  },
+  {
+    "group_id": "V041",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.12244450853174671,
+      "root_ric": -0.2516309914401167,
+      "remaining": -0.07828382304776293,
+      "proposed_balanced": -0.1649574072439397
+    }
+  },
+  {
+    "group_id": "V041",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.12092657970468768,
+      "root_ric": -0.23216866694909433,
+      "remaining": -0.0828999478405279,
+      "proposed_balanced": -0.15753430739481145
+    }
+  },
+  {
+    "group_id": "V041",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.12244450853174671,
+      "root_ric": -0.2516309914401167,
+      "remaining": -0.07828382304776293,
+      "proposed_balanced": -0.1649574072439397
+    }
+  },
+  {
+    "group_id": "V041",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 900,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.001517928827059034,
+      "root_ric": -0.019462324491022365,
+      "remaining": 0.004616124792764964,
+      "proposed_balanced": -0.007423099849128256
+    }
+  },
+  {
+    "group_id": "V042",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.07425673635646723,
+      "root_ric": -0.13900757286570942,
+      "remaining": -0.05212252183545152,
+      "proposed_balanced": -0.09556504735058047
+    }
+  },
+  {
+    "group_id": "V042",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.07492681709912463,
+      "root_ric": -0.13603889924570645,
+      "remaining": -0.05403646248779315,
+      "proposed_balanced": -0.09503768086674969
+    }
+  },
+  {
+    "group_id": "V042",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.07425673635646723,
+      "root_ric": -0.13900757286570942,
+      "remaining": -0.05212252183545152,
+      "proposed_balanced": -0.09556504735058047
+    }
+  },
+  {
+    "group_id": "V042",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 500,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": 0.0006700807426573974,
+      "root_ric": -0.0029686736200029706,
+      "remaining": 0.001913940652341628,
+      "proposed_balanced": -0.0005273664838307823
+    }
+  },
+  {
+    "group_id": "V043",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.06780798821773315,
+      "root_ric": -0.133262756539819,
+      "remaining": -0.04543314394436737,
+      "proposed_balanced": -0.08934795024209308
+    }
+  },
+  {
+    "group_id": "V043",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.06767724796503782,
+      "root_ric": -0.12914899584061068,
+      "remaining": -0.04666394639532667,
+      "proposed_balanced": -0.08790647111796845
+    }
+  },
+  {
+    "group_id": "V043",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.06780798821773315,
+      "root_ric": -0.133262756539819,
+      "remaining": -0.04543314394436737,
+      "proposed_balanced": -0.08934795024209308
+    }
+  },
+  {
+    "group_id": "V043",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 250,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.00013074025269532719,
+      "root_ric": -0.004113760699208324,
+      "remaining": 0.0012308024509593007,
+      "proposed_balanced": -0.0014414791241246228
+    }
+  },
+  {
+    "group_id": "V044",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.06292610563587964,
+      "root_ric": -0.12999126753779633,
+      "remaining": -0.040000769679611636,
+      "proposed_balanced": -0.08499601860870376
+    }
+  },
+  {
+    "group_id": "V044",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.0620824882099571,
+      "root_ric": -0.12486991720330298,
+      "remaining": -0.040619438503048055,
+      "proposed_balanced": -0.0827446778531753
+    }
+  },
+  {
+    "group_id": "V044",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.06292610563587964,
+      "root_ric": -0.12999126753779633,
+      "remaining": -0.040000769679611636,
+      "proposed_balanced": -0.08499601860870376
+    }
+  },
+  {
+    "group_id": "V044",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 50,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": -0.0008436174259225382,
+      "root_ric": -0.005121350334493346,
+      "remaining": 0.000618668823436419,
+      "proposed_balanced": -0.0022513407555284637
+    }
+  },
+  {
+    "group_id": "V045",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.15700655561243892,
+      "root_ric": -0.33942317814524514,
+      "remaining": -0.09464985301193884,
+      "proposed_balanced": -0.217036515578592
+    }
+  },
+  {
+    "group_id": "V045",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.19216906985217042,
+      "root_ric": -0.48732577422213885,
+      "remaining": -0.09127366580733431,
+      "proposed_balanced": -0.2892997200147366
+    }
+  },
+  {
+    "group_id": "V045",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.15700655561243892,
+      "root_ric": -0.33942317814524514,
+      "remaining": -0.09464985301193884,
+      "proposed_balanced": -0.217036515578592
+    }
+  },
+  {
+    "group_id": "V045",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": 0.03516251423973149,
+      "root_ric": 0.1479025960768937,
+      "remaining": -0.0033761872046045305,
+      "proposed_balanced": 0.07226320443614459
+    }
+  },
+  {
+    "group_id": "V046",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.028039059954613782,
+      "root_ric": -0.03286933399336944,
+      "remaining": -0.026387894849528873,
+      "proposed_balanced": -0.02962861442144915
+    }
+  },
+  {
+    "group_id": "V046",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.08556511547623255,
+      "root_ric": -0.20956220127295078,
+      "remaining": -0.04317835655592579,
+      "proposed_balanced": -0.12637027891443825
+    }
+  },
+  {
+    "group_id": "V046",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.028039059954613782,
+      "root_ric": -0.03286933399336944,
+      "remaining": -0.026387894849528873,
+      "proposed_balanced": -0.02962861442144915
+    }
+  },
+  {
+    "group_id": "V046",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": 0.05752605552161877,
+      "root_ric": 0.17669286727958133,
+      "remaining": 0.01679046170639692,
+      "proposed_balanced": 0.0967416644929891
+    }
+  },
+  {
+    "group_id": "V047",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.013906106853915037,
+      "root_ric": -0.008602922657310497,
+      "remaining": -0.015718930023162533,
+      "proposed_balanced": -0.012160926340236522
+    }
+  },
+  {
+    "group_id": "V047",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.0699423323441326,
+      "root_ric": -0.17407188209631647,
+      "remaining": -0.034347027071702424,
+      "proposed_balanced": -0.10420945458400946
+    }
+  },
+  {
+    "group_id": "V047",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.013906106853915037,
+      "root_ric": -0.008602922657310497,
+      "remaining": -0.015718930023162533,
+      "proposed_balanced": -0.012160926340236522
+    }
+  },
+  {
+    "group_id": "V047",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": 0.056036225490217556,
+      "root_ric": 0.16546895943900597,
+      "remaining": 0.01862809704853989,
+      "proposed_balanced": 0.09204852824377294
+    }
+  },
+  {
+    "group_id": "V048",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "P-S",
+    "delta": {
+      "uniform": -0.004243552399352396,
+      "root_ric": 0.003101956962557828,
+      "remaining": -0.006754517334291138,
+      "proposed_balanced": -0.001826280185866641
+    }
+  },
+  {
+    "group_id": "V048",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "P-R",
+    "delta": {
+      "uniform": -0.06323590666750575,
+      "root_ric": -0.1583745719732514,
+      "remaining": -0.03071401597625595,
+      "proposed_balanced": -0.09454429397475367
+    }
+  },
+  {
+    "group_id": "V048",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "P-T",
+    "delta": {
+      "uniform": -0.004243552399352396,
+      "root_ric": 0.003101956962557828,
+      "remaining": -0.006754517334291138,
+      "proposed_balanced": -0.001826280185866641
+    }
+  },
+  {
+    "group_id": "V048",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "contrast": "R-S",
+    "delta": {
+      "uniform": 0.05899235426815336,
+      "root_ric": 0.16147652893580922,
+      "remaining": 0.02395949864196481,
+      "proposed_balanced": 0.09271801378888703
+    }
+  }
+]

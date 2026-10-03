@@ -1,0 +1,19 @@
+{
+  "status": "CPU_saved_artifacts_only",
+  "raw_branch_reductions": 192,
+  "contrasts_recomputed": 192,
+  "training_schedule_rows_verified": 600,
+  "training_update_records_verified": 200,
+  "sampling_pairs": 60,
+  "split_counts": {
+    "val": 42,
+    "train": 18
+  },
+  "source_files": 573,
+  "new_model_calls": 0,
+  "new_training_updates": 0,
+  "new_samples": 0,
+  "GPU_queries": 0,
+  "checkpoint_tensor_loads": 0,
+  "interpretation": "Loss allocation is a hypothesis prompted by RIC/all-feature disagreement; no evidence of a gradient conflict or root cause is claimed."
+}
