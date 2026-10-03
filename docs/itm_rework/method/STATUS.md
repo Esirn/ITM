@@ -1,3 +1,14 @@
+# 01 最新状态：失败交付已核对，申请新单次 V 授权（2026-10-03）
+
+已读取 `485db23`：[02 失败交付核对](../protocol/B0_STATE_DIAGNOSTIC_FAILURE_ACCEPTANCE_20261003.md)通过，无新增返工项；原软件验收 `ea7f802` 继续有效。
+01 再次只读核验 1,656 份绑定文件、manifest 副本与旧失败账本，均一致。新申请绑定原 implementation `71cb4e2306559295e59ee5c179ce57e971a1a60dcb9f021cf1ddc33c4c45ee46`、原冻结包、固定 R final200 及 GPU `GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004`。
+唯一新运行目录为 `/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1`；已确认不存在，留待入口原子创建。具体申请：[B0_STATE_DIAGNOSTIC_AUTHORIZATION_REQUEST_20261003.json](B0_STATE_DIAGNOSTIC_AUTHORIZATION_REQUEST_20261003.json)，`authorized=false`，实际执行授权尚未创建。
+申请一次 **48 状态 / 192 分支 / 144 锚点、72 IMU examples / 12 caption 调用**；单 GPU、allocated ≤24 GiB、从预检前起整队 ≤300 秒。0 训练/新 checkpoint/完整采样/新噪声；首错即停，保留账本与已完成产物，不重试、warmup、换卡或回退。
+旧失败具体原因仍未确定，不能保证新预检通过；本轮未查询 GPU 或调用模型。旧授权已消耗，旧目录/失败证据保留。下一步等待本次新授权，获批后由 01 预检并执行一次，再交 02 核对/评价。无需重复软件验收，模型有效性仍未认证。
+以下为历史记录。
+
+---
+
 # 01 最新状态：V 单次授权已消耗，GPU 预检失败（2026-10-03）
 
 用户批准 `25e99c1` 后执行一次 V；在预检前起 1.413581 秒因 `GPU identity/free-memory preflight failed` 停止，退出码 1。worker 未启动，48 组/192 分支/144 锚点均 `not_run_after_stop`，所有模型/编码调用计数为 0。没有重试、换卡或回退。
