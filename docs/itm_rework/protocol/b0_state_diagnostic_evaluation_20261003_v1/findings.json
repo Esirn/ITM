@@ -1,0 +1,9 @@
+{
+  "train_all_sources_both_configs_each_t_P_better_than_S_and_R": true,
+  "val_head_each_source_each_t_P_worse_than_R": true,
+  "clap_wrists_each_t_P_and_R_worse_than_S": true,
+  "emphasis": "Descriptive predicates over complete correlated states, not success rates or equivalence/causal/generalization claims.",
+  "next_owner": "01: propose one evidence-based minimal correction and paired full-action validation budget;02 freezes any new experiment. No new authorization implied.",
+  "model_effectiveness_certified": false,
+  "new_motion_results": 0
+}

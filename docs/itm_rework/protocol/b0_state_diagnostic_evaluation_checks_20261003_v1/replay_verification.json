@@ -1,0 +1,84 @@
+{
+  "files": [
+    {
+      "name": "Q_aggregates.json",
+      "byte_identical": true,
+      "sha256": "826d026d6bba2715b12b5862e94ae7adf3f9d841d02d1f62698a77575c5130df"
+    },
+    {
+      "name": "Q_contrasts.json",
+      "byte_identical": true,
+      "sha256": "4b9f6931af7e37e6d5bbef140e00ce4ea2cf567f3dd0c0b4c303b339993a4e28"
+    },
+    {
+      "name": "Q_source_means.json",
+      "byte_identical": true,
+      "sha256": "f4103c126635ac6cc8ce0dbcf01f73b4313ab19998ab69f32066fe69c19e76c5"
+    },
+    {
+      "name": "V_Q_comparison.json",
+      "byte_identical": true,
+      "sha256": "cb27f98d2d7dec99f787d9aab995b2e8997c0b75374a1e156010b01c3594e716"
+    },
+    {
+      "name": "V_aggregates.json",
+      "byte_identical": true,
+      "sha256": "1eb8b35c0bb613aed9f7f13bfb1e9c24e74aa31b165c7f0b551feeafce6c7b57"
+    },
+    {
+      "name": "V_contrasts.json",
+      "byte_identical": true,
+      "sha256": "c5a38c966f2b9e02a0e64faabf7fda8ad59426e02e68b1119c085eb6fd2d6d25"
+    },
+    {
+      "name": "V_source_means.json",
+      "byte_identical": true,
+      "sha256": "cad073b6e505c39d6c47476a8dd1a4a7766ebfaace503906b96b289ddaa1ac24"
+    },
+    {
+      "name": "all_feature_source_rows.csv",
+      "byte_identical": true,
+      "sha256": "954f770897342bf19c9f17aebefd4c345a27916e8ac1dbcb088a8a5989b565aa"
+    },
+    {
+      "name": "anchors.json",
+      "byte_identical": true,
+      "sha256": "8034feb7030a425fa8d50f370a3498a5c3af378fdbcf8ecbddc38bcbee348a35"
+    },
+    {
+      "name": "branches.json",
+      "byte_identical": true,
+      "sha256": "db91d44e5f08733d207c9558f88591bcb4e7ed2cf07d33882cf7211789072675"
+    },
+    {
+      "name": "execution_audit.json",
+      "byte_identical": true,
+      "sha256": "9c04b8ebb6636f5884ed29c512dc270d3564d61126951dc879619704302b4478"
+    },
+    {
+      "name": "findings.json",
+      "byte_identical": true,
+      "sha256": "b6d4a46b1cb26d8da6c723c6b2e32c95bbf9f4e30fd65c9ec4957ed82cc9bb41"
+    },
+    {
+      "name": "input_checks.json",
+      "byte_identical": true,
+      "sha256": "7a3f189ad8dc0824d29da5b8153dbb8d99cebd5f884b25b3aa47cdc7a1533121"
+    },
+    {
+      "name": "provenance.json",
+      "byte_identical": true,
+      "sha256": "be8e2bb013e353e653afb410d15ed923f1170dca5aa32b28b9bb98816d1ba404"
+    },
+    {
+      "name": "tables.md",
+      "byte_identical": true,
+      "sha256": "41519864dcd6f34de6f15f1583e027153503665e23728cafac6763f8d3afb261"
+    }
+  ],
+  "byte_identical_files": 15,
+  "owner01_integrity_replayed_equal": true,
+  "real_model_forwards": 0,
+  "GPU_queries": 0,
+  "new_samples": 0
+}

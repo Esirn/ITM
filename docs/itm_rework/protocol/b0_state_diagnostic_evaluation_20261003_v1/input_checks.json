@@ -1,0 +1,242 @@
+[
+  {
+    "cache_id": "C01",
+    "branch": "T",
+    "exact": true
+  },
+  {
+    "cache_id": "C01",
+    "branch": "P",
+    "exact": true
+  },
+  {
+    "cache_id": "C01",
+    "branch": "S",
+    "exact": true
+  },
+  {
+    "cache_id": "C01",
+    "branch": "R",
+    "exact": true
+  },
+  {
+    "cache_id": "C02",
+    "branch": "T",
+    "exact": true
+  },
+  {
+    "cache_id": "C02",
+    "branch": "P",
+    "exact": true
+  },
+  {
+    "cache_id": "C02",
+    "branch": "S",
+    "exact": true
+  },
+  {
+    "cache_id": "C02",
+    "branch": "R",
+    "exact": true
+  },
+  {
+    "cache_id": "C03",
+    "branch": "T",
+    "exact": true
+  },
+  {
+    "cache_id": "C03",
+    "branch": "P",
+    "exact": true
+  },
+  {
+    "cache_id": "C03",
+    "branch": "S",
+    "exact": true
+  },
+  {
+    "cache_id": "C03",
+    "branch": "R",
+    "exact": true
+  },
+  {
+    "cache_id": "C04",
+    "branch": "T",
+    "exact": true
+  },
+  {
+    "cache_id": "C04",
+    "branch": "P",
+    "exact": true
+  },
+  {
+    "cache_id": "C04",
+    "branch": "S",
+    "exact": true
+  },
+  {
+    "cache_id": "C04",
+    "branch": "R",
+    "exact": true
+  },
+  {
+    "cache_id": "C05",
+    "branch": "T",
+    "exact": true
+  },
+  {
+    "cache_id": "C05",
+    "branch": "P",
+    "exact": true
+  },
+  {
+    "cache_id": "C05",
+    "branch": "S",
+    "exact": true
+  },
+  {
+    "cache_id": "C05",
+    "branch": "R",
+    "exact": true
+  },
+  {
+    "cache_id": "C06",
+    "branch": "T",
+    "exact": true
+  },
+  {
+    "cache_id": "C06",
+    "branch": "P",
+    "exact": true
+  },
+  {
+    "cache_id": "C06",
+    "branch": "S",
+    "exact": true
+  },
+  {
+    "cache_id": "C06",
+    "branch": "R",
+    "exact": true
+  },
+  {
+    "cache_id": "C07",
+    "branch": "T",
+    "exact": true
+  },
+  {
+    "cache_id": "C07",
+    "branch": "P",
+    "exact": true
+  },
+  {
+    "cache_id": "C07",
+    "branch": "S",
+    "exact": true
+  },
+  {
+    "cache_id": "C07",
+    "branch": "R",
+    "exact": true
+  },
+  {
+    "cache_id": "C08",
+    "branch": "T",
+    "exact": true
+  },
+  {
+    "cache_id": "C08",
+    "branch": "P",
+    "exact": true
+  },
+  {
+    "cache_id": "C08",
+    "branch": "S",
+    "exact": true
+  },
+  {
+    "cache_id": "C08",
+    "branch": "R",
+    "exact": true
+  },
+  {
+    "cache_id": "C09",
+    "branch": "T",
+    "exact": true
+  },
+  {
+    "cache_id": "C09",
+    "branch": "P",
+    "exact": true
+  },
+  {
+    "cache_id": "C09",
+    "branch": "S",
+    "exact": true
+  },
+  {
+    "cache_id": "C09",
+    "branch": "R",
+    "exact": true
+  },
+  {
+    "cache_id": "C10",
+    "branch": "T",
+    "exact": true
+  },
+  {
+    "cache_id": "C10",
+    "branch": "P",
+    "exact": true
+  },
+  {
+    "cache_id": "C10",
+    "branch": "S",
+    "exact": true
+  },
+  {
+    "cache_id": "C10",
+    "branch": "R",
+    "exact": true
+  },
+  {
+    "cache_id": "C11",
+    "branch": "T",
+    "exact": true
+  },
+  {
+    "cache_id": "C11",
+    "branch": "P",
+    "exact": true
+  },
+  {
+    "cache_id": "C11",
+    "branch": "S",
+    "exact": true
+  },
+  {
+    "cache_id": "C11",
+    "branch": "R",
+    "exact": true
+  },
+  {
+    "cache_id": "C12",
+    "branch": "T",
+    "exact": true
+  },
+  {
+    "cache_id": "C12",
+    "branch": "P",
+    "exact": true
+  },
+  {
+    "cache_id": "C12",
+    "branch": "S",
+    "exact": true
+  },
+  {
+    "cache_id": "C12",
+    "branch": "R",
+    "exact": true
+  }
+]
