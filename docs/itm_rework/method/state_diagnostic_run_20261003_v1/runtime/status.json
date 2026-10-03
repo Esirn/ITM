@@ -1,0 +1,4310 @@
+{
+  "version": "itm-state-queue-v1",
+  "status": "completed",
+  "authorization": {
+    "version": "itm-state-authorization-v1",
+    "status": "approved_single_run",
+    "authorized": true,
+    "implementation": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_implementation_20260928_v1/implementation.json",
+    "implementation_sha256": "71cb4e2306559295e59ee5c179ce57e971a1a60dcb9f021cf1ddc33c4c45ee46",
+    "package": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_state_diagnostic_20260928_v1/package.json",
+      "sha256": "6f050dbfbe57c508e86d83a30b3cdfb505f7700b6781cb52b43d85b6ffc0b012"
+    },
+    "package_sha256": "6f050dbfbe57c508e86d83a30b3cdfb505f7700b6781cb52b43d85b6ffc0b012",
+    "checkpoint": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    "accepted_implementation_commit": "0b3642252dbb1c9295d9ee5e16a8eec726ec6fb8",
+    "independent_acceptance_commit": "ea7f802",
+    "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1",
+    "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+    "launch_environment": {
+      "OMP_NUM_THREADS": "2",
+      "PYTHONUNBUFFERED": "1"
+    },
+    "verified_bound_files": 1656,
+    "limits": {
+      "groups": 48,
+      "MDM_calls": 48,
+      "MDM_branch_examples": 192,
+      "software_checks": 144,
+      "encoder_examples_max": 72,
+      "caption_encoder_calls_max": 12,
+      "training_updates": 0,
+      "new_checkpoints": 0,
+      "new_samples": 0,
+      "q_sample_calls": 0,
+      "posterior_steps": 0,
+      "new_noise_draws": 0,
+      "CFG_calls": 0,
+      "motion_decode_calls": 0,
+      "total_seconds": 300,
+      "allocated_memory_bytes": 25769803776,
+      "GPUs": 1
+    },
+    "scope": "One fixed-R V queue on48 saved states, exactly one batch4 T/P/S/R per state. Preflight only after new approval. One absolute300-second deadline starts before preflight and includes binding/load/cache/forward/save/checks.",
+    "stop_policy": "Stop on first timeout/OOM/nonfinite/identity/counter/software-anchor/write failure. Preserve all finite raw outputs and complete48group/192branch/144check ledgers. No retry, warmup, GPU switch or CPU fallback; finite poor diagnostic metrics do not alter the queue.",
+    "previous_authorizations": "The prior V authorization was consumed by the 2026-10-03 preflight failure; all historical authorizations are unavailable for this new attempt.",
+    "execution_authorization_record": "/home/a200/0proj/ITM/docs/itm_rework/method/B0_STATE_DIAGNOSTIC_AUTHORIZATION_20261003.json",
+    "verification": {
+      "bound_hashes_match": true,
+      "verified_bound_files": 1656,
+      "manifest_copy_exact": true,
+      "old_failure_status_unchanged": true,
+      "run_directory_absent": true,
+      "GPU_queried": false,
+      "real_forward_calls": 0,
+      "environment_note": "This request uses file/hash checks only. Runtime environment and GPU readiness will be checked inside the authorized bounded execution."
+    },
+    "failure_acceptance_commit": "485db23",
+    "previous_attempt": {
+      "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20260928_v1",
+      "status_sha256": "afbe17b7a43bcc37a0321b6a51dc2fe6127b768b7a62ea030e765b5e4597c4cb",
+      "failure": "GPU identity/free-memory preflight failed",
+      "specific_cause": "Undetermined; original preflight stdout was not persisted.",
+      "authorization_consumed": true
+    },
+    "prepared_at": "2026-10-03T08:17:18.580547+00:00",
+    "approved_by": "user",
+    "user_instruction": "\u6279\u51c6",
+    "user_instruction_reference": "User reply \u6279\u51c6 to 01 authorization request commit 186d9e6 in this conversation, 2026-10-03",
+    "approved_at": "2026-10-03T08:28:37.714254+00:00",
+    "request": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/B0_STATE_DIAGNOSTIC_AUTHORIZATION_REQUEST_20261003.json",
+      "sha256": "3dc8e910e193f66e7cf748bf45a5a8be95547aa2914437b07b3a403060d84265"
+    }
+  },
+  "implementation": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_implementation_20260928_v1/implementation.json",
+    "sha256": "71cb4e2306559295e59ee5c179ce57e971a1a60dcb9f021cf1ddc33c4c45ee46"
+  },
+  "started_monotonic": 1150134.637112152,
+  "deadline_monotonic": 1150434.637112152,
+  "groups": [
+    {
+      "group_id": "V001",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V001.npz",
+        "sha256": "502c83260ab752cdb98838c8dc7746233d6fd5df6ed73e5c006fc2f14879bed2"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V002",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V002.npz",
+        "sha256": "b5662aea4abc46262771c42a972d722511b47690102c8c593e65461abb24ed24"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V003",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V003.npz",
+        "sha256": "384f7be309305cb58982b5119cbcae17ff77eb3423f4940be5f85b08e1a57d8f"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V004",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V004.npz",
+        "sha256": "9c27f63f07530113552948cd0a70f8840dc8ce70a2aedf0f61df75a70b962b4c"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V005",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V005.npz",
+        "sha256": "0030180627c99a1333859106702c956b58d38baa2487223f57d9b1e69bdc8242"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V006",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V006.npz",
+        "sha256": "f493395adc5d780760b8c2ef000e16b0e6c328747710947aa790b9c780864358"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V007",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V007.npz",
+        "sha256": "b53db0dfb55e0c4d8211a4fa8c641ea1908295aa061092e0de769fef79811d50"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V008",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V008.npz",
+        "sha256": "948ec41e83051fd19f4b7de6405bc7e7ad455385304f7ddf7d742aeea9a4785a"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V009",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V009.npz",
+        "sha256": "933dee2913b44d0b52b7e9ece536c6bd2d9f44523fe82a93037eef892de81d3d"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V010",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V010.npz",
+        "sha256": "8c37877e8681993ba4923897798882d7a43091377e590d33cb9a1ac9fc232c6b"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V011",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V011.npz",
+        "sha256": "ee1598d2604ce4353755988147861d8d0fc36693fe1e6872f22fad173beb8ca9"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V012",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V012.npz",
+        "sha256": "c917751a97cdbb3b0e1c06a4b1134132506e7c64177704c58b3641bca07344c6"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V013",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V013.npz",
+        "sha256": "11bc93e5c2547dddfed9b33cba53dd284619fa579a7e31298d6384f523fe3973"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V014",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V014.npz",
+        "sha256": "529c506cf92e93115e86d4a1af054c729e39861376e9cb552e42b17a06492c69"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V015",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V015.npz",
+        "sha256": "f3267b0c00d86ba8682e5342673d7c1531463dac6ff2aea6a1c54a4b75581105"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V016",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V016.npz",
+        "sha256": "f32bf88e3a7f85918805d6bb0e42e9fc14e8cce445900c221c8e1ebc17d819f2"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V017",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V017.npz",
+        "sha256": "976432c6fb005732ce8b1b20ee3e9550c79d7b2379c1750a6824b219b1fae1f3"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V018",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V018.npz",
+        "sha256": "4b822600d9c53fa47c7bdbb04091e9bd2df6fdec2e7f3fdfc5afb184756f125d"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V019",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V019.npz",
+        "sha256": "2252c7f8e4493b24303fcbd374b1cb182fb89952001f0898ab271d89c729e60a"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V020",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V020.npz",
+        "sha256": "8287c50fe7499b14f75c881ab9ea35c6f68f34af8ca15dfd42a9cba235029d15"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V021",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V021.npz",
+        "sha256": "4f68015ffb73dbc55453eb8e7fd1e6366f631966e20111237f93ae597cb054cc"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V022",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V022.npz",
+        "sha256": "ff6badf4bcb30b3b9bdb38e7ad47d467212d07a6c6e3839ad93ba491e2b74d2a"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V023",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V023.npz",
+        "sha256": "307ae4977e8ef680879d2e35b835a7dbf4dab254671549c2d2b19d292d734fab"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V024",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V024.npz",
+        "sha256": "258c33b0df3b697d409fe4cbcdd7d7f159ee88bbe573f8c9aa0ede4c6321a41a"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V025",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V025.npz",
+        "sha256": "a02a47419896fccd52570c959b9a97f3b7c967b9b7b5ab7b2cf3443059be68eb"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V026",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V026.npz",
+        "sha256": "c3cb2d0722ca3cae2fcb81872f94ab30c8e0a7407e46415b847d86b7552d7f48"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V027",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V027.npz",
+        "sha256": "b8637d91e4e06ec782274421fe4a9aa55166395d760b331c9947be1d48aa3515"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V028",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V028.npz",
+        "sha256": "de9bf28e46eccb562535c32c45a61e889ca58b9825097ec2ddc4376d34819da8"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V029",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V029.npz",
+        "sha256": "2a9d26565408fbf880a3534bc33530d82fe3d90436aecb47456ebf16f989d4e4"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V030",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V030.npz",
+        "sha256": "e6335c45fcd35bd1d91eb27b7703426d4ce149b36c06e328e5ad1b2257ad2a2a"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V031",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V031.npz",
+        "sha256": "5a670c6575dca35433ce88f4a64b3cdd39aaaf0e323585fce3c2f9f7cdc3c50c"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V032",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V032.npz",
+        "sha256": "6ada69f83082d54a90c5c73108040bdf13e3c68dc952a3d62f83fc48f7315417"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V033",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V033.npz",
+        "sha256": "2bf7f2aed7a406c83015c447296b7acbd3e3136dbbfd2b45ebe30040c1f5d9c5"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V034",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V034.npz",
+        "sha256": "a2c56c4403ef484c36a553a92958b16923127c69371bb735937aac3b80940a4b"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V035",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V035.npz",
+        "sha256": "039c9c464950eb9a50b9680c433755a26163a2beb407879c77d80110ab15f82d"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V036",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V036.npz",
+        "sha256": "bc044d392ff16fea09f13644306ad066efda2725c5737760426d6d039e83194e"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V037",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V037.npz",
+        "sha256": "226bae827fc952faf9c8c40c5709a25b1b012ab90814482d9fe387973723688c"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V038",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V038.npz",
+        "sha256": "e81ac600b6f1f7efcfa37e436af3f956def77035d39f67a435bc7111f15c3940"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V039",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V039.npz",
+        "sha256": "bf84d330697739e9e2909a51d6f8d268068a3ed25ff5f8e889d8e97e5fc8da22"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V040",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V040.npz",
+        "sha256": "59b557ed946831f573c8cbe4c02040a2f7e8af14fa4d504ad4177155e8e26df1"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V041",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V041.npz",
+        "sha256": "0f223a952ecd4ea9587929872b4f1d7dd62c80277afdfae0d58b9a72a8c8f942"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V042",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V042.npz",
+        "sha256": "fbabb6680e6cfe27367b21248a22450bfa49a752a4b06093335e2e4f94dd75e8"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V043",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V043.npz",
+        "sha256": "c95aebab466ff4a7150c032cd95c958c6957442b43dd59ef1d86c91584e0c0d8"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V044",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V044.npz",
+        "sha256": "1572db66a7e712846486cfe762333ccd63e669600d09f5f3afaa6354aab653ae"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V045",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V045.npz",
+        "sha256": "5f62dfbe6b64d0fed704ca0e9eb00d49860943b4432a8c868b7482fe68672de0"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V046",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V046.npz",
+        "sha256": "327b0bae51ed5f01b0f09465efc6ce754a86bcec15c80ea506d9963823ae6e1e"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V047",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V047.npz",
+        "sha256": "e0d08cb2114410b97fcbbcbcc3051b852f60f2a34625ee253cca9223fce6530e"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "group_id": "V048",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/states/V048.npz",
+        "sha256": "d28c1dff02406e0484545ed76cc4c0cb195c60c248a64cb8e3c980929feeb4fd"
+      },
+      "diagnostic_only": false
+    }
+  ],
+  "branches": [
+    {
+      "slot_id": "V001-T",
+      "group_id": "V001",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V001-T.npz",
+        "sha256": "da5d9ed4d868b04ededd8b65bb87080cc26bd708b1457604fcc600225b012c81"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V001-P",
+      "group_id": "V001",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V001-P.npz",
+        "sha256": "4278968b9d197fd120f8dfa7a801ed32776fbfdd5442a5a1d0f84b981224c5b9"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V001-S",
+      "group_id": "V001",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V001-S.npz",
+        "sha256": "da5d9ed4d868b04ededd8b65bb87080cc26bd708b1457604fcc600225b012c81"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V001-R",
+      "group_id": "V001",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V001-R.npz",
+        "sha256": "1eb954431b8c4b254a3dfa4fa225770b790d47faba1d2d5802feab86686a6e90"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V002-T",
+      "group_id": "V002",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V002-T.npz",
+        "sha256": "f8c9415258f23a84ef731b41b8abc5ff99bc1747eef490516631078e054c9d6a"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V002-P",
+      "group_id": "V002",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V002-P.npz",
+        "sha256": "e232e379be865d8b3dde1232e5e40347c3aead05f46ccc3736666dccf5d18da9"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V002-S",
+      "group_id": "V002",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V002-S.npz",
+        "sha256": "f8c9415258f23a84ef731b41b8abc5ff99bc1747eef490516631078e054c9d6a"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V002-R",
+      "group_id": "V002",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V002-R.npz",
+        "sha256": "6edc7227cb70ef9b93e54c54d5ff26ae0c8cf6501edc2f27b80fcb61ae4412bb"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V003-T",
+      "group_id": "V003",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V003-T.npz",
+        "sha256": "75f015a1c393cc66197d1c1e4c2bd54ea551c4553ba92376a55dac0bfd458db6"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V003-P",
+      "group_id": "V003",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V003-P.npz",
+        "sha256": "d1a8f8d20ed8be04a54f83db88e408a82a768c67becf9798f8be485a641ac84f"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V003-S",
+      "group_id": "V003",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V003-S.npz",
+        "sha256": "75f015a1c393cc66197d1c1e4c2bd54ea551c4553ba92376a55dac0bfd458db6"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V003-R",
+      "group_id": "V003",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V003-R.npz",
+        "sha256": "4be6e6e6b6edfb3c1fd807edff715c7d3df33cadb833263d66d6fdb2a6f662f8"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V004-T",
+      "group_id": "V004",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V004-T.npz",
+        "sha256": "fb14b6886e96a43f5b3e3d5b8eaef2e64b0e282b0976987ce873f8c7b685c963"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V004-P",
+      "group_id": "V004",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V004-P.npz",
+        "sha256": "5726e044c1f4772f0a1562c36d0b0559e3ada5d92ff7bb48ca591ae1556fe7f3"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V004-S",
+      "group_id": "V004",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V004-S.npz",
+        "sha256": "fb14b6886e96a43f5b3e3d5b8eaef2e64b0e282b0976987ce873f8c7b685c963"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V004-R",
+      "group_id": "V004",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V004-R.npz",
+        "sha256": "81ddce13991de39b07733ff0dce4214dd7549001517c46ccd3313e5a68997913"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V005-T",
+      "group_id": "V005",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V005-T.npz",
+        "sha256": "3afef7fd4665cbc23924fd654611f7d12e1015731dcb56cb6b498f26ffb45849"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V005-P",
+      "group_id": "V005",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V005-P.npz",
+        "sha256": "3e265f419721b4dfcf9c8be7165fe46a73ae4922dc252d9fb179a21cd5fac4d7"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V005-S",
+      "group_id": "V005",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V005-S.npz",
+        "sha256": "3afef7fd4665cbc23924fd654611f7d12e1015731dcb56cb6b498f26ffb45849"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V005-R",
+      "group_id": "V005",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V005-R.npz",
+        "sha256": "97921051ed7ea62c8292e37ae6f83cd933ed7b7f039243f25ba23f51e9fdf166"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V006-T",
+      "group_id": "V006",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V006-T.npz",
+        "sha256": "6b97c04f8c14b341919bfd8369d8be306a5904901fff4167c634488fb02d07a7"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V006-P",
+      "group_id": "V006",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V006-P.npz",
+        "sha256": "edaeeac7500b47249b72f842bd33e8c9799e7f98a9a6a1835fc921051e6be373"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V006-S",
+      "group_id": "V006",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V006-S.npz",
+        "sha256": "6b97c04f8c14b341919bfd8369d8be306a5904901fff4167c634488fb02d07a7"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V006-R",
+      "group_id": "V006",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V006-R.npz",
+        "sha256": "c1275936a12e083b19777caf812fddb63911592a9e6b8e092d43de98f954642a"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V007-T",
+      "group_id": "V007",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V007-T.npz",
+        "sha256": "1f50a1addfa60cdee52f8c9504029e0573ff72d5826c77bae93dbbe361f5cf13"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V007-P",
+      "group_id": "V007",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V007-P.npz",
+        "sha256": "a9b3425158d9bcc552532b4a0979e6d34cf7965de8baf8642b77483efe021b92"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V007-S",
+      "group_id": "V007",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V007-S.npz",
+        "sha256": "1f50a1addfa60cdee52f8c9504029e0573ff72d5826c77bae93dbbe361f5cf13"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V007-R",
+      "group_id": "V007",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V007-R.npz",
+        "sha256": "043b3f67d6bb66fc5d0853703ce92d84fa9e15bf025b31ba6efca5b6af5a2dfa"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V008-T",
+      "group_id": "V008",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V008-T.npz",
+        "sha256": "dbd72929b8b9ad0fae08f134819aa135f577487f233708968d983614b30ea2ab"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V008-P",
+      "group_id": "V008",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V008-P.npz",
+        "sha256": "b245cb9b549761bad841c45ca66f969b462576890292d9820e0d2bb8b4a754f5"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V008-S",
+      "group_id": "V008",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V008-S.npz",
+        "sha256": "dbd72929b8b9ad0fae08f134819aa135f577487f233708968d983614b30ea2ab"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V008-R",
+      "group_id": "V008",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V008-R.npz",
+        "sha256": "31868854945262188cc23a43e34b39566d2c98af86b01e319fc207545ec4f94a"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V009-T",
+      "group_id": "V009",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V009-T.npz",
+        "sha256": "d5af01753895237ad80440e90af5af28b95b527f98120316f4c1ef0dfec3fd31"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V009-P",
+      "group_id": "V009",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V009-P.npz",
+        "sha256": "f6cbd1676b7724b9d03b8a64fd4b4a12a55c176f160ab099ce59a31baa885699"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V009-S",
+      "group_id": "V009",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V009-S.npz",
+        "sha256": "d5af01753895237ad80440e90af5af28b95b527f98120316f4c1ef0dfec3fd31"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V009-R",
+      "group_id": "V009",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V009-R.npz",
+        "sha256": "c31f0e38814bab9888f04fd5a62bdce5449d1467092c294fc93a07c3f466a155"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V010-T",
+      "group_id": "V010",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V010-T.npz",
+        "sha256": "e5d36df9fcda56f3ee77be76956576bb83bb4e6727c3e2c3aa74b5d62443e5dc"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V010-P",
+      "group_id": "V010",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V010-P.npz",
+        "sha256": "1c98bf0ee29a99a2dbe2dc113356607fadef8ac75c3dc3e42e5b2d56795e7e58"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V010-S",
+      "group_id": "V010",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V010-S.npz",
+        "sha256": "e5d36df9fcda56f3ee77be76956576bb83bb4e6727c3e2c3aa74b5d62443e5dc"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V010-R",
+      "group_id": "V010",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V010-R.npz",
+        "sha256": "94dc92a2baa7a74e31df3e0086bd213923ce57185e23261bd7108bc89be370bb"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V011-T",
+      "group_id": "V011",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V011-T.npz",
+        "sha256": "8c3144bc850deefa433c172479b53facba1ad572f31ae141c431586b15d95c8a"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V011-P",
+      "group_id": "V011",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V011-P.npz",
+        "sha256": "3ef648d4275579ea72e780504fe84222d2f2cd0b67eb4e7d248cdc8f767e543b"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V011-S",
+      "group_id": "V011",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V011-S.npz",
+        "sha256": "8c3144bc850deefa433c172479b53facba1ad572f31ae141c431586b15d95c8a"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V011-R",
+      "group_id": "V011",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V011-R.npz",
+        "sha256": "89f446fcf8903aeadb575c1ab4c46453c9695b91a82a64f3a138716f9e49205c"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V012-T",
+      "group_id": "V012",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V012-T.npz",
+        "sha256": "a026c6c01b4874ebb8b2fd1a5884c0ec9097c41fc38c3d59cb5d6a0d0d075b45"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V012-P",
+      "group_id": "V012",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V012-P.npz",
+        "sha256": "c2f3b6ba7fb9c52411c211e87a3c98b0cf300c4055887de84b5108ba272fb925"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V012-S",
+      "group_id": "V012",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V012-S.npz",
+        "sha256": "a026c6c01b4874ebb8b2fd1a5884c0ec9097c41fc38c3d59cb5d6a0d0d075b45"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V012-R",
+      "group_id": "V012",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V012-R.npz",
+        "sha256": "15fe91355764e86cceb5a8ade188b37a1137753d9b57671d42f049e968d47acd"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V013-T",
+      "group_id": "V013",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V013-T.npz",
+        "sha256": "33841c64cd40a2a7ee67b3683865ebc3cfd63e8ba1c06d3063b6f55ebfee1a39"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V013-P",
+      "group_id": "V013",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V013-P.npz",
+        "sha256": "2384b5282033abea225510e1ed9b88424ea10eb9695ed4d6c5c51e42001a5aee"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V013-S",
+      "group_id": "V013",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V013-S.npz",
+        "sha256": "33841c64cd40a2a7ee67b3683865ebc3cfd63e8ba1c06d3063b6f55ebfee1a39"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V013-R",
+      "group_id": "V013",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V013-R.npz",
+        "sha256": "dec7dc6a30db2c811531f327bbdc769bc2e994e78a9d9ba0ccd529c7671f438a"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V014-T",
+      "group_id": "V014",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V014-T.npz",
+        "sha256": "eafa25b83e0409951927d18165ab7c8b83076e8e062826c253975eae3dd00b7e"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V014-P",
+      "group_id": "V014",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V014-P.npz",
+        "sha256": "ad8b2eed464cc7f251d3b6302d9f6788b9debfeaea0e09d377fc80adf253c4f7"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V014-S",
+      "group_id": "V014",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V014-S.npz",
+        "sha256": "eafa25b83e0409951927d18165ab7c8b83076e8e062826c253975eae3dd00b7e"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V014-R",
+      "group_id": "V014",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V014-R.npz",
+        "sha256": "163fc90efbb93972c9441b06e92eaea072b1ad7b9755595c364bb627b7486240"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V015-T",
+      "group_id": "V015",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V015-T.npz",
+        "sha256": "a56b6c5ea252f17136b4cd7abfa9d01d92da4b066c3ad988c75fe2a5d5ae56dc"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V015-P",
+      "group_id": "V015",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V015-P.npz",
+        "sha256": "d75f5c94a4aafa4f63b9eca391484b51a419ca7a0402d12455eddf69dee1d44c"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V015-S",
+      "group_id": "V015",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V015-S.npz",
+        "sha256": "a56b6c5ea252f17136b4cd7abfa9d01d92da4b066c3ad988c75fe2a5d5ae56dc"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V015-R",
+      "group_id": "V015",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V015-R.npz",
+        "sha256": "a2b3bec9fc9a1d34ea66d64c6595d08674786c763dea237c18517772ad0087b9"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V016-T",
+      "group_id": "V016",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V016-T.npz",
+        "sha256": "566f41b7ba2227bfbb15f9dce6843f372d017fdc2f001fa9356e78d05f333b2b"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V016-P",
+      "group_id": "V016",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V016-P.npz",
+        "sha256": "4b57b1e288920400443ebd3f4916f25e74c5122d981926732f1e6c626928b661"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V016-S",
+      "group_id": "V016",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V016-S.npz",
+        "sha256": "566f41b7ba2227bfbb15f9dce6843f372d017fdc2f001fa9356e78d05f333b2b"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V016-R",
+      "group_id": "V016",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V016-R.npz",
+        "sha256": "be52af659db366bfe09050fd7e5edc2620eded0d465603a957335f94cdeabdbd"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V017-T",
+      "group_id": "V017",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V017-T.npz",
+        "sha256": "363a412aae44774212185dadb4b987acdf9a2d24411b6174b80d75034c046e0c"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V017-P",
+      "group_id": "V017",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V017-P.npz",
+        "sha256": "22716b2631ad10efb0b6201c79159d4e82bce148736d9834a064581fe51cf1eb"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V017-S",
+      "group_id": "V017",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V017-S.npz",
+        "sha256": "363a412aae44774212185dadb4b987acdf9a2d24411b6174b80d75034c046e0c"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V017-R",
+      "group_id": "V017",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V017-R.npz",
+        "sha256": "71cba5ee93e2a56f42e1dbcf90d468fbcdacbcca3009a8717ae04bfb2a671606"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V018-T",
+      "group_id": "V018",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V018-T.npz",
+        "sha256": "5653eef3e07c86898c1dd09688648b87613380974af7f97b16c9268317459dd2"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V018-P",
+      "group_id": "V018",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V018-P.npz",
+        "sha256": "d3a6a8332b2279553935b23eb872e63191c26faeacd2aa8a0d23d8318fb91905"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V018-S",
+      "group_id": "V018",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V018-S.npz",
+        "sha256": "5653eef3e07c86898c1dd09688648b87613380974af7f97b16c9268317459dd2"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V018-R",
+      "group_id": "V018",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V018-R.npz",
+        "sha256": "bb5e5206616828f9af2c5dc2a95437005371448fb3370b5018d24a454cf258cb"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V019-T",
+      "group_id": "V019",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V019-T.npz",
+        "sha256": "09a16846488701a2e0c405446bef6e6ffb9e5ed8c30a47112867c9b2b531aab2"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V019-P",
+      "group_id": "V019",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V019-P.npz",
+        "sha256": "c41d8cb17707f8346cab39c2e1b9f9f2e235849d9a96b8c79d0aecd33d85a841"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V019-S",
+      "group_id": "V019",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V019-S.npz",
+        "sha256": "09a16846488701a2e0c405446bef6e6ffb9e5ed8c30a47112867c9b2b531aab2"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V019-R",
+      "group_id": "V019",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V019-R.npz",
+        "sha256": "2a1eb4f3362fd0b416e07a9d213d05ccbe605ca042240ac97a44b3cbb6d27453"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V020-T",
+      "group_id": "V020",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V020-T.npz",
+        "sha256": "bed952b4bfbdae95661cc94c4d756d2cd2cf5dd4977bf499f9ca6d3dc2adaf86"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V020-P",
+      "group_id": "V020",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V020-P.npz",
+        "sha256": "a6b62e1d2977a9f8d753a8e42ec181b74f17d65150631d3c45a7150d046ab913"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V020-S",
+      "group_id": "V020",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V020-S.npz",
+        "sha256": "bed952b4bfbdae95661cc94c4d756d2cd2cf5dd4977bf499f9ca6d3dc2adaf86"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V020-R",
+      "group_id": "V020",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V020-R.npz",
+        "sha256": "c0e6353ee88d7420adc23ed5be49e606cab576f21f9934e8643e912128a8e0fb"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V021-T",
+      "group_id": "V021",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V021-T.npz",
+        "sha256": "d1420ff7ba0efa1357ecd4683bf2a953630599666f5f92f4a72104e869f91ea2"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V021-P",
+      "group_id": "V021",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V021-P.npz",
+        "sha256": "0e2e43f3bf4a60ad0b56dccd4809bc50c650123c9d5a694f07cae20ee22414a0"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V021-S",
+      "group_id": "V021",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V021-S.npz",
+        "sha256": "d1420ff7ba0efa1357ecd4683bf2a953630599666f5f92f4a72104e869f91ea2"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V021-R",
+      "group_id": "V021",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V021-R.npz",
+        "sha256": "16a3e2a79d32409f7f5a514f4ad9a02ad8745d129404edd00ce84ae7d66c9005"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V022-T",
+      "group_id": "V022",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V022-T.npz",
+        "sha256": "e2a001eab8e48b1b109b943a7e92c7eb6be16988cc97f428de61ccea88d9bdbb"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V022-P",
+      "group_id": "V022",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V022-P.npz",
+        "sha256": "bb6716ebf5b954d091f023435941a099e18c50451fc4447bd66e73d09e5c48fa"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V022-S",
+      "group_id": "V022",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V022-S.npz",
+        "sha256": "e2a001eab8e48b1b109b943a7e92c7eb6be16988cc97f428de61ccea88d9bdbb"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V022-R",
+      "group_id": "V022",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V022-R.npz",
+        "sha256": "1446f749e814a0db3aedd2804340c8b5aeb7593bb05b220b1bc1627303c5472f"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V023-T",
+      "group_id": "V023",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V023-T.npz",
+        "sha256": "bb7d39c55280d7142ea162cfea42796ce9c21518afe8f25976099e1c729d1c12"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V023-P",
+      "group_id": "V023",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V023-P.npz",
+        "sha256": "bce48e10b020f3fafab9888f58a9d4dd1f18f51b3d81d7b395c8db4809404397"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V023-S",
+      "group_id": "V023",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V023-S.npz",
+        "sha256": "bb7d39c55280d7142ea162cfea42796ce9c21518afe8f25976099e1c729d1c12"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V023-R",
+      "group_id": "V023",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V023-R.npz",
+        "sha256": "b08cf08335f399f1b4b01543b7bffa6e7fb10f07c7ed79b1f813a6f7a4f41157"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V024-T",
+      "group_id": "V024",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V024-T.npz",
+        "sha256": "f15e960c24314ac0098740c12870769b627c17c74dcf15a0437daf4e241ac297"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V024-P",
+      "group_id": "V024",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V024-P.npz",
+        "sha256": "4f210e066c3b5f762eaa38cc249615e2b3b9fb7d403f2e84eda594231fd59ff3"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V024-S",
+      "group_id": "V024",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V024-S.npz",
+        "sha256": "f15e960c24314ac0098740c12870769b627c17c74dcf15a0437daf4e241ac297"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V024-R",
+      "group_id": "V024",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V024-R.npz",
+        "sha256": "b0aa6246eed1d754df90a93baf82e803ef0df8a76c4275acd0880e5e1c74f304"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V025-T",
+      "group_id": "V025",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V025-T.npz",
+        "sha256": "11d16b7fe881ed1ed59a768e68c886323ee06190a8482190e8bd9ac01d907354"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V025-P",
+      "group_id": "V025",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V025-P.npz",
+        "sha256": "cf5910a9c6e8e1a4b7c96d76c35b6b7a814d6c3511310cfbd79fcc0210ba1b07"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V025-S",
+      "group_id": "V025",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V025-S.npz",
+        "sha256": "11d16b7fe881ed1ed59a768e68c886323ee06190a8482190e8bd9ac01d907354"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V025-R",
+      "group_id": "V025",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V025-R.npz",
+        "sha256": "fa13c59510c2135e7757b3224134411be4a87e7ca50d1fe6e025149795ed3a62"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V026-T",
+      "group_id": "V026",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V026-T.npz",
+        "sha256": "193b611097c6380338a4311409d100563f61221dfbf083d0908cf9f2f80f1625"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V026-P",
+      "group_id": "V026",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V026-P.npz",
+        "sha256": "94f874c0aafa9efdc191d8f3f27e952c54a6644d13f91053b30a70d45dfadfd5"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V026-S",
+      "group_id": "V026",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V026-S.npz",
+        "sha256": "193b611097c6380338a4311409d100563f61221dfbf083d0908cf9f2f80f1625"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V026-R",
+      "group_id": "V026",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V026-R.npz",
+        "sha256": "ea796fa54e4bd9405fc076f71958d031b5b40feab5c8b3bd9de009d4ef2eca6b"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V027-T",
+      "group_id": "V027",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V027-T.npz",
+        "sha256": "14e7e89bb75194b14b1fd9771922028ace84f7b45c4d327e315e33ac8984147b"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V027-P",
+      "group_id": "V027",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V027-P.npz",
+        "sha256": "86fcfe5f5cd2642580c5a866979c411da5314370771a71be8ab68037f9248ba2"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V027-S",
+      "group_id": "V027",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V027-S.npz",
+        "sha256": "14e7e89bb75194b14b1fd9771922028ace84f7b45c4d327e315e33ac8984147b"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V027-R",
+      "group_id": "V027",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V027-R.npz",
+        "sha256": "442dc33a528e4c987519f36a530940c1989c8bf11a2ef983db3eb4f6b79324ec"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V028-T",
+      "group_id": "V028",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V028-T.npz",
+        "sha256": "3728240adf698e24fbe7e6d0f7237e0913dcd401a3ee39ebbae4eda4fe3eb805"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V028-P",
+      "group_id": "V028",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V028-P.npz",
+        "sha256": "10dc9bcfe7b4956505bb8565085313edefb83562d8a9982dfaefa1415d7f3d52"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V028-S",
+      "group_id": "V028",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V028-S.npz",
+        "sha256": "3728240adf698e24fbe7e6d0f7237e0913dcd401a3ee39ebbae4eda4fe3eb805"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V028-R",
+      "group_id": "V028",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V028-R.npz",
+        "sha256": "aa9afc10c3655bffd79f729c7579f25d78dcebb42827be01431fabfe3f743da8"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V029-T",
+      "group_id": "V029",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V029-T.npz",
+        "sha256": "8257bc258f994e586068d5d9b3fba45736b73a92474b48da22cd4f554a973c52"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V029-P",
+      "group_id": "V029",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V029-P.npz",
+        "sha256": "4818afa697d4a5c3df6691a1f355cfabe7f80de008387e88836bd196d58248fb"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V029-S",
+      "group_id": "V029",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V029-S.npz",
+        "sha256": "8257bc258f994e586068d5d9b3fba45736b73a92474b48da22cd4f554a973c52"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V029-R",
+      "group_id": "V029",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V029-R.npz",
+        "sha256": "839963d8c52ca0721d2a7c3f40a0b2350fd73addd931fdc5f12a96327f61ddd5"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V030-T",
+      "group_id": "V030",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V030-T.npz",
+        "sha256": "9a6dc35a2845bc4b74f168c4708721b5753b249269270b99ae6108a06750f51a"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V030-P",
+      "group_id": "V030",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V030-P.npz",
+        "sha256": "4ce986e5211b98dbf5d0031bea502e7b6e54d72597271c365264a08f01aa7f30"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V030-S",
+      "group_id": "V030",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V030-S.npz",
+        "sha256": "9a6dc35a2845bc4b74f168c4708721b5753b249269270b99ae6108a06750f51a"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V030-R",
+      "group_id": "V030",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V030-R.npz",
+        "sha256": "65c8d6ff85223d66a65ae6c0fe42f3dc8dd511944b3b51e2dd55d03805bf2294"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V031-T",
+      "group_id": "V031",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V031-T.npz",
+        "sha256": "df0f39ff0970ce061fe80e89c272e7647a3eb5a563f1fc57f1142b87c938568e"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V031-P",
+      "group_id": "V031",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V031-P.npz",
+        "sha256": "d83b8427f74c2500bc66adc0567ca3802a43120560c9ce849b94b840e233cdd0"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V031-S",
+      "group_id": "V031",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V031-S.npz",
+        "sha256": "df0f39ff0970ce061fe80e89c272e7647a3eb5a563f1fc57f1142b87c938568e"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V031-R",
+      "group_id": "V031",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V031-R.npz",
+        "sha256": "89b5e494bbe97174dd416669a6cf4d2007716cc1a246bad5a3bd184515afba6c"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V032-T",
+      "group_id": "V032",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V032-T.npz",
+        "sha256": "2d011c8dcaaee011ad9bdc26cddbb0bab5459077d156f20f84148391df00b91b"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V032-P",
+      "group_id": "V032",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V032-P.npz",
+        "sha256": "631ea68b784e5b362f3540a107fbf318eed8bba3ed36e43f1f73daaf03ec044f"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V032-S",
+      "group_id": "V032",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V032-S.npz",
+        "sha256": "2d011c8dcaaee011ad9bdc26cddbb0bab5459077d156f20f84148391df00b91b"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V032-R",
+      "group_id": "V032",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V032-R.npz",
+        "sha256": "9d5bbafe6b1ca6e4a748cc647fc4aaa638b19c0c5be07e7939f1135fa8f29672"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V033-T",
+      "group_id": "V033",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V033-T.npz",
+        "sha256": "66b8a5058526ed83e4f8728da18cafaae5e96f9972d6d0d6600595eb07cb5f9f"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V033-P",
+      "group_id": "V033",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V033-P.npz",
+        "sha256": "f8af9d9c1e06cab8c60959ae88f1c4dd7cfe6fbea17840d737d3f7e7b6ea2c62"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V033-S",
+      "group_id": "V033",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V033-S.npz",
+        "sha256": "66b8a5058526ed83e4f8728da18cafaae5e96f9972d6d0d6600595eb07cb5f9f"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V033-R",
+      "group_id": "V033",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V033-R.npz",
+        "sha256": "ee0b8e219e77e119f7666f33693d59a9e94606162324488b6bdbb75c6519c482"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V034-T",
+      "group_id": "V034",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V034-T.npz",
+        "sha256": "d7be4ae29a79dc8e9f62f1c42cbe44c5a7ababd989597aa48bf414eb4acb0d64"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V034-P",
+      "group_id": "V034",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V034-P.npz",
+        "sha256": "858a92807133bee2833a9f7f99121b338c5d2daa1e1908084534f8e46b277306"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V034-S",
+      "group_id": "V034",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V034-S.npz",
+        "sha256": "d7be4ae29a79dc8e9f62f1c42cbe44c5a7ababd989597aa48bf414eb4acb0d64"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V034-R",
+      "group_id": "V034",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V034-R.npz",
+        "sha256": "a4e409ff695b50fe2c1bfb0203fd784692279a798cf09af471810f83d65a0938"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V035-T",
+      "group_id": "V035",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V035-T.npz",
+        "sha256": "a3c17ff27a5eb0ee87bbf011ca2dd2751e8a69f4e5ac3c11f9a76908e703ef56"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V035-P",
+      "group_id": "V035",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V035-P.npz",
+        "sha256": "0db548ec7029e23b08ec26e21da71c4276a618cc46604fc715404acaa43e06ba"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V035-S",
+      "group_id": "V035",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V035-S.npz",
+        "sha256": "a3c17ff27a5eb0ee87bbf011ca2dd2751e8a69f4e5ac3c11f9a76908e703ef56"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V035-R",
+      "group_id": "V035",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V035-R.npz",
+        "sha256": "fab39565d33f25f8735fa8088e8554993e640ad5f115b9aa7ac69877cc95d85e"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V036-T",
+      "group_id": "V036",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V036-T.npz",
+        "sha256": "30cb0d69bc28fd57a71bb284df1da8e58634fed93e96c1c7376968d0f6ff647c"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V036-P",
+      "group_id": "V036",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V036-P.npz",
+        "sha256": "3a761527e5a8559635791c14203bf03aeb2ea0dbace1687fd07271d017b2ca93"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V036-S",
+      "group_id": "V036",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V036-S.npz",
+        "sha256": "30cb0d69bc28fd57a71bb284df1da8e58634fed93e96c1c7376968d0f6ff647c"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V036-R",
+      "group_id": "V036",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V036-R.npz",
+        "sha256": "f23b921d1d71de7c66c427f6e15641ecf7154b8c93dcd70cd5ebdf69904a2a43"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V037-T",
+      "group_id": "V037",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V037-T.npz",
+        "sha256": "708e70cda66f28fd9544c901640b5e045f346eecd1363850e17fe814f5f8038c"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V037-P",
+      "group_id": "V037",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V037-P.npz",
+        "sha256": "80c9e7241fe1dec93b4e415a6a90c48216b3a77e6bfbe0a629ea62c33bdadf2a"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V037-S",
+      "group_id": "V037",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V037-S.npz",
+        "sha256": "708e70cda66f28fd9544c901640b5e045f346eecd1363850e17fe814f5f8038c"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V037-R",
+      "group_id": "V037",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V037-R.npz",
+        "sha256": "296cd22c2a7d536a09ee20b01ad1f0385d17ef5c95ff0433de19d7f60bbc2c55"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V038-T",
+      "group_id": "V038",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V038-T.npz",
+        "sha256": "9d62142aeb301e45f6993cbaf154e020f65f2008c022697df675eb3f708feea7"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V038-P",
+      "group_id": "V038",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V038-P.npz",
+        "sha256": "e224eab17b072af37182c8fe21a2df3e530dc3989545b0f2084ea55a48ad6409"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V038-S",
+      "group_id": "V038",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V038-S.npz",
+        "sha256": "9d62142aeb301e45f6993cbaf154e020f65f2008c022697df675eb3f708feea7"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V038-R",
+      "group_id": "V038",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V038-R.npz",
+        "sha256": "d5607bd1e3347a9bfd7ece7911292f6c1aef96aa137c06a98030ed537401077b"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V039-T",
+      "group_id": "V039",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V039-T.npz",
+        "sha256": "a64dc9efd98c51ea1a6e48ae44cab8394d5211b8877470c00e3974ff813f9f48"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V039-P",
+      "group_id": "V039",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V039-P.npz",
+        "sha256": "47fc2a3fde9cb341e408ad6a22c7f5753d65f9efa4ed1c37eae3a4cb61a413bb"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V039-S",
+      "group_id": "V039",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V039-S.npz",
+        "sha256": "a64dc9efd98c51ea1a6e48ae44cab8394d5211b8877470c00e3974ff813f9f48"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V039-R",
+      "group_id": "V039",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V039-R.npz",
+        "sha256": "a3eba752717dcfdcfde403c5304ca563c9eb1865b9b6c385a3554879026c008a"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V040-T",
+      "group_id": "V040",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V040-T.npz",
+        "sha256": "403a66b0b72ccb64e8161ce2d75676f8c0b5298b47da361b5bbd915a55e1cad9"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V040-P",
+      "group_id": "V040",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V040-P.npz",
+        "sha256": "5adf627082ff93debd7db2c3dc6d428a33dfb9c5a870f64872c55b95a53e8db6"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V040-S",
+      "group_id": "V040",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V040-S.npz",
+        "sha256": "403a66b0b72ccb64e8161ce2d75676f8c0b5298b47da361b5bbd915a55e1cad9"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V040-R",
+      "group_id": "V040",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V040-R.npz",
+        "sha256": "de75ea45cb845db456cc0f87798f0dc110d754aba5cb8dbd5a3f512de4155aed"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V041-T",
+      "group_id": "V041",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V041-T.npz",
+        "sha256": "6526b93fd6153ee23b30dcb6ca66da2fe84cb38522354a309b36b66171bff256"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V041-P",
+      "group_id": "V041",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V041-P.npz",
+        "sha256": "5ffd2c6f6c24a9a1d32b011b04191cc8a7aa6a71ea618a4ab9fc833c695dda3b"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V041-S",
+      "group_id": "V041",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V041-S.npz",
+        "sha256": "6526b93fd6153ee23b30dcb6ca66da2fe84cb38522354a309b36b66171bff256"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V041-R",
+      "group_id": "V041",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V041-R.npz",
+        "sha256": "b5c9ce1989929a2dede7d3255b3a521dc7c82636ea105bf24747423b1a4b6994"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V042-T",
+      "group_id": "V042",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V042-T.npz",
+        "sha256": "f2f478adabbed71d690849ed7f262429d8632deb936706f1ea6852f7cfc2677d"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V042-P",
+      "group_id": "V042",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V042-P.npz",
+        "sha256": "f9b0f44f6e336e7d2b3f9334a4198135a7fb4b3a758c9fabe453e2cd5ab06eb8"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V042-S",
+      "group_id": "V042",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V042-S.npz",
+        "sha256": "f2f478adabbed71d690849ed7f262429d8632deb936706f1ea6852f7cfc2677d"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V042-R",
+      "group_id": "V042",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V042-R.npz",
+        "sha256": "b2b4ae193026a29f1ff168f51855849917f9c840bf8e391681acf49300985ea8"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V043-T",
+      "group_id": "V043",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V043-T.npz",
+        "sha256": "022cd1c8e6ebb0e7112402ee0d2ff6d2db7b9f824b4d4836ef37dd7da94565ed"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V043-P",
+      "group_id": "V043",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V043-P.npz",
+        "sha256": "51c017f67ac2b673b2f2bf1b35a56a98e9eb86c0eb53f4a6d02b47d358f46bce"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V043-S",
+      "group_id": "V043",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V043-S.npz",
+        "sha256": "022cd1c8e6ebb0e7112402ee0d2ff6d2db7b9f824b4d4836ef37dd7da94565ed"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V043-R",
+      "group_id": "V043",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V043-R.npz",
+        "sha256": "06f04571d4389992fa0d2afb54b68be72af978dc549e6009321c3de30ad1456a"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V044-T",
+      "group_id": "V044",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V044-T.npz",
+        "sha256": "9b3d146d5887547886a4ec6aeaa4e2f4138a2464a223bb7fa9eaf8fba7ff3b0a"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V044-P",
+      "group_id": "V044",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V044-P.npz",
+        "sha256": "ca222058f9d3583a3b7da2820218b0ae4c2e3a907f5413a36c387ca321649b75"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V044-S",
+      "group_id": "V044",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V044-S.npz",
+        "sha256": "9b3d146d5887547886a4ec6aeaa4e2f4138a2464a223bb7fa9eaf8fba7ff3b0a"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V044-R",
+      "group_id": "V044",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V044-R.npz",
+        "sha256": "6cd8727dda993cbdadceb3461ff07203b56e9a2789da8eca124a0b3ce01a1b06"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V045-T",
+      "group_id": "V045",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V045-T.npz",
+        "sha256": "347e924df9e7a72c702b7571cd58d4771c5f23619bf14c95ec5cb006e49acd6f"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V045-P",
+      "group_id": "V045",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V045-P.npz",
+        "sha256": "5bf0775ee07ad92f44550c24b4822c650eea3b84b059441d1c9b1089b7bb92cc"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V045-S",
+      "group_id": "V045",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V045-S.npz",
+        "sha256": "347e924df9e7a72c702b7571cd58d4771c5f23619bf14c95ec5cb006e49acd6f"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V045-R",
+      "group_id": "V045",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V045-R.npz",
+        "sha256": "6cbfd0d50d5387c73d2dc4fdad2003e9ed790e23ad938d457eb8d99f74586f5e"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V046-T",
+      "group_id": "V046",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V046-T.npz",
+        "sha256": "d1f32917421cdb904e4c63e011dccef6ffc019788fc64cb5f7e270abf5ed004b"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V046-P",
+      "group_id": "V046",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V046-P.npz",
+        "sha256": "06cfd5026072df9ca7217bbb75ba9645c8057b84c578ca648cfe675954835beb"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V046-S",
+      "group_id": "V046",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V046-S.npz",
+        "sha256": "d1f32917421cdb904e4c63e011dccef6ffc019788fc64cb5f7e270abf5ed004b"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V046-R",
+      "group_id": "V046",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V046-R.npz",
+        "sha256": "686f5944c7175be8a227244aa1601ab86d6ef223c9af6ce261a3e25f5da9f77d"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V047-T",
+      "group_id": "V047",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V047-T.npz",
+        "sha256": "e4ab3ba3b94d16b6dd94a52fb3e12b98ab81cb08a363e6e4341ce781eba6872a"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V047-P",
+      "group_id": "V047",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V047-P.npz",
+        "sha256": "3fe94ec3ada7791d4f173bd1e54cf8264ff000d403125c76e2f64d67b43c49eb"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V047-S",
+      "group_id": "V047",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V047-S.npz",
+        "sha256": "e4ab3ba3b94d16b6dd94a52fb3e12b98ab81cb08a363e6e4341ce781eba6872a"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V047-R",
+      "group_id": "V047",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V047-R.npz",
+        "sha256": "19ffbc6defc28ec7851d3b0adf06881c734a10d2a14963a3d69e8ee5638ec5bc"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V048-T",
+      "group_id": "V048",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V048-T.npz",
+        "sha256": "e5e69ddf557e0f90a095ba81d01cec3561bbeb2ff679ec3f81b0495bfce4b617"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V048-P",
+      "group_id": "V048",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V048-P.npz",
+        "sha256": "17207f6e27a105f31498cfb391ba7c9bfb2f8e302a2a2a414de5823f855e2104"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V048-S",
+      "group_id": "V048",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V048-S.npz",
+        "sha256": "e5e69ddf557e0f90a095ba81d01cec3561bbeb2ff679ec3f81b0495bfce4b617"
+      },
+      "diagnostic_only": false
+    },
+    {
+      "slot_id": "V048-R",
+      "group_id": "V048",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/V/branches/V048-R.npz",
+        "sha256": "4d193df1fd4314616fcaea567afc95b5250e48f7440904d35087a1698cbfd599"
+      },
+      "diagnostic_only": false
+    }
+  ],
+  "checks": [
+    {
+      "check_id": "V001-P_vs_trace_f11",
+      "group_id": "V001",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V001-T_vs_trace_f10",
+      "group_id": "V001",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V001-S_vs_T",
+      "group_id": "V001",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V002-P_vs_trace_f11",
+      "group_id": "V002",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V002-T_vs_trace_f10",
+      "group_id": "V002",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V002-S_vs_T",
+      "group_id": "V002",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V003-P_vs_trace_f11",
+      "group_id": "V003",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V003-T_vs_trace_f10",
+      "group_id": "V003",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V003-S_vs_T",
+      "group_id": "V003",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V004-P_vs_trace_f11",
+      "group_id": "V004",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V004-T_vs_trace_f10",
+      "group_id": "V004",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V004-S_vs_T",
+      "group_id": "V004",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V005-P_vs_trace_f11",
+      "group_id": "V005",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V005-T_vs_trace_f10",
+      "group_id": "V005",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V005-S_vs_T",
+      "group_id": "V005",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V006-P_vs_trace_f11",
+      "group_id": "V006",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V006-T_vs_trace_f10",
+      "group_id": "V006",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V006-S_vs_T",
+      "group_id": "V006",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V007-P_vs_trace_f11",
+      "group_id": "V007",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V007-T_vs_trace_f10",
+      "group_id": "V007",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V007-S_vs_T",
+      "group_id": "V007",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V008-P_vs_trace_f11",
+      "group_id": "V008",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V008-T_vs_trace_f10",
+      "group_id": "V008",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V008-S_vs_T",
+      "group_id": "V008",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 10783,
+      "passed": true,
+      "finite_count": 10783
+    },
+    {
+      "check_id": "V009-P_vs_trace_f11",
+      "group_id": "V009",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V009-T_vs_trace_f10",
+      "group_id": "V009",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V009-S_vs_T",
+      "group_id": "V009",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V010-P_vs_trace_f11",
+      "group_id": "V010",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V010-T_vs_trace_f10",
+      "group_id": "V010",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V010-S_vs_T",
+      "group_id": "V010",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V011-P_vs_trace_f11",
+      "group_id": "V011",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V011-T_vs_trace_f10",
+      "group_id": "V011",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V011-S_vs_T",
+      "group_id": "V011",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V012-P_vs_trace_f11",
+      "group_id": "V012",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V012-T_vs_trace_f10",
+      "group_id": "V012",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V012-S_vs_T",
+      "group_id": "V012",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V013-P_vs_trace_f11",
+      "group_id": "V013",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V013-T_vs_trace_f10",
+      "group_id": "V013",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V013-S_vs_T",
+      "group_id": "V013",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V014-P_vs_trace_f11",
+      "group_id": "V014",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V014-T_vs_trace_f10",
+      "group_id": "V014",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V014-S_vs_T",
+      "group_id": "V014",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V015-P_vs_trace_f11",
+      "group_id": "V015",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V015-T_vs_trace_f10",
+      "group_id": "V015",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V015-S_vs_T",
+      "group_id": "V015",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V016-P_vs_trace_f11",
+      "group_id": "V016",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V016-T_vs_trace_f10",
+      "group_id": "V016",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V016-S_vs_T",
+      "group_id": "V016",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 24722,
+      "passed": true,
+      "finite_count": 24722
+    },
+    {
+      "check_id": "V017-P_vs_trace_f11",
+      "group_id": "V017",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V017-T_vs_trace_f10",
+      "group_id": "V017",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V017-S_vs_T",
+      "group_id": "V017",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V018-P_vs_trace_f11",
+      "group_id": "V018",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V018-T_vs_trace_f10",
+      "group_id": "V018",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V018-S_vs_T",
+      "group_id": "V018",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V019-P_vs_trace_f11",
+      "group_id": "V019",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V019-T_vs_trace_f10",
+      "group_id": "V019",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V019-S_vs_T",
+      "group_id": "V019",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V020-P_vs_trace_f11",
+      "group_id": "V020",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V020-T_vs_trace_f10",
+      "group_id": "V020",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V020-S_vs_T",
+      "group_id": "V020",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V021-P_vs_trace_f11",
+      "group_id": "V021",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V021-T_vs_trace_f10",
+      "group_id": "V021",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V021-S_vs_T",
+      "group_id": "V021",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V022-P_vs_trace_f11",
+      "group_id": "V022",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V022-T_vs_trace_f10",
+      "group_id": "V022",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V022-S_vs_T",
+      "group_id": "V022",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V023-P_vs_trace_f11",
+      "group_id": "V023",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V023-T_vs_trace_f10",
+      "group_id": "V023",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V023-S_vs_T",
+      "group_id": "V023",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V024-P_vs_trace_f11",
+      "group_id": "V024",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V024-T_vs_trace_f10",
+      "group_id": "V024",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V024-S_vs_T",
+      "group_id": "V024",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 42869,
+      "passed": true,
+      "finite_count": 42869
+    },
+    {
+      "check_id": "V025-P_vs_trace_f11",
+      "group_id": "V025",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V025-T_vs_trace_f10",
+      "group_id": "V025",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V025-S_vs_T",
+      "group_id": "V025",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V026-P_vs_trace_f11",
+      "group_id": "V026",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V026-T_vs_trace_f10",
+      "group_id": "V026",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V026-S_vs_T",
+      "group_id": "V026",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V027-P_vs_trace_f11",
+      "group_id": "V027",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V027-T_vs_trace_f10",
+      "group_id": "V027",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V027-S_vs_T",
+      "group_id": "V027",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V028-P_vs_trace_f11",
+      "group_id": "V028",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V028-T_vs_trace_f10",
+      "group_id": "V028",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V028-S_vs_T",
+      "group_id": "V028",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V029-P_vs_trace_f11",
+      "group_id": "V029",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V029-T_vs_trace_f10",
+      "group_id": "V029",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V029-S_vs_T",
+      "group_id": "V029",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V030-P_vs_trace_f11",
+      "group_id": "V030",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V030-T_vs_trace_f10",
+      "group_id": "V030",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V030-S_vs_T",
+      "group_id": "V030",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V031-P_vs_trace_f11",
+      "group_id": "V031",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V031-T_vs_trace_f10",
+      "group_id": "V031",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V031-S_vs_T",
+      "group_id": "V031",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V032-P_vs_trace_f11",
+      "group_id": "V032",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V032-T_vs_trace_f10",
+      "group_id": "V032",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V032-S_vs_T",
+      "group_id": "V032",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 27352,
+      "passed": true,
+      "finite_count": 27352
+    },
+    {
+      "check_id": "V033-P_vs_trace_f11",
+      "group_id": "V033",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V033-T_vs_trace_f10",
+      "group_id": "V033",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V033-S_vs_T",
+      "group_id": "V033",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V034-P_vs_trace_f11",
+      "group_id": "V034",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V034-T_vs_trace_f10",
+      "group_id": "V034",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V034-S_vs_T",
+      "group_id": "V034",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V035-P_vs_trace_f11",
+      "group_id": "V035",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V035-T_vs_trace_f10",
+      "group_id": "V035",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V035-S_vs_T",
+      "group_id": "V035",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V036-P_vs_trace_f11",
+      "group_id": "V036",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V036-T_vs_trace_f10",
+      "group_id": "V036",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V036-S_vs_T",
+      "group_id": "V036",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V037-P_vs_trace_f11",
+      "group_id": "V037",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V037-T_vs_trace_f10",
+      "group_id": "V037",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V037-S_vs_T",
+      "group_id": "V037",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V038-P_vs_trace_f11",
+      "group_id": "V038",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V038-T_vs_trace_f10",
+      "group_id": "V038",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V038-S_vs_T",
+      "group_id": "V038",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V039-P_vs_trace_f11",
+      "group_id": "V039",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V039-T_vs_trace_f10",
+      "group_id": "V039",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V039-S_vs_T",
+      "group_id": "V039",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V040-P_vs_trace_f11",
+      "group_id": "V040",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V040-T_vs_trace_f10",
+      "group_id": "V040",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V040-S_vs_T",
+      "group_id": "V040",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 35768,
+      "passed": true,
+      "finite_count": 35768
+    },
+    {
+      "check_id": "V041-P_vs_trace_f11",
+      "group_id": "V041",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V041-T_vs_trace_f10",
+      "group_id": "V041",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V041-S_vs_T",
+      "group_id": "V041",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V042-P_vs_trace_f11",
+      "group_id": "V042",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V042-T_vs_trace_f10",
+      "group_id": "V042",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V042-S_vs_T",
+      "group_id": "V042",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V043-P_vs_trace_f11",
+      "group_id": "V043",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V043-T_vs_trace_f10",
+      "group_id": "V043",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V043-S_vs_T",
+      "group_id": "V043",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V044-P_vs_trace_f11",
+      "group_id": "V044",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V044-T_vs_trace_f10",
+      "group_id": "V044",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V044-S_vs_T",
+      "group_id": "V044",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V045-P_vs_trace_f11",
+      "group_id": "V045",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V045-T_vs_trace_f10",
+      "group_id": "V045",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V045-S_vs_T",
+      "group_id": "V045",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V046-P_vs_trace_f11",
+      "group_id": "V046",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V046-T_vs_trace_f10",
+      "group_id": "V046",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V046-S_vs_T",
+      "group_id": "V046",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V047-P_vs_trace_f11",
+      "group_id": "V047",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V047-T_vs_trace_f10",
+      "group_id": "V047",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V047-S_vs_T",
+      "group_id": "V047",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V048-P_vs_trace_f11",
+      "group_id": "V048",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V048-T_vs_trace_f10",
+      "group_id": "V048",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    },
+    {
+      "check_id": "V048-S_vs_T",
+      "group_id": "V048",
+      "status": "completed",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bitwise": true,
+      "count": 41554,
+      "passed": true,
+      "finite_count": 41554
+    }
+  ],
+  "counts": {
+    "mdm": {
+      "reserved": 192,
+      "actual": 192,
+      "completed": 192,
+      "reserved_calls": 48,
+      "actual_calls": 48,
+      "completed_calls": 48
+    },
+    "encoder": {
+      "reserved": 72,
+      "actual": 72,
+      "completed": 72,
+      "reserved_calls": 72,
+      "actual_calls": 72,
+      "completed_calls": 72
+    },
+    "caption": {
+      "reserved": 12,
+      "actual": 12,
+      "completed": 12,
+      "reserved_calls": 12,
+      "actual_calls": 12,
+      "completed_calls": 12
+    }
+  },
+  "gpu_preflight": {
+    "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+    "total_MiB": 24564,
+    "free_MiB": 24124,
+    "compute_processes": 0
+  },
+  "worker_result": {
+    "status": "completed",
+    "reason": null,
+    "launched": true,
+    "returncode": 0
+  },
+  "receipt": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1/runtime/V.receipt.json",
+    "sha256": "4b9d0171e85a38b95c38adbbaef0adb3e3370182cef70891d4007e03ed19ed8f"
+  },
+  "finished_monotonic": 1150165.25293557
+}

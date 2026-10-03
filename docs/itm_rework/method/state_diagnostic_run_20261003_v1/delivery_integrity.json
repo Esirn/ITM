@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "elapsed_seconds": 30.615823417901993,
+  "verified_bound_files": 1656,
+  "receipt_artifacts": 684,
+  "run_files": 688,
+  "numeric_npz_files": 288,
+  "finite_arrays": 864,
+  "finite_elements": 10376160,
+  "groups": 48,
+  "branches": 192,
+  "inputs_checked": 48,
+  "states_checked": 48,
+  "software_checks": 144,
+  "checks_bitwise": 144,
+  "checks_max_abs": 0.0,
+  "checks_max_rms": 0.0,
+  "peak_allocated_bytes": 538674688,
+  "counts": {
+    "mdm": {
+      "reserved": 192,
+      "actual": 192,
+      "completed": 192,
+      "reserved_calls": 48,
+      "actual_calls": 48,
+      "completed_calls": 48
+    },
+    "encoder": {
+      "reserved": 72,
+      "actual": 72,
+      "completed": 72,
+      "reserved_calls": 72,
+      "actual_calls": 72,
+      "completed_calls": 72
+    },
+    "caption": {
+      "reserved": 12,
+      "actual": 12,
+      "completed": 12,
+      "reserved_calls": 12,
+      "actual_calls": 12,
+      "completed_calls": 12
+    }
+  },
+  "old_failure_unchanged": true,
+  "gpu_queries_during_audit": 0,
+  "model_calls_during_audit": 0
+}

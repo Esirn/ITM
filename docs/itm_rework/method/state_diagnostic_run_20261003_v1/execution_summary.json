@@ -1,0 +1,79 @@
+{
+  "version": "itm-state-run-delivery-v1",
+  "status": "completed",
+  "authorization_consumed": true,
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_authorized_20261003_v1",
+  "finished_at_from_status_mtime": "2026-10-03T16:29:12.993736+08:00",
+  "elapsed_seconds": 30.615823417901993,
+  "process_exit_code": 0,
+  "gpu_preflight": {
+    "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+    "total_MiB": 24564,
+    "free_MiB": 24124,
+    "compute_processes": 0
+  },
+  "peak_allocated_bytes": 538674688,
+  "allocator_cap_bytes": 25377767424,
+  "counts": {
+    "mdm": {
+      "reserved": 192,
+      "actual": 192,
+      "completed": 192,
+      "reserved_calls": 48,
+      "actual_calls": 48,
+      "completed_calls": 48
+    },
+    "encoder": {
+      "reserved": 72,
+      "actual": 72,
+      "completed": 72,
+      "reserved_calls": 72,
+      "actual_calls": 72,
+      "completed_calls": 72
+    },
+    "caption": {
+      "reserved": 12,
+      "actual": 12,
+      "completed": 12,
+      "reserved_calls": 12,
+      "actual_calls": 12,
+      "completed_calls": 12
+    }
+  },
+  "groups": 48,
+  "branches": 192,
+  "checks": 144,
+  "checks_bitwise": 144,
+  "checks_max_abs": 0.0,
+  "receipt_artifacts": 684,
+  "run_files": 688,
+  "training_updates": 0,
+  "new_checkpoints": 0,
+  "new_samples": 0,
+  "denoising_calls": 0,
+  "retries": 0,
+  "gpu_switches": 0,
+  "cpu_fallbacks": 0,
+  "implementation": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/state_diagnostic_implementation_20260928_v1/implementation.json",
+    "sha256": "71cb4e2306559295e59ee5c179ce57e971a1a60dcb9f021cf1ddc33c4c45ee46"
+  },
+  "package": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_state_diagnostic_20260928_v1/package.json",
+    "sha256": "6f050dbfbe57c508e86d83a30b3cdfb505f7700b6781cb52b43d85b6ffc0b012"
+  },
+  "checkpoint": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+    "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+  },
+  "authorization": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/B0_STATE_DIAGNOSTIC_AUTHORIZATION_20261003.json",
+    "sha256": "b32bdf2fde0ca4e44432e6172e598a45ac3c4dd4a961ac550203a6ca041c39e2"
+  },
+  "delivery_integrity": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/state_diagnostic_run_20261003_v1/delivery_integrity.json",
+    "sha256": "965f0911381141f46568bf07acfe89f4b79656b862cf403cab32eccd2968aab7"
+  },
+  "model_effectiveness": "Not certified; owner02 must evaluate frozen V and historical Q comparisons.",
+  "sidecar_note": "Raw branch sidecars retain raw_saved_pending_anchors/diagnostic_only=true; final group metadata, receipt and parent ledger all completed. Resolve final_group_metadata for the final state."
+}
