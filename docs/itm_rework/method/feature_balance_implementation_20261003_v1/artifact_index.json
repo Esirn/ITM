@@ -1,0 +1,42 @@
+[
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/feature_balance_implementation_20261003_v1/implementation.json",
+    "sha256": "db323ef515ede3252898f322f7badda10913aea64d67cb4abb1f3e9fc4605e30"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/feature_balance_implementation_20261003_v1/logs/incremental.txt",
+    "sha256": "d5f342afdf37eed470b67a0c7dba353f9f9726e23d42e33778279e6fd66400ef"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/feature_balance_implementation_20261003_v1/logs/preparation.txt",
+    "sha256": "cd49da0816238baea5d027320da7bb8315f034eb870f08ea2f3a24c31e6dd01e"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/feature_balance_implementation_20261003_v1/logs/preparation_final.txt",
+    "sha256": "2ac8a9243ef5e4b5e3d2b8b66add42f1b67942fa8fbe619c1955ede3d2d5c2f1"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/feature_balance_implementation_20261003_v1/logs/regression.txt",
+    "sha256": "f0150d1c6e661a4cd5a0c6f8cb054ac5a4467ff0a00bc3810177cc0ba6b7d03e"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/feature_balance_implementation_20261003_v1/logs/regression_before_raw_retention.txt",
+    "sha256": "57924b62b40761ff5e1cf5a9421bf14a389fb6a56b432ddd237349b16bb2df95"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/feature_balance_implementation_20261003_v1/preparation_validation.json",
+    "sha256": "8784885f813eb0e79f2b49c70d59b10f9e9b8652cf86b52f3790c9a54d5aed44"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/feature_balance_implementation_20261003_v1/prepare_cpu.py",
+    "sha256": "c42dcf40615be7c40f5389ec225157f474ad5b993acb09303fabb11be76d8844"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/feature_balance_implementation_20261003_v1/rebuild_validation.json",
+    "sha256": "e6ddea6b5c110ace691b1cb8d63bf2d26da0a5a6719ea29a7792c4cbe3c5ac79"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/feature_balance_implementation_20261003_v1/regression.sh",
+    "sha256": "2d91cc0c91809811dabe3eb5ecbf5143488455863370b99f9ee36a3498c7c074"
+  }
+]

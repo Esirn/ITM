@@ -1,0 +1,19 @@
+/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_implementation_20261003_v2/implementation.json
+{
+  "status": "passed",
+  "implementation_sha256": "db323ef515ede3252898f322f7badda10913aea64d67cb4abb1f3e9fc4605e30",
+  "bound_files": 1145,
+  "sampling_inputs": 60,
+  "training_inputs": 6,
+  "unique_training_frames": 398,
+  "train_mean_max_abs": 0.0,
+  "train_std_max_abs": 0.0,
+  "trainable_parameter_tensors": 36,
+  "trainable_parameters": 8705024,
+  "loss_weights_sha256": "ad96c3f5dc0eef83dc8b0107a4802c5af84badf383c12e00124dd63411d7f297",
+  "model_constructions": 0,
+  "real_forwards": 0,
+  "GPU_queries": 0,
+  "new_initializations": 0,
+  "new_checkpoints": 0
+}
