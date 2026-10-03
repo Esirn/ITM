@@ -1,0 +1,5042 @@
+[
+  {
+    "trace_id": "FT0001",
+    "case_id": "F_root_ric_balanced--000433-head-paired",
+    "slot_id": "F001",
+    "timestep": 900,
+    "historical_trace_id": "T0001",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0002",
+    "case_id": "F_root_ric_balanced--000433-head-paired",
+    "slot_id": "F001",
+    "timestep": 500,
+    "historical_trace_id": "T0002",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0003",
+    "case_id": "F_root_ric_balanced--000433-head-paired",
+    "slot_id": "F001",
+    "timestep": 250,
+    "historical_trace_id": "T0003",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0004",
+    "case_id": "F_root_ric_balanced--000433-head-paired",
+    "slot_id": "F001",
+    "timestep": 50,
+    "historical_trace_id": "T0004",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0005",
+    "case_id": "F_root_ric_balanced--000433-head-text_only",
+    "slot_id": "F002",
+    "timestep": 900,
+    "historical_trace_id": "T0005",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0006",
+    "case_id": "F_root_ric_balanced--000433-head-text_only",
+    "slot_id": "F002",
+    "timestep": 500,
+    "historical_trace_id": "T0006",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0007",
+    "case_id": "F_root_ric_balanced--000433-head-text_only",
+    "slot_id": "F002",
+    "timestep": 250,
+    "historical_trace_id": "T0007",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0008",
+    "case_id": "F_root_ric_balanced--000433-head-text_only",
+    "slot_id": "F002",
+    "timestep": 50,
+    "historical_trace_id": "T0008",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0009",
+    "case_id": "F_root_ric_balanced--000433-head-imu_only",
+    "slot_id": "F003",
+    "timestep": 900,
+    "historical_trace_id": "T0009",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0010",
+    "case_id": "F_root_ric_balanced--000433-head-imu_only",
+    "slot_id": "F003",
+    "timestep": 500,
+    "historical_trace_id": "T0010",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0011",
+    "case_id": "F_root_ric_balanced--000433-head-imu_only",
+    "slot_id": "F003",
+    "timestep": 250,
+    "historical_trace_id": "T0011",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0012",
+    "case_id": "F_root_ric_balanced--000433-head-imu_only",
+    "slot_id": "F003",
+    "timestep": 50,
+    "historical_trace_id": "T0012",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0013",
+    "case_id": "F_root_ric_balanced--000433-head-backbone_bypass",
+    "slot_id": "F004",
+    "timestep": 900,
+    "historical_trace_id": "T0013",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0014",
+    "case_id": "F_root_ric_balanced--000433-head-backbone_bypass",
+    "slot_id": "F004",
+    "timestep": 500,
+    "historical_trace_id": "T0014",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0015",
+    "case_id": "F_root_ric_balanced--000433-head-backbone_bypass",
+    "slot_id": "F004",
+    "timestep": 250,
+    "historical_trace_id": "T0015",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0016",
+    "case_id": "F_root_ric_balanced--000433-head-backbone_bypass",
+    "slot_id": "F004",
+    "timestep": 50,
+    "historical_trace_id": "T0016",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0017",
+    "case_id": "F_root_ric_balanced--000433-head-numeric_zero",
+    "slot_id": "F005",
+    "timestep": 900,
+    "historical_trace_id": "T0017",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0018",
+    "case_id": "F_root_ric_balanced--000433-head-numeric_zero",
+    "slot_id": "F005",
+    "timestep": 500,
+    "historical_trace_id": "T0018",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0019",
+    "case_id": "F_root_ric_balanced--000433-head-numeric_zero",
+    "slot_id": "F005",
+    "timestep": 250,
+    "historical_trace_id": "T0019",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0020",
+    "case_id": "F_root_ric_balanced--000433-head-numeric_zero",
+    "slot_id": "F005",
+    "timestep": 50,
+    "historical_trace_id": "T0020",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0021",
+    "case_id": "F_root_ric_balanced--000433-head-physical_static",
+    "slot_id": "F006",
+    "timestep": 900,
+    "historical_trace_id": "T0021",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0022",
+    "case_id": "F_root_ric_balanced--000433-head-physical_static",
+    "slot_id": "F006",
+    "timestep": 500,
+    "historical_trace_id": "T0022",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0023",
+    "case_id": "F_root_ric_balanced--000433-head-physical_static",
+    "slot_id": "F006",
+    "timestep": 250,
+    "historical_trace_id": "T0023",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0024",
+    "case_id": "F_root_ric_balanced--000433-head-physical_static",
+    "slot_id": "F006",
+    "timestep": 50,
+    "historical_trace_id": "T0024",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0025",
+    "case_id": "F_root_ric_balanced--000433-wrists-paired",
+    "slot_id": "F007",
+    "timestep": 900,
+    "historical_trace_id": "T0025",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0026",
+    "case_id": "F_root_ric_balanced--000433-wrists-paired",
+    "slot_id": "F007",
+    "timestep": 500,
+    "historical_trace_id": "T0026",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0027",
+    "case_id": "F_root_ric_balanced--000433-wrists-paired",
+    "slot_id": "F007",
+    "timestep": 250,
+    "historical_trace_id": "T0027",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0028",
+    "case_id": "F_root_ric_balanced--000433-wrists-paired",
+    "slot_id": "F007",
+    "timestep": 50,
+    "historical_trace_id": "T0028",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0029",
+    "case_id": "F_root_ric_balanced--000433-wrists-text_only",
+    "slot_id": "F008",
+    "timestep": 900,
+    "historical_trace_id": "T0029",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0030",
+    "case_id": "F_root_ric_balanced--000433-wrists-text_only",
+    "slot_id": "F008",
+    "timestep": 500,
+    "historical_trace_id": "T0030",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0031",
+    "case_id": "F_root_ric_balanced--000433-wrists-text_only",
+    "slot_id": "F008",
+    "timestep": 250,
+    "historical_trace_id": "T0031",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0032",
+    "case_id": "F_root_ric_balanced--000433-wrists-text_only",
+    "slot_id": "F008",
+    "timestep": 50,
+    "historical_trace_id": "T0032",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0033",
+    "case_id": "F_root_ric_balanced--000433-wrists-imu_only",
+    "slot_id": "F009",
+    "timestep": 900,
+    "historical_trace_id": "T0033",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0034",
+    "case_id": "F_root_ric_balanced--000433-wrists-imu_only",
+    "slot_id": "F009",
+    "timestep": 500,
+    "historical_trace_id": "T0034",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0035",
+    "case_id": "F_root_ric_balanced--000433-wrists-imu_only",
+    "slot_id": "F009",
+    "timestep": 250,
+    "historical_trace_id": "T0035",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0036",
+    "case_id": "F_root_ric_balanced--000433-wrists-imu_only",
+    "slot_id": "F009",
+    "timestep": 50,
+    "historical_trace_id": "T0036",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0037",
+    "case_id": "F_root_ric_balanced--000433-wrists-backbone_bypass",
+    "slot_id": "F010",
+    "timestep": 900,
+    "historical_trace_id": "T0037",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0038",
+    "case_id": "F_root_ric_balanced--000433-wrists-backbone_bypass",
+    "slot_id": "F010",
+    "timestep": 500,
+    "historical_trace_id": "T0038",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0039",
+    "case_id": "F_root_ric_balanced--000433-wrists-backbone_bypass",
+    "slot_id": "F010",
+    "timestep": 250,
+    "historical_trace_id": "T0039",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0040",
+    "case_id": "F_root_ric_balanced--000433-wrists-backbone_bypass",
+    "slot_id": "F010",
+    "timestep": 50,
+    "historical_trace_id": "T0040",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0041",
+    "case_id": "F_root_ric_balanced--000433-wrists-numeric_zero",
+    "slot_id": "F011",
+    "timestep": 900,
+    "historical_trace_id": "T0041",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0042",
+    "case_id": "F_root_ric_balanced--000433-wrists-numeric_zero",
+    "slot_id": "F011",
+    "timestep": 500,
+    "historical_trace_id": "T0042",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0043",
+    "case_id": "F_root_ric_balanced--000433-wrists-numeric_zero",
+    "slot_id": "F011",
+    "timestep": 250,
+    "historical_trace_id": "T0043",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0044",
+    "case_id": "F_root_ric_balanced--000433-wrists-numeric_zero",
+    "slot_id": "F011",
+    "timestep": 50,
+    "historical_trace_id": "T0044",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0045",
+    "case_id": "F_root_ric_balanced--000433-wrists-physical_static",
+    "slot_id": "F012",
+    "timestep": 900,
+    "historical_trace_id": "T0045",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0046",
+    "case_id": "F_root_ric_balanced--000433-wrists-physical_static",
+    "slot_id": "F012",
+    "timestep": 500,
+    "historical_trace_id": "T0046",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0047",
+    "case_id": "F_root_ric_balanced--000433-wrists-physical_static",
+    "slot_id": "F012",
+    "timestep": 250,
+    "historical_trace_id": "T0047",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0048",
+    "case_id": "F_root_ric_balanced--000433-wrists-physical_static",
+    "slot_id": "F012",
+    "timestep": 50,
+    "historical_trace_id": "T0048",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0049",
+    "case_id": "F_root_ric_balanced--000382-head-paired",
+    "slot_id": "F013",
+    "timestep": 900,
+    "historical_trace_id": "T0049",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0050",
+    "case_id": "F_root_ric_balanced--000382-head-paired",
+    "slot_id": "F013",
+    "timestep": 500,
+    "historical_trace_id": "T0050",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0051",
+    "case_id": "F_root_ric_balanced--000382-head-paired",
+    "slot_id": "F013",
+    "timestep": 250,
+    "historical_trace_id": "T0051",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0052",
+    "case_id": "F_root_ric_balanced--000382-head-paired",
+    "slot_id": "F013",
+    "timestep": 50,
+    "historical_trace_id": "T0052",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0053",
+    "case_id": "F_root_ric_balanced--000382-head-text_only",
+    "slot_id": "F014",
+    "timestep": 900,
+    "historical_trace_id": "T0053",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0054",
+    "case_id": "F_root_ric_balanced--000382-head-text_only",
+    "slot_id": "F014",
+    "timestep": 500,
+    "historical_trace_id": "T0054",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0055",
+    "case_id": "F_root_ric_balanced--000382-head-text_only",
+    "slot_id": "F014",
+    "timestep": 250,
+    "historical_trace_id": "T0055",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0056",
+    "case_id": "F_root_ric_balanced--000382-head-text_only",
+    "slot_id": "F014",
+    "timestep": 50,
+    "historical_trace_id": "T0056",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0057",
+    "case_id": "F_root_ric_balanced--000382-head-imu_only",
+    "slot_id": "F015",
+    "timestep": 900,
+    "historical_trace_id": "T0057",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0058",
+    "case_id": "F_root_ric_balanced--000382-head-imu_only",
+    "slot_id": "F015",
+    "timestep": 500,
+    "historical_trace_id": "T0058",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0059",
+    "case_id": "F_root_ric_balanced--000382-head-imu_only",
+    "slot_id": "F015",
+    "timestep": 250,
+    "historical_trace_id": "T0059",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0060",
+    "case_id": "F_root_ric_balanced--000382-head-imu_only",
+    "slot_id": "F015",
+    "timestep": 50,
+    "historical_trace_id": "T0060",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0061",
+    "case_id": "F_root_ric_balanced--000382-head-backbone_bypass",
+    "slot_id": "F016",
+    "timestep": 900,
+    "historical_trace_id": "T0061",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0062",
+    "case_id": "F_root_ric_balanced--000382-head-backbone_bypass",
+    "slot_id": "F016",
+    "timestep": 500,
+    "historical_trace_id": "T0062",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0063",
+    "case_id": "F_root_ric_balanced--000382-head-backbone_bypass",
+    "slot_id": "F016",
+    "timestep": 250,
+    "historical_trace_id": "T0063",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0064",
+    "case_id": "F_root_ric_balanced--000382-head-backbone_bypass",
+    "slot_id": "F016",
+    "timestep": 50,
+    "historical_trace_id": "T0064",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0065",
+    "case_id": "F_root_ric_balanced--000382-head-numeric_zero",
+    "slot_id": "F017",
+    "timestep": 900,
+    "historical_trace_id": "T0065",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0066",
+    "case_id": "F_root_ric_balanced--000382-head-numeric_zero",
+    "slot_id": "F017",
+    "timestep": 500,
+    "historical_trace_id": "T0066",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0067",
+    "case_id": "F_root_ric_balanced--000382-head-numeric_zero",
+    "slot_id": "F017",
+    "timestep": 250,
+    "historical_trace_id": "T0067",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0068",
+    "case_id": "F_root_ric_balanced--000382-head-numeric_zero",
+    "slot_id": "F017",
+    "timestep": 50,
+    "historical_trace_id": "T0068",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0069",
+    "case_id": "F_root_ric_balanced--000382-head-physical_static",
+    "slot_id": "F018",
+    "timestep": 900,
+    "historical_trace_id": "T0069",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0070",
+    "case_id": "F_root_ric_balanced--000382-head-physical_static",
+    "slot_id": "F018",
+    "timestep": 500,
+    "historical_trace_id": "T0070",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0071",
+    "case_id": "F_root_ric_balanced--000382-head-physical_static",
+    "slot_id": "F018",
+    "timestep": 250,
+    "historical_trace_id": "T0071",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0072",
+    "case_id": "F_root_ric_balanced--000382-head-physical_static",
+    "slot_id": "F018",
+    "timestep": 50,
+    "historical_trace_id": "T0072",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0073",
+    "case_id": "F_root_ric_balanced--000382-wrists-paired",
+    "slot_id": "F019",
+    "timestep": 900,
+    "historical_trace_id": "T0073",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0074",
+    "case_id": "F_root_ric_balanced--000382-wrists-paired",
+    "slot_id": "F019",
+    "timestep": 500,
+    "historical_trace_id": "T0074",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0075",
+    "case_id": "F_root_ric_balanced--000382-wrists-paired",
+    "slot_id": "F019",
+    "timestep": 250,
+    "historical_trace_id": "T0075",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0076",
+    "case_id": "F_root_ric_balanced--000382-wrists-paired",
+    "slot_id": "F019",
+    "timestep": 50,
+    "historical_trace_id": "T0076",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0077",
+    "case_id": "F_root_ric_balanced--000382-wrists-text_only",
+    "slot_id": "F020",
+    "timestep": 900,
+    "historical_trace_id": "T0077",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0078",
+    "case_id": "F_root_ric_balanced--000382-wrists-text_only",
+    "slot_id": "F020",
+    "timestep": 500,
+    "historical_trace_id": "T0078",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0079",
+    "case_id": "F_root_ric_balanced--000382-wrists-text_only",
+    "slot_id": "F020",
+    "timestep": 250,
+    "historical_trace_id": "T0079",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0080",
+    "case_id": "F_root_ric_balanced--000382-wrists-text_only",
+    "slot_id": "F020",
+    "timestep": 50,
+    "historical_trace_id": "T0080",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0081",
+    "case_id": "F_root_ric_balanced--000382-wrists-imu_only",
+    "slot_id": "F021",
+    "timestep": 900,
+    "historical_trace_id": "T0081",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0082",
+    "case_id": "F_root_ric_balanced--000382-wrists-imu_only",
+    "slot_id": "F021",
+    "timestep": 500,
+    "historical_trace_id": "T0082",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0083",
+    "case_id": "F_root_ric_balanced--000382-wrists-imu_only",
+    "slot_id": "F021",
+    "timestep": 250,
+    "historical_trace_id": "T0083",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0084",
+    "case_id": "F_root_ric_balanced--000382-wrists-imu_only",
+    "slot_id": "F021",
+    "timestep": 50,
+    "historical_trace_id": "T0084",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0085",
+    "case_id": "F_root_ric_balanced--000382-wrists-backbone_bypass",
+    "slot_id": "F022",
+    "timestep": 900,
+    "historical_trace_id": "T0085",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0086",
+    "case_id": "F_root_ric_balanced--000382-wrists-backbone_bypass",
+    "slot_id": "F022",
+    "timestep": 500,
+    "historical_trace_id": "T0086",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0087",
+    "case_id": "F_root_ric_balanced--000382-wrists-backbone_bypass",
+    "slot_id": "F022",
+    "timestep": 250,
+    "historical_trace_id": "T0087",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0088",
+    "case_id": "F_root_ric_balanced--000382-wrists-backbone_bypass",
+    "slot_id": "F022",
+    "timestep": 50,
+    "historical_trace_id": "T0088",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0089",
+    "case_id": "F_root_ric_balanced--000382-wrists-numeric_zero",
+    "slot_id": "F023",
+    "timestep": 900,
+    "historical_trace_id": "T0089",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0090",
+    "case_id": "F_root_ric_balanced--000382-wrists-numeric_zero",
+    "slot_id": "F023",
+    "timestep": 500,
+    "historical_trace_id": "T0090",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0091",
+    "case_id": "F_root_ric_balanced--000382-wrists-numeric_zero",
+    "slot_id": "F023",
+    "timestep": 250,
+    "historical_trace_id": "T0091",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0092",
+    "case_id": "F_root_ric_balanced--000382-wrists-numeric_zero",
+    "slot_id": "F023",
+    "timestep": 50,
+    "historical_trace_id": "T0092",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0093",
+    "case_id": "F_root_ric_balanced--000382-wrists-physical_static",
+    "slot_id": "F024",
+    "timestep": 900,
+    "historical_trace_id": "T0093",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0094",
+    "case_id": "F_root_ric_balanced--000382-wrists-physical_static",
+    "slot_id": "F024",
+    "timestep": 500,
+    "historical_trace_id": "T0094",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0095",
+    "case_id": "F_root_ric_balanced--000382-wrists-physical_static",
+    "slot_id": "F024",
+    "timestep": 250,
+    "historical_trace_id": "T0095",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0096",
+    "case_id": "F_root_ric_balanced--000382-wrists-physical_static",
+    "slot_id": "F024",
+    "timestep": 50,
+    "historical_trace_id": "T0096",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0097",
+    "case_id": "F_root_ric_balanced--000139-head-paired",
+    "slot_id": "F025",
+    "timestep": 900,
+    "historical_trace_id": "T0097",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0098",
+    "case_id": "F_root_ric_balanced--000139-head-paired",
+    "slot_id": "F025",
+    "timestep": 500,
+    "historical_trace_id": "T0098",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0099",
+    "case_id": "F_root_ric_balanced--000139-head-paired",
+    "slot_id": "F025",
+    "timestep": 250,
+    "historical_trace_id": "T0099",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0100",
+    "case_id": "F_root_ric_balanced--000139-head-paired",
+    "slot_id": "F025",
+    "timestep": 50,
+    "historical_trace_id": "T0100",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0101",
+    "case_id": "F_root_ric_balanced--000139-head-text_only",
+    "slot_id": "F026",
+    "timestep": 900,
+    "historical_trace_id": "T0101",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0102",
+    "case_id": "F_root_ric_balanced--000139-head-text_only",
+    "slot_id": "F026",
+    "timestep": 500,
+    "historical_trace_id": "T0102",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0103",
+    "case_id": "F_root_ric_balanced--000139-head-text_only",
+    "slot_id": "F026",
+    "timestep": 250,
+    "historical_trace_id": "T0103",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0104",
+    "case_id": "F_root_ric_balanced--000139-head-text_only",
+    "slot_id": "F026",
+    "timestep": 50,
+    "historical_trace_id": "T0104",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0105",
+    "case_id": "F_root_ric_balanced--000139-head-imu_only",
+    "slot_id": "F027",
+    "timestep": 900,
+    "historical_trace_id": "T0105",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0106",
+    "case_id": "F_root_ric_balanced--000139-head-imu_only",
+    "slot_id": "F027",
+    "timestep": 500,
+    "historical_trace_id": "T0106",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0107",
+    "case_id": "F_root_ric_balanced--000139-head-imu_only",
+    "slot_id": "F027",
+    "timestep": 250,
+    "historical_trace_id": "T0107",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0108",
+    "case_id": "F_root_ric_balanced--000139-head-imu_only",
+    "slot_id": "F027",
+    "timestep": 50,
+    "historical_trace_id": "T0108",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0109",
+    "case_id": "F_root_ric_balanced--000139-head-backbone_bypass",
+    "slot_id": "F028",
+    "timestep": 900,
+    "historical_trace_id": "T0109",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0110",
+    "case_id": "F_root_ric_balanced--000139-head-backbone_bypass",
+    "slot_id": "F028",
+    "timestep": 500,
+    "historical_trace_id": "T0110",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0111",
+    "case_id": "F_root_ric_balanced--000139-head-backbone_bypass",
+    "slot_id": "F028",
+    "timestep": 250,
+    "historical_trace_id": "T0111",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0112",
+    "case_id": "F_root_ric_balanced--000139-head-backbone_bypass",
+    "slot_id": "F028",
+    "timestep": 50,
+    "historical_trace_id": "T0112",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0113",
+    "case_id": "F_root_ric_balanced--000139-head-numeric_zero",
+    "slot_id": "F029",
+    "timestep": 900,
+    "historical_trace_id": "T0113",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0114",
+    "case_id": "F_root_ric_balanced--000139-head-numeric_zero",
+    "slot_id": "F029",
+    "timestep": 500,
+    "historical_trace_id": "T0114",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0115",
+    "case_id": "F_root_ric_balanced--000139-head-numeric_zero",
+    "slot_id": "F029",
+    "timestep": 250,
+    "historical_trace_id": "T0115",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0116",
+    "case_id": "F_root_ric_balanced--000139-head-numeric_zero",
+    "slot_id": "F029",
+    "timestep": 50,
+    "historical_trace_id": "T0116",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0117",
+    "case_id": "F_root_ric_balanced--000139-head-physical_static",
+    "slot_id": "F030",
+    "timestep": 900,
+    "historical_trace_id": "T0117",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0118",
+    "case_id": "F_root_ric_balanced--000139-head-physical_static",
+    "slot_id": "F030",
+    "timestep": 500,
+    "historical_trace_id": "T0118",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0119",
+    "case_id": "F_root_ric_balanced--000139-head-physical_static",
+    "slot_id": "F030",
+    "timestep": 250,
+    "historical_trace_id": "T0119",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0120",
+    "case_id": "F_root_ric_balanced--000139-head-physical_static",
+    "slot_id": "F030",
+    "timestep": 50,
+    "historical_trace_id": "T0120",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0121",
+    "case_id": "F_root_ric_balanced--000139-wrists-paired",
+    "slot_id": "F031",
+    "timestep": 900,
+    "historical_trace_id": "T0121",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0122",
+    "case_id": "F_root_ric_balanced--000139-wrists-paired",
+    "slot_id": "F031",
+    "timestep": 500,
+    "historical_trace_id": "T0122",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0123",
+    "case_id": "F_root_ric_balanced--000139-wrists-paired",
+    "slot_id": "F031",
+    "timestep": 250,
+    "historical_trace_id": "T0123",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0124",
+    "case_id": "F_root_ric_balanced--000139-wrists-paired",
+    "slot_id": "F031",
+    "timestep": 50,
+    "historical_trace_id": "T0124",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0125",
+    "case_id": "F_root_ric_balanced--000139-wrists-text_only",
+    "slot_id": "F032",
+    "timestep": 900,
+    "historical_trace_id": "T0125",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0126",
+    "case_id": "F_root_ric_balanced--000139-wrists-text_only",
+    "slot_id": "F032",
+    "timestep": 500,
+    "historical_trace_id": "T0126",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0127",
+    "case_id": "F_root_ric_balanced--000139-wrists-text_only",
+    "slot_id": "F032",
+    "timestep": 250,
+    "historical_trace_id": "T0127",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0128",
+    "case_id": "F_root_ric_balanced--000139-wrists-text_only",
+    "slot_id": "F032",
+    "timestep": 50,
+    "historical_trace_id": "T0128",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0129",
+    "case_id": "F_root_ric_balanced--000139-wrists-imu_only",
+    "slot_id": "F033",
+    "timestep": 900,
+    "historical_trace_id": "T0129",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0130",
+    "case_id": "F_root_ric_balanced--000139-wrists-imu_only",
+    "slot_id": "F033",
+    "timestep": 500,
+    "historical_trace_id": "T0130",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0131",
+    "case_id": "F_root_ric_balanced--000139-wrists-imu_only",
+    "slot_id": "F033",
+    "timestep": 250,
+    "historical_trace_id": "T0131",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0132",
+    "case_id": "F_root_ric_balanced--000139-wrists-imu_only",
+    "slot_id": "F033",
+    "timestep": 50,
+    "historical_trace_id": "T0132",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0133",
+    "case_id": "F_root_ric_balanced--000139-wrists-backbone_bypass",
+    "slot_id": "F034",
+    "timestep": 900,
+    "historical_trace_id": "T0133",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0134",
+    "case_id": "F_root_ric_balanced--000139-wrists-backbone_bypass",
+    "slot_id": "F034",
+    "timestep": 500,
+    "historical_trace_id": "T0134",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0135",
+    "case_id": "F_root_ric_balanced--000139-wrists-backbone_bypass",
+    "slot_id": "F034",
+    "timestep": 250,
+    "historical_trace_id": "T0135",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0136",
+    "case_id": "F_root_ric_balanced--000139-wrists-backbone_bypass",
+    "slot_id": "F034",
+    "timestep": 50,
+    "historical_trace_id": "T0136",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0137",
+    "case_id": "F_root_ric_balanced--000139-wrists-numeric_zero",
+    "slot_id": "F035",
+    "timestep": 900,
+    "historical_trace_id": "T0137",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0138",
+    "case_id": "F_root_ric_balanced--000139-wrists-numeric_zero",
+    "slot_id": "F035",
+    "timestep": 500,
+    "historical_trace_id": "T0138",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0139",
+    "case_id": "F_root_ric_balanced--000139-wrists-numeric_zero",
+    "slot_id": "F035",
+    "timestep": 250,
+    "historical_trace_id": "T0139",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0140",
+    "case_id": "F_root_ric_balanced--000139-wrists-numeric_zero",
+    "slot_id": "F035",
+    "timestep": 50,
+    "historical_trace_id": "T0140",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0141",
+    "case_id": "F_root_ric_balanced--000139-wrists-physical_static",
+    "slot_id": "F036",
+    "timestep": 900,
+    "historical_trace_id": "T0141",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0142",
+    "case_id": "F_root_ric_balanced--000139-wrists-physical_static",
+    "slot_id": "F036",
+    "timestep": 500,
+    "historical_trace_id": "T0142",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0143",
+    "case_id": "F_root_ric_balanced--000139-wrists-physical_static",
+    "slot_id": "F036",
+    "timestep": 250,
+    "historical_trace_id": "T0143",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0144",
+    "case_id": "F_root_ric_balanced--000139-wrists-physical_static",
+    "slot_id": "F036",
+    "timestep": 50,
+    "historical_trace_id": "T0144",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0145",
+    "case_id": "F_root_ric_balanced--000433-head-tail_reversed",
+    "slot_id": "F037",
+    "timestep": 900,
+    "historical_trace_id": "T0145",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0146",
+    "case_id": "F_root_ric_balanced--000433-head-tail_reversed",
+    "slot_id": "F037",
+    "timestep": 500,
+    "historical_trace_id": "T0146",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0147",
+    "case_id": "F_root_ric_balanced--000433-head-tail_reversed",
+    "slot_id": "F037",
+    "timestep": 250,
+    "historical_trace_id": "T0147",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0148",
+    "case_id": "F_root_ric_balanced--000433-head-tail_reversed",
+    "slot_id": "F037",
+    "timestep": 50,
+    "historical_trace_id": "T0148",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0149",
+    "case_id": "F_root_ric_balanced--000433-wrists-tail_reversed",
+    "slot_id": "F038",
+    "timestep": 900,
+    "historical_trace_id": "T0149",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0150",
+    "case_id": "F_root_ric_balanced--000433-wrists-tail_reversed",
+    "slot_id": "F038",
+    "timestep": 500,
+    "historical_trace_id": "T0150",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0151",
+    "case_id": "F_root_ric_balanced--000433-wrists-tail_reversed",
+    "slot_id": "F038",
+    "timestep": 250,
+    "historical_trace_id": "T0151",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0152",
+    "case_id": "F_root_ric_balanced--000433-wrists-tail_reversed",
+    "slot_id": "F038",
+    "timestep": 50,
+    "historical_trace_id": "T0152",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      41
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0153",
+    "case_id": "F_root_ric_balanced--000382-head-tail_reversed",
+    "slot_id": "F039",
+    "timestep": 900,
+    "historical_trace_id": "T0153",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0154",
+    "case_id": "F_root_ric_balanced--000382-head-tail_reversed",
+    "slot_id": "F039",
+    "timestep": 500,
+    "historical_trace_id": "T0154",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0155",
+    "case_id": "F_root_ric_balanced--000382-head-tail_reversed",
+    "slot_id": "F039",
+    "timestep": 250,
+    "historical_trace_id": "T0155",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0156",
+    "case_id": "F_root_ric_balanced--000382-head-tail_reversed",
+    "slot_id": "F039",
+    "timestep": 50,
+    "historical_trace_id": "T0156",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0157",
+    "case_id": "F_root_ric_balanced--000382-wrists-tail_reversed",
+    "slot_id": "F040",
+    "timestep": 900,
+    "historical_trace_id": "T0157",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0158",
+    "case_id": "F_root_ric_balanced--000382-wrists-tail_reversed",
+    "slot_id": "F040",
+    "timestep": 500,
+    "historical_trace_id": "T0158",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0159",
+    "case_id": "F_root_ric_balanced--000382-wrists-tail_reversed",
+    "slot_id": "F040",
+    "timestep": 250,
+    "historical_trace_id": "T0159",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0160",
+    "case_id": "F_root_ric_balanced--000382-wrists-tail_reversed",
+    "slot_id": "F040",
+    "timestep": 50,
+    "historical_trace_id": "T0160",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      94
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0161",
+    "case_id": "F_root_ric_balanced--000139-head-tail_reversed",
+    "slot_id": "F041",
+    "timestep": 900,
+    "historical_trace_id": "T0161",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0162",
+    "case_id": "F_root_ric_balanced--000139-head-tail_reversed",
+    "slot_id": "F041",
+    "timestep": 500,
+    "historical_trace_id": "T0162",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0163",
+    "case_id": "F_root_ric_balanced--000139-head-tail_reversed",
+    "slot_id": "F041",
+    "timestep": 250,
+    "historical_trace_id": "T0163",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0164",
+    "case_id": "F_root_ric_balanced--000139-head-tail_reversed",
+    "slot_id": "F041",
+    "timestep": 50,
+    "historical_trace_id": "T0164",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0165",
+    "case_id": "F_root_ric_balanced--000139-wrists-tail_reversed",
+    "slot_id": "F042",
+    "timestep": 900,
+    "historical_trace_id": "T0165",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0166",
+    "case_id": "F_root_ric_balanced--000139-wrists-tail_reversed",
+    "slot_id": "F042",
+    "timestep": 500,
+    "historical_trace_id": "T0166",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0167",
+    "case_id": "F_root_ric_balanced--000139-wrists-tail_reversed",
+    "slot_id": "F042",
+    "timestep": 250,
+    "historical_trace_id": "T0167",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0168",
+    "case_id": "F_root_ric_balanced--000139-wrists-tail_reversed",
+    "slot_id": "F042",
+    "timestep": 50,
+    "historical_trace_id": "T0168",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      163
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0169",
+    "case_id": "F_root_ric_balanced--train-000027-head-paired",
+    "slot_id": "F043",
+    "timestep": 900,
+    "historical_trace_id": "T0169",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0170",
+    "case_id": "F_root_ric_balanced--train-000027-head-paired",
+    "slot_id": "F043",
+    "timestep": 500,
+    "historical_trace_id": "T0170",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0171",
+    "case_id": "F_root_ric_balanced--train-000027-head-paired",
+    "slot_id": "F043",
+    "timestep": 250,
+    "historical_trace_id": "T0171",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0172",
+    "case_id": "F_root_ric_balanced--train-000027-head-paired",
+    "slot_id": "F043",
+    "timestep": 50,
+    "historical_trace_id": "T0172",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0173",
+    "case_id": "F_root_ric_balanced--train-000027-head-text_only",
+    "slot_id": "F044",
+    "timestep": 900,
+    "historical_trace_id": "T0173",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0174",
+    "case_id": "F_root_ric_balanced--train-000027-head-text_only",
+    "slot_id": "F044",
+    "timestep": 500,
+    "historical_trace_id": "T0174",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0175",
+    "case_id": "F_root_ric_balanced--train-000027-head-text_only",
+    "slot_id": "F044",
+    "timestep": 250,
+    "historical_trace_id": "T0175",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0176",
+    "case_id": "F_root_ric_balanced--train-000027-head-text_only",
+    "slot_id": "F044",
+    "timestep": 50,
+    "historical_trace_id": "T0176",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0177",
+    "case_id": "F_root_ric_balanced--train-000027-head-physical_static",
+    "slot_id": "F045",
+    "timestep": 900,
+    "historical_trace_id": "T0177",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0178",
+    "case_id": "F_root_ric_balanced--train-000027-head-physical_static",
+    "slot_id": "F045",
+    "timestep": 500,
+    "historical_trace_id": "T0178",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0179",
+    "case_id": "F_root_ric_balanced--train-000027-head-physical_static",
+    "slot_id": "F045",
+    "timestep": 250,
+    "historical_trace_id": "T0179",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0180",
+    "case_id": "F_root_ric_balanced--train-000027-head-physical_static",
+    "slot_id": "F045",
+    "timestep": 50,
+    "historical_trace_id": "T0180",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0181",
+    "case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+    "slot_id": "F046",
+    "timestep": 900,
+    "historical_trace_id": "T0181",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0182",
+    "case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+    "slot_id": "F046",
+    "timestep": 500,
+    "historical_trace_id": "T0182",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0183",
+    "case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+    "slot_id": "F046",
+    "timestep": 250,
+    "historical_trace_id": "T0183",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0184",
+    "case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+    "slot_id": "F046",
+    "timestep": 50,
+    "historical_trace_id": "T0184",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0185",
+    "case_id": "F_root_ric_balanced--train-000027-wrists-text_only",
+    "slot_id": "F047",
+    "timestep": 900,
+    "historical_trace_id": "T0185",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0186",
+    "case_id": "F_root_ric_balanced--train-000027-wrists-text_only",
+    "slot_id": "F047",
+    "timestep": 500,
+    "historical_trace_id": "T0186",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0187",
+    "case_id": "F_root_ric_balanced--train-000027-wrists-text_only",
+    "slot_id": "F047",
+    "timestep": 250,
+    "historical_trace_id": "T0187",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0188",
+    "case_id": "F_root_ric_balanced--train-000027-wrists-text_only",
+    "slot_id": "F047",
+    "timestep": 50,
+    "historical_trace_id": "T0188",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0189",
+    "case_id": "F_root_ric_balanced--train-000027-wrists-physical_static",
+    "slot_id": "F048",
+    "timestep": 900,
+    "historical_trace_id": "T0189",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0190",
+    "case_id": "F_root_ric_balanced--train-000027-wrists-physical_static",
+    "slot_id": "F048",
+    "timestep": 500,
+    "historical_trace_id": "T0190",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0191",
+    "case_id": "F_root_ric_balanced--train-000027-wrists-physical_static",
+    "slot_id": "F048",
+    "timestep": 250,
+    "historical_trace_id": "T0191",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0192",
+    "case_id": "F_root_ric_balanced--train-000027-wrists-physical_static",
+    "slot_id": "F048",
+    "timestep": 50,
+    "historical_trace_id": "T0192",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      104
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0193",
+    "case_id": "F_root_ric_balanced--train-000506-head-paired",
+    "slot_id": "F049",
+    "timestep": 900,
+    "historical_trace_id": "T0193",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0194",
+    "case_id": "F_root_ric_balanced--train-000506-head-paired",
+    "slot_id": "F049",
+    "timestep": 500,
+    "historical_trace_id": "T0194",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0195",
+    "case_id": "F_root_ric_balanced--train-000506-head-paired",
+    "slot_id": "F049",
+    "timestep": 250,
+    "historical_trace_id": "T0195",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0196",
+    "case_id": "F_root_ric_balanced--train-000506-head-paired",
+    "slot_id": "F049",
+    "timestep": 50,
+    "historical_trace_id": "T0196",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0197",
+    "case_id": "F_root_ric_balanced--train-000506-head-text_only",
+    "slot_id": "F050",
+    "timestep": 900,
+    "historical_trace_id": "T0197",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0198",
+    "case_id": "F_root_ric_balanced--train-000506-head-text_only",
+    "slot_id": "F050",
+    "timestep": 500,
+    "historical_trace_id": "T0198",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0199",
+    "case_id": "F_root_ric_balanced--train-000506-head-text_only",
+    "slot_id": "F050",
+    "timestep": 250,
+    "historical_trace_id": "T0199",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0200",
+    "case_id": "F_root_ric_balanced--train-000506-head-text_only",
+    "slot_id": "F050",
+    "timestep": 50,
+    "historical_trace_id": "T0200",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0201",
+    "case_id": "F_root_ric_balanced--train-000506-head-physical_static",
+    "slot_id": "F051",
+    "timestep": 900,
+    "historical_trace_id": "T0201",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0202",
+    "case_id": "F_root_ric_balanced--train-000506-head-physical_static",
+    "slot_id": "F051",
+    "timestep": 500,
+    "historical_trace_id": "T0202",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0203",
+    "case_id": "F_root_ric_balanced--train-000506-head-physical_static",
+    "slot_id": "F051",
+    "timestep": 250,
+    "historical_trace_id": "T0203",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0204",
+    "case_id": "F_root_ric_balanced--train-000506-head-physical_static",
+    "slot_id": "F051",
+    "timestep": 50,
+    "historical_trace_id": "T0204",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0205",
+    "case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+    "slot_id": "F052",
+    "timestep": 900,
+    "historical_trace_id": "T0205",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0206",
+    "case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+    "slot_id": "F052",
+    "timestep": 500,
+    "historical_trace_id": "T0206",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0207",
+    "case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+    "slot_id": "F052",
+    "timestep": 250,
+    "historical_trace_id": "T0207",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0208",
+    "case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+    "slot_id": "F052",
+    "timestep": 50,
+    "historical_trace_id": "T0208",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0209",
+    "case_id": "F_root_ric_balanced--train-000506-wrists-text_only",
+    "slot_id": "F053",
+    "timestep": 900,
+    "historical_trace_id": "T0209",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0210",
+    "case_id": "F_root_ric_balanced--train-000506-wrists-text_only",
+    "slot_id": "F053",
+    "timestep": 500,
+    "historical_trace_id": "T0210",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0211",
+    "case_id": "F_root_ric_balanced--train-000506-wrists-text_only",
+    "slot_id": "F053",
+    "timestep": 250,
+    "historical_trace_id": "T0211",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0212",
+    "case_id": "F_root_ric_balanced--train-000506-wrists-text_only",
+    "slot_id": "F053",
+    "timestep": 50,
+    "historical_trace_id": "T0212",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0213",
+    "case_id": "F_root_ric_balanced--train-000506-wrists-physical_static",
+    "slot_id": "F054",
+    "timestep": 900,
+    "historical_trace_id": "T0213",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0214",
+    "case_id": "F_root_ric_balanced--train-000506-wrists-physical_static",
+    "slot_id": "F054",
+    "timestep": 500,
+    "historical_trace_id": "T0214",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0215",
+    "case_id": "F_root_ric_balanced--train-000506-wrists-physical_static",
+    "slot_id": "F054",
+    "timestep": 250,
+    "historical_trace_id": "T0215",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0216",
+    "case_id": "F_root_ric_balanced--train-000506-wrists-physical_static",
+    "slot_id": "F054",
+    "timestep": 50,
+    "historical_trace_id": "T0216",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      136
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0217",
+    "case_id": "F_root_ric_balanced--train-004728-head-paired",
+    "slot_id": "F055",
+    "timestep": 900,
+    "historical_trace_id": "T0217",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0218",
+    "case_id": "F_root_ric_balanced--train-004728-head-paired",
+    "slot_id": "F055",
+    "timestep": 500,
+    "historical_trace_id": "T0218",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0219",
+    "case_id": "F_root_ric_balanced--train-004728-head-paired",
+    "slot_id": "F055",
+    "timestep": 250,
+    "historical_trace_id": "T0219",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0220",
+    "case_id": "F_root_ric_balanced--train-004728-head-paired",
+    "slot_id": "F055",
+    "timestep": 50,
+    "historical_trace_id": "T0220",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0221",
+    "case_id": "F_root_ric_balanced--train-004728-head-text_only",
+    "slot_id": "F056",
+    "timestep": 900,
+    "historical_trace_id": "T0221",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0222",
+    "case_id": "F_root_ric_balanced--train-004728-head-text_only",
+    "slot_id": "F056",
+    "timestep": 500,
+    "historical_trace_id": "T0222",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0223",
+    "case_id": "F_root_ric_balanced--train-004728-head-text_only",
+    "slot_id": "F056",
+    "timestep": 250,
+    "historical_trace_id": "T0223",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0224",
+    "case_id": "F_root_ric_balanced--train-004728-head-text_only",
+    "slot_id": "F056",
+    "timestep": 50,
+    "historical_trace_id": "T0224",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0225",
+    "case_id": "F_root_ric_balanced--train-004728-head-physical_static",
+    "slot_id": "F057",
+    "timestep": 900,
+    "historical_trace_id": "T0225",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0226",
+    "case_id": "F_root_ric_balanced--train-004728-head-physical_static",
+    "slot_id": "F057",
+    "timestep": 500,
+    "historical_trace_id": "T0226",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0227",
+    "case_id": "F_root_ric_balanced--train-004728-head-physical_static",
+    "slot_id": "F057",
+    "timestep": 250,
+    "historical_trace_id": "T0227",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0228",
+    "case_id": "F_root_ric_balanced--train-004728-head-physical_static",
+    "slot_id": "F057",
+    "timestep": 50,
+    "historical_trace_id": "T0228",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0229",
+    "case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+    "slot_id": "F058",
+    "timestep": 900,
+    "historical_trace_id": "T0229",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0230",
+    "case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+    "slot_id": "F058",
+    "timestep": 500,
+    "historical_trace_id": "T0230",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0231",
+    "case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+    "slot_id": "F058",
+    "timestep": 250,
+    "historical_trace_id": "T0231",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0232",
+    "case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+    "slot_id": "F058",
+    "timestep": 50,
+    "historical_trace_id": "T0232",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0233",
+    "case_id": "F_root_ric_balanced--train-004728-wrists-text_only",
+    "slot_id": "F059",
+    "timestep": 900,
+    "historical_trace_id": "T0233",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0234",
+    "case_id": "F_root_ric_balanced--train-004728-wrists-text_only",
+    "slot_id": "F059",
+    "timestep": 500,
+    "historical_trace_id": "T0234",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0235",
+    "case_id": "F_root_ric_balanced--train-004728-wrists-text_only",
+    "slot_id": "F059",
+    "timestep": 250,
+    "historical_trace_id": "T0235",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0236",
+    "case_id": "F_root_ric_balanced--train-004728-wrists-text_only",
+    "slot_id": "F059",
+    "timestep": 50,
+    "historical_trace_id": "T0236",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0237",
+    "case_id": "F_root_ric_balanced--train-004728-wrists-physical_static",
+    "slot_id": "F060",
+    "timestep": 900,
+    "historical_trace_id": "T0237",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0238",
+    "case_id": "F_root_ric_balanced--train-004728-wrists-physical_static",
+    "slot_id": "F060",
+    "timestep": 500,
+    "historical_trace_id": "T0238",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0239",
+    "case_id": "F_root_ric_balanced--train-004728-wrists-physical_static",
+    "slot_id": "F060",
+    "timestep": 250,
+    "historical_trace_id": "T0239",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  },
+  {
+    "trace_id": "FT0240",
+    "case_id": "F_root_ric_balanced--train-004728-wrists-physical_static",
+    "slot_id": "F060",
+    "timestep": 50,
+    "historical_trace_id": "T0240",
+    "branch_order": [
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "shape": [
+      1,
+      263,
+      1,
+      158
+    ],
+    "additional_MDM_calls": 0,
+    "status": "frozen_not_executed"
+  }
+]

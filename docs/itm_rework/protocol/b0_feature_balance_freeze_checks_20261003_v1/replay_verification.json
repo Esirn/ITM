@@ -1,0 +1,148 @@
+{
+  "proposal_files": 7,
+  "freeze_files": 16,
+  "all_byte_identical": true,
+  "real_model_forwards": 0,
+  "GPU_queries": 0,
+  "new_samples": 0,
+  "files": [
+    {
+      "bundle": "01proposal",
+      "name": "budget.json",
+      "sha256": "76a004c94d330fe7403544075356028d46117749ca7608661ebd69453cfc1448",
+      "byte_identical": true
+    },
+    {
+      "bundle": "01proposal",
+      "name": "design.json",
+      "sha256": "8125abf033f8216e518252279fa01378d34a6bdefed2669a58242495dd56a6f0",
+      "byte_identical": true
+    },
+    {
+      "bundle": "01proposal",
+      "name": "sampling_pairs.json",
+      "sha256": "beafed1b7aa4be8499c0e20d99d4afacaa2ddbc1067dcdf6a84c239fda0c57ac",
+      "byte_identical": true
+    },
+    {
+      "bundle": "01proposal",
+      "name": "saved_branch_loss_views.json",
+      "sha256": "77cc90974ded5fab3bce4cb5ca9f8a379a4416d6142f89b1d3b068b802a7e0cd",
+      "byte_identical": true
+    },
+    {
+      "bundle": "01proposal",
+      "name": "saved_contrast_loss_views.json",
+      "sha256": "f24b54ba5eb5514129dc046dc4ed2dd88e573d9bd5d8795ebf38e76507cdc9f8",
+      "byte_identical": true
+    },
+    {
+      "bundle": "01proposal",
+      "name": "sources.json",
+      "sha256": "c2fe3ac0fd40fd36b6a7d9111c1c9b5a87ae4b5b062cb2e5cef000d1ffe7d400",
+      "byte_identical": true
+    },
+    {
+      "bundle": "01proposal",
+      "name": "validation.json",
+      "sha256": "41b3b58dcdf27982d0fcb412927d81a44ea4bbb0a490f8117764f23b2b6c4774",
+      "byte_identical": true
+    },
+    {
+      "bundle": "02freeze",
+      "name": "budget.json",
+      "sha256": "5fd4e9162eba35b3216941be04022aa70bc11455abf6675f9665940bf5b407f9",
+      "byte_identical": true
+    },
+    {
+      "bundle": "02freeze",
+      "name": "design.json",
+      "sha256": "0c891e75df0d7f8a57d7d8d7decb51a18ff4291dcd7031aa57f5dce8d2bf5be4",
+      "byte_identical": true
+    },
+    {
+      "bundle": "02freeze",
+      "name": "evaluation.json",
+      "sha256": "4b4fd55fd0b48622bc1eeed5643ba835c82c1038d07b819af92e034a6485ebab",
+      "byte_identical": true
+    },
+    {
+      "bundle": "02freeze",
+      "name": "historical_samples.json",
+      "sha256": "3424d8da77ef40088516ccaa831788a5f8c77cbcbddde4b1ccd25598ac8282f5",
+      "byte_identical": true
+    },
+    {
+      "bundle": "02freeze",
+      "name": "loss.json",
+      "sha256": "8d35613c9fc160113ce67ca5c276b7fda050f964024fc71ad989012917f67bd4",
+      "byte_identical": true
+    },
+    {
+      "bundle": "02freeze",
+      "name": "package.json",
+      "sha256": "a4189b89f1924af022c67dea71c02c2792e65f4a185775501b07d037fba51af9",
+      "byte_identical": true
+    },
+    {
+      "bundle": "02freeze",
+      "name": "review_order.json",
+      "sha256": "87342218ca7e3080f3d6d8a777fc2f423f78eb424d9935bb50e75180339e9758",
+      "byte_identical": true
+    },
+    {
+      "bundle": "02freeze",
+      "name": "sampling_noise_groups.json",
+      "sha256": "3a9ab902bf1ad7f483d349b8b0a2fc0e3952eecad6ad8a9ca3b0872fb082f0f9",
+      "byte_identical": true
+    },
+    {
+      "bundle": "02freeze",
+      "name": "sampling_slots.json",
+      "sha256": "61178f6757c82027d87677a2df1e91d59e9743e6a2042f3c73d13c11973d534f",
+      "byte_identical": true
+    },
+    {
+      "bundle": "02freeze",
+      "name": "software_checks.json",
+      "sha256": "af820ccccfa0dffc6525b724b78610bdc2607c9941b97240639af99a1e064b34",
+      "byte_identical": true
+    },
+    {
+      "bundle": "02freeze",
+      "name": "sources.json",
+      "sha256": "553a6b24ba155f30751612bc408063c3a858e9035794fb09e483ce150d6d349f",
+      "byte_identical": true
+    },
+    {
+      "bundle": "02freeze",
+      "name": "target_review.json",
+      "sha256": "a817319eb1a1fd8df220ce01f9435e75546b657cdebba2431907f9da5b59657e",
+      "byte_identical": true
+    },
+    {
+      "bundle": "02freeze",
+      "name": "trace_slots.json",
+      "sha256": "75dd69e44d517454c163e5d5b7b2588cfbaa69781b8bed8c1968149cc3ce91e3",
+      "byte_identical": true
+    },
+    {
+      "bundle": "02freeze",
+      "name": "training_schedule.json",
+      "sha256": "6b91f51312794aeddef684f9b355513694c5ec4765e75f37c57eb73080d43152",
+      "byte_identical": true
+    },
+    {
+      "bundle": "02freeze",
+      "name": "validation.json",
+      "sha256": "61656a6cd7adb2dfdb69f8b775203bc3c772185fa8f2bdf2be073b1e2c0c4de8",
+      "byte_identical": true
+    },
+    {
+      "bundle": "02freeze",
+      "name": "within_contrasts.json",
+      "sha256": "ab0010979ce6265064361db3aa78a4359725ea22bf564369dfb2a472334bd224",
+      "byte_identical": true
+    }
+  ]
+}

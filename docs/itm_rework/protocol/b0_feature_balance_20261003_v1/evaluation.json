@@ -1,0 +1,107 @@
+{
+  "version": "canonical-B0-feature-balance-evaluation-v1",
+  "base_metrics": {
+    "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/metrics.json",
+    "sha256": "30a598ba54bcb65c0adad7c19b71fd55dc86699a461d73cef06946b5b6bfc8b5"
+  },
+  "historical_evaluation": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_sampling_alignment_20260927_v1/evaluation.json",
+    "sha256": "4057dcaf2ee81540bdecfda95b2749f1aa75df7269b53dc9106d5a038faff139"
+  },
+  "denominators": {
+    "new": 60,
+    "historical": 60,
+    "new_train": 18,
+    "new_val": 42,
+    "conditions": {
+      "paired": 12,
+      "text_only": 12,
+      "imu_only": 6,
+      "backbone_bypass": 6,
+      "numeric_zero": 6,
+      "physical_static": 12,
+      "tail_reversed": 6
+    },
+    "traces": 240,
+    "training_updates": 200,
+    "exposures": 600,
+    "software_checks": 48,
+    "review_rows": 120
+  },
+  "complete_metrics": "All frozen scalar metrics and per-axis extent/pelvis path, GT jerk/contact alongside; head/wrist joint proxy only, no generated IMU residual or new success threshold.",
+  "alignment": "Original20Hz GT without yaw/translation/temporal fitting; same root conventions.",
+  "contact": "Only val000433/000382 n=2 legal contact sources; val000139 nonflat N/A and ALL train floor-unadmitted N/A. No reclassification or zero fill.",
+  "cross_model": "All60 F-U matched cases, fulloriginalmetrics+extent+mean/max jointdistance; no new success rate. HistoricalU not contemporaneous rerun.",
+  "within": "36 contrasts per arm: paired-text/static and valpaired-reversed/numeric_zero;72 total;36 difference-of-contrasts Fwithin-Uwithin, preserveallconditions.",
+  "same_prediction_feature_views": "AllF/U complete normalized263 output vsGT: originaluniform,rootRIC67,remaining196,newbalanced andold5+RIC3 blocks; do not evaluate only newloss. Trace same-state arithmetic only within each arm; noQ/Vnewprobes.",
+  "loss_curve": "600 exposures include same-forward L_U,L_D,L_A,L_F; evolving noise/t/dropout/weights mean first-last loss is not controlled convergence evidence.",
+  "primary": {
+    "source": "train000506",
+    "configs": [
+      "head",
+      "wrists"
+    ],
+    "unit": "each config separately, no pooledconfig success",
+    "semantic_rule": "Visible alternating front-step squat/lunge sequence within this clippedGT support: initialleft-leading flexedpose recovers, thenright-forward step+lowering andmiddle recovery; retainterminaldescent. No demand for anunobserved initialleftstep orfinalstand beyondclip. Inspectfullsequence andtarget_review.json; sustainedcrouch,shallowercrouch,no sidechange ormissing observedmiddlerecovery fails; ambiguity uncertain, notpass.",
+    "classification": [
+      "complete",
+      "incomplete",
+      "uncertain",
+      "missing"
+    ],
+    "support": "Only limited panel support perconfig if Fpaired complete andUpaired incomplete, all5 pairedF-vs-Upaired metrics nonworse, rootrelative strictly improves, andFpaired-vs-owntext/static all5 nonworse withrootrelative strictlyimproved. Anyuncertain/missing component => inconclusive, anyobservedfailure => notsupported. No B0certification.",
+    "guardrail": {
+      "metrics": [
+        "global_MPJPE_m",
+        "root_relative_MPJPE_m",
+        "root_path_RMSE_m",
+        "head_or_wrists_position_joint_proxy_m",
+        "velocity_joint_proxy_RMSE_m_s"
+      ],
+      "degradation_margin": 0,
+      "slack": "epsilon=1e-6+1e-6*abs(reference metric), in each metric native unit",
+      "nonworse": "new <= reference+epsilon",
+      "strict_improvement": "new < reference-epsilon",
+      "interpretation": "Conservative operational zero-tradeoff rule beforeFoutputs; floating comparison slack only, not calibrated perceptual/physical/statistical noninferiority or general success threshold. Do not sweep margins."
+    },
+    "dynamic": "Paired!=null alone insufficient; require full behavior andtarget-linked metrics beyondslack asabove. Fnull=Unull architectural identity isnotlearnedbenefit."
+  },
+  "regressions": "Applysame5metrics FpairedvsUpaired perallother10 source/config cases, flageveryexceedance; fullcoarsereview flags newbehavior loss even whenmetricsimprove. Anyregression prevents claiming broadpanelrepair; keepprimarylocal andtradeoffs explicit.",
+  "movement": {
+    "fps": 20,
+    "axes": "OriginalcanonicalXYZ; +Yheight, signedX/Zrelativepelvis, +Zforwardproxy; no yawfit or perprediction directioncalibration",
+    "joints": {
+      "pelvis": 0,
+      "left_hip": 1,
+      "right_hip": 2,
+      "left_knee": 4,
+      "right_knee": 5,
+      "left_ankle": 7,
+      "right_ankle": 8,
+      "left_toe": 10,
+      "right_toe": 11
+    },
+    "curves": "Allframe pelvisXYZ/height,path; bilateralankle/toe absoluteY andpelvisrelativeXYZ; kneeangle acos(clipped dot of hip-knee andankle-knee normalized); degeneratebones => NA withcount, notzero. ShowGT/U/F independentcurves, no resampling/timefit orfloorcontact inferredfortrain.",
+    "interpretation": "Fullbehavior/side/order/return review plusallmetric deltas; no motion-shrink reward. Jerk/contact vsGT descriptive withpriorNA, not newpasscriteria."
+  },
+  "review": "All120 randomorder inreview_order.json;10uniformposes+allframecurves/fullsequence. Notes beforekey, no arm/config/condition labels. ExistingUknown andsingleAI; notblindhuman validation. Storecycle side/order/return evidence andfailure/uncertain reasons. No temporal/spatialfit.",
+  "mandatory": [
+    "train000506 alternating forward lunges with return/order, not sustained crouch",
+    "train004728 RIGHT back leg direction/height/hold/return, not left-leg substitution",
+    "val000382 wrists clap without unrelated lower-body deformation",
+    "val000139 both configs walking preservation vs text-only/static/reversed",
+    "val000433 full kick-return and all numeric_zero/IMU-only rows",
+    "train000027 punch then turn",
+    "train004728wrists limited oldcoarsepositive direction/amplitude uncertainty"
+  ],
+  "aggregation": "Arms/split/config/condition separate,3source equalmeans/min/max withvalidn/plannedn andmissing reasons. No frameweighting orpooltrain/val; all60new+60old rows alwaysretained.",
+  "failure": "Runtime/identity/software failure stopsqueue; incompleteoutput staysplanned denominator, diagnostic_incomplete metrics maybelisted butexcludedprimarysupport; missingcomparison not_comparable, notzero/pass. Finitequalitybad retainsvalidstatus andallfutureplannedslots.",
+  "interpretation": [
+    "Onlytrain improves => trainingfit evidence, notvalcontrol.",
+    "Lowerbalanced/uniformfeatureloss withoutcompletealternatingbehavior => thisfixedweight intervention insufficient; no furtherweightsearch authorized.",
+    "Primaryconfig improves butotherconfig/source regresses => localtradeoff, notoverallrepair.",
+    "Paired collapses towardnull withouttarget-metric+semantic incrementalbenefit => dynamicIMU use notdemonstrated.",
+    "Noeffect oruncertain isreported; notautomaticadditionalupdates/data/ablation."
+  ],
+  "limitations": "Historicalpairedcontrol,3exposedtrain+3devval,1trainingseed,K1. No significance/generalization/diversity/strictIMUclosure/compatibleedit/realdevice certification."
+}

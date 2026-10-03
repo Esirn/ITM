@@ -1,0 +1,1087 @@
+{
+  "seed": 20261003,
+  "algorithm": "NumPy PCG64 permutation of [F60 slot order,U60 slot order]",
+  "rows": [
+    {
+      "review_id": "FREV001",
+      "case_id": "S1_R_unit_guidance--train-000506-wrists-paired",
+      "arm": "U",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV002",
+      "case_id": "F_root_ric_balanced--000139-head-tail_reversed",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "FREV003",
+      "case_id": "F_root_ric_balanced--000433-wrists-backbone_bypass",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "FREV004",
+      "case_id": "S1_R_unit_guidance--000382-head-physical_static",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV005",
+      "case_id": "F_root_ric_balanced--000382-wrists-physical_static",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV006",
+      "case_id": "S1_R_unit_guidance--000139-wrists-numeric_zero",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "FREV007",
+      "case_id": "S1_R_unit_guidance--train-000506-head-paired",
+      "arm": "U",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV008",
+      "case_id": "S1_R_unit_guidance--000382-head-text_only",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV009",
+      "case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "arm": "F",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV010",
+      "case_id": "S1_R_unit_guidance--train-004728-head-paired",
+      "arm": "U",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV011",
+      "case_id": "F_root_ric_balanced--000139-head-physical_static",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV012",
+      "case_id": "F_root_ric_balanced--000139-wrists-tail_reversed",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "FREV013",
+      "case_id": "S1_R_unit_guidance--000433-head-paired",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV014",
+      "case_id": "S1_R_unit_guidance--000433-head-tail_reversed",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "FREV015",
+      "case_id": "F_root_ric_balanced--000433-wrists-numeric_zero",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "FREV016",
+      "case_id": "F_root_ric_balanced--000382-wrists-text_only",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV017",
+      "case_id": "S1_R_unit_guidance--000433-wrists-tail_reversed",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "FREV018",
+      "case_id": "F_root_ric_balanced--000433-wrists-physical_static",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV019",
+      "case_id": "F_root_ric_balanced--train-000027-wrists-physical_static",
+      "arm": "F",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV020",
+      "case_id": "F_root_ric_balanced--000139-wrists-numeric_zero",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "FREV021",
+      "case_id": "F_root_ric_balanced--000139-head-paired",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV022",
+      "case_id": "F_root_ric_balanced--000139-head-text_only",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV023",
+      "case_id": "S1_R_unit_guidance--train-000506-head-physical_static",
+      "arm": "U",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV024",
+      "case_id": "S1_R_unit_guidance--train-004728-wrists-paired",
+      "arm": "U",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV025",
+      "case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "arm": "F",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV026",
+      "case_id": "S1_R_unit_guidance--000139-wrists-backbone_bypass",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "FREV027",
+      "case_id": "F_root_ric_balanced--000433-head-imu_only",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "FREV028",
+      "case_id": "F_root_ric_balanced--000139-wrists-text_only",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV029",
+      "case_id": "F_root_ric_balanced--train-004728-wrists-text_only",
+      "arm": "F",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV030",
+      "case_id": "S1_R_unit_guidance--000382-wrists-numeric_zero",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "FREV031",
+      "case_id": "F_root_ric_balanced--000382-head-physical_static",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV032",
+      "case_id": "S1_R_unit_guidance--000433-head-backbone_bypass",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "FREV033",
+      "case_id": "F_root_ric_balanced--000382-head-tail_reversed",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "FREV034",
+      "case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "arm": "F",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV035",
+      "case_id": "F_root_ric_balanced--000433-head-paired",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV036",
+      "case_id": "S1_R_unit_guidance--000433-wrists-text_only",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV037",
+      "case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV038",
+      "case_id": "S1_R_unit_guidance--train-000506-wrists-text_only",
+      "arm": "U",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV039",
+      "case_id": "F_root_ric_balanced--000433-head-backbone_bypass",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "FREV040",
+      "case_id": "S1_R_unit_guidance--000433-wrists-backbone_bypass",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "FREV041",
+      "case_id": "S1_R_unit_guidance--000139-head-imu_only",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "FREV042",
+      "case_id": "S1_R_unit_guidance--train-000506-head-text_only",
+      "arm": "U",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV043",
+      "case_id": "S1_R_unit_guidance--000382-wrists-tail_reversed",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "FREV044",
+      "case_id": "S1_R_unit_guidance--train-000027-head-paired",
+      "arm": "U",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV045",
+      "case_id": "F_root_ric_balanced--000139-wrists-imu_only",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "FREV046",
+      "case_id": "S1_R_unit_guidance--train-000027-head-text_only",
+      "arm": "U",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV047",
+      "case_id": "S1_R_unit_guidance--000433-wrists-imu_only",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "FREV048",
+      "case_id": "F_root_ric_balanced--train-000027-head-text_only",
+      "arm": "F",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV049",
+      "case_id": "F_root_ric_balanced--000382-head-paired",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV050",
+      "case_id": "F_root_ric_balanced--000382-wrists-imu_only",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "FREV051",
+      "case_id": "F_root_ric_balanced--000382-wrists-numeric_zero",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "FREV052",
+      "case_id": "F_root_ric_balanced--train-000506-wrists-physical_static",
+      "arm": "F",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV053",
+      "case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV054",
+      "case_id": "S1_R_unit_guidance--000433-wrists-physical_static",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV055",
+      "case_id": "S1_R_unit_guidance--000433-head-numeric_zero",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "FREV056",
+      "case_id": "F_root_ric_balanced--000382-head-text_only",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV057",
+      "case_id": "S1_R_unit_guidance--000382-wrists-backbone_bypass",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "FREV058",
+      "case_id": "F_root_ric_balanced--000139-head-imu_only",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "FREV059",
+      "case_id": "S1_R_unit_guidance--000139-head-backbone_bypass",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "FREV060",
+      "case_id": "S1_R_unit_guidance--train-004728-head-physical_static",
+      "arm": "U",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV061",
+      "case_id": "S1_R_unit_guidance--000433-head-text_only",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV062",
+      "case_id": "S1_R_unit_guidance--train-000506-wrists-physical_static",
+      "arm": "U",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV063",
+      "case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "arm": "F",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV064",
+      "case_id": "S1_R_unit_guidance--train-004728-wrists-text_only",
+      "arm": "U",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV065",
+      "case_id": "F_root_ric_balanced--000433-wrists-tail_reversed",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "FREV066",
+      "case_id": "S1_R_unit_guidance--000139-wrists-imu_only",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "FREV067",
+      "case_id": "F_root_ric_balanced--000382-head-numeric_zero",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "FREV068",
+      "case_id": "S1_R_unit_guidance--000433-head-imu_only",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "FREV069",
+      "case_id": "S1_R_unit_guidance--train-004728-head-text_only",
+      "arm": "U",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV070",
+      "case_id": "F_root_ric_balanced--train-000506-head-text_only",
+      "arm": "F",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV071",
+      "case_id": "S1_R_unit_guidance--000382-wrists-physical_static",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV072",
+      "case_id": "F_root_ric_balanced--000382-head-backbone_bypass",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "FREV073",
+      "case_id": "F_root_ric_balanced--000382-head-imu_only",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "FREV074",
+      "case_id": "F_root_ric_balanced--000433-head-tail_reversed",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "FREV075",
+      "case_id": "S1_R_unit_guidance--000139-wrists-tail_reversed",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "FREV076",
+      "case_id": "S1_R_unit_guidance--000382-head-numeric_zero",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "FREV077",
+      "case_id": "S1_R_unit_guidance--000382-wrists-text_only",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV078",
+      "case_id": "F_root_ric_balanced--000382-wrists-tail_reversed",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "FREV079",
+      "case_id": "S1_R_unit_guidance--train-000027-head-physical_static",
+      "arm": "U",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV080",
+      "case_id": "S1_R_unit_guidance--train-004728-wrists-physical_static",
+      "arm": "U",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV081",
+      "case_id": "F_root_ric_balanced--000433-wrists-text_only",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV082",
+      "case_id": "F_root_ric_balanced--000433-wrists-imu_only",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "FREV083",
+      "case_id": "S1_R_unit_guidance--000139-wrists-physical_static",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV084",
+      "case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV085",
+      "case_id": "F_root_ric_balanced--000433-head-text_only",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV086",
+      "case_id": "F_root_ric_balanced--train-000506-wrists-text_only",
+      "arm": "F",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV087",
+      "case_id": "S1_R_unit_guidance--000139-head-physical_static",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV088",
+      "case_id": "S1_R_unit_guidance--000382-wrists-imu_only",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "FREV089",
+      "case_id": "F_root_ric_balanced--000139-wrists-physical_static",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV090",
+      "case_id": "S1_R_unit_guidance--000139-wrists-text_only",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV091",
+      "case_id": "F_root_ric_balanced--train-004728-head-text_only",
+      "arm": "F",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV092",
+      "case_id": "F_root_ric_balanced--train-000506-head-physical_static",
+      "arm": "F",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV093",
+      "case_id": "S1_R_unit_guidance--000433-wrists-paired",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV094",
+      "case_id": "S1_R_unit_guidance--000382-head-tail_reversed",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "FREV095",
+      "case_id": "F_root_ric_balanced--train-000027-wrists-text_only",
+      "arm": "F",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV096",
+      "case_id": "S1_R_unit_guidance--000382-head-backbone_bypass",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "FREV097",
+      "case_id": "S1_R_unit_guidance--train-000027-wrists-text_only",
+      "arm": "U",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV098",
+      "case_id": "F_root_ric_balanced--000382-wrists-backbone_bypass",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "FREV099",
+      "case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "arm": "F",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV100",
+      "case_id": "S1_R_unit_guidance--000139-head-paired",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV101",
+      "case_id": "F_root_ric_balanced--train-004728-wrists-physical_static",
+      "arm": "F",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV102",
+      "case_id": "F_root_ric_balanced--000139-head-numeric_zero",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "FREV103",
+      "case_id": "S1_R_unit_guidance--000139-head-numeric_zero",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "FREV104",
+      "case_id": "F_root_ric_balanced--train-004728-head-physical_static",
+      "arm": "F",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV105",
+      "case_id": "S1_R_unit_guidance--000433-head-physical_static",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV106",
+      "case_id": "S1_R_unit_guidance--000382-head-imu_only",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "imu_only"
+    },
+    {
+      "review_id": "FREV107",
+      "case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "arm": "F",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV108",
+      "case_id": "F_root_ric_balanced--train-000027-head-physical_static",
+      "arm": "F",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV109",
+      "case_id": "F_root_ric_balanced--000433-head-physical_static",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV110",
+      "case_id": "S1_R_unit_guidance--train-000027-wrists-paired",
+      "arm": "U",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV111",
+      "case_id": "S1_R_unit_guidance--000433-wrists-numeric_zero",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "FREV112",
+      "case_id": "S1_R_unit_guidance--000139-head-tail_reversed",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "tail_reversed"
+    },
+    {
+      "review_id": "FREV113",
+      "case_id": "F_root_ric_balanced--000139-wrists-backbone_bypass",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "FREV114",
+      "case_id": "F_root_ric_balanced--000139-head-backbone_bypass",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "backbone_bypass"
+    },
+    {
+      "review_id": "FREV115",
+      "case_id": "S1_R_unit_guidance--000139-head-text_only",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "condition": "text_only"
+    },
+    {
+      "review_id": "FREV116",
+      "case_id": "S1_R_unit_guidance--000382-wrists-paired",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV117",
+      "case_id": "F_root_ric_balanced--000433-head-numeric_zero",
+      "arm": "F",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "condition": "numeric_zero"
+    },
+    {
+      "review_id": "FREV118",
+      "case_id": "S1_R_unit_guidance--train-000027-wrists-physical_static",
+      "arm": "U",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "condition": "physical_static"
+    },
+    {
+      "review_id": "FREV119",
+      "case_id": "S1_R_unit_guidance--000382-head-paired",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "condition": "paired"
+    },
+    {
+      "review_id": "FREV120",
+      "case_id": "S1_R_unit_guidance--000139-wrists-paired",
+      "arm": "U",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "condition": "paired"
+    }
+  ],
+  "instructions": "Hide arm/config/condition; show original coarse target. Save all120 notes before key. Old results known, singleAI review: not fully blind/human validation. Missing still keeps row."
+}

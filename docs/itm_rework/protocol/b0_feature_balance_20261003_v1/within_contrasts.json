@@ -1,0 +1,362 @@
+[
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "comparator": "text_only",
+    "F_paired": "F_root_ric_balanced--000433-head-paired",
+    "F_reference": "F_root_ric_balanced--000433-head-text_only",
+    "U_paired": "S1_R_unit_guidance--000433-head-paired",
+    "U_reference": "S1_R_unit_guidance--000433-head-text_only"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "comparator": "physical_static",
+    "F_paired": "F_root_ric_balanced--000433-head-paired",
+    "F_reference": "F_root_ric_balanced--000433-head-physical_static",
+    "U_paired": "S1_R_unit_guidance--000433-head-paired",
+    "U_reference": "S1_R_unit_guidance--000433-head-physical_static"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "comparator": "tail_reversed",
+    "F_paired": "F_root_ric_balanced--000433-head-paired",
+    "F_reference": "F_root_ric_balanced--000433-head-tail_reversed",
+    "U_paired": "S1_R_unit_guidance--000433-head-paired",
+    "U_reference": "S1_R_unit_guidance--000433-head-tail_reversed"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "comparator": "numeric_zero",
+    "F_paired": "F_root_ric_balanced--000433-head-paired",
+    "F_reference": "F_root_ric_balanced--000433-head-numeric_zero",
+    "U_paired": "S1_R_unit_guidance--000433-head-paired",
+    "U_reference": "S1_R_unit_guidance--000433-head-numeric_zero"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "comparator": "text_only",
+    "F_paired": "F_root_ric_balanced--000433-wrists-paired",
+    "F_reference": "F_root_ric_balanced--000433-wrists-text_only",
+    "U_paired": "S1_R_unit_guidance--000433-wrists-paired",
+    "U_reference": "S1_R_unit_guidance--000433-wrists-text_only"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "comparator": "physical_static",
+    "F_paired": "F_root_ric_balanced--000433-wrists-paired",
+    "F_reference": "F_root_ric_balanced--000433-wrists-physical_static",
+    "U_paired": "S1_R_unit_guidance--000433-wrists-paired",
+    "U_reference": "S1_R_unit_guidance--000433-wrists-physical_static"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "comparator": "tail_reversed",
+    "F_paired": "F_root_ric_balanced--000433-wrists-paired",
+    "F_reference": "F_root_ric_balanced--000433-wrists-tail_reversed",
+    "U_paired": "S1_R_unit_guidance--000433-wrists-paired",
+    "U_reference": "S1_R_unit_guidance--000433-wrists-tail_reversed"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "comparator": "numeric_zero",
+    "F_paired": "F_root_ric_balanced--000433-wrists-paired",
+    "F_reference": "F_root_ric_balanced--000433-wrists-numeric_zero",
+    "U_paired": "S1_R_unit_guidance--000433-wrists-paired",
+    "U_reference": "S1_R_unit_guidance--000433-wrists-numeric_zero"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "comparator": "text_only",
+    "F_paired": "F_root_ric_balanced--000382-head-paired",
+    "F_reference": "F_root_ric_balanced--000382-head-text_only",
+    "U_paired": "S1_R_unit_guidance--000382-head-paired",
+    "U_reference": "S1_R_unit_guidance--000382-head-text_only"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "comparator": "physical_static",
+    "F_paired": "F_root_ric_balanced--000382-head-paired",
+    "F_reference": "F_root_ric_balanced--000382-head-physical_static",
+    "U_paired": "S1_R_unit_guidance--000382-head-paired",
+    "U_reference": "S1_R_unit_guidance--000382-head-physical_static"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "comparator": "tail_reversed",
+    "F_paired": "F_root_ric_balanced--000382-head-paired",
+    "F_reference": "F_root_ric_balanced--000382-head-tail_reversed",
+    "U_paired": "S1_R_unit_guidance--000382-head-paired",
+    "U_reference": "S1_R_unit_guidance--000382-head-tail_reversed"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "comparator": "numeric_zero",
+    "F_paired": "F_root_ric_balanced--000382-head-paired",
+    "F_reference": "F_root_ric_balanced--000382-head-numeric_zero",
+    "U_paired": "S1_R_unit_guidance--000382-head-paired",
+    "U_reference": "S1_R_unit_guidance--000382-head-numeric_zero"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "comparator": "text_only",
+    "F_paired": "F_root_ric_balanced--000382-wrists-paired",
+    "F_reference": "F_root_ric_balanced--000382-wrists-text_only",
+    "U_paired": "S1_R_unit_guidance--000382-wrists-paired",
+    "U_reference": "S1_R_unit_guidance--000382-wrists-text_only"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "comparator": "physical_static",
+    "F_paired": "F_root_ric_balanced--000382-wrists-paired",
+    "F_reference": "F_root_ric_balanced--000382-wrists-physical_static",
+    "U_paired": "S1_R_unit_guidance--000382-wrists-paired",
+    "U_reference": "S1_R_unit_guidance--000382-wrists-physical_static"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "comparator": "tail_reversed",
+    "F_paired": "F_root_ric_balanced--000382-wrists-paired",
+    "F_reference": "F_root_ric_balanced--000382-wrists-tail_reversed",
+    "U_paired": "S1_R_unit_guidance--000382-wrists-paired",
+    "U_reference": "S1_R_unit_guidance--000382-wrists-tail_reversed"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "comparator": "numeric_zero",
+    "F_paired": "F_root_ric_balanced--000382-wrists-paired",
+    "F_reference": "F_root_ric_balanced--000382-wrists-numeric_zero",
+    "U_paired": "S1_R_unit_guidance--000382-wrists-paired",
+    "U_reference": "S1_R_unit_guidance--000382-wrists-numeric_zero"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "comparator": "text_only",
+    "F_paired": "F_root_ric_balanced--000139-head-paired",
+    "F_reference": "F_root_ric_balanced--000139-head-text_only",
+    "U_paired": "S1_R_unit_guidance--000139-head-paired",
+    "U_reference": "S1_R_unit_guidance--000139-head-text_only"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "comparator": "physical_static",
+    "F_paired": "F_root_ric_balanced--000139-head-paired",
+    "F_reference": "F_root_ric_balanced--000139-head-physical_static",
+    "U_paired": "S1_R_unit_guidance--000139-head-paired",
+    "U_reference": "S1_R_unit_guidance--000139-head-physical_static"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "comparator": "tail_reversed",
+    "F_paired": "F_root_ric_balanced--000139-head-paired",
+    "F_reference": "F_root_ric_balanced--000139-head-tail_reversed",
+    "U_paired": "S1_R_unit_guidance--000139-head-paired",
+    "U_reference": "S1_R_unit_guidance--000139-head-tail_reversed"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "comparator": "numeric_zero",
+    "F_paired": "F_root_ric_balanced--000139-head-paired",
+    "F_reference": "F_root_ric_balanced--000139-head-numeric_zero",
+    "U_paired": "S1_R_unit_guidance--000139-head-paired",
+    "U_reference": "S1_R_unit_guidance--000139-head-numeric_zero"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "comparator": "text_only",
+    "F_paired": "F_root_ric_balanced--000139-wrists-paired",
+    "F_reference": "F_root_ric_balanced--000139-wrists-text_only",
+    "U_paired": "S1_R_unit_guidance--000139-wrists-paired",
+    "U_reference": "S1_R_unit_guidance--000139-wrists-text_only"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "comparator": "physical_static",
+    "F_paired": "F_root_ric_balanced--000139-wrists-paired",
+    "F_reference": "F_root_ric_balanced--000139-wrists-physical_static",
+    "U_paired": "S1_R_unit_guidance--000139-wrists-paired",
+    "U_reference": "S1_R_unit_guidance--000139-wrists-physical_static"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "comparator": "tail_reversed",
+    "F_paired": "F_root_ric_balanced--000139-wrists-paired",
+    "F_reference": "F_root_ric_balanced--000139-wrists-tail_reversed",
+    "U_paired": "S1_R_unit_guidance--000139-wrists-paired",
+    "U_reference": "S1_R_unit_guidance--000139-wrists-tail_reversed"
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "comparator": "numeric_zero",
+    "F_paired": "F_root_ric_balanced--000139-wrists-paired",
+    "F_reference": "F_root_ric_balanced--000139-wrists-numeric_zero",
+    "U_paired": "S1_R_unit_guidance--000139-wrists-paired",
+    "U_reference": "S1_R_unit_guidance--000139-wrists-numeric_zero"
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "comparator": "text_only",
+    "F_paired": "F_root_ric_balanced--train-000027-head-paired",
+    "F_reference": "F_root_ric_balanced--train-000027-head-text_only",
+    "U_paired": "S1_R_unit_guidance--train-000027-head-paired",
+    "U_reference": "S1_R_unit_guidance--train-000027-head-text_only"
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "comparator": "physical_static",
+    "F_paired": "F_root_ric_balanced--train-000027-head-paired",
+    "F_reference": "F_root_ric_balanced--train-000027-head-physical_static",
+    "U_paired": "S1_R_unit_guidance--train-000027-head-paired",
+    "U_reference": "S1_R_unit_guidance--train-000027-head-physical_static"
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "comparator": "text_only",
+    "F_paired": "F_root_ric_balanced--train-000027-wrists-paired",
+    "F_reference": "F_root_ric_balanced--train-000027-wrists-text_only",
+    "U_paired": "S1_R_unit_guidance--train-000027-wrists-paired",
+    "U_reference": "S1_R_unit_guidance--train-000027-wrists-text_only"
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "comparator": "physical_static",
+    "F_paired": "F_root_ric_balanced--train-000027-wrists-paired",
+    "F_reference": "F_root_ric_balanced--train-000027-wrists-physical_static",
+    "U_paired": "S1_R_unit_guidance--train-000027-wrists-paired",
+    "U_reference": "S1_R_unit_guidance--train-000027-wrists-physical_static"
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "comparator": "text_only",
+    "F_paired": "F_root_ric_balanced--train-000506-head-paired",
+    "F_reference": "F_root_ric_balanced--train-000506-head-text_only",
+    "U_paired": "S1_R_unit_guidance--train-000506-head-paired",
+    "U_reference": "S1_R_unit_guidance--train-000506-head-text_only"
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "comparator": "physical_static",
+    "F_paired": "F_root_ric_balanced--train-000506-head-paired",
+    "F_reference": "F_root_ric_balanced--train-000506-head-physical_static",
+    "U_paired": "S1_R_unit_guidance--train-000506-head-paired",
+    "U_reference": "S1_R_unit_guidance--train-000506-head-physical_static"
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "comparator": "text_only",
+    "F_paired": "F_root_ric_balanced--train-000506-wrists-paired",
+    "F_reference": "F_root_ric_balanced--train-000506-wrists-text_only",
+    "U_paired": "S1_R_unit_guidance--train-000506-wrists-paired",
+    "U_reference": "S1_R_unit_guidance--train-000506-wrists-text_only"
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "comparator": "physical_static",
+    "F_paired": "F_root_ric_balanced--train-000506-wrists-paired",
+    "F_reference": "F_root_ric_balanced--train-000506-wrists-physical_static",
+    "U_paired": "S1_R_unit_guidance--train-000506-wrists-paired",
+    "U_reference": "S1_R_unit_guidance--train-000506-wrists-physical_static"
+  },
+  {
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "comparator": "text_only",
+    "F_paired": "F_root_ric_balanced--train-004728-head-paired",
+    "F_reference": "F_root_ric_balanced--train-004728-head-text_only",
+    "U_paired": "S1_R_unit_guidance--train-004728-head-paired",
+    "U_reference": "S1_R_unit_guidance--train-004728-head-text_only"
+  },
+  {
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "comparator": "physical_static",
+    "F_paired": "F_root_ric_balanced--train-004728-head-paired",
+    "F_reference": "F_root_ric_balanced--train-004728-head-physical_static",
+    "U_paired": "S1_R_unit_guidance--train-004728-head-paired",
+    "U_reference": "S1_R_unit_guidance--train-004728-head-physical_static"
+  },
+  {
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "comparator": "text_only",
+    "F_paired": "F_root_ric_balanced--train-004728-wrists-paired",
+    "F_reference": "F_root_ric_balanced--train-004728-wrists-text_only",
+    "U_paired": "S1_R_unit_guidance--train-004728-wrists-paired",
+    "U_reference": "S1_R_unit_guidance--train-004728-wrists-text_only"
+  },
+  {
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "comparator": "physical_static",
+    "F_paired": "F_root_ric_balanced--train-004728-wrists-paired",
+    "F_reference": "F_root_ric_balanced--train-004728-wrists-physical_static",
+    "U_paired": "S1_R_unit_guidance--train-004728-wrists-paired",
+    "U_reference": "S1_R_unit_guidance--train-004728-wrists-physical_static"
+  }
+]

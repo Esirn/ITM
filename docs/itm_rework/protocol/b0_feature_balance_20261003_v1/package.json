@@ -1,0 +1,70 @@
+{
+  "version": "canonical-B0-feature-balance-package-v1",
+  "status": "frozen_for_implementation_not_authorized",
+  "source_commit": "2b8a842",
+  "artifacts": [
+    {
+      "path": "docs/itm_rework/protocol/b0_feature_balance_20261003_v1/budget.json",
+      "sha256": "5fd4e9162eba35b3216941be04022aa70bc11455abf6675f9665940bf5b407f9"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_feature_balance_20261003_v1/design.json",
+      "sha256": "0c891e75df0d7f8a57d7d8d7decb51a18ff4291dcd7031aa57f5dce8d2bf5be4"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_feature_balance_20261003_v1/evaluation.json",
+      "sha256": "4b4fd55fd0b48622bc1eeed5643ba835c82c1038d07b819af92e034a6485ebab"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_feature_balance_20261003_v1/historical_samples.json",
+      "sha256": "3424d8da77ef40088516ccaa831788a5f8c77cbcbddde4b1ccd25598ac8282f5"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_feature_balance_20261003_v1/loss.json",
+      "sha256": "8d35613c9fc160113ce67ca5c276b7fda050f964024fc71ad989012917f67bd4"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_feature_balance_20261003_v1/review_order.json",
+      "sha256": "87342218ca7e3080f3d6d8a777fc2f423f78eb424d9935bb50e75180339e9758"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_feature_balance_20261003_v1/sampling_noise_groups.json",
+      "sha256": "3a9ab902bf1ad7f483d349b8b0a2fc0e3952eecad6ad8a9ca3b0872fb082f0f9"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_feature_balance_20261003_v1/sampling_slots.json",
+      "sha256": "61178f6757c82027d87677a2df1e91d59e9743e6a2042f3c73d13c11973d534f"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_feature_balance_20261003_v1/software_checks.json",
+      "sha256": "af820ccccfa0dffc6525b724b78610bdc2607c9941b97240639af99a1e064b34"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_feature_balance_20261003_v1/sources.json",
+      "sha256": "553a6b24ba155f30751612bc408063c3a858e9035794fb09e483ce150d6d349f"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_feature_balance_20261003_v1/target_review.json",
+      "sha256": "a817319eb1a1fd8df220ce01f9435e75546b657cdebba2431907f9da5b59657e"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_feature_balance_20261003_v1/trace_slots.json",
+      "sha256": "75dd69e44d517454c163e5d5b7b2588cfbaa69781b8bed8c1968149cc3ce91e3"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_feature_balance_20261003_v1/training_schedule.json",
+      "sha256": "6b91f51312794aeddef684f9b355513694c5ec4765e75f37c57eb73080d43152"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_feature_balance_20261003_v1/validation.json",
+      "sha256": "61656a6cd7adb2dfdb69f8b775203bc3c772185fa8f2bdf2be073b1e2c0c4de8"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_feature_balance_20261003_v1/within_contrasts.json",
+      "sha256": "ab0010979ce6265064361db3aa78a4359725ea22bf564369dfb2a472334bd224"
+    }
+  ],
+  "execution_authorization": null,
+  "run_directory": null,
+  "GPU_UUID": null
+}

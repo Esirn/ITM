@@ -1,0 +1,1 @@
+7proposal files and16freeze files byte-identical; no model/GPU calls

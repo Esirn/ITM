@@ -1,0 +1,986 @@
+[
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--000433-head-text_only",
+    "reference_case_id": "S1_R_unit_guidance--000433-head-text_only",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-head-text_only.npz",
+      "sha256": "8d818f77568c6bf8f2e49f680cae3baf59e314b8cf61223e1237f6ef994f8f10"
+    },
+    "check_id": "FI001",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_bypass_vs_F_text",
+    "new_case_id": "F_root_ric_balanced--000433-head-backbone_bypass",
+    "reference_case_id": "F_root_ric_balanced--000433-head-text_only",
+    "reference_arm": "F",
+    "check_id": "FI002",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--000433-head-backbone_bypass",
+    "reference_case_id": "S1_R_unit_guidance--000433-head-backbone_bypass",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-head-backbone_bypass.npz",
+      "sha256": "1f887a2711e55f2fe4d207aff8e0b4f899d97a71b5585eb68488cc45b513313b"
+    },
+    "check_id": "FI003",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_static_vs_F_text",
+    "new_case_id": "F_root_ric_balanced--000433-head-physical_static",
+    "reference_case_id": "F_root_ric_balanced--000433-head-text_only",
+    "reference_arm": "F",
+    "check_id": "FI004",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--000433-head-physical_static",
+    "reference_case_id": "S1_R_unit_guidance--000433-head-physical_static",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-head-physical_static.npz",
+      "sha256": "cb2c90960ef73c89251a24bb1b7ae9443518c1f80fcdd8c8494564e708bd6acd"
+    },
+    "check_id": "FI005",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--000433-wrists-text_only",
+    "reference_case_id": "S1_R_unit_guidance--000433-wrists-text_only",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-wrists-text_only.npz",
+      "sha256": "c255d30da7c67a575766a49dc0940329262f8532b7e3267f0a738181d6f565f7"
+    },
+    "check_id": "FI006",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_bypass_vs_F_text",
+    "new_case_id": "F_root_ric_balanced--000433-wrists-backbone_bypass",
+    "reference_case_id": "F_root_ric_balanced--000433-wrists-text_only",
+    "reference_arm": "F",
+    "check_id": "FI007",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--000433-wrists-backbone_bypass",
+    "reference_case_id": "S1_R_unit_guidance--000433-wrists-backbone_bypass",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-wrists-backbone_bypass.npz",
+      "sha256": "cf235813dfea46a33b442bfa92354471212595adc51e4f29568ad8b34edfb7e8"
+    },
+    "check_id": "FI008",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_static_vs_F_text",
+    "new_case_id": "F_root_ric_balanced--000433-wrists-physical_static",
+    "reference_case_id": "F_root_ric_balanced--000433-wrists-text_only",
+    "reference_arm": "F",
+    "check_id": "FI009",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--000433-wrists-physical_static",
+    "reference_case_id": "S1_R_unit_guidance--000433-wrists-physical_static",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000433-wrists-physical_static.npz",
+      "sha256": "a63983df21d4e823573715f9bdbe823015f29e7aca5a8faf6f875d1402f1250d"
+    },
+    "check_id": "FI010",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--000382-head-text_only",
+    "reference_case_id": "S1_R_unit_guidance--000382-head-text_only",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-head-text_only.npz",
+      "sha256": "884eeb0fdd9cbd1d0a7683d9278d9068efbd10d34948098243f5aca93d6522e9"
+    },
+    "check_id": "FI011",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_bypass_vs_F_text",
+    "new_case_id": "F_root_ric_balanced--000382-head-backbone_bypass",
+    "reference_case_id": "F_root_ric_balanced--000382-head-text_only",
+    "reference_arm": "F",
+    "check_id": "FI012",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--000382-head-backbone_bypass",
+    "reference_case_id": "S1_R_unit_guidance--000382-head-backbone_bypass",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-head-backbone_bypass.npz",
+      "sha256": "81742a88568808669e07947be21e7a1502d489382268ab6062a95b00ab912dd3"
+    },
+    "check_id": "FI013",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_static_vs_F_text",
+    "new_case_id": "F_root_ric_balanced--000382-head-physical_static",
+    "reference_case_id": "F_root_ric_balanced--000382-head-text_only",
+    "reference_arm": "F",
+    "check_id": "FI014",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--000382-head-physical_static",
+    "reference_case_id": "S1_R_unit_guidance--000382-head-physical_static",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-head-physical_static.npz",
+      "sha256": "65f69b2318cf8bc8f073ced0543f4f712e57cfc56ab396689d86fc199c667202"
+    },
+    "check_id": "FI015",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--000382-wrists-text_only",
+    "reference_case_id": "S1_R_unit_guidance--000382-wrists-text_only",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-wrists-text_only.npz",
+      "sha256": "dcea82ca2a890bfbcb820fa3f75c267b3bed57619022b5a516470f877812ced0"
+    },
+    "check_id": "FI016",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_bypass_vs_F_text",
+    "new_case_id": "F_root_ric_balanced--000382-wrists-backbone_bypass",
+    "reference_case_id": "F_root_ric_balanced--000382-wrists-text_only",
+    "reference_arm": "F",
+    "check_id": "FI017",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--000382-wrists-backbone_bypass",
+    "reference_case_id": "S1_R_unit_guidance--000382-wrists-backbone_bypass",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-wrists-backbone_bypass.npz",
+      "sha256": "da0fb44bfe6f669210abdd07367d89114c57a247f69274317c944d0e37e02474"
+    },
+    "check_id": "FI018",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_static_vs_F_text",
+    "new_case_id": "F_root_ric_balanced--000382-wrists-physical_static",
+    "reference_case_id": "F_root_ric_balanced--000382-wrists-text_only",
+    "reference_arm": "F",
+    "check_id": "FI019",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--000382-wrists-physical_static",
+    "reference_case_id": "S1_R_unit_guidance--000382-wrists-physical_static",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000382-wrists-physical_static.npz",
+      "sha256": "eff767ec399fceabcaba8fc6cf34ea71b56494e88c9bd62951f4f54ecb6d4e37"
+    },
+    "check_id": "FI020",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--000139-head-text_only",
+    "reference_case_id": "S1_R_unit_guidance--000139-head-text_only",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-head-text_only.npz",
+      "sha256": "544ef29df9e1bac3e0bad8ef2242a3d52d281fd9ab360ecbe4e52bc91a5ec69d"
+    },
+    "check_id": "FI021",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_bypass_vs_F_text",
+    "new_case_id": "F_root_ric_balanced--000139-head-backbone_bypass",
+    "reference_case_id": "F_root_ric_balanced--000139-head-text_only",
+    "reference_arm": "F",
+    "check_id": "FI022",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--000139-head-backbone_bypass",
+    "reference_case_id": "S1_R_unit_guidance--000139-head-backbone_bypass",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-head-backbone_bypass.npz",
+      "sha256": "20c37afabcce9670434d91795e4b0358d4885d52d97cfd07bc6ef2baf56f38cf"
+    },
+    "check_id": "FI023",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_static_vs_F_text",
+    "new_case_id": "F_root_ric_balanced--000139-head-physical_static",
+    "reference_case_id": "F_root_ric_balanced--000139-head-text_only",
+    "reference_arm": "F",
+    "check_id": "FI024",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--000139-head-physical_static",
+    "reference_case_id": "S1_R_unit_guidance--000139-head-physical_static",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-head-physical_static.npz",
+      "sha256": "2307516fd5a997eae967a1e1f24d3df03dfef7284c2d313a83237e4b3031ceeb"
+    },
+    "check_id": "FI025",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--000139-wrists-text_only",
+    "reference_case_id": "S1_R_unit_guidance--000139-wrists-text_only",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-wrists-text_only.npz",
+      "sha256": "ccc65295b72a4dfd97b2ac020116fc7b2e02065acdd3bb7d63e74a5fa8aac11b"
+    },
+    "check_id": "FI026",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_bypass_vs_F_text",
+    "new_case_id": "F_root_ric_balanced--000139-wrists-backbone_bypass",
+    "reference_case_id": "F_root_ric_balanced--000139-wrists-text_only",
+    "reference_arm": "F",
+    "check_id": "FI027",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--000139-wrists-backbone_bypass",
+    "reference_case_id": "S1_R_unit_guidance--000139-wrists-backbone_bypass",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-wrists-backbone_bypass.npz",
+      "sha256": "686f8c49718eef6808382e02299eaad1df9505a417f83b01d12e08e5c3ece137"
+    },
+    "check_id": "FI028",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_static_vs_F_text",
+    "new_case_id": "F_root_ric_balanced--000139-wrists-physical_static",
+    "reference_case_id": "F_root_ric_balanced--000139-wrists-text_only",
+    "reference_arm": "F",
+    "check_id": "FI029",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--000139-wrists-physical_static",
+    "reference_case_id": "S1_R_unit_guidance--000139-wrists-physical_static",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--000139-wrists-physical_static.npz",
+      "sha256": "4b69e22b2dc1779fdf9127e505615a8be2688cbc4f4980ab0c68e4c3808d42e4"
+    },
+    "check_id": "FI030",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--train-000027-head-text_only",
+    "reference_case_id": "S1_R_unit_guidance--train-000027-head-text_only",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000027-head-text_only.npz",
+      "sha256": "2cea2bf71a93323e5ff757e803db5002492eeff24b473f916509ffe84032bacc"
+    },
+    "check_id": "FI031",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_static_vs_F_text",
+    "new_case_id": "F_root_ric_balanced--train-000027-head-physical_static",
+    "reference_case_id": "F_root_ric_balanced--train-000027-head-text_only",
+    "reference_arm": "F",
+    "check_id": "FI032",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--train-000027-head-physical_static",
+    "reference_case_id": "S1_R_unit_guidance--train-000027-head-physical_static",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000027-head-physical_static.npz",
+      "sha256": "a8e3a19abe2ee908a10675af2fda3c65ed7e14dc1301b0d16492a00c7c0b25c6"
+    },
+    "check_id": "FI033",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--train-000027-wrists-text_only",
+    "reference_case_id": "S1_R_unit_guidance--train-000027-wrists-text_only",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000027-wrists-text_only.npz",
+      "sha256": "85030e91679d6fa8da188945ae594c14db95d70ab0873514313243c50b88f0c0"
+    },
+    "check_id": "FI034",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_static_vs_F_text",
+    "new_case_id": "F_root_ric_balanced--train-000027-wrists-physical_static",
+    "reference_case_id": "F_root_ric_balanced--train-000027-wrists-text_only",
+    "reference_arm": "F",
+    "check_id": "FI035",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--train-000027-wrists-physical_static",
+    "reference_case_id": "S1_R_unit_guidance--train-000027-wrists-physical_static",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000027-wrists-physical_static.npz",
+      "sha256": "d8d0dcfccffbb928e2c0d017c9bd26269f484586cfda6d909833e222d935771d"
+    },
+    "check_id": "FI036",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--train-000506-head-text_only",
+    "reference_case_id": "S1_R_unit_guidance--train-000506-head-text_only",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000506-head-text_only.npz",
+      "sha256": "0d289f0b0dccd20eb3bb81d1efdd2efc8352b42980b649b9ed70a641bf338a3e"
+    },
+    "check_id": "FI037",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_static_vs_F_text",
+    "new_case_id": "F_root_ric_balanced--train-000506-head-physical_static",
+    "reference_case_id": "F_root_ric_balanced--train-000506-head-text_only",
+    "reference_arm": "F",
+    "check_id": "FI038",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--train-000506-head-physical_static",
+    "reference_case_id": "S1_R_unit_guidance--train-000506-head-physical_static",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000506-head-physical_static.npz",
+      "sha256": "a53255fb9842ca0d0101114dc3e4d5ee2e52aacd66a3b32f3adbe93e429045e1"
+    },
+    "check_id": "FI039",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--train-000506-wrists-text_only",
+    "reference_case_id": "S1_R_unit_guidance--train-000506-wrists-text_only",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000506-wrists-text_only.npz",
+      "sha256": "0a284c735172175ea5e98b50b4bf5ac13d10be6a0f64b94d27e6f1da80ff66ff"
+    },
+    "check_id": "FI040",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_static_vs_F_text",
+    "new_case_id": "F_root_ric_balanced--train-000506-wrists-physical_static",
+    "reference_case_id": "F_root_ric_balanced--train-000506-wrists-text_only",
+    "reference_arm": "F",
+    "check_id": "FI041",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--train-000506-wrists-physical_static",
+    "reference_case_id": "S1_R_unit_guidance--train-000506-wrists-physical_static",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-000506-wrists-physical_static.npz",
+      "sha256": "b40d4456d607dba1c11d64286eda75eef284a8b04c66223dccae0cddb20732b1"
+    },
+    "check_id": "FI042",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--train-004728-head-text_only",
+    "reference_case_id": "S1_R_unit_guidance--train-004728-head-text_only",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-004728-head-text_only.npz",
+      "sha256": "04ee1564889728f3a5bc5b78e55688d0c69c70ebee62148b426ce6d42fe4d88b"
+    },
+    "check_id": "FI043",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_static_vs_F_text",
+    "new_case_id": "F_root_ric_balanced--train-004728-head-physical_static",
+    "reference_case_id": "F_root_ric_balanced--train-004728-head-text_only",
+    "reference_arm": "F",
+    "check_id": "FI044",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--train-004728-head-physical_static",
+    "reference_case_id": "S1_R_unit_guidance--train-004728-head-physical_static",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-004728-head-physical_static.npz",
+      "sha256": "6ef416f4bf8d7436377fd5c761061b00fb482051a56fb67f6dd1d5b54751a95a"
+    },
+    "check_id": "FI045",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--train-004728-wrists-text_only",
+    "reference_case_id": "S1_R_unit_guidance--train-004728-wrists-text_only",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-004728-wrists-text_only.npz",
+      "sha256": "fec58e224dd09fe0241cee937015612cfd2fffb9be4b34e7527a23bd1b280334"
+    },
+    "check_id": "FI046",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_static_vs_F_text",
+    "new_case_id": "F_root_ric_balanced--train-004728-wrists-physical_static",
+    "reference_case_id": "F_root_ric_balanced--train-004728-wrists-text_only",
+    "reference_arm": "F",
+    "check_id": "FI047",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  },
+  {
+    "kind": "F_null_vs_U_same",
+    "new_case_id": "F_root_ric_balanced--train-004728-wrists-physical_static",
+    "reference_case_id": "S1_R_unit_guidance--train-004728-wrists-physical_static",
+    "reference_arm": "U",
+    "reference_output": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sampling_alignment_authorized_20260927_v1/samples/S1_R_unit_guidance--train-004728-wrists-physical_static.npz",
+      "sha256": "dc703594be665a790d23e9d7496e25083325fdcb290e7a611f02feb91a34a4c1"
+    },
+    "check_id": "FI048",
+    "max_abs_m": 1e-05,
+    "status": "frozen_not_executed",
+    "fit": "none",
+    "report": [
+      "bitwise",
+      "max_abs",
+      "RMS",
+      "finite_count",
+      "count",
+      "passed"
+    ]
+  }
+]

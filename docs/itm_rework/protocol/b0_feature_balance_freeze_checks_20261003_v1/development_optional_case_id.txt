@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/a200/0proj/ITM/scripts/freeze_b0_feature_balance.py", line 251, in <module>
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',type=Path,default=ROOT/REL);args=p.parse_args();guarded_build(args.output)
+  File "/home/a200/0proj/ITM/scripts/freeze_b0_feature_balance.py", line 248, in guarded_build
+    build(output)
+  File "/home/a200/0proj/ITM/scripts/freeze_b0_feature_balance.py", line 126, in build
+    row={k:o[k] for k in population_fields}
+  File "/home/a200/0proj/ITM/scripts/freeze_b0_feature_balance.py", line 126, in <dictcomp>
+    row={k:o[k] for k in population_fields}
+KeyError: 'original_case_id'
