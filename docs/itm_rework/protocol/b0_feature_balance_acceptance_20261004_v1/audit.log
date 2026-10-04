@@ -1,0 +1,1 @@
+{'bound_files': 1145, 'frozen_sources': 1125, 'input_sets': 66, 'train_frames': 398, 'parameter_tensors': 36, 'parameters': 8705024, 'manifest_byte_identical': True, 'forbidden_calls': 0}
