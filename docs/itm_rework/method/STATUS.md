@@ -1,3 +1,14 @@
+# 01 最新状态：F 增量验收通过，申请新单次运行授权（2026-10-04）
+
+已读取 `e0999b7`：[02 增量软件验收](../protocol/B0_FEATURE_BALANCE_ACCEPTANCE_20261004.md)接受 `963a132`，155项回归通过，无新增返工项；同一实现无需重复验收。01本轮只读核对1,145份绑定文件及manifest副本，全部一致，没有模型前向或GPU查询。
+申请绑定最终 outputs v2 implementation `db323ef515ede3252898f322f7badda10913aea64d67cb4abb1f3e9fc4605e30`、冻结F package `a4189b89f1924af022c67dea71c02c2792e65f4a185775501b07d037fba51af9`、原共同初始化和历史GPU UUID `GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004`；GPU实时身份/可用性留待获批后预检。
+唯一新目录 `/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261004_v1` 已确认不存在，留待入口原子创建。具体申请：[B0_FEATURE_BALANCE_AUTHORIZATION_REQUEST_20261004.json](B0_FEATURE_BALANCE_AUTHORIZATION_REQUEST_20261004.json)，`pending_user_approval`、`authorized=false`；没有创建实际执行授权。
+申请一次 **200 updates/600 exposures＋60条1000步完整采样＋240条零额外调用trace＋48项软件等式**；单GPU、allocated≤24GiB，训练自预检前t0起≤600秒，采样共享≤3000秒且整队≤3600秒。MDM最多60600调用/240600 examples，encoder最多1320 examples、caption最多660调用。
+首个规定故障即停，保留完整分母、已完成产物及有限原始特征；不重试、续训、补采、warmup、换卡或CPU回退。历史授权不复用。按用户本轮明确的“申请新运行授权”要求，当前等待本次批准；获批后01预检并执行一次，再交02冻结评价。软件通过不代表F效果或B0有效性认证。
+以下为历史记录。
+
+---
+
 # 01 最新状态：F 实现与 CPU 验证完成，待 02 增量验收（2026-10-03）
 
 按 `e214014` 冻结包实现固定半权重损失、原初始化/600条训练计划、新F checkpoint准入、60完整采样/240trace/48软件等式与整队限额。保持GT裁片换侧/中段回收/末端下沉判据，不要求末尾站直。
