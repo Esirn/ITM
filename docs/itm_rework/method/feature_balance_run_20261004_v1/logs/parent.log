@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/a200/0proj/ITM/scripts/run_mdm_feature_balance_bounded.py", line 210, in <module>
+    if __name__=='__main__':main()
+  File "/home/a200/0proj/ITM/scripts/run_mdm_feature_balance_bounded.py", line 208, in main
+    execute(args.implementation,args.run_dir,args.authorization_record,args.gpu_uuid)
+  File "/home/a200/0proj/ITM/scripts/run_mdm_feature_balance_bounded.py", line 174, in execute
+    check(train_deadline);status['gpu_preflight']=preflight_gpu(gpu);check(train_deadline)
+  File "/home/a200/0proj/ITM/scripts/run_mdm_b0_bounded.py", line 80, in preflight_gpu
+    result = subprocess.run(['nvidia-smi', '--id='+uuid, '--query-gpu=uuid,memory.total,memory.free',
+  File "/home/a200/miniconda3/envs/itm/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['nvidia-smi', '--id=GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004', '--query-gpu=uuid,memory.total,memory.free', '--format=csv,noheader,nounits']' returned non-zero exit status 9.

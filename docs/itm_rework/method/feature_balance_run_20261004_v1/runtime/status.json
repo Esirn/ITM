@@ -1,0 +1,5584 @@
+{
+  "version": "itm-feature-queue-v1",
+  "status": "failed",
+  "authorization": {
+    "version": "itm-feature-authorization-v1",
+    "status": "approved_for_single_attempt",
+    "authorized": true,
+    "implementation": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_implementation_20261003_v2/implementation.json",
+    "implementation_sha256": "db323ef515ede3252898f322f7badda10913aea64d67cb4abb1f3e9fc4605e30",
+    "package": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_feature_balance_20261003_v1/package.json",
+      "sha256": "a4189b89f1924af022c67dea71c02c2792e65f4a185775501b07d037fba51af9"
+    },
+    "package_sha256": "a4189b89f1924af022c67dea71c02c2792e65f4a185775501b07d037fba51af9",
+    "initial": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_implementation_20260927_v1/initial.pt",
+      "sha256": "3ad3c1bca7ff7398386662e4831eb29136d3c0f2e06e5abbea8e7c4cb13d0401"
+    },
+    "loss_version": "normalized-x0-root-ric-half-v1",
+    "weights_sha256": "ad96c3f5dc0eef83dc8b0107a4802c5af84badf383c12e00124dd63411d7f297",
+    "accepted_implementation_commit": "963a132129b808b4c43af0c5bea30fc735ddcc67",
+    "independent_acceptance_commit": "e0999b7",
+    "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261004_v1",
+    "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+    "gpu_identity_source": "Historical authorized GPU UUID; no GPU query performed for this request. Verify identity and availability only after approval.",
+    "launch_environment": {
+      "OMP_NUM_THREADS": "2",
+      "PYTHONUNBUFFERED": "1"
+    },
+    "limits": {
+      "training_updates": 200,
+      "training_exposures": 600,
+      "new_samples": 60,
+      "steps_per_sample": 1000,
+      "traces": 240,
+      "extra_trace_model_calls": 0,
+      "software_checks": 48,
+      "training_seconds": 600,
+      "sampling_shared_seconds": 3000,
+      "total_seconds": 3600,
+      "allocated_memory_bytes": 25769803776,
+      "GPUs": 1,
+      "MDM_calls_max": 60600,
+      "MDM_examples_max": 240600,
+      "encoder_examples_max": 1320,
+      "caption_calls_max": 660
+    },
+    "scope": "One F queue from original common initial with fixed half-weight loss and fresh AdamW. Only final200 may produce60 full samples using frozen noise and unit CFG, paired with historical S1 controls. No new control training or sampling.",
+    "deadlines": "t0 before GPU preflight; train deadline t0+600; shared sampling deadline min(sampling_start+3000,t0+3600). No transfer of unused training budget.",
+    "stop_policy": "Stop on first timeout/OOM/nonfinite/identity/counter/software-check/write failure; preserve completed products, finite raw features and full200/600/60/240/48 ledgers. No retry, resume, warmup, GPU switch, CPU fallback or replacement samples.",
+    "previous_authorizations": "All historical authorizations are consumed and do not authorize F.",
+    "execution_authorization_record": "/home/a200/0proj/ITM/docs/itm_rework/method/B0_FEATURE_BALANCE_AUTHORIZATION_20261004.json",
+    "verification": {
+      "bound_hashes_match": true,
+      "verified_bound_files": 1145,
+      "manifest_copy_exact": true,
+      "run_directory_absent": true,
+      "GPU_queried": false,
+      "real_forward_calls": 0,
+      "environment_note": "Only standard-library file/hash checks performed. Runtime environment and GPU readiness are checked inside the authorized bounded execution."
+    },
+    "prepared_at": "2026-10-04T01:21:24.270130+00:00",
+    "approved_by": "user",
+    "user_instruction_reference": "User reply \u6279\u51c6 to authorization request commit 72a01e9 in this conversation, 2026-10-04",
+    "approved_at": "2026-10-04T02:24:25.924881+00:00",
+    "authorization_request_sha256": "1e3d2b6950f0e5d8139c1951d12d630a8515aa09dd0a70817083f6fc5553bd36"
+  },
+  "implementation": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_implementation_20261003_v2/implementation.json",
+    "sha256": "db323ef515ede3252898f322f7badda10913aea64d67cb4abb1f3e9fc4605e30"
+  },
+  "started_monotonic": 1214689.778817818,
+  "total_deadline_monotonic": 1218289.778817818,
+  "training_deadline_monotonic": 1215289.778817818,
+  "completed_receipts": [],
+  "job_counts": {},
+  "updates": [
+    {
+      "update": 1,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 2,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 3,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 4,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 5,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 6,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 7,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 8,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 9,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 10,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 11,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 12,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 13,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 14,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 15,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 16,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 17,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 18,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 19,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 20,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 21,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 22,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 23,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 24,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 25,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 26,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 27,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 28,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 29,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 30,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 31,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 32,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 33,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 34,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 35,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 36,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 37,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 38,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 39,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 40,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 41,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 42,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 43,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 44,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 45,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 46,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 47,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 48,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 49,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 50,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 51,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 52,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 53,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 54,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 55,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 56,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 57,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 58,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 59,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 60,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 61,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 62,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 63,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 64,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 65,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 66,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 67,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 68,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 69,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 70,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 71,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 72,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 73,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 74,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 75,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 76,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 77,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 78,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 79,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 80,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 81,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 82,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 83,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 84,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 85,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 86,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 87,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 88,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 89,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 90,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 91,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 92,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 93,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 94,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 95,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 96,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 97,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 98,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 99,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 100,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 101,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 102,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 103,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 104,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 105,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 106,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 107,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 108,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 109,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 110,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 111,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 112,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 113,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 114,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 115,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 116,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 117,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 118,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 119,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 120,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 121,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 122,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 123,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 124,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 125,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 126,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 127,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 128,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 129,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 130,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 131,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 132,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 133,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 134,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 135,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 136,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 137,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 138,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 139,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 140,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 141,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 142,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 143,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 144,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 145,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 146,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 147,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 148,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 149,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 150,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 151,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 152,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 153,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 154,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 155,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 156,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 157,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 158,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 159,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 160,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 161,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 162,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 163,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 164,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 165,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 166,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 167,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 168,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 169,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 170,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 171,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 172,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 173,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 174,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 175,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 176,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 177,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 178,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 179,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 180,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 181,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 182,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 183,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 184,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 185,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 186,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 187,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 188,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 189,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 190,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 191,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 192,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 193,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 194,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 195,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 196,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 197,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 198,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 199,
+      "status": "not_run_after_stop"
+    },
+    {
+      "update": 200,
+      "status": "not_run_after_stop"
+    }
+  ],
+  "exposures": [
+    {
+      "exposure_id": "E0001",
+      "update": 1,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0002",
+      "update": 1,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0003",
+      "update": 1,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0004",
+      "update": 2,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0005",
+      "update": 2,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0006",
+      "update": 2,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0007",
+      "update": 3,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0008",
+      "update": 3,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0009",
+      "update": 3,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0010",
+      "update": 4,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0011",
+      "update": 4,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0012",
+      "update": 4,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0013",
+      "update": 5,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0014",
+      "update": 5,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0015",
+      "update": 5,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0016",
+      "update": 6,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0017",
+      "update": 6,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0018",
+      "update": 6,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0019",
+      "update": 7,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0020",
+      "update": 7,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0021",
+      "update": 7,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0022",
+      "update": 8,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0023",
+      "update": 8,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0024",
+      "update": 8,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0025",
+      "update": 9,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0026",
+      "update": 9,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0027",
+      "update": 9,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0028",
+      "update": 10,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0029",
+      "update": 10,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0030",
+      "update": 10,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0031",
+      "update": 11,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0032",
+      "update": 11,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0033",
+      "update": 11,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0034",
+      "update": 12,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0035",
+      "update": 12,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0036",
+      "update": 12,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0037",
+      "update": 13,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0038",
+      "update": 13,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0039",
+      "update": 13,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0040",
+      "update": 14,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0041",
+      "update": 14,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0042",
+      "update": 14,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0043",
+      "update": 15,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0044",
+      "update": 15,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0045",
+      "update": 15,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0046",
+      "update": 16,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0047",
+      "update": 16,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0048",
+      "update": 16,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0049",
+      "update": 17,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0050",
+      "update": 17,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0051",
+      "update": 17,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0052",
+      "update": 18,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0053",
+      "update": 18,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0054",
+      "update": 18,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0055",
+      "update": 19,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0056",
+      "update": 19,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0057",
+      "update": 19,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0058",
+      "update": 20,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0059",
+      "update": 20,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0060",
+      "update": 20,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0061",
+      "update": 21,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0062",
+      "update": 21,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0063",
+      "update": 21,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0064",
+      "update": 22,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0065",
+      "update": 22,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0066",
+      "update": 22,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0067",
+      "update": 23,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0068",
+      "update": 23,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0069",
+      "update": 23,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0070",
+      "update": 24,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0071",
+      "update": 24,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0072",
+      "update": 24,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0073",
+      "update": 25,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0074",
+      "update": 25,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0075",
+      "update": 25,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0076",
+      "update": 26,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0077",
+      "update": 26,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0078",
+      "update": 26,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0079",
+      "update": 27,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0080",
+      "update": 27,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0081",
+      "update": 27,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0082",
+      "update": 28,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0083",
+      "update": 28,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0084",
+      "update": 28,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0085",
+      "update": 29,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0086",
+      "update": 29,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0087",
+      "update": 29,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0088",
+      "update": 30,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0089",
+      "update": 30,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0090",
+      "update": 30,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0091",
+      "update": 31,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0092",
+      "update": 31,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0093",
+      "update": 31,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0094",
+      "update": 32,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0095",
+      "update": 32,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0096",
+      "update": 32,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0097",
+      "update": 33,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0098",
+      "update": 33,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0099",
+      "update": 33,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0100",
+      "update": 34,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0101",
+      "update": 34,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0102",
+      "update": 34,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0103",
+      "update": 35,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0104",
+      "update": 35,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0105",
+      "update": 35,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0106",
+      "update": 36,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0107",
+      "update": 36,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0108",
+      "update": 36,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0109",
+      "update": 37,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0110",
+      "update": 37,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0111",
+      "update": 37,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0112",
+      "update": 38,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0113",
+      "update": 38,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0114",
+      "update": 38,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0115",
+      "update": 39,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0116",
+      "update": 39,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0117",
+      "update": 39,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0118",
+      "update": 40,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0119",
+      "update": 40,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0120",
+      "update": 40,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0121",
+      "update": 41,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0122",
+      "update": 41,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0123",
+      "update": 41,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0124",
+      "update": 42,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0125",
+      "update": 42,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0126",
+      "update": 42,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0127",
+      "update": 43,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0128",
+      "update": 43,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0129",
+      "update": 43,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0130",
+      "update": 44,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0131",
+      "update": 44,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0132",
+      "update": 44,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0133",
+      "update": 45,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0134",
+      "update": 45,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0135",
+      "update": 45,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0136",
+      "update": 46,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0137",
+      "update": 46,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0138",
+      "update": 46,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0139",
+      "update": 47,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0140",
+      "update": 47,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0141",
+      "update": 47,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0142",
+      "update": 48,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0143",
+      "update": 48,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0144",
+      "update": 48,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0145",
+      "update": 49,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0146",
+      "update": 49,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0147",
+      "update": 49,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0148",
+      "update": 50,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0149",
+      "update": 50,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0150",
+      "update": 50,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0151",
+      "update": 51,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0152",
+      "update": 51,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0153",
+      "update": 51,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0154",
+      "update": 52,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0155",
+      "update": 52,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0156",
+      "update": 52,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0157",
+      "update": 53,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0158",
+      "update": 53,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0159",
+      "update": 53,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0160",
+      "update": 54,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0161",
+      "update": 54,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0162",
+      "update": 54,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0163",
+      "update": 55,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0164",
+      "update": 55,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0165",
+      "update": 55,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0166",
+      "update": 56,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0167",
+      "update": 56,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0168",
+      "update": 56,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0169",
+      "update": 57,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0170",
+      "update": 57,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0171",
+      "update": 57,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0172",
+      "update": 58,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0173",
+      "update": 58,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0174",
+      "update": 58,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0175",
+      "update": 59,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0176",
+      "update": 59,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0177",
+      "update": 59,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0178",
+      "update": 60,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0179",
+      "update": 60,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0180",
+      "update": 60,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0181",
+      "update": 61,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0182",
+      "update": 61,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0183",
+      "update": 61,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0184",
+      "update": 62,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0185",
+      "update": 62,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0186",
+      "update": 62,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0187",
+      "update": 63,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0188",
+      "update": 63,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0189",
+      "update": 63,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0190",
+      "update": 64,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0191",
+      "update": 64,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0192",
+      "update": 64,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0193",
+      "update": 65,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0194",
+      "update": 65,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0195",
+      "update": 65,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0196",
+      "update": 66,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0197",
+      "update": 66,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0198",
+      "update": 66,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0199",
+      "update": 67,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0200",
+      "update": 67,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0201",
+      "update": 67,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0202",
+      "update": 68,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0203",
+      "update": 68,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0204",
+      "update": 68,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0205",
+      "update": 69,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0206",
+      "update": 69,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0207",
+      "update": 69,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0208",
+      "update": 70,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0209",
+      "update": 70,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0210",
+      "update": 70,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0211",
+      "update": 71,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0212",
+      "update": 71,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0213",
+      "update": 71,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0214",
+      "update": 72,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0215",
+      "update": 72,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0216",
+      "update": 72,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0217",
+      "update": 73,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0218",
+      "update": 73,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0219",
+      "update": 73,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0220",
+      "update": 74,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0221",
+      "update": 74,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0222",
+      "update": 74,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0223",
+      "update": 75,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0224",
+      "update": 75,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0225",
+      "update": 75,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0226",
+      "update": 76,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0227",
+      "update": 76,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0228",
+      "update": 76,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0229",
+      "update": 77,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0230",
+      "update": 77,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0231",
+      "update": 77,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0232",
+      "update": 78,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0233",
+      "update": 78,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0234",
+      "update": 78,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0235",
+      "update": 79,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0236",
+      "update": 79,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0237",
+      "update": 79,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0238",
+      "update": 80,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0239",
+      "update": 80,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0240",
+      "update": 80,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0241",
+      "update": 81,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0242",
+      "update": 81,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0243",
+      "update": 81,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0244",
+      "update": 82,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0245",
+      "update": 82,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0246",
+      "update": 82,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0247",
+      "update": 83,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0248",
+      "update": 83,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0249",
+      "update": 83,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0250",
+      "update": 84,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0251",
+      "update": 84,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0252",
+      "update": 84,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0253",
+      "update": 85,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0254",
+      "update": 85,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0255",
+      "update": 85,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0256",
+      "update": 86,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0257",
+      "update": 86,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0258",
+      "update": 86,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0259",
+      "update": 87,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0260",
+      "update": 87,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0261",
+      "update": 87,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0262",
+      "update": 88,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0263",
+      "update": 88,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0264",
+      "update": 88,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0265",
+      "update": 89,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0266",
+      "update": 89,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0267",
+      "update": 89,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0268",
+      "update": 90,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0269",
+      "update": 90,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0270",
+      "update": 90,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0271",
+      "update": 91,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0272",
+      "update": 91,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0273",
+      "update": 91,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0274",
+      "update": 92,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0275",
+      "update": 92,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0276",
+      "update": 92,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0277",
+      "update": 93,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0278",
+      "update": 93,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0279",
+      "update": 93,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0280",
+      "update": 94,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0281",
+      "update": 94,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0282",
+      "update": 94,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0283",
+      "update": 95,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0284",
+      "update": 95,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0285",
+      "update": 95,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0286",
+      "update": 96,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0287",
+      "update": 96,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0288",
+      "update": 96,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0289",
+      "update": 97,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0290",
+      "update": 97,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0291",
+      "update": 97,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0292",
+      "update": 98,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0293",
+      "update": 98,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0294",
+      "update": 98,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0295",
+      "update": 99,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0296",
+      "update": 99,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0297",
+      "update": 99,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0298",
+      "update": 100,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0299",
+      "update": 100,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0300",
+      "update": 100,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0301",
+      "update": 101,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0302",
+      "update": 101,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0303",
+      "update": 101,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0304",
+      "update": 102,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0305",
+      "update": 102,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0306",
+      "update": 102,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0307",
+      "update": 103,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0308",
+      "update": 103,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0309",
+      "update": 103,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0310",
+      "update": 104,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0311",
+      "update": 104,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0312",
+      "update": 104,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0313",
+      "update": 105,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0314",
+      "update": 105,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0315",
+      "update": 105,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0316",
+      "update": 106,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0317",
+      "update": 106,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0318",
+      "update": 106,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0319",
+      "update": 107,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0320",
+      "update": 107,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0321",
+      "update": 107,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0322",
+      "update": 108,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0323",
+      "update": 108,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0324",
+      "update": 108,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0325",
+      "update": 109,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0326",
+      "update": 109,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0327",
+      "update": 109,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0328",
+      "update": 110,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0329",
+      "update": 110,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0330",
+      "update": 110,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0331",
+      "update": 111,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0332",
+      "update": 111,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0333",
+      "update": 111,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0334",
+      "update": 112,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0335",
+      "update": 112,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0336",
+      "update": 112,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0337",
+      "update": 113,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0338",
+      "update": 113,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0339",
+      "update": 113,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0340",
+      "update": 114,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0341",
+      "update": 114,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0342",
+      "update": 114,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0343",
+      "update": 115,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0344",
+      "update": 115,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0345",
+      "update": 115,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0346",
+      "update": 116,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0347",
+      "update": 116,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0348",
+      "update": 116,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0349",
+      "update": 117,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0350",
+      "update": 117,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0351",
+      "update": 117,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0352",
+      "update": 118,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0353",
+      "update": 118,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0354",
+      "update": 118,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0355",
+      "update": 119,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0356",
+      "update": 119,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0357",
+      "update": 119,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0358",
+      "update": 120,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0359",
+      "update": 120,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0360",
+      "update": 120,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0361",
+      "update": 121,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0362",
+      "update": 121,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0363",
+      "update": 121,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0364",
+      "update": 122,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0365",
+      "update": 122,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0366",
+      "update": 122,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0367",
+      "update": 123,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0368",
+      "update": 123,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0369",
+      "update": 123,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0370",
+      "update": 124,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0371",
+      "update": 124,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0372",
+      "update": 124,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0373",
+      "update": 125,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0374",
+      "update": 125,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0375",
+      "update": 125,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0376",
+      "update": 126,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0377",
+      "update": 126,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0378",
+      "update": 126,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0379",
+      "update": 127,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0380",
+      "update": 127,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0381",
+      "update": 127,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0382",
+      "update": 128,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0383",
+      "update": 128,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0384",
+      "update": 128,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0385",
+      "update": 129,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0386",
+      "update": 129,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0387",
+      "update": 129,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0388",
+      "update": 130,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0389",
+      "update": 130,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0390",
+      "update": 130,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0391",
+      "update": 131,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0392",
+      "update": 131,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0393",
+      "update": 131,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0394",
+      "update": 132,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0395",
+      "update": 132,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0396",
+      "update": 132,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0397",
+      "update": 133,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0398",
+      "update": 133,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0399",
+      "update": 133,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0400",
+      "update": 134,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0401",
+      "update": 134,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0402",
+      "update": 134,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0403",
+      "update": 135,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0404",
+      "update": 135,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0405",
+      "update": 135,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0406",
+      "update": 136,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0407",
+      "update": 136,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0408",
+      "update": 136,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0409",
+      "update": 137,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0410",
+      "update": 137,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0411",
+      "update": 137,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0412",
+      "update": 138,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0413",
+      "update": 138,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0414",
+      "update": 138,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0415",
+      "update": 139,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0416",
+      "update": 139,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0417",
+      "update": 139,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0418",
+      "update": 140,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0419",
+      "update": 140,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0420",
+      "update": 140,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0421",
+      "update": 141,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0422",
+      "update": 141,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0423",
+      "update": 141,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0424",
+      "update": 142,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0425",
+      "update": 142,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0426",
+      "update": 142,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0427",
+      "update": 143,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0428",
+      "update": 143,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0429",
+      "update": 143,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0430",
+      "update": 144,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0431",
+      "update": 144,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0432",
+      "update": 144,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0433",
+      "update": 145,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0434",
+      "update": 145,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0435",
+      "update": 145,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0436",
+      "update": 146,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0437",
+      "update": 146,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0438",
+      "update": 146,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0439",
+      "update": 147,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0440",
+      "update": 147,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0441",
+      "update": 147,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0442",
+      "update": 148,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0443",
+      "update": 148,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0444",
+      "update": 148,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0445",
+      "update": 149,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0446",
+      "update": 149,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0447",
+      "update": 149,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0448",
+      "update": 150,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0449",
+      "update": 150,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0450",
+      "update": 150,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0451",
+      "update": 151,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0452",
+      "update": 151,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0453",
+      "update": 151,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0454",
+      "update": 152,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0455",
+      "update": 152,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0456",
+      "update": 152,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0457",
+      "update": 153,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0458",
+      "update": 153,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0459",
+      "update": 153,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0460",
+      "update": 154,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0461",
+      "update": 154,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0462",
+      "update": 154,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0463",
+      "update": 155,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0464",
+      "update": 155,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0465",
+      "update": 155,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0466",
+      "update": 156,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0467",
+      "update": 156,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0468",
+      "update": 156,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0469",
+      "update": 157,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0470",
+      "update": 157,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0471",
+      "update": 157,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0472",
+      "update": 158,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0473",
+      "update": 158,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0474",
+      "update": 158,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0475",
+      "update": 159,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0476",
+      "update": 159,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0477",
+      "update": 159,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0478",
+      "update": 160,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0479",
+      "update": 160,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0480",
+      "update": 160,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0481",
+      "update": 161,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0482",
+      "update": 161,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0483",
+      "update": 161,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0484",
+      "update": 162,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0485",
+      "update": 162,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0486",
+      "update": 162,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0487",
+      "update": 163,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0488",
+      "update": 163,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0489",
+      "update": 163,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0490",
+      "update": 164,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0491",
+      "update": 164,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0492",
+      "update": 164,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0493",
+      "update": 165,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0494",
+      "update": 165,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0495",
+      "update": 165,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0496",
+      "update": 166,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0497",
+      "update": 166,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0498",
+      "update": 166,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0499",
+      "update": 167,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0500",
+      "update": 167,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0501",
+      "update": 167,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0502",
+      "update": 168,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0503",
+      "update": 168,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0504",
+      "update": 168,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0505",
+      "update": 169,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0506",
+      "update": 169,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0507",
+      "update": 169,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0508",
+      "update": 170,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0509",
+      "update": 170,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0510",
+      "update": 170,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0511",
+      "update": 171,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0512",
+      "update": 171,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0513",
+      "update": 171,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0514",
+      "update": 172,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0515",
+      "update": 172,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0516",
+      "update": 172,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0517",
+      "update": 173,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0518",
+      "update": 173,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0519",
+      "update": 173,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0520",
+      "update": 174,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0521",
+      "update": 174,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0522",
+      "update": 174,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0523",
+      "update": 175,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0524",
+      "update": 175,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0525",
+      "update": 175,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0526",
+      "update": 176,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0527",
+      "update": 176,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0528",
+      "update": 176,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0529",
+      "update": 177,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0530",
+      "update": 177,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0531",
+      "update": 177,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0532",
+      "update": 178,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0533",
+      "update": 178,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0534",
+      "update": 178,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0535",
+      "update": 179,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0536",
+      "update": 179,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0537",
+      "update": 179,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0538",
+      "update": 180,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0539",
+      "update": 180,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0540",
+      "update": 180,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0541",
+      "update": 181,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0542",
+      "update": 181,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0543",
+      "update": 181,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0544",
+      "update": 182,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0545",
+      "update": 182,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0546",
+      "update": 182,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0547",
+      "update": 183,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0548",
+      "update": 183,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0549",
+      "update": 183,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0550",
+      "update": 184,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0551",
+      "update": 184,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0552",
+      "update": 184,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0553",
+      "update": 185,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0554",
+      "update": 185,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0555",
+      "update": 185,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0556",
+      "update": 186,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0557",
+      "update": 186,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0558",
+      "update": 186,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0559",
+      "update": 187,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0560",
+      "update": 187,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0561",
+      "update": 187,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0562",
+      "update": 188,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0563",
+      "update": 188,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0564",
+      "update": 188,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0565",
+      "update": 189,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0566",
+      "update": 189,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0567",
+      "update": 189,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0568",
+      "update": 190,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0569",
+      "update": 190,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0570",
+      "update": 190,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0571",
+      "update": 191,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0572",
+      "update": 191,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0573",
+      "update": 191,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0574",
+      "update": 192,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0575",
+      "update": 192,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0576",
+      "update": 192,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0577",
+      "update": 193,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0578",
+      "update": 193,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0579",
+      "update": 193,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0580",
+      "update": 194,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0581",
+      "update": 194,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0582",
+      "update": 194,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0583",
+      "update": 195,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0584",
+      "update": 195,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0585",
+      "update": 195,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0586",
+      "update": 196,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0587",
+      "update": 196,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0588",
+      "update": 196,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0589",
+      "update": 197,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0590",
+      "update": 197,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0591",
+      "update": 197,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0592",
+      "update": 198,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0593",
+      "update": 198,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0594",
+      "update": 198,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0595",
+      "update": 199,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0596",
+      "update": 199,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0597",
+      "update": 199,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0598",
+      "update": 200,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0599",
+      "update": 200,
+      "status": "not_run_after_stop"
+    },
+    {
+      "exposure_id": "E0600",
+      "update": 200,
+      "status": "not_run_after_stop"
+    }
+  ],
+  "samples": [
+    {
+      "case_id": "F_root_ric_balanced--000433-head-paired",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000433-head-paired.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000433-head-text_only",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000433-head-text_only.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000433-head-imu_only",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000433-head-imu_only.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000433-head-backbone_bypass",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000433-head-backbone_bypass.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000433-head-numeric_zero",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000433-head-numeric_zero.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000433-head-physical_static",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000433-head-physical_static.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000433-wrists-paired.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000433-wrists-text_only",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000433-wrists-text_only.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000433-wrists-imu_only",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000433-wrists-imu_only.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000433-wrists-backbone_bypass",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000433-wrists-backbone_bypass.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000433-wrists-numeric_zero",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000433-wrists-numeric_zero.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000433-wrists-physical_static",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000433-wrists-physical_static.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000382-head-paired",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000382-head-paired.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000382-head-text_only",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000382-head-text_only.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000382-head-imu_only",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000382-head-imu_only.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000382-head-backbone_bypass",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000382-head-backbone_bypass.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000382-head-numeric_zero",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000382-head-numeric_zero.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000382-head-physical_static",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000382-head-physical_static.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000382-wrists-paired.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000382-wrists-text_only",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000382-wrists-text_only.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000382-wrists-imu_only",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000382-wrists-imu_only.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000382-wrists-backbone_bypass",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000382-wrists-backbone_bypass.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000382-wrists-numeric_zero",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000382-wrists-numeric_zero.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000382-wrists-physical_static",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000382-wrists-physical_static.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000139-head-paired",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000139-head-paired.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000139-head-text_only",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000139-head-text_only.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000139-head-imu_only",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000139-head-imu_only.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000139-head-backbone_bypass",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000139-head-backbone_bypass.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000139-head-numeric_zero",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000139-head-numeric_zero.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000139-head-physical_static",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000139-head-physical_static.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000139-wrists-paired.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000139-wrists-text_only",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000139-wrists-text_only.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000139-wrists-imu_only",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000139-wrists-imu_only.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000139-wrists-backbone_bypass",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000139-wrists-backbone_bypass.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000139-wrists-numeric_zero",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000139-wrists-numeric_zero.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000139-wrists-physical_static",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000139-wrists-physical_static.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000433-head-tail_reversed",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000433-head-tail_reversed.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000433-wrists-tail_reversed",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000433-wrists-tail_reversed.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000382-head-tail_reversed",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000382-head-tail_reversed.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000382-wrists-tail_reversed",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000382-wrists-tail_reversed.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000139-head-tail_reversed",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000139-head-tail_reversed.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--000139-wrists-tail_reversed",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--000139-wrists-tail_reversed.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--train-000027-head-paired.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--train-000027-head-text_only",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--train-000027-head-text_only.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--train-000027-head-physical_static",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--train-000027-head-physical_static.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--train-000027-wrists-paired.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--train-000027-wrists-text_only",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--train-000027-wrists-text_only.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--train-000027-wrists-physical_static",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--train-000027-wrists-physical_static.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--train-000506-head-paired.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--train-000506-head-text_only",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--train-000506-head-text_only.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--train-000506-head-physical_static",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--train-000506-head-physical_static.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--train-000506-wrists-paired.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--train-000506-wrists-text_only",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--train-000506-wrists-text_only.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--train-000506-wrists-physical_static",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--train-000506-wrists-physical_static.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--train-004728-head-paired.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--train-004728-head-text_only",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--train-004728-head-text_only.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--train-004728-head-physical_static",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--train-004728-head-physical_static.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--train-004728-wrists-paired.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--train-004728-wrists-text_only",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--train-004728-wrists-text_only.npz"
+    },
+    {
+      "case_id": "F_root_ric_balanced--train-004728-wrists-physical_static",
+      "status": "not_run_after_stop",
+      "output": "samples/F_root_ric_balanced--train-004728-wrists-physical_static.npz"
+    }
+  ],
+  "traces": [
+    {
+      "trace_id": "FT0001",
+      "case_id": "F_root_ric_balanced--000433-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0002",
+      "case_id": "F_root_ric_balanced--000433-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0003",
+      "case_id": "F_root_ric_balanced--000433-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0004",
+      "case_id": "F_root_ric_balanced--000433-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0005",
+      "case_id": "F_root_ric_balanced--000433-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0006",
+      "case_id": "F_root_ric_balanced--000433-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0007",
+      "case_id": "F_root_ric_balanced--000433-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0008",
+      "case_id": "F_root_ric_balanced--000433-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0009",
+      "case_id": "F_root_ric_balanced--000433-head-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0010",
+      "case_id": "F_root_ric_balanced--000433-head-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0011",
+      "case_id": "F_root_ric_balanced--000433-head-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0012",
+      "case_id": "F_root_ric_balanced--000433-head-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0013",
+      "case_id": "F_root_ric_balanced--000433-head-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0014",
+      "case_id": "F_root_ric_balanced--000433-head-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0015",
+      "case_id": "F_root_ric_balanced--000433-head-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0016",
+      "case_id": "F_root_ric_balanced--000433-head-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0017",
+      "case_id": "F_root_ric_balanced--000433-head-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0018",
+      "case_id": "F_root_ric_balanced--000433-head-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0019",
+      "case_id": "F_root_ric_balanced--000433-head-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0020",
+      "case_id": "F_root_ric_balanced--000433-head-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0021",
+      "case_id": "F_root_ric_balanced--000433-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0022",
+      "case_id": "F_root_ric_balanced--000433-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0023",
+      "case_id": "F_root_ric_balanced--000433-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0024",
+      "case_id": "F_root_ric_balanced--000433-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0025",
+      "case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0026",
+      "case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0027",
+      "case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0028",
+      "case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0029",
+      "case_id": "F_root_ric_balanced--000433-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0030",
+      "case_id": "F_root_ric_balanced--000433-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0031",
+      "case_id": "F_root_ric_balanced--000433-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0032",
+      "case_id": "F_root_ric_balanced--000433-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0033",
+      "case_id": "F_root_ric_balanced--000433-wrists-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0034",
+      "case_id": "F_root_ric_balanced--000433-wrists-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0035",
+      "case_id": "F_root_ric_balanced--000433-wrists-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0036",
+      "case_id": "F_root_ric_balanced--000433-wrists-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0037",
+      "case_id": "F_root_ric_balanced--000433-wrists-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0038",
+      "case_id": "F_root_ric_balanced--000433-wrists-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0039",
+      "case_id": "F_root_ric_balanced--000433-wrists-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0040",
+      "case_id": "F_root_ric_balanced--000433-wrists-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0041",
+      "case_id": "F_root_ric_balanced--000433-wrists-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0042",
+      "case_id": "F_root_ric_balanced--000433-wrists-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0043",
+      "case_id": "F_root_ric_balanced--000433-wrists-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0044",
+      "case_id": "F_root_ric_balanced--000433-wrists-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0045",
+      "case_id": "F_root_ric_balanced--000433-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0046",
+      "case_id": "F_root_ric_balanced--000433-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0047",
+      "case_id": "F_root_ric_balanced--000433-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0048",
+      "case_id": "F_root_ric_balanced--000433-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0049",
+      "case_id": "F_root_ric_balanced--000382-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0050",
+      "case_id": "F_root_ric_balanced--000382-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0051",
+      "case_id": "F_root_ric_balanced--000382-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0052",
+      "case_id": "F_root_ric_balanced--000382-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0053",
+      "case_id": "F_root_ric_balanced--000382-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0054",
+      "case_id": "F_root_ric_balanced--000382-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0055",
+      "case_id": "F_root_ric_balanced--000382-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0056",
+      "case_id": "F_root_ric_balanced--000382-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0057",
+      "case_id": "F_root_ric_balanced--000382-head-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0058",
+      "case_id": "F_root_ric_balanced--000382-head-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0059",
+      "case_id": "F_root_ric_balanced--000382-head-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0060",
+      "case_id": "F_root_ric_balanced--000382-head-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0061",
+      "case_id": "F_root_ric_balanced--000382-head-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0062",
+      "case_id": "F_root_ric_balanced--000382-head-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0063",
+      "case_id": "F_root_ric_balanced--000382-head-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0064",
+      "case_id": "F_root_ric_balanced--000382-head-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0065",
+      "case_id": "F_root_ric_balanced--000382-head-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0066",
+      "case_id": "F_root_ric_balanced--000382-head-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0067",
+      "case_id": "F_root_ric_balanced--000382-head-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0068",
+      "case_id": "F_root_ric_balanced--000382-head-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0069",
+      "case_id": "F_root_ric_balanced--000382-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0070",
+      "case_id": "F_root_ric_balanced--000382-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0071",
+      "case_id": "F_root_ric_balanced--000382-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0072",
+      "case_id": "F_root_ric_balanced--000382-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0073",
+      "case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0074",
+      "case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0075",
+      "case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0076",
+      "case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0077",
+      "case_id": "F_root_ric_balanced--000382-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0078",
+      "case_id": "F_root_ric_balanced--000382-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0079",
+      "case_id": "F_root_ric_balanced--000382-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0080",
+      "case_id": "F_root_ric_balanced--000382-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0081",
+      "case_id": "F_root_ric_balanced--000382-wrists-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0082",
+      "case_id": "F_root_ric_balanced--000382-wrists-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0083",
+      "case_id": "F_root_ric_balanced--000382-wrists-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0084",
+      "case_id": "F_root_ric_balanced--000382-wrists-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0085",
+      "case_id": "F_root_ric_balanced--000382-wrists-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0086",
+      "case_id": "F_root_ric_balanced--000382-wrists-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0087",
+      "case_id": "F_root_ric_balanced--000382-wrists-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0088",
+      "case_id": "F_root_ric_balanced--000382-wrists-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0089",
+      "case_id": "F_root_ric_balanced--000382-wrists-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0090",
+      "case_id": "F_root_ric_balanced--000382-wrists-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0091",
+      "case_id": "F_root_ric_balanced--000382-wrists-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0092",
+      "case_id": "F_root_ric_balanced--000382-wrists-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0093",
+      "case_id": "F_root_ric_balanced--000382-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0094",
+      "case_id": "F_root_ric_balanced--000382-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0095",
+      "case_id": "F_root_ric_balanced--000382-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0096",
+      "case_id": "F_root_ric_balanced--000382-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0097",
+      "case_id": "F_root_ric_balanced--000139-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0098",
+      "case_id": "F_root_ric_balanced--000139-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0099",
+      "case_id": "F_root_ric_balanced--000139-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0100",
+      "case_id": "F_root_ric_balanced--000139-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0101",
+      "case_id": "F_root_ric_balanced--000139-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0102",
+      "case_id": "F_root_ric_balanced--000139-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0103",
+      "case_id": "F_root_ric_balanced--000139-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0104",
+      "case_id": "F_root_ric_balanced--000139-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0105",
+      "case_id": "F_root_ric_balanced--000139-head-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0106",
+      "case_id": "F_root_ric_balanced--000139-head-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0107",
+      "case_id": "F_root_ric_balanced--000139-head-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0108",
+      "case_id": "F_root_ric_balanced--000139-head-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0109",
+      "case_id": "F_root_ric_balanced--000139-head-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0110",
+      "case_id": "F_root_ric_balanced--000139-head-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0111",
+      "case_id": "F_root_ric_balanced--000139-head-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0112",
+      "case_id": "F_root_ric_balanced--000139-head-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0113",
+      "case_id": "F_root_ric_balanced--000139-head-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0114",
+      "case_id": "F_root_ric_balanced--000139-head-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0115",
+      "case_id": "F_root_ric_balanced--000139-head-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0116",
+      "case_id": "F_root_ric_balanced--000139-head-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0117",
+      "case_id": "F_root_ric_balanced--000139-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0118",
+      "case_id": "F_root_ric_balanced--000139-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0119",
+      "case_id": "F_root_ric_balanced--000139-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0120",
+      "case_id": "F_root_ric_balanced--000139-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0121",
+      "case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0122",
+      "case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0123",
+      "case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0124",
+      "case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0125",
+      "case_id": "F_root_ric_balanced--000139-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0126",
+      "case_id": "F_root_ric_balanced--000139-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0127",
+      "case_id": "F_root_ric_balanced--000139-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0128",
+      "case_id": "F_root_ric_balanced--000139-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0129",
+      "case_id": "F_root_ric_balanced--000139-wrists-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0130",
+      "case_id": "F_root_ric_balanced--000139-wrists-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0131",
+      "case_id": "F_root_ric_balanced--000139-wrists-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0132",
+      "case_id": "F_root_ric_balanced--000139-wrists-imu_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0133",
+      "case_id": "F_root_ric_balanced--000139-wrists-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0134",
+      "case_id": "F_root_ric_balanced--000139-wrists-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0135",
+      "case_id": "F_root_ric_balanced--000139-wrists-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0136",
+      "case_id": "F_root_ric_balanced--000139-wrists-backbone_bypass",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0137",
+      "case_id": "F_root_ric_balanced--000139-wrists-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0138",
+      "case_id": "F_root_ric_balanced--000139-wrists-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0139",
+      "case_id": "F_root_ric_balanced--000139-wrists-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0140",
+      "case_id": "F_root_ric_balanced--000139-wrists-numeric_zero",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0141",
+      "case_id": "F_root_ric_balanced--000139-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0142",
+      "case_id": "F_root_ric_balanced--000139-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0143",
+      "case_id": "F_root_ric_balanced--000139-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0144",
+      "case_id": "F_root_ric_balanced--000139-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0145",
+      "case_id": "F_root_ric_balanced--000433-head-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0146",
+      "case_id": "F_root_ric_balanced--000433-head-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0147",
+      "case_id": "F_root_ric_balanced--000433-head-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0148",
+      "case_id": "F_root_ric_balanced--000433-head-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0149",
+      "case_id": "F_root_ric_balanced--000433-wrists-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0150",
+      "case_id": "F_root_ric_balanced--000433-wrists-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0151",
+      "case_id": "F_root_ric_balanced--000433-wrists-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0152",
+      "case_id": "F_root_ric_balanced--000433-wrists-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0153",
+      "case_id": "F_root_ric_balanced--000382-head-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0154",
+      "case_id": "F_root_ric_balanced--000382-head-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0155",
+      "case_id": "F_root_ric_balanced--000382-head-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0156",
+      "case_id": "F_root_ric_balanced--000382-head-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0157",
+      "case_id": "F_root_ric_balanced--000382-wrists-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0158",
+      "case_id": "F_root_ric_balanced--000382-wrists-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0159",
+      "case_id": "F_root_ric_balanced--000382-wrists-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0160",
+      "case_id": "F_root_ric_balanced--000382-wrists-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0161",
+      "case_id": "F_root_ric_balanced--000139-head-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0162",
+      "case_id": "F_root_ric_balanced--000139-head-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0163",
+      "case_id": "F_root_ric_balanced--000139-head-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0164",
+      "case_id": "F_root_ric_balanced--000139-head-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0165",
+      "case_id": "F_root_ric_balanced--000139-wrists-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0166",
+      "case_id": "F_root_ric_balanced--000139-wrists-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0167",
+      "case_id": "F_root_ric_balanced--000139-wrists-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0168",
+      "case_id": "F_root_ric_balanced--000139-wrists-tail_reversed",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0169",
+      "case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0170",
+      "case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0171",
+      "case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0172",
+      "case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0173",
+      "case_id": "F_root_ric_balanced--train-000027-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0174",
+      "case_id": "F_root_ric_balanced--train-000027-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0175",
+      "case_id": "F_root_ric_balanced--train-000027-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0176",
+      "case_id": "F_root_ric_balanced--train-000027-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0177",
+      "case_id": "F_root_ric_balanced--train-000027-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0178",
+      "case_id": "F_root_ric_balanced--train-000027-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0179",
+      "case_id": "F_root_ric_balanced--train-000027-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0180",
+      "case_id": "F_root_ric_balanced--train-000027-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0181",
+      "case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0182",
+      "case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0183",
+      "case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0184",
+      "case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0185",
+      "case_id": "F_root_ric_balanced--train-000027-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0186",
+      "case_id": "F_root_ric_balanced--train-000027-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0187",
+      "case_id": "F_root_ric_balanced--train-000027-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0188",
+      "case_id": "F_root_ric_balanced--train-000027-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0189",
+      "case_id": "F_root_ric_balanced--train-000027-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0190",
+      "case_id": "F_root_ric_balanced--train-000027-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0191",
+      "case_id": "F_root_ric_balanced--train-000027-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0192",
+      "case_id": "F_root_ric_balanced--train-000027-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0193",
+      "case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0194",
+      "case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0195",
+      "case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0196",
+      "case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0197",
+      "case_id": "F_root_ric_balanced--train-000506-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0198",
+      "case_id": "F_root_ric_balanced--train-000506-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0199",
+      "case_id": "F_root_ric_balanced--train-000506-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0200",
+      "case_id": "F_root_ric_balanced--train-000506-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0201",
+      "case_id": "F_root_ric_balanced--train-000506-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0202",
+      "case_id": "F_root_ric_balanced--train-000506-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0203",
+      "case_id": "F_root_ric_balanced--train-000506-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0204",
+      "case_id": "F_root_ric_balanced--train-000506-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0205",
+      "case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0206",
+      "case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0207",
+      "case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0208",
+      "case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0209",
+      "case_id": "F_root_ric_balanced--train-000506-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0210",
+      "case_id": "F_root_ric_balanced--train-000506-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0211",
+      "case_id": "F_root_ric_balanced--train-000506-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0212",
+      "case_id": "F_root_ric_balanced--train-000506-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0213",
+      "case_id": "F_root_ric_balanced--train-000506-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0214",
+      "case_id": "F_root_ric_balanced--train-000506-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0215",
+      "case_id": "F_root_ric_balanced--train-000506-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0216",
+      "case_id": "F_root_ric_balanced--train-000506-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0217",
+      "case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0218",
+      "case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0219",
+      "case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0220",
+      "case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0221",
+      "case_id": "F_root_ric_balanced--train-004728-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0222",
+      "case_id": "F_root_ric_balanced--train-004728-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0223",
+      "case_id": "F_root_ric_balanced--train-004728-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0224",
+      "case_id": "F_root_ric_balanced--train-004728-head-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0225",
+      "case_id": "F_root_ric_balanced--train-004728-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0226",
+      "case_id": "F_root_ric_balanced--train-004728-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0227",
+      "case_id": "F_root_ric_balanced--train-004728-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0228",
+      "case_id": "F_root_ric_balanced--train-004728-head-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0229",
+      "case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0230",
+      "case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0231",
+      "case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0232",
+      "case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0233",
+      "case_id": "F_root_ric_balanced--train-004728-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0234",
+      "case_id": "F_root_ric_balanced--train-004728-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0235",
+      "case_id": "F_root_ric_balanced--train-004728-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0236",
+      "case_id": "F_root_ric_balanced--train-004728-wrists-text_only",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0237",
+      "case_id": "F_root_ric_balanced--train-004728-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0238",
+      "case_id": "F_root_ric_balanced--train-004728-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0239",
+      "case_id": "F_root_ric_balanced--train-004728-wrists-physical_static",
+      "status": "not_run_after_stop"
+    },
+    {
+      "trace_id": "FT0240",
+      "case_id": "F_root_ric_balanced--train-004728-wrists-physical_static",
+      "status": "not_run_after_stop"
+    }
+  ],
+  "checks": [
+    {
+      "check_id": "FI001",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI002",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI003",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI004",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI005",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI006",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI007",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI008",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI009",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI010",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI011",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI012",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI013",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI014",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI015",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI016",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI017",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI018",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI019",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI020",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI021",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI022",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI023",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI024",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI025",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI026",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI027",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI028",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI029",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI030",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI031",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI032",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI033",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI034",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI035",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI036",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI037",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI038",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI039",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI040",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI041",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI042",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI043",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI044",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI045",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI046",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI047",
+      "status": "not_run_after_stop"
+    },
+    {
+      "check_id": "FI048",
+      "status": "not_run_after_stop"
+    }
+  ],
+  "finished_monotonic": 1214690.785806433,
+  "failure": {
+    "type": "CalledProcessError",
+    "message": "Command '['nvidia-smi', '--id=GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004', '--query-gpu=uuid,memory.total,memory.free', '--format=csv,noheader,nounits']' returned non-zero exit status 9."
+  }
+}
