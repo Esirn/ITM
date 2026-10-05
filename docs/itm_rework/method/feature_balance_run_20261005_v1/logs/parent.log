@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/a200/0proj/ITM/scripts/run_mdm_feature_balance_bounded.py", line 210, in <module>
+    if __name__=='__main__':main()
+  File "/home/a200/0proj/ITM/scripts/run_mdm_feature_balance_bounded.py", line 208, in main
+    execute(args.implementation,args.run_dir,args.authorization_record,args.gpu_uuid)
+  File "/home/a200/0proj/ITM/scripts/run_mdm_feature_balance_bounded.py", line 174, in execute
+    check(train_deadline);status['gpu_preflight']=preflight_gpu(gpu);check(train_deadline)
+  File "/home/a200/0proj/ITM/scripts/run_mdm_b0_bounded.py", line 88, in preflight_gpu
+    raise RuntimeError('Selected GPU already has a compute process')
+RuntimeError: Selected GPU already has a compute process

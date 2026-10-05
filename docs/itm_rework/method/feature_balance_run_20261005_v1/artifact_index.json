@@ -1,0 +1,26 @@
+[
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/feature_balance_run_20261005_v1/commands.md",
+    "sha256": "aac84f3eb62bb20dddef2de15d505d3dbddc72f065e4c7f0f46896baa6de9070"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/feature_balance_run_20261005_v1/delivery_integrity.json",
+    "sha256": "6a2fbaec69cf58f94c0755a4aa6e056693eb175328dbdac29303a04989a80ce1"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/feature_balance_run_20261005_v1/execution_summary.json",
+    "sha256": "6d0afe8d9ab876f54388807d7541438ad38d2ae9aea7490abbfbb611407b1449"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/feature_balance_run_20261005_v1/logs/parent.log",
+    "sha256": "3ff8d06a2d91fe6c44c1f4a2c18a1020fdd035ed20ffbd48afbf19abca4543d9"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/feature_balance_run_20261005_v1/runtime/status.json",
+    "sha256": "2ccdc191deebc8d7c23132262fd51a77dcab72c4491b4181055e921c9ca9fbdd"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/feature_balance_run_20261005_v1/verify_delivery.py",
+    "sha256": "40b46c0296d241d7917335d64229460807aa300b90ee8e4edf3e1da8bc76a217"
+  }
+]

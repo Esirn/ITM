@@ -1,0 +1,30 @@
+{
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261005_v1",
+  "authorization_consumed": true,
+  "authorization_request_commit": "82d28a3",
+  "accepted_implementation_commit": "963a132",
+  "independent_acceptance_commit": "e0999b7",
+  "status": "failed_preflight",
+  "parent_exit_code": 1,
+  "elapsed_seconds": 0.9763586400076747,
+  "failure": {
+    "type": "RuntimeError",
+    "message": "Selected GPU already has a compute process"
+  },
+  "execution_permissions": "require_escalated: approved device access for this single execution",
+  "preflight_evidence": "First query returned successfully and passed UUID/free-memory checks; second query returned successfully and reported a compute process on the selected GPU. Raw query output was not persisted by the unchanged helper.",
+  "worker_launched": false,
+  "completed_updates": 0,
+  "completed_exposures": 0,
+  "completed_samples": 0,
+  "completed_traces": 0,
+  "completed_checks": 0,
+  "model_calls": 0,
+  "model_calls_evidence": "Parent failed before first job; no worker context, launch, receipt, job counts or model output.",
+  "gpu_query_attempts": 2,
+  "additional_gpu_queries": 0,
+  "retries": 0,
+  "allocated_peak_bytes": null,
+  "delivery_integrity_passed": true,
+  "previous_failure_status_unchanged": true
+}
