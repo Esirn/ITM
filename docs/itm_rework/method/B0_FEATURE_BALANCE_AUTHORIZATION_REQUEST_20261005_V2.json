@@ -1,0 +1,89 @@
+{
+  "version": "itm-feature-authorization-request-v1",
+  "status": "pending_user_approval",
+  "authorized": false,
+  "implementation": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_implementation_20261003_v2/implementation.json",
+  "implementation_sha256": "db323ef515ede3252898f322f7badda10913aea64d67cb4abb1f3e9fc4605e30",
+  "package": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_feature_balance_20261003_v1/package.json",
+    "sha256": "a4189b89f1924af022c67dea71c02c2792e65f4a185775501b07d037fba51af9"
+  },
+  "package_sha256": "a4189b89f1924af022c67dea71c02c2792e65f4a185775501b07d037fba51af9",
+  "initial": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_implementation_20260927_v1/initial.pt",
+    "sha256": "3ad3c1bca7ff7398386662e4831eb29136d3c0f2e06e5abbea8e7c4cb13d0401"
+  },
+  "loss_version": "normalized-x0-root-ric-half-v1",
+  "weights_sha256": "ad96c3f5dc0eef83dc8b0107a4802c5af84badf383c12e00124dd63411d7f297",
+  "accepted_implementation_commit": "963a132129b808b4c43af0c5bea30fc735ddcc67",
+  "independent_acceptance_commit": "e0999b7",
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261005_v2",
+  "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+  "gpu_identity_source": "Historical authorized GPU UUID; no GPU query performed for this request. Verify identity and availability only after approval.",
+  "launch_environment": {
+    "OMP_NUM_THREADS": "2",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "limits": {
+    "training_updates": 200,
+    "training_exposures": 600,
+    "new_samples": 60,
+    "steps_per_sample": 1000,
+    "traces": 240,
+    "extra_trace_model_calls": 0,
+    "software_checks": 48,
+    "training_seconds": 600,
+    "sampling_shared_seconds": 3000,
+    "total_seconds": 3600,
+    "allocated_memory_bytes": 25769803776,
+    "GPUs": 1,
+    "MDM_calls_max": 60600,
+    "MDM_examples_max": 240600,
+    "encoder_examples_max": 1320,
+    "caption_calls_max": 660
+  },
+  "scope": "One F queue from original common initial with fixed half-weight loss and fresh AdamW. Only final200 may produce60 full samples using frozen noise and unit CFG, paired with historical S1 controls. No new control training or sampling.",
+  "deadlines": "t0 before GPU preflight; train deadline t0+600; shared sampling deadline min(sampling_start+3000,t0+3600). No transfer of unused training budget.",
+  "stop_policy": "Stop on first timeout/OOM/nonfinite/identity/counter/software-check/write failure; preserve completed products, finite raw features and full200/600/60/240/48 ledgers. No retry, resume, warmup, GPU switch, CPU fallback or replacement samples.",
+  "previous_authorizations": "Both previous F attempts and all historical authorizations are consumed; none covers this new attempt.",
+  "execution_authorization_record": "/home/a200/0proj/ITM/docs/itm_rework/method/B0_FEATURE_BALANCE_AUTHORIZATION_20261005_V2.json",
+  "verification": {
+    "bound_hashes_match": true,
+    "verified_bound_files": 1145,
+    "manifest_copy_exact": true,
+    "run_directory_absent": true,
+    "GPU_queried": false,
+    "real_forward_calls": 0,
+    "environment_note": "Only standard-library file/hash checks performed. Runtime environment and GPU readiness are checked inside the authorized bounded execution.",
+    "old_failure_status_unchanged": true,
+    "earlier_failure_status_unchanged": true
+  },
+  "prepared_at": "2026-10-05T12:53:03.406457+00:00",
+  "failure_acceptance_commit": "8ce5c8f",
+  "previous_attempt": {
+    "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261005_v1",
+    "status_sha256": "2ccdc191deebc8d7c23132262fd51a77dcab72c4491b4181055e921c9ca9fbdd",
+    "failure": "Selected GPU already has a compute process",
+    "worker_launched": false,
+    "authorization_consumed": true
+  },
+  "earlier_attempts": [
+    {
+      "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261004_v1",
+      "status_sha256": "1c77c0f0ca4d2cad2b0501857d1326e7263fbb41a696ccc8a34f427d88228845",
+      "preflight_exit_code": 9,
+      "worker_launched": false,
+      "authorization_consumed": true,
+      "specific_cause": "Undetermined; original query stdout/stderr were not persisted."
+    }
+  ],
+  "availability_plan": {
+    "current_availability": "unknown; no new GPU query",
+    "last_observation": "2026-10-05 preflight detected a compute process on the selected GPU; it may or may not still be running.",
+    "requested_launch_window": "User selects an expected idle window of at least one hour and grants fresh approval at its start. No idle window is inferred or reserved by this request.",
+    "authoritative_check": "The unchanged bounded preflight after approval determines actual availability. User timing does not override checks.",
+    "automatic_polling": false,
+    "automatic_retry": false,
+    "interfere_with_other_processes": false
+  }
+}
