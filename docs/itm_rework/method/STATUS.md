@@ -1,3 +1,14 @@
+# 01 最新状态：F 失败交付已核对，申请新单次授权（2026-10-05）
+
+已读取 `971909b`：[02失败核对](../protocol/B0_FEATURE_BALANCE_FAILURE_ACCEPTANCE_20261004.md)通过，无新增返工项；实现 `963a132` 和155项软件验收继续有效，无需重复验收。
+01本轮只读核验1,145份绑定文件、最终v2 manifest副本及旧失败账本，均一致。新申请继续绑定implementation `db323ef515ede3252898f322f7badda10913aea64d67cb4abb1f3e9fc4605e30`、F package `a4189b89f1924af022c67dea71c02c2792e65f4a185775501b07d037fba51af9`、原共同初始化及GPU `GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004`。
+唯一新目录 `/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261005_v1` 已确认不存在，留待获批后入口原子创建；[具体授权申请](B0_FEATURE_BALANCE_AUTHORIZATION_REQUEST_20261005.json)为`pending_user_approval`、`authorized=false`，实际执行授权尚未创建。
+申请一次 **200 updates/600 exposures＋60条完整采样＋240条零额外调用trace＋48项软件检查**；训练自预检前起最多600秒，采样共享最多3000秒，整队最多3600秒；单GPU、allocated≤24GiB。首个规定故障即停，保留完整分母和产物，不重试、续训、补采、换卡、warmup或CPU回退。
+此前退出码9的具体原因仍未确定，不能保证新预检通过。本轮未查询GPU或执行模型，旧目录/失败证据未变；本次及历史授权不可复用。依照用户本轮要求，下一步等待新的单次批准，获批后01预检执行，再交02核对/评价。模型有效性仍未认证。
+以下为历史记录。
+
+---
+
 # 01 最新状态：F 单次授权已消耗，GPU 预检失败（2026-10-04）
 
 用户批准 `72a01e9` 后执行一次F；在预检前起1.006989秒因指定UUID的`nvidia-smi`查询返回码9停止，父入口退出码1。训练worker未启动，模型调用0；200 updates/600 exposures/60 samples/240 traces/48 checks全部保留为not_run_after_stop。
