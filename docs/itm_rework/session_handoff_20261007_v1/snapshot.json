@@ -1,0 +1,136 @@
+{
+  "version": "itm-unified-session-handoff-v1",
+  "prepared_date": "2026-10-07",
+  "timezone": "Asia/Shanghai",
+  "checked_at_utc": "2026-10-07T05:27:33.392742+00:00",
+  "workspace": "/home/a200/0proj/ITM",
+  "source_head": "971d101bbacbbc914a276b474f6d878a93962826",
+  "branch": "method/itm-rework",
+  "stage": "F implementation accepted; dedicated effect evaluation preparation and newly authorized run pending",
+  "reference_only_not_execution_authorization": true,
+  "request": {
+    "path": "docs/itm_rework/method/B0_FEATURE_BALANCE_AUTHORIZATION_REQUEST_20261005_V2.json",
+    "sha256": "7584d8bdbb6d4c23cbb597925b326fd812ab03753caac0632ffbdbf75d6b3043"
+  },
+  "request_authorized": false,
+  "execution_authorization_exists": false,
+  "run_directory_exists": false,
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261005_v2",
+  "execution_authorization_record": "/home/a200/0proj/ITM/docs/itm_rework/method/B0_FEATURE_BALANCE_AUTHORIZATION_20261005_V2.json",
+  "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+  "gpu_current_availability": "unknown; not queried",
+  "limits": {
+    "training_updates": 200,
+    "training_exposures": 600,
+    "new_samples": 60,
+    "steps_per_sample": 1000,
+    "traces": 240,
+    "extra_trace_model_calls": 0,
+    "software_checks": 48,
+    "training_seconds": 600,
+    "sampling_shared_seconds": 3000,
+    "total_seconds": 3600,
+    "allocated_memory_bytes": 25769803776,
+    "GPUs": 1,
+    "MDM_calls_max": 60600,
+    "MDM_examples_max": 240600,
+    "encoder_examples_max": 1320,
+    "caption_calls_max": 660
+  },
+  "verified_manifest_bound_files": 1145,
+  "manifest_archive_byte_identical": true,
+  "previous_attempts": [
+    {
+      "status_file": {
+        "path": "outputs/itm_rework/method/feature_balance_authorized_20261005_v1/runtime/status.json",
+        "sha256": "2ccdc191deebc8d7c23132262fd51a77dcab72c4491b4181055e921c9ca9fbdd"
+      },
+      "failure": {
+        "type": "RuntimeError",
+        "message": "Selected GPU already has a compute process"
+      },
+      "authorization_consumed": true,
+      "worker_launched": false
+    },
+    {
+      "status_file": {
+        "path": "outputs/itm_rework/method/feature_balance_authorized_20261004_v1/runtime/status.json",
+        "sha256": "1c77c0f0ca4d2cad2b0501857d1326e7263fbb41a696ccc8a34f427d88228845"
+      },
+      "failure": {
+        "type": "CalledProcessError",
+        "message": "Command '['nvidia-smi', '--id=GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004', '--query-gpu=uuid,memory.total,memory.free', '--format=csv,noheader,nounits']' returned non-zero exit status 9."
+      },
+      "authorization_consumed": true,
+      "worker_launched": false
+    }
+  ],
+  "anchors": [
+    {
+      "path": "docs/itm_rework/method/B0_FEATURE_BALANCE_AUTHORIZATION_REQUEST_20261005_V2.json",
+      "sha256": "7584d8bdbb6d4c23cbb597925b326fd812ab03753caac0632ffbdbf75d6b3043"
+    },
+    {
+      "path": "outputs/itm_rework/method/feature_balance_implementation_20261003_v2/implementation.json",
+      "sha256": "db323ef515ede3252898f322f7badda10913aea64d67cb4abb1f3e9fc4605e30"
+    },
+    {
+      "path": "docs/itm_rework/method/feature_balance_implementation_20261003_v1/implementation.json",
+      "sha256": "db323ef515ede3252898f322f7badda10913aea64d67cb4abb1f3e9fc4605e30"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_feature_balance_20261003_v1/package.json",
+      "sha256": "a4189b89f1924af022c67dea71c02c2792e65f4a185775501b07d037fba51af9"
+    },
+    {
+      "path": "outputs/itm_rework/method/correction_implementation_20260927_v1/initial.pt",
+      "sha256": "3ad3c1bca7ff7398386662e4831eb29136d3c0f2e06e5abbea8e7c4cb13d0401"
+    },
+    {
+      "path": "outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+      "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+    },
+    {
+      "path": "docs/itm_rework/contract.yaml",
+      "sha256": "a715d2fed356481ef66247b15a93dd2f747ce2e9d274d9e70211644e0556d705"
+    },
+    {
+      "path": "docs/itm_rework/protocol/canonical_b0_20260925_v3/package.json",
+      "sha256": "33de7fd98c1cf43fc5a51a7d35b502e154a233066efec13f17dda08bc53abe97"
+    },
+    {
+      "path": "docs/itm_rework/protocol/B0_FEATURE_BALANCE_FREEZE_20261003.md",
+      "sha256": "23e5b5c470423014228d12f2ee27c9681f54038f3621597b66e8b2fa95cd56e0"
+    },
+    {
+      "path": "docs/itm_rework/protocol/B0_FEATURE_BALANCE_ACCEPTANCE_20261004.md",
+      "sha256": "119db39e9d6d0fc16c508076ba71eb2e0d682f8f854b1d857953e7f9f56b1415"
+    },
+    {
+      "path": "docs/itm_rework/protocol/B0_FEATURE_BALANCE_FAILURE_ACCEPTANCE_20261005.md",
+      "sha256": "b45ee6ddf6728e81c968825580f9a29693a13c2654d2322d0094797d522a7155"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_feature_balance_20261003_v1/evaluation.json",
+      "sha256": "4b4fd55fd0b48622bc1eeed5643ba835c82c1038d07b819af92e034a6485ebab"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_feature_balance_20261003_v1/target_review.json",
+      "sha256": "a817319eb1a1fd8df220ce01f9435e75546b657cdebba2431907f9da5b59657e"
+    },
+    {
+      "path": "docs/itm_rework/method/STATUS.md",
+      "sha256": "724e0593b42fddc4393d3dfb2364c2d6a3d3d7aa7d656a71c3d15986558bc90b"
+    },
+    {
+      "path": "docs/itm_rework/protocol/STATUS.md",
+      "sha256": "1e1c2ca1b892f963646494afeff5c551324c6c473be944afa69a10b10b7be991"
+    }
+  ],
+  "known_untracked_user_directory": "docs/itm_rework/tasks/",
+  "F_dedicated_effect_evaluator_found_in_scripts_or_tests": false,
+  "current_migration_model_imports": 0,
+  "current_migration_GPU_queries": 0,
+  "current_migration_real_training_or_sampling": 0,
+  "scope_note": "Snapshot is historical. Check later commits and current authorization/artifacts before action; do not reset to this HEAD or infer approval from this file."
+}
