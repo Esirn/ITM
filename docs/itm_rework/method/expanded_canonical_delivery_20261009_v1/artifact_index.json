@@ -1,0 +1,482 @@
+[
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/BASELINE_INTERFACE_AUDIT_20261009.md",
+      "sha256": "35b7295a14959d0ed48b474eb3ee2ce3da42f8a0069ffe515de0d40d732bc0bb"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/docs/itm_rework/BASELINE_INTERFACE_AUDIT_20261009.md",
+      "sha256": "35b7295a14959d0ed48b474eb3ee2ce3da42f8a0069ffe515de0d40d732bc0bb"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/B0_EXPANDED_CANONICAL_20EPOCH_EVALUATION_20261009.md",
+      "sha256": "bc07aaf96663fdf5ccbbe2219837272a8fe63fa9ad366fb1b55d600f2142651e"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/docs/itm_rework/protocol/B0_EXPANDED_CANONICAL_20EPOCH_EVALUATION_20261009.md",
+      "sha256": "bc07aaf96663fdf5ccbbe2219837272a8fe63fa9ad366fb1b55d600f2142651e"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/B0_EXPANDED_CANONICAL_MATCHED_EVALUATION_20261009.md",
+      "sha256": "5b44130afb9bb49f0c19dd048f16e9938e2455601be4aa75a5f3c8e408d80a18"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/docs/itm_rework/protocol/B0_EXPANDED_CANONICAL_MATCHED_EVALUATION_20261009.md",
+      "sha256": "5b44130afb9bb49f0c19dd048f16e9938e2455601be4aa75a5f3c8e408d80a18"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/USER_MOTION_REVIEW_20261009.json",
+      "sha256": "f517810325fb2adfaff5856acf6537f93a69fdb0498381c99a51135a7a02b8dd"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/docs/itm_rework/protocol/USER_MOTION_REVIEW_20261009.json",
+      "sha256": "f517810325fb2adfaff5856acf6537f93a69fdb0498381c99a51135a7a02b8dd"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/expanded_canonical_pilot_20261009_v1/plan.json",
+      "sha256": "95d7ed0655eaad879d0162d9c350172a3830b95b51086839054264c5ddb62185"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/docs/itm_rework/protocol/expanded_canonical_pilot_20261009_v1/plan.json",
+      "sha256": "95d7ed0655eaad879d0162d9c350172a3830b95b51086839054264c5ddb62185"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/expanded_canonical_sampling_20261009_v1/plan.json",
+      "sha256": "eb697e6d203973b06aed9f4555ebacd32dcbaed5e6c4f38869a942b320d812ae"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/docs/itm_rework/protocol/expanded_canonical_sampling_20261009_v1/plan.json",
+      "sha256": "eb697e6d203973b06aed9f4555ebacd32dcbaed5e6c4f38869a942b320d812ae"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/expanded_canonical_sampling_20261009_v2/plan.json",
+      "sha256": "2b66afdff87b6c316d0fff849a52815f987c26cb07787ece3f0725247758c60e"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/docs/itm_rework/protocol/expanded_canonical_sampling_20261009_v2/plan.json",
+      "sha256": "2b66afdff87b6c316d0fff849a52815f987c26cb07787ece3f0725247758c60e"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/expanded_canonical_sampling_matched_g2_5_20261009_v1/plan.json",
+      "sha256": "b7ccafa53ba25388bf75198c7f49fcbca60f7afc4fa6ee2799d20b9d9f9b4231"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/docs/itm_rework/protocol/expanded_canonical_sampling_matched_g2_5_20261009_v1/plan.json",
+      "sha256": "b7ccafa53ba25388bf75198c7f49fcbca60f7afc4fa6ee2799d20b9d9f9b4231"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/expanded_canonical_training_20261009_v1/plan.json",
+      "sha256": "24d1ba4b46a540be91f93c8f195fa2694fc8b07c55db737936d4ed572340d0dd"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/docs/itm_rework/protocol/expanded_canonical_training_20261009_v1/plan.json",
+      "sha256": "24d1ba4b46a540be91f93c8f195fa2694fc8b07c55db737936d4ed572340d0dd"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/expanded_canonical_training_20261009_v2/plan.json",
+      "sha256": "d1e01ad3d64542a7f3618033aba55d5ca02c2310762c1f29ce32b5c9ff683d85"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/docs/itm_rework/protocol/expanded_canonical_training_20261009_v2/plan.json",
+      "sha256": "d1e01ad3d64542a7f3618033aba55d5ca02c2310762c1f29ce32b5c9ff683d85"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v2/aggregates.json",
+      "sha256": "1b73af50850c99fbe3db362c6a3b90bc6a97e409a1db356d2bf85e2dfe134f21"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v2/aggregates.json",
+      "sha256": "1b73af50850c99fbe3db362c6a3b90bc6a97e409a1db356d2bf85e2dfe134f21"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v2/artifact_index.json",
+      "sha256": "b9e8f0fb31ca329b9457c7b3b82c4f7464c1bbcdc1f731358364e509684b48b0"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v2/artifact_index.json",
+      "sha256": "b9e8f0fb31ca329b9457c7b3b82c4f7464c1bbcdc1f731358364e509684b48b0"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v2/contrasts.json",
+      "sha256": "aca9d471523704a996620bf046db96580c093fcae64541750c2f7490424e7561"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v2/contrasts.json",
+      "sha256": "aca9d471523704a996620bf046db96580c093fcae64541750c2f7490424e7561"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v2/rows.json",
+      "sha256": "a54f176ae1119c7ef422b0d5bfcf613932d69df668ad13fef4b19651e0f7e868"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v2/rows.json",
+      "sha256": "a54f176ae1119c7ef422b0d5bfcf613932d69df668ad13fef4b19651e0f7e868"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v2/run_artifact_index.json",
+      "sha256": "ce46a8009f10fb21f429779e0da993e4abda5430f8b561b6d3b43e125c8fe0c8"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v2/run_artifact_index.json",
+      "sha256": "ce46a8009f10fb21f429779e0da993e4abda5430f8b561b6d3b43e125c8fe0c8"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v2/sources.json",
+      "sha256": "b933cc34fc4905219359fe8f0ba528ce17eb1baa7cdd141679f5093ae20d3b21"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v2/sources.json",
+      "sha256": "b933cc34fc4905219359fe8f0ba528ce17eb1baa7cdd141679f5093ae20d3b21"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v2/summary.json",
+      "sha256": "63bdda731b2d1c3062019e58536e4b347b3377d69934282e3609f81e2440e72d"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v2/summary.json",
+      "sha256": "63bdda731b2d1c3062019e58536e4b347b3377d69934282e3609f81e2440e72d"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v2/training_verification.json",
+      "sha256": "9a398fc5cdcc63d36c9acf4434d0fb07de6da7bc370f8bcd9a2b97e6e4b4c260"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v2/training_verification.json",
+      "sha256": "9a398fc5cdcc63d36c9acf4434d0fb07de6da7bc370f8bcd9a2b97e6e4b4c260"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v3/aggregates.json",
+      "sha256": "b27a96b4652cd53ce5449ea8324d57e52dd0090aca0bc3b82a2d807b0af408a4"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v3/aggregates.json",
+      "sha256": "b27a96b4652cd53ce5449ea8324d57e52dd0090aca0bc3b82a2d807b0af408a4"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v3/artifact_index.json",
+      "sha256": "a1dd622fd83478ea323e13176896a3b83d541bf71014ab17cf39f99faaccd89d"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v3/artifact_index.json",
+      "sha256": "a1dd622fd83478ea323e13176896a3b83d541bf71014ab17cf39f99faaccd89d"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v3/contrasts.json",
+      "sha256": "797bc52a70711abbd2cf76177faeae4cb475cdf0c05454e22744ddf25fd20215"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v3/contrasts.json",
+      "sha256": "797bc52a70711abbd2cf76177faeae4cb475cdf0c05454e22744ddf25fd20215"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v3/epoch_comparison.json",
+      "sha256": "5a2331fad63d935da0399be22bcde98671cd8ea1f442bb206de9e878511d131a"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v3/epoch_comparison.json",
+      "sha256": "5a2331fad63d935da0399be22bcde98671cd8ea1f442bb206de9e878511d131a"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v3/epoch_comparison_verification.json",
+      "sha256": "fbb41827cebe8fc9422a43817b7a717d41550591018bfebe2a3e350bf4f5f493"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v3/epoch_comparison_verification.json",
+      "sha256": "fbb41827cebe8fc9422a43817b7a717d41550591018bfebe2a3e350bf4f5f493"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v3/rows.json",
+      "sha256": "cf89f51cb3e8b456d925e771205c09b52e79c17894ad0c099577223e3daec298"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v3/rows.json",
+      "sha256": "cf89f51cb3e8b456d925e771205c09b52e79c17894ad0c099577223e3daec298"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v3/sources.json",
+      "sha256": "c6b962e9c23d7bfe3b4961f81712bf31313fc638bee37ac46565b30e16051f5c"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v3/sources.json",
+      "sha256": "c6b962e9c23d7bfe3b4961f81712bf31313fc638bee37ac46565b30e16051f5c"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v3/summary.json",
+      "sha256": "4e4c5cc7e8b52ee296c47271bb47ef7bd734ecb54466553af46e02e703b397cd"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v3/summary.json",
+      "sha256": "4e4c5cc7e8b52ee296c47271bb47ef7bd734ecb54466553af46e02e703b397cd"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_matched_g2_5_20261009_v1/aggregates.json",
+      "sha256": "984f2c6aca2e2668b8ad0c9d9ef83761ceecff8590cadc79c5e83e861914e1c9"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_matched_g2_5_20261009_v1/aggregates.json",
+      "sha256": "984f2c6aca2e2668b8ad0c9d9ef83761ceecff8590cadc79c5e83e861914e1c9"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_matched_g2_5_20261009_v1/artifact_index.json",
+      "sha256": "8367c878d0d3f45fbebf6486631e3e76bfa7e495e91f617eabc27aac152b0852"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_matched_g2_5_20261009_v1/artifact_index.json",
+      "sha256": "8367c878d0d3f45fbebf6486631e3e76bfa7e495e91f617eabc27aac152b0852"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_matched_g2_5_20261009_v1/contrasts.json",
+      "sha256": "0bb6a56cbe69859c3a8b5651e090f8e1a9f4783b7a6fa5033e740fe4f9312c08"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_matched_g2_5_20261009_v1/contrasts.json",
+      "sha256": "0bb6a56cbe69859c3a8b5651e090f8e1a9f4783b7a6fa5033e740fe4f9312c08"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_matched_g2_5_20261009_v1/guidance_comparison.json",
+      "sha256": "aec72588c80016ebeba9bb44391d42ee2d32f937b5818859614227c366c4b090"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_matched_g2_5_20261009_v1/guidance_comparison.json",
+      "sha256": "aec72588c80016ebeba9bb44391d42ee2d32f937b5818859614227c366c4b090"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_matched_g2_5_20261009_v1/rows.json",
+      "sha256": "dd41668745a1ad8c2fa6a4eeb1aa0900ac6802af13d0ad8fc62478740f923d51"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_matched_g2_5_20261009_v1/rows.json",
+      "sha256": "dd41668745a1ad8c2fa6a4eeb1aa0900ac6802af13d0ad8fc62478740f923d51"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_matched_g2_5_20261009_v1/run_artifact_index.json",
+      "sha256": "086603e49fec2e70223856f3edf3778e67cc0546788eb7416f8741badcdb2cac"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_matched_g2_5_20261009_v1/run_artifact_index.json",
+      "sha256": "086603e49fec2e70223856f3edf3778e67cc0546788eb7416f8741badcdb2cac"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_matched_g2_5_20261009_v1/sources.json",
+      "sha256": "87b6f75af439087cbddca051491430214cf08ef5537d407dbacc19e189720974"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_matched_g2_5_20261009_v1/sources.json",
+      "sha256": "87b6f75af439087cbddca051491430214cf08ef5537d407dbacc19e189720974"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_matched_g2_5_20261009_v1/summary.json",
+      "sha256": "9777a900455db769fbe8699fdb805a609e798ed8c807a2ca561d7ed0fb80ffa4"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_matched_g2_5_20261009_v1/summary.json",
+      "sha256": "9777a900455db769fbe8699fdb805a609e798ed8c807a2ca561d7ed0fb80ffa4"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_matched_g2_5_20261009_v1/training_verification.json",
+      "sha256": "d227d87739f54af8370377c6a64740521e8f436b5c78a355c60e602ad9f1805d"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_evaluation_matched_g2_5_20261009_v1/training_verification.json",
+      "sha256": "d227d87739f54af8370377c6a64740521e8f436b5c78a355c60e602ad9f1805d"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_review_matched_g2_5_20261009_v1/api_verification.json",
+      "sha256": "51b437eaf3a5bb15e4d6ec62f91aaa8e84ebb55b014d9c0af989c5422b56a08b"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_review_matched_g2_5_20261009_v1/api_verification.json",
+      "sha256": "51b437eaf3a5bb15e4d6ec62f91aaa8e84ebb55b014d9c0af989c5422b56a08b"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_review_matched_g2_5_20261009_v1/catalog.json",
+      "sha256": "90ae5b4d1085ef316213a2b25ecf0f6202268b5d99e0d96d6ac5616cad11d3da"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_review_matched_g2_5_20261009_v1/catalog.json",
+      "sha256": "90ae5b4d1085ef316213a2b25ecf0f6202268b5d99e0d96d6ac5616cad11d3da"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_review_matched_g2_5_20261009_v1/frontend_smoke.json",
+      "sha256": "e164ae1428c9676464c0d5f364829ea3bcdb6df073cad9b7bc0fff519acd4620"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_review_matched_g2_5_20261009_v1/frontend_smoke.json",
+      "sha256": "e164ae1428c9676464c0d5f364829ea3bcdb6df073cad9b7bc0fff519acd4620"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_review_matched_g2_5_20261009_v1/summary.json",
+      "sha256": "7bf4f3a3760d538294cbf389d6bbc05b20f4b6614c0aed72d4f52c5e3fbec1d1"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/outputs/itm_rework/protocol/expanded_canonical_review_matched_g2_5_20261009_v1/summary.json",
+      "sha256": "7bf4f3a3760d538294cbf389d6bbc05b20f4b6614c0aed72d4f52c5e3fbec1d1"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/scripts/evaluate_expanded_canonical_pilot.py",
+      "sha256": "8793bea42f213118d075a4c99e0c86bbdb617254f260db7dbf02ad808a29589f"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/scripts/evaluate_expanded_canonical_pilot.py",
+      "sha256": "8793bea42f213118d075a4c99e0c86bbdb617254f260db7dbf02ad808a29589f"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/scripts/export_expanded_canonical_demo.py",
+      "sha256": "37c2fbe0bad6525f896cfb628a4f6b116041e38c9ce9aff050f173af3bf29c54"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/scripts/export_expanded_canonical_demo.py",
+      "sha256": "37c2fbe0bad6525f896cfb628a4f6b116041e38c9ce9aff050f173af3bf29c54"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/scripts/freeze_expanded_longer_training.py",
+      "sha256": "71b1551f2f6c3d85d83b71ecde5af9959c70e2b07d8f28532eb830030e15e787"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/scripts/freeze_expanded_longer_training.py",
+      "sha256": "71b1551f2f6c3d85d83b71ecde5af9959c70e2b07d8f28532eb830030e15e787"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/scripts/freeze_expanded_matched_guidance.py",
+      "sha256": "37733e0790b99a60951916afe7c23cdc15a6ce9e5cdde7ed1fb902dee23722ab"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/scripts/freeze_expanded_matched_guidance.py",
+      "sha256": "37733e0790b99a60951916afe7c23cdc15a6ce9e5cdde7ed1fb902dee23722ab"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/scripts/prepare_expanded_canonical_inputs.py",
+      "sha256": "749921ceacc4deced8989484b5d7b7390b2ad1e2d616570098466e98bcae4c5a"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/scripts/prepare_expanded_canonical_inputs.py",
+      "sha256": "749921ceacc4deced8989484b5d7b7390b2ad1e2d616570098466e98bcae4c5a"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/scripts/prepare_expanded_canonical_pilot.py",
+      "sha256": "95f7fb64d216fc51988435bb5744371de0f8e7ab1e971751631b9f1cb1e45ec9"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/scripts/prepare_expanded_canonical_pilot.py",
+      "sha256": "95f7fb64d216fc51988435bb5744371de0f8e7ab1e971751631b9f1cb1e45ec9"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/scripts/run_expanded_canonical_sampling.py",
+      "sha256": "cda1ee2be1496fc51ee304d3d239c7d5047a6910ebfb395087541705b54b6fbc"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/scripts/run_expanded_canonical_sampling.py",
+      "sha256": "cda1ee2be1496fc51ee304d3d239c7d5047a6910ebfb395087541705b54b6fbc"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/scripts/run_expanded_canonical_training.py",
+      "sha256": "a3fc74574e07c16cea22c684719631ceeb2c30b155643ec6425cbd3e63b26ff4"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/scripts/run_expanded_canonical_training.py",
+      "sha256": "a3fc74574e07c16cea22c684719631ceeb2c30b155643ec6425cbd3e63b26ff4"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/a200/0proj/ITM/scripts/verify_expanded_canonical_inputs.py",
+      "sha256": "7a2ae538fb0a1a52c739196c98361000833b680942030662bafe89170eaf0dff"
+    },
+    "copy": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/expanded_canonical_delivery_20261009_v1/scripts/verify_expanded_canonical_inputs.py",
+      "sha256": "7a2ae538fb0a1a52c739196c98361000833b680942030662bafe89170eaf0dff"
+    }
+  }
+]
