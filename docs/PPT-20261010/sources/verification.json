@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "input_SHA256_checked": 169,
+  "aggregate_scalar_checks": 80,
+  "slides": 25,
+  "speaker_notes": 25,
+  "shapes_checked": 687,
+  "embedded_full_videos": 2,
+  "standalone_full_videos": [
+    {
+      "path": "visualizations/val_000382.mp4",
+      "frames": 94,
+      "fps": 20.0,
+      "whole_clip": true
+    },
+    {
+      "path": "visualizations/train_000027.mp4",
+      "frames": 104,
+      "fps": 20.0,
+      "whole_clip": true
+    },
+    {
+      "path": "visualizations/train_004728.mp4",
+      "frames": 158,
+      "fps": 20.0,
+      "whole_clip": true
+    },
+    {
+      "path": "visualizations/train_000506.mp4",
+      "frames": 136,
+      "fps": 20.0,
+      "whole_clip": true
+    }
+  ],
+  "PDF_pages": 25,
+  "local_markdown_links_checked": 42,
+  "offline_player": {
+    "cases": 6,
+    "draw_calls": 25,
+    "controls": "case selection, full-range slider, world toggle, play",
+    "finite_coordinates": true,
+    "actual_browser_rendering": false
+  },
+  "desktop_Office_rendering": "not available; program-rendered layout previews inspected",
+  "experiment_mutations": 0,
+  "new_model_calls": 0,
+  "GPU_queries": 0
+}

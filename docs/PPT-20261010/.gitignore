@@ -1,0 +1,8 @@
+# Derived page previews; regenerate with build_briefing.py.
+/previews/
+
+# Duplicate full motion arrays are already embedded in offline_review.html.
+/visualizations/motion_data.json
+
+# Per-textbox layout diagnostics; the final verification report is retained.
+/sources/layout_checks.json
