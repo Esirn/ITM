@@ -1,0 +1,6 @@
+{
+  "status": "failed",
+  "phase": "CPU independent formula self-check",
+  "location": "path_contrasts/x_t_difference_rms",
+  "reason": "Evaluator used float32 subtraction/square/mean while independent formula uses float64. Data, software anchor thresholds and primary temporal metrics unchanged."
+}

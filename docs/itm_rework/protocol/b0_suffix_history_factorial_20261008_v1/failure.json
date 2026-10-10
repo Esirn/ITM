@@ -1,0 +1,11 @@
+{
+  "status": "CPU_source_validation_rejected_no_GPU_execution",
+  "reason": "Three baseline intermediate traces per config incorrectly referenced paired slots; original final sample was text-only.",
+  "replacement": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_history_factorial_20261008_v2/package.json",
+    "sha256": "abd7894aaf4fdc90f7fa35d595b51152fb8a9533c64accbed0c0e5928034d40c"
+  },
+  "new_GPU_queries": 0,
+  "new_model_calls": 0,
+  "scientific_completed_results_changed": false
+}

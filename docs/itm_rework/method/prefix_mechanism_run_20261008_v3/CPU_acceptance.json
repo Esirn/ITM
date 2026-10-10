@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "package_sha256": "8b32b863da7a530cc71350384663678adfd072f8db53bbb01add176b3040853c",
+  "implementation_sha256": "be04358cbeca4d35b4aeed2d3222f4f1013105cf6ab930e011eb8c16a113194f",
+  "inherited_tests": 16,
+  "new_budget_tests": 4,
+  "inherited_acceptance": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_implementation_20261008_v2/CPU_acceptance.json",
+    "sha256": "87ca3e8c4c73bbf6b33309661fc58fa121417452d9a5c43273a663b6a8294d2d"
+  },
+  "artifacts": [
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_implementation_20261008_v2/CPU_acceptance.json",
+      "sha256": "87ca3e8c4c73bbf6b33309661fc58fa121417452d9a5c43273a663b6a8294d2d"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_implementation_20261008_v3/CPU_budget_tests.log",
+      "sha256": "b3e16f2462e4a20514412e0ccf822cb2c52e4d39b43434a79d5a8ee542190391"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_implementation_20261008_v3/source_delta.json",
+      "sha256": "45398664f1703f16a7751233844c9a617ce75707e6809c6d18bf4181fe2ca174"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/tests/test_prefix_long_budget.py",
+      "sha256": "664040f724ffc0ac4914d2df082439f481c5c59ae77ae45dab4f1ab9222ffded"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_implementation_20261008_v2/CPU_evaluation_precision_fix.json",
+      "sha256": "7c82b9b3dd09c988a61a17c458d03b64740c21fec66680fbc435b44ac84ba01c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_implementation_20261008_v1/CPU_acceptance.json",
+      "sha256": "c42f8341eb049b540b6f7b80d3b87c2ed98be6ebed7bf8c0cd3759f7f143279c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_implementation_20261008_v2/CPU_resource_tests.log",
+      "sha256": "6b41dd1ae189032ff0beca57398221f22f700cdbfa7b5ca1d1162875c8a95dbf"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_implementation_20261008_v2/source_delta.json",
+      "sha256": "c9ebcec75a0044412d255595d57852dc18414c15d4eee8fe8316650e4bc71194"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/tests/test_contended_prefix_preflight.py",
+      "sha256": "66e7dfe9f8832fd1c2d100d4d21d50bfa61bb8cbe3355076cf4adf8886aba981"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_implementation_20261008_v1/CPU_tests_primary.log",
+      "sha256": "f22d609eeac963d19d087eaaae6c8ed7bfcfb653723f9aff60f89e005fb007b8"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_implementation_20261008_v1/CPU_tests_parent.log",
+      "sha256": "0e0bb34f3c77675c3a8f6997d0cd79d96a6511395e8f900dfaaae7848453d032"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_implementation_20261008_v1/CPU_fixture_evaluation.json",
+      "sha256": "b3bcecde51e0df411cb105bc405a84a5f8a12c4a44ac6c1eeff92f54ac386f40"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_implementation_20261008_v1/CPU_failure_evaluation.json",
+      "sha256": "cefd5e0ee2e6238b7f1443c3f8d88813baf221be896029fc8e9419fadbfa712e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/tests/test_mdm_prefix_mechanism.py",
+      "sha256": "a36ca8d7343215ef4ddf344c1296a561007af7b7c2f211ec43352a85d1eeb22c"
+    }
+  ],
+  "dependencies_verified": 2659,
+  "new_real_model_forwards": 0,
+  "new_GPU_queries": 0,
+  "independent_review": false
+}

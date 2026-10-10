@@ -1,0 +1,578 @@
+[
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "condition": "paired",
+    "energy_ratio": 1.4630023465837343
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "condition": "text_only",
+    "energy_ratio": 1.5006534398705695
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "condition": "physical_static",
+    "energy_ratio": 1.5006534398705695
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "condition": "paired",
+    "energy_ratio": 0.9775986641754879
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "condition": "text_only",
+    "energy_ratio": 0.7631893182377123
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "condition": "physical_static",
+    "energy_ratio": 0.7631893182377123
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "condition": "paired",
+    "energy_ratio": 1.806665112005231
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "condition": "text_only",
+    "energy_ratio": 1.853646284793816
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "condition": "physical_static",
+    "energy_ratio": 1.853646284793816
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "condition": "paired",
+    "energy_ratio": 1.8698157047410422
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "condition": "text_only",
+    "energy_ratio": 1.0398314028128735
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "condition": "physical_static",
+    "energy_ratio": 1.0398314028128735
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "condition": "paired",
+    "energy_ratio": 0.1784305407340334
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "condition": "text_only",
+    "energy_ratio": 0.20839691470930266
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "condition": "physical_static",
+    "energy_ratio": 0.20839691470930266
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "condition": "paired",
+    "energy_ratio": 0.22972057227967366
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "condition": "text_only",
+    "energy_ratio": 0.25369249983730774
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "condition": "physical_static",
+    "energy_ratio": 0.25369249983730774
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "condition": "paired",
+    "energy_ratio": 0.7510797679384748
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "condition": "text_only",
+    "energy_ratio": 0.6489772769942034
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "condition": "physical_static",
+    "energy_ratio": 0.6489772769942034
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "condition": "paired",
+    "energy_ratio": 0.9243260437833941
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "condition": "text_only",
+    "energy_ratio": 0.5199566997979405
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "condition": "physical_static",
+    "energy_ratio": 0.5199566997979405
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "condition": "paired",
+    "energy_ratio": 2.019156869913973
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "condition": "text_only",
+    "energy_ratio": 0.9950828577124164
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "condition": "physical_static",
+    "energy_ratio": 0.9950828577124164
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "condition": "paired",
+    "energy_ratio": 0.0010693177143780543
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "condition": "text_only",
+    "energy_ratio": 0.7048120082821144
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "condition": "physical_static",
+    "energy_ratio": 0.7048120082821144
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "condition": "paired",
+    "energy_ratio": 0.32696070150867373
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "condition": "text_only",
+    "energy_ratio": 0.3529321616835812
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "condition": "physical_static",
+    "energy_ratio": 0.3529321616835812
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "condition": "paired",
+    "energy_ratio": 0.9931015710173036
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "condition": "text_only",
+    "energy_ratio": 0.13785203765910278
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "condition": "physical_static",
+    "energy_ratio": 0.13785203765910278
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "condition": "paired",
+    "energy_ratio": 1.4487912837402475
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "condition": "text_only",
+    "energy_ratio": 1.5006534398705695
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "condition": "physical_static",
+    "energy_ratio": 1.5006534398705695
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "condition": "paired",
+    "energy_ratio": 1.1372195277686927
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "condition": "text_only",
+    "energy_ratio": 0.7631893182377123
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "condition": "physical_static",
+    "energy_ratio": 0.7631893182377123
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "condition": "paired",
+    "energy_ratio": 1.8569499772872609
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "condition": "text_only",
+    "energy_ratio": 1.853646284793816
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "condition": "physical_static",
+    "energy_ratio": 1.853646284793816
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "condition": "paired",
+    "energy_ratio": 1.3734803993973133
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "condition": "text_only",
+    "energy_ratio": 1.0398314028128735
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "condition": "physical_static",
+    "energy_ratio": 1.0398314028128735
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "condition": "paired",
+    "energy_ratio": 0.1772624313439296
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "condition": "text_only",
+    "energy_ratio": 0.20839691470930266
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "condition": "physical_static",
+    "energy_ratio": 0.20839691470930266
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "condition": "paired",
+    "energy_ratio": 0.22457639989913078
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "condition": "text_only",
+    "energy_ratio": 0.25369249983730774
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "condition": "physical_static",
+    "energy_ratio": 0.25369249983730774
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "condition": "paired",
+    "energy_ratio": 0.7673334831790839
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "condition": "text_only",
+    "energy_ratio": 0.6489772769942034
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "condition": "physical_static",
+    "energy_ratio": 0.6489772769942034
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "condition": "paired",
+    "energy_ratio": 0.9211461758975277
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "condition": "text_only",
+    "energy_ratio": 0.5199566997979405
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "condition": "physical_static",
+    "energy_ratio": 0.5199566997979405
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "condition": "paired",
+    "energy_ratio": 1.8230202751277826
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "condition": "text_only",
+    "energy_ratio": 0.9950828577124164
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "condition": "physical_static",
+    "energy_ratio": 0.9950828577124164
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "condition": "paired",
+    "energy_ratio": 1.1114744851830176
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "condition": "text_only",
+    "energy_ratio": 0.7048120082821144
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "condition": "physical_static",
+    "energy_ratio": 0.7048120082821144
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "condition": "paired",
+    "energy_ratio": 0.39370732285335114
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "condition": "text_only",
+    "energy_ratio": 0.3529321616835812
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "condition": "physical_static",
+    "energy_ratio": 0.3529321616835812
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "condition": "paired",
+    "energy_ratio": 0.9265552191505093
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "condition": "text_only",
+    "energy_ratio": 0.13785203765910278
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "condition": "physical_static",
+    "energy_ratio": 0.13785203765910278
+  }
+]

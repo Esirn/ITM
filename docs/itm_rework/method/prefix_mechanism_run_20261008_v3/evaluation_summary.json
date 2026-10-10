@@ -1,0 +1,27 @@
+{
+  "package_sha256": "8b32b863da7a530cc71350384663678adfd072f8db53bbb01add176b3040853c",
+  "queue_status": "completed",
+  "failure": null,
+  "traces": {
+    "valid": 180
+  },
+  "probes": {
+    "valid": 360
+  },
+  "branches": {
+    "valid": 1440
+  },
+  "weight_contrasts": {
+    "valid": 720
+  },
+  "path_contrasts": {
+    "valid": 180
+  },
+  "terminals": {
+    "valid": 36
+  },
+  "new_evaluation_GPU_queries": 0,
+  "new_evaluation_model_calls": 0,
+  "new_full_motion_decodes": 0,
+  "interpretation": "Conditional fixed-seed/panel short-prefix diagnostics only. No full-motion behavior repair, unique mechanism, training sufficiency or generalization certification."
+}

@@ -1,0 +1,16 @@
+{
+  "status": "completed",
+  "implementation_sha256": "21b4252a8fdc3bfc0a516fe35b71eda3ce1cb97f96418bd308aedcf9c6843a01",
+  "trajectories": 4,
+  "MDM_calls": 3600,
+  "checks": 7244,
+  "worker_artifacts": 7242,
+  "metric_scalar_checks": 8422,
+  "wall_seconds": 563.8164772340097,
+  "peak_allocated_bytes": 527068672,
+  "primary_intervention_support": "not_supported",
+  "original_F_behavior": "not_supported",
+  "next_task": "Frozen complete900-step CPU saved response plan; no new GPU/model/noise/decode needed.",
+  "independent_review": false,
+  "paper_claims_changed": false
+}

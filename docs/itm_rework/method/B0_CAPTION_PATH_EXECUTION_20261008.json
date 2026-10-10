@@ -1,0 +1,25 @@
+{
+  "version": "itm-caption-path-execution-v1",
+  "authorized": true,
+  "approved_by": "user_standing_delegation",
+  "GPU_shared_policy": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/GPU_SHARED_EXECUTION_POLICY_20261008.json",
+    "sha256": "554db16d964ba650cdf755b6d203ecb51534b07eecc0752da765f8cdef2fbfb1"
+  },
+  "standing_policy": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/GPU_EXECUTION_POLICY_20261008.json",
+    "sha256": "6d63492234840f349b7ff67ef222499ca20987a9f9c75fb49b32e7444fc91179"
+  },
+  "plan": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/caption_path_implementation_20261008_v1/plan.json",
+    "sha256": "1dc36d7cfd7d13166c34255a75c5c2f1216b8bf7b8b85bab707a0cdcb2d0f3d0"
+  },
+  "CPU_tests": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/caption_path_implementation_20261008_v1/CPU_tests.log",
+    "sha256": "4630317ae9c9c20fcca0bbfcf9bd623c572a322bdb9593b4187b18579a76321f"
+  },
+  "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/caption_path_authorized_20261008_v1",
+  "absolute_seconds": 120,
+  "scope": "Separate4MDM/18examples,2caption/6examples,6E on one saved state; native batch1/5 versus MDMbatch4/5 only. Original1e-6 anchors unchanged, no main-queue resume or extra training/sampling."
+}

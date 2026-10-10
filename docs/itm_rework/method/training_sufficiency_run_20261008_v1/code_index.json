@@ -1,0 +1,62 @@
+[
+  {
+    "source": {
+      "path": "src/itm/models/mdm_training_sufficiency.py",
+      "sha256": "5c425fd2d0421e72cb7000b0f623415751b4da5681bb29f767b76f67755115a3"
+    },
+    "archive": {
+      "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/code/mdm_training_sufficiency.py",
+      "sha256": "5c425fd2d0421e72cb7000b0f623415751b4da5681bb29f767b76f67755115a3"
+    }
+  },
+  {
+    "source": {
+      "path": "scripts/run_mdm_training_sufficiency_worker.py",
+      "sha256": "d8d76d43bf6e43c431d0ebd00f98c5e525ceb2f1ce57ed77235bd3b4b4d230a7"
+    },
+    "archive": {
+      "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/code/run_mdm_training_sufficiency_worker.py",
+      "sha256": "d8d76d43bf6e43c431d0ebd00f98c5e525ceb2f1ce57ed77235bd3b4b4d230a7"
+    }
+  },
+  {
+    "source": {
+      "path": "scripts/run_mdm_training_sufficiency_bounded.py",
+      "sha256": "38b13b105f650eb22ee004c9fdb717989ca2798effac4ed3d155e0ecd0d0302a"
+    },
+    "archive": {
+      "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/code/run_mdm_training_sufficiency_bounded.py",
+      "sha256": "38b13b105f650eb22ee004c9fdb717989ca2798effac4ed3d155e0ecd0d0302a"
+    }
+  },
+  {
+    "source": {
+      "path": "scripts/evaluate_b0_training_sufficiency.py",
+      "sha256": "a48788c6c1acfc2cd39b325108d0e76150990e3dd616f601ab4443e0ab668f58"
+    },
+    "archive": {
+      "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/code/evaluate_b0_training_sufficiency.py",
+      "sha256": "a48788c6c1acfc2cd39b325108d0e76150990e3dd616f601ab4443e0ab668f58"
+    }
+  },
+  {
+    "source": {
+      "path": "scripts/verify_b0_training_sufficiency_delivery.py",
+      "sha256": "e1b4cee1d3e0cb802f331c20dd52879221250ba5674c66ff6dcea1efd929844e"
+    },
+    "archive": {
+      "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/code/verify_b0_training_sufficiency_delivery.py",
+      "sha256": "e1b4cee1d3e0cb802f331c20dd52879221250ba5674c66ff6dcea1efd929844e"
+    }
+  },
+  {
+    "source": {
+      "path": "tests/test_mdm_training_sufficiency.py",
+      "sha256": "b8f4a6c8699f05b709a48c044c48fd60e9bffa10558a5a728a059814da543b6f"
+    },
+    "archive": {
+      "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/code/test_mdm_training_sufficiency.py",
+      "sha256": "b8f4a6c8699f05b709a48c044c48fd60e9bffa10558a5a728a059814da543b6f"
+    }
+  }
+]

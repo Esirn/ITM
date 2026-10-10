@@ -1,0 +1,23 @@
+{
+  "version": "itm-GPU-contended-execution-policy-v1",
+  "authorized": true,
+  "approved_by": "user",
+  "date": "2026-10-08",
+  "user_instruction": "虽然GPU利用率为99%，但如果我们跑任务的话应该不会只用1%吧？应该是能自动从其他任务那里“抢”到一些运算资源，不至于让哪个任务崩溃，那就运行吧",
+  "standing_delegation": "GPU_EXECUTION_POLICY_20261008.json",
+  "supersedes": "GPU/shared-memory-controller utilization gates from GPU_SHARED_EXECUTION_POLICY_20261008.json and the old prefix package resource-policy description, for fresh attempts. Utilization is recorded but never rejects admission.",
+  "resource_gates": {
+    "minimum_free_MiB": 4096,
+    "samples": 3,
+    "sample_interval_seconds": 2
+  },
+  "interpretation": "Utilization measures activity over a sampling interval, not a fixed compute quota. Concurrent contexts may share compute time with variable throughput; no guarantee that unrelated workloads cannot fail.",
+  "preserved_constraints": [
+    "No stopping, reprioritizing or changing unrelated processes or GPU global settings.",
+    "Original scientific package/checkpoints/inputs/random addresses/prediction paths/metrics/tolerances remain fixed.",
+    "One GPU per fresh attempt; 600 seconds absolute deadline and 24GiB allocated cap, not a reservation.",
+    "First timeout/OOM/nonfinite/identity/count/software fault stops the queue; no automatic retry, fallback or resume.",
+    "Native UUID isolation and project-exclusive lock; record raw resource samples and compute processes."
+  ],
+  "manual_GPU_approval_required": false
+}

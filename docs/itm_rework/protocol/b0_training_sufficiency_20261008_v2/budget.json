@@ -1,0 +1,39 @@
+{
+  "version": "itm-training-sufficiency-budget-v1",
+  "status": "frozen_pending_implementation",
+  "MDM_calls": 1152,
+  "MDM_examples": 4608,
+  "encoder_batch1_calls": 432,
+  "caption_batch1_calls": 12,
+  "states": 192,
+  "jobs": 1152,
+  "branch_predictions": 4608,
+  "software_checks": 2880,
+  "GPUs": 1,
+  "memory_GiB": 24,
+  "absolute_seconds": 600,
+  "prohibited": {
+    "new_training": 0,
+    "new_checkpoints": 0,
+    "full_sampling": 0,
+    "q_sample": 0,
+    "new_noise": 0,
+    "posterior": 0,
+    "CFG": 0,
+    "motion_decode": 0,
+    "warmup": 0,
+    "retries": 0
+  },
+  "deadline_rule": "One absolute deadline from BEFORE preflight, includes identities/load/encode/forward/raw-save/check/receipt validation; do not reset by snapshot or reuse old budget.",
+  "stopping": "First identity/timeout/OOM/nonfinite/count/software failure stops entire queue. Poor finite model quality never stops population. Predeclare all192states/1152jobs/4608branches/2880checks; reserve, actual, completed counters separately; preserve completed/failed/not_run_after_stop.",
+  "prerequisites": [
+    "Implement bounded worker/supervisor and incremental CPU failure/cache/identity tests",
+    "Create final dependency manifest and concrete unique run/GPU record under standing user delegation",
+    "Run once after preflight without interfering with unrelated processes"
+  ],
+  "standing_delegation": {
+    "path": "docs/itm_rework/GPU_EXECUTION_POLICY_20261008.json",
+    "sha256": "6d63492234840f349b7ff67ef222499ca20987a9f9c75fb49b32e7444fc91179"
+  },
+  "manual_GPU_approval_required": false
+}

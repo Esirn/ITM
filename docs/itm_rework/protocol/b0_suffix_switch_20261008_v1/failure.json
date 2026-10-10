@@ -1,0 +1,11 @@
+{
+  "status": "CPU_preparation_failed_no_package",
+  "reason": "Prefix implementation snapshots are a dict, not a list; no scientific queue started",
+  "replacement": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/package.json",
+    "sha256": "6f84cef7715b94f4ea3b8df374691b48104beee3424f24a931f13fcb616e0e8d"
+  },
+  "new_GPU_queries": 0,
+  "new_model_calls": 0,
+  "new_noise_draws": 0
+}

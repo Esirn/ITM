@@ -1,0 +1,50 @@
+[
+  {
+    "path": "docs/itm_rework/method/feature_balance_run_20261007_v1/commands.md",
+    "sha256": "33e1db5c960d5b5457441846649de0c7fc7dce82977a41e44cb7742754feebd4"
+  },
+  {
+    "path": "docs/itm_rework/method/feature_balance_run_20261007_v1/delivery_integrity.json",
+    "sha256": "d0fc786354f8918814db09cacb8e5b1615dc3a9b9e78b1e4817c1345a8125ad7"
+  },
+  {
+    "path": "docs/itm_rework/method/feature_balance_run_20261007_v1/evaluation.log",
+    "sha256": "598b72465a5714214efc256bc09966b27e50352d4e3991f3b5095963eca3801d"
+  },
+  {
+    "path": "docs/itm_rework/method/feature_balance_run_20261007_v1/execute.log",
+    "sha256": "a0feb916247e2abce0e9d254590b2eb67c3a2bfa4206a8d8e03d30bfb036e872"
+  },
+  {
+    "path": "docs/itm_rework/method/feature_balance_run_20261007_v1/execution_summary.json",
+    "sha256": "7e32d57b260e7a491b6c0f2db4d88b9f9364204ca5859e1aed8a249c6e72ab28"
+  },
+  {
+    "path": "docs/itm_rework/method/feature_balance_run_20261007_v1/launch_identity.json",
+    "sha256": "5a7557b2af1dc76dd3a2fd96e21ac81aba18bc2d52b51294dfcd9c3be13b6652"
+  },
+  {
+    "path": "docs/itm_rework/method/feature_balance_run_20261007_v1/runtime/status.json",
+    "sha256": "3ab1488ee9207558424645c031b28cee8db4442d3a947d807f20c09b6e7571fe"
+  },
+  {
+    "path": "docs/itm_rework/method/feature_balance_run_20261007_v1/verify_delivery.py",
+    "sha256": "e5f4980033f2284b482f0864eb7630020018fcc78c4189926e56038f2938e45d"
+  },
+  {
+    "path": "docs/itm_rework/method/B0_FEATURE_BALANCE_AUTHORIZATION_20261005_V2.json",
+    "sha256": "3a3698cfe18ed0f23c1eecaa7a8836a8af5849d974b230bd0021e0dad437654e"
+  },
+  {
+    "path": "docs/itm_rework/method/B0_FEATURE_BALANCE_GPU_DIAGNOSTIC_REQUEST_20261007.json",
+    "sha256": "065dee959ca5da3ea545444b6d613cce97f869411574b331e6bf1990909d7b0c"
+  },
+  {
+    "path": "docs/itm_rework/B0_FEATURE_BALANCE_RUN_20261007.md",
+    "sha256": "6af769ead02027c850094842c4286e41a528830066790aeaa531d80fa263d882"
+  },
+  {
+    "path": "outputs/itm_rework/protocol/feature_balance_failed_evaluation_20261007_v1/artifact_index.json",
+    "sha256": "cb05a2fbe61cd9b27676a92a7832df9a4f9f2ac4a4844caec968d617221eefd6"
+  }
+]

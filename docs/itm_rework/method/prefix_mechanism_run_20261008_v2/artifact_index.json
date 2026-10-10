@@ -1,0 +1,194 @@
+[
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/B0_PREFIX_MECHANISM_CONTENDED_RUN_20261008.md",
+    "sha256": "1f070c3f518423f3d84ac59edde81492b0fdb8aaf6b055c4938c065ab0a81cb6"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/B0_PREFIX_MECHANISM_EXECUTION_20261008_V2.json",
+    "sha256": "7a16f65a037f00d3c691c64c976da19a8d74388e40a80406eab1f0375e480ac0"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/B0_PREFIX_MECHANISM_LONGER_BUDGET_PLAN_20261008.json",
+    "sha256": "8b8bd3009943aef50242b9ae0909489628d1d440bd9d42513dff94a1b8487dcb"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/CPU_acceptance.json",
+    "sha256": "87ca3e8c4c73bbf6b33309661fc58fa121417452d9a5c43273a663b6a8294d2d"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/CPU_evaluation_precision_fix.json",
+    "sha256": "7c82b9b3dd09c988a61a17c458d03b64740c21fec66680fbc435b44ac84ba01c"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/CPU_resource_tests.log",
+    "sha256": "6b41dd1ae189032ff0beca57398221f22f700cdbfa7b5ca1d1162875c8a95dbf"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/GPU_CONTENDED_EXECUTION_POLICY_20261008.json",
+    "sha256": "eb89f0f66c86a15368a3d0a4bf5db35027b380a642f2c43c04c59624cbd30d72"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/code/scripts/evaluate_b0_prefix_mechanism.py",
+    "sha256": "7acbc7e816ae8ac0498a824d7f049bc2e10f3e6e1c5b1e9e5175fd21e5bf7e73"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/code/scripts/evaluate_b0_prefix_mechanism_v2.py",
+    "sha256": "59b9f36bface042ff517ef2ee6e1d6534f79bc716d4f47f222c84e8b216211e3"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/code/scripts/itm_contended_gpu_preflight.py",
+    "sha256": "1c5f088521731df4e71578c150d318081ca3ec372d8192a8f44915836ecd5e90"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/code/scripts/run_mdm_contended_prefix_mechanism_bounded.py",
+    "sha256": "793a7f195d4ec99f90192feea8f7fd68ff96854e8e677b6d341c9dd1f63856c9"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/code/scripts/run_mdm_prefix_mechanism_worker.py",
+    "sha256": "4e83c0c30236678eb2ecede17ae607b11c1b803bb2840725dd26217eef1ea4b9"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/code/scripts/summarize_b0_prefix_mechanism.py",
+    "sha256": "1dec924493115eebf667c248f1b8913e8dc7d88395ea0097843c98f57bf9be49"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/code/scripts/verify_b0_prefix_results.py",
+    "sha256": "243ddeded34a83cf55ee3eb5fd49fa4bfa19ed7f35aefc05dd19e174e44dc786"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/code/src/itm/models/mdm_prefix_mechanism.py",
+    "sha256": "7d523acc3fe6d10aaf0fc2693193814c4663455bddc6f08c45caf964a61d23b1"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/code/tests/test_contended_prefix_preflight.py",
+    "sha256": "66e7dfe9f8832fd1c2d100d4d21d50bfa61bb8cbe3355076cf4adf8886aba981"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/diagnostic_verification.json",
+    "sha256": "d84c010e98d15ace635a8ffed5e51b7815f684a11550413788c6ad9955c39d7c"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/diagnostic_verification_first_failure.json",
+    "sha256": "2e18d4ac773f8d81ea18adf5865f17e711dc34c60a5b8e2ef0f065ebd9a1d0b3"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/evaluation_v2_artifact_index.json",
+    "sha256": "ed707db141cfbc01deba669f038ae5d94019382191e96180a305e88796c41648"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/evaluation_v2_summary.json",
+    "sha256": "1d82e475a25de2b51f1b1b11542983bf6fd0e952c5f84cfd7510484e6f6ad52a"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/evaluation_v3_artifact_index.json",
+    "sha256": "da9f719990a83c8fe95779f5a85eab9291d99c04e3aa897211f9895ce55aab21"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/evaluation_v3_summary.json",
+    "sha256": "1d82e475a25de2b51f1b1b11542983bf6fd0e952c5f84cfd7510484e6f6ad52a"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/implementation.json",
+    "sha256": "48a12948ade4a006e70b28cdc44fab8d3bb3fff2c63d15933e815c574118eff9"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/panel_all_prefix_panel.json",
+    "sha256": "66587f0e5838fea153f6ec61cbb8469f86e14dbb2c79d2c867e059db61adb4f4"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/panel_all_same_state_panel.json",
+    "sha256": "117fa18a89ee751bf4d8a63d07bc3a68c12f7194867e8e5a679a34d71cb530e6"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/panel_artifact_index.json",
+    "sha256": "48090e0eb52b8cab3dfdceadbbbdc1a65665e99919d8c001a7656bb9592e1233"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/panel_primary_prefix_energy.png",
+    "sha256": "03cee09c44f122b3c2e94199064163f1286d1e3768de4759f6bdf78a76df901d"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/post_run_compute_processes.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/post_run_compute_processes.stdout",
+    "sha256": "f080e38800e7ab9f7c3c9450c7cab7800fce6ae6b0bcd5aa674d6fd63b289c54"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/post_run_process_presence.json",
+    "sha256": "7a6f178b4b8479f0e36c377b770822e1a308e4feb6e8d0e2677dc09426ff7b95"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/run_artifact_index.json",
+    "sha256": "361a6c4a282b77dc801f2583ab6823bafe5a9d7faa601b6b257c94f65e4be1ac"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/run_summary.json",
+    "sha256": "c0ca247bb8249e2ebc75e4e863aab15dc10802d4ec8242feb5eddaca5c9221bd"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/runtime/prefix.context.json",
+    "sha256": "9a4e2d0f6949cd9030df56745a94cad37d8dff3a74c3424f2ca7b88e9ee809d0"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/runtime/prefix.log",
+    "sha256": "7d2223bc52014bf9886b8c783bd015aca50164cf646dadc3bc1b17c1a80cb2a0"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/runtime/prefix.receipt.journal.jsonl",
+    "sha256": "efd0ad62cd373ea080b6acf3c80a4b99f8ffe3c7a3de71cbf6ef56c360108cf8"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/runtime/prefix.receipt.json",
+    "sha256": "b4f9dcf03c942fb0a9e4216896fa41c4e4298fa173e9b4fb267e5c44127fbd79"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/runtime/preflight/compute_processes.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/runtime/preflight/compute_processes.stdout",
+    "sha256": "f080e38800e7ab9f7c3c9450c7cab7800fce6ae6b0bcd5aa674d6fd63b289c54"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/runtime/preflight/gpu_01.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/runtime/preflight/gpu_01.stdout",
+    "sha256": "9dda56816c63dc50c39735456a6bcf5a1c54ec0d3a508f573bcb19466c32d9f0"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/runtime/preflight/gpu_02.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/runtime/preflight/gpu_02.stdout",
+    "sha256": "e557cd74c67623dd56c4bd8d4ff8fce2b7bca40deeed1d558eb5a5dd7c8e1aa9"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/runtime/preflight/gpu_03.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/runtime/preflight/gpu_03.stdout",
+    "sha256": "ec9277aaaf4c7e1286dbef4dd6f3b491cbc1cae44e6c557d84291cc0ad1f8cbf"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/runtime/preflight/result.json",
+    "sha256": "e8bc513d1e36fc779f09e815b25b5ffc83551b4844a437a15419deecfd32eeca"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/runtime/status.json",
+    "sha256": "03f86bce017ab3de2f4994fd16c21440aa8648e4b361f279318f411fddf85d89"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/source_delta.json",
+    "sha256": "c9ebcec75a0044412d255595d57852dc18414c15d4eee8fe8316650e4bc71194"
+  },
+  {
+    "path": "docs/itm_rework/method/prefix_mechanism_run_20261008_v2/verifier_before_path_precision_fix.py",
+    "sha256": "243ddeded34a83cf55ee3eb5fd49fa4bfa19ed7f35aefc05dd19e174e44dc786"
+  }
+]

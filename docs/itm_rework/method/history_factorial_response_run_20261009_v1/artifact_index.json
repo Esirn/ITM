@@ -1,0 +1,238 @@
+[
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/execution_summary.json",
+    "sha256": "bddffdfc3dc5a68bcbe2bdf23d37c9530cc162e38ff46e388f20f2801d22a8d4"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/docs/itm_rework/GPU_CONTENDED_EXECUTION_POLICY_20261008.json",
+    "sha256": "eb89f0f66c86a15368a3d0a4bf5db35027b380a642f2c43c04c59624cbd30d72"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/docs/itm_rework/GPU_DEVICE_PREFERENCE_20261008.json",
+    "sha256": "bd156929862abef44824948c47ec0cc051cb0043c1afbd6c1db826ebeb9871a0"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/docs/itm_rework/GPU_EXECUTION_POLICY_20261008.json",
+    "sha256": "6d63492234840f349b7ff67ef222499ca20987a9f9c75fb49b32e7444fc91179"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/docs/itm_rework/protocol/B0_HISTORY_FACTORIAL_RESPONSE_EVALUATION_20261009.md",
+    "sha256": "89d3f6bc1fc0f5d9d1f6d523f67b3a155641352b399f5bb9f0b1eed4c85464a3"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_history_factorial_response_CPU_20261009_v1/plan.json",
+    "sha256": "2ac7d1f050970a53ab153ea6fe351b5a0d5095bb424429c983b8b5a23b5ef8fc"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/budgets.json",
+    "sha256": "fa25e7107f96881dd88afd5fa21b078193ed7262382ec23f5e35c92c44b98995"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/checkpoints.json",
+    "sha256": "35895316ce6a3729effc9574161c0aed95d4ab89bf70191170492df53e4845ba"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/design.json",
+    "sha256": "f3eaae6438ffde02d5876db2af409a9c6cefe8ca77231f5b9400b424974360ca"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/historical_anchors.json",
+    "sha256": "9879685d9681792b88835826ce9ebd0f39ae79b9e8e17927c73a8b8a8d1e2032"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/noise.json",
+    "sha256": "7d4bcb4099e198dad08fb5a14ff99fb66dd3531a7c2b66c78f850a239e81f5b5"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/package.json",
+    "sha256": "a0a4b0bee0f4d61729357dc7a4592d9c24a1b98cf5d1314211bce0a34de905a1"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/software_checks.json",
+    "sha256": "2f58b22f8f90734cfbee7cd42f6b9402b3aa7e8b8d387cd8e26eb363b62fc6ee"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/sources.json",
+    "sha256": "57dc6068fe154b9c31ed54c61007f42acb45eeab64c5cb2dd029bf63b44b42f3"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/starts.json",
+    "sha256": "a23618a25809525ff0953d82465dfaf78a7b971d78de79aff0e0ce509d11c597"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/trajectories.json",
+    "sha256": "951bbe6ab06561224c32927d33c716474b2624ba880b267a3d82035c4f47a825"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/method/history_factorial_response_freeze_tests_20261009_v1/pytest.xml",
+    "sha256": "52866d6d32397257f53923d9a0aea32ab1bdb23d5ed7c39e5f4e974f0d02fe72"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/method/history_factorial_response_implementation_20261009_v1/CPU_test_results.json",
+    "sha256": "b9b9afa678be3e44b34b5a8589026fe26ac5ca9c6b4810770a9e1c2b636f5dcf"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/method/history_factorial_response_implementation_20261009_v1/component_second_formula_verification.json",
+    "sha256": "373c21c5b4a37dd339d62188314b6827e86bc832fcb564761d6e231bf559db98"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/method/history_factorial_response_implementation_20261009_v1/delivery_verification.json",
+    "sha256": "1313b64ac563defa1d47ae4d6ace6402062cf61323ff21747ab37859bad3b78e"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/method/history_factorial_response_implementation_20261009_v1/implementation.json",
+    "sha256": "e39985bd594fd0c3a976f85d1d39b3d868a0ec460b86ac6b2040c945d8f08e15"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/method/history_factorial_response_implementation_20261009_v1/next_freeze_verification.json",
+    "sha256": "20c76441ef825314affe5b61f0df834a6ade7092b8876b5ef9ed1166b1bfaf51"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/method/history_factorial_response_implementation_20261009_v1/result_verification.json",
+    "sha256": "68f9f0148d311f1449dfa88052791dbad11a58e74c066fe436a9fe737b2230a2"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/method/suffix_response_implementation_20261008_v1/implementation.json",
+    "sha256": "179534723c15e07b4567b963ae4aefbd8fcee934e97842c8044ed409bc5a84bc"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/method/suffix_response_implementation_20261008_v1/result_verification.json",
+    "sha256": "8e827b17768cbebc7298328c1fbe1d5708f1a8706fb283b431ec9e80f676cf83"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/protocol/history_factorial_response_evaluation_20261009_v1/artifact_index.json",
+    "sha256": "06c256a32749f8a256db02b4173bd79e598f6a2b8c3206e23d7ee3aaf259e9b8"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/protocol/history_factorial_response_evaluation_20261009_v1/factorial_interactions.json",
+    "sha256": "5b52c22800026d32877c96b710195d67424e76b1fbe354a142e8cdbf720a09f1"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/protocol/history_factorial_response_evaluation_20261009_v1/inherited_F.json",
+    "sha256": "7a8eaa97569bd79dbee9087caf21cac4b25da7d03d3801d56f77ff1702f6fd8a"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/protocol/history_factorial_response_evaluation_20261009_v1/path_contrasts.json",
+    "sha256": "3def32b436de305910865b7906d260f83501b1ee562b2e20090da5271df345ec"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/protocol/history_factorial_response_evaluation_20261009_v1/rows.json",
+    "sha256": "283853e7bb976d9cb13f6f79951132c89b0f1e4013c8c130dcedb5e42da909b0"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/protocol/history_factorial_response_evaluation_20261009_v1/sources.json",
+    "sha256": "35334b20943ac3380a4e31c871b6b622c3632f3ea0edb89baeb8ae5fd22042e4"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/protocol/history_factorial_response_evaluation_20261009_v1/summary.json",
+    "sha256": "07bf2ba9a37487d9c227a930916e098bbbd658b27318e6694960d7eb7d5e5a01"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/protocol/history_factorial_response_panel_20261009_v1/all_time_panel.json",
+    "sha256": "6343265fc93a335852ffc8e3f7f39b24229f7f486ad0c501839f402e0518f6d5"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/protocol/history_factorial_response_panel_20261009_v1/artifact_index.json",
+    "sha256": "3871192beccfce30a6ab93163317e41f5cae683c105d710a638cdab5a113aad6"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/protocol/history_factorial_response_panel_20261009_v1/energy_effects.json",
+    "sha256": "2f98c433d3746b39cd7c3ddb296010a7320b09098bffbadac47d04acc9bb4f26"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/protocol/history_factorial_response_panel_20261009_v1/history_factorial_covariance.png",
+    "sha256": "22186cc7d4a7ecd1b79622407b0082cafdafc4d5e393a020cebf0333e904c967"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/protocol/history_factorial_response_panel_20261009_v1/history_factorial_response.png",
+    "sha256": "65d3189dc0808d0b52d363ff7c7b236311fce32d12d1693c54876c5e02182a46"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/protocol/history_factorial_response_panel_20261009_v1/summary.json",
+    "sha256": "58b53fd33b8f820af9e551950d549f639e1c939c249366116a9e246cbacb4ffe"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_response_component_algebra_20261009_v1/artifact_index.json",
+    "sha256": "aaa545cf77e73cde31a75f95bdc6910580002a3bd93d67604d30e3f017775693"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_response_component_algebra_20261009_v1/rows.json",
+    "sha256": "34709d5a8ec04b478fa56990b542ad6e8b544541670647ac96b3be1fa81ef1a0"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_response_component_algebra_20261009_v1/summary.json",
+    "sha256": "c26c6ead22db810728cca12c64e5f67123ed7099babda1d2fa8c9f321dc3e9d8"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_response_component_algebra_20261009_v1/verification.json",
+    "sha256": "b611104ee783221d9e121178ee870c4f2ad35a0c0ee3535ce430cccec38b03e6"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/outputs/itm_rework/protocol/suffix_response_evaluation_20261008_v1/artifact_index.json",
+    "sha256": "c9a40ab98e9b34bbbf04470e1fbe12df6cd9063018cef3307cc4341c1494198e"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/scripts/analyze_b0_history_factorial_responses.py",
+    "sha256": "28bbe463bba1a340f691ce9d943200e323f240f1925ce0030e45aca5327178e6"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/scripts/analyze_b0_suffix_responses.py",
+    "sha256": "d2a59d964f7885c2acddbb5e7ef8a18f5433dc4bcb50c77e13ce4724b5be5b5c"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/scripts/archive_b0_history_factorial_responses.py",
+    "sha256": "3ac48ac0722bc499cbe4e6bf9537df3422dbab5bae7a8aa0bf24350f2673fc9e"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/scripts/evaluate_b0_native_training_sufficiency.py",
+    "sha256": "bd6c917faabc0703611d1ae1db779f1c304f375b4e865e651145c533af2b622b"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/scripts/freeze_b0_imu_main_knockout.py",
+    "sha256": "c17028171cd262d6871342f7dfb21e9e19d5f2f06278690551be71b58978f083"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/scripts/summarize_b0_history_factorial_responses.py",
+    "sha256": "b380d69445d89a311426decf27b77751f7a613bab9f47c31346414d1145aed89"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/scripts/summarize_b0_imu_response_components.py",
+    "sha256": "32e17c5bd73fd9af4ea76d8856b9747a1efdebdb7e667f59738d1d60935ba70a"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/scripts/verify_b0_history_factorial_responses.py",
+    "sha256": "ce48f4e2a9493c5dd00648a3d049c41e490e62d9a58566e8bdfbb26d49029a51"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/scripts/verify_b0_history_response_delivery.py",
+    "sha256": "481dfe479adb14522a2f8a24fd2f17eabed2a227fe9136757ffa24d7abbdaf06"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/scripts/verify_b0_imu_component_algebra.py",
+    "sha256": "d730718d7f7744cfdeaabf97e7a68c07579fa980bc9e6d27a787a48773469524"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/src/itm/metrics/trace_response.py",
+    "sha256": "90156adbd7c3f26d593880e4e76b41b96ba1dabc572427cd10a146189f322bc1"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/src/itm/metrics/training_sufficiency.py",
+    "sha256": "109a2b37c22398c590352e88acfc5b40dbaa3feb839ddfb86190e1485c310d9e"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/tests/test_history_factorial_response_adapter.py",
+    "sha256": "926d704da110deac739120a6b2fdb89690373b4c14a8d3ac668f5e71a52527be"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/tests/test_imu_main_knockout_freeze.py",
+    "sha256": "5397d49b5f3399724b44b682a43b7cc8dee98999842eb2b267da1be598259e20"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/snapshot/tests/test_suffix_response_adapter.py",
+    "sha256": "00cc21ceb964a7e3974fc5ad16c292e6841b5433cd5f6c9e355b44e53d9e3274"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/history_factorial_response_run_20261009_v1/source_copy_index.json",
+    "sha256": "6b30e6f38cc82222a431a674266778492cbe4aa9dd0b69e7b1b4a3526f86fdc8"
+  }
+]

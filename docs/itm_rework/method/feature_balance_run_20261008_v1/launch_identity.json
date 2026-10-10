@@ -1,0 +1,7 @@
+{
+  "manifest_bound_files_verified": 1145,
+  "authorization_sha256": "20ea1433b39b0738ced8ed472f47d6c63103be0bc5c21ae41be6624f4a0f32cf",
+  "GPU_delegation_sha256": "6d63492234840f349b7ff67ef222499ca20987a9f9c75fb49b32e7444fc91179",
+  "cuda0_physical_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+  "run_directory_absent_before_launch": true
+}

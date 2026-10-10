@@ -1,0 +1,32 @@
+{
+  "package_sha256": "b7a471d587f7967601a5026cb23d7d276b101ab02eaafc055206c268fca78c37",
+  "queue_status": "failed",
+  "failure": {
+    "kind": "exception",
+    "type": "ValueError",
+    "message": "Frozen prefix equation failed: ANCH-PX001-F-f11"
+  },
+  "traces": {
+    "diagnostic_only": 5,
+    "missing": 175
+  },
+  "probes": {
+    "missing": 360
+  },
+  "branches": {
+    "missing": 1440
+  },
+  "weight_contrasts": {
+    "not_comparable": 720
+  },
+  "path_contrasts": {
+    "not_comparable": 180
+  },
+  "terminals": {
+    "missing": 36
+  },
+  "new_evaluation_GPU_queries": 0,
+  "new_evaluation_model_calls": 0,
+  "new_full_motion_decodes": 0,
+  "interpretation": "Conditional fixed-seed/panel short-prefix diagnostics only. No full-motion behavior repair, unique mechanism, training sufficiency or generalization certification."
+}

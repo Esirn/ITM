@@ -1,0 +1,12 @@
+{
+  "read_only_queries": 1,
+  "initial_other_pids": [
+    3800931,
+    3939569
+  ],
+  "still_present": [
+    3800931,
+    3939569
+  ],
+  "interpretation": "Presence confirms contexts persist, not workload health/completion or guaranteed compute share."
+}

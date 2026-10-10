@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "scope": "main-session self-check/replay, not independent 02 acceptance",
+  "real_F": 60,
+  "historical_U": 60,
+  "primary_metrics_recomputed": 600,
+  "contrasts_recomputed": 168,
+  "review_rows": 120,
+  "software_checks_passed": 48,
+  "traces_valid": 240,
+  "training_losses_valid": 600,
+  "primary_head": "not_supported",
+  "primary_wrists": "not_supported",
+  "primary_numeric_gates_all_passed": true,
+  "other_paired_numerical_regressions": 9,
+  "other_paired_denominator": 10,
+  "bound_runtime_files_verified": 1145,
+  "old_failures_unchanged": true,
+  "GPU_queries": 0,
+  "model_imports": 0,
+  "model_calls": 0,
+  "standing_GPU_delegation_active": true
+}

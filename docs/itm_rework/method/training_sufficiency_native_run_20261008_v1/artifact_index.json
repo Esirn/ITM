@@ -1,0 +1,134 @@
+[
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/CPU_acceptance.json",
+    "sha256": "57f29df233583f7fce7e2bdf28fcb3c4f602d2b1e2b5762a4cae844d9842e026"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/CPU_tests.log",
+    "sha256": "3be8d0f9f64dd69946280799a6a392a36216e6f5d72d4c2fdb7441c6c15897fc"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/GPU_execute.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/aggregate_verification.json",
+    "sha256": "8e511e6ec7faa307cc27f23d4a1599c215166df05aa8ffdf3d68df94514bd9a4"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/code/evaluate_b0_native_training_sufficiency.py",
+    "sha256": "bd6c917faabc0703611d1ae1db779f1c304f375b4e865e651145c533af2b622b"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/code/freeze_b0_native_training_sufficiency.py",
+    "sha256": "9c026d403bc77e2436b3205bdcfe00872ae8e9d8806a88d0875a62c3e059b77a"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/code/itm_shared_gpu_preflight.py",
+    "sha256": "d860a89b0ffe77a28ea7f6cc8813540c94b492c8ee22276a8f84a3dd6633ef24"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/code/mdm_native_training_sufficiency.py",
+    "sha256": "e2bc82d00a85c0f301a999c52b05b7c7453d7d134b311127d5db75911735d63d"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/code/mdm_training_sufficiency.py",
+    "sha256": "d51bd7a18c3b9505e56109cc61284dae807bfef0f30e9a3fe31f4d4fe583c6df"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/code/run_mdm_native_training_sufficiency_bounded.py",
+    "sha256": "38c176f62d2858ffcfbfd6cb28888b60ba151f03c7ca2d99609b03460745d94a"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/code/run_mdm_native_training_sufficiency_worker.py",
+    "sha256": "975cad9a21e9c265d8ca058125a4a1c9328500d47157d234519af92076b6aacb"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/code/test_b0_shared_gpu_preflight.py",
+    "sha256": "50f0f1775aa7d862e9dc5949c5fb96db251797139d81fc7d9e8e0a109dc46d63"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/code/test_mdm_native_training_sufficiency.py",
+    "sha256": "3fc798f5aada85f261c183c2fdfc3f82b1ddc4b8afc6d3cf9b88bdc521cbd959"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/code/verify_b0_native_training_results.py",
+    "sha256": "b9f651325ce6f94ff8dd766ea6e0d6b81ccd7ba30462150148a12026fab44038"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/code_index.json",
+    "sha256": "08d68efbe18131b026cf29f29dc670c37ca0a57796dc8f769dc855ed9acb1dff"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/evaluation.log",
+    "sha256": "100d6330a6310ef10b85c4373f3a8a2f0b9190c45d6a25bf403b6f35acee7260"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/execution_summary.json",
+    "sha256": "755fe05262be06ef8ebf17ff57da846f1679735ab2bbdd732c6a622092f3ecf1"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/prepare.log",
+    "sha256": "a55cc69febe071be8531b2f43554524c568553f9469bb03270e1c1ac789c8ab9"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/primary_same_state_progress.png",
+    "sha256": "824382653967a18ee965d229859f19622051cef055805e9cc72cd137ff2d79dd"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/primary_same_state_table.json",
+    "sha256": "ffb1993597a25a83d82c241b94338fb41bbdd6424a516e5493119f6d1dc4a2cb"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/result_verification.json",
+    "sha256": "4b4a4972ecbfc7a0805c38e6f110aacd608be716b8c49e9aa6ca84281612be2a"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/result_verification.log",
+    "sha256": "22d00be95afd8177ef3bdb7abfacb0133cb0eb4b9e45952e61c8e13a77aa8826"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/run_artifact_index.json",
+    "sha256": "73d0eb175a7b05250acd2068c2c6071d99e3100e2306e0dc0916e824b434f6d6"
+  },
+  {
+    "path": "docs/itm_rework/protocol/B0_NATIVE_TRAINING_SUFFICIENCY_EVALUATION_20261008.md",
+    "sha256": "d5cb0a8900ac23a56191189cb24a2338fe232cef354ea22146580aadcebe6e82"
+  },
+  {
+    "path": "docs/itm_rework/GPU_SHARED_EXECUTION_POLICY_20261008.json",
+    "sha256": "554db16d964ba650cdf755b6d203ecb51534b07eecc0752da765f8cdef2fbfb1"
+  },
+  {
+    "path": "docs/itm_rework/method/B0_TRAINING_SUFFICIENCY_EXECUTION_20261008_V2.json",
+    "sha256": "0c7e684af10cf2d9d29e57f693c09bdb9d48f6994c064e499b49d0cfd5d532a1"
+  },
+  {
+    "path": "docs/itm_rework/method/B0_CAPTION_PATH_EXECUTION_20261008.json",
+    "sha256": "5e8ed63b6f1cd2b4bee39b2dcb4b1f3e0670665df557d082b248b594261905ee"
+  },
+  {
+    "path": "docs/itm_rework/method/B0_NATIVE_TRAINING_SUFFICIENCY_EXECUTION_20261008.json",
+    "sha256": "dff020b449eb0b3117dc9eb255447e1c5409ce488c4f0b234faa65bd7b49cd9c"
+  },
+  {
+    "path": "outputs/itm_rework/protocol/training_sufficiency_native_evaluation_20261008_v1/artifact_index.json",
+    "sha256": "727d817b015fdef0bcc10d93eca751217fb5085fe9f22034cde1c8d69e1f5dd2"
+  },
+  {
+    "path": "outputs/itm_rework/method/training_sufficiency_native_implementation_20261008_v1/implementation.json",
+    "sha256": "cb30fb6d035e96c129ea67c5924ee8ef4c35648a97cb2077c7385227b7a41f28"
+  },
+  {
+    "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v4/package.json",
+    "sha256": "95283f4c9744c6624ca3d4e6f0d2a199427f85e50edb2c975039512208b0416a"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v2/run_artifact_index.json",
+    "sha256": "3d8e089aea66925a5d6051ad556cf33761a4d7cc75c58d6765092211f3597382"
+  },
+  {
+    "path": "docs/itm_rework/method/caption_path_run_20261008_v1/run_artifact_index.json",
+    "sha256": "660851f82b63ae4d91d47025cf10887660f5cb2cf0b6d72f59f0e3c88f96651d"
+  }
+]

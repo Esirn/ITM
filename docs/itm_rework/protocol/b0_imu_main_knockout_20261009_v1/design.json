@@ -1,0 +1,23 @@
+{
+  "version": "b0-IMU-main-knockout-suffix-v1",
+  "date": "2026-10-09",
+  "status": "CPU_frozen_not_implemented_not_executed",
+  "question": "Does deleting the IMU main term while retaining the text-IMU interaction change the contracted paired suffix trajectory from the original T-prefix x899?",
+  "rationale": "Full history CPU and posthoc saved-state algebra show the no-text IMU main term has a negative energy change at wrists t899/500/250 while interaction-only changes at those states are positive. Local signs do not determine later states or behavior. One coefficient knockout is the smallest prospective rollout test; no coefficient search.",
+  "intervention": "Original factorized native combination order with (text_scale,imu_scale,joint_scale)=(1,0,1), both text/IMU presence true and original paired static-delta control retained. f00+1*(f10-f00)+0*(f01-f00)+1*(f11-f10-f01+f00). Equivalent real-number expression f11-f01+f00 is explanatory only, not a replacement floating-point execution order.",
+  "scope": "train000506/wrists primary, head companion; original F200 only, T-prefix original x899, fixed t899..0, 136 real frames. New2 paths; prior T text/paired and F paired/off stay bound references, not new contemporaneous replications.",
+  "schedule": "Original unrespaced1000 DDPM, clip_denoised=false, native float32 posterior, caption batch1/MDM factorized batch4. Original noise t899..1 descriptor/address/bytes before use; no noise t0/initial/new seed.",
+  "software_gate": "Raw before check, 2 exact source starts,10 first-t899 original paired x_t/f00/f10/f01/f11 anchors,1800 native (1,0,1) CFG equations at original 1e-6+1e-6*abs(reference); masks/dtypes/finite/hash/posterior/noise/count/deadline required. First fault stops whole queue, preserve all slots. No later old trajectory anchor is imposed after intervention states diverge.",
+  "metrics": "Same original11 views/balanced temporal/response and final five motion guardrails plus original full observed alternating-lunge recovery review; all8 factorial finals/120 original finals/480 traces/seven-condition negatives retained. No fitting, changed success threshold, independent t/frame samples or claimed generalization.",
+  "decision": "Report each configuration and all differences against its T text/paired and old F references. Dynamic increase alone cannot support behavior repair. Changed rollout shows dependence on removal of this computational term in this case, not unique encoder/adapter causation, allocation percentages or independence from evolving state.",
+  "exposure": "Chosen after exposed saved-state/full-trajectory analyses; prospective knockout only, not blind preregistration, independent02 or human review. No new model result exists in this package.",
+  "prohibitions": [
+    "training",
+    "new source/seed/caption/checkpoint",
+    "guidance sweep",
+    "new or adaptive boundary",
+    "automatic retry/resume",
+    "interference with unrelated tasks",
+    "paper claim changes"
+  ]
+}

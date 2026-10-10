@@ -1,0 +1,26 @@
+{
+  "version": "b0-suffix-switch-design-v1",
+  "date": "2026-10-08",
+  "status": "CPU_frozen_not_implemented_not_executed",
+  "question": "After the identical completed F paired prefix ending at x899, does removing IMU conditioning for the remaining 900 steps change the later contraction and complete motion?",
+  "rationale": "Late CPU algebra shows small same-state checkpoint changes versus growing history terms in both orderings. Old text-only recovers more temporal energy but has a different history. Isolate suffix conditioning under a shared F history.",
+  "scope": "Original train000506/wrists primary with head companion; exploratory mechanism intervention, not a new primary model selection or efficacy rule. All old six-source/12-config/seven-condition negative references retained in CPU evidence.",
+  "switch": "One preselected boundary: load completed native float32 x899 after t900 posterior transition. Both arms load exactly the same bytes. Off arm sets imu_condition_present strictly false and imu_control zero from t899 onward; text stays true. No second switch, guidance sweep or selected checkpoint.",
+  "weights": "F200 final frozen checkpoint only. F/U and original text-only final references remain descriptive; no U suffix or new cross-state probe added.",
+  "schedule": "Original unrespaced 1000-step DDPM, iterate t899 through t0 with original float32 posterior order and clip_denoised=false. No initial/q noise. Old t899 through t1 noise draws must match address and bytes before use. No t0 noise draw.",
+  "native_paths": "Caption batch1, factorized MDM batch4 f00/f10/f01/f11, original static-delta encoder; cache paired observed/reference separately per case, shared by both suffix arms.",
+  "software_gate": "Keep-paired arm must reproduce three old trace groups and original final normalized features/joints/mask at inherited tolerances. First failure stops the entire queue. Failed or missing slots retained; no primary intervention interpretation on a failed baseline replay.",
+  "metrics": "All existing 11 normalized feature views plus balanced, original temporal decomposition and final motion numerical/behavioral criteria. Report paired differences within config and time, no pooling frames/timesteps or percentages of mechanism.",
+  "outcomes": "Recovery of temporal energy alone means dynamic recovery only; original complete alternating-lunge and return/order requirements determine behavior support. A failure to recover after switching cannot establish that earlier F history is irreversible or that other boundaries would fail.",
+  "review": "Exposed primary/companion chosen from existing main cases after completed analyses; prospective intervention only, not blind preregistration or independent 02/human review. Prior F not_supported and paper claims remain unchanged.",
+  "forbidden": [
+    "training",
+    "new source/seed/caption/checkpoint",
+    "noise regeneration before worker",
+    "new threshold",
+    "adaptive boundary",
+    "automatic retry/resume",
+    "interference with other GPU processes",
+    "paper claim changes"
+  ]
+}

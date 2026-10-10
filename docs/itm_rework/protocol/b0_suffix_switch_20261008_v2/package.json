@@ -1,0 +1,54 @@
+{
+  "version": "b0-suffix-switch-package-v1",
+  "artifacts": [
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/design.json",
+      "sha256": "b7a01553d3e9c3fa50a2e4167269d5eadb971cb619d7c897d8e249e46c9874dc"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/budgets.json",
+      "sha256": "bb02998b7af37d85223c9a32e27d6d7e2b4ae7b0d6e9e99f851a083ad59b6a9b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/software_checks.json",
+      "sha256": "2741a35fbedc63961c422850769f227a594a27cd535cf45fa973a53a9938f3f8"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/trajectories.json",
+      "sha256": "bc53a63968a036ea7ad3349975587be822cfa76e9af52123e8825902ebbafe04"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/starts.json",
+      "sha256": "9b9e51127a6e3df9b01812c68bb7d1a2895609d9b7949257fd4f755ce62ae505"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/noise.json",
+      "sha256": "7d4bcb4099e198dad08fb5a14ff99fb66dd3531a7c2b66c78f850a239e81f5b5"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/historical_anchors.json",
+      "sha256": "88c350317800a5713ffffb21c00866a89f7f6d9d2d6b3163242f528780da4a8c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/checkpoints.json",
+      "sha256": "35895316ce6a3729effc9574161c0aed95d4ab89bf70191170492df53e4845ba"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/sources.json",
+      "sha256": "fcc6ea4187e730879e4f04ded741c1f72f9b63863586c336180bb872c18f1eee"
+    }
+  ],
+  "source_count": 3174,
+  "counts": {
+    "trajectories": 4,
+    "steps": 3600,
+    "saved_traces": 12,
+    "finals": 4,
+    "software_checks": 7244
+  },
+  "new_GPU_queries": 0,
+  "new_model_calls": 0,
+  "new_noise_draws": 0,
+  "new_decodes": 0,
+  "next_task": "Implement bounded suffix worker/supervisor and CPU acceptance before one fresh queue; standing GPU authorization applies."
+}

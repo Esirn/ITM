@@ -1,0 +1,30 @@
+{
+  "scope": "GT reference inspection only, before complete F/U hidden-label review; not new behavioral thresholds",
+  "references": [
+    {
+      "source": "train000506",
+      "observation": "Starts left-leading and flexed, initial recovery, right-forward lowering, middle recovery, terminal descent; no off-clip first step or final stand required."
+    },
+    {
+      "source": "train004728",
+      "observation": "Right (red) leg rises backward above pelvis and is held before lowering; left leg supports. Direction, side and hold must not be replaced by generic leg movement."
+    },
+    {
+      "source": "train000027",
+      "observation": "Punch/turn sequence includes pronounced mid-clip crouch and height change; coarse punch alone does not establish full temporal sequence."
+    },
+    {
+      "source": "val000433",
+      "observation": "Right kick extends and returns to standing within a 41-frame clip."
+    },
+    {
+      "source": "val000382",
+      "observation": "Repeated hand approach/separation then arms lower; GT pelvis/legs remain almost still."
+    },
+    {
+      "source": "val000139",
+      "observation": "Initial stand/sway then alternating steps and rising root/feet on nonflat support; no flat-floor contact criterion admitted."
+    }
+  ],
+  "classification_of_generated_outputs_performed": false
+}

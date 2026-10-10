@@ -1,0 +1,46 @@
+{
+  "status": "completed",
+  "started_at": "2026-10-07T10:48:14.316166+00:00",
+  "argv": [
+    "nvidia-smi",
+    "--id=GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+    "--query-gpu=uuid,memory.total,memory.free",
+    "--format=csv,noheader,nounits"
+  ],
+  "authorization_sha256": "6edab041fb7a553faff92a6e10c11f4e66a6aa067bfeee3e1d74c7e27202d49a",
+  "authorization_request_sha256": "065dee959ca5da3ea545444b6d613cce97f869411574b331e6bf1990909d7b0c",
+  "executor_sha256": "f34edf2a69879feecefc86f36fd016163ee4f01486bc6646a1b1e85a860ddb13",
+  "timeout_seconds": 10,
+  "query_attempts": 1,
+  "additional_queries": 0,
+  "retries": 0,
+  "model_calls": 0,
+  "authorization_consumed": true,
+  "return_code": 0,
+  "finished_at": "2026-10-07T10:48:14.358925+00:00",
+  "elapsed_seconds": 0.042555609019473195,
+  "row_count": 1,
+  "parsed_rows": [
+    {
+      "raw_fields": [
+        "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+        " 24564",
+        " 7488"
+      ],
+      "uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+      "total_MiB": 24564,
+      "free_MiB": 7488
+    }
+  ],
+  "original_first_query_predicates": {
+    "exactly_one_row": true,
+    "uuid_matches": true,
+    "free_MiB_at_least_4096": true
+  },
+  "first_query_gate_passed": true,
+  "compute_process_check_performed": false,
+  "full_GPU_readiness_established": false,
+  "temporal_scope": "This query time only; cannot reconstruct earlier preflight stdout or establish future availability.",
+  "stdout_sha256": "a7b07885b473da8dd4cab94e6f3fe61608a6a12c15e0368a02854ea7ded73562",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

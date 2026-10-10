@@ -1,0 +1,22 @@
+{
+  "total_wall_seconds": 600,
+  "peak_cuda_allocated_cap_bytes": 25769803776,
+  "prefix_MDM_calls": 3600,
+  "prefix_MDM_examples": 14400,
+  "fixed_state_MDM_calls": 360,
+  "fixed_state_MDM_examples": 1440,
+  "total_MDM_calls": 3960,
+  "total_MDM_examples": 15840,
+  "encoder_calls": 48,
+  "encoder_examples": 48,
+  "encoder_cache": "2 weights x12 cases x (observed, reference) separately batch1; reusable across paths/state probes",
+  "caption_calls": 12,
+  "caption_examples": 12,
+  "caption_cache": "Native batch1, share per case across fixed weights and paths",
+  "regenerated_noise_draws": 3636,
+  "distinct_old_noise_addresses": 1212,
+  "checkpoint_loads": "Only F200 and U200; CPU identity then exact frozen reconstruction",
+  "GPU_policy": "Standing user discretion; 3 shared-resource samples free>=4096MiB, GPU/controller<=50%, UUID isolation and project lock; no wait for completely idle GPU",
+  "resume": false,
+  "automatic_retry": false
+}

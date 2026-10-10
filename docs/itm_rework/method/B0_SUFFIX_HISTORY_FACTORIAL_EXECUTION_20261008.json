@@ -1,0 +1,52 @@
+{
+  "version": "itm-history-suffix-long-execution-v1",
+  "authorized": true,
+  "approved_by": "user_standing_delegation",
+  "policy": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/GPU_EXECUTION_POLICY_20261008.json",
+    "sha256": "6d63492234840f349b7ff67ef222499ca20987a9f9c75fb49b32e7444fc91179"
+  },
+  "resource_policy": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/GPU_CONTENDED_EXECUTION_POLICY_20261008.json",
+    "sha256": "eb89f0f66c86a15368a3d0a4bf5db35027b380a642f2c43c04c59624cbd30d72"
+  },
+  "device_preference": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/GPU_DEVICE_PREFERENCE_20261008.json",
+    "sha256": "bd156929862abef44824948c47ec0cc051cb0043c1afbd6c1db826ebeb9871a0"
+  },
+  "resource_gates": {
+    "minimum_free_MiB": 4096,
+    "samples": 3,
+    "sample_interval_seconds": 2
+  },
+  "package_sha256": "abd7894aaf4fdc90f7fa35d595b51152fb8a9533c64accbed0c0e5928034d40c",
+  "implementation": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/suffix_history_factorial_implementation_20261008_v1/implementation.json",
+    "sha256": "83de9380f428bf1075524a1f30da6abcab7581eda4306d5b7027e1542b2f75e0"
+  },
+  "implementation_sha256": "83de9380f428bf1075524a1f30da6abcab7581eda4306d5b7027e1542b2f75e0",
+  "CPU_acceptance": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/suffix_history_factorial_implementation_20261008_v1/CPU_acceptance.json",
+    "sha256": "2900e827ee7e84fbcc4477f26a84180c22a333edd43edad9923c5e162394ab07"
+  },
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/suffix_history_factorial_authorized_20261008_v1",
+  "gpu_uuid": "GPU-43c2f925-db05-c655-bb46-25196d0627d6",
+  "absolute_seconds": 1200,
+  "memory_bytes": 25769803776,
+  "calls": {
+    "mdm": 3600,
+    "encoder": 4,
+    "caption": 2,
+    "noise": 3596,
+    "decode": 4
+  },
+  "examples": {
+    "mdm": 14400,
+    "encoder": 4,
+    "caption": 2,
+    "noise": 3596,
+    "decode": 4
+  },
+  "scope": "One new bounded replay of text-prefix x899-started keep-text/switch-on four paths, original decoding; no training/new seed/retry",
+  "user_instruction": "\u867d\u7136GPU\u5229\u7528\u7387\u4e3a99%\uff0c\u4f46\u5982\u679c\u6211\u4eec\u8dd1\u4efb\u52a1\u7684\u8bdd\u5e94\u8be5\u4e0d\u4f1a\u53ea\u75281%\u5427\uff1f\u5e94\u8be5\u662f\u80fd\u81ea\u52a8\u4ece\u5176\u4ed6\u4efb\u52a1\u90a3\u91cc\u201c\u62a2\u201d\u5230\u4e00\u4e9b\u8fd0\u7b97\u8d44\u6e90\uff0c\u4e0d\u81f3\u4e8e\u8ba9\u54ea\u4e2a\u4efb\u52a1\u5d29\u6e83\uff0c\u90a3\u5c31\u8fd0\u884c\u5427"
+}

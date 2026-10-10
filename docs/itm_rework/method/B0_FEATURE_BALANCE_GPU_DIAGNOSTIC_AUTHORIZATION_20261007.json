@@ -1,0 +1,44 @@
+{
+  "version": "itm-feature-GPU-readonly-diagnostic-authorization-v1",
+  "status": "approved_for_single_query",
+  "authorized": true,
+  "prepared_at": "2026-10-07T10:42:51.385479+00:00",
+  "reason": "Distinguish row-count/UUID/free-memory failure after the consumed F attempt; prior frozen helper did not persist raw nvidia-smi output.",
+  "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+  "command": [
+    "nvidia-smi",
+    "--id=GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+    "--query-gpu=uuid,memory.total,memory.free",
+    "--format=csv,noheader,nounits"
+  ],
+  "limits": {
+    "query_commands": 1,
+    "command_timeout_seconds": 10,
+    "retries": 0,
+    "polling": 0,
+    "model_calls": 0,
+    "training_updates": 0,
+    "samples": 0
+  },
+  "output_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_gpu_diagnostic_20261007_v1",
+  "execution_authorization_record": "/home/a200/0proj/ITM/docs/itm_rework/method/B0_FEATURE_BALANCE_GPU_DIAGNOSTIC_AUTHORIZATION_20261007.json",
+  "save": [
+    "exact argv",
+    "started/finished timestamps",
+    "return code or timeout/error",
+    "stdout",
+    "stderr",
+    "parsed row count/UUID/totalMiB/freeMiB",
+    "separate original preflight predicates"
+  ],
+  "policy": "One read-only query for the specified UUID only. No compute-process query, process intervention, wait/poll/retry, GPU switch or model execution. No training authorization is implied even if the diagnostic passes.",
+  "previous_failure_status": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261005_v2/runtime/status.json",
+    "sha256": "3ab1488ee9207558424645c031b28cee8db4442d3a947d807f20c09b6e7571fe"
+  },
+  "previous_run_authorization_consumed": true,
+  "approved_by": "user",
+  "approved_at": "2026-10-07T10:48:00.236507+00:00",
+  "authorization_request_sha256": "065dee959ca5da3ea545444b6d613cce97f869411574b331e6bf1990909d7b0c",
+  "user_instruction_reference": "User reply 批准 immediately following the explicit one-query/10-second read-only diagnostic request in this conversation; no training/retry authorization."
+}

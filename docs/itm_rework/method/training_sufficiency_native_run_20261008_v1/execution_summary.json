@@ -1,0 +1,75 @@
+{
+  "package_sha256": "95283f4c9744c6624ca3d4e6f0d2a199427f85e50edb2c975039512208b0416a",
+  "implementation_sha256": "cb30fb6d035e96c129ea67c5924ee8ef4c35648a97cb2077c7385227b7a41f28",
+  "elapsed_seconds": 139.132799976971,
+  "allocated_peak_bytes": 544594944,
+  "other_compute_process_count": 1,
+  "resource_samples": [
+    {
+      "total_MiB": 24564,
+      "free_MiB": 23389,
+      "GPU_utilization_percent": 42,
+      "memory_controller_utilization_percent": 0
+    },
+    {
+      "total_MiB": 24564,
+      "free_MiB": 23389,
+      "GPU_utilization_percent": 38,
+      "memory_controller_utilization_percent": 0
+    },
+    {
+      "total_MiB": 24564,
+      "free_MiB": 23389,
+      "GPU_utilization_percent": 39,
+      "memory_controller_utilization_percent": 0
+    }
+  ],
+  "counts": {
+    "mdm": {
+      "reserved": 5184,
+      "actual": 5184,
+      "completed": 5184,
+      "reserved_calls": 1152,
+      "actual_calls": 1152,
+      "completed_calls": 1152
+    },
+    "encoder": {
+      "reserved": 432,
+      "actual": 432,
+      "completed": 432,
+      "reserved_calls": 432,
+      "actual_calls": 432,
+      "completed_calls": 432
+    },
+    "caption": {
+      "reserved": 72,
+      "actual": 72,
+      "completed": 72,
+      "reserved_calls": 24,
+      "actual_calls": 24,
+      "completed_calls": 24
+    }
+  },
+  "verification": {
+    "status": "passed",
+    "source_files_verified": 2570,
+    "run_artifacts_verified": 3300,
+    "software_checks_recomputed": 2880,
+    "temporal_rows_recomputed": 4608,
+    "contrast_rows_recomputed": 9216,
+    "view_cells_recomputed": 152064,
+    "auxiliary_f00_checks": 576,
+    "model_forwards": 0,
+    "GPU_queries": 0,
+    "interpretation": "Independent-formula main-session NumPy self-check, not independent reviewer acceptance."
+  },
+  "aggregate_verification": {
+    "status": "passed",
+    "grouped_metric_cells_recomputed": 475776,
+    "max_abs_difference": 0.0,
+    "model_forwards": 0,
+    "GPU_queries": 0,
+    "note": "First verifier compared means in insertion order bitwise and encountered summation-order rounding; rerun sorted source order plus original64eps numeric identity bound. No evaluator/result/bounds changed."
+  },
+  "scientific_decision": "Local training changes exist; no convergence/extra-training benefit/full-motion repair certification. Next: CPU existing trajectory response decomposition."
+}

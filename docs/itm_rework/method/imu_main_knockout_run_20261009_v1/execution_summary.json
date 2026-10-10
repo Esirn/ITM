@@ -1,0 +1,34 @@
+{
+  "status": "complete_GPU_queue_and_CPU_evaluation_behavior_not_supported",
+  "physical_GPU": "cuda:1",
+  "GPU_uuid": "GPU-43c2f925-db05-c655-bb46-25196d0627d6",
+  "implementation": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/imu_main_knockout_implementation_20261009_v1/implementation.json",
+    "sha256": "7f6eb510b1c3fad38fa64af2a94b00dbf5db5566d8772b1c42acaa9a2903855d"
+  },
+  "MDM_calls": 1800,
+  "MDM_examples": 7200,
+  "software_checks": 1812,
+  "worker_artifacts": 3626,
+  "run_files_indexed": 3640,
+  "wall_seconds": 311.91101512801833,
+  "peak_allocated_bytes": 526790144,
+  "new_final_rows": 2,
+  "new_trace_rows": 6,
+  "combined_cells": 10,
+  "comparisons": 8,
+  "saved_response_rows": 1800,
+  "saved_response_formula_checks": 2413800,
+  "original_F_behavior": "not_supported",
+  "new_knockout_behavior": "not_supported",
+  "CPU_tests": 7,
+  "next_CPU_freeze_tests": 3,
+  "paper_claims_changed": false,
+  "independent_review": false,
+  "next_CPU_plan": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_cross_source_component_CPU_20261009_v1/plan.json",
+    "sha256": "49cf5ad9f5738aa653ef07ababa6100e5027e7e3892aad6f4e450a34efb7f9de"
+  },
+  "next_CPU_executed": false,
+  "no_retry_resume": true
+}

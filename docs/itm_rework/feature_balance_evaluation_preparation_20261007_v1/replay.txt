@@ -1,0 +1,26 @@
+{
+  "output": "outputs/itm_rework/protocol/feature_balance_evaluation_preparation_20261007_v1",
+  "mode": "CPU_preparation_historical_U_only",
+  "populations": [
+    {
+      "arm": "F",
+      "planned": 60,
+      "valid": 0,
+      "failure_or_missing_n": 60,
+      "failure_or_missing_fraction": 1.0,
+      "statuses": {
+        "missing": 60
+      }
+    },
+    {
+      "arm": "U",
+      "planned": 60,
+      "valid": 60,
+      "failure_or_missing_n": 0,
+      "failure_or_missing_fraction": 0.0,
+      "statuses": {
+        "valid": 60
+      }
+    }
+  ]
+}

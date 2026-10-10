@@ -1,0 +1,41 @@
+{
+  "version": "itm-GPU-device-preference-v1",
+  "authorized": true,
+  "approved_by": "user",
+  "recorded_at": "2026-10-08T15:38:25.816272+00:00",
+  "user_instruction": "未来一段时间可以尽量用 cuda:1",
+  "scope": "Prefer physical cuda:1 for upcoming project GPU work under existing standing delegation; this record changes device choice only.",
+  "preferred_physical_index": 1,
+  "preferred_gpu_uuid": "GPU-43c2f925-db05-c655-bb46-25196d0627d6",
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "mapping_observation": {
+    "query": "nvidia-smi --query-gpu=index,uuid,name,memory.total,memory.free,utilization.gpu --format=csv,noheader,nounits",
+    "GPU_queries": 1,
+    "rows": [
+      {
+        "index": 0,
+        "uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+        "total_MiB": 24564,
+        "free_MiB": 1132,
+        "utilization_percent": 99
+      },
+      {
+        "index": 1,
+        "uuid": "GPU-43c2f925-db05-c655-bb46-25196d0627d6",
+        "total_MiB": 24564,
+        "free_MiB": 12051,
+        "utilization_percent": 97
+      }
+    ]
+  },
+  "isolation": "Set CUDA_VISIBLE_DEVICES to preferred physical GPU UUID. Native one-device worker continues to use local cuda:0; it is physical cuda:1 after isolation.",
+  "supersedes": "Earlier per-run fixed physical cuda:0 choice, including resource-only wording in frozen design. Scientific package and its payloads are unchanged.",
+  "preserved_constraints": [
+    "Frozen scientific inputs/weights/noise/schedule/metrics/call budgets",
+    "1200-second absolute deadline and24GiB allocator cap for this queue",
+    "3 admission samples/free>=4096MiB/utilization recorded without cutoff",
+    "Project lock per physical UUID",
+    "First fault stops whole queue, fresh directories, no retry/resume",
+    "No interference with unrelated processes"
+  ]
+}

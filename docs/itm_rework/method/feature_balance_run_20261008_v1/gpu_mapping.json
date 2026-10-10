@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-07T23:40:04.481502+00:00",
+  "argv": [
+    "nvidia-smi",
+    "--query-gpu=index,uuid,pci.bus_id,name,memory.total,memory.free",
+    "--format=csv,noheader,nounits"
+  ],
+  "return_code": 0,
+  "CUDA_VISIBLE_DEVICES": null,
+  "CUDA_DEVICE_ORDER": null,
+  "torch_version": "2.5.1",
+  "requested_logical_device": "cuda:0",
+  "cuda_device_name": "NVIDIA GeForce RTX 4090",
+  "cuda_device_uuid": "d37bc466-7ddc-4a40-e1e6-952a58d89004",
+  "cuda_total_memory_bytes": 25377767424,
+  "model_calls": 0
+}

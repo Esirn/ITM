@@ -1,0 +1,22 @@
+{
+  "kind": "CPU auxiliary arithmetic correction, no model rerun or tolerance change",
+  "old_evaluator": {
+    "path": "/home/a200/0proj/ITM/scripts/evaluate_b0_prefix_mechanism.py",
+    "sha256": "7acbc7e816ae8ac0498a824d7f049bc2e10f3e6e1c5b1e9e5175fd21e5bf7e73"
+  },
+  "new_evaluator": {
+    "path": "/home/a200/0proj/ITM/scripts/evaluate_b0_prefix_mechanism_v2.py",
+    "sha256": "59b9f36bface042ff517ef2ee6e1d6534f79bc716d4f47f222c84e8b216211e3"
+  },
+  "old_results": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/prefix_mechanism_evaluation_20261008_v2/artifact_index.json",
+    "sha256": "ed707db141cfbc01deba669f038ae5d94019382191e96180a305e88796c41648"
+  },
+  "new_results": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/prefix_mechanism_evaluation_20261008_v3/artifact_index.json",
+    "sha256": "da9f719990a83c8fe95779f5a85eab9291d99c04e3aa897211f9895ce55aab21"
+  },
+  "unchanged_payloads": 9,
+  "changed_auxiliary_RMS_cells": 432,
+  "max_absolute_difference": 1.392566723046329e-08
+}

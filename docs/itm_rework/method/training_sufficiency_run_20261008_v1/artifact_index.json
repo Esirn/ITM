@@ -1,0 +1,98 @@
+[
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/CPU_acceptance.json",
+    "sha256": "e96bb6d62e956da24b0712a2156fdf8455d1a794fa0925d94f55a1c5d96ef6a5"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/CPU_tests_attempt02.log",
+    "sha256": "9bc6a347253ffa61dbadf57ea3e207f89e7b7f3ea9344f7f4bd54d7ffa24acfb"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/CPU_tests_attempt03.log",
+    "sha256": "5590eb949574d6ebf50a8a1ffbe78e167eeed1f86d309ba53f810500672e950f"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/CPU_tests_final.log",
+    "sha256": "18810c96a4c78d51db6b494e0b9c996763a3c5204e6718ad754a4b0057d66ca4"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/GPU_execute.log",
+    "sha256": "88b80c54c529de9e3ea791b5682be0d08880569450305c01a27a9ff66edcc5ed"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/code/evaluate_b0_training_sufficiency.py",
+    "sha256": "a48788c6c1acfc2cd39b325108d0e76150990e3dd616f601ab4443e0ab668f58"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/code/mdm_training_sufficiency.py",
+    "sha256": "5c425fd2d0421e72cb7000b0f623415751b4da5681bb29f767b76f67755115a3"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/code/run_mdm_training_sufficiency_bounded.py",
+    "sha256": "38b13b105f650eb22ee004c9fdb717989ca2798effac4ed3d155e0ecd0d0302a"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/code/run_mdm_training_sufficiency_worker.py",
+    "sha256": "d8d76d43bf6e43c431d0ebd00f98c5e525ceb2f1ce57ed77235bd3b4b4d230a7"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/code/test_mdm_training_sufficiency.py",
+    "sha256": "b8f4a6c8699f05b709a48c044c48fd60e9bffa10558a5a728a059814da543b6f"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/code/verify_b0_training_sufficiency_delivery.py",
+    "sha256": "e1b4cee1d3e0cb802f331c20dd52879221250ba5674c66ff6dcea1efd929844e"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/code_index.json",
+    "sha256": "0781b377def6a3fb6bbd426a4a9db2746806658ad2e38d8221c9438f46ee123a"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/commands.md",
+    "sha256": "8d95f93ab1fba69573d379b81ce5430a9b9060a2ccf8adcefaa3b7abac28dfe1"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/delivery_verification.json",
+    "sha256": "02e1f56d21cea4e2a40ceb5c80fca04b3359037881ec533010d071a842cb40e5"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/delivery_verification.log",
+    "sha256": "7acc080e03cc080330dc80ce527b92e15994359ceae2698292fcd7aedb4e61b0"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/development_notes.txt",
+    "sha256": "c743ec39df69d2d8dbc0efa9ef92e3a0d721f57a03fd67b983802043d3155d4e"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/execution_summary.json",
+    "sha256": "1d557236a245a59a9b85792c71c0b06fa0da3bf55d4d2dcf317950f0805cc36e"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/failed_evaluation.log",
+    "sha256": "d9cb69da461f18f26a12bcf6578e84b0c0aaac06add863627d4287183a550c6b"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/prepare.log",
+    "sha256": "974604cc350c4ccd9755675807a0c7e9775acf439a774ad21caf096f0154b669"
+  },
+  {
+    "path": "docs/itm_rework/method/training_sufficiency_run_20261008_v1/runtime/status.json",
+    "sha256": "dd7a302859a9058159849543d0e05e1c4a7ecd331e2345cc44608a1714ed3b14"
+  },
+  {
+    "path": "docs/itm_rework/method/B0_TRAINING_SUFFICIENCY_RUN_20261008.md",
+    "sha256": "6b3d029f2824cc46c97449a2095d5e73971f4be9c7c5a599d8af7327aad8c928"
+  },
+  {
+    "path": "docs/itm_rework/method/B0_TRAINING_SUFFICIENCY_EXECUTION_20261008.json",
+    "sha256": "805474346ddf529ee1f40c46f5536a45ead4c98c2ab69708a0aa31ad7596c05e"
+  },
+  {
+    "path": "outputs/itm_rework/method/training_sufficiency_implementation_20261008_v1/prepared/implementation.json",
+    "sha256": "82df1581f5efe658857c509de3d314803ae81baf770a94fb45331c2dcab7ca76"
+  },
+  {
+    "path": "outputs/itm_rework/protocol/training_sufficiency_failed_evaluation_20261008_v1/artifact_index.json",
+    "sha256": "d18b4a735a13fc5ae013803175a18262bfcb6d0c7ed2254d284fd2892dbcd706"
+  }
+]

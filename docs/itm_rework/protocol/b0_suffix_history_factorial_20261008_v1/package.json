@@ -1,0 +1,54 @@
+{
+  "version": "b0-suffix-history-factorial-package-v1",
+  "artifacts": [
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_history_factorial_20261008_v1/design.json",
+      "sha256": "6675469df9162bb973771bcbce1427deae1e9206f950824e17fb38d87ab705cf"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_history_factorial_20261008_v1/budgets.json",
+      "sha256": "bb02998b7af37d85223c9a32e27d6d7e2b4ae7b0d6e9e99f851a083ad59b6a9b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_history_factorial_20261008_v1/software_checks.json",
+      "sha256": "2741a35fbedc63961c422850769f227a594a27cd535cf45fa973a53a9938f3f8"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_history_factorial_20261008_v1/trajectories.json",
+      "sha256": "fdceb4ce960b0a362cc97722239fd3b170fe83641ce57a0616b5b7a12ff0bee0"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_history_factorial_20261008_v1/starts.json",
+      "sha256": "a23618a25809525ff0953d82465dfaf78a7b971d78de79aff0e0ce509d11c597"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_history_factorial_20261008_v1/noise.json",
+      "sha256": "7d4bcb4099e198dad08fb5a14ff99fb66dd3531a7c2b66c78f850a239e81f5b5"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_history_factorial_20261008_v1/historical_anchors.json",
+      "sha256": "d2f12217c8ca9265a530ce980b4e4164c276d6c200d3d0e189aecf1de41db06d"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_history_factorial_20261008_v1/checkpoints.json",
+      "sha256": "35895316ce6a3729effc9574161c0aed95d4ab89bf70191170492df53e4845ba"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_history_factorial_20261008_v1/sources.json",
+      "sha256": "b29e75a11c01be79237530f934668ba23fc2ea805030890e328fcabdf8a1fb95"
+    }
+  ],
+  "source_count": 10492,
+  "counts": {
+    "trajectories": 4,
+    "steps": 3600,
+    "saved_traces": 12,
+    "finals": 4,
+    "software_checks": 7244
+  },
+  "new_GPU_queries": 0,
+  "new_model_calls": 0,
+  "new_noise_draws": 0,
+  "new_decodes": 0,
+  "next_task": "Implement bounded T-prefix keep-text/on suffix worker/supervisor and CPU acceptance, then one fresh queue; reuse accepted native math, deadlines and resource policy without editing earlier implementations."
+}

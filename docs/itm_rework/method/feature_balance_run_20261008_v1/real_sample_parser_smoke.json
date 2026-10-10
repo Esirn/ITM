@@ -1,0 +1,16 @@
+{
+  "scope": "First real saved F sample schema/identity/CPU decode smoke only, no effectiveness metrics or semantic labels",
+  "motion_shape": [
+    41,
+    22,
+    3
+  ],
+  "feature_shape": [
+    41,
+    263
+  ],
+  "decode_max_abs_m": 5.960464477539063e-08,
+  "status": "passed",
+  "GPU_queries": 0,
+  "real_model_forwards": 0
+}

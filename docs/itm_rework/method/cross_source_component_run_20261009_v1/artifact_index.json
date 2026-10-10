@@ -1,0 +1,174 @@
+[
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/execution_summary.json",
+    "sha256": "cff74204129f3a00804eedcd1c850a2942103ef002901dba3de1019b58dfa2c0"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/docs/itm_rework/GPU_CONTENDED_EXECUTION_POLICY_20261008.json",
+    "sha256": "eb89f0f66c86a15368a3d0a4bf5db35027b380a642f2c43c04c59624cbd30d72"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/docs/itm_rework/GPU_DEVICE_PREFERENCE_20261008.json",
+    "sha256": "bd156929862abef44824948c47ec0cc051cb0043c1afbd6c1db826ebeb9871a0"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/docs/itm_rework/GPU_EXECUTION_POLICY_20261008.json",
+    "sha256": "6d63492234840f349b7ff67ef222499ca20987a9f9c75fb49b32e7444fc91179"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/docs/itm_rework/protocol/B0_CROSS_SOURCE_COMPONENT_EVALUATION_20261009.md",
+    "sha256": "e8564efcef9859ff8689cb6a97c8c3ae609c87221d6ca8d6b5fd4e4a3d5ebaa4"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_control_mean_probe_20261009_v1/plan.json",
+    "sha256": "b3fe884ebc53b71b049ff02e4e8dc498eae2ff9173ea58d289433b53b3fd39d9"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_cross_source_component_CPU_20261009_v1/plan.json",
+    "sha256": "49cf5ad9f5738aa653ef07ababa6100e5027e7e3892aad6f4e450a34efb7f9de"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/outputs/itm_rework/method/control_mean_probe_freeze_tests_20261009_v1/pytest.xml",
+    "sha256": "09be6042ed4961a0a8862ccbfd017ed1153ad20a78742a66d56bf43f301c0b7c"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/outputs/itm_rework/method/cross_source_component_CPU_tests_20261009_v1/pytest.xml",
+    "sha256": "f03e65f5d57ce66def640d57c3225ffcf1bdebaa44b2ae80a4fe74ec166d4e74"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/outputs/itm_rework/method/cross_source_component_implementation_20261009_v1/CPU_test_results.json",
+    "sha256": "960e38f6b0a856a70dade9537159e8135ff8c79502d4a19db81815af412a70fb"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/outputs/itm_rework/method/cross_source_component_implementation_20261009_v1/first_verification_failure.json",
+    "sha256": "4b54cbbeedb05c1d2205ff01eb390a77b7be8083a0a3cc92c1581e1dc47e3937"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/outputs/itm_rework/method/cross_source_component_implementation_20261009_v1/implementation.json",
+    "sha256": "70ccba55f0b18def0f378420ea0c3d4452c275e24ccd2c6f96fde60f3929613f"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/outputs/itm_rework/method/cross_source_component_implementation_20261009_v2/delivery_verification.json",
+    "sha256": "c7187bfa08e34dd102c338bfb164da27d6e70186ff2bf320425a3657bdb0a711"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/outputs/itm_rework/method/cross_source_component_implementation_20261009_v2/implementation.json",
+    "sha256": "86bdfd465e97717f6ea6c4ea84a9562e8782da7472f59bd9228d75acd598fc82"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/outputs/itm_rework/method/cross_source_component_implementation_20261009_v2/next_probe_verification.json",
+    "sha256": "16e9debd8542f235455c4b0c82c79b720f1e1dcd22f40050c373f7e62204ac44"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/outputs/itm_rework/method/cross_source_component_implementation_20261009_v2/result_verification.json",
+    "sha256": "8157aa060d9959d745be566c5bd2bae2ec03cfed7c6cf420c451be0ebd4d2ff8"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/outputs/itm_rework/protocol/cross_source_component_evaluation_20261009_v1/aggregates.json",
+    "sha256": "7d67542903d191413c174f6f0eb1662a3e03634ae29108b3040bb6c8e3906f19"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/outputs/itm_rework/protocol/cross_source_component_evaluation_20261009_v1/artifact_index.json",
+    "sha256": "467b84495874324a8ade88d61836a50a960c777073cb033b686b3e1edb2c96b6"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/outputs/itm_rework/protocol/cross_source_component_evaluation_20261009_v1/old_final_references.json",
+    "sha256": "9ffc7dbcadcb509eff951e3ae69fd31048c0dc0cd0eb6a8d4d52b2745dae5102"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/outputs/itm_rework/protocol/cross_source_component_evaluation_20261009_v1/pairs.json",
+    "sha256": "025c39cc8c71ae8a516e6b2054e709cc5e2c325bc5b10a8b62e340e88a741a2b"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/outputs/itm_rework/protocol/cross_source_component_evaluation_20261009_v1/rows.json",
+    "sha256": "2b6768f436063f45c8092bce1be91414d73476f8ea7c2fc49de260420de4a5da"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/outputs/itm_rework/protocol/cross_source_component_evaluation_20261009_v1/sources.json",
+    "sha256": "04622bad42dcfa3781c50b949f7c719564d21537b0a06a320f454881c5a1fe4e"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/outputs/itm_rework/protocol/cross_source_component_evaluation_20261009_v1/summary.json",
+    "sha256": "f91cd3753659eacea789169798180f5f5429e7fbca101881695135c5b444c721"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/outputs/itm_rework/protocol/cross_source_component_panel_20261009_v1/artifact_index.json",
+    "sha256": "d7d791d38565de04291741f75eafc0256c103eb4ad8ce03cd1c55ac1ec8c20dc"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/outputs/itm_rework/protocol/cross_source_component_panel_20261009_v1/condition_sign_counts.json",
+    "sha256": "6a6298c2d92ccb36199b0970a343681fdf112cdfc7d8cfbe3ddda08a9050c761"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/outputs/itm_rework/protocol/cross_source_component_panel_20261009_v1/paired_component_energy_error.png",
+    "sha256": "651f672177733da482890ff753289d2d1eb652d0fb553c000a43fa35326f8772"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/outputs/itm_rework/protocol/cross_source_component_panel_20261009_v1/paired_source_tables.json",
+    "sha256": "b2a3e0510b1635989c77136910850a9e53f09e74801fbd046c5c32c16bf680c2"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/outputs/itm_rework/protocol/cross_source_component_panel_20261009_v1/summary.json",
+    "sha256": "525cbdc79ff644d42b80181b6a7a2164cf2fea8dfc220181095d32c85380de63"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/scripts/analyze_b0_cross_source_components.py",
+    "sha256": "a5571a49d5c3e99fa495cd27b1821dae5f9aa4b3ceab1e703b6873cc269346cb"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/scripts/archive_b0_cross_source_components.py",
+    "sha256": "0904928edd8081bc7e5d1d93a1f4ed3892ede8c25d8a0551c5941b285a3155ba"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/scripts/evaluate_b0_native_training_sufficiency.py",
+    "sha256": "bd6c917faabc0703611d1ae1db779f1c304f375b4e865e651145c533af2b622b"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/scripts/freeze_b0_control_mean_probe.py",
+    "sha256": "10404061aff9d80ceb5a41abee21652affe5f3d54443c7a97632e5be1fa803c9"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/scripts/prepare_b0_cross_source_verification_v2.py",
+    "sha256": "64943f04ccb98d86f4839a812b9142ef1d1a6b37e24fa72343be4eb660ebc2f8"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/scripts/summarize_b0_cross_source_components.py",
+    "sha256": "4ce25f1cad3276ae72ea224cfb056ae2d21720231d33724e1c8c0044d54695fc"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/scripts/verify_b0_cross_source_components.py",
+    "sha256": "dd4e18bc27490416cf4e25468604fab078a37dd0b564be162e823e10cc71f2c0"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/scripts/verify_b0_cross_source_components_v2.py",
+    "sha256": "e138362b1e0cf8bd1ee1abcd1b24caf95fe8578baeb07ed3d5751b7b3d03854a"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/scripts/verify_b0_cross_source_delivery.py",
+    "sha256": "78810b4283ddc8d78826f7a75796a4426b764af9b41bd21e2084f3efefd606f2"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/src/itm/metrics/feature_balance.py",
+    "sha256": "d287a890f23fb4a30b09746a8bccdaae6a1b71d158ce3b2c01c71173ff5f3f96"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/src/itm/metrics/trace_response.py",
+    "sha256": "90156adbd7c3f26d593880e4e76b41b96ba1dabc572427cd10a146189f322bc1"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/src/itm/metrics/training_sufficiency.py",
+    "sha256": "109a2b37c22398c590352e88acfc5b40dbaa3feb839ddfb86190e1485c310d9e"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/tests/test_control_mean_probe_freeze.py",
+    "sha256": "73842d0111b84b308bde00b259dcac263410c36e870e0b4bc519e395cf39730d"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/snapshot/tests/test_cross_source_component_adapter.py",
+    "sha256": "90b8f26d6498544a3f1e183ce00fdba139819be87a6a5422ad6960ef9d93fd1c"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/cross_source_component_run_20261009_v1/source_copy_index.json",
+    "sha256": "79c83aad1d7c7fdf1f3d3ef224a5a389be74089224cf01eb6b1fa3b91a6638e4"
+  }
+]

@@ -1,0 +1,3782 @@
+[
+  {
+    "row_id": "PS001",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 999,
+    "state_id": "PS001",
+    "energy_ratio": {
+      "x_t": 2.2972399134815427,
+      "f00": 0.002945627020504578,
+      "f10": 0.0050621250040190245,
+      "f01": 0.0029771910303146064,
+      "f11": 0.00531421066766537
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.00025208566364634516,
+      "twice_base_delta_covariance": 0.00013053010661186236,
+      "delta_centered_energy": 0.00012155555703448246
+    }
+  },
+  {
+    "row_id": "PS002",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 975,
+    "state_id": "PS002",
+    "energy_ratio": {
+      "x_t": 2.2459182863428566,
+      "f00": 0.13593173672182193,
+      "f10": 0.1458981914255291,
+      "f01": 0.14240841978813046,
+      "f11": 0.15774599793851776
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.011847806512988664,
+      "twice_base_delta_covariance": 0.011193006914126712,
+      "delta_centered_energy": 0.0006547995988619513
+    }
+  },
+  {
+    "row_id": "PS003",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 950,
+    "state_id": "PS003",
+    "energy_ratio": {
+      "x_t": 2.2519265342412647,
+      "f00": 1.6720700056190962,
+      "f10": 1.6267613633574358,
+      "f01": 1.6937159035650817,
+      "f11": 1.6480929650847604
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.021331601727324657,
+      "twice_base_delta_covariance": 0.02083938235106375,
+      "delta_centered_energy": 0.0004922193762611546
+    }
+  },
+  {
+    "row_id": "PS004",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 925,
+    "state_id": "PS004",
+    "energy_ratio": {
+      "x_t": 2.344999297627203,
+      "f00": 1.4947313083616425,
+      "f10": 1.4079568449400341,
+      "f01": 1.5174843875864585,
+      "f11": 1.4290506831815688
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.021093838241534477,
+      "twice_base_delta_covariance": 0.02050462243029397,
+      "delta_centered_energy": 0.0005892158112402277
+    }
+  },
+  {
+    "row_id": "PS005",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 900,
+    "state_id": "PS005",
+    "energy_ratio": {
+      "x_t": 2.2881003053092175,
+      "f00": 1.6155424396498403,
+      "f10": 1.561403953796709,
+      "f01": 1.6293265654389057,
+      "f11": 1.5765601926300328
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.015156238833323746,
+      "twice_base_delta_covariance": 0.01457274230028252,
+      "delta_centered_energy": 0.0005834965330413693
+    }
+  },
+  {
+    "row_id": "PS006",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 999,
+    "state_id": "PS006",
+    "energy_ratio": {
+      "x_t": 2.2972399134815427,
+      "f00": 0.002945627020504578,
+      "f10": 0.0050621250040190245,
+      "f01": 0.00292713778559343,
+      "f11": 0.005305936766569664
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.00024381176255063958,
+      "twice_base_delta_covariance": 0.00012432674757396187,
+      "delta_centered_energy": 0.00011948501497667748
+    }
+  },
+  {
+    "row_id": "PS007",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 975,
+    "state_id": "PS007",
+    "energy_ratio": {
+      "x_t": 2.245925398420176,
+      "f00": 0.13539544350598046,
+      "f10": 0.146679235786687,
+      "f01": 0.1411565760554129,
+      "f11": 0.16125769433614745
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.014578458549460447,
+      "twice_base_delta_covariance": 0.013705574569071061,
+      "delta_centered_energy": 0.0008728839803893825
+    }
+  },
+  {
+    "row_id": "PS008",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 950,
+    "state_id": "PS008",
+    "energy_ratio": {
+      "x_t": 2.251946304301485,
+      "f00": 1.673994215802041,
+      "f10": 1.6285029210325044,
+      "f01": 1.6952263582542013,
+      "f11": 1.6505002361838457
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.02199731515134136,
+      "twice_base_delta_covariance": 0.02140108474500533,
+      "delta_centered_energy": 0.0005962304063358754
+    }
+  },
+  {
+    "row_id": "PS009",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 925,
+    "state_id": "PS009",
+    "energy_ratio": {
+      "x_t": 2.344967877633753,
+      "f00": 1.4960901038207268,
+      "f10": 1.4099816936460656,
+      "f01": 1.5198166628407062,
+      "f11": 1.4319761688059753
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.021994475159909842,
+      "twice_base_delta_covariance": 0.021292731217161007,
+      "delta_centered_energy": 0.0007017439427487166
+    }
+  },
+  {
+    "row_id": "PS010",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 900,
+    "state_id": "PS010",
+    "energy_ratio": {
+      "x_t": 2.288061564933052,
+      "f00": 1.6156127123734003,
+      "f10": 1.5627655033738774,
+      "f01": 1.6304934181899955,
+      "f11": 1.5794563635885557
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.016690860214678256,
+      "twice_base_delta_covariance": 0.01596207387716372,
+      "delta_centered_energy": 0.0007287863375144828
+    }
+  },
+  {
+    "row_id": "PS011",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 999,
+    "state_id": "PS011",
+    "energy_ratio": {
+      "x_t": 2.2972399134815427,
+      "f00": 0.002945627020504578,
+      "f10": 0.0050621250040190245,
+      "f01": 0.002945627020504578,
+      "f11": 0.0050621250040190245
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS012",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 975,
+    "state_id": "PS012",
+    "energy_ratio": {
+      "x_t": 2.2458334805175353,
+      "f00": 0.13360619562138074,
+      "f10": 0.14021459241742573,
+      "f01": 0.13360619562138074,
+      "f11": 0.14021459241742573
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS013",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 950,
+    "state_id": "PS013",
+    "energy_ratio": {
+      "x_t": 2.25156306782801,
+      "f00": 1.6547547769542132,
+      "f10": 1.6089911463037112,
+      "f01": 1.6547547769542132,
+      "f11": 1.6089911463037112
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS014",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 925,
+    "state_id": "PS014",
+    "energy_ratio": {
+      "x_t": 2.3444666652152404,
+      "f00": 1.4643508383335744,
+      "f10": 1.3785498590044292,
+      "f01": 1.4643508383335744,
+      "f11": 1.3785498590044292
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS015",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 900,
+    "state_id": "PS015",
+    "energy_ratio": {
+      "x_t": 2.287299127381062,
+      "f00": 1.5842501140404717,
+      "f10": 1.5285113872177636,
+      "f01": 1.5842501140404717,
+      "f11": 1.5285113872177636
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS016",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 999,
+    "state_id": "PS016",
+    "energy_ratio": {
+      "x_t": 2.319427107824742,
+      "f00": 0.0020461044445912813,
+      "f10": 0.0038705190545473564,
+      "f01": 0.003156351961884473,
+      "f11": 0.004961945745671131
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0010914266911237743,
+      "twice_base_delta_covariance": 0.00029925160048331335,
+      "delta_centered_energy": 0.0007921750906404604
+    }
+  },
+  {
+    "row_id": "PS017",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 975,
+    "state_id": "PS017",
+    "energy_ratio": {
+      "x_t": 2.345877441261392,
+      "f00": 0.4011568530230245,
+      "f10": 0.41976404527383054,
+      "f01": 0.4523892509908663,
+      "f11": 0.4516366324175317
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0318725871437012,
+      "twice_base_delta_covariance": 0.02694453739939743,
+      "delta_centered_energy": 0.0049280497443038454
+    }
+  },
+  {
+    "row_id": "PS018",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 950,
+    "state_id": "PS018",
+    "energy_ratio": {
+      "x_t": 2.2631092344062784,
+      "f00": 1.8215390060899426,
+      "f10": 1.6709930041931598,
+      "f01": 1.8768510518280659,
+      "f11": 1.7246695136224557
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.053676509429295964,
+      "twice_base_delta_covariance": 0.04673162138472355,
+      "delta_centered_energy": 0.006944888044572423
+    }
+  },
+  {
+    "row_id": "PS019",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 925,
+    "state_id": "PS019",
+    "energy_ratio": {
+      "x_t": 2.190819540748794,
+      "f00": 1.544866319711535,
+      "f10": 1.460291573411694,
+      "f01": 1.5742672544351366,
+      "f11": 1.4967853653454588
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.03649379193376475,
+      "twice_base_delta_covariance": 0.03245195077455132,
+      "delta_centered_energy": 0.004041841159213863
+    }
+  },
+  {
+    "row_id": "PS020",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "state_id": "PS020",
+    "energy_ratio": {
+      "x_t": 2.0866273912376547,
+      "f00": 1.63368574669292,
+      "f10": 1.5762246054315356,
+      "f01": 1.6567688194763743,
+      "f11": 1.6034047978472998
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.027180192415764116,
+      "twice_base_delta_covariance": 0.022469609754977034,
+      "delta_centered_energy": 0.004710582660787304
+    }
+  },
+  {
+    "row_id": "PS021",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 999,
+    "state_id": "PS021",
+    "energy_ratio": {
+      "x_t": 2.319427107824742,
+      "f00": 0.0020461044445912813,
+      "f10": 0.0038705190545473564,
+      "f01": 0.0028322696063521904,
+      "f11": 0.00458786691221422
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0007173478576668637,
+      "twice_base_delta_covariance": 7.423912126372376e-05,
+      "delta_centered_energy": 0.0006431087364031397
+    }
+  },
+  {
+    "row_id": "PS022",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 975,
+    "state_id": "PS022",
+    "energy_ratio": {
+      "x_t": 2.3458899078919533,
+      "f00": 0.39062922391626326,
+      "f10": 0.4129543843769014,
+      "f01": 0.435845035708355,
+      "f11": 0.438069423549345
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.025115039172443614,
+      "twice_base_delta_covariance": 0.020180351837845063,
+      "delta_centered_energy": 0.004934687334598537
+    }
+  },
+  {
+    "row_id": "PS023",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 950,
+    "state_id": "PS023",
+    "energy_ratio": {
+      "x_t": 2.2630246823458107,
+      "f00": 1.825814137835915,
+      "f10": 1.6727186526633468,
+      "f01": 1.8800867924703935,
+      "f11": 1.724061535398323
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.05134288273497629,
+      "twice_base_delta_covariance": 0.04452309862198881,
+      "delta_centered_energy": 0.00681978411298747
+    }
+  },
+  {
+    "row_id": "PS024",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 925,
+    "state_id": "PS024",
+    "energy_ratio": {
+      "x_t": 2.190704616919916,
+      "f00": 1.554913428642044,
+      "f10": 1.471018537623323,
+      "f01": 1.5812110577012735,
+      "f11": 1.505496213266453
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.034477675643130166,
+      "twice_base_delta_covariance": 0.0300111592763539,
+      "delta_centered_energy": 0.004466516366775856
+    }
+  },
+  {
+    "row_id": "PS025",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "state_id": "PS025",
+    "energy_ratio": {
+      "x_t": 2.0867111276660464,
+      "f00": 1.642157230744057,
+      "f10": 1.5840368619412142,
+      "f01": 1.6668872821869756,
+      "f11": 1.6125495321205652
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.02851267017935079,
+      "twice_base_delta_covariance": 0.023293953734153917,
+      "delta_centered_energy": 0.005218716445197291
+    }
+  },
+  {
+    "row_id": "PS026",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 999,
+    "state_id": "PS026",
+    "energy_ratio": {
+      "x_t": 2.319427107824742,
+      "f00": 0.0020461044445912813,
+      "f10": 0.0038705190545473564,
+      "f01": 0.0020461044445912813,
+      "f11": 0.0038705190545473564
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS027",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 975,
+    "state_id": "PS027",
+    "energy_ratio": {
+      "x_t": 2.3457734931887924,
+      "f00": 0.41218365752252645,
+      "f10": 0.4249718859695336,
+      "f01": 0.41218365752252645,
+      "f11": 0.4249718859695336
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS028",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 950,
+    "state_id": "PS028",
+    "energy_ratio": {
+      "x_t": 2.262305744728558,
+      "f00": 1.6816058639439577,
+      "f10": 1.4777613313264386,
+      "f01": 1.6816058639439577,
+      "f11": 1.4777613313264386
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS029",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 925,
+    "state_id": "PS029",
+    "energy_ratio": {
+      "x_t": 2.187765337187334,
+      "f00": 1.2896298096716727,
+      "f10": 1.211257803916206,
+      "f01": 1.2896298096716727,
+      "f11": 1.211257803916206
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS030",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "state_id": "PS030",
+    "energy_ratio": {
+      "x_t": 2.079895247318519,
+      "f00": 1.3118155061053824,
+      "f10": 1.2508534716615658,
+      "f01": 1.3118155061053824,
+      "f11": 1.2508534716615658
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS031",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 999,
+    "state_id": "PS031",
+    "energy_ratio": {
+      "x_t": 7.782777372503861,
+      "f00": 0.013015959535075325,
+      "f10": 0.30300575229365934,
+      "f01": 0.013183645105156416,
+      "f11": 0.3050152915982062
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0020095393045468798,
+      "twice_base_delta_covariance": 0.0019791130501823,
+      "delta_centered_energy": 3.0426254364546353e-05
+    }
+  },
+  {
+    "row_id": "PS032",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 975,
+    "state_id": "PS032",
+    "energy_ratio": {
+      "x_t": 7.852785297490412,
+      "f00": 0.7256613333165144,
+      "f10": 0.48150265100726347,
+      "f01": 0.7425301661863437,
+      "f11": 0.48557953616532484
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.004076885158061381,
+      "twice_base_delta_covariance": 0.004036322195022167,
+      "delta_centered_energy": 4.056296303914708e-05
+    }
+  },
+  {
+    "row_id": "PS033",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 950,
+    "state_id": "PS033",
+    "energy_ratio": {
+      "x_t": 7.843578708141472,
+      "f00": 1.5906852774089344,
+      "f10": 0.8015981565502986,
+      "f01": 1.5978998552449144,
+      "f11": 0.8075502880602997
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0059521315100010625,
+      "twice_base_delta_covariance": 0.005824465693501167,
+      "delta_centered_energy": 0.0001276658165000466
+    }
+  },
+  {
+    "row_id": "PS034",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 925,
+    "state_id": "PS034",
+    "energy_ratio": {
+      "x_t": 7.968851772923306,
+      "f00": 0.7619974920255997,
+      "f10": 0.7291100958589538,
+      "f01": 0.767649279732359,
+      "f11": 0.7329723767170747
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0038622808581209155,
+      "twice_base_delta_covariance": 0.00382004446520249,
+      "delta_centered_energy": 4.223639291865191e-05
+    }
+  },
+  {
+    "row_id": "PS035",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 900,
+    "state_id": "PS035",
+    "energy_ratio": {
+      "x_t": 7.825140367052655,
+      "f00": 0.8461646199892132,
+      "f10": 0.7974330457246575,
+      "f01": 0.8516677022815357,
+      "f11": 0.8014881734651648
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.00405512774050727,
+      "twice_base_delta_covariance": 0.0039998123308148765,
+      "delta_centered_energy": 5.531540969220972e-05
+    }
+  },
+  {
+    "row_id": "PS036",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 999,
+    "state_id": "PS036",
+    "energy_ratio": {
+      "x_t": 7.782777372503861,
+      "f00": 0.013015959535075325,
+      "f10": 0.30300575229365934,
+      "f01": 0.013140167683156425,
+      "f11": 0.3045771437771942
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0015713914835348908,
+      "twice_base_delta_covariance": 0.0015430251136748247,
+      "delta_centered_energy": 2.836636986005467e-05
+    }
+  },
+  {
+    "row_id": "PS037",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 975,
+    "state_id": "PS037",
+    "energy_ratio": {
+      "x_t": 7.852767252904778,
+      "f00": 0.7236620006764207,
+      "f10": 0.4810390812332915,
+      "f01": 0.7332386869701519,
+      "f11": 0.4835297529897798
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.002490671756488331,
+      "twice_base_delta_covariance": 0.002458945628512083,
+      "delta_centered_energy": 3.172612797637574e-05
+    }
+  },
+  {
+    "row_id": "PS038",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 950,
+    "state_id": "PS038",
+    "energy_ratio": {
+      "x_t": 7.843542853611269,
+      "f00": 1.588757173984965,
+      "f10": 0.8007093778791772,
+      "f01": 1.5961413971937168,
+      "f11": 0.8055498007261175
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.004840422846940335,
+      "twice_base_delta_covariance": 0.004751363180119946,
+      "delta_centered_energy": 8.905966682038742e-05
+    }
+  },
+  {
+    "row_id": "PS039",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 925,
+    "state_id": "PS039",
+    "energy_ratio": {
+      "x_t": 7.968811147729977,
+      "f00": 0.7621622169134283,
+      "f10": 0.7300077565024696,
+      "f01": 0.7672909923448042,
+      "f11": 0.7336170701446371
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.00360931364216743,
+      "twice_base_delta_covariance": 0.0035716481871443957,
+      "delta_centered_energy": 3.766545502308135e-05
+    }
+  },
+  {
+    "row_id": "PS040",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 900,
+    "state_id": "PS040",
+    "energy_ratio": {
+      "x_t": 7.825063473885197,
+      "f00": 0.8456312194813762,
+      "f10": 0.797496913808703,
+      "f01": 0.8502476594907461,
+      "f11": 0.8009222011521727
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0034252873434696515,
+      "twice_base_delta_covariance": 0.003377633362091257,
+      "delta_centered_energy": 4.765398137834465e-05
+    }
+  },
+  {
+    "row_id": "PS041",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 999,
+    "state_id": "PS041",
+    "energy_ratio": {
+      "x_t": 7.782777372503861,
+      "f00": 0.013015959535075325,
+      "f10": 0.30300575229365934,
+      "f01": 0.013015959535075325,
+      "f11": 0.30300575229365934
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS042",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 975,
+    "state_id": "PS042",
+    "energy_ratio": {
+      "x_t": 7.852786947336337,
+      "f00": 0.7156959520335567,
+      "f10": 0.4803107064773692,
+      "f01": 0.7156959520335567,
+      "f11": 0.4803107064773692
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS043",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 950,
+    "state_id": "PS043",
+    "energy_ratio": {
+      "x_t": 7.843505176281963,
+      "f00": 1.5872044933862444,
+      "f10": 0.7997537347968167,
+      "f01": 1.5872044933862444,
+      "f11": 0.7997537347968167
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS044",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 925,
+    "state_id": "PS044",
+    "energy_ratio": {
+      "x_t": 7.96868758953121,
+      "f00": 0.7580799804845187,
+      "f10": 0.7283220601324547,
+      "f01": 0.7580799804845187,
+      "f11": 0.7283220601324547
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS045",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 900,
+    "state_id": "PS045",
+    "energy_ratio": {
+      "x_t": 7.824866333933557,
+      "f00": 0.8413490175762289,
+      "f10": 0.7952521625122754,
+      "f01": 0.8413490175762289,
+      "f11": 0.7952521625122754
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS046",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 999,
+    "state_id": "PS046",
+    "energy_ratio": {
+      "x_t": 7.958276518762005,
+      "f00": 0.011902193902660636,
+      "f10": 0.12965865164781779,
+      "f01": 0.029918359340349955,
+      "f11": 0.1720794214201412
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.04242076977232342,
+      "twice_base_delta_covariance": 0.03114093770492082,
+      "delta_centered_energy": 0.011279832067402528
+    }
+  },
+  {
+    "row_id": "PS047",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 975,
+    "state_id": "PS047",
+    "energy_ratio": {
+      "x_t": 7.9997923576796754,
+      "f00": 1.4719097399778396,
+      "f10": 0.9781766788068882,
+      "f01": 1.9214285289844606,
+      "f11": 1.0049178268203354
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.02674114801344725,
+      "twice_base_delta_covariance": -0.011760562329625617,
+      "delta_centered_energy": 0.03850171034307291
+    }
+  },
+  {
+    "row_id": "PS048",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 950,
+    "state_id": "PS048",
+    "energy_ratio": {
+      "x_t": 7.8052782865613635,
+      "f00": 1.541654994640903,
+      "f10": 1.1977567506192799,
+      "f01": 1.7969804464494912,
+      "f11": 1.3379968002231468
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.14024004960386702,
+      "twice_base_delta_covariance": 0.02994147702594902,
+      "delta_centered_energy": 0.11029857257791796
+    }
+  },
+  {
+    "row_id": "PS049",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 925,
+    "state_id": "PS049",
+    "energy_ratio": {
+      "x_t": 7.9796869301131474,
+      "f00": 1.4157403690297004,
+      "f10": 1.2362236031228717,
+      "f01": 1.6618319815404408,
+      "f11": 1.436512722509322
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.20028911938645036,
+      "twice_base_delta_covariance": 0.1539140457009781,
+      "delta_centered_energy": 0.046375073685472425
+    }
+  },
+  {
+    "row_id": "PS050",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "state_id": "PS050",
+    "energy_ratio": {
+      "x_t": 7.948668027019093,
+      "f00": 1.321244174188984,
+      "f10": 1.2136501922040919,
+      "f01": 1.5855763862629395,
+      "f11": 1.4331549992134238
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.21950480700933195,
+      "twice_base_delta_covariance": 0.184219411530391,
+      "delta_centered_energy": 0.03528539547894101
+    }
+  },
+  {
+    "row_id": "PS051",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 999,
+    "state_id": "PS051",
+    "energy_ratio": {
+      "x_t": 7.958276518762005,
+      "f00": 0.011902193902660636,
+      "f10": 0.12965865164781779,
+      "f01": 0.02704341945635136,
+      "f11": 0.15814780038605575
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.02848914873823796,
+      "twice_base_delta_covariance": 0.019387745671250067,
+      "delta_centered_energy": 0.00910140306698786
+    }
+  },
+  {
+    "row_id": "PS052",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 975,
+    "state_id": "PS052",
+    "energy_ratio": {
+      "x_t": 7.9996579176101985,
+      "f00": 1.4644604642297008,
+      "f10": 0.981507964072597,
+      "f01": 1.8602264982651378,
+      "f11": 0.9844412585242314
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0029332944516343084,
+      "twice_base_delta_covariance": -0.026997407951725907,
+      "delta_centered_energy": 0.029930702403360418
+    }
+  },
+  {
+    "row_id": "PS053",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 950,
+    "state_id": "PS053",
+    "energy_ratio": {
+      "x_t": 7.804537156699077,
+      "f00": 1.5402479972712384,
+      "f10": 1.2125346804582524,
+      "f01": 1.7058019378311386,
+      "f11": 1.2939652177608185
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.08143053730256612,
+      "twice_base_delta_covariance": 0.038974620628120835,
+      "delta_centered_energy": 0.04245591667444509
+    }
+  },
+  {
+    "row_id": "PS054",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 925,
+    "state_id": "PS054",
+    "energy_ratio": {
+      "x_t": 7.97667094982942,
+      "f00": 1.3950734836260743,
+      "f10": 1.233313378493171,
+      "f01": 1.6014225888599918,
+      "f11": 1.3856356919250605
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.15232231343188968,
+      "twice_base_delta_covariance": 0.12813200535309574,
+      "delta_centered_energy": 0.02419030807879424
+    }
+  },
+  {
+    "row_id": "PS055",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "state_id": "PS055",
+    "energy_ratio": {
+      "x_t": 7.945033631426891,
+      "f00": 1.3088064848684446,
+      "f10": 1.209343981220273,
+      "f01": 1.5125793861930943,
+      "f11": 1.3736039740569108
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.16425999283663772,
+      "twice_base_delta_covariance": 0.14133305701510562,
+      "delta_centered_energy": 0.022926935821532116
+    }
+  },
+  {
+    "row_id": "PS056",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 999,
+    "state_id": "PS056",
+    "energy_ratio": {
+      "x_t": 7.958276518762005,
+      "f00": 0.011902193902660636,
+      "f10": 0.12965865164781779,
+      "f01": 0.011902193902660636,
+      "f11": 0.12965865164781779
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS057",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 975,
+    "state_id": "PS057",
+    "energy_ratio": {
+      "x_t": 8.000055866599245,
+      "f00": 1.4827477818480055,
+      "f10": 1.0056784474442366,
+      "f01": 1.4827477818480055,
+      "f11": 1.0056784474442366
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS058",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 950,
+    "state_id": "PS058",
+    "energy_ratio": {
+      "x_t": 7.8038795635383655,
+      "f00": 1.5737045113148151,
+      "f10": 1.2513169243758735,
+      "f01": 1.5737045113148151,
+      "f11": 1.2513169243758735
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS059",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 925,
+    "state_id": "PS059",
+    "energy_ratio": {
+      "x_t": 7.975670411397828,
+      "f00": 1.413826299566902,
+      "f10": 1.272180034567694,
+      "f01": 1.413826299566902,
+      "f11": 1.272180034567694
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS060",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "state_id": "PS060",
+    "energy_ratio": {
+      "x_t": 7.945681867912168,
+      "f00": 1.2834569357312082,
+      "f10": 1.1889764182793805,
+      "f01": 1.2834569357312082,
+      "f11": 1.1889764182793805
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS061",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 999,
+    "state_id": "PS061",
+    "energy_ratio": {
+      "x_t": 0.5646312593355702,
+      "f00": 0.001019741922047444,
+      "f10": 0.003527401303617963,
+      "f01": 0.0010317913923055982,
+      "f11": 0.0033890819980614668
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.00013831930555649607,
+      "twice_base_delta_covariance": -0.00027882561412894595,
+      "delta_centered_energy": 0.00014050630857245092
+    }
+  },
+  {
+    "row_id": "PS062",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 975,
+    "state_id": "PS062",
+    "energy_ratio": {
+      "x_t": 0.5643784311095403,
+      "f00": 0.10202962941219768,
+      "f10": 0.049693157173021266,
+      "f01": 0.09413289625149217,
+      "f11": 0.042272590937371415
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.0074205662356498486,
+      "twice_base_delta_covariance": -0.00829789938841367,
+      "delta_centered_energy": 0.0008773331527638198
+    }
+  },
+  {
+    "row_id": "PS063",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 950,
+    "state_id": "PS063",
+    "energy_ratio": {
+      "x_t": 0.5597734055973378,
+      "f00": 0.14815416236509577,
+      "f10": 0.14511796590567613,
+      "f01": 0.14368108208112823,
+      "f11": 0.14105372184489856
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.004064244060777575,
+      "twice_base_delta_covariance": -0.004830490492839253,
+      "delta_centered_energy": 0.0007662464320616668
+    }
+  },
+  {
+    "row_id": "PS064",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 925,
+    "state_id": "PS064",
+    "energy_ratio": {
+      "x_t": 0.5613107883958057,
+      "f00": 0.17998195976963854,
+      "f10": 0.17563383878137634,
+      "f01": 0.17229673059388295,
+      "f11": 0.16887214666762543
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.006761692113750905,
+      "twice_base_delta_covariance": -0.007318436751082415,
+      "delta_centered_energy": 0.0005567446373314829
+    }
+  },
+  {
+    "row_id": "PS065",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 900,
+    "state_id": "PS065",
+    "energy_ratio": {
+      "x_t": 0.5534648622027252,
+      "f00": 0.18888148548378092,
+      "f10": 0.18635237732729376,
+      "f01": 0.18342153839940112,
+      "f11": 0.18115122651708945
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.00520115081020429,
+      "twice_base_delta_covariance": -0.0055424758331499785,
+      "delta_centered_energy": 0.000341325022945673
+    }
+  },
+  {
+    "row_id": "PS066",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 999,
+    "state_id": "PS066",
+    "energy_ratio": {
+      "x_t": 0.5646312593355702,
+      "f00": 0.001019741922047444,
+      "f10": 0.003527401303617963,
+      "f01": 0.001024812745250298,
+      "f11": 0.003394606894181849
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.00013279440943611402,
+      "twice_base_delta_covariance": -0.0002688970624992519,
+      "delta_centered_energy": 0.00013610265306313805
+    }
+  },
+  {
+    "row_id": "PS067",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 975,
+    "state_id": "PS067",
+    "energy_ratio": {
+      "x_t": 0.5643744534449239,
+      "f00": 0.09938684774856797,
+      "f10": 0.04771906999704684,
+      "f01": 0.09349339772286021,
+      "f11": 0.04243059140222752
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.005288478594819316,
+      "twice_base_delta_covariance": -0.006180110692073493,
+      "delta_centered_energy": 0.0008916320972541751
+    }
+  },
+  {
+    "row_id": "PS068",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 950,
+    "state_id": "PS068",
+    "energy_ratio": {
+      "x_t": 0.5597375768418535,
+      "f00": 0.13698920155616068,
+      "f10": 0.13652798774873956,
+      "f01": 0.1296105362512234,
+      "f11": 0.13050685498233228
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.006021132766407264,
+      "twice_base_delta_covariance": -0.00690755157015011,
+      "delta_centered_energy": 0.0008864188037428196
+    }
+  },
+  {
+    "row_id": "PS069",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 925,
+    "state_id": "PS069",
+    "energy_ratio": {
+      "x_t": 0.5611424467458582,
+      "f00": 0.16664346234599697,
+      "f10": 0.16294549950449203,
+      "f01": 0.15752584012443932,
+      "f11": 0.1550415893911031
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.007903910113388904,
+      "twice_base_delta_covariance": -0.008561586815310477,
+      "delta_centered_energy": 0.0006576767019215709
+    }
+  },
+  {
+    "row_id": "PS070",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 900,
+    "state_id": "PS070",
+    "energy_ratio": {
+      "x_t": 0.5531377514317177,
+      "f00": 0.177498154757898,
+      "f10": 0.17504840833204383,
+      "f01": 0.17093235937015544,
+      "f11": 0.1689186578477553
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.006129750484288495,
+      "twice_base_delta_covariance": -0.0065209170948954225,
+      "delta_centered_energy": 0.000391166610606935
+    }
+  },
+  {
+    "row_id": "PS071",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 999,
+    "state_id": "PS071",
+    "energy_ratio": {
+      "x_t": 0.5646312593355702,
+      "f00": 0.001019741922047444,
+      "f10": 0.003527401303617963,
+      "f01": 0.001019741922047444,
+      "f11": 0.003527401303617963
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS072",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 975,
+    "state_id": "PS072",
+    "energy_ratio": {
+      "x_t": 0.5644045712904219,
+      "f00": 0.11472532136985504,
+      "f10": 0.05581391988723471,
+      "f01": 0.11472532136985504,
+      "f11": 0.05581391988723471
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS073",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 950,
+    "state_id": "PS073",
+    "energy_ratio": {
+      "x_t": 0.5598742352025605,
+      "f00": 0.16065109489877957,
+      "f10": 0.15397298771046244,
+      "f01": 0.16065109489877957,
+      "f11": 0.15397298771046244
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS074",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 925,
+    "state_id": "PS074",
+    "energy_ratio": {
+      "x_t": 0.561654557903691,
+      "f00": 0.19667494755637452,
+      "f10": 0.19189318067604869,
+      "f01": 0.19667494755637452,
+      "f11": 0.19189318067604869
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS075",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 900,
+    "state_id": "PS075",
+    "energy_ratio": {
+      "x_t": 0.5541465917958933,
+      "f00": 0.20261274619180428,
+      "f10": 0.20036755846711288,
+      "f01": 0.20261274619180428,
+      "f11": 0.20036755846711288
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS076",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 999,
+    "state_id": "PS076",
+    "energy_ratio": {
+      "x_t": 0.5646967387624813,
+      "f00": 0.0011280658254335819,
+      "f10": 0.0016900429054787223,
+      "f01": 0.0011678656537113807,
+      "f11": 0.0017268792191730577
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 3.683631369433543e-05,
+      "twice_base_delta_covariance": -6.269904104945132e-05,
+      "delta_centered_energy": 9.953535474378663e-05
+    }
+  },
+  {
+    "row_id": "PS077",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 975,
+    "state_id": "PS077",
+    "energy_ratio": {
+      "x_t": 0.5523921042749159,
+      "f00": 0.22740449860653467,
+      "f10": 0.21106210066225245,
+      "f01": 0.22119109610146795,
+      "f11": 0.19732379153832463
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.013738309123927808,
+      "twice_base_delta_covariance": -0.014641457874054502,
+      "delta_centered_energy": 0.000903148750126719
+    }
+  },
+  {
+    "row_id": "PS078",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 950,
+    "state_id": "PS078",
+    "energy_ratio": {
+      "x_t": 0.5523016137111189,
+      "f00": 0.25355496336399047,
+      "f10": 0.23241754950814186,
+      "f01": 0.2483462472787504,
+      "f11": 0.2270331426962965
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.005384406811845359,
+      "twice_base_delta_covariance": -0.005805142973682993,
+      "delta_centered_energy": 0.00042073616183761867
+    }
+  },
+  {
+    "row_id": "PS079",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 925,
+    "state_id": "PS079",
+    "energy_ratio": {
+      "x_t": 0.5601577016292916,
+      "f00": 0.2892742868153058,
+      "f10": 0.283606213231533,
+      "f01": 0.2833190516415576,
+      "f11": 0.2776920829261088
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.00591413030542419,
+      "twice_base_delta_covariance": -0.006272927866655427,
+      "delta_centered_energy": 0.00035879756123124345
+    }
+  },
+  {
+    "row_id": "PS080",
+    "path_arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "state_id": "PS080",
+    "energy_ratio": {
+      "x_t": 0.5610089995666643,
+      "f00": 0.28488318742104735,
+      "f10": 0.28602399378589494,
+      "f01": 0.27873209918808484,
+      "f11": 0.2798594923353091
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.006164501450585819,
+      "twice_base_delta_covariance": -0.006475312461460881,
+      "delta_centered_energy": 0.0003108110108750209
+    }
+  },
+  {
+    "row_id": "PS081",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 999,
+    "state_id": "PS081",
+    "energy_ratio": {
+      "x_t": 0.5646967387624813,
+      "f00": 0.0011280658254335819,
+      "f10": 0.0016900429054787223,
+      "f01": 0.0011359330491031278,
+      "f11": 0.0017334788718277529
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 4.343596634903072e-05,
+      "twice_base_delta_covariance": -4.724255723163504e-05,
+      "delta_centered_energy": 9.067852358066555e-05
+    }
+  },
+  {
+    "row_id": "PS082",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 975,
+    "state_id": "PS082",
+    "energy_ratio": {
+      "x_t": 0.5523937169919796,
+      "f00": 0.22767909632824443,
+      "f10": 0.20963780251272754,
+      "f01": 0.22140019557142618,
+      "f11": 0.19549452500054684
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.014143277512180695,
+      "twice_base_delta_covariance": -0.015174451926224334,
+      "delta_centered_energy": 0.001031174414043651
+    }
+  },
+  {
+    "row_id": "PS083",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 950,
+    "state_id": "PS083",
+    "energy_ratio": {
+      "x_t": 0.5523242752754696,
+      "f00": 0.25382753209737663,
+      "f10": 0.23153936995537128,
+      "f01": 0.24853201684114407,
+      "f11": 0.22615943274689096
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.005379937208480315,
+      "twice_base_delta_covariance": -0.005833428319473532,
+      "delta_centered_energy": 0.00045349111099317574
+    }
+  },
+  {
+    "row_id": "PS084",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 925,
+    "state_id": "PS084",
+    "energy_ratio": {
+      "x_t": 0.5602825948895319,
+      "f00": 0.28649097689981035,
+      "f10": 0.27952553416853265,
+      "f01": 0.2812325251108816,
+      "f11": 0.27443008630390714
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.005095447864625512,
+      "twice_base_delta_covariance": -0.005472152681618699,
+      "delta_centered_energy": 0.00037670481699326
+    }
+  },
+  {
+    "row_id": "PS085",
+    "path_arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "state_id": "PS085",
+    "energy_ratio": {
+      "x_t": 0.5611029220586404,
+      "f00": 0.2764209892164014,
+      "f10": 0.2764628066354158,
+      "f01": 0.2704206318076428,
+      "f11": 0.27050353449320375
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.005959272142212003,
+      "twice_base_delta_covariance": -0.006285562639592546,
+      "delta_centered_energy": 0.0003262904973805289
+    }
+  },
+  {
+    "row_id": "PS086",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 999,
+    "state_id": "PS086",
+    "energy_ratio": {
+      "x_t": 0.5646967387624813,
+      "f00": 0.0011280658254335819,
+      "f10": 0.0016900429054787223,
+      "f01": 0.0011280658254335819,
+      "f11": 0.0016900429054787223
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS087",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 975,
+    "state_id": "PS087",
+    "energy_ratio": {
+      "x_t": 0.5524242638461868,
+      "f00": 0.23287080462681145,
+      "f10": 0.2222237465076598,
+      "f01": 0.23287080462681145,
+      "f11": 0.2222237465076598
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS088",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 950,
+    "state_id": "PS088",
+    "energy_ratio": {
+      "x_t": 0.5524872417700413,
+      "f00": 0.2715403642552075,
+      "f10": 0.25488303966081205,
+      "f01": 0.2715403642552075,
+      "f11": 0.25488303966081205
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS089",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 925,
+    "state_id": "PS089",
+    "energy_ratio": {
+      "x_t": 0.560465590079754,
+      "f00": 0.313928350344227,
+      "f10": 0.30889575504855343,
+      "f01": 0.313928350344227,
+      "f11": 0.30889575504855343
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS090",
+    "path_arm": "T",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "state_id": "PS090",
+    "energy_ratio": {
+      "x_t": 0.561827638881028,
+      "f00": 0.31190543567375417,
+      "f10": 0.3126380913225092,
+      "f01": 0.31190543567375417,
+      "f11": 0.3126380913225092
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS091",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 999,
+    "state_id": "PS091",
+    "energy_ratio": {
+      "x_t": 0.9739042846905991,
+      "f00": 0.00204464185228497,
+      "f10": 0.0065891173882898285,
+      "f01": 0.0026365361343106135,
+      "f11": 0.007897326997340201
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0013082096090503725,
+      "twice_base_delta_covariance": -0.0025916529027929765,
+      "delta_centered_energy": 0.0038998625118433494
+    }
+  },
+  {
+    "row_id": "PS092",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 975,
+    "state_id": "PS092",
+    "energy_ratio": {
+      "x_t": 0.9896353167344268,
+      "f00": 0.15407030590439652,
+      "f10": 0.14413575542399468,
+      "f01": 0.11679812772551083,
+      "f11": 0.10044808980875101
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.04368766561524365,
+      "twice_base_delta_covariance": -0.06089439548230066,
+      "delta_centered_energy": 0.017206729867057003
+    }
+  },
+  {
+    "row_id": "PS093",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 950,
+    "state_id": "PS093",
+    "energy_ratio": {
+      "x_t": 0.9428922641792475,
+      "f00": 0.06300043028859832,
+      "f10": 0.11650072942401409,
+      "f01": 0.053898289308078356,
+      "f11": 0.08010358484570382
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.036397144578310274,
+      "twice_base_delta_covariance": -0.08420681557895615,
+      "delta_centered_energy": 0.047809671000645884
+    }
+  },
+  {
+    "row_id": "PS094",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 925,
+    "state_id": "PS094",
+    "energy_ratio": {
+      "x_t": 0.9432877355005407,
+      "f00": 0.09220242356817024,
+      "f10": 0.10728140092822636,
+      "f01": 0.10195614329202714,
+      "f11": 0.11402815847953586
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.006746757551309517,
+      "twice_base_delta_covariance": -0.022940694281734016,
+      "delta_centered_energy": 0.029687451833043506
+    }
+  },
+  {
+    "row_id": "PS095",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 900,
+    "state_id": "PS095",
+    "energy_ratio": {
+      "x_t": 0.9618675248916673,
+      "f00": 0.21538089144293224,
+      "f10": 0.21000753451563556,
+      "f01": 0.24674228109715066,
+      "f11": 0.2421992312561451
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.032191696740509534,
+      "twice_base_delta_covariance": 0.003129819021274347,
+      "delta_centered_energy": 0.029061877719235206
+    }
+  },
+  {
+    "row_id": "PS096",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 999,
+    "state_id": "PS096",
+    "energy_ratio": {
+      "x_t": 0.9739042846905991,
+      "f00": 0.00204464185228497,
+      "f10": 0.0065891173882898285,
+      "f01": 0.0032474821986613295,
+      "f11": 0.012141416693821887
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.00555229930553206,
+      "twice_base_delta_covariance": -0.0017888838234792431,
+      "delta_centered_energy": 0.007341183129011302
+    }
+  },
+  {
+    "row_id": "PS097",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 975,
+    "state_id": "PS097",
+    "energy_ratio": {
+      "x_t": 0.9897114358726884,
+      "f00": 0.18494520202104453,
+      "f10": 0.16317196679329593,
+      "f01": 0.15336884052189909,
+      "f11": 0.1624915659024869
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.0006804008908090315,
+      "twice_base_delta_covariance": -0.060157602125889026,
+      "delta_centered_energy": 0.059477201235080025
+    }
+  },
+  {
+    "row_id": "PS098",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 950,
+    "state_id": "PS098",
+    "energy_ratio": {
+      "x_t": 0.9437261590324303,
+      "f00": 0.14891214304883446,
+      "f10": 0.22449284009507778,
+      "f01": 0.3086934056789716,
+      "f11": 0.3776225814159347
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.15312974132085694,
+      "twice_base_delta_covariance": -0.007647701415686367,
+      "delta_centered_energy": 0.16077744273654324
+    }
+  },
+  {
+    "row_id": "PS099",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 925,
+    "state_id": "PS099",
+    "energy_ratio": {
+      "x_t": 0.9470066354713045,
+      "f00": 0.45368254863356755,
+      "f10": 0.4631220072801869,
+      "f01": 0.5061023772878589,
+      "f11": 0.5177841802620355
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.05466217298184867,
+      "twice_base_delta_covariance": -0.019410448781096344,
+      "delta_centered_energy": 0.074072621762945
+    }
+  },
+  {
+    "row_id": "PS100",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 900,
+    "state_id": "PS100",
+    "energy_ratio": {
+      "x_t": 0.969743785320506,
+      "f00": 0.6582013755149492,
+      "f10": 0.6539056084684562,
+      "f01": 0.6493156622699592,
+      "f11": 0.6506792204558524
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.0032263880126038747,
+      "twice_base_delta_covariance": -0.046673400103125345,
+      "delta_centered_energy": 0.043447012090521514
+    }
+  },
+  {
+    "row_id": "PS101",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 999,
+    "state_id": "PS101",
+    "energy_ratio": {
+      "x_t": 0.9739042846905991,
+      "f00": 0.00204464185228497,
+      "f10": 0.0065891173882898285,
+      "f01": 0.00204464185228497,
+      "f11": 0.0065891173882898285
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS102",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 975,
+    "state_id": "PS102",
+    "energy_ratio": {
+      "x_t": 0.9901731891533432,
+      "f00": 0.16374131779212708,
+      "f10": 0.22603570018925978,
+      "f01": 0.16374131779212708,
+      "f11": 0.22603570018925978
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS103",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 950,
+    "state_id": "PS103",
+    "energy_ratio": {
+      "x_t": 0.9465202810009458,
+      "f00": 0.3506714135129918,
+      "f10": 0.37765957916020026,
+      "f01": 0.3506714135129918,
+      "f11": 0.37765957916020026
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS104",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 925,
+    "state_id": "PS104",
+    "energy_ratio": {
+      "x_t": 0.9494047692207106,
+      "f00": 0.3935865109537168,
+      "f10": 0.4237296025056655,
+      "f01": 0.3935865109537168,
+      "f11": 0.4237296025056655
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS105",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 900,
+    "state_id": "PS105",
+    "energy_ratio": {
+      "x_t": 0.9708810829034008,
+      "f00": 0.44095645633241487,
+      "f10": 0.4593065147672755,
+      "f01": 0.44095645633241487,
+      "f11": 0.4593065147672755
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS106",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 999,
+    "state_id": "PS106",
+    "energy_ratio": {
+      "x_t": 0.9583430317089375,
+      "f00": 0.0007708664463534832,
+      "f10": 0.006916437112677481,
+      "f01": 0.0037617593783414167,
+      "f11": 0.013154889766681905
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.006238452654004425,
+      "twice_base_delta_covariance": -0.0014606441811946655,
+      "delta_centered_energy": 0.007699096835199088
+    }
+  },
+  {
+    "row_id": "PS107",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 975,
+    "state_id": "PS107",
+    "energy_ratio": {
+      "x_t": 0.9396000493735476,
+      "f00": 0.01978852917065698,
+      "f10": 0.1449114544927361,
+      "f01": 0.1465711397539276,
+      "f11": 0.3370024966307505
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.19209104213801437,
+      "twice_base_delta_covariance": 0.02688379086375929,
+      "delta_centered_energy": 0.16520725127425512
+    }
+  },
+  {
+    "row_id": "PS108",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 950,
+    "state_id": "PS108",
+    "energy_ratio": {
+      "x_t": 0.9650891571997204,
+      "f00": 0.6977114803578964,
+      "f10": 0.7256608293179708,
+      "f01": 0.6943596244041533,
+      "f11": 0.7129070759869444
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.012753753331026484,
+      "twice_base_delta_covariance": -0.08256235464829927,
+      "delta_centered_energy": 0.06980860131727301
+    }
+  },
+  {
+    "row_id": "PS109",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 925,
+    "state_id": "PS109",
+    "energy_ratio": {
+      "x_t": 0.9743812206459449,
+      "f00": 0.9151886799288018,
+      "f10": 0.9237793642357939,
+      "f01": 0.8547331023841402,
+      "f11": 0.8537055936701283
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.07007377056566562,
+      "twice_base_delta_covariance": -0.1175949559708612,
+      "delta_centered_energy": 0.047521185405195614
+    }
+  },
+  {
+    "row_id": "PS110",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "state_id": "PS110",
+    "energy_ratio": {
+      "x_t": 0.9562629015246822,
+      "f00": 0.9640256994525547,
+      "f10": 0.9410743824833394,
+      "f01": 0.9028097428777847,
+      "f11": 0.8838320705877395
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.057242311895599925,
+      "twice_base_delta_covariance": -0.09646637212313881,
+      "delta_centered_energy": 0.03922406022753871
+    }
+  },
+  {
+    "row_id": "PS111",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 999,
+    "state_id": "PS111",
+    "energy_ratio": {
+      "x_t": 0.9583430317089375,
+      "f00": 0.0007708664463534832,
+      "f10": 0.006916437112677481,
+      "f01": 0.003689644279664457,
+      "f11": 0.024329426311109695
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.017412989198432212,
+      "twice_base_delta_covariance": -0.00022188618466604984,
+      "delta_centered_energy": 0.017634875383098263
+    }
+  },
+  {
+    "row_id": "PS112",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 975,
+    "state_id": "PS112",
+    "energy_ratio": {
+      "x_t": 0.939922484903851,
+      "f00": 0.028290703467737113,
+      "f10": 0.22902877739409716,
+      "f01": 0.39978369851849743,
+      "f11": 0.5371316789402172
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.30810290154611997,
+      "twice_base_delta_covariance": 0.08519228571526449,
+      "delta_centered_energy": 0.22291061583085553
+    }
+  },
+  {
+    "row_id": "PS113",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 950,
+    "state_id": "PS113",
+    "energy_ratio": {
+      "x_t": 0.9661803788885277,
+      "f00": 0.8698561608035748,
+      "f10": 0.8914427063695249,
+      "f01": 0.8195618177381099,
+      "f11": 0.8334474583648271
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.05799524800469785,
+      "twice_base_delta_covariance": -0.14601653030428585,
+      "delta_centered_energy": 0.08802128229958797
+    }
+  },
+  {
+    "row_id": "PS114",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 925,
+    "state_id": "PS114",
+    "energy_ratio": {
+      "x_t": 0.9770564670452633,
+      "f00": 1.0693195594798277,
+      "f10": 1.0752705639908657,
+      "f01": 0.9528315387078565,
+      "f11": 0.9480562628551545
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.1272143011357112,
+      "twice_base_delta_covariance": -0.19592957506153935,
+      "delta_centered_energy": 0.06871527392582827
+    }
+  },
+  {
+    "row_id": "PS115",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "state_id": "PS115",
+    "energy_ratio": {
+      "x_t": 0.9593839716031167,
+      "f00": 1.0792239166778022,
+      "f10": 1.058383053311122,
+      "f01": 0.9748163774899452,
+      "f11": 0.958304584401472
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.1000784689096501,
+      "twice_base_delta_covariance": -0.15741362614596735,
+      "delta_centered_energy": 0.05733515723631698
+    }
+  },
+  {
+    "row_id": "PS116",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 999,
+    "state_id": "PS116",
+    "energy_ratio": {
+      "x_t": 0.9583430317089375,
+      "f00": 0.0007708664463534832,
+      "f10": 0.006916437112677481,
+      "f01": 0.0007708664463534832,
+      "f11": 0.006916437112677481
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS117",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 975,
+    "state_id": "PS117",
+    "energy_ratio": {
+      "x_t": 0.9390057184282191,
+      "f00": 0.019509935050880944,
+      "f10": 0.09952753830695567,
+      "f01": 0.019509935050880944,
+      "f11": 0.09952753830695567
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS118",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 950,
+    "state_id": "PS118",
+    "energy_ratio": {
+      "x_t": 0.9636054102755779,
+      "f00": 0.266271244318786,
+      "f10": 0.2929423029091766,
+      "f01": 0.266271244318786,
+      "f11": 0.2929423029091766
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS119",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 925,
+    "state_id": "PS119",
+    "energy_ratio": {
+      "x_t": 0.9678518000458484,
+      "f00": 0.3968064097110956,
+      "f10": 0.41192030783366484,
+      "f01": 0.3968064097110956,
+      "f11": 0.41192030783366484
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS120",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "state_id": "PS120",
+    "energy_ratio": {
+      "x_t": 0.9433156187108144,
+      "f00": 0.43001743104715573,
+      "f10": 0.42768067377780966,
+      "f01": 0.43001743104715573,
+      "f11": 0.42768067377780966
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS121",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 999,
+    "state_id": "PS121",
+    "energy_ratio": {
+      "x_t": 0.9034703548967099,
+      "f00": 0.001451226940884317,
+      "f10": 0.07464559295808326,
+      "f01": 0.0015257075171104296,
+      "f11": 0.05840802676810601
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.016237566189977255,
+      "twice_base_delta_covariance": -0.017661042288522073,
+      "delta_centered_energy": 0.001423476098544814
+    }
+  },
+  {
+    "row_id": "PS122",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 975,
+    "state_id": "PS122",
+    "energy_ratio": {
+      "x_t": 0.8964363681135791,
+      "f00": 1.4012547839738396,
+      "f10": 1.4728821215533645,
+      "f01": 1.260638611759021,
+      "f11": 1.3503210626772228
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.12256105887614169,
+      "twice_base_delta_covariance": -0.1306375855243579,
+      "delta_centered_energy": 0.008076526648216472
+    }
+  },
+  {
+    "row_id": "PS123",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 950,
+    "state_id": "PS123",
+    "energy_ratio": {
+      "x_t": 0.8760619401482835,
+      "f00": 1.0958270356635633,
+      "f10": 1.1491061044990147,
+      "f01": 1.045444316193501,
+      "f11": 1.092062455983577
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.05704364851543758,
+      "twice_base_delta_covariance": -0.061912245007117714,
+      "delta_centered_energy": 0.004868596491680229
+    }
+  },
+  {
+    "row_id": "PS124",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 925,
+    "state_id": "PS124",
+    "energy_ratio": {
+      "x_t": 0.8971325064317163,
+      "f00": 1.1631247521516062,
+      "f10": 1.2555070253699345,
+      "f01": 1.1144120001223128,
+      "f11": 1.195518175793211
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.059988849576723687,
+      "twice_base_delta_covariance": -0.06329096440694053,
+      "delta_centered_energy": 0.003302114830216921
+    }
+  },
+  {
+    "row_id": "PS125",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 900,
+    "state_id": "PS125",
+    "energy_ratio": {
+      "x_t": 0.9001283747887984,
+      "f00": 1.3917464121161025,
+      "f10": 1.5059466492599485,
+      "f01": 1.329456473960898,
+      "f11": 1.4362023208625365
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.06974432839741194,
+      "twice_base_delta_covariance": -0.0724987456647297,
+      "delta_centered_energy": 0.0027544172673179975
+    }
+  },
+  {
+    "row_id": "PS126",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 999,
+    "state_id": "PS126",
+    "energy_ratio": {
+      "x_t": 0.9034703548967099,
+      "f00": 0.001451226940884317,
+      "f10": 0.07464559295808326,
+      "f01": 0.0015890008492160208,
+      "f11": 0.06320208180222935
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.011443511155853925,
+      "twice_base_delta_covariance": -0.012324691133987514,
+      "delta_centered_energy": 0.0008811799781336017
+    }
+  },
+  {
+    "row_id": "PS127",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 975,
+    "state_id": "PS127",
+    "energy_ratio": {
+      "x_t": 0.8963341319733237,
+      "f00": 1.273524660686973,
+      "f10": 1.3569368965843078,
+      "f01": 1.1348077841937503,
+      "f11": 1.2413930811571678
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.11554381542713987,
+      "twice_base_delta_covariance": -0.1218744301340959,
+      "delta_centered_energy": 0.006330614706956035
+    }
+  },
+  {
+    "row_id": "PS128",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 950,
+    "state_id": "PS128",
+    "energy_ratio": {
+      "x_t": 0.8755157086621138,
+      "f00": 0.9507452617320652,
+      "f10": 1.0060646191914129,
+      "f01": 0.9024416394373241,
+      "f11": 0.9546739522618303
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.051390666929582725,
+      "twice_base_delta_covariance": -0.05480427582075318,
+      "delta_centered_energy": 0.0034136088911704467
+    }
+  },
+  {
+    "row_id": "PS129",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 925,
+    "state_id": "PS129",
+    "energy_ratio": {
+      "x_t": 0.8959238198906179,
+      "f00": 1.0116414100630942,
+      "f10": 1.0986517065092762,
+      "f01": 0.971002439531636,
+      "f11": 1.0508761421537867
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.04777556435548962,
+      "twice_base_delta_covariance": -0.050118212726727604,
+      "delta_centered_energy": 0.002342648371237895
+    }
+  },
+  {
+    "row_id": "PS130",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 900,
+    "state_id": "PS130",
+    "energy_ratio": {
+      "x_t": 0.8972066257814271,
+      "f00": 1.170014202767938,
+      "f10": 1.270199829957047,
+      "f01": 1.1251798259451864,
+      "f11": 1.2206094808545134
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.04959034910253341,
+      "twice_base_delta_covariance": -0.051518270862248,
+      "delta_centered_energy": 0.0019279217597148737
+    }
+  },
+  {
+    "row_id": "PS131",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 999,
+    "state_id": "PS131",
+    "energy_ratio": {
+      "x_t": 0.9034703548967099,
+      "f00": 0.001451226940884317,
+      "f10": 0.07464559295808326,
+      "f01": 0.001451226940884317,
+      "f11": 0.07464559295808326
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS132",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 975,
+    "state_id": "PS132",
+    "energy_ratio": {
+      "x_t": 0.8966852418369681,
+      "f00": 1.47749866910158,
+      "f10": 1.5254305661626832,
+      "f01": 1.47749866910158,
+      "f11": 1.5254305661626832
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS133",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 950,
+    "state_id": "PS133",
+    "energy_ratio": {
+      "x_t": 0.8773467436682181,
+      "f00": 1.0973661412222175,
+      "f10": 1.1448203682377651,
+      "f01": 1.0973661412222175,
+      "f11": 1.1448203682377651
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS134",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 925,
+    "state_id": "PS134",
+    "energy_ratio": {
+      "x_t": 0.8992915783466978,
+      "f00": 1.168962707122197,
+      "f10": 1.2493119300073925,
+      "f01": 1.168962707122197,
+      "f11": 1.2493119300073925
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS135",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 900,
+    "state_id": "PS135",
+    "energy_ratio": {
+      "x_t": 0.9033303227843951,
+      "f00": 1.352896429637421,
+      "f10": 1.4466441572949542,
+      "f01": 1.352896429637421,
+      "f11": 1.4466441572949542
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS136",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 999,
+    "state_id": "PS136",
+    "energy_ratio": {
+      "x_t": 0.8786772682923417,
+      "f00": 0.0012712906404758256,
+      "f10": 0.1025693820924547,
+      "f01": 0.001350710276809814,
+      "f11": 0.0698697108905889
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.03269967120186579,
+      "twice_base_delta_covariance": -0.03691641353582247,
+      "delta_centered_energy": 0.004216742333956673
+    }
+  },
+  {
+    "row_id": "PS137",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 975,
+    "state_id": "PS137",
+    "energy_ratio": {
+      "x_t": 0.9043595739333382,
+      "f00": 0.2092435354999011,
+      "f10": 0.21080380684243175,
+      "f01": 0.21444705737558656,
+      "f11": 0.2433142764242538
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.03251046958182206,
+      "twice_base_delta_covariance": 0.018944181857693396,
+      "delta_centered_energy": 0.013566287724128647
+    }
+  },
+  {
+    "row_id": "PS138",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 950,
+    "state_id": "PS138",
+    "energy_ratio": {
+      "x_t": 0.8718375197768654,
+      "f00": 0.5662135762882012,
+      "f10": 0.6175889209170896,
+      "f01": 0.5469174458136629,
+      "f11": 0.6070292111648405
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.010559709752249022,
+      "twice_base_delta_covariance": -0.020948396599030025,
+      "delta_centered_energy": 0.010388686846780957
+    }
+  },
+  {
+    "row_id": "PS139",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 925,
+    "state_id": "PS139",
+    "energy_ratio": {
+      "x_t": 0.8849799997898443,
+      "f00": 0.4057248137417524,
+      "f10": 0.42186728321897493,
+      "f01": 0.372606285493282,
+      "f11": 0.40733480539305356
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.01453247782592136,
+      "twice_base_delta_covariance": -0.024984213803498207,
+      "delta_centered_energy": 0.010451735977576739
+    }
+  },
+  {
+    "row_id": "PS140",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "state_id": "PS140",
+    "energy_ratio": {
+      "x_t": 0.8583029205200342,
+      "f00": 0.35296517907831976,
+      "f10": 0.3622883298715474,
+      "f01": 0.33802730112766033,
+      "f11": 0.363516638040671
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0012283081691236196,
+      "twice_base_delta_covariance": -0.00389508719310485,
+      "delta_centered_energy": 0.0051233953622285364
+    }
+  },
+  {
+    "row_id": "PS141",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 999,
+    "state_id": "PS141",
+    "energy_ratio": {
+      "x_t": 0.8786772682923417,
+      "f00": 0.0012712906404758256,
+      "f10": 0.1025693820924547,
+      "f01": 0.001297885593280721,
+      "f11": 0.07560183968676897
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.02696754240568573,
+      "twice_base_delta_covariance": -0.029953486377033354,
+      "delta_centered_energy": 0.002985943971347622
+    }
+  },
+  {
+    "row_id": "PS142",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 975,
+    "state_id": "PS142",
+    "energy_ratio": {
+      "x_t": 0.9044528235063867,
+      "f00": 0.25184972448184645,
+      "f10": 0.2578504251301164,
+      "f01": 0.2676046147477862,
+      "f11": 0.3093907887579544
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.051540363627837954,
+      "twice_base_delta_covariance": 0.036511260436647666,
+      "delta_centered_energy": 0.015029103191190326
+    }
+  },
+  {
+    "row_id": "PS143",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 950,
+    "state_id": "PS143",
+    "energy_ratio": {
+      "x_t": 0.8727990014401383,
+      "f00": 0.8490851132344225,
+      "f10": 0.8939453771891961,
+      "f01": 0.8668916644259834,
+      "f11": 0.9168436127058276
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.022898235516631477,
+      "twice_base_delta_covariance": 0.013075839817888188,
+      "delta_centered_energy": 0.00982239569874316
+    }
+  },
+  {
+    "row_id": "PS144",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 925,
+    "state_id": "PS144",
+    "energy_ratio": {
+      "x_t": 0.888137506730302,
+      "f00": 0.8536383148617841,
+      "f10": 0.8498437942513747,
+      "f01": 0.8489677635300713,
+      "f11": 0.8603598352299204
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.010516040978545698,
+      "twice_base_delta_covariance": 0.0006239058278036181,
+      "delta_centered_energy": 0.00989213515074204
+    }
+  },
+  {
+    "row_id": "PS145",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "state_id": "PS145",
+    "energy_ratio": {
+      "x_t": 0.8664833302799068,
+      "f00": 0.9909857273982234,
+      "f10": 0.9910163239166969,
+      "f01": 0.968385614517808,
+      "f11": 0.9782485392691436
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.012767784647553317,
+      "twice_base_delta_covariance": -0.01765354009258748,
+      "delta_centered_energy": 0.004885755445034185
+    }
+  },
+  {
+    "row_id": "PS146",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 999,
+    "state_id": "PS146",
+    "energy_ratio": {
+      "x_t": 0.8786772682923417,
+      "f00": 0.0012712906404758256,
+      "f10": 0.1025693820924547,
+      "f01": 0.0012712906404758256,
+      "f11": 0.1025693820924547
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS147",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 975,
+    "state_id": "PS147",
+    "energy_ratio": {
+      "x_t": 0.9044293669091304,
+      "f00": 0.20439937518967255,
+      "f10": 0.2095400108669877,
+      "f01": 0.20439937518967255,
+      "f11": 0.2095400108669877
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS148",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 950,
+    "state_id": "PS148",
+    "energy_ratio": {
+      "x_t": 0.8720179426930443,
+      "f00": 0.48252070827555876,
+      "f10": 0.5153371237430792,
+      "f01": 0.48252070827555876,
+      "f11": 0.5153371237430792
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS149",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 925,
+    "state_id": "PS149",
+    "energy_ratio": {
+      "x_t": 0.8849725482143742,
+      "f00": 0.381207454562355,
+      "f10": 0.3883093611826191,
+      "f01": 0.381207454562355,
+      "f11": 0.3883093611826191
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS150",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "state_id": "PS150",
+    "energy_ratio": {
+      "x_t": 0.8577463884380339,
+      "f00": 0.30647775723836457,
+      "f10": 0.3083876031429878,
+      "f01": 0.30647775723836457,
+      "f11": 0.3083876031429878
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS151",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 999,
+    "state_id": "PS151",
+    "energy_ratio": {
+      "x_t": 0.5006995847996476,
+      "f00": 0.0008822912889075836,
+      "f10": 0.0119656206939599,
+      "f01": 0.0008879875203755703,
+      "f11": 0.006988684126697789
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.00497693656726211,
+      "twice_base_delta_covariance": -0.006068376954323028,
+      "delta_centered_energy": 0.0010914403870609165
+    }
+  },
+  {
+    "row_id": "PS152",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 975,
+    "state_id": "PS152",
+    "energy_ratio": {
+      "x_t": 0.5136539277541199,
+      "f00": 0.05768515377332982,
+      "f10": 0.05959338248488263,
+      "f01": 0.054463628818492045,
+      "f11": 0.053082988366825165
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.0065103941180574615,
+      "twice_base_delta_covariance": -0.011725204321734071,
+      "delta_centered_energy": 0.005214810203676617
+    }
+  },
+  {
+    "row_id": "PS153",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 950,
+    "state_id": "PS153",
+    "energy_ratio": {
+      "x_t": 0.4932607459458845,
+      "f00": 0.15379818023154315,
+      "f10": 0.15980864114955862,
+      "f01": 0.17165613940198257,
+      "f11": 0.1792059648934408
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.019397323743882186,
+      "twice_base_delta_covariance": 0.01270769176405591,
+      "delta_centered_energy": 0.006689631979826273
+    }
+  },
+  {
+    "row_id": "PS154",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 925,
+    "state_id": "PS154",
+    "energy_ratio": {
+      "x_t": 0.49960991070716043,
+      "f00": 0.15628646278616176,
+      "f10": 0.1643234039993024,
+      "f01": 0.16481938280743505,
+      "f11": 0.17358923625668457
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.009265832257382166,
+      "twice_base_delta_covariance": 0.004328171338319741,
+      "delta_centered_energy": 0.00493766091906244
+    }
+  },
+  {
+    "row_id": "PS155",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 900,
+    "state_id": "PS155",
+    "energy_ratio": {
+      "x_t": 0.5010330251530531,
+      "f00": 0.22544112659812776,
+      "f10": 0.22906198989175933,
+      "f01": 0.23744086376847598,
+      "f11": 0.2425261745330747
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.013464184641315368,
+      "twice_base_delta_covariance": 0.009891681319802807,
+      "delta_centered_energy": 0.0035725033215125413
+    }
+  },
+  {
+    "row_id": "PS156",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 999,
+    "state_id": "PS156",
+    "energy_ratio": {
+      "x_t": 0.5006995847996476,
+      "f00": 0.0008822912889075836,
+      "f10": 0.0119656206939599,
+      "f01": 0.0009032039364440926,
+      "f11": 0.0066666250899866455
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.005298995603973253,
+      "twice_base_delta_covariance": -0.006609304886211756,
+      "delta_centered_energy": 0.0013103092822385014
+    }
+  },
+  {
+    "row_id": "PS157",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 975,
+    "state_id": "PS157",
+    "energy_ratio": {
+      "x_t": 0.513647235118071,
+      "f00": 0.05608386481681376,
+      "f10": 0.058618522505963805,
+      "f01": 0.05323704058115505,
+      "f11": 0.053801568190336296
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.00481695431562751,
+      "twice_base_delta_covariance": -0.010916791953060943,
+      "delta_centered_energy": 0.006099837637433423
+    }
+  },
+  {
+    "row_id": "PS158",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 950,
+    "state_id": "PS158",
+    "energy_ratio": {
+      "x_t": 0.4932993283302259,
+      "f00": 0.16472471834025318,
+      "f10": 0.16985309004357646,
+      "f01": 0.1895189490217171,
+      "f11": 0.19576857295122205
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.025915482907645594,
+      "twice_base_delta_covariance": 0.017638780433002276,
+      "delta_centered_energy": 0.008276702474643367
+    }
+  },
+  {
+    "row_id": "PS159",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 925,
+    "state_id": "PS159",
+    "energy_ratio": {
+      "x_t": 0.49976958060365473,
+      "f00": 0.16733902844436924,
+      "f10": 0.176735008974975,
+      "f01": 0.18113978993598634,
+      "f11": 0.1888849601933843
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.012149951218409314,
+      "twice_base_delta_covariance": 0.006732191363804956,
+      "delta_centered_energy": 0.005417759854604338
+    }
+  },
+  {
+    "row_id": "PS160",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 900,
+    "state_id": "PS160",
+    "energy_ratio": {
+      "x_t": 0.5013046148388436,
+      "f00": 0.23774035550759445,
+      "f10": 0.24004082924709783,
+      "f01": 0.254561380686837,
+      "f11": 0.25734401489506636
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.017303185647968514,
+      "twice_base_delta_covariance": 0.013435103919645027,
+      "delta_centered_energy": 0.003868081728323469
+    }
+  },
+  {
+    "row_id": "PS161",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 999,
+    "state_id": "PS161",
+    "energy_ratio": {
+      "x_t": 0.5006995847996476,
+      "f00": 0.0008822912889075836,
+      "f10": 0.0119656206939599,
+      "f01": 0.0008822912889075836,
+      "f11": 0.0119656206939599
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS162",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 975,
+    "state_id": "PS162",
+    "energy_ratio": {
+      "x_t": 0.513628447098995,
+      "f00": 0.0930590173118374,
+      "f10": 0.08121382488192358,
+      "f01": 0.0930590173118374,
+      "f11": 0.08121382488192358
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS163",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 950,
+    "state_id": "PS163",
+    "energy_ratio": {
+      "x_t": 0.493580775823756,
+      "f00": 0.17337739329258828,
+      "f10": 0.17545051558380073,
+      "f01": 0.17337739329258828,
+      "f11": 0.17545051558380073
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS164",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 925,
+    "state_id": "PS164",
+    "energy_ratio": {
+      "x_t": 0.5006808482337981,
+      "f00": 0.2500615307749718,
+      "f10": 0.2567689712356944,
+      "f01": 0.2500615307749718,
+      "f11": 0.2567689712356944
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS165",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 900,
+    "state_id": "PS165",
+    "energy_ratio": {
+      "x_t": 0.501762937605845,
+      "f00": 0.2815060938882406,
+      "f10": 0.2876809186480791,
+      "f01": 0.2815060938882406,
+      "f11": 0.2876809186480791
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS166",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 999,
+    "state_id": "PS166",
+    "energy_ratio": {
+      "x_t": 0.5166444716578943,
+      "f00": 0.0006897051762772942,
+      "f10": 0.007135319220658532,
+      "f01": 0.0040029505139201164,
+      "f11": 0.006518728942861241
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.0006165902777972909,
+      "twice_base_delta_covariance": -0.006041301325116964,
+      "delta_centered_energy": 0.005424711047319674
+    }
+  },
+  {
+    "row_id": "PS167",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 975,
+    "state_id": "PS167",
+    "energy_ratio": {
+      "x_t": 0.5158378446516659,
+      "f00": 0.22694790641323576,
+      "f10": 0.2593015799222554,
+      "f01": 0.6167122173280362,
+      "f11": 0.6331043502518726
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.3738027703296173,
+      "twice_base_delta_covariance": 0.19640280720922812,
+      "delta_centered_energy": 0.17739996312038914
+    }
+  },
+  {
+    "row_id": "PS168",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 950,
+    "state_id": "PS168",
+    "energy_ratio": {
+      "x_t": 0.516020540506008,
+      "f00": 0.3492893538426456,
+      "f10": 0.3449535071224362,
+      "f01": 0.5993291291925804,
+      "f11": 0.610237465822836
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.2652839587003998,
+      "twice_base_delta_covariance": 0.18553418959304868,
+      "delta_centered_energy": 0.07974976910735118
+    }
+  },
+  {
+    "row_id": "PS169",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 925,
+    "state_id": "PS169",
+    "energy_ratio": {
+      "x_t": 0.5135219042154416,
+      "f00": 0.51040853823789,
+      "f10": 0.5233744656249647,
+      "f01": 0.7175718697955794,
+      "f11": 0.7316706234804259
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.20829615785546116,
+      "twice_base_delta_covariance": 0.16283481414271195,
+      "delta_centered_energy": 0.045461343712749305
+    }
+  },
+  {
+    "row_id": "PS170",
+    "path_arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "state_id": "PS170",
+    "energy_ratio": {
+      "x_t": 0.5181218940072849,
+      "f00": 0.6082908824577102,
+      "f10": 0.6197079641181636,
+      "f01": 0.7592409730927768,
+      "f11": 0.7639898674640425
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.14428190334587887,
+      "twice_base_delta_covariance": 0.11786879240208498,
+      "delta_centered_energy": 0.026413110943793772
+    }
+  },
+  {
+    "row_id": "PS171",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 999,
+    "state_id": "PS171",
+    "energy_ratio": {
+      "x_t": 0.5166444716578943,
+      "f00": 0.0006897051762772942,
+      "f10": 0.007135319220658532,
+      "f01": 0.0030767125716385214,
+      "f11": 0.0053014664535167245
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": -0.0018338527671418073,
+      "twice_base_delta_covariance": -0.006160312017110917,
+      "delta_centered_energy": 0.004326459249969111
+    }
+  },
+  {
+    "row_id": "PS172",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 975,
+    "state_id": "PS172",
+    "energy_ratio": {
+      "x_t": 0.5159344877248236,
+      "f00": 0.3657763195431211,
+      "f10": 0.3258606520027272,
+      "f01": 0.6417173285411825,
+      "f11": 0.6017916992415434
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.2759310472388162,
+      "twice_base_delta_covariance": 0.1645143648273856,
+      "delta_centered_energy": 0.11141668241143048
+    }
+  },
+  {
+    "row_id": "PS173",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 950,
+    "state_id": "PS173",
+    "energy_ratio": {
+      "x_t": 0.5160526066709196,
+      "f00": 0.34381700577333046,
+      "f10": 0.3346039899104204,
+      "f01": 0.5300253534035065,
+      "f11": 0.5398971669303585
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.20529317701993813,
+      "twice_base_delta_covariance": 0.1466558249757015,
+      "delta_centered_energy": 0.058637352044236694
+    }
+  },
+  {
+    "row_id": "PS174",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 925,
+    "state_id": "PS174",
+    "energy_ratio": {
+      "x_t": 0.5128679647652538,
+      "f00": 0.442375917370056,
+      "f10": 0.4536247147413849,
+      "f01": 0.6051222976047647,
+      "f11": 0.6256458426469694
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.1720211279055845,
+      "twice_base_delta_covariance": 0.13275440181864961,
+      "delta_centered_energy": 0.03926672608693474
+    }
+  },
+  {
+    "row_id": "PS175",
+    "path_arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "state_id": "PS175",
+    "energy_ratio": {
+      "x_t": 0.5162357420506071,
+      "f00": 0.5208605000880682,
+      "f10": 0.5333465727230493,
+      "f01": 0.663104478077701,
+      "f11": 0.6733860397462162
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.14003946702316694,
+      "twice_base_delta_covariance": 0.11213769442205296,
+      "delta_centered_energy": 0.027901772601113983
+    }
+  },
+  {
+    "row_id": "PS176",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 999,
+    "state_id": "PS176",
+    "energy_ratio": {
+      "x_t": 0.5166444716578943,
+      "f00": 0.0006897051762772942,
+      "f10": 0.007135319220658532,
+      "f01": 0.0006897051762772942,
+      "f11": 0.007135319220658532
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS177",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 975,
+    "state_id": "PS177",
+    "energy_ratio": {
+      "x_t": 0.515244976035814,
+      "f00": 0.024322166602977688,
+      "f10": 0.02480677899245603,
+      "f01": 0.024322166602977688,
+      "f11": 0.02480677899245603
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS178",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 950,
+    "state_id": "PS178",
+    "energy_ratio": {
+      "x_t": 0.5146117765086521,
+      "f00": 0.039550637873088434,
+      "f10": 0.04116159180162764,
+      "f01": 0.039550637873088434,
+      "f11": 0.04116159180162764
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS179",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 925,
+    "state_id": "PS179",
+    "energy_ratio": {
+      "x_t": 0.5077111865701988,
+      "f00": 0.09050209928256965,
+      "f10": 0.09010453075454992,
+      "f01": 0.09050209928256965,
+      "f11": 0.09010453075454992
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  },
+  {
+    "row_id": "PS180",
+    "path_arm": "T",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "state_id": "PS180",
+    "energy_ratio": {
+      "x_t": 0.5051393695066476,
+      "f00": 0.1115762859856737,
+      "f10": 0.11336101818173401,
+      "f01": 0.1115762859856737,
+      "f11": 0.11336101818173401
+    },
+    "imu_terms_per_GT": {
+      "delta_temporal_energy": 0.0,
+      "twice_base_delta_covariance": 0.0,
+      "delta_centered_energy": 0.0
+    }
+  }
+]

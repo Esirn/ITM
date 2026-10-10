@@ -1,0 +1,9 @@
+[
+  {
+    "snapshot_id": "F200",
+    "artifact": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261008_v1/F/model.pt",
+      "sha256": "d0e4f39f8c7ee5b980243baac48bc1bc02dc8f7c15c7a1f47f0adabb0b7e0ad3"
+    }
+  }
+]

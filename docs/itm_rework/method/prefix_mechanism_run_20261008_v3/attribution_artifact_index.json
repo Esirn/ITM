@@ -1,0 +1,18 @@
+[
+  {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/prefix_attribution_evaluation_20261008_v1/aggregates.json",
+    "sha256": "0794d94c14f9d6f245c8af5058bee32dc42e13de5a65558f6cd2c644319d1034"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/prefix_attribution_evaluation_20261008_v1/rows.json",
+    "sha256": "5b5bc0aa55ce28c07a39eebd4901986d830c6e740dd8ac036ddeeee4c23afd37"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/prefix_attribution_evaluation_20261008_v1/sources.json",
+    "sha256": "b243d4261e8def83df162823145ac2bdaa8137c5e824bb3118f3090ecbc71eee"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/prefix_attribution_evaluation_20261008_v1/summary.json",
+    "sha256": "8baf0bb66c344a3d19e3d2f3a43306bd7f4ad980039f72b1bef58c35385f02d6"
+  }
+]

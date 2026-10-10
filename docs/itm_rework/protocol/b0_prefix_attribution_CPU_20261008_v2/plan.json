@@ -1,0 +1,5848 @@
+{
+  "version": "b0-prefix-saved-prediction-algebra-v1",
+  "date": "2026-10-08",
+  "scope": "Main-session exploratory CPU follow-up designed after prior partialv2 exposure, before reading completev3 effects; not blind preregistration or a new primary criterion.",
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_authorized_20261008_v3",
+  "implementation": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_implementation_20261008_v3/implementation.json",
+    "sha256": "be04358cbeca4d35b4aeed2d3222f4f1013105cf6ab930e011eb8c16a113194f"
+  },
+  "scientific_package": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_prefix_mechanism_20261008_v1/package.json",
+    "sha256": "8b32b863da7a530cc71350384663678adfd072f8db53bbb01add176b3040853c"
+  },
+  "jobs": [
+    {
+      "row_id": "PA001",
+      "panel_case_id": "F_root_ric_balanced--000433-head-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC001",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC002",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC012",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA002",
+      "panel_case_id": "F_root_ric_balanced--000433-head-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC001",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC011",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC012",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA003",
+      "panel_case_id": "F_root_ric_balanced--000433-head-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC001",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC001",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC021",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA004",
+      "panel_case_id": "F_root_ric_balanced--000433-head-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC001",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC021",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC021",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA005",
+      "panel_case_id": "F_root_ric_balanced--000433-head-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC003",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC004",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC014",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA006",
+      "panel_case_id": "F_root_ric_balanced--000433-head-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC003",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC013",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC014",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA007",
+      "panel_case_id": "F_root_ric_balanced--000433-head-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC003",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC003",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC023",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA008",
+      "panel_case_id": "F_root_ric_balanced--000433-head-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC003",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC023",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC023",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA009",
+      "panel_case_id": "F_root_ric_balanced--000433-head-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC005",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC006",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC016",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA010",
+      "panel_case_id": "F_root_ric_balanced--000433-head-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC005",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC015",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC016",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA011",
+      "panel_case_id": "F_root_ric_balanced--000433-head-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC005",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC005",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC025",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA012",
+      "panel_case_id": "F_root_ric_balanced--000433-head-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC005",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC025",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC025",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA013",
+      "panel_case_id": "F_root_ric_balanced--000433-head-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC007",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC008",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC018",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA014",
+      "panel_case_id": "F_root_ric_balanced--000433-head-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC007",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC017",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC018",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA015",
+      "panel_case_id": "F_root_ric_balanced--000433-head-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC007",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC007",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC027",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA016",
+      "panel_case_id": "F_root_ric_balanced--000433-head-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC007",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC027",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC027",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA017",
+      "panel_case_id": "F_root_ric_balanced--000433-head-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC009",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC010",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC020",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA018",
+      "panel_case_id": "F_root_ric_balanced--000433-head-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC009",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC019",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC020",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA019",
+      "panel_case_id": "F_root_ric_balanced--000433-head-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC009",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC009",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC029",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA020",
+      "panel_case_id": "F_root_ric_balanced--000433-head-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC009",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC029",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC029",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA021",
+      "panel_case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC031",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC032",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC042",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA022",
+      "panel_case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC031",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC041",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC042",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA023",
+      "panel_case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC031",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC031",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC051",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA024",
+      "panel_case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC031",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC051",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC051",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA025",
+      "panel_case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC033",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC034",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC044",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA026",
+      "panel_case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC033",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC043",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC044",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA027",
+      "panel_case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC033",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC033",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC053",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA028",
+      "panel_case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC033",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC053",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC053",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA029",
+      "panel_case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC035",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC036",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC046",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA030",
+      "panel_case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC035",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC045",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC046",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA031",
+      "panel_case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC035",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC035",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC055",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA032",
+      "panel_case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC035",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC055",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC055",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA033",
+      "panel_case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC037",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC038",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC048",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA034",
+      "panel_case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC037",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC047",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC048",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA035",
+      "panel_case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC037",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC037",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC057",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA036",
+      "panel_case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC037",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC057",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC057",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA037",
+      "panel_case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC039",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC040",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC050",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA038",
+      "panel_case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC039",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC049",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC050",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA039",
+      "panel_case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC039",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC039",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC059",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA040",
+      "panel_case_id": "F_root_ric_balanced--000433-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000433",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC039",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC059",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC059",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA041",
+      "panel_case_id": "F_root_ric_balanced--000382-head-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC061",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC062",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC072",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA042",
+      "panel_case_id": "F_root_ric_balanced--000382-head-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC061",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC071",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC072",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA043",
+      "panel_case_id": "F_root_ric_balanced--000382-head-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC061",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC061",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC081",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA044",
+      "panel_case_id": "F_root_ric_balanced--000382-head-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC061",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC081",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC081",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA045",
+      "panel_case_id": "F_root_ric_balanced--000382-head-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC063",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC064",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC074",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA046",
+      "panel_case_id": "F_root_ric_balanced--000382-head-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC063",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC073",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC074",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA047",
+      "panel_case_id": "F_root_ric_balanced--000382-head-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC063",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC063",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC083",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA048",
+      "panel_case_id": "F_root_ric_balanced--000382-head-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC063",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC083",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC083",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA049",
+      "panel_case_id": "F_root_ric_balanced--000382-head-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC065",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC066",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC076",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA050",
+      "panel_case_id": "F_root_ric_balanced--000382-head-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC065",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC075",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC076",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA051",
+      "panel_case_id": "F_root_ric_balanced--000382-head-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC065",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC065",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC085",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA052",
+      "panel_case_id": "F_root_ric_balanced--000382-head-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC065",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC085",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC085",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA053",
+      "panel_case_id": "F_root_ric_balanced--000382-head-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC067",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC068",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC078",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA054",
+      "panel_case_id": "F_root_ric_balanced--000382-head-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC067",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC077",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC078",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA055",
+      "panel_case_id": "F_root_ric_balanced--000382-head-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC067",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC067",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC087",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA056",
+      "panel_case_id": "F_root_ric_balanced--000382-head-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC067",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC087",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC087",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA057",
+      "panel_case_id": "F_root_ric_balanced--000382-head-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC069",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC070",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC080",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA058",
+      "panel_case_id": "F_root_ric_balanced--000382-head-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC069",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC079",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC080",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA059",
+      "panel_case_id": "F_root_ric_balanced--000382-head-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC069",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC069",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC089",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA060",
+      "panel_case_id": "F_root_ric_balanced--000382-head-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC069",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC089",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC089",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA061",
+      "panel_case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC091",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC092",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC102",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA062",
+      "panel_case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC091",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC101",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC102",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA063",
+      "panel_case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC091",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC091",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC111",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA064",
+      "panel_case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC091",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC111",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC111",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA065",
+      "panel_case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC093",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC094",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC104",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA066",
+      "panel_case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC093",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC103",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC104",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA067",
+      "panel_case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC093",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC093",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC113",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA068",
+      "panel_case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC093",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC113",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC113",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA069",
+      "panel_case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC095",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC096",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC106",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA070",
+      "panel_case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC095",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC105",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC106",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA071",
+      "panel_case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC095",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC095",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC115",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA072",
+      "panel_case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC095",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC115",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC115",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA073",
+      "panel_case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC097",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC098",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC108",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA074",
+      "panel_case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC097",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC107",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC108",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA075",
+      "panel_case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC097",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC097",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC117",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA076",
+      "panel_case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC097",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC117",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC117",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA077",
+      "panel_case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC099",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC100",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC110",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA078",
+      "panel_case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC099",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC109",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC110",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA079",
+      "panel_case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC099",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC099",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC119",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA080",
+      "panel_case_id": "F_root_ric_balanced--000382-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000382",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC099",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC119",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC119",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA081",
+      "panel_case_id": "F_root_ric_balanced--000139-head-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC121",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC122",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC132",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA082",
+      "panel_case_id": "F_root_ric_balanced--000139-head-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC121",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC131",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC132",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA083",
+      "panel_case_id": "F_root_ric_balanced--000139-head-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC121",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC121",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC141",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA084",
+      "panel_case_id": "F_root_ric_balanced--000139-head-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC121",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC141",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC141",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA085",
+      "panel_case_id": "F_root_ric_balanced--000139-head-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC123",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC124",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC134",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA086",
+      "panel_case_id": "F_root_ric_balanced--000139-head-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC123",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC133",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC134",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA087",
+      "panel_case_id": "F_root_ric_balanced--000139-head-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC123",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC123",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC143",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA088",
+      "panel_case_id": "F_root_ric_balanced--000139-head-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC123",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC143",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC143",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA089",
+      "panel_case_id": "F_root_ric_balanced--000139-head-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC125",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC126",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC136",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA090",
+      "panel_case_id": "F_root_ric_balanced--000139-head-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC125",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC135",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC136",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA091",
+      "panel_case_id": "F_root_ric_balanced--000139-head-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC125",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC125",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC145",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA092",
+      "panel_case_id": "F_root_ric_balanced--000139-head-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC125",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC145",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC145",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA093",
+      "panel_case_id": "F_root_ric_balanced--000139-head-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC127",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC128",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC138",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA094",
+      "panel_case_id": "F_root_ric_balanced--000139-head-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC127",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC137",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC138",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA095",
+      "panel_case_id": "F_root_ric_balanced--000139-head-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC127",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC127",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC147",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA096",
+      "panel_case_id": "F_root_ric_balanced--000139-head-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC127",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC147",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC147",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA097",
+      "panel_case_id": "F_root_ric_balanced--000139-head-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC129",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC130",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC140",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA098",
+      "panel_case_id": "F_root_ric_balanced--000139-head-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC129",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC139",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC140",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA099",
+      "panel_case_id": "F_root_ric_balanced--000139-head-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC129",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC129",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC149",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA100",
+      "panel_case_id": "F_root_ric_balanced--000139-head-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC129",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC149",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC149",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA101",
+      "panel_case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC151",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC152",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC162",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA102",
+      "panel_case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC151",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC161",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC162",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA103",
+      "panel_case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC151",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC151",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC171",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA104",
+      "panel_case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC151",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC171",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC171",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA105",
+      "panel_case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC153",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC154",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC164",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA106",
+      "panel_case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC153",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC163",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC164",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA107",
+      "panel_case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC153",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC153",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC173",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA108",
+      "panel_case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC153",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC173",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC173",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA109",
+      "panel_case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC155",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC156",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC166",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA110",
+      "panel_case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC155",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC165",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC166",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA111",
+      "panel_case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC155",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC155",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC175",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA112",
+      "panel_case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC155",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC175",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC175",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA113",
+      "panel_case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC157",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC158",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC168",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA114",
+      "panel_case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC157",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC167",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC168",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA115",
+      "panel_case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC157",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC157",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC177",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA116",
+      "panel_case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC157",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC177",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC177",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA117",
+      "panel_case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC159",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC160",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC170",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA118",
+      "panel_case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC159",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC169",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC170",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA119",
+      "panel_case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC159",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC159",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC179",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA120",
+      "panel_case_id": "F_root_ric_balanced--000139-wrists-paired",
+      "data_split": "val",
+      "motion_id": "000139",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC159",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC179",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC179",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA121",
+      "panel_case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC181",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC182",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC192",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA122",
+      "panel_case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC181",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC191",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC192",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA123",
+      "panel_case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC181",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC181",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC201",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA124",
+      "panel_case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC181",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC201",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC201",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA125",
+      "panel_case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC183",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC184",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC194",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA126",
+      "panel_case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC183",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC193",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC194",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA127",
+      "panel_case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC183",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC183",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC203",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA128",
+      "panel_case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC183",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC203",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC203",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA129",
+      "panel_case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC185",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC186",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC196",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA130",
+      "panel_case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC185",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC195",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC196",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA131",
+      "panel_case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC185",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC185",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC205",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA132",
+      "panel_case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC185",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC205",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC205",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA133",
+      "panel_case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC187",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC188",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC198",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA134",
+      "panel_case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC187",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC197",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC198",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA135",
+      "panel_case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC187",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC187",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC207",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA136",
+      "panel_case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC187",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC207",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC207",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA137",
+      "panel_case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC189",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC190",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC200",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA138",
+      "panel_case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC189",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC199",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC200",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA139",
+      "panel_case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC189",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC189",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC209",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA140",
+      "panel_case_id": "F_root_ric_balanced--train-000027-head-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC189",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC209",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC209",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA141",
+      "panel_case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC211",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC212",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC222",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA142",
+      "panel_case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC211",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC221",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC222",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA143",
+      "panel_case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC211",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC211",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC231",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA144",
+      "panel_case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC211",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC231",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC231",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA145",
+      "panel_case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC213",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC214",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC224",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA146",
+      "panel_case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC213",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC223",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC224",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA147",
+      "panel_case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC213",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC213",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC233",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA148",
+      "panel_case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC213",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC233",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC233",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA149",
+      "panel_case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC215",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC216",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC226",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA150",
+      "panel_case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC215",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC225",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC226",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA151",
+      "panel_case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC215",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC215",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC235",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA152",
+      "panel_case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC215",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC235",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC235",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA153",
+      "panel_case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC217",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC218",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC228",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA154",
+      "panel_case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC217",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC227",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC228",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA155",
+      "panel_case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC217",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC217",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC237",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA156",
+      "panel_case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC217",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC237",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC237",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA157",
+      "panel_case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC219",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC220",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC230",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA158",
+      "panel_case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC219",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC229",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC230",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA159",
+      "panel_case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC219",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC219",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC239",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA160",
+      "panel_case_id": "F_root_ric_balanced--train-000027-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000027",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC219",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC239",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC239",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA161",
+      "panel_case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC241",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC242",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC252",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA162",
+      "panel_case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC241",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC251",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC252",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA163",
+      "panel_case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC241",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC241",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC261",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA164",
+      "panel_case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC241",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC261",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC261",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA165",
+      "panel_case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC243",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC244",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC254",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA166",
+      "panel_case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC243",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC253",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC254",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA167",
+      "panel_case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC243",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC243",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC263",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA168",
+      "panel_case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC243",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC263",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC263",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA169",
+      "panel_case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC245",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC246",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC256",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA170",
+      "panel_case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC245",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC255",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC256",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA171",
+      "panel_case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC245",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC245",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC265",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA172",
+      "panel_case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC245",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC265",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC265",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA173",
+      "panel_case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC247",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC248",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC258",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA174",
+      "panel_case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC247",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC257",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC258",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA175",
+      "panel_case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC247",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC247",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC267",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA176",
+      "panel_case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC247",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC267",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC267",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA177",
+      "panel_case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC249",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC250",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC260",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA178",
+      "panel_case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC249",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC259",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC260",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA179",
+      "panel_case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC249",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC249",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC269",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA180",
+      "panel_case_id": "F_root_ric_balanced--train-000506-head-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC249",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC269",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC269",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA181",
+      "panel_case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC271",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC272",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC282",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA182",
+      "panel_case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC271",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC281",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC282",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA183",
+      "panel_case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC271",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC271",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC291",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA184",
+      "panel_case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC271",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC291",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC291",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA185",
+      "panel_case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC273",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC274",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC284",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA186",
+      "panel_case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC273",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC283",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC284",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA187",
+      "panel_case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC273",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC273",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC293",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA188",
+      "panel_case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC273",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC293",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC293",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA189",
+      "panel_case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC275",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC276",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC286",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA190",
+      "panel_case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC275",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC285",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC286",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA191",
+      "panel_case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC275",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC275",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC295",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA192",
+      "panel_case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC275",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC295",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC295",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA193",
+      "panel_case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC277",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC278",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC288",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA194",
+      "panel_case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC277",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC287",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC288",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA195",
+      "panel_case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC277",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC277",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC297",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA196",
+      "panel_case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC277",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC297",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC297",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA197",
+      "panel_case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC279",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC280",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC290",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA198",
+      "panel_case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC279",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC289",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC290",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA199",
+      "panel_case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC279",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC279",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC299",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA200",
+      "panel_case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+      "data_split": "train",
+      "motion_id": "000506",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC279",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC299",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC299",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA201",
+      "panel_case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC301",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC302",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC312",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA202",
+      "panel_case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC301",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC311",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC312",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA203",
+      "panel_case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC301",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC301",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC321",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA204",
+      "panel_case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC301",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC321",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC321",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA205",
+      "panel_case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC303",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC304",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC314",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA206",
+      "panel_case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC303",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC313",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC314",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA207",
+      "panel_case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC303",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC303",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC323",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA208",
+      "panel_case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC303",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC323",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC323",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA209",
+      "panel_case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC305",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC306",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC316",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA210",
+      "panel_case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC305",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC315",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC316",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA211",
+      "panel_case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC305",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC305",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC325",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA212",
+      "panel_case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC305",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC325",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC325",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA213",
+      "panel_case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC307",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC308",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC318",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA214",
+      "panel_case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC307",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC317",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC318",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA215",
+      "panel_case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC307",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC307",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC327",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA216",
+      "panel_case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC307",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC327",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC327",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA217",
+      "panel_case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC309",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC310",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC320",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA218",
+      "panel_case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC309",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC319",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC320",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA219",
+      "panel_case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC309",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC309",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC329",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA220",
+      "panel_case_id": "F_root_ric_balanced--train-004728-head-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "head",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC309",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC329",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC329",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA221",
+      "panel_case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC331",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC332",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC342",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA222",
+      "panel_case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC331",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC341",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC342",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA223",
+      "panel_case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC331",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC331",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC351",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA224",
+      "panel_case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "timestep": 999,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC331",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC351",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC351",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA225",
+      "panel_case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC333",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC334",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC344",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA226",
+      "panel_case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC333",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC343",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC344",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA227",
+      "panel_case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC333",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC333",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC353",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA228",
+      "panel_case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "timestep": 975,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC333",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC353",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC353",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA229",
+      "panel_case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC335",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC336",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC346",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA230",
+      "panel_case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC335",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC345",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC346",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA231",
+      "panel_case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC335",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC335",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC355",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA232",
+      "panel_case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "timestep": 950,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC335",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC355",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC355",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA233",
+      "panel_case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC337",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC338",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC348",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA234",
+      "panel_case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC337",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC347",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC348",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA235",
+      "panel_case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC337",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC337",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC357",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA236",
+      "panel_case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "timestep": 925,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC337",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC357",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC357",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA237",
+      "panel_case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC339",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC340",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC350",
+        "branch": "f11"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA238",
+      "panel_case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_U",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC339",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC349",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC350",
+        "branch": "f11"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA239",
+      "panel_case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_F_state",
+      "prediction": {
+        "probe_id": "PC339",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC339",
+        "branch": "f10"
+      },
+      "reference": {
+        "probe_id": "PC359",
+        "branch": "f10"
+      },
+      "direct_is_first": true,
+      "status": "not_run"
+    },
+    {
+      "row_id": "PA240",
+      "panel_case_id": "F_root_ric_balanced--train-004728-wrists-paired",
+      "data_split": "train",
+      "motion_id": "004728",
+      "sensor_config": "wrists",
+      "timestep": 900,
+      "comparison": "F_minus_T",
+      "ordering": "direct_at_reference_state",
+      "prediction": {
+        "probe_id": "PC339",
+        "branch": "f11"
+      },
+      "intermediate": {
+        "probe_id": "PC359",
+        "branch": "f11"
+      },
+      "reference": {
+        "probe_id": "PC359",
+        "branch": "f10"
+      },
+      "direct_is_first": false,
+      "status": "not_run"
+    }
+  ],
+  "planned_rows": 240,
+  "source_count": 6,
+  "panel_configs": 12,
+  "timesteps": [
+    999,
+    975,
+    950,
+    925,
+    900
+  ],
+  "formula": "prediction-reference=(prediction-intermediate)+(intermediate-reference). Both reference orderings required. Report raw/centered component energies, signed cross terms and fixed-time GT MSE change; covariance prevents interpreting energies as additive percentages.",
+  "direct": "Checkpoint F-U difference for F_minus_U; paired IMU vs strict-null text difference for F_minus_T, at a fixed saved state.",
+  "state": "Model output change between saved path states with checkpoint/condition fixed. States came from different prior trajectories; not an isolated causal distribution-shift intervention.",
+  "gate": "Complete original queue/all mandatory software anchors required for primary values. Never complete by joining previous partial data.",
+  "aggregation": "Equal source means/min/max/n per split/config/t/comparison/ordering; no pooling times or treating frames as sources.",
+  "tolerances": "Original float64 64eps identity bounds; no new behavioral threshold, checkpoint selection or statistical significance gate.",
+  "prohibited": [
+    "GPU query",
+    "model forward",
+    "training",
+    "noise generation",
+    "sampling",
+    "decode",
+    "alignment/fitting",
+    "paper claim change"
+  ],
+  "sources": [
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_prefix_mechanism_20261008_v1/package.json",
+      "sha256": "8b32b863da7a530cc71350384663678adfd072f8db53bbb01add176b3040853c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_prefix_mechanism_20261008_v1/trajectories.json",
+      "sha256": "5ece67f2693666895c3c2f274ecb7d816b01688fba79ea27b06f7137dfe338a9"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_prefix_mechanism_20261008_v1/states.json",
+      "sha256": "71da0e3aef5651050da8ebeee8c29d786eb78c3a3b1b389ecc06f06ae2777183"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_prefix_mechanism_20261008_v1/probes.json",
+      "sha256": "5f6c2a5d3e27c6512bccd98c26027a74774eade9b6408be2fbfbdab01089235e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_implementation_20261008_v3/implementation.json",
+      "sha256": "be04358cbeca4d35b4aeed2d3222f4f1013105cf6ab930e011eb8c16a113194f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/analyze_b0_prefix_attribution_v2.py",
+      "sha256": "a63c3eecff38895451cfb180e92ece498f807941adfa4468643e45b98d35f355"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/metrics/prefix_attribution.py",
+      "sha256": "fe4d5eff43377491959679503075e1c902101364a69f2e5248199441913f78f3"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/metrics/training_sufficiency.py",
+      "sha256": "109a2b37c22398c590352e88acfc5b40dbaa3feb839ddfb86190e1485c310d9e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/metrics/feature_balance.py",
+      "sha256": "d287a890f23fb4a30b09746a8bccdaae6a1b71d158ce3b2c01c71173ff5f3f96"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/evaluate_b0_native_training_sufficiency.py",
+      "sha256": "bd6c917faabc0703611d1ae1db779f1c304f375b4e865e651145c533af2b622b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/tests/test_prefix_attribution.py",
+      "sha256": "fdd300618ed82a2fffbeacb48c03bc5cb6ab4304fa02f0af836783e7d02a812f"
+    }
+  ]
+}

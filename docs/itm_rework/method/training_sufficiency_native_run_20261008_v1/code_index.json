@@ -1,0 +1,102 @@
+[
+  {
+    "source": {
+      "path": "src/itm/models/mdm_training_sufficiency.py",
+      "sha256": "d51bd7a18c3b9505e56109cc61284dae807bfef0f30e9a3fe31f4d4fe583c6df"
+    },
+    "archive": {
+      "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/code/mdm_training_sufficiency.py",
+      "sha256": "d51bd7a18c3b9505e56109cc61284dae807bfef0f30e9a3fe31f4d4fe583c6df"
+    }
+  },
+  {
+    "source": {
+      "path": "src/itm/models/mdm_native_training_sufficiency.py",
+      "sha256": "e2bc82d00a85c0f301a999c52b05b7c7453d7d134b311127d5db75911735d63d"
+    },
+    "archive": {
+      "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/code/mdm_native_training_sufficiency.py",
+      "sha256": "e2bc82d00a85c0f301a999c52b05b7c7453d7d134b311127d5db75911735d63d"
+    }
+  },
+  {
+    "source": {
+      "path": "scripts/run_mdm_native_training_sufficiency_worker.py",
+      "sha256": "975cad9a21e9c265d8ca058125a4a1c9328500d47157d234519af92076b6aacb"
+    },
+    "archive": {
+      "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/code/run_mdm_native_training_sufficiency_worker.py",
+      "sha256": "975cad9a21e9c265d8ca058125a4a1c9328500d47157d234519af92076b6aacb"
+    }
+  },
+  {
+    "source": {
+      "path": "scripts/run_mdm_native_training_sufficiency_bounded.py",
+      "sha256": "38c176f62d2858ffcfbfd6cb28888b60ba151f03c7ca2d99609b03460745d94a"
+    },
+    "archive": {
+      "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/code/run_mdm_native_training_sufficiency_bounded.py",
+      "sha256": "38c176f62d2858ffcfbfd6cb28888b60ba151f03c7ca2d99609b03460745d94a"
+    }
+  },
+  {
+    "source": {
+      "path": "scripts/evaluate_b0_native_training_sufficiency.py",
+      "sha256": "bd6c917faabc0703611d1ae1db779f1c304f375b4e865e651145c533af2b622b"
+    },
+    "archive": {
+      "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/code/evaluate_b0_native_training_sufficiency.py",
+      "sha256": "bd6c917faabc0703611d1ae1db779f1c304f375b4e865e651145c533af2b622b"
+    }
+  },
+  {
+    "source": {
+      "path": "scripts/verify_b0_native_training_results.py",
+      "sha256": "b9f651325ce6f94ff8dd766ea6e0d6b81ccd7ba30462150148a12026fab44038"
+    },
+    "archive": {
+      "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/code/verify_b0_native_training_results.py",
+      "sha256": "b9f651325ce6f94ff8dd766ea6e0d6b81ccd7ba30462150148a12026fab44038"
+    }
+  },
+  {
+    "source": {
+      "path": "scripts/itm_shared_gpu_preflight.py",
+      "sha256": "d860a89b0ffe77a28ea7f6cc8813540c94b492c8ee22276a8f84a3dd6633ef24"
+    },
+    "archive": {
+      "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/code/itm_shared_gpu_preflight.py",
+      "sha256": "d860a89b0ffe77a28ea7f6cc8813540c94b492c8ee22276a8f84a3dd6633ef24"
+    }
+  },
+  {
+    "source": {
+      "path": "scripts/freeze_b0_native_training_sufficiency.py",
+      "sha256": "9c026d403bc77e2436b3205bdcfe00872ae8e9d8806a88d0875a62c3e059b77a"
+    },
+    "archive": {
+      "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/code/freeze_b0_native_training_sufficiency.py",
+      "sha256": "9c026d403bc77e2436b3205bdcfe00872ae8e9d8806a88d0875a62c3e059b77a"
+    }
+  },
+  {
+    "source": {
+      "path": "tests/test_mdm_native_training_sufficiency.py",
+      "sha256": "3fc798f5aada85f261c183c2fdfc3f82b1ddc4b8afc6d3cf9b88bdc521cbd959"
+    },
+    "archive": {
+      "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/code/test_mdm_native_training_sufficiency.py",
+      "sha256": "3fc798f5aada85f261c183c2fdfc3f82b1ddc4b8afc6d3cf9b88bdc521cbd959"
+    }
+  },
+  {
+    "source": {
+      "path": "tests/test_b0_shared_gpu_preflight.py",
+      "sha256": "50f0f1775aa7d862e9dc5949c5fb96db251797139d81fc7d9e8e0a109dc46d63"
+    },
+    "archive": {
+      "path": "docs/itm_rework/method/training_sufficiency_native_run_20261008_v1/code/test_b0_shared_gpu_preflight.py",
+      "sha256": "50f0f1775aa7d862e9dc5949c5fb96db251797139d81fc7d9e8e0a109dc46d63"
+    }
+  }
+]

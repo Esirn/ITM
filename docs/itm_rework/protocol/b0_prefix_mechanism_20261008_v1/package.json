@@ -1,0 +1,54 @@
+{
+  "version": "b0-prefix-mechanism-package-v1",
+  "artifacts": [
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_prefix_mechanism_20261008_v1/design.json",
+      "sha256": "83f62dd1b9d032c074d812877fa29cf2e41432556c5ab2fac93deac95da093d6"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_prefix_mechanism_20261008_v1/budgets.json",
+      "sha256": "9a67a8cf6741ac174942f7e296c3fae72e8b78463909b0f1970b9946b68efaad"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_prefix_mechanism_20261008_v1/software_checks.json",
+      "sha256": "61afdaeb268ffb587aeaaa6d37b5cd64e3623b0f2d6860563a37568bbac0a5ab"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_prefix_mechanism_20261008_v1/trajectories.json",
+      "sha256": "5ece67f2693666895c3c2f274ecb7d816b01688fba79ea27b06f7137dfe338a9"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_prefix_mechanism_20261008_v1/states.json",
+      "sha256": "71da0e3aef5651050da8ebeee8c29d786eb78c3a3b1b389ecc06f06ae2777183"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_prefix_mechanism_20261008_v1/probes.json",
+      "sha256": "5f6c2a5d3e27c6512bccd98c26027a74774eade9b6408be2fbfbdab01089235e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_prefix_mechanism_20261008_v1/noise.json",
+      "sha256": "744e7ed40a5bad41e0d1f0ba87e3806309ec7166c710248ce650b00be420f9ae"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_prefix_mechanism_20261008_v1/historical_anchors.json",
+      "sha256": "1d1fa16efd715b3580d858c7cfe0dd06aec255170ab40997f0fe43620c9acda0"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_prefix_mechanism_20261008_v1/sources.json",
+      "sha256": "5af7728908ea4792a07e1a50ca7f0c71b97368ab18136770a37bc7efce7da8d1"
+    }
+  ],
+  "counts": {
+    "panel_cases": 12,
+    "trajectories": 36,
+    "saved_states": 180,
+    "same_state_jobs": 360,
+    "software_core_checks": 1380
+  },
+  "source_count": 2639,
+  "model_constructions": 0,
+  "new_GPU_queries": 0,
+  "new_model_calls": 0,
+  "new_noise": 0,
+  "new_motion_decodes": 0
+}

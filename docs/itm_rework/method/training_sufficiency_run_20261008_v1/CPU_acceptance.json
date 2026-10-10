@@ -1,0 +1,38 @@
+{
+  "version": "itm-sufficiency-CPU-acceptance-v1",
+  "status": "passed",
+  "package_sha256": "471376c4799b80975c09faee4a80e2adfa220a6119a73a325761ed2a89029593",
+  "implementation_sha256": "82df1581f5efe658857c509de3d314803ae81baf770a94fb45331c2dcab7ca76",
+  "incremental_tests_passed": 26,
+  "seconds": 114.27,
+  "expected_artifacts_verified": 2556,
+  "artifacts": [
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/training_sufficiency_implementation_20261008_v1/CPU_tests_final.log",
+      "sha256": "18810c96a4c78d51db6b494e0b9c996763a3c5204e6718ad754a4b0057d66ca4"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/tests/test_mdm_training_sufficiency.py",
+      "sha256": "b8f4a6c8699f05b709a48c044c48fd60e9bffa10558a5a728a059814da543b6f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/mdm_training_sufficiency.py",
+      "sha256": "5c425fd2d0421e72cb7000b0f623415751b4da5681bb29f767b76f67755115a3"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/run_mdm_training_sufficiency_worker.py",
+      "sha256": "d8d76d43bf6e43c431d0ebd00f98c5e525ceb2f1ce57ed77235bd3b4b4d230a7"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/run_mdm_training_sufficiency_bounded.py",
+      "sha256": "38b13b105f650eb22ee004c9fdb717989ca2798effac4ed3d155e0ecd0d0302a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/evaluate_b0_training_sufficiency.py",
+      "sha256": "a48788c6c1acfc2cd39b325108d0e76150990e3dd616f601ab4443e0ab668f58"
+    }
+  ],
+  "real_model_forwards": 0,
+  "GPU_queries": 0,
+  "interpretation": "Main-session CPU fixture/self-check, not independent review or real diagnostic result."
+}

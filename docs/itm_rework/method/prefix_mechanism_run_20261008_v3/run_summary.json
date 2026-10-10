@@ -1,0 +1,109 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 517.9435040261596,
+  "absolute_seconds": 1200.0,
+  "peak_allocated_bytes": 533909504,
+  "counts": {
+    "mdm": {
+      "reserved": 15840,
+      "actual": 15840,
+      "completed": 15840,
+      "reserved_calls": 3960,
+      "actual_calls": 3960,
+      "completed_calls": 3960
+    },
+    "encoder": {
+      "reserved": 48,
+      "actual": 48,
+      "completed": 48,
+      "reserved_calls": 48,
+      "actual_calls": 48,
+      "completed_calls": 48
+    },
+    "caption": {
+      "reserved": 12,
+      "actual": 12,
+      "completed": 12,
+      "reserved_calls": 12,
+      "actual_calls": 12,
+      "completed_calls": 12
+    },
+    "noise": {
+      "reserved": 3636,
+      "actual": 3636,
+      "completed": 3636,
+      "reserved_calls": 3636,
+      "actual_calls": 3636,
+      "completed_calls": 3636
+    }
+  },
+  "ledger": {
+    "trajectories": {
+      "completed": 36
+    },
+    "steps": {
+      "completed": 3600
+    },
+    "states": {
+      "completed": 180
+    },
+    "probes": {
+      "completed": 360
+    },
+    "branches": {
+      "completed": 1440
+    },
+    "checks": {
+      "completed": 7380
+    }
+  },
+  "preflight": {
+    "version": "itm-contended-preflight-v1",
+    "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+    "limits": {
+      "minimum_free_MiB": 4096,
+      "samples": 3,
+      "sample_interval_seconds": 2
+    },
+    "status": "passed",
+    "samples": [
+      {
+        "total_MiB": 24564,
+        "free_MiB": 23389,
+        "GPU_utilization_percent": 40,
+        "memory_controller_utilization_percent": 0
+      },
+      {
+        "total_MiB": 24564,
+        "free_MiB": 23389,
+        "GPU_utilization_percent": 41,
+        "memory_controller_utilization_percent": 0
+      },
+      {
+        "total_MiB": 24564,
+        "free_MiB": 23389,
+        "GPU_utilization_percent": 40,
+        "memory_controller_utilization_percent": 0
+      }
+    ],
+    "compute_processes": [
+      {
+        "pid": 3800931,
+        "process_name": "/home/a100/anaconda3/envs/WPAD/bin/python",
+        "used_memory_MiB": "726"
+      }
+    ],
+    "queries_attempted": 4,
+    "compute_process_count": 1
+  },
+  "worker_result": {
+    "status": "completed",
+    "reason": null,
+    "launched": true,
+    "returncode": 0
+  },
+  "GPU_queries": 4,
+  "new_training": 0,
+  "new_full_motion_decodes": 0,
+  "old_failure_directories_reused": false
+}

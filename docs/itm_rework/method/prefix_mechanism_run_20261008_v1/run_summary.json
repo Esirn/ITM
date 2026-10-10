@@ -1,0 +1,93 @@
+{
+  "status": "failed",
+  "elapsed_seconds": 2.8351825850550085,
+  "worker_started": false,
+  "failure": {
+    "type": "RuntimeError",
+    "message": "Shared GPU current utilization above 50 percent"
+  },
+  "preflight": {
+    "version": "itm-shared-preflight-v1",
+    "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+    "limits": {
+      "minimum_free_MiB": 4096,
+      "maximum_GPU_utilization_percent": 50,
+      "maximum_memory_controller_utilization_percent": 50,
+      "samples": 3,
+      "sample_interval_seconds": 2
+    },
+    "status": "failed",
+    "samples": [
+      {
+        "total_MiB": 24564,
+        "free_MiB": 7560,
+        "GPU_utilization_percent": 99,
+        "memory_controller_utilization_percent": 28
+      }
+    ],
+    "compute_processes": [],
+    "queries_attempted": 1,
+    "failure": {
+      "type": "RuntimeError",
+      "message": "Shared GPU current utilization above 50 percent"
+    }
+  },
+  "counts": {
+    "mdm": {
+      "reserved": 0,
+      "actual": 0,
+      "completed": 0,
+      "reserved_calls": 0,
+      "actual_calls": 0,
+      "completed_calls": 0
+    },
+    "encoder": {
+      "reserved": 0,
+      "actual": 0,
+      "completed": 0,
+      "reserved_calls": 0,
+      "actual_calls": 0,
+      "completed_calls": 0
+    },
+    "caption": {
+      "reserved": 0,
+      "actual": 0,
+      "completed": 0,
+      "reserved_calls": 0,
+      "actual_calls": 0,
+      "completed_calls": 0
+    },
+    "noise": {
+      "reserved": 0,
+      "actual": 0,
+      "completed": 0,
+      "reserved_calls": 0,
+      "actual_calls": 0,
+      "completed_calls": 0
+    }
+  },
+  "ledger_counts": {
+    "trajectories": {
+      "not_run_after_stop": 36
+    },
+    "steps": {
+      "not_run_after_stop": 3600
+    },
+    "states": {
+      "not_run_after_stop": 180
+    },
+    "probes": {
+      "not_run_after_stop": 360
+    },
+    "branches": {
+      "not_run_after_stop": 1440
+    },
+    "checks": {
+      "not_run_after_stop": 7380
+    }
+  },
+  "real_model_calls": 0,
+  "real_noise_draws": 0,
+  "new_motion_decodes": 0,
+  "GPU_queries": 1
+}

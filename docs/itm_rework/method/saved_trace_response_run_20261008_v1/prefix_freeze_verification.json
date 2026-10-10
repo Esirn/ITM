@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "package_sha256": "8b32b863da7a530cc71350384663678adfd072f8db53bbb01add176b3040853c",
+  "artifact_hashes": 9,
+  "source_hashes": 2639,
+  "byte_identical_rebuilt_payloads": 9,
+  "actual_noise_plan_regeneration": 0,
+  "model_calls": 0,
+  "GPU_queries": 0,
+  "runtime_accepted": false,
+  "CPU_tests": {
+    "trace_response": {
+      "passed": 8,
+      "seconds": 0.1
+    },
+    "prefix_noise_schedule": {
+      "passed": 4,
+      "seconds": 0.07
+    }
+  }
+}

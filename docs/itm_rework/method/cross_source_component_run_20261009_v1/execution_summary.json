@@ -1,0 +1,36 @@
+{
+  "status": "complete_CPU_audit_only",
+  "rows": 480,
+  "F_U_pairs": 240,
+  "paired_rows": 96,
+  "sources": 6,
+  "condition_count": 7,
+  "old_final_references": 120,
+  "adapter_tests": 9,
+  "formula_scalar_checks": 602400,
+  "null_scalar_checks": 1008,
+  "summary_fields": 8128,
+  "evaluation_sources": 17911,
+  "verification_sources": 17922,
+  "new_GPU_queries": 0,
+  "new_model_calls": 0,
+  "new_noise_draws": 0,
+  "new_decodes": 0,
+  "original_F_behavior": "not_supported",
+  "paper_claims_changed": false,
+  "independent_review": false,
+  "original_result_index": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/cross_source_component_evaluation_20261009_v1/artifact_index.json",
+    "sha256": "467b84495874324a8ade88d61836a50a960c777073cb033b686b3e1edb2c96b6"
+  },
+  "verification_only_v2": true,
+  "original_invalid_v1_verifier_preserved": true,
+  "next_probe_plan": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_control_mean_probe_20261009_v1/plan.json",
+    "sha256": "b3fe884ebc53b71b049ff02e4e8dc498eae2ff9173ea58d289433b53b3fd39d9"
+  },
+  "next_probe_states": 48,
+  "next_probe_tests": 3,
+  "next_probe_implemented": false,
+  "next_probe_executed": false
+}

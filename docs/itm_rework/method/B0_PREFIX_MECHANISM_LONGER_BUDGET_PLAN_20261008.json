@@ -1,0 +1,45 @@
+{
+  "version": "itm-prefix-resource-budget-plan-v1",
+  "date": "2026-10-08",
+  "status": "CPU_resource_design_only_not_executed",
+  "objective": "Repeat the identical whole frozen queue under a predeclared wall budget suitable for high GPU contention; do not splice the incomplete previous attempt.",
+  "rationale": "At utilization98-99%, all3600 prefix steps plus322/360 fixed-state forwards finished before original600s cap; 38 forwards plus metadata/parent verification remained.",
+  "scientific_package": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_prefix_mechanism_20261008_v1/package.json",
+    "sha256": "8b32b863da7a530cc71350384663678adfd072f8db53bbb01add176b3040853c"
+  },
+  "previous_attempt": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_authorized_20261008_v2/runtime/status.json",
+    "sha256": "03f86bce017ab3de2f4994fd16c21440aa8648e4b361f279318f411fddf85d89"
+  },
+  "resource_policy": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/GPU_CONTENDED_EXECUTION_POLICY_20261008.json",
+    "sha256": "eb89f0f66c86a15368a3d0a4bf5db35027b380a642f2c43c04c59624cbd30d72"
+  },
+  "proposed_absolute_seconds": 1200,
+  "examples": {
+    "mdm": 15840,
+    "encoder": 48,
+    "caption": 12,
+    "noise": 3636
+  },
+  "calls": {
+    "mdm": 3960,
+    "encoder": 48,
+    "caption": 12,
+    "noise": 3636
+  },
+  "peak_allocated_cap_bytes": 25769803776,
+  "scientific_rules_changes": [],
+  "new_seed": false,
+  "new_source": false,
+  "new_weights": false,
+  "new_training": false,
+  "new_full_decode": false,
+  "worker_evaluator": "Reuse byte-identical scientific worker/guard and corrected float64 CPU evaluator. Parent/context/record must explicitly bind new time budget before any new run.",
+  "preserve": "Keep v1/v2 directories and partial denominators unchanged. No in-attempt deadline extension, automatic retry/resume/fallback or concatenation into completed evidence.",
+  "next_task": "Prepare and CPU-test a separate1200s parent/execution record and resource-budget amendment; only then run one fresh full queue under standing user delegation.",
+  "manual_GPU_approval_required": false,
+  "new_GPU_queries": 0,
+  "new_model_calls": 0
+}

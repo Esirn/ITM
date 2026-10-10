@@ -1,0 +1,15 @@
+{
+  "version": "itm-GPU-delegation-v1",
+  "authorized": true,
+  "approved_by": "user",
+  "recorded_at": "2026-10-07T23:40:01.534512+00:00",
+  "user_instruction": "再尝试一次，现在cuda:0 应该是空闲的。以后使用GPU不用我手动授权，你自行决定",
+  "scope": "Standing user delegation for GPU queries and GPU execution decisions in this project; no per-use user approval required. Immediate instruction is one fresh F queue on the physical GPU resolved from cuda:0.",
+  "supersedes": "Older handoff/session instructions requiring manual approval for every GPU query or new GPU queue. Old records remain historical, not reusable execution directories.",
+  "preserved_constraints": [
+    "Frozen scientific protocol, inputs, loss, metrics, random plans and negative examples remain unchanged unless separately revised.",
+    "Every bounded F attempt retains its fixed per-attempt budget and first-failure stop policy, unique directory and full failure denominators.",
+    "No intervention in unrelated processes; do not silently relax compute-process preflight or expand experiments."
+  ],
+  "execution_record_policy": "Create concrete per-run identity/budget records under this standing user delegation without asking again; record failures and decide useful next work instead of endless retries."
+}

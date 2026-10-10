@@ -1,0 +1,35 @@
+{
+  "status": "failed_preflight_no_model_results",
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261005_v2",
+  "parent_exit_code": 1,
+  "failure": {
+    "type": "RuntimeError",
+    "message": "GPU identity/free-memory preflight failed"
+  },
+  "elapsed_seconds": 1.0956702700350434,
+  "worker_launched": false,
+  "model_calls_inferred_from_no_worker": 0,
+  "worker_counters_present": false,
+  "allocated_peak_bytes": null,
+  "authorization_consumed": true,
+  "gpu_query_attempts_inferred_from_bound_control_flow": 1,
+  "query_return_code_inferred_from_check_true": 0,
+  "compute_process_query_reached": false,
+  "additional_gpu_queries": 0,
+  "retries": 0,
+  "completed_receipts": 0,
+  "completed_updates": 0,
+  "completed_exposures": 0,
+  "completed_samples": 0,
+  "completed_traces": 0,
+  "completed_checks": 0,
+  "planned": {
+    "updates": 200,
+    "exposures": 600,
+    "samples": 60,
+    "traces": 240,
+    "checks": 48
+  },
+  "specific_cause": "Not uniquely determined: first query returned successfully, then row-count/UUID/free-memory>=4096MiB composite check failed; raw stdout/stderr not persisted by frozen helper.",
+  "scope": "Main-session self-check, not independent acceptance; no effectiveness result"
+}

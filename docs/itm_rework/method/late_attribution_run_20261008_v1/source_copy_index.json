@@ -1,0 +1,422 @@
+[
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/late_attribution_implementation_20261008_v1/implementation.json",
+      "sha256": "35b48b45c9000be223502f656300e25140741bcf86b480be802b79988f5ee10e"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/outputs/itm_rework/method/late_attribution_implementation_20261008_v1/implementation.json",
+      "sha256": "35b48b45c9000be223502f656300e25140741bcf86b480be802b79988f5ee10e"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/late_attribution_implementation_20261008_v1/suffix_freeze_verification.json",
+      "sha256": "574c29c669d8abc7ceb40cc17b9edf5be77a3fd89c900cfbe58405a8d6764ac9"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/outputs/itm_rework/method/late_attribution_implementation_20261008_v1/suffix_freeze_verification.json",
+      "sha256": "574c29c669d8abc7ceb40cc17b9edf5be77a3fd89c900cfbe58405a8d6764ac9"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/late_attribution_implementation_20261008_v1/CPU_preparation_corrections.json",
+      "sha256": "8f52b279f6b00525434bc5fc2f47501eb65eb81c99c2aecd6c77377d92f9ef14"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/outputs/itm_rework/method/late_attribution_implementation_20261008_v1/CPU_preparation_corrections.json",
+      "sha256": "8f52b279f6b00525434bc5fc2f47501eb65eb81c99c2aecd6c77377d92f9ef14"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/late_attribution_implementation_20261008_v1/result_verification_v2.json",
+      "sha256": "b3bdae6cabddb5e16a7e9297f3ce892561a72f21a4441682fd2bc7aa07713861"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/outputs/itm_rework/method/late_attribution_implementation_20261008_v1/result_verification_v2.json",
+      "sha256": "b3bdae6cabddb5e16a7e9297f3ce892561a72f21a4441682fd2bc7aa07713861"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/late_attribution_implementation_20261008_v1/result_verification.json",
+      "sha256": "c338f3cbf9f7d55c1514ee6fb381561422b71a8b3fa575b9ed5b882fcfcf88dd"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/outputs/itm_rework/method/late_attribution_implementation_20261008_v1/result_verification.json",
+      "sha256": "c338f3cbf9f7d55c1514ee6fb381561422b71a8b3fa575b9ed5b882fcfcf88dd"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/late_attribution_implementation_20261008_v1/CPU_test_results.json",
+      "sha256": "cbf3dba336e949a7427f894bd160d4644875bd30a58c585c2505f533d8a8c90d"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/outputs/itm_rework/method/late_attribution_implementation_20261008_v1/CPU_test_results.json",
+      "sha256": "cbf3dba336e949a7427f894bd160d4644875bd30a58c585c2505f533d8a8c90d"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/late_attribution_evaluation_20261008_v1/aggregates.json",
+      "sha256": "affe9b575487702ec017ba1310f76ab0712211333cbff09c4785cdc1819d234d"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/outputs/itm_rework/protocol/late_attribution_evaluation_20261008_v1/aggregates.json",
+      "sha256": "affe9b575487702ec017ba1310f76ab0712211333cbff09c4785cdc1819d234d"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/late_attribution_evaluation_20261008_v1/reference_finals.json",
+      "sha256": "e69b4d0d1ad3f3b28c06cacbfec116f518fbabb18d7af865f031625f74b141d2"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/outputs/itm_rework/protocol/late_attribution_evaluation_20261008_v1/reference_finals.json",
+      "sha256": "e69b4d0d1ad3f3b28c06cacbfec116f518fbabb18d7af865f031625f74b141d2"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/late_attribution_evaluation_20261008_v1/reference_aggregates.json",
+      "sha256": "908f8255bc4c15c2ae99ee9862d50ddd07bfaadfad22d0c7276247a1298ebf6a"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/outputs/itm_rework/protocol/late_attribution_evaluation_20261008_v1/reference_aggregates.json",
+      "sha256": "908f8255bc4c15c2ae99ee9862d50ddd07bfaadfad22d0c7276247a1298ebf6a"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/late_attribution_evaluation_20261008_v1/reference_traces.json",
+      "sha256": "a03b3a949abac621fc1e67d85dd25503df902779dd97cf9dc917ce885efc0fc4"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/outputs/itm_rework/protocol/late_attribution_evaluation_20261008_v1/reference_traces.json",
+      "sha256": "a03b3a949abac621fc1e67d85dd25503df902779dd97cf9dc917ce885efc0fc4"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/late_attribution_evaluation_20261008_v1/sources.json",
+      "sha256": "9211e9336df8b94087ec920a820395c05543b0a22bdb8583f7a845ac49321500"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/outputs/itm_rework/protocol/late_attribution_evaluation_20261008_v1/sources.json",
+      "sha256": "9211e9336df8b94087ec920a820395c05543b0a22bdb8583f7a845ac49321500"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/late_attribution_evaluation_20261008_v1/rows.json",
+      "sha256": "b75c3d6c42c4c24c8bf2ac1413edfd1dc8d1c26893b08bd9256ed103474c003c"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/outputs/itm_rework/protocol/late_attribution_evaluation_20261008_v1/rows.json",
+      "sha256": "b75c3d6c42c4c24c8bf2ac1413edfd1dc8d1c26893b08bd9256ed103474c003c"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/late_attribution_evaluation_20261008_v1/artifact_index.json",
+      "sha256": "222c40c0bc7ffcac3213ecc2c735542afbcc59be1180d953236036cd778737b1"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/outputs/itm_rework/protocol/late_attribution_evaluation_20261008_v1/artifact_index.json",
+      "sha256": "222c40c0bc7ffcac3213ecc2c735542afbcc59be1180d953236036cd778737b1"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/late_attribution_evaluation_20261008_v1/summary.json",
+      "sha256": "6a5b581cf333f5369c36ac44dacbfef52b03f2d10fe7ada19bb6079e9cd9d2e2"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/outputs/itm_rework/protocol/late_attribution_evaluation_20261008_v1/summary.json",
+      "sha256": "6a5b581cf333f5369c36ac44dacbfef52b03f2d10fe7ada19bb6079e9cd9d2e2"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/late_attribution_panel_20261008_v1/all_final_references.json",
+      "sha256": "e69b4d0d1ad3f3b28c06cacbfec116f518fbabb18d7af865f031625f74b141d2"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/outputs/itm_rework/protocol/late_attribution_panel_20261008_v1/all_final_references.json",
+      "sha256": "e69b4d0d1ad3f3b28c06cacbfec116f518fbabb18d7af865f031625f74b141d2"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/late_attribution_panel_20261008_v1/all_trace_references.json",
+      "sha256": "a03b3a949abac621fc1e67d85dd25503df902779dd97cf9dc917ce885efc0fc4"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/outputs/itm_rework/protocol/late_attribution_panel_20261008_v1/all_trace_references.json",
+      "sha256": "a03b3a949abac621fc1e67d85dd25503df902779dd97cf9dc917ce885efc0fc4"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/late_attribution_panel_20261008_v1/primary_late_panel.png",
+      "sha256": "78a13e1f7c1df8b2eadf165cea35eb97b6319b47e37755a68bb94155d74a6813"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/outputs/itm_rework/protocol/late_attribution_panel_20261008_v1/primary_late_panel.png",
+      "sha256": "78a13e1f7c1df8b2eadf165cea35eb97b6319b47e37755a68bb94155d74a6813"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/late_attribution_panel_20261008_v1/artifact_index.json",
+      "sha256": "c464daf52e7fbf805974c85f242fc3dc390aa369533faf90a22adf66767c4385"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/outputs/itm_rework/protocol/late_attribution_panel_20261008_v1/artifact_index.json",
+      "sha256": "c464daf52e7fbf805974c85f242fc3dc390aa369533faf90a22adf66767c4385"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/late_attribution_panel_20261008_v1/all_algebra_panel.json",
+      "sha256": "c2738369028b5cbb9be191acdb9b9a807c65c1b16f3f5c3fd60e744425e3c44e"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/outputs/itm_rework/protocol/late_attribution_panel_20261008_v1/all_algebra_panel.json",
+      "sha256": "c2738369028b5cbb9be191acdb9b9a807c65c1b16f3f5c3fd60e744425e3c44e"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_late_attribution_CPU_20261008_v1/plan.json",
+      "sha256": "26ccf5866ba3f21bcfa4b80cc4e75ec76ed8c42a40621c3784e0972cc485e2e9"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_late_attribution_CPU_20261008_v1/plan.json",
+      "sha256": "26ccf5866ba3f21bcfa4b80cc4e75ec76ed8c42a40621c3784e0972cc485e2e9"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/historical_anchors.json",
+      "sha256": "88c350317800a5713ffffb21c00866a89f7f6d9d2d6b3163242f528780da4a8c"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/historical_anchors.json",
+      "sha256": "88c350317800a5713ffffb21c00866a89f7f6d9d2d6b3163242f528780da4a8c"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/design.json",
+      "sha256": "b7a01553d3e9c3fa50a2e4167269d5eadb971cb619d7c897d8e249e46c9874dc"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/design.json",
+      "sha256": "b7a01553d3e9c3fa50a2e4167269d5eadb971cb619d7c897d8e249e46c9874dc"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/checkpoints.json",
+      "sha256": "35895316ce6a3729effc9574161c0aed95d4ab89bf70191170492df53e4845ba"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/checkpoints.json",
+      "sha256": "35895316ce6a3729effc9574161c0aed95d4ab89bf70191170492df53e4845ba"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/starts.json",
+      "sha256": "9b9e51127a6e3df9b01812c68bb7d1a2895609d9b7949257fd4f755ce62ae505"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/starts.json",
+      "sha256": "9b9e51127a6e3df9b01812c68bb7d1a2895609d9b7949257fd4f755ce62ae505"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/budgets.json",
+      "sha256": "bb02998b7af37d85223c9a32e27d6d7e2b4ae7b0d6e9e99f851a083ad59b6a9b"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/budgets.json",
+      "sha256": "bb02998b7af37d85223c9a32e27d6d7e2b4ae7b0d6e9e99f851a083ad59b6a9b"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/sources.json",
+      "sha256": "fcc6ea4187e730879e4f04ded741c1f72f9b63863586c336180bb872c18f1eee"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/sources.json",
+      "sha256": "fcc6ea4187e730879e4f04ded741c1f72f9b63863586c336180bb872c18f1eee"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/trajectories.json",
+      "sha256": "bc53a63968a036ea7ad3349975587be822cfa76e9af52123e8825902ebbafe04"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/trajectories.json",
+      "sha256": "bc53a63968a036ea7ad3349975587be822cfa76e9af52123e8825902ebbafe04"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/package.json",
+      "sha256": "6f84cef7715b94f4ea3b8df374691b48104beee3424f24a931f13fcb616e0e8d"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/package.json",
+      "sha256": "6f84cef7715b94f4ea3b8df374691b48104beee3424f24a931f13fcb616e0e8d"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/software_checks.json",
+      "sha256": "2741a35fbedc63961c422850769f227a594a27cd535cf45fa973a53a9938f3f8"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/software_checks.json",
+      "sha256": "2741a35fbedc63961c422850769f227a594a27cd535cf45fa973a53a9938f3f8"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/noise.json",
+      "sha256": "7d4bcb4099e198dad08fb5a14ff99fb66dd3531a7c2b66c78f850a239e81f5b5"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/noise.json",
+      "sha256": "7d4bcb4099e198dad08fb5a14ff99fb66dd3531a7c2b66c78f850a239e81f5b5"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v1/failure.json",
+      "sha256": "d57ffbc4535b949dc9bfbcd251201d67cacfa00f9a891c4d97d9e7205957b544"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_switch_20261008_v1/failure.json",
+      "sha256": "d57ffbc4535b949dc9bfbcd251201d67cacfa00f9a891c4d97d9e7205957b544"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/scripts/analyze_b0_late_attribution.py",
+      "sha256": "197c4fb13b80c2f6cbdc5a45a6741aac24705b1797ac79cb03fd6d2ab9721178"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/scripts/analyze_b0_late_attribution.py",
+      "sha256": "197c4fb13b80c2f6cbdc5a45a6741aac24705b1797ac79cb03fd6d2ab9721178"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/scripts/verify_b0_late_attribution.py",
+      "sha256": "c186a2e94ca332e583683a550f0661351344afe8f67171e315622070d48df021"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/scripts/verify_b0_late_attribution.py",
+      "sha256": "c186a2e94ca332e583683a550f0661351344afe8f67171e315622070d48df021"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/scripts/summarize_b0_late_attribution.py",
+      "sha256": "f16779c898ec1dbd6ffa0dcfe942b5982ed8a562229fb2f5d5a9d20428caa8cb"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/scripts/summarize_b0_late_attribution.py",
+      "sha256": "f16779c898ec1dbd6ffa0dcfe942b5982ed8a562229fb2f5d5a9d20428caa8cb"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/scripts/freeze_b0_suffix_switch.py",
+      "sha256": "5629ca63a412d32d2d169a580f43117aa08355cb1616dc62840d6e9b40c1f4da"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/scripts/freeze_b0_suffix_switch.py",
+      "sha256": "5629ca63a412d32d2d169a580f43117aa08355cb1616dc62840d6e9b40c1f4da"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/tests/test_late_attribution_adapter.py",
+      "sha256": "72cf1fc1ebc7284b685cfe62e539fa714ae42be8b7cc2e06b702efc2465245f4"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/tests/test_late_attribution_adapter.py",
+      "sha256": "72cf1fc1ebc7284b685cfe62e539fa714ae42be8b7cc2e06b702efc2465245f4"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/tests/test_suffix_switch_freeze.py",
+      "sha256": "cca9770961dd0fba1abb011f832ecd1199febf4b44fab82620f9dd50f068a6ea"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/tests/test_suffix_switch_freeze.py",
+      "sha256": "cca9770961dd0fba1abb011f832ecd1199febf4b44fab82620f9dd50f068a6ea"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/scripts/evaluate_b0_native_training_sufficiency.py",
+      "sha256": "bd6c917faabc0703611d1ae1db779f1c304f375b4e865e651145c533af2b622b"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/scripts/evaluate_b0_native_training_sufficiency.py",
+      "sha256": "bd6c917faabc0703611d1ae1db779f1c304f375b4e865e651145c533af2b622b"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/src/itm/metrics/prefix_attribution.py",
+      "sha256": "fe4d5eff43377491959679503075e1c902101364a69f2e5248199441913f78f3"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/src/itm/metrics/prefix_attribution.py",
+      "sha256": "fe4d5eff43377491959679503075e1c902101364a69f2e5248199441913f78f3"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/src/itm/metrics/training_sufficiency.py",
+      "sha256": "109a2b37c22398c590352e88acfc5b40dbaa3feb839ddfb86190e1485c310d9e"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/src/itm/metrics/training_sufficiency.py",
+      "sha256": "109a2b37c22398c590352e88acfc5b40dbaa3feb839ddfb86190e1485c310d9e"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/src/itm/metrics/feature_balance.py",
+      "sha256": "d287a890f23fb4a30b09746a8bccdaae6a1b71d158ce3b2c01c71173ff5f3f96"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/src/itm/metrics/feature_balance.py",
+      "sha256": "d287a890f23fb4a30b09746a8bccdaae6a1b71d158ce3b2c01c71173ff5f3f96"
+    }
+  },
+  {
+    "source": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/B0_LATE_ATTRIBUTION_EVALUATION_20261008.md",
+      "sha256": "ae7e1eac6455003bb5b238fd1db317e4dc82d8de0b16b2120b4dba7b27324aae"
+    },
+    "archive": {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/method/late_attribution_run_20261008_v1/snapshot/docs/itm_rework/protocol/B0_LATE_ATTRIBUTION_EVALUATION_20261008.md",
+      "sha256": "ae7e1eac6455003bb5b238fd1db317e4dc82d8de0b16b2120b4dba7b27324aae"
+    }
+  }
+]

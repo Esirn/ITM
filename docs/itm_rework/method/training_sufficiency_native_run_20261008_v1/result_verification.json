@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "source_files_verified": 2570,
+  "run_artifacts_verified": 3300,
+  "software_checks_recomputed": 2880,
+  "temporal_rows_recomputed": 4608,
+  "contrast_rows_recomputed": 9216,
+  "view_cells_recomputed": 152064,
+  "auxiliary_f00_checks": 576,
+  "model_forwards": 0,
+  "GPU_queries": 0,
+  "interpretation": "Independent-formula main-session NumPy self-check, not independent reviewer acceptance."
+}

@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "grouped_metric_cells_recomputed": 475776,
+  "max_abs_difference": 0.0,
+  "model_forwards": 0,
+  "GPU_queries": 0,
+  "note": "First verifier compared means in insertion order bitwise and encountered summation-order rounding; rerun sorted source order plus original64eps numeric identity bound. No evaluator/result/bounds changed."
+}

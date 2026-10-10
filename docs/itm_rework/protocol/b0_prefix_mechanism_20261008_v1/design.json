@@ -1,0 +1,45 @@
+{
+  "version": "b0-prefix-mechanism-v1",
+  "date": "2026-10-08",
+  "rationale": "Main train000506/wrists F already contracts by first old trace t900. At t50 the local IMU energy change is positive; final paired vs text-only paths differ. Observe the previously missing first 100 steps under identical stochastic inputs.",
+  "question": "Does the F paired prefix reproducibly diverge from U and text-only before t900, and do same-state factorized responses versus accumulated state changes describe that divergence?",
+  "interpretation": "Matched-noise controlled prefix, conditional on this fixed caption/seed/panel. No suffix intervention, unique causal mechanism, behavior repair, convergence or generalization claim.",
+  "sources": "Six original sources x head/wrists; original paired cases and common text-only baseline. All prior seven-condition/negative panels remain in CPU evidence; this queue has no new numeric-zero/reverse/IMU-only trajectories.",
+  "paths": "F200 paired, U200 paired, common text-only via F200 with strict IMU false; same backbone and inactive-adapter full outputs already bitwise equal across F/U in 30 original slots.",
+  "identity": "Original final200 weights only; native caption batch1 and MDM factorized batch4. Full1000 DDPM schedule, original betas/timestep map; truncate loop only after t900, clip_denoised=false. No rescaling, respacing, precision switch, adaptive endpoint or extra diffusion pass.",
+  "matched_noise": "Verify every regenerated draw against old address/noise hash before using it. Use same initial and per-step noise bytes across all three paths per case. Native posterior mean/log-variance/update order exactly matches old sampler.",
+  "same_state": "180 saved prefix x_t states x both F200/U200 weights x four factorized branches. Caption/IMU/t/mask/precision identical within each weight contrast; no q_sample.",
+  "metrics": "Reuse saved trace temporal-energy/response decompositions and original normalized feature MSE with fixed-time GT reference. Report all11 views. Equal source means/min/max/n within split/config/path/t; do not pool times. No new behavioral threshold or checkpoint selector.",
+  "reporting": "All planned slots precreated as not_run; first fault stops entire queue. Preserve raw predictions before checks, reserve/actual/completed counters and missing denominators. Any failed historical replay prevents primary mechanistic interpretation.",
+  "forbidden": [
+    "training",
+    "new checkpoint",
+    "loss/guidance sweep",
+    "new seed/source/caption",
+    "sampling below t900",
+    "full motion decode",
+    "paper claim changes",
+    "interference with other GPU processes"
+  ],
+  "prior_completed_implementation": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/training_sufficiency_native_implementation_20261008_v1/implementation.json",
+    "sha256": "cb30fb6d035e96c129ea67c5924ee8ef4c35648a97cb2077c7385227b7a41f28"
+  },
+  "checkpoint_sources": {
+    "F200": {
+      "snapshot_id": "F200",
+      "artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261008_v1/F/model.pt",
+        "sha256": "d0e4f39f8c7ee5b980243baac48bc1bc02dc8f7c15c7a1f47f0adabb0b7e0ad3"
+      }
+    },
+    "U200": {
+      "snapshot_id": "U200",
+      "artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_authorized_20260927_v2/R_static_reference_delta/model.pt",
+        "sha256": "91744ac5a663d5b5279922fdf26e0792bf327bd79ee3eae035e065df8c13a642"
+      }
+    }
+  },
+  "scientific_result_status": "not_run; package freeze is not implementation acceptance or execution"
+}

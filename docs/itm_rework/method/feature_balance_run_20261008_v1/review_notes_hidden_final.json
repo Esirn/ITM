@@ -1,0 +1,1176 @@
+[
+  {
+    "review_id": "FREV001",
+    "classification": "incomplete",
+    "evidence": "Recovers from early low pose, then pelvis drops after about2s and stays low through end; knees remain flexed. Rechecked every frame0..135 in the ZY contact sheet together with full-frame height/ankle-Z/knee curves; no missing middle recovery was found in skipped snapshot intervals.",
+    "side_order_return": "Initial recovery visible; right-leading lowering does not lead to the GT middle recovery.",
+    "reason": "Visible target sequence is incomplete.",
+    "behavior_losses": [
+      "missing_middle_recovery",
+      "sustained_crouch"
+    ]
+  },
+  {
+    "review_id": "FREV002",
+    "classification": "complete",
+    "evidence": "Initial upright interval followed by alternating leg steps and arm motion. Root height remains near1m while GT rises; numerical height/path mismatch retained.",
+    "side_order_return": "Stand/sway then stepping is visible; no temporal fitting used.",
+    "reason": "Visible coarse target sequence is retained.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV003",
+    "classification": "incomplete",
+    "evidence": "Ankles stay near ground, no GT-like right forward kick extension; arms move instead.",
+    "side_order_return": "No clear kick peak followed by return.",
+    "reason": "Visible target sequence is incomplete.",
+    "behavior_losses": [
+      "missing_kick"
+    ]
+  },
+  {
+    "review_id": "FREV004",
+    "classification": "uncertain",
+    "evidence": "Large initial arm spread/raise and later hand approach; repeated claps and final arm-lowering sequence are not clear at this scale.",
+    "side_order_return": "Hand separation changes, but repeated target order is ambiguous.",
+    "reason": "Ten poses and full-frame curves leave the action ambiguous.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV005",
+    "classification": "complete",
+    "evidence": "Repeated close hand approach/separation while legs remain quiet; arms lower near the end.",
+    "side_order_return": "Clap interval then arms-down return visible.",
+    "reason": "Visible coarse target sequence is retained.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV006",
+    "classification": "incomplete",
+    "evidence": "Large alternating raised-knee motion and flexion begins early and persists; no clear initial stand/sway interval.",
+    "side_order_return": "Walking target is replaced by exaggerated stepping/high knees from early frames.",
+    "reason": "Visible target sequence is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand",
+      "high_knee_substitution"
+    ]
+  },
+  {
+    "review_id": "FREV007",
+    "classification": "incomplete",
+    "evidence": "Early upright recovery then sustained low/seated-looking crouch over second half; no middle rise. Rechecked every frame0..135 in the ZY contact sheet together with full-frame height/ankle-Z/knee curves; no missing middle recovery was found in skipped snapshot intervals.",
+    "side_order_return": "Some side displacement exists, but lowering is not followed by required middle recovery.",
+    "reason": "Visible target sequence is incomplete.",
+    "behavior_losses": [
+      "missing_middle_recovery",
+      "sustained_crouch"
+    ]
+  },
+  {
+    "review_id": "FREV008",
+    "classification": "uncertain",
+    "evidence": "Large initial arm raise/spread, then hands approach; repeated clap cycles and final arms-down order remain ambiguous.",
+    "side_order_return": "Ambiguous sequence of hand motion rather than a confident complete clap label.",
+    "reason": "Ten poses and full-frame curves leave the action ambiguous.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV009",
+    "classification": "incomplete",
+    "evidence": "Pelvis stays at about0.6m, knees persistently flexed; ankle relative Z barely changes through clip. Rechecked every frame0..135 in the ZY contact sheet together with full-frame height/ankle-Z/knee curves; no missing middle recovery was found in skipped snapshot intervals.",
+    "side_order_return": "No clear initial recovery, side switch, or middle recovery.",
+    "reason": "Visible target sequence is incomplete.",
+    "behavior_losses": [
+      "missing_initial_recovery",
+      "missing_side_change",
+      "missing_middle_recovery",
+      "sustained_crouch"
+    ]
+  },
+  {
+    "review_id": "FREV010",
+    "classification": "incomplete",
+    "evidence": "Right leg lifts backward in isolated peaks but returns near ground between them instead of holding throughout the GT plateau.",
+    "side_order_return": "Correct side/backward lift appears, but hold is fragmented before final lowering.",
+    "reason": "Visible target sequence is incomplete.",
+    "behavior_losses": [
+      "missing_leg_hold"
+    ]
+  },
+  {
+    "review_id": "FREV011",
+    "classification": "complete",
+    "evidence": "Upright early posture then repeated alternating steps with arm swing; root height/trajectory differ from GT and remain in numerical metrics.",
+    "side_order_return": "Coarse standing-to-walking order is visible.",
+    "reason": "Visible coarse target sequence is retained.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV012",
+    "classification": "incomplete",
+    "evidence": "Repeated stepping is present from early frames, with no clear initial stationary stand/sway phase.",
+    "side_order_return": "Walking activity is visible, but the initial-to-walking order is lost.",
+    "reason": "Visible target sequence is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand"
+    ]
+  },
+  {
+    "review_id": "FREV013",
+    "classification": "incomplete",
+    "evidence": "Right kick/lift is delayed to late clip and foot remains high at final frame.",
+    "side_order_return": "A right extension occurs but standing return is absent within clip.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick_return"
+    ]
+  },
+  {
+    "review_id": "FREV014",
+    "classification": "incomplete",
+    "evidence": "Delayed right kick/lift peaks near1.5s; right foot remains raised at2s.",
+    "side_order_return": "Kick does not return to standing before clip ends.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick_return"
+    ]
+  },
+  {
+    "review_id": "FREV015",
+    "classification": "incomplete",
+    "evidence": "Little foot elevation/extension; pelvis descends and stays crouched in second half.",
+    "side_order_return": "No complete kick-then-standing cycle.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick",
+      "missing_kick_return"
+    ]
+  },
+  {
+    "review_id": "FREV016",
+    "classification": "complete",
+    "evidence": "Repeated hand approach/separation while legs stay quiet; arms lower at clip end.",
+    "side_order_return": "Clap interval precedes visible arms-down return.",
+    "reason": "Visible coarse target sequence retained; no precise amplitude certification.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV017",
+    "classification": "incomplete",
+    "evidence": "Feet stay near ground and required right forward kick is absent.",
+    "side_order_return": "Arm motion does not establish the kick-return cycle.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick"
+    ]
+  },
+  {
+    "review_id": "FREV018",
+    "classification": "incomplete",
+    "evidence": "Small leg/arm movements with feet near ground; no GT-like forward right extension.",
+    "side_order_return": "No confident kick cycle followed by standing return.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick"
+    ]
+  },
+  {
+    "review_id": "FREV019",
+    "classification": "uncertain",
+    "evidence": "Punch-like arm motions and torso changes visible; ordered punch-then-turn is not confidently established.",
+    "side_order_return": "Turn order/direction remains ambiguous at the coarse-view scale.",
+    "reason": "Ordered coarse action cannot be confidently established from poses/full-frame curves.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV020",
+    "classification": "incomplete",
+    "evidence": "Raised-knee motion and deep flexion occur early and repeatedly throughout.",
+    "side_order_return": "No initial stand/sway interval before walking; high-knee substitution.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand",
+      "high_knee_substitution"
+    ]
+  },
+  {
+    "review_id": "FREV021",
+    "classification": "incomplete",
+    "evidence": "Stepping starts early, before the GT stationary interval ends.",
+    "side_order_return": "Alternating walking exists, but initial standing phase is missing.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand"
+    ]
+  },
+  {
+    "review_id": "FREV022",
+    "classification": "incomplete",
+    "evidence": "Alternating steps begin early; initial stationary stand/sway is not retained.",
+    "side_order_return": "Initial-to-walking order incomplete.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand"
+    ]
+  },
+  {
+    "review_id": "FREV023",
+    "classification": "incomplete",
+    "evidence": "Initial height recovery then shallow lowering; pelvis remains roughly0.8m late and does not show target middle rise/terminal descent. Rechecked every frame0..135 in the ZY contact sheet together with full-frame height/ankle-Z/knee curves; no missing middle recovery was found in skipped snapshot intervals.",
+    "side_order_return": "Side motion is present but required middle recovery and terminal descent are missing.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_middle_recovery",
+      "missing_terminal_descent"
+    ]
+  },
+  {
+    "review_id": "FREV024",
+    "classification": "complete",
+    "evidence": "Right leg rises backward, remains high over several seconds, then lowers; left support leg stays quiet.",
+    "side_order_return": "Correct side/direction, hold, and lowering visibly retained; amplitude precision not certified.",
+    "reason": "Visible coarse target sequence retained; no precise amplitude certification.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV025",
+    "classification": "complete",
+    "evidence": "Punch-like arm action followed by marked mid-clip crouch/turn and height change, then recovery.",
+    "side_order_return": "Ordered punch then turn/recovery visible; numerical correspondence evaluated separately.",
+    "reason": "Visible coarse target sequence retained.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV026",
+    "classification": "incomplete",
+    "evidence": "Alternating stepping begins from early frames, without the GT initial quiet standing interval.",
+    "side_order_return": "Initial stand/sway then walking order is lost.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand"
+    ]
+  },
+  {
+    "review_id": "FREV027",
+    "classification": "incomplete",
+    "evidence": "Delayed right forward kick/lift, with right foot still high at final frame.",
+    "side_order_return": "Kick appears but clip ends before standing return.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick_return"
+    ]
+  },
+  {
+    "review_id": "FREV028",
+    "classification": "incomplete",
+    "evidence": "Repeated stepping is present from the beginning; no clear stationary opening.",
+    "side_order_return": "Initial standing phase is absent.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand"
+    ]
+  },
+  {
+    "review_id": "FREV029",
+    "classification": "incomplete",
+    "evidence": "Both feet remain near ground and posture remains bent; no sustained right backward elevated leg.",
+    "side_order_return": "Required right backward lift and hold are absent.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_right_backward_lift",
+      "missing_leg_hold"
+    ]
+  },
+  {
+    "review_id": "FREV030",
+    "classification": "incomplete",
+    "evidence": "Hand approach motion is accompanied by persistent leg flexion/forward foot displacement; hands remain raised near end.",
+    "side_order_return": "Clap-only lower-body quietness and final arms-down return are not retained.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "lower_body_deformation",
+      "missing_arms_down_return"
+    ]
+  },
+  {
+    "review_id": "FREV031",
+    "classification": "uncertain",
+    "evidence": "Large early arm spread/raise followed by hand approach; repeated clap order/final lowering not sufficiently clear.",
+    "side_order_return": "Clap/return sequence ambiguous.",
+    "reason": "Ordered coarse action remains ambiguous from poses/full-frame curves.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV032",
+    "classification": "incomplete",
+    "evidence": "Right kick peaks late and remains elevated at clip end.",
+    "side_order_return": "No standing return after right extension.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick_return"
+    ]
+  },
+  {
+    "review_id": "FREV033",
+    "classification": "uncertain",
+    "evidence": "Large early arm movements followed by hand proximity; repeat timing and final return remain ambiguous.",
+    "side_order_return": "Cannot confidently label complete repeated claps then arms down.",
+    "reason": "Ordered coarse action remains ambiguous from poses/full-frame curves.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV034",
+    "classification": "incomplete",
+    "evidence": "Early recovery then pelvis declines into sustained low crouch/seated pose through final half. Rechecked every frame0..135 in the ZY contact sheet together with full-frame height/ankle-Z/knee curves; no missing middle recovery was found in skipped snapshot intervals.",
+    "side_order_return": "Side lowering not followed by required middle recovery.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_middle_recovery",
+      "sustained_crouch"
+    ]
+  },
+  {
+    "review_id": "FREV035",
+    "classification": "incomplete",
+    "evidence": "Delayed right kick/lift with raised right foot persisting at2s.",
+    "side_order_return": "Kick occurs without complete standing return.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick_return"
+    ]
+  },
+  {
+    "review_id": "FREV036",
+    "classification": "incomplete",
+    "evidence": "Foot height stays near ground and no complete right forward kick extension is visible.",
+    "side_order_return": "No target kick-return cycle.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick"
+    ]
+  },
+  {
+    "review_id": "FREV037",
+    "classification": "incomplete",
+    "evidence": "Alternating steps begin early, without a clear quiet initial stand/sway interval.",
+    "side_order_return": "Walking exists but stationary-to-walking order is lost.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand"
+    ]
+  },
+  {
+    "review_id": "FREV038",
+    "classification": "incomplete",
+    "evidence": "Pelvis stays very low and both legs remain flexed/extended forward rather than cycling through GT recoveries. Rechecked every frame0..135 in the ZY contact sheet together with full-frame height/ankle-Z/knee curves; no missing middle recovery was found in skipped snapshot intervals.",
+    "side_order_return": "No clear initial recovery, alternation, or middle recovery.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_recovery",
+      "missing_side_change",
+      "missing_middle_recovery",
+      "sustained_crouch"
+    ]
+  },
+  {
+    "review_id": "FREV039",
+    "classification": "incomplete",
+    "evidence": "Right kick/lift occurs late and right foot stays elevated at final frame.",
+    "side_order_return": "Standing return absent.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick_return"
+    ]
+  },
+  {
+    "review_id": "FREV040",
+    "classification": "incomplete",
+    "evidence": "Feet remain near ground with small displacement; full right forward kick absent.",
+    "side_order_return": "No target kick-return cycle.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick"
+    ]
+  },
+  {
+    "review_id": "FREV041",
+    "classification": "incomplete",
+    "evidence": "One early leg lift then near-static legs across most middle frames, with only isolated late steps.",
+    "side_order_return": "No sustained alternating walking after standing.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand",
+      "walking_collapsed_or_fragmented"
+    ]
+  },
+  {
+    "review_id": "FREV042",
+    "classification": "incomplete",
+    "evidence": "Initial height recovery then mild crouching with pelvis near0.8m late; required second recovery/end descent not present. Rechecked every frame0..135 in the ZY contact sheet together with full-frame height/ankle-Z/knee curves; no missing middle recovery was found in skipped snapshot intervals.",
+    "side_order_return": "Side shifts do not complete the observed GT recovery/descent sequence.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_middle_recovery",
+      "missing_terminal_descent"
+    ]
+  },
+  {
+    "review_id": "FREV043",
+    "classification": "incomplete",
+    "evidence": "Legs are raised and flexed during hand motion, unlike quiet GT lower body; hands remain up.",
+    "side_order_return": "Clap target has unrelated leg deformation and lacks arms-down return.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "lower_body_deformation",
+      "missing_arms_down_return"
+    ]
+  },
+  {
+    "review_id": "FREV044",
+    "classification": "complete",
+    "evidence": "Punch-like arm action, marked mid-clip crouch/turn/height change, then recovery.",
+    "side_order_return": "Coarse punch then turn/recovery order visible.",
+    "reason": "Visible coarse target sequence retained.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV045",
+    "classification": "incomplete",
+    "evidence": "Large early jump/elevation near1s, followed by stepping; initial stand/sway not preserved.",
+    "side_order_return": "Early jump replaces target stationary opening.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand",
+      "unrelated_early_jump"
+    ]
+  },
+  {
+    "review_id": "FREV046",
+    "classification": "uncertain",
+    "evidence": "Repeated punch-like arm movements and some torso changes, but then-turn order is unclear.",
+    "side_order_return": "Cannot confidently establish the complete ordered punch-turn sequence.",
+    "reason": "Ordered coarse action remains ambiguous from poses/full-frame curves.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV047",
+    "classification": "incomplete",
+    "evidence": "Early high jump/leg elevation followed by deep crouch persisting to clip end.",
+    "side_order_return": "Target kick is mixed with jumping and does not return to standing.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick_return",
+      "unrelated_jump"
+    ]
+  },
+  {
+    "review_id": "FREV048",
+    "classification": "uncertain",
+    "evidence": "Punch-like arm repetitions present; ordered turn/recovery remains unclear.",
+    "side_order_return": "Complete punch-then-turn sequence not confidently established.",
+    "reason": "Ordered coarse action remains ambiguous from poses/full-frame curves.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV049",
+    "classification": "uncertain",
+    "evidence": "Large early arm spread/raise then hand proximity; repeat timing and lowering remain unclear.",
+    "side_order_return": "Cannot confidently establish repeated claps then arms down.",
+    "reason": "Ordered coarse action remains ambiguous from poses/full-frame curves.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV050",
+    "classification": "incomplete",
+    "evidence": "Persistent leg extension/crouch and substantial pelvis descent accompany hand movement; arms do not visibly return down.",
+    "side_order_return": "Target quiet lower body and final arms-down sequence not retained.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "lower_body_deformation",
+      "missing_arms_down_return"
+    ]
+  },
+  {
+    "review_id": "FREV051",
+    "classification": "incomplete",
+    "evidence": "Legs remain flexed/forward while hands move near face and stay raised late.",
+    "side_order_return": "Clap target includes unrelated lower-body deformation and lacks arms-down return.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "lower_body_deformation",
+      "missing_arms_down_return"
+    ]
+  },
+  {
+    "review_id": "FREV052",
+    "classification": "incomplete",
+    "evidence": "Very low pelvis and forward/flexed legs persist across the entire clip. Rechecked every frame0..135 in the ZY contact sheet together with full-frame height/ankle-Z/knee curves; no missing middle recovery was found in skipped snapshot intervals.",
+    "side_order_return": "Initial recovery, alternation, and middle recovery absent.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_recovery",
+      "missing_side_change",
+      "missing_middle_recovery",
+      "sustained_crouch"
+    ]
+  },
+  {
+    "review_id": "FREV053",
+    "classification": "incomplete",
+    "evidence": "Raised/flexed legs accompany hand proximity, and arms remain up at end.",
+    "side_order_return": "Quiet lower body and arms-down return not retained.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "lower_body_deformation",
+      "missing_arms_down_return"
+    ]
+  },
+  {
+    "review_id": "FREV054",
+    "classification": "incomplete",
+    "evidence": "Feet remain near ground with small leg shifts; right forward kick absent.",
+    "side_order_return": "No full kick-return cycle.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick"
+    ]
+  },
+  {
+    "review_id": "FREV055",
+    "classification": "incomplete",
+    "evidence": "Right kick/lift occurs late and remains raised at final frame.",
+    "side_order_return": "Right extension has no standing return within clip.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick_return"
+    ]
+  },
+  {
+    "review_id": "FREV056",
+    "classification": "uncertain",
+    "evidence": "Large early arm raise/spread followed by hand movement; repeated clap/final return not clear.",
+    "side_order_return": "Coarse clap order remains ambiguous.",
+    "reason": "Ordered coarse action remains ambiguous from poses/full-frame curves.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV057",
+    "classification": "complete",
+    "evidence": "Repeated hand approach/separation with quiet legs, then arms down near clip end.",
+    "side_order_return": "Clap interval followed by arms-down return visible.",
+    "reason": "Visible coarse target sequence retained.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV058",
+    "classification": "incomplete",
+    "evidence": "Early isolated leg lift then almost static middle interval, with only a few late steps.",
+    "side_order_return": "No sustained alternating walking after the initial interval.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand",
+      "walking_collapsed_or_fragmented"
+    ]
+  },
+  {
+    "review_id": "FREV059",
+    "classification": "incomplete",
+    "evidence": "Repeated stepping starts early rather than after the GT stand/sway interval.",
+    "side_order_return": "Initial-to-walking temporal order incomplete.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand"
+    ]
+  },
+  {
+    "review_id": "FREV060",
+    "classification": "incomplete",
+    "evidence": "Small intermittent leg lifts/steps; no sustained elevated right backward hold matching coarse target.",
+    "side_order_return": "Leg activity does not establish the required right backward hold then lower.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_leg_hold"
+    ]
+  },
+  {
+    "review_id": "FREV061",
+    "classification": "incomplete",
+    "evidence": "Delayed right kick peak, with elevated right foot at clip end.",
+    "side_order_return": "Standing return absent.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick_return"
+    ]
+  },
+  {
+    "review_id": "FREV062",
+    "classification": "incomplete",
+    "evidence": "Persistent very low pelvis with forward/flexed legs and little recovery across clip. Rechecked every frame0..135 in the ZY contact sheet together with full-frame height/ankle-Z/knee curves; no missing middle recovery was found in skipped snapshot intervals.",
+    "side_order_return": "No initial recovery, clear side alternation or middle recovery.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_recovery",
+      "missing_side_change",
+      "missing_middle_recovery",
+      "sustained_crouch"
+    ]
+  },
+  {
+    "review_id": "FREV063",
+    "classification": "complete",
+    "evidence": "Punch-like arm action precedes pronounced mid-clip crouch/turn/height change and recovery.",
+    "side_order_return": "Ordered coarse punch-turn sequence visible.",
+    "reason": "Visible coarse target sequence retained.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV064",
+    "classification": "incomplete",
+    "evidence": "Feet remain near ground; sustained bent posture instead of right leg elevated backward.",
+    "side_order_return": "Right backward lift/hold absent.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_right_backward_lift",
+      "missing_leg_hold"
+    ]
+  },
+  {
+    "review_id": "FREV065",
+    "classification": "incomplete",
+    "evidence": "Small arm/leg motions with low feet; full forward right kick absent.",
+    "side_order_return": "No target kick-return cycle.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick"
+    ]
+  },
+  {
+    "review_id": "FREV066",
+    "classification": "incomplete",
+    "evidence": "Large jump/elevation in early interval, then alternating steps.",
+    "side_order_return": "Early jump replaces GT initial stationary phase.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand",
+      "unrelated_early_jump"
+    ]
+  },
+  {
+    "review_id": "FREV067",
+    "classification": "uncertain",
+    "evidence": "Early arm spread/raise followed by hand approach; repetition and final lowering are unclear.",
+    "side_order_return": "Complete clap then arms-down order not confidently established.",
+    "reason": "Ordered coarse action remains ambiguous from poses/full-frame curves.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV068",
+    "classification": "incomplete",
+    "evidence": "Right leg kick/lift appears late and remains raised at final frame.",
+    "side_order_return": "No standing return after kick.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick_return"
+    ]
+  },
+  {
+    "review_id": "FREV069",
+    "classification": "incomplete",
+    "evidence": "Only intermittent small leg movements, without sustained elevated right backward hold.",
+    "side_order_return": "Required right leg hold then lowering not established.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_leg_hold"
+    ]
+  },
+  {
+    "review_id": "FREV070",
+    "classification": "incomplete",
+    "evidence": "Early height recovery then mild lowering; middle rise and terminal descent absent. Rechecked every frame0..135 in the ZY contact sheet together with full-frame height/ankle-Z/knee curves; no missing middle recovery was found in skipped snapshot intervals.",
+    "side_order_return": "Side motion does not complete required recovery/descent order.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_middle_recovery",
+      "missing_terminal_descent"
+    ]
+  },
+  {
+    "review_id": "FREV071",
+    "classification": "complete",
+    "evidence": "Repeated close hand approaches/separations with quiet legs, then arms lower near end.",
+    "side_order_return": "Clap interval then arms-down return visible.",
+    "reason": "Visible coarse target sequence retained.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV072",
+    "classification": "uncertain",
+    "evidence": "Large early arm spread/raise then hand proximity; full repetition/return unclear.",
+    "side_order_return": "Complete clap sequence remains ambiguous.",
+    "reason": "Ordered coarse action remains ambiguous from poses/full-frame curves.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV073",
+    "classification": "incomplete",
+    "evidence": "Repeated arm raises/spreads accompanied by jumps/elevated feet and large pelvis changes.",
+    "side_order_return": "Target clapping with quiet lower body is replaced by jump-like whole-body activity.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "lower_body_deformation",
+      "unrelated_jump"
+    ]
+  },
+  {
+    "review_id": "FREV074",
+    "classification": "incomplete",
+    "evidence": "Right kick occurs late and foot remains high at clip end.",
+    "side_order_return": "Standing return missing.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick_return"
+    ]
+  },
+  {
+    "review_id": "FREV075",
+    "classification": "incomplete",
+    "evidence": "Alternating stepping begins immediately rather than after quiet opening.",
+    "side_order_return": "Initial stand/sway-to-walk order missing.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand"
+    ]
+  },
+  {
+    "review_id": "FREV076",
+    "classification": "uncertain",
+    "evidence": "Large early arm spread/raise followed by hand motion; repeated target clap order not clear.",
+    "side_order_return": "Complete claps then arms-down return not confidently established.",
+    "reason": "Ordered coarse action remains ambiguous from poses/full-frame curves.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV077",
+    "classification": "complete",
+    "evidence": "Repeated hand approach/separation with quiet legs; arms lower near end.",
+    "side_order_return": "Target clap interval then arms-down sequence visible.",
+    "reason": "Visible coarse target sequence retained.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV078",
+    "classification": "incomplete",
+    "evidence": "Raised and flexed legs accompany hand movement; hands remain up late.",
+    "side_order_return": "Quiet lower body and arms-down return lost.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "lower_body_deformation",
+      "missing_arms_down_return"
+    ]
+  },
+  {
+    "review_id": "FREV079",
+    "classification": "uncertain",
+    "evidence": "Punch-like repetitions and some body changes visible, but ordered turn/recovery unclear.",
+    "side_order_return": "Cannot confidently establish complete punch then turn.",
+    "reason": "Ordered coarse action remains ambiguous from poses/full-frame curves.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV080",
+    "classification": "incomplete",
+    "evidence": "Feet remain low with bent posture across clip; no elevated right backward leg hold.",
+    "side_order_return": "Right backward lift and hold absent.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_right_backward_lift",
+      "missing_leg_hold"
+    ]
+  },
+  {
+    "review_id": "FREV081",
+    "classification": "incomplete",
+    "evidence": "Feet stay close to ground and required right kick extension absent.",
+    "side_order_return": "No complete kick-return cycle.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick"
+    ]
+  },
+  {
+    "review_id": "FREV082",
+    "classification": "incomplete",
+    "evidence": "Early jump/elevation followed by prolonged deep crouch.",
+    "side_order_return": "Kick target is mixed with jumping and lacks standing return.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick_return",
+      "unrelated_jump"
+    ]
+  },
+  {
+    "review_id": "FREV083",
+    "classification": "incomplete",
+    "evidence": "Repeated stepping starts early without quiet opening.",
+    "side_order_return": "Initial stand/sway phase missing.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand"
+    ]
+  },
+  {
+    "review_id": "FREV084",
+    "classification": "incomplete",
+    "evidence": "Small leg/arm changes with feet low; full right forward kick absent.",
+    "side_order_return": "No target kick-return cycle.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick"
+    ]
+  },
+  {
+    "review_id": "FREV085",
+    "classification": "incomplete",
+    "evidence": "Right kick/lift occurs late and foot remains elevated at final frame.",
+    "side_order_return": "Standing return absent.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick_return"
+    ]
+  },
+  {
+    "review_id": "FREV086",
+    "classification": "incomplete",
+    "evidence": "Low pelvis and forward/flexed legs persist through entire clip. Rechecked every frame0..135 in the ZY contact sheet together with full-frame height/ankle-Z/knee curves; no missing middle recovery was found in skipped snapshot intervals.",
+    "side_order_return": "Initial recovery, side alternation and middle recovery absent.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_recovery",
+      "missing_side_change",
+      "missing_middle_recovery",
+      "sustained_crouch"
+    ]
+  },
+  {
+    "review_id": "FREV087",
+    "classification": "incomplete",
+    "evidence": "Alternating steps start early, without quiet standing interval.",
+    "side_order_return": "Initial stand/sway then walking order lost.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand"
+    ]
+  },
+  {
+    "review_id": "FREV088",
+    "classification": "incomplete",
+    "evidence": "Large crouch/leg extension accompanies hand movement; hands remain raised late.",
+    "side_order_return": "Clap target includes unrelated lower-body deformation and no arms-down return.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "lower_body_deformation",
+      "missing_arms_down_return"
+    ]
+  },
+  {
+    "review_id": "FREV089",
+    "classification": "incomplete",
+    "evidence": "Repeated stepping starts from the early frames.",
+    "side_order_return": "Required stationary opening missing.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand"
+    ]
+  },
+  {
+    "review_id": "FREV090",
+    "classification": "incomplete",
+    "evidence": "Alternating stepping begins early instead of following quiet opening.",
+    "side_order_return": "Initial standing phase not retained.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand"
+    ]
+  },
+  {
+    "review_id": "FREV091",
+    "classification": "incomplete",
+    "evidence": "Intermittent small leg movements do not produce elevated right backward hold.",
+    "side_order_return": "Required hold then lower not established.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_leg_hold"
+    ]
+  },
+  {
+    "review_id": "FREV092",
+    "classification": "incomplete",
+    "evidence": "Early recovery then mild lowering; late pelvis stays near0.8m without target recovery/descent. Rechecked every frame0..135 in the ZY contact sheet together with full-frame height/ankle-Z/knee curves; no missing middle recovery was found in skipped snapshot intervals.",
+    "side_order_return": "Middle recovery and terminal descent missing.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_middle_recovery",
+      "missing_terminal_descent"
+    ]
+  },
+  {
+    "review_id": "FREV093",
+    "classification": "incomplete",
+    "evidence": "Feet stay near ground; forward right kick absent.",
+    "side_order_return": "No complete kick-return cycle.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick"
+    ]
+  },
+  {
+    "review_id": "FREV094",
+    "classification": "uncertain",
+    "evidence": "Early arm spread/raise followed by hand approach; repeat order/final lowering unclear.",
+    "side_order_return": "Complete clap sequence cannot be confidently established.",
+    "reason": "Ordered coarse action remains ambiguous from poses/full-frame curves.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV095",
+    "classification": "uncertain",
+    "evidence": "Punch-like arm movements and torso changes visible, but ordered turn/recovery unclear.",
+    "side_order_return": "Complete punch then turn not confidently established.",
+    "reason": "Ordered coarse action remains ambiguous from poses/full-frame curves.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV096",
+    "classification": "uncertain",
+    "evidence": "Large early arm raise/spread and subsequent hand proximity; repeat/return remain ambiguous.",
+    "side_order_return": "Complete clap then arms-down sequence not confidently established.",
+    "reason": "Ordered coarse action remains ambiguous from poses/full-frame curves.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV097",
+    "classification": "uncertain",
+    "evidence": "Punch-like arm repetitions and torso changes occur, but ordered turn/recovery remains unclear.",
+    "side_order_return": "Complete punch then turn not confidently established.",
+    "reason": "Ordered coarse action remains ambiguous from poses/full-frame curves.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV098",
+    "classification": "complete",
+    "evidence": "Repeated close hand approach/separation with quiet legs, followed by arms down near end.",
+    "side_order_return": "Clap interval then arms-down return visible.",
+    "reason": "Visible coarse target sequence retained.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV099",
+    "classification": "complete",
+    "evidence": "Right leg lifts backward high, remains elevated over several seconds, then lowers; left leg supports.",
+    "side_order_return": "Correct side/backward direction, hold and lowering retained; precise amplitude not certified.",
+    "reason": "Visible coarse target sequence retained.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV100",
+    "classification": "complete",
+    "evidence": "Initial upright quiet interval followed by alternating steps and arm swing. Root-height/path mismatch retained numerically.",
+    "side_order_return": "Stand/sway then walking coarse order visible.",
+    "reason": "Visible coarse target sequence retained.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV101",
+    "classification": "incomplete",
+    "evidence": "Low feet and bent posture persist; no elevated right backward leg hold.",
+    "side_order_return": "Right backward lift/hold absent.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_right_backward_lift",
+      "missing_leg_hold"
+    ]
+  },
+  {
+    "review_id": "FREV102",
+    "classification": "incomplete",
+    "evidence": "Alternating stepping appears early, without clear quiet stationary opening.",
+    "side_order_return": "Initial standing-to-walking order lost.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand"
+    ]
+  },
+  {
+    "review_id": "FREV103",
+    "classification": "incomplete",
+    "evidence": "Leg steps/raises begin in early interval rather than after quiet opening.",
+    "side_order_return": "Required initial stand/sway phase missing.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand"
+    ]
+  },
+  {
+    "review_id": "FREV104",
+    "classification": "incomplete",
+    "evidence": "Small intermittent leg lifts do not form a sustained elevated backward right hold.",
+    "side_order_return": "Hold then lower not established.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_leg_hold"
+    ]
+  },
+  {
+    "review_id": "FREV105",
+    "classification": "incomplete",
+    "evidence": "Delayed right kick/lift remains elevated at final frame.",
+    "side_order_return": "Standing return missing.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick_return"
+    ]
+  },
+  {
+    "review_id": "FREV106",
+    "classification": "incomplete",
+    "evidence": "Repeated arm raise/spread comes with jumps/elevated feet and large pelvis changes.",
+    "side_order_return": "Target clap-only lower-body quietness replaced by jump-like activity.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "lower_body_deformation",
+      "unrelated_jump"
+    ]
+  },
+  {
+    "review_id": "FREV107",
+    "classification": "incomplete",
+    "evidence": "Right backward leg lift occurs in isolated peaks with returns between them.",
+    "side_order_return": "Correct side/direction appears, but required sustained hold is fragmented.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_leg_hold"
+    ]
+  },
+  {
+    "review_id": "FREV108",
+    "classification": "uncertain",
+    "evidence": "Punch-like repetitions and some body changes visible, but ordered then-turn unclear.",
+    "side_order_return": "Complete punch-turn sequence not confidently established.",
+    "reason": "Ordered coarse action remains ambiguous from poses/full-frame curves.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV109",
+    "classification": "incomplete",
+    "evidence": "Delayed right kick/lift with right foot still high at final frame.",
+    "side_order_return": "Standing return missing.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick_return"
+    ]
+  },
+  {
+    "review_id": "FREV110",
+    "classification": "complete",
+    "evidence": "Punch-like arm action precedes marked mid-clip crouch/turn/height change, then recovery.",
+    "side_order_return": "Coarse ordered punch then turn/recovery visible.",
+    "reason": "Visible coarse target sequence retained.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV111",
+    "classification": "incomplete",
+    "evidence": "Feet stay low, while pelvis declines into sustained crouch late.",
+    "side_order_return": "Full right kick and standing return absent.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick",
+      "missing_kick_return"
+    ]
+  },
+  {
+    "review_id": "FREV112",
+    "classification": "complete",
+    "evidence": "Quiet upright initial interval followed by alternating steps and arm motion. Root-height/path mismatch retained numerically.",
+    "side_order_return": "Stand/sway then walking coarse order visible.",
+    "reason": "Visible coarse target sequence retained.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV113",
+    "classification": "incomplete",
+    "evidence": "Repeated stepping begins in the early interval.",
+    "side_order_return": "GT initial stationary phase absent.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand"
+    ]
+  },
+  {
+    "review_id": "FREV114",
+    "classification": "incomplete",
+    "evidence": "Walking/stepping begins early without quiet initial stand/sway.",
+    "side_order_return": "Initial-to-walk order incomplete.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand"
+    ]
+  },
+  {
+    "review_id": "FREV115",
+    "classification": "incomplete",
+    "evidence": "Alternating steps present from early frames.",
+    "side_order_return": "Initial stationary opening not retained.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand"
+    ]
+  },
+  {
+    "review_id": "FREV116",
+    "classification": "incomplete",
+    "evidence": "Raised/flexed legs accompany hand motion and hands remain up late.",
+    "side_order_return": "Quiet lower body and final arms-down return missing.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "lower_body_deformation",
+      "missing_arms_down_return"
+    ]
+  },
+  {
+    "review_id": "FREV117",
+    "classification": "incomplete",
+    "evidence": "Right kick/lift is delayed and remains elevated at final frame.",
+    "side_order_return": "No standing return within clip.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_kick_return"
+    ]
+  },
+  {
+    "review_id": "FREV118",
+    "classification": "uncertain",
+    "evidence": "Punch-like repetitions and some torso changes, but ordered turn/recovery unclear.",
+    "side_order_return": "Complete punch-then-turn not confidently established.",
+    "reason": "Ordered coarse action remains ambiguous from poses/full-frame curves.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV119",
+    "classification": "uncertain",
+    "evidence": "Early arm spread/raise then hand proximity; repetition and final lowering ambiguous.",
+    "side_order_return": "Complete clap order cannot be confidently established.",
+    "reason": "Ordered coarse action remains ambiguous from poses/full-frame curves.",
+    "behavior_losses": []
+  },
+  {
+    "review_id": "FREV120",
+    "classification": "incomplete",
+    "evidence": "Alternating steps begin early instead of after quiet opening.",
+    "side_order_return": "Initial stand/sway phase missing.",
+    "reason": "Visible target order/return is incomplete.",
+    "behavior_losses": [
+      "missing_initial_stand"
+    ]
+  }
+]

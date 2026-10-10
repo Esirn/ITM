@@ -1,0 +1,22 @@
+{
+  "notes_saved_at": "2026-10-08T04:51:44.600463+00:00",
+  "review_rows": 120,
+  "notes_sha256": "b4b1fc1b1f9ef4be3eb641ee16280fdf3a036da652a6e7ecae903ad8bc492dd5",
+  "order_sha256": "87342218ca7e3080f3d6d8a777fc2f423f78eb424d9935bb50e75180339e9758",
+  "arm_key_bulk_decoded": false,
+  "primary_every_frame_review_ids": [
+    "FREV001",
+    "FREV007",
+    "FREV009",
+    "FREV023",
+    "FREV034",
+    "FREV038",
+    "FREV042",
+    "FREV052",
+    "FREV062",
+    "FREV070",
+    "FREV086",
+    "FREV092"
+  ],
+  "scope": "Single AI main-session coarse review; fixed hidden arm/config/condition figures, ten uniform poses and full-frame curves; all frames of primary target additionally viewed. Historical U known; not fully blind or independent human validation. Other ambiguous rows remain uncertain."
+}

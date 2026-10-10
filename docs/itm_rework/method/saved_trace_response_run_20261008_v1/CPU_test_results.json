@@ -1,0 +1,19 @@
+{
+  "kind": "Captured completed command results, synthetic fixtures only",
+  "commands": [
+    {
+      "argv": "OMP_NUM_THREADS=2 PYTHONPATH=src /home/a200/miniconda3/envs/itm/bin/python -m pytest -q tests/test_trace_response.py",
+      "passed": 8,
+      "seconds": 0.1,
+      "exit_code": 0
+    },
+    {
+      "argv": "OMP_NUM_THREADS=2 PYTHONPATH=src /home/a200/miniconda3/envs/itm/bin/python -m pytest -q tests/test_prefix_mechanism_freeze.py",
+      "passed": 4,
+      "seconds": 0.07,
+      "exit_code": 0
+    }
+  ],
+  "prefix_worker_implemented": false,
+  "prefix_runtime_accepted": false
+}

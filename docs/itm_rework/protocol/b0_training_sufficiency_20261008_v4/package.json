@@ -1,0 +1,50 @@
+{
+  "version": "itm-training-sufficiency-native-package-v1",
+  "artifacts": [
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v4/budget.json",
+      "sha256": "829c57f25e985784f5ff646da2326adba4700fc342b08b9c0c3c7b0dac513465"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v4/checkpoints.json",
+      "sha256": "d466a66264edd7b14ad9149827887b9c45baac03f9422eb8413eb8cd25598c02"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v4/design.json",
+      "sha256": "d29d2e44d59ff2b9110a433d61660f7aeec0b15abc0a064111fc2fec4d2a920d"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v4/evaluation.json",
+      "sha256": "7e3ce11835db18543809998b54c190308d18dbca5b9463dc2e354373355a93b4"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v4/existing_trace_temporal_baseline.json",
+      "sha256": "6d1a640a563e9605f0f122782d686874d2f28c2a1ca5c816ef60c7d04b7b1af7"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v4/input_cases.json",
+      "sha256": "b4b7cb6809576b56693684349454d8f79d2e6955983bfaafe62389ef014bc17b"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v4/jobs.json",
+      "sha256": "01b29e4945c29631aefb437ca9c1d860c5879fa8cda8299ee353e3a20f737b7e"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v4/software_checks.json",
+      "sha256": "328c370c17f2b2236b30d595c3dbf65754886be95a2308a244f13b51b0b53f9d"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v4/sources.json",
+      "sha256": "01d6c6351d61a91775ec54b9bb6d78044c085542daa8db689e86fdddf256df6b"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v4/states.json",
+      "sha256": "d0256276bca3837366dedd5912b86c897cb18afe43be7ee2a2893d071f40812a"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v4/validation.json",
+      "sha256": "8906625f95a841715eb8bf0e528833af2313fcb28942505b094f9b20b25aef20"
+    }
+  ],
+  "scientific_change": "Native Q batch5+CLIPbatch5, trajectories batch4+CLIPbatch1; all original states/weights/metrics/tolerances. Metadata source-count correction; v3 never executed."
+}

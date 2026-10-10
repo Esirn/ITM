@@ -1,0 +1,17 @@
+{
+  "plan_sha256": "d64d2e1cb5a2a94bb6bcf3d8cd50543889005d21a7c246ed818b7938866c261b",
+  "trace_counts": {
+    "valid": 480
+  },
+  "paired_counts": {
+    "valid": 240
+  },
+  "sample_counts": {
+    "valid": 120
+  },
+  "new_GPU_queries": 0,
+  "new_model_calls": 0,
+  "new_noise": 0,
+  "new_decodes": 0,
+  "interpretation": "Different F/U x_t and different times are descriptive only. GT is fixed-time reference, not a conditional expectation. Variance is not behavior correctness. All negative cases and incomplete denominators retained; not blind or independent review."
+}

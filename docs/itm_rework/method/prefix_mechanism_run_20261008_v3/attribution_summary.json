@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "planned": 240,
+  "valid": 240,
+  "new_model_calls": 0,
+  "new_GPU_queries": 0,
+  "interpretation": "Algebra of saved conditional predictions; ordering-sensitive components and signed covariance. No unique mechanism, behavior repair or training sufficiency certification."
+}

@@ -1,0 +1,8 @@
+{
+  "status": "pre_delivery_archive_superseded",
+  "reason": "Includes rejected draft history-factorial v1 whose baseline traces were paired, not text-only; complete CPU numbers unchanged.",
+  "final_archive": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_response_run_20261008_v2/artifact_index.json",
+    "sha256": "319db551e7d1ceda2c349b712b76d17aa3e46d3b76e1873aa926f2b3883d4d5e"
+  }
+}

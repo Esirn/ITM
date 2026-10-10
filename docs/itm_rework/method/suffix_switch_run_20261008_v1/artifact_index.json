@@ -1,0 +1,306 @@
+[
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/complete_run_file_index.json",
+    "sha256": "43f1a0fef49bcb81154b828f8ed8b512add383b9e6f79a5dcbcb94343b7a747d"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/execution_summary.json",
+    "sha256": "6387d6a6d9e50c958834fbd70b7f45f6b8f3ad13be91c061b60169036ac65549"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/docs/itm_rework/method/B0_SUFFIX_SWITCH_EXECUTION_20261008.json",
+    "sha256": "3976fcac11d158d9a54c81ca7a9fea26521fffd85646f78dd488de0e8cb396fb"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/docs/itm_rework/protocol/B0_SUFFIX_SWITCH_EVALUATION_20261008.md",
+    "sha256": "a1e31ba38a2d3af1dde30a8f20e1f11e52f8e0b0d04273a5058364193fd23087"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_response_CPU_20261008_v1/plan.json",
+    "sha256": "e6bfa66b25e656f574144149fc8f69d3e452927aa7a6999a2c33674ae58434ed"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/budgets.json",
+    "sha256": "bb02998b7af37d85223c9a32e27d6d7e2b4ae7b0d6e9e99f851a083ad59b6a9b"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/checkpoints.json",
+    "sha256": "35895316ce6a3729effc9574161c0aed95d4ab89bf70191170492df53e4845ba"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/design.json",
+    "sha256": "b7a01553d3e9c3fa50a2e4167269d5eadb971cb619d7c897d8e249e46c9874dc"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/historical_anchors.json",
+    "sha256": "88c350317800a5713ffffb21c00866a89f7f6d9d2d6b3163242f528780da4a8c"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/noise.json",
+    "sha256": "7d4bcb4099e198dad08fb5a14ff99fb66dd3531a7c2b66c78f850a239e81f5b5"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/package.json",
+    "sha256": "6f84cef7715b94f4ea3b8df374691b48104beee3424f24a931f13fcb616e0e8d"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/software_checks.json",
+    "sha256": "2741a35fbedc63961c422850769f227a594a27cd535cf45fa973a53a9938f3f8"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/sources.json",
+    "sha256": "fcc6ea4187e730879e4f04ded741c1f72f9b63863586c336180bb872c18f1eee"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/starts.json",
+    "sha256": "9b9e51127a6e3df9b01812c68bb7d1a2895609d9b7949257fd4f755ce62ae505"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/trajectories.json",
+    "sha256": "bc53a63968a036ea7ad3349975587be822cfa76e9af52123e8825902ebbafe04"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_CPU_acceptance_20261008_v1/pytest.xml",
+    "sha256": "316c21619e779c8a218c961bf4bc34c6c1b1295b944c5f9f6420c7a53e2cbe14"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_CPU_acceptance_20261008_v2/pytest.xml",
+    "sha256": "e82f41a866257c0b5b38cefccbd9825691ede040030f27dce35523a470a9ac26"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_authorized_20261008_v1/runtime/preflight/compute_processes.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_authorized_20261008_v1/runtime/preflight/compute_processes.stdout",
+    "sha256": "aaa3d5cb038980be63f1eb395c5ef15fd4663d692bac6d19da70494ecfda21f9"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_authorized_20261008_v1/runtime/preflight/gpu_01.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_authorized_20261008_v1/runtime/preflight/gpu_01.stdout",
+    "sha256": "968afe6c5d80743b5cd39164b5a7a4f6eff63b3eb87f8f8f07d965e7ecbbd444"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_authorized_20261008_v1/runtime/preflight/gpu_02.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_authorized_20261008_v1/runtime/preflight/gpu_02.stdout",
+    "sha256": "968afe6c5d80743b5cd39164b5a7a4f6eff63b3eb87f8f8f07d965e7ecbbd444"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_authorized_20261008_v1/runtime/preflight/gpu_03.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_authorized_20261008_v1/runtime/preflight/gpu_03.stdout",
+    "sha256": "968afe6c5d80743b5cd39164b5a7a4f6eff63b3eb87f8f8f07d965e7ecbbd444"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_authorized_20261008_v1/runtime/preflight/result.json",
+    "sha256": "68c71342044cec9931d918ef894c185671f8f6a31110b4891d484ed3ada262c4"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_authorized_20261008_v1/runtime/status.json",
+    "sha256": "646183a0e9265a0d759651968c541cd7ccd558905bf10ea8df05597ebe9cd9c7"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_authorized_20261008_v1/runtime/suffix.context.json",
+    "sha256": "4f93b5fe1cbf30fbbfcf44b951e524e67d2f527c83f5417a7cb7afc96ee6fe9c"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_authorized_20261008_v1/runtime/suffix.log",
+    "sha256": "f13f333a944a39feb64489ee83fb14833b22701608f2681bc4d5f95e42d527fb"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_authorized_20261008_v1/runtime/suffix.receipt.journal.jsonl",
+    "sha256": "ffdef5d6847b8ca179b52c05300520399eeeded87b8622e0a33ad01f10545adc"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_authorized_20261008_v1/runtime/suffix.receipt.json",
+    "sha256": "c28445a9997a440c544aef5fbcc6da2c27646df03afbc7b18d01af79bef46bf1"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_implementation_20261008_v1/code/evaluate_b0_suffix_switch_before_reference_schema.py",
+    "sha256": "f021cb7947e2be929000a2dda7a8260d14b9a8df2acc8af8453f7c70b282136f"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_implementation_20261008_v2/CPU_acceptance.json",
+    "sha256": "0ea3e6367e40edc6d925f49f20d279d3f9e7df327b50cb6c43527653ee733322"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_implementation_20261008_v2/CPU_correction.json",
+    "sha256": "78b7295b030697f2231f919a4fb5f4c96683d073f3cb3ae1664ac42b91b64c5f"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_implementation_20261008_v2/implementation.json",
+    "sha256": "21b4252a8fdc3bfc0a516fe35b71eda3ce1cb97f96418bd308aedcf9c6843a01"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_implementation_20261008_v2/implementation_delivery.json",
+    "sha256": "f25d0d343b9bf3a2c598e49b46414a4b0aef76686b40b9001a8fb39b2458643e"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_implementation_20261008_v2/next_CPU_plan_verification.json",
+    "sha256": "75b23bc1aaca5c624b0a1accdcddd681910bf0182c44ddcce20bacc238d3ff39"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_implementation_20261008_v2/result_verification.json",
+    "sha256": "5548d76dbad76e2b57e252c6031a94a39ceca4913025b0341cccf1adf8017792"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/method/suffix_switch_implementation_20261008_v2/synthetic_fixture_verification.json",
+    "sha256": "237ee1d504dddf3b5b48c743147a287e858475351a03e0e04caf1d51183f51f9"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_behavior_20261008_v1/artifact_index.json",
+    "sha256": "0fb90aab68ea103411236d5437a7a783736d8df4258ad5b7f17efef9d158e060"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_behavior_20261008_v1/decision.json",
+    "sha256": "26b74a664ba845ab18f94e901ebba7ffa1f759b6ede7359728167cf54312ca30"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_behavior_20261008_v1/notes.json",
+    "sha256": "1a6aa9a5e0548833e7e27a7ce189f5c9c6b46e3975fb11b717c5df59b3186bbf"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_behavior_20261008_v1/summary.json",
+    "sha256": "37f9bd4f7540bbbd71e43a8579a94997ca5ecbe923adf2f89761473f01c4b40f"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_evaluation_20261008_v1/artifact_index.json",
+    "sha256": "e479a81226d385f4560f86da948653a3de9d9f8f5ef9377087d1a73fd6eb2a60"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_evaluation_20261008_v1/contrasts.json",
+    "sha256": "74be301ba92d8586f48b65795dfe44e342db0f94186c00774ab9c6c7a2d21b65"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_evaluation_20261008_v1/finals.json",
+    "sha256": "25da3da58d11087bbb6e996fbf6d50c87aedef1aceec7214e420cfd0f490c337"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_evaluation_20261008_v1/old_final_references.json",
+    "sha256": "69f6d6f3f2bf503cb51f258f72cd480061dcd152b0fdd15df5ce3cf92df47d8d"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_evaluation_20261008_v1/sources.json",
+    "sha256": "503c5d6058478749ed73ce557917dd8f2b8a614af8c35d03de27fb54c4004bd3"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_evaluation_20261008_v1/summary.json",
+    "sha256": "c315136318ca9d5b7d3bdbd1e529f3fe4612b998fca58536bc4d811507e1bad1"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_evaluation_20261008_v1/traces.json",
+    "sha256": "03476a7d279a5bc347dae5ab97a919552a41286dca76a450316f6e17e7280016"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_review_20261008_v1/SX001_frames_000.png",
+    "sha256": "a6235d77396be9b308ad5a785ff0c8ef6426b441460ba381286eddd16530de30"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_review_20261008_v1/SX001_frames_048.png",
+    "sha256": "0732f67bb1c575341c5b134a43e8d044f0216a08676d2202e48e9004995ef524"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_review_20261008_v1/SX001_frames_096.png",
+    "sha256": "40b8be32b6ab358b5bdd852825f1b888247494116a96209f41f50ba26d43cc4d"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_review_20261008_v1/SX002_frames_000.png",
+    "sha256": "db1b5339353f62472305832ec821ce82dc8896fc51776bf002e0debabf1c5b81"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_review_20261008_v1/SX002_frames_048.png",
+    "sha256": "9a38ed700b3f20779cd093b3de5fe5c208874b229822b4f55db9ee995d10ea17"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_review_20261008_v1/SX002_frames_096.png",
+    "sha256": "6bab7286a6b7f366ea6c2b8772383edac45a824c532280bab5f7cfc391fc34fe"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_review_20261008_v1/SX003_frames_000.png",
+    "sha256": "1397267c02cea56c2a3ba793dfc8fa1e19508d140d9c31b9272ed8f352f504d5"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_review_20261008_v1/SX003_frames_048.png",
+    "sha256": "1222206321cffc3b9e52ddb7e2199b105813da38596ecd9229835eea66f61718"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_review_20261008_v1/SX003_frames_096.png",
+    "sha256": "62b9610c6eb619edf3ba6f0f0a1cceea0a753b8635e1daafa025090a77ea399a"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_review_20261008_v1/SX004_frames_000.png",
+    "sha256": "d0c88ab235d2e9f310a0bbbe63717f20ed4dda7f34d9072dd1e60232ca940af1"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_review_20261008_v1/SX004_frames_048.png",
+    "sha256": "680c2e4b241df70a12b501fecc4468d1eaae9070b0171129d96d9086174f1124"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_review_20261008_v1/SX004_frames_096.png",
+    "sha256": "f3447c6378f4f6498ee822b6572a14622b386e25aa034320fc67b82d7ba20e35"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_review_20261008_v1/artifact_index.json",
+    "sha256": "1d94871c4507ebf8713b9fe171eda188b3e15820ef816e9172fd7888b80625ca"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_review_20261008_v1/head_overview.png",
+    "sha256": "365318e27a992f46e8d55cb30bc2534738487fb0a2e87e7b6f899e5d6e2b9933"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_review_20261008_v1/rendering.json",
+    "sha256": "605bbdb3d1f1fde94ec5c317f0aabbcbf42743a2d0ac9efbae2b93cdcbecf2b9"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_review_20261008_v1/review.html",
+    "sha256": "6dd6a7d063d3dbf53854979d65e3c2d9f3c1556d9c3c42b911d0c8fe24667236"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/outputs/itm_rework/protocol/suffix_switch_review_20261008_v1/wrists_overview.png",
+    "sha256": "663beffd1ec1a5085d22f515a8e99ff56ceb2c44dd3da177a18740949995dd69"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/scripts/evaluate_b0_suffix_switch.py",
+    "sha256": "e440bdd5b256ea0b234c073852615b0980014aecc8cedb7c740b4f5c2d0b2b23"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/scripts/render_b0_suffix_switch.py",
+    "sha256": "5dcc96ab9bfb08fc87e9ecdf82ce408a5bf616e6015574b873e4ffaf3d28dc35"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/scripts/run_mdm_suffix_switch_bounded.py",
+    "sha256": "b4b6e13af15326e819a61aca607bfff1c2129af039942504e757d7f5b806b7f1"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/scripts/run_mdm_suffix_switch_worker.py",
+    "sha256": "93881869561d42e94d72336d81f2628def23a9d5bdbeb29d277c85fabe2b5ec9"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/scripts/verify_b0_suffix_results.py",
+    "sha256": "6398354188bb63665b0586d25812d8d23cd3b7c8abb162d0a26b1944d3e702cd"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/src/itm/models/mdm_suffix_switch.py",
+    "sha256": "861a9cd73e0ed8f2677bafef4a870db40ce5ebe63845034718fd8702fc5666ab"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/tests/test_mdm_suffix_switch.py",
+    "sha256": "aea6f98b8c3120ba81a0b77f5d6f5d096e46bc08d5e609add5a200b6f58a30bd"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/snapshot/tests/test_suffix_switch_freeze.py",
+    "sha256": "cca9770961dd0fba1abb011f832ecd1199febf4b44fab82620f9dd50f068a6ea"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/suffix_switch_run_20261008_v1/source_copy_index.json",
+    "sha256": "6b34ee102db9410cb1514f2736f461df50198fa499a4991b9785b9a2349a9dcc"
+  }
+]

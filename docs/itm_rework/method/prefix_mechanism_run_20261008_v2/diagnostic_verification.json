@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "scope": "diagnostic_only; incomplete queue, no primary certification",
+  "source_hashes": 2657,
+  "worker_artifact_hashes": 8215,
+  "software_equations": 7219,
+  "posterior_transition_hash_links": 3600,
+  "old_noise_descriptors": 3636,
+  "independent_metric_scalars": 329034,
+  "max_scalar_absolute_error": 3.730349362740526e-14,
+  "new_GPU_queries": 0,
+  "new_model_calls": 0,
+  "new_noise_draws": 0,
+  "independent_review": false,
+  "verifier": {
+    "path": "/home/a200/0proj/ITM/scripts/verify_b0_prefix_results.py",
+    "sha256": "243ddeded34a83cf55ee3eb5fd49fa4bfa19ed7f35aefc05dd19e174e44dc786"
+  },
+  "implementation": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_implementation_20261008_v2/implementation.json",
+    "sha256": "48a12948ade4a006e70b28cdc44fab8d3bb3fff2c63d15933e815c574118eff9"
+  }
+}

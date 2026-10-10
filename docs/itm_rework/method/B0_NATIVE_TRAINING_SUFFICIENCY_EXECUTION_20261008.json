@@ -1,0 +1,46 @@
+{
+  "version": "itm-sufficiency-execution-record-v1",
+  "authorized": true,
+  "approved_by": "user_standing_delegation",
+  "policy": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/GPU_EXECUTION_POLICY_20261008.json",
+    "sha256": "6d63492234840f349b7ff67ef222499ca20987a9f9c75fb49b32e7444fc91179"
+  },
+  "resource_policy": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/GPU_SHARED_EXECUTION_POLICY_20261008.json",
+    "sha256": "554db16d964ba650cdf755b6d203ecb51534b07eecc0752da765f8cdef2fbfb1"
+  },
+  "resource_gates": {
+    "minimum_free_MiB": 4096,
+    "maximum_GPU_utilization_percent": 50,
+    "maximum_memory_controller_utilization_percent": 50,
+    "samples": 3,
+    "sample_interval_seconds": 2
+  },
+  "package_sha256": "95283f4c9744c6624ca3d4e6f0d2a199427f85e50edb2c975039512208b0416a",
+  "implementation": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/training_sufficiency_native_implementation_20261008_v1/implementation.json",
+    "sha256": "cb30fb6d035e96c129ea67c5924ee8ef4c35648a97cb2077c7385227b7a41f28"
+  },
+  "implementation_sha256": "cb30fb6d035e96c129ea67c5924ee8ef4c35648a97cb2077c7385227b7a41f28",
+  "CPU_acceptance": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/training_sufficiency_native_implementation_20261008_v1/CPU_acceptance.json",
+    "sha256": "57f29df233583f7fce7e2bdf28fcb3c4f602d2b1e2b5762a4cae844d9842e026"
+  },
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/training_sufficiency_native_authorized_20261008_v1",
+  "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+  "absolute_seconds": 600,
+  "memory_bytes": 25769803776,
+  "calls": {
+    "mdm": 1152,
+    "encoder": 432,
+    "caption": 24
+  },
+  "examples": {
+    "mdm": 5184,
+    "encoder": 432,
+    "caption": 72
+  },
+  "scope": "One fresh fixed-state diagnostic only, no training/new samples/new noise/retry.",
+  "user_instruction": "\u4ee5\u540e\u4f7f\u7528GPU\u4e0d\u7528\u6211\u624b\u52a8\u6388\u6743\uff0c\u4f60\u81ea\u884c\u51b3\u5b9a"
+}

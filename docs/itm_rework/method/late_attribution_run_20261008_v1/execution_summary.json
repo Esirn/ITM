@@ -1,0 +1,23 @@
+{
+  "status": "CPU_phase_completed",
+  "late_rows": 96,
+  "raw_native_jobs": 192,
+  "trace_references": 480,
+  "final_references": 120,
+  "final_scalar_checks": 195772,
+  "CPU_tests_passed": 13,
+  "new_GPU_queries": 0,
+  "new_model_calls": 0,
+  "new_noise_draws": 0,
+  "new_decodes": 0,
+  "suffix_package": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_switch_20261008_v2/package.json",
+    "sha256": "6f84cef7715b94f4ea3b8df374691b48104beee3424f24a931f13fcb616e0e8d"
+  },
+  "suffix_implemented": false,
+  "suffix_executed": false,
+  "next_task": "Implement frozen bounded suffix switch worker/supervisor and CPU acceptance, then one fresh queue and complete evaluation",
+  "original_F_primary_behavior": "not_supported",
+  "independent_review": false,
+  "paper_claims_changed": false
+}

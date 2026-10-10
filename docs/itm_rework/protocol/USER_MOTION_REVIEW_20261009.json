@@ -1,0 +1,15 @@
+{
+  "version": "itm-user-informal-motion-feedback-v1",
+  "date": "2026-10-09",
+  "source": "user message after viewing the exported uvicorn frontend",
+  "user_message": "在前端看，“交替弓步”确实生成的挺烂的，不过“出拳后转身”和“右腿后举、保持、放下”里的“文本＋IMU · F 损失配重候选”和“文本＋IMU · U 旧模型”都还不错。",
+  "observations": [
+    {"motion_id": "000506", "action": "交替弓步", "feedback": "poor"},
+    {"motion_id": "000027", "action": "出拳后转身", "arms": ["F", "U"], "feedback": "reasonably good"},
+    {"motion_id": "004728", "action": "右腿后举、保持、放下", "arms": ["F", "U"], "feedback": "reasonably good"}
+  ],
+  "sensor_configs": "not specified separately in the user feedback",
+  "scope": "informal visible quality feedback; not a blind review, numerical gate, all-frame protocol certification or formal test result",
+  "changes_to_existing_behavior_labels": false,
+  "research_direction": "Retain working examples and evaluate expanded development training; no requirement to solve one lunge before progressing overall comparisons."
+}

@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "scope": "main-session self-check, not independent acceptance",
+  "status_sha256": "3ab1488ee9207558424645c031b28cee8db4442d3a947d807f20c09b6e7571fe",
+  "archive_byte_identical": true,
+  "bound_files_verified": 1145,
+  "previous_failures_unchanged": true,
+  "planned_denominators": {
+    "updates": 200,
+    "exposures": 600,
+    "samples": 60,
+    "traces": 240,
+    "checks": 48
+  },
+  "all_not_run_after_stop": true,
+  "elapsed_seconds": 1.0956702700350434,
+  "worker_launched": false,
+  "allocated_peak_bytes": null,
+  "model_calls_inferred_from_no_worker": 0,
+  "raw_worker_counters_present": false,
+  "authorization_consumed": true,
+  "F_valid": 0,
+  "U_valid": 60,
+  "evaluation_decision": "inconclusive",
+  "current_verifier_GPU_queries": 0,
+  "current_verifier_model_imports": 0
+}

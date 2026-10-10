@@ -1,0 +1,96 @@
+{
+  "status": "passed",
+  "package_sha256": "8b32b863da7a530cc71350384663678adfd072f8db53bbb01add176b3040853c",
+  "implementation_sha256": "c7169161922a025552e72347c54d65868a418133a3b4a56fba911fee1a9a6570",
+  "artifacts": [
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_implementation_20261008_v1/CPU_tests_primary.log",
+      "sha256": "f22d609eeac963d19d087eaaae6c8ed7bfcfb653723f9aff60f89e005fb007b8"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_implementation_20261008_v1/CPU_tests_parent.log",
+      "sha256": "0e0bb34f3c77675c3a8f6997d0cd79d96a6511395e8f900dfaaae7848453d032"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_implementation_20261008_v1/CPU_fixture_evaluation.json",
+      "sha256": "b3bcecde51e0df411cb105bc405a84a5f8a12c4a44ac6c1eeff92f54ac386f40"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_implementation_20261008_v1/CPU_failure_evaluation.json",
+      "sha256": "cefd5e0ee2e6238b7f1443c3f8d88813baf221be896029fc8e9419fadbfa712e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/tests/test_mdm_prefix_mechanism.py",
+      "sha256": "a36ca8d7343215ef4ddf344c1296a561007af7b7c2f211ec43352a85d1eeb22c"
+    }
+  ],
+  "tests_passed": 7,
+  "full_synthetic_MDM_calls": 3960,
+  "core_checks": 1380,
+  "total_software_checks": 7380,
+  "required_artifacts": 8292,
+  "dependencies_verified": 2654,
+  "full_fixture_evaluation_counts": {
+    "package_sha256": "b7a471d587f7967601a5026cb23d7d276b101ab02eaafc055206c268fca78c37",
+    "queue_status": "completed",
+    "failure": null,
+    "traces": {
+      "valid": 180
+    },
+    "probes": {
+      "valid": 360
+    },
+    "branches": {
+      "valid": 1440
+    },
+    "weight_contrasts": {
+      "valid": 720
+    },
+    "path_contrasts": {
+      "valid": 180
+    },
+    "terminals": {
+      "valid": 36
+    },
+    "new_evaluation_GPU_queries": 0,
+    "new_evaluation_model_calls": 0,
+    "new_full_motion_decodes": 0,
+    "interpretation": "Conditional fixed-seed/panel short-prefix diagnostics only. No full-motion behavior repair, unique mechanism, training sufficiency or generalization certification."
+  },
+  "failure_fixture_evaluation_counts": {
+    "package_sha256": "b7a471d587f7967601a5026cb23d7d276b101ab02eaafc055206c268fca78c37",
+    "queue_status": "failed",
+    "failure": {
+      "kind": "exception",
+      "type": "ValueError",
+      "message": "Frozen prefix equation failed: ANCH-PX001-F-f11"
+    },
+    "traces": {
+      "diagnostic_only": 5,
+      "missing": 175
+    },
+    "probes": {
+      "missing": 360
+    },
+    "branches": {
+      "missing": 1440
+    },
+    "weight_contrasts": {
+      "not_comparable": 720
+    },
+    "path_contrasts": {
+      "not_comparable": 180
+    },
+    "terminals": {
+      "missing": 36
+    },
+    "new_evaluation_GPU_queries": 0,
+    "new_evaluation_model_calls": 0,
+    "new_full_motion_decodes": 0,
+    "interpretation": "Conditional fixed-seed/panel short-prefix diagnostics only. No full-motion behavior repair, unique mechanism, training sufficiency or generalization certification."
+  },
+  "new_real_model_forwards": 0,
+  "new_GPU_queries": 0,
+  "inherited_parent_supervisor": "Unmodified supervise absolute deadline/process-group kill/log path; original regression tests retained",
+  "independent_review": false
+}

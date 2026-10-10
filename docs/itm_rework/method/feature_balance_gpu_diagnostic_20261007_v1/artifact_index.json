@@ -1,0 +1,38 @@
+[
+  {
+    "path": "docs/itm_rework/method/feature_balance_gpu_diagnostic_20261007_v1/commands.md",
+    "sha256": "d6d117c34416a789f88f5d5c32f27509cd85fadb363c7f8a336bf99297bf5c15"
+  },
+  {
+    "path": "docs/itm_rework/method/feature_balance_gpu_diagnostic_20261007_v1/execute_once.py",
+    "sha256": "f34edf2a69879feecefc86f36fd016163ee4f01486bc6646a1b1e85a860ddb13"
+  },
+  {
+    "path": "docs/itm_rework/method/feature_balance_gpu_diagnostic_20261007_v1/status.json",
+    "sha256": "b60cfa8a9a12bff8b8f8b403c671992db3c6d8bfe8c3c7eb5a0919eacdf6016c"
+  },
+  {
+    "path": "docs/itm_rework/method/feature_balance_gpu_diagnostic_20261007_v1/stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "docs/itm_rework/method/feature_balance_gpu_diagnostic_20261007_v1/stdout.txt",
+    "sha256": "a7b07885b473da8dd4cab94e6f3fe61608a6a12c15e0368a02854ea7ded73562"
+  },
+  {
+    "path": "docs/itm_rework/method/feature_balance_gpu_diagnostic_20261007_v1/verification.json",
+    "sha256": "2203669c52560a77b693b8e5c30e7010482d671905c963beadec8da00bcb7d98"
+  },
+  {
+    "path": "docs/itm_rework/B0_FEATURE_BALANCE_GPU_DIAGNOSTIC_20261007.md",
+    "sha256": "3488ad70e8fa97e4cfab4afc1903354df6c638a50d98a186245539f873f482c1"
+  },
+  {
+    "path": "docs/itm_rework/method/B0_FEATURE_BALANCE_GPU_DIAGNOSTIC_AUTHORIZATION_20261007.json",
+    "sha256": "6edab041fb7a553faff92a6e10c11f4e66a6aa067bfeee3e1d74c7e27202d49a"
+  },
+  {
+    "path": "docs/itm_rework/method/B0_FEATURE_BALANCE_AUTHORIZATION_REQUEST_20261007.json",
+    "sha256": "a46fd145568dcde2677db128674653d7bca6263445c1e45ca1329287bb068796"
+  }
+]

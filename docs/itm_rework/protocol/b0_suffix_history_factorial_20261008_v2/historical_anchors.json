@@ -1,0 +1,158 @@
+[
+  {
+    "trajectory_id": "HX001",
+    "timestep": 500,
+    "raw": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261008_v1/traces/FT0198.npz",
+      "sha256": "d3f78c819ab80bca5b86078bacd51f4f89a7dd0bf55748ea39c5274fb81cf693"
+    },
+    "metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261008_v1/traces/FT0198.json",
+      "sha256": "2417fb3c5fa159ff024d5313ee6c9ba502a0e9d09ca098a214caa21113df0b97"
+    },
+    "arrays": [
+      "x_t",
+      "f00",
+      "f10",
+      "f01",
+      "f11",
+      "actual_combined_prediction"
+    ]
+  },
+  {
+    "trajectory_id": "HX001",
+    "timestep": 250,
+    "raw": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261008_v1/traces/FT0199.npz",
+      "sha256": "3128ee626c7310d4be136f4ca3d419b33f182257b0e17280d0cdeaad81461568"
+    },
+    "metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261008_v1/traces/FT0199.json",
+      "sha256": "bbabc7d2d5185631b7cee901169ac4becf80da8c0ef7dfbc4193129c458b61e4"
+    },
+    "arrays": [
+      "x_t",
+      "f00",
+      "f10",
+      "f01",
+      "f11",
+      "actual_combined_prediction"
+    ]
+  },
+  {
+    "trajectory_id": "HX001",
+    "timestep": 50,
+    "raw": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261008_v1/traces/FT0200.npz",
+      "sha256": "22820c7b81bf493554657f77029e0410be5a02c7c6df98bff21a88ad2150e08d"
+    },
+    "metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261008_v1/traces/FT0200.json",
+      "sha256": "ae5413580896fd93822a0021a83f4ff27e65f1b912132e0a883565d0a7309051"
+    },
+    "arrays": [
+      "x_t",
+      "f00",
+      "f10",
+      "f01",
+      "f11",
+      "actual_combined_prediction"
+    ]
+  },
+  {
+    "trajectory_id": "HX001",
+    "kind": "final",
+    "raw": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261008_v1/samples/F_root_ric_balanced--train-000506-head-text_only.npz",
+      "sha256": "e2b9c0f964c6af5854af37eb9ab9bd09e891e47846d613dfe13f930597322677"
+    },
+    "metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261008_v1/samples/F_root_ric_balanced--train-000506-head-text_only.json",
+      "sha256": "c6867663209f862f9c1c25bbd15f47b9e84d55e82ed4d9585ccf358fdd32e239"
+    },
+    "arrays": [
+      "normalized_humanml263",
+      "joints",
+      "frame_mask"
+    ],
+    "shape_mapping": "Use original sample layout. No new alignment."
+  },
+  {
+    "trajectory_id": "HX003",
+    "timestep": 500,
+    "raw": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261008_v1/traces/FT0210.npz",
+      "sha256": "f2a10ffa496af9c981c746251a6727bd1e3ca67057a11c91cedef0f3fb552149"
+    },
+    "metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261008_v1/traces/FT0210.json",
+      "sha256": "5104f833807183c7edfd12347304d6ecc7014dd2a4fd10aa243781104ecae89c"
+    },
+    "arrays": [
+      "x_t",
+      "f00",
+      "f10",
+      "f01",
+      "f11",
+      "actual_combined_prediction"
+    ]
+  },
+  {
+    "trajectory_id": "HX003",
+    "timestep": 250,
+    "raw": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261008_v1/traces/FT0211.npz",
+      "sha256": "e2d78cc9272854d9591df280f82a5944cab6277670c591886556603c140aaf8d"
+    },
+    "metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261008_v1/traces/FT0211.json",
+      "sha256": "7b46d22e40566bc9b1059bc18f95b393d22483e86e9f48f0d808d3193e9b6900"
+    },
+    "arrays": [
+      "x_t",
+      "f00",
+      "f10",
+      "f01",
+      "f11",
+      "actual_combined_prediction"
+    ]
+  },
+  {
+    "trajectory_id": "HX003",
+    "timestep": 50,
+    "raw": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261008_v1/traces/FT0212.npz",
+      "sha256": "58552df07d92c7b9a717e75f1a02eeb0325893e00eb43e91942032bf09b59894"
+    },
+    "metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261008_v1/traces/FT0212.json",
+      "sha256": "8447bb83d45d3bbaa67d6816ee8d0e3bd93eb1398bc6459e31e2ed4e64633c0a"
+    },
+    "arrays": [
+      "x_t",
+      "f00",
+      "f10",
+      "f01",
+      "f11",
+      "actual_combined_prediction"
+    ]
+  },
+  {
+    "trajectory_id": "HX003",
+    "kind": "final",
+    "raw": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261008_v1/samples/F_root_ric_balanced--train-000506-wrists-text_only.npz",
+      "sha256": "1cc79233b2adc9a0f4c4f1e941570c13ebcba48e1ef56333457fc9d4ee2b452d"
+    },
+    "metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261008_v1/samples/F_root_ric_balanced--train-000506-wrists-text_only.json",
+      "sha256": "f138b24b03d48b5091ebff18ee564e13ad869d2cbbe0401165d0470144dfe16e"
+    },
+    "arrays": [
+      "normalized_humanml263",
+      "joints",
+      "frame_mask"
+    ],
+    "shape_mapping": "Use original sample layout. No new alignment."
+  }
+]

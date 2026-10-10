@@ -1,0 +1,8 @@
+# Frozen scientific identities are byte hashes: preserve line endings verbatim.
+src/** -text
+scripts/** -text
+tests/** -text
+docs/itm_rework/** -text
+
+# Python CSV exports use CRLF; this is intentional frozen output formatting.
+docs/itm_rework/**/*.csv whitespace=cr-at-eol

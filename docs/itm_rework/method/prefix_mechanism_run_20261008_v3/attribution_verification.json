@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "rows": 240,
+  "scalar_checks": 108720,
+  "max_scalar_absolute_error": 4.440892098500626e-15,
+  "input_probes_verified": 300,
+  "new_GPU_queries": 0,
+  "new_model_calls": 0,
+  "new_noise_draws": 0,
+  "independent_review": false,
+  "interpretation": "Main-session second formula; ordering-sensitive algebra, not unique causal mechanism.",
+  "plan": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_prefix_attribution_CPU_20261008_v2/plan.json",
+    "sha256": "8a2e6e2925e1fc000876890b8cbbc9166158de872c521aec856ec74261f70a21"
+  },
+  "verifier": {
+    "path": "/home/a200/0proj/ITM/scripts/verify_b0_prefix_attribution.py",
+    "sha256": "c30515ac81fc9607621caf2e783b47eaab87ad48f4848103740ba507791265e8"
+  }
+}

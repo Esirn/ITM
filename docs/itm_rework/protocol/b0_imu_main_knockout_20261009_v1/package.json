@@ -1,0 +1,47 @@
+{
+  "version": "b0-IMU-main-knockout-package-v1",
+  "date": "2026-10-09",
+  "status": "CPU_frozen_not_implemented_not_executed",
+  "artifacts": [
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/budgets.json",
+      "sha256": "fa25e7107f96881dd88afd5fa21b078193ed7262382ec23f5e35c92c44b98995"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/checkpoints.json",
+      "sha256": "35895316ce6a3729effc9574161c0aed95d4ab89bf70191170492df53e4845ba"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/design.json",
+      "sha256": "f3eaae6438ffde02d5876db2af409a9c6cefe8ca77231f5b9400b424974360ca"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/historical_anchors.json",
+      "sha256": "9879685d9681792b88835826ce9ebd0f39ae79b9e8e17927c73a8b8a8d1e2032"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/noise.json",
+      "sha256": "7d4bcb4099e198dad08fb5a14ff99fb66dd3531a7c2b66c78f850a239e81f5b5"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/software_checks.json",
+      "sha256": "2f58b22f8f90734cfbee7cd42f6b9402b3aa7e8b8d387cd8e26eb363b62fc6ee"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/sources.json",
+      "sha256": "57dc6068fe154b9c31ed54c61007f42acb45eeab64c5cb2dd029bf63b44b42f3"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/starts.json",
+      "sha256": "a23618a25809525ff0953d82465dfaf78a7b971d78de79aff0e0ce509d11c597"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/trajectories.json",
+      "sha256": "951bbe6ab06561224c32927d33c716474b2624ba880b267a3d82035c4f47a825"
+    }
+  ],
+  "new_GPU_queries": 0,
+  "new_model_calls": 0,
+  "new_noise_draws": 0,
+  "new_decodes": 0
+}

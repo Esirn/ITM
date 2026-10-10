@@ -1,0 +1,1922 @@
+[
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 900,
+    "trace_id": "FT0001",
+    "energy_ratio": {
+      "x_t": 2.2881003053092175,
+      "f00": 1.6155424396498403,
+      "f10": 1.561403953796709,
+      "f01": 1.6293265654389057,
+      "f11": 1.5765601926300328
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.015156238833323746,
+      "twice_base_delta_covariance": 0.01457274230028252,
+      "delta_centered_energy": 0.0005834965330413693
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 500,
+    "trace_id": "FT0002",
+    "energy_ratio": {
+      "x_t": 1.9364955700326034,
+      "f00": 1.5417467089902157,
+      "f10": 1.534864533564491,
+      "f01": 1.5484422129224193,
+      "f11": 1.5416782645122202
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.0068137309477290485,
+      "twice_base_delta_covariance": 0.006413653502143887,
+      "delta_centered_energy": 0.0004000774455850897
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 250,
+    "trace_id": "FT0003",
+    "energy_ratio": {
+      "x_t": 1.719713888125309,
+      "f00": 1.6023927710382264,
+      "f10": 1.5968520404436202,
+      "f01": 1.609151420859544,
+      "f11": 1.6036673951257205
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.006815354682100222,
+      "twice_base_delta_covariance": 0.006426389464251434,
+      "delta_centered_energy": 0.0003889652178488094
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 50,
+    "trace_id": "FT0004",
+    "energy_ratio": {
+      "x_t": 1.5841156963820813,
+      "f00": 1.541625666469934,
+      "f10": 1.537028445462053,
+      "f01": 1.549740476735549,
+      "f11": 1.545179392661556
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.008150947199503012,
+      "twice_base_delta_covariance": 0.0077654338785868755,
+      "delta_centered_energy": 0.0003855133209159103
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "trace_id": "FT0025",
+    "energy_ratio": {
+      "x_t": 2.0866273912376547,
+      "f00": 1.63368574669292,
+      "f10": 1.5762246054315356,
+      "f01": 1.6567688194763743,
+      "f11": 1.6034047978472998
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.027180192415764116,
+      "twice_base_delta_covariance": 0.022469609754977034,
+      "delta_centered_energy": 0.004710582660787304
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "trace_id": "FT0026",
+    "energy_ratio": {
+      "x_t": 1.7846505366875962,
+      "f00": 1.224102008741707,
+      "f10": 1.219761070897086,
+      "f01": 1.2381931567651265,
+      "f11": 1.2338933644304144
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.01413229353332833,
+      "twice_base_delta_covariance": 0.01156072337157152,
+      "delta_centered_energy": 0.002571570161756815
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "trace_id": "FT0027",
+    "energy_ratio": {
+      "x_t": 1.3797787042730738,
+      "f00": 1.15313227383237,
+      "f10": 1.1489590193696708,
+      "f01": 1.1630872570756663,
+      "f11": 1.1588875992787675
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.00992857990909669,
+      "twice_base_delta_covariance": 0.007437927336744758,
+      "delta_centered_energy": 0.00249065257235205
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "trace_id": "FT0028",
+    "energy_ratio": {
+      "x_t": 1.088897438669471,
+      "f00": 1.0304615843170688,
+      "f10": 1.0267486316180745,
+      "f01": 1.0475540284207827,
+      "f11": 1.0438241434842552
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.0170755118661806,
+      "twice_base_delta_covariance": 0.014415193413223573,
+      "delta_centered_energy": 0.0026603184529569255
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 900,
+    "trace_id": "FT0049",
+    "energy_ratio": {
+      "x_t": 7.825140367052655,
+      "f00": 0.8461646199892132,
+      "f10": 0.7974330457246575,
+      "f01": 0.8516677022815357,
+      "f11": 0.8014881734651648
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.00405512774050727,
+      "twice_base_delta_covariance": 0.0039998123308148765,
+      "delta_centered_energy": 5.531540969220972e-05
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 500,
+    "trace_id": "FT0050",
+    "energy_ratio": {
+      "x_t": 4.523360060214074,
+      "f00": 1.49097333834001,
+      "f10": 1.4782262458576658,
+      "f01": 1.4953660461768286,
+      "f11": 1.4824894818676413
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.00426323600997536,
+      "twice_base_delta_covariance": 0.004214134313221633,
+      "delta_centered_energy": 4.9101696753755335e-05
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 250,
+    "trace_id": "FT0051",
+    "energy_ratio": {
+      "x_t": 2.5592985496985055,
+      "f00": 1.5868576246121784,
+      "f10": 1.5813295280122328,
+      "f01": 1.5914566047840504,
+      "f11": 1.5858429759197408
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.004513447907507969,
+      "twice_base_delta_covariance": 0.00446405378972712,
+      "delta_centered_energy": 4.939411778081535e-05
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 50,
+    "trace_id": "FT0052",
+    "energy_ratio": {
+      "x_t": 1.6970039380101551,
+      "f00": 1.679174586231418,
+      "f10": 1.676739596565812,
+      "f01": 1.6838806568205549,
+      "f11": 1.6814215938056514
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.004681997239839319,
+      "twice_base_delta_covariance": 0.004632527052286463,
+      "delta_centered_energy": 4.947018755305086e-05
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "trace_id": "FT0073",
+    "energy_ratio": {
+      "x_t": 7.948668027019093,
+      "f00": 1.321244174188984,
+      "f10": 1.2136501922040919,
+      "f01": 1.5855763862629395,
+      "f11": 1.4331549992134238
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.21950480700933195,
+      "twice_base_delta_covariance": 0.184219411530391,
+      "delta_centered_energy": 0.03528539547894101
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "trace_id": "FT0074",
+    "energy_ratio": {
+      "x_t": 5.0452738580801215,
+      "f00": 1.983485408557699,
+      "f10": 1.977648598326335,
+      "f01": 2.1818915582470795,
+      "f11": 2.172783383620287
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.195134785293952,
+      "twice_base_delta_covariance": 0.16750516567394935,
+      "delta_centered_energy": 0.027629619620002203
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "trace_id": "FT0075",
+    "energy_ratio": {
+      "x_t": 3.0045624666708535,
+      "f00": 2.0544932886872687,
+      "f10": 2.0468374223834513,
+      "f01": 2.1972324535483136,
+      "f11": 2.189783047426067
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.1429456250426158,
+      "twice_base_delta_covariance": 0.11408812611470776,
+      "delta_centered_energy": 0.02885749892790779
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "trace_id": "FT0076",
+    "energy_ratio": {
+      "x_t": 2.0624553153507232,
+      "f00": 2.0004342771653083,
+      "f10": 1.9890127054718838,
+      "f01": 2.0500453143922814,
+      "f11": 2.0412805988028895
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.05226789333100574,
+      "twice_base_delta_covariance": 0.018719952872534848,
+      "delta_centered_energy": 0.033547940458470774
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 900,
+    "trace_id": "FT0097",
+    "energy_ratio": {
+      "x_t": 0.5534648622027252,
+      "f00": 0.18888148548378092,
+      "f10": 0.18635237732729376,
+      "f01": 0.18342153839940112,
+      "f11": 0.18115122651708945
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.00520115081020429,
+      "twice_base_delta_covariance": -0.0055424758331499785,
+      "delta_centered_energy": 0.000341325022945673
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 500,
+    "trace_id": "FT0098",
+    "energy_ratio": {
+      "x_t": 0.3829199093908389,
+      "f00": 0.1863258046720677,
+      "f10": 0.18531399663373008,
+      "f01": 0.18028733455591184,
+      "f11": 0.17931305641443177
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.0060009402192983275,
+      "twice_base_delta_covariance": -0.006260814927475649,
+      "delta_centered_energy": 0.00025987470817729523
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 250,
+    "trace_id": "FT0099",
+    "energy_ratio": {
+      "x_t": 0.23335904463254614,
+      "f00": 0.1806623291505429,
+      "f10": 0.18000515622868413,
+      "f01": 0.17480169648686936,
+      "f11": 0.1741639562666001
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.005841199962084034,
+      "twice_base_delta_covariance": -0.00611379073538442,
+      "delta_centered_energy": 0.000272590773300375
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 50,
+    "trace_id": "FT0100",
+    "energy_ratio": {
+      "x_t": 0.17505074028022044,
+      "f00": 0.17820714352975908,
+      "f10": 0.17773463303284814,
+      "f01": 0.1723520369784721,
+      "f11": 0.17189852148446932
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.005836111548378823,
+      "twice_base_delta_covariance": -0.006118512906252561,
+      "delta_centered_energy": 0.00028240135787372913
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "trace_id": "FT0121",
+    "energy_ratio": {
+      "x_t": 0.5610089995666643,
+      "f00": 0.28488318742104735,
+      "f10": 0.28602399378589494,
+      "f01": 0.27873209918808484,
+      "f11": 0.2798594923353091
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.006164501450585819,
+      "twice_base_delta_covariance": -0.006475312461460881,
+      "delta_centered_energy": 0.0003108110108750209
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "trace_id": "FT0122",
+    "energy_ratio": {
+      "x_t": 0.41553817881766114,
+      "f00": 0.2563260678321576,
+      "f10": 0.25511853065794804,
+      "f01": 0.25236308899289867,
+      "f11": 0.25112591737288303
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.0039926132850650045,
+      "twice_base_delta_covariance": -0.004226400803567658,
+      "delta_centered_energy": 0.000233787518502643
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "trace_id": "FT0123",
+    "energy_ratio": {
+      "x_t": 0.3010287520428811,
+      "f00": 0.24675329391085085,
+      "f10": 0.2461377096236958,
+      "f01": 0.24303401437110655,
+      "f11": 0.24239454969239704
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.0037431599312987666,
+      "twice_base_delta_covariance": -0.003979598310425534,
+      "delta_centered_energy": 0.00023643837912675704
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "trace_id": "FT0124",
+    "energy_ratio": {
+      "x_t": 0.24110819896356234,
+      "f00": 0.2393581203955122,
+      "f10": 0.23903490547343356,
+      "f01": 0.23600021375328847,
+      "f11": 0.23565337493932084
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.0033815305341127356,
+      "twice_base_delta_covariance": -0.0036180212359657707,
+      "delta_centered_energy": 0.00023649070185303634
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 900,
+    "trace_id": "FT0169",
+    "energy_ratio": {
+      "x_t": 0.9618675248916673,
+      "f00": 0.21538089144293224,
+      "f10": 0.21000753451563556,
+      "f01": 0.24674228109715066,
+      "f11": 0.2421992312561451
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.032191696740509534,
+      "twice_base_delta_covariance": 0.003129819021274347,
+      "delta_centered_energy": 0.029061877719235206
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 500,
+    "trace_id": "FT0170",
+    "energy_ratio": {
+      "x_t": 0.7074907412004446,
+      "f00": 0.5359157511635224,
+      "f10": 0.5312010692942389,
+      "f01": 0.4842754176079786,
+      "f11": 0.4799612030580703
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.05123986623616865,
+      "twice_base_delta_covariance": -0.06153258040412431,
+      "delta_centered_energy": 0.010292714167955625
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 250,
+    "trace_id": "FT0171",
+    "energy_ratio": {
+      "x_t": 0.5608565247802317,
+      "f00": 0.5708905007284313,
+      "f10": 0.5666966460659772,
+      "f01": 0.5131715281028321,
+      "f11": 0.5094577011351513
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.05723894493082593,
+      "twice_base_delta_covariance": -0.06721983362134544,
+      "delta_centered_energy": 0.009980888690519447
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 50,
+    "trace_id": "FT0172",
+    "energy_ratio": {
+      "x_t": 0.5827359622893931,
+      "f00": 0.6880551790943837,
+      "f10": 0.6854264130275993,
+      "f01": 0.6140307468372395,
+      "f11": 0.6118855874154566
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.07354082561214272,
+      "twice_base_delta_covariance": -0.08434293064575347,
+      "delta_centered_energy": 0.01080210503361071
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "trace_id": "FT0181",
+    "energy_ratio": {
+      "x_t": 0.9562629015246822,
+      "f00": 0.9640256994525547,
+      "f10": 0.9410743824833394,
+      "f01": 0.9028097428777847,
+      "f11": 0.8838320705877395
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.057242311895599925,
+      "twice_base_delta_covariance": -0.09646637212313881,
+      "delta_centered_energy": 0.03922406022753871
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "trace_id": "FT0182",
+    "energy_ratio": {
+      "x_t": 0.9358760098808575,
+      "f00": 1.0007984457617993,
+      "f10": 0.9881991050245836,
+      "f01": 0.9309169973972405,
+      "f11": 0.9201198773264399
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.06807922769814373,
+      "twice_base_delta_covariance": -0.0810441770327059,
+      "delta_centered_energy": 0.012964949334562182
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "trace_id": "FT0183",
+    "energy_ratio": {
+      "x_t": 0.9433913225051327,
+      "f00": 1.0073479912300618,
+      "f10": 0.9992716504828216,
+      "f01": 0.9308241581497013,
+      "f11": 0.9240536813111067
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.07521796917171497,
+      "twice_base_delta_covariance": -0.08632121636891611,
+      "delta_centered_energy": 0.011103247197201037
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "trace_id": "FT0184",
+    "energy_ratio": {
+      "x_t": 0.9175702907923186,
+      "f00": 0.9980678989321375,
+      "f10": 0.991100346399221,
+      "f01": 0.9238219453351413,
+      "f11": 0.9181072070644881
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.07299313933473292,
+      "twice_base_delta_covariance": -0.0826351901221013,
+      "delta_centered_energy": 0.009642050787368137
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 900,
+    "trace_id": "FT0193",
+    "energy_ratio": {
+      "x_t": 0.9001283747887984,
+      "f00": 1.3917464121161025,
+      "f10": 1.5059466492599485,
+      "f01": 1.329456473960898,
+      "f11": 1.4362023208625365
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.06974432839741194,
+      "twice_base_delta_covariance": -0.0724987456647297,
+      "delta_centered_energy": 0.0027544172673179975
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 500,
+    "trace_id": "FT0194",
+    "energy_ratio": {
+      "x_t": 1.3086683277697686,
+      "f00": 1.8403857838374535,
+      "f10": 1.8519509523079225,
+      "f01": 1.7911241843821422,
+      "f11": 1.8033619163644894
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.048589035943433154,
+      "twice_base_delta_covariance": -0.04990111580847674,
+      "delta_centered_energy": 0.001312079865043783
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 250,
+    "trace_id": "FT0195",
+    "energy_ratio": {
+      "x_t": 1.6925960469423411,
+      "f00": 1.9036112345629936,
+      "f10": 1.9117454129428146,
+      "f01": 1.865745143963644,
+      "f11": 1.875028932483665
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.03671648045914955,
+      "twice_base_delta_covariance": -0.038006915303699505,
+      "delta_centered_energy": 0.001290434844550235
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 50,
+    "trace_id": "FT0196",
+    "energy_ratio": {
+      "x_t": 1.9108865279952216,
+      "f00": 1.971727191069004,
+      "f10": 1.9800531956378589,
+      "f01": 1.9353869234045729,
+      "f11": 1.9449738110748926
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.0350793845629663,
+      "twice_base_delta_covariance": -0.03651015702233892,
+      "delta_centered_energy": 0.001430772459372862
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "trace_id": "FT0205",
+    "energy_ratio": {
+      "x_t": 0.8583029205200342,
+      "f00": 0.35296517907831976,
+      "f10": 0.3622883298715474,
+      "f01": 0.33802730112766033,
+      "f11": 0.363516638040671
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.0012283081691236196,
+      "twice_base_delta_covariance": -0.00389508719310485,
+      "delta_centered_energy": 0.0051233953622285364
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "trace_id": "FT0206",
+    "energy_ratio": {
+      "x_t": 0.49081474512373213,
+      "f00": 0.06869296137929909,
+      "f10": 0.06824926537778146,
+      "f01": 0.058781541924783985,
+      "f11": 0.05882045424818207
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.00942881112959939,
+      "twice_base_delta_covariance": -0.010436069364777558,
+      "delta_centered_energy": 0.0010072582351781834
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "trace_id": "FT0207",
+    "energy_ratio": {
+      "x_t": 0.17536642152893211,
+      "f00": 0.029742504821994434,
+      "f10": 0.030084233594358984,
+      "f01": 0.026481575139382648,
+      "f11": 0.026918273649724097
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.0031659599446348875,
+      "twice_base_delta_covariance": -0.003839886284549198,
+      "delta_centered_energy": 0.0006739263399143145
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "trace_id": "FT0208",
+    "energy_ratio": {
+      "x_t": 0.015788737817639915,
+      "f00": 0.00367253052758841,
+      "f10": 0.003827451160476107,
+      "f01": 0.0042709219756109215,
+      "f11": 0.004431291676995343
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.0006038405165192356,
+      "twice_base_delta_covariance": 0.0001221131683984877,
+      "delta_centered_energy": 0.0004817273481207483
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 900,
+    "trace_id": "FT0217",
+    "energy_ratio": {
+      "x_t": 0.5010330251530531,
+      "f00": 0.22544112659812776,
+      "f10": 0.22906198989175933,
+      "f01": 0.23744086376847598,
+      "f11": 0.2425261745330747
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.013464184641315368,
+      "twice_base_delta_covariance": 0.009891681319802807,
+      "delta_centered_energy": 0.0035725033215125413
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 500,
+    "trace_id": "FT0218",
+    "energy_ratio": {
+      "x_t": 0.43683558874750233,
+      "f00": 0.36836500520000737,
+      "f10": 0.3676217819880607,
+      "f01": 0.36956834139321915,
+      "f11": 0.368712275026839
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.0010904930387782693,
+      "twice_base_delta_covariance": 0.00012873522029162082,
+      "delta_centered_energy": 0.0009617578184866775
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 250,
+    "trace_id": "FT0219",
+    "energy_ratio": {
+      "x_t": 0.3850414516899823,
+      "f00": 0.35398463758220217,
+      "f10": 0.3533953397018377,
+      "f01": 0.35592913031229584,
+      "f11": 0.355391489426175
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.001996149724337321,
+      "twice_base_delta_covariance": 0.0010831134545984473,
+      "delta_centered_energy": 0.00091303626973886
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 50,
+    "trace_id": "FT0220",
+    "energy_ratio": {
+      "x_t": 0.34777260902460166,
+      "f00": 0.33777552755128376,
+      "f10": 0.3375634352052092,
+      "f01": 0.3405073444507377,
+      "f11": 0.34038098581890314
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.002817550613693917,
+      "twice_base_delta_covariance": 0.001906801030892893,
+      "delta_centered_energy": 0.0009107495828009968
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "trace_id": "FT0229",
+    "energy_ratio": {
+      "x_t": 0.5181218940072849,
+      "f00": 0.6082908824577102,
+      "f10": 0.6197079641181636,
+      "f01": 0.7592409730927768,
+      "f11": 0.7639898674640425
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.14428190334587887,
+      "twice_base_delta_covariance": 0.11786879240208498,
+      "delta_centered_energy": 0.026413110943793772
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "trace_id": "FT0230",
+    "energy_ratio": {
+      "x_t": 0.7049615529132544,
+      "f00": 0.8873094666680984,
+      "f10": 0.8895275076567369,
+      "f01": 0.9127159513760167,
+      "f11": 0.9141101936025223
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.02458268594578539,
+      "twice_base_delta_covariance": 0.01920637175244065,
+      "delta_centered_energy": 0.005376314193344595
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "trace_id": "FT0231",
+    "energy_ratio": {
+      "x_t": 0.8578056573835139,
+      "f00": 0.8902885806725538,
+      "f10": 0.8913303756799078,
+      "f01": 0.92651666152295,
+      "f11": 0.9273561848838049
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.03602580920389713,
+      "twice_base_delta_covariance": 0.031299261529602856,
+      "delta_centered_energy": 0.00472654767429424
+    }
+  },
+  {
+    "arm": "F",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "trace_id": "FT0232",
+    "energy_ratio": {
+      "x_t": 0.9393380099741598,
+      "f00": 0.9196368983372838,
+      "f10": 0.9203994078530183,
+      "f01": 0.9515694078828921,
+      "f11": 0.9522089310580403
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.03180952320502201,
+      "twice_base_delta_covariance": 0.02779091434717292,
+      "delta_centered_energy": 0.004018608857849338
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 900,
+    "trace_id": "T0001",
+    "energy_ratio": {
+      "x_t": 2.288061564933052,
+      "f00": 1.6156127123734003,
+      "f10": 1.5627655033738774,
+      "f01": 1.6304934181899955,
+      "f11": 1.5794563635885557
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.016690860214678256,
+      "twice_base_delta_covariance": 0.01596207387716372,
+      "delta_centered_energy": 0.0007287863375144828
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 500,
+    "trace_id": "T0002",
+    "energy_ratio": {
+      "x_t": 1.931516901354233,
+      "f00": 1.528892872680424,
+      "f10": 1.5221641580715481,
+      "f01": 1.53487920240253,
+      "f11": 1.5283074661608584
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.006143308089310374,
+      "twice_base_delta_covariance": 0.005698256041171825,
+      "delta_centered_energy": 0.0004450520481386754
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 250,
+    "trace_id": "T0003",
+    "energy_ratio": {
+      "x_t": 1.704140346896628,
+      "f00": 1.5810052036546662,
+      "f10": 1.5755458520091918,
+      "f01": 1.5862235263898397,
+      "f11": 1.5808847230395153
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.005338871030323663,
+      "twice_base_delta_covariance": 0.004912545144571622,
+      "delta_centered_energy": 0.0004263258857517622
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "timestep": 50,
+    "trace_id": "T0004",
+    "energy_ratio": {
+      "x_t": 1.5651966774988695,
+      "f00": 1.5243415795657764,
+      "f10": 1.5197346089130976,
+      "f01": 1.5313369438485076,
+      "f11": 1.526819278791488
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.007084669878390462,
+      "twice_base_delta_covariance": 0.0066695985507089885,
+      "delta_centered_energy": 0.00041507132768126237
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "trace_id": "T0025",
+    "energy_ratio": {
+      "x_t": 2.0867111276660464,
+      "f00": 1.642157230744057,
+      "f10": 1.5840368619412142,
+      "f01": 1.6668872821869756,
+      "f11": 1.6125495321205652
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.02851267017935079,
+      "twice_base_delta_covariance": 0.023293953734153917,
+      "delta_centered_energy": 0.005218716445197291
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "trace_id": "T0026",
+    "energy_ratio": {
+      "x_t": 1.8059118223176076,
+      "f00": 1.281099746106779,
+      "f10": 1.2764708295584826,
+      "f01": 1.2975288745562006,
+      "f11": 1.29287264813381
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.01640181857532743,
+      "twice_base_delta_covariance": 0.014015524665386076,
+      "delta_centered_energy": 0.002386293909941269
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "trace_id": "T0027",
+    "energy_ratio": {
+      "x_t": 1.4345820125214468,
+      "f00": 1.2227522164063636,
+      "f10": 1.218404893436831,
+      "f01": 1.235235766332555,
+      "f11": 1.2307969114711812
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.012392018034350374,
+      "twice_base_delta_covariance": 0.010072820924153304,
+      "delta_centered_energy": 0.0023191971101969196
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "trace_id": "T0028",
+    "energy_ratio": {
+      "x_t": 1.1765771683888815,
+      "f00": 1.1256321160568574,
+      "f10": 1.1217059722424019,
+      "f01": 1.1460509821170815,
+      "f11": 1.1420635127555092
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.020357540513107366,
+      "twice_base_delta_covariance": 0.01788001590207235,
+      "delta_centered_energy": 0.002477524611035112
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 900,
+    "trace_id": "T0049",
+    "energy_ratio": {
+      "x_t": 7.825063473885197,
+      "f00": 0.8456312194813762,
+      "f10": 0.797496913808703,
+      "f01": 0.8502476594907461,
+      "f11": 0.8009222011521727
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.0034252873434696515,
+      "twice_base_delta_covariance": 0.003377633362091257,
+      "delta_centered_energy": 4.765398137834465e-05
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 500,
+    "trace_id": "T0050",
+    "energy_ratio": {
+      "x_t": 4.533086336749946,
+      "f00": 1.5117530222938187,
+      "f10": 1.4988096563072653,
+      "f01": 1.5148615274792308,
+      "f11": 1.5018011832015086
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.002991526894243202,
+      "twice_base_delta_covariance": 0.0029459068355400845,
+      "delta_centered_energy": 4.562005870283928e-05
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 250,
+    "trace_id": "T0051",
+    "energy_ratio": {
+      "x_t": 2.582521670360986,
+      "f00": 1.6195602326307847,
+      "f10": 1.6148333027051105,
+      "f01": 1.6227202545461559,
+      "f11": 1.6179068484851653
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.003073545780054962,
+      "twice_base_delta_covariance": 0.003027438438641424,
+      "delta_centered_energy": 4.6107341413759776e-05
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "timestep": 50,
+    "trace_id": "T0052",
+    "energy_ratio": {
+      "x_t": 1.7363915534524283,
+      "f00": 1.7239041561626738,
+      "f10": 1.7217951752346834,
+      "f01": 1.7269282086241768,
+      "f11": 1.7247842021886817
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.0029890269539982165,
+      "twice_base_delta_covariance": 0.002943018496550053,
+      "delta_centered_energy": 4.600845744852723e-05
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "trace_id": "T0073",
+    "energy_ratio": {
+      "x_t": 7.945033631426891,
+      "f00": 1.3088064848684446,
+      "f10": 1.209343981220273,
+      "f01": 1.5125793861930943,
+      "f11": 1.3736039740569108
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.16425999283663772,
+      "twice_base_delta_covariance": 0.14133305701510562,
+      "delta_centered_energy": 0.022926935821532116
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "trace_id": "T0074",
+    "energy_ratio": {
+      "x_t": 4.865302169386572,
+      "f00": 1.6493619075361512,
+      "f10": 1.6439677838161504,
+      "f01": 1.7439106255082695,
+      "f11": 1.7348244214576485
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.09085663764149815,
+      "twice_base_delta_covariance": 0.06837098493197805,
+      "delta_centered_energy": 0.022485652709519917
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "trace_id": "T0075",
+    "energy_ratio": {
+      "x_t": 2.590965786119112,
+      "f00": 1.5752935302115558,
+      "f10": 1.5688239586780892,
+      "f01": 1.6315284136922814,
+      "f11": 1.6233208781427453
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.05449691946465599,
+      "twice_base_delta_covariance": 0.029514376588136847,
+      "delta_centered_energy": 0.024982542876519253
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "trace_id": "T0076",
+    "energy_ratio": {
+      "x_t": 1.5892956521895765,
+      "f00": 1.5731525781099245,
+      "f10": 1.5593698658078992,
+      "f01": 1.6087469106487329,
+      "f11": 1.5958738060818891
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.036503940273989906,
+      "twice_base_delta_covariance": 0.007296305897881487,
+      "delta_centered_energy": 0.029207634376108606
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 900,
+    "trace_id": "T0097",
+    "energy_ratio": {
+      "x_t": 0.5531377514317177,
+      "f00": 0.177498154757898,
+      "f10": 0.17504840833204383,
+      "f01": 0.17093235937015544,
+      "f11": 0.1689186578477553
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.006129750484288495,
+      "twice_base_delta_covariance": -0.0065209170948954225,
+      "delta_centered_energy": 0.000391166610606935
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 500,
+    "trace_id": "T0098",
+    "energy_ratio": {
+      "x_t": 0.3750097306851393,
+      "f00": 0.17155913730518554,
+      "f10": 0.17054670590256354,
+      "f01": 0.16605421481899588,
+      "f11": 0.16509895720405654
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.005447748698506998,
+      "twice_base_delta_covariance": -0.0057020722882315435,
+      "delta_centered_energy": 0.00025432358972451915
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 250,
+    "trace_id": "T0099",
+    "energy_ratio": {
+      "x_t": 0.22273515755001708,
+      "f00": 0.16880142260588848,
+      "f10": 0.16821106943696235,
+      "f01": 0.16363729159981527,
+      "f11": 0.16306397257811173
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.005147096858850624,
+      "twice_base_delta_covariance": -0.005411680842091722,
+      "delta_centered_energy": 0.0002645839832411158
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "timestep": 50,
+    "trace_id": "T0100",
+    "energy_ratio": {
+      "x_t": 0.16760146770596893,
+      "f00": 0.17163124579479777,
+      "f10": 0.17120932103952896,
+      "f01": 0.16640078503175004,
+      "f11": 0.16598700205150177
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.005222318988027198,
+      "twice_base_delta_covariance": -0.005497174015939235,
+      "delta_centered_energy": 0.000274855027912028
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "trace_id": "T0121",
+    "energy_ratio": {
+      "x_t": 0.5611029220586404,
+      "f00": 0.2764209892164014,
+      "f10": 0.2764628066354158,
+      "f01": 0.2704206318076428,
+      "f11": 0.27050353449320375
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.005959272142212003,
+      "twice_base_delta_covariance": -0.006285562639592546,
+      "delta_centered_energy": 0.0003262904973805289
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "trace_id": "T0122",
+    "energy_ratio": {
+      "x_t": 0.41022941552885256,
+      "f00": 0.24376355789686013,
+      "f10": 0.24268762166469818,
+      "f01": 0.24060071674721442,
+      "f11": 0.23950400561740795
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.0031836160472902245,
+      "twice_base_delta_covariance": -0.0034172590677340386,
+      "delta_centered_energy": 0.00023364302044384568
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "trace_id": "T0123",
+    "energy_ratio": {
+      "x_t": 0.29127145007543304,
+      "f00": 0.2353527141094194,
+      "f10": 0.234766908482669,
+      "f01": 0.23248410977972983,
+      "f11": 0.23188729313982334
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.002879615342845677,
+      "twice_base_delta_covariance": -0.0031129591189918474,
+      "delta_centered_energy": 0.00023334377614620246
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "trace_id": "T0124",
+    "energy_ratio": {
+      "x_t": 0.23169706059279774,
+      "f00": 0.2296800381643193,
+      "f10": 0.22940570473107935,
+      "f01": 0.22720637897112295,
+      "f11": 0.22691811609264773
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.002487588638431627,
+      "twice_base_delta_covariance": -0.002720808194020906,
+      "delta_centered_energy": 0.0002332195555893104
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 900,
+    "trace_id": "T0169",
+    "energy_ratio": {
+      "x_t": 0.969743785320506,
+      "f00": 0.6582013755149492,
+      "f10": 0.6539056084684562,
+      "f01": 0.6493156622699592,
+      "f11": 0.6506792204558524
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.0032263880126038747,
+      "twice_base_delta_covariance": -0.046673400103125345,
+      "delta_centered_energy": 0.043447012090521514
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 500,
+    "trace_id": "T0170",
+    "energy_ratio": {
+      "x_t": 0.8526291410570728,
+      "f00": 0.8389485940990601,
+      "f10": 0.8311709287396856,
+      "f01": 0.7603279905948043,
+      "f11": 0.7543221241810083
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.07684880455867726,
+      "twice_base_delta_covariance": -0.09113846437439667,
+      "delta_centered_energy": 0.01428965981571943
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 250,
+    "trace_id": "T0171",
+    "energy_ratio": {
+      "x_t": 0.7843703921444913,
+      "f00": 0.8230291201578069,
+      "f10": 0.8179743456616537,
+      "f01": 0.7491799977662231,
+      "f11": 0.7454104268976697
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.07256391876398409,
+      "twice_base_delta_covariance": -0.08370331612222452,
+      "delta_centered_energy": 0.01113939735824038
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "timestep": 50,
+    "trace_id": "T0172",
+    "energy_ratio": {
+      "x_t": 0.7501843207694809,
+      "f00": 0.8288493064074847,
+      "f10": 0.8229471094761804,
+      "f01": 0.7547991159172583,
+      "f11": 0.7501880005566877
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.07275910891949272,
+      "twice_base_delta_covariance": -0.08294275112586572,
+      "delta_centered_energy": 0.01018364220637308
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "trace_id": "T0181",
+    "energy_ratio": {
+      "x_t": 0.9593839716031167,
+      "f00": 1.0792239166778022,
+      "f10": 1.058383053311122,
+      "f01": 0.9748163774899452,
+      "f11": 0.958304584401472
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.1000784689096501,
+      "twice_base_delta_covariance": -0.15741362614596735,
+      "delta_centered_energy": 0.05733515723631698
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "trace_id": "T0182",
+    "energy_ratio": {
+      "x_t": 0.9704608184340097,
+      "f00": 1.06690261747522,
+      "f10": 1.05265081270089,
+      "f01": 0.9893549113346195,
+      "f11": 0.97797690457188
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.07467390812901001,
+      "twice_base_delta_covariance": -0.08907687747153621,
+      "delta_centered_energy": 0.014402969342526158
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "trace_id": "T0183",
+    "energy_ratio": {
+      "x_t": 0.9892506239667604,
+      "f00": 1.06073401466188,
+      "f10": 1.0513197081032906,
+      "f01": 0.9801895338116563,
+      "f11": 0.9730510652788483
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.07826864282444225,
+      "twice_base_delta_covariance": -0.09009751580697745,
+      "delta_centered_energy": 0.011828872982535063
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "trace_id": "T0184",
+    "energy_ratio": {
+      "x_t": 0.9580346604929234,
+      "f00": 1.0377910941822905,
+      "f10": 1.030006483760467,
+      "f01": 0.9593588380828323,
+      "f11": 0.9533030319952224
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.07670345176524457,
+      "twice_base_delta_covariance": -0.08694311607192359,
+      "delta_centered_energy": 0.010239664306678886
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 900,
+    "trace_id": "T0193",
+    "energy_ratio": {
+      "x_t": 0.8972066257814271,
+      "f00": 1.170014202767938,
+      "f10": 1.270199829957047,
+      "f01": 1.1251798259451864,
+      "f11": 1.2206094808545134
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.04959034910253341,
+      "twice_base_delta_covariance": -0.051518270862248,
+      "delta_centered_energy": 0.0019279217597148737
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 500,
+    "trace_id": "T0194",
+    "energy_ratio": {
+      "x_t": 1.2258435352607318,
+      "f00": 1.6439732642594478,
+      "f10": 1.658346298194582,
+      "f01": 1.6162618086566718,
+      "f11": 1.6311617369574443
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.027184561237137736,
+      "twice_base_delta_covariance": -0.028121616606294995,
+      "delta_centered_energy": 0.0009370553691574181
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 250,
+    "trace_id": "T0195",
+    "energy_ratio": {
+      "x_t": 1.5469029970967594,
+      "f00": 1.7092424134625397,
+      "f10": 1.7189548458300918,
+      "f01": 1.690887299995077,
+      "f11": 1.7015220120218335
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.01743283380825846,
+      "twice_base_delta_covariance": -0.018440555114201812,
+      "delta_centered_energy": 0.0010077213059434746
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "timestep": 50,
+    "trace_id": "T0196",
+    "energy_ratio": {
+      "x_t": 1.7492047536142095,
+      "f00": 1.791423182117258,
+      "f10": 1.7993588690211966,
+      "f01": 1.778748408162664,
+      "f11": 1.7877095817570525
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.011649287264144138,
+      "twice_base_delta_covariance": -0.012786682353546545,
+      "delta_centered_energy": 0.0011373950894024412
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "trace_id": "T0205",
+    "energy_ratio": {
+      "x_t": 0.8664833302799068,
+      "f00": 0.9909857273982234,
+      "f10": 0.9910163239166969,
+      "f01": 0.968385614517808,
+      "f11": 0.9782485392691436
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.012767784647553317,
+      "twice_base_delta_covariance": -0.01765354009258748,
+      "delta_centered_energy": 0.004885755445034185
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "trace_id": "T0206",
+    "energy_ratio": {
+      "x_t": 1.0215803908577672,
+      "f00": 1.25853926413239,
+      "f10": 1.249498378386593,
+      "f01": 1.2421872587920837,
+      "f11": 1.2335539915613396
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.015944386825253173,
+      "twice_base_delta_covariance": -0.01750090505019703,
+      "delta_centered_energy": 0.0015565182249437566
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "trace_id": "T0207",
+    "energy_ratio": {
+      "x_t": 1.1992073261817824,
+      "f00": 1.304881286214843,
+      "f10": 1.2994483828575067,
+      "f01": 1.2833559004654476,
+      "f11": 1.278558009056703
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.020890373800803885,
+      "twice_base_delta_covariance": -0.02240133786399848,
+      "delta_centered_energy": 0.0015109640631947175
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "trace_id": "T0208",
+    "energy_ratio": {
+      "x_t": 1.2546707365335144,
+      "f00": 1.2785705035525627,
+      "f10": 1.2765424998706112,
+      "f01": 1.24461366369537,
+      "f11": 1.2436057598895538
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": -0.03293673998105758,
+      "twice_base_delta_covariance": -0.034398339514666115,
+      "delta_centered_energy": 0.0014615995336084231
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 900,
+    "trace_id": "T0217",
+    "energy_ratio": {
+      "x_t": 0.5013046148388436,
+      "f00": 0.23774035550759445,
+      "f10": 0.24004082924709783,
+      "f01": 0.254561380686837,
+      "f11": 0.25734401489506636
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.017303185647968514,
+      "twice_base_delta_covariance": 0.013435103919645027,
+      "delta_centered_energy": 0.003868081728323469
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 500,
+    "trace_id": "T0218",
+    "energy_ratio": {
+      "x_t": 0.4485348718391858,
+      "f00": 0.3942210361339463,
+      "f10": 0.39360771008747897,
+      "f01": 0.3948747957334409,
+      "f11": 0.39403100492660553
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.00042329483912657086,
+      "twice_base_delta_covariance": -0.0007041280135817909,
+      "delta_centered_energy": 0.0011274228527083181
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 250,
+    "trace_id": "T0219",
+    "energy_ratio": {
+      "x_t": 0.40508360230609347,
+      "f00": 0.3789422323047259,
+      "f10": 0.37825776446820675,
+      "f01": 0.3792912171349261,
+      "f11": 0.3787268802606646
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.0004691157924578603,
+      "twice_base_delta_covariance": -0.0005876476752091422,
+      "delta_centered_energy": 0.0010567634676670987
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "timestep": 50,
+    "trace_id": "T0220",
+    "energy_ratio": {
+      "x_t": 0.3774694491217493,
+      "f00": 0.37325483469821774,
+      "f10": 0.37318090691328276,
+      "f01": 0.3748760819284912,
+      "f11": 0.3749658263080775
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.0017849193947947453,
+      "twice_base_delta_covariance": 0.0006665889825319843,
+      "delta_centered_energy": 0.0011183304122627507
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 900,
+    "trace_id": "T0229",
+    "energy_ratio": {
+      "x_t": 0.5162357420506071,
+      "f00": 0.5208605000880682,
+      "f10": 0.5333465727230493,
+      "f01": 0.663104478077701,
+      "f11": 0.6733860397462162
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.14003946702316694,
+      "twice_base_delta_covariance": 0.11213769442205296,
+      "delta_centered_energy": 0.027901772601113983
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 500,
+    "trace_id": "T0230",
+    "energy_ratio": {
+      "x_t": 0.6687328338359823,
+      "f00": 0.811678381892575,
+      "f10": 0.8140671344900434,
+      "f01": 0.8483330903086119,
+      "f11": 0.8500524087764937
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.03598527428645032,
+      "twice_base_delta_covariance": 0.030210819828555564,
+      "delta_centered_energy": 0.005774454457894532
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 250,
+    "trace_id": "T0231",
+    "energy_ratio": {
+      "x_t": 0.8050937235697098,
+      "f00": 0.8260566294188894,
+      "f10": 0.8272464049889128,
+      "f01": 0.8676710633936323,
+      "f11": 0.8685565094748602
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.04131010448594737,
+      "twice_base_delta_covariance": 0.03656558364502255,
+      "delta_centered_energy": 0.00474452084092469
+    }
+  },
+  {
+    "arm": "U",
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "timestep": 50,
+    "trace_id": "T0232",
+    "energy_ratio": {
+      "x_t": 0.8778339850717328,
+      "f00": 0.854649954678896,
+      "f10": 0.8553324040290268,
+      "f01": 0.8879407259530522,
+      "f11": 0.8884307971580446
+    },
+    "imu_at_text_terms_per_GT": {
+      "delta_temporal_energy": 0.03309839312901787,
+      "twice_base_delta_covariance": 0.029328210741134595,
+      "delta_centered_energy": 0.003770182387883431
+    }
+  }
+]

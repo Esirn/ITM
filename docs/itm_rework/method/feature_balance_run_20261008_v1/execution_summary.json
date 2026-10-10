@@ -1,0 +1,51 @@
+{
+  "status": "completed",
+  "parent_exit_code": 0,
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261008_v1",
+  "status_sha256": "e437f81e3cacded009380d1908144e1bb602476b997ddabc5b2b4c5dd25b1518",
+  "checkpoint": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261008_v1/F/model.pt",
+    "sha256": "d0e4f39f8c7ee5b980243baac48bc1bc02dc8f7c15c7a1f47f0adabb0b7e0ad3"
+  },
+  "elapsed_seconds": 2493.1204870571382,
+  "training_phase_seconds": 107.50801018509082,
+  "sampling_phase_seconds": 2385.6124768720474,
+  "receipts": 61,
+  "peak_allocated_bytes": 677558784,
+  "completed": {
+    "updates": 200,
+    "exposures": 600,
+    "samples": 60,
+    "traces": 240,
+    "checks": 48
+  },
+  "counts": {
+    "mdm": {
+      "reserved": 240600,
+      "actual": 240600,
+      "completed": 240600,
+      "calls": 60600,
+      "completed_calls": 60600
+    },
+    "encoder": {
+      "reserved": 1320,
+      "actual": 1320,
+      "completed": 1320,
+      "calls": 1320,
+      "completed_calls": 1320
+    },
+    "caption": {
+      "reserved": 660,
+      "actual": 660,
+      "completed": 660,
+      "calls": 660,
+      "completed_calls": 660
+    }
+  },
+  "real_training_updates": 200,
+  "real_samples": 60,
+  "extra_trace_model_calls": 0,
+  "attempt_consumed": true,
+  "standing_GPU_delegation_remains_active": true,
+  "scope": "Execution completeness and counts; model effectiveness is assessed separately with frozen F/U evaluation"
+}

@@ -1,0 +1,6 @@
+{
+  "status": "failed",
+  "actual": -0.0500031679555093,
+  "alternative_sum": -0.05000316795548709,
+  "reason": "Verifier applied 64eps to a small difference rather than original endpoint/covariance/energy scale; evaluator and scientific thresholds unchanged."
+}

@@ -1,0 +1,18 @@
+{
+  "shared_initial_states": 12,
+  "historical_state_anchor_groups": 48,
+  "historical_array_checks": 288,
+  "same_state_own_prediction_array_checks": 720,
+  "same_state_inactive_adapter_cross_weight_checks": 360,
+  "core_equations": 1380,
+  "per_prefix_step_CFG_arithmetic": 3600,
+  "text_only_absent_branch_pairs": 2400,
+  "tolerances": "Initial noise identity bitwise; remaining software references inherit 1e-6 absolute +1e-6 relative. CFG float32 and temporal float64 bounds unchanged.",
+  "CPU_acceptance_required": [
+    "100-step tiny-fixture posterior replay vs full-loop prefix",
+    "shared addressed-noise hashes and native call budgets",
+    "t900 anchor stop-on-mismatch and preserved unrun denominators",
+    "cache flags/branch order and no full motion decode",
+    "durable reservation journal, hard parent deadline, exclusive lock and artifact completeness"
+  ]
+}

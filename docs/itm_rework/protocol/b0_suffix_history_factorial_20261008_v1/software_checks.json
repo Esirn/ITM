@@ -1,0 +1,18 @@
+{
+  "shared_start_bitwise": 2,
+  "per_step_CFG": 3600,
+  "strict_absent_branch_pairs": 3600,
+  "historical_trace_array_checks": 36,
+  "historical_final_numeric_array_checks": 4,
+  "historical_final_mask_checks": 2,
+  "planned_equations": 7244,
+  "tolerances": "Original bitwise mask/start/noise checks; old numerical replay abs(new-ref)<=1e-6+1e-6*abs(ref); existing float32 CFG bounds unchanged.",
+  "storage": "Save native raw branch/state arrays before each CFG/absence/anchor check. Save posterior metadata and final features/joints/mask. Precreate all4 paths/3600 steps/12 saved traces/4 finals/7244 checks. Durable reserved/actual/completed call ledger.",
+  "CPU_acceptance_required": [
+    "Suffix tiny-fixture vs suffix of full1000 schedule with common x899/noise",
+    "Strict absence/branch order/native batch and exact expected call/noise budgets",
+    "All complete/missing slot denominators and raw-before-first-failure",
+    "Old baseline replay/shape/tolerance and original decode layout",
+    "Durable reservation ledger, project lock and absolute1200-second parent deadline"
+  ]
+}

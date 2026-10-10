@@ -1,0 +1,37 @@
+{
+  "version": "itm-prefix-1200s-resource-amendment-v1",
+  "date": "2026-10-08",
+  "authorized": true,
+  "approved_by": "user_continue_prepared1200s_plan_under_standing_GPU_delegation",
+  "user_instruction": "continue",
+  "prepared_plan": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/B0_PREFIX_MECHANISM_LONGER_BUDGET_PLAN_20261008.json",
+    "sha256": "8b8bd3009943aef50242b9ae0909489628d1d440bd9d42513dff94a1b8487dcb"
+  },
+  "base_resource_policy": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/GPU_CONTENDED_EXECUTION_POLICY_20261008.json",
+    "sha256": "eb89f0f66c86a15368a3d0a4bf5db35027b380a642f2c43c04c59624cbd30d72"
+  },
+  "scientific_package": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_prefix_mechanism_20261008_v1/package.json",
+    "sha256": "8b32b863da7a530cc71350384663678adfd072f8db53bbb01add176b3040853c"
+  },
+  "supersedes": "Only the600s absolute-wall budget for this new fresh prefix attempt; previous attempts retain their original deadlines/statuses.",
+  "absolute_seconds": 1200,
+  "memory_bytes": 25769803776,
+  "calls": {
+    "mdm": 3960,
+    "encoder": 48,
+    "caption": 12,
+    "noise": 3636
+  },
+  "examples": {
+    "mdm": 15840,
+    "encoder": 48,
+    "caption": 12,
+    "noise": 3636
+  },
+  "scientific_changes": [],
+  "scope": "One fresh whole queue from original addressed initial noise, not resume/splice; preserve first-fault stop and no in-attempt retry/deadline reset.",
+  "manual_GPU_approval_required": false
+}

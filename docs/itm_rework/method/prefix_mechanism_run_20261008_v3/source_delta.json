@@ -1,0 +1,31 @@
+{
+  "changes": {
+    "/home/a200/0proj/ITM/docs/itm_rework/method/B0_PREFIX_MECHANISM_1200S_BUDGET_20261008.json": [
+      null,
+      "6170c5a16a3110f1776304b3691ee50b81311d9a33cc01979ac499d8b026a4ab"
+    ],
+    "/home/a200/0proj/ITM/scripts/evaluate_b0_prefix_mechanism.py": [
+      "7acbc7e816ae8ac0498a824d7f049bc2e10f3e6e1c5b1e9e5175fd21e5bf7e73",
+      null
+    ],
+    "/home/a200/0proj/ITM/scripts/evaluate_b0_prefix_mechanism_v2.py": [
+      null,
+      "59b9f36bface042ff517ef2ee6e1d6534f79bc716d4f47f222c84e8b216211e3"
+    ],
+    "/home/a200/0proj/ITM/scripts/run_mdm_contended_prefix_mechanism_bounded.py": [
+      "793a7f195d4ec99f90192feea8f7fd68ff96854e8e677b6d341c9dd1f63856c9",
+      null
+    ],
+    "/home/a200/0proj/ITM/scripts/run_mdm_long_prefix_mechanism_bounded.py": [
+      null,
+      "cfbcf5f1fa5c0e2c04aebe3d0ac3bb7ecd43f361aec83e8927fe57700291222f"
+    ],
+    "/home/a200/0proj/ITM/tests/test_prefix_long_budget.py": [
+      null,
+      "664040f724ffc0ac4914d2df082439f481c5c59ae77ae45dab4f1ab9222ffded"
+    ]
+  },
+  "scientific_worker_guard_tests_byte_identical": true,
+  "package_byte_identical": true,
+  "effective_seconds": 1200
+}

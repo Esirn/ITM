@@ -1,0 +1,8 @@
+{
+  "manifest_bound_files_verified": 1145,
+  "request_sha256": "a46fd145568dcde2677db128674653d7bca6263445c1e45ca1329287bb068796",
+  "authorization_sha256": "3cf376f9de776626242d2156ece9509278ce2215d7935667c98a37a930818e38",
+  "all_prior_failures_unchanged": true,
+  "run_directory_absent_before_launch": true,
+  "additional_GPU_queries_before_launch": 0
+}

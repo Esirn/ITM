@@ -1,0 +1,154 @@
+{
+  "version": "itm-b0-run-receipt-v1",
+  "phase": "sample",
+  "status": "completed",
+  "context": {
+    "phase": "sample",
+    "deadline_monotonic": 1585315.834176322,
+    "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+    "memory_bytes": 25769803776,
+    "receipt_path": "/home/a200/0proj/ITM/outputs/itm_rework/method/caption_path_authorized_20261008_v1/runtime/receipt.json",
+    "plan": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/caption_path_implementation_20261008_v1/plan.json",
+      "sha256": "1dc36d7cfd7d13166c34255a75c5c2f1216b8bf7b8b85bab707a0cdcb2d0f3d0"
+    }
+  },
+  "pid": 3905971,
+  "started_monotonic": 1585201.537977716,
+  "updates_attempted": 0,
+  "updates_completed": 0,
+  "denoising_calls": 0,
+  "branch_examples": 0,
+  "peak_allocated_bytes": 530094080,
+  "artifacts": [
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/caption_path_authorized_20261008_v1/probe/captions.npz",
+      "sha256": "9b1a2aa7e31ed59c949aeca126907721be6275ae22aff921233724c3d1d91b38"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/caption_path_authorized_20261008_v1/probe/A.npz",
+      "sha256": "103963134c5927d83bd1807b6f235f4f60bb97b6445c8bdb075aff42b9ec591c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/caption_path_authorized_20261008_v1/probe/B.npz",
+      "sha256": "f4c3d30e77109f59b7f65866b95098b673c959d6384bcbf5de7424b501ca578d"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/caption_path_authorized_20261008_v1/probe/C.npz",
+      "sha256": "345e31a20fea297db1a12344f8540f1ae432a771f435d89f1f69981f874f6886"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/caption_path_authorized_20261008_v1/probe/D.npz",
+      "sha256": "41ad2941e34c3c6129e7aa8070507f14ecb0009a7316d3ed7405fb671a674b34"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/caption_path_authorized_20261008_v1/probe/result.json",
+      "sha256": "880b967bc90d7a3a6280bfbcdf64d838ee62cb342416276a08332b602b13e098"
+    }
+  ],
+  "last_monotonic": 1585206.757609258,
+  "jobs": [
+    {
+      "job_id": "A",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/caption_path_authorized_20261008_v1/probe/A.npz",
+        "sha256": "103963134c5927d83bd1807b6f235f4f60bb97b6445c8bdb075aff42b9ec591c"
+      }
+    },
+    {
+      "job_id": "B",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/caption_path_authorized_20261008_v1/probe/B.npz",
+        "sha256": "f4c3d30e77109f59b7f65866b95098b673c959d6384bcbf5de7424b501ca578d"
+      }
+    },
+    {
+      "job_id": "C",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/caption_path_authorized_20261008_v1/probe/C.npz",
+        "sha256": "345e31a20fea297db1a12344f8540f1ae432a771f435d89f1f69981f874f6886"
+      }
+    },
+    {
+      "job_id": "D",
+      "status": "completed",
+      "executed": true,
+      "raw_artifact": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/caption_path_authorized_20261008_v1/probe/D.npz",
+        "sha256": "41ad2941e34c3c6129e7aa8070507f14ecb0009a7316d3ed7405fb671a674b34"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "check_id": "A-0",
+      "status": "completed"
+    },
+    {
+      "check_id": "A-1",
+      "status": "completed"
+    },
+    {
+      "check_id": "A-2",
+      "status": "completed"
+    },
+    {
+      "check_id": "A-3",
+      "status": "completed"
+    },
+    {
+      "check_id": "A-4",
+      "status": "completed"
+    },
+    {
+      "check_id": "C-0",
+      "status": "completed"
+    },
+    {
+      "check_id": "C-1",
+      "status": "completed"
+    },
+    {
+      "check_id": "C-2",
+      "status": "completed"
+    },
+    {
+      "check_id": "C-3",
+      "status": "completed"
+    }
+  ],
+  "counts": {
+    "mdm": {
+      "reserved_calls": 4,
+      "reserved_examples": 18,
+      "actual_calls": 4,
+      "actual_examples": 18,
+      "completed_calls": 4,
+      "completed_examples": 18
+    },
+    "encoder": {
+      "reserved_calls": 6,
+      "reserved_examples": 6,
+      "actual_calls": 6,
+      "actual_examples": 6,
+      "completed_calls": 6,
+      "completed_examples": 6
+    },
+    "caption": {
+      "reserved_calls": 2,
+      "reserved_examples": 6,
+      "actual_calls": 2,
+      "actual_examples": 6,
+      "completed_calls": 2,
+      "completed_examples": 6
+    }
+  },
+  "allocator_cap_bytes": 25377767424,
+  "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004"
+}

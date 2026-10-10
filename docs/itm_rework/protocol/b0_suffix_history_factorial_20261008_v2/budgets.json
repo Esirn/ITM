@@ -1,0 +1,21 @@
+{
+  "total_wall_seconds": 1200,
+  "peak_cuda_allocated_cap_bytes": 25769803776,
+  "trajectories": 4,
+  "suffix_steps_per_trajectory": 900,
+  "total_MDM_calls": 3600,
+  "total_MDM_examples": 14400,
+  "encoder_calls": 4,
+  "encoder_examples": 4,
+  "caption_calls": 2,
+  "caption_examples": 2,
+  "old_noise_regenerations": 3596,
+  "distinct_old_noise_addresses": 1798,
+  "new_initial_noise_draws": 0,
+  "new_noise_seeds": 0,
+  "final_motion_decodes": 4,
+  "updates": 0,
+  "automatic_retry": false,
+  "resume": false,
+  "admission": "Standing user authorization, fixed UUID/project lock, 3 samples at 2 seconds, free>=4096MiB; utilization recorded without cutoff."
+}

@@ -1,0 +1,26 @@
+{
+  "version": "b0-suffix-history-factorial-design-v1",
+  "date": "2026-10-08",
+  "status": "CPU_frozen_not_implemented_not_executed",
+  "question": "Does a saved text-only x899 history alter the effect of the same paired suffix, compared with the completed F-paired-prefix keep/off paths? Complete the two missing text-prefix cells with a contemporaneous text-only baseline.",
+  "rationale": "Complete900-step CPU response shows wrists local IMU energy reduction at t870..102 and increase at t101..0, while backbone text/unconditional predictions on the keep history are already near static. Turning IMU off from F x899 changes dynamics but not behavior. Separate early history from ongoing paired suffix without another time-boundary search.",
+  "scope": "Original train000506/wrists primary with head companion; prospective completion of missing history-by-suffix cells, not new source admission or model selection/efficacy rules. All old six-source/12-config/seven-condition negative references retained in CPU evidence.",
+  "switch": "One preselected boundary: load completed text-only-prefix native float32 x899 after t900 posterior transition. Both NEW arms load exactly the same T-prefix bytes. Keep-text-only sets strict IMU false/control zero; switch-on sets original paired IMU true and actual cached static-delta control from t899 onward. Text stays true. Original F-prefix keep/off paths remain bound completed references. No second switch, guidance sweep or selected checkpoint.",
+  "weights": "F200 final frozen checkpoint only; no U suffix or new cross-state probe. The completed F-prefix keep/off paths and the new T-prefix keep/on paths complete the history-by-suffix panel under the same seed/noise. Historical text-only also serves as mandatory new baseline replay, not an independent replication.",
+  "schedule": "Original unrespaced 1000-step DDPM, iterate t899 through t0 with original float32 posterior order and clip_denoised=false. No initial/q noise. Old t899 through t1 noise draws must match address and bytes before use. No t0 noise draw.",
+  "native_paths": "Caption batch1, factorized MDM batch4 f00/f10/f01/f11, original static-delta encoder; cache paired observed/reference separately per case, shared by both suffix arms.",
+  "software_gate": "Keep-text-only arm must reproduce three old F text-only trace groups and original final normalized features/joints/mask at inherited tolerances. First failure stops the entire queue. Failed or missing slots retained; no primary intervention interpretation on a failed baseline replay.",
+  "metrics": "All existing 11 normalized feature views plus balanced, original temporal decomposition and final motion numerical/behavioral criteria. Report paired differences within config and time, no pooling frames/timesteps or percentages of mechanism.",
+  "outcomes": "Report all four history/suffix cells separately by config. Compare paired suffix under F versus T histories and the on-minus-text effect under each history, retaining signed interaction and raw errors, no mechanism percentages. Dynamic recovery alone is not behavior support; use original full alternating-lunge/observed-return rules. A failure at this boundary cannot establish irreversible history or failure of every other boundary.",
+  "review": "Exposed primary/companion chosen from existing main cases after completed analyses; prospective intervention only, not blind preregistration or independent 02/human review. Prior F not_supported and paper claims remain unchanged.",
+  "forbidden": [
+    "training",
+    "new source/seed/caption/checkpoint",
+    "noise regeneration before worker",
+    "new threshold",
+    "adaptive boundary",
+    "automatic retry/resume",
+    "interference with other GPU processes",
+    "paper claim changes"
+  ]
+}

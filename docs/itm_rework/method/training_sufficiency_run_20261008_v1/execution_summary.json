@@ -1,0 +1,47 @@
+{
+  "version": "itm-sufficiency-occupancy-stop-verification-v1",
+  "package_sha256": "471376c4799b80975c09faee4a80e2adfa220a6119a73a325761ed2a89029593",
+  "implementation_sha256": "82df1581f5efe658857c509de3d314803ae81baf770a94fb45331c2dcab7ca76",
+  "bound_files_verified": 2556,
+  "CPU_tests_passed": 26,
+  "planned_states": 192,
+  "planned_jobs": 1152,
+  "planned_branches": 4608,
+  "planned_checks": 2880,
+  "missing_branches_verified": 4608,
+  "within_not_comparable_verified": 4608,
+  "progress_not_comparable_verified": 4608,
+  "elapsed_seconds": 1.9196396821644157,
+  "worker_launched": false,
+  "real_model_calls_inferred_from_no_worker": 0,
+  "raw_worker_counters_present": false,
+  "allocated_peak_bytes": null,
+  "preflight_query_attempts_inferred_from_bound_control_flow": 2,
+  "first_identity_free_memory_gate_passed": true,
+  "second_compute_process_gate_rejected": true,
+  "raw_preflight_outputs_archived": false,
+  "retries": 0,
+  "new_training": 0,
+  "new_samples": 0,
+  "verification_GPU_queries": 0,
+  "verification_model_imports": 0,
+  "limitations": "Current bound preflight stopped on registered compute process; raw stdout/PID/owner/memory unknown. No model diagnosis or convergence claim. Main-session self-check, not independent review.",
+  "stage": "implementation accepted, one real occupancy-stopped attempt evaluated",
+  "CPU_acceptance": {
+    "path": "outputs/itm_rework/method/training_sufficiency_implementation_20261008_v1/CPU_acceptance.json",
+    "sha256": "e96bb6d62e956da24b0712a2156fdf8455d1a794fa0925d94f55a1c5d96ef6a5"
+  },
+  "implementation": {
+    "path": "outputs/itm_rework/method/training_sufficiency_implementation_20261008_v1/prepared/implementation.json",
+    "sha256": "82df1581f5efe658857c509de3d314803ae81baf770a94fb45331c2dcab7ca76"
+  },
+  "execution_record": {
+    "path": "docs/itm_rework/method/B0_TRAINING_SUFFICIENCY_EXECUTION_20261008.json",
+    "sha256": "805474346ddf529ee1f40c46f5536a45ead4c98c2ab69708a0aa31ad7596c05e"
+  },
+  "failed_evaluation": {
+    "path": "outputs/itm_rework/protocol/training_sufficiency_failed_evaluation_20261008_v1/summary.json",
+    "sha256": "2fd02c9bbaa15e4facbf553c00d61197988b47c1efb64d7fbb546ba7cec3fb6c"
+  },
+  "next_task": "On a suitable GPU window, create one fresh delegated record/run and execute the unchanged accepted diagnostic; no per-use manual GPU approval."
+}

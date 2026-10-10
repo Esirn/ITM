@@ -1,0 +1,388 @@
+{
+  "version": "itm-training-sufficiency-design-v1",
+  "supersedes": {
+    "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v2/package.json",
+    "sha256": "471376c4799b80975c09faee4a80e2adfa220a6119a73a325761ed2a89029593"
+  },
+  "revision": "Controlled native-path probe showed old Q caption batch5 differs from batch1; restore full native Q MDMbatch5 + CLIPbatch5, trajectories retain batch4 + CLIPbatch1. No tolerance relaxation.",
+  "scientific_scope": "Read-only local optimization and temporal contraction diagnostic; no repair/convergence certification.",
+  "original_F_package": {
+    "path": "docs/itm_rework/protocol/b0_feature_balance_20261003_v1/package.json",
+    "sha256": "a4189b89f1924af022c67dea71c02c2792e65f4a185775501b07d037fba51af9"
+  },
+  "original_V_package": {
+    "path": "docs/itm_rework/protocol/b0_state_diagnostic_20260928_v1/package.json",
+    "sha256": "6f050dbfbe57c508e86d83a30b3cdfb505f7700b6781cb52b43d85b6ffc0b012"
+  },
+  "original_Q_package": {
+    "path": "docs/itm_rework/protocol/b0_sampling_alignment_20260927_v1/package.json",
+    "sha256": "537895c45695a48cb4b5114941e4bf8cab3962c40be893fcc79b4c9eeb311d60"
+  },
+  "checkpoint_audit": {
+    "path": "outputs/itm_rework/protocol/training_sufficiency_preparation_20261008_v2/checkpoint_audit.json",
+    "sha256": "b286c9f9594fb94f88bf0df5380e366cc9d7172e93c485b70e45dba89ae1a6eb"
+  },
+  "snapshots": [
+    "I",
+    "F050",
+    "F100",
+    "F150",
+    "F200",
+    "U200"
+  ],
+  "state_families": [
+    "GT_noised_Q",
+    "U_paired_trace",
+    "F_paired_trace"
+  ],
+  "branch_order": [
+    "T",
+    "P",
+    "S",
+    "R"
+  ],
+  "common": {
+    "fresh_seed": 20260925,
+    "initialization": "Load exact bound original initial.pt; verify tensor hashes/environment; new empty AdamW state. No new random initialization, no finalR resume.",
+    "backbone": {
+      "path": "outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/model000475000.pt",
+      "sha256": "ce43c1d4232fc2b897999d7996c2d2b889791d99585d87e1289af773ab56ab93",
+      "mode": "frozen_eval",
+      "mask_frames": false
+    },
+    "control_config": {
+      "sensor_feature_dim": 12,
+      "sensor_count": 6,
+      "latent_dim": 512,
+      "encoder_layers": 2,
+      "encoder_heads": 8,
+      "dropout": 0.1,
+      "encoder_variant": "ordered_concat",
+      "null_mode": "strict",
+      "time_encoding": "physical_sinusoidal",
+      "model_fps": 20.0,
+      "adapter_variant": "additive"
+    },
+    "imu_normalization": {
+      "acceleration_mean": [
+        [
+          0.08606275916099548,
+          0.05218241736292839,
+          -0.004557386506348848
+        ],
+        [
+          -0.09847400337457657,
+          0.053035516291856766,
+          0.04503466188907623
+        ],
+        [
+          0.0032043559476733208,
+          -0.010230185464024544,
+          0.012104523368179798
+        ],
+        [
+          -0.006135671865195036,
+          -0.01956915855407715,
+          0.031618811190128326
+        ],
+        [
+          -0.02227126806974411,
+          -0.0007158907246775925,
+          0.0325159877538681
+        ],
+        [
+          -0.025184188038110733,
+          -0.014637482352554798,
+          0.029162513092160225
+        ]
+      ],
+      "acceleration_std": [
+        [
+          3.8313040733337402,
+          2.830742835998535,
+          3.970366954803467
+        ],
+        [
+          3.2768919467926025,
+          3.168140172958374,
+          3.643237829208374
+        ],
+        [
+          1.6565872430801392,
+          2.1855318546295166,
+          1.638021469116211
+        ],
+        [
+          1.9980077743530273,
+          1.9947030544281006,
+          1.7800812721252441
+        ],
+        [
+          1.3888434171676636,
+          2.744654417037964,
+          1.7099049091339111
+        ],
+        [
+          1.2581554651260376,
+          2.269946336746216,
+          1.5072047710418701
+        ]
+      ],
+      "orientation": "rotation_matrix_unscaled",
+      "source": {
+        "split": "train",
+        "unique_motion_ids": [
+          "000027",
+          "000506",
+          "004728"
+        ],
+        "fps": 20.0,
+        "unique_frames": 398,
+        "configuration_duplicates_counted": false,
+        "pipeline": "itm-method-canonical-b0-v1"
+      }
+    },
+    "training_input_provenance": {
+      "payload": {
+        "schema": "itm-training-input-provenance-v1",
+        "input_pipeline_version": "itm-method-canonical-b0-v1",
+        "contract_version": "itm-rework-v0.3-draft",
+        "artifacts": {
+          "canonical_admission": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/admission.jsonl",
+            "sha256": "9fa1046c5bce7e25d507ac254d9f77a451ddf9ecd8c6a70309c79f611b6bf161"
+          },
+          "canonical_budget": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/b0_budget.json",
+            "sha256": "660b9f779eee1301f1bb92c30081c20e86248f76854f047f07ea88521ecead47"
+          },
+          "canonical_build": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/build_report.json",
+            "sha256": "e009e471a85a572aa025a61f6e02261fed768720be17e541d966cf868c3a81a9"
+          },
+          "canonical_package": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/package.json",
+            "sha256": "33de7fd98c1cf43fc5a51a7d35b502e154a233066efec13f17dda08bc53abe97"
+          },
+          "canonical_sampling_plan": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/sampling_cases.json",
+            "sha256": "ddf2f01ae1ddcb6b6583f50508106f801a0b9b9564c917614954f5157d93c070"
+          },
+          "canonical_semantic_review": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/semantic_review.json",
+            "sha256": "149c4006bbdb2b6fb2cee6524e8e04e73ce37dff7d4f529d061ae3ff4641c5ec"
+          },
+          "canonical_train_caption_plans": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/train_caption_plans.jsonl",
+            "sha256": "71720d8d970ae68da8169b2bb037551090b759809e5f6957058bf30216559fc8"
+          },
+          "canonical_train_imu": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/train_imu.jsonl",
+            "sha256": "97daa478cdb17fdc45a40c376c28becf595c7e4e2d0eaa97f3bc96e964fb592a"
+          },
+          "canonical_train_motion": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/train_motion.jsonl",
+            "sha256": "d1a42a16b6dd3e61682dc59a389ae00f8189d371d372d08d90f67bf6c22ed2ca"
+          },
+          "canonical_val_caption_plans": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/val_caption_plans.jsonl",
+            "sha256": "c2f58d1452c821219554586ee99200ad4d04e83afb295f6810b75ebd4ab493f3"
+          },
+          "canonical_val_imu": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/val_imu.jsonl",
+            "sha256": "2fffd1d6809c832cd5063e155d27940c5c351647e5c29814f2f7c3ccf5735dd5"
+          },
+          "canonical_val_motion": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/val_motion.jsonl",
+            "sha256": "7d79378e48c006c4fecf59cf7a2f59310c9c65caf7b8f71f8c6a7c3fd5fbacb6"
+          },
+          "canonical_verification": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/verification.json",
+            "sha256": "b382182c4cb1ec0b3b0d2dde20170ffa41010257dadfdff7b0dcafe00204d196"
+          },
+          "caption_plan": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/train_caption_plans.jsonl",
+            "sha256": "71720d8d970ae68da8169b2bb037551090b759809e5f6957058bf30216559fc8"
+          },
+          "imu_manifest": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/train_imu.jsonl",
+            "sha256": "97daa478cdb17fdc45a40c376c28becf595c7e4e2d0eaa97f3bc96e964fb592a"
+          },
+          "mdm_args": {
+            "path": "/home/a200/0proj/ITM/outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/args.json",
+            "sha256": "2feda496a83142e38fd22d2db860d4d054c9ed678e23362fd18a5c09f660683b"
+          },
+          "mdm_checkpoint": {
+            "path": "/home/a200/0proj/ITM/outputs/mdm/checkpoints_extracted/humanml_trans_enc_512/model000475000.pt",
+            "sha256": "ce43c1d4232fc2b897999d7996c2d2b889791d99585d87e1289af773ab56ab93"
+          },
+          "motion_manifest": {
+            "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/canonical_b0_20260925_v3/train_motion.jsonl",
+            "sha256": "d1a42a16b6dd3e61682dc59a389ae00f8189d371d372d08d90f67bf6c22ed2ca"
+          },
+          "motion_mean": {
+            "path": "/home/a200/0proj/datasets/all/Mean.npy",
+            "sha256": "26e136555dab04c94a129d446c26e6b9939cbf045fbf77bcf5462c1fb5a2001c"
+          },
+          "motion_std": {
+            "path": "/home/a200/0proj/datasets/all/Std.npy",
+            "sha256": "6565a65ed9b31e23c328829a309e1c482be8b85fd23b43d65451a9b19a917f40"
+          }
+        },
+        "selected_inputs": [
+          {
+            "motion_id": "000027",
+            "motion": {
+              "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000027/motion.npy",
+              "sha256": "e88c8cfcb6139ea74d568aebbc47f435317b0222c3592f01a00f1633d6ab7a21"
+            },
+            "text": {
+              "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000027/caption.txt",
+              "sha256": "33c719e68b7d4bf15541c217499ddbf33a7f2e01bc8aac8ea9927d5abb029b04"
+            },
+            "imu": {
+              "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000027/imu.npz",
+              "sha256": "927ef35d453e6b88d755bd2f186b5977f727dc1709a46c3a17011e69a3c59299"
+            }
+          },
+          {
+            "motion_id": "000506",
+            "motion": {
+              "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000506/motion.npy",
+              "sha256": "d7cc1be92bed7f83a50a49c40990a6598dfbf5c45a3ecc2e7b9b2fce11e41e2b"
+            },
+            "text": {
+              "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000506/caption.txt",
+              "sha256": "c3d64936d20e0ad00b979c16c2826b1881312262736e0fe6bb0457eac64c0f61"
+            },
+            "imu": {
+              "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/000506/imu.npz",
+              "sha256": "a7d196b1839d9ecaa482a01d42df5616ad469ce92938232b4a96f089b43e13b3"
+            }
+          },
+          {
+            "motion_id": "004728",
+            "motion": {
+              "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/004728/motion.npy",
+              "sha256": "f1894b2a582b6a54b8b5b2c7f124616ea383bb6b8ed447e4236459017cf1e269"
+            },
+            "text": {
+              "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/004728/caption.txt",
+              "sha256": "ee39935149b04e8581132466b50532d942a0d03332c25972256c557ffd30ba34"
+            },
+            "imu": {
+              "path": "/home/a200/0proj/ITM/outputs/itm_rework/canonical_b0_20260925_v3/train/004728/imu.npz",
+              "sha256": "5aea0acc33fb9c967cbadc6c4844baf8f4edb640bc0532e92167718a856617f7"
+            }
+          }
+        ],
+        "item_order": [
+          {
+            "motion_id": "000027",
+            "sensor_config": "head",
+            "slots": [
+              4
+            ]
+          },
+          {
+            "motion_id": "000027",
+            "sensor_config": "wrists",
+            "slots": [
+              0,
+              1
+            ]
+          },
+          {
+            "motion_id": "000506",
+            "sensor_config": "head",
+            "slots": [
+              4
+            ]
+          },
+          {
+            "motion_id": "000506",
+            "sensor_config": "wrists",
+            "slots": [
+              0,
+              1
+            ]
+          },
+          {
+            "motion_id": "004728",
+            "sensor_config": "head",
+            "slots": [
+              4
+            ]
+          },
+          {
+            "motion_id": "004728",
+            "sensor_config": "wrists",
+            "slots": [
+              0,
+              1
+            ]
+          }
+        ],
+        "imu_normalization_sha256": "bf12059c4cdcc043540889d5cf31392c365e1f7e06b917668e3f8451b26610cb"
+      },
+      "sha256": "9f39bf7ffd93b2595dfdcea4ee3288761b14a6e75a6585fedb841fd490295ef1"
+    },
+    "motion_normalization": [
+      {
+        "path": "/home/a200/0proj/datasets/all/Mean.npy",
+        "sha256": "26e136555dab04c94a129d446c26e6b9939cbf045fbf77bcf5462c1fb5a2001c"
+      },
+      {
+        "path": "/home/a200/0proj/datasets/all/Std.npy",
+        "sha256": "6565a65ed9b31e23c328829a309e1c482be8b85fd23b43d65451a9b19a917f40"
+      }
+    ],
+    "loss": "L_F=0.5*mean(e[0:67,valid]^2)+0.5*mean(e[67:263,valid]^2); uniform L_U=mean(e[0:263,valid]^2); three microbatch losses/3; same null denominator.",
+    "optimizer": {
+      "name": "AdamW",
+      "lr": 5e-05,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "weight_decay": 0.01,
+      "amsgrad": false,
+      "foreach": null,
+      "maximize": false,
+      "capturable": false,
+      "differentiable": false,
+      "fused": null
+    },
+    "optimizer_note": "Retain old serialized defaults, including foreach=null and fused=null. Bind same torch/device/backend for both arms and serialize resolved settings; no independent optimizer change.",
+    "precision": "float32; no AMP, gradient clipping, scheduler or early stopping",
+    "accumulation": "zero_grad once per update; three true-length examples, backward(loss/3) each, then optimizer.step exactly once. Even null examples stay in denominator and MDM counts. If a null loss has no trainable graph, skip backward and record zero control-gradient contribution; do not renormalize other losses.",
+    "training_rng": "Use training_schedule.json literally; do not redraw condition/t/noise in hooks or backbone. Equal schedule across arms; all listed examples forwarded once including null. Noise generation is PCG64 keyed by full address SHA256, not torch.randn.",
+    "checkpoints": [
+      50,
+      100,
+      150,
+      200
+    ],
+    "selection": "final200 only; never choose by D, losses, train or val results"
+  },
+  "environment": {
+    "python": "3.10.20",
+    "torch": "2.5.1",
+    "numpy": "2.2.5",
+    "cuda_build": "12.1",
+    "cudnn": 90100,
+    "default_dtype": "torch.float32",
+    "threads": 2,
+    "matmul_tf32": false,
+    "cudnn_tf32": true,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "deterministic_algorithms": false
+  },
+  "initial_runtime_override": "I uses its existing zero-adapter tensors and static_delta runtime semantics; raw reference_mode=none is preserved in audit. No new initialization/RNG.",
+  "inference": "Original native Q branch order f00/T/P/S/R in MDMbatch5; f00 auxiliary compatibility output, excluded from4608 main predictions/contrasts. Saved U/F trajectories use T/P/S/R batch4. Float32 denoiser/control and native half CLIP.",
+  "cache": "Two native caption caches per case (batch5 Q/batch1 traces); 24 calls/72 examples. E controls remain checkpoint/case-specific,6examples per case/snapshot,432total.",
+  "software_bounds": "Same atol=rtol=1e-6; same2880 checks, same state bytes, checkpoints, frames and metric rules.",
+  "artifact_order": "Save independent-readable finite raw batch4 predictions/state identity BEFORE deciding any anchor; preserve diagnostic_only failures; no validation forwards."
+}

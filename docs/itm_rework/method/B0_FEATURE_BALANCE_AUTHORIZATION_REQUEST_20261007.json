@@ -1,0 +1,109 @@
+{
+  "version": "itm-feature-authorization-request-v1",
+  "status": "pending_user_approval",
+  "authorized": false,
+  "implementation": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_implementation_20261003_v2/implementation.json",
+  "implementation_sha256": "db323ef515ede3252898f322f7badda10913aea64d67cb4abb1f3e9fc4605e30",
+  "package": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_feature_balance_20261003_v1/package.json",
+    "sha256": "a4189b89f1924af022c67dea71c02c2792e65f4a185775501b07d037fba51af9"
+  },
+  "package_sha256": "a4189b89f1924af022c67dea71c02c2792e65f4a185775501b07d037fba51af9",
+  "initial": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/correction_implementation_20260927_v1/initial.pt",
+    "sha256": "3ad3c1bca7ff7398386662e4831eb29136d3c0f2e06e5abbea8e7c4cb13d0401"
+  },
+  "loss_version": "normalized-x0-root-ric-half-v1",
+  "weights_sha256": "ad96c3f5dc0eef83dc8b0107a4802c5af84badf383c12e00124dd63411d7f297",
+  "accepted_implementation_commit": "963a132129b808b4c43af0c5bea30fc735ddcc67",
+  "independent_acceptance_commit": "e0999b7",
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261007_v1",
+  "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+  "gpu_identity_source": "2026-10-07 authorized one-query diagnostic returned the exact bound UUID; no compute-process query and no full idle/readiness certification.",
+  "launch_environment": {
+    "OMP_NUM_THREADS": "2",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "limits": {
+    "training_updates": 200,
+    "training_exposures": 600,
+    "new_samples": 60,
+    "steps_per_sample": 1000,
+    "traces": 240,
+    "extra_trace_model_calls": 0,
+    "software_checks": 48,
+    "training_seconds": 600,
+    "sampling_shared_seconds": 3000,
+    "total_seconds": 3600,
+    "allocated_memory_bytes": 25769803776,
+    "GPUs": 1,
+    "MDM_calls_max": 60600,
+    "MDM_examples_max": 240600,
+    "encoder_examples_max": 1320,
+    "caption_calls_max": 660
+  },
+  "scope": "One F queue from original common initial with fixed half-weight loss and fresh AdamW. Only final200 may produce60 full samples using frozen noise and unit CFG, paired with historical S1 controls. No new control training or sampling.",
+  "deadlines": "t0 before GPU preflight; train deadline t0+600; shared sampling deadline min(sampling_start+3000,t0+3600). No transfer of unused training budget.",
+  "stop_policy": "Stop on first timeout/OOM/nonfinite/identity/counter/software-check/write failure; preserve completed products, finite raw features and full200/600/60/240/48 ledgers. No retry, resume, warmup, GPU switch, CPU fallback or replacement samples.",
+  "previous_authorizations": "All three previous F attempts and the one-query diagnostic authorization are consumed; this new single F queue is not authorized.",
+  "execution_authorization_record": "/home/a200/0proj/ITM/docs/itm_rework/method/B0_FEATURE_BALANCE_AUTHORIZATION_20261007.json",
+  "verification": {
+    "bound_runtime_identity_unchanged": true,
+    "run_directory_absent": true,
+    "actual_authorization_absent": true,
+    "new_request_GPU_queries": 0,
+    "real_forward_calls": 0,
+    "all_previous_failures_preserved": true,
+    "full_runtime_readiness_verified": false
+  },
+  "prepared_at": "2026-10-07T10:49:25.453799+00:00",
+  "previous_attempt": {
+    "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261005_v2",
+    "status_sha256": "3ab1488ee9207558424645c031b28cee8db4442d3a947d807f20c09b6e7571fe",
+    "failure": "GPU identity/free-memory preflight failed",
+    "worker_launched": false,
+    "authorization_consumed": true,
+    "specific_cause": "Composite row-count/UUID/free-memory rejection; old raw output unavailable. Later passing query cannot identify the earlier predicate."
+  },
+  "earlier_attempts": [
+    {
+      "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261005_v1",
+      "status_sha256": "2ccdc191deebc8d7c23132262fd51a77dcab72c4491b4181055e921c9ca9fbdd",
+      "failure": "Selected GPU already has a compute process",
+      "worker_launched": false,
+      "authorization_consumed": true
+    },
+    {
+      "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261004_v1",
+      "status_sha256": "1c77c0f0ca4d2cad2b0501857d1326e7263fbb41a696ccc8a34f427d88228845",
+      "preflight_exit_code": 9,
+      "worker_launched": false,
+      "authorization_consumed": true,
+      "specific_cause": "Undetermined; original query stdout/stderr were not persisted."
+    }
+  ],
+  "availability_plan": {
+    "current_availability": "Unknown beyond single-query observation at 2026-10-07T10:48:14.358925+00:00",
+    "last_observation": "Exact UUID, total24564MiB/free7488MiB; first-query gate passed only. Compute-process occupancy was not queried.",
+    "requested_launch_window": "User selects an expected idle window of at least one hour and grants fresh approval at its start. No polling/reservation inferred.",
+    "authoritative_check": "Unchanged bounded full preflight after new approval determines actual availability; this diagnostic cannot bypass it.",
+    "automatic_polling": false,
+    "automatic_retry": false,
+    "interfere_with_other_processes": false
+  },
+  "derived_from_request": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/B0_FEATURE_BALANCE_AUTHORIZATION_REQUEST_20261005_V2.json",
+    "sha256": "7584d8bdbb6d4c23cbb597925b326fd812ab03753caac0632ffbdbf75d6b3043"
+  },
+  "latest_diagnostic": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_gpu_diagnostic_20261007_v1/status.json",
+    "sha256": "b60cfa8a9a12bff8b8f8b403c671992db3c6d8bfe8c3c7eb5a0919eacdf6016c",
+    "first_query_gate_passed": true,
+    "free_MiB_at_query": 7488,
+    "compute_processes_checked": false
+  },
+  "failure_self_check": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/feature_balance_run_20261007_v1/delivery_integrity.json",
+    "sha256": "d0fc786354f8918814db09cacb8e5b1615dc3a9b9e78b1e4817c1345a8125ad7"
+  }
+}

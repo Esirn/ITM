@@ -1,0 +1,50 @@
+{
+  "version": "itm-training-sufficiency-native-package-v1",
+  "artifacts": [
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v3/budget.json",
+      "sha256": "829c57f25e985784f5ff646da2326adba4700fc342b08b9c0c3c7b0dac513465"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v3/checkpoints.json",
+      "sha256": "d466a66264edd7b14ad9149827887b9c45baac03f9422eb8413eb8cd25598c02"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v3/design.json",
+      "sha256": "5f734c50fb981b98c0f4560e35eb2a902c4fd5e93542b2242335f7573ed86f9b"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v3/evaluation.json",
+      "sha256": "7e3ce11835db18543809998b54c190308d18dbca5b9463dc2e354373355a93b4"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v3/existing_trace_temporal_baseline.json",
+      "sha256": "6d1a640a563e9605f0f122782d686874d2f28c2a1ca5c816ef60c7d04b7b1af7"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v3/input_cases.json",
+      "sha256": "b4b7cb6809576b56693684349454d8f79d2e6955983bfaafe62389ef014bc17b"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v3/jobs.json",
+      "sha256": "01b29e4945c29631aefb437ca9c1d860c5879fa8cda8299ee353e3a20f737b7e"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v3/software_checks.json",
+      "sha256": "328c370c17f2b2236b30d595c3dbf65754886be95a2308a244f13b51b0b53f9d"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v3/sources.json",
+      "sha256": "01d6c6351d61a91775ec54b9bb6d78044c085542daa8db689e86fdddf256df6b"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v3/states.json",
+      "sha256": "d0256276bca3837366dedd5912b86c897cb18afe43be7ee2a2893d071f40812a"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v3/validation.json",
+      "sha256": "254d25a9b2b95f87e67a93c18fe1eda29d06c8da05df3aca99deda9e7079182c"
+    }
+  ],
+  "scientific_change": "No new states/weights/noise/metrics/tolerances. Explicit native batch-path/counter correction based on controlled probe; no model efficacy claim."
+}

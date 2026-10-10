@@ -1,0 +1,30 @@
+{
+  "package_sha256": "8b32b863da7a530cc71350384663678adfd072f8db53bbb01add176b3040853c",
+  "queue_status": "failed",
+  "failure": {
+    "type": "RuntimeError",
+    "message": "Shared GPU current utilization above 50 percent"
+  },
+  "traces": {
+    "missing": 180
+  },
+  "probes": {
+    "missing": 360
+  },
+  "branches": {
+    "missing": 1440
+  },
+  "weight_contrasts": {
+    "not_comparable": 720
+  },
+  "path_contrasts": {
+    "not_comparable": 180
+  },
+  "terminals": {
+    "missing": 36
+  },
+  "new_evaluation_GPU_queries": 0,
+  "new_evaluation_model_calls": 0,
+  "new_full_motion_decodes": 0,
+  "interpretation": "Conditional fixed-seed/panel short-prefix diagnostics only. No full-motion behavior repair, unique mechanism, training sufficiency or generalization certification."
+}

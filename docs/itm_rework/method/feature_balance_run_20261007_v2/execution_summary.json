@@ -1,0 +1,37 @@
+{
+  "status": "failed_preflight_GPU_compute_occupancy_no_model_results",
+  "run_directory": "/home/a200/0proj/ITM/outputs/itm_rework/method/feature_balance_authorized_20261007_v1",
+  "parent_exit_code": 1,
+  "failure": {
+    "type": "RuntimeError",
+    "message": "Selected GPU already has a compute process"
+  },
+  "elapsed_seconds": 1.1912041450850666,
+  "worker_launched": false,
+  "model_calls_inferred_from_no_worker": 0,
+  "worker_counters_present": false,
+  "allocated_peak_bytes": null,
+  "authorization_consumed": true,
+  "gpu_query_attempts_inferred_from_bound_control_flow": 2,
+  "first_query_identity_memory_gate_passed": true,
+  "compute_process_query_reached": true,
+  "selected_GPU_compute_process_detected": true,
+  "additional_gpu_queries": 0,
+  "retries": 0,
+  "planned": {
+    "updates": 200,
+    "exposures": 600,
+    "samples": 60,
+    "traces": 240,
+    "checks": 48
+  },
+  "completed": {
+    "updates": 0,
+    "exposures": 0,
+    "samples": 0,
+    "traces": 0,
+    "checks": 0
+  },
+  "cause": "Selected GPU matched at least one compute-process query row. PID/owner/memory/use are unknown because frozen helper did not persist raw query output.",
+  "scope": "Main-session self-check, not independent acceptance or model-effectiveness evidence"
+}

@@ -1,0 +1,30 @@
+{
+  "evaluation_fix": "Before decoding F/U labels, behavior regression summary was corrected to compare F GT-deficit inventory against matched U inventory; shared historical failures are not new F regressions. Frozen guardrails, notes classification rules and run dependencies unchanged.",
+  "tests": "40 passed in6.47s;4 new regression/unknown tests added to original36 evaluator/base-metric checks.",
+  "source_archives": [
+    {
+      "original_path": "scripts/evaluate_b0_feature_balance.py",
+      "archive_path": "docs/itm_rework/method/feature_balance_run_20261008_v1/evaluation_before_regression_fix/evaluate_b0_feature_balance.py",
+      "archive_sha256": "76fcb5249ad8ac88814883ba8fbc0bbf478cea7e9fa07b8ffe03819f55276ec2",
+      "original_preparation_source_sha256": "76fcb5249ad8ac88814883ba8fbc0bbf478cea7e9fa07b8ffe03819f55276ec2",
+      "archive_matches_preparation_source": true
+    },
+    {
+      "original_path": "src/itm/metrics/feature_balance.py",
+      "archive_path": "docs/itm_rework/method/feature_balance_run_20261008_v1/evaluation_before_regression_fix/feature_balance.py",
+      "archive_sha256": "d287a890f23fb4a30b09746a8bccdaae6a1b71d158ce3b2c01c71173ff5f3f96",
+      "original_preparation_source_sha256": "d287a890f23fb4a30b09746a8bccdaae6a1b71d158ce3b2c01c71173ff5f3f96",
+      "archive_matches_preparation_source": true
+    },
+    {
+      "original_path": "tests/test_b0_feature_balance_evaluation.py",
+      "archive_path": "docs/itm_rework/method/feature_balance_run_20261008_v1/evaluation_before_regression_fix/test_b0_feature_balance_evaluation.py",
+      "archive_sha256": "3bc7b88e8b9efddcddc3569faeed2d0acb9b67b79c3d88cb34994190fa2b2d53",
+      "original_preparation_source_sha256": null,
+      "archive_matches_preparation_source": true
+    }
+  ],
+  "verifier_development_failure": "First verify_results.py invocation hit Python3.10 SyntaxError at a starred subscript before execution; changed to an explicit tuple, then file/NumPy replay passed. No GPU/model calls or experiment artifacts changed.",
+  "review_wording_clarification": "Primary notes append no missing middle recovery was found was intended as no hidden middle recovery between snapshots; labels/side_order_return clearly incomplete and were not changed after decoding.",
+  "evidence_policy": "Original preparation evidence remains historical. Current evaluator source bytes changed for a routine summary fix; immutable old runtime manifest/1145 bindings remain intact. Old source copies retained here; old hashes not rewritten."
+}

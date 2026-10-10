@@ -1,0 +1,149 @@
+{
+  "status": "completed",
+  "plan": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/caption_path_implementation_20261008_v1/plan.json",
+    "sha256": "1dc36d7cfd7d13166c34255a75c5c2f1216b8bf7b8b85bab707a0cdcb2d0f3d0"
+  },
+  "start": 1585195.834176322,
+  "deadline": 1585315.834176322,
+  "jobs": [
+    {
+      "job_id": "A",
+      "status": "planned",
+      "executed": false
+    },
+    {
+      "job_id": "B",
+      "status": "planned",
+      "executed": false
+    },
+    {
+      "job_id": "C",
+      "status": "planned",
+      "executed": false
+    },
+    {
+      "job_id": "D",
+      "status": "planned",
+      "executed": false
+    }
+  ],
+  "checks": [
+    {
+      "check_id": "A-0",
+      "status": "planned"
+    },
+    {
+      "check_id": "A-1",
+      "status": "planned"
+    },
+    {
+      "check_id": "A-2",
+      "status": "planned"
+    },
+    {
+      "check_id": "A-3",
+      "status": "planned"
+    },
+    {
+      "check_id": "A-4",
+      "status": "planned"
+    },
+    {
+      "check_id": "C-0",
+      "status": "planned"
+    },
+    {
+      "check_id": "C-1",
+      "status": "planned"
+    },
+    {
+      "check_id": "C-2",
+      "status": "planned"
+    },
+    {
+      "check_id": "C-3",
+      "status": "planned"
+    }
+  ],
+  "authorization": "Standing user GPU delegation plus explicit low-load sharing instruction 2026-10-08; separate single-state path isolation, not main-queue retry.",
+  "preflight": {
+    "version": "itm-shared-preflight-v1",
+    "gpu_uuid": "GPU-d37bc466-7ddc-4a40-e1e6-952a58d89004",
+    "limits": {
+      "minimum_free_MiB": 4096,
+      "maximum_GPU_utilization_percent": 50,
+      "maximum_memory_controller_utilization_percent": 50,
+      "samples": 3,
+      "sample_interval_seconds": 2
+    },
+    "status": "passed",
+    "samples": [
+      {
+        "total_MiB": 24564,
+        "free_MiB": 23389,
+        "GPU_utilization_percent": 39,
+        "memory_controller_utilization_percent": 0
+      },
+      {
+        "total_MiB": 24564,
+        "free_MiB": 23389,
+        "GPU_utilization_percent": 36,
+        "memory_controller_utilization_percent": 0
+      },
+      {
+        "total_MiB": 24564,
+        "free_MiB": 23389,
+        "GPU_utilization_percent": 42,
+        "memory_controller_utilization_percent": 0
+      }
+    ],
+    "compute_processes": [
+      {
+        "pid": 3800931,
+        "process_name": "/home/a100/anaconda3/envs/WPAD/bin/python",
+        "used_memory_MiB": "726"
+      }
+    ],
+    "queries_attempted": 4,
+    "compute_process_count": 1
+  },
+  "worker_result": {
+    "status": "completed",
+    "reason": null,
+    "launched": true,
+    "returncode": 0
+  },
+  "receipt": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/caption_path_authorized_20261008_v1/runtime/receipt.json",
+    "sha256": "02fd94e0debf648eb8afcff379db9a70353a554079ad41a1611ee33f6bce9169"
+  },
+  "finish": 1585207.125669429,
+  "counts": {
+    "mdm": {
+      "reserved_calls": 4,
+      "reserved_examples": 18,
+      "actual_calls": 4,
+      "actual_examples": 18,
+      "completed_calls": 4,
+      "completed_examples": 18
+    },
+    "encoder": {
+      "reserved_calls": 6,
+      "reserved_examples": 6,
+      "actual_calls": 6,
+      "actual_examples": 6,
+      "completed_calls": 6,
+      "completed_examples": 6
+    },
+    "caption": {
+      "reserved_calls": 2,
+      "reserved_examples": 6,
+      "actual_calls": 2,
+      "actual_examples": 6,
+      "completed_calls": 2,
+      "completed_examples": 6
+    }
+  },
+  "peak_allocated_bytes": 530094080
+}

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "scope": "Main-session file-only self-check, no new GPU queries",
+  "raw_output_archived_byte_identical": true,
+  "request_authorization_command_hashes_match": true,
+  "query_attempts": 1,
+  "exit_code": 0,
+  "total_MiB": 24564,
+  "free_MiB": 7488,
+  "first_query_predicates_pass": true,
+  "compute_processes_checked": false,
+  "full_readiness_established": false,
+  "previous_failure_unchanged": true,
+  "diagnostic_authorization_consumed": true,
+  "current_verifier_GPU_queries": 0,
+  "model_calls": 0
+}

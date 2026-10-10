@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "implementation_sha256": "83de9380f428bf1075524a1f30da6abcab7581eda4306d5b7027e1542b2f75e0",
+  "device": "physical cuda:1",
+  "gpu_uuid": "GPU-43c2f925-db05-c655-bb46-25196d0627d6",
+  "worker_local_device": "cuda:0 after UUID isolation",
+  "MDM_calls": 3600,
+  "checks": 7244,
+  "new_final_rows_valid": 4,
+  "new_trace_rows_valid": 12,
+  "factorial_final_cells_valid": 8,
+  "worker_artifacts": 7242,
+  "software_metric_scalar_checks": 8422,
+  "factorial_scalar_checks": 1568,
+  "wall_seconds": 648.0109671489336,
+  "peak_allocated_bytes": 527068672,
+  "new_paired_behavior": "incomplete/not_supported head and wrists",
+  "original_F_behavior": "not_supported",
+  "independent_review": false,
+  "paper_claims_changed": false,
+  "next_task": "Frozen CPU-only full T-prefix3600 saved response rows plus inherited F-prefix3600 rows,7200 total/1800 interactions; no new GPU/model/noise/decode."
+}

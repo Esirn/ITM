@@ -1,0 +1,62 @@
+[
+  {
+    "panel_case_id": "F_root_ric_balanced--train-000506-head-paired",
+    "prefix_trajectory_id": "PX027",
+    "terminal": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_authorized_20261008_v3/prefix/terminal/PX027.npz",
+      "sha256": "ba3aab0ade1a0d95997bdf138544701ece1fd6b8966e2b19130cc6ac5f4ad36d"
+    },
+    "x_899": {
+      "shape": [
+        1,
+        263,
+        1,
+        136
+      ],
+      "dtype": "float32",
+      "sha256": "bd1ccfcd709ff9b21c1c86e2ce0d5469a3e81e3fcdeec8643d6e262bf89f0f3c"
+    },
+    "inputs": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_authorized_20261008_v3/prefix/inputs/F_root_ric_balanced--train-000506-head-paired.npz",
+      "sha256": "abed115a79ece634970bf91c00e249e0a4fec8615238817732eb74a6b48ea1e3"
+    },
+    "frame_mask": {
+      "shape": [
+        1,
+        136
+      ],
+      "dtype": "bool",
+      "sha256": "3654da25dd1bae2cc27c2e3d0d7e9e9755280ca7f3ae5d4aa18d32a0fc094384"
+    }
+  },
+  {
+    "panel_case_id": "F_root_ric_balanced--train-000506-wrists-paired",
+    "prefix_trajectory_id": "PX030",
+    "terminal": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_authorized_20261008_v3/prefix/terminal/PX030.npz",
+      "sha256": "3d71bd37aa7cae6c3a3d7f4b93bb7dbc8eeb7345c1659704ece0c2aab5389183"
+    },
+    "x_899": {
+      "shape": [
+        1,
+        263,
+        1,
+        136
+      ],
+      "dtype": "float32",
+      "sha256": "8f90957826c1d3f81855de1ed720de067fc7b3b19e490db22a72da088ce1b071"
+    },
+    "inputs": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/prefix_mechanism_authorized_20261008_v3/prefix/inputs/F_root_ric_balanced--train-000506-wrists-paired.npz",
+      "sha256": "1144234652e6b318fd0a68c1940716d21d6d7bb0c3dcdc5571c2557c4765bf7d"
+    },
+    "frame_mask": {
+      "shape": [
+        1,
+        136
+      ],
+      "dtype": "bool",
+      "sha256": "3654da25dd1bae2cc27c2e3d0d7e9e9755280ca7f3ae5d4aa18d32a0fc094384"
+    }
+  }
+]

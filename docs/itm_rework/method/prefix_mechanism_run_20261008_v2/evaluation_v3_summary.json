@@ -1,0 +1,33 @@
+{
+  "package_sha256": "8b32b863da7a530cc71350384663678adfd072f8db53bbb01add176b3040853c",
+  "queue_status": "failed",
+  "failure": {
+    "type": "RuntimeError",
+    "message": "Prefix child stopped: {'status': 'failed', 'reason': 'wall_timeout_process_group_killed', 'launched': True, 'pid': 4025369, 'returncode': -9}"
+  },
+  "traces": {
+    "diagnostic_only": 180
+  },
+  "probes": {
+    "diagnostic_only": 322,
+    "missing": 38
+  },
+  "branches": {
+    "diagnostic_only": 1288,
+    "missing": 152
+  },
+  "weight_contrasts": {
+    "diagnostic_only": 568,
+    "not_comparable": 152
+  },
+  "path_contrasts": {
+    "diagnostic_only": 180
+  },
+  "terminals": {
+    "diagnostic_only": 36
+  },
+  "new_evaluation_GPU_queries": 0,
+  "new_evaluation_model_calls": 0,
+  "new_full_motion_decodes": 0,
+  "interpretation": "Conditional fixed-seed/panel short-prefix diagnostics only. No full-motion behavior repair, unique mechanism, training sufficiency or generalization certification."
+}

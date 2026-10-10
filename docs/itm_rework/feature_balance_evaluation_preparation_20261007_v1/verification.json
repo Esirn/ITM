@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "scope": "main-session self-check/replay, not independent acceptance",
+  "historical_U_exact_metric_rows": 60,
+  "planned_F": 60,
+  "real_F": 0,
+  "rows": 120,
+  "between": 60,
+  "within": 72,
+  "valid_historical_within": 36,
+  "difference_of_contrasts": 36,
+  "software_checks": 48,
+  "passed_software_checks": 0,
+  "training_losses_planned": 600,
+  "training_losses_recorded": 0,
+  "review_rows": 120,
+  "primary_configs": [
+    "head",
+    "wrists"
+  ],
+  "decision": "inconclusive",
+  "artifact_hashes_verified": 131,
+  "source_hashes_verified": 1159,
+  "run_directory_absent": true,
+  "actual_authorization_absent": true,
+  "GPU_queries": 0,
+  "real_model_forwards": 0,
+  "checkpoint_tensor_loads": 0
+}

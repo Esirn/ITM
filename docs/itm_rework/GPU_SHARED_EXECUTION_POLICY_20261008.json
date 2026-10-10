@@ -1,0 +1,24 @@
+{
+  "version": "itm-GPU-shared-resource-policy-v1",
+  "authorized": true,
+  "approved_by": "user",
+  "user_instruction": "continue，GPU已有计算进程只要占用的显存与运算单元不多，也不耽误咱们跑实验吧？不用非要等到GPU完全空闲",
+  "supersedes": "For new training-sufficiency diagnostic attempts, presence of a compute process alone is no longer a rejection reason. Older strict-preflight attempts remain historical.",
+  "standing_delegation": "GPU_EXECUTION_POLICY_20261008.json",
+  "resource_gates": {
+    "minimum_free_MiB": 4096,
+    "maximum_GPU_utilization_percent": 50,
+    "maximum_memory_controller_utilization_percent": 50,
+    "samples": 3,
+    "sample_interval_seconds": 2
+  },
+  "interpretation": "Free memory is capacity; utilization.gpu and utilization.memory are coarse recent activity proxies, not exact free SM counts or guaranteed throughput. All three samples must meet gates; other compute processes are recorded, not rejected automatically.",
+  "preserved_constraints": [
+    "Scientific package, checkpoints, saved-state population, inputs, random plans, metrics and tolerances unchanged.",
+    "One GPU per fresh attempt; absolute 600 seconds from before preflight; allocated memory at most 24 GiB, not a 24 GiB reservation.",
+    "First identity/timeout/OOM/nonfinite/count/software fault stops the queue; no in-attempt retry/fallback/deadline reset.",
+    "Do not stop or modify unrelated processes. Use the project GPU lock to avoid concurrent project queues.",
+    "Create a new implementation manifest and concrete execution record for this explicit resource-policy change; preserve old evidence."
+  ],
+  "manual_GPU_approval_required": false
+}

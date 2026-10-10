@@ -1,0 +1,27 @@
+{
+  "status": "CPU_phase_completed",
+  "new_T_rows": 3600,
+  "inherited_F_rows": 3600,
+  "effective_rows": 7200,
+  "path_contrasts": 3600,
+  "factorial_interactions": 1800,
+  "independent_scalar_checks": 4640400,
+  "posthoc_raw_scalar_checks": 28800,
+  "panel_scalar_checks": 70200,
+  "adapter_tests": 7,
+  "next_freeze_tests": 3,
+  "new_GPU_queries": 0,
+  "new_model_calls": 0,
+  "new_noise_draws": 0,
+  "new_decodes": 0,
+  "original_F_behavior": "not_supported",
+  "new_history_behavior": "not_supported",
+  "paper_claims_changed": false,
+  "independent_review": false,
+  "next_package": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/package.json",
+    "sha256": "a0a4b0bee0f4d61729357dc7a4592d9c24a1b98cf5d1314211bce0a34de905a1"
+  },
+  "next_intervention_implemented": false,
+  "next_intervention_executed": false
+}

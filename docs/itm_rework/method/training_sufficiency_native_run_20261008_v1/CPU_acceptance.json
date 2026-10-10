@@ -1,0 +1,55 @@
+{
+  "version": "itm-sufficiency-CPU-acceptance-v1",
+  "status": "passed",
+  "package_sha256": "95283f4c9744c6624ca3d4e6f0d2a199427f85e50edb2c975039512208b0416a",
+  "implementation_sha256": "cb30fb6d035e96c129ea67c5924ee8ef4c35648a97cb2077c7385227b7a41f28",
+  "incremental_tests_passed": 3,
+  "seconds": 100.76,
+  "native_full_fixture_jobs": 1152,
+  "native_checks_completed": 2880,
+  "required_artifacts_fixture_verified": 3300,
+  "retained_shared_resource_tests": 23,
+  "retained_original_worker_fault_tests": 26,
+  "expected_artifacts_verified": 2570,
+  "artifacts": [
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/training_sufficiency_native_implementation_20261008_v1/CPU_tests.log",
+      "sha256": "3be8d0f9f64dd69946280799a6a392a36216e6f5d72d4c2fdb7441c6c15897fc"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/tests/test_mdm_native_training_sufficiency.py",
+      "sha256": "3fc798f5aada85f261c183c2fdfc3f82b1ddc4b8afc6d3cf9b88bdc521cbd959"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/mdm_native_training_sufficiency.py",
+      "sha256": "e2bc82d00a85c0f301a999c52b05b7c7453d7d134b311127d5db75911735d63d"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/mdm_training_sufficiency.py",
+      "sha256": "d51bd7a18c3b9505e56109cc61284dae807bfef0f30e9a3fe31f4d4fe583c6df"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/run_mdm_native_training_sufficiency_worker.py",
+      "sha256": "975cad9a21e9c265d8ca058125a4a1c9328500d47157d234519af92076b6aacb"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/run_mdm_native_training_sufficiency_bounded.py",
+      "sha256": "38c176f62d2858ffcfbfd6cb28888b60ba151f03c7ca2d99609b03460745d94a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/evaluate_b0_native_training_sufficiency.py",
+      "sha256": "bd6c917faabc0703611d1ae1db779f1c304f375b4e865e651145c533af2b622b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/itm_shared_gpu_preflight.py",
+      "sha256": "d860a89b0ffe77a28ea7f6cc8813540c94b492c8ee22276a8f84a3dd6633ef24"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/GPU_SHARED_EXECUTION_POLICY_20261008.json",
+      "sha256": "554db16d964ba650cdf755b6d203ecb51534b07eecc0752da765f8cdef2fbfb1"
+    }
+  ],
+  "real_model_forwards": 0,
+  "GPU_queries": 0,
+  "interpretation": "Main-session CPU self-check; native Qbatch5+CLIPbatch5 counts explicitly frozen; same192states/6snapshots/main4608predictions/criteria."
+}

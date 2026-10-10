@@ -1,0 +1,14 @@
+{
+  "bound_files_verified": 1145,
+  "authorization": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/B0_FEATURE_BALANCE_AUTHORIZATION_20261005_V2.json",
+    "sha256": "3a3698cfe18ed0f23c1eecaa7a8836a8af5849d974b230bd0021e0dad437654e"
+  },
+  "request": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/B0_FEATURE_BALANCE_AUTHORIZATION_REQUEST_20261005_V2.json",
+    "sha256": "7584d8bdbb6d4c23cbb597925b326fd812ab03753caac0632ffbdbf75d6b3043"
+  },
+  "run_directory_absent_before_launch": true,
+  "GPU_queried_before_launch": false,
+  "old_failures_unchanged": true
+}

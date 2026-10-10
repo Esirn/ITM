@@ -1,0 +1,52 @@
+{
+  "version": "itm-training-sufficiency-package-v1",
+  "status": "frozen_pending_implementation",
+  "artifacts": [
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v2/budget.json",
+      "sha256": "30e799ffbf8f4f700a71efa79bea5b0fa1caaf77c45e39b0efd808054c4043e6"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v2/checkpoints.json",
+      "sha256": "d466a66264edd7b14ad9149827887b9c45baac03f9422eb8413eb8cd25598c02"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v2/design.json",
+      "sha256": "f8a582760dd1db1219f2c8d6887d119f448e75ef9f8850393ce90310544b1c89"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v2/evaluation.json",
+      "sha256": "7c64adb1c228b5e965c156542043e9f379832b42b4ce794f7f2769ad804f5175"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v2/existing_trace_temporal_baseline.json",
+      "sha256": "6d1a640a563e9605f0f122782d686874d2f28c2a1ca5c816ef60c7d04b7b1af7"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v2/input_cases.json",
+      "sha256": "b4b7cb6809576b56693684349454d8f79d2e6955983bfaafe62389ef014bc17b"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v2/jobs.json",
+      "sha256": "d655bcd9f2bc937dcc0727e6fe5cf49f36185639bf5fb0afeef84fd5e9fed971"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v2/software_checks.json",
+      "sha256": "328c370c17f2b2236b30d595c3dbf65754886be95a2308a244f13b51b0b53f9d"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v2/sources.json",
+      "sha256": "50e5734b2d7dbd649a1888d5f2130d68fa543a31db1b8de9a716ba943d4dfb8f"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v2/states.json",
+      "sha256": "d0256276bca3837366dedd5912b86c897cb18afe43be7ee2a2893d071f40812a"
+    },
+    {
+      "path": "docs/itm_rework/protocol/b0_training_sufficiency_20261008_v2/validation.json",
+      "sha256": "9ddf1dc3a028b9da125aaed4ba76d2815a8f59221949361e7ef47cc22cae0736"
+    }
+  ],
+  "new_model_forwards": 0,
+  "execution_record": null
+}

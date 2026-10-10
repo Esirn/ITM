@@ -1,0 +1,60 @@
+{
+  "version": "itm-sufficiency-CPU-acceptance-v1",
+  "status": "passed",
+  "package_sha256": "471376c4799b80975c09faee4a80e2adfa220a6119a73a325761ed2a89029593",
+  "implementation_sha256": "7c10fbd1dfafa529e150a8094540041f3811a5fca826e8a0ce2aea6b54e24ad3",
+  "incremental_tests_passed": 23,
+  "seconds": 8.34,
+  "retained_base_CPU_tests_passed": 26,
+  "unchanged_worker_cache_metrics_sources": [
+    "src/itm/models/mdm_training_sufficiency.py",
+    "scripts/run_mdm_training_sufficiency_worker.py",
+    "scripts/evaluate_b0_training_sufficiency.py"
+  ],
+  "expected_artifacts_verified": 2559,
+  "artifacts": [
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/training_sufficiency_implementation_20261008_v2/CPU_incremental_tests.log",
+      "sha256": "980d1d88046c05e0a2fc8a237844881eb8c1f6fc4b407c8be80e2f9ae2be79f2"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/tests/test_b0_shared_gpu_preflight.py",
+      "sha256": "50f0f1775aa7d862e9dc5949c5fb96db251797139d81fc7d9e8e0a109dc46d63"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/tests/test_mdm_training_sufficiency.py",
+      "sha256": "d95e6740da48925e45a2acb8d5a2af2b49f77012b8d6042d3fa39e938de69894"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/itm_shared_gpu_preflight.py",
+      "sha256": "d860a89b0ffe77a28ea7f6cc8813540c94b492c8ee22276a8f84a3dd6633ef24"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/run_mdm_training_sufficiency_bounded.py",
+      "sha256": "f3f590fcf18d1532fc737038893950c3c1ca41f06ab77b60b883f9fb61d3f8c7"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/GPU_SHARED_EXECUTION_POLICY_20261008.json",
+      "sha256": "554db16d964ba650cdf755b6d203ecb51534b07eecc0752da765f8cdef2fbfb1"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/training_sufficiency_implementation_20261008_v1/CPU_tests_final.log",
+      "sha256": "18810c96a4c78d51db6b494e0b9c996763a3c5204e6718ad754a4b0057d66ca4"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/mdm_training_sufficiency.py",
+      "sha256": "5c425fd2d0421e72cb7000b0f623415751b4da5681bb29f767b76f67755115a3"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/run_mdm_training_sufficiency_worker.py",
+      "sha256": "d8d76d43bf6e43c431d0ebd00f98c5e525ceb2f1ce57ed77235bd3b4b4d230a7"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/evaluate_b0_training_sufficiency.py",
+      "sha256": "a48788c6c1acfc2cd39b325108d0e76150990e3dd616f601ab4443e0ab668f58"
+    }
+  ],
+  "real_model_forwards": 0,
+  "GPU_queries": 0,
+  "interpretation": "Only operational shared-GPU preflight changed per explicit user instruction; all scientific and worker identities unchanged. Main-session self-check."
+}

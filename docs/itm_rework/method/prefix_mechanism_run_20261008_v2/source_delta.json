@@ -1,0 +1,26 @@
+{
+  "changes": {
+    "/home/a200/0proj/ITM/docs/itm_rework/GPU_CONTENDED_EXECUTION_POLICY_20261008.json": [
+      null,
+      "eb89f0f66c86a15368a3d0a4bf5db35027b380a642f2c43c04c59624cbd30d72"
+    ],
+    "/home/a200/0proj/ITM/scripts/itm_contended_gpu_preflight.py": [
+      null,
+      "1c5f088521731df4e71578c150d318081ca3ec372d8192a8f44915836ecd5e90"
+    ],
+    "/home/a200/0proj/ITM/scripts/run_mdm_contended_prefix_mechanism_bounded.py": [
+      null,
+      "793a7f195d4ec99f90192feea8f7fd68ff96854e8e677b6d341c9dd1f63856c9"
+    ],
+    "/home/a200/0proj/ITM/scripts/run_mdm_prefix_mechanism_bounded.py": [
+      "97246c79a0ecfc4a567569b9c15b328defacdc195ed6e23c536c411a858adced",
+      null
+    ],
+    "/home/a200/0proj/ITM/tests/test_contended_prefix_preflight.py": [
+      null,
+      "66e7dfe9f8832fd1c2d100d4d21d50bfa61bb8cbe3355076cf4adf8886aba981"
+    ]
+  },
+  "scientific_worker_evaluator_guard_tests_byte_identical": true,
+  "package_byte_identical": true
+}

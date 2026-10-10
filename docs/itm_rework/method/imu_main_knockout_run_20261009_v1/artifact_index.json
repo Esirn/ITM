@@ -1,0 +1,378 @@
+[
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/complete_run_file_index.json",
+    "sha256": "8231eb753818f616a32455f502b2e7f40187c93a1ca7f1cc78885cf2cc5a2de4"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/execution_summary.json",
+    "sha256": "621dde323f77acaf2478f2f19e7ba63837df5f81071446db9ace487f0703bb4d"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/docs/itm_rework/GPU_CONTENDED_EXECUTION_POLICY_20261008.json",
+    "sha256": "eb89f0f66c86a15368a3d0a4bf5db35027b380a642f2c43c04c59624cbd30d72"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/docs/itm_rework/GPU_DEVICE_PREFERENCE_20261008.json",
+    "sha256": "bd156929862abef44824948c47ec0cc051cb0043c1afbd6c1db826ebeb9871a0"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/docs/itm_rework/GPU_EXECUTION_POLICY_20261008.json",
+    "sha256": "6d63492234840f349b7ff67ef222499ca20987a9f9c75fb49b32e7444fc91179"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/docs/itm_rework/method/B0_IMU_MAIN_KNOCKOUT_EXECUTION_20261009.json",
+    "sha256": "ee303de0ccb483fbecd38a8df4cb725f8552ea83b5d0d5fa4898d673c61fb5c4"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/docs/itm_rework/method/B0_IMU_MAIN_KNOCKOUT_RUN_20261009.md",
+    "sha256": "5735136135c9115cffa3d0705d75af88f78d537e565dbc0e812d972fbef1837a"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/docs/itm_rework/protocol/B0_IMU_MAIN_KNOCKOUT_EVALUATION_20261009.md",
+    "sha256": "2825238c7eedb958e3bf285851880598038fea8141d822d44f591c86ae905bf7"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_cross_source_component_CPU_20261009_v1/plan.json",
+    "sha256": "49cf5ad9f5738aa653ef07ababa6100e5027e7e3892aad6f4e450a34efb7f9de"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/budgets.json",
+    "sha256": "fa25e7107f96881dd88afd5fa21b078193ed7262382ec23f5e35c92c44b98995"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/checkpoints.json",
+    "sha256": "35895316ce6a3729effc9574161c0aed95d4ab89bf70191170492df53e4845ba"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/design.json",
+    "sha256": "f3eaae6438ffde02d5876db2af409a9c6cefe8ca77231f5b9400b424974360ca"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/historical_anchors.json",
+    "sha256": "9879685d9681792b88835826ce9ebd0f39ae79b9e8e17927c73a8b8a8d1e2032"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/noise.json",
+    "sha256": "7d4bcb4099e198dad08fb5a14ff99fb66dd3531a7c2b66c78f850a239e81f5b5"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/package.json",
+    "sha256": "a0a4b0bee0f4d61729357dc7a4592d9c24a1b98cf5d1314211bce0a34de905a1"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/software_checks.json",
+    "sha256": "2f58b22f8f90734cfbee7cd42f6b9402b3aa7e8b8d387cd8e26eb363b62fc6ee"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/sources.json",
+    "sha256": "57dc6068fe154b9c31ed54c61007f42acb45eeab64c5cb2dd029bf63b44b42f3"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/starts.json",
+    "sha256": "a23618a25809525ff0953d82465dfaf78a7b971d78de79aff0e0ce509d11c597"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/docs/itm_rework/protocol/b0_imu_main_knockout_20261009_v1/trajectories.json",
+    "sha256": "951bbe6ab06561224c32927d33c716474b2624ba880b267a3d82035c4f47a825"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/cross_source_component_CPU_freeze_tests_20261009_v1/pytest.xml",
+    "sha256": "d01e8781c7717e49bdd9ce55d66177d1f7a61653fe3829b0f1c86582dc000eb0"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_CPU_tests_20261009_v1/pytest.xml",
+    "sha256": "6a1115eee0c8b9c9db6051482a7720b83e4b38d879aafb47580c25626b8416ed"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_authorized_20261009_v1/runtime/preflight/compute_processes.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_authorized_20261009_v1/runtime/preflight/compute_processes.stdout",
+    "sha256": "0c9974b3838fa34d8ced227c9512742dcd7db67c7ef4a12e472a52fc8c77f38e"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_authorized_20261009_v1/runtime/preflight/gpu_01.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_authorized_20261009_v1/runtime/preflight/gpu_01.stdout",
+    "sha256": "60dbbb70d413f3758a48b7d03b9a89cbca2006feb0ace64e82d76c2d9b317679"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_authorized_20261009_v1/runtime/preflight/gpu_02.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_authorized_20261009_v1/runtime/preflight/gpu_02.stdout",
+    "sha256": "c80e49c7f48668d2a6367aff883bb4c1430946fa71f53f3e4611377f66051e50"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_authorized_20261009_v1/runtime/preflight/gpu_03.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_authorized_20261009_v1/runtime/preflight/gpu_03.stdout",
+    "sha256": "c80e49c7f48668d2a6367aff883bb4c1430946fa71f53f3e4611377f66051e50"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_authorized_20261009_v1/runtime/preflight/result.json",
+    "sha256": "eff9e61eea3026218c1bd189a50db25219654d42d7b09b212a98670f142c20b6"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_authorized_20261009_v1/runtime/status.json",
+    "sha256": "20817b06f389a99b11a8049be728ac2b68a2ed8685ac67532573c0269ba06252"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_authorized_20261009_v1/runtime/suffix.context.json",
+    "sha256": "c2688a935618370428d8d0e62f5cd6945873278ce88c0c531776e54b94b0acdf"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_authorized_20261009_v1/runtime/suffix.log",
+    "sha256": "b01a4029dcdb82f1761b2f4e3c867a81fef95606f4720dfbc0c26072d3073c42"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_authorized_20261009_v1/runtime/suffix.receipt.journal.jsonl",
+    "sha256": "88827890050762be0903b69db6fb297242d6d111c6357903d02cc92368ae917e"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_authorized_20261009_v1/runtime/suffix.receipt.json",
+    "sha256": "3c7c19e4e74b1e3e0640d8e41bf4e9cc1ec0f286ba41f810d7ffb57e2ad4c8a4"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_implementation_20261009_v1/CPU_acceptance.json",
+    "sha256": "3b4c166f0087d0760101218d8b51f8eca63d6dd938fa2017e3850b905228074b"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_implementation_20261009_v1/contrast_verification.json",
+    "sha256": "bcc06adddaa0d72ef90c39dfeb92b8b5add55a7dfbbca57c64e68e9febb2ec3b"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_implementation_20261009_v1/delivery_verification.json",
+    "sha256": "44270b31ca0ec214c2e9b5d458b3a085d004cbbc9f01b5a669f590d806bc27a2"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_implementation_20261009_v1/implementation.json",
+    "sha256": "7f6eb510b1c3fad38fa64af2a94b00dbf5db5566d8772b1c42acaa9a2903855d"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_implementation_20261009_v1/implementation_delivery.json",
+    "sha256": "e70628d90a06b095c881e52433ef8fec2dc6570de88a7425cdc74b425880c636"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_implementation_20261009_v1/next_CPU_plan_verification.json",
+    "sha256": "72bb14d93953dfedf30e4d6976ca05ba94e7402c4d09289d97a6f0abeade38dc"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_implementation_20261009_v1/response_verification.json",
+    "sha256": "c64f576f7aa61e1d044e05f91650e18a1f0e2507c7ec4dc218cfcc14140aa687"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/method/imu_main_knockout_implementation_20261009_v1/result_verification.json",
+    "sha256": "75d7670d3305700b1af071d5d056bcfc1fff87a0f6426d9b50a4512fec3de877"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_behavior_20261009_v1/artifact_index.json",
+    "sha256": "b86e7bfe06c0c40ac726600368585c34913d1e2e6546cb157c75383c87054d06"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_behavior_20261009_v1/decision.json",
+    "sha256": "f6bc6c24d3860e30f0ee033a55faff81958f3cc79919bd468d84d45c718ebd0c"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_behavior_20261009_v1/notes.json",
+    "sha256": "29319760033897f36c7090378d9f87c180126dce95b396e3ed6b7beb51c95189"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_behavior_20261009_v1/provenance.json",
+    "sha256": "9c7a3408b9e6ce4aaf7ff1c3e0bfaa5cc029c745f9a2b329d0b01ed128661751"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_evaluation_20261009_v1/artifact_index.json",
+    "sha256": "29a5492f224d6904c42d2f21e4a021ef8a657cf45d16b3460d144e57f13e2288"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_evaluation_20261009_v1/contrasts.json",
+    "sha256": "f2aca2a330b994de83d48467dc1d3dd6a18e99ef8afc3dae061080bd27ea1a2b"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_evaluation_20261009_v1/factorial_finals.json",
+    "sha256": "1d84d17d8d9172b61262197b6c972e1d73fd1e5a96fb696fe3434b0655aa0654"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_evaluation_20261009_v1/finals.json",
+    "sha256": "9d935c77c52ebfc91d9f9da9e5c6407b268ebd141763d87969a5cce262e7ddd1"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_evaluation_20261009_v1/old_final_references.json",
+    "sha256": "69f6d6f3f2bf503cb51f258f72cd480061dcd152b0fdd15df5ce3cf92df47d8d"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_evaluation_20261009_v1/sources.json",
+    "sha256": "2d84b64a2431d810cb6e9c0c1caa0e019fea35efdcb01123d063ec37ff8f75b1"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_evaluation_20261009_v1/summary.json",
+    "sha256": "bfedca092e9917f8550661c3a94d26a442c8db537e5752fba37dd3123078640c"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_evaluation_20261009_v1/traces.json",
+    "sha256": "77e76d902c64ef32b17b0e20d344ab477cb04828264704b0fe295023f3490714"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_response_panel_20261009_v1/all_time_panel.json",
+    "sha256": "fd5627fee93008567aba57813214736a7a2bae5871b6d0a3db3873f21cdb39a6"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_response_panel_20261009_v1/artifact_index.json",
+    "sha256": "91666f44e9dcee1690df0a4df51fd2abdf441b98858f3e944d2d63dfb74a5751"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_response_panel_20261009_v1/knockout_responses.png",
+    "sha256": "86b5f2e97bd821045bf82b67c39ba5a2441467056db78fc31e90886a3bcc6c20"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_response_panel_20261009_v1/provenance.json",
+    "sha256": "24c956bac8d2dcb5bcb88ebd0be8a9e314280b4fc6c14b5060227039e1e8d2c9"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_response_panel_20261009_v1/summary.json",
+    "sha256": "4943b057ca350ae2e3b08adbf8b44e7b54c587aec314d48a06ad2a328c0e48ae"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_responses_20261009_v1/artifact_index.json",
+    "sha256": "abbba628ef1257c430bcc2afd891050f0dfc5a5b11f0b7261d495184ea0a1d75"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_responses_20261009_v1/jobs.json",
+    "sha256": "3ef8185976ca49be6956228583367fc6a26222e4dafabd8c7309a8e1a22d1a03"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_responses_20261009_v1/rows.json",
+    "sha256": "39da45e6b5ab1a508cb103b5da3753d06b7b341290a6ecfe54794133a4ceaf53"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_responses_20261009_v1/sources.json",
+    "sha256": "9f94ad3d09ee7a6c5815911478e086e7617dfcce27802f0183327308ffa791ca"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_responses_20261009_v1/summary.json",
+    "sha256": "0bb24388150fdc56ddf7c774e433e5ec3d22da1c4da0ac3643fa30fe2b870cbe"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_review_20261009_v1/MK001_frames_000.png",
+    "sha256": "ddafb376a9b39c123e72c8946379243753847423927504feafbe15accdcf8ff9"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_review_20261009_v1/MK001_frames_048.png",
+    "sha256": "3d7ad61043017c8649bfd3712da1caa98238bba6f0f8341b8bd591fc400cd2fd"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_review_20261009_v1/MK001_frames_096.png",
+    "sha256": "ae9bbc68ecdeb0a9fc419023e3fcf84570d6f46243fe2f6d0f8bf0b7284e4173"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_review_20261009_v1/MK002_frames_000.png",
+    "sha256": "e6398acd924e9fb3cc93a5a1bbc8516af8829011db19e263d9bbbcc7ea216430"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_review_20261009_v1/MK002_frames_048.png",
+    "sha256": "7320a216dd654c8e0f42a2e9e85587b8b79bdd6e17a5b5c84e17044c0ebc1e7b"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_review_20261009_v1/MK002_frames_096.png",
+    "sha256": "76fa430c017b4e0ef95a60f736eccc37035f8919dc492be2f9bea801b38e82f5"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_review_20261009_v1/artifact_index.json",
+    "sha256": "c4958a982b0802759851d1c12b459754a12c98d089d7690d8ca7ffc692c04cb1"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_review_20261009_v1/head_overview.png",
+    "sha256": "437659cf5b9ffdfd2be153016854592276a9a4d7186594754f3a16d7c02b2aa5"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_review_20261009_v1/main_session_notes.json",
+    "sha256": "29319760033897f36c7090378d9f87c180126dce95b396e3ed6b7beb51c95189"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_review_20261009_v1/rendering.json",
+    "sha256": "d79b81fc9930b6aac0adc21356a4b6af6c36ae87812cc24289467fb22f4ac775"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_review_20261009_v1/review.html",
+    "sha256": "7b7081eaf56ae9edea059f342caf6fdf2604ab4e7abadbaad45019f947f1ffbc"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/outputs/itm_rework/protocol/imu_main_knockout_review_20261009_v1/wrists_overview.png",
+    "sha256": "d42e0927e6c911c479bdacc59a99ecbea7ea3d8715018f246a3adec5572d387f"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/scripts/analyze_b0_imu_main_knockout_responses.py",
+    "sha256": "d3e0b7b23786ec9f3ca360a52bc1ab8ef150af7d6bfed777dace803f9e880376"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/scripts/archive_b0_imu_main_knockout.py",
+    "sha256": "d3d4f2245eb98bd8c6e579749dfdbaf5d4c43f8d71172a85ff4dec3be6de09ba"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/scripts/decide_b0_imu_main_knockout.py",
+    "sha256": "37f4f28188facdeb1003fb11315d9f62592b5ad2172a7bd7778c7d63eb6004bc"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/scripts/evaluate_b0_imu_main_knockout.py",
+    "sha256": "4285569b093d72a0162fb7d805028c6885a64ae9d9ea34f66b979f6e860e73cd"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/scripts/freeze_b0_cross_source_component_CPU.py",
+    "sha256": "559763f46e8b64ab2d4550d7baaa1d92cfe35bb4db02a8f9d8eb94ab205bc4ca"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/scripts/render_b0_imu_main_knockout.py",
+    "sha256": "a934505b309e7d92a3125ec52a2de26bcbc23b66fa3b2c2a28dc4b6689468312"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/scripts/run_mdm_imu_main_knockout_bounded.py",
+    "sha256": "1c48a7d3e764ca6fe3a54a6feb5ca134f567dfd70721595e37b0e9c506d08662"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/scripts/run_mdm_imu_main_knockout_worker.py",
+    "sha256": "1c235b014347c1c16839204f266eebbcfd405683733215c39c58644e25b100da"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/scripts/summarize_b0_imu_main_knockout_responses.py",
+    "sha256": "c44465e152c544eb43d8c69cbe849dd14755f6042822e7a9fc42ffa67989c4a2"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/scripts/verify_b0_imu_main_knockout_contrasts.py",
+    "sha256": "5f5204ac7c8202a9e942e82093099018b13b0719d0899597f0e8ee9dfdf696d7"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/scripts/verify_b0_imu_main_knockout_delivery.py",
+    "sha256": "4a88f053b65b651a677a0e58898fa8257c62c65625f162cc2872bf95edd6fbf0"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/scripts/verify_b0_imu_main_knockout_responses.py",
+    "sha256": "3656e99a10fe2f5d37cd4c0ee5c6d267004419b5d823724ce314593fa10d24ab"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/scripts/verify_b0_imu_main_knockout_results.py",
+    "sha256": "b32ed03dff631ac171ade1045a3d9babb8a56cc1e8282a8f13be44271aa5162c"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/src/itm/models/mdm_imu_main_knockout.py",
+    "sha256": "018b8059e8add5fc865729594e6a68509ca9aeacc8e7beff4aafaf72598b8852"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/tests/test_cross_source_component_CPU_freeze.py",
+    "sha256": "2146ca018b604d54194d15fa4848dab787c3d37eae6fc50062d0d2b2c7e1acdc"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/snapshot/tests/test_mdm_imu_main_knockout.py",
+    "sha256": "26547cede1de01eea8a2a38c02b1221bd5d2b1a6b9b42baed0fe43a9ba2b2c52"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/method/imu_main_knockout_run_20261009_v1/source_copy_index.json",
+    "sha256": "19b56128e8f1a039913ad6c73addc2b7af35e711fd52be5b92315bff3ecd9a81"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "total_wall_seconds": 1200,
+  "peak_cuda_allocated_cap_bytes": 25769803776,
+  "trajectories": 2,
+  "suffix_steps_per_trajectory": 900,
+  "total_MDM_calls": 1800,
+  "total_MDM_examples": 7200,
+  "encoder_calls": 4,
+  "encoder_examples": 4,
+  "caption_calls": 2,
+  "caption_examples": 2,
+  "old_noise_regenerations": 1798,
+  "distinct_old_noise_addresses": 1798,
+  "new_initial_noise_draws": 0,
+  "new_noise_seeds": 0,
+  "final_motion_decodes": 2,
+  "updates": 0,
+  "automatic_retry": false,
+  "resume": false,
+  "preferred_physical_GPU": "cuda:1",
+  "GPU_uuid": "GPU-43c2f925-db05-c655-bb46-25196d0627d6",
+  "admission": "Standing user authorization; project UUID lock,3 samples2sec apart,free>=4096MiB; utilization recorded without cutoff. Native allocator, fixed whole-attempt absolute1200sec deadline."
+}

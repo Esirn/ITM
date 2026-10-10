@@ -1,0 +1,22 @@
+{
+  "status": "CPU_phase_completed",
+  "rows_valid": 3600,
+  "path_contrasts_valid": 1800,
+  "independent_scalar_checks": 4246200,
+  "adapter_tests_passed": 8,
+  "factorial_freeze_tests_passed": 2,
+  "new_GPU_queries": 0,
+  "new_model_calls": 0,
+  "new_noise_draws": 0,
+  "new_decodes": 0,
+  "original_F_behavior": "not_supported",
+  "suffix_outputs_behavior": "not_supported",
+  "next_factorial_package": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/b0_suffix_history_factorial_20261008_v1/package.json",
+    "sha256": "d79ac5d04db24867a3ee53b42b40e1272c46bd3540ca33a9883c3c9f70414baf"
+  },
+  "next_intervention_implemented": false,
+  "next_intervention_executed": false,
+  "paper_claims_changed": false,
+  "independent_review": false
+}

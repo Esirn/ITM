@@ -1,0 +1,11 @@
+{
+  "synthetic_helper_tests": {
+    "passed": 5,
+    "seconds": 0.07
+  },
+  "alternative_order_role_check": "Passed independent one-off CPU assertion: swapping roles preserves total MSE/difference energy while component labels swap.",
+  "plan_v1": "Unexecuted; source_count12 referred to configs; preserved for history.",
+  "plan_v2": "Selected; explicit6 motion sources/12configs;240rows, same selectors/formulas.",
+  "new_GPU_queries": 0,
+  "new_model_calls": 0
+}

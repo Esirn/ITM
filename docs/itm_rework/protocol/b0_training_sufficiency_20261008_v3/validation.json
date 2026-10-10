@@ -1,0 +1,29 @@
+{
+  "states": 192,
+  "jobs": 1152,
+  "branch_predictions": 4608,
+  "software_checks": 2880,
+  "snapshots": 6,
+  "input_cases": 12,
+  "state_families": {
+    "GT_noised_Q": 96,
+    "U_paired_trace": 48,
+    "F_paired_trace": 48
+  },
+  "MDM_calls": 1152,
+  "MDM_examples": 5184,
+  "encoder_calls": 432,
+  "caption_calls": 24,
+  "original_runtime_dependencies_verified": true,
+  "source_files": 2533,
+  "current_model_imports": 0,
+  "current_checkpoint_deserializations": 0,
+  "current_model_forwards": 0,
+  "current_GPU_queries": 0,
+  "current_new_training": 0,
+  "current_new_samples": 0,
+  "caption_examples": 72,
+  "auxiliary_f00_predictions": 576,
+  "amendment_model_forwards": 0,
+  "amendment_GPU_queries": 0
+}

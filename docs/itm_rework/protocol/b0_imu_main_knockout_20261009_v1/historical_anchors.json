@@ -1,0 +1,44 @@
+[
+  {
+    "trajectory_id": "MK001",
+    "timestep": 899,
+    "condition": "switch_imu_on",
+    "raw": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/suffix_history_factorial_authorized_20261008_v1/suffix/steps/HX002-899.npz",
+      "sha256": "97d0388199d76dd0445275a71b9f2d155720e68fe4fea8705ec304f122a0a9ce"
+    },
+    "metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/suffix_history_factorial_authorized_20261008_v1/suffix/steps/HX002-899.json",
+      "sha256": "60f10e27acc491789ca7be06fcb50a02a82b381c144f2947f843d87410212fec"
+    },
+    "arrays": [
+      "x_t",
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "reference_trajectory_id": "HX002"
+  },
+  {
+    "trajectory_id": "MK002",
+    "timestep": 899,
+    "condition": "switch_imu_on",
+    "raw": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/suffix_history_factorial_authorized_20261008_v1/suffix/steps/HX004-899.npz",
+      "sha256": "3969c5d55379f8c732105f89654b9e7af61919c51772133f22549b1257f81d4b"
+    },
+    "metadata": {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/suffix_history_factorial_authorized_20261008_v1/suffix/steps/HX004-899.json",
+      "sha256": "c0f21b689e68bae8c6ef50f1e4e6a2a08ad1d92832f0ae36b4f19bfd6e32c0e2"
+    },
+    "arrays": [
+      "x_t",
+      "f00",
+      "f10",
+      "f01",
+      "f11"
+    ],
+    "reference_trajectory_id": "HX004"
+  }
+]

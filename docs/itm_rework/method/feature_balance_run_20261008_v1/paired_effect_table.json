@@ -1,0 +1,482 @@
+[
+  {
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "head",
+    "F": {
+      "global_MPJPE_m": 0.49078978881940744,
+      "root_relative_MPJPE_m": 0.1034479033731796,
+      "root_path_RMSE_m": 0.5629417640097714,
+      "head_or_wrists_position_joint_proxy_m": 0.47009804219010753,
+      "velocity_joint_proxy_RMSE_m_s": 0.8401757381453047
+    },
+    "U": {
+      "global_MPJPE_m": 0.46973156047141895,
+      "root_relative_MPJPE_m": 0.08785423949018882,
+      "root_path_RMSE_m": 0.5034420106608457,
+      "head_or_wrists_position_joint_proxy_m": 0.44564811206998683,
+      "velocity_joint_proxy_RMSE_m_s": 0.7076830644039562
+    },
+    "delta": {
+      "global_MPJPE_m": 0.021058228347988484,
+      "root_relative_MPJPE_m": 0.015593663882990785,
+      "root_path_RMSE_m": 0.059499753348925655,
+      "head_or_wrists_position_joint_proxy_m": 0.0244499301201207,
+      "velocity_joint_proxy_RMSE_m_s": 0.13249267374134843
+    },
+    "feature_delta": {
+      "uniform": 0.2043811458867958,
+      "root_ric67": 0.08974663968035734,
+      "remaining196": 0.24356743117164992,
+      "balanced": 0.16665703542600363,
+      "root": 0.0816972094479228,
+      "ric": 0.09025771461575005,
+      "rotation6d": 0.1105555874905064,
+      "local_velocity": 0.5159461958129171,
+      "contact": -0.060809109453238586,
+      "ric_legs": -0.014140481832004892,
+      "ric_trunk_head": 0.04189529519775906,
+      "ric_arms": 0.22488242319974927
+    }
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "head",
+    "F": {
+      "global_MPJPE_m": 0.7921346194452864,
+      "root_relative_MPJPE_m": 0.24500831075722584,
+      "root_path_RMSE_m": 0.8090889356021287,
+      "head_or_wrists_position_joint_proxy_m": 0.8216476367003744,
+      "velocity_joint_proxy_RMSE_m_s": 1.0410558893473782
+    },
+    "U": {
+      "global_MPJPE_m": 0.88503922405021,
+      "root_relative_MPJPE_m": 0.2529388615972413,
+      "root_path_RMSE_m": 0.8843304534381322,
+      "head_or_wrists_position_joint_proxy_m": 0.8925729078149917,
+      "velocity_joint_proxy_RMSE_m_s": 1.0544988477804371
+    },
+    "delta": {
+      "global_MPJPE_m": -0.09290460460492356,
+      "root_relative_MPJPE_m": -0.007930550840015482,
+      "root_path_RMSE_m": -0.07524151783600352,
+      "head_or_wrists_position_joint_proxy_m": -0.07092527111461722,
+      "velocity_joint_proxy_RMSE_m_s": -0.013442958433058871
+    },
+    "feature_delta": {
+      "uniform": -0.007723563936171907,
+      "root_ric67": 0.35002884551827407,
+      "remaining196": -0.13001647941294703,
+      "balanced": 0.11000618305266352,
+      "root": 0.3331977599884097,
+      "ric": 0.35109748586937606,
+      "rotation6d": -0.17925817734038385,
+      "local_velocity": -0.04260630682661448,
+      "contact": -0.02117084237314515,
+      "ric_legs": 0.03838934600266386,
+      "ric_trunk_head": 0.6867748204341915,
+      "ric_arms": 0.4540072916330784
+    }
+  },
+  {
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "head",
+    "F": {
+      "global_MPJPE_m": 1.3610873615268684,
+      "root_relative_MPJPE_m": 0.25005187673792356,
+      "root_path_RMSE_m": 1.6032659807683973,
+      "head_or_wrists_position_joint_proxy_m": 1.2052905715840474,
+      "velocity_joint_proxy_RMSE_m_s": 0.8043189001770583
+    },
+    "U": {
+      "global_MPJPE_m": 1.2147400355313107,
+      "root_relative_MPJPE_m": 0.2409754416397437,
+      "root_path_RMSE_m": 1.416248524525029,
+      "head_or_wrists_position_joint_proxy_m": 1.085794750793822,
+      "velocity_joint_proxy_RMSE_m_s": 0.8316438609182542
+    },
+    "delta": {
+      "global_MPJPE_m": 0.14634732599555766,
+      "root_relative_MPJPE_m": 0.009076435098179875,
+      "root_path_RMSE_m": 0.1870174562433684,
+      "head_or_wrists_position_joint_proxy_m": 0.11949582079022547,
+      "velocity_joint_proxy_RMSE_m_s": -0.027324960741195836
+    },
+    "feature_delta": {
+      "uniform": 0.13880268810514806,
+      "root_ric67": 0.17249578662098353,
+      "remaining196": 0.12728514932677548,
+      "balanced": 0.14989046797387928,
+      "root": 0.05681473933810299,
+      "ric": 0.17984061501989634,
+      "rotation6d": 0.20431043442324937,
+      "local_velocity": -0.006674735060215875,
+      "contact": -0.08867323882678146,
+      "ric_legs": 0.5249265884426322,
+      "ric_trunk_head": -0.0036536196567473755,
+      "ric_arms": -0.05056146172993681
+    }
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "head",
+    "F": {
+      "global_MPJPE_m": 0.17823022216614,
+      "root_relative_MPJPE_m": 0.1628775000487123,
+      "root_path_RMSE_m": 0.06688871888416201,
+      "head_or_wrists_position_joint_proxy_m": 0.2006061302315288,
+      "velocity_joint_proxy_RMSE_m_s": 1.1528423150169012
+    },
+    "U": {
+      "global_MPJPE_m": 0.1783172207442707,
+      "root_relative_MPJPE_m": 0.16095802604247317,
+      "root_path_RMSE_m": 0.06673365743252581,
+      "head_or_wrists_position_joint_proxy_m": 0.19258645760949009,
+      "velocity_joint_proxy_RMSE_m_s": 1.1474815125010551
+    },
+    "delta": {
+      "global_MPJPE_m": -8.699857813068701e-05,
+      "root_relative_MPJPE_m": 0.0019194740062391247,
+      "root_path_RMSE_m": 0.00015506145163619867,
+      "head_or_wrists_position_joint_proxy_m": 0.008019672622038704,
+      "velocity_joint_proxy_RMSE_m_s": 0.00536080251584603
+    },
+    "feature_delta": {
+      "uniform": 0.022003985689883265,
+      "root_ric67": 0.016397454087934582,
+      "remaining196": 0.02392050414565139,
+      "balanced": 0.020158979116792874,
+      "root": -0.0028804924300696727,
+      "ric": 0.017621450692252516,
+      "rotation6d": 0.041384298903408334,
+      "local_velocity": -0.007977999161615124,
+      "contact": 0.00013627384620473748,
+      "ric_legs": -0.02367126629719074,
+      "ric_trunk_head": 0.040665191492998465,
+      "ric_arms": 0.0445118296812298
+    }
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "head",
+    "F": {
+      "global_MPJPE_m": 0.07696001499172235,
+      "root_relative_MPJPE_m": 0.08595853919264514,
+      "root_path_RMSE_m": 0.05138591055995407,
+      "head_or_wrists_position_joint_proxy_m": 0.0793184448157618,
+      "velocity_joint_proxy_RMSE_m_s": 0.3751231233275338
+    },
+    "U": {
+      "global_MPJPE_m": 0.07668391990553661,
+      "root_relative_MPJPE_m": 0.08717349873401262,
+      "root_path_RMSE_m": 0.04831731843278614,
+      "head_or_wrists_position_joint_proxy_m": 0.07875251798924097,
+      "velocity_joint_proxy_RMSE_m_s": 0.3863721089854229
+    },
+    "delta": {
+      "global_MPJPE_m": 0.0002760950861857431,
+      "root_relative_MPJPE_m": -0.0012149595413674802,
+      "root_path_RMSE_m": 0.003068592127167931,
+      "head_or_wrists_position_joint_proxy_m": 0.0005659268265208184,
+      "velocity_joint_proxy_RMSE_m_s": -0.011248985657889121
+    },
+    "feature_delta": {
+      "uniform": -0.02052244373876211,
+      "root_ric67": -0.002854094126168494,
+      "remaining196": -0.026562134677761085,
+      "balanced": -0.01470811440196479,
+      "root": 0.003537920072274034,
+      "ric": -0.0032599362974983226,
+      "rotation6d": -0.03219795814761528,
+      "local_velocity": -0.017410772655970352,
+      "contact": -3.116873689884439e-05,
+      "ric_legs": -0.0042670699605106555,
+      "ric_trunk_head": 0.001254842676112436,
+      "ric_arms": -0.005074539492992303
+    }
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "head",
+    "F": {
+      "global_MPJPE_m": 1.1730427367598764,
+      "root_relative_MPJPE_m": 0.1561202031660707,
+      "root_path_RMSE_m": 1.2104545046191881,
+      "head_or_wrists_position_joint_proxy_m": 1.1763280530290035,
+      "velocity_joint_proxy_RMSE_m_s": 1.157667186496278
+    },
+    "U": {
+      "global_MPJPE_m": 1.081911754136256,
+      "root_relative_MPJPE_m": 0.1489241279848566,
+      "root_path_RMSE_m": 1.1196488922147763,
+      "head_or_wrists_position_joint_proxy_m": 1.076959998163943,
+      "velocity_joint_proxy_RMSE_m_s": 1.1182521838933819
+    },
+    "delta": {
+      "global_MPJPE_m": 0.0911309826236204,
+      "root_relative_MPJPE_m": 0.0071960751812140955,
+      "root_path_RMSE_m": 0.09080561240441187,
+      "head_or_wrists_position_joint_proxy_m": 0.0993680548650604,
+      "velocity_joint_proxy_RMSE_m_s": 0.0394150026028961
+    },
+    "feature_delta": {
+      "uniform": 0.24009409967358764,
+      "root_ric67": -0.15224574430927307,
+      "remaining196": 0.37421027083099423,
+      "balanced": 0.11098226326086014,
+      "root": 0.014289786826368278,
+      "ric": -0.16281942882582268,
+      "rotation6d": 0.5227553334137343,
+      "local_velocity": 0.09714122082422749,
+      "contact": 0.2666801245863346,
+      "ric_legs": -0.1889702844529344,
+      "ric_trunk_head": -0.14487507120472953,
+      "ric_arms": -0.14788379671189222
+    }
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000027",
+    "sensor_config": "wrists",
+    "F": {
+      "global_MPJPE_m": 0.38306195421443084,
+      "root_relative_MPJPE_m": 0.08513633689617234,
+      "root_path_RMSE_m": 0.426135106445832,
+      "head_or_wrists_position_joint_proxy_m": 0.3874518088337782,
+      "velocity_joint_proxy_RMSE_m_s": 0.8329510161680886
+    },
+    "U": {
+      "global_MPJPE_m": 0.2202733056640088,
+      "root_relative_MPJPE_m": 0.07594112711373283,
+      "root_path_RMSE_m": 0.26223232178407996,
+      "head_or_wrists_position_joint_proxy_m": 0.23313362548301272,
+      "velocity_joint_proxy_RMSE_m_s": 0.7038351551791194
+    },
+    "delta": {
+      "global_MPJPE_m": 0.16278864855042205,
+      "root_relative_MPJPE_m": 0.009195209782439512,
+      "root_path_RMSE_m": 0.16390278466175207,
+      "head_or_wrists_position_joint_proxy_m": 0.1543181833507655,
+      "velocity_joint_proxy_RMSE_m_s": 0.1291158609889692
+    },
+    "feature_delta": {
+      "uniform": 0.1573818205984781,
+      "root_ric67": 0.07892266713432128,
+      "remaining196": 0.18420204142551128,
+      "balanced": 0.1315623542799163,
+      "root": 0.21432055565718722,
+      "ric": 0.0703259757995362,
+      "rotation6d": 0.05828826292560889,
+      "local_velocity": 0.41007050190872196,
+      "contact": 0.4236564661994584,
+      "ric_legs": 0.08166981127304046,
+      "ric_trunk_head": 0.025635503791226352,
+      "ric_arms": 0.08691368533122557
+    }
+  },
+  {
+    "data_split": "train",
+    "motion_id": "000506",
+    "sensor_config": "wrists",
+    "F": {
+      "global_MPJPE_m": 0.6398318390389564,
+      "root_relative_MPJPE_m": 0.17408654429637838,
+      "root_path_RMSE_m": 0.6513794739675516,
+      "head_or_wrists_position_joint_proxy_m": 0.5695468243864977,
+      "velocity_joint_proxy_RMSE_m_s": 0.6384160566680352
+    },
+    "U": {
+      "global_MPJPE_m": 0.6803600398351513,
+      "root_relative_MPJPE_m": 0.22008395130906605,
+      "root_path_RMSE_m": 0.7045977329452556,
+      "head_or_wrists_position_joint_proxy_m": 0.5981263560638177,
+      "velocity_joint_proxy_RMSE_m_s": 0.718675340905867
+    },
+    "delta": {
+      "global_MPJPE_m": -0.0405282007961949,
+      "root_relative_MPJPE_m": -0.045997407012687674,
+      "root_path_RMSE_m": -0.05321825897770405,
+      "head_or_wrists_position_joint_proxy_m": -0.02857953167731997,
+      "velocity_joint_proxy_RMSE_m_s": -0.0802592842378318
+    },
+    "feature_delta": {
+      "uniform": -0.8965171272899335,
+      "root_ric67": -2.2080690811570483,
+      "remaining196": -0.4481804899986238,
+      "balanced": -1.3281247855778358,
+      "root": -1.5069740355436148,
+      "ric": -2.2525830523071075,
+      "rotation6d": -0.5934912843869091,
+      "local_velocity": -0.20640301258349059,
+      "contact": 0.13978115588265072,
+      "ric_legs": -0.8671886312352552,
+      "ric_trunk_head": -3.3567196834014217,
+      "ric_arms": -2.9478920789450145
+    }
+  },
+  {
+    "data_split": "train",
+    "motion_id": "004728",
+    "sensor_config": "wrists",
+    "F": {
+      "global_MPJPE_m": 0.10820935408580756,
+      "root_relative_MPJPE_m": 0.07307612992861597,
+      "root_path_RMSE_m": 0.08561953799944177,
+      "head_or_wrists_position_joint_proxy_m": 0.1559172067713345,
+      "velocity_joint_proxy_RMSE_m_s": 0.23539406308166752
+    },
+    "U": {
+      "global_MPJPE_m": 0.15699910768956388,
+      "root_relative_MPJPE_m": 0.07607423285954278,
+      "root_path_RMSE_m": 0.1421766691404061,
+      "head_or_wrists_position_joint_proxy_m": 0.1733155325622127,
+      "velocity_joint_proxy_RMSE_m_s": 0.2641251282031708
+    },
+    "delta": {
+      "global_MPJPE_m": -0.048789753603756314,
+      "root_relative_MPJPE_m": -0.0029981029309268103,
+      "root_path_RMSE_m": -0.056557131140964334,
+      "head_or_wrists_position_joint_proxy_m": -0.01739832579087819,
+      "velocity_joint_proxy_RMSE_m_s": -0.02873106512150328
+    },
+    "feature_delta": {
+      "uniform": -0.0035274123232697796,
+      "root_ric67": -0.034400791938737574,
+      "remaining196": 0.007026242953446227,
+      "balanced": -0.013687274492645674,
+      "root": -0.005048561291966489,
+      "ric": -0.03626442563059612,
+      "rotation6d": 0.022960313475649405,
+      "local_velocity": -0.021860387105183426,
+      "contact": -0.01826758252856575,
+      "ric_legs": -0.1103346996300229,
+      "ric_trunk_head": -0.02814212414031432,
+      "ric_arms": 0.03272940993740467
+    }
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000433",
+    "sensor_config": "wrists",
+    "F": {
+      "global_MPJPE_m": 0.3963948812298482,
+      "root_relative_MPJPE_m": 0.1867051387551497,
+      "root_path_RMSE_m": 0.3208290929256098,
+      "head_or_wrists_position_joint_proxy_m": 0.5962794263090863,
+      "velocity_joint_proxy_RMSE_m_s": 0.7708404350945252
+    },
+    "U": {
+      "global_MPJPE_m": 0.4129382610445364,
+      "root_relative_MPJPE_m": 0.18974415438455763,
+      "root_path_RMSE_m": 0.3456503417415274,
+      "head_or_wrists_position_joint_proxy_m": 0.5954426043680142,
+      "velocity_joint_proxy_RMSE_m_s": 0.7695723099451262
+    },
+    "delta": {
+      "global_MPJPE_m": -0.01654337981468823,
+      "root_relative_MPJPE_m": -0.0030390156294079207,
+      "root_path_RMSE_m": -0.02482124881591763,
+      "head_or_wrists_position_joint_proxy_m": 0.0008368219410720412,
+      "velocity_joint_proxy_RMSE_m_s": 0.001268125149399002
+    },
+    "feature_delta": {
+      "uniform": -0.020671433753946422,
+      "root_ric67": -0.013631447716613065,
+      "remaining196": -0.023077959593238884,
+      "balanced": -0.018354703654925864,
+      "root": -0.03833576477963946,
+      "ric": -0.012062919649119319,
+      "rotation6d": -0.040819055883565936,
+      "local_velocity": 0.005495129549086153,
+      "contact": 0.06431060270368305,
+      "ric_legs": 0.03715931875659284,
+      "ric_trunk_head": -0.08639706045507312,
+      "ric_arms": -0.014826320051109843
+    }
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000382",
+    "sensor_config": "wrists",
+    "F": {
+      "global_MPJPE_m": 0.33515902542465925,
+      "root_relative_MPJPE_m": 0.2736715289893584,
+      "root_path_RMSE_m": 0.11231218483318556,
+      "head_or_wrists_position_joint_proxy_m": 0.3278106386497669,
+      "velocity_joint_proxy_RMSE_m_s": 0.25469166304239754
+    },
+    "U": {
+      "global_MPJPE_m": 0.3138158220251562,
+      "root_relative_MPJPE_m": 0.2689342362585637,
+      "root_path_RMSE_m": 0.11021827147602409,
+      "head_or_wrists_position_joint_proxy_m": 0.3063707682830588,
+      "velocity_joint_proxy_RMSE_m_s": 0.23035406089495428
+    },
+    "delta": {
+      "global_MPJPE_m": 0.021343203399503075,
+      "root_relative_MPJPE_m": 0.004737292730794707,
+      "root_path_RMSE_m": 0.00209391335716147,
+      "head_or_wrists_position_joint_proxy_m": 0.02143987036670808,
+      "velocity_joint_proxy_RMSE_m_s": 0.024337602147443266
+    },
+    "feature_delta": {
+      "uniform": -0.026429105110113316,
+      "root_ric67": 0.02618503504408709,
+      "remaining196": -0.0444145509791507,
+      "balanced": -0.009114757967531695,
+      "root": -0.028434743727446834,
+      "ric": 0.029652957505772015,
+      "rotation6d": -0.08073990573808021,
+      "local_velocity": 0.022335905002620948,
+      "contact": -0.0015483997720912648,
+      "ric_legs": -0.16310650041793906,
+      "ric_trunk_head": 0.12847297670433527,
+      "ric_arms": 0.16064990343037922
+    }
+  },
+  {
+    "data_split": "val",
+    "motion_id": "000139",
+    "sensor_config": "wrists",
+    "F": {
+      "global_MPJPE_m": 1.8203214212974317,
+      "root_relative_MPJPE_m": 0.1499645481930622,
+      "root_path_RMSE_m": 1.9838332170318862,
+      "head_or_wrists_position_joint_proxy_m": 1.8469732313540927,
+      "velocity_joint_proxy_RMSE_m_s": 1.3054037629606277
+    },
+    "U": {
+      "global_MPJPE_m": 1.7303583328779604,
+      "root_relative_MPJPE_m": 0.15240851940473182,
+      "root_path_RMSE_m": 1.859768126472365,
+      "head_or_wrists_position_joint_proxy_m": 1.7607468712220784,
+      "velocity_joint_proxy_RMSE_m_s": 1.2126833126622019
+    },
+    "delta": {
+      "global_MPJPE_m": 0.08996308841947132,
+      "root_relative_MPJPE_m": -0.0024439712116696155,
+      "root_path_RMSE_m": 0.12406509055952131,
+      "head_or_wrists_position_joint_proxy_m": 0.08622636013201435,
+      "velocity_joint_proxy_RMSE_m_s": 0.0927204502984258
+    },
+    "feature_delta": {
+      "uniform": 0.17762569574888776,
+      "root_ric67": 0.03793509931110428,
+      "remaining196": 0.22537707310262034,
+      "balanced": 0.13165608620686253,
+      "root": 0.3171335801851143,
+      "ric": 0.020208211636564943,
+      "rotation6d": 0.10796945037196792,
+      "local_velocity": 0.4541865852576059,
+      "contact": 0.14836023856091085,
+      "ric_legs": 0.0164049176370904,
+      "ric_trunk_head": 0.019976473242409476,
+      "ric_arms": 0.024156342132386488
+    }
+  }
+]

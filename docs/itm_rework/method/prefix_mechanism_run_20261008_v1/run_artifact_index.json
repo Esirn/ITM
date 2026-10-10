@@ -1,0 +1,18 @@
+[
+  {
+    "path": "outputs/itm_rework/method/prefix_mechanism_authorized_20261008_v1/runtime/preflight/gpu_01.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "outputs/itm_rework/method/prefix_mechanism_authorized_20261008_v1/runtime/preflight/gpu_01.stdout",
+    "sha256": "9dda56816c63dc50c39735456a6bcf5a1c54ec0d3a508f573bcb19466c32d9f0"
+  },
+  {
+    "path": "outputs/itm_rework/method/prefix_mechanism_authorized_20261008_v1/runtime/preflight/result.json",
+    "sha256": "3ec363de7a1975668d07f1df6383e6949c95d08fc2c90e55d651ae8689008a1d"
+  },
+  {
+    "path": "outputs/itm_rework/method/prefix_mechanism_authorized_20261008_v1/runtime/status.json",
+    "sha256": "cf9afa615e8f3579408c7aa8afb8e53421f945553208b3b3df61b5aa7f93a39d"
+  }
+]

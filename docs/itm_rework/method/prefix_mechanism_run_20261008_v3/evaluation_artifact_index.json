@@ -1,0 +1,46 @@
+[
+  {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/prefix_mechanism_evaluation_20261008_v4/branch_aggregates.json",
+    "sha256": "6a344b90647375a2cef05a8ed79c2e8f8c62313d0f3a55819be3023213d0fe1f"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/prefix_mechanism_evaluation_20261008_v4/path_contrasts.json",
+    "sha256": "3b901bbe61a4f28713fcc0706590b267979972856826ed6cb4272b2d90af56db"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/prefix_mechanism_evaluation_20261008_v4/prefix_traces.json",
+    "sha256": "f8660b304381432ef8ed47416449f12f59753b7535b6675f55a1d8b116133aef"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/prefix_mechanism_evaluation_20261008_v4/probes.json",
+    "sha256": "150ddb02f1740ece37f00f933382add8e87db882a3d6a91f709078327038fb8a"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/prefix_mechanism_evaluation_20261008_v4/same_state_branches.json",
+    "sha256": "ce28fe806f39fa4019ed959553dfdf658fb4d087238d650968ffed7a4c1f2dcc"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/prefix_mechanism_evaluation_20261008_v4/sources.json",
+    "sha256": "d615007147e6cbb0c239e4f4fbde913c19666c849bbba60fe553694ae999d3e0"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/prefix_mechanism_evaluation_20261008_v4/summary.json",
+    "sha256": "9eb4c6bbb81dca86f9667c545729646d9524848be6c14026985328a31c72c32a"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/prefix_mechanism_evaluation_20261008_v4/terminals.json",
+    "sha256": "dc4b86ba295785aa7712d4f5a58171a8861904d2e09f5ed0d85154e50e9ddbad"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/prefix_mechanism_evaluation_20261008_v4/trace_aggregates.json",
+    "sha256": "522b1987467ead3a93f26e8af7ecaf05ef340b6ca7ebf743378bb3f477ef08f0"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/prefix_mechanism_evaluation_20261008_v4/weight_aggregates.json",
+    "sha256": "433bf49b69696a97bc83c0f0934e68e8cbcad4c4e651279c8b4227eb916f6852"
+  },
+  {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/prefix_mechanism_evaluation_20261008_v4/weight_contrasts.json",
+    "sha256": "bee3638d76afb81aea7569e558f5e34c31ab454f2d093ee3a56251e4f1244f61"
+  }
+]
