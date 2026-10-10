@@ -1,8 +1,26 @@
+最新完整交付（2026-10-10）：头部主线本轮已关闭：U_head_relative_pv_v1一次100epoch训练/11条head完整采样，及原U100全部32val的四方法比较（另48新DDPM、复用80输出）完成；59新解码/1298指标核验、1600receipt/25600曝光/11528辅助启用检查通过。候选头部位置−5.21%但速度+1.78%、global+31.87%，不替换原U100，不扫系数。原U100在全部32head val对MDM局部位置−19.02%/速度−10.93%、全身相对姿态−12.65%，但jerk仍高、对简单基线存在代价，未认证整体优越。见[32val完整报告](protocol/HEAD_VALIDATION32_EVALUATION_20261010.md)、[候选报告](protocol/HEAD_PRIMARY_CANDIDATE_EVALUATION_20261010.md)、[当前状态](CURRENT_STATE.md)。下一完整交付改为官方IMUPoser head适配/CPU公平FK核验/一次有界训练与32val比较；标准语义评测资产准备和核心消融后续推进。双腕扩展不阻挡主线，论文/前端未改、无活动队列。一次沙箱预检无模型调用失败保留，沙箱外同UUID已验证可用；GPU长期自主/首选cuda:1有效。下文候选待整合或活动队列文字由本段覆盖。
+
+最新用户方向（2026-10-10）：头部IMU作为论文与实验主线，任务为文本＋单个头部IMU→全身动作；双腕作为扩展配置，保留全部已知结果，不作为头部进度的前置条件。见[头部主线交付范围](HEAD_PRIMARY_DELIVERY_PLAN_20261010.md)与[新候选设计](protocol/head_primary_supervision_20261010_v1/plan.json)。下一任务是整合U_head_relative_pv_v1新worker：沿用U100全部25600曝光/共同初始化，只在head且IMU存在的11528曝光增加局部位置/速度辅助损失；一次完整训练后新增11条head采样，复用head旧U/MDM/简单基线。128train头部尺度/128真实长度梯度检查已验收，无需重复软件测试；worker尚未整合、GPU未启动，正式test/语义指标/官方IMUPoser与核心消融仍待做。论文LaTeX未改，前端按用户要求暂不处理，长期GPU自主/首选cuda:1有效。下文双配置候选和22条新采样待办由本段覆盖。
+
+最新进展（2026-10-10）：根据用户“用哪个部位的IMU，就关注哪个部位的轨迹”，已完成传感器部位相对骨盆的位置/速度补充CPU评价：354个已有完整输出/594行/5664项检查，无新增GPU/模型调用。统一textCFG2.5的同8val，U相对MDM的head局部位置−10.40%/速度−9.50%，wrists−41.79%/−36.90%；wrists速度仍比简单文本＋IMU差9.88%，局部jerk仍高，不认证整体优越。已实现局部位置＋速度辅助损失，13项CPU tests（指标8/损失5）及128train/256配置真实长度梯度检查通过；候选尚未整合worker/训练/采样。唯一下一任务改为整合新worker、冻结有界计划并做一次U_sensor_relative_pv_v1完整训练/采样比较，暂缓根轨迹优先候选；原全局/根指标和负例保留。见[补充报告](protocol/SENSOR_RELATIVE_EVALUATION_20261010.md)与[当前状态](CURRENT_STATE.md)。前端用户反馈无法访问，按用户要求暂不处理，不承诺历史服务仍在线；论文未改、无活动实验队列，GPU长期自主/首选cuda:1有效。下文旧待办由本段覆盖。
+
+最新完整交付：128train/32val的扩展开发实验已经关闭：U与两个简单基线20/100epoch、98条真实完整DDPM、统一text CFG2.5对照、CPU核验、22组148前端面板与归档全部完成，当前无活动实验队列。head全局误差相对MDM改善约22%，wrists相对姿态约27%，但wrists全局/根轨迹和jerk明显退化，未认证整体优越/动作修复或论文主结果。见[当前状态](CURRENT_STATE.md)与[最终报告](protocol/B0_EXPANDED_CANONICAL_MATCHED_EVALUATION_20261009.md)。唯一下一任务是准备一个解码后根轨迹/速度监督候选并做完整训练/采样比较；旧均值探针不执行，不盲加epoch或大规模扫系数，论文未改。GPU长期自主/首选cuda:1有效。下文旧待办与“当前活动队列”由本段覆盖。
+
+最新用户方向与交付（2026-10-09）：用户要求先整体实现文本＋IMU任务、基线对比与消融，再抠细节；当前进行整体复盘，原控制均值探针保留为可选辅助设计，不再是所有后续工作的唯一前置任务。见[投稿推进方案](PAPER_DELIVERY_PLAN_20261009.md)与[当前状态](CURRENT_STATE.md)。已有六动作×head/wrists共12组/68面板已接入原uvicorn前端，缓存outputs/demo_runs/itm-rework-20261009-v1-*，入口/static/rework-review.html。12组真实HTTP及68面板全坐标核对通过、8原demo tests通过、Node逐帧绘制smoke通过；模型/GPU查询/采样新增0，论文未改。uvicorn127.0.0.1:8001已启动；0.0.0.0因网络暴露被自动审批拒绝后采用本机绑定。下文旧“唯一下一任务”由本段最新方向覆盖，旧科学结果与不可变实验文件保持。
+
+最新进展（2026-10-09）：跨来源组件/误差CPU检查完整完成，计算implementation v1 `70ccba55…`/17911来源；480行/240F-U配对/七条件/120旧完整参考全部valid，9新增CPU tests通过。首个verifier的Python3.10索引语法在核验前失败，v1代码/失败/结果保持；兼容verification-only v2 `86bdfd46…`/17922来源复用原结果，602400标量含1008 null核验及8128汇总字段全部通过，原64eps尺度界不变，无重复旧数学或GPU/模型/噪声/解码。F paired训练来源24/24主项MSE改善，验证来源17/24变差、20/24平均姿态误差增加，能量不是统一下降，不能据单片收缩全局删主项。原F/knockout not_supported及论文不变。**唯一下一任务：实现/CPU验收[已冻结控制时间均值同状态探针](protocol/b0_control_mean_probe_20261009_v1/plan.json) `b3fe884e…`/17967来源/12case/48state/240checks，3冻结tests通过，然后自主一次新600秒GPU队列并完整CPU评价。** 固定F200与原F paired t900/500/250/50，C=原static-delta latent control，唯一改C−有效帧时间均值，保留变化分量/真实IMU/text/(1,1,1)；MDM48calls/192examples、E24/caption12，无noise/采样/解码/训练，尚未实现或执行。当前无活动队列，优先物理cuda:1 UUID `GPU-43c2f925-db05-c655-bb46-25196d0627d6`，长期自主/高利用率GPU授权继续有效，无需再手动批准。[当前状态](CURRENT_STATE.md)、[完整CPU报告](protocol/B0_CROSS_SOURCE_COMPONENT_EVALUATION_20261009.md)、[归档](method/cross_source_component_run_20261009_v1/artifact_index.json)覆盖下文旧待办/固定cuda:0文字。
+
 # ITM 实验主会话迁移入口
 
 整理日期：2026-10-07（Asia/Shanghai）。本文件为接管快照，不是运行授权。
 准备时仓库 HEAD：`971d101bbacbbc914a276b474f6d878a93962826`，分支 `method/itm-rework`。
 本迁移提交本身会使 HEAD 前移；接管时检查增量，不要求回到上述提交。
+
+最新权限（2026-10-08）：用户明确要求“以后使用GPU不用我手动授权，你自行决定”，详见 [GPU 委托记录](GPU_EXECUTION_POLICY_20261008.json)。这一新指令覆盖本文件及旧任务书中的逐次手动授权要求；主会话自行维护具体 GPU/目录/预算记录，不再反复询问批准。科学冻结、每次队列预算与首故障停止、失败保留及不干预其他进程的边界不变。
+
+最新结果：2026-10-08 F队列已完整完成，200/600/60/240/48全部completed，耗时2493.12秒。F/U评价已完成，主000506 head/wrists均不支持局部行为修复：数值门槛通过，行为仍不完整，其他10个paired配置中9个有数值回归。当前无活动队列。见[简短当前状态](CURRENT_STATE.md)与[完整评价/下一研究决策](protocol/B0_FEATURE_BALANCE_EVALUATION_20261008.md)。旧CPU准备和失败保留原位；以下为原迁移快照，不覆盖新权限和已完成结果。
+
+最新进展补充（2026-10-08）：诊断v2已冻结；有界worker/supervisor、评价入口、implementation `82df1581…`完成，26增量CPU检查/2556依赖通过。首次GPU执行因compute-process预检停止，1.91964秒、worker未启动、模型调用0，全部计划分母与失败评价保留。下一任务是在GPU满足既有预检时自主创建新执行记录/目录并沿用验收实现运行，不需再次手动授权或重做无变化的软件验收。见[CURRENT_STATE.md](CURRENT_STATE.md)及[诊断入口/预检停止](method/B0_TRAINING_SUFFICIENCY_RUN_20261008.md)。下文历史任务不要求重做F、冻结设计或实现入口。
 
 ## 1. 当前目标和工作方式
 
