@@ -82,12 +82,13 @@ async function loadRunList() {
   setStatus(`${runs.length} cached ${source === 'experiments' ? 'experiment results' : 'runs'} available`);
 }
 
-function setSidebarMode(mode) {
+function setSidebarMode(mode, refresh = true) {
   const loading = mode === 'load';
   el('generate-pane').hidden = loading; el('load-pane').hidden = !loading;
   el('generate-tab').classList.toggle('active', !loading); el('load-tab').classList.toggle('active', loading);
   el('generate-tab').setAttribute('aria-selected', String(!loading)); el('load-tab').setAttribute('aria-selected', String(loading));
-  if (loading) loadRunList().catch(error => setStatus(error.message, true));
+  if (loading && refresh) loadRunList().catch(error => setStatus(error.message, true));
+  if (!loading && !state.samples.length) loadSamples().catch(error => setStatus(error.message, true));
 }
 
 function updateDetails() {
@@ -325,4 +326,21 @@ window.addEventListener('itm-colors-changed', () => {
 });
 function setStatus(message,error=false){el('status').textContent=message;el('status').style.borderColor=error?'var(--color-error)':'var(--color-accent)';}
 function escapeHtml(value){return String(value).replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));}
-loadSamples().catch(error=>setStatus(error.message,true)); requestAnimationFrame(tick);
+async function initialize() {
+  const runId = new URLSearchParams(window.location.search).get('run');
+  if (!runId) {
+    await loadSamples();
+    return;
+  }
+  if (!/^[A-Za-z0-9_-]+$/.test(runId)) throw new Error('Invalid cached run ID');
+  el('load-source').value = 'runs';
+  setSidebarMode('load', false);
+  await loadRunList();
+  const response = await fetch(`/api/runs/${encodeURIComponent(runId)}`);
+  const result = await response.json();
+  if (!response.ok) throw new Error(result.detail || 'Result not found');
+  el('load-run-id').value = runId;
+  setResult(result);
+  setStatus(`Run ${runId} loaded · click ▶ to play`);
+}
+initialize().catch(error=>setStatus(error.message,true)); requestAnimationFrame(tick);
