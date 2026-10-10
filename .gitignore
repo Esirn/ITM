@@ -7,3 +7,28 @@ work_dirs/
 outputs/
 checkpoints/
 /data/
+
+# Local experiment execution payloads (indexes and summaries remain versioned).
+/docs/itm_rework/method/**/runtime/
+/docs/itm_rework/method/**/*.log
+/docs/itm_rework/method/**/*.stdout
+/docs/itm_rework/method/**/*.stderr
+
+# Byte-identical archive copies; restore using the version-control inventory.
+/docs/itm_rework/method/**/snapshot/**
+!/docs/itm_rework/method/**/snapshot/**/
+/docs/itm_rework/method/**/code/*
+/docs/itm_rework/method/**/code_before_native_fix/*
+/docs/itm_rework/method/**/frozen_docs/*
+/docs/itm_rework/method/*_delivery_*/docs/**
+!/docs/itm_rework/method/*_delivery_*/docs/**/
+/docs/itm_rework/method/*_delivery_*/scripts/
+/docs/itm_rework/method/*_delivery_*/src/
+/docs/itm_rework/method/*_delivery_*/tests/
+
+# Unique historical versions: retain failure evidence unavailable elsewhere.
+!/docs/itm_rework/method/suffix_response_run_20261008_v1/snapshot/docs/itm_rework/protocol/B0_SUFFIX_RESPONSE_EVALUATION_20261008.md
+!/docs/itm_rework/method/training_sufficiency_run_20261008_v1/code/mdm_training_sufficiency.py
+!/docs/itm_rework/method/training_sufficiency_run_20261008_v1/code/run_mdm_training_sufficiency_bounded.py
+!/docs/itm_rework/method/training_sufficiency_run_20261008_v1/code/test_mdm_training_sufficiency.py
+!/docs/itm_rework/method/training_sufficiency_run_20261008_v2/code_before_native_fix/mdm_training_sufficiency.py
