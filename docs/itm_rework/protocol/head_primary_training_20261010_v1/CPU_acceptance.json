@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "tests_passed": 5,
+  "exact_reference_schedule": true,
+  "frozen_initial_optimizer_and_control_config": true,
+  "planned": {
+    "train_groups": 128,
+    "val_groups": 32,
+    "updates": 1600,
+    "exposures": 25600,
+    "mdm_calls": 25600,
+    "encoder_calls": 51200,
+    "caption_calls": 160,
+    "baseline_updates": 0,
+    "baseline_train_examples": 0,
+    "baseline_validation_calls": 0,
+    "auxiliary_exposures": 11528
+  },
+  "GPU_queries": 0,
+  "model_calls": 0,
+  "plan": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/head_primary_training_20261010_v1/plan.json",
+    "sha256": "ab7061a982bf4442f33e74521a2e066b82353602526cf80f719c333e0f62a078"
+  }
+}

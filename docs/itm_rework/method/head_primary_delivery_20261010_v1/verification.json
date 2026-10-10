@@ -1,0 +1,25 @@
+{
+  "status": "delivery_and_source_checks_passed",
+  "copies": 50,
+  "byte_identical_copies": true,
+  "bound_entries_verified": 1081,
+  "historical_originals_and_copies_unchanged": 48,
+  "new_CPU_tests_passed": 7,
+  "complete_new_samples": 59,
+  "independent_new_decodes": 59,
+  "new_scalar_checks": 1298,
+  "successful_queues": 3,
+  "successful_elapsed_seconds": 803.5226600840688,
+  "sandbox_preflight_failure_preserved": true,
+  "failure_model_calls": 0,
+  "preferred_physical_GPU": "cuda:1",
+  "head_candidate_selected": false,
+  "working_checkpoint": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/expanded_U.pt",
+    "sha256": "be0d7fe7fb92e792ba36bdfe016e4a31f390583b987c5d4148cf5547a3518e11"
+  },
+  "formal_test": false,
+  "strict_sensor_closure": false,
+  "paper_latex_changed": false,
+  "active_experiment_queue": false
+}

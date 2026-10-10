@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "tests_passed": 2,
+  "case_count": 11,
+  "original_noise_groups_and_guidance_unchanged": true,
+  "plan": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/head_primary_sampling_20261010_v1/plan.json",
+    "sha256": "67de80f93416447f856b2292e344e77a0c488b7db799d73258ee5d84ff96619e"
+  }
+}

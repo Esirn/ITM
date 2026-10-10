@@ -1,0 +1,625 @@
+{
+  "schema": "head-primary-pv-supervision-design-v1",
+  "date": "2026-10-10",
+  "candidate": "U_head_relative_pv_v1",
+  "status": "head_priority_design_with_reused_CPU_assets_worker_not_integrated",
+  "rationale": "User prioritizes head-conditioned full-body generation; retain wrists as an extension without blocking primary progress.",
+  "objective": "Existing uniform normalized263 x0 MSE + 0.1 normalized observed pelvis-relative position MSE + 0.1 normalized observed pelvis-relative velocity MSE.",
+  "position_weight": 0.1,
+  "velocity_weight": 0.1,
+  "fps": 20,
+  "active": "Only head exposures with IMU presence true; wrists and IMU-absent exposures retain original263 x0 objective only.",
+  "target_policy": "GT only enters detached training loss; no GT positions/root/trajectories added to model input.",
+  "normalization": "Equal-clip statistics over128 unique train sources only, position coordinate variance about global train mean per sensor joint; mean square relative velocity, squared floor1e-6.",
+  "reference_training": "Keep full U10025600 exposures with original12800head/12800wrists schedule, seed, optimizer, initialization. Only add auxiliary supervision for head.",
+  "future_sampling": "11 new head paired complete DDPM: same8val+3train and original noise groups, textCFG2.5/IMU1/joint1; reuse8 MDM head plus existing64 head simple baseline outputs (32val each); matched8val table remains separate.",
+  "evaluation": [
+    "Head relative position/velocity primary control proxies; retain full-body, text semantics, amplitude/jerk and root/global auxiliary metrics.",
+    "Compare old U and simple baselines, not solely MDM; existing head position and jerk costs remain visible.",
+    "Wrists are a documented secondary extension, not a prerequisite for primary publication progress.",
+    "No strict sensor closure/behavior success/formal test/multi-seed claims from existing development results."
+  ],
+  "baseline_policy": "Existing simple/MDM references reused; official IMUPoser/semantic evaluation/core structure ablations remain outstanding.",
+  "bound_artifacts": [
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/dataset.json",
+      "sha256": "e6dd7c4ebae0810b453041b0e5e59d44bb3989b5188eddedc16c13de072d244a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sensor_relative_supervision_CPU_20261010_v1/scales.json",
+      "sha256": "e08abf536732bf65011f43c2e6d2e51aca291c188744a4b96f88c8e057bed642"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sensor_relative_supervision_CPU_20261010_v1/summary.json",
+      "sha256": "3e45948a5f3466c64e0f35c78912485395063eb44518f77db21af2e0d1106f1f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sensor_relative_supervision_CPU_20261010_v1/checks.json",
+      "sha256": "ebc577b9389d26f14a63ee56ae7c7e2f05943e2577faac72278d870af317b69d"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/sensor_relative_supervision.py",
+      "sha256": "0dbd50839626796220132a9a4641aa09961aa15521f474d7cbccc3491bf72362"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/metrics/sensor_relative.py",
+      "sha256": "d47e19edfb9de0633258abe1385d33bf07250fd89e31fcbaa8300129697d4f00"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/data/humanml_torch.py",
+      "sha256": "41473f5d4c53b3d114497f7ede6f2c544e9c8b17918388f3f89e520e01ede186"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/models/torch_frame_baseline.py",
+      "sha256": "3e3c543ca91c5d71f05951fd32999d1f7e05b3e6689de889bd6d88dcf0b7c0de"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/tests/test_sensor_relative_supervision.py",
+      "sha256": "b38dd54f9a680d1ff0c0e758cd4bcc55e16a079d15bd821ea15fd37f01bf78c5"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/expanded_canonical_training_20261009_v2/plan.json",
+      "sha256": "d1e01ad3d64542a7f3618033aba55d5ca02c2310762c1f29ce32b5c9ff683d85"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/expanded_canonical_sampling_matched_g2_5_20261009_v1/plan.json",
+      "sha256": "b7ccafa53ba25388bf75198c7f49fcbca60f7afc4fa6ee2799d20b9d9f9b4231"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/000027.npz",
+      "sha256": "c719e838fed9900144081e20f3acf91f9eb3cdc7a667a7f88cc411731589a755"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/000506.npz",
+      "sha256": "7f4ef44b84a5a015dc26b7d17d5222989fdedf658477b2e28418bace7f6acd6c"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/004728.npz",
+      "sha256": "c176c39351dd8492491dd7f569fc211307198c7327d362bf67fb9ececc714840"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/013162.npz",
+      "sha256": "f9fc2e5fef4ebd7dce834d44240cc7c85a3578c48a14dba8ae9bead2b916a85b"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/006753.npz",
+      "sha256": "2ecdd719df1e7e8482c36660af6868a46b70601d4f141e25209fef0ce591e8a1"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/004880.npz",
+      "sha256": "7925e50b408b2a692920f814bc4023c6a13fa7b49e6939290db7695c2c788f88"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/002807.npz",
+      "sha256": "1c4c0e684c103d0d5d492b3f618524fabb73da5495b8d8193484498c593cacc7"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/003994.npz",
+      "sha256": "72b56b430a8e76d78c18492d3e182cb2e2adc26ff6207e2b2233cbe0ec564597"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/008257.npz",
+      "sha256": "60f34469b57ddaa8807ed3298db83c71ed368912fa033c304ccdfb0bde241f21"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/013774.npz",
+      "sha256": "9fe3ac5c2d582e12c6c41d142275a59778a0af261e32d410475e01ece90bda5b"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/014539.npz",
+      "sha256": "5f04ebd790ec722524ba15997e5fda5c795e671f3116d7bffb62a827d78ee7e2"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/011341.npz",
+      "sha256": "71770613b6468b78acbfc7f0f514e826d9573566ea9b08f77515d63b326e1b46"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/010833.npz",
+      "sha256": "5523068bf0bf6623b0ffdf1db607610abc46ab71f04480d5407db890deb4ed83"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/000391.npz",
+      "sha256": "976fde9706c92c26be396fa94aea7f5e6ffd9312717d0d96237b5584dcf38f35"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/009875.npz",
+      "sha256": "d6c48407af6285f783e7c9afccbb83252f770201c67e0103e6a164d65fcc4d08"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/013515.npz",
+      "sha256": "00636005ec26352d0830c4a132b2fb5a1fe10f800a0b3a6bab7d00267651ac8d"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/010770.npz",
+      "sha256": "2a8f74b94a1b9e37d0a02a9d3df0b1e1552a5acd03f454d67933530020599510"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/013723.npz",
+      "sha256": "e0e614c129b0cd9822ccbb86afe0dfaeb68a3f81c2d7f5a876314c47a6e24b57"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/010807.npz",
+      "sha256": "50c14312f6dd061a6b0e6a932ff12b72c64b3fc87db3d0ee72b3fd59831bfedb"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/008589.npz",
+      "sha256": "b80b5ef01c8930725b87d396d8a2a3c3a037fb5e9f99a5793ef9c7bf56b1de5d"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/014377.npz",
+      "sha256": "da16d14efebf1c7871cda5688568a80004b714ee76d5801d7ee18d0b5247a6d7"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/013401.npz",
+      "sha256": "7a27647c60e5263d9ca933ef1edf7be6cc4238e391d8c41912f1075841499dc9"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/009951.npz",
+      "sha256": "784b3f0fdbc7683678fe0e06b4b39f549e5c3ae3051e0c8ef5442167350f7b38"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/004687.npz",
+      "sha256": "3c998021a5bcec965c5daef12e7dc253391145be34616015e67c61ee04a52ad2"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/010910.npz",
+      "sha256": "909dc32bf5043c0932c58de943b9f8cfaa8d69bcf5b2b88d14e8826d47d08dd2"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/010654.npz",
+      "sha256": "068f0d9b6417f969cc131a7018d0623ef71ee9e532adc733f83c139d833c86f6"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/005488.npz",
+      "sha256": "e06ecaffca31e13a84ea2be8e1ad21af11af41cefbb061ae5437c8994308d893"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/002935.npz",
+      "sha256": "56f682b1923071740245f2276073afff37883ea47409e44cbe90b332d347c962"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/000353.npz",
+      "sha256": "91a7f2a9dfc5c98058fbf1f72d774bc2d9b0599cefd953e415f138a009868792"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/007335.npz",
+      "sha256": "953a1cea9c46b371ef68bbb449326fa4ca565161d9b576c00839ed5e81cf5426"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/004267.npz",
+      "sha256": "52130f917c519f6b2a083b1830b8f22256af2e7ab21d682bbda3128b2184e84b"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/014270.npz",
+      "sha256": "97e802bcb1a8f5d1179291596b5088ee0b33ab5d81323cd5bd5c48d9f22e3306"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/003389.npz",
+      "sha256": "b9761dbb1f8cc4767f4ec87d067a1c0ea57d50ae3177e7978ae2e67ce3f53996"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/002906.npz",
+      "sha256": "c455a50cc6301361171e4db92626b19633acb571d281d3455d752c0dc71d97fe"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/012455.npz",
+      "sha256": "06fa4d8689ed21dea3335423cda14894e4a1965f2e3f6f19111a95167d366518"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/010692.npz",
+      "sha256": "f9c73508a3f5e4216a781f78e540d2f3c6bb5337899c83dd1a344c84e501a8f2"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/001299.npz",
+      "sha256": "0fecc32b7d8974ad82166ec68c55e960e84f54628aa6b0953c69f788167e1451"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/010524.npz",
+      "sha256": "f4b6a5725e681531c19899d4c7c7033f420cb2f3bfd267a1f75089eca4010f03"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/009127.npz",
+      "sha256": "ef1fa99ddb95d2ec10a10e5e54ef59392459a09bff78bdad7d4a982d9d488052"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/013479.npz",
+      "sha256": "0c5cc561d3df525662d858d648b7d2800504f17cb7ff7e319c25f02eb9c3b7b8"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/012138.npz",
+      "sha256": "c0d0356390505ef62ae4577646132444978c3d5a72088cad1ce38f99f4bf8158"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/008716.npz",
+      "sha256": "6f73ec0875ce854a16a47f798b6b4f6c38cadfaff42db86fc5297de49773b147"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/013210.npz",
+      "sha256": "f8b41fb72e6ab9907ce49744899f6ab693da3d65fba23982f4445fc85e5c0bc6"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/010094.npz",
+      "sha256": "ecd1e7b78b7a1f5562799e0cba0f95017f25a1d16590991a9fd6abea1e6a0592"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/007517.npz",
+      "sha256": "1608699d0dd5729e1920f378bd005d3b0a4895c99296d2a10637ae9cef4b5594"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/009046.npz",
+      "sha256": "841dbbd30ab63f72cfc222ec44bda525ca995933e14dd23dd86be84c4bb689ac"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/009582.npz",
+      "sha256": "aa1d6caee386dbfef162b7adecba82388020e955661f2f2173b16dc5045d51d0"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/004894.npz",
+      "sha256": "3bfd3350226c6af42c60a547ad270105d3f51690d729366f8476ade7a6b9f0a1"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/014191.npz",
+      "sha256": "dd7e5e0800d4aaf56365b1a145f7c1734091e97b5440f256bd93e73ac4fead76"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/003847.npz",
+      "sha256": "86ea7cb865e1fbf48da82c30ba145f40ec42cdec36364310a07c7a7c752ddc58"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/000349.npz",
+      "sha256": "f0b0b211a814a7e335a4a65cbd21ee8a52c3db07a204095e7227fb48fc2582b3"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/011366.npz",
+      "sha256": "79c65e917c622586c955fc5eb78a3ed4d8d63e3df7fa78b3508613243af54bf5"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/002234.npz",
+      "sha256": "040152312d79b9edba1b535c68df47b29aa02cbe7d3b92e411e14ee03b7c9d95"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/009818.npz",
+      "sha256": "5c5d9d8b0c3cc8828e93690e63707faef0f235caf2eddebae0b50055a0c69b4f"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/008908.npz",
+      "sha256": "b41966426df8f6bd30ecc82c2f177884b34eecee2f7e5c4041cadd18e5690c49"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/002638.npz",
+      "sha256": "fbf51671fdce6f630e42513c050e874a16fd57b419122cc47e670920f283b3ec"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/012821.npz",
+      "sha256": "70b1660eea5691fa9a892dbb5ea597b3f6cbdaa880c2a4e536dfe4b799b76ce2"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/009173.npz",
+      "sha256": "17eb3ec6f15646457a38d8ee194c7fc3c2751895fb51cbdbd11c71cca2d41f1c"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/002756.npz",
+      "sha256": "9e37ac53f0288ae7da8be51d19329dfa3c4c35e0d6cd5bb3abddfc0e36eb8e34"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/006810.npz",
+      "sha256": "6f33fb373addc1f48317a6b071217a2c11cffae291d9f883a796ee59b5d7e099"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/010033.npz",
+      "sha256": "b64e39c2063b5d52f510fa06cbc389252d9f6412750b62bae34e29f6e29b1214"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/011221.npz",
+      "sha256": "f7a1ed738c52b2d15d7e3fe72e5ab3e54d0c88994085c49cc1962b7f8fa13b0a"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/012070.npz",
+      "sha256": "b75e21f3839e349d26bf46609782442b90bd331e1f376314717c24bfe4f13914"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/000540.npz",
+      "sha256": "9afd323337ea73a1038a52acf7f82efe59818e1ac7849ede4625f287410c283f"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/010180.npz",
+      "sha256": "a3e5868e3bf495ee1ab667d92de5d901ac99670c7823c95babb9b3edc9eb18a5"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/001975.npz",
+      "sha256": "509bf8b3e8e9321cab39f8d03a79ffe9db56d816193d8edcf777ee767227a642"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/001397.npz",
+      "sha256": "abefe3ee03c8f8e1392e22fc5018ef769bafcd612b284c93af137ece1c8861b8"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/007714.npz",
+      "sha256": "a36ffecc3c0a5b569600690926fe239f7666ac9a2cabc0911c39cd547195aeb7"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/013716.npz",
+      "sha256": "7386c36ba36ce34ed4d30e3cd19bf95b89e56a4dec84a16b0a7ba6939ca20b51"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/013493.npz",
+      "sha256": "4d9e3bb6b30922e545b11a8f502fc2e6ae91557f2ba599f5eb51b30f5953c4d8"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/005510.npz",
+      "sha256": "a5ef82ac75b0dd8d40f266873ce21a2c951f4d60c901add1e4b79b80b1ecb931"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/008119.npz",
+      "sha256": "cb356e0273ca2103bcb6448e3090736d2a9d13ea54da763f5ff030f5b39a1cab"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/010366.npz",
+      "sha256": "66516d7d1c21dd4fadbc0de4a7011dee20e433dd86ae08f6bbeba2f421640454"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/011204.npz",
+      "sha256": "455e0d1296748487104925614bc4b513bd4a651edbc3fe54b5fc1a3105b60b04"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/005480.npz",
+      "sha256": "c6cd3bb2d164139fa1f6451246017b0618958088beb2927e2357bfcf56f78fdc"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/007668.npz",
+      "sha256": "f159132b87dd67346f576ae8159d2b12a3ceb1db28e762ef4245503d6e916aac"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/000599.npz",
+      "sha256": "0883994930117adf0f91129aedf3ce65fa05eb4804d3e1bfc4bfed78e6ee2d29"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/007224.npz",
+      "sha256": "0c5107fcff57a4a437be36293b38aba3e1ba1d0353a5f8ad9786b96101a16841"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/006356.npz",
+      "sha256": "265ae7aad42ceefad131e9f658fa9f8e6551bad7bf241b2cdee8a4e9f7d2073c"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/002308.npz",
+      "sha256": "bcfc8fc2a385931c80425c6767ffe23d306923f38f208e9fb57b66075023fee7"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/008926.npz",
+      "sha256": "f9a6ecae2e8af76d229760ee2648ac39faf9ffffb403bf2298698624ab485d4d"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/013814.npz",
+      "sha256": "3bd1b7399c971d81b1972bfe6dbcf948074149696dafd4519b3ac4e7301788b8"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/011047.npz",
+      "sha256": "90eaad20ff00ccaa3095d5aff7d444fcfa5350007d9b29a21b2db57813e559db"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/007401.npz",
+      "sha256": "95d9f1d0a5b6e378b7de744ba9ff4149f01c9fd429844bb7a55dda5d9027b941"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/011129.npz",
+      "sha256": "756ea0cb665bfb9536277e9f267e5df0eda2483077c496bda58d28a99fa16d1c"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/003671.npz",
+      "sha256": "35444fa2a3311ac8fa474b690e5d3968f1825888ae541137885eb7532105a57f"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/004021.npz",
+      "sha256": "68a44d7030f967d41aebdd7f169d93a3977874fdbbad2a2a6a0347c559e199ad"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/011409.npz",
+      "sha256": "09028bbb9651ee924c6132503bce07c0540fd03c5d8b6b7969aeb824ca19f142"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/002547.npz",
+      "sha256": "35ade63232ae6ecf963c8d64a3a7aa6d0491c3d4c40b0dd29135d1abb60be1b7"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/013333.npz",
+      "sha256": "1bac70988f5be08202479bfb9ad1eeb35fc4da539c7f9d272c1d325bfd8ce11a"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/005105.npz",
+      "sha256": "7b1ac34a04616cbcf34755cb12253ceb170a3e65934d75d8b38d61eb4d7337fb"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/001379.npz",
+      "sha256": "02233e475d25848ece3a8b15411f510e9279db07a307a9a75eb08b13ff0f6de6"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/011914.npz",
+      "sha256": "3491fc3d2b54a031ec4bf007a8690dfcaa1d9561a019d7362bcf5d1043568648"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/003063.npz",
+      "sha256": "35107e725d8567708918165ae27f4419bc504dbed4a87aec3c4d052ad495fe3f"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/012039.npz",
+      "sha256": "473ada01668451c95a6aa9931c2eeb47bd32226723dc43fde0cf851fcebcc700"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/002767.npz",
+      "sha256": "49b0303b1c1a13b36242845a55c9995e333dea78d1e33936735cb9ea0cfce7fa"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/009733.npz",
+      "sha256": "bfdf99593d3cd376c1e8566d55a39f7cfeed6264bf8cbdad7d9c7f9229a94c38"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/002809.npz",
+      "sha256": "c6afee15c432c4e6d15eb05abc30b0f96b88eed404c5d9a1060132c2903344da"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/000404.npz",
+      "sha256": "7e973586342da5977e8ff3f7cf00d918d2a8bf13ab99dbcfeb5c3e62f424e59a"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/005835.npz",
+      "sha256": "af5107492136ee60db9b272654911863a161fafa0155c629f702501dc7c67df1"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/010788.npz",
+      "sha256": "1937c718e6488770bcbc16d13a56d73d0bc31ba45e7118ca30210691d9d9b096"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/001737.npz",
+      "sha256": "8488efea9fe154eb429322f4a6f43c7cc0bc39a2baa15c382b7ae116eca2da08"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/008393.npz",
+      "sha256": "586617c7da62089bb68f9c4beaed836d94557dd04d7ce0122ee4179a178456c3"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/002742.npz",
+      "sha256": "7e0279637cc84448ff3527ca198445969d11f6ce66f649249cafccd15af4e5cf"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/007506.npz",
+      "sha256": "e57a95707d20a8a9dca6ffac6a0371c41fdea64b133bfb9d2e2de10e83913626"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/000054.npz",
+      "sha256": "ab476e8d8e92cc3fd628f80ffb007a1d6957a290f9a1c06939e17c0b1bb17409"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/011507.npz",
+      "sha256": "0f19efa23ffe7864bd5f5ac78bb6b7e6ff7fae5fa80bdb495b02715f8edf85c3"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/000840.npz",
+      "sha256": "296baa0fabe995cd55542a79e47dece52861771a0b0cadcb30c0e1e29f20e8cd"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/003367.npz",
+      "sha256": "d550e0ab073729f033ecace5884b877c9314d5dc37b7f6e77a39c25009747fc5"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/013267.npz",
+      "sha256": "0e618ece98bf5a6b8382f757a8ec99e5e70595b1316834931af5e8d5374fa02b"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/010963.npz",
+      "sha256": "c4c39349a31528254c5d66a105e8aa0c7f450353fdfb560acf17deaf454ec992"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/008182.npz",
+      "sha256": "91fc47e2c35447bd4c1f2c2ffbeb2db332a1c5742286fff75f2dc1d01523fbfd"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/004961.npz",
+      "sha256": "9ac4f1a3bd7988696de7e76a1ffe13456b037d016a986c6ef58eee5c45507c6b"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/014263.npz",
+      "sha256": "cf96abe05c3dffb5123fe9c6188d88b235bd465d0d433cd1a7965bce72c33218"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/002972.npz",
+      "sha256": "306325fbc3dc075029d530af48eca9c2fe34ce88a89b6df18b9e43aa8bb71f06"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/004230.npz",
+      "sha256": "2e1f67d01a9dbf08c25ab573cc819e5d3eb6809de8e734a38ddcfeeaf873a805"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/008116.npz",
+      "sha256": "37d2dcd4a55cac4b1a4635de5ad5f7fb01b61785af1b36ab6d03ab34b8bcf3c1"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/014556.npz",
+      "sha256": "8a0da453ef57c87c738465e07e2c0012311927a14f57a9cd1b165d90fff2be87"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/004112.npz",
+      "sha256": "336153c06fde3bdb189af5047783637fd7df7419072ac853babd6930f02a11d5"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/011671.npz",
+      "sha256": "61c7745f4f8d44634c4d144add5be316d1d5e2871099bb334572ecd001098546"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/009353.npz",
+      "sha256": "605b49150e2d015ce885bb3cc59d6b73d949d08894f1fa85a62364faf0eb0236"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/000598.npz",
+      "sha256": "0c227b40047c7643ebc92db2328f405709d6004ebcae849d85abd102c927e176"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/012116.npz",
+      "sha256": "922a1efbf167299d70e5300067e6e6e9df9f3c54583053103a9a961e636f28a6"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/014125.npz",
+      "sha256": "a44cdc1e3cbc298c6e23c8ca8be05bd84c77705e90b972857cc564108b2ec8a5"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/005167.npz",
+      "sha256": "ae8bef98c90b88eaef5fae8203e357f2204aa050bef3c0461057ff88b2abd14d"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/009333.npz",
+      "sha256": "d8a95444326a5d4479e10bec07991a6e93f6a64f4db233cd1859dd702e3372e1"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/004249.npz",
+      "sha256": "5cf50ec3da7d2128dc15befba9ba690348076924921cac1c8315b2323a5d6a84"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/008302.npz",
+      "sha256": "34724d74df3bb1fb352297c4aceb69b6896f65a43ae6653c8dcfc1fe9f0d4e2a"
+    },
+    {
+      "path": "/home/a200/0proj/datasets/all/Mean.npy",
+      "sha256": "26e136555dab04c94a129d446c26e6b9939cbf045fbf77bcf5462c1fb5a2001c"
+    },
+    {
+      "path": "/home/a200/0proj/datasets/all/Std.npy",
+      "sha256": "6565a65ed9b31e23c328829a309e1c482be8b85fd23b43d65451a9b19a917f40"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/sensor_relative_supervision_20261010_v1/plan.json",
+      "sha256": "5ae586453bf32cdcd20b601eb4a19297e5b1802a8ce509f2f72c40c557b0e421"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/docs/itm_rework/HEAD_PRIMARY_DELIVERY_PLAN_20261010.md",
+      "sha256": "ff9f8e4ed61fdbce0e5f96d1d6ec2c0e1e4908d00f7e0994fbf1b784d2903189"
+    }
+  ],
+  "scales": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/sensor_relative_supervision_CPU_20261010_v1/scales.json",
+    "sha256": "e08abf536732bf65011f43c2e6d2e51aca291c188744a4b96f88c8e057bed642"
+  },
+  "CPU_tests_passed": 5,
+  "CPU_true_length_configurations_checked": 128,
+  "GPU_run": false,
+  "execution_ready": false,
+  "remaining": "Integrate NEW bounded worker and execution manifest before GPU; maintain frozen old code. One full head-priority candidate experiment; no coefficient/epoch sweep.",
+  "supersedes": {
+    "path": "/home/a200/0proj/ITM/docs/itm_rework/protocol/sensor_relative_supervision_20261010_v1/plan.json",
+    "sha256": "5ae586453bf32cdcd20b601eb4a19297e5b1802a8ce509f2f72c40c557b0e421"
+  },
+  "primary_sensor_config": "head",
+  "secondary_sensor_config": "wrists",
+  "exposure_counts": {
+    "total": 25600,
+    "head": 12800,
+    "wrists": 12800,
+    "active_head_auxiliary": 11528
+  },
+  "sampling_counts_design": {
+    "samples": 11,
+    "mdm_calls": 11000,
+    "encoder_calls": 22,
+    "caption_calls": 11,
+    "decodes": 11
+  }
+}

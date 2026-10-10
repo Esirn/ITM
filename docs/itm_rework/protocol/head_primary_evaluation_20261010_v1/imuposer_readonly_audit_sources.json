@@ -1,0 +1,26 @@
+[
+  {
+    "path": "/home/a200/0relatedworks/IMUPoser/src/imuposer/config.py",
+    "sha256": "54f51b82815c8873274786057f91fae652dc28020964b7b50700c9f8f485f355"
+  },
+  {
+    "path": "/home/a200/0relatedworks/IMUPoser/src/imuposer/models/LSTMs/RNN.py",
+    "sha256": "513de4770fea869997e95771236ab0911e1ad589cbf12df02f189e04a3ae31e4"
+  },
+  {
+    "path": "/home/a200/0relatedworks/IMUPoser/src/imuposer/models/LSTMs/IMUPoser_Model.py",
+    "sha256": "e9c7207c9fa1e3f77c1c344c4684964a5e4d8a50f8944b1c8dd25c1467f03f24"
+  },
+  {
+    "path": "/home/a200/0relatedworks/IMUPoser/src/imuposer/datasets/globalModelDataset.py",
+    "sha256": "dcca3fb8a6e80945a500191aeaa2725abdd82b34b79a1369456442b766f36303"
+  },
+  {
+    "path": "/home/a200/0relatedworks/IMUPoser/src/imuposer/datasets/utils.py",
+    "sha256": "787187560d1b8c9021c1b14ce375cba152bd0e7a3b37b12aabbbe7417256f096"
+  },
+  {
+    "path": "/home/a200/0relatedworks/IMUPoser/scripts/2. Train/1. Train Global Model.py",
+    "sha256": "f08650219b67971c6d6b5cbc7c6dbdc5e1a9c1785466050ff45b43c8aef89576"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "status": "environment_access_resolved",
+  "prior_attempt": "outputs/itm_rework/method/head_primary_training_authorized_20261010_v1",
+  "prior_status": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/head_primary_training_authorized_20261010_v1/queue_status.json",
+    "sha256": "53dd9c504150d0fe37383bd9f938a330a86939acb1e2c26e10e7ceea8dcb01f5"
+  },
+  "prior_model_calls": 0,
+  "reason": "Sandbox has no /dev/nvidia*; read-only escalated nvidia-smi succeeded on exact preferred UUID.",
+  "outside_sandbox_resource": {
+    "total_MiB": 24564,
+    "free_MiB": 8660,
+    "utilization_percent": 94
+  },
+  "new_attempt": "outputs/itm_rework/method/head_primary_training_authorized_20261010_v2",
+  "scientific_plan_unchanged": true,
+  "resume": false,
+  "changes": "Execution access only; fresh attempt under standing user GPU delegation."
+}

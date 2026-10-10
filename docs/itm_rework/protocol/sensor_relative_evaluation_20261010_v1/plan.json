@@ -1,0 +1,1649 @@
+{
+  "schema": "sensor-relative-supplementary-evaluation-v1",
+  "date": "2026-10-10",
+  "fps": 20,
+  "dataset": {
+    "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/dataset.json",
+    "sha256": "e6dd7c4ebae0810b453041b0e5e59d44bb3989b5188eddedc16c13de072d244a"
+  },
+  "stages": [
+    {
+      "name": "U20_text1",
+      "rows": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v2/rows.json",
+        "sha256": "a54f176ae1119c7ef422b0d5bfcf613932d69df668ad13fef4b19651e0f7e868"
+      }
+    },
+    {
+      "name": "U100_text1",
+      "rows": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v3/rows.json",
+        "sha256": "cf89f51cb3e8b456d925e771205c09b52e79c17894ad0c099577223e3daec298"
+      }
+    },
+    {
+      "name": "U100_text2.5",
+      "rows": {
+        "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_matched_g2_5_20261009_v1/rows.json",
+        "sha256": "dd41668745a1ad8c2fa6a4eeb1aa0900ac6802af13d0ad8fc62478740f923d51"
+      }
+    }
+  ],
+  "bound_artifacts": [
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/dataset.json",
+      "sha256": "e6dd7c4ebae0810b453041b0e5e59d44bb3989b5188eddedc16c13de072d244a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v2/rows.json",
+      "sha256": "a54f176ae1119c7ef422b0d5bfcf613932d69df668ad13fef4b19651e0f7e868"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_20261009_v3/rows.json",
+      "sha256": "cf89f51cb3e8b456d925e771205c09b52e79c17894ad0c099577223e3daec298"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/protocol/expanded_canonical_evaluation_matched_g2_5_20261009_v1/rows.json",
+      "sha256": "dd41668745a1ad8c2fa6a4eeb1aa0900ac6802af13d0ad8fc62478740f923d51"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-000139-head-paired.npz",
+      "sha256": "27328ea903ae6ed1072d8d537744e81ea79ea2797f80fbf21eb45855c74974d5"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/000139.npz",
+      "sha256": "fcb3329adb467bb2f6be074a100095db2e576a7cfb068ca56239dcc866d00481"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-000139-head-mdm_text_g2_5.npz",
+      "sha256": "ca984f237238076f29082e4afc1902c7f1ffc395406b6d9bb7b6ac0e341bf3a8"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-000139-wrists-paired.npz",
+      "sha256": "141c74d004112039fef94d1e647deda99926a8826b17b4a5d58574cd128f6a6c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-000139-wrists-mdm_text_g2_5.npz",
+      "sha256": "2b7948efb9936ab18049dd0d0c0616f802be24bba90f0a6e9f729cb574a72f80"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-000382-head-paired.npz",
+      "sha256": "3603b2f06fcf2521c7a46ef1c4b46bd7ed1eaf7345625ec2db79b7ad68fb1d32"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/000382.npz",
+      "sha256": "4d8e3f66b02293408f044dab32f6a6559e2783ad73e0048608abf4e1e29fa5de"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-000382-head-mdm_text_g2_5.npz",
+      "sha256": "bcd1adc35530b4c9b1c9a54050ff4bfe0223186a85b48c33661da6b8edf7291a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-000382-wrists-paired.npz",
+      "sha256": "b46a19c9c19b75ec2be38ddd2b389921f214a34ba8c151bfd36224fefce1cfff"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-000382-wrists-mdm_text_g2_5.npz",
+      "sha256": "95780998e79ce71e5e2b6899ae41a86d1d9cd43ae9d3e7b31b0c0b5d29753150"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-000433-head-paired.npz",
+      "sha256": "4cc5abe105f4d3a7b3e48f6a7134f7516b15d510874e909a16ff3680b13f322e"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/000433.npz",
+      "sha256": "df073cef6e4ef7ef0bb1f8229a0169ca5923067e4f70bad77204e0dfcd839576"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-000433-head-mdm_text_g2_5.npz",
+      "sha256": "f67d071a94f4f92bad10251dab23a24a27c26fb703078930b263cdd9f98dc830"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-000433-wrists-paired.npz",
+      "sha256": "f6415f422c6bb66f9a493d9dabe6cf6f1fa515fcdf7f96ed812e53538cced166"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-000433-wrists-mdm_text_g2_5.npz",
+      "sha256": "dc328eeb6ebf882a670bfa715a9c4b34ba5372cd9130f40dd10b1ce2157ae181"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-007635-head-paired.npz",
+      "sha256": "1ea299d195be1e32b67149e15bc494c61ed581a20cdb577f1a9112af2c20f1b9"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/007635.npz",
+      "sha256": "9d82445323028ef5ed448c34d374c7b61b01995fca3e03a075e404b1f4855565"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-007635-head-mdm_text_g2_5.npz",
+      "sha256": "a5e206f9d271742a0f8101b528ce72f663f55b2b21682f7e6e82818a6ccd26e3"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-007635-wrists-paired.npz",
+      "sha256": "1a90eefb632341c84134a97e663e426295e150534bd97c2eeb97b201ff5af203"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-007635-wrists-mdm_text_g2_5.npz",
+      "sha256": "ff08c009380ce3755c71270da66365e54f6b3954a67958903e3ec3ebbd5760f4"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-001522-head-paired.npz",
+      "sha256": "78c3f580ac6a70c8390547d38bda7e014e98dc7ac25feb2a53101cfe25453b01"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/001522.npz",
+      "sha256": "a742e7ef38fb2cdc7078614fc22c1923abfb456e5cbc7eb36d4e7358eb9524c7"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-001522-head-mdm_text_g2_5.npz",
+      "sha256": "f53ae151cdc51503948ebe35163bb4a21b09747aa7ed5af57f51f00b21fe7cec"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-001522-wrists-paired.npz",
+      "sha256": "c34f52a94eea08c1c2da80d64674bfb2d29ab46068790624f16a8d8266c6f6f1"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-001522-wrists-mdm_text_g2_5.npz",
+      "sha256": "d84c3806ea0cb3a6651e9c917f44a34a91d180234d108ccf8f4067c4cdee130f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-002891-head-paired.npz",
+      "sha256": "211ec0942c71402f28614cf9f541a8351eb78a90bc5c649e1b27836549a00bfd"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/002891.npz",
+      "sha256": "bfd2555250ed1598309d20b73f6f25dfb8959877c39420bc3159d49cbc0c8523"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-002891-head-mdm_text_g2_5.npz",
+      "sha256": "cec0c845b05317b5c813e614ccce765d94da63b8eed957174417efa1ce5a8f33"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-002891-wrists-paired.npz",
+      "sha256": "5c9f6f7a2951c8064eb044cb3dda27b12ca0fe0939c1fd61ce368d25d9665e23"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-002891-wrists-mdm_text_g2_5.npz",
+      "sha256": "32011b0292ff3c3f8a9aaaf050959d8d0ee4ca44e070f917e657fe8d2f1e17be"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-001539-head-paired.npz",
+      "sha256": "f9f50826615f488e4328fee639df6af2e4d71e4787e51fc5d24a8bdf0247ad35"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/001539.npz",
+      "sha256": "ad33fb0d0b847eb30f77d49f5e4b30ee4b8e5d4a0762e5d4729677d00f466fdf"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-001539-head-mdm_text_g2_5.npz",
+      "sha256": "b21315f55d52d94fdebeca0e0369a9e36dc120357d143602b6f9c43a110c4ef6"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-001539-wrists-paired.npz",
+      "sha256": "f3e858a730d561a7be66a3ab892f67830a3ce3fe64bf694f882078a2e7d7d64e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-001539-wrists-mdm_text_g2_5.npz",
+      "sha256": "f132fcf9c303d0c905999d65f7a3cf09be003a37b29fe47961b20523ccc56bcb"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-013796-head-paired.npz",
+      "sha256": "716f02c066f947594af29cc21ed9319063f7267d8321778a892ba70b4ec70882"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/013796.npz",
+      "sha256": "61d4ee99f6655bb97a88e2c03d8937a6b971898908f1a3ee762d6b09bf718d89"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-013796-head-mdm_text_g2_5.npz",
+      "sha256": "2e689a694b6ee4086c1adf783d41e7cf68b2f25c05922f4da7a988121c23d3b9"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-013796-wrists-paired.npz",
+      "sha256": "d5de55ec66e9ad7accf05b6f028abe04268fd8220c6c119da162c41d7d5b1fb4"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/val-013796-wrists-mdm_text_g2_5.npz",
+      "sha256": "0a47de9e0881103811653ad231b6b064bf202c4fb0f3f43fc2d21ab4b4fa239b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/train-000027-head-paired.npz",
+      "sha256": "c37613cc1017c8949c687d35e96cb7db96040a52b9caeec5e0fa10d007fe9b07"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/000027.npz",
+      "sha256": "c719e838fed9900144081e20f3acf91f9eb3cdc7a667a7f88cc411731589a755"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/train-000027-wrists-paired.npz",
+      "sha256": "3ebc148f87c6b7dd095ad376e8e610cc0a00e7563735ad40e8d04c5bb8fa3900"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/train-000506-head-paired.npz",
+      "sha256": "75365b0ce48a90c67e8f70001ce8ed7dfb857c9016aaf26827a5f10a4dc7c4b2"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/000506.npz",
+      "sha256": "7f4ef44b84a5a015dc26b7d17d5222989fdedf658477b2e28418bace7f6acd6c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/train-000506-wrists-paired.npz",
+      "sha256": "8bd1f94b498d8a4d50bd7b246375fbec0397e55164a89a267875f051642e491b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/train-004728-head-paired.npz",
+      "sha256": "332da364c50813fdeefa234407c1533313f311d82d764b17dee13abad1581d5f"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/train/004728.npz",
+      "sha256": "c176c39351dd8492491dd7f569fc211307198c7327d362bf67fb9ececc714840"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v1/artifacts/train-004728-wrists-paired.npz",
+      "sha256": "b83662120d02bf2a9f51fdd51787609de9d609550444f1808dee9a28a23126db"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/000139-head.npz",
+      "sha256": "d6d8588255bc020de59267ac1a9bc011c5d609aa27c98d2ac5e5018dbc3a5499"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/000139-wrists.npz",
+      "sha256": "9115788533e5173e791a19cf8d776cf0aeda5937f6b6298fc06edf9c5f38d6ef"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/000382-head.npz",
+      "sha256": "739c14548744d8c2f4eb03149ab2fbf1d230e8c1a0d45b78f8603f98831f223d"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/000382-wrists.npz",
+      "sha256": "f96d9185a010c59a4e05c03a9b8adc54cafc6d5d4a725e7e068c07e61bcfbca0"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/000433-head.npz",
+      "sha256": "960b980e78e9fd37b11c5876f900b16d1bc6ca36a7c67990fd86aae9d3d68523"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/000433-wrists.npz",
+      "sha256": "7c19685089fe6ec2e6eaa756c01a1d0aef73288ca67b5dcb57ea68da85f073d6"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/007635-head.npz",
+      "sha256": "43fbeac8940142aad999e3b3fe564f5a37f471db4f77c28644b55c99b3bf7186"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/007635-wrists.npz",
+      "sha256": "7da771cc96c379a72b2e8949f674fac79f86cd96c713d57db98e5b7f909e6693"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/001522-head.npz",
+      "sha256": "24b1566660f8107fcfe071e86d379ffeab39e86f3c506f264fdcaa5b97f30d92"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/001522-wrists.npz",
+      "sha256": "e1312a4a7ea60300e92d235fc760fcf7a92a15fa5dea29b64bcf7648f3c9a48f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/002891-head.npz",
+      "sha256": "a77d536c9b97ce3058ac054bebcb31ecef534e236101ba13a6492ef2b63ae8ba"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/002891-wrists.npz",
+      "sha256": "cd5a16fd3db597a5e5ac05970133580a153a5c1c9573e0007650899c653109b8"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/001539-head.npz",
+      "sha256": "57c12ed2904efa12e2b67d3e67e4ae3fb3bab8e64f3a10c8161a986da79f71c4"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/001539-wrists.npz",
+      "sha256": "4c39396d407a203f28b3e70ab01d4f1afb938b116a76a278b18253037a47489f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/013796-head.npz",
+      "sha256": "f7822ad295fe0c2577a2b2dd0f068d065fa5dbf4ff8f63b4c6a1afd22ac76fbf"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/013796-wrists.npz",
+      "sha256": "0c785adeb4bf73a1451e71abd201a93c84ef534cd4890cd246cc77f992409a67"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/006982-head.npz",
+      "sha256": "e5ef8d788811582726142df2454d913772fa5bb43cea04eea389ec89a339aca8"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/006982.npz",
+      "sha256": "d035e1699f26106bcc90bcba11773c36c2884f6a0e170928db0144bd5de4f0fc"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/006982-wrists.npz",
+      "sha256": "a5a42860eeedc3c2e01513a3696fdeb0ef5db957d3ea8b6f373fb24d6bdb174c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/004489-head.npz",
+      "sha256": "abb87c0c4395e40571b179408ef05d00df0867e71487a17a60f2a96ea6a7e262"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/004489.npz",
+      "sha256": "18df6f1f31d48e2b6352680034b26f6a19c86019c115fc49b43e7ac340f8328a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/004489-wrists.npz",
+      "sha256": "4d9847eb9afa91cba26c1028b24bf6c02cbadaaea9039bb4850e781f4d67c4a7"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/013101-head.npz",
+      "sha256": "a54ed4dcb77db8b707365c02ac0ee3d4e3d738ce972aa6cd820034ffa563cb03"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/013101.npz",
+      "sha256": "0b117a59c919596f35c473b47308d67c993c26e201436e7ba37f7d3a9f37420a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/013101-wrists.npz",
+      "sha256": "2b1abef508c97ece023e97a7f9614d1aebe5af8e4c74700317ce4d9e5bf892f6"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/001829-head.npz",
+      "sha256": "cc35f847ab76f9bdac51e910e7c701c76cc517eeb1185262b001ea142a9271fe"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/001829.npz",
+      "sha256": "2250b25f279f06c5fa0a7121ff3408e746332a87d558b022be136ea1e8ade1b8"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/001829-wrists.npz",
+      "sha256": "e92afad2a9db1438e15ff466f95340e3fbe44b4b32d2c3a5fac8c78ff58c0f21"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/011032-head.npz",
+      "sha256": "9089e2719a02ea7a3400785dfe3195f9fe548a60994546b15ffa502e02fe556d"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/011032.npz",
+      "sha256": "55e9185a5f35dc094f589c9b0704dc597c3971b2d1b9589c4b75f57dc5c3af85"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/011032-wrists.npz",
+      "sha256": "922ce51513a4855449a16ce9bdff5f40908af9887c0fee05ba8bdb5125eb21c3"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/013013-head.npz",
+      "sha256": "eaa1888e334065a41f84216f0f46df1a71f87b0778abb3deb28f74f388ec9eb5"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/013013.npz",
+      "sha256": "4baaf5c20f587ed6de34a8507bbbd1bc95bc36daafa1db0b6cc1bf4b5a59bc5f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/013013-wrists.npz",
+      "sha256": "627de7d7a499c95c75dd456fe08d7a860dc89fd793c437f16026a19249eafb2c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/003756-head.npz",
+      "sha256": "268685abdf8494068d3bacb174a900f69059eb356a622bf6018d2e8131f10d4b"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/003756.npz",
+      "sha256": "72d421c02e3140e18a5819066bbb5b1db9ea60e6caa016aad2c26f61df2f0a82"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/003756-wrists.npz",
+      "sha256": "6264f08ecefff8acc9b3773379fc6a01f67b9bda911b034cb904b6faabf07e43"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/014434-head.npz",
+      "sha256": "aaf54f9d31a190f09c10572acb3352faf01803e9fc7e3657fd79e69ac1f7be99"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/014434.npz",
+      "sha256": "4ab5f99a35d154d352b33c7b60b7418bd7e3fa3bf5c70fd195ae7ddc97a74795"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/014434-wrists.npz",
+      "sha256": "63a6344612b1f44e73fcfe762341c7727ee840c48df4b1121b5ff6f7e777e992"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/013431-head.npz",
+      "sha256": "226c545c1ad9f6c025fca2b51d5bb7ff3ec76a58bb098ce1f5ff3a10b80e9f56"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/013431.npz",
+      "sha256": "f1c9496ea5d7ebb46b35b8295649fd18c6a276319a559b70d30745fc50c3a799"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/013431-wrists.npz",
+      "sha256": "8dfdde61f969d8ef13d59fcc3fc4f47e32bc298898ddfa14594dcc2b8f98dd23"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/006222-head.npz",
+      "sha256": "a8c6efd4858927ec49fdf1f7388609cfcdd9b79c2a02041d00b4ed289e191fc5"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/006222.npz",
+      "sha256": "07263b10b49f0b55f0668c7da73db76bb97cabd4dfa3b2e494dc8ca70558b792"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/006222-wrists.npz",
+      "sha256": "dc43897f57c4d2d2457772e73fea89753a0ca6fc26521f1d3c663022a69964b1"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/012998-head.npz",
+      "sha256": "e9bb11b66e35fa4e0802a5d04b74189a07de4645981ba4ee5dc92fba829e3fde"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/012998.npz",
+      "sha256": "1e1dd3e750df92b83465dcaa45c3d8a386c89b3b239bde96681fa4f4e153771a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/012998-wrists.npz",
+      "sha256": "830e6d95a2f9196ae7993c5bc0232177b757e6bc294102b9af530e428f57de57"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/011128-head.npz",
+      "sha256": "6e0a94c14d3510cfc14b4ab800376086951decfc52da78943be3d481239c4c32"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/011128.npz",
+      "sha256": "9b2b3d40fa76ed37e6f1a1948e25e865dd9dd9453219278d8f38d73e8739b864"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/011128-wrists.npz",
+      "sha256": "2f58115c7c93a92c02e6b91b2e9afedfe526bba461697e16279b1dfcbb87cf92"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/005144-head.npz",
+      "sha256": "2aea7aecce6729ec86efb17ae3655d420707faf7f53918d96bc6f4e243e73679"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/005144.npz",
+      "sha256": "593a31dc9bdfc4ba5d7ffe7516e717feb88a528f6fa9df9c9b521b9f36c4f578"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/005144-wrists.npz",
+      "sha256": "cf2d7900167cf3338531ec6c4d26d588b065c9982b0d254d3b73fae7a876f2c5"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/007492-head.npz",
+      "sha256": "3804b120c111026daa924e1a4d018402e6c4204cea0da176bd4fbe2618a351f5"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/007492.npz",
+      "sha256": "f297f57e0471eedb89c85a6f8bef641c5f2a7a8fa680f5f332c6d7597c2e9a55"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/007492-wrists.npz",
+      "sha256": "a68ff5e60bca03ecc837e8b63f5b43097ec77a05f9a933789a71b4d836c99ec6"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/013937-head.npz",
+      "sha256": "c00601d7fdfaaf04124e513020b15cd3c65d0ea5dc3f25417f66d6bb6ab23410"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/013937.npz",
+      "sha256": "4c44397b6da62633ed8dd5b68be4dd12116854418202c93a703f04eb60532bce"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/013937-wrists.npz",
+      "sha256": "19a566d4113797dd4df038d7332a8bb53feb6b93268b6ba91e8a6d23e21d9c93"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/011611-head.npz",
+      "sha256": "738d84f8fb0bcc7cd05e59d5fa80db8c19b56e4faedd742dacca94a93e84debd"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/011611.npz",
+      "sha256": "90fa123f78554f6f0dfccb7808a9665134ee7d80de5defac90aa04d6206b2e6e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/011611-wrists.npz",
+      "sha256": "041d22933236bbd1f6f147ce8d61b371a4e6c30ef54b541b0081897a7f48d37e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/004731-head.npz",
+      "sha256": "d7fb31d6fe14ae9281653402c1fec77a971057c8eda6c7f5bb99ade207a1014e"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/004731.npz",
+      "sha256": "9238b4f6a0f24546a865458bc8705f097da39183965eef9e0652b46f7f704533"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/004731-wrists.npz",
+      "sha256": "302d84dd0f6c9dc1d19fe959ee908afcc95191ebe4326f90168e673ceb70ccd6"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/006142-head.npz",
+      "sha256": "9fc285ebe0c6c3a4357c03fa83f63343637f9b66ad9756fbb76f3a794c7a4de0"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/006142.npz",
+      "sha256": "430e15fa52da961bf7866bb397a8ccc95afc9c57648f7a366a3e361681ec7621"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/006142-wrists.npz",
+      "sha256": "bdf90ece2c9131453880c04456a2298c33e1ff3032a92d108b6c63308bce7067"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/005441-head.npz",
+      "sha256": "45ec97cd92cfae5407f304ba8a7af1b32b9b39a43bd3e79b420ae4b182ea4fac"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/005441.npz",
+      "sha256": "9acb9025e5e02867df1b7846ba2e4540fe5debc7e7429a01e552efbfdf9faeab"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/005441-wrists.npz",
+      "sha256": "587f87c9b83ba8386ffdd5cf5cd5b2e5d1dfeed6da2f07a389ef07d7677de752"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/002883-head.npz",
+      "sha256": "4a97a39fc82b57bbc67cfca83e2b78dc8c21594619fe75551375e973dc905ea2"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/002883.npz",
+      "sha256": "d7e02a22004007aa3dc01ccedb59dc8c07c77b82d7b11cf936a90334699bb00c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/002883-wrists.npz",
+      "sha256": "ab73d7960998d681a20f30ab846d4e0caba241a1166e31206185c2d03d9c6274"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/005095-head.npz",
+      "sha256": "1e31f86b5101e2f505b35f46beaa03e9fb5c71f6252d08c5c11a457618a0515f"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/005095.npz",
+      "sha256": "ee799ffd71a40b89608b6fc05cc27fd1e847e6ccfaa9c9be4a338c19a7a365d3"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/005095-wrists.npz",
+      "sha256": "8586cbaac58a51e7f1481b7526ce2f974de00e4b8f50aee16ebaaa3dd79b0df9"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/001401-head.npz",
+      "sha256": "fe5bd88ab863f1d60556a5b7f5349c5cbfc0c6e90fefe84447727c0836626bd1"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/001401.npz",
+      "sha256": "26172acffe3dd214cb9725064bd5d98d0d20beb0005e9da588a060934126b9d6"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/001401-wrists.npz",
+      "sha256": "544f0ebe05f08bf32160330370bcaa9e55c17098ee8adcccb2e6d12b4f3e83a6"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/011301-head.npz",
+      "sha256": "c2a2df46963a8f7e560dc0c31b7012e31ce144fc371dbe66ac99da7d96242f3e"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/011301.npz",
+      "sha256": "06c5c49f47ebd9fc42d41f645ce7a1633f48b8db2ed6f402f999c84b62d47679"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/011301-wrists.npz",
+      "sha256": "9e7a2579f6d85eb19ed8597a5dbc9c5f67735480973100e5fd3ad0ac90e4a954"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/010165-head.npz",
+      "sha256": "99d890b1a0dc154476472c461c28c5493d3365c3cb89bb3c7e74a13634cfffe1"
+    },
+    {
+      "path": "outputs/itm_rework/method/expanded_canonical_inputs_20261009_v1/val/010165.npz",
+      "sha256": "a31c6d29f246b7a88294e25ef803734d520b180ee4f5ee2f7469185cde6f2ab0"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_text_imu/010165-wrists.npz",
+      "sha256": "ae236e27f61ccd2ad136713aaa036d0f80acf0c412d7c66996cd7bf1e30617ba"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/000139-head.npz",
+      "sha256": "b90895c1983829f56f1b5202761119dfb3c130f6273defe02cf5cf408d3afb69"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/000139-wrists.npz",
+      "sha256": "0827da09dbab159d2c79481c5c2eeb16670bca51de413b61ec0e2484addfc998"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/000382-head.npz",
+      "sha256": "36ea342f75e6431940373d856d5ca770003979a3b78a65ca70671acca12b9cc8"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/000382-wrists.npz",
+      "sha256": "eb09c127ce20558d677f39dcf9b603940f935baef91145a44c3b6c0415908417"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/000433-head.npz",
+      "sha256": "4deb99c324a9268bdf7e83fa8d4b72cb8171ad1b6912b501a3d7f3837715f84b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/000433-wrists.npz",
+      "sha256": "7c6d43d26396cc0147a56126c8431a618b50b2982f41b953e7545b1cf857c2af"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/007635-head.npz",
+      "sha256": "b395ccde135b5fa92010d39e28e7140d5717d541469aef22c0d610da16c36918"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/007635-wrists.npz",
+      "sha256": "0796aff15e768941123e84ebfdfc4c8e6990d4b09f0c35341a706fbf75994ece"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/001522-head.npz",
+      "sha256": "d7b71857d88bfebfeaf5415950f0f47327a1b31c922ccf3e9c3f815e0406303f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/001522-wrists.npz",
+      "sha256": "8579ed607238e529791fefaa5341751c64cf3ae7bd483880e91d84ef5939cacf"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/002891-head.npz",
+      "sha256": "917b0b03079602e0b7d7422356153bd039164b44e6fa2036e34581853912d921"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/002891-wrists.npz",
+      "sha256": "3d2bdcf3df187be3e836f8ad8207976a9064a7804e8cddaab1a11dbf65d5b265"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/001539-head.npz",
+      "sha256": "be74ff0be16716fa176f9a59c780b9d3d846f76ee6cf75567b3da0719cf05057"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/001539-wrists.npz",
+      "sha256": "403faf1167eaf3b4728ab03ee08bc1e45806d8124cb1079980649fb4487fb7a9"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/013796-head.npz",
+      "sha256": "a5c226cb9909f45316a27bbf6a9c5e8308a15b69e3b25331a1cb1b62ffb73ef9"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/013796-wrists.npz",
+      "sha256": "97bae8957001906c1f6e31873f3ae13edbdc61a951955853e3445601cdc22bfa"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/006982-head.npz",
+      "sha256": "373524ebcafc5efd377d9763b83a64f39d0ab6907b177e188f58b5a60143c075"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/006982-wrists.npz",
+      "sha256": "ceed5b751a311f937b3110f5773dcb6124f08d018de79df07c8f1cc652dfe1b4"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/004489-head.npz",
+      "sha256": "add279580fbbdde5609fc68b2057064cde05da20dfba14aaf49b74720cddb425"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/004489-wrists.npz",
+      "sha256": "6e30423506fe832b1f40a4123ebe329cf4500273888c1310fbec158a12130d36"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/013101-head.npz",
+      "sha256": "67e2ff365029398199a65b600c7dddf88e0f116796eaffac18b75824dc1226f9"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/013101-wrists.npz",
+      "sha256": "50a0cc013966591842f5891d39b78fca08518c8972283e431cf2259198cd35e6"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/001829-head.npz",
+      "sha256": "4881e11164add26d43ecc95a35c4836479c9c5afc787cb3a27b21b168cc45644"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/001829-wrists.npz",
+      "sha256": "65e050ed41359398a3b3a3256a0f1ae3aacb1d39bf62f19fdbb2a46aaaa6a25a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/011032-head.npz",
+      "sha256": "c1ff4b227eafbd449892752b068387b3e43d6248d285a8132b97946867b5d1fa"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/011032-wrists.npz",
+      "sha256": "a893a310cdcdcb9b4b2918fc47f34755f4b9dbdb7f7ddd58e50b0f2040e4f613"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/013013-head.npz",
+      "sha256": "396cc60d391b8abe88d2f5f4b8ecee2ad04c954691c94a6d8087bea366e42358"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/013013-wrists.npz",
+      "sha256": "656cba3aaac73d405acee395efb091664112c822cc27b7f8295ab1073521baf2"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/003756-head.npz",
+      "sha256": "de0f5000eef87af958732da34dce7db9af87669145bebfac664f2675fb45b955"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/003756-wrists.npz",
+      "sha256": "bbc0a56345d5b787e445779b5ab7c228921ed7278393f93bf95200b2ec824cce"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/014434-head.npz",
+      "sha256": "bedad55a5b22edef233743bee082a78c480e906f2701b4de58d9a776517ed532"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/014434-wrists.npz",
+      "sha256": "3d677fc22d2aa460dccaf7a5bf90b64f93738b17c93268640d3debd88c9d729b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/013431-head.npz",
+      "sha256": "321915202801e8449d32bfcfccafab54ec243a58cb436284fcbd993e505efb55"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/013431-wrists.npz",
+      "sha256": "537031eb7fe19d5d4ecb87b7c04a22437986aba5a1f87e39e5238333c13009dc"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/006222-head.npz",
+      "sha256": "721cebbe3ddeeaf5ccc352e6712621fa0d44bd4ed5eb5c0c1bc5b0f8d886491e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/006222-wrists.npz",
+      "sha256": "b15795d5a20778af1cf3088359e8fd31230b097f99d09a8b26c7201b2e37e343"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/012998-head.npz",
+      "sha256": "2a8f1f3f2108a7ea977e6ac366001a1cbc0731c53d2219072ac76c35fdaa5c1c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/012998-wrists.npz",
+      "sha256": "4f2ead632391cae0f6dd97b9685d226aeb480ec6657f8a787a279b1fc064b5a3"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/011128-head.npz",
+      "sha256": "8c8c7c85dacb515474dc24d787b9a3546a322bf677357b213d7732bdd8d8ae45"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/011128-wrists.npz",
+      "sha256": "5c992ceb3044edad5e46c8b19ec52f5410684f90c6c56391c92ddcd30ffad2c7"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/005144-head.npz",
+      "sha256": "e2d571574374e06e51481d92469356648a00cd64f756a79768133e005cba3e2e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/005144-wrists.npz",
+      "sha256": "b5246f94d7aa1ba0168e206c3936328cdd856937fb2321811316b39a73df5ab0"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/007492-head.npz",
+      "sha256": "f45b8bab2cdb394760a8ffa6705d222783bb5178e77f79fbdcae377a177efbb9"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/007492-wrists.npz",
+      "sha256": "5b02b27fce0f89ace040a7042ab0f498822ac25a4d4348a61e4db138934df6a3"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/013937-head.npz",
+      "sha256": "3f308dee04039d70661ead10096f5a439c4a397dfd963254ab857b80079b038c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/013937-wrists.npz",
+      "sha256": "985615752ff06a1b4ce4d36bceccf10b80984eaed620cdf076cbbcd0f6220bc8"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/011611-head.npz",
+      "sha256": "a12e0c3daf7e97bc62082438b0ad05825c6228d0bf5684176c9f25b98962b24a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/011611-wrists.npz",
+      "sha256": "b1be563bc2e34b8ac6fd01cd01b1d90d5e22ee0157b4bd1927d51a4c5a76d018"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/004731-head.npz",
+      "sha256": "f8f7abd1149a87a84092898e4409767c29be5a84fc3a87255dfbb352883e2875"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/004731-wrists.npz",
+      "sha256": "924922048824cd9459205a21244f7d39582c154fc4f96cc282094bb609ebbbd2"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/006142-head.npz",
+      "sha256": "2858dd1133c690e1105c875d437a325adacf78c7f17b0282a02fe70e6b42e5a2"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/006142-wrists.npz",
+      "sha256": "c3c46f55005083348bf0748b892a02a2ff80af4cc0e6a1cfb165cedfb4d89c15"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/005441-head.npz",
+      "sha256": "8141c4ffbb84499a94b8923c8aa4da8fe35ffd86f1bc704b075b4299fdf12921"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/005441-wrists.npz",
+      "sha256": "300a5c4f265c3da53a1d331222f20a1ca5411e972710e1b939184a9cecf971be"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/002883-head.npz",
+      "sha256": "63d556d9d5946e6353cce00367c9424c75335928c7d45fdc2366fa20a1257a68"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/002883-wrists.npz",
+      "sha256": "0d4026becf1b1f3229c1159db381e67948a30f7a335a2da56b8ac3de2bb2842f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/005095-head.npz",
+      "sha256": "02d78d0e7aaf7206a030d571f78bf3dcea52b72b7c5005419f78b41ae7ba176c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/005095-wrists.npz",
+      "sha256": "7f9e038f766ee1ec007da6c1cf1aa61ccdbaf23e21516105dc8d09f6a3eb35fb"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/001401-head.npz",
+      "sha256": "3964523add6abcf80ad7405835b7a92dc41f7d4e639cf07b1ad0a972eee57d71"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/001401-wrists.npz",
+      "sha256": "46e323b9fbad5a6f8c1ea4870b25fd6ed24a83202d381e1a29b758e1f93b07e9"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/011301-head.npz",
+      "sha256": "7d847ac6fcaabae378dbebd551fb502cdf556a843a56864803c4bb83e0a3cd43"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/011301-wrists.npz",
+      "sha256": "ac5505ed9a9bc7228a00f654f8cc850375c6f33cad8bef74feae4c5a6026f194"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/010165-head.npz",
+      "sha256": "4019473341ef14d86f2cb30b7b4eb1ddc01bafa8405ab74dfda83733c3c7f573"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v1/artifacts/validation/simple_imu_only/010165-wrists.npz",
+      "sha256": "9008f50c19d3616db118fd28e187df93f8434342a4a82350057ca51a27e59f80"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-000139-head-paired.npz",
+      "sha256": "abf0910c2e9568c7489a821b1527738c109781af39169a4dedbf936b43c013a5"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-000139-head-mdm_text_g2_5.npz",
+      "sha256": "ca984f237238076f29082e4afc1902c7f1ffc395406b6d9bb7b6ac0e341bf3a8"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-000139-wrists-paired.npz",
+      "sha256": "e213346848368f1a22fc67ca3e0703242f85be2bfcaefb068e6b7e2d773ea6d7"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-000139-wrists-mdm_text_g2_5.npz",
+      "sha256": "2b7948efb9936ab18049dd0d0c0616f802be24bba90f0a6e9f729cb574a72f80"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-000382-head-paired.npz",
+      "sha256": "e2230d90979d5a84a05591310cdd7ae0ec6d56a48ab947b1020fcb30f56c9acc"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-000382-head-mdm_text_g2_5.npz",
+      "sha256": "bcd1adc35530b4c9b1c9a54050ff4bfe0223186a85b48c33661da6b8edf7291a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-000382-wrists-paired.npz",
+      "sha256": "3f3711dae3387480d8c807bd42dfa2b26afe44b4c7c4698f438894e92a1f1deb"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-000382-wrists-mdm_text_g2_5.npz",
+      "sha256": "95780998e79ce71e5e2b6899ae41a86d1d9cd43ae9d3e7b31b0c0b5d29753150"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-000433-head-paired.npz",
+      "sha256": "19ae02698a74a0fc51986e34f93ee36037020a0572ddfd63fde74ed1941691c6"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-000433-head-mdm_text_g2_5.npz",
+      "sha256": "f67d071a94f4f92bad10251dab23a24a27c26fb703078930b263cdd9f98dc830"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-000433-wrists-paired.npz",
+      "sha256": "8173a53948ed464d41cf673383bd3624d0553e8694ed7182c6a9ee6b693e1626"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-000433-wrists-mdm_text_g2_5.npz",
+      "sha256": "dc328eeb6ebf882a670bfa715a9c4b34ba5372cd9130f40dd10b1ce2157ae181"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-007635-head-paired.npz",
+      "sha256": "010c96863b788155db626bbfa9038ad240ecdbd6ec4649fb5fbc1d6203b62be6"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-007635-head-mdm_text_g2_5.npz",
+      "sha256": "a5e206f9d271742a0f8101b528ce72f663f55b2b21682f7e6e82818a6ccd26e3"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-007635-wrists-paired.npz",
+      "sha256": "13109d9cd6ab989e83fa8a644a3fade7aa33fb94d434c385ac7a0191ad077c29"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-007635-wrists-mdm_text_g2_5.npz",
+      "sha256": "ff08c009380ce3755c71270da66365e54f6b3954a67958903e3ec3ebbd5760f4"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-001522-head-paired.npz",
+      "sha256": "9b396202d44ad921693f6cab8f18e3a9e40dcefd64bfb84bab323dc043b04924"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-001522-head-mdm_text_g2_5.npz",
+      "sha256": "f53ae151cdc51503948ebe35163bb4a21b09747aa7ed5af57f51f00b21fe7cec"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-001522-wrists-paired.npz",
+      "sha256": "f421f550694db9406de38ea13da75eb7fde77e780323158ab6c4b700395aa404"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-001522-wrists-mdm_text_g2_5.npz",
+      "sha256": "d84c3806ea0cb3a6651e9c917f44a34a91d180234d108ccf8f4067c4cdee130f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-002891-head-paired.npz",
+      "sha256": "baebf6b95534577396062aadf706573a82341f1ded7d646410aded1126ca1293"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-002891-head-mdm_text_g2_5.npz",
+      "sha256": "cec0c845b05317b5c813e614ccce765d94da63b8eed957174417efa1ce5a8f33"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-002891-wrists-paired.npz",
+      "sha256": "68dc5d8f7b6b1a2d1024a08a14e4695197f4687b4c6969a8b7666b6223a264fb"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-002891-wrists-mdm_text_g2_5.npz",
+      "sha256": "32011b0292ff3c3f8a9aaaf050959d8d0ee4ca44e070f917e657fe8d2f1e17be"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-001539-head-paired.npz",
+      "sha256": "d0663d78af92376ad864e886407f8b47117f7918f1fd9d17aa41fccf39afa04e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-001539-head-mdm_text_g2_5.npz",
+      "sha256": "b21315f55d52d94fdebeca0e0369a9e36dc120357d143602b6f9c43a110c4ef6"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-001539-wrists-paired.npz",
+      "sha256": "e96e8c92d736db073629108cc50638b96347688bc2517e1d19622df174e56bd9"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-001539-wrists-mdm_text_g2_5.npz",
+      "sha256": "f132fcf9c303d0c905999d65f7a3cf09be003a37b29fe47961b20523ccc56bcb"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-013796-head-paired.npz",
+      "sha256": "c058880f8dd6409d2da9598b501c179a605655ff540d58d87c401c692e6e15dd"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-013796-head-mdm_text_g2_5.npz",
+      "sha256": "2e689a694b6ee4086c1adf783d41e7cf68b2f25c05922f4da7a988121c23d3b9"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-013796-wrists-paired.npz",
+      "sha256": "600670a57535a7319fa3ddfdb245b74a39f2e82258563628c2d93c3a8c361087"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/val-013796-wrists-mdm_text_g2_5.npz",
+      "sha256": "0a47de9e0881103811653ad231b6b064bf202c4fb0f3f43fc2d21ab4b4fa239b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/train-000027-head-paired.npz",
+      "sha256": "ecbe37cb70295d7ec045d93342cef77b89c1f0b2fb41800f768bf357911e782c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/train-000027-wrists-paired.npz",
+      "sha256": "7bab7122564f4ba476bf6e8a88893a6c799a863f640cc279789bc24b04713580"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/train-000506-head-paired.npz",
+      "sha256": "3b239c7aa7f10727b05224975e37ea88bf0646d839ce2aee4a56b06c9fd0d8d2"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/train-000506-wrists-paired.npz",
+      "sha256": "b2b82fe5e8adcc1fc684d93d31497015955f58f381a1b8aea5a1ff71cac81521"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/train-004728-head-paired.npz",
+      "sha256": "0e35be782fdc40e209465e4c00e08e09c16146223a70179eb1ec19d4f3e21588"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_authorized_20261009_v2/artifacts/train-004728-wrists-paired.npz",
+      "sha256": "faac47c8cab5641acbb46e048eabd8d33e96e1dfdab495d755da927e227f17ee"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/000139-head.npz",
+      "sha256": "048043c3695a2e2bb0d5a5b784de2f227439c78ea1c19294b6d1305343d76100"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/000139-wrists.npz",
+      "sha256": "67c43c9821896b61d674b7fe17dae78610cd69d5d75df3185249761de496a0b8"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/000382-head.npz",
+      "sha256": "faa2fdbce83fe714b0ac062864151468de8b6546b9acb9542283c556b5275a31"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/000382-wrists.npz",
+      "sha256": "efa3eba1a978f873c6453ac4f04f01cccf4d8a9f47e7211880aee76cf9bfa267"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/000433-head.npz",
+      "sha256": "80623977ae4656398ca0c31e3875c1966b747797c786f9efc89ab59e4d2a7f27"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/000433-wrists.npz",
+      "sha256": "6b45402107224e501a83f66caff8c1a7ae84f562fd71011f26dac1645923d0e9"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/007635-head.npz",
+      "sha256": "b57e15337e0c80378f8bb8c210cd18a22d81258dfd2962f4ae3812d7fd03f580"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/007635-wrists.npz",
+      "sha256": "b062080e8e40b7b5a22d0508455bcdf6c954444d2563b33977cd175cdf889550"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/001522-head.npz",
+      "sha256": "8de933516150e77b52748ddb999a843b34f7cbe2d040cca214c65d1d82db5cf0"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/001522-wrists.npz",
+      "sha256": "90ccf6f0f82a58eebcbc11a13cf8f1507b93db6f0231260e462d2dd04e5fd318"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/002891-head.npz",
+      "sha256": "6ef7ff4714a6c75c917ddc6cbb6bc156836b3808562114bf408a994f64ffe4f4"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/002891-wrists.npz",
+      "sha256": "49a398b39639f57c4542d11572ca3f12eb49e3a1a8ff52e57fd3f020960a2f61"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/001539-head.npz",
+      "sha256": "dcb8fe15a056c46042420a7f1a9dcbbc8b29296c49a8830faeb52f429066ba48"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/001539-wrists.npz",
+      "sha256": "d6b880adfce02c6f6db25173bc368ae2562d9d08b4d828d018c3dca20c4f112a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/013796-head.npz",
+      "sha256": "3a9b21223374eea67c384b8f3300b635cfd74e7064a402cb6d1aa4341915f761"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/013796-wrists.npz",
+      "sha256": "d6e64d51a04eaeedc2981daec425ae9eb3268c12ad878783176d074b4d822753"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/006982-head.npz",
+      "sha256": "c27e115feaa04948b4ebd3950255ef6a15106eff5953eda8fb20b8653c4920a8"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/006982-wrists.npz",
+      "sha256": "5ab9d1a93ac89a230119e649e91e8e63428f620079b99c29296e1b123e24f779"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/004489-head.npz",
+      "sha256": "25f53e63c2d40b78b48ae3ecaf74abc12b59c217c47989e63c63b28c1c6848b9"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/004489-wrists.npz",
+      "sha256": "b4d41a953844631bd7f98f862327a3241dfe31cd9da6ef4fe43077091709e0aa"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/013101-head.npz",
+      "sha256": "94e6befa847d98f422747969a005808493aa25cc5cae96fe74122dffb5fdb82b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/013101-wrists.npz",
+      "sha256": "1c6d4d659d0122026acce5c8886b73c7b98371657e1ab841b1f3e56ad7a652a4"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/001829-head.npz",
+      "sha256": "1ac5057800479bb7cfde4c818119c66e7ed1a5ef2fbc3552441d83fea4881802"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/001829-wrists.npz",
+      "sha256": "7c5cad139d2330c442e51fdd0d631c31a001aa2fce42978db55815bffe4d257c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/011032-head.npz",
+      "sha256": "4dcce5d1cb98deb097a5c1cbcaf7f4f0e3221a3ef5abb9aa4d8cf43539134a22"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/011032-wrists.npz",
+      "sha256": "946b7a0ce9bdb4869ffbff54e95048806a9c314d3eb30932b5de9cd947fc487f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/013013-head.npz",
+      "sha256": "f32472f54d7bd33c0c411436b360037348af6eadd240c9ccf8cee07b4a5fc643"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/013013-wrists.npz",
+      "sha256": "2e6d3c26b13009a5ef4ca4d3863ff1f0b8d6aadca34034165b13be235af615c2"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/003756-head.npz",
+      "sha256": "27ab781b3274abcf3c695c238b52bb6b024b7983eec8c902385763d15e5496f8"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/003756-wrists.npz",
+      "sha256": "8ff1a579bd7d1e9338e085912710dcc90e13baac4361f7b8d17c2b231160c1df"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/014434-head.npz",
+      "sha256": "20e2a1acaa09c9c16bbd8e79212ac81679831a1776cccf668af9160167b88a4a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/014434-wrists.npz",
+      "sha256": "453a61d371897d525087ec081c877335749bb5331ef36c921f75a5e55ef33abe"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/013431-head.npz",
+      "sha256": "844c05898a69d7361fa6367f861c087fcdc8107d0b84af3b6e0523d06e4f27f4"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/013431-wrists.npz",
+      "sha256": "da0bf8dc80bb802190054b111a8713e769d75d764ddc05ef26c7a71402afe4b4"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/006222-head.npz",
+      "sha256": "bac14bed9cf9e06c969b790bac46586934afabfef95aa3f6dfc8342e7d8fa9f7"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/006222-wrists.npz",
+      "sha256": "ad5080dcd7f516fdad4fc6c7ec172e7e486f2d0104b33daa4eccfca2206e56d4"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/012998-head.npz",
+      "sha256": "879386e635a4475f9dec53d766620c7e02bce2c75de7b4e9c76886afea087969"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/012998-wrists.npz",
+      "sha256": "558951c1999d99eacccbbf3485caa5ffbcc24d16da769c05b42722113d156897"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/011128-head.npz",
+      "sha256": "20ab0fd6e825cbbfd99c321286b652d8f2c36e4931ab172ac6540abe8aabe357"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/011128-wrists.npz",
+      "sha256": "10e9995bfb0a9564dbf2c530a63d6f25fb495cab546c4e479f57625bc1882448"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/005144-head.npz",
+      "sha256": "7da80a29c3bc9594710eb5f2d6e15c2a66d92aff0e7f0c6814803b6292d69341"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/005144-wrists.npz",
+      "sha256": "4e8f922e761d67f79c47eb31fe51f3ba300b5f9dedacf9e64c1151b0f71bc682"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/007492-head.npz",
+      "sha256": "1c8dba4d1a041474dfe41b3bf944eb8aeea1ca28edb2587469d48bfa8f1b5985"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/007492-wrists.npz",
+      "sha256": "18b45dd4e2199d52ca4e5fb93fa15737f3d02303a61812be1375ca9480d993dd"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/013937-head.npz",
+      "sha256": "6c3bbf365829a36292a61f74c0e7db27e4a7910f33accc4ac7498d18b38acb54"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/013937-wrists.npz",
+      "sha256": "d9c8af8e478f351bde712d60caab29b0a7a4fddbb33fc4cf9e86f5a7ac4cfb1f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/011611-head.npz",
+      "sha256": "e02c852aa3da16458e79d5b224d8eb614c17df1c7cd2d44d244d22c660158c7f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/011611-wrists.npz",
+      "sha256": "142207c652765a304a2a46a73a222c5e6801e0cf04f2a490cbe5292a064f5666"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/004731-head.npz",
+      "sha256": "a650766d9ee5a51c88bc99bc6e776a10c6dbbaeb230c9c1245be3574d3349d4f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/004731-wrists.npz",
+      "sha256": "0e758581dc6b0118d3c88b74df5f6e3e69a0a8442e33722baf79bf12dff7279d"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/006142-head.npz",
+      "sha256": "bc10fc3f2067e759f5f7b6e221a071aa18a6f39bc3d1b44c2eb863a7515da2b3"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/006142-wrists.npz",
+      "sha256": "f0273d1e7fe696d226224e2d90968112312ac255814bde4771bb1768a608817d"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/005441-head.npz",
+      "sha256": "d598dd5aeb41153239aef7de99c9a33937eb577f74d347d8257cbe82a3454663"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/005441-wrists.npz",
+      "sha256": "e363a0154509d2cfeaa38244bb55ee0ef40a796a1d3c98ade454d39771dba80e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/002883-head.npz",
+      "sha256": "405fda488a1355f120e7a6aded855edebbccf8e728f1d245971a27012e2b9e23"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/002883-wrists.npz",
+      "sha256": "cd88cb83b226d4e747554d805eed4e1b32ec369be30e40c14078464e5d0fc844"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/005095-head.npz",
+      "sha256": "a8fabd1693e6731bcc9862f5c0acdf720796530967b2dfc6658f13118b5b13d6"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/005095-wrists.npz",
+      "sha256": "3fa8abd53ee3c55b61ebdae1289fb62cf5e17e1de79ca43563479e3160d1590f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/001401-head.npz",
+      "sha256": "23a36de0a984bf03f3fa53b0ec753018fcacf177e6ce2688392823e121bf5544"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/001401-wrists.npz",
+      "sha256": "7a64222444831c503c029986d94716949aa6efd87dfe954cac4d25f8995785d5"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/011301-head.npz",
+      "sha256": "b3028d95c75f5eeec0d5b916e8ba4f151b2d8ae45f400724334f935545117a07"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/011301-wrists.npz",
+      "sha256": "3f4bc9b824ba0760fb2b8d6ca90b08a32d1d3e51d3d6c1ad321de38a456d3a34"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/010165-head.npz",
+      "sha256": "5fbdbb6ecfc0b995d597013878b6e95b19c5c5e3b74e1375cf4ea39ec83ef824"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_text_imu/010165-wrists.npz",
+      "sha256": "134306ccea508fbd0345e0db4f48678a0d76467f648c4cb5a2c29c652900ec6b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/000139-head.npz",
+      "sha256": "24571c3009b01026db4c198be2071464b0194de87913ca45cc61aefdb34dcbf4"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/000139-wrists.npz",
+      "sha256": "fb95cd292b5a1ca3f7e7935365998d794fe03bbed5054a6b7969d4a14fe0526a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/000382-head.npz",
+      "sha256": "b0937068f4b9c2f04554e49611ebdf4ec93a43e2f4952bf59efc0cafb0abe723"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/000382-wrists.npz",
+      "sha256": "7b6da28802f1a2b482c86932f12a1d6bfa214143d4cea00262f1c4c8880394b6"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/000433-head.npz",
+      "sha256": "269225f47cc91c5314d0f2668cf1d3fe5fd7179edd8d54540f0eca6f8f3ab06f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/000433-wrists.npz",
+      "sha256": "8339526796163cb367e4e50dc35c562ec4982653730f5865ea6f0837fc50782e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/007635-head.npz",
+      "sha256": "67159afa5f3f4f482824419e34b6de335c1314aab22966aa94e8fe71c9f1aaab"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/007635-wrists.npz",
+      "sha256": "da99d101d78d64179f64379f4acf4138c64d2b7d9237cda648f61d9e9786dc9d"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/001522-head.npz",
+      "sha256": "9f970847a1e22b9ed0ca6a56052f2ad650e248842d5083bd999ca0e814ca207d"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/001522-wrists.npz",
+      "sha256": "3315fa35ae09f7b517adaed08ec8c6f2f2a20f300cdc83c7ea5983621a7e2b85"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/002891-head.npz",
+      "sha256": "9634db4b6233d75c88ac51d45a28b7c823189a59363eaba6327b388d86e999c3"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/002891-wrists.npz",
+      "sha256": "86f2130575a54cd8c7ae629f5509b1b34f24f3de148aa5978005db517f83e559"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/001539-head.npz",
+      "sha256": "81b8462af14e30bd62f89ef371ffa6836b69e6ad246f19cebf3aa2b07787e80f"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/001539-wrists.npz",
+      "sha256": "0d0b2978fff3f0ff7ac76bbf638bbe6077e4c14367278023246e8f9e36f4cb41"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/013796-head.npz",
+      "sha256": "e7fe72e6a7b8d19349ee59380ed3d33b257409c2b42804cf752b40e7bc4117e7"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/013796-wrists.npz",
+      "sha256": "30024d1a1362cb1cad44e7347c53ca494d13abda272918d175ca74f768ce7d05"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/006982-head.npz",
+      "sha256": "3ae9a483f8ddf24ba3b61e81d1c492dd49831110107c5d31d43e90406f994053"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/006982-wrists.npz",
+      "sha256": "4148567fc189b417ca490454c35de941703b9f8e353f005fb1906b908e7d9bcd"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/004489-head.npz",
+      "sha256": "adff99fa8ceaaa10d3115d380ab120c3d51426aed436d8d6b7e3afa905fe8ac9"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/004489-wrists.npz",
+      "sha256": "19f7ff405a786ae237a8f8f76e6cab76da18bf337b05c664862ab5f75a862136"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/013101-head.npz",
+      "sha256": "298b4b414ba2ba371b391634639dbc46994ad75958fbe5c1be987d1880fd7d26"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/013101-wrists.npz",
+      "sha256": "3b190db98430e4b52637b45f0a7c4949aaef0ff39f8278fd93f624bcbb5b542e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/001829-head.npz",
+      "sha256": "6a89737b3c98037487218877c8e85e5ddf321893b27b58e496c6afbb575284ab"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/001829-wrists.npz",
+      "sha256": "eeece01d83db711c3d484eda27e1c3e9f28e950c33854e34dcb7a6ff616ca3cc"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/011032-head.npz",
+      "sha256": "881941ece36962ae0298b0940d833384595ecb8f1e9e9c3f565ca62238c43409"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/011032-wrists.npz",
+      "sha256": "e291cf7b5ad96427ef1f80513f725fb30843c6dec42258986accdd9adf1b3b14"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/013013-head.npz",
+      "sha256": "aeef3892be4c3f61f36585ace25cdb799e808a7ee28ff7f998e266f4a80b9686"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/013013-wrists.npz",
+      "sha256": "1588fe2979c4afce9768ba3b64d9a3b6140794c225e26d17736ea4b4ba3a8629"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/003756-head.npz",
+      "sha256": "02664a4a66b4af3feeb316f832bbc2fac7907f5fdb1833fc460502fec53b427d"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/003756-wrists.npz",
+      "sha256": "0bd53606e20de473e12a4f40fcde1e10e0d158f460eecb634786d97071426bd4"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/014434-head.npz",
+      "sha256": "a34cfb604be8a56a297d2c9ba30dd171f411a88a6666cf369618f0bfa1a07ec8"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/014434-wrists.npz",
+      "sha256": "82b555985994dd7c461e7cacc7a345a20f0bbf06a56138c9bd849e2e5dbdeebe"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/013431-head.npz",
+      "sha256": "c93f7700a823424e5ea33f1f89d3730defef3e3a3a2460dec292aedc99e2379c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/013431-wrists.npz",
+      "sha256": "67bd76c454d2f759fc088ea24e02449807022c1c8312e9cbd7e3c2af549a3123"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/006222-head.npz",
+      "sha256": "e722a4191c511df31c166a82efd318654fe080172c6eec4a9f27fb9792986684"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/006222-wrists.npz",
+      "sha256": "1480a14a0994fae835f3c240fa90f158e03d1aa06b47686cd5ea9f22d6944b1d"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/012998-head.npz",
+      "sha256": "9d03a556de202c98acf675a2902a45bcd070c9f50bc2a2d3aa243f0017405be6"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/012998-wrists.npz",
+      "sha256": "44489c71eb076ac3f60c1a3ccd858ff581fb062a8538c3fa51c5c5f00c610e3c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/011128-head.npz",
+      "sha256": "8a2bf2dbb8cab8647b746c14538961885f8c848d6af1740ae395e6dbddfd86ed"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/011128-wrists.npz",
+      "sha256": "a73358353f9d4299728d8572bf69ff21d0f3482f5ffdcdf47fa7e4c4157fb284"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/005144-head.npz",
+      "sha256": "691ea6335b1a5483ad147be8f9933278756bd0c5e191822751472beec758797e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/005144-wrists.npz",
+      "sha256": "b97692d0d7608d6818d6cc03a0bc7f92033b1570af88a44699583311c72ee44e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/007492-head.npz",
+      "sha256": "f15a275c3b171bd8c270fceda0e3756dee64e7953f2b7f7eaf8031e19c60f938"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/007492-wrists.npz",
+      "sha256": "ec5231d763941abac2af4f9b9ce8d57ea6ec4f2cef6effe88932ff5de47c50b6"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/013937-head.npz",
+      "sha256": "903c112c85a3144bb30e23021a58a5c54be45c4df6d181e7a2972aa619c93e60"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/013937-wrists.npz",
+      "sha256": "d09750a23c08a3f2189b1eb1d86cb83c041809ebcb376507d73f61b1e3faa0b3"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/011611-head.npz",
+      "sha256": "ed6cea96897e3df0c2720649fbc601de68c23937c9454c9ada4526d28aee22fc"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/011611-wrists.npz",
+      "sha256": "f02551e8dd6cf2619502671b68dc4b2118d676627e84c7fd38275140ee7b6a33"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/004731-head.npz",
+      "sha256": "c22a2ab84fa99edd3a25524443f0e86ffb8425b6c953b85b07fdaa78accf9f68"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/004731-wrists.npz",
+      "sha256": "983aec0249284acc680048889df8aac3090ed7158d1960f776d4b535e6ca41d1"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/006142-head.npz",
+      "sha256": "aed41778a4036f64394da8f19e558c8f783f08c4f186f5fc189d5eb312e20b39"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/006142-wrists.npz",
+      "sha256": "38ed4f888835df403d775a05b65ef3a0e80cde40090a8c750bca8a6c99b0a4f2"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/005441-head.npz",
+      "sha256": "736ee0fc103caa74d16fd9dd30b459c17b2bf811630c218a02dd0af814caccc4"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/005441-wrists.npz",
+      "sha256": "dd20a5a46c6bf289eac3c2fc10d705a5b23b6376699949895eb74af98fef3934"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/002883-head.npz",
+      "sha256": "8740ff3f7c9851934abd06de607b7075172b0899c1445f1cf08cd23d177f869a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/002883-wrists.npz",
+      "sha256": "adc787b124699d857d104cb0ed8ab6800725d388928708cc16735d94b94c813b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/005095-head.npz",
+      "sha256": "f512465939b21e6bc39d5b08046dabd9f5ad1618c8dfd1d2e7f9728a2a0f15c9"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/005095-wrists.npz",
+      "sha256": "37b6350e685465f64ec5440429c3df2eb1730c10ee625aefcfdbad503fcd203a"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/001401-head.npz",
+      "sha256": "2f57f455015a4b081e5ce9b9f7a26d03e6b7126737754117679c747e1391606d"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/001401-wrists.npz",
+      "sha256": "b969e792d75f070067db2243d5a57e74292e505e25b14cfcad4e242f78c5f806"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/011301-head.npz",
+      "sha256": "35475ff32f6ed83f617759645970466289d6e3b66315a7d099ddf5db20fb5355"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/011301-wrists.npz",
+      "sha256": "f53b72754c077114ef436fa5a733011cff19178c33deb58fe4e9dcf0b9b4b3c2"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/010165-head.npz",
+      "sha256": "3271bae0811e93e7ddb0ab2c250f18f7f46cb84fd404479b89b158045bc54876"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_training_authorized_20261009_v2/artifacts/validation/simple_imu_only/010165-wrists.npz",
+      "sha256": "72516b8faa66f1405d82e721af0a144ab5316a2da7fb655ef57515be2d3a89b8"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/val-000139-head-paired-text-g2_5.npz",
+      "sha256": "3ed8e0544f75c6a5befe07c24c79c2ae2624d9fc5a25eda356709a01bbac897b"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/val-000139-wrists-paired-text-g2_5.npz",
+      "sha256": "825ce31642d334df73c36f691540b8ca7e724f5f0dfcff8347599a43e6a2dd15"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/val-000382-head-paired-text-g2_5.npz",
+      "sha256": "f495316047a0ee996208fe6e7425328cbbb14dcb95caf1ddf5af1e03644596bf"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/val-000382-wrists-paired-text-g2_5.npz",
+      "sha256": "d054e22c50fff4d28673efff2a7f55a06e70b72a3a6abab9c9ced54d75602374"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/val-000433-head-paired-text-g2_5.npz",
+      "sha256": "839a8aa2fc7358b0605cfde2a8ed0ca1021dab4fae9016d0f269b4b974c205af"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/val-000433-wrists-paired-text-g2_5.npz",
+      "sha256": "c8e9d4143f95bba8da2a774e71fc35d3a9b00870af6bc0d80ef707bddb6ee817"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/val-007635-head-paired-text-g2_5.npz",
+      "sha256": "74e3c5aa62c6dfd53af54498a7d2bda8eacb4cb43933609ab33b3f69259abbe2"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/val-007635-wrists-paired-text-g2_5.npz",
+      "sha256": "872c3bd5ea15a64fa47f2441bcc54f8f28df56c1cfd22c46828acb1435c062b2"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/val-001522-head-paired-text-g2_5.npz",
+      "sha256": "1c56851852e8698120eefcd8ff3ebf7c82a96fcb772c5c508a72ea9193c0eec0"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/val-001522-wrists-paired-text-g2_5.npz",
+      "sha256": "0f25f79ed2932989184ae1aa087585be7e281ee659cbdb377bbc1e2dd93e87b5"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/val-002891-head-paired-text-g2_5.npz",
+      "sha256": "2e64d69235e164b489f7b6e0d4f032fc8b5892d76f5c2106b9f907ec50746790"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/val-002891-wrists-paired-text-g2_5.npz",
+      "sha256": "da898acd26534e65222ca4845c91b590c4f5a55ff34c361075a555e6119afa69"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/val-001539-head-paired-text-g2_5.npz",
+      "sha256": "0bc88c62cf132c2b7cc556565841742d2a9d46b4aba43544ac02f155868ab843"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/val-001539-wrists-paired-text-g2_5.npz",
+      "sha256": "e71a981fdae82b8707ffc62619978179cd6b49544718155d61d51cf43aa454e8"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/val-013796-head-paired-text-g2_5.npz",
+      "sha256": "0305ff3d682b8dbccbb8b7ccf3835b96c61e22396191b9fb0be0ee2760756f95"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/val-013796-wrists-paired-text-g2_5.npz",
+      "sha256": "360bccee343533eb755862d533885733984b3ee1fb8f9ac5177cb5b590210c7c"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/train-000027-head-paired-text-g2_5.npz",
+      "sha256": "68eb7f3332f4bc5c0ffbeba921e0a04647a49e1198cac2be672a01440b91e061"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/train-000027-wrists-paired-text-g2_5.npz",
+      "sha256": "7fd033f66ea9828604662b52bb1a34b7f5b0f2f36cf4e312ac3622fdc48d101e"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/train-000506-head-paired-text-g2_5.npz",
+      "sha256": "26a78a5ed1f1b7427d69552851c063c346d1f4c08a003de609c7888a7f6e3166"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/train-000506-wrists-paired-text-g2_5.npz",
+      "sha256": "a796b2c54590c4b07938147edc3aa1220beeb355b8d2cc7de9f9a3b97d82abb5"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/train-004728-head-paired-text-g2_5.npz",
+      "sha256": "ca72d9059efe49b58c10e1d6c0f27011ffa24344c63f136cf7f391f9b6d95471"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/outputs/itm_rework/method/expanded_canonical_sampling_matched_g2_5_authorized_20261009_v1/artifacts/train-004728-wrists-paired-text-g2_5.npz",
+      "sha256": "4c5530991cb562a78fb428369f6d7fa420d9240f82cd867b8c97623bd91f3e26"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/src/itm/metrics/sensor_relative.py",
+      "sha256": "d47e19edfb9de0633258abe1385d33bf07250fd89e31fcbaa8300129697d4f00"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/scripts/evaluate_sensor_relative_saved.py",
+      "sha256": "1267d55a9363a5cf0794830d62a2efaac08ba60d474792aef6294b3910719d35"
+    },
+    {
+      "path": "/home/a200/0proj/ITM/tests/test_sensor_relative_metrics.py",
+      "sha256": "3ecdc6aaf194bbf544725acdf7897226f4403bf0626a37cfa2f70bfa88d920d0"
+    }
+  ],
+  "expected_stage_rows": {
+    "U20_text1": 198,
+    "U100_text1": 198,
+    "U100_text2.5": 198
+  },
+  "expected_unique_outputs": 354,
+  "new_GPU_work": false,
+  "old_metrics_changed": false,
+  "CPU_tests_passed": 8,
+  "definitions": {
+    "root": "Joint0 pelvis, translation subtraction only; world heading retained",
+    "observed_joints": {
+      "head": [
+        15
+      ],
+      "wrists": [
+        20,
+        21
+      ]
+    },
+    "position": "Mean Euclidean joint error after subtracting each motion own pelvis position per frame.",
+    "velocity": "RMS Euclidean finite-difference relative velocity error at20Hz, sensor joints only.",
+    "spread": "RMS temporal deviation from each sensor joint own clip mean.",
+    "static_dynamic": "Relative position squared RMSE = squared temporal mean-error RMS + squared demeaned-error RMS.",
+    "global_local": "Global observed-position MSE = root MSE + relative position MSE + signed2*mean(root error dot local error).",
+    "reduction": "Each complete clip equal weight, configurations/populations separate; all matched comparisons use identical8val sources.",
+    "amplitude_ratio": "Per-clip predicted/GT relative spread or speed; GT<=1e-12 omitted with explicit denominator, no success gate."
+  },
+  "status": "frozen_before_supplementary_computation",
+  "formal_test": false,
+  "strict_IMU_consistency_certified": false
+}

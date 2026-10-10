@@ -1,0 +1,9 @@
+{
+  "status": "stopped_before_metric_computation",
+  "reason": "Verifier compared absolute descriptor path with relative input descriptor; no file content mismatch.",
+  "new_model_calls": 0,
+  "GPU_queries": 0,
+  "new_metric_checks": 0,
+  "preserved_script": "scripts/evaluate_sensor_relative_saved.py",
+  "replacement": "scripts/evaluate_sensor_relative_saved_v2.py"
+}
